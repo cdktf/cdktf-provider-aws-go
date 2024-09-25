@@ -282,6 +282,14 @@ func (j *jsiiProxy_DocdbelasticCluster) validateSetAuthTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DocdbelasticCluster) validateSetBackupRetentionPeriodParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DocdbelasticCluster) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -389,6 +397,14 @@ func (j *jsiiProxy_DocdbelasticCluster) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_DocdbelasticCluster) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) validateSetPreferredBackupWindowParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

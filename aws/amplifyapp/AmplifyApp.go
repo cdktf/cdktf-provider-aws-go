@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_app aws_amplify_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/amplify_app aws_amplify_app}.
 type AmplifyApp interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -30,6 +30,8 @@ type AmplifyApp interface {
 	BuildSpec() *string
 	SetBuildSpec(val *string)
 	BuildSpecInput() *string
+	CacheConfig() AmplifyAppCacheConfigOutputReference
+	CacheConfigInput() *AmplifyAppCacheConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -169,12 +171,14 @@ type AmplifyApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoBranchCreationConfig(value *AmplifyAppAutoBranchCreationConfig)
+	PutCacheConfig(value *AmplifyAppCacheConfig)
 	PutCustomRule(value interface{})
 	ResetAccessToken()
 	ResetAutoBranchCreationConfig()
 	ResetAutoBranchCreationPatterns()
 	ResetBasicAuthCredentials()
 	ResetBuildSpec()
+	ResetCacheConfig()
 	ResetCustomHeaders()
 	ResetCustomRule()
 	ResetDescription()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_AmplifyApp) BuildSpecInput() *string {
 	_jsii_.Get(
 		j,
 		"buildSpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) CacheConfig() AmplifyAppCacheConfigOutputReference {
+	var returns AmplifyAppCacheConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cacheConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) CacheConfigInput() *AmplifyAppCacheConfig {
+	var returns *AmplifyAppCacheConfig
+	_jsii_.Get(
+		j,
+		"cacheConfigInput",
 		&returns,
 	)
 	return returns
@@ -822,7 +846,7 @@ func (j *jsiiProxy_AmplifyApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppConfig) AmplifyApp {
 	_init_.Initialize()
 
@@ -840,7 +864,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string, config *AmplifyAppConfig) {
 	_init_.Initialize()
 
@@ -1492,6 +1516,17 @@ func (a *jsiiProxy_AmplifyApp) PutAutoBranchCreationConfig(value *AmplifyAppAuto
 	)
 }
 
+func (a *jsiiProxy_AmplifyApp) PutCacheConfig(value *AmplifyAppCacheConfig) {
+	if err := a.validatePutCacheConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCacheConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AmplifyApp) PutCustomRule(value interface{}) {
 	if err := a.validatePutCustomRuleParameters(value); err != nil {
 		panic(err)
@@ -1539,6 +1574,14 @@ func (a *jsiiProxy_AmplifyApp) ResetBuildSpec() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBuildSpec",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmplifyApp) ResetCacheConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCacheConfig",
 		nil, // no parameters
 	)
 }

@@ -32,8 +32,8 @@ type Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Subslots() Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList
-	SubslotsInput() interface{}
+	SubSlots() Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList
+	SubSlotsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,8 +66,8 @@ type Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSubslots(value interface{})
-	ResetSubslots()
+	PutSubSlots(value interface{})
+	ResetSubSlots()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -133,21 +133,21 @@ func (j *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) Subslots() Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList {
-	var returns Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList
+func (j *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) SubSlots() Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList {
+	var returns Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList
 	_jsii_.Get(
 		j,
-		"subslots",
+		"subSlots",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) SubslotsInput() interface{} {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) SubSlotsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"subslotsInput",
+		"subSlotsInput",
 		&returns,
 	)
 	return returns
@@ -442,21 +442,21 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) I
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) PutSubslots(value interface{}) {
-	if err := l.validatePutSubslotsParameters(value); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) PutSubSlots(value interface{}) {
+	if err := l.validatePutSubSlotsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
-		"putSubslots",
+		"putSubSlots",
 		[]interface{}{value},
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) ResetSubslots() {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) ResetSubSlots() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetSubslots",
+		"resetSubSlots",
 		nil, // no parameters
 	)
 }

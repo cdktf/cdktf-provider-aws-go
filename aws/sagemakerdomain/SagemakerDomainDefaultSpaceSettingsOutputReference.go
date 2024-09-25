@@ -28,6 +28,10 @@ type SagemakerDomainDefaultSpaceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomFileSystemConfig() SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList
+	CustomFileSystemConfigInput() interface{}
+	CustomPosixUserConfig() SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference
+	CustomPosixUserConfigInput() *SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig
 	ExecutionRole() *string
 	SetExecutionRole(val *string)
 	ExecutionRoleInput() *string
@@ -35,6 +39,8 @@ type SagemakerDomainDefaultSpaceSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *SagemakerDomainDefaultSpaceSettings
 	SetInternalValue(val *SagemakerDomainDefaultSpaceSettings)
+	JupyterLabAppSettings() SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference
+	JupyterLabAppSettingsInput() *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings
 	JupyterServerAppSettings() SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference
 	JupyterServerAppSettingsInput() *SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings
 	KernelGatewayAppSettings() SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsOutputReference
@@ -42,6 +48,8 @@ type SagemakerDomainDefaultSpaceSettingsOutputReference interface {
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
+	SpaceStorageSettings() SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference
+	SpaceStorageSettingsInput() *SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,11 +82,19 @@ type SagemakerDomainDefaultSpaceSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomFileSystemConfig(value interface{})
+	PutCustomPosixUserConfig(value *SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig)
+	PutJupyterLabAppSettings(value *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings)
 	PutJupyterServerAppSettings(value *SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings)
+	PutSpaceStorageSettings(value *SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings)
+	ResetCustomFileSystemConfig()
+	ResetCustomPosixUserConfig()
+	ResetJupyterLabAppSettings()
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
 	ResetSecurityGroups()
+	ResetSpaceStorageSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +140,46 @@ func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) CreationS
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) CustomFileSystemConfig() SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList {
+	var returns SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList
+	_jsii_.Get(
+		j,
+		"customFileSystemConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) CustomFileSystemConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customFileSystemConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) CustomPosixUserConfig() SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference {
+	var returns SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customPosixUserConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) CustomPosixUserConfigInput() *SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig {
+	var returns *SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig
+	_jsii_.Get(
+		j,
+		"customPosixUserConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ExecutionRole() *string {
 	var returns *string
 	_jsii_.Get(
@@ -159,6 +215,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) JupyterLabAppSettings() SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference {
+	var returns SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) JupyterLabAppSettingsInput() *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings {
+	var returns *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettingsInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +295,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) SecurityG
 	_jsii_.Get(
 		j,
 		"securityGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) SpaceStorageSettings() SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference {
+	var returns SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"spaceStorageSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) SpaceStorageSettingsInput() *SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings {
+	var returns *SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings
+	_jsii_.Get(
+		j,
+		"spaceStorageSettingsInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +631,39 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) Interpola
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutCustomFileSystemConfig(value interface{}) {
+	if err := s.validatePutCustomFileSystemConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomFileSystemConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutCustomPosixUserConfig(value *SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig) {
+	if err := s.validatePutCustomPosixUserConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomPosixUserConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutJupyterLabAppSettings(value *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings) {
+	if err := s.validatePutJupyterLabAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putJupyterLabAppSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutJupyterServerAppSettings(value *SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings) {
 	if err := s.validatePutJupyterServerAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -554,6 +683,41 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutKernel
 		s,
 		"putKernelGatewayAppSettings",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) PutSpaceStorageSettings(value *SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings) {
+	if err := s.validatePutSpaceStorageSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSpaceStorageSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ResetCustomFileSystemConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomFileSystemConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ResetCustomPosixUserConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomPosixUserConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ResetJupyterLabAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJupyterLabAppSettings",
+		nil, // no parameters
 	)
 }
 
@@ -577,6 +741,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ResetSecu
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecurityGroups",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference) ResetSpaceStorageSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceStorageSettings",
 		nil, // no parameters
 	)
 }

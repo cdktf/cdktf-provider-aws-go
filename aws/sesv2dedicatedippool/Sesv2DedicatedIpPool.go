@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 type Sesv2DedicatedIpPool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,8 +77,6 @@ type Sesv2DedicatedIpPool interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() Sesv2DedicatedIpPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,7 +120,6 @@ type Sesv2DedicatedIpPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *Sesv2DedicatedIpPoolTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -130,7 +127,6 @@ type Sesv2DedicatedIpPool interface {
 	ResetScalingMode()
 	ResetTags()
 	ResetTagsAll()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -419,28 +415,8 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) Timeouts() Sesv2DedicatedIpPoolTimeoutsOutputReference {
-	var returns Sesv2DedicatedIpPoolTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Sesv2DedicatedIpPool) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) Sesv2DedicatedIpPool {
 	_init_.Initialize()
 
@@ -458,7 +434,7 @@ func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Ses
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool_Override(s Sesv2DedicatedIpPool, scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) {
 	_init_.Initialize()
 
@@ -945,17 +921,6 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPool) PutTimeouts(value *Sesv2DedicatedIpPoolTimeouts) {
-	if err := s.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -992,14 +957,6 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }

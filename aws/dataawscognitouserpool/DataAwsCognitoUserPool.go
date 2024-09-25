@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}.
 type DataAwsCognitoUserPool interface {
 	cdktf.TerraformDataSource
 	AccountRecoverySetting() DataAwsCognitoUserPoolAccountRecoverySettingList
@@ -67,6 +67,7 @@ type DataAwsCognitoUserPool interface {
 	SmsAuthenticationMessage() *string
 	SmsConfigurationFailure() *string
 	SmsVerificationMessage() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -435,6 +436,16 @@ func (j *jsiiProxy_DataAwsCognitoUserPool) SmsVerificationMessage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPool) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPool) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -506,7 +517,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPool) UserPoolTags() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
 func NewDataAwsCognitoUserPool(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolConfig) DataAwsCognitoUserPool {
 	_init_.Initialize()
 
@@ -524,7 +535,7 @@ func NewDataAwsCognitoUserPool(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
 func NewDataAwsCognitoUserPool_Override(d DataAwsCognitoUserPool, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolConfig) {
 	_init_.Initialize()
 

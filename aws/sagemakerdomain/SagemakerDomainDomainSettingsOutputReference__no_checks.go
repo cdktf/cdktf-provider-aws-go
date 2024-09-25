@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateInterpo
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutDockerSettingsParameters(value *SagemakerDomainDomainSettingsDockerSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutRStudioServerProDomainSettingsParameters(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings) error {
 	return nil
 }

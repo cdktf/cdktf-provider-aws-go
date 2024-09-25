@@ -35,6 +35,8 @@ type SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference in
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ModelAccessConfig() SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference
+	ModelAccessConfigInput() *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 	S3DataType() *string
 	SetS3DataType(val *string)
 	S3DataTypeInput() *string
@@ -73,6 +75,8 @@ type SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutModelAccessConfig(value *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig)
+	ResetModelAccessConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,6 +157,26 @@ func (j *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) ModelAccessConfig() SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference {
+	var returns SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfigOutputReference
+	_jsii_.Get(
+		j,
+		"modelAccessConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) ModelAccessConfigInput() *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig {
+	var returns *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
+	_jsii_.Get(
+		j,
+		"modelAccessConfigInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +542,25 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutp
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) PutModelAccessConfig(value *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig) {
+	if err := s.validatePutModelAccessConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putModelAccessConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) ResetModelAccessConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelAccessConfig",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

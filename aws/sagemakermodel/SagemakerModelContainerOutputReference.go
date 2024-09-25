@@ -41,6 +41,9 @@ type SagemakerModelContainerOutputReference interface {
 	ImageConfig() SagemakerModelContainerImageConfigOutputReference
 	ImageConfigInput() *SagemakerModelContainerImageConfig
 	ImageInput() *string
+	InferenceSpecificationName() *string
+	SetInferenceSpecificationName(val *string)
+	InferenceSpecificationNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Mode() *string
@@ -54,6 +57,8 @@ type SagemakerModelContainerOutputReference interface {
 	ModelPackageName() *string
 	SetModelPackageName(val *string)
 	ModelPackageNameInput() *string
+	MultiModelConfig() SagemakerModelContainerMultiModelConfigOutputReference
+	MultiModelConfigInput() *SagemakerModelContainerMultiModelConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -88,14 +93,17 @@ type SagemakerModelContainerOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutImageConfig(value *SagemakerModelContainerImageConfig)
 	PutModelDataSource(value *SagemakerModelContainerModelDataSource)
+	PutMultiModelConfig(value *SagemakerModelContainerMultiModelConfig)
 	ResetContainerHostname()
 	ResetEnvironment()
 	ResetImage()
 	ResetImageConfig()
+	ResetInferenceSpecificationName()
 	ResetMode()
 	ResetModelDataSource()
 	ResetModelDataUrl()
 	ResetModelPackageName()
+	ResetMultiModelConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -231,6 +239,26 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) ImageInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) InferenceSpecificationName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inferenceSpecificationName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) InferenceSpecificationNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inferenceSpecificationNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerModelContainerOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -316,6 +344,26 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelPackageNameInput
 	_jsii_.Get(
 		j,
 		"modelPackageNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) MultiModelConfig() SagemakerModelContainerMultiModelConfigOutputReference {
+	var returns SagemakerModelContainerMultiModelConfigOutputReference
+	_jsii_.Get(
+		j,
+		"multiModelConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) MultiModelConfigInput() *SagemakerModelContainerMultiModelConfig {
+	var returns *SagemakerModelContainerMultiModelConfig
+	_jsii_.Get(
+		j,
+		"multiModelConfigInput",
 		&returns,
 	)
 	return returns
@@ -420,6 +468,17 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference)SetImage(val *string) 
 	_jsii_.Set(
 		j,
 		"image",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference)SetInferenceSpecificationName(val *string) {
+	if err := j.validateSetInferenceSpecificationNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inferenceSpecificationName",
 		val,
 	)
 }
@@ -698,6 +757,17 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) PutModelDataSource(va
 	)
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) PutMultiModelConfig(value *SagemakerModelContainerMultiModelConfig) {
+	if err := s.validatePutMultiModelConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMultiModelConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetContainerHostname() {
 	_jsii_.InvokeVoid(
 		s,
@@ -730,6 +800,14 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetImageConfig() {
 	)
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetInferenceSpecificationName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInferenceSpecificationName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetMode() {
 	_jsii_.InvokeVoid(
 		s,
@@ -758,6 +836,14 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetModelPackageName
 	_jsii_.InvokeVoid(
 		s,
 		"resetModelPackageName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetMultiModelConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMultiModelConfig",
 		nil, // no parameters
 	)
 }

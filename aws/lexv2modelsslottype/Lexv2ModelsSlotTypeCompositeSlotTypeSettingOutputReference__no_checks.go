@@ -47,7 +47,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) validatePutSubslotsParameters(value interface{}) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) validatePutSubSlotsParameters(value interface{}) error {
 	return nil
 }
 

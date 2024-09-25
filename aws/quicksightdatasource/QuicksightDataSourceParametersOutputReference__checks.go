@@ -148,6 +148,17 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutAws
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutDatabricksParameters(value *QuicksightDataSourceParametersDatabricks) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutJiraParameters(value *QuicksightDataSourceParametersJira) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

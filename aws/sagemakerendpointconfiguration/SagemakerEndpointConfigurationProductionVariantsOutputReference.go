@@ -55,6 +55,8 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	InstanceTypeInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ManagedInstanceScaling() SagemakerEndpointConfigurationProductionVariantsManagedInstanceScalingOutputReference
+	ManagedInstanceScalingInput() *SagemakerEndpointConfigurationProductionVariantsManagedInstanceScaling
 	ModelDataDownloadTimeoutInSeconds() *float64
 	SetModelDataDownloadTimeoutInSeconds(val *float64)
 	ModelDataDownloadTimeoutInSecondsInput() *float64
@@ -104,6 +106,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCoreDumpConfig(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig)
+	PutManagedInstanceScaling(value *SagemakerEndpointConfigurationProductionVariantsManagedInstanceScaling)
 	PutRoutingConfig(value interface{})
 	PutServerlessConfig(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig)
 	ResetAcceleratorType()
@@ -114,6 +117,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ResetInitialInstanceCount()
 	ResetInitialVariantWeight()
 	ResetInstanceType()
+	ResetManagedInstanceScaling()
 	ResetModelDataDownloadTimeoutInSeconds()
 	ResetRoutingConfig()
 	ResetServerlessConfig()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ManagedInstanceScaling() SagemakerEndpointConfigurationProductionVariantsManagedInstanceScalingOutputReference {
+	var returns SagemakerEndpointConfigurationProductionVariantsManagedInstanceScalingOutputReference
+	_jsii_.Get(
+		j,
+		"managedInstanceScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ManagedInstanceScalingInput() *SagemakerEndpointConfigurationProductionVariantsManagedInstanceScaling {
+	var returns *SagemakerEndpointConfigurationProductionVariantsManagedInstanceScaling
+	_jsii_.Get(
+		j,
+		"managedInstanceScalingInput",
 		&returns,
 	)
 	return returns
@@ -885,6 +909,17 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutManagedInstanceScaling(value *SagemakerEndpointConfigurationProductionVariantsManagedInstanceScaling) {
+	if err := s.validatePutManagedInstanceScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putManagedInstanceScaling",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutRoutingConfig(value interface{}) {
 	if err := s.validatePutRoutingConfigParameters(value); err != nil {
 		panic(err)
@@ -967,6 +1002,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"resetInstanceType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetManagedInstanceScaling() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedInstanceScaling",
 		nil, // no parameters
 	)
 }

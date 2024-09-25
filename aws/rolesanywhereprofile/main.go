@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedPolicyArns", GoMethod: "ResetManagedPolicyArns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireInstanceProperties", GoMethod: "ResetRequireInstanceProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRoleArns", GoMethod: "ResetRoleArns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionPolicy", GoMethod: "ResetSessionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},

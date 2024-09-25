@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
 type DataAwsQuicksightDataSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -23,7 +23,6 @@ type DataAwsQuicksightDataSet interface {
 	CdktfStack() cdktf.TerraformStack
 	ColumnGroups() DataAwsQuicksightDataSetColumnGroupsList
 	ColumnLevelPermissionRules() DataAwsQuicksightDataSetColumnLevelPermissionRulesList
-	ColumnLevelPermissionRulesInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -106,9 +105,7 @@ type DataAwsQuicksightDataSet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutColumnLevelPermissionRules(value interface{})
 	ResetAwsAccountId()
-	ResetColumnLevelPermissionRules()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -189,16 +186,6 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) ColumnLevelPermissionRules() DataAw
 	_jsii_.Get(
 		j,
 		"columnLevelPermissionRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsQuicksightDataSet) ColumnLevelPermissionRulesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"columnLevelPermissionRulesInput",
 		&returns,
 	)
 	return returns
@@ -505,7 +492,7 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) DataAwsQuicksightDataSet {
 	_init_.Initialize()
 
@@ -523,7 +510,7 @@ func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet_Override(d DataAwsQuicksightDataSet, scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) {
 	_init_.Initialize()
 
@@ -920,29 +907,10 @@ func (d *jsiiProxy_DataAwsQuicksightDataSet) OverrideLogicalId(newLogicalId *str
 	)
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSet) PutColumnLevelPermissionRules(value interface{}) {
-	if err := d.validatePutColumnLevelPermissionRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putColumnLevelPermissionRules",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetAwsAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAwsAccountId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetColumnLevelPermissionRules() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetColumnLevelPermissionRules",
 		nil, // no parameters
 	)
 }

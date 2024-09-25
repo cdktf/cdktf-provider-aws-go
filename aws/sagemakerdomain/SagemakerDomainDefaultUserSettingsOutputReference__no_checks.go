@@ -91,6 +91,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutStudioWebPortalSettingsParameters(value *SagemakerDomainDefaultUserSettingsStudioWebPortalSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutTensorBoardAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsTensorBoardAppSettings) error {
 	return nil
 }

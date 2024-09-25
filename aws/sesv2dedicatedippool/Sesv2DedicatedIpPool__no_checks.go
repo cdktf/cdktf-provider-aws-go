@@ -75,10 +75,6 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpPool) validatePutTimeoutsParameters(value *Sesv2DedicatedIpPoolTimeouts) error {
-	return nil
-}
-
 func validateSesv2DedicatedIpPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

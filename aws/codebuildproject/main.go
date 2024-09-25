@@ -419,6 +419,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentFleet",
+		reflect.TypeOf((*CodebuildProjectEnvironmentFleet)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentFleetOutputReference",
+		reflect.TypeOf((*CodebuildProjectEnvironmentFleetOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetArn", GoGetter: "FleetArn"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetArnInput", GoGetter: "FleetArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFleetArn", GoMethod: "ResetFleetArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CodebuildProjectEnvironmentFleetOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
 		reflect.TypeOf((*CodebuildProjectEnvironmentOutputReference)(nil)).Elem(),
@@ -433,6 +472,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentVariable", GoGetter: "EnvironmentVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentVariableInput", GoGetter: "EnvironmentVariableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fleet", GoGetter: "Fleet"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetInput", GoGetter: "FleetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -453,11 +494,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privilegedMode", GoGetter: "PrivilegedMode"},
 			_jsii_.MemberProperty{JsiiProperty: "privilegedModeInput", GoGetter: "PrivilegedModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnvironmentVariable", GoMethod: "PutEnvironmentVariable"},
+			_jsii_.MemberMethod{JsiiMethod: "putFleet", GoMethod: "PutFleet"},
 			_jsii_.MemberMethod{JsiiMethod: "putRegistryCredential", GoMethod: "PutRegistryCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "registryCredential", GoGetter: "RegistryCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "registryCredentialInput", GoGetter: "RegistryCredentialInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificate", GoMethod: "ResetCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariable", GoMethod: "ResetEnvironmentVariable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFleet", GoMethod: "ResetFleet"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImagePullCredentialsType", GoMethod: "ResetImagePullCredentialsType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivilegedMode", GoMethod: "ResetPrivilegedMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegistryCredential", GoMethod: "ResetRegistryCredential"},

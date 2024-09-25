@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/resourcegroups_group aws_resourcegroups_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/resourcegroups_group aws_resourcegroups_group}.
 type ResourcegroupsGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_ResourcegroupsGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
 func NewResourcegroupsGroup(scope constructs.Construct, id *string, config *ResourcegroupsGroupConfig) ResourcegroupsGroup {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewResourcegroupsGroup(scope constructs.Construct, id *string, config *Reso
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
 func NewResourcegroupsGroup_Override(r ResourcegroupsGroup, scope constructs.Construct, id *string, config *ResourcegroupsGroupConfig) {
 	_init_.Initialize()
 

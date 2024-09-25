@@ -66,6 +66,8 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	StudioWebPortal() *string
 	SetStudioWebPortal(val *string)
 	StudioWebPortalInput() *string
+	StudioWebPortalSettings() SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference
+	StudioWebPortalSettingsInput() *SagemakerUserProfileUserSettingsStudioWebPortalSettings
 	TensorBoardAppSettings() SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference
 	TensorBoardAppSettingsInput() *SagemakerUserProfileUserSettingsTensorBoardAppSettings
 	// Experimental.
@@ -111,6 +113,7 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	PutRStudioServerProAppSettings(value *SagemakerUserProfileUserSettingsRStudioServerProAppSettings)
 	PutSharingSettings(value *SagemakerUserProfileUserSettingsSharingSettings)
 	PutSpaceStorageSettings(value *SagemakerUserProfileUserSettingsSpaceStorageSettings)
+	PutStudioWebPortalSettings(value *SagemakerUserProfileUserSettingsStudioWebPortalSettings)
 	PutTensorBoardAppSettings(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings)
 	ResetCanvasAppSettings()
 	ResetCodeEditorAppSettings()
@@ -126,6 +129,7 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	ResetSharingSettings()
 	ResetSpaceStorageSettings()
 	ResetStudioWebPortal()
+	ResetStudioWebPortalSettings()
 	ResetTensorBoardAppSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -487,6 +491,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) StudioWebPor
 	_jsii_.Get(
 		j,
 		"studioWebPortalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) StudioWebPortalSettings() SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"studioWebPortalSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) StudioWebPortalSettingsInput() *SagemakerUserProfileUserSettingsStudioWebPortalSettings {
+	var returns *SagemakerUserProfileUserSettingsStudioWebPortalSettings
+	_jsii_.Get(
+		j,
+		"studioWebPortalSettingsInput",
 		&returns,
 	)
 	return returns
@@ -966,6 +990,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutSpaceStor
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutStudioWebPortalSettings(value *SagemakerUserProfileUserSettingsStudioWebPortalSettings) {
+	if err := s.validatePutStudioWebPortalSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putStudioWebPortalSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutTensorBoardAppSettings(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings) {
 	if err := s.validatePutTensorBoardAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -1085,6 +1120,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetStudioW
 	_jsii_.InvokeVoid(
 		s,
 		"resetStudioWebPortal",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetStudioWebPortalSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStudioWebPortalSettings",
 		nil, // no parameters
 	)
 }

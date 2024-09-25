@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor}.
 type RolesanywhereTrustAnchor interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,6 +55,8 @@ type RolesanywhereTrustAnchor interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotificationSettings() RolesanywhereTrustAnchorNotificationSettingsList
+	NotificationSettingsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -122,9 +124,11 @@ type RolesanywhereTrustAnchor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNotificationSettings(value interface{})
 	PutSource(value *RolesanywhereTrustAnchorSource)
 	ResetEnabled()
 	ResetId()
+	ResetNotificationSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -318,6 +322,26 @@ func (j *jsiiProxy_RolesanywhereTrustAnchor) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RolesanywhereTrustAnchor) NotificationSettings() RolesanywhereTrustAnchorNotificationSettingsList {
+	var returns RolesanywhereTrustAnchorNotificationSettingsList
+	_jsii_.Get(
+		j,
+		"notificationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RolesanywhereTrustAnchor) NotificationSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RolesanywhereTrustAnchor) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -439,7 +463,7 @@ func (j *jsiiProxy_RolesanywhereTrustAnchor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource.
 func NewRolesanywhereTrustAnchor(scope constructs.Construct, id *string, config *RolesanywhereTrustAnchorConfig) RolesanywhereTrustAnchor {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewRolesanywhereTrustAnchor(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource.
 func NewRolesanywhereTrustAnchor_Override(r RolesanywhereTrustAnchor, scope constructs.Construct, id *string, config *RolesanywhereTrustAnchorConfig) {
 	_init_.Initialize()
 
@@ -944,6 +968,17 @@ func (r *jsiiProxy_RolesanywhereTrustAnchor) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (r *jsiiProxy_RolesanywhereTrustAnchor) PutNotificationSettings(value interface{}) {
+	if err := r.validatePutNotificationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putNotificationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RolesanywhereTrustAnchor) PutSource(value *RolesanywhereTrustAnchorSource) {
 	if err := r.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -967,6 +1002,14 @@ func (r *jsiiProxy_RolesanywhereTrustAnchor) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RolesanywhereTrustAnchor) ResetNotificationSettings() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNotificationSettings",
 		nil, // no parameters
 	)
 }

@@ -391,6 +391,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks",
+		reflect.TypeOf((*QuicksightDataSourceParametersDatabricks)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricksOutputReference",
+		reflect.TypeOf((*QuicksightDataSourceParametersDatabricksOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
+			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
+			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlEndpointPath", GoGetter: "SqlEndpointPath"},
+			_jsii_.MemberProperty{JsiiProperty: "sqlEndpointPathInput", GoGetter: "SqlEndpointPathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_QuicksightDataSourceParametersDatabricksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira",
 		reflect.TypeOf((*QuicksightDataSourceParametersJira)(nil)).Elem(),
 	)
@@ -572,6 +614,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "databricks", GoGetter: "Databricks"},
+			_jsii_.MemberProperty{JsiiProperty: "databricksInput", GoGetter: "DatabricksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -602,6 +646,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAurora", GoMethod: "PutAurora"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuroraPostgresql", GoMethod: "PutAuroraPostgresql"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsIotAnalytics", GoMethod: "PutAwsIotAnalytics"},
+			_jsii_.MemberMethod{JsiiMethod: "putDatabricks", GoMethod: "PutDatabricks"},
 			_jsii_.MemberMethod{JsiiMethod: "putJira", GoMethod: "PutJira"},
 			_jsii_.MemberMethod{JsiiMethod: "putMariaDb", GoMethod: "PutMariaDb"},
 			_jsii_.MemberMethod{JsiiMethod: "putMysql", GoMethod: "PutMysql"},
@@ -626,6 +671,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAurora", GoMethod: "ResetAurora"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuroraPostgresql", GoMethod: "ResetAuroraPostgresql"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsIotAnalytics", GoMethod: "ResetAwsIotAnalytics"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDatabricks", GoMethod: "ResetDatabricks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJira", GoMethod: "ResetJira"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMariaDb", GoMethod: "ResetMariaDb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMysql", GoMethod: "ResetMysql"},

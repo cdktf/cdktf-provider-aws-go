@@ -93,22 +93,22 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) validatePutSubslotsParameters(value interface{}) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) validatePutSubSlotsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots:
-		value := value.(*[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots)
+	case *[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots:
+		value := value.(*[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots:
-		value_ := value.([]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots)
+	case []*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots:
+		value_ := value.([]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -117,7 +117,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingOutputReference) v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots; received %#v (a %T)", value, value)
 		}
 	}
 

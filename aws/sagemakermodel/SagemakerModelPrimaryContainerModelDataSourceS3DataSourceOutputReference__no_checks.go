@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutp
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) validatePutModelAccessConfigParameters(value *SagemakerModelPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerModelPrimaryContainerModelDataSourceS3DataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

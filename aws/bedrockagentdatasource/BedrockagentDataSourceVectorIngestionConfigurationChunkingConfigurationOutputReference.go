@@ -35,8 +35,12 @@ type BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutp
 	FixedSizeChunkingConfigurationInput() interface{}
 	// Experimental.
 	Fqn() *string
+	HierarchicalChunkingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList
+	HierarchicalChunkingConfigurationInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SemanticChunkingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList
+	SemanticChunkingConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +74,11 @@ type BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutp
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFixedSizeChunkingConfiguration(value interface{})
+	PutHierarchicalChunkingConfiguration(value interface{})
+	PutSemanticChunkingConfiguration(value interface{})
 	ResetFixedSizeChunkingConfiguration()
+	ResetHierarchicalChunkingConfiguration()
+	ResetSemanticChunkingConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -166,11 +174,51 @@ func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingCon
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) HierarchicalChunkingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList {
+	var returns BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList
+	_jsii_.Get(
+		j,
+		"hierarchicalChunkingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) HierarchicalChunkingConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hierarchicalChunkingConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) SemanticChunkingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList {
+	var returns BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList
+	_jsii_.Get(
+		j,
+		"semanticChunkingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) SemanticChunkingConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"semanticChunkingConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +535,48 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingCon
 	)
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) PutHierarchicalChunkingConfiguration(value interface{}) {
+	if err := b.validatePutHierarchicalChunkingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putHierarchicalChunkingConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) PutSemanticChunkingConfiguration(value interface{}) {
+	if err := b.validatePutSemanticChunkingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSemanticChunkingConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) ResetFixedSizeChunkingConfiguration() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetFixedSizeChunkingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) ResetHierarchicalChunkingConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetHierarchicalChunkingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference) ResetSemanticChunkingConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSemanticChunkingConfiguration",
 		nil, // no parameters
 	)
 }

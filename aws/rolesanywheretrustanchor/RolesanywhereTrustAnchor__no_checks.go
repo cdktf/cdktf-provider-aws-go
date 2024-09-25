@@ -75,6 +75,10 @@ func (r *jsiiProxy_RolesanywhereTrustAnchor) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (r *jsiiProxy_RolesanywhereTrustAnchor) validatePutNotificationSettingsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RolesanywhereTrustAnchor) validatePutSourceParameters(value *RolesanywhereTrustAnchorSource) error {
 	return nil
 }

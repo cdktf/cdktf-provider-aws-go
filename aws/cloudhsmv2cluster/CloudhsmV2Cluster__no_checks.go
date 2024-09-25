@@ -115,6 +115,10 @@ func (j *jsiiProxy_CloudhsmV2Cluster) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_CloudhsmV2Cluster) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Cluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

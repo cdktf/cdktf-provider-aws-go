@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) validateSetInternalValueParameters(val *DataAwsQuicksightDataSetColumnLevelPermissionRules) error {
 	return nil
 }
 

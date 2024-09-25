@@ -28,9 +28,9 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOver
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EdgeSets() *[]*string
-	SetEdgeSets(val *[]*string)
-	EdgeSetsInput() *[]*string
+	EdgeSets() interface{}
+	SetEdgeSets(val interface{})
+	EdgeSetsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -46,6 +46,9 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOver
 	UseEdge() *string
 	SetUseEdge(val *string)
 	UseEdgeInput() *string
+	UseEdgeLocation() *string
+	SetUseEdgeLocation(val *string)
+	UseEdgeLocationInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOver
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEdgeSets()
 	ResetUseEdge()
+	ResetUseEdgeLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,8 +121,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) EdgeSets() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) EdgeSets() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"edgeSets",
@@ -127,8 +131,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) EdgeSetsInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) EdgeSetsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"edgeSetsInput",
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) UseEdgeLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"useEdgeLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) UseEdgeLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"useEdgeLocationInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference {
 	_init_.Initialize()
@@ -247,7 +271,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference)SetEdgeSets(val *[]*string) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference)SetEdgeSets(val interface{}) {
 	if err := j.validateSetEdgeSetsParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,6 +322,17 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	_jsii_.Set(
 		j,
 		"useEdge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference)SetUseEdgeLocation(val *string) {
+	if err := j.validateSetUseEdgeLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useEdgeLocation",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	_jsii_.InvokeVoid(
 		d,
 		"resetUseEdge",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference) ResetUseEdgeLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseEdgeLocation",
 		nil, // no parameters
 	)
 }

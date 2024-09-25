@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) validatePutManagedInstanceScalingParameters(value *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) validatePutRoutingConfigParameters(value interface{}) error {
 	return nil
 }

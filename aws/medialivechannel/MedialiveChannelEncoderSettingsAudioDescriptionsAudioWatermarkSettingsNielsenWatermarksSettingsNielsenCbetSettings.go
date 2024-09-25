@@ -5,11 +5,11 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}.
 	CbetCheckDigitString *string `field:"required" json:"cbetCheckDigitString" yaml:"cbetCheckDigitString"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}.
 	CbetStepaside *string `field:"required" json:"cbetStepaside" yaml:"cbetStepaside"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}.
 	Csid *string `field:"required" json:"csid" yaml:"csid"`
 }
 

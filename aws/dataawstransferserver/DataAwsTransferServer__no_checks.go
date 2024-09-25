@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsTransferServer) validateSetServerIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsTransferServer) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsTransferServerParameters(scope constructs.Construct, id *string, config *DataAwsTransferServerConfig) error {
 	return nil
 }

@@ -77,6 +77,7 @@ type AppconfigExtensionActionPointActionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDescription()
+	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -559,6 +560,14 @@ func (a *jsiiProxy_AppconfigExtensionActionPointActionOutputReference) ResetDesc
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppconfigExtensionActionPointActionOutputReference) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoleArn",
 		nil, // no parameters
 	)
 }

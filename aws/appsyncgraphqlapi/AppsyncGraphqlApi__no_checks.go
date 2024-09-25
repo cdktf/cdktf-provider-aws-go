@@ -115,6 +115,10 @@ func validateAppsyncGraphqlApi_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetApiTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIntrospectionConfigParameters(v
 }
 
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetMergedApiExecutionRoleArnParameters(val *string) error {
 	return nil
 }
 

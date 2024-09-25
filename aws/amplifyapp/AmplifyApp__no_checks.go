@@ -79,6 +79,10 @@ func (a *jsiiProxy_AmplifyApp) validatePutAutoBranchCreationConfigParameters(val
 	return nil
 }
 
+func (a *jsiiProxy_AmplifyApp) validatePutCacheConfigParameters(value *AmplifyAppCacheConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyApp) validatePutCustomRuleParameters(value interface{}) error {
 	return nil
 }

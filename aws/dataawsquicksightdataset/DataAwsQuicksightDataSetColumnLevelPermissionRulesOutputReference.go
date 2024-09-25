@@ -31,8 +31,8 @@ type DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsQuicksightDataSetColumnLevelPermissionRules
+	SetInternalValue(val *DataAwsQuicksightDataSetColumnLevelPermissionRules)
 	Principals() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) InternalValue() *DataAwsQuicksightDataSetColumnLevelPermissionRules {
+	var returns *DataAwsQuicksightDataSetColumnLevelPermissionRules
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference)SetInternalValue(val *DataAwsQuicksightDataSetColumnLevelPermissionRules) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

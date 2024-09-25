@@ -38,6 +38,8 @@ type QuicksightDataSourceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Databricks() QuicksightDataSourceParametersDatabricksOutputReference
+	DatabricksInput() *QuicksightDataSourceParametersDatabricks
 	// Experimental.
 	Fqn() *string
 	InternalValue() *QuicksightDataSourceParameters
@@ -109,6 +111,7 @@ type QuicksightDataSourceParametersOutputReference interface {
 	PutAurora(value *QuicksightDataSourceParametersAurora)
 	PutAuroraPostgresql(value *QuicksightDataSourceParametersAuroraPostgresql)
 	PutAwsIotAnalytics(value *QuicksightDataSourceParametersAwsIotAnalytics)
+	PutDatabricks(value *QuicksightDataSourceParametersDatabricks)
 	PutJira(value *QuicksightDataSourceParametersJira)
 	PutMariaDb(value *QuicksightDataSourceParametersMariaDb)
 	PutMysql(value *QuicksightDataSourceParametersMysql)
@@ -129,6 +132,7 @@ type QuicksightDataSourceParametersOutputReference interface {
 	ResetAurora()
 	ResetAuroraPostgresql()
 	ResetAwsIotAnalytics()
+	ResetDatabricks()
 	ResetJira()
 	ResetMariaDb()
 	ResetMysql()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_QuicksightDataSourceParametersOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSourceParametersOutputReference) Databricks() QuicksightDataSourceParametersDatabricksOutputReference {
+	var returns QuicksightDataSourceParametersDatabricksOutputReference
+	_jsii_.Get(
+		j,
+		"databricks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSourceParametersOutputReference) DatabricksInput() *QuicksightDataSourceParametersDatabricks {
+	var returns *QuicksightDataSourceParametersDatabricks
+	_jsii_.Get(
+		j,
+		"databricksInput",
 		&returns,
 	)
 	return returns
@@ -953,6 +977,17 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) PutAwsIotAnaly
 	)
 }
 
+func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) PutDatabricks(value *QuicksightDataSourceParametersDatabricks) {
+	if err := q.validatePutDatabricksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putDatabricks",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) PutJira(value *QuicksightDataSourceParametersJira) {
 	if err := q.validatePutJiraParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1189,14 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) ResetAwsIotAna
 	_jsii_.InvokeVoid(
 		q,
 		"resetAwsIotAnalytics",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) ResetDatabricks() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetDatabricks",
 		nil, // no parameters
 	)
 }

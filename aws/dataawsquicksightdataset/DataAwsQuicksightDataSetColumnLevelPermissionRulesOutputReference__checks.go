@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsQuicksightDataSetColumnLevelPermissionRules:
-		val := val.(*DataAwsQuicksightDataSetColumnLevelPermissionRules)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsQuicksightDataSetColumnLevelPermissionRules:
-		val_ := val.(DataAwsQuicksightDataSetColumnLevelPermissionRules)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsQuicksightDataSetColumnLevelPermissionRules; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference) validateSetInternalValueParameters(val *DataAwsQuicksightDataSetColumnLevelPermissionRules) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

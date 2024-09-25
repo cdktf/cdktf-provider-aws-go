@@ -63,6 +63,10 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetIamRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

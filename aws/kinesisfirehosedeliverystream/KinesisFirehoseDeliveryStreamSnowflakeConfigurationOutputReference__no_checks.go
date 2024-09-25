@@ -79,6 +79,14 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) validateSetBufferingIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) validateSetBufferingSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

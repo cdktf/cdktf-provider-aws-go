@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSe
 	return nil
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateSetAudioRecognitionSettingParameters(val *string) error {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateSetAudioRecognitionStrategyParameters(val *string) error {
 	return nil
 }
 

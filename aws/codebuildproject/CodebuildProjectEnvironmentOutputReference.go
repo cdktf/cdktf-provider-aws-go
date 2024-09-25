@@ -36,6 +36,8 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	CreationStack() *[]*string
 	EnvironmentVariable() CodebuildProjectEnvironmentEnvironmentVariableList
 	EnvironmentVariableInput() interface{}
+	Fleet() CodebuildProjectEnvironmentFleetOutputReference
+	FleetInput() *CodebuildProjectEnvironmentFleet
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -87,9 +89,11 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnvironmentVariable(value interface{})
+	PutFleet(value *CodebuildProjectEnvironmentFleet)
 	PutRegistryCredential(value *CodebuildProjectEnvironmentRegistryCredential)
 	ResetCertificate()
 	ResetEnvironmentVariable()
+	ResetFleet()
 	ResetImagePullCredentialsType()
 	ResetPrivilegedMode()
 	ResetRegistryCredential()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) EnvironmentVariab
 	_jsii_.Get(
 		j,
 		"environmentVariableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) Fleet() CodebuildProjectEnvironmentFleetOutputReference {
+	var returns CodebuildProjectEnvironmentFleetOutputReference
+	_jsii_.Get(
+		j,
+		"fleet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) FleetInput() *CodebuildProjectEnvironmentFleet {
+	var returns *CodebuildProjectEnvironmentFleet
+	_jsii_.Get(
+		j,
+		"fleetInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +708,17 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutEnvironmentVar
 	)
 }
 
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutFleet(value *CodebuildProjectEnvironmentFleet) {
+	if err := c.validatePutFleetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFleet",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutRegistryCredential(value *CodebuildProjectEnvironmentRegistryCredential) {
 	if err := c.validatePutRegistryCredentialParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ResetEnvironmentV
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnvironmentVariable",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ResetFleet() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFleet",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,8 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	InstanceTypeInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ManagedInstanceScaling() SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScalingOutputReference
+	ManagedInstanceScalingInput() *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling
 	ModelDataDownloadTimeoutInSeconds() *float64
 	SetModelDataDownloadTimeoutInSeconds(val *float64)
 	ModelDataDownloadTimeoutInSecondsInput() *float64
@@ -104,6 +106,7 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCoreDumpConfig(value *SagemakerEndpointConfigurationShadowProductionVariantsCoreDumpConfig)
+	PutManagedInstanceScaling(value *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling)
 	PutRoutingConfig(value interface{})
 	PutServerlessConfig(value *SagemakerEndpointConfigurationShadowProductionVariantsServerlessConfig)
 	ResetAcceleratorType()
@@ -114,6 +117,7 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	ResetInitialInstanceCount()
 	ResetInitialVariantWeight()
 	ResetInstanceType()
+	ResetManagedInstanceScaling()
 	ResetModelDataDownloadTimeoutInSeconds()
 	ResetRoutingConfig()
 	ResetServerlessConfig()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) ManagedInstanceScaling() SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScalingOutputReference {
+	var returns SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScalingOutputReference
+	_jsii_.Get(
+		j,
+		"managedInstanceScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) ManagedInstanceScalingInput() *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling {
+	var returns *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling
+	_jsii_.Get(
+		j,
+		"managedInstanceScalingInput",
 		&returns,
 	)
 	return returns
@@ -885,6 +909,17 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) PutManagedInstanceScaling(value *SagemakerEndpointConfigurationShadowProductionVariantsManagedInstanceScaling) {
+	if err := s.validatePutManagedInstanceScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putManagedInstanceScaling",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) PutRoutingConfig(value interface{}) {
 	if err := s.validatePutRoutingConfigParameters(value); err != nil {
 		panic(err)
@@ -967,6 +1002,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.InvokeVoid(
 		s,
 		"resetInstanceType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) ResetManagedInstanceScaling() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedInstanceScaling",
 		nil, // no parameters
 	)
 }

@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsQuicksightDataSetColumnLevelPermissionRulesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

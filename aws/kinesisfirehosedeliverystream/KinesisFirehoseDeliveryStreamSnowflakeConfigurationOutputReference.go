@@ -16,6 +16,12 @@ type KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference interfac
 	AccountUrl() *string
 	SetAccountUrl(val *string)
 	AccountUrlInput() *string
+	BufferingInterval() *float64
+	SetBufferingInterval(val *float64)
+	BufferingIntervalInput() *float64
+	BufferingSize() *float64
+	SetBufferingSize(val *float64)
+	BufferingSizeInput() *float64
 	CloudwatchLoggingOptions() KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference
 	CloudwatchLoggingOptionsInput() *KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions
 	// the index of the complex object in a list.
@@ -121,6 +127,8 @@ type KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference interfac
 	PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration)
 	PutSnowflakeRoleConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration)
 	PutSnowflakeVpcConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration)
+	ResetBufferingInterval()
+	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
 	ResetContentColumnName()
 	ResetDataLoadingOption()
@@ -164,6 +172,46 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	_jsii_.Get(
 		j,
 		"accountUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) BufferingInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) BufferingIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) BufferingSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) BufferingSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingSizeInput",
 		&returns,
 	)
 	return returns
@@ -638,6 +686,28 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	)
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference)SetBufferingInterval(val *float64) {
+	if err := j.validateSetBufferingIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bufferingInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference)SetBufferingSize(val *float64) {
+	if err := j.validateSetBufferingSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bufferingSize",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1074,6 +1144,22 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 		k,
 		"putSnowflakeVpcConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetBufferingInterval() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBufferingInterval",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetBufferingSize() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBufferingSize",
+		nil, // no parameters
 	)
 }
 

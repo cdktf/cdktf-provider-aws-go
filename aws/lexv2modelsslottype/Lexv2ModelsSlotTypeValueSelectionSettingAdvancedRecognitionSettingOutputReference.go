@@ -13,9 +13,9 @@ import (
 
 type Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference interface {
 	cdktf.ComplexObject
-	AudioRecognitionSetting() *string
-	SetAudioRecognitionSetting(val *string)
-	AudioRecognitionSettingInput() *string
+	AudioRecognitionStrategy() *string
+	SetAudioRecognitionStrategy(val *string)
+	AudioRecognitionStrategyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,7 +67,7 @@ type Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAudioRecognitionSetting()
+	ResetAudioRecognitionStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,21 +83,21 @@ type jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettin
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) AudioRecognitionSetting() *string {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) AudioRecognitionStrategy() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"audioRecognitionSetting",
+		"audioRecognitionStrategy",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) AudioRecognitionSettingInput() *string {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) AudioRecognitionStrategyInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"audioRecognitionSettingInput",
+		"audioRecognitionStrategyInput",
 		&returns,
 	)
 	return returns
@@ -201,13 +201,13 @@ func NewLexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutput
 	)
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference)SetAudioRecognitionSetting(val *string) {
-	if err := j.validateSetAudioRecognitionSettingParameters(val); err != nil {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference)SetAudioRecognitionStrategy(val *string) {
+	if err := j.validateSetAudioRecognitionStrategyParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"audioRecognitionSetting",
+		"audioRecognitionStrategy",
 		val,
 	)
 }
@@ -453,10 +453,10 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSe
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) ResetAudioRecognitionSetting() {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) ResetAudioRecognitionStrategy() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetAudioRecognitionSetting",
+		"resetAudioRecognitionStrategy",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/acm_certificate aws_acm_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/acm_certificate aws_acm_certificate}.
 type DataAwsAcmCertificate interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -103,6 +103,7 @@ type DataAwsAcmCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDomain()
 	ResetId()
 	ResetKeyTypes()
 	ResetMostRecent()
@@ -452,7 +453,7 @@ func (j *jsiiProxy_DataAwsAcmCertificate) TypesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
 func NewDataAwsAcmCertificate(scope constructs.Construct, id *string, config *DataAwsAcmCertificateConfig) DataAwsAcmCertificate {
 	_init_.Initialize()
 
@@ -470,7 +471,7 @@ func NewDataAwsAcmCertificate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
 func NewDataAwsAcmCertificate_Override(d DataAwsAcmCertificate, scope constructs.Construct, id *string, config *DataAwsAcmCertificateConfig) {
 	_init_.Initialize()
 
@@ -886,6 +887,14 @@ func (d *jsiiProxy_DataAwsAcmCertificate) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsAcmCertificate) ResetDomain() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomain",
+		nil, // no parameters
 	)
 }
 

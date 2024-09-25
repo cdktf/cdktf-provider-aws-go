@@ -657,12 +657,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgeSets", GoMethod: "ResetEdgeSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseEdge", GoMethod: "ResetUseEdge"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseEdgeLocation", GoMethod: "ResetUseEdgeLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "useEdge", GoGetter: "UseEdge"},
 			_jsii_.MemberProperty{JsiiProperty: "useEdgeInput", GoGetter: "UseEdgeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "useEdgeLocation", GoGetter: "UseEdgeLocation"},
+			_jsii_.MemberProperty{JsiiProperty: "useEdgeLocationInput", GoGetter: "UseEdgeLocationInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaWithEdgeOverrideOutputReference{}

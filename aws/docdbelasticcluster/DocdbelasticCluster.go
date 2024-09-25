@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
 type DocdbelasticCluster interface {
 	cdktf.TerraformResource
 	AdminUserName() *string
@@ -25,6 +25,9 @@ type DocdbelasticCluster interface {
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
+	BackupRetentionPeriod() *float64
+	SetBackupRetentionPeriod(val *float64)
+	BackupRetentionPeriodInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -63,6 +66,9 @@ type DocdbelasticCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PreferredBackupWindow() *string
+	SetPreferredBackupWindow(val *string)
+	PreferredBackupWindowInput() *string
 	PreferredMaintenanceWindow() *string
 	SetPreferredMaintenanceWindow(val *string)
 	PreferredMaintenanceWindowInput() *string
@@ -144,10 +150,12 @@ type DocdbelasticCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DocdbelasticClusterTimeouts)
+	ResetBackupRetentionPeriod()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
 	ResetSubnetIds()
 	ResetTags()
@@ -236,6 +244,26 @@ func (j *jsiiProxy_DocdbelasticCluster) AuthTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"authTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) BackupRetentionPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backupRetentionPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) BackupRetentionPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"backupRetentionPeriodInput",
 		&returns,
 	)
 	return returns
@@ -396,6 +424,26 @@ func (j *jsiiProxy_DocdbelasticCluster) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) PreferredBackupWindow() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredBackupWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) PreferredBackupWindowInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredBackupWindowInput",
 		&returns,
 	)
 	return returns
@@ -612,7 +660,7 @@ func (j *jsiiProxy_DocdbelasticCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
 func NewDocdbelasticCluster(scope constructs.Construct, id *string, config *DocdbelasticClusterConfig) DocdbelasticCluster {
 	_init_.Initialize()
 
@@ -630,7 +678,7 @@ func NewDocdbelasticCluster(scope constructs.Construct, id *string, config *Docd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
 func NewDocdbelasticCluster_Override(d DocdbelasticCluster, scope constructs.Construct, id *string, config *DocdbelasticClusterConfig) {
 	_init_.Initialize()
 
@@ -670,6 +718,17 @@ func (j *jsiiProxy_DocdbelasticCluster)SetAuthType(val *string) {
 	_jsii_.Set(
 		j,
 		"authType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbelasticCluster)SetBackupRetentionPeriod(val *float64) {
+	if err := j.validateSetBackupRetentionPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupRetentionPeriod",
 		val,
 	)
 }
@@ -741,6 +800,17 @@ func (j *jsiiProxy_DocdbelasticCluster)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbelasticCluster)SetPreferredBackupWindow(val *string) {
+	if err := j.validateSetPreferredBackupWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredBackupWindow",
 		val,
 	)
 }
@@ -1194,6 +1264,14 @@ func (d *jsiiProxy_DocdbelasticCluster) PutTimeouts(value *DocdbelasticClusterTi
 	)
 }
 
+func (d *jsiiProxy_DocdbelasticCluster) ResetBackupRetentionPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBackupRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DocdbelasticCluster) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1206,6 +1284,14 @@ func (d *jsiiProxy_DocdbelasticCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbelasticCluster) ResetPreferredBackupWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreferredBackupWindow",
 		nil, // no parameters
 	)
 }

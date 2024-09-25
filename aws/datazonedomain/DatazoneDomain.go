@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/datazone_domain aws_datazone_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/datazone_domain aws_datazone_domain}.
 type DatazoneDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type DatazoneDomain interface {
 	RawOverrides() interface{}
 	SingleSignOn() DatazoneDomainSingleSignOnList
 	SingleSignOnInput() interface{}
+	SkipDeletionCheck() interface{}
+	SetSkipDeletionCheck(val interface{})
+	SkipDeletionCheckInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -135,6 +138,7 @@ type DatazoneDomain interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSingleSignOn()
+	ResetSkipDeletionCheck()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -415,6 +419,26 @@ func (j *jsiiProxy_DatazoneDomain) SingleSignOnInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneDomain) SkipDeletionCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDeletionCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneDomain) SkipDeletionCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDeletionCheckInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneDomain) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_DatazoneDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneDomainConfig) DatazoneDomain {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain_Override(d DatazoneDomain, scope constructs.Construct, id *string, config *DatazoneDomainConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_DatazoneDomain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneDomain)SetSkipDeletionCheck(val interface{}) {
+	if err := j.validateSetSkipDeletionCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDeletionCheck",
 		val,
 	)
 }
@@ -1051,6 +1086,14 @@ func (d *jsiiProxy_DatazoneDomain) ResetSingleSignOn() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSingleSignOn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneDomain) ResetSkipDeletionCheck() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipDeletionCheck",
 		nil, // no parameters
 	)
 }

@@ -33,6 +33,9 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IamRoleArn() *string
+	SetIamRoleArn(val *string)
+	IamRoleArnInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	KmsKeyArn() *string
@@ -79,6 +82,7 @@ type SesReceiptRuleS3ActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIamRoleArn()
 	ResetKmsKeyArn()
 	ResetObjectKeyPrefix()
 	ResetTopicArn()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) IamRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference) IamRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +348,17 @@ func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetComplexObjectIsFromS
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRuleS3ActionOutputReference)SetIamRoleArn(val *string) {
+	if err := j.validateSetIamRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamRoleArn",
 		val,
 	)
 }
@@ -589,6 +624,14 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ResetIamRoleArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIamRoleArn",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SesReceiptRuleS3ActionOutputReference) ResetKmsKeyArn() {

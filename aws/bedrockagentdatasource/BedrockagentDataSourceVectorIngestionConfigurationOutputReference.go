@@ -34,6 +34,8 @@ type BedrockagentDataSourceVectorIngestionConfigurationOutputReference interface
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ParsingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList
+	ParsingConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type BedrockagentDataSourceVectorIngestionConfigurationOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutChunkingConfiguration(value interface{})
+	PutParsingConfiguration(value interface{})
 	ResetChunkingConfiguration()
+	ResetParsingConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) ParsingConfiguration() BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList {
+	var returns BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList
+	_jsii_.Get(
+		j,
+		"parsingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) ParsingConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parsingConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputRefer
 	)
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) PutParsingConfiguration(value interface{}) {
+	if err := b.validatePutParsingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putParsingConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) ResetChunkingConfiguration() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetChunkingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) ResetParsingConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetParsingConfiguration",
 		nil, // no parameters
 	)
 }

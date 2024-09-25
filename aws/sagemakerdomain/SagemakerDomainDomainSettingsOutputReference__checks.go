@@ -93,6 +93,17 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateInterpo
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutDockerSettingsParameters(value *SagemakerDomainDomainSettingsDockerSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutRStudioServerProDomainSettingsParameters(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

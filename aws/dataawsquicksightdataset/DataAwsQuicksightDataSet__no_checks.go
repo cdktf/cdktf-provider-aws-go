@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsQuicksightDataSet) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSet) validatePutColumnLevelPermissionRulesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsQuicksightDataSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

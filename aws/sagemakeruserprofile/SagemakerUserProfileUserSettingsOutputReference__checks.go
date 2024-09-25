@@ -234,6 +234,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutS
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutStudioWebPortalSettingsParameters(value *SagemakerUserProfileUserSettingsStudioWebPortalSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutTensorBoardAppSettingsParameters(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

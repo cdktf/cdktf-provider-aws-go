@@ -67,6 +67,10 @@ func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutAws
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutDatabricksParameters(value *QuicksightDataSourceParametersDatabricks) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSourceParametersOutputReference) validatePutJiraParameters(value *QuicksightDataSourceParametersJira) error {
 	return nil
 }

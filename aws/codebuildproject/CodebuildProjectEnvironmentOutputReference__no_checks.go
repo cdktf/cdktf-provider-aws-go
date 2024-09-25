@@ -51,6 +51,10 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutEnviro
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutFleetParameters(value *CodebuildProjectEnvironmentFleet) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutRegistryCredentialParameters(value *CodebuildProjectEnvironmentRegistryCredential) error {
 	return nil
 }

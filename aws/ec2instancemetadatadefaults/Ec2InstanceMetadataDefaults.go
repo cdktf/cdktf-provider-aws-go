@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}.
 type Ec2InstanceMetadataDefaults interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_Ec2InstanceMetadataDefaults) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource.
 func NewEc2InstanceMetadataDefaults(scope constructs.Construct, id *string, config *Ec2InstanceMetadataDefaultsConfig) Ec2InstanceMetadataDefaults {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewEc2InstanceMetadataDefaults(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource.
 func NewEc2InstanceMetadataDefaults_Override(e Ec2InstanceMetadataDefaults, scope constructs.Construct, id *string, config *Ec2InstanceMetadataDefaultsConfig) {
 	_init_.Initialize()
 

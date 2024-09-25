@@ -28,6 +28,8 @@ type SagemakerDomainDomainSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DockerSettings() SagemakerDomainDomainSettingsDockerSettingsOutputReference
+	DockerSettingsInput() *SagemakerDomainDomainSettingsDockerSettings
 	ExecutionRoleIdentityConfig() *string
 	SetExecutionRoleIdentityConfig(val *string)
 	ExecutionRoleIdentityConfigInput() *string
@@ -72,7 +74,9 @@ type SagemakerDomainDomainSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDockerSettings(value *SagemakerDomainDomainSettingsDockerSettings)
 	PutRStudioServerProDomainSettings(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings)
+	ResetDockerSettings()
 	ResetExecutionRoleIdentityConfig()
 	ResetRStudioServerProDomainSettings()
 	ResetSecurityGroupIds()
@@ -116,6 +120,26 @@ func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) DockerSettings() SagemakerDomainDomainSettingsDockerSettingsOutputReference {
+	var returns SagemakerDomainDomainSettingsDockerSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"dockerSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) DockerSettingsInput() *SagemakerDomainDomainSettingsDockerSettings {
+	var returns *SagemakerDomainDomainSettingsDockerSettings
+	_jsii_.Get(
+		j,
+		"dockerSettingsInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) InterpolationFo
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) PutDockerSettings(value *SagemakerDomainDomainSettingsDockerSettings) {
+	if err := s.validatePutDockerSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDockerSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) PutRStudioServerProDomainSettings(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings) {
 	if err := s.validatePutRStudioServerProDomainSettingsParameters(value); err != nil {
 		panic(err)
@@ -520,6 +555,14 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) PutRStudioServe
 		s,
 		"putRStudioServerProDomainSettings",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) ResetDockerSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDockerSettings",
+		nil, // no parameters
 	)
 }
 

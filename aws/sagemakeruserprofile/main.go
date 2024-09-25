@@ -1394,6 +1394,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRStudioServerProAppSettings", GoMethod: "PutRStudioServerProAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putSharingSettings", GoMethod: "PutSharingSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putSpaceStorageSettings", GoMethod: "PutSpaceStorageSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putStudioWebPortalSettings", GoMethod: "PutStudioWebPortalSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTensorBoardAppSettings", GoMethod: "PutTensorBoardAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCanvasAppSettings", GoMethod: "ResetCanvasAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeEditorAppSettings", GoMethod: "ResetCodeEditorAppSettings"},
@@ -1409,6 +1410,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSharingSettings", GoMethod: "ResetSharingSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpaceStorageSettings", GoMethod: "ResetSpaceStorageSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStudioWebPortal", GoMethod: "ResetStudioWebPortal"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStudioWebPortalSettings", GoMethod: "ResetStudioWebPortalSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTensorBoardAppSettings", GoMethod: "ResetTensorBoardAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rSessionAppSettings", GoGetter: "RSessionAppSettings"},
@@ -1423,6 +1425,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "spaceStorageSettingsInput", GoGetter: "SpaceStorageSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "studioWebPortal", GoGetter: "StudioWebPortal"},
 			_jsii_.MemberProperty{JsiiProperty: "studioWebPortalInput", GoGetter: "StudioWebPortalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "studioWebPortalSettings", GoGetter: "StudioWebPortalSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "studioWebPortalSettingsInput", GoGetter: "StudioWebPortalSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tensorBoardAppSettings", GoGetter: "TensorBoardAppSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "tensorBoardAppSettingsInput", GoGetter: "TensorBoardAppSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1758,6 +1762,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings",
+		reflect.TypeOf((*SagemakerUserProfileUserSettingsStudioWebPortalSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference",
+		reflect.TypeOf((*SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenAppTypes", GoGetter: "HiddenAppTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenAppTypesInput", GoGetter: "HiddenAppTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenMlTools", GoGetter: "HiddenMlTools"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenMlToolsInput", GoGetter: "HiddenMlToolsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHiddenAppTypes", GoMethod: "ResetHiddenAppTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHiddenMlTools", GoMethod: "ResetHiddenMlTools"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -107,6 +107,10 @@ func (j *jsiiProxy_DocdbelasticCluster) validateSetAuthTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DocdbelasticCluster) validateSetBackupRetentionPeriodParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbelasticCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_DocdbelasticCluster) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_DocdbelasticCluster) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) validateSetPreferredBackupWindowParameters(val *string) error {
 	return nil
 }
 

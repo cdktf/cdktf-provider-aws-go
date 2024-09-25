@@ -55,6 +55,10 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) validatePutModelDataS
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) validatePutMultiModelConfigParameters(value *SagemakerModelContainerMultiModelConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetEnvironmen
 }
 
 func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetImageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetInferenceSpecificationNameParameters(val *string) error {
 	return nil
 }
 

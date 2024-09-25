@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
 type OpensearchVpcEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_OpensearchVpcEndpoint) VpcOptionsInput() *OpensearchVpcEndpoi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
 func NewOpensearchVpcEndpoint(scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) OpensearchVpcEndpoint {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewOpensearchVpcEndpoint(scope constructs.Construct, id *string, config *Op
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
 func NewOpensearchVpcEndpoint_Override(o OpensearchVpcEndpoint, scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) {
 	_init_.Initialize()
 

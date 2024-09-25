@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
 	AdditionalAuthenticationProviderInput() interface{}
+	ApiType() *string
+	SetApiType(val *string)
+	ApiTypeInput() *string
 	Arn() *string
 	AuthenticationType() *string
 	SetAuthenticationType(val *string)
@@ -61,6 +64,9 @@ type AppsyncGraphqlApi interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogConfig() AppsyncGraphqlApiLogConfigOutputReference
 	LogConfigInput() *AppsyncGraphqlApiLogConfig
+	MergedApiExecutionRoleArn() *string
+	SetMergedApiExecutionRoleArn(val *string)
+	MergedApiExecutionRoleArnInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -158,11 +164,13 @@ type AppsyncGraphqlApi interface {
 	PutOpenidConnectConfig(value *AppsyncGraphqlApiOpenidConnectConfig)
 	PutUserPoolConfig(value *AppsyncGraphqlApiUserPoolConfig)
 	ResetAdditionalAuthenticationProvider()
+	ResetApiType()
 	ResetEnhancedMetricsConfig()
 	ResetId()
 	ResetIntrospectionConfig()
 	ResetLambdaAuthorizerConfig()
 	ResetLogConfig()
+	ResetMergedApiExecutionRoleArn()
 	ResetOpenidConnectConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -208,6 +216,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) AdditionalAuthenticationProviderInput() in
 	_jsii_.Get(
 		j,
 		"additionalAuthenticationProviderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) ApiType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) ApiTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiTypeInput",
 		&returns,
 	)
 	return returns
@@ -428,6 +456,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) LogConfigInput() *AppsyncGraphqlApiLogConf
 	_jsii_.Get(
 		j,
 		"logConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) MergedApiExecutionRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergedApiExecutionRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) MergedApiExecutionRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergedApiExecutionRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -714,7 +762,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -732,7 +780,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -740,6 +788,17 @@ func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Constru
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetApiType(val *string) {
+	if err := j.validateSetApiTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiType",
+		val,
 	)
 }
 
@@ -821,6 +880,17 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetMergedApiExecutionRoleArn(val *string) {
+	if err := j.validateSetMergedApiExecutionRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mergedApiExecutionRoleArn",
 		val,
 	)
 }
@@ -1359,6 +1429,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetAdditionalAuthenticationProvider() {
 	)
 }
 
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetApiType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApiType",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppsyncGraphqlApi) ResetEnhancedMetricsConfig() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1395,6 +1473,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetMergedApiExecutionRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMergedApiExecutionRoleArn",
 		nil, // no parameters
 	)
 }

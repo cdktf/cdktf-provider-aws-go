@@ -145,11 +145,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putSubslots", GoMethod: "PutSubslots"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSubslots", GoMethod: "ResetSubslots"},
+			_jsii_.MemberMethod{JsiiMethod: "putSubSlots", GoMethod: "PutSubSlots"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubSlots", GoMethod: "ResetSubSlots"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "subslots", GoGetter: "Subslots"},
-			_jsii_.MemberProperty{JsiiProperty: "subslotsInput", GoGetter: "SubslotsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subSlots", GoGetter: "SubSlots"},
+			_jsii_.MemberProperty{JsiiProperty: "subSlotsInput", GoGetter: "SubSlotsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -161,12 +161,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslots)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlots)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,14 +181,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsList{}
+			j := jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubslotsOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -679,8 +679,8 @@ func init() {
 		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference",
 		reflect.TypeOf((*Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "audioRecognitionSetting", GoGetter: "AudioRecognitionSetting"},
-			_jsii_.MemberProperty{JsiiProperty: "audioRecognitionSettingInput", GoGetter: "AudioRecognitionSettingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "audioRecognitionStrategy", GoGetter: "AudioRecognitionStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "audioRecognitionStrategyInput", GoGetter: "AudioRecognitionStrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -698,7 +698,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAudioRecognitionSetting", GoMethod: "ResetAudioRecognitionSetting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAudioRecognitionStrategy", GoMethod: "ResetAudioRecognitionStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
