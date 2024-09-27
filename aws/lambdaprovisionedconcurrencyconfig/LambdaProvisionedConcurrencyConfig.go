@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
 type LambdaProvisionedConcurrencyConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
 func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) LambdaProvisionedConcurrencyConfig {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
 func NewLambdaProvisionedConcurrencyConfig_Override(l LambdaProvisionedConcurrencyConfig, scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) {
 	_init_.Initialize()
 

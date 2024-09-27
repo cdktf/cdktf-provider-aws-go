@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rbin_rule aws_rbin_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/rbin_rule aws_rbin_rule}.
 type RbinRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -531,7 +531,7 @@ func (j *jsiiProxy_RbinRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rbin_rule aws_rbin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/rbin_rule aws_rbin_rule} Resource.
 func NewRbinRule(scope constructs.Construct, id *string, config *RbinRuleConfig) RbinRule {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewRbinRule(scope constructs.Construct, id *string, config *RbinRuleConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rbin_rule aws_rbin_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/rbin_rule aws_rbin_rule} Resource.
 func NewRbinRule_Override(r RbinRule, scope constructs.Construct, id *string, config *RbinRuleConfig) {
 	_init_.Initialize()
 

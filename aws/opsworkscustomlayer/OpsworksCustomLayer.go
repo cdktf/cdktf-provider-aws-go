@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer}.
 type OpsworksCustomLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -918,7 +918,7 @@ func (j *jsiiProxy_OpsworksCustomLayer) UseEbsOptimizedInstancesInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer} Resource.
 func NewOpsworksCustomLayer(scope constructs.Construct, id *string, config *OpsworksCustomLayerConfig) OpsworksCustomLayer {
 	_init_.Initialize()
 
@@ -936,7 +936,7 @@ func NewOpsworksCustomLayer(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opsworks_custom_layer aws_opsworks_custom_layer} Resource.
 func NewOpsworksCustomLayer_Override(o OpsworksCustomLayer, scope constructs.Construct, id *string, config *OpsworksCustomLayerConfig) {
 	_init_.Initialize()
 

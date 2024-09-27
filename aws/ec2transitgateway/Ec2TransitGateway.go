@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type Ec2TransitGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *float64
@@ -83,6 +83,9 @@ type Ec2TransitGateway interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupReferencingSupport() *string
+	SetSecurityGroupReferencingSupport(val *string)
+	SecurityGroupReferencingSupportInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -158,6 +161,7 @@ type Ec2TransitGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityGroupReferencingSupport()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -511,6 +515,26 @@ func (j *jsiiProxy_Ec2TransitGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGateway) SecurityGroupReferencingSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGateway) SecurityGroupReferencingSupportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGateway) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -642,7 +666,7 @@ func (j *jsiiProxy_Ec2TransitGateway) VpnEcmpSupportInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) Ec2TransitGateway {
 	_init_.Initialize()
 
@@ -660,7 +684,7 @@ func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2Tra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway_Override(e Ec2TransitGateway, scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) {
 	_init_.Initialize()
 
@@ -823,6 +847,17 @@ func (j *jsiiProxy_Ec2TransitGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGateway)SetSecurityGroupReferencingSupport(val *string) {
+	if err := j.validateSetSecurityGroupReferencingSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupReferencingSupport",
 		val,
 	)
 }
@@ -1303,6 +1338,14 @@ func (e *jsiiProxy_Ec2TransitGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGateway) ResetSecurityGroupReferencingSupport() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSecurityGroupReferencingSupport",
 		nil, // no parameters
 	)
 }

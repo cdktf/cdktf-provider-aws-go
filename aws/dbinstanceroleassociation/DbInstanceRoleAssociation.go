@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/db_instance_role_association aws_db_instance_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/db_instance_role_association aws_db_instance_role_association}.
 type DbInstanceRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,8 @@ type DbInstanceRoleAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DbInstanceRoleAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -116,10 +118,12 @@ type DbInstanceRoleAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DbInstanceRoleAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -378,8 +382,28 @@ func (j *jsiiProxy_DbInstanceRoleAssociation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstanceRoleAssociation) Timeouts() DbInstanceRoleAssociationTimeoutsOutputReference {
+	var returns DbInstanceRoleAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
+func (j *jsiiProxy_DbInstanceRoleAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
 func NewDbInstanceRoleAssociation(scope constructs.Construct, id *string, config *DbInstanceRoleAssociationConfig) DbInstanceRoleAssociation {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewDbInstanceRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
 func NewDbInstanceRoleAssociation_Override(d DbInstanceRoleAssociation, scope constructs.Construct, id *string, config *DbInstanceRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (d *jsiiProxy_DbInstanceRoleAssociation) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (d *jsiiProxy_DbInstanceRoleAssociation) PutTimeouts(value *DbInstanceRoleAssociationTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DbInstanceRoleAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -885,6 +920,14 @@ func (d *jsiiProxy_DbInstanceRoleAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstanceRoleAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

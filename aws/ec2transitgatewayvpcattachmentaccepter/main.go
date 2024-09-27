@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransitGatewayDefaultRouteTableAssociation", GoMethod: "ResetTransitGatewayDefaultRouteTableAssociation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransitGatewayDefaultRouteTablePropagation", GoMethod: "ResetTransitGatewayDefaultRouteTablePropagation"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupReferencingSupport", GoGetter: "SecurityGroupReferencingSupport"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},

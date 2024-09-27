@@ -5,9 +5,9 @@ package quicksightdatasource
 
 
 type QuicksightDataSourcePermission struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}.
 	Actions *[]*string `field:"required" json:"actions" yaml:"actions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}.
 	Principal *string `field:"required" json:"principal" yaml:"principal"`
 }
 

@@ -53,6 +53,8 @@ type EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference interface {
 	SnapshotId() *string
 	SetSnapshotId(val *string)
 	SnapshotIdInput() *string
+	TagSpecifications() EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList
+	TagSpecificationsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -91,12 +93,14 @@ type EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTagSpecifications(value interface{})
 	ResetEncrypted()
 	ResetFileSystemType()
 	ResetIops()
 	ResetKmsKeyId()
 	ResetSizeInGb()
 	ResetSnapshotId()
+	ResetTagSpecifications()
 	ResetThroughput()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
@@ -299,6 +303,26 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	_jsii_.Get(
 		j,
 		"snapshotIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) TagSpecifications() EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList {
+	var returns EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList
+	_jsii_.Get(
+		j,
+		"tagSpecifications",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) TagSpecificationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagSpecificationsInput",
 		&returns,
 	)
 	return returns
@@ -732,6 +756,17 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return returns
 }
 
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) PutTagSpecifications(value interface{}) {
+	if err := e.validatePutTagSpecificationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTagSpecifications",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) ResetEncrypted() {
 	_jsii_.InvokeVoid(
 		e,
@@ -776,6 +811,14 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	_jsii_.InvokeVoid(
 		e,
 		"resetSnapshotId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) ResetTagSpecifications() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTagSpecifications",
 		nil, // no parameters
 	)
 }

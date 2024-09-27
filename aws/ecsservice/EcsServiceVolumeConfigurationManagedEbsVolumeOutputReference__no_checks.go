@@ -47,6 +47,10 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validatePutTagSpecificationsParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

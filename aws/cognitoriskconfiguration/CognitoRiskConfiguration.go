@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
 type CognitoRiskConfiguration interface {
 	cdktf.TerraformResource
 	AccountTakeoverRiskConfiguration() CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference
@@ -429,7 +429,7 @@ func (j *jsiiProxy_CognitoRiskConfiguration) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
 func NewCognitoRiskConfiguration(scope constructs.Construct, id *string, config *CognitoRiskConfigurationConfig) CognitoRiskConfiguration {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewCognitoRiskConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
 func NewCognitoRiskConfiguration_Override(c CognitoRiskConfiguration, scope constructs.Construct, id *string, config *CognitoRiskConfigurationConfig) {
 	_init_.Initialize()
 

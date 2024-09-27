@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ebs_volume aws_ebs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ebs_volume aws_ebs_volume}.
 type EbsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -656,7 +656,7 @@ func (j *jsiiProxy_EbsVolume) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfig) EbsVolume {
 	_init_.Initialize()
 
@@ -674,7 +674,7 @@ func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume_Override(e EbsVolume, scope constructs.Construct, id *string, config *EbsVolumeConfig) {
 	_init_.Initialize()
 

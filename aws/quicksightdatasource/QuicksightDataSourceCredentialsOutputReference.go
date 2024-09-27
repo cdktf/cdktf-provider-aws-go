@@ -37,6 +37,9 @@ type QuicksightDataSourceCredentialsOutputReference interface {
 	Fqn() *string
 	InternalValue() *QuicksightDataSourceCredentials
 	SetInternalValue(val *QuicksightDataSourceCredentials)
+	SecretArn() *string
+	SetSecretArn(val *string)
+	SecretArnInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type QuicksightDataSourceCredentialsOutputReference interface {
 	PutCredentialPair(value *QuicksightDataSourceCredentialsCredentialPair)
 	ResetCopySourceArn()
 	ResetCredentialPair()
+	ResetSecretArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) InternalValue
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) SecretArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) SecretArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -265,6 +289,17 @@ func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference)SetSecretArn(val *string) {
+	if err := j.validateSetSecretArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretArn",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (q *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) ResetCredenti
 	_jsii_.InvokeVoid(
 		q,
 		"resetCredentialPair",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) ResetSecretArn() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetSecretArn",
 		nil, // no parameters
 	)
 }

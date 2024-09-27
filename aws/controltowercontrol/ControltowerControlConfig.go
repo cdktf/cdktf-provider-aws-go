@@ -22,22 +22,22 @@ type ControltowerControlConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/controltower_control#control_identifier ControltowerControl#control_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/controltower_control#control_identifier ControltowerControl#control_identifier}.
 	ControlIdentifier *string `field:"required" json:"controlIdentifier" yaml:"controlIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/controltower_control#target_identifier ControltowerControl#target_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/controltower_control#target_identifier ControltowerControl#target_identifier}.
 	TargetIdentifier *string `field:"required" json:"targetIdentifier" yaml:"targetIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/controltower_control#id ControltowerControl#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/controltower_control#id ControltowerControl#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// parameters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/controltower_control#parameters ControltowerControl#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/controltower_control#parameters ControltowerControl#parameters}
 	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/controltower_control#timeouts ControltowerControl#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/controltower_control#timeouts ControltowerControl#timeouts}
 	Timeouts *ControltowerControlTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

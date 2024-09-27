@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
 type BedrockagentAgent interface {
 	cdktf.TerraformResource
 	AgentArn() *string
@@ -57,6 +57,8 @@ type BedrockagentAgent interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GuardrailConfiguration() BedrockagentAgentGuardrailConfigurationList
+	GuardrailConfigurationInput() interface{}
 	Id() *string
 	IdleSessionTtlInSeconds() *float64
 	SetIdleSessionTtlInSeconds(val *float64)
@@ -143,10 +145,12 @@ type BedrockagentAgent interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutGuardrailConfiguration(value interface{})
 	PutPromptOverrideConfiguration(value interface{})
 	PutTimeouts(value *BedrockagentAgentTimeouts)
 	ResetCustomerEncryptionKeyArn()
 	ResetDescription()
+	ResetGuardrailConfiguration()
 	ResetIdleSessionTtlInSeconds()
 	ResetInstruction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -380,6 +384,26 @@ func (j *jsiiProxy_BedrockagentAgent) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) GuardrailConfiguration() BedrockagentAgentGuardrailConfigurationList {
+	var returns BedrockagentAgentGuardrailConfigurationList
+	_jsii_.Get(
+		j,
+		"guardrailConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) GuardrailConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guardrailConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -626,7 +650,7 @@ func (j *jsiiProxy_BedrockagentAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent(scope constructs.Construct, id *string, config *BedrockagentAgentConfig) BedrockagentAgent {
 	_init_.Initialize()
 
@@ -644,7 +668,7 @@ func NewBedrockagentAgent(scope constructs.Construct, id *string, config *Bedroc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Construct, id *string, config *BedrockagentAgentConfig) {
 	_init_.Initialize()
 
@@ -1186,6 +1210,17 @@ func (b *jsiiProxy_BedrockagentAgent) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgent) PutGuardrailConfiguration(value interface{}) {
+	if err := b.validatePutGuardrailConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putGuardrailConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgent) PutPromptOverrideConfiguration(value interface{}) {
 	if err := b.validatePutPromptOverrideConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1220,6 +1255,14 @@ func (b *jsiiProxy_BedrockagentAgent) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgent) ResetGuardrailConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetGuardrailConfiguration",
 		nil, // no parameters
 	)
 }

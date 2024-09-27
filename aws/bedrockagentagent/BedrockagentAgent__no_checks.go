@@ -75,6 +75,10 @@ func (b *jsiiProxy_BedrockagentAgent) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentAgent) validatePutGuardrailConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentAgent) validatePutPromptOverrideConfigurationParameters(value interface{}) error {
 	return nil
 }

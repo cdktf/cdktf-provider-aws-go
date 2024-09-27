@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type DataAwsEc2TransitGateway interface {
 	cdktf.TerraformDataSource
 	AmazonSideAsn() *float64
@@ -63,6 +63,7 @@ type DataAwsEc2TransitGateway interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupReferencingSupport() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -389,6 +390,16 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGateway) SecurityGroupReferencingSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupport",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGateway) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -480,7 +491,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) VpnEcmpSupport() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
 func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConfig) DataAwsEc2TransitGateway {
 	_init_.Initialize()
 
@@ -498,7 +509,7 @@ func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
 func NewDataAwsEc2TransitGateway_Override(d DataAwsEc2TransitGateway, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConfig) {
 	_init_.Initialize()
 

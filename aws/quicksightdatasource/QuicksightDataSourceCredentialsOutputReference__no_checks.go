@@ -71,6 +71,10 @@ func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) validateSetIn
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) validateSetSecretArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDataSourceCredentialsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (d *jsiiProxy_DbInstanceRoleAssociation) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (d *jsiiProxy_DbInstanceRoleAssociation) validatePutTimeoutsParameters(value *DbInstanceRoleAssociationTimeouts) error {
+	return nil
+}
+
 func validateDbInstanceRoleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

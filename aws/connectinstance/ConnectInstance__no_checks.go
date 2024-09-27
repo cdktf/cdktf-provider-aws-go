@@ -155,6 +155,14 @@ func (j *jsiiProxy_ConnectInstance) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstance) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConnectInstance) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewConnectInstanceParameters(scope constructs.Construct, id *string, config *ConnectInstanceConfig) error {
 	return nil
 }
