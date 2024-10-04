@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}.
 type LambdaCodeSigningConfig interface {
 	cdktf.TerraformResource
 	AllowedPublishers() LambdaCodeSigningConfigAllowedPublishersOutputReference
@@ -68,6 +68,12 @@ type LambdaCodeSigningConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +131,8 @@ type LambdaCodeSigningConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicies()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -383,6 +391,46 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaCodeSigningConfig) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaCodeSigningConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -414,7 +462,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
 func NewLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *LambdaCodeSigningConfigConfig) LambdaCodeSigningConfig {
 	_init_.Initialize()
 
@@ -432,7 +480,7 @@ func NewLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
 func NewLambdaCodeSigningConfig_Override(l LambdaCodeSigningConfig, scope constructs.Construct, id *string, config *LambdaCodeSigningConfigConfig) {
 	_init_.Initialize()
 
@@ -529,6 +577,28 @@ func (j *jsiiProxy_LambdaCodeSigningConfig)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -936,6 +1006,22 @@ func (l *jsiiProxy_LambdaCodeSigningConfig) ResetPolicies() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaCodeSigningConfig) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

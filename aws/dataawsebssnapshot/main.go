@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "snapshotId", GoGetter: "SnapshotId"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotIds", GoGetter: "SnapshotIds"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotIdsInput", GoGetter: "SnapshotIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
 			_jsii_.MemberProperty{JsiiProperty: "storageTier", GoGetter: "StorageTier"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

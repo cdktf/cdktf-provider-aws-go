@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
 type DataAwsSecurityhubStandardsControlAssociations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,7 +52,6 @@ type DataAwsSecurityhubStandardsControlAssociations interface {
 	SetSecurityControlId(val *string)
 	SecurityControlIdInput() *string
 	StandardsControlAssociations() DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList
-	StandardsControlAssociationsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,11 +83,9 @@ type DataAwsSecurityhubStandardsControlAssociations interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutStandardsControlAssociations(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStandardsControlAssociations()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -258,16 +255,6 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) StandardsCont
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) StandardsControlAssociationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"standardsControlAssociationsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
 func NewDataAwsSecurityhubStandardsControlAssociations(scope constructs.Construct, id *string, config *DataAwsSecurityhubStandardsControlAssociationsConfig) DataAwsSecurityhubStandardsControlAssociations {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataAwsSecurityhubStandardsControlAssociations(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
 func NewDataAwsSecurityhubStandardsControlAssociations_Override(d DataAwsSecurityhubStandardsControlAssociations, scope constructs.Construct, id *string, config *DataAwsSecurityhubStandardsControlAssociationsConfig) {
 	_init_.Initialize()
 
@@ -670,29 +657,10 @@ func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) OverrideLogic
 	)
 }
 
-func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) PutStandardsControlAssociations(value interface{}) {
-	if err := d.validatePutStandardsControlAssociationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putStandardsControlAssociations",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) ResetStandardsControlAssociations() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStandardsControlAssociations",
 		nil, // no parameters
 	)
 }

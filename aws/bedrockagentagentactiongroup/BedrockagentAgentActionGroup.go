@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}.
 type BedrockagentAgentActionGroup interface {
 	cdktf.TerraformResource
 	ActionGroupExecutor() BedrockagentAgentActionGroupActionGroupExecutorList
@@ -71,6 +71,9 @@ type BedrockagentAgentActionGroup interface {
 	ParentActionGroupSignature() *string
 	SetParentActionGroupSignature(val *string)
 	ParentActionGroupSignatureInput() *string
+	PrepareAgent() interface{}
+	SetPrepareAgent(val interface{})
+	PrepareAgentInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -90,6 +93,8 @@ type BedrockagentAgentActionGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BedrockagentAgentActionGroupTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -136,6 +141,7 @@ type BedrockagentAgentActionGroup interface {
 	PutActionGroupExecutor(value interface{})
 	PutApiSchema(value interface{})
 	PutFunctionSchema(value interface{})
+	PutTimeouts(value *BedrockagentAgentActionGroupTimeouts)
 	ResetActionGroupExecutor()
 	ResetActionGroupState()
 	ResetApiSchema()
@@ -145,7 +151,9 @@ type BedrockagentAgentActionGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentActionGroupSignature()
+	ResetPrepareAgent()
 	ResetSkipResourceInUseCheck()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -464,6 +472,26 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup) ParentActionGroupSignatureInput
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgentActionGroup) PrepareAgent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"prepareAgent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroup) PrepareAgentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"prepareAgentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgentActionGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -544,8 +572,28 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgentActionGroup) Timeouts() BedrockagentAgentActionGroupTimeoutsOutputReference {
+	var returns BedrockagentAgentActionGroupTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
+func (j *jsiiProxy_BedrockagentAgentActionGroup) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
 func NewBedrockagentAgentActionGroup(scope constructs.Construct, id *string, config *BedrockagentAgentActionGroupConfig) BedrockagentAgentActionGroup {
 	_init_.Initialize()
 
@@ -563,7 +611,7 @@ func NewBedrockagentAgentActionGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
 func NewBedrockagentAgentActionGroup_Override(b BedrockagentAgentActionGroup, scope constructs.Construct, id *string, config *BedrockagentAgentActionGroupConfig) {
 	_init_.Initialize()
 
@@ -685,6 +733,17 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup)SetParentActionGroupSignature(va
 	_jsii_.Set(
 		j,
 		"parentActionGroupSignature",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroup)SetPrepareAgent(val interface{}) {
+	if err := j.validateSetPrepareAgentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prepareAgent",
 		val,
 	)
 }
@@ -1105,6 +1164,17 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) PutFunctionSchema(value interfa
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgentActionGroup) PutTimeouts(value *BedrockagentAgentActionGroupTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetActionGroupExecutor() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1161,10 +1231,26 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetParentActionGroupSignature
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetPrepareAgent() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPrepareAgent",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetSkipResourceInUseCheck() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSkipResourceInUseCheck",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

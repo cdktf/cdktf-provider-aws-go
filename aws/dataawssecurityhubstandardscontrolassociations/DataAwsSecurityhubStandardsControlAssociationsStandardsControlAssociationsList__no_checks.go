@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -199,6 +199,14 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetStartingPositionTimestam
 	return nil
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) validateSetTopicsParameters(val *[]*string) error {
 	return nil
 }

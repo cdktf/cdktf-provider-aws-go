@@ -13,6 +13,9 @@ import (
 
 type GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AttachmentArn() *string
+	SetAttachmentArn(val *string)
+	AttachmentArnInput() *string
 	ClientIpPreservationEnabled() interface{}
 	SetClientIpPreservationEnabled(val interface{})
 	ClientIpPreservationEnabledInput() interface{}
@@ -73,6 +76,7 @@ type GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAttachmentArn()
 	ResetClientIpPreservationEnabled()
 	ResetEndpointId()
 	ResetWeight()
@@ -89,6 +93,26 @@ type GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference interfac
 // The jsii proxy struct for GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference
 type jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) AttachmentArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) AttachmentArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentArnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) ClientIpPreservationEnabled() interface{} {
@@ -246,6 +270,17 @@ func NewGlobalacceleratorEndpointGroupEndpointConfigurationOutputReference_Overr
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference)SetAttachmentArn(val *string) {
+	if err := j.validateSetAttachmentArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"attachmentArn",
+		val,
 	)
 }
 
@@ -521,6 +556,14 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) ResetAttachmentArn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAttachmentArn",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) ResetClientIpPreservationEnabled() {

@@ -20,8 +20,6 @@ type DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsL
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -69,16 +67,6 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
 		&returns,
 	)
 	return returns
@@ -139,17 +127,6 @@ func NewDataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociatio
 		"@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
 	)
 }
 

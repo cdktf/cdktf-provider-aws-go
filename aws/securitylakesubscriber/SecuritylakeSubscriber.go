@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
 type SecuritylakeSubscriber interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -553,7 +553,7 @@ func (j *jsiiProxy_SecuritylakeSubscriber) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
 func NewSecuritylakeSubscriber(scope constructs.Construct, id *string, config *SecuritylakeSubscriberConfig) SecuritylakeSubscriber {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewSecuritylakeSubscriber(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
 func NewSecuritylakeSubscriber_Override(s SecuritylakeSubscriber, scope constructs.Construct, id *string, config *SecuritylakeSubscriberConfig) {
 	_init_.Initialize()
 

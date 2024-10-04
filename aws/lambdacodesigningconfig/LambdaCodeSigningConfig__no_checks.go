@@ -123,6 +123,14 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewLambdaCodeSigningConfigParameters(scope constructs.Construct, id *string, config *LambdaCodeSigningConfigConfig) error {
 	return nil
 }

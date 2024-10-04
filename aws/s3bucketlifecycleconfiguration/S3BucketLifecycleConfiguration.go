@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
 type S3BucketLifecycleConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -74,6 +74,9 @@ type S3BucketLifecycleConfiguration interface {
 	TerraformResourceType() *string
 	Timeouts() S3BucketLifecycleConfigurationTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransitionDefaultMinimumObjectSize() *string
+	SetTransitionDefaultMinimumObjectSize(val *string)
+	TransitionDefaultMinimumObjectSizeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,6 +128,7 @@ type S3BucketLifecycleConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetTransitionDefaultMinimumObjectSize()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -403,8 +407,28 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) TransitionDefaultMinimumObjectSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitionDefaultMinimumObjectSize",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) TransitionDefaultMinimumObjectSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitionDefaultMinimumObjectSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) S3BucketLifecycleConfiguration {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration_Override(s S3BucketLifecycleConfiguration, scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) {
 	_init_.Initialize()
 
@@ -530,6 +554,17 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetTransitionDefaultMinimumObjectSize(val *string) {
+	if err := j.validateSetTransitionDefaultMinimumObjectSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitionDefaultMinimumObjectSize",
 		val,
 	)
 }
@@ -937,6 +972,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetTransitionDefaultMinimumObjectSize() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTransitionDefaultMinimumObjectSize",
 		nil, // no parameters
 	)
 }

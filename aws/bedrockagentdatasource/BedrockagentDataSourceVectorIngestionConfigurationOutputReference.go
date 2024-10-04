@@ -30,6 +30,8 @@ type BedrockagentDataSourceVectorIngestionConfigurationOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomTransformationConfiguration() BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList
+	CustomTransformationConfigurationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -69,8 +71,10 @@ type BedrockagentDataSourceVectorIngestionConfigurationOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutChunkingConfiguration(value interface{})
+	PutCustomTransformationConfiguration(value interface{})
 	PutParsingConfiguration(value interface{})
 	ResetChunkingConfiguration()
+	ResetCustomTransformationConfiguration()
 	ResetParsingConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) CustomTransformationConfiguration() BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList {
+	var returns BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationList
+	_jsii_.Get(
+		j,
+		"customTransformationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) CustomTransformationConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customTransformationConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputRefer
 	)
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) PutCustomTransformationConfiguration(value interface{}) {
+	if err := b.validatePutCustomTransformationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCustomTransformationConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) PutParsingConfiguration(value interface{}) {
 	if err := b.validatePutParsingConfigurationParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputRefer
 	_jsii_.InvokeVoid(
 		b,
 		"resetChunkingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationOutputReference) ResetCustomTransformationConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCustomTransformationConfiguration",
 		nil, // no parameters
 	)
 }

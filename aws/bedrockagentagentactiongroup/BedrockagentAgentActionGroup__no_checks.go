@@ -87,6 +87,10 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) validatePutFunctionSchemaParame
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentAgentActionGroup) validatePutTimeoutsParameters(value *BedrockagentAgentActionGroupTimeouts) error {
+	return nil
+}
+
 func validateBedrockagentAgentActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup) validateSetLifecycleParameters(
 }
 
 func (j *jsiiProxy_BedrockagentAgentActionGroup) validateSetParentActionGroupSignatureParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroup) validateSetPrepareAgentParameters(val interface{}) error {
 	return nil
 }
 

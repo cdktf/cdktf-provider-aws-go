@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateSetInternalValueParameters(val *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations) error {
 	return nil
 }
 

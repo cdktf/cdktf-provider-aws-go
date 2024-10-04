@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
 	AmazonManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
+	Arn() *string
 	BatchSize() *float64
 	SetBatchSize(val *float64)
 	BatchSizeInput() *float64
@@ -121,6 +122,12 @@ type LambdaEventSourceMapping interface {
 	StartingPositionTimestampInput() *string
 	State() *string
 	StateTransitionReason() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -210,6 +217,8 @@ type LambdaEventSourceMapping interface {
 	ResetSourceAccessConfiguration()
 	ResetStartingPosition()
 	ResetStartingPositionTimestamp()
+	ResetTags()
+	ResetTagsAll()
 	ResetTopics()
 	ResetTumblingWindowInSeconds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -245,6 +254,16 @@ func (j *jsiiProxy_LambdaEventSourceMapping) AmazonManagedKafkaEventSourceConfig
 	_jsii_.Get(
 		j,
 		"amazonManagedKafkaEventSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
 		&returns,
 	)
 	return returns
@@ -870,6 +889,46 @@ func (j *jsiiProxy_LambdaEventSourceMapping) StateTransitionReason() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -951,7 +1010,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -969,7 +1028,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 
@@ -1209,6 +1268,28 @@ func (j *jsiiProxy_LambdaEventSourceMapping)SetStartingPositionTimestamp(val *st
 	_jsii_.Set(
 		j,
 		"startingPositionTimestamp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1856,6 +1937,22 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetStartingPositionTimestamp() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetStartingPositionTimestamp",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

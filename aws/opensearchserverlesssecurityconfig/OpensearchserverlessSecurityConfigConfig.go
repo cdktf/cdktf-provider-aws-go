@@ -22,15 +22,15 @@ type OpensearchserverlessSecurityConfigConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// saml_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
 	SamlOptions *OpensearchserverlessSecurityConfigSamlOptions `field:"optional" json:"samlOptions" yaml:"samlOptions"`
 }
 

@@ -51,6 +51,10 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) validateSetAttachmentArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference) validateSetClientIpPreservationEnabledParameters(val interface{}) error {
 	return nil
 }

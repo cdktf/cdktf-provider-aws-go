@@ -135,6 +135,8 @@ func init() {
 		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "attachmentArn", GoGetter: "AttachmentArn"},
+			_jsii_.MemberProperty{JsiiProperty: "attachmentArnInput", GoGetter: "AttachmentArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIpPreservationEnabled", GoGetter: "ClientIpPreservationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIpPreservationEnabledInput", GoGetter: "ClientIpPreservationEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,6 +158,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttachmentArn", GoMethod: "ResetAttachmentArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientIpPreservationEnabled", GoMethod: "ResetClientIpPreservationEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndpointId", GoMethod: "ResetEndpointId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWeight", GoMethod: "ResetWeight"},

@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetTransitionDefaultMinimumObjectSizeParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketLifecycleConfigurationParameters(scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}.
 type CodecommitApprovalRuleTemplateAssociation interface {
 	cdktf.TerraformResource
 	ApprovalRuleTemplateName() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
 func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateAssociationConfig) CodecommitApprovalRuleTemplateAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
 func NewCodecommitApprovalRuleTemplateAssociation_Override(c CodecommitApprovalRuleTemplateAssociation, scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateAssociationConfig) {
 	_init_.Initialize()
 

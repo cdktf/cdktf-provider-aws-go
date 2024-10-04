@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation}.
 type DataAwsConnectHoursOfOperation interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataAwsConnectHoursOfOperation) TimeZone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation} Data Source.
 func NewDataAwsConnectHoursOfOperation(scope constructs.Construct, id *string, config *DataAwsConnectHoursOfOperationConfig) DataAwsConnectHoursOfOperation {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataAwsConnectHoursOfOperation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation} Data Source.
 func NewDataAwsConnectHoursOfOperation_Override(d DataAwsConnectHoursOfOperation, scope constructs.Construct, id *string, config *DataAwsConnectHoursOfOperationConfig) {
 	_init_.Initialize()
 

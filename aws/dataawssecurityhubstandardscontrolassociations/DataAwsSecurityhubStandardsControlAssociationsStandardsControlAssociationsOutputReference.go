@@ -31,8 +31,8 @@ type DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsO
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations
+	SetInternalValue(val *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations)
 	RelatedRequirements() *[]*string
 	SecurityControlArn() *string
 	SecurityControlId() *string
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) InternalValue() *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations {
+	var returns *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference)SetInternalValue(val *DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
