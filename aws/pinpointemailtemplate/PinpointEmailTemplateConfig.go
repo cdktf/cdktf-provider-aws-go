@@ -22,13 +22,13 @@ type PinpointEmailTemplateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}.
 	TemplateName *string `field:"required" json:"templateName" yaml:"templateName"`
 	// email_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
 	EmailTemplate interface{} `field:"optional" json:"emailTemplate" yaml:"emailTemplate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

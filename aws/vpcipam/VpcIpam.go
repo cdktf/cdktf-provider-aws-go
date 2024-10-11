@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipam aws_vpc_ipam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipam aws_vpc_ipam}.
 type VpcIpam interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -40,6 +40,9 @@ type VpcIpam interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnablePrivateGua() interface{}
+	SetEnablePrivateGua(val interface{})
+	EnablePrivateGuaInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -136,6 +139,7 @@ type VpcIpam interface {
 	PutTimeouts(value *VpcIpamTimeouts)
 	ResetCascade()
 	ResetDescription()
+	ResetEnablePrivateGua()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -277,6 +281,26 @@ func (j *jsiiProxy_VpcIpam) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpam) EnablePrivateGua() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateGua",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpam) EnablePrivateGuaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateGuaInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +567,7 @@ func (j *jsiiProxy_VpcIpam) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) VpcIpam {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam_Override(v VpcIpam, scope constructs.Construct, id *string, config *VpcIpamConfig) {
 	_init_.Initialize()
 
@@ -620,6 +644,17 @@ func (j *jsiiProxy_VpcIpam)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpam)SetEnablePrivateGua(val interface{}) {
+	if err := j.validateSetEnablePrivateGuaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateGua",
 		val,
 	)
 }
@@ -1093,6 +1128,14 @@ func (v *jsiiProxy_VpcIpam) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpam) ResetEnablePrivateGua() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEnablePrivateGua",
 		nil, // no parameters
 	)
 }

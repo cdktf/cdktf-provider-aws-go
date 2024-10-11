@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel}.
 type PinpointApnsVoipChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -525,7 +525,7 @@ func (j *jsiiProxy_PinpointApnsVoipChannel) TokenKeyInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource.
 func NewPinpointApnsVoipChannel(scope constructs.Construct, id *string, config *PinpointApnsVoipChannelConfig) PinpointApnsVoipChannel {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewPinpointApnsVoipChannel(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_apns_voip_channel aws_pinpoint_apns_voip_channel} Resource.
 func NewPinpointApnsVoipChannel_Override(p PinpointApnsVoipChannel, scope constructs.Construct, id *string, config *PinpointApnsVoipChannelConfig) {
 	_init_.Initialize()
 

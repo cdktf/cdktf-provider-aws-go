@@ -50,6 +50,9 @@ type BackupPlanRuleOutputReference interface {
 	RuleNameInput() *string
 	Schedule() *string
 	SetSchedule(val *string)
+	ScheduleExpressionTimezone() *string
+	SetScheduleExpressionTimezone(val *string)
+	ScheduleExpressionTimezoneInput() *string
 	ScheduleInput() *string
 	StartWindow() *float64
 	SetStartWindow(val *float64)
@@ -97,6 +100,7 @@ type BackupPlanRuleOutputReference interface {
 	ResetLifecycle()
 	ResetRecoveryPointTags()
 	ResetSchedule()
+	ResetScheduleExpressionTimezone()
 	ResetStartWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -293,6 +297,26 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) Schedule() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BackupPlanRuleOutputReference) ScheduleExpressionTimezone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpressionTimezone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference) ScheduleExpressionTimezoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpressionTimezoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPlanRuleOutputReference) ScheduleInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +499,17 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference)SetSchedule(val *string) {
 	_jsii_.Set(
 		j,
 		"schedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference)SetScheduleExpressionTimezone(val *string) {
+	if err := j.validateSetScheduleExpressionTimezoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scheduleExpressionTimezone",
 		val,
 	)
 }
@@ -775,6 +810,14 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetSchedule() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSchedule",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetScheduleExpressionTimezone() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetScheduleExpressionTimezone",
 		nil, // no parameters
 	)
 }

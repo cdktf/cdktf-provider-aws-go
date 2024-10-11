@@ -36,6 +36,9 @@ type Route53ResolverEndpointIpAddressOutputReference interface {
 	SetIp(val *string)
 	IpId() *string
 	IpInput() *string
+	Ipv6() *string
+	SetIpv6(val *string)
+	Ipv6Input() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -72,6 +75,7 @@ type Route53ResolverEndpointIpAddressOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIp()
+	ResetIpv6()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -162,6 +166,26 @@ func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) IpInput() *s
 	_jsii_.Get(
 		j,
 		"ipInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) Ipv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) Ipv6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Input",
 		&returns,
 	)
 	return returns
@@ -275,6 +299,17 @@ func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference)SetIp(val *st
 	_jsii_.Set(
 		j,
 		"ip",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference)SetIpv6(val *string) {
+	if err := j.validateSetIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6",
 		val,
 	)
 }
@@ -502,6 +537,14 @@ func (r *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) ResetIp() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetIp",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) ResetIpv6() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetIpv6",
 		nil, // no parameters
 	)
 }

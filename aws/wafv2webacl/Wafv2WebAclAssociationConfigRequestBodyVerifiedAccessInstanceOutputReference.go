@@ -33,8 +33,8 @@ type Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReferenc
 	DefaultSizeInspectionLimitInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
+	SetInternalValue(val *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference) InternalValue() *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -173,29 +173,29 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 }
 
 
-func NewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference {
+func NewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference_Override(w Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference_Override(w Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
 }
@@ -233,7 +233,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference)SetInternalValue(val *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

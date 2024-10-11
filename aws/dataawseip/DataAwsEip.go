@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/eip aws_eip}.
 type DataAwsEip interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -47,6 +47,7 @@ type DataAwsEip interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
+	IpamPoolId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -314,6 +315,16 @@ func (j *jsiiProxy_DataAwsEip) InstanceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEip) IpamPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipamPoolId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEip) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -515,7 +526,7 @@ func (j *jsiiProxy_DataAwsEip) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/eip aws_eip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/eip aws_eip} Data Source.
 func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipConfig) DataAwsEip {
 	_init_.Initialize()
 
@@ -533,7 +544,7 @@ func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/eip aws_eip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/eip aws_eip} Data Source.
 func NewDataAwsEip_Override(d DataAwsEip, scope constructs.Construct, id *string, config *DataAwsEipConfig) {
 	_init_.Initialize()
 

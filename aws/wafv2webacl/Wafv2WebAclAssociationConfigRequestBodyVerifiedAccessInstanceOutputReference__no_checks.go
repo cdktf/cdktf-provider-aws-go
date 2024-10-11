@@ -63,7 +63,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

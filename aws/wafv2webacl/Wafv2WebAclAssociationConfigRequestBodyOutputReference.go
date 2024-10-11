@@ -13,14 +13,14 @@ import (
 
 type Wafv2WebAclAssociationConfigRequestBodyOutputReference interface {
 	cdktf.ComplexObject
-	ApiGateway() Wafv2WebAclAssociationConfigRequestBodyApiGatewayList
-	ApiGatewayInput() interface{}
-	AppRunnerService() Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList
-	AppRunnerServiceInput() interface{}
-	Cloudfront() Wafv2WebAclAssociationConfigRequestBodyCloudfrontList
-	CloudfrontInput() interface{}
-	CognitoUserPool() Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList
-	CognitoUserPoolInput() interface{}
+	ApiGateway() Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference
+	ApiGatewayInput() *Wafv2WebAclAssociationConfigRequestBodyApiGateway
+	AppRunnerService() Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference
+	AppRunnerServiceInput() *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService
+	Cloudfront() Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference
+	CloudfrontInput() *Wafv2WebAclAssociationConfigRequestBodyCloudfront
+	CognitoUserPool() Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference
+	CognitoUserPoolInput() *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,8 +48,8 @@ type Wafv2WebAclAssociationConfigRequestBodyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VerifiedAccessInstance() Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList
-	VerifiedAccessInstanceInput() interface{}
+	VerifiedAccessInstance() Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference
+	VerifiedAccessInstanceInput() *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,11 +74,11 @@ type Wafv2WebAclAssociationConfigRequestBodyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutApiGateway(value interface{})
-	PutAppRunnerService(value interface{})
-	PutCloudfront(value interface{})
-	PutCognitoUserPool(value interface{})
-	PutVerifiedAccessInstance(value interface{})
+	PutApiGateway(value *Wafv2WebAclAssociationConfigRequestBodyApiGateway)
+	PutAppRunnerService(value *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService)
+	PutCloudfront(value *Wafv2WebAclAssociationConfigRequestBodyCloudfront)
+	PutCognitoUserPool(value *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool)
+	PutVerifiedAccessInstance(value *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance)
 	ResetApiGateway()
 	ResetAppRunnerService()
 	ResetCloudfront()
@@ -99,8 +99,8 @@ type jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGateway() Wafv2WebAclAssociationConfigRequestBodyApiGatewayList {
-	var returns Wafv2WebAclAssociationConfigRequestBodyApiGatewayList
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGateway() Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference {
+	var returns Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference
 	_jsii_.Get(
 		j,
 		"apiGateway",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGa
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGatewayInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGatewayInput() *Wafv2WebAclAssociationConfigRequestBodyApiGateway {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyApiGateway
 	_jsii_.Get(
 		j,
 		"apiGatewayInput",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) ApiGa
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRunnerService() Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList {
-	var returns Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRunnerService() Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference {
+	var returns Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference
 	_jsii_.Get(
 		j,
 		"appRunnerService",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRu
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRunnerServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRunnerServiceInput() *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService
 	_jsii_.Get(
 		j,
 		"appRunnerServiceInput",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) AppRu
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Cloudfront() Wafv2WebAclAssociationConfigRequestBodyCloudfrontList {
-	var returns Wafv2WebAclAssociationConfigRequestBodyCloudfrontList
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Cloudfront() Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference {
+	var returns Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference
 	_jsii_.Get(
 		j,
 		"cloudfront",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Cloud
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CloudfrontInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CloudfrontInput() *Wafv2WebAclAssociationConfigRequestBodyCloudfront {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyCloudfront
 	_jsii_.Get(
 		j,
 		"cloudfrontInput",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Cloud
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CognitoUserPool() Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList {
-	var returns Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CognitoUserPool() Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference {
+	var returns Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference
 	_jsii_.Get(
 		j,
 		"cognitoUserPool",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Cogni
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CognitoUserPoolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) CognitoUserPoolInput() *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool
 	_jsii_.Get(
 		j,
 		"cognitoUserPoolInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) VerifiedAccessInstance() Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList {
-	var returns Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) VerifiedAccessInstance() Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference {
+	var returns Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference
 	_jsii_.Get(
 		j,
 		"verifiedAccessInstance",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Verif
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) VerifiedAccessInstanceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) VerifiedAccessInstanceInput() *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance
 	_jsii_.Get(
 		j,
 		"verifiedAccessInstanceInput",
@@ -538,7 +538,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) Inter
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutApiGateway(value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutApiGateway(value *Wafv2WebAclAssociationConfigRequestBodyApiGateway) {
 	if err := w.validatePutApiGatewayParameters(value); err != nil {
 		panic(err)
 	}
@@ -549,7 +549,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutAp
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutAppRunnerService(value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutAppRunnerService(value *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService) {
 	if err := w.validatePutAppRunnerServiceParameters(value); err != nil {
 		panic(err)
 	}
@@ -560,7 +560,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutAp
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCloudfront(value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCloudfront(value *Wafv2WebAclAssociationConfigRequestBodyCloudfront) {
 	if err := w.validatePutCloudfrontParameters(value); err != nil {
 		panic(err)
 	}
@@ -571,7 +571,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCl
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCognitoUserPool(value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCognitoUserPool(value *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool) {
 	if err := w.validatePutCognitoUserPoolParameters(value); err != nil {
 		panic(err)
 	}
@@ -582,7 +582,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutCo
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutVerifiedAccessInstance(value interface{}) {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) PutVerifiedAccessInstance(value *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance) {
 	if err := w.validatePutVerifiedAccessInstanceParameters(value); err != nil {
 		panic(err)
 	}

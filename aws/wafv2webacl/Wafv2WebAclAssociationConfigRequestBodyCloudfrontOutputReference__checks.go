@@ -174,25 +174,9 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *Wafv2WebAclAssociationConfigRequestBodyCloudfront:
-		val := val.(*Wafv2WebAclAssociationConfigRequestBodyCloudfront)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case Wafv2WebAclAssociationConfigRequestBodyCloudfront:
-		val_ := val.(Wafv2WebAclAssociationConfigRequestBodyCloudfront)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Wafv2WebAclAssociationConfigRequestBodyCloudfront; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclAssociationConfigRequestBodyCloudfront) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -214,21 +198,13 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputRefere
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

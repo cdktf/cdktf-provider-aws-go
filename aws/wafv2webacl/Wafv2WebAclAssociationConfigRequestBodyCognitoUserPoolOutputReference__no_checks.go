@@ -63,7 +63,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

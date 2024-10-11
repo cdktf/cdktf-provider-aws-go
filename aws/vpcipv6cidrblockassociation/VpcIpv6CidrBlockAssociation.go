@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}.
 type VpcIpv6CidrBlockAssociation interface {
 	cdktf.TerraformResource
 	AssignGeneratedIpv6CidrBlock() interface{}
@@ -45,6 +45,8 @@ type VpcIpv6CidrBlockAssociation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpSource() *string
+	Ipv6AddressAttribute() *string
 	Ipv6CidrBlock() *string
 	SetIpv6CidrBlock(val *string)
 	Ipv6CidrBlockInput() *string
@@ -276,6 +278,26 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) IpSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Ipv6AddressAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressAttribute",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Ipv6CidrBlock() *string {
 	var returns *string
 	_jsii_.Get(
@@ -477,7 +499,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
 func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, config *VpcIpv6CidrBlockAssociationConfig) VpcIpv6CidrBlockAssociation {
 	_init_.Initialize()
 
@@ -495,7 +517,7 @@ func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
 func NewVpcIpv6CidrBlockAssociation_Override(v VpcIpv6CidrBlockAssociation, scope constructs.Construct, id *string, config *VpcIpv6CidrBlockAssociationConfig) {
 	_init_.Initialize()
 

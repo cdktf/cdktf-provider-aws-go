@@ -127,6 +127,10 @@ func (j *jsiiProxy_Eip) validateSetInstanceParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Eip) validateSetIpamPoolIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eip) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

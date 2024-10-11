@@ -47,23 +47,23 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) valid
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutApiGatewayParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutApiGatewayParameters(value *Wafv2WebAclAssociationConfigRequestBodyApiGateway) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutAppRunnerServiceParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutAppRunnerServiceParameters(value *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCloudfrontParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCloudfrontParameters(value *Wafv2WebAclAssociationConfigRequestBodyCloudfront) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCognitoUserPoolParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCognitoUserPoolParameters(value *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutVerifiedAccessInstanceParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutVerifiedAccessInstanceParameters(value *Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance) error {
 	return nil
 }
 

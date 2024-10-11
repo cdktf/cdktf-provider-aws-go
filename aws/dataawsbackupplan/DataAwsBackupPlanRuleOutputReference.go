@@ -39,6 +39,7 @@ type DataAwsBackupPlanRuleOutputReference interface {
 	RecoveryPointTags() cdktf.StringMap
 	RuleName() *string
 	Schedule() *string
+	ScheduleExpressionTimezone() *string
 	StartWindow() *float64
 	TargetVaultName() *string
 	// Experimental.
@@ -203,6 +204,16 @@ func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) Schedule() *string {
 	_jsii_.Get(
 		j,
 		"schedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) ScheduleExpressionTimezone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpressionTimezone",
 		&returns,
 	)
 	return returns

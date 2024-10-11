@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
 type ElasticacheReservedCacheNode interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_ElasticacheReservedCacheNode) UsagePrice() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
 func NewElasticacheReservedCacheNode(scope constructs.Construct, id *string, config *ElasticacheReservedCacheNodeConfig) ElasticacheReservedCacheNode {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewElasticacheReservedCacheNode(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
 func NewElasticacheReservedCacheNode_Override(e ElasticacheReservedCacheNode, scope constructs.Construct, id *string, config *ElasticacheReservedCacheNodeConfig) {
 	_init_.Initialize()
 

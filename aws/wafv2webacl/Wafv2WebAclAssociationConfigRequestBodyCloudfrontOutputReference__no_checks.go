@@ -63,7 +63,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclAssociationConfigRequestBodyCloudfront) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputRefere
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

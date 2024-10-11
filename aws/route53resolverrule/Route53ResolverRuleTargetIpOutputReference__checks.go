@@ -198,6 +198,14 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetIpPara
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetIpv6Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetPortParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

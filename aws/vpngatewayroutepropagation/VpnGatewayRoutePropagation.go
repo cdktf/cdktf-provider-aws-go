@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}.
 type VpnGatewayRoutePropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_VpnGatewayRoutePropagation) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource.
 func NewVpnGatewayRoutePropagation(scope constructs.Construct, id *string, config *VpnGatewayRoutePropagationConfig) VpnGatewayRoutePropagation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewVpnGatewayRoutePropagation(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation} Resource.
 func NewVpnGatewayRoutePropagation_Override(v VpnGatewayRoutePropagation, scope constructs.Construct, id *string, config *VpnGatewayRoutePropagationConfig) {
 	_init_.Initialize()
 

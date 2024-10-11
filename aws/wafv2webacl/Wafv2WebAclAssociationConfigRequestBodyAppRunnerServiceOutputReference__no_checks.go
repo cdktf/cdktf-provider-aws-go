@@ -63,7 +63,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutput
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclAssociationConfigRequestBodyAppRunnerService) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutput
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

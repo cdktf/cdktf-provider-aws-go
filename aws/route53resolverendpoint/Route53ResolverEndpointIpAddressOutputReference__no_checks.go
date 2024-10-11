@@ -67,6 +67,10 @@ func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetIpv6Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpointIpAddressOutputReference) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

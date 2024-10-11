@@ -91,6 +91,10 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetScheduleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetScheduleExpressionTimezoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetStartWindowParameters(val *float64) error {
 	return nil
 }

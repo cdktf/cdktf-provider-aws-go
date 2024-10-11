@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -62,6 +62,9 @@ type Eip interface {
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
+	IpamPoolId() *string
+	SetIpamPoolId(val *string)
+	IpamPoolIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -159,6 +162,7 @@ type Eip interface {
 	ResetDomain()
 	ResetId()
 	ResetInstance()
+	ResetIpamPoolId()
 	ResetNetworkBorderGroup()
 	ResetNetworkInterface()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -437,6 +441,26 @@ func (j *jsiiProxy_Eip) InstanceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Eip) IpamPoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipamPoolId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Eip) IpamPoolIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipamPoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Eip) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -708,7 +732,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -726,7 +750,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 
@@ -837,6 +861,17 @@ func (j *jsiiProxy_Eip)SetInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"instance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Eip)SetIpamPoolId(val *string) {
+	if err := j.validateSetIpamPoolIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipamPoolId",
 		val,
 	)
 }
@@ -1345,6 +1380,14 @@ func (e *jsiiProxy_Eip) ResetInstance() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetInstance",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eip) ResetIpamPoolId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpamPoolId",
 		nil, // no parameters
 	)
 }

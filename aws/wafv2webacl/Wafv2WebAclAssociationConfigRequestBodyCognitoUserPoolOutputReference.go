@@ -33,8 +33,8 @@ type Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference inter
 	DefaultSizeInspectionLimitInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool
+	SetInternalValue(val *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) InternalValue() *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool {
+	var returns *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -173,29 +173,29 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 }
 
 
-func NewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference {
+func NewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference_Override(w Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference_Override(w Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
 }
@@ -233,7 +233,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference)SetInternalValue(val *Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
