@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration}.
 type Macie2ClassificationExportConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
 func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) Macie2ClassificationExportConfiguration {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
 func NewMacie2ClassificationExportConfiguration_Override(m Macie2ClassificationExportConfiguration, scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) {
 	_init_.Initialize()
 

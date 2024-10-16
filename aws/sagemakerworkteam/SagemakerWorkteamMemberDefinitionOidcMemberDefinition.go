@@ -5,7 +5,7 @@ package sagemakerworkteam
 
 
 type SagemakerWorkteamMemberDefinitionOidcMemberDefinition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}.
 	Groups *[]*string `field:"required" json:"groups" yaml:"groups"`
 }
 

@@ -5,7 +5,7 @@ package quicksightdataset
 
 
 type QuicksightDataSetLogicalTableMapDataTransformsProjectOperation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}.
 	ProjectedColumns *[]*string `field:"required" json:"projectedColumns" yaml:"projectedColumns"`
 }
 

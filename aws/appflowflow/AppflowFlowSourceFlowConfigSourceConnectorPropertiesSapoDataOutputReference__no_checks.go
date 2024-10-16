@@ -47,6 +47,14 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataO
 	return nil
 }
 
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) validatePutPaginationConfigParameters(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) validatePutParallelismConfigParameters(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

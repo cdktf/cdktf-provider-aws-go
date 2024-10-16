@@ -41,6 +41,8 @@ type DynamodbTableGlobalSecondaryIndexOutputReference interface {
 	NonKeyAttributes() *[]*string
 	SetNonKeyAttributes(val *[]*string)
 	NonKeyAttributesInput() *[]*string
+	OnDemandThroughput() DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference
+	OnDemandThroughputInput() *DynamodbTableGlobalSecondaryIndexOnDemandThroughput
 	ProjectionType() *string
 	SetProjectionType(val *string)
 	ProjectionTypeInput() *string
@@ -85,7 +87,9 @@ type DynamodbTableGlobalSecondaryIndexOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOnDemandThroughput(value *DynamodbTableGlobalSecondaryIndexOnDemandThroughput)
 	ResetNonKeyAttributes()
+	ResetOnDemandThroughput()
 	ResetRangeKey()
 	ResetReadCapacity()
 	ResetWriteCapacity()
@@ -209,6 +213,26 @@ func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) NonKeyAttri
 	_jsii_.Get(
 		j,
 		"nonKeyAttributesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) OnDemandThroughput() DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference {
+	var returns DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference
+	_jsii_.Get(
+		j,
+		"onDemandThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) OnDemandThroughputInput() *DynamodbTableGlobalSecondaryIndexOnDemandThroughput {
+	var returns *DynamodbTableGlobalSecondaryIndexOnDemandThroughput
+	_jsii_.Get(
+		j,
+		"onDemandThroughputInput",
 		&returns,
 	)
 	return returns
@@ -660,10 +684,29 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) Interpolati
 	return returns
 }
 
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) PutOnDemandThroughput(value *DynamodbTableGlobalSecondaryIndexOnDemandThroughput) {
+	if err := d.validatePutOnDemandThroughputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnDemandThroughput",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) ResetNonKeyAttributes() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNonKeyAttributes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) ResetOnDemandThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnDemandThroughput",
 		nil, // no parameters
 	)
 }

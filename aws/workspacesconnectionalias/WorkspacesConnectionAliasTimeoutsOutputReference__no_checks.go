@@ -79,10 +79,6 @@ func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewWorkspacesConnectionAliasTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

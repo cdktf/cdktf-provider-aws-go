@@ -91,6 +91,10 @@ func (d *jsiiProxy_DynamodbTable) validatePutLocalSecondaryIndexParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTable) validatePutOnDemandThroughputParameters(value *DynamodbTableOnDemandThroughput) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTable) validatePutPointInTimeRecoveryParameters(value *DynamodbTablePointInTimeRecovery) error {
 	return nil
 }

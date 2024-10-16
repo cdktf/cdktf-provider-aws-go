@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group}.
 type CognitoUserInGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_CognitoUserInGroup) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
 func NewCognitoUserInGroup(scope constructs.Construct, id *string, config *CognitoUserInGroupConfig) CognitoUserInGroup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewCognitoUserInGroup(scope constructs.Construct, id *string, config *Cogni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
 func NewCognitoUserInGroup_Override(c CognitoUserInGroup, scope constructs.Construct, id *string, config *CognitoUserInGroupConfig) {
 	_init_.Initialize()
 

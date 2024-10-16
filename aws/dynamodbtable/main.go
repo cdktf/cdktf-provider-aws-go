@@ -60,6 +60,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandThroughput", GoGetter: "OnDemandThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandThroughputInput", GoGetter: "OnDemandThroughputInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "pointInTimeRecovery", GoGetter: "PointInTimeRecovery"},
 			_jsii_.MemberProperty{JsiiProperty: "pointInTimeRecoveryInput", GoGetter: "PointInTimeRecoveryInput"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGlobalSecondaryIndex", GoMethod: "PutGlobalSecondaryIndex"},
 			_jsii_.MemberMethod{JsiiMethod: "putImportTable", GoMethod: "PutImportTable"},
 			_jsii_.MemberMethod{JsiiMethod: "putLocalSecondaryIndex", GoMethod: "PutLocalSecondaryIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnDemandThroughput", GoMethod: "PutOnDemandThroughput"},
 			_jsii_.MemberMethod{JsiiMethod: "putPointInTimeRecovery", GoMethod: "PutPointInTimeRecovery"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplica", GoMethod: "PutReplica"},
 			_jsii_.MemberMethod{JsiiMethod: "putServerSideEncryption", GoMethod: "PutServerSideEncryption"},
@@ -89,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImportTable", GoMethod: "ResetImportTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalSecondaryIndex", GoMethod: "ResetLocalSecondaryIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandThroughput", GoMethod: "ResetOnDemandThroughput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPointInTimeRecovery", GoMethod: "ResetPointInTimeRecovery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRangeKey", GoMethod: "ResetRangeKey"},
@@ -243,6 +247,48 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput",
+		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndexOnDemandThroughput)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference",
+		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxReadRequestUnits", GoGetter: "MaxReadRequestUnits"},
+			_jsii_.MemberProperty{JsiiProperty: "maxReadRequestUnitsInput", GoGetter: "MaxReadRequestUnitsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxWriteRequestUnits", GoGetter: "MaxWriteRequestUnits"},
+			_jsii_.MemberProperty{JsiiProperty: "maxWriteRequestUnitsInput", GoGetter: "MaxWriteRequestUnitsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxReadRequestUnits", GoMethod: "ResetMaxReadRequestUnits"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxWriteRequestUnits", GoMethod: "ResetMaxWriteRequestUnits"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference",
 		reflect.TypeOf((*DynamodbTableGlobalSecondaryIndexOutputReference)(nil)).Elem(),
@@ -270,13 +316,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nonKeyAttributes", GoGetter: "NonKeyAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "nonKeyAttributesInput", GoGetter: "NonKeyAttributesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandThroughput", GoGetter: "OnDemandThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandThroughputInput", GoGetter: "OnDemandThroughputInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectionType", GoGetter: "ProjectionType"},
 			_jsii_.MemberProperty{JsiiProperty: "projectionTypeInput", GoGetter: "ProjectionTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putOnDemandThroughput", GoMethod: "PutOnDemandThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "rangeKey", GoGetter: "RangeKey"},
 			_jsii_.MemberProperty{JsiiProperty: "rangeKeyInput", GoGetter: "RangeKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "readCapacity", GoGetter: "ReadCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "readCapacityInput", GoGetter: "ReadCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNonKeyAttributes", GoMethod: "ResetNonKeyAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandThroughput", GoMethod: "ResetOnDemandThroughput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRangeKey", GoMethod: "ResetRangeKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadCapacity", GoMethod: "ResetReadCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWriteCapacity", GoMethod: "ResetWriteCapacity"},
@@ -530,6 +580,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DynamodbTableLocalSecondaryIndexOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput",
+		reflect.TypeOf((*DynamodbTableOnDemandThroughput)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughputOutputReference",
+		reflect.TypeOf((*DynamodbTableOnDemandThroughputOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxReadRequestUnits", GoGetter: "MaxReadRequestUnits"},
+			_jsii_.MemberProperty{JsiiProperty: "maxReadRequestUnitsInput", GoGetter: "MaxReadRequestUnitsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxWriteRequestUnits", GoGetter: "MaxWriteRequestUnits"},
+			_jsii_.MemberProperty{JsiiProperty: "maxWriteRequestUnitsInput", GoGetter: "MaxWriteRequestUnitsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxReadRequestUnits", GoMethod: "ResetMaxReadRequestUnits"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxWriteRequestUnits", GoMethod: "ResetMaxWriteRequestUnits"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DynamodbTableOnDemandThroughputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

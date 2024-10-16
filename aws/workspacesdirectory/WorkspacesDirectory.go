@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -71,6 +71,8 @@ type WorkspacesDirectory interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RegistrationCode() *string
+	SamlProperties() WorkspacesDirectorySamlPropertiesOutputReference
+	SamlPropertiesInput() *WorkspacesDirectorySamlProperties
 	SelfServicePermissions() WorkspacesDirectorySelfServicePermissionsOutputReference
 	SelfServicePermissionsInput() *WorkspacesDirectorySelfServicePermissions
 	SubnetIds() *[]*string
@@ -136,6 +138,7 @@ type WorkspacesDirectory interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSamlProperties(value *WorkspacesDirectorySamlProperties)
 	PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions)
 	PutWorkspaceAccessProperties(value *WorkspacesDirectoryWorkspaceAccessProperties)
 	PutWorkspaceCreationProperties(value *WorkspacesDirectoryWorkspaceCreationProperties)
@@ -144,6 +147,7 @@ type WorkspacesDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSamlProperties()
 	ResetSelfServicePermissions()
 	ResetSubnetIds()
 	ResetTags()
@@ -428,6 +432,26 @@ func (j *jsiiProxy_WorkspacesDirectory) RegistrationCode() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) SamlProperties() WorkspacesDirectorySamlPropertiesOutputReference {
+	var returns WorkspacesDirectorySamlPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"samlProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) SamlPropertiesInput() *WorkspacesDirectorySamlProperties {
+	var returns *WorkspacesDirectorySamlProperties
+	_jsii_.Get(
+		j,
+		"samlPropertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) SelfServicePermissions() WorkspacesDirectorySelfServicePermissionsOutputReference {
 	var returns WorkspacesDirectorySelfServicePermissionsOutputReference
 	_jsii_.Get(
@@ -589,7 +613,7 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 
@@ -1105,6 +1129,17 @@ func (w *jsiiProxy_WorkspacesDirectory) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) PutSamlProperties(value *WorkspacesDirectorySamlProperties) {
+	if err := w.validatePutSamlPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putSamlProperties",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions) {
 	if err := w.validatePutSelfServicePermissionsParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (w *jsiiProxy_WorkspacesDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetSamlProperties() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetSamlProperties",
 		nil, // no parameters
 	)
 }

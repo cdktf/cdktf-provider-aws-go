@@ -47,6 +47,10 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateInt
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validatePutOnDemandThroughputParameters(value *DynamodbTableGlobalSecondaryIndexOnDemandThroughput) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

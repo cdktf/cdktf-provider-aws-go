@@ -75,6 +75,10 @@ func (c *jsiiProxy_CloudwatchEventTarget) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventTarget) validatePutAppsyncTargetParameters(value *CloudwatchEventTargetAppsyncTarget) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventTarget) validatePutBatchTargetParameters(value *CloudwatchEventTargetBatchTarget) error {
 	return nil
 }

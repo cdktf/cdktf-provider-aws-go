@@ -207,6 +207,17 @@ func (w *jsiiProxy_WorkspacesDirectory) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) validatePutSamlPropertiesParameters(value *WorkspacesDirectorySamlProperties) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) validatePutSelfServicePermissionsParameters(value *WorkspacesDirectorySelfServicePermissions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

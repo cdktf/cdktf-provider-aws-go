@@ -35,6 +35,10 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference
 	ObjectPath() *string
 	SetObjectPath(val *string)
 	ObjectPathInput() *string
+	PaginationConfig() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigOutputReference
+	PaginationConfigInput() *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
+	ParallelismConfig() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigOutputReference
+	ParallelismConfigInput() *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +71,10 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPaginationConfig(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig)
+	PutParallelismConfig(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig)
+	ResetPaginationConfig()
+	ResetParallelismConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +155,46 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataO
 	_jsii_.Get(
 		j,
 		"objectPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) PaginationConfig() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigOutputReference {
+	var returns AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"paginationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) PaginationConfigInput() *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig {
+	var returns *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
+	_jsii_.Get(
+		j,
+		"paginationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) ParallelismConfig() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigOutputReference {
+	var returns AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfigOutputReference
+	_jsii_.Get(
+		j,
+		"parallelismConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) ParallelismConfigInput() *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig {
+	var returns *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
+	_jsii_.Get(
+		j,
+		"parallelismConfigInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +498,44 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataO
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) PutPaginationConfig(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig) {
+	if err := a.validatePutPaginationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPaginationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) PutParallelismConfig(value *AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig) {
+	if err := a.validatePutParallelismConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putParallelismConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) ResetPaginationConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPaginationConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) ResetParallelismConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetParallelismConfig",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

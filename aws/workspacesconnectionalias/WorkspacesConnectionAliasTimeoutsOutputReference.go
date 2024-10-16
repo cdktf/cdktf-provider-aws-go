@@ -46,9 +46,6 @@ type WorkspacesConnectionAliasTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,7 +72,6 @@ type WorkspacesConnectionAliasTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,26 +197,6 @@ func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) TerraformRe
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewWorkspacesConnectionAliasTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspacesConnectionAliasTimeoutsOutputReference {
 	_init_.Initialize()
@@ -322,17 +298,6 @@ func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference)SetTerraform
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -535,14 +500,6 @@ func (w *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) ResetDelete
 	_jsii_.InvokeVoid(
 		w,
 		"resetDelete",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_WorkspacesConnectionAliasTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

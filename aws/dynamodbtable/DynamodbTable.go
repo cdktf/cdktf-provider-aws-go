@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,8 @@ type DynamodbTable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnDemandThroughput() DynamodbTableOnDemandThroughputOutputReference
+	OnDemandThroughputInput() *DynamodbTableOnDemandThroughput
 	PointInTimeRecovery() DynamodbTablePointInTimeRecoveryOutputReference
 	PointInTimeRecoveryInput() *DynamodbTablePointInTimeRecovery
 	// Experimental.
@@ -180,6 +182,7 @@ type DynamodbTable interface {
 	PutGlobalSecondaryIndex(value interface{})
 	PutImportTable(value *DynamodbTableImportTable)
 	PutLocalSecondaryIndex(value interface{})
+	PutOnDemandThroughput(value *DynamodbTableOnDemandThroughput)
 	PutPointInTimeRecovery(value *DynamodbTablePointInTimeRecovery)
 	PutReplica(value interface{})
 	PutServerSideEncryption(value *DynamodbTableServerSideEncryption)
@@ -193,6 +196,7 @@ type DynamodbTable interface {
 	ResetId()
 	ResetImportTable()
 	ResetLocalSecondaryIndex()
+	ResetOnDemandThroughput()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -516,6 +520,26 @@ func (j *jsiiProxy_DynamodbTable) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) OnDemandThroughput() DynamodbTableOnDemandThroughputOutputReference {
+	var returns DynamodbTableOnDemandThroughputOutputReference
+	_jsii_.Get(
+		j,
+		"onDemandThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) OnDemandThroughputInput() *DynamodbTableOnDemandThroughput {
+	var returns *DynamodbTableOnDemandThroughput
+	_jsii_.Get(
+		j,
+		"onDemandThroughputInput",
 		&returns,
 	)
 	return returns
@@ -942,7 +966,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -960,7 +984,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -1623,6 +1647,17 @@ func (d *jsiiProxy_DynamodbTable) PutLocalSecondaryIndex(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DynamodbTable) PutOnDemandThroughput(value *DynamodbTableOnDemandThroughput) {
+	if err := d.validatePutOnDemandThroughputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOnDemandThroughput",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTable) PutPointInTimeRecovery(value *DynamodbTablePointInTimeRecovery) {
 	if err := d.validatePutPointInTimeRecoveryParameters(value); err != nil {
 		panic(err)
@@ -1738,6 +1773,14 @@ func (d *jsiiProxy_DynamodbTable) ResetLocalSecondaryIndex() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetLocalSecondaryIndex",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetOnDemandThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnDemandThroughput",
 		nil, // no parameters
 	)
 }

@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
 type CloudwatchEventTarget interface {
 	cdktf.TerraformResource
+	AppsyncTarget() CloudwatchEventTargetAppsyncTargetOutputReference
+	AppsyncTargetInput() *CloudwatchEventTargetAppsyncTarget
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
@@ -153,6 +155,7 @@ type CloudwatchEventTarget interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAppsyncTarget(value *CloudwatchEventTargetAppsyncTarget)
 	PutBatchTarget(value *CloudwatchEventTargetBatchTarget)
 	PutDeadLetterConfig(value *CloudwatchEventTargetDeadLetterConfig)
 	PutEcsTarget(value *CloudwatchEventTargetEcsTarget)
@@ -164,6 +167,7 @@ type CloudwatchEventTarget interface {
 	PutRunCommandTargets(value interface{})
 	PutSagemakerPipelineTarget(value *CloudwatchEventTargetSagemakerPipelineTarget)
 	PutSqsTarget(value *CloudwatchEventTargetSqsTarget)
+	ResetAppsyncTarget()
 	ResetBatchTarget()
 	ResetDeadLetterConfig()
 	ResetEcsTarget()
@@ -201,6 +205,26 @@ type CloudwatchEventTarget interface {
 // The jsii proxy struct for CloudwatchEventTarget
 type jsiiProxy_CloudwatchEventTarget struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) AppsyncTarget() CloudwatchEventTargetAppsyncTargetOutputReference {
+	var returns CloudwatchEventTargetAppsyncTargetOutputReference
+	_jsii_.Get(
+		j,
+		"appsyncTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) AppsyncTargetInput() *CloudwatchEventTargetAppsyncTarget {
+	var returns *CloudwatchEventTargetAppsyncTarget
+	_jsii_.Get(
+		j,
+		"appsyncTargetInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudwatchEventTarget) Arn() *string {
@@ -764,7 +788,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) CloudwatchEventTarget {
 	_init_.Initialize()
 
@@ -782,7 +806,7 @@ func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) {
 	_init_.Initialize()
 
@@ -1313,6 +1337,17 @@ func (c *jsiiProxy_CloudwatchEventTarget) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (c *jsiiProxy_CloudwatchEventTarget) PutAppsyncTarget(value *CloudwatchEventTargetAppsyncTarget) {
+	if err := c.validatePutAppsyncTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAppsyncTarget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventTarget) PutBatchTarget(value *CloudwatchEventTargetBatchTarget) {
 	if err := c.validatePutBatchTargetParameters(value); err != nil {
 		panic(err)
@@ -1431,6 +1466,14 @@ func (c *jsiiProxy_CloudwatchEventTarget) PutSqsTarget(value *CloudwatchEventTar
 		c,
 		"putSqsTarget",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetAppsyncTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAppsyncTarget",
+		nil, // no parameters
 	)
 }
 
