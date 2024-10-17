@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
 type NeptuneClusterParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup_Override(n NeptuneClusterParameterGroup, scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) {
 	_init_.Initialize()
 

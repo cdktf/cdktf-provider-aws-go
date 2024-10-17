@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/opensearch_package_association aws_opensearch_package_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/opensearch_package_association aws_opensearch_package_association}.
 type OpensearchPackageAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_OpensearchPackageAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
 func NewOpensearchPackageAssociation(scope constructs.Construct, id *string, config *OpensearchPackageAssociationConfig) OpensearchPackageAssociation {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewOpensearchPackageAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
 func NewOpensearchPackageAssociation_Override(o OpensearchPackageAssociation, scope constructs.Construct, id *string, config *OpensearchPackageAssociationConfig) {
 	_init_.Initialize()
 

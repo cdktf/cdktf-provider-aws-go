@@ -5,7 +5,7 @@ package kmskey
 
 
 type KmsKeyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kms_key#create KmsKey#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kms_key#create KmsKey#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

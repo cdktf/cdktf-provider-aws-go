@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments}.
 type DataAwsSsoadminPrincipalApplicationAssignments interface {
 	cdktf.TerraformDataSource
 	ApplicationAssignments() DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataAwsSsoadminPrincipalApplicationAssignments) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments} Data Source.
 func NewDataAwsSsoadminPrincipalApplicationAssignments(scope constructs.Construct, id *string, config *DataAwsSsoadminPrincipalApplicationAssignmentsConfig) DataAwsSsoadminPrincipalApplicationAssignments {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataAwsSsoadminPrincipalApplicationAssignments(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments} Data Source.
 func NewDataAwsSsoadminPrincipalApplicationAssignments_Override(d DataAwsSsoadminPrincipalApplicationAssignments, scope constructs.Construct, id *string, config *DataAwsSsoadminPrincipalApplicationAssignmentsConfig) {
 	_init_.Initialize()
 

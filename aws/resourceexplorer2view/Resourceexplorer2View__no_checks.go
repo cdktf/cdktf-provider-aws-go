@@ -123,6 +123,10 @@ func (j *jsiiProxy_Resourceexplorer2View) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Resourceexplorer2View) validateSetScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Resourceexplorer2View) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
