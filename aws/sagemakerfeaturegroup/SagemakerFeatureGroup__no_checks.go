@@ -87,6 +87,10 @@ func (s *jsiiProxy_SagemakerFeatureGroup) validatePutOnlineStoreConfigParameters
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerFeatureGroup) validatePutThroughputConfigParameters(value *SagemakerFeatureGroupThroughputConfig) error {
+	return nil
+}
+
 func validateSagemakerFeatureGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

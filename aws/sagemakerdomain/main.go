@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetentionPolicy", GoMethod: "ResetRetentionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTagPropagation", GoMethod: "ResetTagPropagation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberProperty{JsiiProperty: "retentionPolicy", GoGetter: "RetentionPolicy"},
@@ -88,6 +89,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
+			_jsii_.MemberProperty{JsiiProperty: "tagPropagation", GoGetter: "TagPropagation"},
+			_jsii_.MemberProperty{JsiiProperty: "tagPropagationInput", GoGetter: "TagPropagationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsAllInput", GoGetter: "TagsAllInput"},
@@ -262,6 +265,94 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings",
 		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutes", GoGetter: "IdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutesInput", GoGetter: "IdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagement", GoGetter: "LifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagementInput", GoGetter: "LifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutes", GoGetter: "MaxIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutesInput", GoGetter: "MaxIdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutes", GoGetter: "MinIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutesInput", GoGetter: "MinIdleTimeoutInMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleTimeoutInMinutes", GoMethod: "ResetIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleManagement", GoMethod: "ResetLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxIdleTimeoutInMinutes", GoMethod: "ResetMaxIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinIdleTimeoutInMinutes", GoMethod: "ResetMinIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettings", GoGetter: "IdleSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettingsInput", GoGetter: "IdleSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdleSettings", GoMethod: "PutIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleSettings", GoMethod: "ResetIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository",
@@ -439,10 +530,56 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "assumableRoleArns", GoGetter: "AssumableRoleArns"},
+			_jsii_.MemberProperty{JsiiProperty: "assumableRoleArnsInput", GoGetter: "AssumableRoleArnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArns", GoGetter: "ExecutionRoleArns"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArnsInput", GoGetter: "ExecutionRoleArnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAssumableRoleArns", GoMethod: "ResetAssumableRoleArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExecutionRoleArns", GoMethod: "ResetExecutionRoleArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagement", GoGetter: "AppLifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagementInput", GoGetter: "AppLifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArn", GoGetter: "BuiltInLifecycleConfigArn"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArnInput", GoGetter: "BuiltInLifecycleConfigArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "codeRepository", GoGetter: "CodeRepository"},
 			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryInput", GoGetter: "CodeRepositoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -453,6 +590,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customImageInput", GoGetter: "CustomImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultResourceSpec", GoGetter: "DefaultResourceSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultResourceSpecInput", GoGetter: "DefaultResourceSpecInput"},
+			_jsii_.MemberProperty{JsiiProperty: "emrSettings", GoGetter: "EmrSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "emrSettingsInput", GoGetter: "EmrSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -468,12 +607,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArns", GoGetter: "LifecycleConfigArns"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArnsInput", GoGetter: "LifecycleConfigArnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAppLifecycleManagement", GoMethod: "PutAppLifecycleManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "putCodeRepository", GoMethod: "PutCodeRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomImage", GoMethod: "PutCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultResourceSpec", GoMethod: "PutDefaultResourceSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmrSettings", GoMethod: "PutEmrSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppLifecycleManagement", GoMethod: "ResetAppLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuiltInLifecycleConfigArn", GoMethod: "ResetBuiltInLifecycleConfigArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeRepository", GoMethod: "ResetCodeRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomImage", GoMethod: "ResetCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultResourceSpec", GoMethod: "ResetDefaultResourceSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmrSettings", GoMethod: "ResetEmrSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleConfigArns", GoMethod: "ResetLifecycleConfigArns"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -996,6 +1140,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArn", GoGetter: "ExecutionRoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArnInput", GoGetter: "ExecutionRoleArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExecutionRoleArn", GoMethod: "ResetExecutionRoleArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStatus", GoMethod: "ResetStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings)(nil)).Elem(),
 	)
@@ -1191,6 +1377,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "directDeploySettings", GoGetter: "DirectDeploySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "directDeploySettingsInput", GoGetter: "DirectDeploySettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "emrServerlessSettings", GoGetter: "EmrServerlessSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "emrServerlessSettingsInput", GoGetter: "EmrServerlessSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "generativeAiSettings", GoGetter: "GenerativeAiSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "generativeAiSettingsInput", GoGetter: "GenerativeAiSettingsInput"},
@@ -1213,6 +1401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modelRegisterSettings", GoGetter: "ModelRegisterSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "modelRegisterSettingsInput", GoGetter: "ModelRegisterSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDirectDeploySettings", GoMethod: "PutDirectDeploySettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmrServerlessSettings", GoMethod: "PutEmrServerlessSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putGenerativeAiSettings", GoMethod: "PutGenerativeAiSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putIdentityProviderOauthSettings", GoMethod: "PutIdentityProviderOauthSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putKendraSettings", GoMethod: "PutKendraSettings"},
@@ -1220,6 +1409,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeSeriesForecastingSettings", GoMethod: "PutTimeSeriesForecastingSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkspaceSettings", GoMethod: "PutWorkspaceSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectDeploySettings", GoMethod: "ResetDirectDeploySettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmrServerlessSettings", GoMethod: "ResetEmrServerlessSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGenerativeAiSettings", GoMethod: "ResetGenerativeAiSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentityProviderOauthSettings", GoMethod: "ResetIdentityProviderOauthSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKendraSettings", GoMethod: "ResetKendraSettings"},
@@ -1328,6 +1518,94 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettings",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagement",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagement)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutes", GoGetter: "IdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutesInput", GoGetter: "IdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagement", GoGetter: "LifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagementInput", GoGetter: "LifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutes", GoGetter: "MaxIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutesInput", GoGetter: "MaxIdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutes", GoGetter: "MinIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutesInput", GoGetter: "MinIdleTimeoutInMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleTimeoutInMinutes", GoMethod: "ResetIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleManagement", GoMethod: "ResetLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxIdleTimeoutInMinutes", GoMethod: "ResetMaxIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinIdleTimeoutInMinutes", GoMethod: "ResetMinIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettings", GoGetter: "IdleSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettingsInput", GoGetter: "IdleSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdleSettings", GoMethod: "PutIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleSettings", GoMethod: "ResetIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsCustomImage",
@@ -1449,6 +1727,10 @@ func init() {
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagement", GoGetter: "AppLifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagementInput", GoGetter: "AppLifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArn", GoGetter: "BuiltInLifecycleConfigArn"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArnInput", GoGetter: "BuiltInLifecycleConfigArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1472,8 +1754,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArns", GoGetter: "LifecycleConfigArns"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArnsInput", GoGetter: "LifecycleConfigArnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAppLifecycleManagement", GoMethod: "PutAppLifecycleManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomImage", GoMethod: "PutCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultResourceSpec", GoMethod: "PutDefaultResourceSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppLifecycleManagement", GoMethod: "ResetAppLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuiltInLifecycleConfigArn", GoMethod: "ResetBuiltInLifecycleConfigArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomImage", GoMethod: "ResetCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultResourceSpec", GoMethod: "ResetDefaultResourceSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleConfigArns", GoMethod: "ResetLifecycleConfigArns"},
@@ -1633,6 +1918,94 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettings",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagement",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagement)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutes", GoGetter: "IdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "idleTimeoutInMinutesInput", GoGetter: "IdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagement", GoGetter: "LifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleManagementInput", GoGetter: "LifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutes", GoGetter: "MaxIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "maxIdleTimeoutInMinutesInput", GoGetter: "MaxIdleTimeoutInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutes", GoGetter: "MinIdleTimeoutInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "minIdleTimeoutInMinutesInput", GoGetter: "MinIdleTimeoutInMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleTimeoutInMinutes", GoMethod: "ResetIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleManagement", GoMethod: "ResetLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxIdleTimeoutInMinutes", GoMethod: "ResetMaxIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinIdleTimeoutInMinutes", GoMethod: "ResetMinIdleTimeoutInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettings", GoGetter: "IdleSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "idleSettingsInput", GoGetter: "IdleSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdleSettings", GoMethod: "PutIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdleSettings", GoMethod: "ResetIdleSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepository",
@@ -1810,10 +2183,56 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettings",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference",
+		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "assumableRoleArns", GoGetter: "AssumableRoleArns"},
+			_jsii_.MemberProperty{JsiiProperty: "assumableRoleArnsInput", GoGetter: "AssumableRoleArnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArns", GoGetter: "ExecutionRoleArns"},
+			_jsii_.MemberProperty{JsiiProperty: "executionRoleArnsInput", GoGetter: "ExecutionRoleArnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAssumableRoleArns", GoMethod: "ResetAssumableRoleArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExecutionRoleArns", GoMethod: "ResetExecutionRoleArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagement", GoGetter: "AppLifecycleManagement"},
+			_jsii_.MemberProperty{JsiiProperty: "appLifecycleManagementInput", GoGetter: "AppLifecycleManagementInput"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArn", GoGetter: "BuiltInLifecycleConfigArn"},
+			_jsii_.MemberProperty{JsiiProperty: "builtInLifecycleConfigArnInput", GoGetter: "BuiltInLifecycleConfigArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "codeRepository", GoGetter: "CodeRepository"},
 			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryInput", GoGetter: "CodeRepositoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1824,6 +2243,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customImageInput", GoGetter: "CustomImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultResourceSpec", GoGetter: "DefaultResourceSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultResourceSpecInput", GoGetter: "DefaultResourceSpecInput"},
+			_jsii_.MemberProperty{JsiiProperty: "emrSettings", GoGetter: "EmrSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "emrSettingsInput", GoGetter: "EmrSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1839,12 +2260,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArns", GoGetter: "LifecycleConfigArns"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleConfigArnsInput", GoGetter: "LifecycleConfigArnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAppLifecycleManagement", GoMethod: "PutAppLifecycleManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "putCodeRepository", GoMethod: "PutCodeRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomImage", GoMethod: "PutCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultResourceSpec", GoMethod: "PutDefaultResourceSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmrSettings", GoMethod: "PutEmrSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAppLifecycleManagement", GoMethod: "ResetAppLifecycleManagement"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuiltInLifecycleConfigArn", GoMethod: "ResetBuiltInLifecycleConfigArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeRepository", GoMethod: "ResetCodeRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomImage", GoMethod: "ResetCustomImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultResourceSpec", GoMethod: "ResetDefaultResourceSpec"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmrSettings", GoMethod: "ResetEmrSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleConfigArns", GoMethod: "ResetLifecycleConfigArns"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -2182,6 +2608,8 @@ func init() {
 		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsOutputReference",
 		reflect.TypeOf((*SagemakerDomainDefaultUserSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "autoMountHomeEfs", GoGetter: "AutoMountHomeEfs"},
+			_jsii_.MemberProperty{JsiiProperty: "autoMountHomeEfsInput", GoGetter: "AutoMountHomeEfsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "canvasAppSettings", GoGetter: "CanvasAppSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "canvasAppSettingsInput", GoGetter: "CanvasAppSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "codeEditorAppSettings", GoGetter: "CodeEditorAppSettings"},
@@ -2230,6 +2658,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSpaceStorageSettings", GoMethod: "PutSpaceStorageSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putStudioWebPortalSettings", GoMethod: "PutStudioWebPortalSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTensorBoardAppSettings", GoMethod: "PutTensorBoardAppSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoMountHomeEfs", GoMethod: "ResetAutoMountHomeEfs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCanvasAppSettings", GoMethod: "ResetCanvasAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeEditorAppSettings", GoMethod: "ResetCodeEditorAppSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomFileSystemConfig", GoMethod: "ResetCustomFileSystemConfig"},
@@ -2624,12 +3053,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "hiddenAppTypes", GoGetter: "HiddenAppTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "hiddenAppTypesInput", GoGetter: "HiddenAppTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenInstanceTypes", GoGetter: "HiddenInstanceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "hiddenInstanceTypesInput", GoGetter: "HiddenInstanceTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hiddenMlTools", GoGetter: "HiddenMlTools"},
 			_jsii_.MemberProperty{JsiiProperty: "hiddenMlToolsInput", GoGetter: "HiddenMlToolsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHiddenAppTypes", GoMethod: "ResetHiddenAppTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHiddenInstanceTypes", GoMethod: "ResetHiddenInstanceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHiddenMlTools", GoMethod: "ResetHiddenMlTools"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

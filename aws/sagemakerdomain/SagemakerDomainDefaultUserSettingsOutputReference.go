@@ -13,6 +13,9 @@ import (
 
 type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AutoMountHomeEfs() *string
+	SetAutoMountHomeEfs(val *string)
+	AutoMountHomeEfsInput() *string
 	CanvasAppSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference
 	CanvasAppSettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettings
 	CodeEditorAppSettings() SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference
@@ -115,6 +118,7 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	PutSpaceStorageSettings(value *SagemakerDomainDefaultUserSettingsSpaceStorageSettings)
 	PutStudioWebPortalSettings(value *SagemakerDomainDefaultUserSettingsStudioWebPortalSettings)
 	PutTensorBoardAppSettings(value *SagemakerDomainDefaultUserSettingsTensorBoardAppSettings)
+	ResetAutoMountHomeEfs()
 	ResetCanvasAppSettings()
 	ResetCodeEditorAppSettings()
 	ResetCustomFileSystemConfig()
@@ -144,6 +148,26 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 // The jsii proxy struct for SagemakerDomainDefaultUserSettingsOutputReference
 type jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) AutoMountHomeEfs() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoMountHomeEfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) AutoMountHomeEfsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoMountHomeEfsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) CanvasAppSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference {
@@ -584,6 +608,17 @@ func NewSagemakerDomainDefaultUserSettingsOutputReference_Override(s SagemakerDo
 	)
 }
 
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference)SetAutoMountHomeEfs(val *string) {
+	if err := j.validateSetAutoMountHomeEfsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoMountHomeEfs",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -1009,6 +1044,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutTensorB
 		s,
 		"putTensorBoardAppSettings",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetAutoMountHomeEfs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoMountHomeEfs",
+		nil, // no parameters
 	)
 }
 

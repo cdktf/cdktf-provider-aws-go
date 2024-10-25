@@ -103,6 +103,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateReso
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetAutoMountHomeEfsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

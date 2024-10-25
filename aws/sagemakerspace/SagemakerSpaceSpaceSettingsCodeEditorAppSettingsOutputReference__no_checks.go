@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReferen
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference) validatePutAppLifecycleManagementParameters(value *SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagement) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference) validatePutDefaultResourceSpecParameters(value *SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpec) error {
 	return nil
 }

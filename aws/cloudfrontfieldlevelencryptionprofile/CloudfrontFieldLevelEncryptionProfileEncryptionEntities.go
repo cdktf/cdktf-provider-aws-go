@@ -7,7 +7,7 @@ package cloudfrontfieldlevelencryptionprofile
 type CloudfrontFieldLevelEncryptionProfileEncryptionEntities struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/cloudfront_field_level_encryption_profile#items CloudfrontFieldLevelEncryptionProfile#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/cloudfront_field_level_encryption_profile#items CloudfrontFieldLevelEncryptionProfile#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

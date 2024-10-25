@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb_listener aws_alb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb_listener aws_alb_listener}.
 type AlbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -87,6 +87,9 @@ type AlbListener interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TcpIdleTimeoutSeconds() *float64
+	SetTcpIdleTimeoutSeconds(val *float64)
+	TcpIdleTimeoutSecondsInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -153,6 +156,7 @@ type AlbListener interface {
 	ResetSslPolicy()
 	ResetTags()
 	ResetTagsAll()
+	ResetTcpIdleTimeoutSeconds()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -532,6 +536,26 @@ func (j *jsiiProxy_AlbListener) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AlbListener) TcpIdleTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpIdleTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListener) TcpIdleTimeoutSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpIdleTimeoutSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlbListener) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -583,7 +607,7 @@ func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerConfig) AlbListener {
 	_init_.Initialize()
 
@@ -601,7 +625,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *string, config *AlbListenerConfig) {
 	_init_.Initialize()
 
@@ -775,6 +799,17 @@ func (j *jsiiProxy_AlbListener)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbListener)SetTcpIdleTimeoutSeconds(val *float64) {
+	if err := j.validateSetTcpIdleTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpIdleTimeoutSeconds",
 		val,
 	)
 }
@@ -1241,6 +1276,14 @@ func (a *jsiiProxy_AlbListener) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbListener) ResetTcpIdleTimeoutSeconds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTcpIdleTimeoutSeconds",
 		nil, // no parameters
 	)
 }

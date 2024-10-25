@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
 type DataAwsServicequotasTemplates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsServicequotasTemplates) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
 func NewDataAwsServicequotasTemplates(scope constructs.Construct, id *string, config *DataAwsServicequotasTemplatesConfig) DataAwsServicequotasTemplates {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsServicequotasTemplates(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
 func NewDataAwsServicequotasTemplates_Override(d DataAwsServicequotasTemplates, scope constructs.Construct, id *string, config *DataAwsServicequotasTemplatesConfig) {
 	_init_.Initialize()
 

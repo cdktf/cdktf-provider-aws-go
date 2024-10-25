@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type DataAwsLakeformationDataLakeSettings interface {
 	cdktf.TerraformDataSource
 	Admins() *[]*string
@@ -54,6 +54,7 @@ type DataAwsLakeformationDataLakeSettings interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Parameters() cdktf.StringMap
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -317,6 +318,16 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Node() constructs.Node 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Parameters() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -388,7 +399,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TrustedResourceOwners()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) DataAwsLakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -406,7 +417,7 @@ func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings_Override(d DataAwsLakeformationDataLakeSettings, scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 

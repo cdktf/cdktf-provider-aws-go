@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/alb aws_alb}.
 type DataAwsAlb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsAlbAccessLogsList
@@ -45,6 +45,7 @@ type DataAwsAlb interface {
 	EnableTlsVersionAndCipherSuiteHeaders() cdktf.IResolvable
 	EnableWafFailOpen() cdktf.IResolvable
 	EnableXffClientPort() cdktf.IResolvable
+	EnableZonalShift() cdktf.IResolvable
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -357,6 +358,16 @@ func (j *jsiiProxy_DataAwsAlb) EnableXffClientPort() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAlb) EnableZonalShift() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableZonalShift",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAlb) EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string {
 	var returns *string
 	_jsii_.Get(
@@ -658,7 +669,7 @@ func (j *jsiiProxy_DataAwsAlb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/alb aws_alb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/alb aws_alb} Data Source.
 func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbConfig) DataAwsAlb {
 	_init_.Initialize()
 
@@ -676,7 +687,7 @@ func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/alb aws_alb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/alb aws_alb} Data Source.
 func NewDataAwsAlb_Override(d DataAwsAlb, scope constructs.Construct, id *string, config *DataAwsAlbConfig) {
 	_init_.Initialize()
 

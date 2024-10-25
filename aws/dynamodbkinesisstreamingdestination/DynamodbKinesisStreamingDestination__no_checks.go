@@ -91,6 +91,10 @@ func validateDynamodbKinesisStreamingDestination_IsTerraformResourceParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetApproximateCreationDateTimePrecisionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

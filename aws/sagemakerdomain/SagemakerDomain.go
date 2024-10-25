@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_domain aws_sagemaker_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_domain aws_sagemaker_domain}.
 type SagemakerDomain interface {
 	cdktf.TerraformResource
 	AppNetworkAccessType() *string
@@ -89,6 +89,9 @@ type SagemakerDomain interface {
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
+	TagPropagation() *string
+	SetTagPropagation(val *string)
+	TagPropagationInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -162,6 +165,7 @@ type SagemakerDomain interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionPolicy()
+	ResetTagPropagation()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -582,6 +586,26 @@ func (j *jsiiProxy_SagemakerDomain) SubnetIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerDomain) TagPropagation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPropagation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) TagPropagationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPropagationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerDomain) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -683,7 +707,7 @@ func (j *jsiiProxy_SagemakerDomain) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource.
 func NewSagemakerDomain(scope constructs.Construct, id *string, config *SagemakerDomainConfig) SagemakerDomain {
 	_init_.Initialize()
 
@@ -701,7 +725,7 @@ func NewSagemakerDomain(scope constructs.Construct, id *string, config *Sagemake
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource.
 func NewSagemakerDomain_Override(s SagemakerDomain, scope constructs.Construct, id *string, config *SagemakerDomainConfig) {
 	_init_.Initialize()
 
@@ -853,6 +877,17 @@ func (j *jsiiProxy_SagemakerDomain)SetSubnetIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"subnetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerDomain)SetTagPropagation(val *string) {
+	if err := j.validateSetTagPropagationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagPropagation",
 		val,
 	)
 }
@@ -1347,6 +1382,14 @@ func (s *jsiiProxy_SagemakerDomain) ResetRetentionPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomain) ResetTagPropagation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTagPropagation",
 		nil, // no parameters
 	)
 }

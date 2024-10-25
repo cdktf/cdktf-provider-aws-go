@@ -139,6 +139,10 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

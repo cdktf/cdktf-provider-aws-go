@@ -5,9 +5,9 @@ package bedrockagentagentalias
 
 
 type BedrockagentAgentAliasRoutingConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/bedrockagent_agent_alias#agent_version BedrockagentAgentAlias#agent_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/bedrockagent_agent_alias#agent_version BedrockagentAgentAlias#agent_version}.
 	AgentVersion *string `field:"optional" json:"agentVersion" yaml:"agentVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/bedrockagent_agent_alias#provisioned_throughput BedrockagentAgentAlias#provisioned_throughput}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/bedrockagent_agent_alias#provisioned_throughput BedrockagentAgentAlias#provisioned_throughput}.
 	ProvisionedThroughput *string `field:"optional" json:"provisionedThroughput" yaml:"provisionedThroughput"`
 }
 

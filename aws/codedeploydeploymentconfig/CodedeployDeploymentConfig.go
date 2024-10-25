@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config}.
 type CodedeployDeploymentConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,8 @@ type CodedeployDeploymentConfig interface {
 	TerraformResourceType() *string
 	TrafficRoutingConfig() CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	TrafficRoutingConfigInput() *CodedeployDeploymentConfigTrafficRoutingConfig
+	ZonalConfig() CodedeployDeploymentConfigZonalConfigOutputReference
+	ZonalConfigInput() *CodedeployDeploymentConfigZonalConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -121,6 +123,7 @@ type CodedeployDeploymentConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMinimumHealthyHosts(value *CodedeployDeploymentConfigMinimumHealthyHosts)
 	PutTrafficRoutingConfig(value *CodedeployDeploymentConfigTrafficRoutingConfig)
+	PutZonalConfig(value *CodedeployDeploymentConfigZonalConfig)
 	ResetComputePlatform()
 	ResetId()
 	ResetMinimumHealthyHosts()
@@ -128,6 +131,7 @@ type CodedeployDeploymentConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTrafficRoutingConfig()
+	ResetZonalConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -426,8 +430,28 @@ func (j *jsiiProxy_CodedeployDeploymentConfig) TrafficRoutingConfigInput() *Code
 	return returns
 }
 
+func (j *jsiiProxy_CodedeployDeploymentConfig) ZonalConfig() CodedeployDeploymentConfigZonalConfigOutputReference {
+	var returns CodedeployDeploymentConfigZonalConfigOutputReference
+	_jsii_.Get(
+		j,
+		"zonalConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource.
+func (j *jsiiProxy_CodedeployDeploymentConfig) ZonalConfigInput() *CodedeployDeploymentConfigZonalConfig {
+	var returns *CodedeployDeploymentConfigZonalConfig
+	_jsii_.Get(
+		j,
+		"zonalConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource.
 func NewCodedeployDeploymentConfig(scope constructs.Construct, id *string, config *CodedeployDeploymentConfigConfig) CodedeployDeploymentConfig {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewCodedeployDeploymentConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource.
 func NewCodedeployDeploymentConfig_Override(c CodedeployDeploymentConfig, scope constructs.Construct, id *string, config *CodedeployDeploymentConfigConfig) {
 	_init_.Initialize()
 
@@ -932,6 +956,17 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) PutTrafficRoutingConfig(value *Co
 	)
 }
 
+func (c *jsiiProxy_CodedeployDeploymentConfig) PutZonalConfig(value *CodedeployDeploymentConfigZonalConfig) {
+	if err := c.validatePutZonalConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putZonalConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodedeployDeploymentConfig) ResetComputePlatform() {
 	_jsii_.InvokeVoid(
 		c,
@@ -968,6 +1003,14 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) ResetTrafficRoutingConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTrafficRoutingConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodedeployDeploymentConfig) ResetZonalConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZonalConfig",
 		nil, // no parameters
 	)
 }

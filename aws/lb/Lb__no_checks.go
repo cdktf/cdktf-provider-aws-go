@@ -159,6 +159,10 @@ func (j *jsiiProxy_Lb) validateSetEnableXffClientPortParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Lb) validateSetEnableZonalShiftParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lb) validateSetEnforceSecurityGroupInboundRulesOnPrivateLinkTrafficParameters(val *string) error {
 	return nil
 }

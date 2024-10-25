@@ -30,6 +30,8 @@ type SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference interfac
 	CreationStack() *[]*string
 	DirectDeploySettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference
 	DirectDeploySettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings
+	EmrServerlessSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference
+	EmrServerlessSettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings
 	// Experimental.
 	Fqn() *string
 	GenerativeAiSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference
@@ -79,6 +81,7 @@ type SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDirectDeploySettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings)
+	PutEmrServerlessSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings)
 	PutGenerativeAiSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings)
 	PutIdentityProviderOauthSettings(value interface{})
 	PutKendraSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings)
@@ -86,6 +89,7 @@ type SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference interfac
 	PutTimeSeriesForecastingSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)
 	PutWorkspaceSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettings)
 	ResetDirectDeploySettings()
+	ResetEmrServerlessSettings()
 	ResetGenerativeAiSettings()
 	ResetIdentityProviderOauthSettings()
 	ResetKendraSettings()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputRefe
 	_jsii_.Get(
 		j,
 		"directDeploySettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) EmrServerlessSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference {
+	var returns SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"emrServerlessSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) EmrServerlessSettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings {
+	var returns *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings
+	_jsii_.Get(
+		j,
+		"emrServerlessSettingsInput",
 		&returns,
 	)
 	return returns
@@ -597,6 +621,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputRefe
 	)
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) PutEmrServerlessSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings) {
+	if err := s.validatePutEmrServerlessSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEmrServerlessSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) PutGenerativeAiSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings) {
 	if err := s.validatePutGenerativeAiSettingsParameters(value); err != nil {
 		panic(err)
@@ -667,6 +702,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputRefe
 	_jsii_.InvokeVoid(
 		s,
 		"resetDirectDeploySettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) ResetEmrServerlessSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEmrServerlessSettings",
 		nil, // no parameters
 	)
 }

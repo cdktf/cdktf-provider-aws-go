@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -54,6 +54,8 @@ type KinesisFirehoseDeliveryStream interface {
 	FriendlyUniqueId() *string
 	HttpEndpointConfiguration() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference
 	HttpEndpointConfigurationInput() *KinesisFirehoseDeliveryStreamHttpEndpointConfiguration
+	IcebergConfiguration() KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference
+	IcebergConfigurationInput() *KinesisFirehoseDeliveryStreamIcebergConfiguration
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -155,6 +157,7 @@ type KinesisFirehoseDeliveryStream interface {
 	PutElasticsearchConfiguration(value *KinesisFirehoseDeliveryStreamElasticsearchConfiguration)
 	PutExtendedS3Configuration(value *KinesisFirehoseDeliveryStreamExtendedS3Configuration)
 	PutHttpEndpointConfiguration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfiguration)
+	PutIcebergConfiguration(value *KinesisFirehoseDeliveryStreamIcebergConfiguration)
 	PutKinesisSourceConfiguration(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration)
 	PutMskSourceConfiguration(value *KinesisFirehoseDeliveryStreamMskSourceConfiguration)
 	PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration)
@@ -169,6 +172,7 @@ type KinesisFirehoseDeliveryStream interface {
 	ResetElasticsearchConfiguration()
 	ResetExtendedS3Configuration()
 	ResetHttpEndpointConfiguration()
+	ResetIcebergConfiguration()
 	ResetId()
 	ResetKinesisSourceConfiguration()
 	ResetMskSourceConfiguration()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) HttpEndpointConfigurationInput
 	_jsii_.Get(
 		j,
 		"httpEndpointConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) IcebergConfiguration() KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"icebergConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) IcebergConfigurationInput() *KinesisFirehoseDeliveryStreamIcebergConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamIcebergConfiguration
+	_jsii_.Get(
+		j,
+		"icebergConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -764,7 +788,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -782,7 +806,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -1335,6 +1359,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutHttpEndpointConfiguration(v
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutIcebergConfiguration(value *KinesisFirehoseDeliveryStreamIcebergConfiguration) {
+	if err := k.validatePutIcebergConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putIcebergConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutKinesisSourceConfiguration(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration) {
 	if err := k.validatePutKinesisSourceConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1470,6 +1505,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetHttpEndpointConfiguration
 	_jsii_.InvokeVoid(
 		k,
 		"resetHttpEndpointConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetIcebergConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetIcebergConfiguration",
 		nil, // no parameters
 	)
 }

@@ -13,6 +13,11 @@ import (
 
 type SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AppLifecycleManagement() SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference
+	AppLifecycleManagementInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement
+	BuiltInLifecycleConfigArn() *string
+	SetBuiltInLifecycleConfigArn(val *string)
+	BuiltInLifecycleConfigArnInput() *string
 	CodeRepository() SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryList
 	CodeRepositoryInput() interface{}
 	// the index of the complex object in a list.
@@ -34,6 +39,8 @@ type SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference interf
 	CustomImageInput() interface{}
 	DefaultResourceSpec() SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference
 	DefaultResourceSpecInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec
+	EmrSettings() SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference
+	EmrSettingsInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SagemakerUserProfileUserSettingsJupyterLabAppSettings
@@ -73,12 +80,17 @@ type SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAppLifecycleManagement(value *SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement)
 	PutCodeRepository(value interface{})
 	PutCustomImage(value interface{})
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec)
+	PutEmrSettings(value *SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings)
+	ResetAppLifecycleManagement()
+	ResetBuiltInLifecycleConfigArn()
 	ResetCodeRepository()
 	ResetCustomImage()
 	ResetDefaultResourceSpec()
+	ResetEmrSettings()
 	ResetLifecycleConfigArns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -93,6 +105,46 @@ type SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference interf
 // The jsii proxy struct for SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference
 type jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) AppLifecycleManagement() SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference {
+	var returns SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference
+	_jsii_.Get(
+		j,
+		"appLifecycleManagement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) AppLifecycleManagementInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement {
+	var returns *SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement
+	_jsii_.Get(
+		j,
+		"appLifecycleManagementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) BuiltInLifecycleConfigArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInLifecycleConfigArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) BuiltInLifecycleConfigArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInLifecycleConfigArnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) CodeRepository() SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryList {
@@ -185,6 +237,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) EmrSettings() SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"emrSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) EmrSettingsInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings {
+	var returns *SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings
+	_jsii_.Get(
+		j,
+		"emrSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -270,6 +342,17 @@ func NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference_Ove
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference)SetBuiltInLifecycleConfigArn(val *string) {
+	if err := j.validateSetBuiltInLifecycleConfigArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"builtInLifecycleConfigArn",
+		val,
 	)
 }
 
@@ -525,6 +608,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputRe
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) PutAppLifecycleManagement(value *SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement) {
+	if err := s.validatePutAppLifecycleManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAppLifecycleManagement",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) PutCodeRepository(value interface{}) {
 	if err := s.validatePutCodeRepositoryParameters(value); err != nil {
 		panic(err)
@@ -558,6 +652,33 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputRe
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) PutEmrSettings(value *SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings) {
+	if err := s.validatePutEmrSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEmrSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) ResetAppLifecycleManagement() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppLifecycleManagement",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) ResetBuiltInLifecycleConfigArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBuiltInLifecycleConfigArn",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) ResetCodeRepository() {
 	_jsii_.InvokeVoid(
 		s,
@@ -578,6 +699,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputRe
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultResourceSpec",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference) ResetEmrSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEmrSettings",
 		nil, // no parameters
 	)
 }

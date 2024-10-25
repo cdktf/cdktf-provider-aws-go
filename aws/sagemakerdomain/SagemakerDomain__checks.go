@@ -491,6 +491,14 @@ func (j *jsiiProxy_SagemakerDomain) validateSetSubnetIdsParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomain) validateSetTagPropagationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomain) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

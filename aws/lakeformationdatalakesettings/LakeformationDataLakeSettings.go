@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type LakeformationDataLakeSettings interface {
 	cdktf.TerraformResource
 	Admins() *[]*string
@@ -70,6 +70,9 @@ type LakeformationDataLakeSettings interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Parameters() *map[string]*string
+	SetParameters(val *map[string]*string)
+	ParametersInput() *map[string]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -149,6 +152,7 @@ type LakeformationDataLakeSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameters()
 	ResetReadOnlyAdmins()
 	ResetTrustedResourceOwners()
 	SynthesizeAttributes() *map[string]interface{}
@@ -449,6 +453,26 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) Parameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) ParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -550,7 +574,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) TrustedResourceOwnersInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) LakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -568,7 +592,7 @@ func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings_Override(l LakeformationDataLakeSettings, scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 
@@ -701,6 +725,17 @@ func (j *jsiiProxy_LakeformationDataLakeSettings)SetLifecycle(val *cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
 		val,
 	)
 }
@@ -1197,6 +1232,14 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) ResetParameters() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

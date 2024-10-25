@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -71,6 +71,9 @@ type Alb interface {
 	EnableXffClientPort() interface{}
 	SetEnableXffClientPort(val interface{})
 	EnableXffClientPortInput() interface{}
+	EnableZonalShift() interface{}
+	SetEnableZonalShift(val interface{})
+	EnableZonalShiftInput() interface{}
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string
 	SetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic(val *string)
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput() *string
@@ -209,6 +212,7 @@ type Alb interface {
 	ResetEnableTlsVersionAndCipherSuiteHeaders()
 	ResetEnableWafFailOpen()
 	ResetEnableXffClientPort()
+	ResetEnableZonalShift()
 	ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
 	ResetId()
 	ResetIdleTimeout()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_Alb) EnableXffClientPortInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableXffClientPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) EnableZonalShift() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableZonalShift",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) EnableZonalShiftInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableZonalShiftInput",
 		&returns,
 	)
 	return returns
@@ -1037,7 +1061,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -1055,7 +1079,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1213,6 +1237,17 @@ func (j *jsiiProxy_Alb)SetEnableXffClientPort(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableXffClientPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Alb)SetEnableZonalShift(val interface{}) {
+	if err := j.validateSetEnableZonalShiftParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableZonalShift",
 		val,
 	)
 }
@@ -1906,6 +1941,14 @@ func (a *jsiiProxy_Alb) ResetEnableXffClientPort() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnableXffClientPort",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetEnableZonalShift() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableZonalShift",
 		nil, // no parameters
 	)
 }

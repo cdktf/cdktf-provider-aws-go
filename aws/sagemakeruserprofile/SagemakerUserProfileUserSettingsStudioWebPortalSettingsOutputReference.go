@@ -33,6 +33,9 @@ type SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference inte
 	HiddenAppTypes() *[]*string
 	SetHiddenAppTypes(val *[]*string)
 	HiddenAppTypesInput() *[]*string
+	HiddenInstanceTypes() *[]*string
+	SetHiddenInstanceTypes(val *[]*string)
+	HiddenInstanceTypesInput() *[]*string
 	HiddenMlTools() *[]*string
 	SetHiddenMlTools(val *[]*string)
 	HiddenMlToolsInput() *[]*string
@@ -71,6 +74,7 @@ type SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHiddenAppTypes()
+	ResetHiddenInstanceTypes()
 	ResetHiddenMlTools()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutput
 	_jsii_.Get(
 		j,
 		"hiddenAppTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference) HiddenInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hiddenInstanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference) HiddenInstanceTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hiddenInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutput
 	_jsii_.Set(
 		j,
 		"hiddenAppTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference)SetHiddenInstanceTypes(val *[]*string) {
+	if err := j.validateSetHiddenInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hiddenInstanceTypes",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutput
 	_jsii_.InvokeVoid(
 		s,
 		"resetHiddenAppTypes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference) ResetHiddenInstanceTypes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHiddenInstanceTypes",
 		nil, // no parameters
 	)
 }

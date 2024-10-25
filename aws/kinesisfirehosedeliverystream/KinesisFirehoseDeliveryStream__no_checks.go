@@ -87,6 +87,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutHttpEndpointConfigu
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutIcebergConfigurationParameters(value *KinesisFirehoseDeliveryStreamIcebergConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutKinesisSourceConfigurationParameters(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration) error {
 	return nil
 }

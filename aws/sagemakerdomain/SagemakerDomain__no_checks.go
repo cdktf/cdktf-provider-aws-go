@@ -151,6 +151,10 @@ func (j *jsiiProxy_SagemakerDomain) validateSetSubnetIdsParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomain) validateSetTagPropagationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

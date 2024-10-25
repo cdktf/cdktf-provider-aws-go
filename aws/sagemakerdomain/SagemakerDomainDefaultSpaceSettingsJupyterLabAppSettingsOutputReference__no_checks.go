@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutpu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validatePutAppLifecycleManagementParameters(value *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validatePutCodeRepositoryParameters(value interface{}) error {
 	return nil
 }
@@ -59,7 +63,15 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutpu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validatePutEmrSettingsParameters(value *SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsEmrSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateSetBuiltInLifecycleConfigArnParameters(val *string) error {
 	return nil
 }
 

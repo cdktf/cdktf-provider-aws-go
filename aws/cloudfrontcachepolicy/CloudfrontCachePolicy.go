@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy}.
 type CloudfrontCachePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_CloudfrontCachePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
 func NewCloudfrontCachePolicy(scope constructs.Construct, id *string, config *CloudfrontCachePolicyConfig) CloudfrontCachePolicy {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewCloudfrontCachePolicy(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
 func NewCloudfrontCachePolicy_Override(c CloudfrontCachePolicy, scope constructs.Construct, id *string, config *CloudfrontCachePolicyConfig) {
 	_init_.Initialize()
 

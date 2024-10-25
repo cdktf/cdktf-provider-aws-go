@@ -63,6 +63,10 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutput
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference) validateSetHiddenInstanceTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference) validateSetHiddenMlToolsParameters(val *[]*string) error {
 	return nil
 }

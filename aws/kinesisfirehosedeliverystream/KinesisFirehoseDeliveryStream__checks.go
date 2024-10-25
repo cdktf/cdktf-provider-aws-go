@@ -240,6 +240,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutHttpEndpointConfigu
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutIcebergConfigurationParameters(value *KinesisFirehoseDeliveryStreamIcebergConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutKinesisSourceConfigurationParameters(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReferen
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference) validatePutAppLifecycleManagementParameters(value *SagemakerSpaceSpaceSettingsJupyterLabAppSettingsAppLifecycleManagement) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference) validatePutCodeRepositoryParameters(value interface{}) error {
 	return nil
 }

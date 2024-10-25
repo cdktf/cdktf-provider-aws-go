@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputRefe
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutEmrServerlessSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsEmrServerlessSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutGenerativeAiSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings) error {
 	return nil
 }

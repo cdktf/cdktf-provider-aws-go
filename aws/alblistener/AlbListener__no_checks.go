@@ -155,6 +155,10 @@ func (j *jsiiProxy_AlbListener) validateSetTagsAllParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_AlbListener) validateSetTcpIdleTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewAlbListenerParameters(scope constructs.Construct, id *string, config *AlbListenerConfig) error {
 	return nil
 }

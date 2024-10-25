@@ -24,38 +24,38 @@ type GlueMlTransformConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// input_record_tables block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
 	InputRecordTables interface{} `field:"required" json:"inputRecordTables" yaml:"inputRecordTables"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#name GlueMlTransform#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#name GlueMlTransform#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// parameters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#parameters GlueMlTransform#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#parameters GlueMlTransform#parameters}
 	Parameters *GlueMlTransformParameters `field:"required" json:"parameters" yaml:"parameters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#role_arn GlueMlTransform#role_arn}.
 	RoleArn *string `field:"required" json:"roleArn" yaml:"roleArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#description GlueMlTransform#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#description GlueMlTransform#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#glue_version GlueMlTransform#glue_version}.
 	GlueVersion *string `field:"optional" json:"glueVersion" yaml:"glueVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#id GlueMlTransform#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#id GlueMlTransform#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#max_capacity GlueMlTransform#max_capacity}.
 	MaxCapacity *float64 `field:"optional" json:"maxCapacity" yaml:"maxCapacity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#max_retries GlueMlTransform#max_retries}.
 	MaxRetries *float64 `field:"optional" json:"maxRetries" yaml:"maxRetries"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#number_of_workers GlueMlTransform#number_of_workers}.
 	NumberOfWorkers *float64 `field:"optional" json:"numberOfWorkers" yaml:"numberOfWorkers"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#tags GlueMlTransform#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#tags_all GlueMlTransform#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#timeout GlueMlTransform#timeout}.
 	Timeout *float64 `field:"optional" json:"timeout" yaml:"timeout"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_ml_transform#worker_type GlueMlTransform#worker_type}.
 	WorkerType *string `field:"optional" json:"workerType" yaml:"workerType"`
 }
 

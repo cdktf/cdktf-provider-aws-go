@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination}.
 type DynamodbKinesisStreamingDestination interface {
 	cdktf.TerraformResource
+	ApproximateCreationDateTimePrecision() *string
+	SetApproximateCreationDateTimePrecision(val *string)
+	ApproximateCreationDateTimePrecisionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -113,6 +116,7 @@ type DynamodbKinesisStreamingDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApproximateCreationDateTimePrecision()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -133,6 +137,26 @@ type DynamodbKinesisStreamingDestination interface {
 // The jsii proxy struct for DynamodbKinesisStreamingDestination
 type jsiiProxy_DynamodbKinesisStreamingDestination struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) ApproximateCreationDateTimePrecision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"approximateCreationDateTimePrecision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) ApproximateCreationDateTimePrecisionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"approximateCreationDateTimePrecisionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) CdktfStack() cdktf.TerraformStack {
@@ -356,7 +380,7 @@ func (j *jsiiProxy_DynamodbKinesisStreamingDestination) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination} Resource.
 func NewDynamodbKinesisStreamingDestination(scope constructs.Construct, id *string, config *DynamodbKinesisStreamingDestinationConfig) DynamodbKinesisStreamingDestination {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewDynamodbKinesisStreamingDestination(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/dynamodb_kinesis_streaming_destination aws_dynamodb_kinesis_streaming_destination} Resource.
 func NewDynamodbKinesisStreamingDestination_Override(d DynamodbKinesisStreamingDestination, scope constructs.Construct, id *string, config *DynamodbKinesisStreamingDestinationConfig) {
 	_init_.Initialize()
 
@@ -382,6 +406,17 @@ func NewDynamodbKinesisStreamingDestination_Override(d DynamodbKinesisStreamingD
 		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination)SetApproximateCreationDateTimePrecision(val *string) {
+	if err := j.validateSetApproximateCreationDateTimePrecisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"approximateCreationDateTimePrecision",
+		val,
 	)
 }
 
@@ -836,6 +871,14 @@ func (d *jsiiProxy_DynamodbKinesisStreamingDestination) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) ResetApproximateCreationDateTimePrecision() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetApproximateCreationDateTimePrecision",
+		nil, // no parameters
 	)
 }
 

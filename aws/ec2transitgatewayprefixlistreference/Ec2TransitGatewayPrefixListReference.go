@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference}.
 type Ec2TransitGatewayPrefixListReference interface {
 	cdktf.TerraformResource
 	Blackhole() interface{}
@@ -415,7 +415,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) TransitGatewayRouteTabl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
 func NewEc2TransitGatewayPrefixListReference(scope constructs.Construct, id *string, config *Ec2TransitGatewayPrefixListReferenceConfig) Ec2TransitGatewayPrefixListReference {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewEc2TransitGatewayPrefixListReference(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
 func NewEc2TransitGatewayPrefixListReference_Override(e Ec2TransitGatewayPrefixListReference, scope constructs.Construct, id *string, config *Ec2TransitGatewayPrefixListReferenceConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,11 @@ import (
 
 type SagemakerFeatureGroupFeatureDefinitionOutputReference interface {
 	cdktf.ComplexObject
+	CollectionConfig() SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference
+	CollectionConfigInput() *SagemakerFeatureGroupFeatureDefinitionCollectionConfig
+	CollectionType() *string
+	SetCollectionType(val *string)
+	CollectionTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +75,9 @@ type SagemakerFeatureGroupFeatureDefinitionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCollectionConfig(value *SagemakerFeatureGroupFeatureDefinitionCollectionConfig)
+	ResetCollectionConfig()
+	ResetCollectionType()
 	ResetFeatureName()
 	ResetFeatureType()
 	// Produce the Token's value at resolution time.
@@ -85,6 +93,46 @@ type SagemakerFeatureGroupFeatureDefinitionOutputReference interface {
 // The jsii proxy struct for SagemakerFeatureGroupFeatureDefinitionOutputReference
 type jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) CollectionConfig() SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference {
+	var returns SagemakerFeatureGroupFeatureDefinitionCollectionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"collectionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) CollectionConfigInput() *SagemakerFeatureGroupFeatureDefinitionCollectionConfig {
+	var returns *SagemakerFeatureGroupFeatureDefinitionCollectionConfig
+	_jsii_.Get(
+		j,
+		"collectionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) CollectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) CollectionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"collectionTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) ComplexObjectIndex() interface{} {
@@ -222,6 +270,17 @@ func NewSagemakerFeatureGroupFeatureDefinitionOutputReference_Override(s Sagemak
 		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference)SetCollectionType(val *string) {
+	if err := j.validateSetCollectionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"collectionType",
+		val,
 	)
 }
 
@@ -486,6 +545,33 @@ func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) PutCollectionConfig(value *SagemakerFeatureGroupFeatureDefinitionCollectionConfig) {
+	if err := s.validatePutCollectionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCollectionConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) ResetCollectionConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCollectionConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) ResetCollectionType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCollectionType",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) ResetFeatureName() {

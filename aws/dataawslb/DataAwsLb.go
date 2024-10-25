@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lb aws_lb}.
 type DataAwsLb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsLbAccessLogsList
@@ -45,6 +45,7 @@ type DataAwsLb interface {
 	EnableTlsVersionAndCipherSuiteHeaders() cdktf.IResolvable
 	EnableWafFailOpen() cdktf.IResolvable
 	EnableXffClientPort() cdktf.IResolvable
+	EnableZonalShift() cdktf.IResolvable
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -357,6 +358,16 @@ func (j *jsiiProxy_DataAwsLb) EnableXffClientPort() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLb) EnableZonalShift() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableZonalShift",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLb) EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string {
 	var returns *string
 	_jsii_.Get(
@@ -658,7 +669,7 @@ func (j *jsiiProxy_DataAwsLb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfig) DataAwsLb {
 	_init_.Initialize()
 
@@ -676,7 +687,7 @@ func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb_Override(d DataAwsLb, scope constructs.Construct, id *string, config *DataAwsLbConfig) {
 	_init_.Initialize()
 

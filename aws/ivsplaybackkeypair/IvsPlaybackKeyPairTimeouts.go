@@ -5,9 +5,9 @@ package ivsplaybackkeypair
 
 
 type IvsPlaybackKeyPairTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/ivs_playback_key_pair#create IvsPlaybackKeyPair#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/ivs_playback_key_pair#delete IvsPlaybackKeyPair#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

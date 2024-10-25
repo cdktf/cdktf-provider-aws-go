@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) validatePutAppLifecycleManagementParameters(value *SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagement) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) validatePutCustomImageParameters(value interface{}) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 }
 
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) validateSetBuiltInLifecycleConfigArnParameters(val *string) error {
 	return nil
 }
 

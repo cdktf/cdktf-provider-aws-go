@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -71,6 +71,9 @@ type Lb interface {
 	EnableXffClientPort() interface{}
 	SetEnableXffClientPort(val interface{})
 	EnableXffClientPortInput() interface{}
+	EnableZonalShift() interface{}
+	SetEnableZonalShift(val interface{})
+	EnableZonalShiftInput() interface{}
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string
 	SetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic(val *string)
 	EnforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput() *string
@@ -209,6 +212,7 @@ type Lb interface {
 	ResetEnableTlsVersionAndCipherSuiteHeaders()
 	ResetEnableWafFailOpen()
 	ResetEnableXffClientPort()
+	ResetEnableZonalShift()
 	ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
 	ResetId()
 	ResetIdleTimeout()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_Lb) EnableXffClientPortInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableXffClientPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) EnableZonalShift() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableZonalShift",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) EnableZonalShiftInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableZonalShiftInput",
 		&returns,
 	)
 	return returns
@@ -1037,7 +1061,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1055,7 +1079,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1213,6 +1237,17 @@ func (j *jsiiProxy_Lb)SetEnableXffClientPort(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableXffClientPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetEnableZonalShift(val interface{}) {
+	if err := j.validateSetEnableZonalShiftParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableZonalShift",
 		val,
 	)
 }
@@ -1906,6 +1941,14 @@ func (l *jsiiProxy_Lb) ResetEnableXffClientPort() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnableXffClientPort",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetEnableZonalShift() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnableZonalShift",
 		nil, // no parameters
 	)
 }

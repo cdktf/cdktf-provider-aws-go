@@ -38,9 +38,6 @@ type Route53ProfilesAssociationTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Read() *string
-	SetRead(val *string)
-	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,6 +46,9 @@ type Route53ProfilesAssociationTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,7 +75,7 @@ type Route53ProfilesAssociationTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetRead()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -181,26 +181,6 @@ func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) Read() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"read",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) ReadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -216,6 +196,26 @@ func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
 		&returns,
 	)
 	return returns
@@ -304,17 +304,6 @@ func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference)SetRead(val *string) {
-	if err := j.validateSetReadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"read",
-		val,
-	)
-}
-
 func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -333,6 +322,17 @@ func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference)SetTerrafor
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -539,10 +539,10 @@ func (r *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) ResetDelet
 	)
 }
 
-func (r *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) ResetRead() {
+func (r *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) ResetUpdate() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetRead",
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

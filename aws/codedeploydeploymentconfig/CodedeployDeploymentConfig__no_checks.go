@@ -83,6 +83,10 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutTrafficRoutingConfigPa
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutZonalConfigParameters(value *CodedeployDeploymentConfigZonalConfig) error {
+	return nil
+}
+
 func validateCodedeployDeploymentConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -47,7 +47,15 @@ func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) valida
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) validatePutCollectionConfigParameters(value *SagemakerFeatureGroupFeatureDefinitionCollectionConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionOutputReference) validateSetCollectionTypeParameters(val *string) error {
 	return nil
 }
 

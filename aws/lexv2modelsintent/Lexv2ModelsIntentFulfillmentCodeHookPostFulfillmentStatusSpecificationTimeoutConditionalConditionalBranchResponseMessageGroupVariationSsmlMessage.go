@@ -5,7 +5,7 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentFulfillmentCodeHookPostFulfillmentStatusSpecificationTimeoutConditionalConditionalBranchResponseMessageGroupVariationSsmlMessage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

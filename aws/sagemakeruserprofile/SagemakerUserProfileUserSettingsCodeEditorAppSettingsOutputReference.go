@@ -13,6 +13,11 @@ import (
 
 type SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AppLifecycleManagement() SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference
+	AppLifecycleManagementInput() *SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement
+	BuiltInLifecycleConfigArn() *string
+	SetBuiltInLifecycleConfigArn(val *string)
+	BuiltInLifecycleConfigArnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,8 +76,11 @@ type SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAppLifecycleManagement(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement)
 	PutCustomImage(value interface{})
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec)
+	ResetAppLifecycleManagement()
+	ResetBuiltInLifecycleConfigArn()
 	ResetCustomImage()
 	ResetDefaultResourceSpec()
 	ResetLifecycleConfigArns()
@@ -89,6 +97,46 @@ type SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference interf
 // The jsii proxy struct for SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference
 type jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) AppLifecycleManagement() SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference {
+	var returns SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference
+	_jsii_.Get(
+		j,
+		"appLifecycleManagement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) AppLifecycleManagementInput() *SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement {
+	var returns *SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement
+	_jsii_.Get(
+		j,
+		"appLifecycleManagementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) BuiltInLifecycleConfigArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInLifecycleConfigArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) BuiltInLifecycleConfigArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"builtInLifecycleConfigArnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -246,6 +294,17 @@ func NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference_Ove
 		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference)SetBuiltInLifecycleConfigArn(val *string) {
+	if err := j.validateSetBuiltInLifecycleConfigArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"builtInLifecycleConfigArn",
+		val,
 	)
 }
 
@@ -501,6 +560,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) PutAppLifecycleManagement(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement) {
+	if err := s.validatePutAppLifecycleManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAppLifecycleManagement",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) PutCustomImage(value interface{}) {
 	if err := s.validatePutCustomImageParameters(value); err != nil {
 		panic(err)
@@ -520,6 +590,22 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 		s,
 		"putDefaultResourceSpec",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) ResetAppLifecycleManagement() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppLifecycleManagement",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) ResetBuiltInLifecycleConfigArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBuiltInLifecycleConfigArn",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
 type Macie2CustomDataIdentifier interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) Macie2CustomDataIdentifier {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier_Override(m Macie2CustomDataIdentifier, scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) {
 	_init_.Initialize()
 

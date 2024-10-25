@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/account_region aws_account_region}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/account_region aws_account_region}.
 type AccountRegion interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_AccountRegion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/account_region aws_account_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/account_region aws_account_region} Resource.
 func NewAccountRegion(scope constructs.Construct, id *string, config *AccountRegionConfig) AccountRegion {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewAccountRegion(scope constructs.Construct, id *string, config *AccountReg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/account_region aws_account_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/account_region aws_account_region} Resource.
 func NewAccountRegion_Override(a AccountRegion, scope constructs.Construct, id *string, config *AccountRegionConfig) {
 	_init_.Initialize()
 

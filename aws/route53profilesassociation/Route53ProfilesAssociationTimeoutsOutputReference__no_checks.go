@@ -71,15 +71,15 @@ func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53ProfilesAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	return nil
 }
 

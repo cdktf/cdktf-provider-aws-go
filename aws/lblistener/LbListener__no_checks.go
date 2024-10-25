@@ -155,6 +155,10 @@ func (j *jsiiProxy_LbListener) validateSetTagsAllParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_LbListener) validateSetTcpIdleTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
 func validateNewLbListenerParameters(scope constructs.Construct, id *string, config *LbListenerConfig) error {
 	return nil
 }

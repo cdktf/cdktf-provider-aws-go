@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group}.
 type SagemakerFeatureGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -92,6 +92,8 @@ type SagemakerFeatureGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ThroughputConfig() SagemakerFeatureGroupThroughputConfigOutputReference
+	ThroughputConfigInput() *SagemakerFeatureGroupThroughputConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,6 +140,7 @@ type SagemakerFeatureGroup interface {
 	PutFeatureDefinition(value interface{})
 	PutOfflineStoreConfig(value *SagemakerFeatureGroupOfflineStoreConfig)
 	PutOnlineStoreConfig(value *SagemakerFeatureGroupOnlineStoreConfig)
+	PutThroughputConfig(value *SagemakerFeatureGroupThroughputConfig)
 	ResetDescription()
 	ResetId()
 	ResetOfflineStoreConfig()
@@ -147,6 +150,7 @@ type SagemakerFeatureGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetThroughputConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -555,8 +559,28 @@ func (j *jsiiProxy_SagemakerFeatureGroup) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroup) ThroughputConfig() SagemakerFeatureGroupThroughputConfigOutputReference {
+	var returns SagemakerFeatureGroupThroughputConfigOutputReference
+	_jsii_.Get(
+		j,
+		"throughputConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
+func (j *jsiiProxy_SagemakerFeatureGroup) ThroughputConfigInput() *SagemakerFeatureGroupThroughputConfig {
+	var returns *SagemakerFeatureGroupThroughputConfig
+	_jsii_.Get(
+		j,
+		"throughputConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
 func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *SagemakerFeatureGroupConfig) SagemakerFeatureGroup {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *Sa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
 func NewSagemakerFeatureGroup_Override(s SagemakerFeatureGroup, scope constructs.Construct, id *string, config *SagemakerFeatureGroupConfig) {
 	_init_.Initialize()
 
@@ -1127,6 +1151,17 @@ func (s *jsiiProxy_SagemakerFeatureGroup) PutOnlineStoreConfig(value *SagemakerF
 	)
 }
 
+func (s *jsiiProxy_SagemakerFeatureGroup) PutThroughputConfig(value *SagemakerFeatureGroupThroughputConfig) {
+	if err := s.validatePutThroughputConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putThroughputConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerFeatureGroup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1179,6 +1214,14 @@ func (s *jsiiProxy_SagemakerFeatureGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroup) ResetThroughputConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetThroughputConfig",
 		nil, // no parameters
 	)
 }
