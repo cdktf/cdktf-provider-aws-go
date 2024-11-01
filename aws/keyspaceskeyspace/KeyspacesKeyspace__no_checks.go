@@ -75,6 +75,10 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) validatePutReplicationSpecificationParameters(value *KeyspacesKeyspaceReplicationSpecification) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) validatePutTimeoutsParameters(value *KeyspacesKeyspaceTimeouts) error {
 	return nil
 }

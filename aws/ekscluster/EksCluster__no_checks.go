@@ -103,6 +103,10 @@ func (e *jsiiProxy_EksCluster) validatePutVpcConfigParameters(value *EksClusterV
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutZonalShiftConfigParameters(value *EksClusterZonalShiftConfig) error {
+	return nil
+}
+
 func validateEksCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
 type DataAwsBedrockFoundationModel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModel) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source.
 func NewDataAwsBedrockFoundationModel(scope constructs.Construct, id *string, config *DataAwsBedrockFoundationModelConfig) DataAwsBedrockFoundationModel {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataAwsBedrockFoundationModel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source.
 func NewDataAwsBedrockFoundationModel_Override(d DataAwsBedrockFoundationModel, scope constructs.Construct, id *string, config *DataAwsBedrockFoundationModelConfig) {
 	_init_.Initialize()
 

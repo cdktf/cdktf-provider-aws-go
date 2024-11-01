@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/shield_protection aws_shield_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/shield_protection aws_shield_protection}.
 type DataAwsShieldProtection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataAwsShieldProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/shield_protection aws_shield_protection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/shield_protection aws_shield_protection} Data Source.
 func NewDataAwsShieldProtection(scope constructs.Construct, id *string, config *DataAwsShieldProtectionConfig) DataAwsShieldProtection {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataAwsShieldProtection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/shield_protection aws_shield_protection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/shield_protection aws_shield_protection} Data Source.
 func NewDataAwsShieldProtection_Override(d DataAwsShieldProtection, scope constructs.Construct, id *string, config *DataAwsShieldProtectionConfig) {
 	_init_.Initialize()
 

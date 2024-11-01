@@ -38,6 +38,7 @@ type DataAwsImagebuilderDistributionConfigurationDistributionOutputReference int
 	LaunchTemplateConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList
 	LicenseConfigurationArns() *[]*string
 	Region() *string
+	S3ExportConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutpu
 	_jsii_.Get(
 		j,
 		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutputReference) S3ExportConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList {
+	var returns DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList
+	_jsii_.Get(
+		j,
+		"s3ExportConfiguration",
 		&returns,
 	)
 	return returns

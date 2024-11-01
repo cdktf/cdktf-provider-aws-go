@@ -207,6 +207,17 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) validatePutReplicationSpecificationParameters(value *KeyspacesKeyspaceReplicationSpecification) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) validatePutTimeoutsParameters(value *KeyspacesKeyspaceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

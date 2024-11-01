@@ -46,6 +46,8 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	S3ExportConfiguration() ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference
+	S3ExportConfigurationInput() *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,11 +84,13 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	PutContainerDistributionConfiguration(value *ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration)
 	PutFastLaunchConfiguration(value interface{})
 	PutLaunchTemplateConfiguration(value interface{})
+	PutS3ExportConfiguration(value *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration)
 	ResetAmiDistributionConfiguration()
 	ResetContainerDistributionConfiguration()
 	ResetFastLaunchConfiguration()
 	ResetLaunchTemplateConfiguration()
 	ResetLicenseConfigurationArns()
+	ResetS3ExportConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -267,6 +271,26 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) S3ExportConfiguration() ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference {
+	var returns ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"s3ExportConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) S3ExportConfigurationInput() *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration {
+	var returns *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration
+	_jsii_.Get(
+		j,
+		"s3ExportConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutS3ExportConfiguration(value *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration) {
+	if err := i.validatePutS3ExportConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putS3ExportConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ResetAmiDistributionConfiguration() {
 	_jsii_.InvokeVoid(
 		i,
@@ -663,6 +698,14 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.InvokeVoid(
 		i,
 		"resetLicenseConfigurationArns",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ResetS3ExportConfiguration() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetS3ExportConfiguration",
 		nil, // no parameters
 	)
 }

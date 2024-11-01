@@ -558,6 +558,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putContainerDistributionConfiguration", GoMethod: "PutContainerDistributionConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putFastLaunchConfiguration", GoMethod: "PutFastLaunchConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putLaunchTemplateConfiguration", GoMethod: "PutLaunchTemplateConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putS3ExportConfiguration", GoMethod: "PutS3ExportConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAmiDistributionConfiguration", GoMethod: "ResetAmiDistributionConfiguration"},
@@ -565,13 +566,61 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFastLaunchConfiguration", GoMethod: "ResetFastLaunchConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLaunchTemplateConfiguration", GoMethod: "ResetLaunchTemplateConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLicenseConfigurationArns", GoMethod: "ResetLicenseConfigurationArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetS3ExportConfiguration", GoMethod: "ResetS3ExportConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "s3ExportConfiguration", GoGetter: "S3ExportConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "s3ExportConfigurationInput", GoGetter: "S3ExportConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration",
+		reflect.TypeOf((*ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference",
+		reflect.TypeOf((*ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "diskImageFormat", GoGetter: "DiskImageFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "diskImageFormatInput", GoGetter: "DiskImageFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetS3Prefix", GoMethod: "ResetS3Prefix"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "roleName", GoGetter: "RoleName"},
+			_jsii_.MemberProperty{JsiiProperty: "roleNameInput", GoGetter: "RoleNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "s3Bucket", GoGetter: "S3Bucket"},
+			_jsii_.MemberProperty{JsiiProperty: "s3BucketInput", GoGetter: "S3BucketInput"},
+			_jsii_.MemberProperty{JsiiProperty: "s3Prefix", GoGetter: "S3Prefix"},
+			_jsii_.MemberProperty{JsiiProperty: "s3PrefixInput", GoGetter: "S3PrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

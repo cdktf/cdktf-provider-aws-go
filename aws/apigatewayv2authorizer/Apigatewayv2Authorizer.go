@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer}.
 type Apigatewayv2Authorizer interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
 func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) Apigatewayv2Authorizer {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
 func NewApigatewayv2Authorizer_Override(a Apigatewayv2Authorizer, scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) {
 	_init_.Initialize()
 

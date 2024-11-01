@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace}.
 type KeyspacesKeyspace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,8 @@ type KeyspacesKeyspace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationSpecification() KeyspacesKeyspaceReplicationSpecificationOutputReference
+	ReplicationSpecificationInput() *KeyspacesKeyspaceReplicationSpecification
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -119,11 +121,13 @@ type KeyspacesKeyspace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutReplicationSpecification(value *KeyspacesKeyspaceReplicationSpecification)
 	PutTimeouts(value *KeyspacesKeyspaceTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReplicationSpecification()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_KeyspacesKeyspace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KeyspacesKeyspace) ReplicationSpecification() KeyspacesKeyspaceReplicationSpecificationOutputReference {
+	var returns KeyspacesKeyspaceReplicationSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"replicationSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyspacesKeyspace) ReplicationSpecificationInput() *KeyspacesKeyspaceReplicationSpecification {
+	var returns *KeyspacesKeyspaceReplicationSpecification
+	_jsii_.Get(
+		j,
+		"replicationSpecificationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyspacesKeyspace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_KeyspacesKeyspace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace} Resource.
 func NewKeyspacesKeyspace(scope constructs.Construct, id *string, config *KeyspacesKeyspaceConfig) KeyspacesKeyspace {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewKeyspacesKeyspace(scope constructs.Construct, id *string, config *Keyspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/keyspaces_keyspace aws_keyspaces_keyspace} Resource.
 func NewKeyspacesKeyspace_Override(k KeyspacesKeyspace, scope constructs.Construct, id *string, config *KeyspacesKeyspaceConfig) {
 	_init_.Initialize()
 
@@ -910,6 +934,17 @@ func (k *jsiiProxy_KeyspacesKeyspace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) PutReplicationSpecification(value *KeyspacesKeyspaceReplicationSpecification) {
+	if err := k.validatePutReplicationSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putReplicationSpecification",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) PutTimeouts(value *KeyspacesKeyspaceTimeouts) {
 	if err := k.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -933,6 +968,14 @@ func (k *jsiiProxy_KeyspacesKeyspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyspacesKeyspace) ResetReplicationSpecification() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetReplicationSpecification",
 		nil, // no parameters
 	)
 }

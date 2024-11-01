@@ -28,8 +28,8 @@ type DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteOnTermination() cdktf.IResolvable
-	Encrypted() cdktf.IResolvable
+	DeleteOnTermination() *string
+	Encrypted() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsImagebuilderImageRecipeBlockDeviceMappingEbs
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) DeleteOnTermination() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) DeleteOnTermination() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"deleteOnTermination",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) Encrypted() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) Encrypted() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"encrypted",

@@ -7,7 +7,7 @@ package lexv2modelsslot
 type Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecification struct {
 	// default_value_list block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
 	DefaultValueList interface{} `field:"optional" json:"defaultValueList" yaml:"defaultValueList"`
 }
 

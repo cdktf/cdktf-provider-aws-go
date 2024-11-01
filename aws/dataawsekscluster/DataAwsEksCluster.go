@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_cluster aws_eks_cluster}.
 type DataAwsEksCluster interface {
 	cdktf.TerraformDataSource
 	AccessConfig() DataAwsEksClusterAccessConfigList
@@ -78,6 +78,7 @@ type DataAwsEksCluster interface {
 	UpgradePolicy() DataAwsEksClusterUpgradePolicyList
 	Version() *string
 	VpcConfig() DataAwsEksClusterVpcConfigList
+	ZonalShiftConfig() DataAwsEksClusterZonalShiftConfigList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -487,8 +488,18 @@ func (j *jsiiProxy_DataAwsEksCluster) VpcConfig() DataAwsEksClusterVpcConfigList
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEksCluster) ZonalShiftConfig() DataAwsEksClusterZonalShiftConfigList {
+	var returns DataAwsEksClusterZonalShiftConfigList
+	_jsii_.Get(
+		j,
+		"zonalShiftConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
 func NewDataAwsEksCluster(scope constructs.Construct, id *string, config *DataAwsEksClusterConfig) DataAwsEksCluster {
 	_init_.Initialize()
 
@@ -506,7 +517,7 @@ func NewDataAwsEksCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
 func NewDataAwsEksCluster_Override(d DataAwsEksCluster, scope constructs.Construct, id *string, config *DataAwsEksClusterConfig) {
 	_init_.Initialize()
 

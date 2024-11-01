@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group}.
 type CodedeployDeploymentGroup interface {
 	cdktf.TerraformResource
 	AlarmConfiguration() CodedeployDeploymentGroupAlarmConfigurationOutputReference
@@ -103,6 +103,9 @@ type CodedeployDeploymentGroup interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TerminationHookEnabled() interface{}
+	SetTerminationHookEnabled(val interface{})
+	TerminationHookEnabledInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -182,6 +185,7 @@ type CodedeployDeploymentGroup interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTerminationHookEnabled()
 	ResetTriggerConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -721,6 +725,26 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) TerminationHookEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"terminationHookEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodedeployDeploymentGroup) TerminationHookEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"terminationHookEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -772,7 +796,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfigurationInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
 func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) CodedeployDeploymentGroup {
 	_init_.Initialize()
 
@@ -790,7 +814,7 @@ func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
 func NewCodedeployDeploymentGroup_Override(c CodedeployDeploymentGroup, scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) {
 	_init_.Initialize()
 
@@ -964,6 +988,17 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetTagsAll(val *map[string]*string)
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodedeployDeploymentGroup)SetTerminationHookEnabled(val interface{}) {
+	if err := j.validateSetTerminationHookEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationHookEnabled",
 		val,
 	)
 }
@@ -1555,6 +1590,14 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodedeployDeploymentGroup) ResetTerminationHookEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTerminationHookEnabled",
 		nil, // no parameters
 	)
 }

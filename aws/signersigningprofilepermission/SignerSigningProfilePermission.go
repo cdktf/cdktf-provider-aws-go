@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission}.
 type SignerSigningProfilePermission interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
 func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, config *SignerSigningProfilePermissionConfig) SignerSigningProfilePermission {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
 func NewSignerSigningProfilePermission_Override(s SignerSigningProfilePermission, scope constructs.Construct, id *string, config *SignerSigningProfilePermissionConfig) {
 	_init_.Initialize()
 

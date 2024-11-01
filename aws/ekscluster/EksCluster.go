@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
@@ -107,6 +107,8 @@ type EksCluster interface {
 	VersionInput() *string
 	VpcConfig() EksClusterVpcConfigOutputReference
 	VpcConfigInput() *EksClusterVpcConfig
+	ZonalShiftConfig() EksClusterZonalShiftConfigOutputReference
+	ZonalShiftConfigInput() *EksClusterZonalShiftConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -157,6 +159,7 @@ type EksCluster interface {
 	PutTimeouts(value *EksClusterTimeouts)
 	PutUpgradePolicy(value *EksClusterUpgradePolicy)
 	PutVpcConfig(value *EksClusterVpcConfig)
+	PutZonalShiftConfig(value *EksClusterZonalShiftConfig)
 	ResetAccessConfig()
 	ResetBootstrapSelfManagedAddons()
 	ResetEnabledClusterLogTypes()
@@ -172,6 +175,7 @@ type EksCluster interface {
 	ResetTimeouts()
 	ResetUpgradePolicy()
 	ResetVersion()
+	ResetZonalShiftConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -730,8 +734,28 @@ func (j *jsiiProxy_EksCluster) VpcConfigInput() *EksClusterVpcConfig {
 	return returns
 }
 
+func (j *jsiiProxy_EksCluster) ZonalShiftConfig() EksClusterZonalShiftConfigOutputReference {
+	var returns EksClusterZonalShiftConfigOutputReference
+	_jsii_.Get(
+		j,
+		"zonalShiftConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+func (j *jsiiProxy_EksCluster) ZonalShiftConfigInput() *EksClusterZonalShiftConfig {
+	var returns *EksClusterZonalShiftConfig
+	_jsii_.Get(
+		j,
+		"zonalShiftConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -749,7 +773,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -1346,6 +1370,17 @@ func (e *jsiiProxy_EksCluster) PutVpcConfig(value *EksClusterVpcConfig) {
 	)
 }
 
+func (e *jsiiProxy_EksCluster) PutZonalShiftConfig(value *EksClusterZonalShiftConfig) {
+	if err := e.validatePutZonalShiftConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putZonalShiftConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksCluster) ResetAccessConfig() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1446,6 +1481,14 @@ func (e *jsiiProxy_EksCluster) ResetVersion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetZonalShiftConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetZonalShiftConfig",
 		nil, // no parameters
 	)
 }

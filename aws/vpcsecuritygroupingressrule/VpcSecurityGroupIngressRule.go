@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule}.
 type VpcSecurityGroupIngressRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -568,7 +568,7 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule) ToPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
 func NewVpcSecurityGroupIngressRule(scope constructs.Construct, id *string, config *VpcSecurityGroupIngressRuleConfig) VpcSecurityGroupIngressRule {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewVpcSecurityGroupIngressRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
 func NewVpcSecurityGroupIngressRule_Override(v VpcSecurityGroupIngressRule, scope constructs.Construct, id *string, config *VpcSecurityGroupIngressRuleConfig) {
 	_init_.Initialize()
 

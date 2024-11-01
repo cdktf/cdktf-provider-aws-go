@@ -63,6 +63,10 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutS3ExportConfigurationParameters(value *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

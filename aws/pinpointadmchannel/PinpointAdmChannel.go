@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel}.
 type PinpointAdmChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_PinpointAdmChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel} Resource.
 func NewPinpointAdmChannel(scope constructs.Construct, id *string, config *PinpointAdmChannelConfig) PinpointAdmChannel {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewPinpointAdmChannel(scope constructs.Construct, id *string, config *Pinpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/pinpoint_adm_channel aws_pinpoint_adm_channel} Resource.
 func NewPinpointAdmChannel_Override(p PinpointAdmChannel, scope constructs.Construct, id *string, config *PinpointAdmChannelConfig) {
 	_init_.Initialize()
 

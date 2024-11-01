@@ -183,6 +183,10 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetTagsAllParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetTerminationHookEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewCodedeployDeploymentGroupParameters(scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) error {
 	return nil
 }
