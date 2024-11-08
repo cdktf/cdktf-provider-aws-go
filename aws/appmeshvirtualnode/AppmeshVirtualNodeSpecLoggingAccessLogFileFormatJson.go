@@ -5,9 +5,9 @@ package appmeshvirtualnode
 
 
 type AppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_virtual_node#key AppmeshVirtualNode#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_virtual_node#value AppmeshVirtualNode#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

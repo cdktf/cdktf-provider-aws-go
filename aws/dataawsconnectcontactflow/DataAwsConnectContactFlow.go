@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow}.
 type DataAwsConnectContactFlow interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataAwsConnectContactFlow) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow} Data Source.
 func NewDataAwsConnectContactFlow(scope constructs.Construct, id *string, config *DataAwsConnectContactFlowConfig) DataAwsConnectContactFlow {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataAwsConnectContactFlow(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/connect_contact_flow aws_connect_contact_flow} Data Source.
 func NewDataAwsConnectContactFlow_Override(d DataAwsConnectContactFlow, scope constructs.Construct, id *string, config *DataAwsConnectContactFlowConfig) {
 	_init_.Initialize()
 

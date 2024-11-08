@@ -7,19 +7,19 @@ package appmeshroute
 type AppmeshRouteSpecGrpcRoute struct {
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_route#action AppmeshRoute#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_route#action AppmeshRoute#action}
 	Action *AppmeshRouteSpecGrpcRouteAction `field:"required" json:"action" yaml:"action"`
 	// match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_route#match AppmeshRoute#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_route#match AppmeshRoute#match}
 	Match *AppmeshRouteSpecGrpcRouteMatch `field:"optional" json:"match" yaml:"match"`
 	// retry_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_route#retry_policy AppmeshRoute#retry_policy}
 	RetryPolicy *AppmeshRouteSpecGrpcRouteRetryPolicy `field:"optional" json:"retryPolicy" yaml:"retryPolicy"`
 	// timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/appmesh_route#timeout AppmeshRoute#timeout}
 	Timeout *AppmeshRouteSpecGrpcRouteTimeout `field:"optional" json:"timeout" yaml:"timeout"`
 }
 

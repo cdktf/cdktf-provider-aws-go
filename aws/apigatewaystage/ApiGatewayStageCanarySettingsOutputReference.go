@@ -28,6 +28,9 @@ type ApiGatewayStageCanarySettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeploymentId() *string
+	SetDeploymentId(val *string)
+	DeploymentIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ApiGatewayStageCanarySettings
@@ -116,6 +119,26 @@ func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) DeploymentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) DeploymentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentIdInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +290,17 @@ func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentId",
 		val,
 	)
 }

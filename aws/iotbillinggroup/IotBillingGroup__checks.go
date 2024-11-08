@@ -207,12 +207,32 @@ func (i *jsiiProxy_IotBillingGroup) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (i *jsiiProxy_IotBillingGroup) validatePutPropertiesParameters(value *IotBillingGroupProperties) error {
+func (i *jsiiProxy_IotBillingGroup) validatePutPropertiesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*IotBillingGroupProperties:
+		value := value.(*[]*IotBillingGroupProperties)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*IotBillingGroupProperties:
+		value_ := value.([]*IotBillingGroupProperties)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*IotBillingGroupProperties; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -348,14 +368,6 @@ func (j *jsiiProxy_IotBillingGroup) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_IotBillingGroup) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_IotBillingGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -419,14 +431,6 @@ func (j *jsiiProxy_IotBillingGroup) validateSetProvisionersParameters(val *[]int
 }
 
 func (j *jsiiProxy_IotBillingGroup) validateSetTagsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_IotBillingGroup) validateSetTagsAllParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -63,7 +63,7 @@ func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateSetDescript
 	return nil
 }
 
-func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateSetInternalValueParameters(val *IotBillingGroupProperties) error {
+func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateSetTerrafor
 	return nil
 }
 
-func validateNewIotBillingGroupPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIotBillingGroupPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

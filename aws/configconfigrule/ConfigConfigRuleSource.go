@@ -5,17 +5,17 @@ package configconfigrule
 
 
 type ConfigConfigRuleSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
 	Owner *string `field:"required" json:"owner" yaml:"owner"`
 	// custom_policy_details block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
 	CustomPolicyDetails *ConfigConfigRuleSourceCustomPolicyDetails `field:"optional" json:"customPolicyDetails" yaml:"customPolicyDetails"`
 	// source_detail block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
 	SourceDetail interface{} `field:"optional" json:"sourceDetail" yaml:"sourceDetail"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
 	SourceIdentifier *string `field:"optional" json:"sourceIdentifier" yaml:"sourceIdentifier"`
 }
 

@@ -44,8 +44,8 @@ type BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference inter
 	ImagePullPolicy() *string
 	SetImagePullPolicy(val *string)
 	ImagePullPolicyInput() *string
-	InternalValue() *BatchJobDefinitionEksPropertiesPodPropertiesContainers
-	SetInternalValue(val *BatchJobDefinitionEksPropertiesPodPropertiesContainers)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -254,8 +254,8 @@ func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputR
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference) InternalValue() *BatchJobDefinitionEksPropertiesPodPropertiesContainers {
-	var returns *BatchJobDefinitionEksPropertiesPodPropertiesContainers
+func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -365,29 +365,29 @@ func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputR
 }
 
 
-func NewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference {
+func NewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference_Override(b BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference_Override(b BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
@@ -458,7 +458,7 @@ func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputR
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference)SetInternalValue(val *BatchJobDefinitionEksPropertiesPodPropertiesContainers) {
+func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

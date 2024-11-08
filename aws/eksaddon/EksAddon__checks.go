@@ -207,6 +207,37 @@ func (e *jsiiProxy_EksAddon) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (e *jsiiProxy_EksAddon) validatePutPodIdentityAssociationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*EksAddonPodIdentityAssociation:
+		value := value.(*[]*EksAddonPodIdentityAssociation)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*EksAddonPodIdentityAssociation:
+		value_ := value.([]*EksAddonPodIdentityAssociation)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EksAddonPodIdentityAssociation; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EksAddon) validatePutTimeoutsParameters(value *EksAddonTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

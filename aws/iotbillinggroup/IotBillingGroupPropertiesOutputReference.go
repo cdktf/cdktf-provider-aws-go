@@ -33,8 +33,8 @@ type IotBillingGroupPropertiesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *IotBillingGroupProperties
-	SetInternalValue(val *IotBillingGroupProperties)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) InternalValue() *IotBillingGroupProperties {
-	var returns *IotBillingGroupProperties
+func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference) TerraformResource()
 }
 
 
-func NewIotBillingGroupPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotBillingGroupPropertiesOutputReference {
+func NewIotBillingGroupPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotBillingGroupPropertiesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewIotBillingGroupPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewIotBillingGroupPropertiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_IotBillingGroupPropertiesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotBillingGroup.IotBillingGroupPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewIotBillingGroupPropertiesOutputReference_Override(i IotBillingGroupPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIotBillingGroupPropertiesOutputReference_Override(i IotBillingGroupPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.iotBillingGroup.IotBillingGroupPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference)SetDescription(val *
 	)
 }
 
-func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference)SetInternalValue(val *IotBillingGroupProperties) {
+func (j *jsiiProxy_IotBillingGroupPropertiesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

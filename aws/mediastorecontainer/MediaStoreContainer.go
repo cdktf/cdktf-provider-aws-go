@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/media_store_container aws_media_store_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/media_store_container aws_media_store_container}.
 type MediaStoreContainer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MediaStoreContainer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/media_store_container aws_media_store_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/media_store_container aws_media_store_container} Resource.
 func NewMediaStoreContainer(scope constructs.Construct, id *string, config *MediaStoreContainerConfig) MediaStoreContainer {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMediaStoreContainer(scope constructs.Construct, id *string, config *Medi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/media_store_container aws_media_store_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/media_store_container aws_media_store_container} Resource.
 func NewMediaStoreContainer_Override(m MediaStoreContainer, scope constructs.Construct, id *string, config *MediaStoreContainerConfig) {
 	_init_.Initialize()
 

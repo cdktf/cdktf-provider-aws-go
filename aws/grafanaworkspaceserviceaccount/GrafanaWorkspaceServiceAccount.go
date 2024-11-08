@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account}.
 type GrafanaWorkspaceServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GrafanaWorkspaceServiceAccount) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account} Resource.
 func NewGrafanaWorkspaceServiceAccount(scope constructs.Construct, id *string, config *GrafanaWorkspaceServiceAccountConfig) GrafanaWorkspaceServiceAccount {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewGrafanaWorkspaceServiceAccount(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/grafana_workspace_service_account aws_grafana_workspace_service_account} Resource.
 func NewGrafanaWorkspaceServiceAccount_Override(g GrafanaWorkspaceServiceAccount, scope constructs.Construct, id *string, config *GrafanaWorkspaceServiceAccountConfig) {
 	_init_.Initialize()
 

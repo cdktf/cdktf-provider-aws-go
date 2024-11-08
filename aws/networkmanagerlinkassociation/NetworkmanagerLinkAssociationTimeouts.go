@@ -5,9 +5,9 @@ package networkmanagerlinkassociation
 
 
 type NetworkmanagerLinkAssociationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/networkmanager_link_association#create NetworkmanagerLinkAssociation#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/networkmanager_link_association#create NetworkmanagerLinkAssociation#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/networkmanager_link_association#delete NetworkmanagerLinkAssociation#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/networkmanager_link_association#delete NetworkmanagerLinkAssociation#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

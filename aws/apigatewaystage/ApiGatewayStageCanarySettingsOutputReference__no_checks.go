@@ -59,6 +59,10 @@ func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetDeploymentIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayStageCanarySettingsOutputReference) validateSetInternalValueParameters(val *ApiGatewayStageCanarySettings) error {
 	return nil
 }

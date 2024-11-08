@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/eks_addon aws_eks_addon}.
 type EksAddon interface {
 	cdktf.TerraformResource
 	AddonName() *string
@@ -63,6 +63,8 @@ type EksAddon interface {
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
+	PodIdentityAssociation() EksAddonPodIdentityAssociationList
+	PodIdentityAssociationInput() interface{}
 	Preserve() interface{}
 	SetPreserve(val interface{})
 	PreserveInput() interface{}
@@ -145,6 +147,7 @@ type EksAddon interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPodIdentityAssociation(value interface{})
 	PutTimeouts(value *EksAddonTimeouts)
 	ResetAddonVersion()
 	ResetConfigurationValues()
@@ -152,6 +155,7 @@ type EksAddon interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodIdentityAssociation()
 	ResetPreserve()
 	ResetResolveConflicts()
 	ResetResolveConflictsOnCreate()
@@ -408,6 +412,26 @@ func (j *jsiiProxy_EksAddon) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EksAddon) PodIdentityAssociation() EksAddonPodIdentityAssociationList {
+	var returns EksAddonPodIdentityAssociationList
+	_jsii_.Get(
+		j,
+		"podIdentityAssociation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) PodIdentityAssociationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"podIdentityAssociationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksAddon) Preserve() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -629,7 +653,7 @@ func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig) EksAddon {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, config *EksAddonConfig) {
 	_init_.Initialize()
 
@@ -1211,6 +1235,17 @@ func (e *jsiiProxy_EksAddon) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_EksAddon) PutPodIdentityAssociation(value interface{}) {
+	if err := e.validatePutPodIdentityAssociationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putPodIdentityAssociation",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksAddon) PutTimeouts(value *EksAddonTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1250,6 +1285,14 @@ func (e *jsiiProxy_EksAddon) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAddon) ResetPodIdentityAssociation() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPodIdentityAssociation",
 		nil, // no parameters
 	)
 }

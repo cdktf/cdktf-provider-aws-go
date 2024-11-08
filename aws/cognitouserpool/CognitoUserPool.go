@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/cognito_user_pool aws_cognito_user_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/cognito_user_pool aws_cognito_user_pool}.
 type CognitoUserPool interface {
 	cdktf.TerraformResource
 	AccountRecoverySetting() CognitoUserPoolAccountRecoverySettingOutputReference
@@ -986,7 +986,7 @@ func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplateInput() *CognitoU
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
 func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoUserPoolConfig) CognitoUserPool {
 	_init_.Initialize()
 
@@ -1004,7 +1004,7 @@ func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
 func NewCognitoUserPool_Override(c CognitoUserPool, scope constructs.Construct, id *string, config *CognitoUserPoolConfig) {
 	_init_.Initialize()
 

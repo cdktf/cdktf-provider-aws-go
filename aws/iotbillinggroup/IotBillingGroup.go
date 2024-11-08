@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/iot_billing_group aws_iot_billing_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/iot_billing_group aws_iot_billing_group}.
 type IotBillingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -41,8 +41,6 @@ type IotBillingGroup interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,8 +51,8 @@ type IotBillingGroup interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Properties() IotBillingGroupPropertiesOutputReference
-	PropertiesInput() *IotBillingGroupProperties
+	Properties() IotBillingGroupPropertiesList
+	PropertiesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,9 +65,7 @@ type IotBillingGroup interface {
 	RawOverrides() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
-	TagsAll() *map[string]*string
-	SetTagsAll(val *map[string]*string)
-	TagsAllInput() *map[string]*string
+	TagsAll() cdktf.StringMap
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -121,14 +117,12 @@ type IotBillingGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperties(value *IotBillingGroupProperties)
-	ResetId()
+	PutProperties(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProperties()
 	ResetTags()
-	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -247,16 +241,6 @@ func (j *jsiiProxy_IotBillingGroup) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotBillingGroup) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IotBillingGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -307,8 +291,8 @@ func (j *jsiiProxy_IotBillingGroup) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IotBillingGroup) Properties() IotBillingGroupPropertiesOutputReference {
-	var returns IotBillingGroupPropertiesOutputReference
+func (j *jsiiProxy_IotBillingGroup) Properties() IotBillingGroupPropertiesList {
+	var returns IotBillingGroupPropertiesList
 	_jsii_.Get(
 		j,
 		"properties",
@@ -317,8 +301,8 @@ func (j *jsiiProxy_IotBillingGroup) Properties() IotBillingGroupPropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_IotBillingGroup) PropertiesInput() *IotBillingGroupProperties {
-	var returns *IotBillingGroupProperties
+func (j *jsiiProxy_IotBillingGroup) PropertiesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"propertiesInput",
@@ -367,21 +351,11 @@ func (j *jsiiProxy_IotBillingGroup) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_IotBillingGroup) TagsAll() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_IotBillingGroup) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tagsAll",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IotBillingGroup) TagsAllInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -438,7 +412,7 @@ func (j *jsiiProxy_IotBillingGroup) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
 func NewIotBillingGroup(scope constructs.Construct, id *string, config *IotBillingGroupConfig) IotBillingGroup {
 	_init_.Initialize()
 
@@ -456,7 +430,7 @@ func NewIotBillingGroup(scope constructs.Construct, id *string, config *IotBilli
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
 func NewIotBillingGroup_Override(i IotBillingGroup, scope constructs.Construct, id *string, config *IotBillingGroupConfig) {
 	_init_.Initialize()
 
@@ -501,17 +475,6 @@ func (j *jsiiProxy_IotBillingGroup)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IotBillingGroup)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -564,17 +527,6 @@ func (j *jsiiProxy_IotBillingGroup)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IotBillingGroup)SetTagsAll(val *map[string]*string) {
-	if err := j.validateSetTagsAllParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagsAll",
 		val,
 	)
 }
@@ -932,7 +884,7 @@ func (i *jsiiProxy_IotBillingGroup) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (i *jsiiProxy_IotBillingGroup) PutProperties(value *IotBillingGroupProperties) {
+func (i *jsiiProxy_IotBillingGroup) PutProperties(value interface{}) {
 	if err := i.validatePutPropertiesParameters(value); err != nil {
 		panic(err)
 	}
@@ -940,14 +892,6 @@ func (i *jsiiProxy_IotBillingGroup) PutProperties(value *IotBillingGroupProperti
 		i,
 		"putProperties",
 		[]interface{}{value},
-	)
-}
-
-func (i *jsiiProxy_IotBillingGroup) ResetId() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetId",
-		nil, // no parameters
 	)
 }
 
@@ -971,14 +915,6 @@ func (i *jsiiProxy_IotBillingGroup) ResetTags() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IotBillingGroup) ResetTagsAll() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetTagsAll",
 		nil, // no parameters
 	)
 }

@@ -75,7 +75,7 @@ func (i *jsiiProxy_IotBillingGroup) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (i *jsiiProxy_IotBillingGroup) validatePutPropertiesParameters(value *IotBillingGroupProperties) error {
+func (i *jsiiProxy_IotBillingGroup) validatePutPropertiesParameters(value interface{}) error {
 	return nil
 }
 
@@ -103,10 +103,6 @@ func (j *jsiiProxy_IotBillingGroup) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_IotBillingGroup) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_IotBillingGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -120,10 +116,6 @@ func (j *jsiiProxy_IotBillingGroup) validateSetProvisionersParameters(val *[]int
 }
 
 func (j *jsiiProxy_IotBillingGroup) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_IotBillingGroup) validateSetTagsAllParameters(val *map[string]*string) error {
 	return nil
 }
 

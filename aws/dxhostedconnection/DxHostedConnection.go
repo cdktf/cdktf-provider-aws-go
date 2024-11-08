@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
 type DxHostedConnection interface {
 	cdktf.TerraformResource
 	AwsDevice() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_DxHostedConnection) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
 func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHostedConnectionConfig) DxHostedConnection {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
 func NewDxHostedConnection_Override(d DxHostedConnection, scope constructs.Construct, id *string, config *DxHostedConnectionConfig) {
 	_init_.Initialize()
 

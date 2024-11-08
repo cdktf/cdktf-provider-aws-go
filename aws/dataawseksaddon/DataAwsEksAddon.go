@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/eks_addon aws_eks_addon}.
 type DataAwsEksAddon interface {
 	cdktf.TerraformDataSource
 	AddonName() *string
@@ -55,6 +55,7 @@ type DataAwsEksAddon interface {
 	ModifiedAt() *string
 	// The tree node.
 	Node() constructs.Node
+	PodIdentityAssociation() DataAwsEksAddonPodIdentityAssociationList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -320,6 +321,16 @@ func (j *jsiiProxy_DataAwsEksAddon) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEksAddon) PodIdentityAssociation() DataAwsEksAddonPodIdentityAssociationList {
+	var returns DataAwsEksAddonPodIdentityAssociationList
+	_jsii_.Get(
+		j,
+		"podIdentityAssociation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEksAddon) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -401,7 +412,7 @@ func (j *jsiiProxy_DataAwsEksAddon) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) DataAwsEksAddon {
 	_init_.Initialize()
 
@@ -419,7 +430,7 @@ func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon_Override(d DataAwsEksAddon, scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) {
 	_init_.Initialize()
 
