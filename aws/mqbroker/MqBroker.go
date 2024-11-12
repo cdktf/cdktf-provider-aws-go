@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/mq_broker aws_mq_broker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/mq_broker aws_mq_broker}.
 type MqBroker interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -890,7 +890,7 @@ func (j *jsiiProxy_MqBroker) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig) MqBroker {
 	_init_.Initialize()
 
@@ -908,7 +908,7 @@ func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker_Override(m MqBroker, scope constructs.Construct, id *string, config *MqBrokerConfig) {
 	_init_.Initialize()
 

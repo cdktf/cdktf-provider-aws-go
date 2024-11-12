@@ -99,6 +99,10 @@ func (j *jsiiProxy_CloudwatchEventBus) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventBus) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventBus) validateSetEventSourceNameParameters(val *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package sagemakerfeaturegroup
 
 
 type SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/sagemaker_feature_group#dimension SagemakerFeatureGroup#dimension}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/sagemaker_feature_group#dimension SagemakerFeatureGroup#dimension}.
 	Dimension *float64 `field:"optional" json:"dimension" yaml:"dimension"`
 }
 

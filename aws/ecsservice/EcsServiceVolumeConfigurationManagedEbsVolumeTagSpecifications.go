@@ -5,11 +5,11 @@ package ecsservice
 
 
 type EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecifications struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ecs_service#resource_type EcsService#resource_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ecs_service#resource_type EcsService#resource_type}.
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ecs_service#propagate_tags EcsService#propagate_tags}.
 	PropagateTags *string `field:"optional" json:"propagateTags" yaml:"propagateTags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ecs_service#tags EcsService#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ecs_service#tags EcsService#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

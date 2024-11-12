@@ -103,15 +103,15 @@ func (j *jsiiProxy_ApiGatewayAccount) validateSetCountParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayAccount) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ApiGatewayAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ApiGatewayAccount) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiGatewayAccount) validateSetResetOnDeleteParameters(val interface{}) error {
 	return nil
 }
 

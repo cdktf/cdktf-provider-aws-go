@@ -5,9 +5,9 @@ package opensearchdomainsamloptions
 
 
 type OpensearchDomainSamlOptionsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/opensearch_domain_saml_options#delete OpensearchDomainSamlOptions#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/opensearch_domain_saml_options#delete OpensearchDomainSamlOptions#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/opensearch_domain_saml_options#update OpensearchDomainSamlOptions#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/opensearch_domain_saml_options#update OpensearchDomainSamlOptions#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account aws_api_gateway_account}.
 type ApiGatewayAccount interface {
 	cdktf.TerraformResource
 	ApiKeyVersion() *string
@@ -45,8 +45,6 @@ type ApiGatewayAccount interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -63,6 +61,9 @@ type ApiGatewayAccount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResetOnDelete() interface{}
+	SetResetOnDelete(val interface{})
+	ResetOnDeleteInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,10 +115,10 @@ type ApiGatewayAccount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCloudwatchRoleArn()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResetOnDelete()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -266,16 +267,6 @@ func (j *jsiiProxy_ApiGatewayAccount) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayAccount) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiGatewayAccount) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -326,6 +317,26 @@ func (j *jsiiProxy_ApiGatewayAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayAccount) ResetOnDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resetOnDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayAccount) ResetOnDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resetOnDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -367,7 +378,7 @@ func (j *jsiiProxy_ApiGatewayAccount) ThrottleSettings() ApiGatewayAccountThrott
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) ApiGatewayAccount {
 	_init_.Initialize()
 
@@ -385,7 +396,7 @@ func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount_Override(a ApiGatewayAccount, scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) {
 	_init_.Initialize()
 
@@ -445,17 +456,6 @@ func (j *jsiiProxy_ApiGatewayAccount)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayAccount)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ApiGatewayAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -482,6 +482,17 @@ func (j *jsiiProxy_ApiGatewayAccount)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayAccount)SetResetOnDelete(val interface{}) {
+	if err := j.validateSetResetOnDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resetOnDelete",
 		val,
 	)
 }
@@ -847,18 +858,18 @@ func (a *jsiiProxy_ApiGatewayAccount) ResetCloudwatchRoleArn() {
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayAccount) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_ApiGatewayAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayAccount) ResetResetOnDelete() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResetOnDelete",
 		nil, // no parameters
 	)
 }

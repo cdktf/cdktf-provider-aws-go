@@ -5,9 +5,9 @@ package mwaaenvironment
 
 
 type MwaaEnvironmentLoggingConfigurationTaskLogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/mwaa_environment#enabled MwaaEnvironment#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/mwaa_environment#log_level MwaaEnvironment#log_level}.
 	LogLevel *string `field:"optional" json:"logLevel" yaml:"logLevel"`
 }
 

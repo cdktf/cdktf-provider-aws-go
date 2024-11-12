@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token}.
 type DataAwsEcrAuthorizationToken interface {
 	cdktf.TerraformDataSource
 	AuthorizationToken() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAwsEcrAuthorizationToken) UserName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token} Data Source.
 func NewDataAwsEcrAuthorizationToken(scope constructs.Construct, id *string, config *DataAwsEcrAuthorizationTokenConfig) DataAwsEcrAuthorizationToken {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAwsEcrAuthorizationToken(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/ecr_authorization_token aws_ecr_authorization_token} Data Source.
 func NewDataAwsEcrAuthorizationToken_Override(d DataAwsEcrAuthorizationToken, scope constructs.Construct, id *string, config *DataAwsEcrAuthorizationTokenConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
 type Pinpointsmsvoicev2PhoneNumber interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -625,7 +625,7 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) TwoWayChannelEnabledInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) Pinpointsmsvoicev2PhoneNumber {
 	_init_.Initialize()
 
@@ -643,7 +643,7 @@ func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber_Override(p Pinpointsmsvoicev2PhoneNumber, scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) {
 	_init_.Initialize()
 

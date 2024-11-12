@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
 type DataAwsFsxOntapFileSystem interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataAwsFsxOntapFileSystem) WeeklyMaintenanceStartTime() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system} Data Source.
 func NewDataAwsFsxOntapFileSystem(scope constructs.Construct, id *string, config *DataAwsFsxOntapFileSystemConfig) DataAwsFsxOntapFileSystem {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDataAwsFsxOntapFileSystem(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system} Data Source.
 func NewDataAwsFsxOntapFileSystem_Override(d DataAwsFsxOntapFileSystem, scope constructs.Construct, id *string, config *DataAwsFsxOntapFileSystemConfig) {
 	_init_.Initialize()
 

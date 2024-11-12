@@ -5,11 +5,11 @@ package docdbglobalcluster
 
 
 type DocdbGlobalClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/docdb_global_cluster#create DocdbGlobalCluster#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/docdb_global_cluster#create DocdbGlobalCluster#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/docdb_global_cluster#delete DocdbGlobalCluster#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/docdb_global_cluster#delete DocdbGlobalCluster#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/docdb_global_cluster#update DocdbGlobalCluster#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/docdb_global_cluster#update DocdbGlobalCluster#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

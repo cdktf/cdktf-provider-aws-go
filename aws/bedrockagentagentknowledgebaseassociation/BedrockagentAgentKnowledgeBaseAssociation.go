@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association}.
 type BedrockagentAgentKnowledgeBaseAssociation interface {
 	cdktf.TerraformResource
 	AgentId() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
 func NewBedrockagentAgentKnowledgeBaseAssociation(scope constructs.Construct, id *string, config *BedrockagentAgentKnowledgeBaseAssociationConfig) BedrockagentAgentKnowledgeBaseAssociation {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewBedrockagentAgentKnowledgeBaseAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
 func NewBedrockagentAgentKnowledgeBaseAssociation_Override(b BedrockagentAgentKnowledgeBaseAssociation, scope constructs.Construct, id *string, config *BedrockagentAgentKnowledgeBaseAssociationConfig) {
 	_init_.Initialize()
 

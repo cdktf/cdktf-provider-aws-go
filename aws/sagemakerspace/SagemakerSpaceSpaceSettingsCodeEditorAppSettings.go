@@ -7,11 +7,11 @@ package sagemakerspace
 type SagemakerSpaceSpaceSettingsCodeEditorAppSettings struct {
 	// default_resource_spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/sagemaker_space#default_resource_spec SagemakerSpace#default_resource_spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/sagemaker_space#default_resource_spec SagemakerSpace#default_resource_spec}
 	DefaultResourceSpec *SagemakerSpaceSpaceSettingsCodeEditorAppSettingsDefaultResourceSpec `field:"required" json:"defaultResourceSpec" yaml:"defaultResourceSpec"`
 	// app_lifecycle_management block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/sagemaker_space#app_lifecycle_management SagemakerSpace#app_lifecycle_management}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/sagemaker_space#app_lifecycle_management SagemakerSpace#app_lifecycle_management}
 	AppLifecycleManagement *SagemakerSpaceSpaceSettingsCodeEditorAppSettingsAppLifecycleManagement `field:"optional" json:"appLifecycleManagement" yaml:"appLifecycleManagement"`
 }
 
