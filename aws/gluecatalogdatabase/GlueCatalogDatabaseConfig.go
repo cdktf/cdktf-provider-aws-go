@@ -22,36 +22,36 @@ type GlueCatalogDatabaseConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#name GlueCatalogDatabase#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#name GlueCatalogDatabase#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}.
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
 	// create_table_default_permission block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
 	CreateTableDefaultPermission interface{} `field:"optional" json:"createTableDefaultPermission" yaml:"createTableDefaultPermission"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#description GlueCatalogDatabase#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#description GlueCatalogDatabase#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// federated_database block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#federated_database GlueCatalogDatabase#federated_database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#federated_database GlueCatalogDatabase#federated_database}
 	FederatedDatabase *GlueCatalogDatabaseFederatedDatabase `field:"optional" json:"federatedDatabase" yaml:"federatedDatabase"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#id GlueCatalogDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#id GlueCatalogDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#location_uri GlueCatalogDatabase#location_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#location_uri GlueCatalogDatabase#location_uri}.
 	LocationUri *string `field:"optional" json:"locationUri" yaml:"locationUri"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#parameters GlueCatalogDatabase#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#parameters GlueCatalogDatabase#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#tags GlueCatalogDatabase#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#tags GlueCatalogDatabase#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#tags_all GlueCatalogDatabase#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#tags_all GlueCatalogDatabase#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// target_database block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
 	TargetDatabase *GlueCatalogDatabaseTargetDatabase `field:"optional" json:"targetDatabase" yaml:"targetDatabase"`
 }
 

@@ -5,7 +5,7 @@ package dataawsvpcipampreviewnextcidr
 
 
 type DataAwsVpcIpamPreviewNextCidrTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/vpc_ipam_preview_next_cidr#read DataAwsVpcIpamPreviewNextCidr#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/vpc_ipam_preview_next_cidr#read DataAwsVpcIpamPreviewNextCidr#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

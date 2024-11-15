@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
 type SesIdentityNotificationTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) TopicArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
 func NewSesIdentityNotificationTopic(scope constructs.Construct, id *string, config *SesIdentityNotificationTopicConfig) SesIdentityNotificationTopic {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewSesIdentityNotificationTopic(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
 func NewSesIdentityNotificationTopic_Override(s SesIdentityNotificationTopic, scope constructs.Construct, id *string, config *SesIdentityNotificationTopicConfig) {
 	_init_.Initialize()
 

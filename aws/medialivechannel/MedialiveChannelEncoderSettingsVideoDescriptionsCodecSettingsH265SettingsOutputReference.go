@@ -87,6 +87,15 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOu
 	MinIInterval() *float64
 	SetMinIInterval(val *float64)
 	MinIIntervalInput() *float64
+	MinQp() *float64
+	SetMinQp(val *float64)
+	MinQpInput() *float64
+	MvOverPictureBoundaries() *string
+	SetMvOverPictureBoundaries(val *string)
+	MvOverPictureBoundariesInput() *string
+	MvTemporalPredictor() *string
+	SetMvTemporalPredictor(val *string)
+	MvTemporalPredictorInput() *string
 	ParDenominator() *float64
 	SetParDenominator(val *float64)
 	ParDenominatorInput() *float64
@@ -122,11 +131,23 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOu
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
+	TileHeight() *float64
+	SetTileHeight(val *float64)
+	TileHeightInput() *float64
+	TilePadding() *string
+	SetTilePadding(val *string)
+	TilePaddingInput() *string
+	TileWidth() *float64
+	SetTileWidth(val *float64)
+	TileWidthInput() *float64
 	TimecodeBurninSettings() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettingsOutputReference
 	TimecodeBurninSettingsInput() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 	TimecodeInsertion() *string
 	SetTimecodeInsertion(val *string)
 	TimecodeInsertionInput() *string
+	TreeblockSize() *string
+	SetTreeblockSize(val *string)
+	TreeblockSizeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -170,6 +191,9 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOu
 	ResetLookAheadRateControl()
 	ResetMaxBitrate()
 	ResetMinIInterval()
+	ResetMinQp()
+	ResetMvOverPictureBoundaries()
+	ResetMvTemporalPredictor()
 	ResetParDenominator()
 	ResetParNumerator()
 	ResetProfile()
@@ -179,8 +203,12 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOu
 	ResetSceneChangeDetect()
 	ResetSlices()
 	ResetTier()
+	ResetTileHeight()
+	ResetTilePadding()
+	ResetTileWidth()
 	ResetTimecodeBurninSettings()
 	ResetTimecodeInsertion()
+	ResetTreeblockSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -626,6 +654,66 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MinQp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minQp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MinQpInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minQpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MvOverPictureBoundaries() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mvOverPictureBoundaries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MvOverPictureBoundariesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mvOverPictureBoundariesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MvTemporalPredictor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mvTemporalPredictor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) MvTemporalPredictorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mvTemporalPredictorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ParDenominator() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -826,6 +914,66 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TileHeight() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tileHeight",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TileHeightInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tileHeightInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TilePadding() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tilePadding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TilePaddingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tilePaddingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TileWidth() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tileWidth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TileWidthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tileWidthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TimecodeBurninSettings() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettingsOutputReference {
 	var returns MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettingsOutputReference
 	_jsii_.Get(
@@ -861,6 +1009,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Get(
 		j,
 		"timecodeInsertionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TreeblockSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"treeblockSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) TreeblockSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"treeblockSizeInput",
 		&returns,
 	)
 	return returns
@@ -1114,6 +1282,39 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetMinQp(val *float64) {
+	if err := j.validateSetMinQpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minQp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetMvOverPictureBoundaries(val *string) {
+	if err := j.validateSetMvOverPictureBoundariesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mvOverPictureBoundaries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetMvTemporalPredictor(val *string) {
+	if err := j.validateSetMvTemporalPredictorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mvTemporalPredictor",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetParDenominator(val *float64) {
 	if err := j.validateSetParDenominatorParameters(val); err != nil {
 		panic(err)
@@ -1235,6 +1436,39 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetTileHeight(val *float64) {
+	if err := j.validateSetTileHeightParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tileHeight",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetTilePadding(val *string) {
+	if err := j.validateSetTilePaddingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tilePadding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetTileWidth(val *float64) {
+	if err := j.validateSetTileWidthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tileWidth",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetTimecodeInsertion(val *string) {
 	if err := j.validateSetTimecodeInsertionParameters(val); err != nil {
 		panic(err)
@@ -1242,6 +1476,17 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Set(
 		j,
 		"timecodeInsertion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference)SetTreeblockSize(val *string) {
+	if err := j.validateSetTreeblockSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"treeblockSize",
 		val,
 	)
 }
@@ -1593,6 +1838,30 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetMinQp() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMinQp",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetMvOverPictureBoundaries() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMvOverPictureBoundaries",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetMvTemporalPredictor() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMvTemporalPredictor",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetParDenominator() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1665,6 +1934,30 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetTileHeight() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTileHeight",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetTilePadding() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTilePadding",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetTileWidth() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTileWidth",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetTimecodeBurninSettings() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1677,6 +1970,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimecodeInsertion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) ResetTreeblockSize() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTreeblockSize",
 		nil, // no parameters
 	)
 }

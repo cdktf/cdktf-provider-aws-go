@@ -143,6 +143,18 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetMinQpParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetMvOverPictureBoundariesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetMvTemporalPredictorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetParDenominatorParameters(val *float64) error {
 	return nil
 }
@@ -187,7 +199,23 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetTileHeightParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetTilePaddingParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetTileWidthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetTimecodeInsertionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference) validateSetTreeblockSizeParameters(val *string) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package evidentlyproject
 
 
 type EvidentlyProjectDataDeliveryS3Destination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/evidently_project#bucket EvidentlyProject#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/evidently_project#bucket EvidentlyProject#bucket}.
 	Bucket *string `field:"optional" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/evidently_project#prefix EvidentlyProject#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/evidently_project#prefix EvidentlyProject#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

@@ -5,7 +5,7 @@ package cloudfrontresponseheaderspolicy
 
 
 type CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}.
 	Items *[]*string `field:"optional" json:"items" yaml:"items"`
 }
 

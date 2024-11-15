@@ -5,7 +5,7 @@ package iotbillinggroup
 
 
 type IotBillingGroupProperties struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/iot_billing_group#description IotBillingGroup#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/iot_billing_group#description IotBillingGroup#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

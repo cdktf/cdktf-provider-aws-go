@@ -22,22 +22,22 @@ type GrafanaRoleAssociationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#role GrafanaRoleAssociation#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#role GrafanaRoleAssociation#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#workspace_id GrafanaRoleAssociation#workspace_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#workspace_id GrafanaRoleAssociation#workspace_id}.
 	WorkspaceId *string `field:"required" json:"workspaceId" yaml:"workspaceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#group_ids GrafanaRoleAssociation#group_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#group_ids GrafanaRoleAssociation#group_ids}.
 	GroupIds *[]*string `field:"optional" json:"groupIds" yaml:"groupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#id GrafanaRoleAssociation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#id GrafanaRoleAssociation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#timeouts GrafanaRoleAssociation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#timeouts GrafanaRoleAssociation#timeouts}
 	Timeouts *GrafanaRoleAssociationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/grafana_role_association#user_ids GrafanaRoleAssociation#user_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/grafana_role_association#user_ids GrafanaRoleAssociation#user_ids}.
 	UserIds *[]*string `field:"optional" json:"userIds" yaml:"userIds"`
 }
 

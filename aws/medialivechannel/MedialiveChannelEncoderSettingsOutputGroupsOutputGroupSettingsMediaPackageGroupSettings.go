@@ -7,7 +7,7 @@ package medialivechannel
 type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings struct {
 	// destination block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
 	Destination *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination `field:"required" json:"destination" yaml:"destination"`
 }
 

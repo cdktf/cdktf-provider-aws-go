@@ -22,13 +22,13 @@ type Route53ProfilesProfileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_profile#name Route53ProfilesProfile#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_profile#tags Route53ProfilesProfile#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_profile#timeouts Route53ProfilesProfile#timeouts}
 	Timeouts *Route53ProfilesProfileTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
