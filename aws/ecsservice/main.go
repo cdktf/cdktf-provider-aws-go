@@ -18,6 +18,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmsInput", GoGetter: "AlarmsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneRebalancing", GoGetter: "AvailabilityZoneRebalancing"},
+			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneRebalancingInput", GoGetter: "AvailabilityZoneRebalancingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategy", GoGetter: "CapacityProviderStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategyInput", GoGetter: "CapacityProviderStrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -102,8 +104,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putServiceRegistries", GoMethod: "PutServiceRegistries"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVolumeConfiguration", GoMethod: "PutVolumeConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putVpcLatticeConfigurations", GoMethod: "PutVpcLatticeConfigurations"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlarms", GoMethod: "ResetAlarms"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZoneRebalancing", GoMethod: "ResetAvailabilityZoneRebalancing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityProviderStrategy", GoMethod: "ResetCapacityProviderStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCluster", GoMethod: "ResetCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentCircuitBreaker", GoMethod: "ResetDeploymentCircuitBreaker"},
@@ -135,6 +139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTriggers", GoMethod: "ResetTriggers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVolumeConfiguration", GoMethod: "ResetVolumeConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcLatticeConfigurations", GoMethod: "ResetVpcLatticeConfigurations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForSteadyState", GoMethod: "ResetWaitForSteadyState"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulingStrategy", GoGetter: "SchedulingStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulingStrategyInput", GoGetter: "SchedulingStrategyInput"},
@@ -163,6 +168,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeConfiguration", GoGetter: "VolumeConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeConfigurationInput", GoGetter: "VolumeConfigurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcLatticeConfigurations", GoGetter: "VpcLatticeConfigurations"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcLatticeConfigurationsInput", GoGetter: "VpcLatticeConfigurationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSteadyState", GoGetter: "WaitForSteadyState"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSteadyStateInput", GoGetter: "WaitForSteadyStateInput"},
 		},
@@ -1262,6 +1269,70 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EcsServiceVolumeConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurations",
+		reflect.TypeOf((*EcsServiceVpcLatticeConfigurations)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsList",
+		reflect.TypeOf((*EcsServiceVpcLatticeConfigurationsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EcsServiceVpcLatticeConfigurationsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ecsService.EcsServiceVpcLatticeConfigurationsOutputReference",
+		reflect.TypeOf((*EcsServiceVpcLatticeConfigurationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "portName", GoGetter: "PortName"},
+			_jsii_.MemberProperty{JsiiProperty: "portNameInput", GoGetter: "PortNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupArn", GoGetter: "TargetGroupArn"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupArnInput", GoGetter: "TargetGroupArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

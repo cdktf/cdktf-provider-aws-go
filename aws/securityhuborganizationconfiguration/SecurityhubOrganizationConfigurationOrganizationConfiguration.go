@@ -5,7 +5,7 @@ package securityhuborganizationconfiguration
 
 
 type SecurityhubOrganizationConfigurationOrganizationConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_organization_configuration#configuration_type SecurityhubOrganizationConfiguration#configuration_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_organization_configuration#configuration_type SecurityhubOrganizationConfiguration#configuration_type}.
 	ConfigurationType *string `field:"required" json:"configurationType" yaml:"configurationType"`
 }
 

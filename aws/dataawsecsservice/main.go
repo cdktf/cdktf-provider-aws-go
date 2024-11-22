@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
+			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneRebalancing", GoGetter: "AvailabilityZoneRebalancing"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterArn", GoGetter: "ClusterArn"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterArnInput", GoGetter: "ClusterArnInput"},

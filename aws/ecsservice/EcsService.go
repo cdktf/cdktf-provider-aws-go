@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
 	AlarmsInput() *EcsServiceAlarms
+	AvailabilityZoneRebalancing() *string
+	SetAvailabilityZoneRebalancing(val *string)
+	AvailabilityZoneRebalancingInput() *string
 	CapacityProviderStrategy() EcsServiceCapacityProviderStrategyList
 	CapacityProviderStrategyInput() interface{}
 	// Experimental.
@@ -145,6 +148,8 @@ type EcsService interface {
 	TriggersInput() *map[string]*string
 	VolumeConfiguration() EcsServiceVolumeConfigurationOutputReference
 	VolumeConfigurationInput() *EcsServiceVolumeConfiguration
+	VpcLatticeConfigurations() EcsServiceVpcLatticeConfigurationsList
+	VpcLatticeConfigurationsInput() interface{}
 	WaitForSteadyState() interface{}
 	SetWaitForSteadyState(val interface{})
 	WaitForSteadyStateInput() interface{}
@@ -203,7 +208,9 @@ type EcsService interface {
 	PutServiceRegistries(value *EcsServiceServiceRegistries)
 	PutTimeouts(value *EcsServiceTimeouts)
 	PutVolumeConfiguration(value *EcsServiceVolumeConfiguration)
+	PutVpcLatticeConfigurations(value interface{})
 	ResetAlarms()
+	ResetAvailabilityZoneRebalancing()
 	ResetCapacityProviderStrategy()
 	ResetCluster()
 	ResetDeploymentCircuitBreaker()
@@ -237,6 +244,7 @@ type EcsService interface {
 	ResetTimeouts()
 	ResetTriggers()
 	ResetVolumeConfiguration()
+	ResetVpcLatticeConfigurations()
 	ResetWaitForSteadyState()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -271,6 +279,26 @@ func (j *jsiiProxy_EcsService) AlarmsInput() *EcsServiceAlarms {
 	_jsii_.Get(
 		j,
 		"alarmsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) AvailabilityZoneRebalancing() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZoneRebalancing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) AvailabilityZoneRebalancingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityZoneRebalancingInput",
 		&returns,
 	)
 	return returns
@@ -1056,6 +1084,26 @@ func (j *jsiiProxy_EcsService) VolumeConfigurationInput() *EcsServiceVolumeConfi
 	return returns
 }
 
+func (j *jsiiProxy_EcsService) VpcLatticeConfigurations() EcsServiceVpcLatticeConfigurationsList {
+	var returns EcsServiceVpcLatticeConfigurationsList
+	_jsii_.Get(
+		j,
+		"vpcLatticeConfigurations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) VpcLatticeConfigurationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcLatticeConfigurationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsService) WaitForSteadyState() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1077,7 +1125,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1095,7 +1143,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1103,6 +1151,17 @@ func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string
 		"@cdktf/provider-aws.ecsService.EcsService",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EcsService)SetAvailabilityZoneRebalancing(val *string) {
+	if err := j.validateSetAvailabilityZoneRebalancingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityZoneRebalancing",
+		val,
 	)
 }
 
@@ -1890,10 +1949,29 @@ func (e *jsiiProxy_EcsService) PutVolumeConfiguration(value *EcsServiceVolumeCon
 	)
 }
 
+func (e *jsiiProxy_EcsService) PutVpcLatticeConfigurations(value interface{}) {
+	if err := e.validatePutVpcLatticeConfigurationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putVpcLatticeConfigurations",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsService) ResetAlarms() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAlarms",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetAvailabilityZoneRebalancing() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAvailabilityZoneRebalancing",
 		nil, // no parameters
 	)
 }
@@ -2142,6 +2220,14 @@ func (e *jsiiProxy_EcsService) ResetVolumeConfiguration() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetVolumeConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetVpcLatticeConfigurations() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVpcLatticeConfigurations",
 		nil, // no parameters
 	)
 }

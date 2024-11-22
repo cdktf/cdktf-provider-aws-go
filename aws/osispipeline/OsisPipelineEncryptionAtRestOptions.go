@@ -5,7 +5,7 @@ package osispipeline
 
 
 type OsisPipelineEncryptionAtRestOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/osis_pipeline#kms_key_arn OsisPipeline#kms_key_arn}.
 	KmsKeyArn *string `field:"required" json:"kmsKeyArn" yaml:"kmsKeyArn"`
 }
 

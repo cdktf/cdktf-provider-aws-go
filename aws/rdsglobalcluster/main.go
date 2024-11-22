@@ -26,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionInput", GoGetter: "DeletionProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "engine", GoGetter: "Engine"},
 			_jsii_.MemberProperty{JsiiProperty: "engineInput", GoGetter: "EngineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "engineLifecycleSupport", GoGetter: "EngineLifecycleSupport"},

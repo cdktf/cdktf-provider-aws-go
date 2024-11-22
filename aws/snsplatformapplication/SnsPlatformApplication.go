@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/sns_platform_application aws_sns_platform_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/sns_platform_application aws_sns_platform_application}.
 type SnsPlatformApplication interface {
 	cdktf.TerraformResource
 	ApplePlatformBundleId() *string
@@ -630,7 +630,7 @@ func (j *jsiiProxy_SnsPlatformApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/sns_platform_application aws_sns_platform_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/sns_platform_application aws_sns_platform_application} Resource.
 func NewSnsPlatformApplication(scope constructs.Construct, id *string, config *SnsPlatformApplicationConfig) SnsPlatformApplication {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewSnsPlatformApplication(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/sns_platform_application aws_sns_platform_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/sns_platform_application aws_sns_platform_application} Resource.
 func NewSnsPlatformApplication_Override(s SnsPlatformApplication, scope constructs.Construct, id *string, config *SnsPlatformApplicationConfig) {
 	_init_.Initialize()
 

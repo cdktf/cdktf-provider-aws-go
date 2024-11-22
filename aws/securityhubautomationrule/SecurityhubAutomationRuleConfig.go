@@ -22,25 +22,25 @@ type SecurityhubAutomationRuleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#description SecurityhubAutomationRule#description}.
 	Description *string `field:"required" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#rule_name SecurityhubAutomationRule#rule_name}.
 	RuleName *string `field:"required" json:"ruleName" yaml:"ruleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#rule_order SecurityhubAutomationRule#rule_order}.
 	RuleOrder *float64 `field:"required" json:"ruleOrder" yaml:"ruleOrder"`
 	// actions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#actions SecurityhubAutomationRule#actions}
 	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
 	// criteria block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#criteria SecurityhubAutomationRule#criteria}
 	Criteria interface{} `field:"optional" json:"criteria" yaml:"criteria"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#is_terminal SecurityhubAutomationRule#is_terminal}.
 	IsTerminal interface{} `field:"optional" json:"isTerminal" yaml:"isTerminal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#rule_status SecurityhubAutomationRule#rule_status}.
 	RuleStatus *string `field:"optional" json:"ruleStatus" yaml:"ruleStatus"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securityhub_automation_rule#tags SecurityhubAutomationRule#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

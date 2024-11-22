@@ -5,7 +5,7 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureConditionalConditionalBranchCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
 	ExpressionString *string `field:"required" json:"expressionString" yaml:"expressionString"`
 }
 

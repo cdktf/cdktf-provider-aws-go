@@ -5,9 +5,9 @@ package macie2classificationjob
 
 
 type Macie2ClassificationJobS3JobDefinitionBucketDefinitions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/macie2_classification_job#account_id Macie2ClassificationJob#account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/macie2_classification_job#account_id Macie2ClassificationJob#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/macie2_classification_job#buckets Macie2ClassificationJob#buckets}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/macie2_classification_job#buckets Macie2ClassificationJob#buckets}.
 	Buckets *[]*string `field:"required" json:"buckets" yaml:"buckets"`
 }
 

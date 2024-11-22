@@ -5,17 +5,17 @@ package appflowflow
 
 
 type AppflowFlowTask struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appflow_flow#task_type AppflowFlow#task_type}.
 	TaskType *string `field:"required" json:"taskType" yaml:"taskType"`
 	// connector_operator block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appflow_flow#connector_operator AppflowFlow#connector_operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appflow_flow#connector_operator AppflowFlow#connector_operator}
 	ConnectorOperator interface{} `field:"optional" json:"connectorOperator" yaml:"connectorOperator"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appflow_flow#destination_field AppflowFlow#destination_field}.
 	DestinationField *string `field:"optional" json:"destinationField" yaml:"destinationField"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appflow_flow#source_fields AppflowFlow#source_fields}.
 	SourceFields *[]*string `field:"optional" json:"sourceFields" yaml:"sourceFields"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appflow_flow#task_properties AppflowFlow#task_properties}.
 	TaskProperties *map[string]*string `field:"optional" json:"taskProperties" yaml:"taskProperties"`
 }
 

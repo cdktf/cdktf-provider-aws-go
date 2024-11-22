@@ -7,27 +7,27 @@ package appmeshvirtualnode
 type AppmeshVirtualNodeSpecListener struct {
 	// port_mapping block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#port_mapping AppmeshVirtualNode#port_mapping}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#port_mapping AppmeshVirtualNode#port_mapping}
 	PortMapping *AppmeshVirtualNodeSpecListenerPortMapping `field:"required" json:"portMapping" yaml:"portMapping"`
 	// connection_pool block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#connection_pool AppmeshVirtualNode#connection_pool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#connection_pool AppmeshVirtualNode#connection_pool}
 	ConnectionPool *AppmeshVirtualNodeSpecListenerConnectionPool `field:"optional" json:"connectionPool" yaml:"connectionPool"`
 	// health_check block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#health_check AppmeshVirtualNode#health_check}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#health_check AppmeshVirtualNode#health_check}
 	HealthCheck *AppmeshVirtualNodeSpecListenerHealthCheck `field:"optional" json:"healthCheck" yaml:"healthCheck"`
 	// outlier_detection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#outlier_detection AppmeshVirtualNode#outlier_detection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#outlier_detection AppmeshVirtualNode#outlier_detection}
 	OutlierDetection *AppmeshVirtualNodeSpecListenerOutlierDetection `field:"optional" json:"outlierDetection" yaml:"outlierDetection"`
 	// timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#timeout AppmeshVirtualNode#timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#timeout AppmeshVirtualNode#timeout}
 	Timeout *AppmeshVirtualNodeSpecListenerTimeout `field:"optional" json:"timeout" yaml:"timeout"`
 	// tls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_virtual_node#tls AppmeshVirtualNode#tls}
 	Tls *AppmeshVirtualNodeSpecListenerTls `field:"optional" json:"tls" yaml:"tls"`
 }
 
