@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/memorydb_cluster aws_memorydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/memorydb_cluster aws_memorydb_cluster}.
 type MemorydbCluster interface {
 	cdktf.TerraformResource
 	AclName() *string
@@ -45,6 +45,9 @@ type MemorydbCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Engine() *string
+	SetEngine(val *string)
+	EngineInput() *string
 	EnginePatchVersion() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
@@ -192,6 +195,7 @@ type MemorydbCluster interface {
 	ResetAutoMinorVersionUpgrade()
 	ResetDataTiering()
 	ResetDescription()
+	ResetEngine()
 	ResetEngineVersion()
 	ResetFinalSnapshotName()
 	ResetId()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_MemorydbCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) Engine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) EngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineInput",
 		&returns,
 	)
 	return returns
@@ -976,7 +1000,7 @@ func (j *jsiiProxy_MemorydbCluster) TlsEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
 func NewMemorydbCluster(scope constructs.Construct, id *string, config *MemorydbClusterConfig) MemorydbCluster {
 	_init_.Initialize()
 
@@ -994,7 +1018,7 @@ func NewMemorydbCluster(scope constructs.Construct, id *string, config *Memorydb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
 func NewMemorydbCluster_Override(m MemorydbCluster, scope constructs.Construct, id *string, config *MemorydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1075,6 +1099,17 @@ func (j *jsiiProxy_MemorydbCluster)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorydbCluster)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engine",
 		val,
 	)
 }
@@ -1743,6 +1778,14 @@ func (m *jsiiProxy_MemorydbCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbCluster) ResetEngine() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEngine",
 		nil, // no parameters
 	)
 }

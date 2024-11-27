@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster}.
 type DataAwsMemorydbCluster interface {
 	cdktf.TerraformDataSource
 	AclName() *string
@@ -33,6 +33,7 @@ type DataAwsMemorydbCluster interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	Engine() *string
 	EnginePatchVersion() *string
 	EngineVersion() *string
 	FinalSnapshotName() *string
@@ -229,6 +230,16 @@ func (j *jsiiProxy_DataAwsMemorydbCluster) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMemorydbCluster) Engine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engine",
 		&returns,
 	)
 	return returns
@@ -565,7 +576,7 @@ func (j *jsiiProxy_DataAwsMemorydbCluster) TlsEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
 func NewDataAwsMemorydbCluster(scope constructs.Construct, id *string, config *DataAwsMemorydbClusterConfig) DataAwsMemorydbCluster {
 	_init_.Initialize()
 
@@ -583,7 +594,7 @@ func NewDataAwsMemorydbCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
 func NewDataAwsMemorydbCluster_Override(d DataAwsMemorydbCluster, scope constructs.Construct, id *string, config *DataAwsMemorydbClusterConfig) {
 	_init_.Initialize()
 

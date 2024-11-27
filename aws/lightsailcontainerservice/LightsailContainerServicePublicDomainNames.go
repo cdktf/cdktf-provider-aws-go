@@ -7,7 +7,7 @@ package lightsailcontainerservice
 type LightsailContainerServicePublicDomainNames struct {
 	// certificate block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/lightsail_container_service#certificate LightsailContainerService#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lightsail_container_service#certificate LightsailContainerService#certificate}
 	Certificate interface{} `field:"required" json:"certificate" yaml:"certificate"`
 }
 

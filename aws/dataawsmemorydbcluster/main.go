@@ -25,6 +25,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dataTiering", GoGetter: "DataTiering"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
+			_jsii_.MemberProperty{JsiiProperty: "engine", GoGetter: "Engine"},
 			_jsii_.MemberProperty{JsiiProperty: "enginePatchVersion", GoGetter: "EnginePatchVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "engineVersion", GoGetter: "EngineVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "finalSnapshotName", GoGetter: "FinalSnapshotName"},

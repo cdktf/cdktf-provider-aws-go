@@ -29,6 +29,7 @@ type DataAwsMemorydbSnapshotClusterConfigurationOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	Engine() *string
 	EngineVersion() *string
 	// Experimental.
 	Fqn() *string
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataAwsMemorydbSnapshotClusterConfigurationOutputReference) D
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMemorydbSnapshotClusterConfigurationOutputReference) Engine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engine",
 		&returns,
 	)
 	return returns

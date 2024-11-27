@@ -119,6 +119,10 @@ func (j *jsiiProxy_MemorydbCluster) validateSetDescriptionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbCluster) validateSetEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbCluster) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

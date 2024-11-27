@@ -5,7 +5,7 @@ package launchtemplate
 
 
 type LaunchTemplateHibernationOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/launch_template#configured LaunchTemplate#configured}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/launch_template#configured LaunchTemplate#configured}.
 	Configured interface{} `field:"required" json:"configured" yaml:"configured"`
 }
 

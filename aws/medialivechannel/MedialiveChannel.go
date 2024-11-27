@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel aws_medialive_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/medialive_channel aws_medialive_channel}.
 type MedialiveChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -686,7 +686,7 @@ func (j *jsiiProxy_MedialiveChannel) VpcInput() *MedialiveChannelVpc {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel(scope constructs.Construct, id *string, config *MedialiveChannelConfig) MedialiveChannel {
 	_init_.Initialize()
 
@@ -704,7 +704,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct, id *string, config *MedialiveChannelConfig) {
 	_init_.Initialize()
 

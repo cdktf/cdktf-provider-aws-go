@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy}.
 type BatchSchedulingPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_BatchSchedulingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
 func NewBatchSchedulingPolicy(scope constructs.Construct, id *string, config *BatchSchedulingPolicyConfig) BatchSchedulingPolicy {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewBatchSchedulingPolicy(scope constructs.Construct, id *string, config *Ba
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
 func NewBatchSchedulingPolicy_Override(b BatchSchedulingPolicy, scope constructs.Construct, id *string, config *BatchSchedulingPolicyConfig) {
 	_init_.Initialize()
 

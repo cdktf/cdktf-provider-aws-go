@@ -404,6 +404,14 @@ func (j *jsiiProxy_MemorydbCluster) validateSetDescriptionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbCluster) validateSetEngineParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbCluster) validateSetEngineVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

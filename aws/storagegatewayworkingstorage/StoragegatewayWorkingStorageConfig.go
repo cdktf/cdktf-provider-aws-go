@@ -22,11 +22,11 @@ type StoragegatewayWorkingStorageConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/storagegateway_working_storage#disk_id StoragegatewayWorkingStorage#disk_id}.
 	DiskId *string `field:"required" json:"diskId" yaml:"diskId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/storagegateway_working_storage#gateway_arn StoragegatewayWorkingStorage#gateway_arn}.
 	GatewayArn *string `field:"required" json:"gatewayArn" yaml:"gatewayArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/storagegateway_working_storage#id StoragegatewayWorkingStorage#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
