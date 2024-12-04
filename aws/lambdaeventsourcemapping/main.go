@@ -71,6 +71,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maximumRecordAgeInSecondsInput", GoGetter: "MaximumRecordAgeInSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttempts", GoGetter: "MaximumRetryAttempts"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttemptsInput", GoGetter: "MaximumRetryAttemptsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsConfig", GoGetter: "MetricsConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsConfigInput", GoGetter: "MetricsConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -79,11 +81,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactor", GoGetter: "ParallelizationFactor"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactorInput", GoGetter: "ParallelizationFactorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedPollerConfig", GoGetter: "ProvisionedPollerConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedPollerConfigInput", GoGetter: "ProvisionedPollerConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAmazonManagedKafkaEventSourceConfig", GoMethod: "PutAmazonManagedKafkaEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationConfig", GoMethod: "PutDestinationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDocumentDbEventSourceConfig", GoMethod: "PutDocumentDbEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilterCriteria", GoMethod: "PutFilterCriteria"},
+			_jsii_.MemberMethod{JsiiMethod: "putMetricsConfig", GoMethod: "PutMetricsConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putProvisionedPollerConfig", GoMethod: "PutProvisionedPollerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putScalingConfig", GoMethod: "PutScalingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedEventSource", GoMethod: "PutSelfManagedEventSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedKafkaEventSourceConfig", GoMethod: "PutSelfManagedKafkaEventSourceConfig"},
@@ -105,8 +111,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumBatchingWindowInSeconds", GoMethod: "ResetMaximumBatchingWindowInSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumRecordAgeInSeconds", GoMethod: "ResetMaximumRecordAgeInSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumRetryAttempts", GoMethod: "ResetMaximumRetryAttempts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsConfig", GoMethod: "ResetMetricsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParallelizationFactor", GoMethod: "ResetParallelizationFactor"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedPollerConfig", GoMethod: "ResetProvisionedPollerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueues", GoMethod: "ResetQueues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScalingConfig", GoMethod: "ResetScalingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSelfManagedEventSource", GoMethod: "ResetSelfManagedEventSource"},
@@ -419,6 +427,86 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig",
+		reflect.TypeOf((*LambdaEventSourceMappingMetricsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfigOutputReference",
+		reflect.TypeOf((*LambdaEventSourceMappingMetricsConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metrics", GoGetter: "Metrics"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsInput", GoGetter: "MetricsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaEventSourceMappingMetricsConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig",
+		reflect.TypeOf((*LambdaEventSourceMappingProvisionedPollerConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfigOutputReference",
+		reflect.TypeOf((*LambdaEventSourceMappingProvisionedPollerConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumPollers", GoGetter: "MaximumPollers"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumPollersInput", GoGetter: "MaximumPollersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumPollers", GoGetter: "MinimumPollers"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumPollersInput", GoGetter: "MinimumPollersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaximumPollers", GoMethod: "ResetMaximumPollers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumPollers", GoMethod: "ResetMinimumPollers"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaEventSourceMappingProvisionedPollerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

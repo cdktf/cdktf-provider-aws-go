@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/launch_configuration aws_launch_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/launch_configuration aws_launch_configuration}.
 type DataAwsLaunchConfiguration interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataAwsLaunchConfiguration) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
 func NewDataAwsLaunchConfiguration(scope constructs.Construct, id *string, config *DataAwsLaunchConfigurationConfig) DataAwsLaunchConfiguration {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDataAwsLaunchConfiguration(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
 func NewDataAwsLaunchConfiguration_Override(d DataAwsLaunchConfiguration, scope constructs.Construct, id *string, config *DataAwsLaunchConfigurationConfig) {
 	_init_.Initialize()
 

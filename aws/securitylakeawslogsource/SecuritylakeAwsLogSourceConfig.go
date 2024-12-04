@@ -24,7 +24,7 @@ type SecuritylakeAwsLogSourceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
 	Source interface{} `field:"optional" json:"source" yaml:"source"`
 }
 

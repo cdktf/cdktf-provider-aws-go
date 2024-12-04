@@ -28,6 +28,8 @@ type EksClusterKubernetesNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ElasticLoadBalancing() EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference
+	ElasticLoadBalancingInput() *EksClusterKubernetesNetworkConfigElasticLoadBalancing
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EksClusterKubernetesNetworkConfig
@@ -71,6 +73,8 @@ type EksClusterKubernetesNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutElasticLoadBalancing(value *EksClusterKubernetesNetworkConfigElasticLoadBalancing)
+	ResetElasticLoadBalancing()
 	ResetIpFamily()
 	ResetServiceIpv4Cidr()
 	// Produce the Token's value at resolution time.
@@ -113,6 +117,26 @@ func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ElasticLoadBalancing() EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference {
+	var returns EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference
+	_jsii_.Get(
+		j,
+		"elasticLoadBalancing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ElasticLoadBalancingInput() *EksClusterKubernetesNetworkConfigElasticLoadBalancing {
+	var returns *EksClusterKubernetesNetworkConfigElasticLoadBalancing
+	_jsii_.Get(
+		j,
+		"elasticLoadBalancingInput",
 		&returns,
 	)
 	return returns
@@ -497,6 +521,25 @@ func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) PutElasticLoadBalancing(value *EksClusterKubernetesNetworkConfigElasticLoadBalancing) {
+	if err := e.validatePutElasticLoadBalancingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putElasticLoadBalancing",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ResetElasticLoadBalancing() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetElasticLoadBalancing",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ResetIpFamily() {

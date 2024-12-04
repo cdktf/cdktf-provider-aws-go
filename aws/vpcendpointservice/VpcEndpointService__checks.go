@@ -470,6 +470,14 @@ func (j *jsiiProxy_VpcEndpointService) validateSetSupportedIpAddressTypesParamet
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointService) validateSetSupportedRegionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointService) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

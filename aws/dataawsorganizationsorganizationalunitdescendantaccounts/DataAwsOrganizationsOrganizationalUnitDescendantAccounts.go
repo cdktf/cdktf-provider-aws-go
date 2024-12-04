@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts}.
 type DataAwsOrganizationsOrganizationalUnitDescendantAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsList
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantAccounts) Ter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig) DataAwsOrganizationsOrganizationalUnitDescendantAccounts {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts_Override(d DataAwsOrganizationsOrganizationalUnitDescendantAccounts, scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules}.
 type DataAwsRoute53ResolverRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverRules) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules} Data Source.
 func NewDataAwsRoute53ResolverRules(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverRulesConfig) DataAwsRoute53ResolverRules {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataAwsRoute53ResolverRules(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/route53_resolver_rules aws_route53_resolver_rules} Data Source.
 func NewDataAwsRoute53ResolverRules_Override(d DataAwsRoute53ResolverRules, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverRulesConfig) {
 	_init_.Initialize()
 

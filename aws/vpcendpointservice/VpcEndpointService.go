@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service}.
 type VpcEndpointService interface {
 	cdktf.TerraformResource
 	AcceptanceRequired() interface{}
@@ -84,6 +84,9 @@ type VpcEndpointService interface {
 	SupportedIpAddressTypes() *[]*string
 	SetSupportedIpAddressTypes(val *[]*string)
 	SupportedIpAddressTypesInput() *[]*string
+	SupportedRegions() *[]*string
+	SetSupportedRegions(val *[]*string)
+	SupportedRegionsInput() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -151,6 +154,7 @@ type VpcEndpointService interface {
 	ResetOverrideLogicalId()
 	ResetPrivateDnsName()
 	ResetSupportedIpAddressTypes()
+	ResetSupportedRegions()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -522,6 +526,26 @@ func (j *jsiiProxy_VpcEndpointService) SupportedIpAddressTypesInput() *[]*string
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpointService) SupportedRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpointService) SupportedRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpointService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -613,7 +637,7 @@ func (j *jsiiProxy_VpcEndpointService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service} Resource.
 func NewVpcEndpointService(scope constructs.Construct, id *string, config *VpcEndpointServiceConfig) VpcEndpointService {
 	_init_.Initialize()
 
@@ -631,7 +655,7 @@ func NewVpcEndpointService(scope constructs.Construct, id *string, config *VpcEn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/vpc_endpoint_service aws_vpc_endpoint_service} Resource.
 func NewVpcEndpointService_Override(v VpcEndpointService, scope constructs.Construct, id *string, config *VpcEndpointServiceConfig) {
 	_init_.Initialize()
 
@@ -783,6 +807,17 @@ func (j *jsiiProxy_VpcEndpointService)SetSupportedIpAddressTypes(val *[]*string)
 	_jsii_.Set(
 		j,
 		"supportedIpAddressTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpointService)SetSupportedRegions(val *[]*string) {
+	if err := j.validateSetSupportedRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportedRegions",
 		val,
 	)
 }
@@ -1225,6 +1260,14 @@ func (v *jsiiProxy_VpcEndpointService) ResetSupportedIpAddressTypes() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetSupportedIpAddressTypes",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpointService) ResetSupportedRegions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSupportedRegions",
 		nil, // no parameters
 	)
 }

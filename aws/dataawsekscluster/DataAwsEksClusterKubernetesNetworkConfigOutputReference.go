@@ -28,6 +28,7 @@ type DataAwsEksClusterKubernetesNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ElasticLoadBalancing() DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsEksClusterKubernetesNetworkConfig
@@ -107,6 +108,16 @@ func (j *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigOutputReference) ElasticLoadBalancing() DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList {
+	var returns DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList
+	_jsii_.Get(
+		j,
+		"elasticLoadBalancing",
 		&returns,
 	)
 	return returns

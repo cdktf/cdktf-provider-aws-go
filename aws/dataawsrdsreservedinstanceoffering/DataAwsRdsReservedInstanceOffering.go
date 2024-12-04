@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering}.
 type DataAwsRdsReservedInstanceOffering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
 func NewDataAwsRdsReservedInstanceOffering(scope constructs.Construct, id *string, config *DataAwsRdsReservedInstanceOfferingConfig) DataAwsRdsReservedInstanceOffering {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataAwsRdsReservedInstanceOffering(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
 func NewDataAwsRdsReservedInstanceOffering_Override(d DataAwsRdsReservedInstanceOffering, scope constructs.Construct, id *string, config *DataAwsRdsReservedInstanceOfferingConfig) {
 	_init_.Initialize()
 

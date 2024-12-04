@@ -139,6 +139,10 @@ func (j *jsiiProxy_VpcEndpointService) validateSetSupportedIpAddressTypesParamet
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointService) validateSetSupportedRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointService) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

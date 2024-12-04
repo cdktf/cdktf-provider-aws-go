@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/glue_resource_policy aws_glue_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/glue_resource_policy aws_glue_resource_policy}.
 type GlueResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_GlueResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
 func NewGlueResourcePolicy(scope constructs.Construct, id *string, config *GlueResourcePolicyConfig) GlueResourcePolicy {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewGlueResourcePolicy(scope constructs.Construct, id *string, config *GlueR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
 func NewGlueResourcePolicy_Override(g GlueResourcePolicy, scope constructs.Construct, id *string, config *GlueResourcePolicyConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package emrserverlessapplication
 
 
 type EmrserverlessApplicationAutoStartConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/emrserverless_application#enabled EmrserverlessApplication#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy}.
 type OpensearchserverlessLifecyclePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_OpensearchserverlessLifecyclePolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy} Resource.
 func NewOpensearchserverlessLifecyclePolicy(scope constructs.Construct, id *string, config *OpensearchserverlessLifecyclePolicyConfig) OpensearchserverlessLifecyclePolicy {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewOpensearchserverlessLifecyclePolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/opensearchserverless_lifecycle_policy aws_opensearchserverless_lifecycle_policy} Resource.
 func NewOpensearchserverlessLifecyclePolicy_Override(o OpensearchserverlessLifecyclePolicy, scope constructs.Construct, id *string, config *OpensearchserverlessLifecyclePolicyConfig) {
 	_init_.Initialize()
 

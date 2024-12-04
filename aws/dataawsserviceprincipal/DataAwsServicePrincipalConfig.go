@@ -22,9 +22,9 @@ type DataAwsServicePrincipalConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/service_principal#service_name DataAwsServicePrincipal#service_name}.
 	ServiceName *string `field:"required" json:"serviceName" yaml:"serviceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/service_principal#region DataAwsServicePrincipal#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

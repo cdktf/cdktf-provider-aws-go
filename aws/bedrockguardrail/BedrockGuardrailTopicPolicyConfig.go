@@ -7,7 +7,7 @@ package bedrockguardrail
 type BedrockGuardrailTopicPolicyConfig struct {
 	// topics_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/bedrock_guardrail#topics_config BedrockGuardrail#topics_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/bedrock_guardrail#topics_config BedrockGuardrail#topics_config}
 	TopicsConfig interface{} `field:"optional" json:"topicsConfig" yaml:"topicsConfig"`
 }
 

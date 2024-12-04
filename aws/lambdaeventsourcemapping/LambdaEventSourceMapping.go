@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
@@ -88,6 +88,8 @@ type LambdaEventSourceMapping interface {
 	MaximumRetryAttempts() *float64
 	SetMaximumRetryAttempts(val *float64)
 	MaximumRetryAttemptsInput() *float64
+	MetricsConfig() LambdaEventSourceMappingMetricsConfigOutputReference
+	MetricsConfigInput() *LambdaEventSourceMappingMetricsConfig
 	// The tree node.
 	Node() constructs.Node
 	ParallelizationFactor() *float64
@@ -97,6 +99,8 @@ type LambdaEventSourceMapping interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProvisionedPollerConfig() LambdaEventSourceMappingProvisionedPollerConfigOutputReference
+	ProvisionedPollerConfigInput() *LambdaEventSourceMappingProvisionedPollerConfig
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -188,6 +192,8 @@ type LambdaEventSourceMapping interface {
 	PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig)
 	PutDocumentDbEventSourceConfig(value *LambdaEventSourceMappingDocumentDbEventSourceConfig)
 	PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria)
+	PutMetricsConfig(value *LambdaEventSourceMappingMetricsConfig)
+	PutProvisionedPollerConfig(value *LambdaEventSourceMappingProvisionedPollerConfig)
 	PutScalingConfig(value *LambdaEventSourceMappingScalingConfig)
 	PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource)
 	PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)
@@ -206,10 +212,12 @@ type LambdaEventSourceMapping interface {
 	ResetMaximumBatchingWindowInSeconds()
 	ResetMaximumRecordAgeInSeconds()
 	ResetMaximumRetryAttempts()
+	ResetMetricsConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelizationFactor()
+	ResetProvisionedPollerConfig()
 	ResetQueues()
 	ResetScalingConfig()
 	ResetSelfManagedEventSource()
@@ -669,6 +677,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) MaximumRetryAttemptsInput() *float6
 	return returns
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) MetricsConfig() LambdaEventSourceMappingMetricsConfigOutputReference {
+	var returns LambdaEventSourceMappingMetricsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"metricsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) MetricsConfigInput() *LambdaEventSourceMappingMetricsConfig {
+	var returns *LambdaEventSourceMappingMetricsConfig
+	_jsii_.Get(
+		j,
+		"metricsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -704,6 +732,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Provider() cdktf.TerraformProvider 
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ProvisionedPollerConfig() LambdaEventSourceMappingProvisionedPollerConfigOutputReference {
+	var returns LambdaEventSourceMappingProvisionedPollerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"provisionedPollerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ProvisionedPollerConfigInput() *LambdaEventSourceMappingProvisionedPollerConfig {
+	var returns *LambdaEventSourceMappingProvisionedPollerConfig
+	_jsii_.Get(
+		j,
+		"provisionedPollerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1010,7 +1058,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -1028,7 +1076,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 
@@ -1713,6 +1761,28 @@ func (l *jsiiProxy_LambdaEventSourceMapping) PutFilterCriteria(value *LambdaEven
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) PutMetricsConfig(value *LambdaEventSourceMappingMetricsConfig) {
+	if err := l.validatePutMetricsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putMetricsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) PutProvisionedPollerConfig(value *LambdaEventSourceMappingProvisionedPollerConfig) {
+	if err := l.validatePutProvisionedPollerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putProvisionedPollerConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) PutScalingConfig(value *LambdaEventSourceMappingScalingConfig) {
 	if err := l.validatePutScalingConfigParameters(value); err != nil {
 		panic(err)
@@ -1869,6 +1939,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetMaximumRetryAttempts() {
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetMetricsConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMetricsConfig",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1881,6 +1959,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetParallelizationFactor() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetParallelizationFactor",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetProvisionedPollerConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetProvisionedPollerConfig",
 		nil, // no parameters
 	)
 }
