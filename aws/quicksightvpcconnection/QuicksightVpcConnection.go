@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection}.
 type QuicksightVpcConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_QuicksightVpcConnection) VpcConnectionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource.
 func NewQuicksightVpcConnection(scope constructs.Construct, id *string, config *QuicksightVpcConnectionConfig) QuicksightVpcConnection {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewQuicksightVpcConnection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource.
 func NewQuicksightVpcConnection_Override(q QuicksightVpcConnection, scope constructs.Construct, id *string, config *QuicksightVpcConnectionConfig) {
 	_init_.Initialize()
 

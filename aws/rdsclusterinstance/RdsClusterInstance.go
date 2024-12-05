@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance}.
 type RdsClusterInstance interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -68,6 +68,9 @@ type RdsClusterInstance interface {
 	SetEngineVersion(val *string)
 	EngineVersionActual() *string
 	EngineVersionInput() *string
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -203,6 +206,7 @@ type RdsClusterInstance interface {
 	ResetDbParameterGroupName()
 	ResetDbSubnetGroupName()
 	ResetEngineVersion()
+	ResetForceDestroy()
 	ResetId()
 	ResetIdentifier()
 	ResetIdentifierPrefix()
@@ -544,6 +548,26 @@ func (j *jsiiProxy_RdsClusterInstance) EngineVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"engineVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterInstance) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterInstance) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -1030,7 +1054,7 @@ func (j *jsiiProxy_RdsClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance} Resource.
 func NewRdsClusterInstance(scope constructs.Construct, id *string, config *RdsClusterInstanceConfig) RdsClusterInstance {
 	_init_.Initialize()
 
@@ -1048,7 +1072,7 @@ func NewRdsClusterInstance(scope constructs.Construct, id *string, config *RdsCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_cluster_instance aws_rds_cluster_instance} Resource.
 func NewRdsClusterInstance_Override(r RdsClusterInstance, scope constructs.Construct, id *string, config *RdsClusterInstanceConfig) {
 	_init_.Initialize()
 
@@ -1206,6 +1230,17 @@ func (j *jsiiProxy_RdsClusterInstance)SetEngineVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"engineVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsClusterInstance)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -1845,6 +1880,14 @@ func (r *jsiiProxy_RdsClusterInstance) ResetEngineVersion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEngineVersion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterInstance) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }

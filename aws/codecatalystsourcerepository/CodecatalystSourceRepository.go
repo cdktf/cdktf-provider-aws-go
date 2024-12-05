@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository}.
 type CodecatalystSourceRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CodecatalystSourceRepository) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource.
 func NewCodecatalystSourceRepository(scope constructs.Construct, id *string, config *CodecatalystSourceRepositoryConfig) CodecatalystSourceRepository {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCodecatalystSourceRepository(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/codecatalyst_source_repository aws_codecatalyst_source_repository} Resource.
 func NewCodecatalystSourceRepository_Override(c CodecatalystSourceRepository, scope constructs.Construct, id *string, config *CodecatalystSourceRepositoryConfig) {
 	_init_.Initialize()
 

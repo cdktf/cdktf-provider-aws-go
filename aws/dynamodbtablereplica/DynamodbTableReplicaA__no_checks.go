@@ -103,6 +103,10 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) validateSetGlobalTableArnParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages}.
 type DataAwsInspectorRulesPackages interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataAwsInspectorRulesPackages) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages} Data Source.
 func NewDataAwsInspectorRulesPackages(scope constructs.Construct, id *string, config *DataAwsInspectorRulesPackagesConfig) DataAwsInspectorRulesPackages {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataAwsInspectorRulesPackages(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/inspector_rules_packages aws_inspector_rules_packages} Data Source.
 func NewDataAwsInspectorRulesPackages_Override(d DataAwsInspectorRulesPackages, scope constructs.Construct, id *string, config *DataAwsInspectorRulesPackagesConfig) {
 	_init_.Initialize()
 

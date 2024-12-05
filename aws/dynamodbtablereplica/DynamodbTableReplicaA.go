@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
 type DynamodbTableReplicaA interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,6 +28,9 @@ type DynamodbTableReplicaA interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type DynamodbTableReplicaA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DynamodbTableReplicaTimeouts)
+	ResetDeletionProtectionEnabled()
 	ResetId()
 	ResetKmsKeyArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -202,6 +206,26 @@ func (j *jsiiProxy_DynamodbTableReplicaA) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaA) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaA) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) DynamodbTableReplicaA {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *Dy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA_Override(d DynamodbTableReplicaA, scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) {
 	_init_.Initialize()
 
@@ -535,6 +559,17 @@ func (j *jsiiProxy_DynamodbTableReplicaA)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaA)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (d *jsiiProxy_DynamodbTableReplicaA) PutTimeouts(value *DynamodbTableReplic
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeletionProtectionEnabled",
+		nil, // no parameters
 	)
 }
 

@@ -5,7 +5,7 @@ package sesconfigurationset
 
 
 type SesConfigurationSetDeliveryOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ses_configuration_set#tls_policy SesConfigurationSet#tls_policy}.
 	TlsPolicy *string `field:"optional" json:"tlsPolicy" yaml:"tlsPolicy"`
 }
 

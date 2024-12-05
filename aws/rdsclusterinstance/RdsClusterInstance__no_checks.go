@@ -147,6 +147,10 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetEngineVersionParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterInstance) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

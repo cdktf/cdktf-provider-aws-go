@@ -5,7 +5,7 @@ package devopsgurueventsourcesconfig
 
 
 type DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

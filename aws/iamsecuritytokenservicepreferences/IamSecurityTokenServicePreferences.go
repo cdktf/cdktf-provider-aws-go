@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences}.
 type IamSecurityTokenServicePreferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_IamSecurityTokenServicePreferences) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences} Resource.
 func NewIamSecurityTokenServicePreferences(scope constructs.Construct, id *string, config *IamSecurityTokenServicePreferencesConfig) IamSecurityTokenServicePreferences {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewIamSecurityTokenServicePreferences(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_security_token_service_preferences aws_iam_security_token_service_preferences} Resource.
 func NewIamSecurityTokenServicePreferences_Override(i IamSecurityTokenServicePreferences, scope constructs.Construct, id *string, config *IamSecurityTokenServicePreferencesConfig) {
 	_init_.Initialize()
 

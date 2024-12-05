@@ -5,7 +5,7 @@ package appmeshroute
 
 
 type AppmeshRouteSpecHttpRouteMatchQueryParameterMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/appmesh_route#exact AppmeshRoute#exact}.
 	Exact *string `field:"optional" json:"exact" yaml:"exact"`
 }
 
