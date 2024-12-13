@@ -51,6 +51,10 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	return nil
 }
 
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) validatePutTopicNameConfigurationParameters(value *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

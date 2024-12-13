@@ -187,6 +187,10 @@ func (j *jsiiProxy_SpotInstanceRequest) validateSetEbsOptimizedParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SpotInstanceRequest) validateSetEnablePrimaryIpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequest) validateSetFetchPasswordDataParameters(val interface{}) error {
 	return nil
 }

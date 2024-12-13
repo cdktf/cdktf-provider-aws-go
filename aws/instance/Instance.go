@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -64,6 +64,9 @@ type Instance interface {
 	EbsOptimized() interface{}
 	SetEbsOptimized(val interface{})
 	EbsOptimizedInput() interface{}
+	EnablePrimaryIpv6() interface{}
+	SetEnablePrimaryIpv6(val interface{})
+	EnablePrimaryIpv6Input() interface{}
 	EnclaveOptions() InstanceEnclaveOptionsOutputReference
 	EnclaveOptionsInput() *InstanceEnclaveOptions
 	EphemeralBlockDevice() InstanceEphemeralBlockDeviceList
@@ -273,6 +276,7 @@ type Instance interface {
 	ResetDisableApiTermination()
 	ResetEbsBlockDevice()
 	ResetEbsOptimized()
+	ResetEnablePrimaryIpv6()
 	ResetEnclaveOptions()
 	ResetEphemeralBlockDevice()
 	ResetFetchPasswordData()
@@ -626,6 +630,26 @@ func (j *jsiiProxy_Instance) EbsOptimizedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) EnablePrimaryIpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) EnablePrimaryIpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6Input",
 		&returns,
 	)
 	return returns
@@ -1572,7 +1596,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1590,7 +1614,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -1715,6 +1739,17 @@ func (j *jsiiProxy_Instance)SetEbsOptimized(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ebsOptimized",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Instance)SetEnablePrimaryIpv6(val interface{}) {
+	if err := j.validateSetEnablePrimaryIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrimaryIpv6",
 		val,
 	)
 }
@@ -2653,6 +2688,14 @@ func (i *jsiiProxy_Instance) ResetEbsOptimized() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetEnablePrimaryIpv6() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEnablePrimaryIpv6",
 		nil, // no parameters
 	)
 }

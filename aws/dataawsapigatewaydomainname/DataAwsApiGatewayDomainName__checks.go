@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetDomainNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetDomainNameIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

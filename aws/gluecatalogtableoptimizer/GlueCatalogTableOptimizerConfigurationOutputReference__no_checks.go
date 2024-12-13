@@ -47,6 +47,14 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validatePutOrphanFileDeletionConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validatePutRetentionConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

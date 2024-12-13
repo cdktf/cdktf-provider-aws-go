@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
 type EcrRepositoryCreationTemplate interface {
 	cdktf.TerraformResource
 	AppliedFor() *[]*string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) EcrRepositoryCreationTemplate {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate_Override(e EcrRepositoryCreationTemplate, scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) {
 	_init_.Initialize()
 

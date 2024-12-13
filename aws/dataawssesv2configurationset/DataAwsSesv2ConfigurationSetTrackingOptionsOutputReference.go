@@ -31,6 +31,7 @@ type DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference interface {
 	CustomRedirectDomain() *string
 	// Experimental.
 	Fqn() *string
+	HttpsPolicy() *string
 	InternalValue() *DataAwsSesv2ConfigurationSetTrackingOptions
 	SetInternalValue(val *DataAwsSesv2ConfigurationSetTrackingOptions)
 	// Experimental.
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) HttpsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpsPolicy",
 		&returns,
 	)
 	return returns

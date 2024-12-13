@@ -47,6 +47,10 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) validatePutFlowTimeoutsParameters(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

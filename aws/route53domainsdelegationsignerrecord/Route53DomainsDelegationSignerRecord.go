@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record}.
 type Route53DomainsDelegationSignerRecord interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_Route53DomainsDelegationSignerRecord) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record} Resource.
 func NewRoute53DomainsDelegationSignerRecord(scope constructs.Construct, id *string, config *Route53DomainsDelegationSignerRecordConfig) Route53DomainsDelegationSignerRecord {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewRoute53DomainsDelegationSignerRecord(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record} Resource.
 func NewRoute53DomainsDelegationSignerRecord_Override(r Route53DomainsDelegationSignerRecord, scope constructs.Construct, id *string, config *Route53DomainsDelegationSignerRecordConfig) {
 	_init_.Initialize()
 

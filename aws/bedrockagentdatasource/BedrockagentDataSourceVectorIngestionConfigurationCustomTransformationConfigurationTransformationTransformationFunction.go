@@ -7,7 +7,7 @@ package bedrockagentdatasource
 type BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction struct {
 	// transformation_lambda_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/bedrockagent_data_source#transformation_lambda_configuration BedrockagentDataSource#transformation_lambda_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/bedrockagent_data_source#transformation_lambda_configuration BedrockagentDataSource#transformation_lambda_configuration}
 	TransformationLambdaConfiguration interface{} `field:"optional" json:"transformationLambdaConfiguration" yaml:"transformationLambdaConfiguration"`
 }
 

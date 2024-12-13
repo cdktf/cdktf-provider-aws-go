@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec}.
 type Route53HostedZoneDnssec interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_Route53HostedZoneDnssec) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
 func NewRoute53HostedZoneDnssec(scope constructs.Construct, id *string, config *Route53HostedZoneDnssecConfig) Route53HostedZoneDnssec {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewRoute53HostedZoneDnssec(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
 func NewRoute53HostedZoneDnssec_Override(r Route53HostedZoneDnssec, scope constructs.Construct, id *string, config *Route53HostedZoneDnssecConfig) {
 	_init_.Initialize()
 

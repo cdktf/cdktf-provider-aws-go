@@ -518,6 +518,22 @@ func (j *jsiiProxy_RdsGlobalCluster) validateSetStorageEncryptedParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewRdsGlobalClusterParameters(scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -5,7 +5,7 @@ package sagemakerhub
 
 
 type SagemakerHubS3StorageConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/sagemaker_hub#s3_output_path SagemakerHub#s3_output_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/sagemaker_hub#s3_output_path SagemakerHub#s3_output_path}.
 	S3OutputPath *string `field:"optional" json:"s3OutputPath" yaml:"s3OutputPath"`
 }
 

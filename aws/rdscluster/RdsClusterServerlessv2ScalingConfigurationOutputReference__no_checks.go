@@ -71,6 +71,10 @@ func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetSecondsUntilAutoPauseParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

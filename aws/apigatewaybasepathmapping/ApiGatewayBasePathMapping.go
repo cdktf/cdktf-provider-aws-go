@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping}.
 type ApiGatewayBasePathMapping interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -39,6 +39,9 @@ type ApiGatewayBasePathMapping interface {
 	SetDependsOn(val *[]*string)
 	DomainName() *string
 	SetDomainName(val *string)
+	DomainNameId() *string
+	SetDomainNameId(val *string)
+	DomainNameIdInput() *string
 	DomainNameInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -120,6 +123,7 @@ type ApiGatewayBasePathMapping interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBasePath()
+	ResetDomainNameId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -238,6 +242,26 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping) DomainName() *string {
 	_jsii_.Get(
 		j,
 		"domainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayBasePathMapping) DomainNameId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayBasePathMapping) DomainNameIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameIdInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +428,7 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping} Resource.
 func NewApiGatewayBasePathMapping(scope constructs.Construct, id *string, config *ApiGatewayBasePathMappingConfig) ApiGatewayBasePathMapping {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewApiGatewayBasePathMapping(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_base_path_mapping aws_api_gateway_base_path_mapping} Resource.
 func NewApiGatewayBasePathMapping_Override(a ApiGatewayBasePathMapping, scope constructs.Construct, id *string, config *ApiGatewayBasePathMappingConfig) {
 	_init_.Initialize()
 
@@ -492,6 +516,17 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping)SetDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayBasePathMapping)SetDomainNameId(val *string) {
+	if err := j.validateSetDomainNameIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainNameId",
 		val,
 	)
 }
@@ -913,6 +948,14 @@ func (a *jsiiProxy_ApiGatewayBasePathMapping) ResetBasePath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBasePath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayBasePathMapping) ResetDomainNameId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDomainNameId",
 		nil, // no parameters
 	)
 }

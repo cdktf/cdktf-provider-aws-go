@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}.
 type DataAwsSesv2ConfigurationSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) VdmOptions() DataAwsSesv2Config
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
 func NewDataAwsSesv2ConfigurationSet(scope constructs.Construct, id *string, config *DataAwsSesv2ConfigurationSetConfig) DataAwsSesv2ConfigurationSet {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataAwsSesv2ConfigurationSet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
 func NewDataAwsSesv2ConfigurationSet_Override(d DataAwsSesv2ConfigurationSet, scope constructs.Construct, id *string, config *DataAwsSesv2ConfigurationSetConfig) {
 	_init_.Initialize()
 

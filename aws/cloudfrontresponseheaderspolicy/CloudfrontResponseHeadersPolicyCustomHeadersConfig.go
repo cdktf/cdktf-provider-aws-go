@@ -7,7 +7,7 @@ package cloudfrontresponseheaderspolicy
 type CloudfrontResponseHeadersPolicyCustomHeadersConfig struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

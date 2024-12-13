@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetDomainNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetDomainNameIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package cloudfrontcachepolicy
 
 
 type CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/cloudfront_cache_policy#items CloudfrontCachePolicy#items}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/cloudfront_cache_policy#items CloudfrontCachePolicy#items}.
 	Items *[]*string `field:"optional" json:"items" yaml:"items"`
 }
 

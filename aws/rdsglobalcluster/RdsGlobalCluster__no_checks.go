@@ -151,6 +151,14 @@ func (j *jsiiProxy_RdsGlobalCluster) validateSetStorageEncryptedParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewRdsGlobalClusterParameters(scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) error {
 	return nil
 }

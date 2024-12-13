@@ -28,6 +28,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRefer
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FlowTimeouts() NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsOutputReference
+	FlowTimeoutsInput() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions
@@ -70,6 +72,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFlowTimeouts(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts)
+	ResetFlowTimeouts()
 	ResetRuleOrder()
 	ResetStreamExceptionPolicy()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) FlowTimeouts() NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsOutputReference {
+	var returns NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"flowTimeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) FlowTimeoutsInput() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts {
+	var returns *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts
+	_jsii_.Get(
+		j,
+		"flowTimeoutsInput",
 		&returns,
 	)
 	return returns
@@ -486,6 +510,25 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) PutFlowTimeouts(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeouts) {
+	if err := n.validatePutFlowTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putFlowTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) ResetFlowTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFlowTimeouts",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) ResetRuleOrder() {

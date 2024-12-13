@@ -5,9 +5,9 @@ package resourcegroupsgroup
 
 
 type ResourcegroupsGroupConfigurationParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/resourcegroups_group#name ResourcegroupsGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/resourcegroups_group#name ResourcegroupsGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/resourcegroups_group#values ResourcegroupsGroup#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/resourcegroups_group#values ResourcegroupsGroup#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

@@ -5,7 +5,7 @@ package appmeshvirtualnode
 
 
 type AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appmesh_virtual_node#certificate_chain AppmeshVirtualNode#certificate_chain}.
 	CertificateChain *string `field:"required" json:"certificateChain" yaml:"certificateChain"`
 }
 

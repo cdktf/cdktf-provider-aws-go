@@ -143,6 +143,10 @@ func (j *jsiiProxy_ApiGatewayDomainName) validateSetOwnershipVerificationCertifi
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayDomainName) validateSetPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayDomainName) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

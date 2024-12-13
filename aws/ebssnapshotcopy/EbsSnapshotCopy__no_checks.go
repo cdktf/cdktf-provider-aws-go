@@ -95,6 +95,10 @@ func validateEbsSnapshotCopy_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_EbsSnapshotCopy) validateSetCompletionDurationMinutesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsSnapshotCopy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

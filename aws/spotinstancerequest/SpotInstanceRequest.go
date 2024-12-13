@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/spot_instance_request aws_spot_instance_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/spot_instance_request aws_spot_instance_request}.
 type SpotInstanceRequest interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -67,6 +67,9 @@ type SpotInstanceRequest interface {
 	EbsOptimized() interface{}
 	SetEbsOptimized(val interface{})
 	EbsOptimizedInput() interface{}
+	EnablePrimaryIpv6() interface{}
+	SetEnablePrimaryIpv6(val interface{})
+	EnablePrimaryIpv6Input() interface{}
 	EnclaveOptions() SpotInstanceRequestEnclaveOptionsOutputReference
 	EnclaveOptionsInput() *SpotInstanceRequestEnclaveOptions
 	EphemeralBlockDevice() SpotInstanceRequestEphemeralBlockDeviceList
@@ -296,6 +299,7 @@ type SpotInstanceRequest interface {
 	ResetDisableApiTermination()
 	ResetEbsBlockDevice()
 	ResetEbsOptimized()
+	ResetEnablePrimaryIpv6()
 	ResetEnclaveOptions()
 	ResetEphemeralBlockDevice()
 	ResetFetchPasswordData()
@@ -675,6 +679,26 @@ func (j *jsiiProxy_SpotInstanceRequest) EbsOptimizedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) EnablePrimaryIpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) EnablePrimaryIpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6Input",
 		&returns,
 	)
 	return returns
@@ -1751,7 +1775,7 @@ func (j *jsiiProxy_SpotInstanceRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) SpotInstanceRequest {
 	_init_.Initialize()
 
@@ -1769,7 +1793,7 @@ func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *Spot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest_Override(s SpotInstanceRequest, scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) {
 	_init_.Initialize()
 
@@ -1905,6 +1929,17 @@ func (j *jsiiProxy_SpotInstanceRequest)SetEbsOptimized(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ebsOptimized",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotInstanceRequest)SetEnablePrimaryIpv6(val interface{}) {
+	if err := j.validateSetEnablePrimaryIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrimaryIpv6",
 		val,
 	)
 }
@@ -2917,6 +2952,14 @@ func (s *jsiiProxy_SpotInstanceRequest) ResetEbsOptimized() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequest) ResetEnablePrimaryIpv6() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnablePrimaryIpv6",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 type ServicecatalogappregistryApplication interface {
 	cdktf.TerraformResource
 	ApplicationTag() cdktf.StringMap
@@ -64,6 +64,10 @@ type ServicecatalogappregistryApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() cdktf.StringMap
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +121,7 @@ type ServicecatalogappregistryApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -335,6 +340,36 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogappregistryApplication) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogappregistryApplication) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogappregistryApplication) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogappregistryApplication) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -366,7 +401,7 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
 func NewServicecatalogappregistryApplication(scope constructs.Construct, id *string, config *ServicecatalogappregistryApplicationConfig) ServicecatalogappregistryApplication {
 	_init_.Initialize()
 
@@ -384,7 +419,7 @@ func NewServicecatalogappregistryApplication(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
 func NewServicecatalogappregistryApplication_Override(s ServicecatalogappregistryApplication, scope constructs.Construct, id *string, config *ServicecatalogappregistryApplicationConfig) {
 	_init_.Initialize()
 
@@ -481,6 +516,17 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogappregistryApplication)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -850,6 +896,14 @@ func (s *jsiiProxy_ServicecatalogappregistryApplication) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogappregistryApplication) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
 		nil, // no parameters
 	)
 }

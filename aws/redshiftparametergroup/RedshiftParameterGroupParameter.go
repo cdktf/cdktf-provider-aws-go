@@ -5,9 +5,9 @@ package redshiftparametergroup
 
 
 type RedshiftParameterGroupParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

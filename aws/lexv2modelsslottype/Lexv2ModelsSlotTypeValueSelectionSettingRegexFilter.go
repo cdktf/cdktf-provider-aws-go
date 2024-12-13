@@ -5,7 +5,7 @@ package lexv2modelsslottype
 
 
 type Lexv2ModelsSlotTypeValueSelectionSettingRegexFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lexv2models_slot_type#pattern Lexv2ModelsSlotType#pattern}.
 	Pattern *string `field:"required" json:"pattern" yaml:"pattern"`
 }
 

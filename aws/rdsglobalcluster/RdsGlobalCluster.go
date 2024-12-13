@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_global_cluster aws_rds_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/rds_global_cluster aws_rds_global_cluster}.
 type RdsGlobalCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -90,6 +90,12 @@ type RdsGlobalCluster interface {
 	StorageEncrypted() interface{}
 	SetStorageEncrypted(val interface{})
 	StorageEncryptedInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -154,6 +160,8 @@ type RdsGlobalCluster interface {
 	ResetOverrideLogicalId()
 	ResetSourceDbClusterIdentifier()
 	ResetStorageEncrypted()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -553,6 +561,46 @@ func (j *jsiiProxy_RdsGlobalCluster) StorageEncryptedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsGlobalCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -604,7 +652,7 @@ func (j *jsiiProxy_RdsGlobalCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) RdsGlobalCluster {
 	_init_.Initialize()
 
@@ -622,7 +670,7 @@ func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster_Override(r RdsGlobalCluster, scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) {
 	_init_.Initialize()
 
@@ -807,6 +855,28 @@ func (j *jsiiProxy_RdsGlobalCluster)SetStorageEncrypted(val interface{}) {
 	_jsii_.Set(
 		j,
 		"storageEncrypted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsGlobalCluster)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsGlobalCluster)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1251,6 +1321,22 @@ func (r *jsiiProxy_RdsGlobalCluster) ResetStorageEncrypted() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetStorageEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsGlobalCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsGlobalCluster) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

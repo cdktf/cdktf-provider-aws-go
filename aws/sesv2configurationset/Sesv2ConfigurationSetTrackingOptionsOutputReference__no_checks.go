@@ -63,6 +63,10 @@ func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateSetHttpsPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateSetInternalValueParameters(val *Sesv2ConfigurationSetTrackingOptions) error {
 	return nil
 }

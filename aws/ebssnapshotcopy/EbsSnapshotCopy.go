@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy}.
 type EbsSnapshotCopy interface {
 	cdktf.TerraformResource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CompletionDurationMinutes() *float64
+	SetCompletionDurationMinutes(val *float64)
+	CompletionDurationMinutesInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -147,6 +150,7 @@ type EbsSnapshotCopy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *EbsSnapshotCopyTimeouts)
+	ResetCompletionDurationMinutes()
 	ResetDescription()
 	ResetEncrypted()
 	ResetId()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_EbsSnapshotCopy) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EbsSnapshotCopy) CompletionDurationMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"completionDurationMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EbsSnapshotCopy) CompletionDurationMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"completionDurationMinutesInput",
 		&returns,
 	)
 	return returns
@@ -649,7 +673,7 @@ func (j *jsiiProxy_EbsSnapshotCopy) VolumeSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy} Resource.
 func NewEbsSnapshotCopy(scope constructs.Construct, id *string, config *EbsSnapshotCopyConfig) EbsSnapshotCopy {
 	_init_.Initialize()
 
@@ -667,7 +691,7 @@ func NewEbsSnapshotCopy(scope constructs.Construct, id *string, config *EbsSnaps
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ebs_snapshot_copy aws_ebs_snapshot_copy} Resource.
 func NewEbsSnapshotCopy_Override(e EbsSnapshotCopy, scope constructs.Construct, id *string, config *EbsSnapshotCopyConfig) {
 	_init_.Initialize()
 
@@ -675,6 +699,17 @@ func NewEbsSnapshotCopy_Override(e EbsSnapshotCopy, scope constructs.Construct, 
 		"@cdktf/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EbsSnapshotCopy)SetCompletionDurationMinutes(val *float64) {
+	if err := j.validateSetCompletionDurationMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"completionDurationMinutes",
+		val,
 	)
 }
 
@@ -1228,6 +1263,14 @@ func (e *jsiiProxy_EbsSnapshotCopy) PutTimeouts(value *EbsSnapshotCopyTimeouts) 
 		e,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EbsSnapshotCopy) ResetCompletionDurationMinutes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCompletionDurationMinutes",
+		nil, // no parameters
 	)
 }
 

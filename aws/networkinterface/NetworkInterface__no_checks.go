@@ -107,6 +107,10 @@ func (j *jsiiProxy_NetworkInterface) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterface) validateSetEnablePrimaryIpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterface) validateSetIdParameters(val *string) error {
 	return nil
 }

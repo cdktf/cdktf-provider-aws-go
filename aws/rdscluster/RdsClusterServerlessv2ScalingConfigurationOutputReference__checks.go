@@ -190,6 +190,14 @@ func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetSecondsUntilAutoPauseParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

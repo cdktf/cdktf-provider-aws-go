@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_prompt aws_connect_prompt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_prompt aws_connect_prompt}.
 type DataAwsConnectPrompt interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataAwsConnectPrompt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_prompt aws_connect_prompt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_prompt aws_connect_prompt} Data Source.
 func NewDataAwsConnectPrompt(scope constructs.Construct, id *string, config *DataAwsConnectPromptConfig) DataAwsConnectPrompt {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataAwsConnectPrompt(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_prompt aws_connect_prompt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_prompt aws_connect_prompt} Data Source.
 func NewDataAwsConnectPrompt_Override(d DataAwsConnectPrompt, scope constructs.Construct, id *string, config *DataAwsConnectPromptConfig) {
 	_init_.Initialize()
 

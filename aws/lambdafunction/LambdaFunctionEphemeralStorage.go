@@ -5,7 +5,7 @@ package lambdafunction
 
 
 type LambdaFunctionEphemeralStorage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/lambda_function#size LambdaFunction#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lambda_function#size LambdaFunction#size}.
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 }
 

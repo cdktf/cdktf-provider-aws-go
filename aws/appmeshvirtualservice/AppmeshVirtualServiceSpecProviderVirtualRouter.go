@@ -5,7 +5,7 @@ package appmeshvirtualservice
 
 
 type AppmeshVirtualServiceSpecProviderVirtualRouter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appmesh_virtual_service#virtual_router_name AppmeshVirtualService#virtual_router_name}.
 	VirtualRouterName *string `field:"required" json:"virtualRouterName" yaml:"virtualRouterName"`
 }
 

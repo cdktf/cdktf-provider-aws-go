@@ -33,6 +33,9 @@ type Sesv2ConfigurationSetTrackingOptionsOutputReference interface {
 	CustomRedirectDomainInput() *string
 	// Experimental.
 	Fqn() *string
+	HttpsPolicy() *string
+	SetHttpsPolicy(val *string)
+	HttpsPolicyInput() *string
 	InternalValue() *Sesv2ConfigurationSetTrackingOptions
 	SetInternalValue(val *Sesv2ConfigurationSetTrackingOptions)
 	// Experimental.
@@ -67,6 +70,7 @@ type Sesv2ConfigurationSetTrackingOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHttpsPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +141,26 @@ func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) HttpsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) HttpsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpsPolicyInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +253,17 @@ func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference)SetCustom
 	_jsii_.Set(
 		j,
 		"customRedirectDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference)SetHttpsPolicy(val *string) {
+	if err := j.validateSetHttpsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpsPolicy",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) ResetHttpsPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpsPolicy",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -5,7 +5,7 @@ package cloudfrontdistribution
 
 
 type CloudfrontDistributionOriginGroupMember struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}.
 	OriginId *string `field:"required" json:"originId" yaml:"originId"`
 }
 

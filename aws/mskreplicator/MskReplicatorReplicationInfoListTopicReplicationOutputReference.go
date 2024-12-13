@@ -51,6 +51,8 @@ type MskReplicatorReplicationInfoListTopicReplicationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TopicNameConfiguration() MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference
+	TopicNameConfigurationInput() *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration
 	TopicsToExclude() *[]*string
 	SetTopicsToExclude(val *[]*string)
 	TopicsToExcludeInput() *[]*string
@@ -82,10 +84,12 @@ type MskReplicatorReplicationInfoListTopicReplicationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutStartingPosition(value *MskReplicatorReplicationInfoListTopicReplicationStartingPosition)
+	PutTopicNameConfiguration(value *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration)
 	ResetCopyAccessControlListsForTopics()
 	ResetCopyTopicConfigurations()
 	ResetDetectAndCopyNewTopics()
 	ResetStartingPosition()
+	ResetTopicNameConfiguration()
 	ResetTopicsToExclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -247,6 +251,26 @@ func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) TopicNameConfiguration() MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference {
+	var returns MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"topicNameConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) TopicNameConfigurationInput() *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration {
+	var returns *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration
+	_jsii_.Get(
+		j,
+		"topicNameConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	)
 }
 
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) PutTopicNameConfiguration(value *MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration) {
+	if err := m.validatePutTopicNameConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTopicNameConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) ResetCopyAccessControlListsForTopics() {
 	_jsii_.InvokeVoid(
 		m,
@@ -655,6 +690,14 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	_jsii_.InvokeVoid(
 		m,
 		"resetStartingPosition",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) ResetTopicNameConfiguration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTopicNameConfiguration",
 		nil, // no parameters
 	)
 }

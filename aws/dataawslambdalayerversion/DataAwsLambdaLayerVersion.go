@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version}.
 type DataAwsLambdaLayerVersion interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -492,7 +492,7 @@ func (j *jsiiProxy_DataAwsLambdaLayerVersion) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source.
 func NewDataAwsLambdaLayerVersion(scope constructs.Construct, id *string, config *DataAwsLambdaLayerVersionConfig) DataAwsLambdaLayerVersion {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewDataAwsLambdaLayerVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/lambda_layer_version aws_lambda_layer_version} Data Source.
 func NewDataAwsLambdaLayerVersion_Override(d DataAwsLambdaLayerVersion, scope constructs.Construct, id *string, config *DataAwsLambdaLayerVersionConfig) {
 	_init_.Initialize()
 

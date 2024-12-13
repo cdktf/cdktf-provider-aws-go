@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetDomainNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetDomainNameIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetIdParameters(val *string) error {
 	return nil
 }

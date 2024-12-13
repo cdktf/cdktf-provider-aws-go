@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface aws_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface aws_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -37,6 +37,9 @@ type NetworkInterface interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnablePrimaryIpv6() interface{}
+	SetEnablePrimaryIpv6(val interface{})
+	EnablePrimaryIpv6Input() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -177,6 +180,7 @@ type NetworkInterface interface {
 	PutAttachment(value interface{})
 	ResetAttachment()
 	ResetDescription()
+	ResetEnablePrimaryIpv6()
 	ResetId()
 	ResetInterfaceType()
 	ResetIpv4PrefixCount()
@@ -312,6 +316,26 @@ func (j *jsiiProxy_NetworkInterface) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) EnablePrimaryIpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) EnablePrimaryIpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrimaryIpv6Input",
 		&returns,
 	)
 	return returns
@@ -868,7 +892,7 @@ func (j *jsiiProxy_NetworkInterface) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -886,7 +910,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -934,6 +958,17 @@ func (j *jsiiProxy_NetworkInterface)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetEnablePrimaryIpv6(val interface{}) {
+	if err := j.validateSetEnablePrimaryIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrimaryIpv6",
 		val,
 	)
 }
@@ -1572,6 +1607,14 @@ func (n *jsiiProxy_NetworkInterface) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterface) ResetEnablePrimaryIpv6() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnablePrimaryIpv6",
 		nil, // no parameters
 	)
 }

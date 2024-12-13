@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name}.
 type DataAwsApiGatewayDomainName interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -35,6 +35,9 @@ type DataAwsApiGatewayDomainName interface {
 	SetDependsOn(val *[]*string)
 	DomainName() *string
 	SetDomainName(val *string)
+	DomainNameId() *string
+	SetDomainNameId(val *string)
+	DomainNameIdInput() *string
 	DomainNameInput() *string
 	EndpointConfiguration() DataAwsApiGatewayDomainNameEndpointConfigurationList
 	// Experimental.
@@ -54,6 +57,7 @@ type DataAwsApiGatewayDomainName interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Policy() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -99,6 +103,7 @@ type DataAwsApiGatewayDomainName interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDomainNameId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -233,6 +238,26 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) DomainName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) DomainNameId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) DomainNameIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) DomainNameInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -318,6 +343,16 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
 		&returns,
 	)
 	return returns
@@ -444,7 +479,7 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
 func NewDataAwsApiGatewayDomainName(scope constructs.Construct, id *string, config *DataAwsApiGatewayDomainNameConfig) DataAwsApiGatewayDomainName {
 	_init_.Initialize()
 
@@ -462,7 +497,7 @@ func NewDataAwsApiGatewayDomainName(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
 func NewDataAwsApiGatewayDomainName_Override(d DataAwsApiGatewayDomainName, scope constructs.Construct, id *string, config *DataAwsApiGatewayDomainNameConfig) {
 	_init_.Initialize()
 
@@ -499,6 +534,17 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName)SetDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayDomainName)SetDomainNameId(val *string) {
+	if err := j.validateSetDomainNameIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainNameId",
 		val,
 	)
 }
@@ -834,6 +880,14 @@ func (d *jsiiProxy_DataAwsApiGatewayDomainName) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsApiGatewayDomainName) ResetDomainNameId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainNameId",
+		nil, // no parameters
 	)
 }
 

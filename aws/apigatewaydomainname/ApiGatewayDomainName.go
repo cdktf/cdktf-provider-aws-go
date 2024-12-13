@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name}.
 type ApiGatewayDomainName interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -52,6 +52,7 @@ type ApiGatewayDomainName interface {
 	SetDependsOn(val *[]*string)
 	DomainName() *string
 	SetDomainName(val *string)
+	DomainNameId() *string
 	DomainNameInput() *string
 	EndpointConfiguration() ApiGatewayDomainNameEndpointConfigurationOutputReference
 	EndpointConfigurationInput() *ApiGatewayDomainNameEndpointConfiguration
@@ -77,6 +78,9 @@ type ApiGatewayDomainName interface {
 	OwnershipVerificationCertificateArn() *string
 	SetOwnershipVerificationCertificateArn(val *string)
 	OwnershipVerificationCertificateArnInput() *string
+	Policy() *string
+	SetPolicy(val *string)
+	PolicyInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -167,6 +171,7 @@ type ApiGatewayDomainName interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnershipVerificationCertificateArn()
+	ResetPolicy()
 	ResetRegionalCertificateArn()
 	ResetRegionalCertificateName()
 	ResetSecurityPolicy()
@@ -390,6 +395,16 @@ func (j *jsiiProxy_ApiGatewayDomainName) DomainName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayDomainName) DomainNameId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayDomainName) DomainNameInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -525,6 +540,26 @@ func (j *jsiiProxy_ApiGatewayDomainName) OwnershipVerificationCertificateArnInpu
 	_jsii_.Get(
 		j,
 		"ownershipVerificationCertificateArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDomainName) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDomainName) PolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyInput",
 		&returns,
 	)
 	return returns
@@ -711,7 +746,7 @@ func (j *jsiiProxy_ApiGatewayDomainName) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name} Resource.
 func NewApiGatewayDomainName(scope constructs.Construct, id *string, config *ApiGatewayDomainNameConfig) ApiGatewayDomainName {
 	_init_.Initialize()
 
@@ -729,7 +764,7 @@ func NewApiGatewayDomainName(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name} Resource.
 func NewApiGatewayDomainName_Override(a ApiGatewayDomainName, scope constructs.Construct, id *string, config *ApiGatewayDomainNameConfig) {
 	_init_.Initialize()
 
@@ -873,6 +908,17 @@ func (j *jsiiProxy_ApiGatewayDomainName)SetOwnershipVerificationCertificateArn(v
 	_jsii_.Set(
 		j,
 		"ownershipVerificationCertificateArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDomainName)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policy",
 		val,
 	)
 }
@@ -1402,6 +1448,14 @@ func (a *jsiiProxy_ApiGatewayDomainName) ResetOwnershipVerificationCertificateAr
 	_jsii_.InvokeVoid(
 		a,
 		"resetOwnershipVerificationCertificateArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDomainName) ResetPolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPolicy",
 		nil, // no parameters
 	)
 }

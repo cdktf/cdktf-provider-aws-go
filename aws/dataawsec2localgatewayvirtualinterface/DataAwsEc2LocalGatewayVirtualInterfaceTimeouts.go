@@ -5,7 +5,7 @@ package dataawsec2localgatewayvirtualinterface
 
 
 type DataAwsEc2LocalGatewayVirtualInterfaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/ec2_local_gateway_virtual_interface#read DataAwsEc2LocalGatewayVirtualInterface#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ec2_local_gateway_virtual_interface#read DataAwsEc2LocalGatewayVirtualInterface#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

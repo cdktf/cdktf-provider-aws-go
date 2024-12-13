@@ -35,6 +35,10 @@ type GlueCatalogTableOptimizerConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OrphanFileDeletionConfiguration() GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList
+	OrphanFileDeletionConfigurationInput() interface{}
+	RetentionConfiguration() GlueCatalogTableOptimizerConfigurationRetentionConfigurationList
+	RetentionConfigurationInput() interface{}
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -70,6 +74,10 @@ type GlueCatalogTableOptimizerConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOrphanFileDeletionConfiguration(value interface{})
+	PutRetentionConfiguration(value interface{})
+	ResetOrphanFileDeletionConfiguration()
+	ResetRetentionConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +158,46 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) OrphanFileDeletionConfiguration() GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList {
+	var returns GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList
+	_jsii_.Get(
+		j,
+		"orphanFileDeletionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) OrphanFileDeletionConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"orphanFileDeletionConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) RetentionConfiguration() GlueCatalogTableOptimizerConfigurationRetentionConfigurationList {
+	var returns GlueCatalogTableOptimizerConfigurationRetentionConfigurationList
+	_jsii_.Get(
+		j,
+		"retentionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) RetentionConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"retentionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +532,44 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) PutOrphanFileDeletionConfiguration(value interface{}) {
+	if err := g.validatePutOrphanFileDeletionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOrphanFileDeletionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) PutRetentionConfiguration(value interface{}) {
+	if err := g.validatePutRetentionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRetentionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) ResetOrphanFileDeletionConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOrphanFileDeletionConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) ResetRetentionConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetentionConfiguration",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
