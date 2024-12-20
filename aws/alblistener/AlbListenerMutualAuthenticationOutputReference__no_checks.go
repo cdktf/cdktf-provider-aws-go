@@ -51,6 +51,10 @@ func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateSetAdvertiseTrustStoreCaNamesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

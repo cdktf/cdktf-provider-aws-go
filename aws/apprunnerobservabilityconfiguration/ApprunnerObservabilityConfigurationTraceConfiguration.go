@@ -5,7 +5,7 @@ package apprunnerobservabilityconfiguration
 
 
 type ApprunnerObservabilityConfigurationTraceConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/apprunner_observability_configuration#vendor ApprunnerObservabilityConfiguration#vendor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/apprunner_observability_configuration#vendor ApprunnerObservabilityConfiguration#vendor}.
 	Vendor *string `field:"optional" json:"vendor" yaml:"vendor"`
 }
 

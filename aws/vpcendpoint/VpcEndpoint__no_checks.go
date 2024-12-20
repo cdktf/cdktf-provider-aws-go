@@ -151,6 +151,10 @@ func (j *jsiiProxy_VpcEndpoint) validateSetServiceNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpoint) validateSetServiceRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpoint) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

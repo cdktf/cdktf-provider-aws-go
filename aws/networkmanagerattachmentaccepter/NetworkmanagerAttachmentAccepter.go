@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter}.
 type NetworkmanagerAttachmentAccepter interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -41,6 +41,7 @@ type NetworkmanagerAttachmentAccepter interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EdgeLocation() *string
+	EdgeLocations() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -277,6 +278,16 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) EdgeLocation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) EdgeLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"edgeLocations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -468,7 +479,7 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
 func NewNetworkmanagerAttachmentAccepter(scope constructs.Construct, id *string, config *NetworkmanagerAttachmentAccepterConfig) NetworkmanagerAttachmentAccepter {
 	_init_.Initialize()
 
@@ -486,7 +497,7 @@ func NewNetworkmanagerAttachmentAccepter(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
 func NewNetworkmanagerAttachmentAccepter_Override(n NetworkmanagerAttachmentAccepter, scope constructs.Construct, id *string, config *NetworkmanagerAttachmentAccepterConfig) {
 	_init_.Initialize()
 

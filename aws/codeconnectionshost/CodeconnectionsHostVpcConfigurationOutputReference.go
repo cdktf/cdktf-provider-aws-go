@@ -76,6 +76,7 @@ type CodeconnectionsHostVpcConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTlsCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -552,6 +553,14 @@ func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationOutputReference) ResetTlsCertificate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsCertificate",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -5,7 +5,7 @@ package s3bucketreplicationconfiguration
 
 
 type S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

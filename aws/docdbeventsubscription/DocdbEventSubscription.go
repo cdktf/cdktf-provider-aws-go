@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/docdb_event_subscription aws_docdb_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/docdb_event_subscription aws_docdb_event_subscription}.
 type DocdbEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_DocdbEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/docdb_event_subscription aws_docdb_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/docdb_event_subscription aws_docdb_event_subscription} Resource.
 func NewDocdbEventSubscription(scope constructs.Construct, id *string, config *DocdbEventSubscriptionConfig) DocdbEventSubscription {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewDocdbEventSubscription(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/docdb_event_subscription aws_docdb_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/docdb_event_subscription aws_docdb_event_subscription} Resource.
 func NewDocdbEventSubscription_Override(d DocdbEventSubscription, scope constructs.Construct, id *string, config *DocdbEventSubscriptionConfig) {
 	_init_.Initialize()
 

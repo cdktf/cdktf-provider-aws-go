@@ -63,6 +63,10 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validatePutS3Ori
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validatePutVpcOriginConfigParameters(value *CloudfrontDistributionOriginVpcOriginConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,16 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
 	SetApplyImmediately(val interface{})
 	ApplyImmediatelyInput() interface{}
 	Arn() *string
-	AtRestEncryptionEnabled() interface{}
-	SetAtRestEncryptionEnabled(val interface{})
-	AtRestEncryptionEnabledInput() interface{}
+	AtRestEncryptionEnabled() *string
+	SetAtRestEncryptionEnabled(val *string)
+	AtRestEncryptionEnabledInput() *string
 	AuthToken() *string
 	SetAuthToken(val *string)
 	AuthTokenInput() *string
@@ -328,8 +328,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabled",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabled() interf
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ElasticacheReplicationGroup) AtRestEncryptionEnabledInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"atRestEncryptionEnabledInput",
@@ -1369,7 +1369,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1387,7 +1387,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1409,7 +1409,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetApplyImmediately(val interface
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAtRestEncryptionEnabled(val interface{}) {
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetAtRestEncryptionEnabled(val *string) {
 	if err := j.validateSetAtRestEncryptionEnabledParameters(val); err != nil {
 		panic(err)
 	}

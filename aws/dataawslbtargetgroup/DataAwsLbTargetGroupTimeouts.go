@@ -5,7 +5,7 @@ package dataawslbtargetgroup
 
 
 type DataAwsLbTargetGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/lb_target_group#read DataAwsLbTargetGroup#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/lb_target_group#read DataAwsLbTargetGroup#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering}.
 type DataAwsEc2CapacityBlockOffering interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataAwsEc2CapacityBlockOffering) UpfrontFee() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source.
 func NewDataAwsEc2CapacityBlockOffering(scope constructs.Construct, id *string, config *DataAwsEc2CapacityBlockOfferingConfig) DataAwsEc2CapacityBlockOffering {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataAwsEc2CapacityBlockOffering(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source.
 func NewDataAwsEc2CapacityBlockOffering_Override(d DataAwsEc2CapacityBlockOffering, scope constructs.Construct, id *string, config *DataAwsEc2CapacityBlockOfferingConfig) {
 	_init_.Initialize()
 

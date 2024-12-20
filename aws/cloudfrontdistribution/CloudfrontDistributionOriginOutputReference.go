@@ -66,6 +66,8 @@ type CloudfrontDistributionOriginOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VpcOriginConfig() CloudfrontDistributionOriginVpcOriginConfigOutputReference
+	VpcOriginConfigInput() *CloudfrontDistributionOriginVpcOriginConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -94,6 +96,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	PutCustomOriginConfig(value *CloudfrontDistributionOriginCustomOriginConfig)
 	PutOriginShield(value *CloudfrontDistributionOriginOriginShield)
 	PutS3OriginConfig(value *CloudfrontDistributionOriginS3OriginConfig)
+	PutVpcOriginConfig(value *CloudfrontDistributionOriginVpcOriginConfig)
 	ResetConnectionAttempts()
 	ResetConnectionTimeout()
 	ResetCustomHeader()
@@ -102,6 +105,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	ResetOriginPath()
 	ResetOriginShield()
 	ResetS3OriginConfig()
+	ResetVpcOriginConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -382,6 +386,26 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) VpcOriginConfig() CloudfrontDistributionOriginVpcOriginConfigOutputReference {
+	var returns CloudfrontDistributionOriginVpcOriginConfigOutputReference
+	_jsii_.Get(
+		j,
+		"vpcOriginConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) VpcOriginConfigInput() *CloudfrontDistributionOriginVpcOriginConfig {
+	var returns *CloudfrontDistributionOriginVpcOriginConfig
+	_jsii_.Get(
+		j,
+		"vpcOriginConfigInput",
 		&returns,
 	)
 	return returns
@@ -766,6 +790,17 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutS3OriginConfi
 	)
 }
 
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) PutVpcOriginConfig(value *CloudfrontDistributionOriginVpcOriginConfig) {
+	if err := c.validatePutVpcOriginConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVpcOriginConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetConnectionAttempts() {
 	_jsii_.InvokeVoid(
 		c,
@@ -826,6 +861,14 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetS3OriginCon
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3OriginConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetVpcOriginConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVpcOriginConfig",
 		nil, // no parameters
 	)
 }

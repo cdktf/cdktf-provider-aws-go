@@ -5,7 +5,7 @@ package ec2fleet
 
 
 type Ec2FleetOnDemandOptionsCapacityReservationOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ec2_fleet#usage_strategy Ec2Fleet#usage_strategy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/ec2_fleet#usage_strategy Ec2Fleet#usage_strategy}.
 	UsageStrategy *string `field:"optional" json:"usageStrategy" yaml:"usageStrategy"`
 }
 

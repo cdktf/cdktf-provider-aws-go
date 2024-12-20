@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
 type BedrockagentAgent interface {
 	cdktf.TerraformResource
 	AgentArn() *string
+	AgentCollaboration() *string
+	SetAgentCollaboration(val *string)
+	AgentCollaborationInput() *string
 	AgentId() *string
 	AgentName() *string
 	SetAgentName(val *string)
@@ -148,6 +151,7 @@ type BedrockagentAgent interface {
 	PutGuardrailConfiguration(value interface{})
 	PutPromptOverrideConfiguration(value interface{})
 	PutTimeouts(value *BedrockagentAgentTimeouts)
+	ResetAgentCollaboration()
 	ResetCustomerEncryptionKeyArn()
 	ResetDescription()
 	ResetGuardrailConfiguration()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_BedrockagentAgent) AgentArn() *string {
 	_jsii_.Get(
 		j,
 		"agentArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) AgentCollaboration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentCollaboration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) AgentCollaborationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"agentCollaborationInput",
 		&returns,
 	)
 	return returns
@@ -650,7 +674,7 @@ func (j *jsiiProxy_BedrockagentAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent(scope constructs.Construct, id *string, config *BedrockagentAgentConfig) BedrockagentAgent {
 	_init_.Initialize()
 
@@ -668,7 +692,7 @@ func NewBedrockagentAgent(scope constructs.Construct, id *string, config *Bedroc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Construct, id *string, config *BedrockagentAgentConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Constru
 		"@cdktf/provider-aws.bedrockagentAgent.BedrockagentAgent",
 		[]interface{}{scope, id, config},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgent)SetAgentCollaboration(val *string) {
+	if err := j.validateSetAgentCollaborationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"agentCollaboration",
+		val,
 	)
 }
 
@@ -1240,6 +1275,14 @@ func (b *jsiiProxy_BedrockagentAgent) PutTimeouts(value *BedrockagentAgentTimeou
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgent) ResetAgentCollaboration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAgentCollaboration",
+		nil, // no parameters
 	)
 }
 

@@ -147,6 +147,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetDriveCacheTypeParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetEfaEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetExportPathParameters(val *string) error {
 	return nil
 }

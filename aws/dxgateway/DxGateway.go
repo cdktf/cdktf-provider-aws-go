@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/dx_gateway aws_dx_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/dx_gateway aws_dx_gateway}.
 type DxGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *string
 	SetAmazonSideAsn(val *string)
 	AmazonSideAsnInput() *string
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DxGateway) AmazonSideAsnInput() *string {
 	_jsii_.Get(
 		j,
 		"amazonSideAsnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxGateway) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
 		&returns,
 	)
 	return returns
@@ -391,7 +402,7 @@ func (j *jsiiProxy_DxGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/dx_gateway aws_dx_gateway} Resource.
 func NewDxGateway(scope constructs.Construct, id *string, config *DxGatewayConfig) DxGateway {
 	_init_.Initialize()
 
@@ -409,7 +420,7 @@ func NewDxGateway(scope constructs.Construct, id *string, config *DxGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/dx_gateway aws_dx_gateway} Resource.
 func NewDxGateway_Override(d DxGateway, scope constructs.Construct, id *string, config *DxGatewayConfig) {
 	_init_.Initialize()
 

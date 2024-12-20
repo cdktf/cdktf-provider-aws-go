@@ -5,7 +5,7 @@ package appfabricingestiondestination
 
 
 type AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}.
 	StreamName *string `field:"required" json:"streamName" yaml:"streamName"`
 }
 

@@ -565,6 +565,8 @@ func init() {
 		"@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference",
 		reflect.TypeOf((*AlbListenerMutualAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "advertiseTrustStoreCaNames", GoGetter: "AdvertiseTrustStoreCaNames"},
+			_jsii_.MemberProperty{JsiiProperty: "advertiseTrustStoreCaNamesInput", GoGetter: "AdvertiseTrustStoreCaNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -586,6 +588,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdvertiseTrustStoreCaNames", GoMethod: "ResetAdvertiseTrustStoreCaNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreClientCertificateExpiry", GoMethod: "ResetIgnoreClientCertificateExpiry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrustStoreArn", GoMethod: "ResetTrustStoreArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

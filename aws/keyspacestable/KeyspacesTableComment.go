@@ -5,7 +5,7 @@ package keyspacestable
 
 
 type KeyspacesTableComment struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/keyspaces_table#message KeyspacesTable#message}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/keyspaces_table#message KeyspacesTable#message}.
 	Message *string `field:"optional" json:"message" yaml:"message"`
 }
 

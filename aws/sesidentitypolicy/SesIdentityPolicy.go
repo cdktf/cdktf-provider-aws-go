@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ses_identity_policy aws_ses_identity_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/ses_identity_policy aws_ses_identity_policy}.
 type SesIdentityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SesIdentityPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ses_identity_policy aws_ses_identity_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/ses_identity_policy aws_ses_identity_policy} Resource.
 func NewSesIdentityPolicy(scope constructs.Construct, id *string, config *SesIdentityPolicyConfig) SesIdentityPolicy {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewSesIdentityPolicy(scope constructs.Construct, id *string, config *SesIde
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/ses_identity_policy aws_ses_identity_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/ses_identity_policy aws_ses_identity_policy} Resource.
 func NewSesIdentityPolicy_Override(s SesIdentityPolicy, scope constructs.Construct, id *string, config *SesIdentityPolicyConfig) {
 	_init_.Initialize()
 

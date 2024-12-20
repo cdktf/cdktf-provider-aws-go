@@ -75,6 +75,10 @@ func (a *jsiiProxy_AutoscalingGroup) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validatePutAvailabilityZoneDistributionParameters(value *AutoscalingGroupAvailabilityZoneDistribution) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validatePutInitialLifecycleHookParameters(value interface{}) error {
 	return nil
 }

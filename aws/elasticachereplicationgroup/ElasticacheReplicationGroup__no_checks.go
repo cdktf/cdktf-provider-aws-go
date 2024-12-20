@@ -103,7 +103,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetApplyImmediatelyParam
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAtRestEncryptionEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAtRestEncryptionEnabledParameters(val *string) error {
 	return nil
 }
 

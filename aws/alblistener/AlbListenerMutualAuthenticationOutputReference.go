@@ -13,6 +13,9 @@ import (
 
 type AlbListenerMutualAuthenticationOutputReference interface {
 	cdktf.ComplexObject
+	AdvertiseTrustStoreCaNames() *string
+	SetAdvertiseTrustStoreCaNames(val *string)
+	AdvertiseTrustStoreCaNamesInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type AlbListenerMutualAuthenticationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAdvertiseTrustStoreCaNames()
 	ResetIgnoreClientCertificateExpiry()
 	ResetTrustStoreArn()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type AlbListenerMutualAuthenticationOutputReference interface {
 // The jsii proxy struct for AlbListenerMutualAuthenticationOutputReference
 type jsiiProxy_AlbListenerMutualAuthenticationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) AdvertiseTrustStoreCaNames() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"advertiseTrustStoreCaNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) AdvertiseTrustStoreCaNamesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"advertiseTrustStoreCaNamesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) ComplexObjectIndex() interface{} {
@@ -245,6 +269,17 @@ func NewAlbListenerMutualAuthenticationOutputReference_Override(a AlbListenerMut
 		"@cdktf/provider-aws.albListener.AlbListenerMutualAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AlbListenerMutualAuthenticationOutputReference)SetAdvertiseTrustStoreCaNames(val *string) {
+	if err := j.validateSetAdvertiseTrustStoreCaNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"advertiseTrustStoreCaNames",
+		val,
 	)
 }
 
@@ -520,6 +555,14 @@ func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) ResetAdvertiseTrustStoreCaNames() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAdvertiseTrustStoreCaNames",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) ResetIgnoreClientCertificateExpiry() {

@@ -5,7 +5,7 @@ package wafv2webacl
 
 
 type Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 	DefaultSizeInspectionLimit *string `field:"required" json:"defaultSizeInspectionLimit" yaml:"defaultSizeInspectionLimit"`
 }
 

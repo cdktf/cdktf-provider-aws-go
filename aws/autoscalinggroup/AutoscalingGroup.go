@@ -12,10 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
+	AvailabilityZoneDistribution() AutoscalingGroupAvailabilityZoneDistributionOutputReference
+	AvailabilityZoneDistributionInput() *AutoscalingGroupAvailabilityZoneDistribution
 	AvailabilityZones() *[]*string
 	SetAvailabilityZones(val *[]*string)
 	AvailabilityZonesInput() *[]*string
@@ -221,6 +223,7 @@ type AutoscalingGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAvailabilityZoneDistribution(value *AutoscalingGroupAvailabilityZoneDistribution)
 	PutInitialLifecycleHook(value interface{})
 	PutInstanceMaintenancePolicy(value *AutoscalingGroupInstanceMaintenancePolicy)
 	PutInstanceRefresh(value *AutoscalingGroupInstanceRefresh)
@@ -230,6 +233,7 @@ type AutoscalingGroup interface {
 	PutTimeouts(value *AutoscalingGroupTimeouts)
 	PutTrafficSource(value interface{})
 	PutWarmPool(value *AutoscalingGroupWarmPool)
+	ResetAvailabilityZoneDistribution()
 	ResetAvailabilityZones()
 	ResetCapacityRebalance()
 	ResetContext()
@@ -295,6 +299,26 @@ func (j *jsiiProxy_AutoscalingGroup) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) AvailabilityZoneDistribution() AutoscalingGroupAvailabilityZoneDistributionOutputReference {
+	var returns AutoscalingGroupAvailabilityZoneDistributionOutputReference
+	_jsii_.Get(
+		j,
+		"availabilityZoneDistribution",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) AvailabilityZoneDistributionInput() *AutoscalingGroupAvailabilityZoneDistribution {
+	var returns *AutoscalingGroupAvailabilityZoneDistribution
+	_jsii_.Get(
+		j,
+		"availabilityZoneDistributionInput",
 		&returns,
 	)
 	return returns
@@ -1301,7 +1325,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1319,7 +1343,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -2103,6 +2127,17 @@ func (a *jsiiProxy_AutoscalingGroup) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroup) PutAvailabilityZoneDistribution(value *AutoscalingGroupAvailabilityZoneDistribution) {
+	if err := a.validatePutAvailabilityZoneDistributionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAvailabilityZoneDistribution",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroup) PutInitialLifecycleHook(value interface{}) {
 	if err := a.validatePutInitialLifecycleHookParameters(value); err != nil {
 		panic(err)
@@ -2199,6 +2234,14 @@ func (a *jsiiProxy_AutoscalingGroup) PutWarmPool(value *AutoscalingGroupWarmPool
 		a,
 		"putWarmPool",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetAvailabilityZoneDistribution() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAvailabilityZoneDistribution",
+		nil, // no parameters
 	)
 }
 

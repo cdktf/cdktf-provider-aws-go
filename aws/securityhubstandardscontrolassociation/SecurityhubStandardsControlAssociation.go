@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association}.
 type SecurityhubStandardsControlAssociation interface {
 	cdktf.TerraformResource
 	AssociationStatus() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SecurityhubStandardsControlAssociation) UpdatedReasonInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource.
 func NewSecurityhubStandardsControlAssociation(scope constructs.Construct, id *string, config *SecurityhubStandardsControlAssociationConfig) SecurityhubStandardsControlAssociation {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewSecurityhubStandardsControlAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/securityhub_standards_control_association aws_securityhub_standards_control_association} Resource.
 func NewSecurityhubStandardsControlAssociation_Override(s SecurityhubStandardsControlAssociation, scope constructs.Construct, id *string, config *SecurityhubStandardsControlAssociationConfig) {
 	_init_.Initialize()
 

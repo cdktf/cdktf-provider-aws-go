@@ -1285,6 +1285,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCustomOriginConfig", GoMethod: "PutCustomOriginConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginShield", GoMethod: "PutOriginShield"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3OriginConfig", GoMethod: "PutS3OriginConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putVpcOriginConfig", GoMethod: "PutVpcOriginConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionAttempts", GoMethod: "ResetConnectionAttempts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTimeout", GoMethod: "ResetConnectionTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomHeader", GoMethod: "ResetCustomHeader"},
@@ -1293,12 +1294,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginPath", GoMethod: "ResetOriginPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOriginShield", GoMethod: "ResetOriginShield"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3OriginConfig", GoMethod: "ResetS3OriginConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcOriginConfig", GoMethod: "ResetVpcOriginConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "s3OriginConfig", GoGetter: "S3OriginConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "s3OriginConfigInput", GoGetter: "S3OriginConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcOriginConfig", GoGetter: "VpcOriginConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcOriginConfigInput", GoGetter: "VpcOriginConfigInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudfrontDistributionOriginOutputReference{}
@@ -1340,6 +1344,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfig",
+		reflect.TypeOf((*CloudfrontDistributionOriginVpcOriginConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfigOutputReference",
+		reflect.TypeOf((*CloudfrontDistributionOriginVpcOriginConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "originKeepaliveTimeout", GoGetter: "OriginKeepaliveTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "originKeepaliveTimeoutInput", GoGetter: "OriginKeepaliveTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "originReadTimeout", GoGetter: "OriginReadTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "originReadTimeoutInput", GoGetter: "OriginReadTimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginKeepaliveTimeout", GoMethod: "ResetOriginKeepaliveTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginReadTimeout", GoMethod: "ResetOriginReadTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcOriginId", GoGetter: "VpcOriginId"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcOriginIdInput", GoGetter: "VpcOriginIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

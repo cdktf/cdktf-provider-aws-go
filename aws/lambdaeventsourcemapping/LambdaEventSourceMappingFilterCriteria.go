@@ -7,7 +7,7 @@ package lambdaeventsourcemapping
 type LambdaEventSourceMappingFilterCriteria struct {
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fms_resource_set aws_fms_resource_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fms_resource_set aws_fms_resource_set}.
 type FmsResourceSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_FmsResourceSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
 func NewFmsResourceSet(scope constructs.Construct, id *string, config *FmsResourceSetConfig) FmsResourceSet {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewFmsResourceSet(scope constructs.Construct, id *string, config *FmsResour
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
 func NewFmsResourceSet_Override(f FmsResourceSet, scope constructs.Construct, id *string, config *FmsResourceSetConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -57,6 +57,9 @@ type FsxLustreFileSystem interface {
 	DriveCacheType() *string
 	SetDriveCacheType(val *string)
 	DriveCacheTypeInput() *string
+	EfaEnabled() interface{}
+	SetEfaEnabled(val interface{})
+	EfaEnabledInput() interface{}
 	ExportPath() *string
 	SetExportPath(val *string)
 	ExportPathInput() *string
@@ -202,6 +205,7 @@ type FsxLustreFileSystem interface {
 	ResetDataCompressionType()
 	ResetDeploymentType()
 	ResetDriveCacheType()
+	ResetEfaEnabled()
 	ResetExportPath()
 	ResetFileSystemTypeVersion()
 	ResetFinalBackupTags()
@@ -467,6 +471,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) DriveCacheTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"driveCacheTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) EfaEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"efaEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) EfaEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"efaEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1023,7 +1047,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -1041,7 +1065,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1166,6 +1190,17 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetDriveCacheType(val *string) {
 	_jsii_.Set(
 		j,
 		"driveCacheType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem)SetEfaEnabled(val interface{}) {
+	if err := j.validateSetEfaEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"efaEnabled",
 		val,
 	)
 }
@@ -1841,6 +1876,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetDriveCacheType() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDriveCacheType",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetEfaEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEfaEnabled",
 		nil, // no parameters
 	)
 }

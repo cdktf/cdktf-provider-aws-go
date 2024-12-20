@@ -5,9 +5,9 @@ package spotfleetrequest
 
 
 type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/spot_fleet_request#max SpotFleetRequest#max}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/spot_fleet_request#max SpotFleetRequest#max}.
 	Max *float64 `field:"optional" json:"max" yaml:"max"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/spot_fleet_request#min SpotFleetRequest#min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/spot_fleet_request#min SpotFleetRequest#min}.
 	Min *float64 `field:"optional" json:"min" yaml:"min"`
 }
 

@@ -103,6 +103,10 @@ func validateBedrockagentAgent_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgent) validateSetAgentCollaborationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentAgent) validateSetAgentNameParameters(val *string) error {
 	return nil
 }

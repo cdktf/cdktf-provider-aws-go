@@ -147,6 +147,10 @@ func (j *jsiiProxy_MemorydbCluster) validateSetMaintenanceWindowParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbCluster) validateSetMultiRegionClusterNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbCluster) validateSetNameParameters(val *string) error {
 	return nil
 }

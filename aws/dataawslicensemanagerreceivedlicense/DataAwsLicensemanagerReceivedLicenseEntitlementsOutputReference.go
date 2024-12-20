@@ -35,6 +35,7 @@ type DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference interface {
 	SetInternalValue(val *DataAwsLicensemanagerReceivedLicenseEntitlements)
 	MaxCount() *float64
 	Name() *string
+	Overage() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReferen
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference) Overage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"overage",
 		&returns,
 	)
 	return returns

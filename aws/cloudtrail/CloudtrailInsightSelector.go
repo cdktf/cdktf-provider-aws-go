@@ -5,7 +5,7 @@ package cloudtrail
 
 
 type CloudtrailInsightSelector struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/cloudtrail#insight_type Cloudtrail#insight_type}.
 	InsightType *string `field:"required" json:"insightType" yaml:"insightType"`
 }
 

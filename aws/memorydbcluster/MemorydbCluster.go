@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/memorydb_cluster aws_memorydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/memorydb_cluster aws_memorydb_cluster}.
 type MemorydbCluster interface {
 	cdktf.TerraformResource
 	AclName() *string
@@ -76,6 +76,9 @@ type MemorydbCluster interface {
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
+	MultiRegionClusterName() *string
+	SetMultiRegionClusterName(val *string)
+	MultiRegionClusterNameInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -201,6 +204,7 @@ type MemorydbCluster interface {
 	ResetId()
 	ResetKmsKeyArn()
 	ResetMaintenanceWindow()
+	ResetMultiRegionClusterName()
 	ResetName()
 	ResetNamePrefix()
 	ResetNumReplicasPerShard()
@@ -554,6 +558,26 @@ func (j *jsiiProxy_MemorydbCluster) MaintenanceWindowInput() *string {
 	_jsii_.Get(
 		j,
 		"maintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) MultiRegionClusterName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"multiRegionClusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) MultiRegionClusterNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"multiRegionClusterNameInput",
 		&returns,
 	)
 	return returns
@@ -1000,7 +1024,7 @@ func (j *jsiiProxy_MemorydbCluster) TlsEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
 func NewMemorydbCluster(scope constructs.Construct, id *string, config *MemorydbClusterConfig) MemorydbCluster {
 	_init_.Initialize()
 
@@ -1018,7 +1042,7 @@ func NewMemorydbCluster(scope constructs.Construct, id *string, config *Memorydb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/memorydb_cluster aws_memorydb_cluster} Resource.
 func NewMemorydbCluster_Override(m MemorydbCluster, scope constructs.Construct, id *string, config *MemorydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1184,6 +1208,17 @@ func (j *jsiiProxy_MemorydbCluster)SetMaintenanceWindow(val *string) {
 	_jsii_.Set(
 		j,
 		"maintenanceWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorydbCluster)SetMultiRegionClusterName(val *string) {
+	if err := j.validateSetMultiRegionClusterNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiRegionClusterName",
 		val,
 	)
 }
@@ -1826,6 +1861,14 @@ func (m *jsiiProxy_MemorydbCluster) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbCluster) ResetMultiRegionClusterName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMultiRegionClusterName",
 		nil, // no parameters
 	)
 }

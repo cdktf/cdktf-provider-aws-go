@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/eks_node_group aws_eks_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/eks_node_group aws_eks_node_group}.
 type EksNodeGroup interface {
 	cdktf.TerraformResource
 	AmiType() *string
@@ -843,7 +843,7 @@ func (j *jsiiProxy_EksNodeGroup) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/eks_node_group aws_eks_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/eks_node_group aws_eks_node_group} Resource.
 func NewEksNodeGroup(scope constructs.Construct, id *string, config *EksNodeGroupConfig) EksNodeGroup {
 	_init_.Initialize()
 
@@ -861,7 +861,7 @@ func NewEksNodeGroup(scope constructs.Construct, id *string, config *EksNodeGrou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/eks_node_group aws_eks_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/eks_node_group aws_eks_node_group} Resource.
 func NewEksNodeGroup_Override(e EksNodeGroup, scope constructs.Construct, id *string, config *EksNodeGroupConfig) {
 	_init_.Initialize()
 
