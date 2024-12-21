@@ -5,7 +5,7 @@ package lbtruststorerevocation
 
 
 type LbTrustStoreRevocationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/lb_trust_store_revocation#create LbTrustStoreRevocation#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

@@ -7,7 +7,7 @@ package sagemakerspace
 type SagemakerSpaceSpaceSettingsCustomFileSystem struct {
 	// efs_file_system block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/sagemaker_space#efs_file_system SagemakerSpace#efs_file_system}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/sagemaker_space#efs_file_system SagemakerSpace#efs_file_system}
 	EfsFileSystem *SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem `field:"required" json:"efsFileSystem" yaml:"efsFileSystem"`
 }
 

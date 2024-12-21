@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
 type RdsReservedInstance interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -596,7 +596,7 @@ func (j *jsiiProxy_RdsReservedInstance) UsagePrice() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) RdsReservedInstance {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance_Override(r RdsReservedInstance, scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) {
 	_init_.Initialize()
 

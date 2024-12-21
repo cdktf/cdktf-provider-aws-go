@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}.
 type Macie2InvitationAccepter interface {
 	cdktf.TerraformResource
 	AdministratorAccountId() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_Macie2InvitationAccepter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource.
 func NewMacie2InvitationAccepter(scope constructs.Construct, id *string, config *Macie2InvitationAccepterConfig) Macie2InvitationAccepter {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewMacie2InvitationAccepter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource.
 func NewMacie2InvitationAccepter_Override(m Macie2InvitationAccepter, scope constructs.Construct, id *string, config *Macie2InvitationAccepterConfig) {
 	_init_.Initialize()
 

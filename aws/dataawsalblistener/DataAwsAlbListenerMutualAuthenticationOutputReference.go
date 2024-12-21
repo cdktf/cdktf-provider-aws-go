@@ -13,6 +13,7 @@ import (
 
 type DataAwsAlbListenerMutualAuthenticationOutputReference interface {
 	cdktf.ComplexObject
+	AdvertiseTrustStoreCaNames() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataAwsAlbListenerMutualAuthenticationOutputReference interface {
 // The jsii proxy struct for DataAwsAlbListenerMutualAuthenticationOutputReference
 type jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) AdvertiseTrustStoreCaNames() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"advertiseTrustStoreCaNames",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) ComplexObjectIndex() interface{} {

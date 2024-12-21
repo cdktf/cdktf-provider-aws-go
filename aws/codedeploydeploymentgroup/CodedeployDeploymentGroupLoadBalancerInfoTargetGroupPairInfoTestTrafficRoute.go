@@ -5,7 +5,7 @@ package codedeploydeploymentgroup
 
 
 type CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codedeploy_deployment_group#listener_arns CodedeployDeploymentGroup#listener_arns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codedeploy_deployment_group#listener_arns CodedeployDeploymentGroup#listener_arns}.
 	ListenerArns *[]*string `field:"required" json:"listenerArns" yaml:"listenerArns"`
 }
 

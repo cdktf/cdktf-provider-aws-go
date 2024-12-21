@@ -22,19 +22,19 @@ type BedrockInferenceProfileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrock_inference_profile#name BedrockInferenceProfile#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/bedrock_inference_profile#name BedrockInferenceProfile#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrock_inference_profile#description BedrockInferenceProfile#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/bedrock_inference_profile#description BedrockInferenceProfile#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// model_source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrock_inference_profile#model_source BedrockInferenceProfile#model_source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/bedrock_inference_profile#model_source BedrockInferenceProfile#model_source}
 	ModelSource interface{} `field:"optional" json:"modelSource" yaml:"modelSource"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrock_inference_profile#tags BedrockInferenceProfile#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/bedrock_inference_profile#tags BedrockInferenceProfile#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/bedrock_inference_profile#timeouts BedrockInferenceProfile#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/bedrock_inference_profile#timeouts BedrockInferenceProfile#timeouts}
 	Timeouts *BedrockInferenceProfileTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

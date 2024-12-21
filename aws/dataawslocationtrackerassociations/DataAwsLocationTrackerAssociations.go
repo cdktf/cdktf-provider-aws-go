@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/location_tracker_associations aws_location_tracker_associations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/location_tracker_associations aws_location_tracker_associations}.
 type DataAwsLocationTrackerAssociations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsLocationTrackerAssociations) TrackerNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/location_tracker_associations aws_location_tracker_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/location_tracker_associations aws_location_tracker_associations} Data Source.
 func NewDataAwsLocationTrackerAssociations(scope constructs.Construct, id *string, config *DataAwsLocationTrackerAssociationsConfig) DataAwsLocationTrackerAssociations {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsLocationTrackerAssociations(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/location_tracker_associations aws_location_tracker_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/location_tracker_associations aws_location_tracker_associations} Data Source.
 func NewDataAwsLocationTrackerAssociations_Override(d DataAwsLocationTrackerAssociations, scope constructs.Construct, id *string, config *DataAwsLocationTrackerAssociationsConfig) {
 	_init_.Initialize()
 
