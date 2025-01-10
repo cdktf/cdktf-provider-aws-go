@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_engine_version aws_rds_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_engine_version aws_rds_engine_version}.
 type DataAwsRdsEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -90,8 +90,11 @@ type DataAwsRdsEngineVersion interface {
 	SupportedFeatureNames() *[]*string
 	SupportedModes() *[]*string
 	SupportedTimezones() *[]*string
+	SupportsCertificateRotationWithoutRestart() cdktf.IResolvable
 	SupportsGlobalDatabases() cdktf.IResolvable
+	SupportsIntegrations() cdktf.IResolvable
 	SupportsLimitlessDatabase() cdktf.IResolvable
+	SupportsLocalWriteForwarding() cdktf.IResolvable
 	SupportsLogExportsToCloudwatch() cdktf.IResolvable
 	SupportsParallelQuery() cdktf.IResolvable
 	SupportsReadReplica() cdktf.IResolvable
@@ -599,6 +602,16 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportedTimezones() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsCertificateRotationWithoutRestart() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"supportsCertificateRotationWithoutRestart",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsGlobalDatabases() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -609,11 +622,31 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsGlobalDatabases() cdktf.IRes
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsIntegrations() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"supportsIntegrations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsLimitlessDatabase() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"supportsLimitlessDatabase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) SupportsLocalWriteForwarding() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"supportsLocalWriteForwarding",
 		&returns,
 	)
 	return returns
@@ -750,7 +783,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) DataAwsRdsEngineVersion {
 	_init_.Initialize()
 
@@ -768,7 +801,7 @@ func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion_Override(d DataAwsRdsEngineVersion, scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) {
 	_init_.Initialize()
 

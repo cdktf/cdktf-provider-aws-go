@@ -52,6 +52,8 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	Fqn() *string
 	FunctionAssociation() CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList
 	FunctionAssociationInput() interface{}
+	GrpcConfig() CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference
+	GrpcConfigInput() *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig
 	InternalValue() *CloudfrontDistributionDefaultCacheBehavior
 	SetInternalValue(val *CloudfrontDistributionDefaultCacheBehavior)
 	LambdaFunctionAssociation() CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList
@@ -120,6 +122,7 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutForwardedValues(value *CloudfrontDistributionDefaultCacheBehaviorForwardedValues)
 	PutFunctionAssociation(value interface{})
+	PutGrpcConfig(value *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig)
 	PutLambdaFunctionAssociation(value interface{})
 	ResetCachePolicyId()
 	ResetCompress()
@@ -127,6 +130,7 @@ type CloudfrontDistributionDefaultCacheBehaviorOutputReference interface {
 	ResetFieldLevelEncryptionId()
 	ResetForwardedValues()
 	ResetFunctionAssociation()
+	ResetGrpcConfig()
 	ResetLambdaFunctionAssociation()
 	ResetMaxTtl()
 	ResetMinTtl()
@@ -346,6 +350,26 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Fu
 	_jsii_.Get(
 		j,
 		"functionAssociationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) GrpcConfig() CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference {
+	var returns CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference
+	_jsii_.Get(
+		j,
+		"grpcConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) GrpcConfigInput() *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig {
+	var returns *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig
+	_jsii_.Get(
+		j,
+		"grpcConfigInput",
 		&returns,
 	)
 	return returns
@@ -1068,6 +1092,17 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Pu
 	)
 }
 
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutGrpcConfig(value *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig) {
+	if err := c.validatePutGrpcConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGrpcConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) PutLambdaFunctionAssociation(value interface{}) {
 	if err := c.validatePutLambdaFunctionAssociationParameters(value); err != nil {
 		panic(err)
@@ -1123,6 +1158,14 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) Re
 	_jsii_.InvokeVoid(
 		c,
 		"resetFunctionAssociation",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) ResetGrpcConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGrpcConfig",
 		nil, // no parameters
 	)
 }

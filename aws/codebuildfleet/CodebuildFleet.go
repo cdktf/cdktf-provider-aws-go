@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet aws_codebuild_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet aws_codebuild_fleet}.
 type CodebuildFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -21,6 +21,8 @@ type CodebuildFleet interface {
 	BaseCapacityInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComputeConfiguration() CodebuildFleetComputeConfigurationOutputReference
+	ComputeConfigurationInput() *CodebuildFleetComputeConfiguration
 	ComputeType() *string
 	SetComputeType(val *string)
 	ComputeTypeInput() *string
@@ -140,8 +142,10 @@ type CodebuildFleet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutComputeConfiguration(value *CodebuildFleetComputeConfiguration)
 	PutScalingConfiguration(value *CodebuildFleetScalingConfiguration)
 	PutVpcConfig(value interface{})
+	ResetComputeConfiguration()
 	ResetFleetServiceRole()
 	ResetImageId()
 	ResetOverflowBehavior()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_CodebuildFleet) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildFleet) ComputeConfiguration() CodebuildFleetComputeConfigurationOutputReference {
+	var returns CodebuildFleetComputeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"computeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildFleet) ComputeConfigurationInput() *CodebuildFleetComputeConfiguration {
+	var returns *CodebuildFleetComputeConfiguration
+	_jsii_.Get(
+		j,
+		"computeConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -601,7 +625,7 @@ func (j *jsiiProxy_CodebuildFleet) VpcConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
 func NewCodebuildFleet(scope constructs.Construct, id *string, config *CodebuildFleetConfig) CodebuildFleet {
 	_init_.Initialize()
 
@@ -619,7 +643,7 @@ func NewCodebuildFleet(scope constructs.Construct, id *string, config *Codebuild
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
 func NewCodebuildFleet_Override(c CodebuildFleet, scope constructs.Construct, id *string, config *CodebuildFleetConfig) {
 	_init_.Initialize()
 
@@ -1150,6 +1174,17 @@ func (c *jsiiProxy_CodebuildFleet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_CodebuildFleet) PutComputeConfiguration(value *CodebuildFleetComputeConfiguration) {
+	if err := c.validatePutComputeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putComputeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildFleet) PutScalingConfiguration(value *CodebuildFleetScalingConfiguration) {
 	if err := c.validatePutScalingConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1169,6 +1204,14 @@ func (c *jsiiProxy_CodebuildFleet) PutVpcConfig(value interface{}) {
 		c,
 		"putVpcConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodebuildFleet) ResetComputeConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetComputeConfiguration",
+		nil, // no parameters
 	)
 }
 

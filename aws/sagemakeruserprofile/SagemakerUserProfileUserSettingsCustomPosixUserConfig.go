@@ -5,9 +5,9 @@ package sagemakeruserprofile
 
 
 type SagemakerUserProfileUserSettingsCustomPosixUserConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}.
 	Gid *float64 `field:"required" json:"gid" yaml:"gid"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}.
 	Uid *float64 `field:"required" json:"uid" yaml:"uid"`
 }
 

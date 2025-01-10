@@ -79,6 +79,10 @@ func (e *jsiiProxy_EksNodeGroup) validatePutLaunchTemplateParameters(value *EksN
 	return nil
 }
 
+func (e *jsiiProxy_EksNodeGroup) validatePutNodeRepairConfigParameters(value *EksNodeGroupNodeRepairConfig) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksNodeGroup) validatePutRemoteAccessParameters(value *EksNodeGroupRemoteAccess) error {
 	return nil
 }

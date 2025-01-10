@@ -55,6 +55,10 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) va
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) validatePutGrpcConfigParameters(value *CloudfrontDistributionDefaultCacheBehaviorGrpcConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference) validatePutLambdaFunctionAssociationParameters(value interface{}) error {
 	return nil
 }

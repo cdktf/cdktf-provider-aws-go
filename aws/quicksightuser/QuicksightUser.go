@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/quicksight_user aws_quicksight_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/quicksight_user aws_quicksight_user}.
 type QuicksightUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,7 @@ type QuicksightUser interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserInvitationUrl() *string
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
@@ -469,6 +470,16 @@ func (j *jsiiProxy_QuicksightUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightUser) UserInvitationUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userInvitationUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightUser) UserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -510,7 +521,7 @@ func (j *jsiiProxy_QuicksightUser) UserRoleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/quicksight_user aws_quicksight_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
 func NewQuicksightUser(scope constructs.Construct, id *string, config *QuicksightUserConfig) QuicksightUser {
 	_init_.Initialize()
 
@@ -528,7 +539,7 @@ func NewQuicksightUser(scope constructs.Construct, id *string, config *Quicksigh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/quicksight_user aws_quicksight_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
 func NewQuicksightUser_Override(q QuicksightUser, scope constructs.Construct, id *string, config *QuicksightUserConfig) {
 	_init_.Initialize()
 

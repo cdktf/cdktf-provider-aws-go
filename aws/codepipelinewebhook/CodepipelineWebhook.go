@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codepipeline_webhook aws_codepipeline_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codepipeline_webhook aws_codepipeline_webhook}.
 type CodepipelineWebhook interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CodepipelineWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource.
 func NewCodepipelineWebhook(scope constructs.Construct, id *string, config *CodepipelineWebhookConfig) CodepipelineWebhook {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCodepipelineWebhook(scope constructs.Construct, id *string, config *Code
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource.
 func NewCodepipelineWebhook_Override(c CodepipelineWebhook, scope constructs.Construct, id *string, config *CodepipelineWebhookConfig) {
 	_init_.Initialize()
 

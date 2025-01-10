@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/cognito_user_pool aws_cognito_user_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/cognito_user_pool aws_cognito_user_pool}.
 type CognitoUserPool interface {
 	cdktf.TerraformResource
 	AccountRecoverySetting() CognitoUserPoolAccountRecoverySettingOutputReference
@@ -52,6 +52,8 @@ type CognitoUserPool interface {
 	Domain() *string
 	EmailConfiguration() CognitoUserPoolEmailConfigurationOutputReference
 	EmailConfigurationInput() *CognitoUserPoolEmailConfiguration
+	EmailMfaConfiguration() CognitoUserPoolEmailMfaConfigurationOutputReference
+	EmailMfaConfigurationInput() *CognitoUserPoolEmailMfaConfiguration
 	EmailVerificationMessage() *string
 	SetEmailVerificationMessage(val *string)
 	EmailVerificationMessageInput() *string
@@ -100,6 +102,8 @@ type CognitoUserPool interface {
 	RawOverrides() interface{}
 	Schema() CognitoUserPoolSchemaList
 	SchemaInput() interface{}
+	SignInPolicy() CognitoUserPoolSignInPolicyOutputReference
+	SignInPolicyInput() *CognitoUserPoolSignInPolicy
 	SmsAuthenticationMessage() *string
 	SetSmsAuthenticationMessage(val *string)
 	SmsAuthenticationMessageInput() *string
@@ -131,8 +135,13 @@ type CognitoUserPool interface {
 	UsernameConfigurationInput() *CognitoUserPoolUsernameConfiguration
 	UserPoolAddOns() CognitoUserPoolUserPoolAddOnsOutputReference
 	UserPoolAddOnsInput() *CognitoUserPoolUserPoolAddOns
+	UserPoolTier() *string
+	SetUserPoolTier(val *string)
+	UserPoolTierInput() *string
 	VerificationMessageTemplate() CognitoUserPoolVerificationMessageTemplateOutputReference
 	VerificationMessageTemplateInput() *CognitoUserPoolVerificationMessageTemplate
+	WebAuthnConfiguration() CognitoUserPoolWebAuthnConfigurationOutputReference
+	WebAuthnConfigurationInput() *CognitoUserPoolWebAuthnConfiguration
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -180,15 +189,18 @@ type CognitoUserPool interface {
 	PutAdminCreateUserConfig(value *CognitoUserPoolAdminCreateUserConfig)
 	PutDeviceConfiguration(value *CognitoUserPoolDeviceConfiguration)
 	PutEmailConfiguration(value *CognitoUserPoolEmailConfiguration)
+	PutEmailMfaConfiguration(value *CognitoUserPoolEmailMfaConfiguration)
 	PutLambdaConfig(value *CognitoUserPoolLambdaConfig)
 	PutPasswordPolicy(value *CognitoUserPoolPasswordPolicy)
 	PutSchema(value interface{})
+	PutSignInPolicy(value *CognitoUserPoolSignInPolicy)
 	PutSmsConfiguration(value *CognitoUserPoolSmsConfiguration)
 	PutSoftwareTokenMfaConfiguration(value *CognitoUserPoolSoftwareTokenMfaConfiguration)
 	PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings)
 	PutUsernameConfiguration(value *CognitoUserPoolUsernameConfiguration)
 	PutUserPoolAddOns(value *CognitoUserPoolUserPoolAddOns)
 	PutVerificationMessageTemplate(value *CognitoUserPoolVerificationMessageTemplate)
+	PutWebAuthnConfiguration(value *CognitoUserPoolWebAuthnConfiguration)
 	ResetAccountRecoverySetting()
 	ResetAdminCreateUserConfig()
 	ResetAliasAttributes()
@@ -196,6 +208,7 @@ type CognitoUserPool interface {
 	ResetDeletionProtection()
 	ResetDeviceConfiguration()
 	ResetEmailConfiguration()
+	ResetEmailMfaConfiguration()
 	ResetEmailVerificationMessage()
 	ResetEmailVerificationSubject()
 	ResetId()
@@ -206,6 +219,7 @@ type CognitoUserPool interface {
 	ResetOverrideLogicalId()
 	ResetPasswordPolicy()
 	ResetSchema()
+	ResetSignInPolicy()
 	ResetSmsAuthenticationMessage()
 	ResetSmsConfiguration()
 	ResetSmsVerificationMessage()
@@ -216,7 +230,9 @@ type CognitoUserPool interface {
 	ResetUsernameAttributes()
 	ResetUsernameConfiguration()
 	ResetUserPoolAddOns()
+	ResetUserPoolTier()
 	ResetVerificationMessageTemplate()
+	ResetWebAuthnConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -460,6 +476,26 @@ func (j *jsiiProxy_CognitoUserPool) EmailConfigurationInput() *CognitoUserPoolEm
 	_jsii_.Get(
 		j,
 		"emailConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailMfaConfiguration() CognitoUserPoolEmailMfaConfigurationOutputReference {
+	var returns CognitoUserPoolEmailMfaConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"emailMfaConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) EmailMfaConfigurationInput() *CognitoUserPoolEmailMfaConfiguration {
+	var returns *CognitoUserPoolEmailMfaConfiguration
+	_jsii_.Get(
+		j,
+		"emailMfaConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -735,6 +771,26 @@ func (j *jsiiProxy_CognitoUserPool) SchemaInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPool) SignInPolicy() CognitoUserPoolSignInPolicyOutputReference {
+	var returns CognitoUserPoolSignInPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"signInPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) SignInPolicyInput() *CognitoUserPoolSignInPolicy {
+	var returns *CognitoUserPoolSignInPolicy
+	_jsii_.Get(
+		j,
+		"signInPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPool) SmsAuthenticationMessage() *string {
 	var returns *string
 	_jsii_.Get(
@@ -965,6 +1021,26 @@ func (j *jsiiProxy_CognitoUserPool) UserPoolAddOnsInput() *CognitoUserPoolUserPo
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPool) UserPoolTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userPoolTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserPoolTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userPoolTierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplate() CognitoUserPoolVerificationMessageTemplateOutputReference {
 	var returns CognitoUserPoolVerificationMessageTemplateOutputReference
 	_jsii_.Get(
@@ -985,8 +1061,28 @@ func (j *jsiiProxy_CognitoUserPool) VerificationMessageTemplateInput() *CognitoU
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPool) WebAuthnConfiguration() CognitoUserPoolWebAuthnConfigurationOutputReference {
+	var returns CognitoUserPoolWebAuthnConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"webAuthnConfiguration",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
+func (j *jsiiProxy_CognitoUserPool) WebAuthnConfigurationInput() *CognitoUserPoolWebAuthnConfiguration {
+	var returns *CognitoUserPoolWebAuthnConfiguration
+	_jsii_.Get(
+		j,
+		"webAuthnConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
 func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoUserPoolConfig) CognitoUserPool {
 	_init_.Initialize()
 
@@ -1004,7 +1100,7 @@ func NewCognitoUserPool(scope constructs.Construct, id *string, config *CognitoU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/cognito_user_pool aws_cognito_user_pool} Resource.
 func NewCognitoUserPool_Override(c CognitoUserPool, scope constructs.Construct, id *string, config *CognitoUserPoolConfig) {
 	_init_.Initialize()
 
@@ -1222,6 +1318,17 @@ func (j *jsiiProxy_CognitoUserPool)SetUsernameAttributes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"usernameAttributes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPool)SetUserPoolTier(val *string) {
+	if err := j.validateSetUserPoolTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userPoolTier",
 		val,
 	)
 }
@@ -1623,6 +1730,17 @@ func (c *jsiiProxy_CognitoUserPool) PutEmailConfiguration(value *CognitoUserPool
 	)
 }
 
+func (c *jsiiProxy_CognitoUserPool) PutEmailMfaConfiguration(value *CognitoUserPoolEmailMfaConfiguration) {
+	if err := c.validatePutEmailMfaConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEmailMfaConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitoUserPool) PutLambdaConfig(value *CognitoUserPoolLambdaConfig) {
 	if err := c.validatePutLambdaConfigParameters(value); err != nil {
 		panic(err)
@@ -1652,6 +1770,17 @@ func (c *jsiiProxy_CognitoUserPool) PutSchema(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putSchema",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) PutSignInPolicy(value *CognitoUserPoolSignInPolicy) {
+	if err := c.validatePutSignInPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSignInPolicy",
 		[]interface{}{value},
 	)
 }
@@ -1722,6 +1851,17 @@ func (c *jsiiProxy_CognitoUserPool) PutVerificationMessageTemplate(value *Cognit
 	)
 }
 
+func (c *jsiiProxy_CognitoUserPool) PutWebAuthnConfiguration(value *CognitoUserPoolWebAuthnConfiguration) {
+	if err := c.validatePutWebAuthnConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWebAuthnConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitoUserPool) ResetAccountRecoverySetting() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1774,6 +1914,14 @@ func (c *jsiiProxy_CognitoUserPool) ResetEmailConfiguration() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEmailConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetEmailMfaConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmailMfaConfiguration",
 		nil, // no parameters
 	)
 }
@@ -1838,6 +1986,14 @@ func (c *jsiiProxy_CognitoUserPool) ResetSchema() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetSignInPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSignInPolicy",
 		nil, // no parameters
 	)
 }
@@ -1922,10 +2078,26 @@ func (c *jsiiProxy_CognitoUserPool) ResetUserPoolAddOns() {
 	)
 }
 
+func (c *jsiiProxy_CognitoUserPool) ResetUserPoolTier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserPoolTier",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CognitoUserPool) ResetVerificationMessageTemplate() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetVerificationMessageTemplate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetWebAuthnConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWebAuthnConfiguration",
 		nil, // no parameters
 	)
 }

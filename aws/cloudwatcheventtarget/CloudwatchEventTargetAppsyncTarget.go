@@ -5,7 +5,7 @@ package cloudwatcheventtarget
 
 
 type CloudwatchEventTargetAppsyncTarget struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/cloudwatch_event_target#graphql_operation CloudwatchEventTarget#graphql_operation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/cloudwatch_event_target#graphql_operation CloudwatchEventTarget#graphql_operation}.
 	GraphqlOperation *string `field:"optional" json:"graphqlOperation" yaml:"graphqlOperation"`
 }
 

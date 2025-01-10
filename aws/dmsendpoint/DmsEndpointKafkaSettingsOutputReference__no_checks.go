@@ -103,6 +103,10 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetPartition
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetSaslMechanismParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateSetSaslPasswordParameters(val *string) error {
 	return nil
 }

@@ -372,6 +372,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfig",
+		reflect.TypeOf((*CloudfrontDistributionDefaultCacheBehaviorGrpcConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference",
+		reflect.TypeOf((*CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation",
 		reflect.TypeOf((*CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation)(nil)).Elem(),
 	)
@@ -470,6 +509,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcConfig", GoGetter: "GrpcConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcConfigInput", GoGetter: "GrpcConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -483,6 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "originRequestPolicyIdInput", GoGetter: "OriginRequestPolicyIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putForwardedValues", GoMethod: "PutForwardedValues"},
 			_jsii_.MemberMethod{JsiiMethod: "putFunctionAssociation", GoMethod: "PutFunctionAssociation"},
+			_jsii_.MemberMethod{JsiiMethod: "putGrpcConfig", GoMethod: "PutGrpcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLambdaFunctionAssociation", GoMethod: "PutLambdaFunctionAssociation"},
 			_jsii_.MemberProperty{JsiiProperty: "realtimeLogConfigArn", GoGetter: "RealtimeLogConfigArn"},
 			_jsii_.MemberProperty{JsiiProperty: "realtimeLogConfigArnInput", GoGetter: "RealtimeLogConfigArnInput"},
@@ -492,6 +534,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFieldLevelEncryptionId", GoMethod: "ResetFieldLevelEncryptionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardedValues", GoMethod: "ResetForwardedValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFunctionAssociation", GoMethod: "ResetFunctionAssociation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGrpcConfig", GoMethod: "ResetGrpcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLambdaFunctionAssociation", GoMethod: "ResetLambdaFunctionAssociation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTtl", GoMethod: "ResetMaxTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinTtl", GoMethod: "ResetMinTtl"},
@@ -723,6 +766,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfig",
+		reflect.TypeOf((*CloudfrontDistributionOrderedCacheBehaviorGrpcConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference",
+		reflect.TypeOf((*CloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation",
 		reflect.TypeOf((*CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation)(nil)).Elem(),
 	)
@@ -843,6 +925,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcConfig", GoGetter: "GrpcConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "grpcConfigInput", GoGetter: "GrpcConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -858,6 +942,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pathPatternInput", GoGetter: "PathPatternInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putForwardedValues", GoMethod: "PutForwardedValues"},
 			_jsii_.MemberMethod{JsiiMethod: "putFunctionAssociation", GoMethod: "PutFunctionAssociation"},
+			_jsii_.MemberMethod{JsiiMethod: "putGrpcConfig", GoMethod: "PutGrpcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLambdaFunctionAssociation", GoMethod: "PutLambdaFunctionAssociation"},
 			_jsii_.MemberProperty{JsiiProperty: "realtimeLogConfigArn", GoGetter: "RealtimeLogConfigArn"},
 			_jsii_.MemberProperty{JsiiProperty: "realtimeLogConfigArnInput", GoGetter: "RealtimeLogConfigArnInput"},
@@ -867,6 +952,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFieldLevelEncryptionId", GoMethod: "ResetFieldLevelEncryptionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardedValues", GoMethod: "ResetForwardedValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFunctionAssociation", GoMethod: "ResetFunctionAssociation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGrpcConfig", GoMethod: "ResetGrpcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLambdaFunctionAssociation", GoMethod: "ResetLambdaFunctionAssociation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTtl", GoMethod: "ResetMaxTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinTtl", GoMethod: "ResetMinTtl"},

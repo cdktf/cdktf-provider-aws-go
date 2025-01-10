@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/emr_studio aws_emr_studio}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/emr_studio aws_emr_studio}.
 type EmrStudio interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -41,6 +41,9 @@ type EmrStudio interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EncryptionKeyArn() *string
+	SetEncryptionKeyArn(val *string)
+	EncryptionKeyArnInput() *string
 	EngineSecurityGroupId() *string
 	SetEngineSecurityGroupId(val *string)
 	EngineSecurityGroupIdInput() *string
@@ -152,6 +155,7 @@ type EmrStudio interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetEncryptionKeyArn()
 	ResetId()
 	ResetIdpAuthUrl()
 	ResetIdpRelayStateParameterName()
@@ -294,6 +298,26 @@ func (j *jsiiProxy_EmrStudio) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrStudio) EncryptionKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrStudio) EncryptionKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyArnInput",
 		&returns,
 	)
 	return returns
@@ -660,7 +684,7 @@ func (j *jsiiProxy_EmrStudio) WorkspaceSecurityGroupIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/emr_studio aws_emr_studio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/emr_studio aws_emr_studio} Resource.
 func NewEmrStudio(scope constructs.Construct, id *string, config *EmrStudioConfig) EmrStudio {
 	_init_.Initialize()
 
@@ -678,7 +702,7 @@ func NewEmrStudio(scope constructs.Construct, id *string, config *EmrStudioConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/emr_studio aws_emr_studio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/emr_studio aws_emr_studio} Resource.
 func NewEmrStudio_Override(e EmrStudio, scope constructs.Construct, id *string, config *EmrStudioConfig) {
 	_init_.Initialize()
 
@@ -748,6 +772,17 @@ func (j *jsiiProxy_EmrStudio)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrStudio)SetEncryptionKeyArn(val *string) {
+	if err := j.validateSetEncryptionKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionKeyArn",
 		val,
 	)
 }
@@ -1279,6 +1314,14 @@ func (e *jsiiProxy_EmrStudio) ResetDescription() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrStudio) ResetEncryptionKeyArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEncryptionKeyArn",
 		nil, // no parameters
 	)
 }

@@ -107,6 +107,10 @@ func (j *jsiiProxy_RdsIntegration) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RdsIntegration) validateSetDataFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsIntegration) validateSetIntegrationNameParameters(val *string) error {
 	return nil
 }

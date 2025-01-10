@@ -7,11 +7,11 @@ package appfabricingestiondestination
 type AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination struct {
 	// firehose_stream block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/appfabric_ingestion_destination#firehose_stream AppfabricIngestionDestination#firehose_stream}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/appfabric_ingestion_destination#firehose_stream AppfabricIngestionDestination#firehose_stream}
 	FirehoseStream interface{} `field:"optional" json:"firehoseStream" yaml:"firehoseStream"`
 	// s3_bucket block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/appfabric_ingestion_destination#s3_bucket AppfabricIngestionDestination#s3_bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/appfabric_ingestion_destination#s3_bucket AppfabricIngestionDestination#s3_bucket}
 	S3Bucket interface{} `field:"optional" json:"s3Bucket" yaml:"s3Bucket"`
 }
 

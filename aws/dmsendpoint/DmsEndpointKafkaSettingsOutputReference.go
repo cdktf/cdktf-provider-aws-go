@@ -62,6 +62,9 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	PartitionIncludeSchemaTable() interface{}
 	SetPartitionIncludeSchemaTable(val interface{})
 	PartitionIncludeSchemaTableInput() interface{}
+	SaslMechanism() *string
+	SetSaslMechanism(val *string)
+	SaslMechanismInput() *string
 	SaslPassword() *string
 	SetSaslPassword(val *string)
 	SaslPasswordInput() *string
@@ -127,6 +130,7 @@ type DmsEndpointKafkaSettingsOutputReference interface {
 	ResetMessageMaxBytes()
 	ResetNoHexPrefix()
 	ResetPartitionIncludeSchemaTable()
+	ResetSaslMechanism()
 	ResetSaslPassword()
 	ResetSaslUsername()
 	ResetSecurityProtocol()
@@ -395,6 +399,26 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) PartitionIncludeSche
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SaslMechanism() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"saslMechanism",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) SaslMechanismInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"saslMechanismInput",
 		&returns,
 	)
 	return returns
@@ -747,6 +771,17 @@ func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetPartitionIncludeSc
 	_jsii_.Set(
 		j,
 		"partitionIncludeSchemaTable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpointKafkaSettingsOutputReference)SetSaslMechanism(val *string) {
+	if err := j.validateSetSaslMechanismParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"saslMechanism",
 		val,
 	)
 }
@@ -1115,6 +1150,14 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ResetPartitionInclud
 	_jsii_.InvokeVoid(
 		d,
 		"resetPartitionIncludeSchemaTable",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) ResetSaslMechanism() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSaslMechanism",
 		nil, // no parameters
 	)
 }

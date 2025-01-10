@@ -7,11 +7,11 @@ package rekognitionstreamprocessor
 type RekognitionStreamProcessorSettings struct {
 	// connected_home block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rekognition_stream_processor#connected_home RekognitionStreamProcessor#connected_home}
 	ConnectedHome interface{} `field:"optional" json:"connectedHome" yaml:"connectedHome"`
 	// face_search block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rekognition_stream_processor#face_search RekognitionStreamProcessor#face_search}
 	FaceSearch interface{} `field:"optional" json:"faceSearch" yaml:"faceSearch"`
 }
 

@@ -59,6 +59,10 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforc
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) validateSetDataTransferApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) validateSetEnableDynamicFieldUpdateParameters(val interface{}) error {
 	return nil
 }

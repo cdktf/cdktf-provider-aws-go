@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataAwsRdsCertificate) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsCertificate) validateSetDefaultForNewLaunchesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

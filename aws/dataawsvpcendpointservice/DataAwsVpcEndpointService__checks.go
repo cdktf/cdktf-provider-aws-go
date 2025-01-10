@@ -285,6 +285,14 @@ func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceRegionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

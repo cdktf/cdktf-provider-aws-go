@@ -111,6 +111,10 @@ func (j *jsiiProxy_EmrStudio) validateSetDescriptionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_EmrStudio) validateSetEncryptionKeyArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudio) validateSetEngineSecurityGroupIdParameters(val *string) error {
 	return nil
 }

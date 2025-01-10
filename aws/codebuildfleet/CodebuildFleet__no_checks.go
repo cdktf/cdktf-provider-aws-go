@@ -75,6 +75,10 @@ func (c *jsiiProxy_CodebuildFleet) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildFleet) validatePutComputeConfigurationParameters(value *CodebuildFleetComputeConfiguration) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildFleet) validatePutScalingConfigurationParameters(value *CodebuildFleetScalingConfiguration) error {
 	return nil
 }

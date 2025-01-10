@@ -42,6 +42,7 @@ type DataAwsDmsEndpointKafkaSettingsOutputReference interface {
 	MessageMaxBytes() *float64
 	NoHexPrefix() cdktf.IResolvable
 	PartitionIncludeSchemaTable() cdktf.IResolvable
+	SaslMechanism() *string
 	SaslPassword() *string
 	SaslUsername() *string
 	SecurityProtocol() *string
@@ -242,6 +243,16 @@ func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) PartitionIncl
 	_jsii_.Get(
 		j,
 		"partitionIncludeSchemaTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) SaslMechanism() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"saslMechanism",
 		&returns,
 	)
 	return returns

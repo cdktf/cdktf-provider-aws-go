@@ -28,6 +28,9 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReferen
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataTransferApi() *string
+	SetDataTransferApi(val *string)
+	DataTransferApiInput() *string
 	EnableDynamicFieldUpdate() interface{}
 	SetEnableDynamicFieldUpdate(val interface{})
 	EnableDynamicFieldUpdateInput() interface{}
@@ -73,6 +76,7 @@ type AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDataTransferApi()
 	ResetEnableDynamicFieldUpdate()
 	ResetIncludeDeletedRecords()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) DataTransferApi() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTransferApi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) DataTransferApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTransferApiInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +290,17 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference)SetDataTransferApi(val *string) {
+	if err := j.validateSetDataTransferApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataTransferApi",
 		val,
 	)
 }
@@ -520,6 +555,14 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforc
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) ResetDataTransferApi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataTransferApi",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference) ResetEnableDynamicFieldUpdate() {

@@ -251,6 +251,17 @@ func (c *jsiiProxy_CognitoUserPool) validatePutEmailConfigurationParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPool) validatePutEmailMfaConfigurationParameters(value *CognitoUserPoolEmailMfaConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPool) validatePutLambdaConfigParameters(value *CognitoUserPoolLambdaConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -299,6 +310,17 @@ func (c *jsiiProxy_CognitoUserPool) validatePutSchemaParameters(value interface{
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CognitoUserPoolSchema; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validatePutSignInPolicyParameters(value *CognitoUserPoolSignInPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -360,6 +382,17 @@ func (c *jsiiProxy_CognitoUserPool) validatePutUserPoolAddOnsParameters(value *C
 }
 
 func (c *jsiiProxy_CognitoUserPool) validatePutVerificationMessageTemplateParameters(value *CognitoUserPoolVerificationMessageTemplate) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validatePutWebAuthnConfigurationParameters(value *CognitoUserPoolWebAuthnConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -651,6 +684,14 @@ func (j *jsiiProxy_CognitoUserPool) validateSetTagsAllParameters(val *map[string
 }
 
 func (j *jsiiProxy_CognitoUserPool) validateSetUsernameAttributesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CognitoUserPool) validateSetUserPoolTierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

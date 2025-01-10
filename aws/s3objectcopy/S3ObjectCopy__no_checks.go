@@ -79,6 +79,10 @@ func (s *jsiiProxy_S3ObjectCopy) validatePutGrantParameters(value interface{}) e
 	return nil
 }
 
+func (s *jsiiProxy_S3ObjectCopy) validatePutOverrideProviderParameters(value *S3ObjectCopyOverrideProvider) error {
+	return nil
+}
+
 func validateS3ObjectCopy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

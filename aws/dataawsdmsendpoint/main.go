@@ -207,6 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noHexPrefix", GoGetter: "NoHexPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "partitionIncludeSchemaTable", GoGetter: "PartitionIncludeSchemaTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "saslMechanism", GoGetter: "SaslMechanism"},
 			_jsii_.MemberProperty{JsiiProperty: "saslPassword", GoGetter: "SaslPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "saslUsername", GoGetter: "SaslUsername"},
 			_jsii_.MemberProperty{JsiiProperty: "securityProtocol", GoGetter: "SecurityProtocol"},

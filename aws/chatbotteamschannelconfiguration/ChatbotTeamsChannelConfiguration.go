@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration}.
 type ChatbotTeamsChannelConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -615,7 +615,7 @@ func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) UserAuthorizationRequiredIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
 func NewChatbotTeamsChannelConfiguration(scope constructs.Construct, id *string, config *ChatbotTeamsChannelConfigurationConfig) ChatbotTeamsChannelConfiguration {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewChatbotTeamsChannelConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
 func NewChatbotTeamsChannelConfiguration_Override(c ChatbotTeamsChannelConfiguration, scope constructs.Construct, id *string, config *ChatbotTeamsChannelConfigurationConfig) {
 	_init_.Initialize()
 

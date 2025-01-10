@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/codebuild_fleet aws_codebuild_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}.
 type DataAwsCodebuildFleet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	BaseCapacity() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComputeConfiguration() DataAwsCodebuildFleetComputeConfigurationList
 	ComputeType() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataAwsCodebuildFleet) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCodebuildFleet) ComputeConfiguration() DataAwsCodebuildFleetComputeConfigurationList {
+	var returns DataAwsCodebuildFleetComputeConfigurationList
+	_jsii_.Get(
+		j,
+		"computeConfiguration",
 		&returns,
 	)
 	return returns
@@ -431,7 +442,7 @@ func (j *jsiiProxy_DataAwsCodebuildFleet) VpcConfig() DataAwsCodebuildFleetVpcCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source.
 func NewDataAwsCodebuildFleet(scope constructs.Construct, id *string, config *DataAwsCodebuildFleetConfig) DataAwsCodebuildFleet {
 	_init_.Initialize()
 
@@ -449,7 +460,7 @@ func NewDataAwsCodebuildFleet(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet} Data Source.
 func NewDataAwsCodebuildFleet_Override(d DataAwsCodebuildFleet, scope constructs.Construct, id *string, config *DataAwsCodebuildFleetConfig) {
 	_init_.Initialize()
 

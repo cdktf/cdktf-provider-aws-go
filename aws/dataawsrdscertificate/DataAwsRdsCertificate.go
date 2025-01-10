@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_certificate aws_rds_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_certificate aws_rds_certificate}.
 type DataAwsRdsCertificate interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -27,6 +27,9 @@ type DataAwsRdsCertificate interface {
 	SetCount(val interface{})
 	CustomerOverride() cdktf.IResolvable
 	CustomerOverrideValidTill() *string
+	DefaultForNewLaunches() interface{}
+	SetDefaultForNewLaunches(val interface{})
+	DefaultForNewLaunchesInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -91,6 +94,7 @@ type DataAwsRdsCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefaultForNewLaunches()
 	ResetId()
 	ResetLatestValidTill()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_DataAwsRdsCertificate) CustomerOverrideValidTill() *string {
 	_jsii_.Get(
 		j,
 		"customerOverrideValidTill",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCertificate) DefaultForNewLaunches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultForNewLaunches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCertificate) DefaultForNewLaunchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultForNewLaunchesInput",
 		&returns,
 	)
 	return returns
@@ -366,7 +390,7 @@ func (j *jsiiProxy_DataAwsRdsCertificate) ValidTill() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_certificate aws_rds_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_certificate aws_rds_certificate} Data Source.
 func NewDataAwsRdsCertificate(scope constructs.Construct, id *string, config *DataAwsRdsCertificateConfig) DataAwsRdsCertificate {
 	_init_.Initialize()
 
@@ -384,7 +408,7 @@ func NewDataAwsRdsCertificate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/rds_certificate aws_rds_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/rds_certificate aws_rds_certificate} Data Source.
 func NewDataAwsRdsCertificate_Override(d DataAwsRdsCertificate, scope constructs.Construct, id *string, config *DataAwsRdsCertificateConfig) {
 	_init_.Initialize()
 
@@ -402,6 +426,17 @@ func (j *jsiiProxy_DataAwsRdsCertificate)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsCertificate)SetDefaultForNewLaunches(val interface{}) {
+	if err := j.validateSetDefaultForNewLaunchesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultForNewLaunches",
 		val,
 	)
 }
@@ -745,6 +780,14 @@ func (d *jsiiProxy_DataAwsRdsCertificate) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsCertificate) ResetDefaultForNewLaunches() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultForNewLaunches",
+		nil, // no parameters
 	)
 }
 

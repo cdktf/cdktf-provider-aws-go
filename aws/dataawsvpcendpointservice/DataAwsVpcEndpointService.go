@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service}.
 type DataAwsVpcEndpointService interface {
 	cdktf.TerraformDataSource
 	AcceptanceRequired() cdktf.IResolvable
@@ -60,6 +60,7 @@ type DataAwsVpcEndpointService interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	Service() *string
 	SetService(val *string)
 	ServiceId() *string
@@ -67,6 +68,9 @@ type DataAwsVpcEndpointService interface {
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
+	ServiceRegions() *[]*string
+	SetServiceRegions(val *[]*string)
+	ServiceRegionsInput() *[]*string
 	ServiceType() *string
 	SetServiceType(val *string)
 	ServiceTypeInput() *string
@@ -117,6 +121,7 @@ type DataAwsVpcEndpointService interface {
 	ResetOverrideLogicalId()
 	ResetService()
 	ResetServiceName()
+	ResetServiceRegions()
 	ResetServiceType()
 	ResetTags()
 	ResetTimeouts()
@@ -369,6 +374,16 @@ func (j *jsiiProxy_DataAwsVpcEndpointService) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpointService) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointService) Service() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,6 +429,26 @@ func (j *jsiiProxy_DataAwsVpcEndpointService) ServiceNameInput() *string {
 	_jsii_.Get(
 		j,
 		"serviceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcEndpointService) ServiceRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcEndpointService) ServiceRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceRegionsInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +565,7 @@ func (j *jsiiProxy_DataAwsVpcEndpointService) VpcEndpointPolicySupported() cdktf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source.
 func NewDataAwsVpcEndpointService(scope constructs.Construct, id *string, config *DataAwsVpcEndpointServiceConfig) DataAwsVpcEndpointService {
 	_init_.Initialize()
 
@@ -548,7 +583,7 @@ func NewDataAwsVpcEndpointService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/vpc_endpoint_service aws_vpc_endpoint_service} Data Source.
 func NewDataAwsVpcEndpointService_Override(d DataAwsVpcEndpointService, scope constructs.Construct, id *string, config *DataAwsVpcEndpointServiceConfig) {
 	_init_.Initialize()
 
@@ -634,6 +669,17 @@ func (j *jsiiProxy_DataAwsVpcEndpointService)SetServiceName(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpcEndpointService)SetServiceRegions(val *[]*string) {
+	if err := j.validateSetServiceRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceRegions",
 		val,
 	)
 }
@@ -1003,6 +1049,14 @@ func (d *jsiiProxy_DataAwsVpcEndpointService) ResetServiceName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpcEndpointService) ResetServiceRegions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceRegions",
 		nil, // no parameters
 	)
 }

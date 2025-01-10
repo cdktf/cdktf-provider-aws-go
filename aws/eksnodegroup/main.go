@@ -64,12 +64,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeGroupNameInput", GoGetter: "NodeGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeGroupNamePrefix", GoGetter: "NodeGroupNamePrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeGroupNamePrefixInput", GoGetter: "NodeGroupNamePrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeRepairConfig", GoGetter: "NodeRepairConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeRepairConfigInput", GoGetter: "NodeRepairConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeRoleArn", GoGetter: "NodeRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeRoleArnInput", GoGetter: "NodeRoleArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLaunchTemplate", GoMethod: "PutLaunchTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeRepairConfig", GoMethod: "PutNodeRepairConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRemoteAccess", GoMethod: "PutRemoteAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "putScalingConfig", GoMethod: "PutScalingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTaint", GoMethod: "PutTaint"},
@@ -90,6 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLaunchTemplate", GoMethod: "ResetLaunchTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeGroupName", GoMethod: "ResetNodeGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeGroupNamePrefix", GoMethod: "ResetNodeGroupNamePrefix"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeRepairConfig", GoMethod: "ResetNodeRepairConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReleaseVersion", GoMethod: "ResetReleaseVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRemoteAccess", GoMethod: "ResetRemoteAccess"},
@@ -177,6 +181,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EksNodeGroupLaunchTemplateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfig",
+		reflect.TypeOf((*EksNodeGroupNodeRepairConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupNodeRepairConfigOutputReference",
+		reflect.TypeOf((*EksNodeGroupNodeRepairConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

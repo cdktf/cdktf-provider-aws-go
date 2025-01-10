@@ -135,6 +135,17 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutGrpcConfigParameters(value *CloudfrontDistributionOrderedCacheBehaviorGrpcConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validatePutLambdaFunctionAssociationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

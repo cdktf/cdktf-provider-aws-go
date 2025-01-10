@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetServiceTypeParameters(val *string) error {
 	return nil
 }

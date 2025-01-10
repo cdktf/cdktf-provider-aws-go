@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_integration aws_rds_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_integration aws_rds_integration}.
 type RdsIntegration interface {
 	cdktf.TerraformResource
 	AdditionalEncryptionContext() *map[string]*string
@@ -31,6 +31,9 @@ type RdsIntegration interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataFilter() *string
+	SetDataFilter(val *string)
+	DataFilterInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type RdsIntegration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *RdsIntegrationTimeouts)
 	ResetAdditionalEncryptionContext()
+	ResetDataFilter()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_RdsIntegration) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsIntegration) DataFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsIntegration) DataFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataFilterInput",
 		&returns,
 	)
 	return returns
@@ -484,7 +508,7 @@ func (j *jsiiProxy_RdsIntegration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_integration aws_rds_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_integration aws_rds_integration} Resource.
 func NewRdsIntegration(scope constructs.Construct, id *string, config *RdsIntegrationConfig) RdsIntegration {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewRdsIntegration(scope constructs.Construct, id *string, config *RdsIntegr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.2/docs/resources/rds_integration aws_rds_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_integration aws_rds_integration} Resource.
 func NewRdsIntegration_Override(r RdsIntegration, scope constructs.Construct, id *string, config *RdsIntegrationConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_RdsIntegration)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsIntegration)SetDataFilter(val *string) {
+	if err := j.validateSetDataFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataFilter",
 		val,
 	)
 }
@@ -1015,6 +1050,14 @@ func (r *jsiiProxy_RdsIntegration) ResetAdditionalEncryptionContext() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAdditionalEncryptionContext",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsIntegration) ResetDataFilter() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDataFilter",
 		nil, // no parameters
 	)
 }

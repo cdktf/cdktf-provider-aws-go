@@ -91,6 +91,10 @@ func (c *jsiiProxy_CognitoUserPool) validatePutEmailConfigurationParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPool) validatePutEmailMfaConfigurationParameters(value *CognitoUserPoolEmailMfaConfiguration) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPool) validatePutLambdaConfigParameters(value *CognitoUserPoolLambdaConfig) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (c *jsiiProxy_CognitoUserPool) validatePutPasswordPolicyParameters(value *C
 }
 
 func (c *jsiiProxy_CognitoUserPool) validatePutSchemaParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validatePutSignInPolicyParameters(value *CognitoUserPoolSignInPolicy) error {
 	return nil
 }
 
@@ -124,6 +132,10 @@ func (c *jsiiProxy_CognitoUserPool) validatePutUserPoolAddOnsParameters(value *C
 }
 
 func (c *jsiiProxy_CognitoUserPool) validatePutVerificationMessageTemplateParameters(value *CognitoUserPoolVerificationMessageTemplate) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validatePutWebAuthnConfigurationParameters(value *CognitoUserPoolWebAuthnConfiguration) error {
 	return nil
 }
 
@@ -208,6 +220,10 @@ func (j *jsiiProxy_CognitoUserPool) validateSetTagsAllParameters(val *map[string
 }
 
 func (j *jsiiProxy_CognitoUserPool) validateSetUsernameAttributesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CognitoUserPool) validateSetUserPoolTierParameters(val *string) error {
 	return nil
 }
 
