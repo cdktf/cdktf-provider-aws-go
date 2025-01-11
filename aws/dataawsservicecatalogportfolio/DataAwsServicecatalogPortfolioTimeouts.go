@@ -5,7 +5,7 @@ package dataawsservicecatalogportfolio
 
 
 type DataAwsServicecatalogPortfolioTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/servicecatalog_portfolio#read DataAwsServicecatalogPortfolio#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

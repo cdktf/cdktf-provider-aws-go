@@ -5,9 +5,9 @@ package appflowflow
 
 
 type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 	BucketName *string `field:"optional" json:"bucketName" yaml:"bucketName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 	BucketPrefix *string `field:"optional" json:"bucketPrefix" yaml:"bucketPrefix"`
 }
 

@@ -7,7 +7,7 @@ package bedrockguardrail
 type BedrockGuardrailContextualGroundingPolicyConfig struct {
 	// filters_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/bedrock_guardrail#filters_config BedrockGuardrail#filters_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/bedrock_guardrail#filters_config BedrockGuardrail#filters_config}
 	FiltersConfig interface{} `field:"optional" json:"filtersConfig" yaml:"filtersConfig"`
 }
 

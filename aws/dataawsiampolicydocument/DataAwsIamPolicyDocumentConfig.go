@@ -22,26 +22,26 @@ type DataAwsIamPolicyDocumentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#id DataAwsIamPolicyDocument#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#id DataAwsIamPolicyDocument#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#override_json DataAwsIamPolicyDocument#override_json}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#override_json DataAwsIamPolicyDocument#override_json}.
 	OverrideJson *string `field:"optional" json:"overrideJson" yaml:"overrideJson"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#override_policy_documents DataAwsIamPolicyDocument#override_policy_documents}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#override_policy_documents DataAwsIamPolicyDocument#override_policy_documents}.
 	OverridePolicyDocuments *[]*string `field:"optional" json:"overridePolicyDocuments" yaml:"overridePolicyDocuments"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#policy_id DataAwsIamPolicyDocument#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#policy_id DataAwsIamPolicyDocument#policy_id}.
 	PolicyId *string `field:"optional" json:"policyId" yaml:"policyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#source_json DataAwsIamPolicyDocument#source_json}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#source_json DataAwsIamPolicyDocument#source_json}.
 	SourceJson *string `field:"optional" json:"sourceJson" yaml:"sourceJson"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#source_policy_documents DataAwsIamPolicyDocument#source_policy_documents}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#source_policy_documents DataAwsIamPolicyDocument#source_policy_documents}.
 	SourcePolicyDocuments *[]*string `field:"optional" json:"sourcePolicyDocuments" yaml:"sourcePolicyDocuments"`
 	// statement block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#statement DataAwsIamPolicyDocument#statement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#statement DataAwsIamPolicyDocument#statement}
 	Statement interface{} `field:"optional" json:"statement" yaml:"statement"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_policy_document#version DataAwsIamPolicyDocument#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_policy_document#version DataAwsIamPolicyDocument#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

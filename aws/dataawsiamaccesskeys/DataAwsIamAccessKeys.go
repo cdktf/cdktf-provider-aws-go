@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_access_keys aws_iam_access_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_access_keys aws_iam_access_keys}.
 type DataAwsIamAccessKeys interface {
 	cdktf.TerraformDataSource
 	AccessKeys() DataAwsIamAccessKeysAccessKeysList
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsIamAccessKeys) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_access_keys aws_iam_access_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_access_keys aws_iam_access_keys} Data Source.
 func NewDataAwsIamAccessKeys(scope constructs.Construct, id *string, config *DataAwsIamAccessKeysConfig) DataAwsIamAccessKeys {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsIamAccessKeys(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/iam_access_keys aws_iam_access_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/iam_access_keys aws_iam_access_keys} Data Source.
 func NewDataAwsIamAccessKeys_Override(d DataAwsIamAccessKeys, scope constructs.Construct, id *string, config *DataAwsIamAccessKeysConfig) {
 	_init_.Initialize()
 

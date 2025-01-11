@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface}.
 type DxPrivateVirtualInterface interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -709,7 +709,7 @@ func (j *jsiiProxy_DxPrivateVirtualInterface) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface} Resource.
 func NewDxPrivateVirtualInterface(scope constructs.Construct, id *string, config *DxPrivateVirtualInterfaceConfig) DxPrivateVirtualInterface {
 	_init_.Initialize()
 
@@ -727,7 +727,7 @@ func NewDxPrivateVirtualInterface(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dx_private_virtual_interface aws_dx_private_virtual_interface} Resource.
 func NewDxPrivateVirtualInterface_Override(d DxPrivateVirtualInterface, scope constructs.Construct, id *string, config *DxPrivateVirtualInterfaceConfig) {
 	_init_.Initialize()
 

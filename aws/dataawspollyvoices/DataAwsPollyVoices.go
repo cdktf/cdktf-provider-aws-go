@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/polly_voices aws_polly_voices}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/polly_voices aws_polly_voices}.
 type DataAwsPollyVoices interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsPollyVoices) VoicesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/polly_voices aws_polly_voices} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/polly_voices aws_polly_voices} Data Source.
 func NewDataAwsPollyVoices(scope constructs.Construct, id *string, config *DataAwsPollyVoicesConfig) DataAwsPollyVoices {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataAwsPollyVoices(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/polly_voices aws_polly_voices} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/polly_voices aws_polly_voices} Data Source.
 func NewDataAwsPollyVoices_Override(d DataAwsPollyVoices, scope constructs.Construct, id *string, config *DataAwsPollyVoicesConfig) {
 	_init_.Initialize()
 

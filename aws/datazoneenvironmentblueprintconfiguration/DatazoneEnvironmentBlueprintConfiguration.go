@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration}.
 type DatazoneEnvironmentBlueprintConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
 func NewDatazoneEnvironmentBlueprintConfiguration(scope constructs.Construct, id *string, config *DatazoneEnvironmentBlueprintConfigurationConfig) DatazoneEnvironmentBlueprintConfiguration {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDatazoneEnvironmentBlueprintConfiguration(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
 func NewDatazoneEnvironmentBlueprintConfiguration_Override(d DatazoneEnvironmentBlueprintConfiguration, scope constructs.Construct, id *string, config *DatazoneEnvironmentBlueprintConfigurationConfig) {
 	_init_.Initialize()
 

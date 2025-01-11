@@ -7,11 +7,11 @@ package lexv2modelsintent
 type Lexv2ModelsIntentConfirmationSettingDeclinationConditionalDefaultBranch struct {
 	// next_step block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lexv2models_intent#next_step Lexv2ModelsIntent#next_step}
 	NextStep interface{} `field:"optional" json:"nextStep" yaml:"nextStep"`
 	// response block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lexv2models_intent#response Lexv2ModelsIntent#response}
 	Response interface{} `field:"optional" json:"response" yaml:"response"`
 }
 

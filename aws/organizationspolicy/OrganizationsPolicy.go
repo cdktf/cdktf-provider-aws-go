@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/organizations_policy aws_organizations_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/organizations_policy aws_organizations_policy}.
 type OrganizationsPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_OrganizationsPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/organizations_policy aws_organizations_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/organizations_policy aws_organizations_policy} Resource.
 func NewOrganizationsPolicy(scope constructs.Construct, id *string, config *OrganizationsPolicyConfig) OrganizationsPolicy {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewOrganizationsPolicy(scope constructs.Construct, id *string, config *Orga
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/organizations_policy aws_organizations_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/organizations_policy aws_organizations_policy} Resource.
 func NewOrganizationsPolicy_Override(o OrganizationsPolicy, scope constructs.Construct, id *string, config *OrganizationsPolicyConfig) {
 	_init_.Initialize()
 

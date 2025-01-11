@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
 type RdsClusterRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) RdsClusterRoleAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation_Override(r RdsClusterRoleAssociation, scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package lblistenerrule
 
 
 type LbListenerRuleConditionSourceIp struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

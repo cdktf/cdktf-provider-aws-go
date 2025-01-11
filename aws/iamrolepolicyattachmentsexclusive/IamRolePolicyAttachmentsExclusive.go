@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive}.
 type IamRolePolicyAttachmentsExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IamRolePolicyAttachmentsExclusive) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
 func NewIamRolePolicyAttachmentsExclusive(scope constructs.Construct, id *string, config *IamRolePolicyAttachmentsExclusiveConfig) IamRolePolicyAttachmentsExclusive {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIamRolePolicyAttachmentsExclusive(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
 func NewIamRolePolicyAttachmentsExclusive_Override(i IamRolePolicyAttachmentsExclusive, scope constructs.Construct, id *string, config *IamRolePolicyAttachmentsExclusiveConfig) {
 	_init_.Initialize()
 

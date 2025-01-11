@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations}.
 type DataAwsImagebuilderDistributionConfigurations interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
 func NewDataAwsImagebuilderDistributionConfigurations(scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationsConfig) DataAwsImagebuilderDistributionConfigurations {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataAwsImagebuilderDistributionConfigurations(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
 func NewDataAwsImagebuilderDistributionConfigurations_Override(d DataAwsImagebuilderDistributionConfigurations, scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationsConfig) {
 	_init_.Initialize()
 
