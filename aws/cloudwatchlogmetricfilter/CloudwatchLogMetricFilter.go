@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter}.
 type CloudwatchLogMetricFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_CloudwatchLogMetricFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
 func NewCloudwatchLogMetricFilter(scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) CloudwatchLogMetricFilter {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewCloudwatchLogMetricFilter(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
 func NewCloudwatchLogMetricFilter_Override(c CloudwatchLogMetricFilter, scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) {
 	_init_.Initialize()
 

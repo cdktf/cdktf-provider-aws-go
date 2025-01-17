@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type aws_ec2_instance_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}.
 type DataAwsEc2InstanceType interface {
 	cdktf.TerraformDataSource
 	AutoRecoverySupported() cdktf.IResolvable
+	BandwidthWeightings() *[]*string
 	BareMetal() cdktf.IResolvable
+	BootModes() *[]*string
 	BurstablePerformanceSupported() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -29,6 +31,7 @@ type DataAwsEc2InstanceType interface {
 	CurrentGeneration() cdktf.IResolvable
 	DedicatedHostsSupported() cdktf.IResolvable
 	DefaultCores() *float64
+	DefaultNetworkCardIndex() *float64
 	DefaultThreadsPerCore() *float64
 	DefaultVcpus() *float64
 	// Experimental.
@@ -44,7 +47,9 @@ type DataAwsEc2InstanceType interface {
 	EbsPerformanceMaximumBandwidth() *float64
 	EbsPerformanceMaximumIops() *float64
 	EbsPerformanceMaximumThroughput() *float64
+	EfaMaximumInterfaces() *float64
 	EfaSupported() cdktf.IResolvable
+	EnaSrdSupported() cdktf.IResolvable
 	EnaSupport() *string
 	EncryptionInTransitSupported() cdktf.IResolvable
 	// Experimental.
@@ -78,10 +83,17 @@ type DataAwsEc2InstanceType interface {
 	MaximumIpv6AddressesPerInterface() *float64
 	MaximumNetworkCards() *float64
 	MaximumNetworkInterfaces() *float64
+	MediaAccelerators() DataAwsEc2InstanceTypeMediaAcceleratorsList
 	MemorySize() *float64
+	NetworkCards() DataAwsEc2InstanceTypeNetworkCardsList
 	NetworkPerformance() *string
+	NeuronDevices() DataAwsEc2InstanceTypeNeuronDevicesList
+	NitroEnclavesSupport() *string
+	NitroTpmSupport() *string
+	NitroTpmSupportedVersions() *[]*string
 	// The tree node.
 	Node() constructs.Node
+	PhcSupport() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -89,6 +101,7 @@ type DataAwsEc2InstanceType interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SupportedArchitectures() *[]*string
+	SupportedCpuFeatures() *[]*string
 	SupportedPlacementStrategies() *[]*string
 	SupportedRootDeviceTypes() *[]*string
 	SupportedUsagesClasses() *[]*string
@@ -104,7 +117,10 @@ type DataAwsEc2InstanceType interface {
 	TimeoutsInput() interface{}
 	TotalFpgaMemory() *float64
 	TotalGpuMemory() *float64
+	TotalInferenceMemory() *float64
 	TotalInstanceStorage() *float64
+	TotalMediaMemory() *float64
+	TotalNeuronDeviceMemory() *float64
 	ValidCores() *[]*float64
 	ValidThreadsPerCore() *[]*float64
 	// Experimental.
@@ -167,11 +183,31 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) AutoRecoverySupported() cdktf.IResolv
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceType) BandwidthWeightings() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"bandwidthWeightings",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceType) BareMetal() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"bareMetal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) BootModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"bootModes",
 		&returns,
 	)
 	return returns
@@ -242,6 +278,16 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) DefaultCores() *float64 {
 	_jsii_.Get(
 		j,
 		"defaultCores",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) DefaultNetworkCardIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultNetworkCardIndex",
 		&returns,
 	)
 	return returns
@@ -367,11 +413,31 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) EbsPerformanceMaximumThroughput() *fl
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceType) EfaMaximumInterfaces() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"efaMaximumInterfaces",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceType) EfaSupported() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"efaSupported",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) EnaSrdSupported() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enaSrdSupported",
 		&returns,
 	)
 	return returns
@@ -607,11 +673,31 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) MaximumNetworkInterfaces() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceType) MediaAccelerators() DataAwsEc2InstanceTypeMediaAcceleratorsList {
+	var returns DataAwsEc2InstanceTypeMediaAcceleratorsList
+	_jsii_.Get(
+		j,
+		"mediaAccelerators",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceType) MemorySize() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"memorySize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) NetworkCards() DataAwsEc2InstanceTypeNetworkCardsList {
+	var returns DataAwsEc2InstanceTypeNetworkCardsList
+	_jsii_.Get(
+		j,
+		"networkCards",
 		&returns,
 	)
 	return returns
@@ -627,11 +713,61 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) NetworkPerformance() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceType) NeuronDevices() DataAwsEc2InstanceTypeNeuronDevicesList {
+	var returns DataAwsEc2InstanceTypeNeuronDevicesList
+	_jsii_.Get(
+		j,
+		"neuronDevices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) NitroEnclavesSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nitroEnclavesSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) NitroTpmSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nitroTpmSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) NitroTpmSupportedVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"nitroTpmSupportedVersions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceType) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) PhcSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"phcSupport",
 		&returns,
 	)
 	return returns
@@ -662,6 +798,16 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) SupportedArchitectures() *[]*string {
 	_jsii_.Get(
 		j,
 		"supportedArchitectures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) SupportedCpuFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedCpuFeatures",
 		&returns,
 	)
 	return returns
@@ -787,11 +933,41 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) TotalGpuMemory() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceType) TotalInferenceMemory() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalInferenceMemory",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceType) TotalInstanceStorage() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"totalInstanceStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) TotalMediaMemory() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMediaMemory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceType) TotalNeuronDeviceMemory() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalNeuronDeviceMemory",
 		&returns,
 	)
 	return returns
@@ -818,7 +994,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) ValidThreadsPerCore() *[]*float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
 func NewDataAwsEc2InstanceType(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeConfig) DataAwsEc2InstanceType {
 	_init_.Initialize()
 
@@ -836,7 +1012,7 @@ func NewDataAwsEc2InstanceType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
 func NewDataAwsEc2InstanceType_Override(d DataAwsEc2InstanceType, scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeConfig) {
 	_init_.Initialize()
 

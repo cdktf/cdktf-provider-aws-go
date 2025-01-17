@@ -143,6 +143,82 @@ func (j *jsiiProxy_LbListener) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznTlsCipherSuiteHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznTlsVersionHeaderNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowCredentialsHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowHeadersHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowMethodsHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowOriginHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlExposeHeadersHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlMaxAgeHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseContentSecurityPolicyHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseServerEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseStrictTransportSecurityHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseXContentTypeOptionsHeaderValueParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseXFrameOptionsHeaderValueParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListener) validateSetSslPolicyParameters(val *string) error {
 	return nil
 }

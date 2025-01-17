@@ -79,6 +79,10 @@ func (k *jsiiProxy_KmsCustomKeyStore) validatePutTimeoutsParameters(value *KmsCu
 	return nil
 }
 
+func (k *jsiiProxy_KmsCustomKeyStore) validatePutXksProxyAuthenticationCredentialParameters(value *KmsCustomKeyStoreXksProxyAuthenticationCredential) error {
+	return nil
+}
+
 func validateKmsCustomKeyStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -111,6 +115,10 @@ func (j *jsiiProxy_KmsCustomKeyStore) validateSetCustomKeyStoreNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetCustomKeyStoreTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCustomKeyStore) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -128,6 +136,22 @@ func (j *jsiiProxy_KmsCustomKeyStore) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_KmsCustomKeyStore) validateSetTrustAnchorCertificateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetXksProxyConnectivityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetXksProxyUriEndpointParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetXksProxyUriPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetXksProxyVpcEndpointServiceNameParameters(val *string) error {
 	return nil
 }
 

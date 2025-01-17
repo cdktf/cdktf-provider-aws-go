@@ -109,6 +109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tpmSupport", GoGetter: "TpmSupport"},
+			_jsii_.MemberProperty{JsiiProperty: "uefiData", GoGetter: "UefiData"},
 			_jsii_.MemberProperty{JsiiProperty: "usageOperation", GoGetter: "UsageOperation"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualizationType", GoGetter: "VirtualizationType"},
 		},

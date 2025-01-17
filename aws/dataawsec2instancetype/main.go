@@ -16,7 +16,9 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoRecoverySupported", GoGetter: "AutoRecoverySupported"},
+			_jsii_.MemberProperty{JsiiProperty: "bandwidthWeightings", GoGetter: "BandwidthWeightings"},
 			_jsii_.MemberProperty{JsiiProperty: "bareMetal", GoGetter: "BareMetal"},
+			_jsii_.MemberProperty{JsiiProperty: "bootModes", GoGetter: "BootModes"},
 			_jsii_.MemberProperty{JsiiProperty: "burstablePerformanceSupported", GoGetter: "BurstablePerformanceSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -24,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "currentGeneration", GoGetter: "CurrentGeneration"},
 			_jsii_.MemberProperty{JsiiProperty: "dedicatedHostsSupported", GoGetter: "DedicatedHostsSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultCores", GoGetter: "DefaultCores"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultNetworkCardIndex", GoGetter: "DefaultNetworkCardIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultThreadsPerCore", GoGetter: "DefaultThreadsPerCore"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultVcpus", GoGetter: "DefaultVcpus"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -36,7 +39,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ebsPerformanceMaximumBandwidth", GoGetter: "EbsPerformanceMaximumBandwidth"},
 			_jsii_.MemberProperty{JsiiProperty: "ebsPerformanceMaximumIops", GoGetter: "EbsPerformanceMaximumIops"},
 			_jsii_.MemberProperty{JsiiProperty: "ebsPerformanceMaximumThroughput", GoGetter: "EbsPerformanceMaximumThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "efaMaximumInterfaces", GoGetter: "EfaMaximumInterfaces"},
 			_jsii_.MemberProperty{JsiiProperty: "efaSupported", GoGetter: "EfaSupported"},
+			_jsii_.MemberProperty{JsiiProperty: "enaSrdSupported", GoGetter: "EnaSrdSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "enaSupport", GoGetter: "EnaSupport"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionInTransitSupported", GoGetter: "EncryptionInTransitSupported"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -70,10 +75,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maximumIpv6AddressesPerInterface", GoGetter: "MaximumIpv6AddressesPerInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumNetworkCards", GoGetter: "MaximumNetworkCards"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumNetworkInterfaces", GoGetter: "MaximumNetworkInterfaces"},
+			_jsii_.MemberProperty{JsiiProperty: "mediaAccelerators", GoGetter: "MediaAccelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
+			_jsii_.MemberProperty{JsiiProperty: "networkCards", GoGetter: "NetworkCards"},
 			_jsii_.MemberProperty{JsiiProperty: "networkPerformance", GoGetter: "NetworkPerformance"},
+			_jsii_.MemberProperty{JsiiProperty: "neuronDevices", GoGetter: "NeuronDevices"},
+			_jsii_.MemberProperty{JsiiProperty: "nitroEnclavesSupport", GoGetter: "NitroEnclavesSupport"},
+			_jsii_.MemberProperty{JsiiProperty: "nitroTpmSupport", GoGetter: "NitroTpmSupport"},
+			_jsii_.MemberProperty{JsiiProperty: "nitroTpmSupportedVersions", GoGetter: "NitroTpmSupportedVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "phcSupport", GoGetter: "PhcSupport"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -81,6 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "supportedArchitectures", GoGetter: "SupportedArchitectures"},
+			_jsii_.MemberProperty{JsiiProperty: "supportedCpuFeatures", GoGetter: "SupportedCpuFeatures"},
 			_jsii_.MemberProperty{JsiiProperty: "supportedPlacementStrategies", GoGetter: "SupportedPlacementStrategies"},
 			_jsii_.MemberProperty{JsiiProperty: "supportedRootDeviceTypes", GoGetter: "SupportedRootDeviceTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "supportedUsagesClasses", GoGetter: "SupportedUsagesClasses"},
@@ -98,7 +111,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "totalFpgaMemory", GoGetter: "TotalFpgaMemory"},
 			_jsii_.MemberProperty{JsiiProperty: "totalGpuMemory", GoGetter: "TotalGpuMemory"},
+			_jsii_.MemberProperty{JsiiProperty: "totalInferenceMemory", GoGetter: "TotalInferenceMemory"},
 			_jsii_.MemberProperty{JsiiProperty: "totalInstanceStorage", GoGetter: "TotalInstanceStorage"},
+			_jsii_.MemberProperty{JsiiProperty: "totalMediaMemory", GoGetter: "TotalMediaMemory"},
+			_jsii_.MemberProperty{JsiiProperty: "totalNeuronDeviceMemory", GoGetter: "TotalNeuronDeviceMemory"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validCores", GoGetter: "ValidCores"},
 			_jsii_.MemberProperty{JsiiProperty: "validThreadsPerCore", GoGetter: "ValidThreadsPerCore"},
@@ -283,6 +299,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "manufacturer", GoGetter: "Manufacturer"},
+			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -351,6 +368,191 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAccelerators",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeMediaAccelerators)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAcceleratorsList",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeMediaAcceleratorsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeMediaAcceleratorsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "manufacturer", GoGetter: "Manufacturer"},
+			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCards",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNetworkCards)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCardsList",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNetworkCardsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeNetworkCardsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCardsOutputReference",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNetworkCardsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "baselineBandwidth", GoGetter: "BaselineBandwidth"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "index", GoGetter: "Index"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumInterfaces", GoGetter: "MaximumInterfaces"},
+			_jsii_.MemberProperty{JsiiProperty: "peakBandwidth", GoGetter: "PeakBandwidth"},
+			_jsii_.MemberProperty{JsiiProperty: "performance", GoGetter: "Performance"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeNetworkCardsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevices",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNeuronDevices)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevicesList",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNeuronDevicesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevicesOutputReference",
+		reflect.TypeOf((*DataAwsEc2InstanceTypeNeuronDevicesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "coreCount", GoGetter: "CoreCount"},
+			_jsii_.MemberProperty{JsiiProperty: "coreVersion", GoGetter: "CoreVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

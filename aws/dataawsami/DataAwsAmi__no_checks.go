@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataAwsAmi) validateSetTagsParameters(val *map[string]*string
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmi) validateSetUefiDataParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsAmiParameters(scope constructs.Construct, id *string, config *DataAwsAmiConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_group_policy aws_iam_group_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/iam_group_policy aws_iam_group_policy}.
 type IamGroupPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_IamGroupPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_group_policy aws_iam_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/iam_group_policy aws_iam_group_policy} Resource.
 func NewIamGroupPolicy(scope constructs.Construct, id *string, config *IamGroupPolicyConfig) IamGroupPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewIamGroupPolicy(scope constructs.Construct, id *string, config *IamGroupP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/iam_group_policy aws_iam_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/iam_group_policy aws_iam_group_policy} Resource.
 func NewIamGroupPolicy_Override(i IamGroupPolicy, scope constructs.Construct, id *string, config *IamGroupPolicyConfig) {
 	_init_.Initialize()
 

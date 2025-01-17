@@ -183,6 +183,10 @@ func (j *jsiiProxy_Ami) validateSetTpmSupportParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Ami) validateSetUefiDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ami) validateSetVirtualizationTypeParameters(val *string) error {
 	return nil
 }

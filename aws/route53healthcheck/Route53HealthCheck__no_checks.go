@@ -195,6 +195,10 @@ func (j *jsiiProxy_Route53HealthCheck) validateSetTagsAllParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_Route53HealthCheck) validateSetTriggersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53HealthCheck) validateSetTypeParameters(val *string) error {
 	return nil
 }

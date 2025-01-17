@@ -34,6 +34,7 @@ type DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference interface {
 	InternalValue() *DataAwsEc2InstanceTypeInferenceAccelerators
 	SetInternalValue(val *DataAwsEc2InstanceTypeInferenceAccelerators)
 	Manufacturer() *string
+	MemorySize() *float64
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference) M
 	_jsii_.Get(
 		j,
 		"manufacturer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference) MemorySize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"memorySize",
 		&returns,
 	)
 	return returns

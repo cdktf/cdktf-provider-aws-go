@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances}.
 type CloudformationStackInstances interface {
 	cdktf.TerraformResource
 	Accounts() *[]*string
@@ -547,7 +547,7 @@ func (j *jsiiProxy_CloudformationStackInstances) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource.
 func NewCloudformationStackInstances(scope constructs.Construct, id *string, config *CloudformationStackInstancesConfig) CloudformationStackInstances {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewCloudformationStackInstances(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource.
 func NewCloudformationStackInstances_Override(c CloudformationStackInstances, scope constructs.Construct, id *string, config *CloudformationStackInstancesConfig) {
 	_init_.Initialize()
 

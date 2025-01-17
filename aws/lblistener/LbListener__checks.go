@@ -492,6 +492,170 @@ func (j *jsiiProxy_LbListener) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznTlsCipherSuiteHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznTlsVersionHeaderNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowCredentialsHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowHeadersHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowMethodsHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlAllowOriginHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlExposeHeadersHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseAccessControlMaxAgeHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseContentSecurityPolicyHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseServerEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseStrictTransportSecurityHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseXContentTypeOptionsHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LbListener) validateSetRoutingHttpResponseXFrameOptionsHeaderValueParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LbListener) validateSetSslPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

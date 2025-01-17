@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -966,7 +966,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -984,7 +984,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 

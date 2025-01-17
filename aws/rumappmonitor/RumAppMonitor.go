@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rum_app_monitor aws_rum_app_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rum_app_monitor aws_rum_app_monitor}.
 type RumAppMonitor interface {
 	cdktf.TerraformResource
 	AppMonitorConfiguration() RumAppMonitorAppMonitorConfigurationOutputReference
@@ -509,7 +509,7 @@ func (j *jsiiProxy_RumAppMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
 func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMonitorConfig) RumAppMonitor {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMoni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
 func NewRumAppMonitor_Override(r RumAppMonitor, scope constructs.Construct, id *string, config *RumAppMonitorConfig) {
 	_init_.Initialize()
 

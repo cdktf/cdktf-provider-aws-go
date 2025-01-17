@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener aws_lb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener aws_lb_listener}.
 type LbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -78,6 +78,63 @@ type LbListener interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoutingHttpRequestXAmznMtlsClientcertHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertHeaderNameInput() *string
+	RoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput() *string
+	RoutingHttpRequestXAmznMtlsClientcertLeafHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput() *string
+	RoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput() *string
+	RoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput() *string
+	RoutingHttpRequestXAmznMtlsClientcertValidityHeaderName() *string
+	SetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName(val *string)
+	RoutingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput() *string
+	RoutingHttpRequestXAmznTlsCipherSuiteHeaderName() *string
+	SetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName(val *string)
+	RoutingHttpRequestXAmznTlsCipherSuiteHeaderNameInput() *string
+	RoutingHttpRequestXAmznTlsVersionHeaderName() *string
+	SetRoutingHttpRequestXAmznTlsVersionHeaderName(val *string)
+	RoutingHttpRequestXAmznTlsVersionHeaderNameInput() *string
+	RoutingHttpResponseAccessControlAllowCredentialsHeaderValue() *string
+	SetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue(val *string)
+	RoutingHttpResponseAccessControlAllowCredentialsHeaderValueInput() *string
+	RoutingHttpResponseAccessControlAllowHeadersHeaderValue() *string
+	SetRoutingHttpResponseAccessControlAllowHeadersHeaderValue(val *string)
+	RoutingHttpResponseAccessControlAllowHeadersHeaderValueInput() *string
+	RoutingHttpResponseAccessControlAllowMethodsHeaderValue() *string
+	SetRoutingHttpResponseAccessControlAllowMethodsHeaderValue(val *string)
+	RoutingHttpResponseAccessControlAllowMethodsHeaderValueInput() *string
+	RoutingHttpResponseAccessControlAllowOriginHeaderValue() *string
+	SetRoutingHttpResponseAccessControlAllowOriginHeaderValue(val *string)
+	RoutingHttpResponseAccessControlAllowOriginHeaderValueInput() *string
+	RoutingHttpResponseAccessControlExposeHeadersHeaderValue() *string
+	SetRoutingHttpResponseAccessControlExposeHeadersHeaderValue(val *string)
+	RoutingHttpResponseAccessControlExposeHeadersHeaderValueInput() *string
+	RoutingHttpResponseAccessControlMaxAgeHeaderValue() *string
+	SetRoutingHttpResponseAccessControlMaxAgeHeaderValue(val *string)
+	RoutingHttpResponseAccessControlMaxAgeHeaderValueInput() *string
+	RoutingHttpResponseContentSecurityPolicyHeaderValue() *string
+	SetRoutingHttpResponseContentSecurityPolicyHeaderValue(val *string)
+	RoutingHttpResponseContentSecurityPolicyHeaderValueInput() *string
+	RoutingHttpResponseServerEnabled() interface{}
+	SetRoutingHttpResponseServerEnabled(val interface{})
+	RoutingHttpResponseServerEnabledInput() interface{}
+	RoutingHttpResponseStrictTransportSecurityHeaderValue() *string
+	SetRoutingHttpResponseStrictTransportSecurityHeaderValue(val *string)
+	RoutingHttpResponseStrictTransportSecurityHeaderValueInput() *string
+	RoutingHttpResponseXContentTypeOptionsHeaderValue() *string
+	SetRoutingHttpResponseXContentTypeOptionsHeaderValue(val *string)
+	RoutingHttpResponseXContentTypeOptionsHeaderValueInput() *string
+	RoutingHttpResponseXFrameOptionsHeaderValue() *string
+	SetRoutingHttpResponseXFrameOptionsHeaderValue(val *string)
+	RoutingHttpResponseXFrameOptionsHeaderValueInput() *string
 	SslPolicy() *string
 	SetSslPolicy(val *string)
 	SslPolicyInput() *string
@@ -153,6 +210,25 @@ type LbListener interface {
 	ResetOverrideLogicalId()
 	ResetPort()
 	ResetProtocol()
+	ResetRoutingHttpRequestXAmznMtlsClientcertHeaderName()
+	ResetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName()
+	ResetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName()
+	ResetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName()
+	ResetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName()
+	ResetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName()
+	ResetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName()
+	ResetRoutingHttpRequestXAmznTlsVersionHeaderName()
+	ResetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue()
+	ResetRoutingHttpResponseAccessControlAllowHeadersHeaderValue()
+	ResetRoutingHttpResponseAccessControlAllowMethodsHeaderValue()
+	ResetRoutingHttpResponseAccessControlAllowOriginHeaderValue()
+	ResetRoutingHttpResponseAccessControlExposeHeadersHeaderValue()
+	ResetRoutingHttpResponseAccessControlMaxAgeHeaderValue()
+	ResetRoutingHttpResponseContentSecurityPolicyHeaderValue()
+	ResetRoutingHttpResponseServerEnabled()
+	ResetRoutingHttpResponseStrictTransportSecurityHeaderValue()
+	ResetRoutingHttpResponseXContentTypeOptionsHeaderValue()
+	ResetRoutingHttpResponseXFrameOptionsHeaderValue()
 	ResetSslPolicy()
 	ResetTags()
 	ResetTagsAll()
@@ -476,6 +552,386 @@ func (j *jsiiProxy_LbListener) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertIssuerHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertIssuerHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertLeafHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertLeafHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertLeafHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSubjectHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSubjectHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertValidityHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertValidityHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertValidityHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznTlsCipherSuiteHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznTlsCipherSuiteHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznTlsCipherSuiteHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznTlsCipherSuiteHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznTlsVersionHeaderName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznTlsVersionHeaderName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpRequestXAmznTlsVersionHeaderNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpRequestXAmznTlsVersionHeaderNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowCredentialsHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowCredentialsHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowCredentialsHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowCredentialsHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowHeadersHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowHeadersHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowHeadersHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowHeadersHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowMethodsHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowMethodsHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowMethodsHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowMethodsHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowOriginHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowOriginHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlAllowOriginHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlAllowOriginHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlExposeHeadersHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlExposeHeadersHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlExposeHeadersHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlExposeHeadersHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlMaxAgeHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlMaxAgeHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseAccessControlMaxAgeHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseAccessControlMaxAgeHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseContentSecurityPolicyHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseContentSecurityPolicyHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseContentSecurityPolicyHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseContentSecurityPolicyHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseServerEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingHttpResponseServerEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseServerEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingHttpResponseServerEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseStrictTransportSecurityHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseStrictTransportSecurityHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseStrictTransportSecurityHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseStrictTransportSecurityHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseXContentTypeOptionsHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseXContentTypeOptionsHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseXContentTypeOptionsHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseXContentTypeOptionsHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseXFrameOptionsHeaderValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseXFrameOptionsHeaderValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RoutingHttpResponseXFrameOptionsHeaderValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingHttpResponseXFrameOptionsHeaderValueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbListener) SslPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -607,7 +1063,7 @@ func (j *jsiiProxy_LbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener aws_lb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener aws_lb_listener} Resource.
 func NewLbListener(scope constructs.Construct, id *string, config *LbListenerConfig) LbListener {
 	_init_.Initialize()
 
@@ -625,7 +1081,7 @@ func NewLbListener(scope constructs.Construct, id *string, config *LbListenerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/lb_listener aws_lb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/lb_listener aws_lb_listener} Resource.
 func NewLbListener_Override(l LbListener, scope constructs.Construct, id *string, config *LbListenerConfig) {
 	_init_.Initialize()
 
@@ -766,6 +1222,215 @@ func (j *jsiiProxy_LbListener)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertIssuerHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertLeafHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertSubjectHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznMtlsClientcertValidityHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznTlsCipherSuiteHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznTlsCipherSuiteHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpRequestXAmznTlsVersionHeaderName(val *string) {
+	if err := j.validateSetRoutingHttpRequestXAmznTlsVersionHeaderNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpRequestXAmznTlsVersionHeaderName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlAllowCredentialsHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlAllowCredentialsHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlAllowHeadersHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlAllowHeadersHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlAllowHeadersHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlAllowMethodsHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlAllowMethodsHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlAllowMethodsHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlAllowOriginHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlAllowOriginHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlAllowOriginHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlExposeHeadersHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlExposeHeadersHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlExposeHeadersHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseAccessControlMaxAgeHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseAccessControlMaxAgeHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseAccessControlMaxAgeHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseContentSecurityPolicyHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseContentSecurityPolicyHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseContentSecurityPolicyHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseServerEnabled(val interface{}) {
+	if err := j.validateSetRoutingHttpResponseServerEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseServerEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseStrictTransportSecurityHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseStrictTransportSecurityHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseStrictTransportSecurityHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseXContentTypeOptionsHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseXContentTypeOptionsHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseXContentTypeOptionsHeaderValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRoutingHttpResponseXFrameOptionsHeaderValue(val *string) {
+	if err := j.validateSetRoutingHttpResponseXFrameOptionsHeaderValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingHttpResponseXFrameOptionsHeaderValue",
 		val,
 	)
 }
@@ -1252,6 +1917,158 @@ func (l *jsiiProxy_LbListener) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertSerialNumberHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertSubjectHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznMtlsClientcertValidityHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznTlsCipherSuiteHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpRequestXAmznTlsVersionHeaderName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpRequestXAmznTlsVersionHeaderName",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlAllowCredentialsHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlAllowHeadersHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlAllowHeadersHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlAllowMethodsHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlAllowMethodsHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlAllowOriginHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlAllowOriginHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlExposeHeadersHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlExposeHeadersHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseAccessControlMaxAgeHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseAccessControlMaxAgeHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseContentSecurityPolicyHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseContentSecurityPolicyHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseServerEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseServerEnabled",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseStrictTransportSecurityHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseStrictTransportSecurityHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseXContentTypeOptionsHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseXContentTypeOptionsHeaderValue",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRoutingHttpResponseXFrameOptionsHeaderValue() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRoutingHttpResponseXFrameOptionsHeaderValue",
 		nil, // no parameters
 	)
 }

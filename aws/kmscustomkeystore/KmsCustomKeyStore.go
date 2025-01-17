@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/kms_custom_key_store aws_kms_custom_key_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/kms_custom_key_store aws_kms_custom_key_store}.
 type KmsCustomKeyStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,9 @@ type KmsCustomKeyStore interface {
 	CustomKeyStoreName() *string
 	SetCustomKeyStoreName(val *string)
 	CustomKeyStoreNameInput() *string
+	CustomKeyStoreType() *string
+	SetCustomKeyStoreType(val *string)
+	CustomKeyStoreTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -78,6 +81,20 @@ type KmsCustomKeyStore interface {
 	TrustAnchorCertificate() *string
 	SetTrustAnchorCertificate(val *string)
 	TrustAnchorCertificateInput() *string
+	XksProxyAuthenticationCredential() KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference
+	XksProxyAuthenticationCredentialInput() *KmsCustomKeyStoreXksProxyAuthenticationCredential
+	XksProxyConnectivity() *string
+	SetXksProxyConnectivity(val *string)
+	XksProxyConnectivityInput() *string
+	XksProxyUriEndpoint() *string
+	SetXksProxyUriEndpoint(val *string)
+	XksProxyUriEndpointInput() *string
+	XksProxyUriPath() *string
+	SetXksProxyUriPath(val *string)
+	XksProxyUriPathInput() *string
+	XksProxyVpcEndpointServiceName() *string
+	SetXksProxyVpcEndpointServiceName(val *string)
+	XksProxyVpcEndpointServiceNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -122,11 +139,21 @@ type KmsCustomKeyStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *KmsCustomKeyStoreTimeouts)
+	PutXksProxyAuthenticationCredential(value *KmsCustomKeyStoreXksProxyAuthenticationCredential)
+	ResetCloudHsmClusterId()
+	ResetCustomKeyStoreType()
 	ResetId()
+	ResetKeyStorePassword()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetTrustAnchorCertificate()
+	ResetXksProxyAuthenticationCredential()
+	ResetXksProxyConnectivity()
+	ResetXksProxyUriEndpoint()
+	ResetXksProxyUriPath()
+	ResetXksProxyVpcEndpointServiceName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -220,6 +247,26 @@ func (j *jsiiProxy_KmsCustomKeyStore) CustomKeyStoreNameInput() *string {
 	_jsii_.Get(
 		j,
 		"customKeyStoreNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) CustomKeyStoreType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyStoreType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) CustomKeyStoreTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyStoreTypeInput",
 		&returns,
 	)
 	return returns
@@ -425,8 +472,108 @@ func (j *jsiiProxy_KmsCustomKeyStore) TrustAnchorCertificateInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyAuthenticationCredential() KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference {
+	var returns KmsCustomKeyStoreXksProxyAuthenticationCredentialOutputReference
+	_jsii_.Get(
+		j,
+		"xksProxyAuthenticationCredential",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/kms_custom_key_store aws_kms_custom_key_store} Resource.
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyAuthenticationCredentialInput() *KmsCustomKeyStoreXksProxyAuthenticationCredential {
+	var returns *KmsCustomKeyStoreXksProxyAuthenticationCredential
+	_jsii_.Get(
+		j,
+		"xksProxyAuthenticationCredentialInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyConnectivity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyConnectivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyConnectivityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyConnectivityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyUriEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyUriEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyUriEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyUriEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyUriPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyUriPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyUriPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyUriPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyVpcEndpointServiceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyVpcEndpointServiceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore) XksProxyVpcEndpointServiceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksProxyVpcEndpointServiceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/kms_custom_key_store aws_kms_custom_key_store} Resource.
 func NewKmsCustomKeyStore(scope constructs.Construct, id *string, config *KmsCustomKeyStoreConfig) KmsCustomKeyStore {
 	_init_.Initialize()
 
@@ -444,7 +591,7 @@ func NewKmsCustomKeyStore(scope constructs.Construct, id *string, config *KmsCus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/kms_custom_key_store aws_kms_custom_key_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/kms_custom_key_store aws_kms_custom_key_store} Resource.
 func NewKmsCustomKeyStore_Override(k KmsCustomKeyStore, scope constructs.Construct, id *string, config *KmsCustomKeyStoreConfig) {
 	_init_.Initialize()
 
@@ -495,6 +642,17 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetCustomKeyStoreName(val *string) {
 	_jsii_.Set(
 		j,
 		"customKeyStoreName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore)SetCustomKeyStoreType(val *string) {
+	if err := j.validateSetCustomKeyStoreTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customKeyStoreType",
 		val,
 	)
 }
@@ -574,6 +732,50 @@ func (j *jsiiProxy_KmsCustomKeyStore)SetTrustAnchorCertificate(val *string) {
 	_jsii_.Set(
 		j,
 		"trustAnchorCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore)SetXksProxyConnectivity(val *string) {
+	if err := j.validateSetXksProxyConnectivityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xksProxyConnectivity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore)SetXksProxyUriEndpoint(val *string) {
+	if err := j.validateSetXksProxyUriEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xksProxyUriEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore)SetXksProxyUriPath(val *string) {
+	if err := j.validateSetXksProxyUriPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xksProxyUriPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCustomKeyStore)SetXksProxyVpcEndpointServiceName(val *string) {
+	if err := j.validateSetXksProxyVpcEndpointServiceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xksProxyVpcEndpointServiceName",
 		val,
 	)
 }
@@ -942,10 +1144,45 @@ func (k *jsiiProxy_KmsCustomKeyStore) PutTimeouts(value *KmsCustomKeyStoreTimeou
 	)
 }
 
+func (k *jsiiProxy_KmsCustomKeyStore) PutXksProxyAuthenticationCredential(value *KmsCustomKeyStoreXksProxyAuthenticationCredential) {
+	if err := k.validatePutXksProxyAuthenticationCredentialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putXksProxyAuthenticationCredential",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetCloudHsmClusterId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCloudHsmClusterId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetCustomKeyStoreType() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomKeyStoreType",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmsCustomKeyStore) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetKeyStorePassword() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKeyStorePassword",
 		nil, // no parameters
 	)
 }
@@ -962,6 +1199,54 @@ func (k *jsiiProxy_KmsCustomKeyStore) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetTrustAnchorCertificate() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTrustAnchorCertificate",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetXksProxyAuthenticationCredential() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksProxyAuthenticationCredential",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetXksProxyConnectivity() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksProxyConnectivity",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetXksProxyUriEndpoint() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksProxyUriEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetXksProxyUriPath() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksProxyUriPath",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) ResetXksProxyVpcEndpointServiceName() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksProxyVpcEndpointServiceName",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
 type CloudtrailEventDataStore interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailEventDataStoreAdvancedEventSelectorList
@@ -584,7 +584,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) CloudtrailEventDataStore {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) {
 	_init_.Initialize()
 

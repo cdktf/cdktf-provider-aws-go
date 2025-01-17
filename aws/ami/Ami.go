@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami aws_ami}.
 type Ami interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -125,6 +125,9 @@ type Ami interface {
 	TpmSupport() *string
 	SetTpmSupport(val *string)
 	TpmSupportInput() *string
+	UefiData() *string
+	SetUefiData(val *string)
+	UefiDataInput() *string
 	UsageOperation() *string
 	VirtualizationType() *string
 	SetVirtualizationType(val *string)
@@ -196,6 +199,7 @@ type Ami interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetTpmSupport()
+	ResetUefiData()
 	ResetVirtualizationType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -855,6 +859,26 @@ func (j *jsiiProxy_Ami) TpmSupportInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ami) UefiData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uefiData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ami) UefiDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uefiDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ami) UsageOperation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -886,7 +910,7 @@ func (j *jsiiProxy_Ami) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami aws_ami} Resource.
 func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	_init_.Initialize()
 
@@ -904,7 +928,7 @@ func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami aws_ami} Resource.
 func NewAmi_Override(a Ami, scope constructs.Construct, id *string, config *AmiConfig) {
 	_init_.Initialize()
 
@@ -1155,6 +1179,17 @@ func (j *jsiiProxy_Ami)SetTpmSupport(val *string) {
 	_jsii_.Set(
 		j,
 		"tpmSupport",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ami)SetUefiData(val *string) {
+	if err := j.validateSetUefiDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uefiData",
 		val,
 	)
 }
@@ -1704,6 +1739,14 @@ func (a *jsiiProxy_Ami) ResetTpmSupport() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTpmSupport",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Ami) ResetUefiData() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUefiData",
 		nil, // no parameters
 	)
 }

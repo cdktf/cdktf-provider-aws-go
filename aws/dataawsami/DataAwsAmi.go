@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ami aws_ami}.
 type DataAwsAmi interface {
 	cdktf.TerraformDataSource
 	Architecture() *string
@@ -107,6 +107,9 @@ type DataAwsAmi interface {
 	Timeouts() DataAwsAmiTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TpmSupport() *string
+	UefiData() *string
+	SetUefiData(val *string)
+	UefiDataInput() *string
 	UsageOperation() *string
 	VirtualizationType() *string
 	// Experimental.
@@ -148,6 +151,7 @@ type DataAwsAmi interface {
 	ResetOwners()
 	ResetTags()
 	ResetTimeouts()
+	ResetUefiData()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -777,6 +781,26 @@ func (j *jsiiProxy_DataAwsAmi) TpmSupport() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAmi) UefiData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uefiData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAmi) UefiDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uefiDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAmi) UsageOperation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -798,7 +822,7 @@ func (j *jsiiProxy_DataAwsAmi) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiConfig) DataAwsAmi {
 	_init_.Initialize()
 
@@ -816,7 +840,7 @@ func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string, config *DataAwsAmiConfig) {
 	_init_.Initialize()
 
@@ -946,6 +970,17 @@ func (j *jsiiProxy_DataAwsAmi)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAmi)SetUefiData(val *string) {
+	if err := j.validateSetUefiDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"uefiData",
 		val,
 	)
 }
@@ -1333,6 +1368,14 @@ func (d *jsiiProxy_DataAwsAmi) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAmi) ResetUefiData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUefiData",
 		nil, // no parameters
 	)
 }

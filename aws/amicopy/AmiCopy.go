@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami_copy aws_ami_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami_copy aws_ami_copy}.
 type AmiCopy interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -120,6 +120,7 @@ type AmiCopy interface {
 	Timeouts() AmiCopyTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TpmSupport() *string
+	UefiData() *string
 	UsageOperation() *string
 	VirtualizationType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -840,6 +841,16 @@ func (j *jsiiProxy_AmiCopy) TpmSupport() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AmiCopy) UefiData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uefiData",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmiCopy) UsageOperation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -861,7 +872,7 @@ func (j *jsiiProxy_AmiCopy) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) AmiCopy {
 	_init_.Initialize()
 
@@ -879,7 +890,7 @@ func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy_Override(a AmiCopy, scope constructs.Construct, id *string, config *AmiCopyConfig) {
 	_init_.Initialize()
 

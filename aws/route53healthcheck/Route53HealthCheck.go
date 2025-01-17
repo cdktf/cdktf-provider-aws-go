@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/route53_health_check aws_route53_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/route53_health_check aws_route53_health_check}.
 type Route53HealthCheck interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -128,6 +128,9 @@ type Route53HealthCheck interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Triggers() *map[string]*string
+	SetTriggers(val *map[string]*string)
+	TriggersInput() *map[string]*string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -199,6 +202,7 @@ type Route53HealthCheck interface {
 	ResetSearchString()
 	ResetTags()
 	ResetTagsAll()
+	ResetTriggers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -827,6 +831,26 @@ func (j *jsiiProxy_Route53HealthCheck) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53HealthCheck) Triggers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53HealthCheck) TriggersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53HealthCheck) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -848,7 +872,7 @@ func (j *jsiiProxy_Route53HealthCheck) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/route53_health_check aws_route53_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
 func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route53HealthCheckConfig) Route53HealthCheck {
 	_init_.Initialize()
 
@@ -866,7 +890,7 @@ func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/route53_health_check aws_route53_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
 func NewRoute53HealthCheck_Override(r Route53HealthCheck, scope constructs.Construct, id *string, config *Route53HealthCheckConfig) {
 	_init_.Initialize()
 
@@ -1183,6 +1207,17 @@ func (j *jsiiProxy_Route53HealthCheck)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53HealthCheck)SetTriggers(val *map[string]*string) {
+	if err := j.validateSetTriggersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggers",
 		val,
 	)
 }
@@ -1731,6 +1766,14 @@ func (r *jsiiProxy_Route53HealthCheck) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53HealthCheck) ResetTriggers() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTriggers",
 		nil, // no parameters
 	)
 }

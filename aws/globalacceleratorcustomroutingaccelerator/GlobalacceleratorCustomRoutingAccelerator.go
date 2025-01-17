@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
 type GlobalacceleratorCustomRoutingAccelerator interface {
 	cdktf.TerraformResource
+	Arn() *string
 	Attributes() GlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference
 	AttributesInput() *GlobalacceleratorCustomRoutingAcceleratorAttributes
 	// Experimental.
@@ -161,6 +162,16 @@ type GlobalacceleratorCustomRoutingAccelerator interface {
 // The jsii proxy struct for GlobalacceleratorCustomRoutingAccelerator
 type jsiiProxy_GlobalacceleratorCustomRoutingAccelerator struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) Attributes() GlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference {
@@ -534,7 +545,7 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
 func NewGlobalacceleratorCustomRoutingAccelerator(scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingAcceleratorConfig) GlobalacceleratorCustomRoutingAccelerator {
 	_init_.Initialize()
 
@@ -552,7 +563,7 @@ func NewGlobalacceleratorCustomRoutingAccelerator(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
 func NewGlobalacceleratorCustomRoutingAccelerator_Override(g GlobalacceleratorCustomRoutingAccelerator, scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingAcceleratorConfig) {
 	_init_.Initialize()
 

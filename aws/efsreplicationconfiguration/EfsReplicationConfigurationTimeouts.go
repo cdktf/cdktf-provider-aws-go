@@ -5,9 +5,9 @@ package efsreplicationconfiguration
 
 
 type EfsReplicationConfigurationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/efs_replication_configuration#create EfsReplicationConfiguration#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/efs_replication_configuration#create EfsReplicationConfiguration#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.83.1/docs/resources/efs_replication_configuration#delete EfsReplicationConfiguration#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/efs_replication_configuration#delete EfsReplicationConfiguration#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 
