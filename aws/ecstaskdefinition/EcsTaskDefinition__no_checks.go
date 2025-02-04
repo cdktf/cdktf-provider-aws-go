@@ -131,6 +131,10 @@ func (j *jsiiProxy_EcsTaskDefinition) validateSetCpuParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_EcsTaskDefinition) validateSetEnableFaultInjectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskDefinition) validateSetExecutionRoleArnParameters(val *string) error {
 	return nil
 }

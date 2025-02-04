@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway}.
 type VpclatticeResourceGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_VpclatticeResourceGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
 func NewVpclatticeResourceGateway(scope constructs.Construct, id *string, config *VpclatticeResourceGatewayConfig) VpclatticeResourceGateway {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewVpclatticeResourceGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
 func NewVpclatticeResourceGateway_Override(v VpclatticeResourceGateway, scope constructs.Construct, id *string, config *VpclatticeResourceGatewayConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/connect_user aws_connect_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/connect_user aws_connect_user}.
 type ConnectUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -591,7 +591,7 @@ func (j *jsiiProxy_ConnectUser) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/connect_user aws_connect_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/connect_user aws_connect_user} Resource.
 func NewConnectUser(scope constructs.Construct, id *string, config *ConnectUserConfig) ConnectUser {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewConnectUser(scope constructs.Construct, id *string, config *ConnectUserC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/connect_user aws_connect_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/connect_user aws_connect_user} Resource.
 func NewConnectUser_Override(c ConnectUser, scope constructs.Construct, id *string, config *ConnectUserConfig) {
 	_init_.Initialize()
 

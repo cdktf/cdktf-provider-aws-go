@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/media_convert_queue aws_media_convert_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/media_convert_queue aws_media_convert_queue}.
 type MediaConvertQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConcurrentJobs() *float64
+	SetConcurrentJobs(val *float64)
+	ConcurrentJobsInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,6 +132,7 @@ type MediaConvertQueue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutReservationPlanSettings(value *MediaConvertQueueReservationPlanSettings)
+	ResetConcurrentJobs()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_MediaConvertQueue) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaConvertQueue) ConcurrentJobs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentJobs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaConvertQueue) ConcurrentJobsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrentJobsInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_MediaConvertQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
 func NewMediaConvertQueue(scope constructs.Construct, id *string, config *MediaConvertQueueConfig) MediaConvertQueue {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewMediaConvertQueue(scope constructs.Construct, id *string, config *MediaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
 func NewMediaConvertQueue_Override(m MediaConvertQueue, scope constructs.Construct, id *string, config *MediaConvertQueueConfig) {
 	_init_.Initialize()
 
@@ -514,6 +538,17 @@ func NewMediaConvertQueue_Override(m MediaConvertQueue, scope constructs.Constru
 		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MediaConvertQueue)SetConcurrentJobs(val *float64) {
+	if err := j.validateSetConcurrentJobsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrentJobs",
+		val,
 	)
 }
 
@@ -1023,6 +1058,14 @@ func (m *jsiiProxy_MediaConvertQueue) PutReservationPlanSettings(value *MediaCon
 		m,
 		"putReservationPlanSettings",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MediaConvertQueue) ResetConcurrentJobs() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetConcurrentJobs",
+		nil, // no parameters
 	)
 }
 

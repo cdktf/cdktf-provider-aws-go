@@ -5,7 +5,7 @@ package appmeshgatewayroute
 
 
 type AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/appmesh_gateway_route#virtual_service_name AppmeshGatewayRoute#virtual_service_name}.
 	VirtualServiceName *string `field:"required" json:"virtualServiceName" yaml:"virtualServiceName"`
 }
 

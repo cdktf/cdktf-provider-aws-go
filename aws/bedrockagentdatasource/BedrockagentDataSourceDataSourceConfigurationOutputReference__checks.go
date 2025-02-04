@@ -93,6 +93,37 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutConfluenceConfigurationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration:
+		value := value.(*[]*BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration:
+		value_ := value.([]*BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BedrockagentDataSourceDataSourceConfigurationConfluenceConfiguration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutS3ConfigurationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -118,6 +149,99 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BedrockagentDataSourceDataSourceConfigurationS3Configuration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutSalesforceConfigurationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration:
+		value := value.(*[]*BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration:
+		value_ := value.([]*BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BedrockagentDataSourceDataSourceConfigurationSalesforceConfiguration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutSharePointConfigurationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration:
+		value := value.(*[]*BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration:
+		value_ := value.([]*BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BedrockagentDataSourceDataSourceConfigurationSharePointConfiguration; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutWebConfigurationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*BedrockagentDataSourceDataSourceConfigurationWebConfiguration:
+		value := value.(*[]*BedrockagentDataSourceDataSourceConfigurationWebConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*BedrockagentDataSourceDataSourceConfigurationWebConfiguration:
+		value_ := value.([]*BedrockagentDataSourceDataSourceConfigurationWebConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BedrockagentDataSourceDataSourceConfigurationWebConfiguration; received %#v (a %T)", value, value)
 		}
 	}
 

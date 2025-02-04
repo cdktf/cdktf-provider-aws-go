@@ -2126,10 +2126,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isSandboxEnvironmentInput", GoGetter: "IsSandboxEnvironmentInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceUrl", GoMethod: "ResetInstanceUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsSandboxEnvironment", GoMethod: "ResetIsSandboxEnvironment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsePrivatelinkForMetadataAndAuthorization", GoMethod: "ResetUsePrivatelinkForMetadataAndAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usePrivatelinkForMetadataAndAuthorization", GoGetter: "UsePrivatelinkForMetadataAndAuthorization"},
+			_jsii_.MemberProperty{JsiiProperty: "usePrivatelinkForMetadataAndAuthorizationInput", GoGetter: "UsePrivatelinkForMetadataAndAuthorizationInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference{}

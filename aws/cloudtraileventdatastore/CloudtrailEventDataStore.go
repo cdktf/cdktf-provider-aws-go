@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
 type CloudtrailEventDataStore interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailEventDataStoreAdvancedEventSelectorList
@@ -79,6 +79,9 @@ type CloudtrailEventDataStore interface {
 	RetentionPeriod() *float64
 	SetRetentionPeriod(val *float64)
 	RetentionPeriodInput() *float64
+	Suspend() *string
+	SetSuspend(val *string)
+	SuspendInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -151,6 +154,7 @@ type CloudtrailEventDataStore interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionPeriod()
+	ResetSuspend()
 	ResetTags()
 	ResetTagsAll()
 	ResetTerminationProtectionEnabled()
@@ -473,6 +477,26 @@ func (j *jsiiProxy_CloudtrailEventDataStore) RetentionPeriodInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) Suspend() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) SuspendInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"suspendInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -584,7 +608,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) CloudtrailEventDataStore {
 	_init_.Initialize()
 
@@ -602,7 +626,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) {
 	_init_.Initialize()
 
@@ -754,6 +778,17 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetRetentionPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"retentionPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore)SetSuspend(val *string) {
+	if err := j.validateSetSuspendParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"suspend",
 		val,
 	)
 }
@@ -1226,6 +1261,14 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ResetRetentionPeriod() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) ResetSuspend() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSuspend",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
 type DataAwsEcsTaskDefinition interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,14 +21,18 @@ type DataAwsEcsTaskDefinition interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContainerDefinitions() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Cpu() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableFaultInjection() cdktf.IResolvable
+	EphemeralStorage() DataAwsEcsTaskDefinitionEphemeralStorageList
 	ExecutionRoleArn() *string
 	Family() *string
 	// Experimental.
@@ -42,20 +46,28 @@ type DataAwsEcsTaskDefinition interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InferenceAccelerator() DataAwsEcsTaskDefinitionInferenceAcceleratorList
+	IpcMode() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Memory() *string
 	NetworkMode() *string
 	// The tree node.
 	Node() constructs.Node
+	PidMode() *string
+	PlacementConstraints() DataAwsEcsTaskDefinitionPlacementConstraintsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	ProxyConfiguration() DataAwsEcsTaskDefinitionProxyConfigurationList
 	// Experimental.
 	RawOverrides() interface{}
+	RequiresCompatibilities() *[]*string
 	Revision() *float64
+	RuntimePlatform() DataAwsEcsTaskDefinitionRuntimePlatformList
 	Status() *string
 	TaskDefinition() *string
 	SetTaskDefinition(val *string)
@@ -67,6 +79,7 @@ type DataAwsEcsTaskDefinition interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Volume() DataAwsEcsTaskDefinitionVolumeList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -155,6 +168,16 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) ConstructNodeMetadata() *map[string
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) ContainerDefinitions() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerDefinitions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -165,11 +188,41 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) Cpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cpu",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) EnableFaultInjection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableFaultInjection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) EphemeralStorage() DataAwsEcsTaskDefinitionEphemeralStorageList {
+	var returns DataAwsEcsTaskDefinitionEphemeralStorageList
+	_jsii_.Get(
+		j,
+		"ephemeralStorage",
 		&returns,
 	)
 	return returns
@@ -245,11 +298,41 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) InferenceAccelerator() DataAwsEcsTaskDefinitionInferenceAcceleratorList {
+	var returns DataAwsEcsTaskDefinitionInferenceAcceleratorList
+	_jsii_.Get(
+		j,
+		"inferenceAccelerator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) IpcMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipcMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) Memory() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memory",
 		&returns,
 	)
 	return returns
@@ -275,11 +358,41 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) PidMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pidMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) PlacementConstraints() DataAwsEcsTaskDefinitionPlacementConstraintsList {
+	var returns DataAwsEcsTaskDefinitionPlacementConstraintsList
+	_jsii_.Get(
+		j,
+		"placementConstraints",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) ProxyConfiguration() DataAwsEcsTaskDefinitionProxyConfigurationList {
+	var returns DataAwsEcsTaskDefinitionProxyConfigurationList
+	_jsii_.Get(
+		j,
+		"proxyConfiguration",
 		&returns,
 	)
 	return returns
@@ -295,11 +408,31 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) RequiresCompatibilities() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"requiresCompatibilities",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) Revision() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"revision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) RuntimePlatform() DataAwsEcsTaskDefinitionRuntimePlatformList {
+	var returns DataAwsEcsTaskDefinitionRuntimePlatformList
+	_jsii_.Get(
+		j,
+		"runtimePlatform",
 		&returns,
 	)
 	return returns
@@ -375,8 +508,18 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) Volume() DataAwsEcsTaskDefinitionVolumeList {
+	var returns DataAwsEcsTaskDefinitionVolumeList
+	_jsii_.Get(
+		j,
+		"volume",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition {
 	_init_.Initialize()
 
@@ -394,7 +537,7 @@ func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition_Override(d DataAwsEcsTaskDefinition, scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) {
 	_init_.Initialize()
 

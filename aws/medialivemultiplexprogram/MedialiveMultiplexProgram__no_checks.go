@@ -79,6 +79,10 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) validatePutMultiplexProgramSetting
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveMultiplexProgram) validatePutTimeoutsParameters(value *MedialiveMultiplexProgramTimeouts) error {
+	return nil
+}
+
 func validateMedialiveMultiplexProgram_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

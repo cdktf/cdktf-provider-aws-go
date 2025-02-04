@@ -46,6 +46,9 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSale
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UsePrivatelinkForMetadataAndAuthorization() interface{}
+	SetUsePrivatelinkForMetadataAndAuthorization(val interface{})
+	UsePrivatelinkForMetadataAndAuthorizationInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSale
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetInstanceUrl()
 	ResetIsSandboxEnvironment()
+	ResetUsePrivatelinkForMetadataAndAuthorization()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return returns
 }
 
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference) UsePrivatelinkForMetadataAndAuthorization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePrivatelinkForMetadataAndAuthorization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference) UsePrivatelinkForMetadataAndAuthorizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePrivatelinkForMetadataAndAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference)SetUsePrivatelinkForMetadataAndAuthorization(val interface{}) {
+	if err := j.validateSetUsePrivatelinkForMetadataAndAuthorizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usePrivatelinkForMetadataAndAuthorization",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.InvokeVoid(
 		a,
 		"resetIsSandboxEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference) ResetUsePrivatelinkForMetadataAndAuthorization() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUsePrivatelinkForMetadataAndAuthorization",
 		nil, // no parameters
 	)
 }

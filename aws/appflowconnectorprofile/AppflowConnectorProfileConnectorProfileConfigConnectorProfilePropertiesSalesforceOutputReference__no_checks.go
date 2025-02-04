@@ -79,6 +79,10 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReference) validateSetUsePrivatelinkForMetadataAndAuthorizationParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -23,6 +23,8 @@ type BedrockagentDataSourceDataSourceConfigurationOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfluenceConfiguration() BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList
+	ConfluenceConfigurationInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -34,6 +36,10 @@ type BedrockagentDataSourceDataSourceConfigurationOutputReference interface {
 	SetInternalValue(val interface{})
 	S3Configuration() BedrockagentDataSourceDataSourceConfigurationS3ConfigurationList
 	S3ConfigurationInput() interface{}
+	SalesforceConfiguration() BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList
+	SalesforceConfigurationInput() interface{}
+	SharePointConfiguration() BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList
+	SharePointConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,6 +51,8 @@ type BedrockagentDataSourceDataSourceConfigurationOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	WebConfiguration() BedrockagentDataSourceDataSourceConfigurationWebConfigurationList
+	WebConfigurationInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,8 +77,16 @@ type BedrockagentDataSourceDataSourceConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConfluenceConfiguration(value interface{})
 	PutS3Configuration(value interface{})
+	PutSalesforceConfiguration(value interface{})
+	PutSharePointConfiguration(value interface{})
+	PutWebConfiguration(value interface{})
+	ResetConfluenceConfiguration()
 	ResetS3Configuration()
+	ResetSalesforceConfiguration()
+	ResetSharePointConfiguration()
+	ResetWebConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -101,6 +117,26 @@ func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ConfluenceConfiguration() BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList {
+	var returns BedrockagentDataSourceDataSourceConfigurationConfluenceConfigurationList
+	_jsii_.Get(
+		j,
+		"confluenceConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ConfluenceConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confluenceConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -156,6 +192,46 @@ func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) SalesforceConfiguration() BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList {
+	var returns BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationList
+	_jsii_.Get(
+		j,
+		"salesforceConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) SalesforceConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"salesforceConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) SharePointConfiguration() BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList {
+	var returns BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationList
+	_jsii_.Get(
+		j,
+		"sharePointConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) SharePointConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sharePointConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -191,6 +267,26 @@ func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	_jsii_.Get(
 		j,
 		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) WebConfiguration() BedrockagentDataSourceDataSourceConfigurationWebConfigurationList {
+	var returns BedrockagentDataSourceDataSourceConfigurationWebConfigurationList
+	_jsii_.Get(
+		j,
+		"webConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) WebConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +572,17 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	return returns
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) PutConfluenceConfiguration(value interface{}) {
+	if err := b.validatePutConfluenceConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putConfluenceConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) PutS3Configuration(value interface{}) {
 	if err := b.validatePutS3ConfigurationParameters(value); err != nil {
 		panic(err)
@@ -487,10 +594,75 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	)
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) PutSalesforceConfiguration(value interface{}) {
+	if err := b.validatePutSalesforceConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSalesforceConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) PutSharePointConfiguration(value interface{}) {
+	if err := b.validatePutSharePointConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSharePointConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) PutWebConfiguration(value interface{}) {
+	if err := b.validatePutWebConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putWebConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ResetConfluenceConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetConfluenceConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ResetS3Configuration() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetS3Configuration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ResetSalesforceConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSalesforceConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ResetSharePointConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSharePointConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) ResetWebConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetWebConfiguration",
 		nil, // no parameters
 	)
 }

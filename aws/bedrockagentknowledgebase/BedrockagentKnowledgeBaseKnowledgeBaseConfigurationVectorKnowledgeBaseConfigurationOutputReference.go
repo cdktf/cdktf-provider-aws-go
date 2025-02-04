@@ -31,10 +31,14 @@ type BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfi
 	EmbeddingModelArn() *string
 	SetEmbeddingModelArn(val *string)
 	EmbeddingModelArnInput() *string
+	EmbeddingModelConfiguration() BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList
+	EmbeddingModelConfigurationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SupplementalDataStorageConfiguration() BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList
+	SupplementalDataStorageConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +71,10 @@ type BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfi
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEmbeddingModelConfiguration(value interface{})
+	PutSupplementalDataStorageConfiguration(value interface{})
+	ResetEmbeddingModelConfiguration()
+	ResetSupplementalDataStorageConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -132,6 +140,26 @@ func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnow
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) EmbeddingModelConfiguration() BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList {
+	var returns BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationList
+	_jsii_.Get(
+		j,
+		"embeddingModelConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) EmbeddingModelConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"embeddingModelConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -147,6 +175,26 @@ func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnow
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) SupplementalDataStorageConfiguration() BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList {
+	var returns BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationList
+	_jsii_.Get(
+		j,
+		"supplementalDataStorageConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) SupplementalDataStorageConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supplementalDataStorageConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +498,44 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnow
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) PutEmbeddingModelConfiguration(value interface{}) {
+	if err := b.validatePutEmbeddingModelConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEmbeddingModelConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) PutSupplementalDataStorageConfiguration(value interface{}) {
+	if err := b.validatePutSupplementalDataStorageConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSupplementalDataStorageConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) ResetEmbeddingModelConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEmbeddingModelConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) ResetSupplementalDataStorageConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSupplementalDataStorageConfiguration",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BedrockagentKnowledgeBaseKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

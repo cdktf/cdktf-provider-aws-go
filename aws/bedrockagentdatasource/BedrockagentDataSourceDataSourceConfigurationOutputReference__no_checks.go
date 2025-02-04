@@ -47,7 +47,23 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference)
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutConfluenceConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutS3ConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutSalesforceConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutSharePointConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationOutputReference) validatePutWebConfigurationParameters(value interface{}) error {
 	return nil
 }
 

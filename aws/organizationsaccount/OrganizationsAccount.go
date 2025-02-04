@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/organizations_account aws_organizations_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/organizations_account aws_organizations_account}.
 type OrganizationsAccount interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -96,6 +96,8 @@ type OrganizationsAccount interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() OrganizationsAccountTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -139,6 +141,7 @@ type OrganizationsAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *OrganizationsAccountTimeouts)
 	ResetCloseOnDeletion()
 	ResetCreateGovcloud()
 	ResetIamUserAccessToBilling()
@@ -150,6 +153,7 @@ type OrganizationsAccount interface {
 	ResetRoleName()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -578,8 +582,28 @@ func (j *jsiiProxy_OrganizationsAccount) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationsAccount) Timeouts() OrganizationsAccountTimeoutsOutputReference {
+	var returns OrganizationsAccountTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/organizations_account aws_organizations_account} Resource.
+func (j *jsiiProxy_OrganizationsAccount) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/organizations_account aws_organizations_account} Resource.
 func NewOrganizationsAccount(scope constructs.Construct, id *string, config *OrganizationsAccountConfig) OrganizationsAccount {
 	_init_.Initialize()
 
@@ -597,7 +621,7 @@ func NewOrganizationsAccount(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/organizations_account aws_organizations_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/organizations_account aws_organizations_account} Resource.
 func NewOrganizationsAccount_Override(o OrganizationsAccount, scope constructs.Construct, id *string, config *OrganizationsAccountConfig) {
 	_init_.Initialize()
 
@@ -1139,6 +1163,17 @@ func (o *jsiiProxy_OrganizationsAccount) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (o *jsiiProxy_OrganizationsAccount) PutTimeouts(value *OrganizationsAccountTimeouts) {
+	if err := o.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrganizationsAccount) ResetCloseOnDeletion() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1207,6 +1242,14 @@ func (o *jsiiProxy_OrganizationsAccount) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationsAccount) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

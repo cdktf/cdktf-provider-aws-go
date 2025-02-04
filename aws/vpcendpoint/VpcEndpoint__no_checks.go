@@ -139,6 +139,10 @@ func (j *jsiiProxy_VpcEndpoint) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpoint) validateSetResourceConfigurationArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpoint) validateSetRouteTableIdsParameters(val *[]*string) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (j *jsiiProxy_VpcEndpoint) validateSetSecurityGroupIdsParameters(val *[]*st
 }
 
 func (j *jsiiProxy_VpcEndpoint) validateSetServiceNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcEndpoint) validateSetServiceNetworkArnParameters(val *string) error {
 	return nil
 }
 

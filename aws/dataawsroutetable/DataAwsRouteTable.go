@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route_table aws_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/route_table aws_route_table}.
 type DataAwsRouteTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataAwsRouteTable) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route_table aws_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/route_table aws_route_table} Data Source.
 func NewDataAwsRouteTable(scope constructs.Construct, id *string, config *DataAwsRouteTableConfig) DataAwsRouteTable {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewDataAwsRouteTable(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/route_table aws_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/route_table aws_route_table} Data Source.
 func NewDataAwsRouteTable_Override(d DataAwsRouteTable, scope constructs.Construct, id *string, config *DataAwsRouteTableConfig) {
 	_init_.Initialize()
 

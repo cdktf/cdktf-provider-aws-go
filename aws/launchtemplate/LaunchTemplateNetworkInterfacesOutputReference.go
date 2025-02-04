@@ -29,6 +29,8 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionTrackingSpecification() LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference
+	ConnectionTrackingSpecificationInput() *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -124,8 +126,10 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConnectionTrackingSpecification(value *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification)
 	ResetAssociateCarrierIpAddress()
 	ResetAssociatePublicIpAddress()
+	ResetConnectionTrackingSpecification()
 	ResetDeleteOnTermination()
 	ResetDescription()
 	ResetDeviceIndex()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ComplexObject
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ConnectionTrackingSpecification() LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference {
+	var returns LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"connectionTrackingSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ConnectionTrackingSpecificationInput() *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification {
+	var returns *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification
+	_jsii_.Get(
+		j,
+		"connectionTrackingSpecificationInput",
 		&returns,
 	)
 	return returns
@@ -1118,6 +1142,17 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) Interpolation
 	return returns
 }
 
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PutConnectionTrackingSpecification(value *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification) {
+	if err := l.validatePutConnectionTrackingSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putConnectionTrackingSpecification",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetAssociateCarrierIpAddress() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1130,6 +1165,14 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetAssociat
 	_jsii_.InvokeVoid(
 		l,
 		"resetAssociatePublicIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetConnectionTrackingSpecification() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConnectionTrackingSpecification",
 		nil, // no parameters
 	)
 }

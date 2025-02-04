@@ -95,6 +95,10 @@ func validateMediaConvertQueue_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_MediaConvertQueue) validateSetConcurrentJobsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaConvertQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

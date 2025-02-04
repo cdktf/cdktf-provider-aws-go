@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint aws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint aws_vpc_endpoint}.
 type VpcEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type VpcEndpoint interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RequesterManaged() cdktf.IResolvable
+	ResourceConfigurationArn() *string
+	SetResourceConfigurationArn(val *string)
+	ResourceConfigurationArnInput() *string
 	RouteTableIds() *[]*string
 	SetRouteTableIds(val *[]*string)
 	RouteTableIdsInput() *[]*string
@@ -88,6 +91,9 @@ type VpcEndpoint interface {
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
+	ServiceNetworkArn() *string
+	SetServiceNetworkArn(val *string)
+	ServiceNetworkArnInput() *string
 	ServiceRegion() *string
 	SetServiceRegion(val *string)
 	ServiceRegionInput() *string
@@ -172,8 +178,11 @@ type VpcEndpoint interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetPrivateDnsEnabled()
+	ResetResourceConfigurationArn()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
+	ResetServiceName()
+	ResetServiceNetworkArn()
 	ResetServiceRegion()
 	ResetSubnetConfiguration()
 	ResetSubnetIds()
@@ -519,6 +528,26 @@ func (j *jsiiProxy_VpcEndpoint) RequesterManaged() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpoint) ResourceConfigurationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceConfigurationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpoint) ResourceConfigurationArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceConfigurationArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpoint) RouteTableIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -574,6 +603,26 @@ func (j *jsiiProxy_VpcEndpoint) ServiceNameInput() *string {
 	_jsii_.Get(
 		j,
 		"serviceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpoint) ServiceNetworkArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceNetworkArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpoint) ServiceNetworkArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceNetworkArnInput",
 		&returns,
 	)
 	return returns
@@ -780,7 +829,7 @@ func (j *jsiiProxy_VpcEndpoint) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointConfig) VpcEndpoint {
 	_init_.Initialize()
 
@@ -798,7 +847,7 @@ func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint_Override(v VpcEndpoint, scope constructs.Construct, id *string, config *VpcEndpointConfig) {
 	_init_.Initialize()
 
@@ -932,6 +981,17 @@ func (j *jsiiProxy_VpcEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_VpcEndpoint)SetResourceConfigurationArn(val *string) {
+	if err := j.validateSetResourceConfigurationArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceConfigurationArn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VpcEndpoint)SetRouteTableIds(val *[]*string) {
 	if err := j.validateSetRouteTableIdsParameters(val); err != nil {
 		panic(err)
@@ -961,6 +1021,17 @@ func (j *jsiiProxy_VpcEndpoint)SetServiceName(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpoint)SetServiceNetworkArn(val *string) {
+	if err := j.validateSetServiceNetworkArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceNetworkArn",
 		val,
 	)
 }
@@ -1473,6 +1544,14 @@ func (v *jsiiProxy_VpcEndpoint) ResetPrivateDnsEnabled() {
 	)
 }
 
+func (v *jsiiProxy_VpcEndpoint) ResetResourceConfigurationArn() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetResourceConfigurationArn",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpcEndpoint) ResetRouteTableIds() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1485,6 +1564,22 @@ func (v *jsiiProxy_VpcEndpoint) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpoint) ResetServiceName() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServiceName",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpoint) ResetServiceNetworkArn() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServiceNetworkArn",
 		nil, // no parameters
 	)
 }

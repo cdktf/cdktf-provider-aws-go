@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail aws_cloudtrail}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail aws_cloudtrail}.
 type Cloudtrail interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailAdvancedEventSelectorList
@@ -99,6 +99,7 @@ type Cloudtrail interface {
 	S3KeyPrefix() *string
 	SetS3KeyPrefix(val *string)
 	S3KeyPrefixInput() *string
+	SnsTopicArn() *string
 	SnsTopicName() *string
 	SetSnsTopicName(val *string)
 	SnsTopicNameInput() *string
@@ -647,6 +648,16 @@ func (j *jsiiProxy_Cloudtrail) S3KeyPrefixInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Cloudtrail) SnsTopicArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snsTopicArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cloudtrail) SnsTopicName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -738,7 +749,7 @@ func (j *jsiiProxy_Cloudtrail) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
 func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailConfig) Cloudtrail {
 	_init_.Initialize()
 
@@ -756,7 +767,7 @@ func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
 func NewCloudtrail_Override(c Cloudtrail, scope constructs.Construct, id *string, config *CloudtrailConfig) {
 	_init_.Initialize()
 

@@ -97,6 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "s3BucketNameInput", GoGetter: "S3BucketNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "s3KeyPrefix", GoGetter: "S3KeyPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "s3KeyPrefixInput", GoGetter: "S3KeyPrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "snsTopicArn", GoGetter: "SnsTopicArn"},
 			_jsii_.MemberProperty{JsiiProperty: "snsTopicName", GoGetter: "SnsTopicName"},
 			_jsii_.MemberProperty{JsiiProperty: "snsTopicNameInput", GoGetter: "SnsTopicNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},

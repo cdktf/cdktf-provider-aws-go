@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
 type MedialiveMultiplexProgram interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type MedialiveMultiplexProgram interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() MedialiveMultiplexProgramTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -114,10 +116,12 @@ type MedialiveMultiplexProgram interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMultiplexProgramSettings(value interface{})
+	PutTimeouts(value *MedialiveMultiplexProgramTimeouts)
 	ResetMultiplexProgramSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -366,8 +370,28 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveMultiplexProgram) Timeouts() MedialiveMultiplexProgramTimeoutsOutputReference {
+	var returns MedialiveMultiplexProgramTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+func (j *jsiiProxy_MedialiveMultiplexProgram) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) MedialiveMultiplexProgram {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram_Override(m MedialiveMultiplexProgram, scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) {
 	_init_.Initialize()
 
@@ -850,6 +874,17 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) PutMultiplexProgramSettings(value 
 	)
 }
 
+func (m *jsiiProxy_MedialiveMultiplexProgram) PutTimeouts(value *MedialiveMultiplexProgramTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveMultiplexProgram) ResetMultiplexProgramSettings() {
 	_jsii_.InvokeVoid(
 		m,
@@ -862,6 +897,14 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveMultiplexProgram) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

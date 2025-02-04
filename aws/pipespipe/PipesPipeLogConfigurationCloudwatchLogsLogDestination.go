@@ -5,7 +5,7 @@ package pipespipe
 
 
 type PipesPipeLogConfigurationCloudwatchLogsLogDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pipes_pipe#log_group_arn PipesPipe#log_group_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pipes_pipe#log_group_arn PipesPipe#log_group_arn}.
 	LogGroupArn *string `field:"required" json:"logGroupArn" yaml:"logGroupArn"`
 }
 

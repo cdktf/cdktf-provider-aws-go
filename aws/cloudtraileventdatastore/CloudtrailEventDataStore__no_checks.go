@@ -143,6 +143,10 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetRetentionPeriodParameter
 	return nil
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetSuspendParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

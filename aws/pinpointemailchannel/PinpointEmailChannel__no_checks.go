@@ -127,6 +127,10 @@ func (j *jsiiProxy_PinpointEmailChannel) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEmailChannel) validateSetOrchestrationSendingRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

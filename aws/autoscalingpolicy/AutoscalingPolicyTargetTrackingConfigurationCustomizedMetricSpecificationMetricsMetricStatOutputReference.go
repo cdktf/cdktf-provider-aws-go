@@ -34,6 +34,9 @@ type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMe
 	SetInternalValue(val *AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStat)
 	Metric() AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricOutputReference
 	MetricInput() *AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric
+	Period() *float64
+	SetPeriod(val *float64)
+	PeriodInput() *float64
 	Stat() *string
 	SetStat(val *string)
 	StatInput() *string
@@ -73,6 +76,7 @@ type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMe
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMetric(value *AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric)
+	ResetPeriod()
 	ResetUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -154,6 +158,26 @@ func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	_jsii_.Get(
 		j,
 		"metricInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference) Period() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference) PeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +300,17 @@ func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 		a,
 		"putMetric",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatOutputReference) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPeriod",
+		nil, // no parameters
 	)
 }
 

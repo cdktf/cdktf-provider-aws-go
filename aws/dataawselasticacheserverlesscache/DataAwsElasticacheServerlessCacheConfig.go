@@ -22,7 +22,7 @@ type DataAwsElasticacheServerlessCacheConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

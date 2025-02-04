@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}.
 type PinpointEmailChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -64,6 +64,9 @@ type PinpointEmailChannel interface {
 	MessagesPerSecond() *float64
 	// The tree node.
 	Node() constructs.Node
+	OrchestrationSendingRoleArn() *string
+	SetOrchestrationSendingRoleArn(val *string)
+	OrchestrationSendingRoleArnInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -129,6 +132,7 @@ type PinpointEmailChannel interface {
 	ResetConfigurationSet()
 	ResetEnabled()
 	ResetId()
+	ResetOrchestrationSendingRoleArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -381,6 +385,26 @@ func (j *jsiiProxy_PinpointEmailChannel) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PinpointEmailChannel) OrchestrationSendingRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orchestrationSendingRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointEmailChannel) OrchestrationSendingRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"orchestrationSendingRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_PinpointEmailChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource.
 func NewPinpointEmailChannel(scope constructs.Construct, id *string, config *PinpointEmailChannelConfig) PinpointEmailChannel {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewPinpointEmailChannel(scope constructs.Construct, id *string, config *Pin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel} Resource.
 func NewPinpointEmailChannel_Override(p PinpointEmailChannel, scope constructs.Construct, id *string, config *PinpointEmailChannelConfig) {
 	_init_.Initialize()
 
@@ -602,6 +626,17 @@ func (j *jsiiProxy_PinpointEmailChannel)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointEmailChannel)SetOrchestrationSendingRoleArn(val *string) {
+	if err := j.validateSetOrchestrationSendingRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"orchestrationSendingRoleArn",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (p *jsiiProxy_PinpointEmailChannel) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointEmailChannel) ResetOrchestrationSendingRoleArn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOrchestrationSendingRoleArn",
 		nil, // no parameters
 	)
 }

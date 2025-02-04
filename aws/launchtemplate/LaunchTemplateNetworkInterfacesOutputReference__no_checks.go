@@ -47,6 +47,10 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateInter
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validatePutConnectionTrackingSpecificationParameters(value *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

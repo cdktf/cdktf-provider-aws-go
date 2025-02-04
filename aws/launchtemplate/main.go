@@ -1499,6 +1499,51 @@ func init() {
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces",
 		reflect.TypeOf((*LaunchTemplateNetworkInterfaces)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesConnectionTrackingSpecification",
+		reflect.TypeOf((*LaunchTemplateNetworkInterfacesConnectionTrackingSpecification)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference",
+		reflect.TypeOf((*LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTcpEstablishedTimeout", GoMethod: "ResetTcpEstablishedTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUdpStreamTimeout", GoMethod: "ResetUdpStreamTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUdpTimeout", GoMethod: "ResetUdpTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tcpEstablishedTimeout", GoGetter: "TcpEstablishedTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "tcpEstablishedTimeoutInput", GoGetter: "TcpEstablishedTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "udpStreamTimeout", GoGetter: "UdpStreamTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "udpStreamTimeoutInput", GoGetter: "UdpStreamTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "udpTimeout", GoGetter: "UdpTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "udpTimeoutInput", GoGetter: "UdpTimeoutInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList",
 		reflect.TypeOf((*LaunchTemplateNetworkInterfacesList)(nil)).Elem(),
@@ -1532,6 +1577,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionTrackingSpecification", GoGetter: "ConnectionTrackingSpecification"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionTrackingSpecificationInput", GoGetter: "ConnectionTrackingSpecificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteOnTermination", GoGetter: "DeleteOnTermination"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteOnTerminationInput", GoGetter: "DeleteOnTerminationInput"},
@@ -1578,8 +1625,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "primaryIpv6Input", GoGetter: "PrimaryIpv6Input"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddressInput", GoGetter: "PrivateIpAddressInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putConnectionTrackingSpecification", GoMethod: "PutConnectionTrackingSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssociateCarrierIpAddress", GoMethod: "ResetAssociateCarrierIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssociatePublicIpAddress", GoMethod: "ResetAssociatePublicIpAddress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTrackingSpecification", GoMethod: "ResetConnectionTrackingSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteOnTermination", GoMethod: "ResetDeleteOnTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeviceIndex", GoMethod: "ResetDeviceIndex"},

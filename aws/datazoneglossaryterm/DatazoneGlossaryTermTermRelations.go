@@ -5,9 +5,9 @@ package datazoneglossaryterm
 
 
 type DatazoneGlossaryTermTermRelations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
 	Classifies *[]*string `field:"optional" json:"classifies" yaml:"classifies"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
 	IsA *[]*string `field:"optional" json:"isA" yaml:"isA"`
 }
 

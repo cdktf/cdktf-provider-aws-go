@@ -79,6 +79,10 @@ func (c *jsiiProxy_CloudwatchEventConnection) validatePutAuthParametersParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventConnection) validatePutInvocationConnectivityParametersParameters(value *CloudwatchEventConnectionInvocationConnectivityParameters) error {
+	return nil
+}
+
 func validateCloudwatchEventConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/grafana_license_association aws_grafana_license_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/grafana_license_association aws_grafana_license_association}.
 type GrafanaLicenseAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) GrafanaLicenseAssociation {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation_Override(g GrafanaLicenseAssociation, scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) {
 	_init_.Initialize()
 

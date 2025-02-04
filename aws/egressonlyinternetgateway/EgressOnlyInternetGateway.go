@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway}.
 type EgressOnlyInternetGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_EgressOnlyInternetGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway} Resource.
 func NewEgressOnlyInternetGateway(scope constructs.Construct, id *string, config *EgressOnlyInternetGatewayConfig) EgressOnlyInternetGateway {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewEgressOnlyInternetGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/egress_only_internet_gateway aws_egress_only_internet_gateway} Resource.
 func NewEgressOnlyInternetGateway_Override(e EgressOnlyInternetGateway, scope constructs.Construct, id *string, config *EgressOnlyInternetGatewayConfig) {
 	_init_.Initialize()
 

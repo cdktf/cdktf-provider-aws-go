@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
 type CloudwatchEventConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -51,6 +51,8 @@ type CloudwatchEventConnection interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InvocationConnectivityParameters() CloudwatchEventConnectionInvocationConnectivityParametersOutputReference
+	InvocationConnectivityParametersInput() *CloudwatchEventConnectionInvocationConnectivityParameters
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -121,8 +123,10 @@ type CloudwatchEventConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthParameters(value *CloudwatchEventConnectionAuthParameters)
+	PutInvocationConnectivityParameters(value *CloudwatchEventConnectionInvocationConnectivityParameters)
 	ResetDescription()
 	ResetId()
+	ResetInvocationConnectivityParameters()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -314,6 +318,26 @@ func (j *jsiiProxy_CloudwatchEventConnection) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchEventConnection) InvocationConnectivityParameters() CloudwatchEventConnectionInvocationConnectivityParametersOutputReference {
+	var returns CloudwatchEventConnectionInvocationConnectivityParametersOutputReference
+	_jsii_.Get(
+		j,
+		"invocationConnectivityParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventConnection) InvocationConnectivityParametersInput() *CloudwatchEventConnectionInvocationConnectivityParameters {
+	var returns *CloudwatchEventConnectionInvocationConnectivityParameters
+	_jsii_.Get(
+		j,
+		"invocationConnectivityParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchEventConnection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -425,7 +449,7 @@ func (j *jsiiProxy_CloudwatchEventConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
 func NewCloudwatchEventConnection(scope constructs.Construct, id *string, config *CloudwatchEventConnectionConfig) CloudwatchEventConnection {
 	_init_.Initialize()
 
@@ -443,7 +467,7 @@ func NewCloudwatchEventConnection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
 func NewCloudwatchEventConnection_Override(c CloudwatchEventConnection, scope constructs.Construct, id *string, config *CloudwatchEventConnectionConfig) {
 	_init_.Initialize()
 
@@ -930,6 +954,17 @@ func (c *jsiiProxy_CloudwatchEventConnection) PutAuthParameters(value *Cloudwatc
 	)
 }
 
+func (c *jsiiProxy_CloudwatchEventConnection) PutInvocationConnectivityParameters(value *CloudwatchEventConnectionInvocationConnectivityParameters) {
+	if err := c.validatePutInvocationConnectivityParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInvocationConnectivityParameters",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventConnection) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -942,6 +977,14 @@ func (c *jsiiProxy_CloudwatchEventConnection) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventConnection) ResetInvocationConnectivityParameters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInvocationConnectivityParameters",
 		nil, // no parameters
 	)
 }

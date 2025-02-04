@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
 type EcsTaskDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -39,6 +39,9 @@ type EcsTaskDefinition interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableFaultInjection() interface{}
+	SetEnableFaultInjection(val interface{})
+	EnableFaultInjectionInput() interface{}
 	EphemeralStorage() EcsTaskDefinitionEphemeralStorageOutputReference
 	EphemeralStorageInput() *EcsTaskDefinitionEphemeralStorage
 	ExecutionRoleArn() *string
@@ -171,6 +174,7 @@ type EcsTaskDefinition interface {
 	PutRuntimePlatform(value *EcsTaskDefinitionRuntimePlatform)
 	PutVolume(value interface{})
 	ResetCpu()
+	ResetEnableFaultInjection()
 	ResetEphemeralStorage()
 	ResetExecutionRoleArn()
 	ResetId()
@@ -315,6 +319,26 @@ func (j *jsiiProxy_EcsTaskDefinition) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) EnableFaultInjection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFaultInjection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) EnableFaultInjectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFaultInjectionInput",
 		&returns,
 	)
 	return returns
@@ -821,7 +845,7 @@ func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) EcsTaskDefinition {
 	_init_.Initialize()
 
@@ -839,7 +863,7 @@ func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.84.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) {
 	_init_.Initialize()
 
@@ -898,6 +922,17 @@ func (j *jsiiProxy_EcsTaskDefinition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetEnableFaultInjection(val interface{}) {
+	if err := j.validateSetEnableFaultInjectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFaultInjection",
 		val,
 	)
 }
@@ -1506,6 +1541,14 @@ func (e *jsiiProxy_EcsTaskDefinition) ResetCpu() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCpu",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetEnableFaultInjection() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnableFaultInjection",
 		nil, // no parameters
 	)
 }

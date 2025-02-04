@@ -135,6 +135,10 @@ func (j *jsiiProxy_PipesPipe) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_PipesPipe) validateSetKmsKeyIdentifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipesPipe) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
