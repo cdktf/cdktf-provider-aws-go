@@ -75,6 +75,10 @@ func (s *jsiiProxy_SqsQueue) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (s *jsiiProxy_SqsQueue) validatePutTimeoutsParameters(value *SqsQueueTimeouts) error {
+	return nil
+}
+
 func validateSqsQueue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

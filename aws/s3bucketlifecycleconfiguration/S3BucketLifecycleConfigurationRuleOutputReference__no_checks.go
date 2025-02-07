@@ -47,19 +47,19 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateIn
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutAbortIncompleteMultipartUploadParameters(value *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutAbortIncompleteMultipartUploadParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutExpirationParameters(value *S3BucketLifecycleConfigurationRuleExpiration) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutExpirationParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value *S3BucketLifecycleConfigurationRuleFilter) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value interface{}) error {
 	return nil
 }
 

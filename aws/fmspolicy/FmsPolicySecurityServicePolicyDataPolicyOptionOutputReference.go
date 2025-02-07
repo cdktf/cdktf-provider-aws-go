@@ -32,6 +32,8 @@ type FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference interface {
 	Fqn() *string
 	InternalValue() *FmsPolicySecurityServicePolicyDataPolicyOption
 	SetInternalValue(val *FmsPolicySecurityServicePolicyDataPolicyOption)
+	NetworkAclCommonPolicy() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference
+	NetworkAclCommonPolicyInput() *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy
 	NetworkFirewallPolicy() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference
 	NetworkFirewallPolicyInput() *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy
 	// Experimental.
@@ -68,8 +70,10 @@ type FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNetworkAclCommonPolicy(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy)
 	PutNetworkFirewallPolicy(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy)
 	PutThirdPartyFirewallPolicy(value *FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy)
+	ResetNetworkAclCommonPolicy()
 	ResetNetworkFirewallPolicy()
 	ResetThirdPartyFirewallPolicy()
 	// Produce the Token's value at resolution time.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) NetworkAclCommonPolicy() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference {
+	var returns FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"networkAclCommonPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) NetworkAclCommonPolicyInput() *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy {
+	var returns *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy
+	_jsii_.Get(
+		j,
+		"networkAclCommonPolicyInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +490,17 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 	return returns
 }
 
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) PutNetworkAclCommonPolicy(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy) {
+	if err := f.validatePutNetworkAclCommonPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putNetworkAclCommonPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) PutNetworkFirewallPolicy(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy) {
 	if err := f.validatePutNetworkFirewallPolicyParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 		f,
 		"putThirdPartyFirewallPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) ResetNetworkAclCommonPolicy() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetNetworkAclCommonPolicy",
+		nil, // no parameters
 	)
 }
 

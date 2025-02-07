@@ -93,23 +93,63 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutAndParameters(value *S3BucketLifecycleConfigurationRuleFilterAnd) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutAndParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleFilterAnd:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleFilterAnd)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleFilterAnd:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleFilterAnd)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleFilterAnd; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutTagParameters(value *S3BucketLifecycleConfigurationRuleFilterTag) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutTagParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleFilterTag:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleFilterTag)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleFilterTag:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleFilterTag)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleFilterTag; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -188,15 +228,31 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleFilter) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *S3BucketLifecycleConfigurationRuleFilter:
+		val := val.(*S3BucketLifecycleConfigurationRuleFilter)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case S3BucketLifecycleConfigurationRuleFilter:
+		val_ := val.(S3BucketLifecycleConfigurationRuleFilter)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *S3BucketLifecycleConfigurationRuleFilter; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeGreaterThanParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeGreaterThanParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -204,7 +260,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeLessThanParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeLessThanParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -236,13 +292,21 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

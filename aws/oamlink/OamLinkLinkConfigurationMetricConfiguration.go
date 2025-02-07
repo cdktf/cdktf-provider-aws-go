@@ -5,7 +5,7 @@ package oamlink
 
 
 type OamLinkLinkConfigurationMetricConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/oam_link#filter OamLink#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/oam_link#filter OamLink#filter}.
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 }
 

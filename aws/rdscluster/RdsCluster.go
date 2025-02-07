@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -170,6 +170,12 @@ type RdsCluster interface {
 	MasterUserSecretKmsKeyId() *string
 	SetMasterUserSecretKmsKeyId(val *string)
 	MasterUserSecretKmsKeyIdInput() *string
+	MonitoringInterval() *float64
+	SetMonitoringInterval(val *float64)
+	MonitoringIntervalInput() *float64
+	MonitoringRoleArn() *string
+	SetMonitoringRoleArn(val *string)
+	MonitoringRoleArnInput() *string
 	NetworkType() *string
 	SetNetworkType(val *string)
 	NetworkTypeInput() *string
@@ -334,6 +340,8 @@ type RdsCluster interface {
 	ResetMasterPassword()
 	ResetMasterUsername()
 	ResetMasterUserSecretKmsKeyId()
+	ResetMonitoringInterval()
+	ResetMonitoringRoleArn()
 	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -1336,6 +1344,46 @@ func (j *jsiiProxy_RdsCluster) MasterUserSecretKmsKeyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) MonitoringInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitoringInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MonitoringIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitoringIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MonitoringRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MonitoringRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) NetworkType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1837,7 +1885,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1855,7 +1903,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -2351,6 +2399,28 @@ func (j *jsiiProxy_RdsCluster)SetMasterUserSecretKmsKeyId(val *string) {
 	_jsii_.Set(
 		j,
 		"masterUserSecretKmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetMonitoringInterval(val *float64) {
+	if err := j.validateSetMonitoringIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetMonitoringRoleArn(val *string) {
+	if err := j.validateSetMonitoringRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringRoleArn",
 		val,
 	)
 }
@@ -3266,6 +3336,22 @@ func (r *jsiiProxy_RdsCluster) ResetMasterUserSecretKmsKeyId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterUserSecretKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetMonitoringInterval() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMonitoringInterval",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetMonitoringRoleArn() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMonitoringRoleArn",
 		nil, // no parameters
 	)
 }

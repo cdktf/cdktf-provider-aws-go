@@ -5,9 +5,9 @@ package imagebuilderimagepipeline
 
 
 type ImagebuilderImagePipelineWorkflowParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/imagebuilder_image_pipeline#name ImagebuilderImagePipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/imagebuilder_image_pipeline#name ImagebuilderImagePipeline#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/imagebuilder_image_pipeline#value ImagebuilderImagePipeline#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/imagebuilder_image_pipeline#value ImagebuilderImagePipeline#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

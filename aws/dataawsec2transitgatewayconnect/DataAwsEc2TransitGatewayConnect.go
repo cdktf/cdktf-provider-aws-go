@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect}.
 type DataAwsEc2TransitGatewayConnect interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayConnect) TransportAttachmentId() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Data Source.
 func NewDataAwsEc2TransitGatewayConnect(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConnectConfig) DataAwsEc2TransitGatewayConnect {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAwsEc2TransitGatewayConnect(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Data Source.
 func NewDataAwsEc2TransitGatewayConnect_Override(d DataAwsEc2TransitGatewayConnect, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConnectConfig) {
 	_init_.Initialize()
 

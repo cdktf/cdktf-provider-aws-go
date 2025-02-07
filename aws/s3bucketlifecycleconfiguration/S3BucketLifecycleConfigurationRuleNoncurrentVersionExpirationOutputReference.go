@@ -30,11 +30,11 @@ type S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenc
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
-	SetInternalValue(val *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)
-	NewerNoncurrentVersions() *string
-	SetNewerNoncurrentVersions(val *string)
-	NewerNoncurrentVersionsInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	NewerNoncurrentVersions() *float64
+	SetNewerNoncurrentVersions(val *float64)
+	NewerNoncurrentVersionsInput() *float64
 	NoncurrentDays() *float64
 	SetNoncurrentDays(val *float64)
 	NoncurrentDaysInput() *float64
@@ -127,8 +127,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) InternalValue() *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration {
-	var returns *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) NewerNoncurrentVersions() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) NewerNoncurrentVersions() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"newerNoncurrentVersions",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) NewerNoncurrentVersionsInput() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) NewerNoncurrentVersionsInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"newerNoncurrentVersionsInput",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 }
 
 
-func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference {
+func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference_Override(s S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference_Override(s S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -247,7 +247,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference)SetNewerNoncurrentVersions(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference)SetNewerNoncurrentVersions(val *float64) {
 	if err := j.validateSetNewerNoncurrentVersionsParameters(val); err != nil {
 		panic(err)
 	}

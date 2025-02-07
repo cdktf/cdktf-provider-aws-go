@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/sqs_queue aws_sqs_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/sqs_queue aws_sqs_queue}.
 type SqsQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -119,6 +119,8 @@ type SqsQueue interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SqsQueueTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	VisibilityTimeoutSeconds() *float64
 	SetVisibilityTimeoutSeconds(val *float64)
@@ -166,6 +168,7 @@ type SqsQueue interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SqsQueueTimeouts)
 	ResetContentBasedDeduplication()
 	ResetDeduplicationScope()
 	ResetDelaySeconds()
@@ -188,6 +191,7 @@ type SqsQueue interface {
 	ResetSqsManagedSseEnabled()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	ResetVisibilityTimeoutSeconds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -757,6 +761,26 @@ func (j *jsiiProxy_SqsQueue) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqsQueue) Timeouts() SqsQueueTimeoutsOutputReference {
+	var returns SqsQueueTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqsQueue) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqsQueue) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -788,7 +812,7 @@ func (j *jsiiProxy_SqsQueue) VisibilityTimeoutSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig) SqsQueue {
 	_init_.Initialize()
 
@@ -806,7 +830,7 @@ func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue_Override(s SqsQueue, scope constructs.Construct, id *string, config *SqsQueueConfig) {
 	_init_.Initialize()
 
@@ -1458,6 +1482,17 @@ func (s *jsiiProxy_SqsQueue) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SqsQueue) PutTimeouts(value *SqsQueueTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqsQueue) ResetContentBasedDeduplication() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1614,6 +1649,14 @@ func (s *jsiiProxy_SqsQueue) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqsQueue) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

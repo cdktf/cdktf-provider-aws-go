@@ -33,8 +33,8 @@ type S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputRefer
 	DaysAfterInitiationInput() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
-	SetInternalValue(val *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) InternalValue() *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
-	var returns *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +174,29 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 }
 
 
-func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference {
+func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference_Override(s S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference_Override(s S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -234,7 +234,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

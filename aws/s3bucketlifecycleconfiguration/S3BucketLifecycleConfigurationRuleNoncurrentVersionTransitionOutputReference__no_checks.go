@@ -63,7 +63,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetNewerNoncurrentVersionsParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) validateSetNewerNoncurrentVersionsParameters(val *float64) error {
 	return nil
 }
 

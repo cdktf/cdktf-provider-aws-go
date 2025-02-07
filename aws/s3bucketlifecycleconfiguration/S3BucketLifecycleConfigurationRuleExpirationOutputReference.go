@@ -39,8 +39,8 @@ type S3BucketLifecycleConfigurationRuleExpirationOutputReference interface {
 	ExpiredObjectDeleteMarkerInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() *S3BucketLifecycleConfigurationRuleExpiration
-	SetInternalValue(val *S3BucketLifecycleConfigurationRuleExpiration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) InternalValue() *S3BucketLifecycleConfigurationRuleExpiration {
-	var returns *S3BucketLifecycleConfigurationRuleExpiration
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 }
 
 
-func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleExpirationOutputReference {
+func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleExpirationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference_Override(s S3BucketLifecycleConfigurationRuleExpirationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference_Override(s S3BucketLifecycleConfigurationRuleExpirationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -304,7 +304,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleExpiration) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

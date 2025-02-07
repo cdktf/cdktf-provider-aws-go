@@ -283,6 +283,14 @@ func (j *jsiiProxy_RdsCluster) validateSetMasterUserSecretKmsKeyIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetMonitoringIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetMonitoringRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetNetworkTypeParameters(val *string) error {
 	return nil
 }

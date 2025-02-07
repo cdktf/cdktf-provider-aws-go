@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/rds_cluster aws_rds_cluster}.
 type DataAwsRdsCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -67,6 +67,8 @@ type DataAwsRdsCluster interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MasterUsername() *string
 	MasterUserSecret() DataAwsRdsClusterMasterUserSecretList
+	MonitoringInterval() *float64
+	MonitoringRoleArn() *string
 	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
@@ -481,6 +483,26 @@ func (j *jsiiProxy_DataAwsRdsCluster) MasterUserSecret() DataAwsRdsClusterMaster
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsCluster) MonitoringInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitoringInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCluster) MonitoringRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringRoleArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsCluster) NetworkType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -642,7 +664,7 @@ func (j *jsiiProxy_DataAwsRdsCluster) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
 func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAwsRdsClusterConfig) DataAwsRdsCluster {
 	_init_.Initialize()
 
@@ -660,7 +682,7 @@ func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
 func NewDataAwsRdsCluster_Override(d DataAwsRdsCluster, scope constructs.Construct, id *string, config *DataAwsRdsClusterConfig) {
 	_init_.Initialize()
 

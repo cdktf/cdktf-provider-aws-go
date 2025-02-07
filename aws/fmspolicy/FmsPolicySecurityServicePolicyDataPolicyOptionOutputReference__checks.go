@@ -93,6 +93,17 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 	return nil
 }
 
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) validatePutNetworkAclCommonPolicyParameters(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) validatePutNetworkFirewallPolicyParameters(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

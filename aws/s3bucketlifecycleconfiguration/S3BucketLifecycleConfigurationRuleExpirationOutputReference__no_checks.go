@@ -71,7 +71,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleExpiration) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

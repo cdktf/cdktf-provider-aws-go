@@ -22,15 +22,15 @@ type DevopsguruResourceCollectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/devopsguru_resource_collection#type DevopsguruResourceCollection#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/devopsguru_resource_collection#type DevopsguruResourceCollection#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// cloudformation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/devopsguru_resource_collection#cloudformation DevopsguruResourceCollection#cloudformation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/devopsguru_resource_collection#cloudformation DevopsguruResourceCollection#cloudformation}
 	Cloudformation interface{} `field:"optional" json:"cloudformation" yaml:"cloudformation"`
 	// tags block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/devopsguru_resource_collection#tags DevopsguruResourceCollection#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/devopsguru_resource_collection#tags DevopsguruResourceCollection#tags}
 	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 }
 

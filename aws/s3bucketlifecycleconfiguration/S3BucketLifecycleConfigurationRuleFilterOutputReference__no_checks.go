@@ -47,11 +47,11 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutAndParameters(value *S3BucketLifecycleConfigurationRuleFilterAnd) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutAndParameters(value interface{}) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutTagParameters(value *S3BucketLifecycleConfigurationRuleFilterTag) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validatePutTagParameters(value interface{}) error {
 	return nil
 }
 
@@ -67,15 +67,15 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleFilter) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeGreaterThanParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeGreaterThanParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeLessThanParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateSetObjectSizeLessThanParameters(val *float64) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

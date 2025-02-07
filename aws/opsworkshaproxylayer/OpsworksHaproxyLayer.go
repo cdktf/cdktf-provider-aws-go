@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
 type OpsworksHaproxyLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -1039,7 +1039,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) OpsworksHaproxyLayer {
 	_init_.Initialize()
 
@@ -1057,7 +1057,7 @@ func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer_Override(o OpsworksHaproxyLayer, scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) {
 	_init_.Initialize()
 

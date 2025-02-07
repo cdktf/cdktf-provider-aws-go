@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
 type S3BucketLifecycleConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -46,8 +46,6 @@ type S3BucketLifecycleConfiguration interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,10 +121,10 @@ type S3BucketLifecycleConfiguration interface {
 	PutRule(value interface{})
 	PutTimeouts(value *S3BucketLifecycleConfigurationTimeouts)
 	ResetExpectedBucketOwner()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRule()
 	ResetTimeouts()
 	ResetTransitionDefaultMinimumObjectSize()
 	SynthesizeAttributes() *map[string]interface{}
@@ -277,16 +275,6 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfiguration) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_S3BucketLifecycleConfiguration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -428,7 +416,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) TransitionDefaultMinimumObjec
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) S3BucketLifecycleConfiguration {
 	_init_.Initialize()
 
@@ -446,7 +434,7 @@ func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration_Override(s S3BucketLifecycleConfiguration, scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) {
 	_init_.Initialize()
 
@@ -513,17 +501,6 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetForEach(val cdktf.ITerrafor
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -952,18 +929,18 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetExpectedBucketOwner() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetRule() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRule",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 	return nil
 }
 
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) validatePutNetworkAclCommonPolicyParameters(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicy) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference) validatePutNetworkFirewallPolicyParameters(value *FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy) error {
 	return nil
 }

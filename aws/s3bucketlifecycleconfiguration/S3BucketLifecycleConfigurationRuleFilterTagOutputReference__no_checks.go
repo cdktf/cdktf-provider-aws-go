@@ -59,7 +59,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterTagOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterTagOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleFilterTag) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterTagOutputReference) v
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleFilterTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleFilterTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

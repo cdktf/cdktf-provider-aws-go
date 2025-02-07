@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/transfer_agreement aws_transfer_agreement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/transfer_agreement aws_transfer_agreement}.
 type TransferAgreement interface {
 	cdktf.TerraformResource
 	AccessRole() *string
@@ -530,7 +530,7 @@ func (j *jsiiProxy_TransferAgreement) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
 func NewTransferAgreement(scope constructs.Construct, id *string, config *TransferAgreementConfig) TransferAgreement {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewTransferAgreement(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
 func NewTransferAgreement_Override(t TransferAgreement, scope constructs.Construct, id *string, config *TransferAgreementConfig) {
 	_init_.Initialize()
 

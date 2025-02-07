@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/transfer_server aws_transfer_server}.
 type DataAwsTransferServer interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataAwsTransferServer) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
 func NewDataAwsTransferServer(scope constructs.Construct, id *string, config *DataAwsTransferServerConfig) DataAwsTransferServer {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataAwsTransferServer(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
 func NewDataAwsTransferServer_Override(d DataAwsTransferServer, scope constructs.Construct, id *string, config *DataAwsTransferServerConfig) {
 	_init_.Initialize()
 

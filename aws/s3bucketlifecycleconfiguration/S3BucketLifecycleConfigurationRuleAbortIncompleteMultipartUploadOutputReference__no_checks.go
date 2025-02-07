@@ -63,7 +63,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpl
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

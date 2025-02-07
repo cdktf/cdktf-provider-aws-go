@@ -93,45 +93,125 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validateIn
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutAbortIncompleteMultipartUploadParameters(value *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutAbortIncompleteMultipartUploadParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutExpirationParameters(value *S3BucketLifecycleConfigurationRuleExpiration) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutExpirationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleExpiration:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleExpiration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleExpiration:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleExpiration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleExpiration; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value *S3BucketLifecycleConfigurationRuleFilter) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleFilter:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleFilter)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleFilter:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleFilter)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleFilter; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration:
+		value := value.(*[]*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration:
+		value_ := value.([]*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

@@ -32,9 +32,9 @@ type S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReferenc
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	NewerNoncurrentVersions() *string
-	SetNewerNoncurrentVersions(val *string)
-	NewerNoncurrentVersionsInput() *string
+	NewerNoncurrentVersions() *float64
+	SetNewerNoncurrentVersions(val *float64)
+	NewerNoncurrentVersionsInput() *float64
 	NoncurrentDays() *float64
 	SetNoncurrentDays(val *float64)
 	NoncurrentDaysInput() *float64
@@ -140,8 +140,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) NewerNoncurrentVersions() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) NewerNoncurrentVersions() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"newerNoncurrentVersions",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) NewerNoncurrentVersionsInput() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference) NewerNoncurrentVersionsInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"newerNoncurrentVersionsInput",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference)SetNewerNoncurrentVersions(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference)SetNewerNoncurrentVersions(val *float64) {
 	if err := j.validateSetNewerNoncurrentVersionsParameters(val); err != nil {
 		panic(err)
 	}

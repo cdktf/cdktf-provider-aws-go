@@ -59,11 +59,11 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) validateSetInternalValueParameters(val *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) validateSetNewerNoncurrentVersionsParameters(val *string) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) validateSetNewerNoncurrentVersionsParameters(val *float64) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

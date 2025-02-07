@@ -30,8 +30,8 @@ type S3BucketLifecycleConfigurationRuleFilterAndOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *S3BucketLifecycleConfigurationRuleFilterAnd
-	SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilterAnd)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	ObjectSizeGreaterThan() *float64
 	SetObjectSizeGreaterThan(val *float64)
 	ObjectSizeGreaterThanInput() *float64
@@ -135,8 +135,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference) InternalValue() *S3BucketLifecycleConfigurationRuleFilterAnd {
-	var returns *S3BucketLifecycleConfigurationRuleFilterAnd
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -246,29 +246,29 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference) T
 }
 
 
-func NewS3BucketLifecycleConfigurationRuleFilterAndOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterAndOutputReference {
+func NewS3BucketLifecycleConfigurationRuleFilterAndOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleFilterAndOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewS3BucketLifecycleConfigurationRuleFilterAndOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewS3BucketLifecycleConfigurationRuleFilterAndOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAndOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewS3BucketLifecycleConfigurationRuleFilterAndOutputReference_Override(s S3BucketLifecycleConfigurationRuleFilterAndOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketLifecycleConfigurationRuleFilterAndOutputReference_Override(s S3BucketLifecycleConfigurationRuleFilterAndOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAndOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -295,7 +295,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilterAnd) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterAndOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

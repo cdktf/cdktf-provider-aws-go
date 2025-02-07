@@ -5,9 +5,9 @@ package kendrafaq
 
 
 type KendraFaqTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/kendra_faq#create KendraFaq#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/kendra_faq#create KendraFaq#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.85.0/docs/resources/kendra_faq#delete KendraFaq#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/kendra_faq#delete KendraFaq#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

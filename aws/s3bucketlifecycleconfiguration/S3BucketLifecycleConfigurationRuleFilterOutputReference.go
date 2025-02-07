@@ -13,8 +13,8 @@ import (
 
 type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	cdktf.ComplexObject
-	And() S3BucketLifecycleConfigurationRuleFilterAndOutputReference
-	AndInput() *S3BucketLifecycleConfigurationRuleFilterAnd
+	And() S3BucketLifecycleConfigurationRuleFilterAndList
+	AndInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,19 +32,19 @@ type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *S3BucketLifecycleConfigurationRuleFilter
-	SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilter)
-	ObjectSizeGreaterThan() *string
-	SetObjectSizeGreaterThan(val *string)
-	ObjectSizeGreaterThanInput() *string
-	ObjectSizeLessThan() *string
-	SetObjectSizeLessThan(val *string)
-	ObjectSizeLessThanInput() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	ObjectSizeGreaterThan() *float64
+	SetObjectSizeGreaterThan(val *float64)
+	ObjectSizeGreaterThanInput() *float64
+	ObjectSizeLessThan() *float64
+	SetObjectSizeLessThan(val *float64)
+	ObjectSizeLessThanInput() *float64
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
-	Tag() S3BucketLifecycleConfigurationRuleFilterTagOutputReference
-	TagInput() *S3BucketLifecycleConfigurationRuleFilterTag
+	Tag() S3BucketLifecycleConfigurationRuleFilterTagList
+	TagInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,8 +77,8 @@ type S3BucketLifecycleConfigurationRuleFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAnd(value *S3BucketLifecycleConfigurationRuleFilterAnd)
-	PutTag(value *S3BucketLifecycleConfigurationRuleFilterTag)
+	PutAnd(value interface{})
+	PutTag(value interface{})
 	ResetAnd()
 	ResetObjectSizeGreaterThan()
 	ResetObjectSizeLessThan()
@@ -99,8 +99,8 @@ type jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) And() S3BucketLifecycleConfigurationRuleFilterAndOutputReference {
-	var returns S3BucketLifecycleConfigurationRuleFilterAndOutputReference
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) And() S3BucketLifecycleConfigurationRuleFilterAndList {
+	var returns S3BucketLifecycleConfigurationRuleFilterAndList
 	_jsii_.Get(
 		j,
 		"and",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) And(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) AndInput() *S3BucketLifecycleConfigurationRuleFilterAnd {
-	var returns *S3BucketLifecycleConfigurationRuleFilterAnd
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) AndInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"andInput",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) InternalValue() *S3BucketLifecycleConfigurationRuleFilter {
-	var returns *S3BucketLifecycleConfigurationRuleFilter
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeGreaterThan() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeGreaterThan() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"objectSizeGreaterThan",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Obje
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeGreaterThanInput() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeGreaterThanInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"objectSizeGreaterThanInput",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Obje
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeLessThan() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeLessThan() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"objectSizeLessThan",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Obje
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeLessThanInput() *string {
-	var returns *string
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) ObjectSizeLessThanInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"objectSizeLessThanInput",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Pref
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Tag() S3BucketLifecycleConfigurationRuleFilterTagOutputReference {
-	var returns S3BucketLifecycleConfigurationRuleFilterTagOutputReference
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Tag() S3BucketLifecycleConfigurationRuleFilterTagList {
+	var returns S3BucketLifecycleConfigurationRuleFilterTagList
 	_jsii_.Get(
 		j,
 		"tag",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Tag(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) TagInput() *S3BucketLifecycleConfigurationRuleFilterTag {
-	var returns *S3BucketLifecycleConfigurationRuleFilterTag
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) TagInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tagInput",
@@ -270,29 +270,29 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Terr
 }
 
 
-func NewS3BucketLifecycleConfigurationRuleFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) S3BucketLifecycleConfigurationRuleFilterOutputReference {
+func NewS3BucketLifecycleConfigurationRuleFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketLifecycleConfigurationRuleFilterOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewS3BucketLifecycleConfigurationRuleFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewS3BucketLifecycleConfigurationRuleFilterOutputReference_Override(s S3BucketLifecycleConfigurationRuleFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewS3BucketLifecycleConfigurationRuleFilterOutputReference_Override(s S3BucketLifecycleConfigurationRuleFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -319,7 +319,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetInternalValue(val *S3BucketLifecycleConfigurationRuleFilter) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,7 +330,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeGreaterThan(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeGreaterThan(val *float64) {
 	if err := j.validateSetObjectSizeGreaterThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,7 +341,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetOb
 	)
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeLessThan(val *string) {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference)SetObjectSizeLessThan(val *float64) {
 	if err := j.validateSetObjectSizeLessThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +571,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) Inte
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutAnd(value *S3BucketLifecycleConfigurationRuleFilterAnd) {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutAnd(value interface{}) {
 	if err := s.validatePutAndParameters(value); err != nil {
 		panic(err)
 	}
@@ -582,7 +582,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutA
 	)
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutTag(value *S3BucketLifecycleConfigurationRuleFilterTag) {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) PutTag(value interface{}) {
 	if err := s.validatePutTagParameters(value); err != nil {
 		panic(err)
 	}
