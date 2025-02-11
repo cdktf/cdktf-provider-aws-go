@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/location_geofence_collection aws_location_geofence_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/location_geofence_collection aws_location_geofence_collection}.
 type LocationGeofenceCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -486,7 +486,7 @@ func (j *jsiiProxy_LocationGeofenceCollection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection(scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) LocationGeofenceCollection {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewLocationGeofenceCollection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection_Override(l LocationGeofenceCollection, scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) {
 	_init_.Initialize()
 

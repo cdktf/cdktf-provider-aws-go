@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}.
 type RolesanywhereProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_RolesanywhereProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
 func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *RolesanywhereProfileConfig) RolesanywhereProfile {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *Rol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
 func NewRolesanywhereProfile_Override(r RolesanywhereProfile, scope constructs.Construct, id *string, config *RolesanywhereProfileConfig) {
 	_init_.Initialize()
 
