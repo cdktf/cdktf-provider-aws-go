@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/keyspaces_table aws_keyspaces_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/keyspaces_table aws_keyspaces_table}.
 type KeyspacesTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -630,7 +630,7 @@ func (j *jsiiProxy_KeyspacesTable) TtlInput() *KeyspacesTableTtl {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable(scope constructs.Construct, id *string, config *KeyspacesTableConfig) KeyspacesTable {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewKeyspacesTable(scope constructs.Construct, id *string, config *Keyspaces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable_Override(k KeyspacesTable, scope constructs.Construct, id *string, config *KeyspacesTableConfig) {
 	_init_.Initialize()
 

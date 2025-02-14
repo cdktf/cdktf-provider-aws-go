@@ -5,7 +5,7 @@ package mskreplicator
 
 
 type MskReplicatorReplicationInfoListTopicReplicationTopicNameConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/msk_replicator#type MskReplicator#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/msk_replicator#type MskReplicator#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

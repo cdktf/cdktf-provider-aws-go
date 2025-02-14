@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
 type RekognitionStreamProcessor interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -167,6 +168,16 @@ type RekognitionStreamProcessor interface {
 // The jsii proxy struct for RekognitionStreamProcessor
 type jsiiProxy_RekognitionStreamProcessor struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RekognitionStreamProcessor) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RekognitionStreamProcessor) CdktfStack() cdktf.TerraformStack {
@@ -570,7 +581,7 @@ func (j *jsiiProxy_RekognitionStreamProcessor) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
 func NewRekognitionStreamProcessor(scope constructs.Construct, id *string, config *RekognitionStreamProcessorConfig) RekognitionStreamProcessor {
 	_init_.Initialize()
 
@@ -588,7 +599,7 @@ func NewRekognitionStreamProcessor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
 func NewRekognitionStreamProcessor_Override(r RekognitionStreamProcessor, scope constructs.Construct, id *string, config *RekognitionStreamProcessorConfig) {
 	_init_.Initialize()
 

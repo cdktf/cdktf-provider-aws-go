@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table aws_dynamodb_table}.
 type DataAwsDynamodbTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,7 @@ type DataAwsDynamodbTable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnDemandThroughput() DataAwsDynamodbTableOnDemandThroughputList
 	PointInTimeRecovery() DataAwsDynamodbTablePointInTimeRecoveryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -333,6 +334,16 @@ func (j *jsiiProxy_DataAwsDynamodbTable) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTable) OnDemandThroughput() DataAwsDynamodbTableOnDemandThroughputList {
+	var returns DataAwsDynamodbTableOnDemandThroughputList
+	_jsii_.Get(
+		j,
+		"onDemandThroughput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTable) PointInTimeRecovery() DataAwsDynamodbTablePointInTimeRecoveryList {
 	var returns DataAwsDynamodbTablePointInTimeRecoveryList
 	_jsii_.Get(
@@ -534,7 +545,7 @@ func (j *jsiiProxy_DataAwsDynamodbTable) WriteCapacity() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
 func NewDataAwsDynamodbTable(scope constructs.Construct, id *string, config *DataAwsDynamodbTableConfig) DataAwsDynamodbTable {
 	_init_.Initialize()
 
@@ -552,7 +563,7 @@ func NewDataAwsDynamodbTable(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
 func NewDataAwsDynamodbTable_Override(d DataAwsDynamodbTable, scope constructs.Construct, id *string, config *DataAwsDynamodbTableConfig) {
 	_init_.Initialize()
 

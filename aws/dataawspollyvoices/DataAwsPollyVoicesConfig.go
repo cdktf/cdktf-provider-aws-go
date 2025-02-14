@@ -22,15 +22,15 @@ type DataAwsPollyVoicesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/polly_voices#engine DataAwsPollyVoices#engine}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/polly_voices#engine DataAwsPollyVoices#engine}.
 	Engine *string `field:"optional" json:"engine" yaml:"engine"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/polly_voices#include_additional_language_codes DataAwsPollyVoices#include_additional_language_codes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/polly_voices#include_additional_language_codes DataAwsPollyVoices#include_additional_language_codes}.
 	IncludeAdditionalLanguageCodes interface{} `field:"optional" json:"includeAdditionalLanguageCodes" yaml:"includeAdditionalLanguageCodes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/polly_voices#language_code DataAwsPollyVoices#language_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/polly_voices#language_code DataAwsPollyVoices#language_code}.
 	LanguageCode *string `field:"optional" json:"languageCode" yaml:"languageCode"`
 	// voices block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/data-sources/polly_voices#voices DataAwsPollyVoices#voices}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/polly_voices#voices DataAwsPollyVoices#voices}
 	Voices interface{} `field:"optional" json:"voices" yaml:"voices"`
 }
 

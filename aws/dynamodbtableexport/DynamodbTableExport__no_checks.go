@@ -75,6 +75,10 @@ func (d *jsiiProxy_DynamodbTableExport) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTableExport) validatePutIncrementalExportSpecificationParameters(value *DynamodbTableExportIncrementalExportSpecification) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableExport) validatePutTimeoutsParameters(value *DynamodbTableExportTimeouts) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DynamodbTableExport) validateSetExportFormatParameters(val *s
 }
 
 func (j *jsiiProxy_DynamodbTableExport) validateSetExportTimeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DynamodbTableExport) validateSetExportTypeParameters(val *string) error {
 	return nil
 }
 

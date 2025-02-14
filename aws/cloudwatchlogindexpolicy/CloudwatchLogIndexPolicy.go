@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy}.
 type CloudwatchLogIndexPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_CloudwatchLogIndexPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy} Resource.
 func NewCloudwatchLogIndexPolicy(scope constructs.Construct, id *string, config *CloudwatchLogIndexPolicyConfig) CloudwatchLogIndexPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewCloudwatchLogIndexPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudwatch_log_index_policy aws_cloudwatch_log_index_policy} Resource.
 func NewCloudwatchLogIndexPolicy_Override(c CloudwatchLogIndexPolicy, scope constructs.Construct, id *string, config *CloudwatchLogIndexPolicyConfig) {
 	_init_.Initialize()
 

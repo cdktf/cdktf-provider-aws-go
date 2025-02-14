@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key}.
 type ApiGatewayUsagePlanKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlanKey) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key} Resource.
 func NewApiGatewayUsagePlanKey(scope constructs.Construct, id *string, config *ApiGatewayUsagePlanKeyConfig) ApiGatewayUsagePlanKey {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewApiGatewayUsagePlanKey(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/api_gateway_usage_plan_key aws_api_gateway_usage_plan_key} Resource.
 func NewApiGatewayUsagePlanKey_Override(a ApiGatewayUsagePlanKey, scope constructs.Construct, id *string, config *ApiGatewayUsagePlanKeyConfig) {
 	_init_.Initialize()
 

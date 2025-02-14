@@ -5,7 +5,7 @@ package medialivechannel
 
 
 type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}.
 	SourceAncillaryChannelNumber *float64 `field:"optional" json:"sourceAncillaryChannelNumber" yaml:"sourceAncillaryChannelNumber"`
 }
 

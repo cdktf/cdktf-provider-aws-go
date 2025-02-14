@@ -22,17 +22,17 @@ type RekognitionProjectConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_project#name RekognitionProject#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_project#name RekognitionProject#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_project#auto_update RekognitionProject#auto_update}.
 	AutoUpdate *string `field:"optional" json:"autoUpdate" yaml:"autoUpdate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_project#feature RekognitionProject#feature}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_project#feature RekognitionProject#feature}.
 	Feature *string `field:"optional" json:"feature" yaml:"feature"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_project#tags RekognitionProject#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_project#tags RekognitionProject#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rekognition_project#timeouts RekognitionProject#timeouts}
 	Timeouts *RekognitionProjectTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

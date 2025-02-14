@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription}.
 type VpclatticeAccessLogSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type VpclatticeAccessLogSubscription interface {
 	ResourceIdentifier() *string
 	SetResourceIdentifier(val *string)
 	ResourceIdentifierInput() *string
+	ServiceNetworkLogType() *string
+	SetServiceNetworkLogType(val *string)
+	ServiceNetworkLogTypeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -125,6 +128,7 @@ type VpclatticeAccessLogSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceNetworkLogType()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -355,6 +359,26 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription) ResourceIdentifierInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeAccessLogSubscription) ServiceNetworkLogType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceNetworkLogType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeAccessLogSubscription) ServiceNetworkLogTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceNetworkLogTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeAccessLogSubscription) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription} Resource.
 func NewVpclatticeAccessLogSubscription(scope constructs.Construct, id *string, config *VpclatticeAccessLogSubscriptionConfig) VpclatticeAccessLogSubscription {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewVpclatticeAccessLogSubscription(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/vpclattice_access_log_subscription aws_vpclattice_access_log_subscription} Resource.
 func NewVpclatticeAccessLogSubscription_Override(v VpclatticeAccessLogSubscription, scope constructs.Construct, id *string, config *VpclatticeAccessLogSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -552,6 +576,17 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription)SetResourceIdentifier(val *st
 	_jsii_.Set(
 		j,
 		"resourceIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeAccessLogSubscription)SetServiceNetworkLogType(val *string) {
+	if err := j.validateSetServiceNetworkLogTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceNetworkLogType",
 		val,
 	)
 }
@@ -943,6 +978,14 @@ func (v *jsiiProxy_VpclatticeAccessLogSubscription) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) ResetServiceNetworkLogType() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServiceNetworkLogType",
 		nil, // no parameters
 	)
 }

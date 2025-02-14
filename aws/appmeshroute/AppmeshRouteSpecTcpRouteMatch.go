@@ -5,7 +5,7 @@ package appmeshroute
 
 
 type AppmeshRouteSpecTcpRouteMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/appmesh_route#port AppmeshRoute#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/appmesh_route#port AppmeshRoute#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
 

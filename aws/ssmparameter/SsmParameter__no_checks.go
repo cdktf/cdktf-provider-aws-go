@@ -163,6 +163,14 @@ func (j *jsiiProxy_SsmParameter) validateSetValueParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SsmParameter) validateSetValueWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SsmParameter) validateSetValueWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewSsmParameterParameters(scope constructs.Construct, id *string, config *SsmParameterConfig) error {
 	return nil
 }

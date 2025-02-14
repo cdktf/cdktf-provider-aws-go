@@ -275,6 +275,14 @@ func (j *jsiiProxy_RdsCluster) validateSetMasterPasswordParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetMasterPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetMasterPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetMasterUsernameParameters(val *string) error {
 	return nil
 }

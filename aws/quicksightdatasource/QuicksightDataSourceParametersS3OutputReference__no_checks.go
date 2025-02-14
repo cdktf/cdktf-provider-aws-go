@@ -67,6 +67,10 @@ func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateSetRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

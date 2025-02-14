@@ -22,11 +22,11 @@ type ApprunnerDeploymentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
 	ServiceArn *string `field:"required" json:"serviceArn" yaml:"serviceArn"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
 	Timeouts *ApprunnerDeploymentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

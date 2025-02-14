@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
 type DynamodbTableExport interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -41,6 +41,9 @@ type DynamodbTableExport interface {
 	ExportTime() *string
 	SetExportTime(val *string)
 	ExportTimeInput() *string
+	ExportType() *string
+	SetExportType(val *string)
+	ExportTypeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,6 +55,8 @@ type DynamodbTableExport interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncrementalExportSpecification() DynamodbTableExportIncrementalExportSpecificationOutputReference
+	IncrementalExportSpecificationInput() *DynamodbTableExportIncrementalExportSpecification
 	ItemCount() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -140,10 +145,13 @@ type DynamodbTableExport interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIncrementalExportSpecification(value *DynamodbTableExportIncrementalExportSpecification)
 	PutTimeouts(value *DynamodbTableExportTimeouts)
 	ResetExportFormat()
 	ResetExportTime()
+	ResetExportType()
 	ResetId()
+	ResetIncrementalExportSpecification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -300,6 +308,26 @@ func (j *jsiiProxy_DynamodbTableExport) ExportTimeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTableExport) ExportType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableExport) ExportTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTableExport) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -345,6 +373,26 @@ func (j *jsiiProxy_DynamodbTableExport) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableExport) IncrementalExportSpecification() DynamodbTableExportIncrementalExportSpecificationOutputReference {
+	var returns DynamodbTableExportIncrementalExportSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"incrementalExportSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableExport) IncrementalExportSpecificationInput() *DynamodbTableExportIncrementalExportSpecification {
+	var returns *DynamodbTableExportIncrementalExportSpecification
+	_jsii_.Get(
+		j,
+		"incrementalExportSpecificationInput",
 		&returns,
 	)
 	return returns
@@ -601,7 +649,7 @@ func (j *jsiiProxy_DynamodbTableExport) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
 func NewDynamodbTableExport(scope constructs.Construct, id *string, config *DynamodbTableExportConfig) DynamodbTableExport {
 	_init_.Initialize()
 
@@ -619,7 +667,7 @@ func NewDynamodbTableExport(scope constructs.Construct, id *string, config *Dyna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
 func NewDynamodbTableExport_Override(d DynamodbTableExport, scope constructs.Construct, id *string, config *DynamodbTableExportConfig) {
 	_init_.Initialize()
 
@@ -678,6 +726,17 @@ func (j *jsiiProxy_DynamodbTableExport)SetExportTime(val *string) {
 	_jsii_.Set(
 		j,
 		"exportTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableExport)SetExportType(val *string) {
+	if err := j.validateSetExportTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportType",
 		val,
 	)
 }
@@ -1150,6 +1209,17 @@ func (d *jsiiProxy_DynamodbTableExport) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DynamodbTableExport) PutIncrementalExportSpecification(value *DynamodbTableExportIncrementalExportSpecification) {
+	if err := d.validatePutIncrementalExportSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIncrementalExportSpecification",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTableExport) PutTimeouts(value *DynamodbTableExportTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1177,10 +1247,26 @@ func (d *jsiiProxy_DynamodbTableExport) ResetExportTime() {
 	)
 }
 
+func (d *jsiiProxy_DynamodbTableExport) ResetExportType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExportType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DynamodbTableExport) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableExport) ResetIncrementalExportSpecification() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncrementalExportSpecification",
 		nil, // no parameters
 	)
 }

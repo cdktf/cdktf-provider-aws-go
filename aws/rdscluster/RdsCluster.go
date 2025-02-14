@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -163,6 +163,12 @@ type RdsCluster interface {
 	MasterPassword() *string
 	SetMasterPassword(val *string)
 	MasterPasswordInput() *string
+	MasterPasswordWo() *string
+	SetMasterPasswordWo(val *string)
+	MasterPasswordWoInput() *string
+	MasterPasswordWoVersion() *float64
+	SetMasterPasswordWoVersion(val *float64)
+	MasterPasswordWoVersionInput() *float64
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
@@ -338,6 +344,8 @@ type RdsCluster interface {
 	ResetKmsKeyId()
 	ResetManageMasterUserPassword()
 	ResetMasterPassword()
+	ResetMasterPasswordWo()
+	ResetMasterPasswordWoVersion()
 	ResetMasterUsername()
 	ResetMasterUserSecretKmsKeyId()
 	ResetMonitoringInterval()
@@ -1294,6 +1302,46 @@ func (j *jsiiProxy_RdsCluster) MasterPasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) MasterPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) MasterUsername() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1885,7 +1933,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1903,7 +1951,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -2377,6 +2425,28 @@ func (j *jsiiProxy_RdsCluster)SetMasterPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"masterPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetMasterPasswordWo(val *string) {
+	if err := j.validateSetMasterPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetMasterPasswordWoVersion(val *float64) {
+	if err := j.validateSetMasterPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWoVersion",
 		val,
 	)
 }
@@ -3320,6 +3390,22 @@ func (r *jsiiProxy_RdsCluster) ResetMasterPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetMasterPasswordWo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetMasterPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPasswordWoVersion",
 		nil, // no parameters
 	)
 }

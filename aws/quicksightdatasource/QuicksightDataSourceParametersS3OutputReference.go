@@ -34,6 +34,9 @@ type QuicksightDataSourceParametersS3OutputReference interface {
 	SetInternalValue(val *QuicksightDataSourceParametersS3)
 	ManifestFileLocation() QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
 	ManifestFileLocationInput() *QuicksightDataSourceParametersS3ManifestFileLocation
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type QuicksightDataSourceParametersS3OutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutManifestFileLocation(value *QuicksightDataSourceParametersS3ManifestFileLocation)
+	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -152,6 +156,26 @@ func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) ManifestFile
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -229,6 +253,17 @@ func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightDataSourceParametersS3OutputReference)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
 		val,
 	)
 }
@@ -449,6 +484,14 @@ func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) PutManifestF
 		q,
 		"putManifestFileLocation",
 		[]interface{}{value},
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRoleArn",
+		nil, // no parameters
 	)
 }
 

@@ -119,6 +119,10 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetResourceIdentifie
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetServiceNetworkLogTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

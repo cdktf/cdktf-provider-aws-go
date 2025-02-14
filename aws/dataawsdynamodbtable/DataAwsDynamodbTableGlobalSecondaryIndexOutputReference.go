@@ -35,6 +35,7 @@ type DataAwsDynamodbTableGlobalSecondaryIndexOutputReference interface {
 	SetInternalValue(val *DataAwsDynamodbTableGlobalSecondaryIndex)
 	Name() *string
 	NonKeyAttributes() *[]*string
+	OnDemandThroughput() DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList
 	ProjectionType() *string
 	RangeKey() *string
 	ReadCapacity() *float64
@@ -161,6 +162,16 @@ func (j *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) NonK
 	_jsii_.Get(
 		j,
 		"nonKeyAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) OnDemandThroughput() DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList {
+	var returns DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList
+	_jsii_.Get(
+		j,
+		"onDemandThroughput",
 		&returns,
 	)
 	return returns

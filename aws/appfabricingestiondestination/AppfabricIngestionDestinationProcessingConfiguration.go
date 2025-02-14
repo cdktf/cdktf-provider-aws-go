@@ -7,7 +7,7 @@ package appfabricingestiondestination
 type AppfabricIngestionDestinationProcessingConfiguration struct {
 	// audit_log block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
 	AuditLog interface{} `field:"optional" json:"auditLog" yaml:"auditLog"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter aws_ssm_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter aws_ssm_parameter}.
 type SsmParameter interface {
 	cdktf.TerraformResource
 	AllowedPattern() *string
@@ -51,6 +51,7 @@ type SsmParameter interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasValueWo() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -103,6 +104,12 @@ type SsmParameter interface {
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
+	ValueWo() *string
+	SetValueWo(val *string)
+	ValueWoInput() *string
+	ValueWoVersion() *float64
+	SetValueWoVersion(val *float64)
+	ValueWoVersionInput() *float64
 	Version() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -162,6 +169,8 @@ type SsmParameter interface {
 	ResetTagsAll()
 	ResetTier()
 	ResetValue()
+	ResetValueWo()
+	ResetValueWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -335,6 +344,16 @@ func (j *jsiiProxy_SsmParameter) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmParameter) HasValueWo() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasValueWo",
 		&returns,
 	)
 	return returns
@@ -620,6 +639,46 @@ func (j *jsiiProxy_SsmParameter) ValueInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SsmParameter) ValueWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmParameter) ValueWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmParameter) ValueWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"valueWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmParameter) ValueWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"valueWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmParameter) Version() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -631,7 +690,7 @@ func (j *jsiiProxy_SsmParameter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
 func NewSsmParameter(scope constructs.Construct, id *string, config *SsmParameterConfig) SsmParameter {
 	_init_.Initialize()
 
@@ -649,7 +708,7 @@ func NewSsmParameter(scope constructs.Construct, id *string, config *SsmParamete
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.86.1/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
 func NewSsmParameter_Override(s SsmParameter, scope constructs.Construct, id *string, config *SsmParameterConfig) {
 	_init_.Initialize()
 
@@ -878,6 +937,28 @@ func (j *jsiiProxy_SsmParameter)SetValue(val *string) {
 	_jsii_.Set(
 		j,
 		"value",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmParameter)SetValueWo(val *string) {
+	if err := j.validateSetValueWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmParameter)SetValueWoVersion(val *float64) {
+	if err := j.validateSetValueWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valueWoVersion",
 		val,
 	)
 }
@@ -1335,6 +1416,22 @@ func (s *jsiiProxy_SsmParameter) ResetValue() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetValue",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmParameter) ResetValueWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValueWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmParameter) ResetValueWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValueWoVersion",
 		nil, // no parameters
 	)
 }

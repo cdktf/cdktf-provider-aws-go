@@ -515,6 +515,22 @@ func (j *jsiiProxy_SsmParameter) validateSetValueParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SsmParameter) validateSetValueWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SsmParameter) validateSetValueWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSsmParameterParameters(scope constructs.Construct, id *string, config *SsmParameterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
