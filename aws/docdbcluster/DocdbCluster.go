@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -101,6 +101,12 @@ type DocdbCluster interface {
 	MasterPassword() *string
 	SetMasterPassword(val *string)
 	MasterPasswordInput() *string
+	MasterPasswordWo() *string
+	SetMasterPasswordWo(val *string)
+	MasterPasswordWoInput() *string
+	MasterPasswordWoVersion() *float64
+	SetMasterPasswordWoVersion(val *float64)
+	MasterPasswordWoVersionInput() *float64
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
@@ -220,6 +226,8 @@ type DocdbCluster interface {
 	ResetId()
 	ResetKmsKeyId()
 	ResetMasterPassword()
+	ResetMasterPasswordWo()
+	ResetMasterPasswordWoVersion()
 	ResetMasterUsername()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -744,6 +752,46 @@ func (j *jsiiProxy_DocdbCluster) MasterPasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) MasterPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) MasterPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) MasterPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) MasterPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) MasterUsername() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1085,7 +1133,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1103,7 +1151,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1357,6 +1405,28 @@ func (j *jsiiProxy_DocdbCluster)SetMasterPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"masterPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetMasterPasswordWo(val *string) {
+	if err := j.validateSetMasterPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetMasterPasswordWoVersion(val *float64) {
+	if err := j.validateSetMasterPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWoVersion",
 		val,
 	)
 }
@@ -2016,6 +2086,22 @@ func (d *jsiiProxy_DocdbCluster) ResetMasterPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMasterPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetMasterPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMasterPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetMasterPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMasterPasswordWoVersion",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	return nil
 }
 
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) validateSetVideoDataDeliveryEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -183,6 +183,14 @@ func (j *jsiiProxy_DocdbCluster) validateSetMasterPasswordParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetMasterPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DocdbCluster) validateSetMasterPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetMasterUsernameParameters(val *string) error {
 	return nil
 }

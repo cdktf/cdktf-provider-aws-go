@@ -193,7 +193,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCloudwatchConfig", GoMethod: "PutCloudwatchConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3Config", GoMethod: "PutS3Config"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchConfig", GoMethod: "ResetCloudwatchConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmbeddingDataDeliveryEnabled", GoMethod: "ResetEmbeddingDataDeliveryEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetImageDataDeliveryEnabled", GoMethod: "ResetImageDataDeliveryEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3Config", GoMethod: "ResetS3Config"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTextDataDeliveryEnabled", GoMethod: "ResetTextDataDeliveryEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVideoDataDeliveryEnabled", GoMethod: "ResetVideoDataDeliveryEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "s3Config", GoGetter: "S3Config"},
 			_jsii_.MemberProperty{JsiiProperty: "s3ConfigInput", GoGetter: "S3ConfigInput"},
@@ -202,6 +206,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textDataDeliveryEnabled", GoGetter: "TextDataDeliveryEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "textDataDeliveryEnabledInput", GoGetter: "TextDataDeliveryEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "videoDataDeliveryEnabled", GoGetter: "VideoDataDeliveryEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "videoDataDeliveryEnabledInput", GoGetter: "VideoDataDeliveryEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference{}

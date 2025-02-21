@@ -423,6 +423,22 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetSecretStringParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetSecretStringWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetSecretStringWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetVersionStagesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/route53_health_check aws_route53_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53_health_check aws_route53_health_check}.
 type Route53HealthCheck interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -872,7 +872,7 @@ func (j *jsiiProxy_Route53HealthCheck) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
 func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route53HealthCheckConfig) Route53HealthCheck {
 	_init_.Initialize()
 
@@ -890,7 +890,7 @@ func NewRoute53HealthCheck(scope constructs.Construct, id *string, config *Route
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53_health_check aws_route53_health_check} Resource.
 func NewRoute53HealthCheck_Override(r Route53HealthCheck, scope constructs.Construct, id *string, config *Route53HealthCheckConfig) {
 	_init_.Initialize()
 

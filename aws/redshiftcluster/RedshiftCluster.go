@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -134,6 +134,12 @@ type RedshiftCluster interface {
 	MasterPasswordSecretKmsKeyId() *string
 	SetMasterPasswordSecretKmsKeyId(val *string)
 	MasterPasswordSecretKmsKeyIdInput() *string
+	MasterPasswordWo() *string
+	SetMasterPasswordWo(val *string)
+	MasterPasswordWoInput() *string
+	MasterPasswordWoVersion() *float64
+	SetMasterPasswordWoVersion(val *float64)
+	MasterPasswordWoVersionInput() *float64
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
@@ -275,6 +281,8 @@ type RedshiftCluster interface {
 	ResetManualSnapshotRetentionPeriod()
 	ResetMasterPassword()
 	ResetMasterPasswordSecretKmsKeyId()
+	ResetMasterPasswordWo()
+	ResetMasterPasswordWoVersion()
 	ResetMasterUsername()
 	ResetMultiAz()
 	ResetNumberOfNodes()
@@ -1032,6 +1040,46 @@ func (j *jsiiProxy_RedshiftCluster) MasterPasswordSecretKmsKeyIdInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"masterPasswordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) MasterUsername() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1443,7 +1491,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1461,7 +1509,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -1825,6 +1873,28 @@ func (j *jsiiProxy_RedshiftCluster)SetMasterPasswordSecretKmsKeyId(val *string) 
 	_jsii_.Set(
 		j,
 		"masterPasswordSecretKmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMasterPasswordWo(val *string) {
+	if err := j.validateSetMasterPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMasterPasswordWoVersion(val *float64) {
+	if err := j.validateSetMasterPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordWoVersion",
 		val,
 	)
 }
@@ -2619,6 +2689,22 @@ func (r *jsiiProxy_RedshiftCluster) ResetMasterPasswordSecretKmsKeyId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterPasswordSecretKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMasterPasswordWo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMasterPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPasswordWoVersion",
 		nil, // no parameters
 	)
 }

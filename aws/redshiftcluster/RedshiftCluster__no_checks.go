@@ -227,6 +227,14 @@ func (j *jsiiProxy_RedshiftCluster) validateSetMasterPasswordSecretKmsKeyIdParam
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftCluster) validateSetMasterPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftCluster) validateSetMasterPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftCluster) validateSetMasterUsernameParameters(val *string) error {
 	return nil
 }

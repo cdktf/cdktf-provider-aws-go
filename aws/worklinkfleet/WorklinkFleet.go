@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/worklink_fleet aws_worklink_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/worklink_fleet aws_worklink_fleet}.
 type WorklinkFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_WorklinkFleet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
 func NewWorklinkFleet(scope constructs.Construct, id *string, config *WorklinkFleetConfig) WorklinkFleet {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewWorklinkFleet(scope constructs.Construct, id *string, config *WorklinkFl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
 func NewWorklinkFleet_Override(w WorklinkFleet, scope constructs.Construct, id *string, config *WorklinkFleetConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
 type CodecatalystDevEnvironment interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CodecatalystDevEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource.
 func NewCodecatalystDevEnvironment(scope constructs.Construct, id *string, config *CodecatalystDevEnvironmentConfig) CodecatalystDevEnvironment {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCodecatalystDevEnvironment(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource.
 func NewCodecatalystDevEnvironment_Override(c CodecatalystDevEnvironment, scope constructs.Construct, id *string, config *CodecatalystDevEnvironmentConfig) {
 	_init_.Initialize()
 

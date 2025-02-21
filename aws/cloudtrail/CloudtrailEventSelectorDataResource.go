@@ -5,9 +5,9 @@ package cloudtrail
 
 
 type CloudtrailEventSelectorDataResource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudtrail#type Cloudtrail#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudtrail#type Cloudtrail#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/cloudtrail#values Cloudtrail#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/cloudtrail#values Cloudtrail#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

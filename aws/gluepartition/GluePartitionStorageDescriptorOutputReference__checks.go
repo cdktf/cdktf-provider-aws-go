@@ -185,6 +185,14 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetAdditionalLocationsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetBucketColumnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

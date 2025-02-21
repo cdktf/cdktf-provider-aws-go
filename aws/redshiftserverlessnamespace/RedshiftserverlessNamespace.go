@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
 type RedshiftserverlessNamespace interface {
 	cdktf.TerraformResource
 	AdminPasswordSecretArn() *string
@@ -25,6 +25,12 @@ type RedshiftserverlessNamespace interface {
 	AdminUserPassword() *string
 	SetAdminUserPassword(val *string)
 	AdminUserPasswordInput() *string
+	AdminUserPasswordWo() *string
+	SetAdminUserPasswordWo(val *string)
+	AdminUserPasswordWoInput() *string
+	AdminUserPasswordWoVersion() *float64
+	SetAdminUserPasswordWoVersion(val *float64)
+	AdminUserPasswordWoVersionInput() *float64
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -149,6 +155,8 @@ type RedshiftserverlessNamespace interface {
 	ResetAdminPasswordSecretKmsKeyId()
 	ResetAdminUsername()
 	ResetAdminUserPassword()
+	ResetAdminUserPasswordWo()
+	ResetAdminUserPasswordWoVersion()
 	ResetDbName()
 	ResetDefaultIamRoleArn()
 	ResetIamRoles()
@@ -244,6 +252,46 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUserPasswordInput() *string
 	_jsii_.Get(
 		j,
 		"adminUserPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUserPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminUserPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUserPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminUserPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUserPasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"adminUserPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUserPasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"adminUserPasswordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -630,7 +678,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
 func NewRedshiftserverlessNamespace(scope constructs.Construct, id *string, config *RedshiftserverlessNamespaceConfig) RedshiftserverlessNamespace {
 	_init_.Initialize()
 
@@ -648,7 +696,7 @@ func NewRedshiftserverlessNamespace(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
 func NewRedshiftserverlessNamespace_Override(r RedshiftserverlessNamespace, scope constructs.Construct, id *string, config *RedshiftserverlessNamespaceConfig) {
 	_init_.Initialize()
 
@@ -688,6 +736,28 @@ func (j *jsiiProxy_RedshiftserverlessNamespace)SetAdminUserPassword(val *string)
 	_jsii_.Set(
 		j,
 		"adminUserPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace)SetAdminUserPasswordWo(val *string) {
+	if err := j.validateSetAdminUserPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminUserPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace)SetAdminUserPasswordWoVersion(val *float64) {
+	if err := j.validateSetAdminUserPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminUserPasswordWoVersion",
 		val,
 	)
 }
@@ -1243,6 +1313,22 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) ResetAdminUserPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAdminUserPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessNamespace) ResetAdminUserPasswordWo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdminUserPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessNamespace) ResetAdminUserPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdminUserPasswordWoVersion",
 		nil, // no parameters
 	)
 }

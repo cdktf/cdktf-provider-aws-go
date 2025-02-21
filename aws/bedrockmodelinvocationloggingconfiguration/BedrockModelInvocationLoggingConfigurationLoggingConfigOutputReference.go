@@ -53,6 +53,9 @@ type BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference inte
 	TextDataDeliveryEnabled() interface{}
 	SetTextDataDeliveryEnabled(val interface{})
 	TextDataDeliveryEnabledInput() interface{}
+	VideoDataDeliveryEnabled() interface{}
+	SetVideoDataDeliveryEnabled(val interface{})
+	VideoDataDeliveryEnabledInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -80,7 +83,11 @@ type BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference inte
 	PutCloudwatchConfig(value *BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig)
 	PutS3Config(value *BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config)
 	ResetCloudwatchConfig()
+	ResetEmbeddingDataDeliveryEnabled()
+	ResetImageDataDeliveryEnabled()
 	ResetS3Config()
+	ResetTextDataDeliveryEnabled()
+	ResetVideoDataDeliveryEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -266,6 +273,26 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	return returns
 }
 
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) VideoDataDeliveryEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"videoDataDeliveryEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) VideoDataDeliveryEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"videoDataDeliveryEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewBedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference {
 	_init_.Initialize()
@@ -378,6 +405,17 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	_jsii_.Set(
 		j,
 		"textDataDeliveryEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference)SetVideoDataDeliveryEnabled(val interface{}) {
+	if err := j.validateSetVideoDataDeliveryEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"videoDataDeliveryEnabled",
 		val,
 	)
 }
@@ -598,10 +636,42 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	)
 }
 
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) ResetEmbeddingDataDeliveryEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEmbeddingDataDeliveryEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) ResetImageDataDeliveryEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetImageDataDeliveryEnabled",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) ResetS3Config() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetS3Config",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) ResetTextDataDeliveryEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTextDataDeliveryEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) ResetVideoDataDeliveryEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetVideoDataDeliveryEnabled",
 		nil, // no parameters
 	)
 }

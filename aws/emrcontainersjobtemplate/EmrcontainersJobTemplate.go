@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template}.
 type EmrcontainersJobTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_EmrcontainersJobTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template} Resource.
 func NewEmrcontainersJobTemplate(scope constructs.Construct, id *string, config *EmrcontainersJobTemplateConfig) EmrcontainersJobTemplate {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewEmrcontainersJobTemplate(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/emrcontainers_job_template aws_emrcontainers_job_template} Resource.
 func NewEmrcontainersJobTemplate_Override(e EmrcontainersJobTemplate, scope constructs.Construct, id *string, config *EmrcontainersJobTemplateConfig) {
 	_init_.Initialize()
 

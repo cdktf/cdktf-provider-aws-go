@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -202,6 +202,12 @@ type DbInstance interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	PerformanceInsightsEnabled() interface{}
 	SetPerformanceInsightsEnabled(val interface{})
 	PerformanceInsightsEnabledInput() interface{}
@@ -380,6 +386,8 @@ type DbInstance interface {
 	ResetOverrideLogicalId()
 	ResetParameterGroupName()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetPerformanceInsightsEnabled()
 	ResetPerformanceInsightsKmsKeyId()
 	ResetPerformanceInsightsRetentionPeriod()
@@ -1599,6 +1607,46 @@ func (j *jsiiProxy_DbInstance) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstance) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstance) PerformanceInsightsEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2110,7 +2158,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2128,7 +2176,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2723,6 +2771,28 @@ func (j *jsiiProxy_DbInstance)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -3737,6 +3807,22 @@ func (d *jsiiProxy_DbInstance) ResetPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

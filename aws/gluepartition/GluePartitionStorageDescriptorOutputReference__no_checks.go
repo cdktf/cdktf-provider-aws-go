@@ -67,6 +67,10 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateResolv
 	return nil
 }
 
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetAdditionalLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateSetBucketColumnsParameters(val *[]*string) error {
 	return nil
 }

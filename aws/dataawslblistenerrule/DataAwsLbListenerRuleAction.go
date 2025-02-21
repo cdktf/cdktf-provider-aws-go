@@ -7,7 +7,7 @@ package dataawslblistenerrule
 type DataAwsLbListenerRuleAction struct {
 	// forward block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#forward DataAwsLbListenerRule#forward}
 	Forward *DataAwsLbListenerRuleActionForward `field:"optional" json:"forward" yaml:"forward"`
 }
 

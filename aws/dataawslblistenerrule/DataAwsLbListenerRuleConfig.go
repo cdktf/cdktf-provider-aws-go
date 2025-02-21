@@ -24,17 +24,17 @@ type DataAwsLbListenerRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#action DataAwsLbListenerRule#action}
 	Action interface{} `field:"optional" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#arn DataAwsLbListenerRule#arn}.
 	Arn *string `field:"optional" json:"arn" yaml:"arn"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#condition DataAwsLbListenerRule#condition}
 	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#listener_arn DataAwsLbListenerRule#listener_arn}.
 	ListenerArn *string `field:"optional" json:"listenerArn" yaml:"listenerArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/lb_listener_rule#priority DataAwsLbListenerRule#priority}.
 	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 }
 

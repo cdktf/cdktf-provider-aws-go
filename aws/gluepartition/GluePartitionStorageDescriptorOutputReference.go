@@ -13,6 +13,9 @@ import (
 
 type GluePartitionStorageDescriptorOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalLocations() *[]*string
+	SetAdditionalLocations(val *[]*string)
+	AdditionalLocationsInput() *[]*string
 	BucketColumns() *[]*string
 	SetBucketColumns(val *[]*string)
 	BucketColumnsInput() *[]*string
@@ -100,6 +103,7 @@ type GluePartitionStorageDescriptorOutputReference interface {
 	PutSerDeInfo(value *GluePartitionStorageDescriptorSerDeInfo)
 	PutSkewedInfo(value *GluePartitionStorageDescriptorSkewedInfo)
 	PutSortColumns(value interface{})
+	ResetAdditionalLocations()
 	ResetBucketColumns()
 	ResetColumns()
 	ResetCompressed()
@@ -125,6 +129,26 @@ type GluePartitionStorageDescriptorOutputReference interface {
 // The jsii proxy struct for GluePartitionStorageDescriptorOutputReference
 type jsiiProxy_GluePartitionStorageDescriptorOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) AdditionalLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) AdditionalLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalLocationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference) BucketColumns() *[]*string {
@@ -462,6 +486,17 @@ func NewGluePartitionStorageDescriptorOutputReference_Override(g GluePartitionSt
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GluePartitionStorageDescriptorOutputReference)SetAdditionalLocations(val *[]*string) {
+	if err := j.validateSetAdditionalLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalLocations",
+		val,
 	)
 }
 
@@ -835,6 +870,14 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) PutSortColumns
 		g,
 		"putSortColumns",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) ResetAdditionalLocations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalLocations",
+		nil, // no parameters
 	)
 }
 

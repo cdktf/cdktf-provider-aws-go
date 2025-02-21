@@ -315,6 +315,14 @@ func (j *jsiiProxy_DbInstance) validateSetPasswordParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DbInstance) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetPerformanceInsightsEnabledParameters(val interface{}) error {
 	return nil
 }

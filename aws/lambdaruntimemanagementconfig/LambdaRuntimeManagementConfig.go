@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config}.
 type LambdaRuntimeManagementConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig) UpdateRuntimeOnInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
 func NewLambdaRuntimeManagementConfig(scope constructs.Construct, id *string, config *LambdaRuntimeManagementConfigConfig) LambdaRuntimeManagementConfig {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewLambdaRuntimeManagementConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
 func NewLambdaRuntimeManagementConfig_Override(l LambdaRuntimeManagementConfig, scope constructs.Construct, id *string, config *LambdaRuntimeManagementConfigConfig) {
 	_init_.Initialize()
 

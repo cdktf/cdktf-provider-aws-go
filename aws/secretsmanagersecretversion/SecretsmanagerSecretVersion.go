@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
 type SecretsmanagerSecretVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -40,6 +40,7 @@ type SecretsmanagerSecretVersion interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasSecretStringWo() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -68,6 +69,12 @@ type SecretsmanagerSecretVersion interface {
 	SecretString() *string
 	SetSecretString(val *string)
 	SecretStringInput() *string
+	SecretStringWo() *string
+	SetSecretStringWo(val *string)
+	SecretStringWoInput() *string
+	SecretStringWoVersion() *float64
+	SetSecretStringWoVersion(val *float64)
+	SecretStringWoVersionInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +134,8 @@ type SecretsmanagerSecretVersion interface {
 	ResetOverrideLogicalId()
 	ResetSecretBinary()
 	ResetSecretString()
+	ResetSecretStringWo()
+	ResetSecretStringWoVersion()
 	ResetVersionStages()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -231,6 +240,16 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion) HasSecretStringWo() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasSecretStringWo",
 		&returns,
 	)
 	return returns
@@ -366,6 +385,46 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) SecretStringInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretVersion) SecretStringWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretStringWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion) SecretStringWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretStringWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion) SecretStringWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretStringWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion) SecretStringWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secretStringWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretVersion) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -427,7 +486,7 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) VersionStagesInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
 func NewSecretsmanagerSecretVersion(scope constructs.Construct, id *string, config *SecretsmanagerSecretVersionConfig) SecretsmanagerSecretVersion {
 	_init_.Initialize()
 
@@ -445,7 +504,7 @@ func NewSecretsmanagerSecretVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.87.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
 func NewSecretsmanagerSecretVersion_Override(s SecretsmanagerSecretVersion, scope constructs.Construct, id *string, config *SecretsmanagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -564,6 +623,28 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion)SetSecretString(val *string) {
 	_jsii_.Set(
 		j,
 		"secretString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion)SetSecretStringWo(val *string) {
+	if err := j.validateSetSecretStringWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretStringWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretVersion)SetSecretStringWoVersion(val *float64) {
+	if err := j.validateSetSecretStringWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretStringWoVersion",
 		val,
 	)
 }
@@ -960,6 +1041,22 @@ func (s *jsiiProxy_SecretsmanagerSecretVersion) ResetSecretString() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecretString",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretVersion) ResetSecretStringWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretStringWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretVersion) ResetSecretStringWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretStringWoVersion",
 		nil, // no parameters
 	)
 }

@@ -162,6 +162,8 @@ func init() {
 		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference",
 		reflect.TypeOf((*GluePartitionStorageDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalLocations", GoGetter: "AdditionalLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalLocationsInput", GoGetter: "AdditionalLocationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumns", GoGetter: "BucketColumns"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketColumnsInput", GoGetter: "BucketColumnsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -199,6 +201,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSerDeInfo", GoMethod: "PutSerDeInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putSkewedInfo", GoMethod: "PutSkewedInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putSortColumns", GoMethod: "PutSortColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalLocations", GoMethod: "ResetAdditionalLocations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBucketColumns", GoMethod: "ResetBucketColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColumns", GoMethod: "ResetColumns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompressed", GoMethod: "ResetCompressed"},

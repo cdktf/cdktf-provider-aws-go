@@ -103,6 +103,14 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUserPasswordPara
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUserPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUserPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
