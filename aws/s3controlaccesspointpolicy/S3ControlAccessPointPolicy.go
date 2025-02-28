@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy}.
 type S3ControlAccessPointPolicy interface {
 	cdktf.TerraformResource
 	AccessPointArn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_S3ControlAccessPointPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy} Resource.
 func NewS3ControlAccessPointPolicy(scope constructs.Construct, id *string, config *S3ControlAccessPointPolicyConfig) S3ControlAccessPointPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewS3ControlAccessPointPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/s3control_access_point_policy aws_s3control_access_point_policy} Resource.
 func NewS3ControlAccessPointPolicy_Override(s S3ControlAccessPointPolicy, scope constructs.Construct, id *string, config *S3ControlAccessPointPolicyConfig) {
 	_init_.Initialize()
 

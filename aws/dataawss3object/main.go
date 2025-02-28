@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumCrc32", GoGetter: "ChecksumCrc32"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumCrc32C", GoGetter: "ChecksumCrc32C"},
+			_jsii_.MemberProperty{JsiiProperty: "checksumCrc64Nvme", GoGetter: "ChecksumCrc64Nvme"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumMode", GoGetter: "ChecksumMode"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumModeInput", GoGetter: "ChecksumModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumSha1", GoGetter: "ChecksumSha1"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/rds_cluster aws_rds_cluster}.
 type DataAwsRdsCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -26,12 +26,14 @@ type DataAwsRdsCluster interface {
 	ClusterIdentifierInput() *string
 	ClusterMembers() *[]*string
 	ClusterResourceId() *string
+	ClusterScalabilityType() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DatabaseInsightsMode() *string
 	DatabaseName() *string
 	DbClusterParameterGroupName() *string
 	DbSubnetGroupName() *string
@@ -233,6 +235,16 @@ func (j *jsiiProxy_DataAwsRdsCluster) ClusterResourceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsCluster) ClusterScalabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterScalabilityType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsCluster) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -248,6 +260,16 @@ func (j *jsiiProxy_DataAwsRdsCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCluster) DatabaseInsightsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInsightsMode",
 		&returns,
 	)
 	return returns
@@ -664,7 +686,7 @@ func (j *jsiiProxy_DataAwsRdsCluster) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
 func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAwsRdsClusterConfig) DataAwsRdsCluster {
 	_init_.Initialize()
 
@@ -682,7 +704,7 @@ func NewDataAwsRdsCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/rds_cluster aws_rds_cluster} Data Source.
 func NewDataAwsRdsCluster_Override(d DataAwsRdsCluster, scope constructs.Construct, id *string, config *DataAwsRdsClusterConfig) {
 	_init_.Initialize()
 

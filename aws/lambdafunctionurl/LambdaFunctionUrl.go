@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_function_url aws_lambda_function_url}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/lambda_function_url aws_lambda_function_url}.
 type LambdaFunctionUrl interface {
 	cdktf.TerraformResource
 	AuthorizationType() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_LambdaFunctionUrl) UrlId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
 func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) LambdaFunctionUrl {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *Lambda
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
 func NewLambdaFunctionUrl_Override(l LambdaFunctionUrl, scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) {
 	_init_.Initialize()
 

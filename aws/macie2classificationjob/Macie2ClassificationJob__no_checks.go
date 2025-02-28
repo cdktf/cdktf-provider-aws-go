@@ -83,6 +83,10 @@ func (m *jsiiProxy_Macie2ClassificationJob) validatePutScheduleFrequencyParamete
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationJob) validatePutTimeoutsParameters(value *Macie2ClassificationJobTimeouts) error {
+	return nil
+}
+
 func validateMacie2ClassificationJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

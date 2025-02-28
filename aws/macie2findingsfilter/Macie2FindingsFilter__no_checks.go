@@ -79,6 +79,10 @@ func (m *jsiiProxy_Macie2FindingsFilter) validatePutFindingCriteriaParameters(va
 	return nil
 }
 
+func (m *jsiiProxy_Macie2FindingsFilter) validatePutTimeoutsParameters(value *Macie2FindingsFilterTimeouts) error {
+	return nil
+}
+
 func validateMacie2FindingsFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

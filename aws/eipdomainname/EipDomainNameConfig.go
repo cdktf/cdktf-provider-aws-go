@@ -22,13 +22,13 @@ type EipDomainNameConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
 	AllocationId *string `field:"required" json:"allocationId" yaml:"allocationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
 	Timeouts *EipDomainNameTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

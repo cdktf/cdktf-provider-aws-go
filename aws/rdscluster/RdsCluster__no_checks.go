@@ -151,6 +151,10 @@ func (j *jsiiProxy_RdsCluster) validateSetClusterMembersParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetClusterScalabilityTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -160,6 +164,10 @@ func (j *jsiiProxy_RdsCluster) validateSetCopyTagsToSnapshotParameters(val inter
 }
 
 func (j *jsiiProxy_RdsCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetDatabaseInsightsModeParameters(val *string) error {
 	return nil
 }
 

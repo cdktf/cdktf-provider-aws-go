@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/datazone_domain aws_datazone_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/datazone_domain aws_datazone_domain}.
 type DatazoneDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_DatazoneDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneDomainConfig) DatazoneDomain {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain_Override(d DatazoneDomain, scope constructs.Construct, id *string, config *DatazoneDomainConfig) {
 	_init_.Initialize()
 

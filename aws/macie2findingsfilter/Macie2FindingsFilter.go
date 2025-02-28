@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
 type Macie2FindingsFilter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -88,6 +88,8 @@ type Macie2FindingsFilter interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Macie2FindingsFilterTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,6 +134,7 @@ type Macie2FindingsFilter interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFindingCriteria(value *Macie2FindingsFilterFindingCriteria)
+	PutTimeouts(value *Macie2FindingsFilterTimeouts)
 	ResetDescription()
 	ResetId()
 	ResetName()
@@ -142,6 +145,7 @@ type Macie2FindingsFilter interface {
 	ResetPosition()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -510,8 +514,28 @@ func (j *jsiiProxy_Macie2FindingsFilter) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2FindingsFilter) Timeouts() Macie2FindingsFilterTimeoutsOutputReference {
+	var returns Macie2FindingsFilterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+func (j *jsiiProxy_Macie2FindingsFilter) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) Macie2FindingsFilter {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Mac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter_Override(m Macie2FindingsFilter, scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1084,17 @@ func (m *jsiiProxy_Macie2FindingsFilter) PutFindingCriteria(value *Macie2Finding
 	)
 }
 
+func (m *jsiiProxy_Macie2FindingsFilter) PutTimeouts(value *Macie2FindingsFilterTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_Macie2FindingsFilter) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1120,6 +1155,14 @@ func (m *jsiiProxy_Macie2FindingsFilter) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

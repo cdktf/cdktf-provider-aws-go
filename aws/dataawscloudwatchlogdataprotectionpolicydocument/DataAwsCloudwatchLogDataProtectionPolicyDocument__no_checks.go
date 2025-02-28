@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) validateOve
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) validatePutConfigurationParameters(value *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) validatePutStatementParameters(value interface{}) error {
 	return nil
 }

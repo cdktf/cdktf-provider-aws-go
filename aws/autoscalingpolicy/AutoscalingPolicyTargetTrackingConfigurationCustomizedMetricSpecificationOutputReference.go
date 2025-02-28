@@ -42,6 +42,9 @@ type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOu
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
+	Period() *float64
+	SetPeriod(val *float64)
+	PeriodInput() *float64
 	Statistic() *string
 	SetStatistic(val *string)
 	StatisticInput() *string
@@ -86,6 +89,7 @@ type AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOu
 	ResetMetricName()
 	ResetMetrics()
 	ResetNamespace()
+	ResetPeriod()
 	ResetStatistic()
 	ResetUnit()
 	// Produce the Token's value at resolution time.
@@ -233,6 +237,26 @@ func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) Period() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) PeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) Statistic() *string {
 	var returns *string
 	_jsii_.Get(
@@ -372,6 +396,17 @@ func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	_jsii_.InvokeVoid(
 		a,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPeriod",
 		nil, // no parameters
 	)
 }

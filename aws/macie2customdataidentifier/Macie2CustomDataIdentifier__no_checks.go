@@ -75,6 +75,10 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (m *jsiiProxy_Macie2CustomDataIdentifier) validatePutTimeoutsParameters(value *Macie2CustomDataIdentifierTimeouts) error {
+	return nil
+}
+
 func validateMacie2CustomDataIdentifier_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

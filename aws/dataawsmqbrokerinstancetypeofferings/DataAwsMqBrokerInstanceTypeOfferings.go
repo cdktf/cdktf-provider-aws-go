@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings}.
 type DataAwsMqBrokerInstanceTypeOfferings interface {
 	cdktf.TerraformDataSource
 	BrokerInstanceOptions() DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
 func NewDataAwsMqBrokerInstanceTypeOfferings(scope constructs.Construct, id *string, config *DataAwsMqBrokerInstanceTypeOfferingsConfig) DataAwsMqBrokerInstanceTypeOfferings {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
 func NewDataAwsMqBrokerInstanceTypeOfferings_Override(d DataAwsMqBrokerInstanceTypeOfferings, scope constructs.Construct, id *string, config *DataAwsMqBrokerInstanceTypeOfferingsConfig) {
 	_init_.Initialize()
 

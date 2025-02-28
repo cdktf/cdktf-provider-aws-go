@@ -5,7 +5,7 @@ package s3tablestable
 
 
 type S3TablesTableMaintenanceConfigurationIcebergCompactionSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/s3tables_table#target_file_size_mb S3TablesTable#target_file_size_mb}.
 	TargetFileSizeMb *float64 `field:"optional" json:"targetFileSizeMb" yaml:"targetFileSizeMb"`
 }
 

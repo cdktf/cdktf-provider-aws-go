@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document}.
 type DataAwsCloudwatchLogDataProtectionPolicyDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Configuration() DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference
+	ConfigurationInput() *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -93,7 +95,9 @@ type DataAwsCloudwatchLogDataProtectionPolicyDocument interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConfiguration(value *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration)
 	PutStatement(value interface{})
+	ResetConfiguration()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -124,6 +128,26 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) CdktfStack(
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) Configuration() DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference {
+	var returns DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ConfigurationInput() *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration {
+	var returns *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -370,7 +394,7 @@ func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) VersionInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document} Data Source.
 func NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope constructs.Construct, id *string, config *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig) DataAwsCloudwatchLogDataProtectionPolicyDocument {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudwatch_log_data_protection_policy_document aws_cloudwatch_log_data_protection_policy_document} Data Source.
 func NewDataAwsCloudwatchLogDataProtectionPolicyDocument_Override(d DataAwsCloudwatchLogDataProtectionPolicyDocument, scope constructs.Construct, id *string, config *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) OverrideLog
 	)
 }
 
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) PutConfiguration(value *DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration) {
+	if err := d.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) PutStatement(value interface{}) {
 	if err := d.validatePutStatementParameters(value); err != nil {
 		panic(err)
@@ -782,6 +817,14 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) PutStatemen
 		d,
 		"putStatement",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConfiguration",
+		nil, // no parameters
 	)
 }
 

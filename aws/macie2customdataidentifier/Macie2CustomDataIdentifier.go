@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
 type Macie2CustomDataIdentifier interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -93,6 +93,8 @@ type Macie2CustomDataIdentifier interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Macie2CustomDataIdentifierTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -136,6 +138,7 @@ type Macie2CustomDataIdentifier interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Macie2CustomDataIdentifierTimeouts)
 	ResetDescription()
 	ResetId()
 	ResetIgnoreWords()
@@ -149,6 +152,7 @@ type Macie2CustomDataIdentifier interface {
 	ResetRegex()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -547,8 +551,28 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2CustomDataIdentifier) Timeouts() Macie2CustomDataIdentifierTimeoutsOutputReference {
+	var returns Macie2CustomDataIdentifierTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+func (j *jsiiProxy_Macie2CustomDataIdentifier) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) Macie2CustomDataIdentifier {
 	_init_.Initialize()
 
@@ -566,7 +590,7 @@ func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier_Override(m Macie2CustomDataIdentifier, scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1132,17 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (m *jsiiProxy_Macie2CustomDataIdentifier) PutTimeouts(value *Macie2CustomDataIdentifierTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1192,6 +1227,14 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

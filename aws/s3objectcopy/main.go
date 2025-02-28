@@ -30,6 +30,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "checksumAlgorithmInput", GoGetter: "ChecksumAlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumCrc32", GoGetter: "ChecksumCrc32"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumCrc32C", GoGetter: "ChecksumCrc32C"},
+			_jsii_.MemberProperty{JsiiProperty: "checksumCrc64Nvme", GoGetter: "ChecksumCrc64Nvme"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumSha1", GoGetter: "ChecksumSha1"},
 			_jsii_.MemberProperty{JsiiProperty: "checksumSha256", GoGetter: "ChecksumSha256"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},

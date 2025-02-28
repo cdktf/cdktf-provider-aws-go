@@ -406,6 +406,14 @@ func (j *jsiiProxy_RdsCluster) validateSetClusterMembersParameters(val *[]*strin
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetClusterScalabilityTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -511,6 +519,14 @@ func (j *jsiiProxy_RdsCluster) validateSetCountParameters(val interface{}) error
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetDatabaseInsightsModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

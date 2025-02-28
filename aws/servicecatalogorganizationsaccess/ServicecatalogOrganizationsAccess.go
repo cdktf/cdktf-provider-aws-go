@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
 type ServicecatalogOrganizationsAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
 func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string, config *ServicecatalogOrganizationsAccessConfig) ServicecatalogOrganizationsAccess {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
 func NewServicecatalogOrganizationsAccess_Override(s ServicecatalogOrganizationsAccess, scope constructs.Construct, id *string, config *ServicecatalogOrganizationsAccessConfig) {
 	_init_.Initialize()
 

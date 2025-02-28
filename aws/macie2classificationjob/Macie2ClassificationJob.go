@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_classification_job aws_macie2_classification_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_classification_job aws_macie2_classification_job}.
 type Macie2ClassificationJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,6 +101,8 @@ type Macie2ClassificationJob interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Macie2ClassificationJobTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserPausedDetails() Macie2ClassificationJobUserPausedDetailsList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -147,6 +149,7 @@ type Macie2ClassificationJob interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutS3JobDefinition(value *Macie2ClassificationJobS3JobDefinition)
 	PutScheduleFrequency(value *Macie2ClassificationJobScheduleFrequency)
+	PutTimeouts(value *Macie2ClassificationJobTimeouts)
 	ResetCustomDataIdentifierIds()
 	ResetDescription()
 	ResetId()
@@ -161,6 +164,7 @@ type Macie2ClassificationJob interface {
 	ResetScheduleFrequency()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -629,6 +633,26 @@ func (j *jsiiProxy_Macie2ClassificationJob) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2ClassificationJob) Timeouts() Macie2ClassificationJobTimeoutsOutputReference {
+	var returns Macie2ClassificationJobTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2ClassificationJob) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Macie2ClassificationJob) UserPausedDetails() Macie2ClassificationJobUserPausedDetailsList {
 	var returns Macie2ClassificationJobUserPausedDetailsList
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_Macie2ClassificationJob) UserPausedDetails() Macie2Classifica
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) Macie2ClassificationJob {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob_Override(m Macie2ClassificationJob, scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) {
 	_init_.Initialize()
 
@@ -1233,6 +1257,17 @@ func (m *jsiiProxy_Macie2ClassificationJob) PutScheduleFrequency(value *Macie2Cl
 	)
 }
 
+func (m *jsiiProxy_Macie2ClassificationJob) PutTimeouts(value *Macie2ClassificationJobTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_Macie2ClassificationJob) ResetCustomDataIdentifierIds() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1325,6 +1360,14 @@ func (m *jsiiProxy_Macie2ClassificationJob) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

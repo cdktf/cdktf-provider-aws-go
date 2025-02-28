@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -50,6 +50,9 @@ type RdsCluster interface {
 	SetClusterMembers(val *[]*string)
 	ClusterMembersInput() *[]*string
 	ClusterResourceId() *string
+	ClusterScalabilityType() *string
+	SetClusterScalabilityType(val *string)
+	ClusterScalabilityTypeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -63,6 +66,9 @@ type RdsCluster interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DatabaseInsightsMode() *string
+	SetDatabaseInsightsMode(val *string)
+	DatabaseInsightsModeInput() *string
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -317,7 +323,9 @@ type RdsCluster interface {
 	ResetClusterIdentifier()
 	ResetClusterIdentifierPrefix()
 	ResetClusterMembers()
+	ResetClusterScalabilityType()
 	ResetCopyTagsToSnapshot()
+	ResetDatabaseInsightsMode()
 	ResetDatabaseName()
 	ResetDbClusterInstanceClass()
 	ResetDbClusterParameterGroupName()
@@ -632,6 +640,26 @@ func (j *jsiiProxy_RdsCluster) ClusterResourceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) ClusterScalabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterScalabilityType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) ClusterScalabilityTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterScalabilityTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -677,6 +705,26 @@ func (j *jsiiProxy_RdsCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DatabaseInsightsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInsightsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DatabaseInsightsModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInsightsModeInput",
 		&returns,
 	)
 	return returns
@@ -1933,7 +1981,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1951,7 +1999,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -2072,6 +2120,17 @@ func (j *jsiiProxy_RdsCluster)SetClusterMembers(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_RdsCluster)SetClusterScalabilityType(val *string) {
+	if err := j.validateSetClusterScalabilityTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterScalabilityType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RdsCluster)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -2101,6 +2160,17 @@ func (j *jsiiProxy_RdsCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetDatabaseInsightsMode(val *string) {
+	if err := j.validateSetDatabaseInsightsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseInsightsMode",
 		val,
 	)
 }
@@ -3178,10 +3248,26 @@ func (r *jsiiProxy_RdsCluster) ResetClusterMembers() {
 	)
 }
 
+func (r *jsiiProxy_RdsCluster) ResetClusterScalabilityType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterScalabilityType",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RdsCluster) ResetCopyTagsToSnapshot() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCopyTagsToSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetDatabaseInsightsMode() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDatabaseInsightsMode",
 		nil, // no parameters
 	)
 }

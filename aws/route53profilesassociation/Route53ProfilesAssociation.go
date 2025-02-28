@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53profiles_association aws_route53profiles_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53profiles_association aws_route53profiles_association}.
 type Route53ProfilesAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -469,7 +469,7 @@ func (j *jsiiProxy_Route53ProfilesAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53profiles_association aws_route53profiles_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53profiles_association aws_route53profiles_association} Resource.
 func NewRoute53ProfilesAssociation(scope constructs.Construct, id *string, config *Route53ProfilesAssociationConfig) Route53ProfilesAssociation {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewRoute53ProfilesAssociation(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.88.0/docs/resources/route53profiles_association aws_route53profiles_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/route53profiles_association aws_route53profiles_association} Resource.
 func NewRoute53ProfilesAssociation_Override(r Route53ProfilesAssociation, scope constructs.Construct, id *string, config *Route53ProfilesAssociationConfig) {
 	_init_.Initialize()
 

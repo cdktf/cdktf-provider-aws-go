@@ -218,6 +218,17 @@ func (m *jsiiProxy_Macie2FindingsFilter) validatePutFindingCriteriaParameters(va
 	return nil
 }
 
+func (m *jsiiProxy_Macie2FindingsFilter) validatePutTimeoutsParameters(value *Macie2FindingsFilterTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateMacie2FindingsFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

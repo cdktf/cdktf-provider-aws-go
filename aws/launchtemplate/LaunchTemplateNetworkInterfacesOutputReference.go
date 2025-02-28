@@ -45,6 +45,8 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	DeviceIndex() *float64
 	SetDeviceIndex(val *float64)
 	DeviceIndexInput() *float64
+	EnaSrdSpecification() LaunchTemplateNetworkInterfacesEnaSrdSpecificationOutputReference
+	EnaSrdSpecificationInput() *LaunchTemplateNetworkInterfacesEnaSrdSpecification
 	// Experimental.
 	Fqn() *string
 	InterfaceType() *string
@@ -127,12 +129,14 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConnectionTrackingSpecification(value *LaunchTemplateNetworkInterfacesConnectionTrackingSpecification)
+	PutEnaSrdSpecification(value *LaunchTemplateNetworkInterfacesEnaSrdSpecification)
 	ResetAssociateCarrierIpAddress()
 	ResetAssociatePublicIpAddress()
 	ResetConnectionTrackingSpecification()
 	ResetDeleteOnTermination()
 	ResetDescription()
 	ResetDeviceIndex()
+	ResetEnaSrdSpecification()
 	ResetInterfaceType()
 	ResetIpv4AddressCount()
 	ResetIpv4Addresses()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) DeviceIndexIn
 	_jsii_.Get(
 		j,
 		"deviceIndexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) EnaSrdSpecification() LaunchTemplateNetworkInterfacesEnaSrdSpecificationOutputReference {
+	var returns LaunchTemplateNetworkInterfacesEnaSrdSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"enaSrdSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) EnaSrdSpecificationInput() *LaunchTemplateNetworkInterfacesEnaSrdSpecification {
+	var returns *LaunchTemplateNetworkInterfacesEnaSrdSpecification
+	_jsii_.Get(
+		j,
+		"enaSrdSpecificationInput",
 		&returns,
 	)
 	return returns
@@ -1153,6 +1177,17 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PutConnection
 	)
 }
 
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PutEnaSrdSpecification(value *LaunchTemplateNetworkInterfacesEnaSrdSpecification) {
+	if err := l.validatePutEnaSrdSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putEnaSrdSpecification",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetAssociateCarrierIpAddress() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1197,6 +1232,14 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetDeviceIn
 	_jsii_.InvokeVoid(
 		l,
 		"resetDeviceIndex",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetEnaSrdSpecification() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnaSrdSpecification",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validatePutCo
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validatePutEnaSrdSpecificationParameters(value *LaunchTemplateNetworkInterfacesEnaSrdSpecification) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
