@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type Ec2ClientVpnEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -46,6 +46,9 @@ type Ec2ClientVpnEndpoint interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisconnectOnSessionTimeout() interface{}
+	SetDisconnectOnSessionTimeout(val interface{})
+	DisconnectOnSessionTimeoutInput() interface{}
 	DnsName() *string
 	DnsServers() *[]*string
 	SetDnsServers(val *[]*string)
@@ -164,6 +167,7 @@ type Ec2ClientVpnEndpoint interface {
 	ResetClientConnectOptions()
 	ResetClientLoginBannerOptions()
 	ResetDescription()
+	ResetDisconnectOnSessionTimeout()
 	ResetDnsServers()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -371,6 +375,26 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) DisconnectOnSessionTimeout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectOnSessionTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) DisconnectOnSessionTimeoutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectOnSessionTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -747,7 +771,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) VpnPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -765,7 +789,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 
@@ -824,6 +848,17 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDisconnectOnSessionTimeout(val interface{}) {
+	if err := j.validateSetDisconnectOnSessionTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disconnectOnSessionTimeout",
 		val,
 	)
 }
@@ -1415,6 +1450,14 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetDescription() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetDisconnectOnSessionTimeout() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDisconnectOnSessionTimeout",
 		nil, // no parameters
 	)
 }

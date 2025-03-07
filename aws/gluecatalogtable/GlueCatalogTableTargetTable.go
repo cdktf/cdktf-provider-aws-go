@@ -5,13 +5,13 @@ package gluecatalogtable
 
 
 type GlueCatalogTableTargetTable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_table#catalog_id GlueCatalogTable#catalog_id}.
 	CatalogId *string `field:"required" json:"catalogId" yaml:"catalogId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_table#database_name GlueCatalogTable#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/glue_catalog_table#region GlueCatalogTable#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_table#region GlueCatalogTable#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -51,6 +51,10 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutCold
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutNodeOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutZoneAwarenessConfigParameters(value *OpensearchDomainClusterConfigZoneAwarenessConfig) error {
 	return nil
 }

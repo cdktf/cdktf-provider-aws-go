@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy}.
 type DataAwsCloudfrontOriginRequestPolicy interface {
 	cdktf.TerraformDataSource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -111,6 +112,16 @@ type DataAwsCloudfrontOriginRequestPolicy interface {
 // The jsii proxy struct for DataAwsCloudfrontOriginRequestPolicy
 type jsiiProxy_DataAwsCloudfrontOriginRequestPolicy struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) CdktfStack() cdktf.TerraformStack {
@@ -344,7 +355,7 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source.
 func NewDataAwsCloudfrontOriginRequestPolicy(scope constructs.Construct, id *string, config *DataAwsCloudfrontOriginRequestPolicyConfig) DataAwsCloudfrontOriginRequestPolicy {
 	_init_.Initialize()
 
@@ -362,7 +373,7 @@ func NewDataAwsCloudfrontOriginRequestPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/cloudfront_origin_request_policy aws_cloudfront_origin_request_policy} Data Source.
 func NewDataAwsCloudfrontOriginRequestPolicy_Override(d DataAwsCloudfrontOriginRequestPolicy, scope constructs.Construct, id *string, config *DataAwsCloudfrontOriginRequestPolicyConfig) {
 	_init_.Initialize()
 

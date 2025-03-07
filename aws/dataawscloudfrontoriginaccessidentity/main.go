@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataAwsCloudfrontOriginAccessIdentity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "callerReference", GoGetter: "CallerReference"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudfrontAccessIdentityPath", GoGetter: "CloudfrontAccessIdentityPath"},

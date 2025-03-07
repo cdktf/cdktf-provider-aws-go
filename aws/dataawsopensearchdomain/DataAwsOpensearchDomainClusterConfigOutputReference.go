@@ -39,6 +39,7 @@ type DataAwsOpensearchDomainClusterConfigOutputReference interface {
 	InternalValue() *DataAwsOpensearchDomainClusterConfig
 	SetInternalValue(val *DataAwsOpensearchDomainClusterConfig)
 	MultiAzWithStandbyEnabled() cdktf.IResolvable
+	NodeOptions() DataAwsOpensearchDomainClusterConfigNodeOptionsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -206,6 +207,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) MultiAzW
 	_jsii_.Get(
 		j,
 		"multiAzWithStandbyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) NodeOptions() DataAwsOpensearchDomainClusterConfigNodeOptionsList {
+	var returns DataAwsOpensearchDomainClusterConfigNodeOptionsList
+	_jsii_.Get(
+		j,
+		"nodeOptions",
 		&returns,
 	)
 	return returns

@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
 type PrometheusRuleGroupNamespace interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -64,6 +65,12 @@ type PrometheusRuleGroupNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +127,8 @@ type PrometheusRuleGroupNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -136,6 +145,16 @@ type PrometheusRuleGroupNamespace interface {
 // The jsii proxy struct for PrometheusRuleGroupNamespace
 type jsiiProxy_PrometheusRuleGroupNamespace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PrometheusRuleGroupNamespace) CdktfStack() cdktf.TerraformStack {
@@ -328,6 +347,46 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrometheusRuleGroupNamespace) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +438,7 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
 func NewPrometheusRuleGroupNamespace(scope constructs.Construct, id *string, config *PrometheusRuleGroupNamespaceConfig) PrometheusRuleGroupNamespace {
 	_init_.Initialize()
 
@@ -397,7 +456,7 @@ func NewPrometheusRuleGroupNamespace(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
 func NewPrometheusRuleGroupNamespace_Override(p PrometheusRuleGroupNamespace, scope constructs.Construct, id *string, config *PrometheusRuleGroupNamespaceConfig) {
 	_init_.Initialize()
 
@@ -505,6 +564,28 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -885,6 +966,22 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) ResetTags() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

@@ -5,7 +5,7 @@ package kinesisanalyticsapplication
 
 
 type KinesisAnalyticsApplicationInputsParallelism struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/kinesis_analytics_application#count KinesisAnalyticsApplication#count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/kinesis_analytics_application#count KinesisAnalyticsApplication#count}.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 }
 

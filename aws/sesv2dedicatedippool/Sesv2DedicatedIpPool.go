@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 type Sesv2DedicatedIpPool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) Sesv2DedicatedIpPool {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Ses
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool_Override(s Sesv2DedicatedIpPool, scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) {
 	_init_.Initialize()
 

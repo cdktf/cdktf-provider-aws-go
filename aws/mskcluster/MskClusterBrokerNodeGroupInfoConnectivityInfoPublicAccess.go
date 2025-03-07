@@ -5,7 +5,7 @@ package mskcluster
 
 
 type MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/msk_cluster#type MskCluster#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/msk_cluster#type MskCluster#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

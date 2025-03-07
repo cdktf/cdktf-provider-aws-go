@@ -52,6 +52,8 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	MultiAzWithStandbyEnabled() interface{}
 	SetMultiAzWithStandbyEnabled(val interface{})
 	MultiAzWithStandbyEnabledInput() interface{}
+	NodeOptions() OpensearchDomainClusterConfigNodeOptionsList
+	NodeOptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -99,6 +101,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColdStorageOptions(value *OpensearchDomainClusterConfigColdStorageOptions)
+	PutNodeOptions(value interface{})
 	PutZoneAwarenessConfig(value *OpensearchDomainClusterConfigZoneAwarenessConfig)
 	ResetColdStorageOptions()
 	ResetDedicatedMasterCount()
@@ -107,6 +110,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	ResetInstanceCount()
 	ResetInstanceType()
 	ResetMultiAzWithStandbyEnabled()
+	ResetNodeOptions()
 	ResetWarmCount()
 	ResetWarmEnabled()
 	ResetWarmType()
@@ -312,6 +316,26 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) MultiAzWithStan
 	_jsii_.Get(
 		j,
 		"multiAzWithStandbyEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) NodeOptions() OpensearchDomainClusterConfigNodeOptionsList {
+	var returns OpensearchDomainClusterConfigNodeOptionsList
+	_jsii_.Get(
+		j,
+		"nodeOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) NodeOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -827,6 +851,17 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) PutColdStorageO
 	)
 }
 
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) PutNodeOptions(value interface{}) {
+	if err := o.validatePutNodeOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNodeOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) PutZoneAwarenessConfig(value *OpensearchDomainClusterConfigZoneAwarenessConfig) {
 	if err := o.validatePutZoneAwarenessConfigParameters(value); err != nil {
 		panic(err)
@@ -890,6 +925,14 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetMultiAzWit
 	_jsii_.InvokeVoid(
 		o,
 		"resetMultiAzWithStandbyEnabled",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetNodeOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNodeOptions",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}.
 type RedshiftScheduledAction interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_RedshiftScheduledAction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource.
 func NewRedshiftScheduledAction(scope constructs.Construct, id *string, config *RedshiftScheduledActionConfig) RedshiftScheduledAction {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewRedshiftScheduledAction(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource.
 func NewRedshiftScheduledAction_Override(r RedshiftScheduledAction, scope constructs.Construct, id *string, config *RedshiftScheduledActionConfig) {
 	_init_.Initialize()
 

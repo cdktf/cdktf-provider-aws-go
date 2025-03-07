@@ -5,9 +5,9 @@ package bedrockagentagent
 
 
 type BedrockagentAgentGuardrailConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/bedrockagent_agent#guardrail_identifier BedrockagentAgent#guardrail_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/bedrockagent_agent#guardrail_identifier BedrockagentAgent#guardrail_identifier}.
 	GuardrailIdentifier *string `field:"optional" json:"guardrailIdentifier" yaml:"guardrailIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/bedrockagent_agent#guardrail_version BedrockagentAgent#guardrail_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/bedrockagent_agent#guardrail_version BedrockagentAgent#guardrail_version}.
 	GuardrailVersion *string `field:"optional" json:"guardrailVersion" yaml:"guardrailVersion"`
 }
 

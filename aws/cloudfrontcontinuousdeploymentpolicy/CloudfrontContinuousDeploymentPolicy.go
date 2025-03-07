@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy}.
 type CloudfrontContinuousDeploymentPolicy interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,6 +138,16 @@ type CloudfrontContinuousDeploymentPolicy interface {
 // The jsii proxy struct for CloudfrontContinuousDeploymentPolicy
 type jsiiProxy_CloudfrontContinuousDeploymentPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudfrontContinuousDeploymentPolicy) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudfrontContinuousDeploymentPolicy) CdktfStack() cdktf.TerraformStack {
@@ -390,7 +401,7 @@ func (j *jsiiProxy_CloudfrontContinuousDeploymentPolicy) TrafficConfigInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy} Resource.
 func NewCloudfrontContinuousDeploymentPolicy(scope constructs.Construct, id *string, config *CloudfrontContinuousDeploymentPolicyConfig) CloudfrontContinuousDeploymentPolicy {
 	_init_.Initialize()
 
@@ -408,7 +419,7 @@ func NewCloudfrontContinuousDeploymentPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_continuous_deployment_policy aws_cloudfront_continuous_deployment_policy} Resource.
 func NewCloudfrontContinuousDeploymentPolicy_Override(c CloudfrontContinuousDeploymentPolicy, scope constructs.Construct, id *string, config *CloudfrontContinuousDeploymentPolicyConfig) {
 	_init_.Initialize()
 

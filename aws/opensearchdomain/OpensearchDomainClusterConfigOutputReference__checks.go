@@ -104,6 +104,37 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutCold
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutNodeOptionsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OpensearchDomainClusterConfigNodeOptions:
+		value := value.(*[]*OpensearchDomainClusterConfigNodeOptions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OpensearchDomainClusterConfigNodeOptions:
+		value_ := value.([]*OpensearchDomainClusterConfigNodeOptions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OpensearchDomainClusterConfigNodeOptions; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutZoneAwarenessConfigParameters(value *OpensearchDomainClusterConfigZoneAwarenessConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

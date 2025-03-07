@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetDescriptionParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetDisconnectOnSessionTimeoutParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetDnsServersParameters(val *[]*string) error {
 	return nil
 }

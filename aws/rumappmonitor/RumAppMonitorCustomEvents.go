@@ -5,7 +5,7 @@ package rumappmonitor
 
 
 type RumAppMonitorCustomEvents struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

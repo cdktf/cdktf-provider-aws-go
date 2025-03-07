@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set}.
 type WafSqlInjectionMatchSet interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -134,6 +135,16 @@ type WafSqlInjectionMatchSet interface {
 // The jsii proxy struct for WafSqlInjectionMatchSet
 type jsiiProxy_WafSqlInjectionMatchSet struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WafSqlInjectionMatchSet) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WafSqlInjectionMatchSet) CdktfStack() cdktf.TerraformStack {
@@ -357,7 +368,7 @@ func (j *jsiiProxy_WafSqlInjectionMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
 func NewWafSqlInjectionMatchSet(scope constructs.Construct, id *string, config *WafSqlInjectionMatchSetConfig) WafSqlInjectionMatchSet {
 	_init_.Initialize()
 
@@ -375,7 +386,7 @@ func NewWafSqlInjectionMatchSet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
 func NewWafSqlInjectionMatchSet_Override(w WafSqlInjectionMatchSet, scope constructs.Construct, id *string, config *WafSqlInjectionMatchSetConfig) {
 	_init_.Initialize()
 

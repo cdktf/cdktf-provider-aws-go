@@ -119,6 +119,14 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }

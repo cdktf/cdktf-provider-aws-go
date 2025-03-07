@@ -22,16 +22,16 @@ type RamResourceShareAccepterConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ram_resource_share_accepter#share_arn RamResourceShareAccepter#share_arn}.
 	ShareArn *string `field:"required" json:"shareArn" yaml:"shareArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ram_resource_share_accepter#id RamResourceShareAccepter#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/ram_resource_share_accepter#timeouts RamResourceShareAccepter#timeouts}
 	Timeouts *RamResourceShareAccepterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

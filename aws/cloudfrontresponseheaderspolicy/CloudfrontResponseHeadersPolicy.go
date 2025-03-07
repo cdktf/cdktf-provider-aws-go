@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
 type CloudfrontResponseHeadersPolicy interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Comment() *string
@@ -158,6 +159,16 @@ type CloudfrontResponseHeadersPolicy interface {
 // The jsii proxy struct for CloudfrontResponseHeadersPolicy
 type jsiiProxy_CloudfrontResponseHeadersPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) CdktfStack() cdktf.TerraformStack {
@@ -501,7 +512,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) CloudfrontResponseHeadersPolicy {
 	_init_.Initialize()
 
@@ -519,7 +530,7 @@ func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.89.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy_Override(c CloudfrontResponseHeadersPolicy, scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) {
 	_init_.Initialize()
 
