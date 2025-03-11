@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias}.
 type PaymentcryptographyKeyAlias interface {
 	cdktf.TerraformResource
 	AliasName() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_PaymentcryptographyKeyAlias) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource.
 func NewPaymentcryptographyKeyAlias(scope constructs.Construct, id *string, config *PaymentcryptographyKeyAliasConfig) PaymentcryptographyKeyAlias {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewPaymentcryptographyKeyAlias(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/paymentcryptography_key_alias aws_paymentcryptography_key_alias} Resource.
 func NewPaymentcryptographyKeyAlias_Override(p PaymentcryptographyKeyAlias, scope constructs.Construct, id *string, config *PaymentcryptographyKeyAliasConfig) {
 	_init_.Initialize()
 

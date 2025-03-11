@@ -5,11 +5,11 @@ package gluecatalogdatabase
 
 
 type GlueCatalogDatabaseCreateTableDefaultPermission struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_database#permissions GlueCatalogDatabase#permissions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/glue_catalog_database#permissions GlueCatalogDatabase#permissions}.
 	Permissions *[]*string `field:"optional" json:"permissions" yaml:"permissions"`
 	// principal block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/glue_catalog_database#principal GlueCatalogDatabase#principal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/glue_catalog_database#principal GlueCatalogDatabase#principal}
 	Principal *GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal `field:"optional" json:"principal" yaml:"principal"`
 }
 

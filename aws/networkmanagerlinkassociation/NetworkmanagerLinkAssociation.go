@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmanager_link_association aws_networkmanager_link_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/networkmanager_link_association aws_networkmanager_link_association}.
 type NetworkmanagerLinkAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_NetworkmanagerLinkAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmanager_link_association aws_networkmanager_link_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/networkmanager_link_association aws_networkmanager_link_association} Resource.
 func NewNetworkmanagerLinkAssociation(scope constructs.Construct, id *string, config *NetworkmanagerLinkAssociationConfig) NetworkmanagerLinkAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewNetworkmanagerLinkAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/networkmanager_link_association aws_networkmanager_link_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/networkmanager_link_association aws_networkmanager_link_association} Resource.
 func NewNetworkmanagerLinkAssociation_Override(n NetworkmanagerLinkAssociation, scope constructs.Construct, id *string, config *NetworkmanagerLinkAssociationConfig) {
 	_init_.Initialize()
 

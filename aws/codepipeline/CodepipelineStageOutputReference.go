@@ -15,6 +15,8 @@ type CodepipelineStageOutputReference interface {
 	cdktf.ComplexObject
 	Action() CodepipelineStageActionList
 	ActionInput() interface{}
+	BeforeEntry() CodepipelineStageBeforeEntryOutputReference
+	BeforeEntryInput() *CodepipelineStageBeforeEntry
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +39,10 @@ type CodepipelineStageOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	OnFailure() CodepipelineStageOnFailureOutputReference
+	OnFailureInput() *CodepipelineStageOnFailure
+	OnSuccess() CodepipelineStageOnSuccessOutputReference
+	OnSuccessInput() *CodepipelineStageOnSuccess
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +76,12 @@ type CodepipelineStageOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value interface{})
+	PutBeforeEntry(value *CodepipelineStageBeforeEntry)
+	PutOnFailure(value *CodepipelineStageOnFailure)
+	PutOnSuccess(value *CodepipelineStageOnSuccess)
+	ResetBeforeEntry()
+	ResetOnFailure()
+	ResetOnSuccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,6 +112,26 @@ func (j *jsiiProxy_CodepipelineStageOutputReference) ActionInput() interface{} {
 	_jsii_.Get(
 		j,
 		"actionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) BeforeEntry() CodepipelineStageBeforeEntryOutputReference {
+	var returns CodepipelineStageBeforeEntryOutputReference
+	_jsii_.Get(
+		j,
+		"beforeEntry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) BeforeEntryInput() *CodepipelineStageBeforeEntry {
+	var returns *CodepipelineStageBeforeEntry
+	_jsii_.Get(
+		j,
+		"beforeEntryInput",
 		&returns,
 	)
 	return returns
@@ -170,6 +202,46 @@ func (j *jsiiProxy_CodepipelineStageOutputReference) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) OnFailure() CodepipelineStageOnFailureOutputReference {
+	var returns CodepipelineStageOnFailureOutputReference
+	_jsii_.Get(
+		j,
+		"onFailure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) OnFailureInput() *CodepipelineStageOnFailure {
+	var returns *CodepipelineStageOnFailure
+	_jsii_.Get(
+		j,
+		"onFailureInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) OnSuccess() CodepipelineStageOnSuccessOutputReference {
+	var returns CodepipelineStageOnSuccessOutputReference
+	_jsii_.Get(
+		j,
+		"onSuccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageOutputReference) OnSuccessInput() *CodepipelineStageOnSuccess {
+	var returns *CodepipelineStageOnSuccess
+	_jsii_.Get(
+		j,
+		"onSuccessInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +555,63 @@ func (c *jsiiProxy_CodepipelineStageOutputReference) PutAction(value interface{}
 		c,
 		"putAction",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) PutBeforeEntry(value *CodepipelineStageBeforeEntry) {
+	if err := c.validatePutBeforeEntryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBeforeEntry",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) PutOnFailure(value *CodepipelineStageOnFailure) {
+	if err := c.validatePutOnFailureParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOnFailure",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) PutOnSuccess(value *CodepipelineStageOnSuccess) {
+	if err := c.validatePutOnSuccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOnSuccess",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) ResetBeforeEntry() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBeforeEntry",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) ResetOnFailure() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOnFailure",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) ResetOnSuccess() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOnSuccess",
+		nil, // no parameters
 	)
 }
 

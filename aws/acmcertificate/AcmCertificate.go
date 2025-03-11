@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/acm_certificate aws_acm_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/acm_certificate aws_acm_certificate}.
 type AcmCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -732,7 +732,7 @@ func (j *jsiiProxy_AcmCertificate) ValidationOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/acm_certificate aws_acm_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/acm_certificate aws_acm_certificate} Resource.
 func NewAcmCertificate(scope constructs.Construct, id *string, config *AcmCertificateConfig) AcmCertificate {
 	_init_.Initialize()
 
@@ -750,7 +750,7 @@ func NewAcmCertificate(scope constructs.Construct, id *string, config *AcmCertif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/acm_certificate aws_acm_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/acm_certificate aws_acm_certificate} Resource.
 func NewAcmCertificate_Override(a AcmCertificate, scope constructs.Construct, id *string, config *AcmCertificateConfig) {
 	_init_.Initialize()
 

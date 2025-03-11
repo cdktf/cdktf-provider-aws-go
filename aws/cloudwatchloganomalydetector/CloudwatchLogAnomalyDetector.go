@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector}.
 type CloudwatchLogAnomalyDetector interface {
 	cdktf.TerraformResource
 	AnomalyVisibilityTime() *float64
@@ -498,7 +498,7 @@ func (j *jsiiProxy_CloudwatchLogAnomalyDetector) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
 func NewCloudwatchLogAnomalyDetector(scope constructs.Construct, id *string, config *CloudwatchLogAnomalyDetectorConfig) CloudwatchLogAnomalyDetector {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewCloudwatchLogAnomalyDetector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
 func NewCloudwatchLogAnomalyDetector_Override(c CloudwatchLogAnomalyDetector, scope constructs.Construct, id *string, config *CloudwatchLogAnomalyDetectorConfig) {
 	_init_.Initialize()
 

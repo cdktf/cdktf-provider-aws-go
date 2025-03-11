@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}.
 type RedshiftserverlessResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_RedshiftserverlessResourcePolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource.
 func NewRedshiftserverlessResourcePolicy(scope constructs.Construct, id *string, config *RedshiftserverlessResourcePolicyConfig) RedshiftserverlessResourcePolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewRedshiftserverlessResourcePolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource.
 func NewRedshiftserverlessResourcePolicy_Override(r RedshiftserverlessResourcePolicy, scope constructs.Construct, id *string, config *RedshiftserverlessResourcePolicyConfig) {
 	_init_.Initialize()
 

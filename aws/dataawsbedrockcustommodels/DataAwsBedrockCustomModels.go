@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
 type DataAwsBedrockCustomModels interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataAwsBedrockCustomModels) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
 func NewDataAwsBedrockCustomModels(scope constructs.Construct, id *string, config *DataAwsBedrockCustomModelsConfig) DataAwsBedrockCustomModels {
 	_init_.Initialize()
 
@@ -281,7 +281,7 @@ func NewDataAwsBedrockCustomModels(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
 func NewDataAwsBedrockCustomModels_Override(d DataAwsBedrockCustomModels, scope constructs.Construct, id *string, config *DataAwsBedrockCustomModelsConfig) {
 	_init_.Initialize()
 

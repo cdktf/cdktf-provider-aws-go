@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/finspace_kx_database aws_finspace_kx_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/finspace_kx_database aws_finspace_kx_database}.
 type FinspaceKxDatabase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_FinspaceKxDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
 func NewFinspaceKxDatabase(scope constructs.Construct, id *string, config *FinspaceKxDatabaseConfig) FinspaceKxDatabase {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewFinspaceKxDatabase(scope constructs.Construct, id *string, config *Finsp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
 func NewFinspaceKxDatabase_Override(f FinspaceKxDatabase, scope constructs.Construct, id *string, config *FinspaceKxDatabaseConfig) {
 	_init_.Initialize()
 

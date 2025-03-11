@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image}.
 type DataAwsSagemakerPrebuiltEcrImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
 func NewDataAwsSagemakerPrebuiltEcrImage(scope constructs.Construct, id *string, config *DataAwsSagemakerPrebuiltEcrImageConfig) DataAwsSagemakerPrebuiltEcrImage {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataAwsSagemakerPrebuiltEcrImage(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
 func NewDataAwsSagemakerPrebuiltEcrImage_Override(d DataAwsSagemakerPrebuiltEcrImage, scope constructs.Construct, id *string, config *DataAwsSagemakerPrebuiltEcrImageConfig) {
 	_init_.Initialize()
 

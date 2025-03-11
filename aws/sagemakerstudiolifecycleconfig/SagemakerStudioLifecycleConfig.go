@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config}.
 type SagemakerStudioLifecycleConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_SagemakerStudioLifecycleConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config} Resource.
 func NewSagemakerStudioLifecycleConfig(scope constructs.Construct, id *string, config *SagemakerStudioLifecycleConfigConfig) SagemakerStudioLifecycleConfig {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSagemakerStudioLifecycleConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/sagemaker_studio_lifecycle_config aws_sagemaker_studio_lifecycle_config} Resource.
 func NewSagemakerStudioLifecycleConfig_Override(s SagemakerStudioLifecycleConfig, scope constructs.Construct, id *string, config *SagemakerStudioLifecycleConfigConfig) {
 	_init_.Initialize()
 

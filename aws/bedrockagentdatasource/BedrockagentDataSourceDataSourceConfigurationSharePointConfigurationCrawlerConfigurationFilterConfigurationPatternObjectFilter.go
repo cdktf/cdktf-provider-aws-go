@@ -7,7 +7,7 @@ package bedrockagentdatasource
 type BedrockagentDataSourceDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter struct {
 	// filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/bedrockagent_data_source#filters BedrockagentDataSource#filters}
 	Filters interface{} `field:"optional" json:"filters" yaml:"filters"`
 }
 

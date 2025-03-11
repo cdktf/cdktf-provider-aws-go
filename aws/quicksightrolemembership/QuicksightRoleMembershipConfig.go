@@ -22,13 +22,13 @@ type QuicksightRoleMembershipConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/quicksight_role_membership#member_name QuicksightRoleMembership#member_name}.
 	MemberName *string `field:"required" json:"memberName" yaml:"memberName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/quicksight_role_membership#role QuicksightRoleMembership#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/quicksight_role_membership#aws_account_id QuicksightRoleMembership#aws_account_id}.
 	AwsAccountId *string `field:"optional" json:"awsAccountId" yaml:"awsAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/quicksight_role_membership#namespace QuicksightRoleMembership#namespace}.
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

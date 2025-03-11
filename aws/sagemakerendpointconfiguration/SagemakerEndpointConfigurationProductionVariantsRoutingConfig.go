@@ -5,7 +5,7 @@ package sagemakerendpointconfiguration
 
 
 type SagemakerEndpointConfigurationProductionVariantsRoutingConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/sagemaker_endpoint_configuration#routing_strategy SagemakerEndpointConfiguration#routing_strategy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/sagemaker_endpoint_configuration#routing_strategy SagemakerEndpointConfiguration#routing_strategy}.
 	RoutingStrategy *string `field:"required" json:"routingStrategy" yaml:"routingStrategy"`
 }
 

@@ -51,6 +51,18 @@ func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutActionParameters
 	return nil
 }
 
+func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutBeforeEntryParameters(value *CodepipelineStageBeforeEntry) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutOnFailureParameters(value *CodepipelineStageOnFailure) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineStageOutputReference) validatePutOnSuccessParameters(value *CodepipelineStageOnSuccess) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineStageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

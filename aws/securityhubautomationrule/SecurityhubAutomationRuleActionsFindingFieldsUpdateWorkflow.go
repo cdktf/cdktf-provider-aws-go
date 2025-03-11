@@ -5,7 +5,7 @@ package securityhubautomationrule
 
 
 type SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflow struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/securityhub_automation_rule#status SecurityhubAutomationRule#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

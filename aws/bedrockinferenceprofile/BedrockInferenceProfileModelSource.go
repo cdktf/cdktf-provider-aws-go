@@ -5,7 +5,7 @@ package bedrockinferenceprofile
 
 
 type BedrockInferenceProfileModelSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.0/docs/resources/bedrock_inference_profile#copy_from BedrockInferenceProfile#copy_from}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/bedrock_inference_profile#copy_from BedrockInferenceProfile#copy_from}.
 	CopyFrom *string `field:"required" json:"copyFrom" yaml:"copyFrom"`
 }
 
