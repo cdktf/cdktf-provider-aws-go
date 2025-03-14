@@ -143,6 +143,10 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

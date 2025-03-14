@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	ApplicationIntegrationUrl() *string
@@ -66,6 +66,9 @@ type Wafv2WebAcl interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -159,6 +162,8 @@ type Wafv2WebAcl interface {
 	ResetCustomResponseBody()
 	ResetDescription()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -475,6 +480,26 @@ func (j *jsiiProxy_Wafv2WebAcl) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -686,7 +711,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -704,7 +729,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -793,6 +818,17 @@ func (j *jsiiProxy_Wafv2WebAcl)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAcl)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -1345,6 +1381,22 @@ func (w *jsiiProxy_Wafv2WebAcl) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

@@ -17,6 +17,8 @@ type Wafv2WebAclRuleOutputReference interface {
 	ActionInput() *Wafv2WebAclRuleAction
 	CaptchaConfig() Wafv2WebAclRuleCaptchaConfigOutputReference
 	CaptchaConfigInput() *Wafv2WebAclRuleCaptchaConfig
+	ChallengeConfig() Wafv2WebAclRuleChallengeConfigOutputReference
+	ChallengeConfigInput() *Wafv2WebAclRuleChallengeConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,11 +87,13 @@ type Wafv2WebAclRuleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *Wafv2WebAclRuleAction)
 	PutCaptchaConfig(value *Wafv2WebAclRuleCaptchaConfig)
+	PutChallengeConfig(value *Wafv2WebAclRuleChallengeConfig)
 	PutOverrideAction(value *Wafv2WebAclRuleOverrideAction)
 	PutRuleLabel(value interface{})
 	PutVisibilityConfig(value *Wafv2WebAclRuleVisibilityConfig)
 	ResetAction()
 	ResetCaptchaConfig()
+	ResetChallengeConfig()
 	ResetOverrideAction()
 	ResetRuleLabel()
 	ResetStatement()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) CaptchaConfigInput() *Wafv2We
 	_jsii_.Get(
 		j,
 		"captchaConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) ChallengeConfig() Wafv2WebAclRuleChallengeConfigOutputReference {
+	var returns Wafv2WebAclRuleChallengeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"challengeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) ChallengeConfigInput() *Wafv2WebAclRuleChallengeConfig {
+	var returns *Wafv2WebAclRuleChallengeConfig
+	_jsii_.Get(
+		j,
+		"challengeConfigInput",
 		&returns,
 	)
 	return returns
@@ -662,6 +686,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutCaptchaConfig(value *Wafv2
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutChallengeConfig(value *Wafv2WebAclRuleChallengeConfig) {
+	if err := w.validatePutChallengeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putChallengeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) PutOverrideAction(value *Wafv2WebAclRuleOverrideAction) {
 	if err := w.validatePutOverrideActionParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) ResetCaptchaConfig() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCaptchaConfig",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) ResetChallengeConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetChallengeConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
 type Wafv2RegexPatternSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -54,6 +54,9 @@ type Wafv2RegexPatternSet interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -129,6 +132,8 @@ type Wafv2RegexPatternSet interface {
 	PutRegularExpression(value interface{})
 	ResetDescription()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -323,6 +328,26 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RegexPatternSet) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RegexPatternSet) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RegexPatternSet) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -474,7 +499,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
 func NewWafv2RegexPatternSet(scope constructs.Construct, id *string, config *Wafv2RegexPatternSetConfig) Wafv2RegexPatternSet {
 	_init_.Initialize()
 
@@ -492,7 +517,7 @@ func NewWafv2RegexPatternSet(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
 func NewWafv2RegexPatternSet_Override(w Wafv2RegexPatternSet, scope constructs.Construct, id *string, config *Wafv2RegexPatternSetConfig) {
 	_init_.Initialize()
 
@@ -581,6 +606,17 @@ func (j *jsiiProxy_Wafv2RegexPatternSet)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RegexPatternSet)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -1013,6 +1049,22 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) ResetName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

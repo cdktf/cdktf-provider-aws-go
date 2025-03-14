@@ -75,6 +75,10 @@ func (r *jsiiProxy_Route53HostedZoneDnssec) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (r *jsiiProxy_Route53HostedZoneDnssec) validatePutTimeoutsParameters(value *Route53HostedZoneDnssecTimeouts) error {
+	return nil
+}
+
 func validateRoute53HostedZoneDnssec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_ip_set aws_wafv2_ip_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set}.
 type Wafv2IpSet interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -60,6 +60,9 @@ type Wafv2IpSet interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -133,6 +136,8 @@ type Wafv2IpSet interface {
 	ResetAddresses()
 	ResetDescription()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -366,6 +371,26 @@ func (j *jsiiProxy_Wafv2IpSet) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2IpSet) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2IpSet) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2IpSet) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -497,7 +522,7 @@ func (j *jsiiProxy_Wafv2IpSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
 func NewWafv2IpSet(scope constructs.Construct, id *string, config *Wafv2IpSetConfig) Wafv2IpSet {
 	_init_.Initialize()
 
@@ -515,7 +540,7 @@ func NewWafv2IpSet(scope constructs.Construct, id *string, config *Wafv2IpSetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
 func NewWafv2IpSet_Override(w Wafv2IpSet, scope constructs.Construct, id *string, config *Wafv2IpSetConfig) {
 	_init_.Initialize()
 
@@ -626,6 +651,17 @@ func (j *jsiiProxy_Wafv2IpSet)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2IpSet)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -1055,6 +1091,22 @@ func (w *jsiiProxy_Wafv2IpSet) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2IpSet) ResetName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2IpSet) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

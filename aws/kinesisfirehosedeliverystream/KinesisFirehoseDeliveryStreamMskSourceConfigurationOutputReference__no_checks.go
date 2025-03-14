@@ -71,6 +71,10 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference) validateSetReadFromTimestampParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

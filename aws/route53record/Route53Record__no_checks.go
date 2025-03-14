@@ -99,6 +99,10 @@ func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(valu
 	return nil
 }
 
+func (r *jsiiProxy_Route53Record) validatePutTimeoutsParameters(value *Route53RecordTimeouts) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value *Route53RecordWeightedRoutingPolicy) error {
 	return nil
 }

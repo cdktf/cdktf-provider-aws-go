@@ -5,11 +5,11 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntent struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// slot block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/lexv2models_intent#slot Lexv2ModelsIntent#slot}
 	Slot interface{} `field:"optional" json:"slot" yaml:"slot"`
 }
 

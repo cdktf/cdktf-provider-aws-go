@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences}.
 type CostoptimizationhubPreferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_CostoptimizationhubPreferences) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences} Resource.
 func NewCostoptimizationhubPreferences(scope constructs.Construct, id *string, config *CostoptimizationhubPreferencesConfig) CostoptimizationhubPreferences {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewCostoptimizationhubPreferences(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/costoptimizationhub_preferences aws_costoptimizationhub_preferences} Resource.
 func NewCostoptimizationhubPreferences_Override(c CostoptimizationhubPreferences, scope constructs.Construct, id *string, config *CostoptimizationhubPreferencesConfig) {
 	_init_.Initialize()
 

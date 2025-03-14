@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_zone_association aws_route53_zone_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_zone_association aws_route53_zone_association}.
 type Route53ZoneAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,8 @@ type Route53ZoneAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Route53ZoneAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -117,10 +119,12 @@ type Route53ZoneAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Route53ZoneAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetVpcRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -330,6 +334,26 @@ func (j *jsiiProxy_Route53ZoneAssociation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53ZoneAssociation) Timeouts() Route53ZoneAssociationTimeoutsOutputReference {
+	var returns Route53ZoneAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ZoneAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ZoneAssociation) VpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_Route53ZoneAssociation) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_zone_association aws_route53_zone_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_zone_association aws_route53_zone_association} Resource.
 func NewRoute53ZoneAssociation(scope constructs.Construct, id *string, config *Route53ZoneAssociationConfig) Route53ZoneAssociation {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewRoute53ZoneAssociation(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_zone_association aws_route53_zone_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_zone_association aws_route53_zone_association} Resource.
 func NewRoute53ZoneAssociation_Override(r Route53ZoneAssociation, scope constructs.Construct, id *string, config *Route53ZoneAssociationConfig) {
 	_init_.Initialize()
 
@@ -885,6 +909,17 @@ func (r *jsiiProxy_Route53ZoneAssociation) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (r *jsiiProxy_Route53ZoneAssociation) PutTimeouts(value *Route53ZoneAssociationTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53ZoneAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -897,6 +932,14 @@ func (r *jsiiProxy_Route53ZoneAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ZoneAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

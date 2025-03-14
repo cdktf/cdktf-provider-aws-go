@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec}.
 type Route53HostedZoneDnssec interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type Route53HostedZoneDnssec interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Route53HostedZoneDnssecTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,11 +115,13 @@ type Route53HostedZoneDnssec interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Route53HostedZoneDnssecTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSigningStatus()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -356,8 +360,28 @@ func (j *jsiiProxy_Route53HostedZoneDnssec) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53HostedZoneDnssec) Timeouts() Route53HostedZoneDnssecTimeoutsOutputReference {
+	var returns Route53HostedZoneDnssecTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
+func (j *jsiiProxy_Route53HostedZoneDnssec) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
 func NewRoute53HostedZoneDnssec(scope constructs.Construct, id *string, config *Route53HostedZoneDnssecConfig) Route53HostedZoneDnssec {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewRoute53HostedZoneDnssec(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_hosted_zone_dnssec aws_route53_hosted_zone_dnssec} Resource.
 func NewRoute53HostedZoneDnssec_Override(r Route53HostedZoneDnssec, scope constructs.Construct, id *string, config *Route53HostedZoneDnssecConfig) {
 	_init_.Initialize()
 
@@ -840,6 +864,17 @@ func (r *jsiiProxy_Route53HostedZoneDnssec) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (r *jsiiProxy_Route53HostedZoneDnssec) PutTimeouts(value *Route53HostedZoneDnssecTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53HostedZoneDnssec) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -860,6 +895,14 @@ func (r *jsiiProxy_Route53HostedZoneDnssec) ResetSigningStatus() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSigningStatus",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53HostedZoneDnssec) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

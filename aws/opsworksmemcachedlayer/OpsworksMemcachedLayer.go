@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer}.
 type OpsworksMemcachedLayer interface {
 	cdktf.TerraformResource
 	AllocatedMemory() *float64
@@ -920,7 +920,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstancesInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
 func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *OpsworksMemcachedLayerConfig) OpsworksMemcachedLayer {
 	_init_.Initialize()
 
@@ -938,7 +938,7 @@ func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
 func NewOpsworksMemcachedLayer_Override(o OpsworksMemcachedLayer, scope constructs.Construct, id *string, config *OpsworksMemcachedLayerConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,10 @@ func (r *jsiiProxy_Route53Zone) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (r *jsiiProxy_Route53Zone) validatePutTimeoutsParameters(value *Route53ZoneTimeouts) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Zone) validatePutVpcParameters(value interface{}) error {
 	return nil
 }

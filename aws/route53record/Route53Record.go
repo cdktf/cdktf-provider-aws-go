@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_record aws_route53_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_record aws_route53_record}.
 type Route53Record interface {
 	cdktf.TerraformResource
 	Alias() Route53RecordAliasOutputReference
@@ -95,6 +95,8 @@ type Route53Record interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Route53RecordTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -155,6 +157,7 @@ type Route53Record interface {
 	PutGeolocationRoutingPolicy(value *Route53RecordGeolocationRoutingPolicy)
 	PutGeoproximityRoutingPolicy(value *Route53RecordGeoproximityRoutingPolicy)
 	PutLatencyRoutingPolicy(value *Route53RecordLatencyRoutingPolicy)
+	PutTimeouts(value *Route53RecordTimeouts)
 	PutWeightedRoutingPolicy(value *Route53RecordWeightedRoutingPolicy)
 	ResetAlias()
 	ResetAllowOverwrite()
@@ -171,6 +174,7 @@ type Route53Record interface {
 	ResetOverrideLogicalId()
 	ResetRecords()
 	ResetSetIdentifier()
+	ResetTimeouts()
 	ResetTtl()
 	ResetWeightedRoutingPolicy()
 	SynthesizeAttributes() *map[string]interface{}
@@ -621,6 +625,26 @@ func (j *jsiiProxy_Route53Record) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53Record) Timeouts() Route53RecordTimeoutsOutputReference {
+	var returns Route53RecordTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Record) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53Record) Ttl() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -702,7 +726,7 @@ func (j *jsiiProxy_Route53Record) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record(scope constructs.Construct, id *string, config *Route53RecordConfig) Route53Record {
 	_init_.Initialize()
 
@@ -720,7 +744,7 @@ func NewRoute53Record(scope constructs.Construct, id *string, config *Route53Rec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record_Override(r Route53Record, scope constructs.Construct, id *string, config *Route53RecordConfig) {
 	_init_.Initialize()
 
@@ -1328,6 +1352,17 @@ func (r *jsiiProxy_Route53Record) PutLatencyRoutingPolicy(value *Route53RecordLa
 	)
 }
 
+func (r *jsiiProxy_Route53Record) PutTimeouts(value *Route53RecordTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53Record) PutWeightedRoutingPolicy(value *Route53RecordWeightedRoutingPolicy) {
 	if err := r.validatePutWeightedRoutingPolicyParameters(value); err != nil {
 		panic(err)
@@ -1439,6 +1474,14 @@ func (r *jsiiProxy_Route53Record) ResetSetIdentifier() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSetIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53Record) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (r *jsiiProxy_Route53ZoneAssociation) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (r *jsiiProxy_Route53ZoneAssociation) validatePutTimeoutsParameters(value *Route53ZoneAssociationTimeouts) error {
+	return nil
+}
+
 func validateRoute53ZoneAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

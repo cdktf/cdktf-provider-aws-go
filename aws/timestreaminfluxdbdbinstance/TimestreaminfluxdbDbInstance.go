@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance}.
 type TimestreaminfluxdbDbInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -71,6 +71,9 @@ type TimestreaminfluxdbDbInstance interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Organization() *string
@@ -79,6 +82,9 @@ type TimestreaminfluxdbDbInstance interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -163,9 +169,11 @@ type TimestreaminfluxdbDbInstance interface {
 	ResetDbStorageType()
 	ResetDeploymentType()
 	ResetLogDeliveryConfiguration()
+	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPort()
 	ResetPubliclyAccessible()
 	ResetTags()
 	ResetTimeouts()
@@ -487,6 +495,26 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -532,6 +560,26 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -738,7 +786,7 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) VpcSubnetIdsInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
 func NewTimestreaminfluxdbDbInstance(scope constructs.Construct, id *string, config *TimestreaminfluxdbDbInstanceConfig) TimestreaminfluxdbDbInstance {
 	_init_.Initialize()
 
@@ -756,7 +804,7 @@ func NewTimestreaminfluxdbDbInstance(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.90.1/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
 func NewTimestreaminfluxdbDbInstance_Override(t TimestreaminfluxdbDbInstance, scope constructs.Construct, id *string, config *TimestreaminfluxdbDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -893,6 +941,17 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
@@ -911,6 +970,17 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -1396,10 +1466,26 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetLogDeliveryConfiguration()
 	)
 }
 
+func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetNetworkType",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetPort() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPort",
 		nil, // no parameters
 	)
 }

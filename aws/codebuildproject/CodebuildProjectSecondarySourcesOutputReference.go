@@ -13,6 +13,8 @@ import (
 
 type CodebuildProjectSecondarySourcesOutputReference interface {
 	cdktf.ComplexObject
+	Auth() CodebuildProjectSecondarySourcesAuthOutputReference
+	AuthInput() *CodebuildProjectSecondarySourcesAuth
 	Buildspec() *string
 	SetBuildspec(val *string)
 	BuildspecInput() *string
@@ -89,8 +91,10 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuth(value *CodebuildProjectSecondarySourcesAuth)
 	PutBuildStatusConfig(value *CodebuildProjectSecondarySourcesBuildStatusConfig)
 	PutGitSubmodulesConfig(value *CodebuildProjectSecondarySourcesGitSubmodulesConfig)
+	ResetAuth()
 	ResetBuildspec()
 	ResetBuildStatusConfig()
 	ResetGitCloneDepth()
@@ -111,6 +115,26 @@ type CodebuildProjectSecondarySourcesOutputReference interface {
 // The jsii proxy struct for CodebuildProjectSecondarySourcesOutputReference
 type jsiiProxy_CodebuildProjectSecondarySourcesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Auth() CodebuildProjectSecondarySourcesAuthOutputReference {
+	var returns CodebuildProjectSecondarySourcesAuthOutputReference
+	_jsii_.Get(
+		j,
+		"auth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) AuthInput() *CodebuildProjectSecondarySourcesAuth {
+	var returns *CodebuildProjectSecondarySourcesAuth
+	_jsii_.Get(
+		j,
+		"authInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Buildspec() *string {
@@ -709,6 +733,17 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) Interpolatio
 	return returns
 }
 
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutAuth(value *CodebuildProjectSecondarySourcesAuth) {
+	if err := c.validatePutAuthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAuth",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutBuildStatusConfig(value *CodebuildProjectSecondarySourcesBuildStatusConfig) {
 	if err := c.validatePutBuildStatusConfigParameters(value); err != nil {
 		panic(err)
@@ -728,6 +763,14 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) PutGitSubmod
 		c,
 		"putGitSubmodulesConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) ResetAuth() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuth",
+		nil, // no parameters
 	)
 }
 

@@ -37,6 +37,9 @@ type KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference interfac
 	MskClusterArn() *string
 	SetMskClusterArn(val *string)
 	MskClusterArnInput() *string
+	ReadFromTimestamp() *string
+	SetReadFromTimestamp(val *string)
+	ReadFromTimestampInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthenticationConfiguration(value *KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration)
+	ResetReadFromTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputRefe
 	_jsii_.Get(
 		j,
 		"mskClusterArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference) ReadFromTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readFromTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference) ReadFromTimestampInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readFromTimestampInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputRefe
 	_jsii_.Set(
 		j,
 		"mskClusterArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference)SetReadFromTimestamp(val *string) {
+	if err := j.validateSetReadFromTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readFromTimestamp",
 		val,
 	)
 }
@@ -517,6 +552,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputRefe
 		k,
 		"putAuthenticationConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference) ResetReadFromTimestamp() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetReadFromTimestamp",
+		nil, // no parameters
 	)
 }
 

@@ -920,6 +920,46 @@ func init() {
 		reflect.TypeOf((*CodebuildProjectSecondarySources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuth",
+		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuth)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
+		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuthOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resource", GoGetter: "Resource"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceInput", GoGetter: "ResourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesBuildStatusConfig)(nil)).Elem(),
 	)
@@ -1025,6 +1065,8 @@ func init() {
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
+			_jsii_.MemberProperty{JsiiProperty: "authInput", GoGetter: "AuthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildspec", GoGetter: "Buildspec"},
 			_jsii_.MemberProperty{JsiiProperty: "buildspecInput", GoGetter: "BuildspecInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildStatusConfig", GoGetter: "BuildStatusConfig"},
@@ -1054,10 +1096,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAuth", GoMethod: "PutAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "putBuildStatusConfig", GoMethod: "PutBuildStatusConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitSubmodulesConfig", GoMethod: "PutGitSubmodulesConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "reportBuildStatus", GoGetter: "ReportBuildStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "reportBuildStatusInput", GoGetter: "ReportBuildStatusInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuth", GoMethod: "ResetAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildspec", GoMethod: "ResetBuildspec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildStatusConfig", GoMethod: "ResetBuildStatusConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitCloneDepth", GoMethod: "ResetGitCloneDepth"},
@@ -1083,6 +1127,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSource",
 		reflect.TypeOf((*CodebuildProjectSource)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuth",
+		reflect.TypeOf((*CodebuildProjectSourceAuth)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuthOutputReference",
+		reflect.TypeOf((*CodebuildProjectSourceAuthOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resource", GoGetter: "Resource"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceInput", GoGetter: "ResourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CodebuildProjectSourceAuthOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig",
@@ -1168,6 +1252,8 @@ func init() {
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference",
 		reflect.TypeOf((*CodebuildProjectSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
+			_jsii_.MemberProperty{JsiiProperty: "authInput", GoGetter: "AuthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildspec", GoGetter: "Buildspec"},
 			_jsii_.MemberProperty{JsiiProperty: "buildspecInput", GoGetter: "BuildspecInput"},
 			_jsii_.MemberProperty{JsiiProperty: "buildStatusConfig", GoGetter: "BuildStatusConfig"},
@@ -1197,10 +1283,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAuth", GoMethod: "PutAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "putBuildStatusConfig", GoMethod: "PutBuildStatusConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGitSubmodulesConfig", GoMethod: "PutGitSubmodulesConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "reportBuildStatus", GoGetter: "ReportBuildStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "reportBuildStatusInput", GoGetter: "ReportBuildStatusInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuth", GoMethod: "ResetAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildspec", GoMethod: "ResetBuildspec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBuildStatusConfig", GoMethod: "ResetBuildStatusConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGitCloneDepth", GoMethod: "ResetGitCloneDepth"},

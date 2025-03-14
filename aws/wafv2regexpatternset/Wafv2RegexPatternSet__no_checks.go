@@ -119,6 +119,10 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

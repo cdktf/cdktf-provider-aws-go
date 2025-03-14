@@ -139,11 +139,19 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetNetworkTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetOrganizationParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetPortParameters(val *float64) error {
 	return nil
 }
 

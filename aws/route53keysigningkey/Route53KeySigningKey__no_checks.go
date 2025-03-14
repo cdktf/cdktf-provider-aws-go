@@ -75,6 +75,10 @@ func (r *jsiiProxy_Route53KeySigningKey) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (r *jsiiProxy_Route53KeySigningKey) validatePutTimeoutsParameters(value *Route53KeySigningKeyTimeouts) error {
+	return nil
+}
+
 func validateRoute53KeySigningKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
