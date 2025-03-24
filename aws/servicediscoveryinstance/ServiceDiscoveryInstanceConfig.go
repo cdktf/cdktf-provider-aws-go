@@ -22,13 +22,13 @@ type ServiceDiscoveryInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/service_discovery_instance#attributes ServiceDiscoveryInstance#attributes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/service_discovery_instance#attributes ServiceDiscoveryInstance#attributes}.
 	Attributes *map[string]*string `field:"required" json:"attributes" yaml:"attributes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/service_discovery_instance#instance_id ServiceDiscoveryInstance#instance_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/service_discovery_instance#instance_id ServiceDiscoveryInstance#instance_id}.
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/service_discovery_instance#service_id ServiceDiscoveryInstance#service_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/service_discovery_instance#service_id ServiceDiscoveryInstance#service_id}.
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/service_discovery_instance#id ServiceDiscoveryInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/service_discovery_instance#id ServiceDiscoveryInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

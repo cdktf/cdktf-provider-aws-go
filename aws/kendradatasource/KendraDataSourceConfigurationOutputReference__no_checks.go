@@ -51,6 +51,10 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validatePutS3Co
 	return nil
 }
 
+func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validatePutTemplateConfigurationParameters(value *KendraDataSourceConfigurationTemplateConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validatePutWebCrawlerConfigurationParameters(value *KendraDataSourceConfigurationWebCrawlerConfiguration) error {
 	return nil
 }

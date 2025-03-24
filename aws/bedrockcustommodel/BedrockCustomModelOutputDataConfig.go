@@ -5,7 +5,7 @@ package bedrockcustommodel
 
 
 type BedrockCustomModelOutputDataConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrock_custom_model#s3_uri BedrockCustomModel#s3_uri}.
 	S3Uri *string `field:"required" json:"s3Uri" yaml:"s3Uri"`
 }
 

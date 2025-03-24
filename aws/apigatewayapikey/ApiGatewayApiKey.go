@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
 type ApiGatewayApiKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ApiGatewayApiKey) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
 func NewApiGatewayApiKey(scope constructs.Construct, id *string, config *ApiGatewayApiKeyConfig) ApiGatewayApiKey {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewApiGatewayApiKey(scope constructs.Construct, id *string, config *ApiGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
 func NewApiGatewayApiKey_Override(a ApiGatewayApiKey, scope constructs.Construct, id *string, config *ApiGatewayApiKeyConfig) {
 	_init_.Initialize()
 

@@ -41,6 +41,9 @@ type ConnectUserIdentityInfoOutputReference interface {
 	LastName() *string
 	SetLastName(val *string)
 	LastNameInput() *string
+	SecondaryEmail() *string
+	SetSecondaryEmail(val *string)
+	SecondaryEmailInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type ConnectUserIdentityInfoOutputReference interface {
 	ResetEmail()
 	ResetFirstName()
 	ResetLastName()
+	ResetSecondaryEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) LastNameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) SecondaryEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) SecondaryEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference)SetLastName(val *strin
 	_jsii_.Set(
 		j,
 		"lastName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference)SetSecondaryEmail(val *string) {
+	if err := j.validateSetSecondaryEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryEmail",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (c *jsiiProxy_ConnectUserIdentityInfoOutputReference) ResetLastName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLastName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectUserIdentityInfoOutputReference) ResetSecondaryEmail() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecondaryEmail",
 		nil, // no parameters
 	)
 }

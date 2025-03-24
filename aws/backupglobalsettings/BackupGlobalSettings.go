@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/backup_global_settings aws_backup_global_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/backup_global_settings aws_backup_global_settings}.
 type BackupGlobalSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_BackupGlobalSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
 func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *BackupGlobalSettingsConfig) BackupGlobalSettings {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *Bac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
 func NewBackupGlobalSettings_Override(b BackupGlobalSettings, scope constructs.Construct, id *string, config *BackupGlobalSettingsConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package devopsguruserviceintegration
 
 
 type DevopsguruServiceIntegrationLogsAnomalyDetection struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/devopsguru_service_integration#opt_in_status DevopsguruServiceIntegration#opt_in_status}.
 	OptInStatus *string `field:"optional" json:"optInStatus" yaml:"optInStatus"`
 }
 

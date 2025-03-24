@@ -22,15 +22,15 @@ type DataAwsAppstreamImageConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/appstream_image#arn DataAwsAppstreamImage#arn}.
 	Arn *string `field:"optional" json:"arn" yaml:"arn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/appstream_image#most_recent DataAwsAppstreamImage#most_recent}.
 	MostRecent interface{} `field:"optional" json:"mostRecent" yaml:"mostRecent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/appstream_image#name DataAwsAppstreamImage#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/appstream_image#name_regex DataAwsAppstreamImage#name_regex}.
 	NameRegex *string `field:"optional" json:"nameRegex" yaml:"nameRegex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/appstream_image#type DataAwsAppstreamImage#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

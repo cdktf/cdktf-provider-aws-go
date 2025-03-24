@@ -5,11 +5,11 @@ package instance
 
 
 type InstanceCpuOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/instance#amd_sev_snp Instance#amd_sev_snp}.
 	AmdSevSnp *string `field:"optional" json:"amdSevSnp" yaml:"amdSevSnp"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/instance#core_count Instance#core_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/instance#core_count Instance#core_count}.
 	CoreCount *float64 `field:"optional" json:"coreCount" yaml:"coreCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/instance#threads_per_core Instance#threads_per_core}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/instance#threads_per_core Instance#threads_per_core}.
 	ThreadsPerCore *float64 `field:"optional" json:"threadsPerCore" yaml:"threadsPerCore"`
 }
 

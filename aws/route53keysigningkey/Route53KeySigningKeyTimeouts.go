@@ -5,11 +5,11 @@ package route53keysigningkey
 
 
 type Route53KeySigningKeyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_key_signing_key#create Route53KeySigningKey#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_key_signing_key#create Route53KeySigningKey#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_key_signing_key#delete Route53KeySigningKey#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_key_signing_key#delete Route53KeySigningKey#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_key_signing_key#update Route53KeySigningKey#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_key_signing_key#update Route53KeySigningKey#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

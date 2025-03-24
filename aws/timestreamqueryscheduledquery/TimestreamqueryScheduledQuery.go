@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query}.
 type TimestreamqueryScheduledQuery interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -637,7 +637,7 @@ func (j *jsiiProxy_TimestreamqueryScheduledQuery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
 func NewTimestreamqueryScheduledQuery(scope constructs.Construct, id *string, config *TimestreamqueryScheduledQueryConfig) TimestreamqueryScheduledQuery {
 	_init_.Initialize()
 
@@ -655,7 +655,7 @@ func NewTimestreamqueryScheduledQuery(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
 func NewTimestreamqueryScheduledQuery_Override(t TimestreamqueryScheduledQuery, scope constructs.Construct, id *string, config *TimestreamqueryScheduledQueryConfig) {
 	_init_.Initialize()
 

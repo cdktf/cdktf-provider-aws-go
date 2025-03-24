@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -97,6 +97,8 @@ type Alb interface {
 	IpAddressType() *string
 	SetIpAddressType(val *string)
 	IpAddressTypeInput() *string
+	IpamPools() AlbIpamPoolsOutputReference
+	IpamPoolsInput() *AlbIpamPools
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -197,6 +199,7 @@ type Alb interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *AlbAccessLogs)
 	PutConnectionLogs(value *AlbConnectionLogs)
+	PutIpamPools(value *AlbIpamPools)
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *AlbTimeouts)
 	ResetAccessLogs()
@@ -218,6 +221,7 @@ type Alb interface {
 	ResetIdleTimeout()
 	ResetInternal()
 	ResetIpAddressType()
+	ResetIpamPools()
 	ResetLoadBalancerType()
 	ResetName()
 	ResetNamePrefix()
@@ -740,6 +744,26 @@ func (j *jsiiProxy_Alb) IpAddressTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Alb) IpamPools() AlbIpamPoolsOutputReference {
+	var returns AlbIpamPoolsOutputReference
+	_jsii_.Get(
+		j,
+		"ipamPools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) IpamPoolsInput() *AlbIpamPools {
+	var returns *AlbIpamPools
+	_jsii_.Get(
+		j,
+		"ipamPoolsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Alb) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -1061,7 +1085,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -1079,7 +1103,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1819,6 +1843,17 @@ func (a *jsiiProxy_Alb) PutConnectionLogs(value *AlbConnectionLogs) {
 	)
 }
 
+func (a *jsiiProxy_Alb) PutIpamPools(value *AlbIpamPools) {
+	if err := a.validatePutIpamPoolsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIpamPools",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Alb) PutSubnetMapping(value interface{}) {
 	if err := a.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
@@ -1989,6 +2024,14 @@ func (a *jsiiProxy_Alb) ResetIpAddressType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetIpAddressType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetIpamPools() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpamPools",
 		nil, // no parameters
 	)
 }

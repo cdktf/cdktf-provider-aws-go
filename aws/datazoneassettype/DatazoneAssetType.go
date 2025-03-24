@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
 type DatazoneAssetType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DatazoneAssetType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
 func NewDatazoneAssetType(scope constructs.Construct, id *string, config *DatazoneAssetTypeConfig) DatazoneAssetType {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDatazoneAssetType(scope constructs.Construct, id *string, config *Datazo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
 func NewDatazoneAssetType_Override(d DatazoneAssetType, scope constructs.Construct, id *string, config *DatazoneAssetTypeConfig) {
 	_init_.Initialize()
 

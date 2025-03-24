@@ -35,6 +35,7 @@ type DataAwsConnectUserIdentityInfoOutputReference interface {
 	InternalValue() *DataAwsConnectUserIdentityInfo
 	SetInternalValue(val *DataAwsConnectUserIdentityInfo)
 	LastName() *string
+	SecondaryEmail() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) LastName() *st
 	_jsii_.Get(
 		j,
 		"lastName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) SecondaryEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryEmail",
 		&returns,
 	)
 	return returns

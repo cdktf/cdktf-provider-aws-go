@@ -167,6 +167,10 @@ func (j *jsiiProxy_DbInstance) validateSetCustomIamInstanceProfileParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetDatabaseInsightsModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetDbNameParameters(val *string) error {
 	return nil
 }

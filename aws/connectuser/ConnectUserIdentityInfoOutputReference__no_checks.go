@@ -75,6 +75,10 @@ func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateSetLastNamePa
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateSetSecondaryEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectUserIdentityInfoOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

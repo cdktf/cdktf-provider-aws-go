@@ -34,6 +34,8 @@ type KendraDataSourceConfigurationOutputReference interface {
 	SetInternalValue(val *KendraDataSourceConfiguration)
 	S3Configuration() KendraDataSourceConfigurationS3ConfigurationOutputReference
 	S3ConfigurationInput() *KendraDataSourceConfigurationS3Configuration
+	TemplateConfiguration() KendraDataSourceConfigurationTemplateConfigurationOutputReference
+	TemplateConfigurationInput() *KendraDataSourceConfigurationTemplateConfiguration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,8 +71,10 @@ type KendraDataSourceConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutS3Configuration(value *KendraDataSourceConfigurationS3Configuration)
+	PutTemplateConfiguration(value *KendraDataSourceConfigurationTemplateConfiguration)
 	PutWebCrawlerConfiguration(value *KendraDataSourceConfigurationWebCrawlerConfiguration)
 	ResetS3Configuration()
+	ResetTemplateConfiguration()
 	ResetWebCrawlerConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_KendraDataSourceConfigurationOutputReference) S3Configuration
 	_jsii_.Get(
 		j,
 		"s3ConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KendraDataSourceConfigurationOutputReference) TemplateConfiguration() KendraDataSourceConfigurationTemplateConfigurationOutputReference {
+	var returns KendraDataSourceConfigurationTemplateConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"templateConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KendraDataSourceConfigurationOutputReference) TemplateConfigurationInput() *KendraDataSourceConfigurationTemplateConfiguration {
+	var returns *KendraDataSourceConfigurationTemplateConfiguration
+	_jsii_.Get(
+		j,
+		"templateConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) PutS3Configurat
 	)
 }
 
+func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) PutTemplateConfiguration(value *KendraDataSourceConfigurationTemplateConfiguration) {
+	if err := k.validatePutTemplateConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putTemplateConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) PutWebCrawlerConfiguration(value *KendraDataSourceConfigurationWebCrawlerConfiguration) {
 	if err := k.validatePutWebCrawlerConfigurationParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) ResetS3Configur
 	_jsii_.InvokeVoid(
 		k,
 		"resetS3Configuration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) ResetTemplateConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTemplateConfiguration",
 		nil, // no parameters
 	)
 }

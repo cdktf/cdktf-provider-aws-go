@@ -5,13 +5,13 @@ package gluecatalogtable
 
 
 type GlueCatalogTableStorageDescriptorColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/glue_catalog_table#name GlueCatalogTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/glue_catalog_table#comment GlueCatalogTable#comment}.
 	Comment *string `field:"optional" json:"comment" yaml:"comment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/glue_catalog_table#parameters GlueCatalogTable#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/glue_catalog_table#type GlueCatalogTable#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

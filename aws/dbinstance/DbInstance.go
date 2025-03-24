@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -70,6 +70,9 @@ type DbInstance interface {
 	CustomIamInstanceProfile() *string
 	SetCustomIamInstanceProfile(val *string)
 	CustomIamInstanceProfileInput() *string
+	DatabaseInsightsMode() *string
+	SetDatabaseInsightsMode(val *string)
+	DatabaseInsightsModeInput() *string
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -348,6 +351,7 @@ type DbInstance interface {
 	ResetCopyTagsToSnapshot()
 	ResetCustomerOwnedIpEnabled()
 	ResetCustomIamInstanceProfile()
+	ResetDatabaseInsightsMode()
 	ResetDbName()
 	ResetDbSubnetGroupName()
 	ResetDedicatedLogVolume()
@@ -762,6 +766,26 @@ func (j *jsiiProxy_DbInstance) CustomIamInstanceProfileInput() *string {
 	_jsii_.Get(
 		j,
 		"customIamInstanceProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DatabaseInsightsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInsightsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DatabaseInsightsModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseInsightsModeInput",
 		&returns,
 	)
 	return returns
@@ -2158,7 +2182,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2176,7 +2200,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2348,6 +2372,17 @@ func (j *jsiiProxy_DbInstance)SetCustomIamInstanceProfile(val *string) {
 	_jsii_.Set(
 		j,
 		"customIamInstanceProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetDatabaseInsightsMode(val *string) {
+	if err := j.validateSetDatabaseInsightsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseInsightsMode",
 		val,
 	)
 }
@@ -3519,6 +3554,14 @@ func (d *jsiiProxy_DbInstance) ResetCustomIamInstanceProfile() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomIamInstanceProfile",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetDatabaseInsightsMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabaseInsightsMode",
 		nil, // no parameters
 	)
 }

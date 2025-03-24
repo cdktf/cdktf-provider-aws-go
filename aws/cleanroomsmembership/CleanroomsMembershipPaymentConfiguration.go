@@ -7,7 +7,7 @@ package cleanroomsmembership
 type CleanroomsMembershipPaymentConfiguration struct {
 	// query_compute block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/cleanrooms_membership#query_compute CleanroomsMembership#query_compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/cleanrooms_membership#query_compute CleanroomsMembership#query_compute}
 	QueryCompute interface{} `field:"optional" json:"queryCompute" yaml:"queryCompute"`
 }
 

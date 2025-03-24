@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
 type IotPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IotPolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
 func NewIotPolicyAttachment(scope constructs.Construct, id *string, config *IotPolicyAttachmentConfig) IotPolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIotPolicyAttachment(scope constructs.Construct, id *string, config *IotP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
 func NewIotPolicyAttachment_Override(i IotPolicyAttachment, scope constructs.Construct, id *string, config *IotPolicyAttachmentConfig) {
 	_init_.Initialize()
 

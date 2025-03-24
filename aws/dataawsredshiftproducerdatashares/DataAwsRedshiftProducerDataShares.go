@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares}.
 type DataAwsRedshiftProducerDataShares interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAwsRedshiftProducerDataShares) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source.
 func NewDataAwsRedshiftProducerDataShares(scope constructs.Construct, id *string, config *DataAwsRedshiftProducerDataSharesConfig) DataAwsRedshiftProducerDataShares {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAwsRedshiftProducerDataShares(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/data-sources/redshift_producer_data_shares aws_redshift_producer_data_shares} Data Source.
 func NewDataAwsRedshiftProducerDataShares_Override(d DataAwsRedshiftProducerDataShares, scope constructs.Construct, id *string, config *DataAwsRedshiftProducerDataSharesConfig) {
 	_init_.Initialize()
 

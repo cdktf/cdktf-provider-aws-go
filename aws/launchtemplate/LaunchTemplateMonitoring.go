@@ -5,7 +5,7 @@ package launchtemplate
 
 
 type LaunchTemplateMonitoring struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

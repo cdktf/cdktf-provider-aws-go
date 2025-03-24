@@ -5,9 +5,9 @@ package bedrockagentdatasource
 
 
 type BedrockagentDataSourceDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrockagent_data_source#max_pages BedrockagentDataSource#max_pages}.
 	MaxPages *float64 `field:"optional" json:"maxPages" yaml:"maxPages"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrockagent_data_source#rate_limit BedrockagentDataSource#rate_limit}.
 	RateLimit *float64 `field:"optional" json:"rateLimit" yaml:"rateLimit"`
 }
 

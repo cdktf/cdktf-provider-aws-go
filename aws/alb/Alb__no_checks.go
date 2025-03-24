@@ -83,6 +83,10 @@ func (a *jsiiProxy_Alb) validatePutConnectionLogsParameters(value *AlbConnection
 	return nil
 }
 
+func (a *jsiiProxy_Alb) validatePutIpamPoolsParameters(value *AlbIpamPools) error {
+	return nil
+}
+
 func (a *jsiiProxy_Alb) validatePutSubnetMappingParameters(value interface{}) error {
 	return nil
 }

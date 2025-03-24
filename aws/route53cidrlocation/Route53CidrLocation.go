@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_cidr_location aws_route53_cidr_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_cidr_location aws_route53_cidr_location}.
 type Route53CidrLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Route53CidrLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource.
 func NewRoute53CidrLocation(scope constructs.Construct, id *string, config *Route53CidrLocationConfig) Route53CidrLocation {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewRoute53CidrLocation(scope constructs.Construct, id *string, config *Rout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/route53_cidr_location aws_route53_cidr_location} Resource.
 func NewRoute53CidrLocation_Override(r Route53CidrLocation, scope constructs.Construct, id *string, config *Route53CidrLocationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/ec2_instance_state aws_ec2_instance_state}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ec2_instance_state aws_ec2_instance_state}.
 type Ec2InstanceState interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_Ec2InstanceState) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource.
 func NewEc2InstanceState(scope constructs.Construct, id *string, config *Ec2InstanceStateConfig) Ec2InstanceState {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewEc2InstanceState(scope constructs.Construct, id *string, config *Ec2Inst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.91.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource.
 func NewEc2InstanceState_Override(e Ec2InstanceState, scope constructs.Construct, id *string, config *Ec2InstanceStateConfig) {
 	_init_.Initialize()
 
