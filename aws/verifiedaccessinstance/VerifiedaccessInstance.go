@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}.
 type VerifiedaccessInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CidrEndpointsCustomSubdomain() *string
+	SetCidrEndpointsCustomSubdomain(val *string)
+	CidrEndpointsCustomSubdomainInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -54,6 +57,7 @@ type VerifiedaccessInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NameServers() *[]*string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -122,6 +126,7 @@ type VerifiedaccessInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCidrEndpointsCustomSubdomain()
 	ResetDescription()
 	ResetFipsEnabled()
 	ResetId()
@@ -153,6 +158,26 @@ func (j *jsiiProxy_VerifiedaccessInstance) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance) CidrEndpointsCustomSubdomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrEndpointsCustomSubdomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance) CidrEndpointsCustomSubdomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrEndpointsCustomSubdomainInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +343,16 @@ func (j *jsiiProxy_VerifiedaccessInstance) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessInstance) NameServers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"nameServers",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -439,7 +474,7 @@ func (j *jsiiProxy_VerifiedaccessInstance) VerifiedAccessTrustProviders() Verifi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
 func NewVerifiedaccessInstance(scope constructs.Construct, id *string, config *VerifiedaccessInstanceConfig) VerifiedaccessInstance {
 	_init_.Initialize()
 
@@ -457,7 +492,7 @@ func NewVerifiedaccessInstance(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
 func NewVerifiedaccessInstance_Override(v VerifiedaccessInstance, scope constructs.Construct, id *string, config *VerifiedaccessInstanceConfig) {
 	_init_.Initialize()
 
@@ -465,6 +500,17 @@ func NewVerifiedaccessInstance_Override(v VerifiedaccessInstance, scope construc
 		"@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance",
 		[]interface{}{scope, id, config},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance)SetCidrEndpointsCustomSubdomain(val *string) {
+	if err := j.validateSetCidrEndpointsCustomSubdomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidrEndpointsCustomSubdomain",
+		val,
 	)
 }
 
@@ -941,6 +987,14 @@ func (v *jsiiProxy_VerifiedaccessInstance) OverrideLogicalId(newLogicalId *strin
 		v,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessInstance) ResetCidrEndpointsCustomSubdomain() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCidrEndpointsCustomSubdomain",
+		nil, // no parameters
 	)
 }
 

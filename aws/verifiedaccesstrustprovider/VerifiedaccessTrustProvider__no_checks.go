@@ -79,7 +79,15 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) validatePutDeviceOptionsParamete
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessTrustProvider) validatePutNativeApplicationOidcOptionsParameters(value *VerifiedaccessTrustProviderNativeApplicationOidcOptions) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessTrustProvider) validatePutOidcOptionsParameters(value *VerifiedaccessTrustProviderOidcOptions) error {
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessTrustProvider) validatePutSseSpecificationParameters(value *VerifiedaccessTrustProviderSseSpecification) error {
 	return nil
 }
 

@@ -103,6 +103,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCredentialArnParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCustomRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetEcrRepositoryPrefixParameters(val *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(va
 }
 
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRegistryUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRepositoryPrefixParameters(val *string) error {
 	return nil
 }
 

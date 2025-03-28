@@ -79,6 +79,10 @@ func (b *jsiiProxy_BedrockagentAgent) validatePutGuardrailConfigurationParameter
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentAgent) validatePutMemoryConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentAgent) validatePutPromptOverrideConfigurationParameters(value interface{}) error {
 	return nil
 }

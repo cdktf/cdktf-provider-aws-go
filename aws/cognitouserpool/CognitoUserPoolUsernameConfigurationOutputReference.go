@@ -67,6 +67,7 @@ type CognitoUserPoolUsernameConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaseSensitive()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (c *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) ResetCaseSensitive() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCaseSensitive",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CognitoUserPoolUsernameConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

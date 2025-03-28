@@ -47,6 +47,10 @@ func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference)
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) validatePutPortRangeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

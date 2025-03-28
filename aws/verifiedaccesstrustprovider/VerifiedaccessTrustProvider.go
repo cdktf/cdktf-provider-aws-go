@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}.
 type VerifiedaccessTrustProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,8 @@ type VerifiedaccessTrustProvider interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NativeApplicationOidcOptions() VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference
+	NativeApplicationOidcOptionsInput() *VerifiedaccessTrustProviderNativeApplicationOidcOptions
 	// The tree node.
 	Node() constructs.Node
 	OidcOptions() VerifiedaccessTrustProviderOidcOptionsOutputReference
@@ -71,6 +73,8 @@ type VerifiedaccessTrustProvider interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SseSpecification() VerifiedaccessTrustProviderSseSpecificationOutputReference
+	SseSpecificationInput() *VerifiedaccessTrustProviderSseSpecification
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -135,16 +139,20 @@ type VerifiedaccessTrustProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDeviceOptions(value *VerifiedaccessTrustProviderDeviceOptions)
+	PutNativeApplicationOidcOptions(value *VerifiedaccessTrustProviderNativeApplicationOidcOptions)
 	PutOidcOptions(value *VerifiedaccessTrustProviderOidcOptions)
+	PutSseSpecification(value *VerifiedaccessTrustProviderSseSpecification)
 	PutTimeouts(value *VerifiedaccessTrustProviderTimeouts)
 	ResetDescription()
 	ResetDeviceOptions()
 	ResetDeviceTrustProviderType()
 	ResetId()
+	ResetNativeApplicationOidcOptions()
 	ResetOidcOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSseSpecification()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -337,6 +345,26 @@ func (j *jsiiProxy_VerifiedaccessTrustProvider) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessTrustProvider) NativeApplicationOidcOptions() VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference {
+	var returns VerifiedaccessTrustProviderNativeApplicationOidcOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"nativeApplicationOidcOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessTrustProvider) NativeApplicationOidcOptionsInput() *VerifiedaccessTrustProviderNativeApplicationOidcOptions {
+	var returns *VerifiedaccessTrustProviderNativeApplicationOidcOptions
+	_jsii_.Get(
+		j,
+		"nativeApplicationOidcOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessTrustProvider) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -412,6 +440,26 @@ func (j *jsiiProxy_VerifiedaccessTrustProvider) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessTrustProvider) SseSpecification() VerifiedaccessTrustProviderSseSpecificationOutputReference {
+	var returns VerifiedaccessTrustProviderSseSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"sseSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessTrustProvider) SseSpecificationInput() *VerifiedaccessTrustProviderSseSpecification {
+	var returns *VerifiedaccessTrustProviderSseSpecification
+	_jsii_.Get(
+		j,
+		"sseSpecificationInput",
 		&returns,
 	)
 	return returns
@@ -548,7 +596,7 @@ func (j *jsiiProxy_VerifiedaccessTrustProvider) UserTrustProviderTypeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
 func NewVerifiedaccessTrustProvider(scope constructs.Construct, id *string, config *VerifiedaccessTrustProviderConfig) VerifiedaccessTrustProvider {
 	_init_.Initialize()
 
@@ -566,7 +614,7 @@ func NewVerifiedaccessTrustProvider(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
 func NewVerifiedaccessTrustProvider_Override(v VerifiedaccessTrustProvider, scope constructs.Construct, id *string, config *VerifiedaccessTrustProviderConfig) {
 	_init_.Initialize()
 
@@ -1097,6 +1145,17 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) PutDeviceOptions(value *Verified
 	)
 }
 
+func (v *jsiiProxy_VerifiedaccessTrustProvider) PutNativeApplicationOidcOptions(value *VerifiedaccessTrustProviderNativeApplicationOidcOptions) {
+	if err := v.validatePutNativeApplicationOidcOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putNativeApplicationOidcOptions",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessTrustProvider) PutOidcOptions(value *VerifiedaccessTrustProviderOidcOptions) {
 	if err := v.validatePutOidcOptionsParameters(value); err != nil {
 		panic(err)
@@ -1104,6 +1163,17 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) PutOidcOptions(value *Verifiedac
 	_jsii_.InvokeVoid(
 		v,
 		"putOidcOptions",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessTrustProvider) PutSseSpecification(value *VerifiedaccessTrustProviderSseSpecification) {
+	if err := v.validatePutSseSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putSseSpecification",
 		[]interface{}{value},
 	)
 }
@@ -1151,6 +1221,14 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) ResetId() {
 	)
 }
 
+func (v *jsiiProxy_VerifiedaccessTrustProvider) ResetNativeApplicationOidcOptions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNativeApplicationOidcOptions",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessTrustProvider) ResetOidcOptions() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1163,6 +1241,14 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessTrustProvider) ResetSseSpecification() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSseSpecification",
 		nil, // no parameters
 	)
 }

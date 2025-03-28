@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialArn", GoGetter: "CredentialArn"},
+			_jsii_.MemberProperty{JsiiProperty: "customRoleArn", GoGetter: "CustomRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrRepositoryPrefix", GoGetter: "EcrRepositoryPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrRepositoryPrefixInput", GoGetter: "EcrRepositoryPrefixInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamRegistryUrl", GoGetter: "UpstreamRegistryUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "upstreamRepositoryPrefix", GoGetter: "UpstreamRepositoryPrefix"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEcrPullThroughCacheRule{}

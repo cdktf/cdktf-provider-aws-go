@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codepipeline aws_codepipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/codepipeline aws_codepipeline}.
 type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -88,6 +88,7 @@ type Codepipeline interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Trigger() CodepipelineTriggerList
+	TriggerAll() CodepipelineTriggerAllList
 	TriggerInput() interface{}
 	Variable() CodepipelineVariableList
 	VariableInput() interface{}
@@ -526,6 +527,16 @@ func (j *jsiiProxy_Codepipeline) Trigger() CodepipelineTriggerList {
 	return returns
 }
 
+func (j *jsiiProxy_Codepipeline) TriggerAll() CodepipelineTriggerAllList {
+	var returns CodepipelineTriggerAllList
+	_jsii_.Get(
+		j,
+		"triggerAll",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Codepipeline) TriggerInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -557,7 +568,7 @@ func (j *jsiiProxy_Codepipeline) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
 
@@ -575,7 +586,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *string, config *CodepipelineConfig) {
 	_init_.Initialize()
 

@@ -91,6 +91,10 @@ func validateVerifiedaccessInstance_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessInstance) validateSetCidrEndpointsCustomSubdomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

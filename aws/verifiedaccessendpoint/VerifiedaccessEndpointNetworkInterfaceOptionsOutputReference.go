@@ -38,6 +38,8 @@ type VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	PortRange() VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList
+	PortRangeInput() interface{}
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -73,8 +75,10 @@ type VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPortRange(value interface{})
 	ResetNetworkInterfaceId()
 	ResetPort()
+	ResetPortRange()
 	ResetProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference)
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) PortRange() VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList {
+	var returns VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList
+	_jsii_.Get(
+		j,
+		"portRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) PortRangeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"portRangeInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference)
 	return returns
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) PutPortRange(value interface{}) {
+	if err := v.validatePutPortRangeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putPortRange",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) ResetNetworkInterfaceId() {
 	_jsii_.InvokeVoid(
 		v,
@@ -535,6 +570,14 @@ func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference)
 	_jsii_.InvokeVoid(
 		v,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference) ResetPortRange() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPortRange",
 		nil, // no parameters
 	)
 }

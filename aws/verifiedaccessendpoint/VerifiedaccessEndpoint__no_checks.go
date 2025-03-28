@@ -75,11 +75,19 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutCidrOptionsParameters(value *VerifiedaccessEndpointCidrOptions) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutLoadBalancerOptionsParameters(value *VerifiedaccessEndpointLoadBalancerOptions) error {
 	return nil
 }
 
 func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutNetworkInterfaceOptionsParameters(value *VerifiedaccessEndpointNetworkInterfaceOptions) error {
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutRdsOptionsParameters(value *VerifiedaccessEndpointRdsOptions) error {
 	return nil
 }
 

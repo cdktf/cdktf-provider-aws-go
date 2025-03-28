@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_stack aws_opsworks_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_stack aws_opsworks_stack}.
 type OpsworksStack interface {
 	cdktf.TerraformResource
 	AgentVersion() *string
@@ -904,7 +904,7 @@ func (j *jsiiProxy_OpsworksStack) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
 func NewOpsworksStack(scope constructs.Construct, id *string, config *OpsworksStackConfig) OpsworksStack {
 	_init_.Initialize()
 
@@ -922,7 +922,7 @@ func NewOpsworksStack(scope constructs.Construct, id *string, config *OpsworksSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
 func NewOpsworksStack_Override(o OpsworksStack, scope constructs.Construct, id *string, config *OpsworksStackConfig) {
 	_init_.Initialize()
 

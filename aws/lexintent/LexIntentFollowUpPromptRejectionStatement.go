@@ -7,9 +7,9 @@ package lexintent
 type LexIntentFollowUpPromptRejectionStatement struct {
 	// message block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lex_intent#message LexIntent#message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/lex_intent#message LexIntent#message}
 	Message interface{} `field:"required" json:"message" yaml:"message"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 	ResponseCard *string `field:"optional" json:"responseCard" yaml:"responseCard"`
 }
 

@@ -7,7 +7,7 @@ package cloudwatcheventconnection
 type CloudwatchEventConnectionInvocationConnectivityParameters struct {
 	// resource_parameters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
 	ResourceParameters *CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters `field:"required" json:"resourceParameters" yaml:"resourceParameters"`
 }
 

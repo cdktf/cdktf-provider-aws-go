@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
 type VerifiedaccessEndpoint interface {
 	cdktf.TerraformResource
 	ApplicationDomain() *string
@@ -23,6 +23,8 @@ type VerifiedaccessEndpoint interface {
 	AttachmentTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CidrOptions() VerifiedaccessEndpointCidrOptionsOutputReference
+	CidrOptionsInput() *VerifiedaccessEndpointCidrOptions
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -85,6 +87,8 @@ type VerifiedaccessEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RdsOptions() VerifiedaccessEndpointRdsOptionsOutputReference
+	RdsOptionsInput() *VerifiedaccessEndpointRdsOptions
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -151,11 +155,17 @@ type VerifiedaccessEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCidrOptions(value *VerifiedaccessEndpointCidrOptions)
 	PutLoadBalancerOptions(value *VerifiedaccessEndpointLoadBalancerOptions)
 	PutNetworkInterfaceOptions(value *VerifiedaccessEndpointNetworkInterfaceOptions)
+	PutRdsOptions(value *VerifiedaccessEndpointRdsOptions)
 	PutSseSpecification(value *VerifiedaccessEndpointSseSpecification)
 	PutTimeouts(value *VerifiedaccessEndpointTimeouts)
+	ResetApplicationDomain()
+	ResetCidrOptions()
 	ResetDescription()
+	ResetDomainCertificateArn()
+	ResetEndpointDomainPrefix()
 	ResetId()
 	ResetLoadBalancerOptions()
 	ResetNetworkInterfaceOptions()
@@ -163,6 +173,7 @@ type VerifiedaccessEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyDocument()
+	ResetRdsOptions()
 	ResetSecurityGroupIds()
 	ResetSseSpecification()
 	ResetTags()
@@ -231,6 +242,26 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint) CidrOptions() VerifiedaccessEndpointCidrOptionsOutputReference {
+	var returns VerifiedaccessEndpointCidrOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cidrOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint) CidrOptionsInput() *VerifiedaccessEndpointCidrOptions {
+	var returns *VerifiedaccessEndpointCidrOptions
+	_jsii_.Get(
+		j,
+		"cidrOptionsInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +567,26 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessEndpoint) RdsOptions() VerifiedaccessEndpointRdsOptionsOutputReference {
+	var returns VerifiedaccessEndpointRdsOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"rdsOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint) RdsOptionsInput() *VerifiedaccessEndpointRdsOptions {
+	var returns *VerifiedaccessEndpointRdsOptions
+	_jsii_.Get(
+		j,
+		"rdsOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessEndpoint) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -697,7 +748,7 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) VerifiedAccessInstanceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) VerifiedaccessEndpoint {
 	_init_.Initialize()
 
@@ -715,7 +766,7 @@ func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint_Override(v VerifiedaccessEndpoint, scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) {
 	_init_.Initialize()
 
@@ -1279,6 +1330,17 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpoint) PutCidrOptions(value *VerifiedaccessEndpointCidrOptions) {
+	if err := v.validatePutCidrOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putCidrOptions",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpoint) PutLoadBalancerOptions(value *VerifiedaccessEndpointLoadBalancerOptions) {
 	if err := v.validatePutLoadBalancerOptionsParameters(value); err != nil {
 		panic(err)
@@ -1297,6 +1359,17 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) PutNetworkInterfaceOptions(value *Ver
 	_jsii_.InvokeVoid(
 		v,
 		"putNetworkInterfaceOptions",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) PutRdsOptions(value *VerifiedaccessEndpointRdsOptions) {
+	if err := v.validatePutRdsOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putRdsOptions",
 		[]interface{}{value},
 	)
 }
@@ -1323,10 +1396,42 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) PutTimeouts(value *VerifiedaccessEndp
 	)
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetApplicationDomain() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetApplicationDomain",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetCidrOptions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCidrOptions",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpoint) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetDomainCertificateArn() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDomainCertificateArn",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetEndpointDomainPrefix() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEndpointDomainPrefix",
 		nil, // no parameters
 	)
 }
@@ -1367,6 +1472,14 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) ResetPolicyDocument() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPolicyDocument",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetRdsOptions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRdsOptions",
 		nil, // no parameters
 	)
 }

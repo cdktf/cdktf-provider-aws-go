@@ -38,6 +38,8 @@ type VerifiedaccessEndpointLoadBalancerOptionsOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	PortRange() VerifiedaccessEndpointLoadBalancerOptionsPortRangeList
+	PortRangeInput() interface{}
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -76,8 +78,10 @@ type VerifiedaccessEndpointLoadBalancerOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPortRange(value interface{})
 	ResetLoadBalancerArn()
 	ResetPort()
+	ResetPortRange()
 	ResetProtocol()
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) Por
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) PortRange() VerifiedaccessEndpointLoadBalancerOptionsPortRangeList {
+	var returns VerifiedaccessEndpointLoadBalancerOptionsPortRangeList
+	_jsii_.Get(
+		j,
+		"portRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) PortRangeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"portRangeInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +582,17 @@ func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) Int
 	return returns
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) PutPortRange(value interface{}) {
+	if err := v.validatePutPortRangeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putPortRange",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) ResetLoadBalancerArn() {
 	_jsii_.InvokeVoid(
 		v,
@@ -570,6 +605,14 @@ func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) Res
 	_jsii_.InvokeVoid(
 		v,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) ResetPortRange() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPortRange",
 		nil, // no parameters
 	)
 }

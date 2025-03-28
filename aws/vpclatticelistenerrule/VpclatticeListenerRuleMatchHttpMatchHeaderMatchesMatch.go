@@ -5,11 +5,11 @@ package vpclatticelistenerrule
 
 
 type VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/vpclattice_listener_rule#contains VpclatticeListenerRule#contains}.
 	Contains *string `field:"optional" json:"contains" yaml:"contains"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/vpclattice_listener_rule#exact VpclatticeListenerRule#exact}.
 	Exact *string `field:"optional" json:"exact" yaml:"exact"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/vpclattice_listener_rule#prefix VpclatticeListenerRule#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

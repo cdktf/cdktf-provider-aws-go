@@ -22,6 +22,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialArn", GoGetter: "CredentialArn"},
 			_jsii_.MemberProperty{JsiiProperty: "credentialArnInput", GoGetter: "CredentialArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customRoleArn", GoGetter: "CustomRoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "customRoleArnInput", GoGetter: "CustomRoleArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrRepositoryPrefix", GoGetter: "EcrRepositoryPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrRepositoryPrefixInput", GoGetter: "EcrRepositoryPrefixInput"},
@@ -53,8 +55,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registryId", GoGetter: "RegistryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialArn", GoMethod: "ResetCredentialArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomRoleArn", GoMethod: "ResetCustomRoleArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpstreamRepositoryPrefix", GoMethod: "ResetUpstreamRepositoryPrefix"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -66,6 +70,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamRegistryUrl", GoGetter: "UpstreamRegistryUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamRegistryUrlInput", GoGetter: "UpstreamRegistryUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "upstreamRepositoryPrefix", GoGetter: "UpstreamRepositoryPrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "upstreamRepositoryPrefixInput", GoGetter: "UpstreamRepositoryPrefixInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EcrPullThroughCacheRule{}

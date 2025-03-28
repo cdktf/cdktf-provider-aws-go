@@ -5,9 +5,9 @@ package securitylakesubscriber
 
 
 type SecuritylakeSubscriberSourceAwsLogSourceResource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/securitylake_subscriber#source_name SecuritylakeSubscriber#source_name}.
 	SourceName *string `field:"required" json:"sourceName" yaml:"sourceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/securitylake_subscriber#source_version SecuritylakeSubscriber#source_version}.
 	SourceVersion *string `field:"optional" json:"sourceVersion" yaml:"sourceVersion"`
 }
 

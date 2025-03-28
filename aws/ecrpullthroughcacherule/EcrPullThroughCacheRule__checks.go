@@ -345,6 +345,14 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCredentialArnParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCustomRoleArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetEcrRepositoryPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -416,6 +424,14 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(va
 }
 
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRegistryUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRepositoryPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

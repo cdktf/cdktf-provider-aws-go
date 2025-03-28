@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
 type ElasticacheCluster interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -155,6 +155,8 @@ type ElasticacheCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ElasticacheClusterTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	TransitEncryptionEnabled() interface{}
 	SetTransitEncryptionEnabled(val interface{})
 	TransitEncryptionEnabledInput() interface{}
@@ -202,6 +204,7 @@ type ElasticacheCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogDeliveryConfiguration(value interface{})
+	PutTimeouts(value *ElasticacheClusterTimeouts)
 	ResetApplyImmediately()
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
@@ -234,6 +237,7 @@ type ElasticacheCluster interface {
 	ResetSubnetGroupName()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	ResetTransitEncryptionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1063,6 +1067,26 @@ func (j *jsiiProxy_ElasticacheCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheCluster) Timeouts() ElasticacheClusterTimeoutsOutputReference {
+	var returns ElasticacheClusterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheCluster) TransitEncryptionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1084,7 +1108,7 @@ func (j *jsiiProxy_ElasticacheCluster) TransitEncryptionEnabledInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) ElasticacheCluster {
 	_init_.Initialize()
 
@@ -1102,7 +1126,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Construct, id *string, config *ElasticacheClusterConfig) {
 	_init_.Initialize()
 
@@ -1875,6 +1899,17 @@ func (e *jsiiProxy_ElasticacheCluster) PutLogDeliveryConfiguration(value interfa
 	)
 }
 
+func (e *jsiiProxy_ElasticacheCluster) PutTimeouts(value *ElasticacheClusterTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheCluster) ResetApplyImmediately() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2111,6 +2146,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheCluster) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

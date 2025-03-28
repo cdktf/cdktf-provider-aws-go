@@ -207,6 +207,17 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutCidrOptionsParameters(value *VerifiedaccessEndpointCidrOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutLoadBalancerOptionsParameters(value *VerifiedaccessEndpointLoadBalancerOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -219,6 +230,17 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutLoadBalancerOptionsParamet
 }
 
 func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutNetworkInterfaceOptionsParameters(value *VerifiedaccessEndpointNetworkInterfaceOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) validatePutRdsOptionsParameters(value *VerifiedaccessEndpointRdsOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

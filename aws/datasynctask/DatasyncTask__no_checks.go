@@ -159,6 +159,10 @@ func (j *jsiiProxy_DatasyncTask) validateSetTagsAllParameters(val *map[string]*s
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTask) validateSetTaskModeParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatasyncTaskParameters(scope constructs.Construct, id *string, config *DatasyncTaskConfig) error {
 	return nil
 }

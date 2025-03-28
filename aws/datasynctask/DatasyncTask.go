@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datasync_task aws_datasync_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/datasync_task aws_datasync_task}.
 type DatasyncTask interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -85,6 +85,9 @@ type DatasyncTask interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TaskMode() *string
+	SetTaskMode(val *string)
+	TaskModeInput() *string
 	TaskReportConfig() DatasyncTaskTaskReportConfigOutputReference
 	TaskReportConfigInput() *DatasyncTaskTaskReportConfig
 	// Experimental.
@@ -156,6 +159,7 @@ type DatasyncTask interface {
 	ResetSchedule()
 	ResetTags()
 	ResetTagsAll()
+	ResetTaskMode()
 	ResetTaskReportConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -536,6 +540,26 @@ func (j *jsiiProxy_DatasyncTask) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncTask) TaskMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTask) TaskModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"taskModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncTask) TaskReportConfig() DatasyncTaskTaskReportConfigOutputReference {
 	var returns DatasyncTaskTaskReportConfigOutputReference
 	_jsii_.Get(
@@ -607,7 +631,7 @@ func (j *jsiiProxy_DatasyncTask) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTaskConfig) DatasyncTask {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask_Override(d DatasyncTask, scope constructs.Construct, id *string, config *DatasyncTaskConfig) {
 	_init_.Initialize()
 
@@ -777,6 +801,17 @@ func (j *jsiiProxy_DatasyncTask)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncTask)SetTaskMode(val *string) {
+	if err := j.validateSetTaskModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"taskMode",
 		val,
 	)
 }
@@ -1276,6 +1311,14 @@ func (d *jsiiProxy_DatasyncTask) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncTask) ResetTaskMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTaskMode",
 		nil, // no parameters
 	)
 }

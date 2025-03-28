@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
 type BedrockagentAgent interface {
 	cdktf.TerraformResource
 	AgentArn() *string
@@ -73,6 +73,8 @@ type BedrockagentAgent interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MemoryConfiguration() BedrockagentAgentMemoryConfigurationList
+	MemoryConfigurationInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PrepareAgent() interface{}
@@ -149,6 +151,7 @@ type BedrockagentAgent interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGuardrailConfiguration(value interface{})
+	PutMemoryConfiguration(value interface{})
 	PutPromptOverrideConfiguration(value interface{})
 	PutTimeouts(value *BedrockagentAgentTimeouts)
 	ResetAgentCollaboration()
@@ -157,6 +160,7 @@ type BedrockagentAgent interface {
 	ResetGuardrailConfiguration()
 	ResetIdleSessionTtlInSeconds()
 	ResetInstruction()
+	ResetMemoryConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -493,6 +497,26 @@ func (j *jsiiProxy_BedrockagentAgent) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgent) MemoryConfiguration() BedrockagentAgentMemoryConfigurationList {
+	var returns BedrockagentAgentMemoryConfigurationList
+	_jsii_.Get(
+		j,
+		"memoryConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) MemoryConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memoryConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgent) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -674,7 +698,7 @@ func (j *jsiiProxy_BedrockagentAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent(scope constructs.Construct, id *string, config *BedrockagentAgentConfig) BedrockagentAgent {
 	_init_.Initialize()
 
@@ -692,7 +716,7 @@ func NewBedrockagentAgent(scope constructs.Construct, id *string, config *Bedroc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.92.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Construct, id *string, config *BedrockagentAgentConfig) {
 	_init_.Initialize()
 
@@ -1256,6 +1280,17 @@ func (b *jsiiProxy_BedrockagentAgent) PutGuardrailConfiguration(value interface{
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgent) PutMemoryConfiguration(value interface{}) {
+	if err := b.validatePutMemoryConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putMemoryConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgent) PutPromptOverrideConfiguration(value interface{}) {
 	if err := b.validatePutPromptOverrideConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1322,6 +1357,14 @@ func (b *jsiiProxy_BedrockagentAgent) ResetInstruction() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetInstruction",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgent) ResetMemoryConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMemoryConfiguration",
 		nil, // no parameters
 	)
 }

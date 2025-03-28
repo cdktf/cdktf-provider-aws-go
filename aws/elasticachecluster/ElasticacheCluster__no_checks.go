@@ -79,6 +79,10 @@ func (e *jsiiProxy_ElasticacheCluster) validatePutLogDeliveryConfigurationParame
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheCluster) validatePutTimeoutsParameters(value *ElasticacheClusterTimeouts) error {
+	return nil
+}
+
 func validateElasticacheCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
