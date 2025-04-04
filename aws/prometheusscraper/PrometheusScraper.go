@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
 type PrometheusScraper interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -63,6 +63,8 @@ type PrometheusScraper interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RoleArn() *string
+	RoleConfiguration() PrometheusScraperRoleConfigurationList
+	RoleConfigurationInput() interface{}
 	ScrapeConfiguration() *string
 	SetScrapeConfiguration(val *string)
 	ScrapeConfigurationInput() *string
@@ -124,6 +126,7 @@ type PrometheusScraper interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDestination(value interface{})
+	PutRoleConfiguration(value interface{})
 	PutSource(value interface{})
 	PutTimeouts(value *PrometheusScraperTimeouts)
 	ResetAlias()
@@ -131,6 +134,7 @@ type PrometheusScraper interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleConfiguration()
 	ResetSource()
 	ResetTags()
 	ResetTimeouts()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_PrometheusScraper) RoleArn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PrometheusScraper) RoleConfiguration() PrometheusScraperRoleConfigurationList {
+	var returns PrometheusScraperRoleConfigurationList
+	_jsii_.Get(
+		j,
+		"roleConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusScraper) RoleConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roleConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrometheusScraper) ScrapeConfiguration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_PrometheusScraper) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper(scope constructs.Construct, id *string, config *PrometheusScraperConfig) PrometheusScraper {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewPrometheusScraper(scope constructs.Construct, id *string, config *Promet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper_Override(p PrometheusScraper, scope constructs.Construct, id *string, config *PrometheusScraperConfig) {
 	_init_.Initialize()
 
@@ -967,6 +991,17 @@ func (p *jsiiProxy_PrometheusScraper) PutDestination(value interface{}) {
 	)
 }
 
+func (p *jsiiProxy_PrometheusScraper) PutRoleConfiguration(value interface{}) {
+	if err := p.validatePutRoleConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRoleConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrometheusScraper) PutSource(value interface{}) {
 	if err := p.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -1009,6 +1044,14 @@ func (p *jsiiProxy_PrometheusScraper) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusScraper) ResetRoleConfiguration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRoleConfiguration",
 		nil, // no parameters
 	)
 }

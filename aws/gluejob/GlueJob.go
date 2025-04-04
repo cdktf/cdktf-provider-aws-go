@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job aws_glue_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job aws_glue_job}.
 type GlueJob interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -107,6 +107,8 @@ type GlueJob interface {
 	SecurityConfiguration() *string
 	SetSecurityConfiguration(val *string)
 	SecurityConfigurationInput() *string
+	SourceControlDetails() GlueJobSourceControlDetailsOutputReference
+	SourceControlDetailsInput() *GlueJobSourceControlDetails
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -171,6 +173,7 @@ type GlueJob interface {
 	PutCommand(value *GlueJobCommand)
 	PutExecutionProperty(value *GlueJobExecutionProperty)
 	PutNotificationProperty(value *GlueJobNotificationProperty)
+	PutSourceControlDetails(value *GlueJobSourceControlDetails)
 	ResetConnections()
 	ResetDefaultArguments()
 	ResetDescription()
@@ -189,6 +192,7 @@ type GlueJob interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecurityConfiguration()
+	ResetSourceControlDetails()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeout()
@@ -711,6 +715,26 @@ func (j *jsiiProxy_GlueJob) SecurityConfigurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GlueJob) SourceControlDetails() GlueJobSourceControlDetailsOutputReference {
+	var returns GlueJobSourceControlDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"sourceControlDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) SourceControlDetailsInput() *GlueJobSourceControlDetails {
+	var returns *GlueJobSourceControlDetails
+	_jsii_.Get(
+		j,
+		"sourceControlDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueJob) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -822,7 +846,7 @@ func (j *jsiiProxy_GlueJob) WorkerTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) GlueJob {
 	_init_.Initialize()
 
@@ -840,7 +864,7 @@ func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, config *GlueJobConfig) {
 	_init_.Initialize()
 
@@ -1514,6 +1538,17 @@ func (g *jsiiProxy_GlueJob) PutNotificationProperty(value *GlueJobNotificationPr
 	)
 }
 
+func (g *jsiiProxy_GlueJob) PutSourceControlDetails(value *GlueJobSourceControlDetails) {
+	if err := g.validatePutSourceControlDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceControlDetails",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GlueJob) ResetConnections() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1638,6 +1673,14 @@ func (g *jsiiProxy_GlueJob) ResetSecurityConfiguration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecurityConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetSourceControlDetails() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceControlDetails",
 		nil, // no parameters
 	)
 }

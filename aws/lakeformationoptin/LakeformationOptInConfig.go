@@ -24,15 +24,15 @@ type LakeformationOptInConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
 	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
 	// principal block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
 	Principal interface{} `field:"optional" json:"principal" yaml:"principal"`
 	// resource_data block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
 	ResourceData interface{} `field:"optional" json:"resourceData" yaml:"resourceData"`
 }
 

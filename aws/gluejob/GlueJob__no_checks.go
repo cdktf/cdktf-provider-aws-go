@@ -87,6 +87,10 @@ func (g *jsiiProxy_GlueJob) validatePutNotificationPropertyParameters(value *Glu
 	return nil
 }
 
+func (g *jsiiProxy_GlueJob) validatePutSourceControlDetailsParameters(value *GlueJobSourceControlDetails) error {
+	return nil
+}
+
 func validateGlueJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

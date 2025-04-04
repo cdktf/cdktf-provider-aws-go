@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_from_instance aws_ami_from_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_from_instance aws_ami_from_instance}.
 type AmiFromInstance interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -62,6 +62,7 @@ type AmiFromInstance interface {
 	ImageType() *string
 	ImdsSupport() *string
 	KernelId() *string
+	LastLaunchedTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -470,6 +471,16 @@ func (j *jsiiProxy_AmiFromInstance) KernelId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AmiFromInstance) LastLaunchedTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastLaunchedTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmiFromInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -801,7 +812,7 @@ func (j *jsiiProxy_AmiFromInstance) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
 func NewAmiFromInstance(scope constructs.Construct, id *string, config *AmiFromInstanceConfig) AmiFromInstance {
 	_init_.Initialize()
 
@@ -819,7 +830,7 @@ func NewAmiFromInstance(scope constructs.Construct, id *string, config *AmiFromI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
 func NewAmiFromInstance_Override(a AmiFromInstance, scope constructs.Construct, id *string, config *AmiFromInstanceConfig) {
 	_init_.Initialize()
 

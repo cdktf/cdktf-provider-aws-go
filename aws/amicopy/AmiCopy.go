@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_copy aws_ami_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_copy aws_ami_copy}.
 type AmiCopy interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -71,6 +71,7 @@ type AmiCopy interface {
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
 	KmsKeyIdInput() *string
+	LastLaunchedTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -541,6 +542,16 @@ func (j *jsiiProxy_AmiCopy) KmsKeyIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AmiCopy) LastLaunchedTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastLaunchedTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmiCopy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -872,7 +883,7 @@ func (j *jsiiProxy_AmiCopy) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) AmiCopy {
 	_init_.Initialize()
 
@@ -890,7 +901,7 @@ func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy_Override(a AmiCopy, scope constructs.Construct, id *string, config *AmiCopyConfig) {
 	_init_.Initialize()
 

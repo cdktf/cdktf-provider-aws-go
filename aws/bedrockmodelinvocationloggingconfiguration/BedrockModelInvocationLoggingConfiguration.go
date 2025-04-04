@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
 type BedrockModelInvocationLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) BedrockModelInvocationLoggingConfiguration {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration_Override(b BedrockModelInvocationLoggingConfiguration, scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) {
 	_init_.Initialize()
 

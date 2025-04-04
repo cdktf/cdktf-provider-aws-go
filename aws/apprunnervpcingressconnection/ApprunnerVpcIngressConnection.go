@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection}.
 type ApprunnerVpcIngressConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
 func NewApprunnerVpcIngressConnection(scope constructs.Construct, id *string, config *ApprunnerVpcIngressConnectionConfig) ApprunnerVpcIngressConnection {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewApprunnerVpcIngressConnection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
 func NewApprunnerVpcIngressConnection_Override(a ApprunnerVpcIngressConnection, scope constructs.Construct, id *string, config *ApprunnerVpcIngressConnectionConfig) {
 	_init_.Initialize()
 

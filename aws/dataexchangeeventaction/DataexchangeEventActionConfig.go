@@ -24,11 +24,11 @@ type DataexchangeEventActionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/dataexchange_event_action#action DataexchangeEventAction#action}
 	Action interface{} `field:"optional" json:"action" yaml:"action"`
 	// event block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/dataexchange_event_action#event DataexchangeEventAction#event}
 	Event interface{} `field:"optional" json:"event" yaml:"event"`
 }
 

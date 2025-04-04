@@ -22,9 +22,9 @@ type DataAwsShieldProtectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
 	ProtectionId *string `field:"optional" json:"protectionId" yaml:"protectionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
 	ResourceArn *string `field:"optional" json:"resourceArn" yaml:"resourceArn"`
 }
 

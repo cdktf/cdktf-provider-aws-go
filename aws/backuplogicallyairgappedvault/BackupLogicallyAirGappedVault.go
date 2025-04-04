@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
 type BackupLogicallyAirGappedVault interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
 func NewBackupLogicallyAirGappedVault(scope constructs.Construct, id *string, config *BackupLogicallyAirGappedVaultConfig) BackupLogicallyAirGappedVault {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewBackupLogicallyAirGappedVault(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.93.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
 func NewBackupLogicallyAirGappedVault_Override(b BackupLogicallyAirGappedVault, scope constructs.Construct, id *string, config *BackupLogicallyAirGappedVaultConfig) {
 	_init_.Initialize()
 
