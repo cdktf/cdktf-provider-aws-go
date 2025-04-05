@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/controltower_landing_zone aws_controltower_landing_zone}.
 type ControltowerLandingZone interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_ControltowerLandingZone) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource.
 func NewControltowerLandingZone(scope constructs.Construct, id *string, config *ControltowerLandingZoneConfig) ControltowerLandingZone {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewControltowerLandingZone(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/controltower_landing_zone aws_controltower_landing_zone} Resource.
 func NewControltowerLandingZone_Override(c ControltowerLandingZone, scope constructs.Construct, id *string, config *ControltowerLandingZoneConfig) {
 	_init_.Initialize()
 

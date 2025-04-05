@@ -5,7 +5,7 @@ package eksnodegroup
 
 
 type EksNodeGroupNodeRepairConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/eks_node_group#enabled EksNodeGroup#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

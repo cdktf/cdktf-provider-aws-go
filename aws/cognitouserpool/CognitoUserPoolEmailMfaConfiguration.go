@@ -5,9 +5,9 @@ package cognitouserpool
 
 
 type CognitoUserPoolEmailMfaConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/cognito_user_pool#message CognitoUserPool#message}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool#message CognitoUserPool#message}.
 	Message *string `field:"optional" json:"message" yaml:"message"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/cognito_user_pool#subject CognitoUserPool#subject}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool#subject CognitoUserPool#subject}.
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
 

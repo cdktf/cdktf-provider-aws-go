@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/volume_attachment aws_volume_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/volume_attachment aws_volume_attachment}.
 type VolumeAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_VolumeAttachment) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/volume_attachment aws_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/volume_attachment aws_volume_attachment} Resource.
 func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeAttachmentConfig) VolumeAttachment {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/resources/volume_attachment aws_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/volume_attachment aws_volume_attachment} Resource.
 func NewVolumeAttachment_Override(v VolumeAttachment, scope constructs.Construct, id *string, config *VolumeAttachmentConfig) {
 	_init_.Initialize()
 

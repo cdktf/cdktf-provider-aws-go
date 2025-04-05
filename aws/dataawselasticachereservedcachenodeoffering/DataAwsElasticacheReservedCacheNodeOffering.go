@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering}.
 type DataAwsElasticacheReservedCacheNodeOffering interface {
 	cdktf.TerraformDataSource
 	CacheNodeType() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataAwsElasticacheReservedCacheNodeOffering) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering} Data Source.
 func NewDataAwsElasticacheReservedCacheNodeOffering(scope constructs.Construct, id *string, config *DataAwsElasticacheReservedCacheNodeOfferingConfig) DataAwsElasticacheReservedCacheNodeOffering {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataAwsElasticacheReservedCacheNodeOffering(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.0/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/elasticache_reserved_cache_node_offering aws_elasticache_reserved_cache_node_offering} Data Source.
 func NewDataAwsElasticacheReservedCacheNodeOffering_Override(d DataAwsElasticacheReservedCacheNodeOffering, scope constructs.Construct, id *string, config *DataAwsElasticacheReservedCacheNodeOfferingConfig) {
 	_init_.Initialize()
 
