@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment}.
 type LightsailStaticIpAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_LightsailStaticIpAttachment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment} Resource.
 func NewLightsailStaticIpAttachment(scope constructs.Construct, id *string, config *LightsailStaticIpAttachmentConfig) LightsailStaticIpAttachment {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewLightsailStaticIpAttachment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lightsail_static_ip_attachment aws_lightsail_static_ip_attachment} Resource.
 func NewLightsailStaticIpAttachment_Override(l LightsailStaticIpAttachment, scope constructs.Construct, id *string, config *LightsailStaticIpAttachmentConfig) {
 	_init_.Initialize()
 

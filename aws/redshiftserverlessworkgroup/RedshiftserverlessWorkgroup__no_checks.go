@@ -79,6 +79,10 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutConfigParameterParame
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutPricePerformanceTargetParameters(value *RedshiftserverlessWorkgroupPricePerformanceTarget) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutTimeoutsParameters(value *RedshiftserverlessWorkgroupTimeouts) error {
 	return nil
 }

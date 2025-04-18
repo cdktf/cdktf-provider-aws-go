@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 type CodebuildWebhook interface {
 	cdktf.TerraformResource
 	BranchFilter() *string
@@ -54,6 +54,9 @@ type CodebuildWebhook interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManualCreation() interface{}
+	SetManualCreation(val interface{})
+	ManualCreationInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PayloadUrl() *string
@@ -129,6 +132,7 @@ type CodebuildWebhook interface {
 	ResetBuildType()
 	ResetFilterGroup()
 	ResetId()
+	ResetManualCreation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_CodebuildWebhook) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_CodebuildWebhook) ManualCreation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manualCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildWebhook) ManualCreationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manualCreationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodebuildWebhook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_CodebuildWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook(scope constructs.Construct, id *string, config *CodebuildWebhookConfig) CodebuildWebhook {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewCodebuildWebhook(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook_Override(c CodebuildWebhook, scope constructs.Construct, id *string, config *CodebuildWebhookConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_CodebuildWebhook)SetLifecycle(val *cdktf.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodebuildWebhook)SetManualCreation(val interface{}) {
+	if err := j.validateSetManualCreationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manualCreation",
 		val,
 	)
 }
@@ -1006,6 +1041,14 @@ func (c *jsiiProxy_CodebuildWebhook) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildWebhook) ResetManualCreation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManualCreation",
 		nil, // no parameters
 	)
 }

@@ -151,6 +151,10 @@ func (j *jsiiProxy_EksCluster) validateSetEnabledClusterLogTypesParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_EksCluster) validateSetForceUpdateVersionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

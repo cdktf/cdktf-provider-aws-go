@@ -5,9 +5,9 @@ package dataawsec2transitgateway
 
 
 type DataAwsEc2TransitGatewayFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_transit_gateway#name DataAwsEc2TransitGateway#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/ec2_transit_gateway#values DataAwsEc2TransitGateway#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

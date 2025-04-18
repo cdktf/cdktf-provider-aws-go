@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector}.
 type ApprunnerVpcConnector interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_ApprunnerVpcConnector) VpcConnectorRevision() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector} Resource.
 func NewApprunnerVpcConnector(scope constructs.Construct, id *string, config *ApprunnerVpcConnectorConfig) ApprunnerVpcConnector {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewApprunnerVpcConnector(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector} Resource.
 func NewApprunnerVpcConnector_Override(a ApprunnerVpcConnector, scope constructs.Construct, id *string, config *ApprunnerVpcConnectorConfig) {
 	_init_.Initialize()
 

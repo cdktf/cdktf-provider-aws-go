@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type RedshiftserverlessWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,8 @@ type RedshiftserverlessWorkgroup interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	PricePerformanceTarget() RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference
+	PricePerformanceTargetInput() *RedshiftserverlessWorkgroupPricePerformanceTarget
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -148,6 +150,7 @@ type RedshiftserverlessWorkgroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigParameter(value interface{})
+	PutPricePerformanceTarget(value *RedshiftserverlessWorkgroupPricePerformanceTarget)
 	PutTimeouts(value *RedshiftserverlessWorkgroupTimeouts)
 	ResetBaseCapacity()
 	ResetConfigParameter()
@@ -158,6 +161,7 @@ type RedshiftserverlessWorkgroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
+	ResetPricePerformanceTarget()
 	ResetPubliclyAccessible()
 	ResetSecurityGroupIds()
 	ResetSubnetIds()
@@ -442,6 +446,26 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) PortInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) PricePerformanceTarget() RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference {
+	var returns RedshiftserverlessWorkgroupPricePerformanceTargetOutputReference
+	_jsii_.Get(
+		j,
+		"pricePerformanceTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) PricePerformanceTargetInput() *RedshiftserverlessWorkgroupPricePerformanceTarget {
+	var returns *RedshiftserverlessWorkgroupPricePerformanceTarget
+	_jsii_.Get(
+		j,
+		"pricePerformanceTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -653,7 +677,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) RedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup_Override(r RedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 
@@ -1246,6 +1270,17 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) PutConfigParameter(value interfa
 	)
 }
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) PutPricePerformanceTarget(value *RedshiftserverlessWorkgroupPricePerformanceTarget) {
+	if err := r.validatePutPricePerformanceTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPricePerformanceTarget",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) PutTimeouts(value *RedshiftserverlessWorkgroupTimeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1309,6 +1344,14 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetPort() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetPricePerformanceTarget() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPricePerformanceTarget",
 		nil, // no parameters
 	)
 }

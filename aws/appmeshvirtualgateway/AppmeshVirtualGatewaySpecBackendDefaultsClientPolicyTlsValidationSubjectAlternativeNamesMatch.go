@@ -5,7 +5,7 @@ package appmeshvirtualgateway
 
 
 type AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/appmesh_virtual_gateway#exact AppmeshVirtualGateway#exact}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/appmesh_virtual_gateway#exact AppmeshVirtualGateway#exact}.
 	Exact *[]*string `field:"required" json:"exact" yaml:"exact"`
 }
 

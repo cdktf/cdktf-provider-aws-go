@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
 type Ec2NetworkInsightsPath interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -42,6 +42,10 @@ type Ec2NetworkInsightsPath interface {
 	DestinationPort() *float64
 	SetDestinationPort(val *float64)
 	DestinationPortInput() *float64
+	FilterAtDestination() Ec2NetworkInsightsPathFilterAtDestinationOutputReference
+	FilterAtDestinationInput() *Ec2NetworkInsightsPathFilterAtDestination
+	FilterAtSource() Ec2NetworkInsightsPathFilterAtSourceOutputReference
+	FilterAtSourceInput() *Ec2NetworkInsightsPathFilterAtSource
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,9 +138,13 @@ type Ec2NetworkInsightsPath interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilterAtDestination(value *Ec2NetworkInsightsPathFilterAtDestination)
+	PutFilterAtSource(value *Ec2NetworkInsightsPathFilterAtSource)
 	ResetDestination()
 	ResetDestinationIp()
 	ResetDestinationPort()
+	ResetFilterAtDestination()
+	ResetFilterAtSource()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -287,6 +295,46 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) DestinationPortInput() *float64 {
 	_jsii_.Get(
 		j,
 		"destinationPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath) FilterAtDestination() Ec2NetworkInsightsPathFilterAtDestinationOutputReference {
+	var returns Ec2NetworkInsightsPathFilterAtDestinationOutputReference
+	_jsii_.Get(
+		j,
+		"filterAtDestination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath) FilterAtDestinationInput() *Ec2NetworkInsightsPathFilterAtDestination {
+	var returns *Ec2NetworkInsightsPathFilterAtDestination
+	_jsii_.Get(
+		j,
+		"filterAtDestinationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath) FilterAtSource() Ec2NetworkInsightsPathFilterAtSourceOutputReference {
+	var returns Ec2NetworkInsightsPathFilterAtSourceOutputReference
+	_jsii_.Get(
+		j,
+		"filterAtSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath) FilterAtSourceInput() *Ec2NetworkInsightsPathFilterAtSource {
+	var returns *Ec2NetworkInsightsPathFilterAtSource
+	_jsii_.Get(
+		j,
+		"filterAtSourceInput",
 		&returns,
 	)
 	return returns
@@ -533,7 +581,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
 func NewEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *Ec2NetworkInsightsPathConfig) Ec2NetworkInsightsPath {
 	_init_.Initialize()
 
@@ -551,7 +599,7 @@ func NewEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
 func NewEc2NetworkInsightsPath_Override(e Ec2NetworkInsightsPath, scope constructs.Construct, id *string, config *Ec2NetworkInsightsPathConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1130,28 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (e *jsiiProxy_Ec2NetworkInsightsPath) PutFilterAtDestination(value *Ec2NetworkInsightsPathFilterAtDestination) {
+	if err := e.validatePutFilterAtDestinationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putFilterAtDestination",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsPath) PutFilterAtSource(value *Ec2NetworkInsightsPathFilterAtSource) {
+	if err := e.validatePutFilterAtSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putFilterAtSource",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetDestination() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1102,6 +1172,22 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetDestinationPort() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDestinationPort",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetFilterAtDestination() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFilterAtDestination",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetFilterAtSource() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFilterAtSource",
 		nil, // no parameters
 	)
 }

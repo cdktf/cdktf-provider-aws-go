@@ -75,6 +75,14 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (e *jsiiProxy_Ec2NetworkInsightsPath) validatePutFilterAtDestinationParameters(value *Ec2NetworkInsightsPathFilterAtDestination) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsPath) validatePutFilterAtSourceParameters(value *Ec2NetworkInsightsPathFilterAtSource) error {
+	return nil
+}
+
 func validateEc2NetworkInsightsPath_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

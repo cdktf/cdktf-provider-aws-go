@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
@@ -48,6 +48,9 @@ type EksCluster interface {
 	EncryptionConfig() EksClusterEncryptionConfigOutputReference
 	EncryptionConfigInput() *EksClusterEncryptionConfig
 	Endpoint() *string
+	ForceUpdateVersion() interface{}
+	SetForceUpdateVersion(val interface{})
+	ForceUpdateVersionInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -174,6 +177,7 @@ type EksCluster interface {
 	ResetComputeConfig()
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
+	ResetForceUpdateVersion()
 	ResetId()
 	ResetKubernetesNetworkConfig()
 	ResetOutpostConfig()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_EksCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) ForceUpdateVersion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdateVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) ForceUpdateVersionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceUpdateVersionInput",
 		&returns,
 	)
 	return returns
@@ -827,7 +851,7 @@ func (j *jsiiProxy_EksCluster) ZonalShiftConfigInput() *EksClusterZonalShiftConf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -845,7 +869,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -904,6 +928,17 @@ func (j *jsiiProxy_EksCluster)SetEnabledClusterLogTypes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"enabledClusterLogTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksCluster)SetForceUpdateVersion(val interface{}) {
+	if err := j.validateSetForceUpdateVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceUpdateVersion",
 		val,
 	)
 }
@@ -1522,6 +1557,14 @@ func (e *jsiiProxy_EksCluster) ResetEncryptionConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetForceUpdateVersion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetForceUpdateVersion",
 		nil, // no parameters
 	)
 }

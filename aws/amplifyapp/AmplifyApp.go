@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app aws_amplify_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app aws_amplify_app}.
 type AmplifyApp interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -34,6 +34,9 @@ type AmplifyApp interface {
 	CacheConfigInput() *AmplifyAppCacheConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ComputeRoleArn() *string
+	SetComputeRoleArn(val *string)
+	ComputeRoleArnInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -179,6 +182,7 @@ type AmplifyApp interface {
 	ResetBasicAuthCredentials()
 	ResetBuildSpec()
 	ResetCacheConfig()
+	ResetComputeRoleArn()
 	ResetCustomHeaders()
 	ResetCustomRule()
 	ResetDescription()
@@ -350,6 +354,26 @@ func (j *jsiiProxy_AmplifyApp) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) ComputeRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) ComputeRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"computeRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -846,7 +870,7 @@ func (j *jsiiProxy_AmplifyApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppConfig) AmplifyApp {
 	_init_.Initialize()
 
@@ -864,7 +888,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string, config *AmplifyAppConfig) {
 	_init_.Initialize()
 
@@ -915,6 +939,17 @@ func (j *jsiiProxy_AmplifyApp)SetBuildSpec(val *string) {
 	_jsii_.Set(
 		j,
 		"buildSpec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AmplifyApp)SetComputeRoleArn(val *string) {
+	if err := j.validateSetComputeRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"computeRoleArn",
 		val,
 	)
 }
@@ -1582,6 +1617,14 @@ func (a *jsiiProxy_AmplifyApp) ResetCacheConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCacheConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmplifyApp) ResetComputeRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetComputeRoleArn",
 		nil, // no parameters
 	)
 }

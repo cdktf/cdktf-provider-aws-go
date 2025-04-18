@@ -115,6 +115,10 @@ func (j *jsiiProxy_CognitoUserPoolDomain) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolDomain) validateSetManagedLoginVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolDomain) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codecatalyst_project aws_codecatalyst_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codecatalyst_project aws_codecatalyst_project}.
 type CodecatalystProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_CodecatalystProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
 func NewCodecatalystProject(scope constructs.Construct, id *string, config *CodecatalystProjectConfig) CodecatalystProject {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewCodecatalystProject(scope constructs.Construct, id *string, config *Code
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
 func NewCodecatalystProject_Override(c CodecatalystProject, scope constructs.Construct, id *string, config *CodecatalystProjectConfig) {
 	_init_.Initialize()
 

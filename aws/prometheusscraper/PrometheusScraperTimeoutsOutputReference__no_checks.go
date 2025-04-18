@@ -79,6 +79,10 @@ func (j *jsiiProxy_PrometheusScraperTimeoutsOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusScraperTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewPrometheusScraperTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}.
 type CognitoUserPoolDomain interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -56,6 +56,9 @@ type CognitoUserPoolDomain interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedLoginVersion() *float64
+	SetManagedLoginVersion(val *float64)
+	ManagedLoginVersionInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -124,6 +127,7 @@ type CognitoUserPoolDomain interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCertificateArn()
 	ResetId()
+	ResetManagedLoginVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_CognitoUserPoolDomain) Lifecycle() *cdktf.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPoolDomain) ManagedLoginVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"managedLoginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolDomain) ManagedLoginVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"managedLoginVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPoolDomain) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -446,7 +470,7 @@ func (j *jsiiProxy_CognitoUserPoolDomain) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
 func NewCognitoUserPoolDomain(scope constructs.Construct, id *string, config *CognitoUserPoolDomainConfig) CognitoUserPoolDomain {
 	_init_.Initialize()
 
@@ -464,7 +488,7 @@ func NewCognitoUserPoolDomain(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
 func NewCognitoUserPoolDomain_Override(c CognitoUserPoolDomain, scope constructs.Construct, id *string, config *CognitoUserPoolDomainConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_CognitoUserPoolDomain)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPoolDomain)SetManagedLoginVersion(val *float64) {
+	if err := j.validateSetManagedLoginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedLoginVersion",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (c *jsiiProxy_CognitoUserPoolDomain) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolDomain) ResetManagedLoginVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagedLoginVersion",
 		nil, // no parameters
 	)
 }

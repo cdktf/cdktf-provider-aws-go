@@ -22,15 +22,15 @@ type AthenaCapacityReservationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_capacity_reservation#name AthenaCapacityReservation#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_capacity_reservation#target_dpus AthenaCapacityReservation#target_dpus}.
 	TargetDpus *float64 `field:"required" json:"targetDpus" yaml:"targetDpus"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_capacity_reservation#tags AthenaCapacityReservation#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/athena_capacity_reservation#timeouts AthenaCapacityReservation#timeouts}
 	Timeouts *AthenaCapacityReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/vpc_ipams aws_vpc_ipams}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/vpc_ipams aws_vpc_ipams}.
 type DataAwsVpcIpams interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAwsVpcIpams) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source.
 func NewDataAwsVpcIpams(scope constructs.Construct, id *string, config *DataAwsVpcIpamsConfig) DataAwsVpcIpams {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAwsVpcIpams(scope constructs.Construct, id *string, config *DataAwsV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/vpc_ipams aws_vpc_ipams} Data Source.
 func NewDataAwsVpcIpams_Override(d DataAwsVpcIpams, scope constructs.Construct, id *string, config *DataAwsVpcIpamsConfig) {
 	_init_.Initialize()
 

@@ -123,6 +123,14 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewSagemakerNotebookInstanceLifecycleConfigurationParameters(scope constructs.Construct, id *string, config *SagemakerNotebookInstanceLifecycleConfigurationConfig) error {
 	return nil
 }

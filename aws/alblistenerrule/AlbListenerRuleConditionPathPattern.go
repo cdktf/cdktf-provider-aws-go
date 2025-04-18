@@ -5,7 +5,7 @@ package alblistenerrule
 
 
 type AlbListenerRuleConditionPathPattern struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

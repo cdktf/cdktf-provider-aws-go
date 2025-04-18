@@ -7,11 +7,11 @@ package lexv2modelsintent
 type Lexv2ModelsIntentInitialResponseSettingCodeHookPostCodeHookSpecificationFailureResponseMessageGroup struct {
 	// message block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lexv2models_intent#message Lexv2ModelsIntent#message}
 	Message interface{} `field:"optional" json:"message" yaml:"message"`
 	// variation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/lexv2models_intent#variation Lexv2ModelsIntent#variation}
 	Variation interface{} `field:"optional" json:"variation" yaml:"variation"`
 }
 

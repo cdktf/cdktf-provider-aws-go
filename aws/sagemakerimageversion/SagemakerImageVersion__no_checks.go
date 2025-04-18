@@ -103,6 +103,10 @@ func (j *jsiiProxy_SagemakerImageVersion) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) validateSetHorovodParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -111,11 +115,35 @@ func (j *jsiiProxy_SagemakerImageVersion) validateSetImageNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) validateSetJobTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) validateSetMlFrameworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) validateSetProcessorParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) validateSetProgrammingLangParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) validateSetReleaseNotesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) validateSetVendorGuidanceParameters(val *string) error {
 	return nil
 }
 

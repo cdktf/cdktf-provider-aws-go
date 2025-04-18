@@ -119,6 +119,10 @@ func (j *jsiiProxy_AmplifyApp) validateSetBuildSpecParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyApp) validateSetComputeRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyApp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

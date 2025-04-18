@@ -123,6 +123,10 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildWebhook) validateSetManualCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildWebhook) validateSetProjectNameParameters(val *string) error {
 	return nil
 }

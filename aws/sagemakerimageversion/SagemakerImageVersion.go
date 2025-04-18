@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
 type SagemakerImageVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -44,6 +44,9 @@ type SagemakerImageVersion interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Horovod() interface{}
+	SetHorovod(val interface{})
+	HorovodInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -51,12 +54,24 @@ type SagemakerImageVersion interface {
 	ImageName() *string
 	SetImageName(val *string)
 	ImageNameInput() *string
+	JobType() *string
+	SetJobType(val *string)
+	JobTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MlFramework() *string
+	SetMlFramework(val *string)
+	MlFrameworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Processor() *string
+	SetProcessor(val *string)
+	ProcessorInput() *string
+	ProgrammingLang() *string
+	SetProgrammingLang(val *string)
+	ProgrammingLangInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,12 +82,18 @@ type SagemakerImageVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReleaseNotes() *string
+	SetReleaseNotes(val *string)
+	ReleaseNotesInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VendorGuidance() *string
+	SetVendorGuidance(val *string)
+	VendorGuidanceInput() *string
 	Version() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -117,10 +138,17 @@ type SagemakerImageVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetHorovod()
 	ResetId()
+	ResetJobType()
+	ResetMlFramework()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProcessor()
+	ResetProgrammingLang()
+	ResetReleaseNotes()
+	ResetVendorGuidance()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -259,6 +287,26 @@ func (j *jsiiProxy_SagemakerImageVersion) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) Horovod() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"horovod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) HorovodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"horovodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +357,26 @@ func (j *jsiiProxy_SagemakerImageVersion) ImageNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) JobType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) JobTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -319,11 +387,71 @@ func (j *jsiiProxy_SagemakerImageVersion) Lifecycle() *cdktf.TerraformResourceLi
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) MlFramework() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mlFramework",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) MlFrameworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mlFrameworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) Processor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"processor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) ProcessorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"processorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) ProgrammingLang() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"programmingLang",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) ProgrammingLangInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"programmingLangInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +487,26 @@ func (j *jsiiProxy_SagemakerImageVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) ReleaseNotes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releaseNotes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) ReleaseNotesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"releaseNotesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -389,6 +537,26 @@ func (j *jsiiProxy_SagemakerImageVersion) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) VendorGuidance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vendorGuidance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) VendorGuidanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vendorGuidanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) Version() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -400,7 +568,7 @@ func (j *jsiiProxy_SagemakerImageVersion) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
 func NewSagemakerImageVersion(scope constructs.Construct, id *string, config *SagemakerImageVersionConfig) SagemakerImageVersion {
 	_init_.Initialize()
 
@@ -418,7 +586,7 @@ func NewSagemakerImageVersion(scope constructs.Construct, id *string, config *Sa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.94.1/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
 func NewSagemakerImageVersion_Override(s SagemakerImageVersion, scope constructs.Construct, id *string, config *SagemakerImageVersionConfig) {
 	_init_.Initialize()
 
@@ -478,6 +646,17 @@ func (j *jsiiProxy_SagemakerImageVersion)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
+func (j *jsiiProxy_SagemakerImageVersion)SetHorovod(val interface{}) {
+	if err := j.validateSetHorovodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"horovod",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerImageVersion)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -500,6 +679,17 @@ func (j *jsiiProxy_SagemakerImageVersion)SetImageName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SagemakerImageVersion)SetJobType(val *string) {
+	if err := j.validateSetJobTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jobType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerImageVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -507,6 +697,39 @@ func (j *jsiiProxy_SagemakerImageVersion)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetMlFramework(val *string) {
+	if err := j.validateSetMlFrameworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mlFramework",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetProcessor(val *string) {
+	if err := j.validateSetProcessorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"processor",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetProgrammingLang(val *string) {
+	if err := j.validateSetProgrammingLangParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"programmingLang",
 		val,
 	)
 }
@@ -526,6 +749,28 @@ func (j *jsiiProxy_SagemakerImageVersion)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetReleaseNotes(val *string) {
+	if err := j.validateSetReleaseNotesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"releaseNotes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetVendorGuidance(val *string) {
+	if err := j.validateSetVendorGuidanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vendorGuidance",
 		val,
 	)
 }
@@ -883,6 +1128,14 @@ func (s *jsiiProxy_SagemakerImageVersion) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_SagemakerImageVersion) ResetHorovod() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHorovod",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerImageVersion) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -891,10 +1144,58 @@ func (s *jsiiProxy_SagemakerImageVersion) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SagemakerImageVersion) ResetJobType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJobType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetMlFramework() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMlFramework",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerImageVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetProcessor() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProcessor",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetProgrammingLang() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProgrammingLang",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetReleaseNotes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReleaseNotes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetVendorGuidance() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVendorGuidance",
 		nil, // no parameters
 	)
 }
