@@ -131,6 +131,10 @@ func (j *jsiiProxy_Apigatewayv2Api) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Api) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Api) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

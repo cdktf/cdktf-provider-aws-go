@@ -24,13 +24,13 @@ type FmsResourceSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// resource_set block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
 	ResourceSet interface{} `field:"optional" json:"resourceSet" yaml:"resourceSet"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
 	Timeouts *FmsResourceSetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

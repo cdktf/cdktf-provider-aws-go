@@ -107,6 +107,10 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetTerrafo
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) validateSetUseLargeIntegerValueParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDmsEndpointKinesisSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

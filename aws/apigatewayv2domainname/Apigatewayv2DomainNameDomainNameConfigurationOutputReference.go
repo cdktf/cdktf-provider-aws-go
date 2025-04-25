@@ -39,6 +39,9 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	HostedZoneId() *string
 	InternalValue() *Apigatewayv2DomainNameDomainNameConfiguration
 	SetInternalValue(val *Apigatewayv2DomainNameDomainNameConfiguration)
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	OwnershipVerificationCertificateArn() *string
 	SetOwnershipVerificationCertificateArn(val *string)
 	OwnershipVerificationCertificateArnInput() *string
@@ -78,6 +81,7 @@ type Apigatewayv2DomainNameDomainNameConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpAddressType()
 	ResetOwnershipVerificationCertificateArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -189,6 +193,26 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +367,17 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpAddressType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) ResetOwnershipVerificationCertificateArn() {

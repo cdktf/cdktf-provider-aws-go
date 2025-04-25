@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate}.
 type ApiGatewayClientCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ApiGatewayClientCertificate) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate} Resource.
 func NewApiGatewayClientCertificate(scope constructs.Construct, id *string, config *ApiGatewayClientCertificateConfig) ApiGatewayClientCertificate {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewApiGatewayClientCertificate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_client_certificate aws_api_gateway_client_certificate} Resource.
 func NewApiGatewayClientCertificate_Override(a ApiGatewayClientCertificate, scope constructs.Construct, id *string, config *ApiGatewayClientCertificateConfig) {
 	_init_.Initialize()
 

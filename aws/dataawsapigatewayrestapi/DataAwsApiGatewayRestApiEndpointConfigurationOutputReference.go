@@ -32,6 +32,7 @@ type DataAwsApiGatewayRestApiEndpointConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsApiGatewayRestApiEndpointConfiguration
 	SetInternalValue(val *DataAwsApiGatewayRestApiEndpointConfiguration)
+	IpAddressType() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
 		&returns,
 	)
 	return returns

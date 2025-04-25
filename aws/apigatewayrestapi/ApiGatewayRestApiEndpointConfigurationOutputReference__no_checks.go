@@ -63,6 +63,10 @@ func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

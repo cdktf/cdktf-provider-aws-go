@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsGuarddutyDetector) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGuarddutyDetector) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsGuarddutyDetectorParameters(scope constructs.Construct, id *string, config *DataAwsGuarddutyDetectorConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

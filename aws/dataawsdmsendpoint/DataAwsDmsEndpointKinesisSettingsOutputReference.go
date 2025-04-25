@@ -49,6 +49,7 @@ type DataAwsDmsEndpointKinesisSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseLargeIntegerValue() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -243,6 +244,16 @@ func (j *jsiiProxy_DataAwsDmsEndpointKinesisSettingsOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDmsEndpointKinesisSettingsOutputReference) UseLargeIntegerValue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"useLargeIntegerValue",
 		&returns,
 	)
 	return returns

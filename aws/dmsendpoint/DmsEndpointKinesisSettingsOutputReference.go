@@ -67,6 +67,9 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseLargeIntegerValue() interface{}
+	SetUseLargeIntegerValue(val interface{})
+	UseLargeIntegerValueInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -100,6 +103,7 @@ type DmsEndpointKinesisSettingsOutputReference interface {
 	ResetPartitionIncludeSchemaTable()
 	ResetServiceAccessRoleArn()
 	ResetStreamArn()
+	ResetUseLargeIntegerValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) TerraformResource(
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) UseLargeIntegerValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLargeIntegerValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) UseLargeIntegerValueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useLargeIntegerValueInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDmsEndpointKinesisSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointKinesisSettingsOutputReference {
 	_init_.Initialize()
@@ -543,6 +567,17 @@ func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetTerraformResourc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpointKinesisSettingsOutputReference)SetUseLargeIntegerValue(val interface{}) {
+	if err := j.validateSetUseLargeIntegerValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useLargeIntegerValue",
 		val,
 	)
 }
@@ -801,6 +836,14 @@ func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ResetStreamArn() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStreamArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointKinesisSettingsOutputReference) ResetUseLargeIntegerValue() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseLargeIntegerValue",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
 type DataAwsApigatewayv2Api interface {
 	cdktf.TerraformDataSource
 	ApiEndpoint() *string
@@ -48,6 +48,7 @@ type DataAwsApigatewayv2Api interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressType() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -302,6 +303,16 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Api) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Api) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -433,7 +444,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) DataAwsApigatewayv2Api {
 	_init_.Initialize()
 
@@ -451,7 +462,7 @@ func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api_Override(d DataAwsApigatewayv2Api, scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) {
 	_init_.Initialize()
 

@@ -32,6 +32,9 @@ type ApiGatewayRestApiEndpointConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() *ApiGatewayRestApiEndpointConfiguration
 	SetInternalValue(val *ApiGatewayRestApiEndpointConfiguration)
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type ApiGatewayRestApiEndpointConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpAddressType()
 	ResetVpcEndpointIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -131,6 +135,26 @@ func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +277,17 @@ func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpAddressType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) ResetVpcEndpointIds() {

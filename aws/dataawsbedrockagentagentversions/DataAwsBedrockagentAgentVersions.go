@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions}.
 type DataAwsBedrockagentAgentVersions interface {
 	cdktf.TerraformDataSource
 	AgentId() *string
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataAwsBedrockagentAgentVersions) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source.
 func NewDataAwsBedrockagentAgentVersions(scope constructs.Construct, id *string, config *DataAwsBedrockagentAgentVersionsConfig) DataAwsBedrockagentAgentVersions {
 	_init_.Initialize()
 
@@ -306,7 +306,7 @@ func NewDataAwsBedrockagentAgentVersions(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.95.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/bedrockagent_agent_versions aws_bedrockagent_agent_versions} Data Source.
 func NewDataAwsBedrockagentAgentVersions_Override(d DataAwsBedrockagentAgentVersions, scope constructs.Construct, id *string, config *DataAwsBedrockagentAgentVersionsConfig) {
 	_init_.Initialize()
 

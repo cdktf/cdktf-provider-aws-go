@@ -346,6 +346,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPartitionIncludeSchemaTable", GoMethod: "ResetPartitionIncludeSchemaTable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStreamArn", GoMethod: "ResetStreamArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseLargeIntegerValue", GoMethod: "ResetUseLargeIntegerValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
@@ -354,6 +355,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useLargeIntegerValue", GoGetter: "UseLargeIntegerValue"},
+			_jsii_.MemberProperty{JsiiProperty: "useLargeIntegerValueInput", GoGetter: "UseLargeIntegerValueInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointKinesisSettingsOutputReference{}

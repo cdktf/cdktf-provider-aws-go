@@ -190,6 +190,14 @@ func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateSetIpAddressTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateSetOwnershipVerificationCertificateArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
