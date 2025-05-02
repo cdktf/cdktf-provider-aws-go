@@ -5,9 +5,9 @@ package lakeformationoptin
 
 
 type LakeformationOptInResourceDataLfTagExpression struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lakeformation_opt_in#name LakeformationOptIn#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/lakeformation_opt_in#catalog_id LakeformationOptIn#catalog_id}.
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
 }
 

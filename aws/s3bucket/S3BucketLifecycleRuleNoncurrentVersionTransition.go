@@ -5,9 +5,9 @@ package s3bucket
 
 
 type S3BucketLifecycleRuleNoncurrentVersionTransition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}.
 	StorageClass *string `field:"required" json:"storageClass" yaml:"storageClass"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/s3_bucket#days S3Bucket#days}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3_bucket#days S3Bucket#days}.
 	Days *float64 `field:"optional" json:"days" yaml:"days"`
 }
 

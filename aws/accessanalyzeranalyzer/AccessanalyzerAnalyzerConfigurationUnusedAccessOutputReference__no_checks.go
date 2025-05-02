@@ -47,6 +47,10 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReferenc
 	return nil
 }
 
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validatePutAnalysisRuleParameters(value *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

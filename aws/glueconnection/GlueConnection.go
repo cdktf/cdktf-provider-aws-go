@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_connection aws_glue_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_connection aws_glue_connection}.
 type GlueConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
+	AthenaProperties() *map[string]*string
+	SetAthenaProperties(val *map[string]*string)
+	AthenaPropertiesInput() *map[string]*string
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -135,6 +138,7 @@ type GlueConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPhysicalConnectionRequirements(value *GlueConnectionPhysicalConnectionRequirements)
+	ResetAthenaProperties()
 	ResetCatalogId()
 	ResetConnectionProperties()
 	ResetConnectionType()
@@ -170,6 +174,26 @@ func (j *jsiiProxy_GlueConnection) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueConnection) AthenaProperties() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"athenaProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueConnection) AthenaPropertiesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"athenaPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -536,7 +560,7 @@ func (j *jsiiProxy_GlueConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_connection aws_glue_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_connection aws_glue_connection} Resource.
 func NewGlueConnection(scope constructs.Construct, id *string, config *GlueConnectionConfig) GlueConnection {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewGlueConnection(scope constructs.Construct, id *string, config *GlueConne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/glue_connection aws_glue_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/glue_connection aws_glue_connection} Resource.
 func NewGlueConnection_Override(g GlueConnection, scope constructs.Construct, id *string, config *GlueConnectionConfig) {
 	_init_.Initialize()
 
@@ -562,6 +586,17 @@ func NewGlueConnection_Override(g GlueConnection, scope constructs.Construct, id
 		"@cdktf/provider-aws.glueConnection.GlueConnection",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GlueConnection)SetAthenaProperties(val *map[string]*string) {
+	if err := j.validateSetAthenaPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"athenaProperties",
+		val,
 	)
 }
 
@@ -1093,6 +1128,14 @@ func (g *jsiiProxy_GlueConnection) PutPhysicalConnectionRequirements(value *Glue
 		g,
 		"putPhysicalConnectionRequirements",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueConnection) ResetAthenaProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAthenaProperties",
+		nil, // no parameters
 	)
 }
 

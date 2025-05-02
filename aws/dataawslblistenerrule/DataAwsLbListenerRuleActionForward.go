@@ -7,7 +7,7 @@ package dataawslblistenerrule
 type DataAwsLbListenerRuleActionForward struct {
 	// target_group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
 	TargetGroup interface{} `field:"optional" json:"targetGroup" yaml:"targetGroup"`
 }
 

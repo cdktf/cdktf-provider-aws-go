@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
 	Alias() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateBasedAuthProperties() WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference
+	CertificateBasedAuthPropertiesInput() *WorkspacesDirectoryCertificateBasedAuthProperties
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -138,10 +140,12 @@ type WorkspacesDirectory interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCertificateBasedAuthProperties(value *WorkspacesDirectoryCertificateBasedAuthProperties)
 	PutSamlProperties(value *WorkspacesDirectorySamlProperties)
 	PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions)
 	PutWorkspaceAccessProperties(value *WorkspacesDirectoryWorkspaceAccessProperties)
 	PutWorkspaceCreationProperties(value *WorkspacesDirectoryWorkspaceCreationProperties)
+	ResetCertificateBasedAuthProperties()
 	ResetId()
 	ResetIpGroupIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -187,6 +191,26 @@ func (j *jsiiProxy_WorkspacesDirectory) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) CertificateBasedAuthProperties() WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference {
+	var returns WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"certificateBasedAuthProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) CertificateBasedAuthPropertiesInput() *WorkspacesDirectoryCertificateBasedAuthProperties {
+	var returns *WorkspacesDirectoryCertificateBasedAuthProperties
+	_jsii_.Get(
+		j,
+		"certificateBasedAuthPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -613,7 +637,7 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -631,7 +655,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 
@@ -1129,6 +1153,17 @@ func (w *jsiiProxy_WorkspacesDirectory) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) PutCertificateBasedAuthProperties(value *WorkspacesDirectoryCertificateBasedAuthProperties) {
+	if err := w.validatePutCertificateBasedAuthPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCertificateBasedAuthProperties",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) PutSamlProperties(value *WorkspacesDirectorySamlProperties) {
 	if err := w.validatePutSamlPropertiesParameters(value); err != nil {
 		panic(err)
@@ -1170,6 +1205,14 @@ func (w *jsiiProxy_WorkspacesDirectory) PutWorkspaceCreationProperties(value *Wo
 		w,
 		"putWorkspaceCreationProperties",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetCertificateBasedAuthProperties() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCertificateBasedAuthProperties",
+		nil, // no parameters
 	)
 }
 

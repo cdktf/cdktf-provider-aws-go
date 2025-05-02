@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain}.
 type ElasticsearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -785,7 +785,7 @@ func (j *jsiiProxy_ElasticsearchDomain) VpcOptionsInput() *ElasticsearchDomainVp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
 func NewElasticsearchDomain(scope constructs.Construct, id *string, config *ElasticsearchDomainConfig) ElasticsearchDomain {
 	_init_.Initialize()
 
@@ -803,7 +803,7 @@ func NewElasticsearchDomain(scope constructs.Construct, id *string, config *Elas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
 func NewElasticsearchDomain_Override(e ElasticsearchDomain, scope constructs.Construct, id *string, config *ElasticsearchDomainConfig) {
 	_init_.Initialize()
 

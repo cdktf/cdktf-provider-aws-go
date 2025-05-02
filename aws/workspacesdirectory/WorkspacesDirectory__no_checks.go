@@ -75,6 +75,10 @@ func (w *jsiiProxy_WorkspacesDirectory) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) validatePutCertificateBasedAuthPropertiesParameters(value *WorkspacesDirectoryCertificateBasedAuthProperties) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) validatePutSamlPropertiesParameters(value *WorkspacesDirectorySamlProperties) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package cognitouserpool
 
 
 type CognitoUserPoolUsernameConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/cognito_user_pool#case_sensitive CognitoUserPool#case_sensitive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_user_pool#case_sensitive CognitoUserPool#case_sensitive}.
 	CaseSensitive interface{} `field:"optional" json:"caseSensitive" yaml:"caseSensitive"`
 }
 

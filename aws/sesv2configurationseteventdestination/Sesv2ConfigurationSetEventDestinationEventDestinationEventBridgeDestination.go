@@ -5,7 +5,7 @@ package sesv2configurationseteventdestination
 
 
 type Sesv2ConfigurationSetEventDestinationEventDestinationEventBridgeDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/sesv2_configuration_set_event_destination#event_bus_arn Sesv2ConfigurationSetEventDestination#event_bus_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/sesv2_configuration_set_event_destination#event_bus_arn Sesv2ConfigurationSetEventDestination#event_bus_arn}.
 	EventBusArn *string `field:"required" json:"eventBusArn" yaml:"eventBusArn"`
 }
 

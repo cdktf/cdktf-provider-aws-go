@@ -119,6 +119,10 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetEnabledAnalysisTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewall) validateSetFirewallPolicyArnParameters(val *string) error {
 	return nil
 }

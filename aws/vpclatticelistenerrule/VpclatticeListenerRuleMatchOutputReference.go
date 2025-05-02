@@ -67,7 +67,6 @@ type VpclatticeListenerRuleMatchOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHttpMatch(value *VpclatticeListenerRuleMatchHttpMatch)
-	ResetHttpMatch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,14 +449,6 @@ func (v *jsiiProxy_VpclatticeListenerRuleMatchOutputReference) PutHttpMatch(valu
 		v,
 		"putHttpMatch",
 		[]interface{}{value},
-	)
-}
-
-func (v *jsiiProxy_VpclatticeListenerRuleMatchOutputReference) ResetHttpMatch() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetHttpMatch",
-		nil, // no parameters
 	)
 }
 

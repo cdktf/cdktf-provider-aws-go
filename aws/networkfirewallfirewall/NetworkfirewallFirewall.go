@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type NetworkfirewallFirewall interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -38,6 +38,9 @@ type NetworkfirewallFirewall interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnabledAnalysisTypes() *[]*string
+	SetEnabledAnalysisTypes(val *[]*string)
+	EnabledAnalysisTypesInput() *[]*string
 	EncryptionConfiguration() NetworkfirewallFirewallEncryptionConfigurationOutputReference
 	EncryptionConfigurationInput() *NetworkfirewallFirewallEncryptionConfiguration
 	FirewallPolicyArn() *string
@@ -148,6 +151,7 @@ type NetworkfirewallFirewall interface {
 	PutTimeouts(value *NetworkfirewallFirewallTimeouts)
 	ResetDeleteProtection()
 	ResetDescription()
+	ResetEnabledAnalysisTypes()
 	ResetEncryptionConfiguration()
 	ResetFirewallPolicyChangeProtection()
 	ResetId()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_NetworkfirewallFirewall) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) EnabledAnalysisTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledAnalysisTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) EnabledAnalysisTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledAnalysisTypesInput",
 		&returns,
 	)
 	return returns
@@ -627,7 +651,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) NetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -645,7 +669,7 @@ func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall_Override(n NetworkfirewallFirewall, scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_NetworkfirewallFirewall)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall)SetEnabledAnalysisTypes(val *[]*string) {
+	if err := j.validateSetEnabledAnalysisTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledAnalysisTypes",
 		val,
 	)
 }
@@ -1232,6 +1267,14 @@ func (n *jsiiProxy_NetworkfirewallFirewall) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetEnabledAnalysisTypes() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnabledAnalysisTypes",
 		nil, // no parameters
 	)
 }

@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
 type DataAwsWorkspacesDirectory interface {
 	cdktf.TerraformDataSource
 	Alias() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateBasedAuthProperties() DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -140,6 +141,16 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectory) CdktfStack() cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) CertificateBasedAuthProperties() DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList {
+	var returns DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList
+	_jsii_.Get(
+		j,
+		"certificateBasedAuthProperties",
 		&returns,
 	)
 	return returns
@@ -466,7 +477,7 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceSecurityGroupId() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
 func NewDataAwsWorkspacesDirectory(scope constructs.Construct, id *string, config *DataAwsWorkspacesDirectoryConfig) DataAwsWorkspacesDirectory {
 	_init_.Initialize()
 
@@ -484,7 +495,7 @@ func NewDataAwsWorkspacesDirectory(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
 func NewDataAwsWorkspacesDirectory_Override(d DataAwsWorkspacesDirectory, scope constructs.Construct, id *string, config *DataAwsWorkspacesDirectoryConfig) {
 	_init_.Initialize()
 

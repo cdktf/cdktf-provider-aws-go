@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}.
 type ImagebuilderInfrastructureConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,8 @@ type ImagebuilderInfrastructureConfiguration interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Placement() ImagebuilderInfrastructureConfigurationPlacementOutputReference
+	PlacementInput() *ImagebuilderInfrastructureConfigurationPlacement
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -152,6 +154,7 @@ type ImagebuilderInfrastructureConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutInstanceMetadataOptions(value *ImagebuilderInfrastructureConfigurationInstanceMetadataOptions)
 	PutLogging(value *ImagebuilderInfrastructureConfigurationLogging)
+	PutPlacement(value *ImagebuilderInfrastructureConfigurationPlacement)
 	ResetDescription()
 	ResetId()
 	ResetInstanceMetadataOptions()
@@ -161,6 +164,7 @@ type ImagebuilderInfrastructureConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacement()
 	ResetResourceTags()
 	ResetSecurityGroupIds()
 	ResetSnsTopicArn()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Node() constructs.No
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Placement() ImagebuilderInfrastructureConfigurationPlacementOutputReference {
+	var returns ImagebuilderInfrastructureConfigurationPlacementOutputReference
+	_jsii_.Get(
+		j,
+		"placement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) PlacementInput() *ImagebuilderInfrastructureConfigurationPlacement {
+	var returns *ImagebuilderInfrastructureConfigurationPlacement
+	_jsii_.Get(
+		j,
+		"placementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -677,7 +701,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
 func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *string, config *ImagebuilderInfrastructureConfigurationConfig) ImagebuilderInfrastructureConfiguration {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
 func NewImagebuilderInfrastructureConfiguration_Override(i ImagebuilderInfrastructureConfiguration, scope constructs.Construct, id *string, config *ImagebuilderInfrastructureConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1292,6 +1316,17 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) PutLogging(value *Im
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) PutPlacement(value *ImagebuilderInfrastructureConfigurationPlacement) {
+	if err := i.validatePutPlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putPlacement",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetDescription() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1344,6 +1379,14 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetPlacement() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPlacement",
 		nil, // no parameters
 	)
 }

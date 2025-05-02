@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription}.
 type SecurityhubStandardsSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_SecurityhubStandardsSubscription) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription} Resource.
 func NewSecurityhubStandardsSubscription(scope constructs.Construct, id *string, config *SecurityhubStandardsSubscriptionConfig) SecurityhubStandardsSubscription {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewSecurityhubStandardsSubscription(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/securityhub_standards_subscription aws_securityhub_standards_subscription} Resource.
 func NewSecurityhubStandardsSubscription_Override(s SecurityhubStandardsSubscription, scope constructs.Construct, id *string, config *SecurityhubStandardsSubscriptionConfig) {
 	_init_.Initialize()
 

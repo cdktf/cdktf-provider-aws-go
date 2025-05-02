@@ -22,13 +22,13 @@ type Resourceexplorer2IndexConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
 	Timeouts *Resourceexplorer2IndexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -22,13 +22,13 @@ type ServicequotasTemplateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
 	QuotaCode *string `field:"required" json:"quotaCode" yaml:"quotaCode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
 	ServiceCode *string `field:"required" json:"serviceCode" yaml:"serviceCode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 

@@ -95,6 +95,10 @@ func validateGlueConnection_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_GlueConnection) validateSetAthenaPropertiesParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueConnection) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

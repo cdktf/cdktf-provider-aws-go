@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options}.
 type DataAwsVpcDhcpOptions interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) DataAwsVpcDhcpOptions {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions_Override(d DataAwsVpcDhcpOptions, scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) {
 	_init_.Initialize()
 

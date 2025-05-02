@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership}.
 type QuicksightFolderMembership interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_QuicksightFolderMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
 func NewQuicksightFolderMembership(scope constructs.Construct, id *string, config *QuicksightFolderMembershipConfig) QuicksightFolderMembership {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewQuicksightFolderMembership(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
 func NewQuicksightFolderMembership_Override(q QuicksightFolderMembership, scope constructs.Construct, id *string, config *QuicksightFolderMembershipConfig) {
 	_init_.Initialize()
 

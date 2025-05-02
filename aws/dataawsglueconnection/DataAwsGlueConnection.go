@@ -12,10 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/glue_connection aws_glue_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/glue_connection aws_glue_connection}.
 type DataAwsGlueConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
+	AthenaProperties() cdktf.StringMap
 	CatalogId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -120,6 +121,16 @@ func (j *jsiiProxy_DataAwsGlueConnection) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlueConnection) AthenaProperties() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"athenaProperties",
 		&returns,
 	)
 	return returns
@@ -376,7 +387,7 @@ func (j *jsiiProxy_DataAwsGlueConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
 func NewDataAwsGlueConnection(scope constructs.Construct, id *string, config *DataAwsGlueConnectionConfig) DataAwsGlueConnection {
 	_init_.Initialize()
 
@@ -394,7 +405,7 @@ func NewDataAwsGlueConnection(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
 func NewDataAwsGlueConnection_Override(d DataAwsGlueConnection, scope constructs.Construct, id *string, config *DataAwsGlueConnectionConfig) {
 	_init_.Initialize()
 

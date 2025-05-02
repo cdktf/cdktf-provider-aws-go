@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version}.
 type ApiGatewayDocumentationVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ApiGatewayDocumentationVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version} Resource.
 func NewApiGatewayDocumentationVersion(scope constructs.Construct, id *string, config *ApiGatewayDocumentationVersionConfig) ApiGatewayDocumentationVersion {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewApiGatewayDocumentationVersion(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.96.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_documentation_version aws_api_gateway_documentation_version} Resource.
 func NewApiGatewayDocumentationVersion_Override(a ApiGatewayDocumentationVersion, scope constructs.Construct, id *string, config *ApiGatewayDocumentationVersionConfig) {
 	_init_.Initialize()
 

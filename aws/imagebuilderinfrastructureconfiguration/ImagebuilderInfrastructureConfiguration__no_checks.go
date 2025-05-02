@@ -83,6 +83,10 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validatePutLoggingPa
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) validatePutPlacementParameters(value *ImagebuilderInfrastructureConfigurationPlacement) error {
+	return nil
+}
+
 func validateImagebuilderInfrastructureConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

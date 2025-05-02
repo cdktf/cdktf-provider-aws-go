@@ -13,6 +13,8 @@ import (
 
 type AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference interface {
 	cdktf.ComplexObject
+	AnalysisRule() AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference
+	AnalysisRuleInput() *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,8 @@ type AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAnalysisRule(value *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule)
+	ResetAnalysisRule()
 	ResetUnusedAccessAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference interface {
 // The jsii proxy struct for AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference
 type jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) AnalysisRule() AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference {
+	var returns AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference
+	_jsii_.Get(
+		j,
+		"analysisRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) AnalysisRuleInput() *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule {
+	var returns *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule
+	_jsii_.Get(
+		j,
+		"analysisRuleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) ComplexObjectIndex() interface{} {
@@ -451,6 +475,25 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReferenc
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) PutAnalysisRule(value *AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule) {
+	if err := a.validatePutAnalysisRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAnalysisRule",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) ResetAnalysisRule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAnalysisRule",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) ResetUnusedAccessAge() {
