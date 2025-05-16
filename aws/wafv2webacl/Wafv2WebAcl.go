@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	ApplicationIntegrationUrl() *string
@@ -38,6 +38,8 @@ type Wafv2WebAcl interface {
 	SetCount(val interface{})
 	CustomResponseBody() Wafv2WebAclCustomResponseBodyList
 	CustomResponseBodyInput() interface{}
+	DataProtectionConfig() Wafv2WebAclDataProtectionConfigOutputReference
+	DataProtectionConfigInput() *Wafv2WebAclDataProtectionConfig
 	DefaultAction() Wafv2WebAclDefaultActionOutputReference
 	DefaultActionInput() *Wafv2WebAclDefaultAction
 	// Experimental.
@@ -153,6 +155,7 @@ type Wafv2WebAcl interface {
 	PutCaptchaConfig(value *Wafv2WebAclCaptchaConfig)
 	PutChallengeConfig(value *Wafv2WebAclChallengeConfig)
 	PutCustomResponseBody(value interface{})
+	PutDataProtectionConfig(value *Wafv2WebAclDataProtectionConfig)
 	PutDefaultAction(value *Wafv2WebAclDefaultAction)
 	PutRule(value interface{})
 	PutVisibilityConfig(value *Wafv2WebAclVisibilityConfig)
@@ -160,6 +163,7 @@ type Wafv2WebAcl interface {
 	ResetCaptchaConfig()
 	ResetChallengeConfig()
 	ResetCustomResponseBody()
+	ResetDataProtectionConfig()
 	ResetDescription()
 	ResetId()
 	ResetName()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_Wafv2WebAcl) CustomResponseBodyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"customResponseBodyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) DataProtectionConfig() Wafv2WebAclDataProtectionConfigOutputReference {
+	var returns Wafv2WebAclDataProtectionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataProtectionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) DataProtectionConfigInput() *Wafv2WebAclDataProtectionConfig {
+	var returns *Wafv2WebAclDataProtectionConfig
+	_jsii_.Get(
+		j,
+		"dataProtectionConfigInput",
 		&returns,
 	)
 	return returns
@@ -711,7 +735,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -729,7 +753,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -1304,6 +1328,17 @@ func (w *jsiiProxy_Wafv2WebAcl) PutCustomResponseBody(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) PutDataProtectionConfig(value *Wafv2WebAclDataProtectionConfig) {
+	if err := w.validatePutDataProtectionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putDataProtectionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) PutDefaultAction(value *Wafv2WebAclDefaultAction) {
 	if err := w.validatePutDefaultActionParameters(value); err != nil {
 		panic(err)
@@ -1365,6 +1400,14 @@ func (w *jsiiProxy_Wafv2WebAcl) ResetCustomResponseBody() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCustomResponseBody",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetDataProtectionConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDataProtectionConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type DataAwsEc2ClientVpnEndpoint interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -22,6 +22,7 @@ type DataAwsEc2ClientVpnEndpoint interface {
 	ClientCidrBlock() *string
 	ClientConnectOptions() DataAwsEc2ClientVpnEndpointClientConnectOptionsList
 	ClientLoginBannerOptions() DataAwsEc2ClientVpnEndpointClientLoginBannerOptionsList
+	ClientRouteEnforcementOptions() DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList
 	ClientVpnEndpointId() *string
 	SetClientVpnEndpointId(val *string)
 	ClientVpnEndpointIdInput() *string
@@ -193,6 +194,16 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) ClientLoginBannerOptions() DataA
 	_jsii_.Get(
 		j,
 		"clientLoginBannerOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) ClientRouteEnforcementOptions() DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList {
+	var returns DataAwsEc2ClientVpnEndpointClientRouteEnforcementOptionsList
+	_jsii_.Get(
+		j,
+		"clientRouteEnforcementOptions",
 		&returns,
 	)
 	return returns
@@ -559,7 +570,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) VpnPort() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
 func NewDataAwsEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *DataAwsEc2ClientVpnEndpointConfig) DataAwsEc2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -577,7 +588,7 @@ func NewDataAwsEc2ClientVpnEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
 func NewDataAwsEc2ClientVpnEndpoint_Override(d DataAwsEc2ClientVpnEndpoint, scope constructs.Construct, id *string, config *DataAwsEc2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
 type S3BucketLoggingA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) S3BucketLoggingA {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3Bucke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA_Override(s S3BucketLoggingA, scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) {
 	_init_.Initialize()
 

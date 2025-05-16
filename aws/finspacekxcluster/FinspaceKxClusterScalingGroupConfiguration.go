@@ -5,15 +5,15 @@ package finspacekxcluster
 
 
 type FinspaceKxClusterScalingGroupConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}.
 	MemoryReservation *float64 `field:"required" json:"memoryReservation" yaml:"memoryReservation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
 	NodeCount *float64 `field:"required" json:"nodeCount" yaml:"nodeCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}.
 	ScalingGroupName *string `field:"required" json:"scalingGroupName" yaml:"scalingGroupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}.
 	Cpu *float64 `field:"optional" json:"cpu" yaml:"cpu"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}.
 	MemoryLimit *float64 `field:"optional" json:"memoryLimit" yaml:"memoryLimit"`
 }
 

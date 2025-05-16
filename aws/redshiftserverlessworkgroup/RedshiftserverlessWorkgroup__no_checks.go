@@ -163,6 +163,10 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetTagsAllParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetTrackNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetWorkgroupNameParameters(val *string) error {
 	return nil
 }

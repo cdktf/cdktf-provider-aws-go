@@ -405,6 +405,14 @@ func (j *jsiiProxy_SnsTopic) validateSetDisplayNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopic) validateSetFifoThroughputScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopic) validateSetFifoTopicParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

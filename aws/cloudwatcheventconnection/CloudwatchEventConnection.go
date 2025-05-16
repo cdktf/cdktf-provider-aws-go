@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
 type CloudwatchEventConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -53,6 +53,9 @@ type CloudwatchEventConnection interface {
 	IdInput() *string
 	InvocationConnectivityParameters() CloudwatchEventConnectionInvocationConnectivityParametersOutputReference
 	InvocationConnectivityParametersInput() *CloudwatchEventConnectionInvocationConnectivityParameters
+	KmsKeyIdentifier() *string
+	SetKmsKeyIdentifier(val *string)
+	KmsKeyIdentifierInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,6 +130,7 @@ type CloudwatchEventConnection interface {
 	ResetDescription()
 	ResetId()
 	ResetInvocationConnectivityParameters()
+	ResetKmsKeyIdentifier()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_CloudwatchEventConnection) InvocationConnectivityParametersIn
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchEventConnection) KmsKeyIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventConnection) KmsKeyIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchEventConnection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_CloudwatchEventConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
 func NewCloudwatchEventConnection(scope constructs.Construct, id *string, config *CloudwatchEventConnectionConfig) CloudwatchEventConnection {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewCloudwatchEventConnection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection} Resource.
 func NewCloudwatchEventConnection_Override(c CloudwatchEventConnection, scope constructs.Construct, id *string, config *CloudwatchEventConnectionConfig) {
 	_init_.Initialize()
 
@@ -545,6 +569,17 @@ func (j *jsiiProxy_CloudwatchEventConnection)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventConnection)SetKmsKeyIdentifier(val *string) {
+	if err := j.validateSetKmsKeyIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyIdentifier",
 		val,
 	)
 }
@@ -985,6 +1020,14 @@ func (c *jsiiProxy_CloudwatchEventConnection) ResetInvocationConnectivityParamet
 	_jsii_.InvokeVoid(
 		c,
 		"resetInvocationConnectivityParameters",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventConnection) ResetKmsKeyIdentifier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKmsKeyIdentifier",
 		nil, // no parameters
 	)
 }

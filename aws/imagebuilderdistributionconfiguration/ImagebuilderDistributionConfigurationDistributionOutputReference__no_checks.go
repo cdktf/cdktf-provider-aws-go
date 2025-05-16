@@ -67,6 +67,10 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validatePutSsmParameterConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

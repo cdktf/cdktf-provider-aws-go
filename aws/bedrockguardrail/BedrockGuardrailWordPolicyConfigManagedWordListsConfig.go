@@ -5,7 +5,7 @@ package bedrockguardrail
 
 
 type BedrockGuardrailWordPolicyConfigManagedWordListsConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/bedrock_guardrail#type BedrockGuardrail#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/bedrock_guardrail#type BedrockGuardrail#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

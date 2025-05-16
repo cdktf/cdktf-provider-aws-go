@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type DataAwsRedshiftserverlessWorkgroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -63,6 +63,7 @@ type DataAwsRedshiftserverlessWorkgroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrackName() *string
 	WorkgroupId() *string
 	WorkgroupName() *string
 	SetWorkgroupName(val *string)
@@ -345,6 +346,16 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) TerraformResourceType() *
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) TrackName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trackName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) WorkgroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -376,7 +387,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) WorkgroupNameInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Data Source.
 func NewDataAwsRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessWorkgroupConfig) DataAwsRedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -394,7 +405,7 @@ func NewDataAwsRedshiftserverlessWorkgroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Data Source.
 func NewDataAwsRedshiftserverlessWorkgroup_Override(d DataAwsRedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 

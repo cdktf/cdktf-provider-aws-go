@@ -179,6 +179,10 @@ func (j *jsiiProxy_DocdbCluster) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetManageMasterUserPasswordParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetMasterPasswordParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}.
 type CognitoManagedUserPoolClient interface {
 	cdktf.TerraformResource
 	AccessTokenValidity() *float64
@@ -108,6 +108,8 @@ type CognitoManagedUserPoolClient interface {
 	ReadAttributes() *[]*string
 	SetReadAttributes(val *[]*string)
 	ReadAttributesInput() *[]*string
+	RefreshTokenRotation() CognitoManagedUserPoolClientRefreshTokenRotationList
+	RefreshTokenRotationInput() interface{}
 	RefreshTokenValidity() *float64
 	SetRefreshTokenValidity(val *float64)
 	RefreshTokenValidityInput() *float64
@@ -172,6 +174,7 @@ type CognitoManagedUserPoolClient interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnalyticsConfiguration(value interface{})
+	PutRefreshTokenRotation(value interface{})
 	PutTokenValidityUnits(value interface{})
 	ResetAccessTokenValidity()
 	ResetAllowedOauthFlows()
@@ -193,6 +196,7 @@ type CognitoManagedUserPoolClient interface {
 	ResetOverrideLogicalId()
 	ResetPreventUserExistenceErrors()
 	ResetReadAttributes()
+	ResetRefreshTokenRotation()
 	ResetRefreshTokenValidity()
 	ResetSupportedIdentityProviders()
 	ResetTokenValidityUnits()
@@ -715,6 +719,26 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) ReadAttributesInput() *[]*strin
 	return returns
 }
 
+func (j *jsiiProxy_CognitoManagedUserPoolClient) RefreshTokenRotation() CognitoManagedUserPoolClientRefreshTokenRotationList {
+	var returns CognitoManagedUserPoolClientRefreshTokenRotationList
+	_jsii_.Get(
+		j,
+		"refreshTokenRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoManagedUserPoolClient) RefreshTokenRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"refreshTokenRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoManagedUserPoolClient) RefreshTokenValidity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -846,7 +870,7 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) WriteAttributesInput() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
 func NewCognitoManagedUserPoolClient(scope constructs.Construct, id *string, config *CognitoManagedUserPoolClientConfig) CognitoManagedUserPoolClient {
 	_init_.Initialize()
 
@@ -864,7 +888,7 @@ func NewCognitoManagedUserPoolClient(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
 func NewCognitoManagedUserPoolClient_Override(c CognitoManagedUserPoolClient, scope constructs.Construct, id *string, config *CognitoManagedUserPoolClientConfig) {
 	_init_.Initialize()
 
@@ -1527,6 +1551,17 @@ func (c *jsiiProxy_CognitoManagedUserPoolClient) PutAnalyticsConfiguration(value
 	)
 }
 
+func (c *jsiiProxy_CognitoManagedUserPoolClient) PutRefreshTokenRotation(value interface{}) {
+	if err := c.validatePutRefreshTokenRotationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRefreshTokenRotation",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitoManagedUserPoolClient) PutTokenValidityUnits(value interface{}) {
 	if err := c.validatePutTokenValidityUnitsParameters(value); err != nil {
 		panic(err)
@@ -1678,6 +1713,14 @@ func (c *jsiiProxy_CognitoManagedUserPoolClient) ResetReadAttributes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReadAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoManagedUserPoolClient) ResetRefreshTokenRotation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRefreshTokenRotation",
 		nil, // no parameters
 	)
 }

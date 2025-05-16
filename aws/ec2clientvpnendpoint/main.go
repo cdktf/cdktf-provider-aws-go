@@ -26,6 +26,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientConnectOptionsInput", GoGetter: "ClientConnectOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientLoginBannerOptions", GoGetter: "ClientLoginBannerOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "clientLoginBannerOptionsInput", GoGetter: "ClientLoginBannerOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clientRouteEnforcementOptions", GoGetter: "ClientRouteEnforcementOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "clientRouteEnforcementOptionsInput", GoGetter: "ClientRouteEnforcementOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionLogOptions", GoGetter: "ConnectionLogOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionLogOptionsInput", GoGetter: "ConnectionLogOptionsInput"},
@@ -67,10 +69,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAuthenticationOptions", GoMethod: "PutAuthenticationOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putClientConnectOptions", GoMethod: "PutClientConnectOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putClientLoginBannerOptions", GoMethod: "PutClientLoginBannerOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putClientRouteEnforcementOptions", GoMethod: "PutClientRouteEnforcementOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putConnectionLogOptions", GoMethod: "PutConnectionLogOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientConnectOptions", GoMethod: "ResetClientConnectOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientLoginBannerOptions", GoMethod: "ResetClientLoginBannerOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientRouteEnforcementOptions", GoMethod: "ResetClientRouteEnforcementOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisconnectOnSessionTimeout", GoMethod: "ResetDisconnectOnSessionTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsServers", GoMethod: "ResetDnsServers"},
@@ -274,6 +278,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientRouteEnforcementOptions",
+		reflect.TypeOf((*Ec2ClientVpnEndpointClientRouteEnforcementOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference",
+		reflect.TypeOf((*Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enforced", GoGetter: "Enforced"},
+			_jsii_.MemberProperty{JsiiProperty: "enforcedInput", GoGetter: "EnforcedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnforced", GoMethod: "ResetEnforced"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

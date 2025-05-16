@@ -99,6 +99,14 @@ func validateIotDomainConfiguration_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_IotDomainConfiguration) validateSetApplicationProtocolParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IotDomainConfiguration) validateSetAuthenticationTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotDomainConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

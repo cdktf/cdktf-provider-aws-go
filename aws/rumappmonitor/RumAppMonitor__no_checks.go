@@ -115,6 +115,10 @@ func (j *jsiiProxy_RumAppMonitor) validateSetDomainParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_RumAppMonitor) validateSetDomainListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RumAppMonitor) validateSetIdParameters(val *string) error {
 	return nil
 }

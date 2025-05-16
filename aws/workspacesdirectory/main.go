@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
 		reflect.TypeOf((*WorkspacesDirectory)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryConfig", GoGetter: "ActiveDirectoryConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryConfigInput", GoGetter: "ActiveDirectoryConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putActiveDirectoryConfig", GoMethod: "PutActiveDirectoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putCertificateBasedAuthProperties", GoMethod: "PutCertificateBasedAuthProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "putSamlProperties", GoMethod: "PutSamlProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelfServicePermissions", GoMethod: "PutSelfServicePermissions"},
@@ -65,7 +68,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putWorkspaceCreationProperties", GoMethod: "PutWorkspaceCreationProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "registrationCode", GoGetter: "RegistrationCode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActiveDirectoryConfig", GoMethod: "ResetActiveDirectoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateBasedAuthProperties", GoMethod: "ResetCertificateBasedAuthProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryId", GoMethod: "ResetDirectoryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpGroupIds", GoMethod: "ResetIpGroupIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -74,8 +79,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetIds", GoMethod: "ResetSubnetIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserIdentityType", GoMethod: "ResetUserIdentityType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceAccessProperties", GoMethod: "ResetWorkspaceAccessProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceCreationProperties", GoMethod: "ResetWorkspaceCreationProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceDirectoryDescription", GoMethod: "ResetWorkspaceDirectoryDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceDirectoryName", GoMethod: "ResetWorkspaceDirectoryName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkspaceType", GoMethod: "ResetWorkspaceType"},
 			_jsii_.MemberProperty{JsiiProperty: "samlProperties", GoGetter: "SamlProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "samlPropertiesInput", GoGetter: "SamlPropertiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfServicePermissions", GoGetter: "SelfServicePermissions"},
@@ -95,15 +104,63 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "userIdentityType", GoGetter: "UserIdentityType"},
+			_jsii_.MemberProperty{JsiiProperty: "userIdentityTypeInput", GoGetter: "UserIdentityTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessProperties", GoGetter: "WorkspaceAccessProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceAccessPropertiesInput", GoGetter: "WorkspaceAccessPropertiesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCreationProperties", GoGetter: "WorkspaceCreationProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceCreationPropertiesInput", GoGetter: "WorkspaceCreationPropertiesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceDirectoryDescription", GoGetter: "WorkspaceDirectoryDescription"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceDirectoryDescriptionInput", GoGetter: "WorkspaceDirectoryDescriptionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceDirectoryName", GoGetter: "WorkspaceDirectoryName"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceDirectoryNameInput", GoGetter: "WorkspaceDirectoryNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceSecurityGroupId", GoGetter: "WorkspaceSecurityGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceType", GoGetter: "WorkspaceType"},
+			_jsii_.MemberProperty{JsiiProperty: "workspaceTypeInput", GoGetter: "WorkspaceTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkspacesDirectory{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfig",
+		reflect.TypeOf((*WorkspacesDirectoryActiveDirectoryConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectoryActiveDirectoryConfigOutputReference",
+		reflect.TypeOf((*WorkspacesDirectoryActiveDirectoryConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "domainName", GoGetter: "DomainName"},
+			_jsii_.MemberProperty{JsiiProperty: "domainNameInput", GoGetter: "DomainNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountSecretArn", GoGetter: "ServiceAccountSecretArn"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccountSecretArnInput", GoGetter: "ServiceAccountSecretArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

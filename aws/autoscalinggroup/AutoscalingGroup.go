@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,6 +24,8 @@ type AutoscalingGroup interface {
 	CapacityRebalance() interface{}
 	SetCapacityRebalance(val interface{})
 	CapacityRebalanceInput() interface{}
+	CapacityReservationSpecification() AutoscalingGroupCapacityReservationSpecificationOutputReference
+	CapacityReservationSpecificationInput() *AutoscalingGroupCapacityReservationSpecification
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -224,6 +226,7 @@ type AutoscalingGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAvailabilityZoneDistribution(value *AutoscalingGroupAvailabilityZoneDistribution)
+	PutCapacityReservationSpecification(value *AutoscalingGroupCapacityReservationSpecification)
 	PutInitialLifecycleHook(value interface{})
 	PutInstanceMaintenancePolicy(value *AutoscalingGroupInstanceMaintenancePolicy)
 	PutInstanceRefresh(value *AutoscalingGroupInstanceRefresh)
@@ -236,6 +239,7 @@ type AutoscalingGroup interface {
 	ResetAvailabilityZoneDistribution()
 	ResetAvailabilityZones()
 	ResetCapacityRebalance()
+	ResetCapacityReservationSpecification()
 	ResetContext()
 	ResetDefaultCooldown()
 	ResetDefaultInstanceWarmup()
@@ -359,6 +363,26 @@ func (j *jsiiProxy_AutoscalingGroup) CapacityRebalanceInput() interface{} {
 	_jsii_.Get(
 		j,
 		"capacityRebalanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) CapacityReservationSpecification() AutoscalingGroupCapacityReservationSpecificationOutputReference {
+	var returns AutoscalingGroupCapacityReservationSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"capacityReservationSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) CapacityReservationSpecificationInput() *AutoscalingGroupCapacityReservationSpecification {
+	var returns *AutoscalingGroupCapacityReservationSpecification
+	_jsii_.Get(
+		j,
+		"capacityReservationSpecificationInput",
 		&returns,
 	)
 	return returns
@@ -1325,7 +1349,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1343,7 +1367,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -2138,6 +2162,17 @@ func (a *jsiiProxy_AutoscalingGroup) PutAvailabilityZoneDistribution(value *Auto
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroup) PutCapacityReservationSpecification(value *AutoscalingGroupCapacityReservationSpecification) {
+	if err := a.validatePutCapacityReservationSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCapacityReservationSpecification",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroup) PutInitialLifecycleHook(value interface{}) {
 	if err := a.validatePutInitialLifecycleHookParameters(value); err != nil {
 		panic(err)
@@ -2257,6 +2292,14 @@ func (a *jsiiProxy_AutoscalingGroup) ResetCapacityRebalance() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCapacityRebalance",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetCapacityReservationSpecification() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCapacityReservationSpecification",
 		nil, // no parameters
 	)
 }

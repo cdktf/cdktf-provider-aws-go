@@ -91,6 +91,10 @@ func (w *jsiiProxy_Wafv2WebAcl) validatePutCustomResponseBodyParameters(value in
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) validatePutDataProtectionConfigParameters(value *Wafv2WebAclDataProtectionConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) validatePutDefaultActionParameters(value *Wafv2WebAclDefaultAction) error {
 	return nil
 }

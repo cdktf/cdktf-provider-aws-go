@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
 type BedrockagentAgent interface {
 	cdktf.TerraformResource
 	AgentArn() *string
@@ -80,6 +80,7 @@ type BedrockagentAgent interface {
 	PrepareAgent() interface{}
 	SetPrepareAgent(val interface{})
 	PrepareAgentInput() interface{}
+	PreparedAt() *string
 	PromptOverrideConfiguration() BedrockagentAgentPromptOverrideConfigurationList
 	PromptOverrideConfigurationInput() interface{}
 	// Experimental.
@@ -547,6 +548,16 @@ func (j *jsiiProxy_BedrockagentAgent) PrepareAgentInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgent) PreparedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preparedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgent) PromptOverrideConfiguration() BedrockagentAgentPromptOverrideConfigurationList {
 	var returns BedrockagentAgentPromptOverrideConfigurationList
 	_jsii_.Get(
@@ -698,7 +709,7 @@ func (j *jsiiProxy_BedrockagentAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent(scope constructs.Construct, id *string, config *BedrockagentAgentConfig) BedrockagentAgent {
 	_init_.Initialize()
 
@@ -716,7 +727,7 @@ func NewBedrockagentAgent(scope constructs.Construct, id *string, config *Bedroc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Construct, id *string, config *BedrockagentAgentConfig) {
 	_init_.Initialize()
 

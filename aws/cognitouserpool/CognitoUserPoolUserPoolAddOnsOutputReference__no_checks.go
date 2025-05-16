@@ -47,6 +47,10 @@ func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateInterpo
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validatePutAdvancedSecurityAdditionalFlowsParameters(value *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

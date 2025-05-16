@@ -75,6 +75,10 @@ func (w *jsiiProxy_WorkspacesDirectory) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) validatePutActiveDirectoryConfigParameters(value *WorkspacesDirectoryActiveDirectoryConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) validatePutCertificateBasedAuthPropertiesParameters(value *WorkspacesDirectoryCertificateBasedAuthProperties) error {
 	return nil
 }
@@ -148,6 +152,22 @@ func (j *jsiiProxy_WorkspacesDirectory) validateSetTagsParameters(val *map[strin
 }
 
 func (j *jsiiProxy_WorkspacesDirectory) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) validateSetUserIdentityTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) validateSetWorkspaceDirectoryDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) validateSetWorkspaceDirectoryNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) validateSetWorkspaceTypeParameters(val *string) error {
 	return nil
 }
 

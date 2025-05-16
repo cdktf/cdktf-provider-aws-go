@@ -39,6 +39,7 @@ type DataAwsImagebuilderDistributionConfigurationDistributionOutputReference int
 	LicenseConfigurationArns() *[]*string
 	Region() *string
 	S3ExportConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList
+	SsmParameterConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutpu
 	_jsii_.Get(
 		j,
 		"s3ExportConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionOutputReference) SsmParameterConfiguration() DataAwsImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList {
+	var returns DataAwsImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList
+	_jsii_.Get(
+		j,
+		"ssmParameterConfiguration",
 		&returns,
 	)
 	return returns

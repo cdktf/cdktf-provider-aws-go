@@ -28,6 +28,9 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOut
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataTransferApi() *string
+	SetDataTransferApi(val *string)
+	DataTransferApiInput() *string
 	ErrorHandlingConfig() AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference
 	ErrorHandlingConfigInput() *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 	// Experimental.
@@ -76,6 +79,7 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOut
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutErrorHandlingConfig(value *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig)
+	ResetDataTransferApi()
 	ResetErrorHandlingConfig()
 	ResetIdFieldNames()
 	ResetWriteOperationType()
@@ -119,6 +123,26 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference) DataTransferApi() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTransferApi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference) DataTransferApiInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataTransferApiInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +314,17 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference)SetDataTransferApi(val *string) {
+	if err := j.validateSetDataTransferApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataTransferApi",
 		val,
 	)
 }
@@ -554,6 +589,14 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 		a,
 		"putErrorHandlingConfig",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference) ResetDataTransferApi() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataTransferApi",
+		nil, // no parameters
 	)
 }
 

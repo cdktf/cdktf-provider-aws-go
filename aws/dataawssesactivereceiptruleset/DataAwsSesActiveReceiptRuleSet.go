@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
 type DataAwsSesActiveReceiptRuleSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
 func NewDataAwsSesActiveReceiptRuleSet(scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) DataAwsSesActiveReceiptRuleSet {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataAwsSesActiveReceiptRuleSet(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
 func NewDataAwsSesActiveReceiptRuleSet_Override(d DataAwsSesActiveReceiptRuleSet, scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) {
 	_init_.Initialize()
 

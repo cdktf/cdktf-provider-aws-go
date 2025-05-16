@@ -48,6 +48,8 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	RegionInput() *string
 	S3ExportConfiguration() ImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference
 	S3ExportConfigurationInput() *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration
+	SsmParameterConfiguration() ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList
+	SsmParameterConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,12 +87,14 @@ type ImagebuilderDistributionConfigurationDistributionOutputReference interface 
 	PutFastLaunchConfiguration(value interface{})
 	PutLaunchTemplateConfiguration(value interface{})
 	PutS3ExportConfiguration(value *ImagebuilderDistributionConfigurationDistributionS3ExportConfiguration)
+	PutSsmParameterConfiguration(value interface{})
 	ResetAmiDistributionConfiguration()
 	ResetContainerDistributionConfiguration()
 	ResetFastLaunchConfiguration()
 	ResetLaunchTemplateConfiguration()
 	ResetLicenseConfigurationArns()
 	ResetS3ExportConfiguration()
+	ResetSsmParameterConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -291,6 +295,26 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.Get(
 		j,
 		"s3ExportConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SsmParameterConfiguration() ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList {
+	var returns ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList
+	_jsii_.Get(
+		j,
+		"ssmParameterConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) SsmParameterConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ssmParameterConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -662,6 +686,17 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) PutSsmParameterConfiguration(value interface{}) {
+	if err := i.validatePutSsmParameterConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSsmParameterConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ResetAmiDistributionConfiguration() {
 	_jsii_.InvokeVoid(
 		i,
@@ -706,6 +741,14 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputRefere
 	_jsii_.InvokeVoid(
 		i,
 		"resetS3ExportConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference) ResetSsmParameterConfiguration() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSsmParameterConfiguration",
 		nil, // no parameters
 	)
 }

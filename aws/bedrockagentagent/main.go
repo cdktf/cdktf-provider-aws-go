@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "prepareAgent", GoGetter: "PrepareAgent"},
 			_jsii_.MemberProperty{JsiiProperty: "prepareAgentInput", GoGetter: "PrepareAgentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preparedAt", GoGetter: "PreparedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "promptOverrideConfiguration", GoGetter: "PromptOverrideConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "promptOverrideConfigurationInput", GoGetter: "PromptOverrideConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

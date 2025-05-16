@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
 type S3TablesTableBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -33,6 +33,8 @@ type S3TablesTableBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionConfiguration() S3TablesTableBucketEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -112,7 +114,9 @@ type S3TablesTableBucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *S3TablesTableBucketEncryptionConfiguration)
 	PutMaintenanceConfiguration(value *S3TablesTableBucketMaintenanceConfiguration)
+	ResetEncryptionConfiguration()
 	ResetMaintenanceConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_S3TablesTableBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTableBucket) EncryptionConfiguration() S3TablesTableBucketEncryptionConfigurationOutputReference {
+	var returns S3TablesTableBucketEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTableBucket) EncryptionConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -366,7 +390,7 @@ func (j *jsiiProxy_S3TablesTableBucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) S3TablesTableBucket {
 	_init_.Initialize()
 
@@ -384,7 +408,7 @@ func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3Ta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket_Override(s S3TablesTableBucket, scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) {
 	_init_.Initialize()
 
@@ -827,6 +851,17 @@ func (s *jsiiProxy_S3TablesTableBucket) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (s *jsiiProxy_S3TablesTableBucket) PutEncryptionConfiguration(value *S3TablesTableBucketEncryptionConfiguration) {
+	if err := s.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3TablesTableBucket) PutMaintenanceConfiguration(value *S3TablesTableBucketMaintenanceConfiguration) {
 	if err := s.validatePutMaintenanceConfigurationParameters(value); err != nil {
 		panic(err)
@@ -835,6 +870,14 @@ func (s *jsiiProxy_S3TablesTableBucket) PutMaintenanceConfiguration(value *S3Tab
 		s,
 		"putMaintenanceConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3TablesTableBucket) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionConfiguration",
+		nil, // no parameters
 	)
 }
 

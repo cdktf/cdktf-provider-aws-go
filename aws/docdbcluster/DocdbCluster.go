@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -98,6 +98,9 @@ type DocdbCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageMasterUserPassword() interface{}
+	SetManageMasterUserPassword(val interface{})
+	ManageMasterUserPasswordInput() interface{}
 	MasterPassword() *string
 	SetMasterPassword(val *string)
 	MasterPasswordInput() *string
@@ -110,6 +113,7 @@ type DocdbCluster interface {
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
+	MasterUserSecret() DocdbClusterMasterUserSecretList
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -225,6 +229,7 @@ type DocdbCluster interface {
 	ResetGlobalClusterIdentifier()
 	ResetId()
 	ResetKmsKeyId()
+	ResetManageMasterUserPassword()
 	ResetMasterPassword()
 	ResetMasterPasswordWo()
 	ResetMasterPasswordWoVersion()
@@ -732,6 +737,26 @@ func (j *jsiiProxy_DocdbCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) ManageMasterUserPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) ManageMasterUserPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) MasterPassword() *string {
 	var returns *string
 	_jsii_.Get(
@@ -807,6 +832,16 @@ func (j *jsiiProxy_DocdbCluster) MasterUsernameInput() *string {
 	_jsii_.Get(
 		j,
 		"masterUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) MasterUserSecret() DocdbClusterMasterUserSecretList {
+	var returns DocdbClusterMasterUserSecretList
+	_jsii_.Get(
+		j,
+		"masterUserSecret",
 		&returns,
 	)
 	return returns
@@ -1133,7 +1168,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1151,7 +1186,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1394,6 +1429,17 @@ func (j *jsiiProxy_DocdbCluster)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetManageMasterUserPassword(val interface{}) {
+	if err := j.validateSetManageMasterUserPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageMasterUserPassword",
 		val,
 	)
 }
@@ -2078,6 +2124,14 @@ func (d *jsiiProxy_DocdbCluster) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetManageMasterUserPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManageMasterUserPassword",
 		nil, // no parameters
 	)
 }

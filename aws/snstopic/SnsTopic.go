@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/sns_topic aws_sns_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/sns_topic aws_sns_topic}.
 type SnsTopic interface {
 	cdktf.TerraformResource
 	ApplicationFailureFeedbackRoleArn() *string
@@ -54,6 +54,9 @@ type SnsTopic interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	FifoThroughputScope() *string
+	SetFifoThroughputScope(val *string)
+	FifoThroughputScopeInput() *string
 	FifoTopic() interface{}
 	SetFifoTopic(val interface{})
 	FifoTopicInput() interface{}
@@ -201,6 +204,7 @@ type SnsTopic interface {
 	ResetContentBasedDeduplication()
 	ResetDeliveryPolicy()
 	ResetDisplayName()
+	ResetFifoThroughputScope()
 	ResetFifoTopic()
 	ResetFirehoseFailureFeedbackRoleArn()
 	ResetFirehoseSuccessFeedbackRoleArn()
@@ -449,6 +453,26 @@ func (j *jsiiProxy_SnsTopic) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) FifoThroughputScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fifoThroughputScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) FifoThroughputScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fifoThroughputScopeInput",
 		&returns,
 	)
 	return returns
@@ -1015,7 +1039,7 @@ func (j *jsiiProxy_SnsTopic) TracingConfigInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig) SnsTopic {
 	_init_.Initialize()
 
@@ -1033,7 +1057,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, config *SnsTopicConfig) {
 	_init_.Initialize()
 
@@ -1147,6 +1171,17 @@ func (j *jsiiProxy_SnsTopic)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopic)SetFifoThroughputScope(val *string) {
+	if err := j.validateSetFifoThroughputScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fifoThroughputScope",
 		val,
 	)
 }
@@ -1836,6 +1871,14 @@ func (s *jsiiProxy_SnsTopic) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopic) ResetFifoThroughputScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFifoThroughputScope",
 		nil, // no parameters
 	)
 }

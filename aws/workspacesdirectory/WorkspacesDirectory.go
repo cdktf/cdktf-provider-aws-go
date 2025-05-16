@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
+	ActiveDirectoryConfig() WorkspacesDirectoryActiveDirectoryConfigOutputReference
+	ActiveDirectoryConfigInput() *WorkspacesDirectoryActiveDirectoryConfig
 	Alias() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -92,11 +94,23 @@ type WorkspacesDirectory interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserIdentityType() *string
+	SetUserIdentityType(val *string)
+	UserIdentityTypeInput() *string
 	WorkspaceAccessProperties() WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
 	WorkspaceAccessPropertiesInput() *WorkspacesDirectoryWorkspaceAccessProperties
 	WorkspaceCreationProperties() WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference
 	WorkspaceCreationPropertiesInput() *WorkspacesDirectoryWorkspaceCreationProperties
+	WorkspaceDirectoryDescription() *string
+	SetWorkspaceDirectoryDescription(val *string)
+	WorkspaceDirectoryDescriptionInput() *string
+	WorkspaceDirectoryName() *string
+	SetWorkspaceDirectoryName(val *string)
+	WorkspaceDirectoryNameInput() *string
 	WorkspaceSecurityGroupId() *string
+	WorkspaceType() *string
+	SetWorkspaceType(val *string)
+	WorkspaceTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -140,12 +154,15 @@ type WorkspacesDirectory interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutActiveDirectoryConfig(value *WorkspacesDirectoryActiveDirectoryConfig)
 	PutCertificateBasedAuthProperties(value *WorkspacesDirectoryCertificateBasedAuthProperties)
 	PutSamlProperties(value *WorkspacesDirectorySamlProperties)
 	PutSelfServicePermissions(value *WorkspacesDirectorySelfServicePermissions)
 	PutWorkspaceAccessProperties(value *WorkspacesDirectoryWorkspaceAccessProperties)
 	PutWorkspaceCreationProperties(value *WorkspacesDirectoryWorkspaceCreationProperties)
+	ResetActiveDirectoryConfig()
 	ResetCertificateBasedAuthProperties()
+	ResetDirectoryId()
 	ResetId()
 	ResetIpGroupIds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -156,8 +173,12 @@ type WorkspacesDirectory interface {
 	ResetSubnetIds()
 	ResetTags()
 	ResetTagsAll()
+	ResetUserIdentityType()
 	ResetWorkspaceAccessProperties()
 	ResetWorkspaceCreationProperties()
+	ResetWorkspaceDirectoryDescription()
+	ResetWorkspaceDirectoryName()
+	ResetWorkspaceType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -174,6 +195,26 @@ type WorkspacesDirectory interface {
 // The jsii proxy struct for WorkspacesDirectory
 type jsiiProxy_WorkspacesDirectory struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) ActiveDirectoryConfig() WorkspacesDirectoryActiveDirectoryConfigOutputReference {
+	var returns WorkspacesDirectoryActiveDirectoryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"activeDirectoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) ActiveDirectoryConfigInput() *WorkspacesDirectoryActiveDirectoryConfig {
+	var returns *WorkspacesDirectoryActiveDirectoryConfig
+	_jsii_.Get(
+		j,
+		"activeDirectoryConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkspacesDirectory) Alias() *string {
@@ -586,6 +627,26 @@ func (j *jsiiProxy_WorkspacesDirectory) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) UserIdentityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userIdentityType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) UserIdentityTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userIdentityTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) WorkspaceAccessProperties() WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference {
 	var returns WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference
 	_jsii_.Get(
@@ -626,6 +687,46 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceCreationPropertiesInput() *Work
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceDirectoryDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceDirectoryDescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryDescriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceDirectoryName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceDirectoryNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -636,8 +737,28 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+func (j *jsiiProxy_WorkspacesDirectory) WorkspaceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -655,7 +776,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 
@@ -796,6 +917,50 @@ func (j *jsiiProxy_WorkspacesDirectory)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetUserIdentityType(val *string) {
+	if err := j.validateSetUserIdentityTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userIdentityType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetWorkspaceDirectoryDescription(val *string) {
+	if err := j.validateSetWorkspaceDirectoryDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceDirectoryDescription",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetWorkspaceDirectoryName(val *string) {
+	if err := j.validateSetWorkspaceDirectoryNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceDirectoryName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetWorkspaceType(val *string) {
+	if err := j.validateSetWorkspaceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workspaceType",
 		val,
 	)
 }
@@ -1153,6 +1318,17 @@ func (w *jsiiProxy_WorkspacesDirectory) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) PutActiveDirectoryConfig(value *WorkspacesDirectoryActiveDirectoryConfig) {
+	if err := w.validatePutActiveDirectoryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putActiveDirectoryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) PutCertificateBasedAuthProperties(value *WorkspacesDirectoryCertificateBasedAuthProperties) {
 	if err := w.validatePutCertificateBasedAuthPropertiesParameters(value); err != nil {
 		panic(err)
@@ -1208,10 +1384,26 @@ func (w *jsiiProxy_WorkspacesDirectory) PutWorkspaceCreationProperties(value *Wo
 	)
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) ResetActiveDirectoryConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetActiveDirectoryConfig",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) ResetCertificateBasedAuthProperties() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCertificateBasedAuthProperties",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetDirectoryId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDirectoryId",
 		nil, // no parameters
 	)
 }
@@ -1280,6 +1472,14 @@ func (w *jsiiProxy_WorkspacesDirectory) ResetTagsAll() {
 	)
 }
 
+func (w *jsiiProxy_WorkspacesDirectory) ResetUserIdentityType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetUserIdentityType",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceAccessProperties() {
 	_jsii_.InvokeVoid(
 		w,
@@ -1292,6 +1492,30 @@ func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceCreationProperties() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetWorkspaceCreationProperties",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceDirectoryDescription() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceDirectoryDescription",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceDirectoryName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceDirectoryName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetWorkspaceType() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkspaceType",
 		nil, // no parameters
 	)
 }

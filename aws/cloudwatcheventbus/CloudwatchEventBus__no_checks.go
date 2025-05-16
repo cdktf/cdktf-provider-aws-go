@@ -75,6 +75,10 @@ func (c *jsiiProxy_CloudwatchEventBus) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventBus) validatePutDeadLetterConfigParameters(value *CloudwatchEventBusDeadLetterConfig) error {
+	return nil
+}
+
 func validateCloudwatchEventBus_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

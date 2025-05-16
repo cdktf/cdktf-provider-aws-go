@@ -12,10 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration}.
 type IotDomainConfiguration interface {
 	cdktf.TerraformResource
+	ApplicationProtocol() *string
+	SetApplicationProtocol(val *string)
+	ApplicationProtocolInput() *string
 	Arn() *string
+	AuthenticationType() *string
+	SetAuthenticationType(val *string)
+	AuthenticationTypeInput() *string
 	AuthorizerConfig() IotDomainConfigurationAuthorizerConfigOutputReference
 	AuthorizerConfigInput() *IotDomainConfigurationAuthorizerConfig
 	// Experimental.
@@ -139,6 +145,8 @@ type IotDomainConfiguration interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorizerConfig(value *IotDomainConfigurationAuthorizerConfig)
 	PutTlsConfig(value *IotDomainConfigurationTlsConfig)
+	ResetApplicationProtocol()
+	ResetAuthenticationType()
 	ResetAuthorizerConfig()
 	ResetDomainName()
 	ResetId()
@@ -170,11 +178,51 @@ type jsiiProxy_IotDomainConfiguration struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_IotDomainConfiguration) ApplicationProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotDomainConfiguration) ApplicationProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotDomainConfiguration) Arn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotDomainConfiguration) AuthenticationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotDomainConfiguration) AuthenticationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationTypeInput",
 		&returns,
 	)
 	return returns
@@ -571,7 +619,7 @@ func (j *jsiiProxy_IotDomainConfiguration) ValidationCertificateArnInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
 func NewIotDomainConfiguration(scope constructs.Construct, id *string, config *IotDomainConfigurationConfig) IotDomainConfiguration {
 	_init_.Initialize()
 
@@ -589,7 +637,7 @@ func NewIotDomainConfiguration(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
 func NewIotDomainConfiguration_Override(i IotDomainConfiguration, scope constructs.Construct, id *string, config *IotDomainConfigurationConfig) {
 	_init_.Initialize()
 
@@ -597,6 +645,28 @@ func NewIotDomainConfiguration_Override(i IotDomainConfiguration, scope construc
 		"@cdktf/provider-aws.iotDomainConfiguration.IotDomainConfiguration",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IotDomainConfiguration)SetApplicationProtocol(val *string) {
+	if err := j.validateSetApplicationProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationProtocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotDomainConfiguration)SetAuthenticationType(val *string) {
+	if err := j.validateSetAuthenticationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationType",
+		val,
 	)
 }
 
@@ -1139,6 +1209,22 @@ func (i *jsiiProxy_IotDomainConfiguration) PutTlsConfig(value *IotDomainConfigur
 		i,
 		"putTlsConfig",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IotDomainConfiguration) ResetApplicationProtocol() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetApplicationProtocol",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotDomainConfiguration) ResetAuthenticationType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAuthenticationType",
+		nil, // no parameters
 	)
 }
 

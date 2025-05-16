@@ -5,11 +5,11 @@ package cloudsearchdomain
 
 
 type CloudsearchDomainTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudsearch_domain#create CloudsearchDomain#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudsearch_domain#delete CloudsearchDomain#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudsearch_domain#update CloudsearchDomain#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

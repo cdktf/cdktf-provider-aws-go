@@ -87,6 +87,10 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutClientLoginBannerOptionsPara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutClientRouteEnforcementOptionsParameters(value *Ec2ClientVpnEndpointClientRouteEnforcementOptions) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutConnectionLogOptionsParameters(value *Ec2ClientVpnEndpointConnectionLogOptions) error {
 	return nil
 }

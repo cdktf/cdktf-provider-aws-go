@@ -13,6 +13,8 @@ import (
 
 type CognitoUserPoolUserPoolAddOnsOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedSecurityAdditionalFlows() CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference
+	AdvancedSecurityAdditionalFlowsInput() *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows
 	AdvancedSecurityMode() *string
 	SetAdvancedSecurityMode(val *string)
 	AdvancedSecurityModeInput() *string
@@ -67,6 +69,8 @@ type CognitoUserPoolUserPoolAddOnsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedSecurityAdditionalFlows(value *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows)
+	ResetAdvancedSecurityAdditionalFlows()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type CognitoUserPoolUserPoolAddOnsOutputReference interface {
 // The jsii proxy struct for CognitoUserPoolUserPoolAddOnsOutputReference
 type jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) AdvancedSecurityAdditionalFlows() CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference {
+	var returns CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSecurityAdditionalFlows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) AdvancedSecurityAdditionalFlowsInput() *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows {
+	var returns *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows
+	_jsii_.Get(
+		j,
+		"advancedSecurityAdditionalFlowsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) AdvancedSecurityMode() *string {
@@ -450,6 +474,25 @@ func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) PutAdvancedSecurityAdditionalFlows(value *CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows) {
+	if err := c.validatePutAdvancedSecurityAdditionalFlowsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdvancedSecurityAdditionalFlows",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) ResetAdvancedSecurityAdditionalFlows() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdvancedSecurityAdditionalFlows",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

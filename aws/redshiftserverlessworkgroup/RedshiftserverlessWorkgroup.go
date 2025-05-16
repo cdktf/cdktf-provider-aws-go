@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type RedshiftserverlessWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -102,6 +102,9 @@ type RedshiftserverlessWorkgroup interface {
 	TerraformResourceType() *string
 	Timeouts() RedshiftserverlessWorkgroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrackName() *string
+	SetTrackName(val *string)
+	TrackNameInput() *string
 	WorkgroupId() *string
 	WorkgroupName() *string
 	SetWorkgroupName(val *string)
@@ -168,6 +171,7 @@ type RedshiftserverlessWorkgroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetTrackName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -646,6 +650,26 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) TrackName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trackName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) TrackNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trackNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -677,7 +701,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) RedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup_Override(r RedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 
@@ -891,6 +915,17 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup)SetTagsAll(val *map[string]*strin
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup)SetTrackName(val *string) {
+	if err := j.validateSetTrackNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trackName",
 		val,
 	)
 }
@@ -1400,6 +1435,14 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetTrackName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTrackName",
 		nil, // no parameters
 	)
 }

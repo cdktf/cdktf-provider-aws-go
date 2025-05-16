@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/rum_app_monitor aws_rum_app_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/rum_app_monitor aws_rum_app_monitor}.
 type RumAppMonitor interface {
 	cdktf.TerraformResource
 	AppMonitorConfiguration() RumAppMonitorAppMonitorConfigurationOutputReference
@@ -44,6 +44,9 @@ type RumAppMonitor interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	DomainList() *[]*string
+	SetDomainList(val *[]*string)
+	DomainListInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,6 +137,8 @@ type RumAppMonitor interface {
 	ResetAppMonitorConfiguration()
 	ResetCustomEvents()
 	ResetCwLogEnabled()
+	ResetDomain()
+	ResetDomainList()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -313,6 +318,26 @@ func (j *jsiiProxy_RumAppMonitor) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumAppMonitor) DomainList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumAppMonitor) DomainListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainListInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +534,7 @@ func (j *jsiiProxy_RumAppMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
 func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMonitorConfig) RumAppMonitor {
 	_init_.Initialize()
 
@@ -527,7 +552,7 @@ func NewRumAppMonitor(scope constructs.Construct, id *string, config *RumAppMoni
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource.
 func NewRumAppMonitor_Override(r RumAppMonitor, scope constructs.Construct, id *string, config *RumAppMonitorConfig) {
 	_init_.Initialize()
 
@@ -586,6 +611,17 @@ func (j *jsiiProxy_RumAppMonitor)SetDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RumAppMonitor)SetDomainList(val *[]*string) {
+	if err := j.validateSetDomainListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainList",
 		val,
 	)
 }
@@ -1067,6 +1103,22 @@ func (r *jsiiProxy_RumAppMonitor) ResetCwLogEnabled() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCwLogEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RumAppMonitor) ResetDomain() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RumAppMonitor) ResetDomainList() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDomainList",
 		nil, // no parameters
 	)
 }

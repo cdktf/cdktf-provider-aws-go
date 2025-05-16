@@ -67,6 +67,10 @@ func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetRecoveryPeriodInDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

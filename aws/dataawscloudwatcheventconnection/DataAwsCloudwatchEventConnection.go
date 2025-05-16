@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
 type DataAwsCloudwatchEventConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -40,6 +40,7 @@ type DataAwsCloudwatchEventConnection interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyIdentifier() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -220,6 +221,16 @@ func (j *jsiiProxy_DataAwsCloudwatchEventConnection) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchEventConnection) KmsKeyIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdentifier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchEventConnection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -321,7 +332,7 @@ func (j *jsiiProxy_DataAwsCloudwatchEventConnection) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection} Data Source.
 func NewDataAwsCloudwatchEventConnection(scope constructs.Construct, id *string, config *DataAwsCloudwatchEventConnectionConfig) DataAwsCloudwatchEventConnection {
 	_init_.Initialize()
 
@@ -339,7 +350,7 @@ func NewDataAwsCloudwatchEventConnection(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cloudwatch_event_connection aws_cloudwatch_event_connection} Data Source.
 func NewDataAwsCloudwatchEventConnection_Override(d DataAwsCloudwatchEventConnection, scope constructs.Construct, id *string, config *DataAwsCloudwatchEventConnectionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association}.
 type ApiGatewayDomainNameAccessAssociation interface {
 	cdktf.TerraformResource
 	AccessAssociationSource() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
 func NewApiGatewayDomainNameAccessAssociation(scope constructs.Construct, id *string, config *ApiGatewayDomainNameAccessAssociationConfig) ApiGatewayDomainNameAccessAssociation {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewApiGatewayDomainNameAccessAssociation(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
 func NewApiGatewayDomainNameAccessAssociation_Override(a ApiGatewayDomainNameAccessAssociation, scope constructs.Construct, id *string, config *ApiGatewayDomainNameAccessAssociationConfig) {
 	_init_.Initialize()
 

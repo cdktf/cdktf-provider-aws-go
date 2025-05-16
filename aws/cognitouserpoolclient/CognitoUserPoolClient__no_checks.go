@@ -79,6 +79,10 @@ func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParam
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolClient) validatePutRefreshTokenRotationParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value interface{}) error {
 	return nil
 }

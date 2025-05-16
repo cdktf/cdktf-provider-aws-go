@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
 type CloudwatchEventBus interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,6 +28,8 @@ type CloudwatchEventBus interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeadLetterConfig() CloudwatchEventBusDeadLetterConfigOutputReference
+	DeadLetterConfigInput() *CloudwatchEventBusDeadLetterConfig
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,6 +128,8 @@ type CloudwatchEventBus interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDeadLetterConfig(value *CloudwatchEventBusDeadLetterConfig)
+	ResetDeadLetterConfig()
 	ResetDescription()
 	ResetEventSourceName()
 	ResetId()
@@ -198,6 +202,26 @@ func (j *jsiiProxy_CloudwatchEventBus) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventBus) DeadLetterConfig() CloudwatchEventBusDeadLetterConfigOutputReference {
+	var returns CloudwatchEventBusDeadLetterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"deadLetterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventBus) DeadLetterConfigInput() *CloudwatchEventBusDeadLetterConfig {
+	var returns *CloudwatchEventBusDeadLetterConfig
+	_jsii_.Get(
+		j,
+		"deadLetterConfigInput",
 		&returns,
 	)
 	return returns
@@ -464,7 +488,7 @@ func (j *jsiiProxy_CloudwatchEventBus) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource.
 func NewCloudwatchEventBus(scope constructs.Construct, id *string, config *CloudwatchEventBusConfig) CloudwatchEventBus {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewCloudwatchEventBus(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_bus aws_cloudwatch_event_bus} Resource.
 func NewCloudwatchEventBus_Override(c CloudwatchEventBus, scope constructs.Construct, id *string, config *CloudwatchEventBusConfig) {
 	_init_.Initialize()
 
@@ -988,6 +1012,25 @@ func (c *jsiiProxy_CloudwatchEventBus) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventBus) PutDeadLetterConfig(value *CloudwatchEventBusDeadLetterConfig) {
+	if err := c.validatePutDeadLetterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeadLetterConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventBus) ResetDeadLetterConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeadLetterConfig",
+		nil, // no parameters
 	)
 }
 

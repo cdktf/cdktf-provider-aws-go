@@ -127,6 +127,10 @@ func (j *jsiiProxy_SnsTopic) validateSetDisplayNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopic) validateSetFifoThroughputScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopic) validateSetFifoTopicParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type Ec2ClientVpnEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -27,6 +27,8 @@ type Ec2ClientVpnEndpoint interface {
 	ClientConnectOptionsInput() *Ec2ClientVpnEndpointClientConnectOptions
 	ClientLoginBannerOptions() Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference
 	ClientLoginBannerOptionsInput() *Ec2ClientVpnEndpointClientLoginBannerOptions
+	ClientRouteEnforcementOptions() Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference
+	ClientRouteEnforcementOptionsInput() *Ec2ClientVpnEndpointClientRouteEnforcementOptions
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -163,9 +165,11 @@ type Ec2ClientVpnEndpoint interface {
 	PutAuthenticationOptions(value interface{})
 	PutClientConnectOptions(value *Ec2ClientVpnEndpointClientConnectOptions)
 	PutClientLoginBannerOptions(value *Ec2ClientVpnEndpointClientLoginBannerOptions)
+	PutClientRouteEnforcementOptions(value *Ec2ClientVpnEndpointClientRouteEnforcementOptions)
 	PutConnectionLogOptions(value *Ec2ClientVpnEndpointConnectionLogOptions)
 	ResetClientConnectOptions()
 	ResetClientLoginBannerOptions()
+	ResetClientRouteEnforcementOptions()
 	ResetDescription()
 	ResetDisconnectOnSessionTimeout()
 	ResetDnsServers()
@@ -295,6 +299,26 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) ClientLoginBannerOptionsInput() *Ec2Cli
 	_jsii_.Get(
 		j,
 		"clientLoginBannerOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) ClientRouteEnforcementOptions() Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference {
+	var returns Ec2ClientVpnEndpointClientRouteEnforcementOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"clientRouteEnforcementOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) ClientRouteEnforcementOptionsInput() *Ec2ClientVpnEndpointClientRouteEnforcementOptions {
+	var returns *Ec2ClientVpnEndpointClientRouteEnforcementOptions
+	_jsii_.Get(
+		j,
+		"clientRouteEnforcementOptionsInput",
 		&returns,
 	)
 	return returns
@@ -771,7 +795,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) VpnPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -789,7 +813,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 
@@ -1419,6 +1443,17 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutClientLoginBannerOptions(value *Ec2C
 	)
 }
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutClientRouteEnforcementOptions(value *Ec2ClientVpnEndpointClientRouteEnforcementOptions) {
+	if err := e.validatePutClientRouteEnforcementOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putClientRouteEnforcementOptions",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutConnectionLogOptions(value *Ec2ClientVpnEndpointConnectionLogOptions) {
 	if err := e.validatePutConnectionLogOptionsParameters(value); err != nil {
 		panic(err)
@@ -1442,6 +1477,14 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetClientLoginBannerOptions() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetClientLoginBannerOptions",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetClientRouteEnforcementOptions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetClientRouteEnforcementOptions",
 		nil, // no parameters
 	)
 }

@@ -63,6 +63,10 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference) validateSetDataTransferApiParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference) validateSetIdFieldNamesParameters(val *[]*string) error {
 	return nil
 }

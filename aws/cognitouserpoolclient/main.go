@@ -79,10 +79,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAnalyticsConfiguration", GoMethod: "PutAnalyticsConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putRefreshTokenRotation", GoMethod: "PutRefreshTokenRotation"},
 			_jsii_.MemberMethod{JsiiMethod: "putTokenValidityUnits", GoMethod: "PutTokenValidityUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readAttributes", GoGetter: "ReadAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "readAttributesInput", GoGetter: "ReadAttributesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "refreshTokenRotation", GoGetter: "RefreshTokenRotation"},
+			_jsii_.MemberProperty{JsiiProperty: "refreshTokenRotationInput", GoGetter: "RefreshTokenRotationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenValidity", GoGetter: "RefreshTokenValidity"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenValidityInput", GoGetter: "RefreshTokenValidityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessTokenValidity", GoMethod: "ResetAccessTokenValidity"},
@@ -102,6 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreventUserExistenceErrors", GoMethod: "ResetPreventUserExistenceErrors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReadAttributes", GoMethod: "ResetReadAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRefreshTokenRotation", GoMethod: "ResetRefreshTokenRotation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshTokenValidity", GoMethod: "ResetRefreshTokenValidity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSupportedIdentityProviders", GoMethod: "ResetSupportedIdentityProviders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenValidityUnits", GoMethod: "ResetTokenValidityUnits"},
@@ -206,6 +210,69 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientConfig",
 		reflect.TypeOf((*CognitoUserPoolClientConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotation",
+		reflect.TypeOf((*CognitoUserPoolClientRefreshTokenRotation)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotationList",
+		reflect.TypeOf((*CognitoUserPoolClientRefreshTokenRotationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CognitoUserPoolClientRefreshTokenRotationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientRefreshTokenRotationOutputReference",
+		reflect.TypeOf((*CognitoUserPoolClientRefreshTokenRotationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "feature", GoGetter: "Feature"},
+			_jsii_.MemberProperty{JsiiProperty: "featureInput", GoGetter: "FeatureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRetryGracePeriodSeconds", GoMethod: "ResetRetryGracePeriodSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "retryGracePeriodSeconds", GoGetter: "RetryGracePeriodSeconds"},
+			_jsii_.MemberProperty{JsiiProperty: "retryGracePeriodSecondsInput", GoGetter: "RetryGracePeriodSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CognitoUserPoolClientRefreshTokenRotationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnits",

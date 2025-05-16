@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory aws_workspaces_directory}.
 type DataAwsWorkspacesDirectory interface {
 	cdktf.TerraformDataSource
+	ActiveDirectoryConfig() DataAwsWorkspacesDirectoryActiveDirectoryConfigList
 	Alias() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -74,9 +75,13 @@ type DataAwsWorkspacesDirectory interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserIdentityType() *string
 	WorkspaceAccessProperties() DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList
 	WorkspaceCreationProperties() DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesList
+	WorkspaceDirectoryDescription() *string
+	WorkspaceDirectoryName() *string
 	WorkspaceSecurityGroupId() *string
+	WorkspaceType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -124,6 +129,16 @@ type DataAwsWorkspacesDirectory interface {
 // The jsii proxy struct for DataAwsWorkspacesDirectory
 type jsiiProxy_DataAwsWorkspacesDirectory struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) ActiveDirectoryConfig() DataAwsWorkspacesDirectoryActiveDirectoryConfigList {
+	var returns DataAwsWorkspacesDirectoryActiveDirectoryConfigList
+	_jsii_.Get(
+		j,
+		"activeDirectoryConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsWorkspacesDirectory) Alias() *string {
@@ -446,6 +461,16 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectory) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) UserIdentityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userIdentityType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceAccessProperties() DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList {
 	var returns DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesList
 	_jsii_.Get(
@@ -466,6 +491,26 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceCreationProperties() Dat
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceDirectoryDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceDirectoryName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceDirectoryName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -476,8 +521,18 @@ func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceSecurityGroupId() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesDirectory) WorkspaceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workspaceType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
 func NewDataAwsWorkspacesDirectory(scope constructs.Construct, id *string, config *DataAwsWorkspacesDirectoryConfig) DataAwsWorkspacesDirectory {
 	_init_.Initialize()
 
@@ -495,7 +550,7 @@ func NewDataAwsWorkspacesDirectory(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/workspaces_directory aws_workspaces_directory} Data Source.
 func NewDataAwsWorkspacesDirectory_Override(d DataAwsWorkspacesDirectory, scope constructs.Construct, id *string, config *DataAwsWorkspacesDirectoryConfig) {
 	_init_.Initialize()
 

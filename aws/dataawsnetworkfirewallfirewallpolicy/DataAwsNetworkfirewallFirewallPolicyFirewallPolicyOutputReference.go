@@ -32,6 +32,7 @@ type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallPolicyFirewallPolicy
 	SetInternalValue(val *DataAwsNetworkfirewallFirewallPolicyFirewallPolicy)
+	PolicyVariables() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesList
 	StatefulDefaultActions() *[]*string
 	StatefulEngineOptions() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsList
 	StatefulRuleGroupReference() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputRefer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PolicyVariables() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesList {
+	var returns DataAwsNetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesList
+	_jsii_.Get(
+		j,
+		"policyVariables",
 		&returns,
 	)
 	return returns

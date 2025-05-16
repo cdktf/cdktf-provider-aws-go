@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client}.
 type DataAwsCognitoUserPoolClient interface {
 	cdktf.TerraformDataSource
 	AccessTokenValidity() *float64
@@ -70,6 +70,7 @@ type DataAwsCognitoUserPoolClient interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReadAttributes() *[]*string
+	RefreshTokenRotation() DataAwsCognitoUserPoolClientRefreshTokenRotationList
 	RefreshTokenValidity() *float64
 	SupportedIdentityProviders() *[]*string
 	// Experimental.
@@ -451,6 +452,16 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient) ReadAttributes() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPoolClient) RefreshTokenRotation() DataAwsCognitoUserPoolClientRefreshTokenRotationList {
+	var returns DataAwsCognitoUserPoolClientRefreshTokenRotationList
+	_jsii_.Get(
+		j,
+		"refreshTokenRotation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolClient) RefreshTokenValidity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -542,7 +553,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient) WriteAttributes() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
 func NewDataAwsCognitoUserPoolClient(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolClientConfig) DataAwsCognitoUserPoolClient {
 	_init_.Initialize()
 
@@ -560,7 +571,7 @@ func NewDataAwsCognitoUserPoolClient(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
 func NewDataAwsCognitoUserPoolClient_Override(d DataAwsCognitoUserPoolClient, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolClientConfig) {
 	_init_.Initialize()
 

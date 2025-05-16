@@ -79,6 +79,10 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutAvailabilityZoneDistributionPara
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validatePutCapacityReservationSpecificationParameters(value *AutoscalingGroupCapacityReservationSpecification) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validatePutInitialLifecycleHookParameters(value interface{}) error {
 	return nil
 }

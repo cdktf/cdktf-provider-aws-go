@@ -33,6 +33,7 @@ type DataAwsDynamodbTablePointInTimeRecoveryOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsDynamodbTablePointInTimeRecovery
 	SetInternalValue(val *DataAwsDynamodbTablePointInTimeRecovery)
+	RecoveryPeriodInDays() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryOutputReference) RecoveryPeriodInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"recoveryPeriodInDays",
 		&returns,
 	)
 	return returns

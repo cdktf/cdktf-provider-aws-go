@@ -75,6 +75,10 @@ func (s *jsiiProxy_S3TablesTable) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (s *jsiiProxy_S3TablesTable) validatePutEncryptionConfigurationParameters(value *S3TablesTableEncryptionConfiguration) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3TablesTable) validatePutMaintenanceConfigurationParameters(value *S3TablesTableMaintenanceConfiguration) error {
 	return nil
 }

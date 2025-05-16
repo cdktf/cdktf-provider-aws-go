@@ -5,9 +5,9 @@ package timestreamqueryscheduledquery
 
 
 type TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationDimensionMapping struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/timestreamquery_scheduled_query#dimension_value_type TimestreamqueryScheduledQuery#dimension_value_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/timestreamquery_scheduled_query#dimension_value_type TimestreamqueryScheduledQuery#dimension_value_type}.
 	DimensionValueType *string `field:"required" json:"dimensionValueType" yaml:"dimensionValueType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.97.0/docs/resources/timestreamquery_scheduled_query#name TimestreamqueryScheduledQuery#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/timestreamquery_scheduled_query#name TimestreamqueryScheduledQuery#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 
