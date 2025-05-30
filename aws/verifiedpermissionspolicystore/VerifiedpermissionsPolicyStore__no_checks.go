@@ -115,6 +115,10 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewVerifiedpermissionsPolicyStoreParameters(scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) error {
 	return nil
 }

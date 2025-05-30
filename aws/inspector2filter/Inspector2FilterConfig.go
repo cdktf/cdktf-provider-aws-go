@@ -22,19 +22,19 @@ type Inspector2FilterConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#action Inspector2Filter#action}.
 	Action *string `field:"required" json:"action" yaml:"action"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#name Inspector2Filter#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#description Inspector2Filter#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// filter_criteria block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#filter_criteria Inspector2Filter#filter_criteria}
 	FilterCriteria interface{} `field:"optional" json:"filterCriteria" yaml:"filterCriteria"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#reason Inspector2Filter#reason}.
 	Reason *string `field:"optional" json:"reason" yaml:"reason"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/inspector2_filter#tags Inspector2Filter#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

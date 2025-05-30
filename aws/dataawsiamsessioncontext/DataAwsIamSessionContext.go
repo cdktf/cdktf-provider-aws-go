@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/iam_session_context aws_iam_session_context}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_session_context aws_iam_session_context}.
 type DataAwsIamSessionContext interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataAwsIamSessionContext) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/iam_session_context aws_iam_session_context} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_session_context aws_iam_session_context} Data Source.
 func NewDataAwsIamSessionContext(scope constructs.Construct, id *string, config *DataAwsIamSessionContextConfig) DataAwsIamSessionContext {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataAwsIamSessionContext(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/iam_session_context aws_iam_session_context} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/iam_session_context aws_iam_session_context} Data Source.
 func NewDataAwsIamSessionContext_Override(d DataAwsIamSessionContext, scope constructs.Construct, id *string, config *DataAwsIamSessionContextConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 type VerifiedpermissionsPolicyStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -61,6 +61,10 @@ type VerifiedpermissionsPolicyStore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() cdktf.StringMap
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +121,7 @@ type VerifiedpermissionsPolicyStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	ResetValidationSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -316,6 +321,36 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedpermissionsPolicyStore) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -367,7 +402,7 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) ValidationSettingsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) VerifiedpermissionsPolicyStore {
 	_init_.Initialize()
 
@@ -385,7 +420,7 @@ func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore_Override(v VerifiedpermissionsPolicyStore, scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) {
 	_init_.Initialize()
 
@@ -471,6 +506,17 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -851,6 +897,14 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedpermissionsPolicyStore) ResetTags() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTags",
 		nil, // no parameters
 	)
 }

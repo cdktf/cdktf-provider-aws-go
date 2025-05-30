@@ -5,11 +5,11 @@ package configconfigurationaggregator
 
 
 type ConfigConfigurationAggregatorAccountAggregationSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/config_configuration_aggregator#account_ids ConfigConfigurationAggregator#account_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/config_configuration_aggregator#account_ids ConfigConfigurationAggregator#account_ids}.
 	AccountIds *[]*string `field:"required" json:"accountIds" yaml:"accountIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}.
 	AllRegions interface{} `field:"optional" json:"allRegions" yaml:"allRegions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}.
 	Regions *[]*string `field:"optional" json:"regions" yaml:"regions"`
 }
 

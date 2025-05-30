@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}.
 type VerifiedaccessTrustProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -596,7 +596,7 @@ func (j *jsiiProxy_VerifiedaccessTrustProvider) UserTrustProviderTypeInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
 func NewVerifiedaccessTrustProvider(scope constructs.Construct, id *string, config *VerifiedaccessTrustProviderConfig) VerifiedaccessTrustProvider {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewVerifiedaccessTrustProvider(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource.
 func NewVerifiedaccessTrustProvider_Override(v VerifiedaccessTrustProvider, scope constructs.Construct, id *string, config *VerifiedaccessTrustProviderConfig) {
 	_init_.Initialize()
 

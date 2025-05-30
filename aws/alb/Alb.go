@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -106,6 +106,8 @@ type Alb interface {
 	LoadBalancerType() *string
 	SetLoadBalancerType(val *string)
 	LoadBalancerTypeInput() *string
+	MinimumLoadBalancerCapacity() AlbMinimumLoadBalancerCapacityOutputReference
+	MinimumLoadBalancerCapacityInput() *AlbMinimumLoadBalancerCapacity
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -200,6 +202,7 @@ type Alb interface {
 	PutAccessLogs(value *AlbAccessLogs)
 	PutConnectionLogs(value *AlbConnectionLogs)
 	PutIpamPools(value *AlbIpamPools)
+	PutMinimumLoadBalancerCapacity(value *AlbMinimumLoadBalancerCapacity)
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *AlbTimeouts)
 	ResetAccessLogs()
@@ -223,6 +226,7 @@ type Alb interface {
 	ResetIpAddressType()
 	ResetIpamPools()
 	ResetLoadBalancerType()
+	ResetMinimumLoadBalancerCapacity()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -794,6 +798,26 @@ func (j *jsiiProxy_Alb) LoadBalancerTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Alb) MinimumLoadBalancerCapacity() AlbMinimumLoadBalancerCapacityOutputReference {
+	var returns AlbMinimumLoadBalancerCapacityOutputReference
+	_jsii_.Get(
+		j,
+		"minimumLoadBalancerCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) MinimumLoadBalancerCapacityInput() *AlbMinimumLoadBalancerCapacity {
+	var returns *AlbMinimumLoadBalancerCapacity
+	_jsii_.Get(
+		j,
+		"minimumLoadBalancerCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Alb) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1085,7 +1109,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -1103,7 +1127,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1854,6 +1878,17 @@ func (a *jsiiProxy_Alb) PutIpamPools(value *AlbIpamPools) {
 	)
 }
 
+func (a *jsiiProxy_Alb) PutMinimumLoadBalancerCapacity(value *AlbMinimumLoadBalancerCapacity) {
+	if err := a.validatePutMinimumLoadBalancerCapacityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMinimumLoadBalancerCapacity",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Alb) PutSubnetMapping(value interface{}) {
 	if err := a.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
@@ -2040,6 +2075,14 @@ func (a *jsiiProxy_Alb) ResetLoadBalancerType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLoadBalancerType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetMinimumLoadBalancerCapacity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMinimumLoadBalancerCapacity",
 		nil, // no parameters
 	)
 }

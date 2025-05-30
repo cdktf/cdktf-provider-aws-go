@@ -87,6 +87,10 @@ func (l *jsiiProxy_Lb) validatePutIpamPoolsParameters(value *LbIpamPools) error 
 	return nil
 }
 
+func (l *jsiiProxy_Lb) validatePutMinimumLoadBalancerCapacityParameters(value *LbMinimumLoadBalancerCapacity) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lb) validatePutSubnetMappingParameters(value interface{}) error {
 	return nil
 }

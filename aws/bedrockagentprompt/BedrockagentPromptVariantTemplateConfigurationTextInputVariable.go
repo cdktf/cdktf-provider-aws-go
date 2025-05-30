@@ -5,7 +5,7 @@ package bedrockagentprompt
 
 
 type BedrockagentPromptVariantTemplateConfigurationTextInputVariable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/bedrockagent_prompt#name BedrockagentPrompt#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -46,6 +46,7 @@ type DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Throughput() *float64
+	VolumeInitializationRate() *float64
 	VolumeSize() *float64
 	VolumeType() *string
 	// Experimental.
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) T
 	_jsii_.Get(
 		j,
 		"throughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) VolumeInitializationRate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRate",
 		&returns,
 	)
 	return returns

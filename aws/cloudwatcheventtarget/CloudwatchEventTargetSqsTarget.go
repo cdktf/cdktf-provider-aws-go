@@ -5,7 +5,7 @@ package cloudwatcheventtarget
 
 
 type CloudwatchEventTargetSqsTarget struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/cloudwatch_event_target#message_group_id CloudwatchEventTarget#message_group_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/cloudwatch_event_target#message_group_id CloudwatchEventTarget#message_group_id}.
 	MessageGroupId *string `field:"optional" json:"messageGroupId" yaml:"messageGroupId"`
 }
 

@@ -107,6 +107,10 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateSetVolumeInitializationRateParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateSetVolumeTypeParameters(val *string) error {
 	return nil
 }

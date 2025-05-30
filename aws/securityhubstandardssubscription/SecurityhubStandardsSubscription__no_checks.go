@@ -75,6 +75,10 @@ func (s *jsiiProxy_SecurityhubStandardsSubscription) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubStandardsSubscription) validatePutTimeoutsParameters(value *SecurityhubStandardsSubscriptionTimeouts) error {
+	return nil
+}
+
 func validateSecurityhubStandardsSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package transferserver
 
 
 type TransferServerS3StorageOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}.
 	DirectoryListingOptimization *string `field:"optional" json:"directoryListingOptimization" yaml:"directoryListingOptimization"`
 }
 

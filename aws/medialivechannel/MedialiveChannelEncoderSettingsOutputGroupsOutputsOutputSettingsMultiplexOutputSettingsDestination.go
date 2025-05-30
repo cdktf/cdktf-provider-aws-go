@@ -5,7 +5,7 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 	DestinationRefId *string `field:"required" json:"destinationRefId" yaml:"destinationRefId"`
 }
 

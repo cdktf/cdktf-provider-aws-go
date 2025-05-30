@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/appflow_flow aws_appflow_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/appflow_flow aws_appflow_flow}.
 type AppflowFlow interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_AppflowFlow) TriggerConfigInput() *AppflowFlowTriggerConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowConfig) AppflowFlow {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow_Override(a AppflowFlow, scope constructs.Construct, id *string, config *AppflowFlowConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}.
 type Lexv2ModelsBotVersion interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_Lexv2ModelsBotVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource.
 func NewLexv2ModelsBotVersion(scope constructs.Construct, id *string, config *Lexv2ModelsBotVersionConfig) Lexv2ModelsBotVersion {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewLexv2ModelsBotVersion(scope constructs.Construct, id *string, config *Le
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version} Resource.
 func NewLexv2ModelsBotVersion_Override(l Lexv2ModelsBotVersion, scope constructs.Construct, id *string, config *Lexv2ModelsBotVersionConfig) {
 	_init_.Initialize()
 

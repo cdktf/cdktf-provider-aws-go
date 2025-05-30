@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel}.
 type PinpointApnsSandboxChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -525,7 +525,7 @@ func (j *jsiiProxy_PinpointApnsSandboxChannel) TokenKeyInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel} Resource.
 func NewPinpointApnsSandboxChannel(scope constructs.Construct, id *string, config *PinpointApnsSandboxChannelConfig) PinpointApnsSandboxChannel {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewPinpointApnsSandboxChannel(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/pinpoint_apns_sandbox_channel aws_pinpoint_apns_sandbox_channel} Resource.
 func NewPinpointApnsSandboxChannel_Override(p PinpointApnsSandboxChannel, scope constructs.Construct, id *string, config *PinpointApnsSandboxChannelConfig) {
 	_init_.Initialize()
 

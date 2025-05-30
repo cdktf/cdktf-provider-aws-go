@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment}.
 type AlbTargetGroupAttachment interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AlbTargetGroupAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment} Resource.
 func NewAlbTargetGroupAttachment(scope constructs.Construct, id *string, config *AlbTargetGroupAttachmentConfig) AlbTargetGroupAttachment {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewAlbTargetGroupAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment} Resource.
 func NewAlbTargetGroupAttachment_Override(a AlbTargetGroupAttachment, scope constructs.Construct, id *string, config *AlbTargetGroupAttachmentConfig) {
 	_init_.Initialize()
 

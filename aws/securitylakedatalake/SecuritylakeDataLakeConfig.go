@@ -22,17 +22,17 @@ type SecuritylakeDataLakeConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}.
 	MetaStoreManagerRoleArn *string `field:"required" json:"metaStoreManagerRoleArn" yaml:"metaStoreManagerRoleArn"`
 	// configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
 	Configuration interface{} `field:"optional" json:"configuration" yaml:"configuration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
 	Timeouts *SecuritylakeDataLakeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

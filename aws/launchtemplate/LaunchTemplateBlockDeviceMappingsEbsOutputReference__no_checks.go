@@ -95,6 +95,10 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetVolumeInitializationRateParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetVolumeSizeParameters(val *float64) error {
 	return nil
 }

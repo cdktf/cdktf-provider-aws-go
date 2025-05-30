@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 type DataAwsVerifiedpermissionsPolicyStore interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,7 @@ type DataAwsVerifiedpermissionsPolicyStore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -278,6 +279,16 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -319,7 +330,7 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) ValidationSettings() D
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
 func NewDataAwsVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) DataAwsVerifiedpermissionsPolicyStore {
 	_init_.Initialize()
 
@@ -337,7 +348,7 @@ func NewDataAwsVerifiedpermissionsPolicyStore(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
 func NewDataAwsVerifiedpermissionsPolicyStore_Override(d DataAwsVerifiedpermissionsPolicyStore, scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) {
 	_init_.Initialize()
 

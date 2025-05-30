@@ -7,7 +7,7 @@ package dataexchangeeventaction
 type DataexchangeEventActionEvent struct {
 	// revision_published block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/dataexchange_event_action#revision_published DataexchangeEventAction#revision_published}
 	RevisionPublished interface{} `field:"optional" json:"revisionPublished" yaml:"revisionPublished"`
 }
 

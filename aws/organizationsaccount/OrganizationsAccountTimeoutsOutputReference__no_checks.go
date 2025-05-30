@@ -79,6 +79,10 @@ func (j *jsiiProxy_OrganizationsAccountTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationsAccountTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewOrganizationsAccountTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

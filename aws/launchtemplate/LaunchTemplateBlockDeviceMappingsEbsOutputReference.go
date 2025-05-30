@@ -58,6 +58,9 @@ type LaunchTemplateBlockDeviceMappingsEbsOutputReference interface {
 	Throughput() *float64
 	SetThroughput(val *float64)
 	ThroughputInput() *float64
+	VolumeInitializationRate() *float64
+	SetVolumeInitializationRate(val *float64)
+	VolumeInitializationRateInput() *float64
 	VolumeSize() *float64
 	SetVolumeSize(val *float64)
 	VolumeSizeInput() *float64
@@ -94,6 +97,7 @@ type LaunchTemplateBlockDeviceMappingsEbsOutputReference interface {
 	ResetKmsKeyId()
 	ResetSnapshotId()
 	ResetThroughput()
+	ResetVolumeInitializationRate()
 	ResetVolumeSize()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) Throughp
 	return returns
 }
 
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) VolumeInitializationRate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) VolumeInitializationRateInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) VolumeSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -486,6 +510,17 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference)SetThroug
 	_jsii_.Set(
 		j,
 		"throughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference)SetVolumeInitializationRate(val *float64) {
+	if err := j.validateSetVolumeInitializationRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeInitializationRate",
 		val,
 	)
 }
@@ -742,6 +777,14 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) ResetThr
 	_jsii_.InvokeVoid(
 		l,
 		"resetThroughput",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) ResetVolumeInitializationRate() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetVolumeInitializationRate",
 		nil, // no parameters
 	)
 }

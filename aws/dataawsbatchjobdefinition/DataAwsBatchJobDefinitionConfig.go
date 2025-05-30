@@ -22,13 +22,13 @@ type DataAwsBatchJobDefinitionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
 	Arn *string `field:"optional" json:"arn" yaml:"arn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
 	Revision *float64 `field:"optional" json:"revision" yaml:"revision"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.98.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 
