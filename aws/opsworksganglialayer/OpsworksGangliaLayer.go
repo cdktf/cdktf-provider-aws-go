@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
 type OpsworksGangliaLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -967,7 +967,7 @@ func (j *jsiiProxy_OpsworksGangliaLayer) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) OpsworksGangliaLayer {
 	_init_.Initialize()
 
@@ -985,7 +985,7 @@ func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer_Override(o OpsworksGangliaLayer, scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/shield_protection_group aws_shield_protection_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/shield_protection_group aws_shield_protection_group}.
 type ShieldProtectionGroup interface {
 	cdktf.TerraformResource
 	Aggregation() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ShieldProtectionGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
 func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *ShieldProtectionGroupConfig) ShieldProtectionGroup {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *Sh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
 func NewShieldProtectionGroup_Override(s ShieldProtectionGroup, scope constructs.Construct, id *string, config *ShieldProtectionGroupConfig) {
 	_init_.Initialize()
 

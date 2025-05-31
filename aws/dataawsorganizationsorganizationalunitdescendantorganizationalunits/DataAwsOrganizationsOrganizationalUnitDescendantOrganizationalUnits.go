@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units}.
 type DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantOrganizationa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsConfig) DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits(scop
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/organizations_organizational_unit_descendant_organizational_units aws_organizations_organizational_unit_descendant_organizational_units} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits_Override(d DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits, scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsConfig) {
 	_init_.Initialize()
 

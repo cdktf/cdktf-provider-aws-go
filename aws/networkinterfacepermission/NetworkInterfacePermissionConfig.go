@@ -22,15 +22,15 @@ type NetworkInterfacePermissionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/network_interface_permission#aws_account_id NetworkInterfacePermission#aws_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/network_interface_permission#aws_account_id NetworkInterfacePermission#aws_account_id}.
 	AwsAccountId *string `field:"required" json:"awsAccountId" yaml:"awsAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/network_interface_permission#network_interface_id NetworkInterfacePermission#network_interface_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/network_interface_permission#network_interface_id NetworkInterfacePermission#network_interface_id}.
 	NetworkInterfaceId *string `field:"required" json:"networkInterfaceId" yaml:"networkInterfaceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/network_interface_permission#permission NetworkInterfacePermission#permission}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/network_interface_permission#permission NetworkInterfacePermission#permission}.
 	Permission *string `field:"required" json:"permission" yaml:"permission"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/network_interface_permission#timeouts NetworkInterfacePermission#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/network_interface_permission#timeouts NetworkInterfacePermission#timeouts}
 	Timeouts *NetworkInterfacePermissionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

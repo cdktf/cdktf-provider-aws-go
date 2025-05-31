@@ -5,17 +5,17 @@ package ec2networkinsightspath
 
 
 type Ec2NetworkInsightsPathFilterAtDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ec2_network_insights_path#destination_address Ec2NetworkInsightsPath#destination_address}.
 	DestinationAddress *string `field:"optional" json:"destinationAddress" yaml:"destinationAddress"`
 	// destination_port_range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ec2_network_insights_path#destination_port_range Ec2NetworkInsightsPath#destination_port_range}
 	DestinationPortRange *Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange `field:"optional" json:"destinationPortRange" yaml:"destinationPortRange"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ec2_network_insights_path#source_address Ec2NetworkInsightsPath#source_address}.
 	SourceAddress *string `field:"optional" json:"sourceAddress" yaml:"sourceAddress"`
 	// source_port_range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ec2_network_insights_path#source_port_range Ec2NetworkInsightsPath#source_port_range}
 	SourcePortRange *Ec2NetworkInsightsPathFilterAtDestinationSourcePortRange `field:"optional" json:"sourcePortRange" yaml:"sourcePortRange"`
 }
 

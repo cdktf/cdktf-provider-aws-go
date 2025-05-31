@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}.
 type DataAwsSsoadminApplicationAssignments interface {
 	cdktf.TerraformDataSource
 	ApplicationArn() *string
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
 func NewDataAwsSsoadminApplicationAssignments(scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationAssignmentsConfig) DataAwsSsoadminApplicationAssignments {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsSsoadminApplicationAssignments(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
 func NewDataAwsSsoadminApplicationAssignments_Override(d DataAwsSsoadminApplicationAssignments, scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationAssignmentsConfig) {
 	_init_.Initialize()
 

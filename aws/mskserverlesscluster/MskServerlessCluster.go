@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster}.
 type MskServerlessCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_MskServerlessCluster) VpcConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
 func NewMskServerlessCluster(scope constructs.Construct, id *string, config *MskServerlessClusterConfig) MskServerlessCluster {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewMskServerlessCluster(scope constructs.Construct, id *string, config *Msk
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
 func NewMskServerlessCluster_Override(m MskServerlessCluster, scope constructs.Construct, id *string, config *MskServerlessClusterConfig) {
 	_init_.Initialize()
 

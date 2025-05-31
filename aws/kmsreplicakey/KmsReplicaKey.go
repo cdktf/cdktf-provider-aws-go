@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/kms_replica_key aws_kms_replica_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/kms_replica_key aws_kms_replica_key}.
 type KmsReplicaKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_KmsReplicaKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
 func NewKmsReplicaKey(scope constructs.Construct, id *string, config *KmsReplicaKeyConfig) KmsReplicaKey {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewKmsReplicaKey(scope constructs.Construct, id *string, config *KmsReplica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
 func NewKmsReplicaKey_Override(k KmsReplicaKey, scope constructs.Construct, id *string, config *KmsReplicaKeyConfig) {
 	_init_.Initialize()
 
