@@ -5,9 +5,9 @@ package lightsailcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

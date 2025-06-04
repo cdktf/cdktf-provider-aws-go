@@ -5,9 +5,9 @@ package dataawssecurityhubstandardscontrolassociations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssecurityhubstandardscontrolassociations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
