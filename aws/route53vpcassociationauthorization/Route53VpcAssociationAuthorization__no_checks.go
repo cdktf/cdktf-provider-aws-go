@@ -75,6 +75,10 @@ func (r *jsiiProxy_Route53VpcAssociationAuthorization) validateOverrideLogicalId
 	return nil
 }
 
+func (r *jsiiProxy_Route53VpcAssociationAuthorization) validatePutTimeoutsParameters(value *Route53VpcAssociationAuthorizationTimeouts) error {
+	return nil
+}
+
 func validateRoute53VpcAssociationAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

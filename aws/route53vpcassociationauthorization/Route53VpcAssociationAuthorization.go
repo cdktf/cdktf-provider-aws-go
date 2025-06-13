@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization}.
 type Route53VpcAssociationAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,8 @@ type Route53VpcAssociationAuthorization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Route53VpcAssociationAuthorizationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -116,10 +118,12 @@ type Route53VpcAssociationAuthorization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Route53VpcAssociationAuthorizationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetVpcRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -319,6 +323,26 @@ func (j *jsiiProxy_Route53VpcAssociationAuthorization) TerraformResourceType() *
 	return returns
 }
 
+func (j *jsiiProxy_Route53VpcAssociationAuthorization) Timeouts() Route53VpcAssociationAuthorizationTimeoutsOutputReference {
+	var returns Route53VpcAssociationAuthorizationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53VpcAssociationAuthorization) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53VpcAssociationAuthorization) VpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_Route53VpcAssociationAuthorization) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization} Resource.
 func NewRoute53VpcAssociationAuthorization(scope constructs.Construct, id *string, config *Route53VpcAssociationAuthorizationConfig) Route53VpcAssociationAuthorization {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewRoute53VpcAssociationAuthorization(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_vpc_association_authorization aws_route53_vpc_association_authorization} Resource.
 func NewRoute53VpcAssociationAuthorization_Override(r Route53VpcAssociationAuthorization, scope constructs.Construct, id *string, config *Route53VpcAssociationAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -874,6 +898,17 @@ func (r *jsiiProxy_Route53VpcAssociationAuthorization) OverrideLogicalId(newLogi
 	)
 }
 
+func (r *jsiiProxy_Route53VpcAssociationAuthorization) PutTimeouts(value *Route53VpcAssociationAuthorizationTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53VpcAssociationAuthorization) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -886,6 +921,14 @@ func (r *jsiiProxy_Route53VpcAssociationAuthorization) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53VpcAssociationAuthorization) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

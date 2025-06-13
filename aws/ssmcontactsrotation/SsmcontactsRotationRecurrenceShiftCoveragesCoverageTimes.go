@@ -7,11 +7,11 @@ package ssmcontactsrotation
 type SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes struct {
 	// end block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssmcontacts_rotation#end SsmcontactsRotation#end}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmcontacts_rotation#end SsmcontactsRotation#end}
 	End interface{} `field:"optional" json:"end" yaml:"end"`
 	// start block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/ssmcontacts_rotation#start SsmcontactsRotation#start}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmcontacts_rotation#start SsmcontactsRotation#start}
 	Start interface{} `field:"optional" json:"start" yaml:"start"`
 }
 

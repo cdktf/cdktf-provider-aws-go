@@ -7,7 +7,7 @@ package dataawslblistenerrule
 type DataAwsLbListenerRuleConditionQueryString struct {
 	// values block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_listener_rule#values DataAwsLbListenerRule#values}
 	Values interface{} `field:"optional" json:"values" yaml:"values"`
 }
 

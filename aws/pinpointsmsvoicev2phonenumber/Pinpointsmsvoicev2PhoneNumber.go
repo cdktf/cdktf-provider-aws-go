@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
 type Pinpointsmsvoicev2PhoneNumber interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -101,6 +101,9 @@ type Pinpointsmsvoicev2PhoneNumber interface {
 	TwoWayChannelEnabled() interface{}
 	SetTwoWayChannelEnabled(val interface{})
 	TwoWayChannelEnabledInput() interface{}
+	TwoWayChannelRole() *string
+	SetTwoWayChannelRole(val *string)
+	TwoWayChannelRoleInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -156,6 +159,7 @@ type Pinpointsmsvoicev2PhoneNumber interface {
 	ResetTimeouts()
 	ResetTwoWayChannelArn()
 	ResetTwoWayChannelEnabled()
+	ResetTwoWayChannelRole()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -624,8 +628,28 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) TwoWayChannelEnabledInput() in
 	return returns
 }
 
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) TwoWayChannelRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"twoWayChannelRole",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) TwoWayChannelRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"twoWayChannelRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) Pinpointsmsvoicev2PhoneNumber {
 	_init_.Initialize()
 
@@ -643,7 +667,7 @@ func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber_Override(p Pinpointsmsvoicev2PhoneNumber, scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber)SetTwoWayChannelEnabled(val int
 	_jsii_.Set(
 		j,
 		"twoWayChannelEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber)SetTwoWayChannelRole(val *string) {
+	if err := j.validateSetTwoWayChannelRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"twoWayChannelRole",
 		val,
 	)
 }
@@ -1275,6 +1310,14 @@ func (p *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) ResetTwoWayChannelEnabled() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTwoWayChannelEnabled",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) ResetTwoWayChannelRole() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTwoWayChannelRole",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetMaxBatchSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

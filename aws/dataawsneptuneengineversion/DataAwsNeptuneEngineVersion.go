@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version}.
 type DataAwsNeptuneEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,10 @@ type DataAwsNeptuneEngineVersion interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultCharacterSet() *string
+	DefaultOnly() interface{}
+	SetDefaultOnly(val interface{})
+	DefaultOnlyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,9 +44,18 @@ type DataAwsNeptuneEngineVersion interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasMajorTarget() interface{}
+	SetHasMajorTarget(val interface{})
+	HasMajorTargetInput() interface{}
+	HasMinorTarget() interface{}
+	SetHasMinorTarget(val interface{})
+	HasMinorTargetInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Latest() interface{}
+	SetLatest(val interface{})
+	LatestInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,6 +65,12 @@ type DataAwsNeptuneEngineVersion interface {
 	ParameterGroupFamily() *string
 	SetParameterGroupFamily(val *string)
 	ParameterGroupFamilyInput() *string
+	PreferredMajorTargets() *[]*string
+	SetPreferredMajorTargets(val *[]*string)
+	PreferredMajorTargetsInput() *[]*string
+	PreferredUpgradeTargets() *[]*string
+	SetPreferredUpgradeTargets(val *[]*string)
+	PreferredUpgradeTargetsInput() *[]*string
 	PreferredVersions() *[]*string
 	SetPreferredVersions(val *[]*string)
 	PreferredVersionsInput() *[]*string
@@ -61,7 +80,9 @@ type DataAwsNeptuneEngineVersion interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SupportedCharacterSets() *[]*string
 	SupportedTimezones() *[]*string
+	SupportsGlobalDatabases() cdktf.IResolvable
 	SupportsLogExportsToCloudwatch() cdktf.IResolvable
 	SupportsReadReplica() cdktf.IResolvable
 	// Experimental.
@@ -70,9 +91,12 @@ type DataAwsNeptuneEngineVersion interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ValidMajorTargets() *[]*string
+	ValidMinorTargets() *[]*string
 	ValidUpgradeTargets() *[]*string
 	Version() *string
 	SetVersion(val *string)
+	VersionActual() *string
 	VersionDescription() *string
 	VersionInput() *string
 	// Experimental.
@@ -100,12 +124,18 @@ type DataAwsNeptuneEngineVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDefaultOnly()
 	ResetEngine()
+	ResetHasMajorTarget()
+	ResetHasMinorTarget()
 	ResetId()
+	ResetLatest()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameterGroupFamily()
+	ResetPreferredMajorTargets()
+	ResetPreferredUpgradeTargets()
 	ResetPreferredVersions()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -152,6 +182,36 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) DefaultCharacterSet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCharacterSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) DefaultOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) DefaultOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOnlyInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +297,46 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) HasMajorTarget() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMajorTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) HasMajorTargetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMajorTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) HasMinorTarget() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMinorTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) HasMinorTargetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMinorTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -252,6 +352,26 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) Latest() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"latest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) LatestInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"latestInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +417,46 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) ParameterGroupFamilyInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) PreferredMajorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredMajorTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) PreferredMajorTargetsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredMajorTargetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) PreferredUpgradeTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredUpgradeTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) PreferredUpgradeTargetsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredUpgradeTargetsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) PreferredVersions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -337,11 +497,31 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) SupportedCharacterSets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedCharacterSets",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) SupportedTimezones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"supportedTimezones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) SupportsGlobalDatabases() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"supportsGlobalDatabases",
 		&returns,
 	)
 	return returns
@@ -397,6 +577,26 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) ValidMajorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validMajorTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) ValidMinorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validMinorTargets",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) ValidUpgradeTargets() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -412,6 +612,16 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) Version() *string {
 	_jsii_.Get(
 		j,
 		"version",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) VersionActual() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionActual",
 		&returns,
 	)
 	return returns
@@ -438,7 +648,7 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
 func NewDataAwsNeptuneEngineVersion(scope constructs.Construct, id *string, config *DataAwsNeptuneEngineVersionConfig) DataAwsNeptuneEngineVersion {
 	_init_.Initialize()
 
@@ -456,7 +666,7 @@ func NewDataAwsNeptuneEngineVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
 func NewDataAwsNeptuneEngineVersion_Override(d DataAwsNeptuneEngineVersion, scope constructs.Construct, id *string, config *DataAwsNeptuneEngineVersionConfig) {
 	_init_.Initialize()
 
@@ -474,6 +684,17 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetDefaultOnly(val interface{}) {
+	if err := j.validateSetDefaultOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultOnly",
 		val,
 	)
 }
@@ -505,6 +726,28 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetHasMajorTarget(val interface{}) {
+	if err := j.validateSetHasMajorTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasMajorTarget",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetHasMinorTarget(val interface{}) {
+	if err := j.validateSetHasMinorTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasMinorTarget",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -512,6 +755,17 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetLatest(val interface{}) {
+	if err := j.validateSetLatestParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"latest",
 		val,
 	)
 }
@@ -534,6 +788,28 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetParameterGroupFamily(val *stri
 	_jsii_.Set(
 		j,
 		"parameterGroupFamily",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetPreferredMajorTargets(val *[]*string) {
+	if err := j.validateSetPreferredMajorTargetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredMajorTargets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion)SetPreferredUpgradeTargets(val *[]*string) {
+	if err := j.validateSetPreferredUpgradeTargetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredUpgradeTargets",
 		val,
 	)
 }
@@ -853,6 +1129,14 @@ func (d *jsiiProxy_DataAwsNeptuneEngineVersion) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetDefaultOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultOnly",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetEngine() {
 	_jsii_.InvokeVoid(
 		d,
@@ -861,10 +1145,34 @@ func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetEngine() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetHasMajorTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHasMajorTarget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetHasMinorTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHasMinorTarget",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetLatest() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLatest",
 		nil, // no parameters
 	)
 }
@@ -881,6 +1189,22 @@ func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetParameterGroupFamily() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameterGroupFamily",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetPreferredMajorTargets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreferredMajorTargets",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNeptuneEngineVersion) ResetPreferredUpgradeTargets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreferredUpgradeTargets",
 		nil, // no parameters
 	)
 }

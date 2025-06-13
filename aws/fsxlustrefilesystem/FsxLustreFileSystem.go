@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -46,6 +46,8 @@ type FsxLustreFileSystem interface {
 	DataCompressionType() *string
 	SetDataCompressionType(val *string)
 	DataCompressionTypeInput() *string
+	DataReadCacheConfiguration() FsxLustreFileSystemDataReadCacheConfigurationOutputReference
+	DataReadCacheConfigurationInput() *FsxLustreFileSystemDataReadCacheConfiguration
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,6 +146,9 @@ type FsxLustreFileSystem interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ThroughputCapacity() *float64
+	SetThroughputCapacity(val *float64)
+	ThroughputCapacityInput() *float64
 	Timeouts() FsxLustreFileSystemTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VpcId() *string
@@ -193,6 +198,7 @@ type FsxLustreFileSystem interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDataReadCacheConfiguration(value *FsxLustreFileSystemDataReadCacheConfiguration)
 	PutLogConfiguration(value *FsxLustreFileSystemLogConfiguration)
 	PutMetadataConfiguration(value *FsxLustreFileSystemMetadataConfiguration)
 	PutRootSquashConfiguration(value *FsxLustreFileSystemRootSquashConfiguration)
@@ -203,6 +209,7 @@ type FsxLustreFileSystem interface {
 	ResetCopyTagsToBackups()
 	ResetDailyAutomaticBackupStartTime()
 	ResetDataCompressionType()
+	ResetDataReadCacheConfiguration()
 	ResetDeploymentType()
 	ResetDriveCacheType()
 	ResetEfaEnabled()
@@ -226,6 +233,7 @@ type FsxLustreFileSystem interface {
 	ResetStorageType()
 	ResetTags()
 	ResetTagsAll()
+	ResetThroughputCapacity()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
 	SynthesizeAttributes() *map[string]interface{}
@@ -411,6 +419,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) DataCompressionTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"dataCompressionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) DataReadCacheConfiguration() FsxLustreFileSystemDataReadCacheConfigurationOutputReference {
+	var returns FsxLustreFileSystemDataReadCacheConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"dataReadCacheConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) DataReadCacheConfigurationInput() *FsxLustreFileSystemDataReadCacheConfiguration {
+	var returns *FsxLustreFileSystemDataReadCacheConfiguration
+	_jsii_.Get(
+		j,
+		"dataReadCacheConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -996,6 +1024,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) ThroughputCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) ThroughputCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) Timeouts() FsxLustreFileSystemTimeoutsOutputReference {
 	var returns FsxLustreFileSystemTimeoutsOutputReference
 	_jsii_.Get(
@@ -1047,7 +1095,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -1065,7 +1113,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1404,6 +1452,17 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem)SetThroughputCapacity(val *float64) {
+	if err := j.validateSetThroughputCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"throughputCapacity",
 		val,
 	)
 }
@@ -1772,6 +1831,17 @@ func (f *jsiiProxy_FsxLustreFileSystem) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) PutDataReadCacheConfiguration(value *FsxLustreFileSystemDataReadCacheConfiguration) {
+	if err := f.validatePutDataReadCacheConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putDataReadCacheConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) PutLogConfiguration(value *FsxLustreFileSystemLogConfiguration) {
 	if err := f.validatePutLogConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1860,6 +1930,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetDataCompressionType() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDataCompressionType",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetDataReadCacheConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataReadCacheConfiguration",
 		nil, // no parameters
 	)
 }
@@ -2028,6 +2106,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetThroughputCapacity() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetThroughputCapacity",
 		nil, // no parameters
 	)
 }

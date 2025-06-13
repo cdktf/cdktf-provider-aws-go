@@ -5,7 +5,7 @@ package bedrockagentprompt
 
 
 type BedrockagentPromptVariantGenAiResourceAgent struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/bedrockagent_prompt#agent_identifier BedrockagentPrompt#agent_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_prompt#agent_identifier BedrockagentPrompt#agent_identifier}.
 	AgentIdentifier *string `field:"required" json:"agentIdentifier" yaml:"agentIdentifier"`
 }
 

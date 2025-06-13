@@ -75,6 +75,10 @@ func (f *jsiiProxy_FsxLustreFileSystem) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) validatePutDataReadCacheConfigurationParameters(value *FsxLustreFileSystemDataReadCacheConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) validatePutLogConfigurationParameters(value *FsxLustreFileSystemLogConfiguration) error {
 	return nil
 }
@@ -216,6 +220,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetTagsParameters(val *map[strin
 }
 
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetThroughputCapacityParameters(val *float64) error {
 	return nil
 }
 

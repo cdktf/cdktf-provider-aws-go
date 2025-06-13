@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/vpn_connection aws_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpn_connection aws_vpn_connection}.
 type VpnConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,10 @@ type VpnConnection interface {
 	OutsideIpAddressType() *string
 	SetOutsideIpAddressType(val *string)
 	OutsideIpAddressTypeInput() *string
+	PresharedKeyArn() *string
+	PresharedKeyStorage() *string
+	SetPresharedKeyStorage(val *string)
+	PresharedKeyStorageInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -297,6 +301,7 @@ type VpnConnection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPresharedKeyStorage()
 	ResetRemoteIpv4NetworkCidr()
 	ResetRemoteIpv6NetworkCidr()
 	ResetStaticRoutesOnly()
@@ -619,6 +624,36 @@ func (j *jsiiProxy_VpnConnection) OutsideIpAddressTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"outsideIpAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) PresharedKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presharedKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) PresharedKeyStorage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presharedKeyStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) PresharedKeyStorageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presharedKeyStorageInput",
 		&returns,
 	)
 	return returns
@@ -1815,7 +1850,7 @@ func (j *jsiiProxy_VpnConnection) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
 
@@ -1833,7 +1868,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *string, config *VpnConnectionConfig) {
 	_init_.Initialize()
 
@@ -1955,6 +1990,17 @@ func (j *jsiiProxy_VpnConnection)SetOutsideIpAddressType(val *string) {
 	_jsii_.Set(
 		j,
 		"outsideIpAddressType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnConnection)SetPresharedKeyStorage(val *string) {
+	if err := j.validateSetPresharedKeyStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"presharedKeyStorage",
 		val,
 	)
 }
@@ -2925,6 +2971,14 @@ func (v *jsiiProxy_VpnConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnection) ResetPresharedKeyStorage() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPresharedKeyStorage",
 		nil, // no parameters
 	)
 }

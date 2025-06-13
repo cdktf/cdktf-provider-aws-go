@@ -33,6 +33,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dailyAutomaticBackupStartTimeInput", GoGetter: "DailyAutomaticBackupStartTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dataCompressionType", GoGetter: "DataCompressionType"},
 			_jsii_.MemberProperty{JsiiProperty: "dataCompressionTypeInput", GoGetter: "DataCompressionTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataReadCacheConfiguration", GoGetter: "DataReadCacheConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "dataReadCacheConfigurationInput", GoGetter: "DataReadCacheConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentType", GoGetter: "DeploymentType"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentTypeInput", GoGetter: "DeploymentTypeInput"},
@@ -87,6 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "perUnitStorageThroughputInput", GoGetter: "PerUnitStorageThroughputInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataReadCacheConfiguration", GoMethod: "PutDataReadCacheConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfiguration", GoMethod: "PutLogConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadataConfiguration", GoMethod: "PutMetadataConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putRootSquashConfiguration", GoMethod: "PutRootSquashConfiguration"},
@@ -98,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyTagsToBackups", GoMethod: "ResetCopyTagsToBackups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyAutomaticBackupStartTime", GoMethod: "ResetDailyAutomaticBackupStartTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataCompressionType", GoMethod: "ResetDataCompressionType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataReadCacheConfiguration", GoMethod: "ResetDataReadCacheConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentType", GoMethod: "ResetDeploymentType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDriveCacheType", GoMethod: "ResetDriveCacheType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEfaEnabled", GoMethod: "ResetEfaEnabled"},
@@ -119,6 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageType", GoMethod: "ResetStorageType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetThroughputCapacity", GoMethod: "ResetThroughputCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWeeklyMaintenanceStartTime", GoMethod: "ResetWeeklyMaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "rootSquashConfiguration", GoGetter: "RootSquashConfiguration"},
@@ -142,6 +147,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "throughputCapacity", GoGetter: "ThroughputCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "throughputCapacityInput", GoGetter: "ThroughputCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
@@ -161,6 +168,47 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemConfig",
 		reflect.TypeOf((*FsxLustreFileSystemConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemDataReadCacheConfiguration",
+		reflect.TypeOf((*FsxLustreFileSystemDataReadCacheConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemDataReadCacheConfigurationOutputReference",
+		reflect.TypeOf((*FsxLustreFileSystemDataReadCacheConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInput", GoGetter: "SizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sizingMode", GoGetter: "SizingMode"},
+			_jsii_.MemberProperty{JsiiProperty: "sizingModeInput", GoGetter: "SizingModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration",

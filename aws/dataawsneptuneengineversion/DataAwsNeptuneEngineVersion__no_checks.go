@@ -75,11 +75,27 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetDefaultOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetEngineParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetHasMajorTargetParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetHasMinorTargetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetLatestParameters(val interface{}) error {
 	return nil
 }
 
@@ -88,6 +104,14 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetLifecycleParameters(v
 }
 
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetParameterGroupFamilyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetPreferredMajorTargetsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetPreferredUpgradeTargetsParameters(val *[]*string) error {
 	return nil
 }
 

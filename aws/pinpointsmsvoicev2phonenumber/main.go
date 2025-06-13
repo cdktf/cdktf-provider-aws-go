@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTwoWayChannelArn", GoMethod: "ResetTwoWayChannelArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTwoWayChannelEnabled", GoMethod: "ResetTwoWayChannelEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTwoWayChannelRole", GoMethod: "ResetTwoWayChannelRole"},
 			_jsii_.MemberProperty{JsiiProperty: "selfManagedOptOutsEnabled", GoGetter: "SelfManagedOptOutsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "selfManagedOptOutsEnabledInput", GoGetter: "SelfManagedOptOutsEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -93,6 +94,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "twoWayChannelArnInput", GoGetter: "TwoWayChannelArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "twoWayChannelEnabled", GoGetter: "TwoWayChannelEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "twoWayChannelEnabledInput", GoGetter: "TwoWayChannelEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "twoWayChannelRole", GoGetter: "TwoWayChannelRole"},
+			_jsii_.MemberProperty{JsiiProperty: "twoWayChannelRoleInput", GoGetter: "TwoWayChannelRoleInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Pinpointsmsvoicev2PhoneNumber{}

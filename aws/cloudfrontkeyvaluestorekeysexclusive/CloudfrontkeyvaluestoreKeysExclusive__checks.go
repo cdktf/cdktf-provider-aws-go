@@ -384,6 +384,14 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetMaxBatchSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

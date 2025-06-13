@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive}.
 type CloudfrontkeyvaluestoreKeysExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type CloudfrontkeyvaluestoreKeysExclusive interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxBatchSize() *float64
+	SetMaxBatchSize(val *float64)
+	MaxBatchSizeInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -111,6 +114,7 @@ type CloudfrontkeyvaluestoreKeysExclusive interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutResourceKeyValuePair(value interface{})
+	ResetMaxBatchSize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) Lifecycle() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) MaxBatchSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBatchSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) MaxBatchSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxBatchSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -344,7 +368,7 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) TotalSizeInBytes() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive} Resource.
 func NewCloudfrontkeyvaluestoreKeysExclusive(scope constructs.Construct, id *string, config *CloudfrontkeyvaluestoreKeysExclusiveConfig) CloudfrontkeyvaluestoreKeysExclusive {
 	_init_.Initialize()
 
@@ -362,7 +386,7 @@ func NewCloudfrontkeyvaluestoreKeysExclusive(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.99.1/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfrontkeyvaluestore_keys_exclusive aws_cloudfrontkeyvaluestore_keys_exclusive} Resource.
 func NewCloudfrontkeyvaluestoreKeysExclusive_Override(c CloudfrontkeyvaluestoreKeysExclusive, scope constructs.Construct, id *string, config *CloudfrontkeyvaluestoreKeysExclusiveConfig) {
 	_init_.Initialize()
 
@@ -429,6 +453,17 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive)SetLifecycle(val *cdktf.
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive)SetMaxBatchSize(val *float64) {
+	if err := j.validateSetMaxBatchSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxBatchSize",
 		val,
 	)
 }
@@ -813,6 +848,14 @@ func (c *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) PutResourceKeyValuePair
 		c,
 		"putResourceKeyValuePair",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusive) ResetMaxBatchSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxBatchSize",
+		nil, // no parameters
 	)
 }
 

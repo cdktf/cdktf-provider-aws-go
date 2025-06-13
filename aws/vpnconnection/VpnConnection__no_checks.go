@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpnConnection) validateSetOutsideIpAddressTypeParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetPresharedKeyStorageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

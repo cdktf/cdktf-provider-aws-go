@@ -526,6 +526,14 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) validateSetTwoWayChannelEnable
 	return nil
 }
 
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) validateSetTwoWayChannelRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPinpointsmsvoicev2PhoneNumberParameters(scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
