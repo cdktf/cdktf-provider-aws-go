@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsMqBroker) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMqBroker) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMqBroker) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

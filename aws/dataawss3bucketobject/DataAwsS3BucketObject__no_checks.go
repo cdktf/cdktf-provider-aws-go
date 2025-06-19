@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsS3BucketObject) validateSetRangeParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3BucketObject) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3BucketObject) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsvpcdhcpoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpcdhcpoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpcdhcpoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options}.
 type DataAwsVpcDhcpOptions interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -63,6 +63,9 @@ type DataAwsVpcDhcpOptions interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -107,6 +110,7 @@ type DataAwsVpcDhcpOptions interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcDhcpOptions) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) DataAwsVpcDhcpOptions {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions_Override(d DataAwsVpcDhcpOptions, scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpcDhcpOptions)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -892,6 +927,14 @@ func (d *jsiiProxy_DataAwsVpcDhcpOptions) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpcDhcpOptions) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

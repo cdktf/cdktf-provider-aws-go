@@ -123,6 +123,10 @@ func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

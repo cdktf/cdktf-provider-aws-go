@@ -5,14 +5,14 @@ package networkmonitormonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkmonitormonitor/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitormonitor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor}.
 type NetworkmonitorMonitor interface {
 	cdktf.TerraformResource
 	AggregationPeriod() *float64
@@ -63,6 +63,9 @@ type NetworkmonitorMonitor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -120,6 +123,7 @@ type NetworkmonitorMonitor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_NetworkmonitorMonitor) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkmonitorMonitor) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmonitorMonitor) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkmonitorMonitor) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_NetworkmonitorMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource.
 func NewNetworkmonitorMonitor(scope constructs.Construct, id *string, config *NetworkmonitorMonitorConfig) NetworkmonitorMonitor {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewNetworkmonitorMonitor(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_monitor aws_networkmonitor_monitor} Resource.
 func NewNetworkmonitorMonitor_Override(n NetworkmonitorMonitor, scope constructs.Construct, id *string, config *NetworkmonitorMonitorConfig) {
 	_init_.Initialize()
 
@@ -505,6 +529,17 @@ func (j *jsiiProxy_NetworkmonitorMonitor)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmonitorMonitor)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (n *jsiiProxy_NetworkmonitorMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmonitorMonitor) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

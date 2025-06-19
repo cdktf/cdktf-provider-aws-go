@@ -247,6 +247,14 @@ func (j *jsiiProxy_DataAwsApiGatewayApiKeys) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayApiKeys) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsApiGatewayApiKeysParameters(scope constructs.Construct, id *string, config *DataAwsApiGatewayApiKeysConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

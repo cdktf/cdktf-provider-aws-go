@@ -5,14 +5,14 @@ package dataawsorganizationsorganizationalunit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsorganizationsorganizationalunit/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit}.
 type DataAwsOrganizationsOrganizationalUnit interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnit) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnit(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitConfig) DataAwsOrganizationsOrganizationalUnit {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataAwsOrganizationsOrganizationalUnit(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_organizational_unit aws_organizations_organizational_unit} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnit_Override(d DataAwsOrganizationsOrganizationalUnit, scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitConfig) {
 	_init_.Initialize()
 

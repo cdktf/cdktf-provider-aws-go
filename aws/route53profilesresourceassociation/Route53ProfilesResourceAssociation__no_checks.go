@@ -119,6 +119,10 @@ func (j *jsiiProxy_Route53ProfilesResourceAssociation) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_Route53ProfilesResourceAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ProfilesResourceAssociation) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -236,6 +236,9 @@ type DbInstance interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicaMode() *string
 	SetReplicaMode(val *string)
 	ReplicaModeInput() *string
@@ -397,6 +400,7 @@ type DbInstance interface {
 	ResetPerformanceInsightsRetentionPeriod()
 	ResetPort()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetReplicaMode()
 	ResetReplicateSourceDb()
 	ResetRestoreToPointInTime()
@@ -1801,6 +1805,26 @@ func (j *jsiiProxy_DbInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstance) ReplicaMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2182,7 +2206,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2200,7 +2224,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2902,6 +2926,17 @@ func (j *jsiiProxy_DbInstance)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -3906,6 +3941,14 @@ func (d *jsiiProxy_DbInstance) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

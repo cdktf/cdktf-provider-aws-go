@@ -119,6 +119,10 @@ func (j *jsiiProxy_DirectoryServiceTrust) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceTrust) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceTrust) validateSetRemoteDomainNameParameters(val *string) error {
 	return nil
 }

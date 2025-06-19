@@ -5,14 +5,14 @@ package ecstaskset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecstaskset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecstaskset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_set aws_ecs_task_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_set aws_ecs_task_set}.
 type EcsTaskSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type EcsTaskSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Scale() EcsTaskSetScaleOutputReference
 	ScaleInput() *EcsTaskSetScale
 	Service() *string
@@ -170,6 +173,7 @@ type EcsTaskSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformVersion()
+	ResetRegion()
 	ResetScale()
 	ResetServiceRegistries()
 	ResetTags()
@@ -514,6 +518,26 @@ func (j *jsiiProxy_EcsTaskSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EcsTaskSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsTaskSet) Scale() EcsTaskSetScaleOutputReference {
 	var returns EcsTaskSetScaleOutputReference
 	_jsii_.Get(
@@ -735,7 +759,7 @@ func (j *jsiiProxy_EcsTaskSet) WaitUntilStableTimeoutInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
 func NewEcsTaskSet(scope constructs.Construct, id *string, config *EcsTaskSetConfig) EcsTaskSet {
 	_init_.Initialize()
 
@@ -753,7 +777,7 @@ func NewEcsTaskSet(scope constructs.Construct, id *string, config *EcsTaskSetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
 func NewEcsTaskSet_Override(e EcsTaskSet, scope constructs.Construct, id *string, config *EcsTaskSetConfig) {
 	_init_.Initialize()
 
@@ -894,6 +918,17 @@ func (j *jsiiProxy_EcsTaskSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1440,6 +1475,14 @@ func (e *jsiiProxy_EcsTaskSet) ResetPlatformVersion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPlatformVersion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

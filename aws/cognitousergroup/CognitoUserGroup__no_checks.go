@@ -123,6 +123,10 @@ func (j *jsiiProxy_CognitoUserGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserGroup) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

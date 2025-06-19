@@ -411,6 +411,14 @@ func (j *jsiiProxy_Macie2OrganizationConfiguration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_Macie2OrganizationConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewMacie2OrganizationConfigurationParameters(scope constructs.Construct, id *string, config *Macie2OrganizationConfigurationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -127,6 +127,10 @@ func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLbCookieStickinessPolicyParameters(scope constructs.Construct, id *string, config *LbCookieStickinessPolicyConfig) error {
 	return nil
 }

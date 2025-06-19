@@ -5,14 +5,14 @@ package workspacesipgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspacesipgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspacesipgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group}.
 type WorkspacesIpGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type WorkspacesIpGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rules() WorkspacesIpGroupRulesList
 	RulesInput() interface{}
 	Tags() *map[string]*string
@@ -127,6 +130,7 @@ type WorkspacesIpGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRules()
 	ResetTags()
 	ResetTagsAll()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_WorkspacesIpGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesIpGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesIpGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesIpGroup) Rules() WorkspacesIpGroupRulesList {
 	var returns WorkspacesIpGroupRulesList
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_WorkspacesIpGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
 func NewWorkspacesIpGroup(scope constructs.Construct, id *string, config *WorkspacesIpGroupConfig) WorkspacesIpGroup {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewWorkspacesIpGroup(scope constructs.Construct, id *string, config *Worksp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
 func NewWorkspacesIpGroup_Override(w WorkspacesIpGroup, scope constructs.Construct, id *string, config *WorkspacesIpGroupConfig) {
 	_init_.Initialize()
 
@@ -555,6 +579,17 @@ func (j *jsiiProxy_WorkspacesIpGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesIpGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -965,6 +1000,14 @@ func (w *jsiiProxy_WorkspacesIpGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesIpGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

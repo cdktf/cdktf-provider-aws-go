@@ -5,14 +5,14 @@ package dataawslblistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslblistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslblistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_listener aws_lb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_listener aws_lb_listener}.
 type DataAwsLbListener interface {
 	cdktf.TerraformDataSource
 	AlpnPolicy() *string
@@ -64,6 +64,9 @@ type DataAwsLbListener interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SslPolicy() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -109,6 +112,7 @@ type DataAwsLbListener interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -370,6 +374,26 @@ func (j *jsiiProxy_DataAwsLbListener) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLbListener) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListener) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLbListener) SslPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_DataAwsLbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) DataAwsLbListener {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener_Override(d DataAwsLbListener, scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) {
 	_init_.Initialize()
 
@@ -566,6 +590,17 @@ func (j *jsiiProxy_DataAwsLbListener)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLbListener)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -913,6 +948,14 @@ func (d *jsiiProxy_DataAwsLbListener) ResetPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListener) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

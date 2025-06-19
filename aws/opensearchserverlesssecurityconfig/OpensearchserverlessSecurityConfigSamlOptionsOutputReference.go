@@ -5,9 +5,9 @@ package opensearchserverlesssecurityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchserverlesssecurityconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchserverlesssecurityconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -245,29 +245,29 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference)
 }
 
 
-func NewOpensearchserverlessSecurityConfigSamlOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchserverlessSecurityConfigSamlOptionsOutputReference {
+func NewOpensearchserverlessSecurityConfigSamlOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpensearchserverlessSecurityConfigSamlOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewOpensearchserverlessSecurityConfigSamlOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewOpensearchserverlessSecurityConfigSamlOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchserverlessSecurityConfig.OpensearchserverlessSecurityConfigSamlOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewOpensearchserverlessSecurityConfigSamlOptionsOutputReference_Override(o OpensearchserverlessSecurityConfigSamlOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpensearchserverlessSecurityConfigSamlOptionsOutputReference_Override(o OpensearchserverlessSecurityConfigSamlOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opensearchserverlessSecurityConfig.OpensearchserverlessSecurityConfigSamlOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
 }

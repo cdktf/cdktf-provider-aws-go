@@ -5,14 +5,14 @@ package vpcrouteserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcrouteserver/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server aws_vpc_route_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server aws_vpc_route_server}.
 type VpcRouteServer interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *float64
@@ -65,6 +65,9 @@ type VpcRouteServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteServerId() *string
 	SnsNotificationsEnabled() interface{}
 	SetSnsNotificationsEnabled(val interface{})
@@ -131,6 +134,7 @@ type VpcRouteServer interface {
 	ResetOverrideLogicalId()
 	ResetPersistRoutes()
 	ResetPersistRoutesDuration()
+	ResetRegion()
 	ResetSnsNotificationsEnabled()
 	ResetTags()
 	ResetTimeouts()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_VpcRouteServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcRouteServer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcRouteServer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcRouteServer) RouteServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_VpcRouteServer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server aws_vpc_route_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server aws_vpc_route_server} Resource.
 func NewVpcRouteServer(scope constructs.Construct, id *string, config *VpcRouteServerConfig) VpcRouteServer {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewVpcRouteServer(scope constructs.Construct, id *string, config *VpcRouteS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server aws_vpc_route_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server aws_vpc_route_server} Resource.
 func NewVpcRouteServer_Override(v VpcRouteServer, scope constructs.Construct, id *string, config *VpcRouteServerConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_VpcRouteServer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcRouteServer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (v *jsiiProxy_VpcRouteServer) ResetPersistRoutesDuration() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPersistRoutesDuration",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcRouteServer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

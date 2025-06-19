@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmcontactsRotation) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_SsmcontactsRotation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmcontactsRotation) validateSetStartTimeParameters(val *string) error {
 	return nil
 }

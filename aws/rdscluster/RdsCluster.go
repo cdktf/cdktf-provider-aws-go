@@ -5,14 +5,14 @@ package rdscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdscluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -222,6 +222,9 @@ type RdsCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReaderEndpoint() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationSourceIdentifier() *string
 	SetReplicationSourceIdentifier(val *string)
 	ReplicationSourceIdentifierInput() *string
@@ -368,6 +371,7 @@ type RdsCluster interface {
 	ResetPort()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
+	ResetRegion()
 	ResetReplicationSourceIdentifier()
 	ResetRestoreToPointInTime()
 	ResetS3Import()
@@ -1670,6 +1674,26 @@ func (j *jsiiProxy_RdsCluster) ReaderEndpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) ReplicationSourceIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1981,7 +2005,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1999,7 +2023,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -2657,6 +2681,17 @@ func (j *jsiiProxy_RdsCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -3588,6 +3623,14 @@ func (r *jsiiProxy_RdsCluster) ResetPreferredMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

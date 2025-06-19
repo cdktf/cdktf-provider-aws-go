@@ -5,14 +5,14 @@ package iamuserpoliciesexclusive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iamuserpoliciesexclusive/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamuserpoliciesexclusive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
 type IamUserPoliciesExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IamUserPoliciesExclusive) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive} Resource.
 func NewIamUserPoliciesExclusive(scope constructs.Construct, id *string, config *IamUserPoliciesExclusiveConfig) IamUserPoliciesExclusive {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIamUserPoliciesExclusive(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive} Resource.
 func NewIamUserPoliciesExclusive_Override(i IamUserPoliciesExclusive, scope constructs.Construct, id *string, config *IamUserPoliciesExclusiveConfig) {
 	_init_.Initialize()
 

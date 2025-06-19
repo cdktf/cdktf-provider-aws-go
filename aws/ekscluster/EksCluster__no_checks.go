@@ -171,6 +171,10 @@ func (j *jsiiProxy_EksCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_EksCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksCluster) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

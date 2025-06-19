@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDbInstances) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbInstances) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbInstances) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

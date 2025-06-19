@@ -5,14 +5,14 @@ package dmsreplicationsubnetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dmsreplicationsubnetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dmsreplicationsubnetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group}.
 type DmsReplicationSubnetGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type DmsReplicationSubnetGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationSubnetGroupArn() *string
 	ReplicationSubnetGroupDescription() *string
 	SetReplicationSubnetGroupDescription(val *string)
@@ -128,6 +131,7 @@ type DmsReplicationSubnetGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -298,6 +302,26 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DmsReplicationSubnetGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationSubnetGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsReplicationSubnetGroup) ReplicationSubnetGroupArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
 func NewDmsReplicationSubnetGroup(scope constructs.Construct, id *string, config *DmsReplicationSubnetGroupConfig) DmsReplicationSubnetGroup {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewDmsReplicationSubnetGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
 func NewDmsReplicationSubnetGroup_Override(d DmsReplicationSubnetGroup, scope constructs.Construct, id *string, config *DmsReplicationSubnetGroupConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationSubnetGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -977,6 +1012,14 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationSubnetGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

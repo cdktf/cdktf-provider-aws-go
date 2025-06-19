@@ -5,14 +5,14 @@ package ec2localgatewayroutetablevpcassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2localgatewayroutetablevpcassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2localgatewayroutetablevpcassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association}.
 type Ec2LocalGatewayRouteTableVpcAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type Ec2LocalGatewayRouteTableVpcAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -124,6 +127,7 @@ type Ec2LocalGatewayRouteTableVpcAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -324,6 +328,26 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -415,7 +439,7 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) VpcIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association} Resource.
 func NewEc2LocalGatewayRouteTableVpcAssociation(scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteTableVpcAssociationConfig) Ec2LocalGatewayRouteTableVpcAssociation {
 	_init_.Initialize()
 
@@ -433,7 +457,7 @@ func NewEc2LocalGatewayRouteTableVpcAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route_table_vpc_association aws_ec2_local_gateway_route_table_vpc_association} Resource.
 func NewEc2LocalGatewayRouteTableVpcAssociation_Override(e Ec2LocalGatewayRouteTableVpcAssociation, scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteTableVpcAssociationConfig) {
 	_init_.Initialize()
 
@@ -530,6 +554,17 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -932,6 +967,14 @@ func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

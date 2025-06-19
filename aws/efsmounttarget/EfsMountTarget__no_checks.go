@@ -123,6 +123,10 @@ func (j *jsiiProxy_EfsMountTarget) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_EfsMountTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsMountTarget) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

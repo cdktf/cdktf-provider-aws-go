@@ -135,6 +135,10 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_LicensemanagerLicenseConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LicensemanagerLicenseConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

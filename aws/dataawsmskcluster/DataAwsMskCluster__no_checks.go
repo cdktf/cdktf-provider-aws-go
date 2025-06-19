@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskCluster) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

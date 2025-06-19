@@ -123,6 +123,10 @@ func (j *jsiiProxy_EksIdentityProviderConfig) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EksIdentityProviderConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksIdentityProviderConfig) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

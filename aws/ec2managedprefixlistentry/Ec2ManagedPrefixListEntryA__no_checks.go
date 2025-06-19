@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryA) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2ManagedPrefixListEntryAParameters(scope constructs.Construct, id *string, config *Ec2ManagedPrefixListEntryAConfig) error {
 	return nil
 }

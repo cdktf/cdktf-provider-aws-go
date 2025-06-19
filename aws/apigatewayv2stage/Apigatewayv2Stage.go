@@ -5,14 +5,14 @@ package apigatewayv2stage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayv2stage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayv2stage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage}.
 type Apigatewayv2Stage interface {
 	cdktf.TerraformResource
 	AccessLogSettings() Apigatewayv2StageAccessLogSettingsOutputReference
@@ -83,6 +83,9 @@ type Apigatewayv2Stage interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteSettings() Apigatewayv2StageRouteSettingsList
 	RouteSettingsInput() interface{}
 	StageVariables() *map[string]*string
@@ -156,6 +159,7 @@ type Apigatewayv2Stage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRouteSettings()
 	ResetStageVariables()
 	ResetTags()
@@ -518,6 +522,26 @@ func (j *jsiiProxy_Apigatewayv2Stage) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Apigatewayv2Stage) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Apigatewayv2Stage) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Apigatewayv2Stage) RouteSettings() Apigatewayv2StageRouteSettingsList {
 	var returns Apigatewayv2StageRouteSettingsList
 	_jsii_.Get(
@@ -629,7 +653,7 @@ func (j *jsiiProxy_Apigatewayv2Stage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage} Resource.
 func NewApigatewayv2Stage(scope constructs.Construct, id *string, config *Apigatewayv2StageConfig) Apigatewayv2Stage {
 	_init_.Initialize()
 
@@ -647,7 +671,7 @@ func NewApigatewayv2Stage(scope constructs.Construct, id *string, config *Apigat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_stage aws_apigatewayv2_stage} Resource.
 func NewApigatewayv2Stage_Override(a Apigatewayv2Stage, scope constructs.Construct, id *string, config *Apigatewayv2StageConfig) {
 	_init_.Initialize()
 
@@ -799,6 +823,17 @@ func (j *jsiiProxy_Apigatewayv2Stage)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Apigatewayv2Stage)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1282,6 +1317,14 @@ func (a *jsiiProxy_Apigatewayv2Stage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Apigatewayv2Stage) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

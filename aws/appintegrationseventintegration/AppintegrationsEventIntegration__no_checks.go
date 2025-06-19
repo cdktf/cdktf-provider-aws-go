@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

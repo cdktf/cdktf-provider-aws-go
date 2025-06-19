@@ -107,6 +107,10 @@ func (j *jsiiProxy_S3TablesTableBucketPolicy) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_S3TablesTableBucketPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3TablesTableBucketPolicy) validateSetResourcePolicyParameters(val *string) error {
 	return nil
 }

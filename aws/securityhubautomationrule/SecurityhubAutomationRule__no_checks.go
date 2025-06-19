@@ -123,6 +123,10 @@ func (j *jsiiProxy_SecurityhubAutomationRule) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubAutomationRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubAutomationRule) validateSetRuleNameParameters(val *string) error {
 	return nil
 }

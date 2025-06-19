@@ -407,6 +407,14 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetResourceIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

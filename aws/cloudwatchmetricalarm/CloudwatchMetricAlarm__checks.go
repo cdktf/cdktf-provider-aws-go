@@ -562,6 +562,14 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetStatisticParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

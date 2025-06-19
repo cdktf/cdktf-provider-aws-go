@@ -5,14 +5,14 @@ package sesreceiptrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sesreceiptrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesreceiptrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule}.
 type SesReceiptRule interface {
 	cdktf.TerraformResource
 	AddHeaderAction() SesReceiptRuleAddHeaderActionList
@@ -77,6 +77,9 @@ type SesReceiptRule interface {
 	Recipients() *[]*string
 	SetRecipients(val *[]*string)
 	RecipientsInput() *[]*string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleSetName() *string
 	SetRuleSetName(val *string)
 	RuleSetNameInput() *string
@@ -160,6 +163,7 @@ type SesReceiptRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecipients()
+	ResetRegion()
 	ResetS3Action()
 	ResetScanEnabled()
 	ResetSnsAction()
@@ -484,6 +488,26 @@ func (j *jsiiProxy_SesReceiptRule) RecipientsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SesReceiptRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesReceiptRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SesReceiptRule) RuleSetName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -655,7 +679,7 @@ func (j *jsiiProxy_SesReceiptRule) WorkmailActionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource.
 func NewSesReceiptRule(scope constructs.Construct, id *string, config *SesReceiptRuleConfig) SesReceiptRule {
 	_init_.Initialize()
 
@@ -673,7 +697,7 @@ func NewSesReceiptRule(scope constructs.Construct, id *string, config *SesReceip
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_receipt_rule aws_ses_receipt_rule} Resource.
 func NewSesReceiptRule_Override(s SesReceiptRule, scope constructs.Construct, id *string, config *SesReceiptRuleConfig) {
 	_init_.Initialize()
 
@@ -803,6 +827,17 @@ func (j *jsiiProxy_SesReceiptRule)SetRecipients(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"recipients",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesReceiptRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1330,6 +1365,14 @@ func (s *jsiiProxy_SesReceiptRule) ResetRecipients() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRecipients",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesReceiptRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package dataawssyntheticsruntimeversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,8 +32,8 @@ type DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference interface {
 	Description() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSyntheticsRuntimeVersionsRuntimeVersions
+	SetInternalValue(val *DataAwsSyntheticsRuntimeVersionsRuntimeVersions)
 	ReleaseDate() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) InternalValue() *DataAwsSyntheticsRuntimeVersionsRuntimeVersions {
+	var returns *DataAwsSyntheticsRuntimeVersionsRuntimeVersions
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference)SetInternalValue(val *DataAwsSyntheticsRuntimeVersionsRuntimeVersions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

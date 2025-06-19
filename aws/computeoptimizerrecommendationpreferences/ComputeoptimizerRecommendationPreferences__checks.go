@@ -539,6 +539,14 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetResourceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

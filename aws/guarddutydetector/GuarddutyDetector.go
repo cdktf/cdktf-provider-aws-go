@@ -5,14 +5,14 @@ package guarddutydetector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/guarddutydetector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/guarddutydetector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_detector aws_guardduty_detector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_detector aws_guardduty_detector}.
 type GuarddutyDetector interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -68,6 +68,9 @@ type GuarddutyDetector interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,6 +134,7 @@ type GuarddutyDetector interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -381,6 +385,26 @@ func (j *jsiiProxy_GuarddutyDetector) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GuarddutyDetector) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuarddutyDetector) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GuarddutyDetector) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_GuarddutyDetector) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource.
 func NewGuarddutyDetector(scope constructs.Construct, id *string, config *GuarddutyDetectorConfig) GuarddutyDetector {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewGuarddutyDetector(scope constructs.Construct, id *string, config *Guardd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_detector aws_guardduty_detector} Resource.
 func NewGuarddutyDetector_Override(g GuarddutyDetector, scope constructs.Construct, id *string, config *GuarddutyDetectorConfig) {
 	_init_.Initialize()
 
@@ -578,6 +602,17 @@ func (j *jsiiProxy_GuarddutyDetector)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GuarddutyDetector)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (g *jsiiProxy_GuarddutyDetector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GuarddutyDetector) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

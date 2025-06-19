@@ -139,6 +139,10 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package oamsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamsink/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink aws_oam_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink aws_oam_sink}.
 type OamSink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type OamSink interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SinkId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -125,6 +128,7 @@ type OamSink interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -326,6 +330,26 @@ func (j *jsiiProxy_OamSink) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OamSink) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OamSink) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OamSink) SinkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_OamSink) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink aws_oam_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink aws_oam_sink} Resource.
 func NewOamSink(scope constructs.Construct, id *string, config *OamSinkConfig) OamSink {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewOamSink(scope constructs.Construct, id *string, config *OamSinkConfig) O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink aws_oam_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink aws_oam_sink} Resource.
 func NewOamSink_Override(o OamSink, scope constructs.Construct, id *string, config *OamSinkConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_OamSink)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OamSink)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -944,6 +979,14 @@ func (o *jsiiProxy_OamSink) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OamSink) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

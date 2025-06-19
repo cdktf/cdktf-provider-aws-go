@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) validateSetLi
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) validateSetSecurityControlIdParameters(val *string) error {
 	return nil
 }

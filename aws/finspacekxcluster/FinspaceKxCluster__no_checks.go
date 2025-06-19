@@ -183,6 +183,10 @@ func (j *jsiiProxy_FinspaceKxCluster) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxCluster) validateSetReleaseLabelParameters(val *string) error {
 	return nil
 }

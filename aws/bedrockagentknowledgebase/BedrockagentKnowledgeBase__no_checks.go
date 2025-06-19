@@ -127,6 +127,10 @@ func (j *jsiiProxy_BedrockagentKnowledgeBase) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentKnowledgeBase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentKnowledgeBase) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

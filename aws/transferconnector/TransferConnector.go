@@ -5,14 +5,14 @@ package transferconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transferconnector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_connector aws_transfer_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_connector aws_transfer_connector}.
 type TransferConnector interface {
 	cdktf.TerraformResource
 	AccessRole() *string
@@ -68,6 +68,9 @@ type TransferConnector interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityPolicyName() *string
 	SetSecurityPolicyName(val *string)
 	SecurityPolicyNameInput() *string
@@ -139,6 +142,7 @@ type TransferConnector interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSecurityPolicyName()
 	ResetSftpConfig()
 	ResetTags()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_TransferConnector) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferConnector) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferConnector) SecurityPolicyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_TransferConnector) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector(scope constructs.Construct, id *string, config *TransferConnectorConfig) TransferConnector {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewTransferConnector(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector_Override(t TransferConnector, scope constructs.Construct, id *string, config *TransferConnectorConfig) {
 	_init_.Initialize()
 
@@ -648,6 +672,17 @@ func (j *jsiiProxy_TransferConnector)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferConnector)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1099,6 +1134,14 @@ func (t *jsiiProxy_TransferConnector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -151,6 +151,10 @@ func (j *jsiiProxy_BedrockGuardrail) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrail) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrail) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

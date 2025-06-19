@@ -5,14 +5,14 @@ package quicksightfoldermembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightfoldermembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightfoldermembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership}.
 type QuicksightFolderMembership interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -68,6 +68,9 @@ type QuicksightFolderMembership interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type QuicksightFolderMembership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -359,6 +363,26 @@ func (j *jsiiProxy_QuicksightFolderMembership) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightFolderMembership) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightFolderMembership) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightFolderMembership) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_QuicksightFolderMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
 func NewQuicksightFolderMembership(scope constructs.Construct, id *string, config *QuicksightFolderMembershipConfig) QuicksightFolderMembership {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewQuicksightFolderMembership(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder_membership aws_quicksight_folder_membership} Resource.
 func NewQuicksightFolderMembership_Override(q QuicksightFolderMembership, scope constructs.Construct, id *string, config *QuicksightFolderMembershipConfig) {
 	_init_.Initialize()
 
@@ -527,6 +551,17 @@ func (j *jsiiProxy_QuicksightFolderMembership)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightFolderMembership)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (q *jsiiProxy_QuicksightFolderMembership) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightFolderMembership) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

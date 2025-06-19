@@ -426,6 +426,14 @@ func (j *jsiiProxy_DbClusterSnapshot) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_DbClusterSnapshot) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbClusterSnapshot) validateSetSharedAccountsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

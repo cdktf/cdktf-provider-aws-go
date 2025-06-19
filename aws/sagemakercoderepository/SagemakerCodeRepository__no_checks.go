@@ -119,6 +119,10 @@ func (j *jsiiProxy_SagemakerCodeRepository) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerCodeRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerCodeRepository) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

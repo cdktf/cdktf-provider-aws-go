@@ -123,6 +123,10 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

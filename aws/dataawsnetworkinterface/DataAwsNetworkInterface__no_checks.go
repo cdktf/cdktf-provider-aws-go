@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsNetworkInterface) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkInterface) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkInterface) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

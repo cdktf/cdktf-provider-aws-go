@@ -119,6 +119,10 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetRemoteDomainNameParameters(val *string) error {
 	return nil
 }

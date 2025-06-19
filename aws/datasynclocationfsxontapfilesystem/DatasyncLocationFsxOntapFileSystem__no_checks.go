@@ -115,6 +115,10 @@ func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetSecurityGroupArnsParameters(val *[]*string) error {
 	return nil
 }

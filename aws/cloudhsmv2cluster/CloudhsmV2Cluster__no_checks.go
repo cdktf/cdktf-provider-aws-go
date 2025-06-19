@@ -123,6 +123,10 @@ func (j *jsiiProxy_CloudhsmV2Cluster) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_CloudhsmV2Cluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Cluster) validateSetSourceBackupIdentifierParameters(val *string) error {
 	return nil
 }

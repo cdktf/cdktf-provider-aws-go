@@ -115,6 +115,10 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetUserGroupIdParameters(val *string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_SesIdentityPolicy) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SesIdentityPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesIdentityPolicyParameters(scope constructs.Construct, id *string, config *SesIdentityPolicyConfig) error {
 	return nil
 }

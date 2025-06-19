@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsQuicksightUser) validateSetNamespaceParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsQuicksightUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsQuicksightUser) validateSetUserNameParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package customerprofilesdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/customerprofilesdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/customerprofilesdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain}.
 type CustomerprofilesDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type CustomerprofilesDomain interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleBasedMatching() CustomerprofilesDomainRuleBasedMatchingOutputReference
 	RuleBasedMatchingInput() *CustomerprofilesDomainRuleBasedMatching
 	Tags() *map[string]*string
@@ -139,6 +142,7 @@ type CustomerprofilesDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRuleBasedMatching()
 	ResetTags()
 	ResetTagsAll()
@@ -420,6 +424,26 @@ func (j *jsiiProxy_CustomerprofilesDomain) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CustomerprofilesDomain) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomerprofilesDomain) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomerprofilesDomain) RuleBasedMatching() CustomerprofilesDomainRuleBasedMatchingOutputReference {
 	var returns CustomerprofilesDomainRuleBasedMatchingOutputReference
 	_jsii_.Get(
@@ -511,7 +535,7 @@ func (j *jsiiProxy_CustomerprofilesDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
 func NewCustomerprofilesDomain(scope constructs.Construct, id *string, config *CustomerprofilesDomainConfig) CustomerprofilesDomain {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewCustomerprofilesDomain(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
 func NewCustomerprofilesDomain_Override(c CustomerprofilesDomain, scope constructs.Construct, id *string, config *CustomerprofilesDomainConfig) {
 	_init_.Initialize()
 
@@ -659,6 +683,17 @@ func (j *jsiiProxy_CustomerprofilesDomain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomerprofilesDomain)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1096,6 +1131,14 @@ func (c *jsiiProxy_CustomerprofilesDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomerprofilesDomain) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

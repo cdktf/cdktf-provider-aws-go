@@ -127,6 +127,10 @@ func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetSourcePortfolioIdParameters(val *string) error {
 	return nil
 }

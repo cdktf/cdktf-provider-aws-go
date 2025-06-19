@@ -111,6 +111,10 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetResolverQueryLogConfigIdParameters(val *string) error {
 	return nil
 }

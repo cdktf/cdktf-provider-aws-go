@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConfigDeliveryChannel) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ConfigDeliveryChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigDeliveryChannel) validateSetS3BucketNameParameters(val *string) error {
 	return nil
 }

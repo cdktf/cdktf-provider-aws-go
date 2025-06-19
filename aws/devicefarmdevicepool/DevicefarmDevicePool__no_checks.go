@@ -131,6 +131,10 @@ func (j *jsiiProxy_DevicefarmDevicePool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmDevicePool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmDevicePool) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

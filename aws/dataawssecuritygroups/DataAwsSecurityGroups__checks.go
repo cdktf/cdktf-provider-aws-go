@@ -269,6 +269,14 @@ func (j *jsiiProxy_DataAwsSecurityGroups) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecurityGroups) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecurityGroups) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

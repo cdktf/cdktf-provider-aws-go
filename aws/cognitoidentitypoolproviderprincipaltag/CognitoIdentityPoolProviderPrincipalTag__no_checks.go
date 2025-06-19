@@ -123,6 +123,10 @@ func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetUseDefaultsParameters(val interface{}) error {
 	return nil
 }

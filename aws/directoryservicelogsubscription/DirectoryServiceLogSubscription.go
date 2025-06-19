@@ -5,14 +5,14 @@ package directoryservicelogsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/directoryservicelogsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/directoryservicelogsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
 type DirectoryServiceLogSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type DirectoryServiceLogSubscription interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type DirectoryServiceLogSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,6 +329,26 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DirectoryServiceLogSubscription) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectoryServiceLogSubscription) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DirectoryServiceLogSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
 func NewDirectoryServiceLogSubscription(scope constructs.Construct, id *string, config *DirectoryServiceLogSubscriptionConfig) DirectoryServiceLogSubscription {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewDirectoryServiceLogSubscription(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
 func NewDirectoryServiceLogSubscription_Override(d DirectoryServiceLogSubscription, scope constructs.Construct, id *string, config *DirectoryServiceLogSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DirectoryServiceLogSubscription)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (d *jsiiProxy_DirectoryServiceLogSubscription) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceLogSubscription) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

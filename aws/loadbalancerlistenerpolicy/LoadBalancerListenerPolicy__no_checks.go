@@ -123,6 +123,10 @@ func (j *jsiiProxy_LoadBalancerListenerPolicy) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerListenerPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerListenerPolicy) validateSetTriggersParameters(val *map[string]*string) error {
 	return nil
 }

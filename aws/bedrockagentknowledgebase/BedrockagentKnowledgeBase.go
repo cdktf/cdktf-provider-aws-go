@@ -5,14 +5,14 @@ package bedrockagentknowledgebase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockagentknowledgebase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentknowledgebase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base}.
 type BedrockagentKnowledgeBase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type BedrockagentKnowledgeBase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -136,6 +139,7 @@ type BedrockagentKnowledgeBase interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStorageConfiguration()
 	ResetTags()
 	ResetTimeouts()
@@ -387,6 +391,26 @@ func (j *jsiiProxy_BedrockagentKnowledgeBase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentKnowledgeBase) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBase) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentKnowledgeBase) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -518,7 +542,7 @@ func (j *jsiiProxy_BedrockagentKnowledgeBase) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base} Resource.
 func NewBedrockagentKnowledgeBase(scope constructs.Construct, id *string, config *BedrockagentKnowledgeBaseConfig) BedrockagentKnowledgeBase {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewBedrockagentKnowledgeBase(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_knowledge_base aws_bedrockagent_knowledge_base} Resource.
 func NewBedrockagentKnowledgeBase_Override(b BedrockagentKnowledgeBase, scope constructs.Construct, id *string, config *BedrockagentKnowledgeBaseConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_BedrockagentKnowledgeBase)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBase)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (b *jsiiProxy_BedrockagentKnowledgeBase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBase) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

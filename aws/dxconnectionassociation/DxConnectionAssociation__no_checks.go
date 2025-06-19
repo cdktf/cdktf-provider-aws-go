@@ -119,6 +119,10 @@ func (j *jsiiProxy_DxConnectionAssociation) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DxConnectionAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDxConnectionAssociationParameters(scope constructs.Construct, id *string, config *DxConnectionAssociationConfig) error {
 	return nil
 }

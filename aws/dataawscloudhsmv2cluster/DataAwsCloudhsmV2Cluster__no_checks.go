@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCloudhsmV2ClusterParameters(scope constructs.Construct, id *string, config *DataAwsCloudhsmV2ClusterConfig) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_TransferAccess) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_TransferAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferAccess) validateSetRoleParameters(val *string) error {
 	return nil
 }

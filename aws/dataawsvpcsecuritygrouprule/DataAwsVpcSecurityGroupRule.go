@@ -5,14 +5,14 @@ package dataawsvpcsecuritygrouprule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpcsecuritygrouprule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpcsecuritygrouprule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule}.
 type DataAwsVpcSecurityGroupRule interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -59,6 +59,9 @@ type DataAwsVpcSecurityGroupRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReferencedSecurityGroupId() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	SecurityGroupRuleId() *string
 	SetSecurityGroupRuleId(val *string)
@@ -101,6 +104,7 @@ type DataAwsVpcSecurityGroupRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSecurityGroupRuleId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -351,6 +355,26 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) ReferencedSecurityGroupId() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -432,7 +456,7 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) ToPort() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
 func NewDataAwsVpcSecurityGroupRule(scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRuleConfig) DataAwsVpcSecurityGroupRule {
 	_init_.Initialize()
 
@@ -450,7 +474,7 @@ func NewDataAwsVpcSecurityGroupRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
 func NewDataAwsVpcSecurityGroupRule_Override(d DataAwsVpcSecurityGroupRule, scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRuleConfig) {
 	_init_.Initialize()
 
@@ -503,6 +527,17 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRule)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (d *jsiiProxy_DataAwsVpcSecurityGroupRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpcSecurityGroupRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

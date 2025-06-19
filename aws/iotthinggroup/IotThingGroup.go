@@ -5,14 +5,14 @@ package iotthinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotthinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotthinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_group aws_iot_thing_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_group aws_iot_thing_group}.
 type IotThingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type IotThingGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,6 +134,7 @@ type IotThingGroup interface {
 	ResetOverrideLogicalId()
 	ResetParentGroupName()
 	ResetProperties()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -381,6 +385,26 @@ func (j *jsiiProxy_IotThingGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IotThingGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotThingGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotThingGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_IotThingGroup) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_group aws_iot_thing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_group aws_iot_thing_group} Resource.
 func NewIotThingGroup(scope constructs.Construct, id *string, config *IotThingGroupConfig) IotThingGroup {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewIotThingGroup(scope constructs.Construct, id *string, config *IotThingGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_thing_group aws_iot_thing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_thing_group aws_iot_thing_group} Resource.
 func NewIotThingGroup_Override(i IotThingGroup, scope constructs.Construct, id *string, config *IotThingGroupConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_IotThingGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotThingGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1006,6 +1041,14 @@ func (i *jsiiProxy_IotThingGroup) ResetProperties() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotThingGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

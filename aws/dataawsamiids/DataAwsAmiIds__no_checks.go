@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataAwsAmiIds) validateSetOwnersParameters(val *[]*string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmiIds) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAmiIds) validateSetSortAscendingParameters(val interface{}) error {
 	return nil
 }

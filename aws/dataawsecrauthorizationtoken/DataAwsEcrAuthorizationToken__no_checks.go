@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetRegistryIdParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsapigatewaydomainname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsapigatewaydomainname/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsapigatewaydomainname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name}.
 type DataAwsApiGatewayDomainName interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -64,10 +64,13 @@ type DataAwsApiGatewayDomainName interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
 	RegionalCertificateArn() *string
 	RegionalCertificateName() *string
 	RegionalDomainName() *string
 	RegionalZoneId() *string
+	RegionInput() *string
 	SecurityPolicy() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -108,6 +111,7 @@ type DataAwsApiGatewayDomainName interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -378,6 +382,16 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) RegionalCertificateArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,6 +427,16 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) RegionalZoneId() *string {
 	_jsii_.Get(
 		j,
 		"regionalZoneId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -479,7 +503,7 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
 func NewDataAwsApiGatewayDomainName(scope constructs.Construct, id *string, config *DataAwsApiGatewayDomainNameConfig) DataAwsApiGatewayDomainName {
 	_init_.Initialize()
 
@@ -497,7 +521,7 @@ func NewDataAwsApiGatewayDomainName(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/api_gateway_domain_name aws_api_gateway_domain_name} Data Source.
 func NewDataAwsApiGatewayDomainName_Override(d DataAwsApiGatewayDomainName, scope constructs.Construct, id *string, config *DataAwsApiGatewayDomainNameConfig) {
 	_init_.Initialize()
 
@@ -583,6 +607,17 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayDomainName)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -903,6 +938,14 @@ func (d *jsiiProxy_DataAwsApiGatewayDomainName) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsApiGatewayDomainName) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package rdsclustersnapshotcopy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsclustersnapshotcopy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsclustersnapshotcopy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy}.
 type RdsClusterSnapshotCopy interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -73,6 +73,9 @@ type RdsClusterSnapshotCopy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SharedAccounts() *[]*string
 	SetSharedAccounts(val *[]*string)
 	SharedAccountsInput() *[]*string
@@ -149,6 +152,7 @@ type RdsClusterSnapshotCopy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPresignedUrl()
+	ResetRegion()
 	ResetSharedAccounts()
 	ResetTags()
 	ResetTimeouts()
@@ -440,6 +444,26 @@ func (j *jsiiProxy_RdsClusterSnapshotCopy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsClusterSnapshotCopy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterSnapshotCopy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsClusterSnapshotCopy) SharedAccounts() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -621,7 +645,7 @@ func (j *jsiiProxy_RdsClusterSnapshotCopy) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
 func NewRdsClusterSnapshotCopy(scope constructs.Construct, id *string, config *RdsClusterSnapshotCopyConfig) RdsClusterSnapshotCopy {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewRdsClusterSnapshotCopy(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
 func NewRdsClusterSnapshotCopy_Override(r RdsClusterSnapshotCopy, scope constructs.Construct, id *string, config *RdsClusterSnapshotCopyConfig) {
 	_init_.Initialize()
 
@@ -758,6 +782,17 @@ func (j *jsiiProxy_RdsClusterSnapshotCopy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsClusterSnapshotCopy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1206,6 +1241,14 @@ func (r *jsiiProxy_RdsClusterSnapshotCopy) ResetPresignedUrl() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPresignedUrl",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterSnapshotCopy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

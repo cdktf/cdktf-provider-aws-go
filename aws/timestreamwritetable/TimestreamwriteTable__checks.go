@@ -440,6 +440,14 @@ func (j *jsiiProxy_TimestreamwriteTable) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TimestreamwriteTable) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamwriteTable) validateSetTableNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

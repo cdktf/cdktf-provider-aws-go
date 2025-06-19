@@ -139,6 +139,10 @@ func (j *jsiiProxy_FsxFileCache) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_FsxFileCache) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxFileCache) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

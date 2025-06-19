@@ -1047,6 +1047,14 @@ func (j *jsiiProxy_DbInstance) validateSetPubliclyAccessibleParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetReplicaModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

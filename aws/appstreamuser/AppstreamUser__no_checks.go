@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppstreamUser) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamUser) validateSetSendEmailNotificationParameters(val interface{}) error {
 	return nil
 }

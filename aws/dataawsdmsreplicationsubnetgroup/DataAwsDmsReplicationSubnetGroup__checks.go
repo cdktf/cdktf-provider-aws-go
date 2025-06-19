@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetReplicationSubnetGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

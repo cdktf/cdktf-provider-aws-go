@@ -135,6 +135,10 @@ func (j *jsiiProxy_DatasyncLocationAzureBlob) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationAzureBlob) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationAzureBlob) validateSetSubdirectoryParameters(val *string) error {
 	return nil
 }

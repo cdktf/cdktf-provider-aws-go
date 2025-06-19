@@ -5,14 +5,14 @@ package vpcsecuritygroupingressrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcsecuritygroupingressrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcsecuritygroupingressrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule}.
 type VpcSecurityGroupIngressRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -78,6 +78,9 @@ type VpcSecurityGroupIngressRule interface {
 	ReferencedSecurityGroupId() *string
 	SetReferencedSecurityGroupId(val *string)
 	ReferencedSecurityGroupIdInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
@@ -147,6 +150,7 @@ type VpcSecurityGroupIngressRule interface {
 	ResetOverrideLogicalId()
 	ResetPrefixListId()
 	ResetReferencedSecurityGroupId()
+	ResetRegion()
 	ResetTags()
 	ResetToPort()
 	SynthesizeAttributes() *map[string]interface{}
@@ -457,6 +461,26 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule) ReferencedSecurityGroupIdInput()
 	return returns
 }
 
+func (j *jsiiProxy_VpcSecurityGroupIngressRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcSecurityGroupIngressRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcSecurityGroupIngressRule) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,7 +592,7 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule) ToPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
 func NewVpcSecurityGroupIngressRule(scope constructs.Construct, id *string, config *VpcSecurityGroupIngressRuleConfig) VpcSecurityGroupIngressRule {
 	_init_.Initialize()
 
@@ -586,7 +610,7 @@ func NewVpcSecurityGroupIngressRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_security_group_ingress_rule aws_vpc_security_group_ingress_rule} Resource.
 func NewVpcSecurityGroupIngressRule_Override(v VpcSecurityGroupIngressRule, scope constructs.Construct, id *string, config *VpcSecurityGroupIngressRuleConfig) {
 	_init_.Initialize()
 
@@ -738,6 +762,17 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule)SetReferencedSecurityGroupId(val 
 	_jsii_.Set(
 		j,
 		"referencedSecurityGroupId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcSecurityGroupIngressRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1180,6 +1215,14 @@ func (v *jsiiProxy_VpcSecurityGroupIngressRule) ResetReferencedSecurityGroupId()
 	_jsii_.InvokeVoid(
 		v,
 		"resetReferencedSecurityGroupId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcSecurityGroupIngressRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

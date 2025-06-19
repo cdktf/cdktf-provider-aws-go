@@ -115,6 +115,10 @@ func (j *jsiiProxy_EbsDefaultKmsKey) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_EbsDefaultKmsKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEbsDefaultKmsKeyParameters(scope constructs.Construct, id *string, config *EbsDefaultKmsKeyConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package macie2findingsfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2findingsfilter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2findingsfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
 type Macie2FindingsFilter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -76,6 +76,9 @@ type Macie2FindingsFilter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -143,6 +146,7 @@ type Macie2FindingsFilter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosition()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -444,6 +448,26 @@ func (j *jsiiProxy_Macie2FindingsFilter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2FindingsFilter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Macie2FindingsFilter) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_Macie2FindingsFilter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) Macie2FindingsFilter {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Mac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter_Override(m Macie2FindingsFilter, scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (j *jsiiProxy_Macie2FindingsFilter)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2FindingsFilter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (m *jsiiProxy_Macie2FindingsFilter) ResetPosition() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPosition",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

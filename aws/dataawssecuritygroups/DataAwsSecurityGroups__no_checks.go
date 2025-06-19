@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsSecurityGroups) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecurityGroups) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecurityGroups) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

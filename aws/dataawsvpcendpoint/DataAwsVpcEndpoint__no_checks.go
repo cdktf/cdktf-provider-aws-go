@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetServiceNameParameters(val *string) error {
 	return nil
 }

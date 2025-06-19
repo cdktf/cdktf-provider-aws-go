@@ -5,16 +5,18 @@ package dataawslblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DataAwsLbListenerRuleActionOutputReference interface {
 	cdktf.ComplexObject
-	AuthenticateCognito() DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference
-	AuthenticateOidc() DataAwsLbListenerRuleActionAuthenticateOidcOutputReference
+	AuthenticateCognito() DataAwsLbListenerRuleActionAuthenticateCognitoList
+	AuthenticateCognitoInput() interface{}
+	AuthenticateOidc() DataAwsLbListenerRuleActionAuthenticateOidcList
+	AuthenticateOidcInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,15 +32,17 @@ type DataAwsLbListenerRuleActionOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FixedResponse() DataAwsLbListenerRuleActionFixedResponseOutputReference
-	Forward() DataAwsLbListenerRuleActionForwardOutputReference
+	FixedResponse() DataAwsLbListenerRuleActionFixedResponseList
+	FixedResponseInput() interface{}
+	Forward() DataAwsLbListenerRuleActionForwardList
 	ForwardInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Order() *float64
-	Redirect() DataAwsLbListenerRuleActionRedirectOutputReference
+	Redirect() DataAwsLbListenerRuleActionRedirectList
+	RedirectInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,8 +76,16 @@ type DataAwsLbListenerRuleActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutForward(value *DataAwsLbListenerRuleActionForward)
+	PutAuthenticateCognito(value interface{})
+	PutAuthenticateOidc(value interface{})
+	PutFixedResponse(value interface{})
+	PutForward(value interface{})
+	PutRedirect(value interface{})
+	ResetAuthenticateCognito()
+	ResetAuthenticateOidc()
+	ResetFixedResponse()
 	ResetForward()
+	ResetRedirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -89,8 +101,8 @@ type jsiiProxy_DataAwsLbListenerRuleActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateCognito() DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference {
-	var returns DataAwsLbListenerRuleActionAuthenticateCognitoOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateCognito() DataAwsLbListenerRuleActionAuthenticateCognitoList {
+	var returns DataAwsLbListenerRuleActionAuthenticateCognitoList
 	_jsii_.Get(
 		j,
 		"authenticateCognito",
@@ -99,11 +111,31 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateCogni
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateOidc() DataAwsLbListenerRuleActionAuthenticateOidcOutputReference {
-	var returns DataAwsLbListenerRuleActionAuthenticateOidcOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateCognitoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authenticateCognitoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateOidc() DataAwsLbListenerRuleActionAuthenticateOidcList {
+	var returns DataAwsLbListenerRuleActionAuthenticateOidcList
 	_jsii_.Get(
 		j,
 		"authenticateOidc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) AuthenticateOidcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authenticateOidcInput",
 		&returns,
 	)
 	return returns
@@ -139,8 +171,8 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) FixedResponse() DataAwsLbListenerRuleActionFixedResponseOutputReference {
-	var returns DataAwsLbListenerRuleActionFixedResponseOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) FixedResponse() DataAwsLbListenerRuleActionFixedResponseList {
+	var returns DataAwsLbListenerRuleActionFixedResponseList
 	_jsii_.Get(
 		j,
 		"fixedResponse",
@@ -149,8 +181,18 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) FixedResponse() D
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) Forward() DataAwsLbListenerRuleActionForwardOutputReference {
-	var returns DataAwsLbListenerRuleActionForwardOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) FixedResponseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fixedResponseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) Forward() DataAwsLbListenerRuleActionForwardList {
+	var returns DataAwsLbListenerRuleActionForwardList
 	_jsii_.Get(
 		j,
 		"forward",
@@ -199,11 +241,21 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) Order() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) Redirect() DataAwsLbListenerRuleActionRedirectOutputReference {
-	var returns DataAwsLbListenerRuleActionRedirectOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) Redirect() DataAwsLbListenerRuleActionRedirectList {
+	var returns DataAwsLbListenerRuleActionRedirectList
 	_jsii_.Get(
 		j,
 		"redirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) RedirectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectInput",
 		&returns,
 	)
 	return returns
@@ -508,7 +560,40 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) InterpolationForA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutForward(value *DataAwsLbListenerRuleActionForward) {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutAuthenticateCognito(value interface{}) {
+	if err := d.validatePutAuthenticateCognitoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuthenticateCognito",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutAuthenticateOidc(value interface{}) {
+	if err := d.validatePutAuthenticateOidcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuthenticateOidc",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutFixedResponse(value interface{}) {
+	if err := d.validatePutFixedResponseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFixedResponse",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutForward(value interface{}) {
 	if err := d.validatePutForwardParameters(value); err != nil {
 		panic(err)
 	}
@@ -519,10 +604,53 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutForward(value 
 	)
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutRedirect(value interface{}) {
+	if err := d.validatePutRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedirect",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetAuthenticateCognito() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticateCognito",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetAuthenticateOidc() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticateOidc",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetFixedResponse() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFixedResponse",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetForward() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetForward",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetRedirect() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedirect",
 		nil, // no parameters
 	)
 }

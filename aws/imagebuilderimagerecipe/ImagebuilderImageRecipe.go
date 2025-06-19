@@ -5,14 +5,14 @@ package imagebuilderimagerecipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/imagebuilderimagerecipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/imagebuilderimagerecipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
 type ImagebuilderImageRecipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type ImagebuilderImageRecipe interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SystemsManagerAgent() ImagebuilderImageRecipeSystemsManagerAgentOutputReference
 	SystemsManagerAgentInput() *ImagebuilderImageRecipeSystemsManagerAgent
 	Tags() *map[string]*string
@@ -150,6 +153,7 @@ type ImagebuilderImageRecipe interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSystemsManagerAgent()
 	ResetTags()
 	ResetTagsAll()
@@ -463,6 +467,26 @@ func (j *jsiiProxy_ImagebuilderImageRecipe) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderImageRecipe) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImageRecipe) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderImageRecipe) SystemsManagerAgent() ImagebuilderImageRecipeSystemsManagerAgentOutputReference {
 	var returns ImagebuilderImageRecipeSystemsManagerAgentOutputReference
 	_jsii_.Get(
@@ -614,7 +638,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipe) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
 func NewImagebuilderImageRecipe(scope constructs.Construct, id *string, config *ImagebuilderImageRecipeConfig) ImagebuilderImageRecipe {
 	_init_.Initialize()
 
@@ -632,7 +656,7 @@ func NewImagebuilderImageRecipe(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
 func NewImagebuilderImageRecipe_Override(i ImagebuilderImageRecipe, scope constructs.Construct, id *string, config *ImagebuilderImageRecipeConfig) {
 	_init_.Initialize()
 
@@ -751,6 +775,17 @@ func (j *jsiiProxy_ImagebuilderImageRecipe)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderImageRecipe)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1224,6 +1259,14 @@ func (i *jsiiProxy_ImagebuilderImageRecipe) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

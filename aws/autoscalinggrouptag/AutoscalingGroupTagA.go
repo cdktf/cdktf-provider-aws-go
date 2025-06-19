@@ -5,14 +5,14 @@ package autoscalinggrouptag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalinggrouptag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalinggrouptag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
 type AutoscalingGroupTagA interface {
 	cdktf.TerraformResource
 	AutoscalingGroupName() *string
@@ -61,6 +61,9 @@ type AutoscalingGroupTagA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tag() AutoscalingGroupTagTagOutputReference
 	TagInput() *AutoscalingGroupTagTag
 	// Experimental.
@@ -117,6 +120,7 @@ type AutoscalingGroupTagA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_AutoscalingGroupTagA) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingGroupTagA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupTagA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingGroupTagA) Tag() AutoscalingGroupTagTagOutputReference {
 	var returns AutoscalingGroupTagTagOutputReference
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
 func NewAutoscalingGroupTagA(scope constructs.Construct, id *string, config *AutoscalingGroupTagAConfig) AutoscalingGroupTagA {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewAutoscalingGroupTagA(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
 func NewAutoscalingGroupTagA_Override(a AutoscalingGroupTagA, scope constructs.Construct, id *string, config *AutoscalingGroupTagAConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_AutoscalingGroupTagA)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupTagA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (a *jsiiProxy_AutoscalingGroupTagA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupTagA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

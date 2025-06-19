@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecuritylakeCustomLogSource) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeCustomLogSource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecuritylakeCustomLogSource) validateSetSourceNameParameters(val *string) error {
 	return nil
 }

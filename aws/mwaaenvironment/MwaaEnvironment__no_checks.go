@@ -179,6 +179,10 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetRequirementsS3ObjectVersionParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package servicecatalogconstraint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogconstraint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogconstraint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}.
 type ServicecatalogConstraint interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -74,6 +74,9 @@ type ServicecatalogConstraint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -136,6 +139,7 @@ type ServicecatalogConstraint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -415,6 +419,26 @@ func (j *jsiiProxy_ServicecatalogConstraint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogConstraint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogConstraint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogConstraint) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_ServicecatalogConstraint) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
 func NewServicecatalogConstraint(scope constructs.Construct, id *string, config *ServicecatalogConstraintConfig) ServicecatalogConstraint {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewServicecatalogConstraint(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
 func NewServicecatalogConstraint_Override(s ServicecatalogConstraint, scope constructs.Construct, id *string, config *ServicecatalogConstraintConfig) {
 	_init_.Initialize()
 
@@ -655,6 +679,17 @@ func (j *jsiiProxy_ServicecatalogConstraint)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogConstraint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1062,6 +1097,14 @@ func (s *jsiiProxy_ServicecatalogConstraint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogConstraint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

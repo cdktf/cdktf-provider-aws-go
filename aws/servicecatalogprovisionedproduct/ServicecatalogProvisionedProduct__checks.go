@@ -544,6 +544,14 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetProvisioningArti
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetRetainPhysicalResourcesParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

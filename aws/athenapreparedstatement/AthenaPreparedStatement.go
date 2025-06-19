@@ -5,14 +5,14 @@ package athenapreparedstatement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenapreparedstatement/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenapreparedstatement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
 type AthenaPreparedStatement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type AthenaPreparedStatement interface {
 	QueryStatementInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +130,7 @@ type AthenaPreparedStatement interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -356,6 +360,26 @@ func (j *jsiiProxy_AthenaPreparedStatement) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AthenaPreparedStatement) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaPreparedStatement) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AthenaPreparedStatement) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_AthenaPreparedStatement) WorkgroupInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
 func NewAthenaPreparedStatement(scope constructs.Construct, id *string, config *AthenaPreparedStatementConfig) AthenaPreparedStatement {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewAthenaPreparedStatement(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
 func NewAthenaPreparedStatement_Override(a AthenaPreparedStatement, scope constructs.Construct, id *string, config *AthenaPreparedStatementConfig) {
 	_init_.Initialize()
 
@@ -564,6 +588,17 @@ func (j *jsiiProxy_AthenaPreparedStatement)SetQueryStatement(val *string) {
 	_jsii_.Set(
 		j,
 		"queryStatement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AthenaPreparedStatement)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -963,6 +998,14 @@ func (a *jsiiProxy_AthenaPreparedStatement) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaPreparedStatement) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

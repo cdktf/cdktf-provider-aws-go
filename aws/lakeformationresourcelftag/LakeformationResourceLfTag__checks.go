@@ -534,6 +534,14 @@ func (j *jsiiProxy_LakeformationResourceLfTag) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationResourceLfTag) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLakeformationResourceLfTagParameters(scope constructs.Construct, id *string, config *LakeformationResourceLfTagConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

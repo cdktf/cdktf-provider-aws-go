@@ -522,6 +522,14 @@ func (j *jsiiProxy_ApiGatewayRestApi) validateSetPutRestApiModeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApi) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

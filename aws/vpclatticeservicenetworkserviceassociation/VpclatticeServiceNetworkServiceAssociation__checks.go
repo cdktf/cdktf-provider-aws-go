@@ -410,6 +410,14 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetServiceIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

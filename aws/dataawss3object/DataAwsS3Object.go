@@ -5,14 +5,14 @@ package dataawss3object
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3object/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3object/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_object aws_s3_object}.
 type DataAwsS3Object interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -84,6 +84,9 @@ type DataAwsS3Object interface {
 	RangeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerSideEncryption() *string
 	SseKmsKeyId() *string
 	StorageClass() *string
@@ -131,6 +134,7 @@ type DataAwsS3Object interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRange()
+	ResetRegion()
 	ResetTags()
 	ResetVersionId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -582,6 +586,26 @@ func (j *jsiiProxy_DataAwsS3Object) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsS3Object) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsS3Object) ServerSideEncryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -693,7 +717,7 @@ func (j *jsiiProxy_DataAwsS3Object) WebsiteRedirectLocation() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) DataAwsS3Object {
 	_init_.Initialize()
 
@@ -711,7 +735,7 @@ func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object_Override(d DataAwsS3Object, scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) {
 	_init_.Initialize()
 
@@ -819,6 +843,17 @@ func (j *jsiiProxy_DataAwsS3Object)SetRange(val *string) {
 	_jsii_.Set(
 		j,
 		"range",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsS3Object)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1158,6 +1193,14 @@ func (d *jsiiProxy_DataAwsS3Object) ResetRange() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRange",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsS3Object) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

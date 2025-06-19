@@ -5,14 +5,14 @@ package dataexchangerevisionassets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataexchangerevisionassets/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataexchangerevisionassets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets}.
 type DataexchangeRevisionAssets interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type DataexchangeRevisionAssets interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -137,6 +140,7 @@ type DataexchangeRevisionAssets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_DataexchangeRevisionAssets) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataexchangeRevisionAssets) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataexchangeRevisionAssets) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataexchangeRevisionAssets) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -508,7 +532,7 @@ func (j *jsiiProxy_DataexchangeRevisionAssets) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource.
 func NewDataexchangeRevisionAssets(scope constructs.Construct, id *string, config *DataexchangeRevisionAssetsConfig) DataexchangeRevisionAssets {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewDataexchangeRevisionAssets(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dataexchange_revision_assets aws_dataexchange_revision_assets} Resource.
 func NewDataexchangeRevisionAssets_Override(d DataexchangeRevisionAssets, scope constructs.Construct, id *string, config *DataexchangeRevisionAssetsConfig) {
 	_init_.Initialize()
 
@@ -645,6 +669,17 @@ func (j *jsiiProxy_DataexchangeRevisionAssets)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataexchangeRevisionAssets)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1071,6 +1106,14 @@ func (d *jsiiProxy_DataexchangeRevisionAssets) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataexchangeRevisionAssets) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

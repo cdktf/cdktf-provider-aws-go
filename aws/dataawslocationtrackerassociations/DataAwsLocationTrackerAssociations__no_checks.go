@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationTrackerAssociations) validateSetTrackerNameParameters(val *string) error {
 	return nil
 }

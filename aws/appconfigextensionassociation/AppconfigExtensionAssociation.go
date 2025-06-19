@@ -5,14 +5,14 @@ package appconfigextensionassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigextensionassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigextensionassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
 type AppconfigExtensionAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type AppconfigExtensionAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -123,6 +126,7 @@ type AppconfigExtensionAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -351,6 +355,26 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppconfigExtensionAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppconfigExtensionAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppconfigExtensionAssociation) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) AppconfigExtensionAssociation {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation_Override(a AppconfigExtensionAssociation, scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) {
 	_init_.Initialize()
 
@@ -528,6 +552,17 @@ func (j *jsiiProxy_AppconfigExtensionAssociation)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppconfigExtensionAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -916,6 +951,14 @@ func (a *jsiiProxy_AppconfigExtensionAssociation) ResetParameters() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppconfigExtensionAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

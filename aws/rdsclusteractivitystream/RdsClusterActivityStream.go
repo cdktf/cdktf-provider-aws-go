@@ -5,14 +5,14 @@ package rdsclusteractivitystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsclusteractivitystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsclusteractivitystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
 type RdsClusterActivityStream interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type RdsClusterActivityStream interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -125,6 +128,7 @@ type RdsClusterActivityStream interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -363,6 +367,26 @@ func (j *jsiiProxy_RdsClusterActivityStream) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsClusterActivityStream) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterActivityStream) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsClusterActivityStream) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +438,7 @@ func (j *jsiiProxy_RdsClusterActivityStream) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
 func NewRdsClusterActivityStream(scope constructs.Construct, id *string, config *RdsClusterActivityStreamConfig) RdsClusterActivityStream {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewRdsClusterActivityStream(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
 func NewRdsClusterActivityStream_Override(r RdsClusterActivityStream, scope constructs.Construct, id *string, config *RdsClusterActivityStreamConfig) {
 	_init_.Initialize()
 
@@ -551,6 +575,17 @@ func (j *jsiiProxy_RdsClusterActivityStream)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsClusterActivityStream)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (r *jsiiProxy_RdsClusterActivityStream) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterActivityStream) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

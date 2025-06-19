@@ -119,6 +119,10 @@ func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMediaStoreContainerPolicyParameters(scope constructs.Construct, id *string, config *MediaStoreContainerPolicyConfig) error {
 	return nil
 }

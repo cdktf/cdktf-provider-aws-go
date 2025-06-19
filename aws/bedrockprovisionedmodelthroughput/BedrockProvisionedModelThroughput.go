@@ -5,14 +5,14 @@ package bedrockprovisionedmodelthroughput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockprovisionedmodelthroughput/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockprovisionedmodelthroughput/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput}.
 type BedrockProvisionedModelThroughput interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type BedrockProvisionedModelThroughput interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -129,6 +132,7 @@ type BedrockProvisionedModelThroughput interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -379,6 +383,26 @@ func (j *jsiiProxy_BedrockProvisionedModelThroughput) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_BedrockProvisionedModelThroughput) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockProvisionedModelThroughput) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockProvisionedModelThroughput) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_BedrockProvisionedModelThroughput) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput} Resource.
 func NewBedrockProvisionedModelThroughput(scope constructs.Construct, id *string, config *BedrockProvisionedModelThroughputConfig) BedrockProvisionedModelThroughput {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewBedrockProvisionedModelThroughput(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_provisioned_model_throughput aws_bedrock_provisioned_model_throughput} Resource.
 func NewBedrockProvisionedModelThroughput_Override(b BedrockProvisionedModelThroughput, scope constructs.Construct, id *string, config *BedrockProvisionedModelThroughputConfig) {
 	_init_.Initialize()
 
@@ -597,6 +621,17 @@ func (j *jsiiProxy_BedrockProvisionedModelThroughput)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockProvisionedModelThroughput)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (b *jsiiProxy_BedrockProvisionedModelThroughput) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockProvisionedModelThroughput) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dataawsconnectquickconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectquickconnect/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectquickconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
 type DataAwsConnectQuickConnect interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -62,6 +62,9 @@ type DataAwsConnectQuickConnect interface {
 	QuickConnectIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -102,6 +105,7 @@ type DataAwsConnectQuickConnect interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQuickConnectId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -342,6 +346,26 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectQuickConnect) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectQuickConnect) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectQuickConnect) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -393,7 +417,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
 func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, config *DataAwsConnectQuickConnectConfig) DataAwsConnectQuickConnect {
 	_init_.Initialize()
 
@@ -411,7 +435,7 @@ func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
 func NewDataAwsConnectQuickConnect_Override(d DataAwsConnectQuickConnect, scope constructs.Construct, id *string, config *DataAwsConnectQuickConnectConfig) {
 	_init_.Initialize()
 
@@ -508,6 +532,17 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect)SetQuickConnectId(val *string) {
 	_jsii_.Set(
 		j,
 		"quickConnectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectQuickConnect)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -836,6 +871,14 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) ResetQuickConnectId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQuickConnectId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectQuickConnect) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

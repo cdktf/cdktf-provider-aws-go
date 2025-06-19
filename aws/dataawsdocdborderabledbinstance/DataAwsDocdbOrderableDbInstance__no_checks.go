@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetPreferredInstance
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetVpcParameters(val interface{}) error {
 	return nil
 }

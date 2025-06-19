@@ -135,6 +135,10 @@ func (j *jsiiProxy_SecurityGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityGroup) validateSetRevokeRulesOnDeleteParameters(val interface{}) error {
 	return nil
 }

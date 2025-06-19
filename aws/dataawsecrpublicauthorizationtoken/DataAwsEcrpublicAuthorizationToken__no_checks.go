@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEcrpublicAuthorizationTokenParameters(scope constructs.Construct, id *string, config *DataAwsEcrpublicAuthorizationTokenConfig) error {
 	return nil
 }

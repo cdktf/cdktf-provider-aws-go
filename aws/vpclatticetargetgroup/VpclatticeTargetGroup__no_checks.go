@@ -123,6 +123,10 @@ func (j *jsiiProxy_VpclatticeTargetGroup) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

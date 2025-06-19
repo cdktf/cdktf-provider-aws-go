@@ -127,6 +127,10 @@ func (j *jsiiProxy_IotCertificate) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_IotCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotCertificateParameters(scope constructs.Construct, id *string, config *IotCertificateConfig) error {
 	return nil
 }

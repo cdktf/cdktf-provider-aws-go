@@ -5,14 +5,14 @@ package efsmounttarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/efsmounttarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/efsmounttarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_mount_target aws_efs_mount_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_mount_target aws_efs_mount_target}.
 type EfsMountTarget interface {
 	cdktf.TerraformResource
 	AvailabilityZoneId() *string
@@ -71,6 +71,9 @@ type EfsMountTarget interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -134,6 +137,7 @@ type EfsMountTarget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSecurityGroups()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -414,6 +418,26 @@ func (j *jsiiProxy_EfsMountTarget) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EfsMountTarget) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsMountTarget) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -505,7 +529,7 @@ func (j *jsiiProxy_EfsMountTarget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
 func NewEfsMountTarget(scope constructs.Construct, id *string, config *EfsMountTargetConfig) EfsMountTarget {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewEfsMountTarget(scope constructs.Construct, id *string, config *EfsMountT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
 func NewEfsMountTarget_Override(e EfsMountTarget, scope constructs.Construct, id *string, config *EfsMountTargetConfig) {
 	_init_.Initialize()
 
@@ -631,6 +655,17 @@ func (j *jsiiProxy_EfsMountTarget)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsMountTarget)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1041,6 +1076,14 @@ func (e *jsiiProxy_EfsMountTarget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsMountTarget) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

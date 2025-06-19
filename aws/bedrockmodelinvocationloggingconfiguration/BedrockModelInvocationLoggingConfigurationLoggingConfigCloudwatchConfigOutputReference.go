@@ -5,9 +5,9 @@ package bedrockmodelinvocationloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockmodelinvocationloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockmodelinvocationloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,7 +32,7 @@ type BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutp
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	LargeDataDeliveryS3Config() BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference
+	LargeDataDeliveryS3Config() BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigList
 	LargeDataDeliveryS3ConfigInput() interface{}
 	LogGroupName() *string
 	SetLogGroupName(val *string)
@@ -72,7 +72,7 @@ type BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutp
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLargeDataDeliveryS3Config(value *BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config)
+	PutLargeDataDeliveryS3Config(value interface{})
 	ResetLargeDataDeliveryS3Config()
 	ResetLogGroupName()
 	ResetRoleArn()
@@ -141,8 +141,8 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudw
 	return returns
 }
 
-func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference) LargeDataDeliveryS3Config() BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference {
-	var returns BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference) LargeDataDeliveryS3Config() BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigList {
+	var returns BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigList
 	_jsii_.Get(
 		j,
 		"largeDataDeliveryS3Config",
@@ -222,29 +222,29 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudw
 }
 
 
-func NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference {
+func NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference_Override(b BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference_Override(b BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
@@ -512,7 +512,7 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudw
 	return returns
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference) PutLargeDataDeliveryS3Config(value *BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config) {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference) PutLargeDataDeliveryS3Config(value interface{}) {
 	if err := b.validatePutLargeDataDeliveryS3ConfigParameters(value); err != nil {
 		panic(err)
 	}

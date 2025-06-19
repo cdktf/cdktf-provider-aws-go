@@ -111,7 +111,7 @@ func (j *jsiiProxy_ApiGatewayAccount) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayAccount) validateSetResetOnDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_ApiGatewayAccount) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

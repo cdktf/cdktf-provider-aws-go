@@ -5,14 +5,14 @@ package datazoneformtype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazoneformtype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneformtype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_form_type aws_datazone_form_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_form_type aws_datazone_form_type}.
 type DatazoneFormType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type DatazoneFormType interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Revision() *string
 	Status() *string
 	SetStatus(val *string)
@@ -136,6 +139,7 @@ type DatazoneFormType interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStatus()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -436,6 +440,26 @@ func (j *jsiiProxy_DatazoneFormType) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneFormType) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneFormType) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneFormType) Revision() *string {
 	var returns *string
 	_jsii_.Get(
@@ -517,7 +541,7 @@ func (j *jsiiProxy_DatazoneFormType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource.
 func NewDatazoneFormType(scope constructs.Construct, id *string, config *DatazoneFormTypeConfig) DatazoneFormType {
 	_init_.Initialize()
 
@@ -535,7 +559,7 @@ func NewDatazoneFormType(scope constructs.Construct, id *string, config *Datazon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource.
 func NewDatazoneFormType_Override(d DatazoneFormType, scope constructs.Construct, id *string, config *DatazoneFormTypeConfig) {
 	_init_.Initialize()
 
@@ -654,6 +678,17 @@ func (j *jsiiProxy_DatazoneFormType)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneFormType)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1064,6 +1099,14 @@ func (d *jsiiProxy_DatazoneFormType) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneFormType) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

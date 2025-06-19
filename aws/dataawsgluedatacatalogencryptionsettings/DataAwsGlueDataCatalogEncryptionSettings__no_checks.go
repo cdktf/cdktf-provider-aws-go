@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsGlueDataCatalogEncryptionSettingsParameters(scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) error {
 	return nil
 }

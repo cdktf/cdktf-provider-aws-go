@@ -175,6 +175,10 @@ func (j *jsiiProxy_AppstreamFleet) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleet) validateSetStreamViewParameters(val *string) error {
 	return nil
 }

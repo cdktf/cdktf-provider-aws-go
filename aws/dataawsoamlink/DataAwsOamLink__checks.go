@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsOamLink) validateSetLinkIdentifierParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamLink) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOamLink) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -115,6 +115,10 @@ func (j *jsiiProxy_ServicecatalogappregistryAttributeGroupAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogappregistryAttributeGroupAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewServicecatalogappregistryAttributeGroupAssociationParameters(scope constructs.Construct, id *string, config *ServicecatalogappregistryAttributeGroupAssociationConfig) error {
 	return nil
 }

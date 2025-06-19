@@ -147,6 +147,10 @@ func (j *jsiiProxy_EmrInstanceGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_EmrInstanceGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEmrInstanceGroupParameters(scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) error {
 	return nil
 }

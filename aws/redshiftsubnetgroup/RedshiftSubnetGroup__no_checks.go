@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftSubnetGroup) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

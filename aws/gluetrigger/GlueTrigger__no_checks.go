@@ -139,6 +139,10 @@ func (j *jsiiProxy_GlueTrigger) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_GlueTrigger) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueTrigger) validateSetScheduleParameters(val *string) error {
 	return nil
 }

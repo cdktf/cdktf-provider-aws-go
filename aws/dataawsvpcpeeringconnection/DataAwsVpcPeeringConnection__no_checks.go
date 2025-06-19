@@ -107,15 +107,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerOwnerIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerRegionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerVpcIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

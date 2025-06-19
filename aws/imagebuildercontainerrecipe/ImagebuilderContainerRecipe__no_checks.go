@@ -155,6 +155,10 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

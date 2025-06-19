@@ -143,6 +143,10 @@ func (j *jsiiProxy_ApiGatewayStage) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayStage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayStage) validateSetRestApiIdParameters(val *string) error {
 	return nil
 }

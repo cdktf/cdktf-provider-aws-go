@@ -5,14 +5,14 @@ package dataawsvpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpngateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpn_gateway aws_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpn_gateway aws_vpn_gateway}.
 type DataAwsVpnGateway interface {
 	cdktf.TerraformDataSource
 	AmazonSideAsn() *string
@@ -62,6 +62,9 @@ type DataAwsVpnGateway interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -111,6 +114,7 @@ type DataAwsVpnGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetState()
 	ResetTags()
 	ResetTimeouts()
@@ -353,6 +357,26 @@ func (j *jsiiProxy_DataAwsVpnGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpnGateway) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpnGateway) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpnGateway) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_DataAwsVpnGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
 func NewDataAwsVpnGateway(scope constructs.Construct, id *string, config *DataAwsVpnGatewayConfig) DataAwsVpnGateway {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewDataAwsVpnGateway(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
 func NewDataAwsVpnGateway_Override(d DataAwsVpnGateway, scope constructs.Construct, id *string, config *DataAwsVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -559,6 +583,17 @@ func (j *jsiiProxy_DataAwsVpnGateway)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpnGateway)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -936,6 +971,14 @@ func (d *jsiiProxy_DataAwsVpnGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpnGateway) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_OpensearchserverlessVpcEndpoint) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchserverlessVpcEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchserverlessVpcEndpoint) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

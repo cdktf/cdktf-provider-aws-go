@@ -5,14 +5,14 @@ package fsxopenzfsvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxopenzfsvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxopenzfsvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
 type FsxOpenzfsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -84,6 +84,9 @@ type FsxOpenzfsVolume interface {
 	RecordSizeKib() *float64
 	SetRecordSizeKib(val *float64)
 	RecordSizeKibInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageCapacityQuotaGib() *float64
 	SetStorageCapacityQuotaGib(val *float64)
 	StorageCapacityQuotaGibInput() *float64
@@ -167,6 +170,7 @@ type FsxOpenzfsVolume interface {
 	ResetOverrideLogicalId()
 	ResetReadOnly()
 	ResetRecordSizeKib()
+	ResetRegion()
 	ResetStorageCapacityQuotaGib()
 	ResetStorageCapacityReservationGib()
 	ResetTags()
@@ -532,6 +536,26 @@ func (j *jsiiProxy_FsxOpenzfsVolume) RecordSizeKibInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsVolume) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) StorageCapacityQuotaGib() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -703,7 +727,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) FsxOpenzfsVolume {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume_Override(f FsxOpenzfsVolume, scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) {
 	_init_.Initialize()
 
@@ -884,6 +908,17 @@ func (j *jsiiProxy_FsxOpenzfsVolume)SetRecordSizeKib(val *float64) {
 	_jsii_.Set(
 		j,
 		"recordSizeKib",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1408,6 +1443,14 @@ func (f *jsiiProxy_FsxOpenzfsVolume) ResetRecordSizeKib() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRecordSizeKib",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsVolume) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

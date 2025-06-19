@@ -115,6 +115,10 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateSetProvi
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3ControlAccessGrantsInstanceResourcePolicyParameters(scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceResourcePolicyConfig) error {
 	return nil
 }

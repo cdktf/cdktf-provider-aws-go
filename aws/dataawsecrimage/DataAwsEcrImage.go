@@ -5,14 +5,14 @@ package dataawsecrimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecrimage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecr_image aws_ecr_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_image aws_ecr_image}.
 type DataAwsEcrImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,9 @@ type DataAwsEcrImage interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistryId() *string
 	SetRegistryId(val *string)
 	RegistryIdInput() *string
@@ -107,6 +110,7 @@ type DataAwsEcrImage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegistryId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -357,6 +361,26 @@ func (j *jsiiProxy_DataAwsEcrImage) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcrImage) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrImage) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcrImage) RegistryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_DataAwsEcrImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecr_image aws_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_image aws_ecr_image} Data Source.
 func NewDataAwsEcrImage(scope constructs.Construct, id *string, config *DataAwsEcrImageConfig) DataAwsEcrImage {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewDataAwsEcrImage(scope constructs.Construct, id *string, config *DataAwsE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecr_image aws_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecr_image aws_ecr_image} Data Source.
 func NewDataAwsEcrImage_Override(d DataAwsEcrImage, scope constructs.Construct, id *string, config *DataAwsEcrImageConfig) {
 	_init_.Initialize()
 
@@ -543,6 +567,17 @@ func (j *jsiiProxy_DataAwsEcrImage)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcrImage)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -890,6 +925,14 @@ func (d *jsiiProxy_DataAwsEcrImage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcrImage) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

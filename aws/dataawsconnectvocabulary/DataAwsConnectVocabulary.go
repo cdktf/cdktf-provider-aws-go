@@ -5,14 +5,14 @@ package dataawsconnectvocabulary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectvocabulary/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectvocabulary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary}.
 type DataAwsConnectVocabulary interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -61,6 +61,9 @@ type DataAwsConnectVocabulary interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -104,6 +107,7 @@ type DataAwsConnectVocabulary interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetVocabularyId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -345,6 +349,26 @@ func (j *jsiiProxy_DataAwsConnectVocabulary) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectVocabulary) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectVocabulary) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectVocabulary) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_DataAwsConnectVocabulary) VocabularyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary} Data Source.
 func NewDataAwsConnectVocabulary(scope constructs.Construct, id *string, config *DataAwsConnectVocabularyConfig) DataAwsConnectVocabulary {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewDataAwsConnectVocabulary(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_vocabulary aws_connect_vocabulary} Data Source.
 func NewDataAwsConnectVocabulary_Override(d DataAwsConnectVocabulary, scope constructs.Construct, id *string, config *DataAwsConnectVocabularyConfig) {
 	_init_.Initialize()
 
@@ -530,6 +554,17 @@ func (j *jsiiProxy_DataAwsConnectVocabulary)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectVocabulary)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -861,6 +896,14 @@ func (d *jsiiProxy_DataAwsConnectVocabulary) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectVocabulary) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

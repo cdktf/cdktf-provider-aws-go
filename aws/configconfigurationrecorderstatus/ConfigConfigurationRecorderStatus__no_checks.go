@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewConfigConfigurationRecorderStatusParameters(scope constructs.Construct, id *string, config *ConfigConfigurationRecorderStatusConfig) error {
 	return nil
 }

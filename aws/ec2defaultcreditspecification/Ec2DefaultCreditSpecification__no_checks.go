@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2DefaultCreditSpecification) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_Ec2DefaultCreditSpecification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2DefaultCreditSpecificationParameters(scope constructs.Construct, id *string, config *Ec2DefaultCreditSpecificationConfig) error {
 	return nil
 }

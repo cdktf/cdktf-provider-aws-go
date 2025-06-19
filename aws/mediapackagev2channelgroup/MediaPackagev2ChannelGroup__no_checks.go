@@ -115,6 +115,10 @@ func (j *jsiiProxy_MediaPackagev2ChannelGroup) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_MediaPackagev2ChannelGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaPackagev2ChannelGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

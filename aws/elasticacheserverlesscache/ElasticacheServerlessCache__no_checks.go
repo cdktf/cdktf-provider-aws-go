@@ -139,6 +139,10 @@ func (j *jsiiProxy_ElasticacheServerlessCache) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheServerlessCache) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheServerlessCache) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

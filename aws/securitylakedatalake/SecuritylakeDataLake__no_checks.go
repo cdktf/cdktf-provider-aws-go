@@ -119,6 +119,10 @@ func (j *jsiiProxy_SecuritylakeDataLake) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeDataLake) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecuritylakeDataLake) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_EcrRepository) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_EcrRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRepository) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawswafv2regexpatternset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawswafv2regexpatternset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawswafv2regexpatternset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
 type DataAwsWafv2RegexPatternSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,9 @@ type DataAwsWafv2RegexPatternSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegularExpression() DataAwsWafv2RegexPatternSetRegularExpressionList
 	Scope() *string
 	SetScope(val *string)
@@ -94,6 +97,7 @@ type DataAwsWafv2RegexPatternSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -283,6 +287,26 @@ func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) RegularExpression() DataAwsWafv2RegexPatternSetRegularExpressionList {
 	var returns DataAwsWafv2RegexPatternSetRegularExpressionList
 	_jsii_.Get(
@@ -344,7 +368,7 @@ func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Data Source.
 func NewDataAwsWafv2RegexPatternSet(scope constructs.Construct, id *string, config *DataAwsWafv2RegexPatternSetConfig) DataAwsWafv2RegexPatternSet {
 	_init_.Initialize()
 
@@ -362,7 +386,7 @@ func NewDataAwsWafv2RegexPatternSet(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Data Source.
 func NewDataAwsWafv2RegexPatternSet_Override(d DataAwsWafv2RegexPatternSet, scope constructs.Construct, id *string, config *DataAwsWafv2RegexPatternSetConfig) {
 	_init_.Initialize()
 
@@ -437,6 +461,17 @@ func (j *jsiiProxy_DataAwsWafv2RegexPatternSet)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsWafv2RegexPatternSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -749,6 +784,14 @@ func (d *jsiiProxy_DataAwsWafv2RegexPatternSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsWafv2RegexPatternSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

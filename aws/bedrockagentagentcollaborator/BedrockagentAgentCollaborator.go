@@ -5,14 +5,14 @@ package bedrockagentagentcollaborator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockagentagentcollaborator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentagentcollaborator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator}.
 type BedrockagentAgentCollaborator interface {
 	cdktf.TerraformResource
 	AgentDescriptor() BedrockagentAgentCollaboratorAgentDescriptorList
@@ -74,6 +74,9 @@ type BedrockagentAgentCollaborator interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RelayConversationHistory() *string
 	SetRelayConversationHistory(val *string)
 	RelayConversationHistoryInput() *string
@@ -136,6 +139,7 @@ type BedrockagentAgentCollaborator interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrepareAgent()
+	ResetRegion()
 	ResetRelayConversationHistory()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -426,6 +430,26 @@ func (j *jsiiProxy_BedrockagentAgentCollaborator) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgentCollaborator) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentCollaborator) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgentCollaborator) RelayConversationHistory() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_BedrockagentAgentCollaborator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator} Resource.
 func NewBedrockagentAgentCollaborator(scope constructs.Construct, id *string, config *BedrockagentAgentCollaboratorConfig) BedrockagentAgentCollaborator {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewBedrockagentAgentCollaborator(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_agent_collaborator aws_bedrockagent_agent_collaborator} Resource.
 func NewBedrockagentAgentCollaborator_Override(b BedrockagentAgentCollaborator, scope constructs.Construct, id *string, config *BedrockagentAgentCollaboratorConfig) {
 	_init_.Initialize()
 
@@ -645,6 +669,17 @@ func (j *jsiiProxy_BedrockagentAgentCollaborator)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgentCollaborator)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (b *jsiiProxy_BedrockagentAgentCollaborator) ResetPrepareAgent() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetPrepareAgent",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgentCollaborator) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

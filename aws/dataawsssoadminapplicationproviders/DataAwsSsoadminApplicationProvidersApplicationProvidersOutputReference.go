@@ -5,9 +5,9 @@ package dataawsssoadminapplicationproviders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplicationproviders/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,12 +30,11 @@ type DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference inte
 	// Experimental.
 	CreationStack() *[]*string
 	DisplayData() DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList
-	DisplayDataInput() interface{}
 	FederationProtocol() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSsoadminApplicationProvidersApplicationProviders
+	SetInternalValue(val *DataAwsSsoadminApplicationProvidersApplicationProviders)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +67,6 @@ type DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDisplayData(value interface{})
-	ResetDisplayData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,16 +132,6 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) DisplayDataInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"displayDataInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) FederationProtocol() *string {
 	var returns *string
 	_jsii_.Get(
@@ -165,8 +152,8 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) InternalValue() *DataAwsSsoadminApplicationProvidersApplicationProviders {
+	var returns *DataAwsSsoadminApplicationProvidersApplicationProviders
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -245,7 +232,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference)SetInternalValue(val *DataAwsSsoadminApplicationProvidersApplicationProviders) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,25 +449,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) PutDisplayData(value interface{}) {
-	if err := d.validatePutDisplayDataParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDisplayData",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) ResetDisplayData() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDisplayData",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

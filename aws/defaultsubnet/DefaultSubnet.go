@@ -5,14 +5,14 @@ package defaultsubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/defaultsubnet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/defaultsubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_subnet aws_default_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_subnet aws_default_subnet}.
 type DefaultSubnet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -102,6 +102,9 @@ type DefaultSubnet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -176,6 +179,7 @@ type DefaultSubnet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateDnsHostnameTypeOnLaunch()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -667,6 +671,26 @@ func (j *jsiiProxy_DefaultSubnet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DefaultSubnet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultSubnet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DefaultSubnet) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -768,7 +792,7 @@ func (j *jsiiProxy_DefaultSubnet) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSubnetConfig) DefaultSubnet {
 	_init_.Initialize()
 
@@ -786,7 +810,7 @@ func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet_Override(d DefaultSubnet, scope constructs.Construct, id *string, config *DefaultSubnetConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1028,17 @@ func (j *jsiiProxy_DefaultSubnet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DefaultSubnet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1494,6 +1529,14 @@ func (d *jsiiProxy_DefaultSubnet) ResetPrivateDnsHostnameTypeOnLaunch() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateDnsHostnameTypeOnLaunch",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DefaultSubnet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

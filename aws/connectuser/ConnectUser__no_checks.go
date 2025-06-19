@@ -139,6 +139,10 @@ func (j *jsiiProxy_ConnectUser) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectUser) validateSetRoutingProfileIdParameters(val *string) error {
 	return nil
 }

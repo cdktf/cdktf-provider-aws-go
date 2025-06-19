@@ -135,6 +135,10 @@ func (j *jsiiProxy_DbProxy) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DbProxy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxy) validateSetRequireTlsParameters(val interface{}) error {
 	return nil
 }

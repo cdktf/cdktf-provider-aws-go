@@ -123,10 +123,6 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetCountParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetEtagParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

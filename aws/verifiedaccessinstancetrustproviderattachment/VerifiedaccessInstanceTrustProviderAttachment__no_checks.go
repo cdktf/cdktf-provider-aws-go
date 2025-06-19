@@ -111,6 +111,10 @@ func (j *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateSetPro
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateSetVerifiedaccessInstanceIdParameters(val *string) error {
 	return nil
 }

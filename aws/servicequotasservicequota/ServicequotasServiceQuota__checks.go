@@ -407,6 +407,14 @@ func (j *jsiiProxy_ServicequotasServiceQuota) validateSetQuotaCodeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasServiceQuota) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasServiceQuota) validateSetServiceCodeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

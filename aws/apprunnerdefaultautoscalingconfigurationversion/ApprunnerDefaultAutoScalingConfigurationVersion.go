@@ -5,14 +5,14 @@ package apprunnerdefaultautoscalingconfigurationversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apprunnerdefaultautoscalingconfigurationversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apprunnerdefaultautoscalingconfigurationversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version}.
 type ApprunnerDefaultAutoScalingConfigurationVersion interface {
 	cdktf.TerraformResource
 	AutoScalingConfigurationArn() *string
@@ -59,6 +59,9 @@ type ApprunnerDefaultAutoScalingConfigurationVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +114,7 @@ type ApprunnerDefaultAutoScalingConfigurationVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -289,6 +293,26 @@ func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) RawOverrides
 	return returns
 }
 
+func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -320,7 +344,7 @@ func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
 func NewApprunnerDefaultAutoScalingConfigurationVersion(scope constructs.Construct, id *string, config *ApprunnerDefaultAutoScalingConfigurationVersionConfig) ApprunnerDefaultAutoScalingConfigurationVersion {
 	_init_.Initialize()
 
@@ -338,7 +362,7 @@ func NewApprunnerDefaultAutoScalingConfigurationVersion(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
 func NewApprunnerDefaultAutoScalingConfigurationVersion_Override(a ApprunnerDefaultAutoScalingConfigurationVersion, scope constructs.Construct, id *string, config *ApprunnerDefaultAutoScalingConfigurationVersionConfig) {
 	_init_.Initialize()
 
@@ -424,6 +448,17 @@ func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion)SetProvisione
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -785,6 +820,14 @@ func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) ResetOverrid
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

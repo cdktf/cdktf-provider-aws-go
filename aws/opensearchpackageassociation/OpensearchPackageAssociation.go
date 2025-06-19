@@ -5,14 +5,14 @@ package opensearchpackageassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchpackageassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchpackageassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association aws_opensearch_package_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association aws_opensearch_package_association}.
 type OpensearchPackageAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type OpensearchPackageAssociation interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReferencePath() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type OpensearchPackageAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -340,6 +344,26 @@ func (j *jsiiProxy_OpensearchPackageAssociation) ReferencePath() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchPackageAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchPackageAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchPackageAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_OpensearchPackageAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
 func NewOpensearchPackageAssociation(scope constructs.Construct, id *string, config *OpensearchPackageAssociationConfig) OpensearchPackageAssociation {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewOpensearchPackageAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_package_association aws_opensearch_package_association} Resource.
 func NewOpensearchPackageAssociation_Override(o OpensearchPackageAssociation, scope constructs.Construct, id *string, config *OpensearchPackageAssociationConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_OpensearchPackageAssociation)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchPackageAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -897,6 +932,14 @@ func (o *jsiiProxy_OpensearchPackageAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchPackageAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

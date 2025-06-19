@@ -123,6 +123,10 @@ func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewStoragegatewayUploadBufferParameters(scope constructs.Construct, id *string, config *StoragegatewayUploadBufferConfig) error {
 	return nil
 }

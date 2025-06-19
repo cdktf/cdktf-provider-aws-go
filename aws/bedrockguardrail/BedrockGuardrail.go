@@ -5,14 +5,14 @@ package bedrockguardrail
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockguardrail/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockguardrail/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail}.
 type BedrockGuardrail interface {
 	cdktf.TerraformResource
 	BlockedInputMessaging() *string
@@ -77,6 +77,9 @@ type BedrockGuardrail interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SensitiveInformationPolicyConfig() BedrockGuardrailSensitiveInformationPolicyConfigList
 	SensitiveInformationPolicyConfigInput() interface{}
 	Status() *string
@@ -153,6 +156,7 @@ type BedrockGuardrail interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSensitiveInformationPolicyConfig()
 	ResetTags()
 	ResetTimeouts()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_BedrockGuardrail) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockGuardrail) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrail) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockGuardrail) SensitiveInformationPolicyConfig() BedrockGuardrailSensitiveInformationPolicyConfigList {
 	var returns BedrockGuardrailSensitiveInformationPolicyConfigList
 	_jsii_.Get(
@@ -637,7 +661,7 @@ func (j *jsiiProxy_BedrockGuardrail) WordPolicyConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
 func NewBedrockGuardrail(scope constructs.Construct, id *string, config *BedrockGuardrailConfig) BedrockGuardrail {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewBedrockGuardrail(scope constructs.Construct, id *string, config *Bedrock
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
 func NewBedrockGuardrail_Override(b BedrockGuardrail, scope constructs.Construct, id *string, config *BedrockGuardrailConfig) {
 	_init_.Initialize()
 
@@ -785,6 +809,17 @@ func (j *jsiiProxy_BedrockGuardrail)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockGuardrail)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1255,6 +1290,14 @@ func (b *jsiiProxy_BedrockGuardrail) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrail) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

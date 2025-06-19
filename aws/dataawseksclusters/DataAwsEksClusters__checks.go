@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsEksClusters) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksClusters) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsEksClustersParameters(scope constructs.Construct, id *string, config *DataAwsEksClustersConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

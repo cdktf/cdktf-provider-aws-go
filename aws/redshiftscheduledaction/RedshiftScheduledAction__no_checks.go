@@ -135,6 +135,10 @@ func (j *jsiiProxy_RedshiftScheduledAction) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftScheduledAction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftScheduledAction) validateSetScheduleParameters(val *string) error {
 	return nil
 }

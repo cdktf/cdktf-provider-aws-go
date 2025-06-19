@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcrRepositoryPolicy) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_EcrRepositoryPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRepositoryPolicy) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

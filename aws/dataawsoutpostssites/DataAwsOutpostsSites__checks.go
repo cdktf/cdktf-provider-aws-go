@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsOutpostsSites) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsSites) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsOutpostsSitesParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsSitesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

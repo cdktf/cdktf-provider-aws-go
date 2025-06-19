@@ -5,14 +5,14 @@ package dataawsssmparametersbypath
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssmparametersbypath/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssmparametersbypath/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
 type DataAwsSsmParametersByPath interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -58,6 +58,9 @@ type DataAwsSsmParametersByPath interface {
 	Recursive() interface{}
 	SetRecursive(val interface{})
 	RecursiveInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,6 +102,7 @@ type DataAwsSsmParametersByPath interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecursive()
+	ResetRegion()
 	ResetWithDecryption()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -309,6 +313,26 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) RecursiveInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsmParametersByPath) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsmParametersByPath) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsmParametersByPath) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryptionInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
 func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, config *DataAwsSsmParametersByPathConfig) DataAwsSsmParametersByPath {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
 func NewDataAwsSsmParametersByPath_Override(d DataAwsSsmParametersByPath, scope constructs.Construct, id *string, config *DataAwsSsmParametersByPathConfig) {
 	_init_.Initialize()
 
@@ -484,6 +508,17 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath)SetRecursive(val interface{}) {
 	_jsii_.Set(
 		j,
 		"recursive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsmParametersByPath)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -804,6 +839,14 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) ResetRecursive() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRecursive",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsmParametersByPath) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

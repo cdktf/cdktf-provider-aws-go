@@ -127,6 +127,10 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

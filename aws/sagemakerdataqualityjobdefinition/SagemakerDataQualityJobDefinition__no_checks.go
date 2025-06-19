@@ -143,6 +143,10 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

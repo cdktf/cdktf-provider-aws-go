@@ -269,6 +269,14 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

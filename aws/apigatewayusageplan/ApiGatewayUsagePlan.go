@@ -5,14 +5,14 @@ package apigatewayusageplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayusageplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayusageplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
 type ApiGatewayUsagePlan interface {
 	cdktf.TerraformResource
 	ApiStages() ApiGatewayUsagePlanApiStagesList
@@ -72,6 +72,9 @@ type ApiGatewayUsagePlan interface {
 	QuotaSettingsInput() *ApiGatewayUsagePlanQuotaSettings
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -140,6 +143,7 @@ type ApiGatewayUsagePlan interface {
 	ResetOverrideLogicalId()
 	ResetProductCode()
 	ResetQuotaSettings()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetThrottleSettings()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayUsagePlan) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayUsagePlan) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayUsagePlan) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) ThrottleSettingsInput() *ApiGatewayUsage
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) ApiGatewayUsagePlan {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan_Override(a ApiGatewayUsagePlan, scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) {
 	_init_.Initialize()
 
@@ -649,6 +673,17 @@ func (j *jsiiProxy_ApiGatewayUsagePlan)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayUsagePlan)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (a *jsiiProxy_ApiGatewayUsagePlan) ResetQuotaSettings() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetQuotaSettings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayUsagePlan) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

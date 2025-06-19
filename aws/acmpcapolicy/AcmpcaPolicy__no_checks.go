@@ -115,6 +115,10 @@ func (j *jsiiProxy_AcmpcaPolicy) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaPolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

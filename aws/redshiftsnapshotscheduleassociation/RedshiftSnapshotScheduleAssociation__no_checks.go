@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetScheduleIdentifierParameters(val *string) error {
 	return nil
 }

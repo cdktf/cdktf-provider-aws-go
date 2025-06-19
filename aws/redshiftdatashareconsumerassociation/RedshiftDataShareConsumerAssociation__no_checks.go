@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftDataShareConsumerAssociation) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftDataShareConsumerAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftDataShareConsumerAssociationParameters(scope constructs.Construct, id *string, config *RedshiftDataShareConsumerAssociationConfig) error {
 	return nil
 }

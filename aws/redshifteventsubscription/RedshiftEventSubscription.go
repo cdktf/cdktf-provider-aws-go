@@ -5,14 +5,14 @@ package redshifteventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshifteventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshifteventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
 type RedshiftEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type RedshiftEventSubscription interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Severity() *string
 	SetSeverity(val *string)
 	SeverityInput() *string
@@ -146,6 +149,7 @@ type RedshiftEventSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSeverity()
 	ResetSourceIds()
 	ResetSourceType()
@@ -400,6 +404,26 @@ func (j *jsiiProxy_RedshiftEventSubscription) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftEventSubscription) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftEventSubscription) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftEventSubscription) Severity() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
 func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config *RedshiftEventSubscriptionConfig) RedshiftEventSubscription {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
 func NewRedshiftEventSubscription_Override(r RedshiftEventSubscription, scope constructs.Construct, id *string, config *RedshiftEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -718,6 +742,17 @@ func (j *jsiiProxy_RedshiftEventSubscription)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftEventSubscription)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1180,6 +1215,14 @@ func (r *jsiiProxy_RedshiftEventSubscription) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftEventSubscription) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

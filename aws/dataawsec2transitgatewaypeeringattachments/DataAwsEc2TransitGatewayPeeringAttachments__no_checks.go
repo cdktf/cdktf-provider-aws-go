@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachments) validateSetLifecy
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachments) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2TransitGatewayPeeringAttachmentsParameters(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayPeeringAttachmentsConfig) error {
 	return nil
 }

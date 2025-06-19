@@ -5,14 +5,14 @@ package emrinstancefleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/emrinstancefleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/emrinstancefleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet}.
 type EmrInstanceFleet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type EmrInstanceFleet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetOnDemandCapacity() *float64
 	SetTargetOnDemandCapacity(val *float64)
 	TargetOnDemandCapacityInput() *float64
@@ -134,6 +137,7 @@ type EmrInstanceFleet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTargetOnDemandCapacity()
 	ResetTargetSpotCapacity()
 	SynthesizeAttributes() *map[string]interface{}
@@ -404,6 +408,26 @@ func (j *jsiiProxy_EmrInstanceFleet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EmrInstanceFleet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrInstanceFleet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrInstanceFleet) TargetOnDemandCapacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -475,7 +499,7 @@ func (j *jsiiProxy_EmrInstanceFleet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
 func NewEmrInstanceFleet(scope constructs.Construct, id *string, config *EmrInstanceFleetConfig) EmrInstanceFleet {
 	_init_.Initialize()
 
@@ -493,7 +517,7 @@ func NewEmrInstanceFleet(scope constructs.Construct, id *string, config *EmrInst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
 func NewEmrInstanceFleet_Override(e EmrInstanceFleet, scope constructs.Construct, id *string, config *EmrInstanceFleetConfig) {
 	_init_.Initialize()
 
@@ -601,6 +625,17 @@ func (j *jsiiProxy_EmrInstanceFleet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrInstanceFleet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1038,6 +1073,14 @@ func (e *jsiiProxy_EmrInstanceFleet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrInstanceFleet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

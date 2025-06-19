@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetRegistryIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

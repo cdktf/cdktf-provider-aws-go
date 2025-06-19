@@ -5,14 +5,14 @@ package dataawssecuritygroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssecuritygroups/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssecuritygroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/security_groups aws_security_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/security_groups aws_security_groups}.
 type DataAwsSecurityGroups interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -54,6 +54,9 @@ type DataAwsSecurityGroups interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -98,6 +101,7 @@ type DataAwsSecurityGroups interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -289,6 +293,26 @@ func (j *jsiiProxy_DataAwsSecurityGroups) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSecurityGroups) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSecurityGroups) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSecurityGroups) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -370,7 +394,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups) VpcIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/security_groups aws_security_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/security_groups aws_security_groups} Data Source.
 func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *DataAwsSecurityGroupsConfig) DataAwsSecurityGroups {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/security_groups aws_security_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/security_groups aws_security_groups} Data Source.
 func NewDataAwsSecurityGroups_Override(d DataAwsSecurityGroups, scope constructs.Construct, id *string, config *DataAwsSecurityGroupsConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,17 @@ func (j *jsiiProxy_DataAwsSecurityGroups)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSecurityGroups)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DataAwsSecurityGroups) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSecurityGroups) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

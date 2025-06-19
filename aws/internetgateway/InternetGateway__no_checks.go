@@ -115,6 +115,10 @@ func (j *jsiiProxy_InternetGateway) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_InternetGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InternetGateway) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawssecretsmanagersecretversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssecretsmanagersecretversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssecretsmanagersecretversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
 type DataAwsSecretsmanagerSecretVersion interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -52,6 +52,9 @@ type DataAwsSecretsmanagerSecretVersion interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecretBinary() *string
 	SecretId() *string
 	SetSecretId(val *string)
@@ -99,6 +102,7 @@ type DataAwsSecretsmanagerSecretVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetVersionId()
 	ResetVersionStage()
 	SynthesizeAttributes() *map[string]interface{}
@@ -270,6 +274,26 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) SecretBinary() *string {
 	var returns *string
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) VersionStages() *[]*strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version} Data Source.
 func NewDataAwsSecretsmanagerSecretVersion(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretVersionConfig) DataAwsSecretsmanagerSecretVersion {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewDataAwsSecretsmanagerSecretVersion(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_secret_version aws_secretsmanager_secret_version} Data Source.
 func NewDataAwsSecretsmanagerSecretVersion_Override(d DataAwsSecretsmanagerSecretVersion, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -473,6 +497,17 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -807,6 +842,14 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersion) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

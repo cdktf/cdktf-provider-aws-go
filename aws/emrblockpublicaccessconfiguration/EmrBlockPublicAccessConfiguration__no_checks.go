@@ -119,6 +119,10 @@ func (j *jsiiProxy_EmrBlockPublicAccessConfiguration) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_EmrBlockPublicAccessConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEmrBlockPublicAccessConfigurationParameters(scope constructs.Construct, id *string, config *EmrBlockPublicAccessConfigurationConfig) error {
 	return nil
 }

@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) validateSetLifecycle
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsConnectLambdaFunctionAssociationParameters(scope constructs.Construct, id *string, config *DataAwsConnectLambdaFunctionAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

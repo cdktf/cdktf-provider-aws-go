@@ -5,14 +5,14 @@ package vpcrouteservervpcassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcrouteservervpcassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteservervpcassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association}.
 type VpcRouteServerVpcAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type VpcRouteServerVpcAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteServerId() *string
 	SetRouteServerId(val *string)
 	RouteServerIdInput() *string
@@ -116,6 +119,7 @@ type VpcRouteServerVpcAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -265,6 +269,26 @@ func (j *jsiiProxy_VpcRouteServerVpcAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcRouteServerVpcAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcRouteServerVpcAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcRouteServerVpcAssociation) RouteServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_VpcRouteServerVpcAssociation) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association} Resource.
 func NewVpcRouteServerVpcAssociation(scope constructs.Construct, id *string, config *VpcRouteServerVpcAssociationConfig) VpcRouteServerVpcAssociation {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewVpcRouteServerVpcAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_vpc_association aws_vpc_route_server_vpc_association} Resource.
 func NewVpcRouteServerVpcAssociation_Override(v VpcRouteServerVpcAssociation, scope constructs.Construct, id *string, config *VpcRouteServerVpcAssociationConfig) {
 	_init_.Initialize()
 
@@ -449,6 +473,17 @@ func (j *jsiiProxy_VpcRouteServerVpcAssociation)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcRouteServerVpcAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -843,6 +878,14 @@ func (v *jsiiProxy_VpcRouteServerVpcAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcRouteServerVpcAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsVerifiedpermissionsPolicyStoreParameters(scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) error {
 	return nil
 }

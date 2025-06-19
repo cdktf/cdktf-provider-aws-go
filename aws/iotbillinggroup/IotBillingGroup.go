@@ -5,14 +5,14 @@ package iotbillinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotbillinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_billing_group aws_iot_billing_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_billing_group aws_iot_billing_group}.
 type IotBillingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type IotBillingGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -122,6 +125,7 @@ type IotBillingGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProperties()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -341,6 +345,26 @@ func (j *jsiiProxy_IotBillingGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IotBillingGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotBillingGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotBillingGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_IotBillingGroup) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
 func NewIotBillingGroup(scope constructs.Construct, id *string, config *IotBillingGroupConfig) IotBillingGroup {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewIotBillingGroup(scope constructs.Construct, id *string, config *IotBilli
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource.
 func NewIotBillingGroup_Override(i IotBillingGroup, scope constructs.Construct, id *string, config *IotBillingGroupConfig) {
 	_init_.Initialize()
 
@@ -516,6 +540,17 @@ func (j *jsiiProxy_IotBillingGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotBillingGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -907,6 +942,14 @@ func (i *jsiiProxy_IotBillingGroup) ResetProperties() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotBillingGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

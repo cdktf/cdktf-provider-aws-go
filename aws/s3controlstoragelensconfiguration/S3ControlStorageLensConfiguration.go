@@ -5,14 +5,14 @@ package s3controlstoragelensconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controlstoragelensconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlstoragelensconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration}.
 type S3ControlStorageLensConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -65,6 +65,9 @@ type S3ControlStorageLensConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageLensConfiguration() S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference
 	StorageLensConfigurationInput() *S3ControlStorageLensConfigurationStorageLensConfiguration
 	Tags() *map[string]*string
@@ -128,6 +131,7 @@ type S3ControlStorageLensConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -348,6 +352,26 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlStorageLensConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlStorageLensConfiguration) StorageLensConfiguration() S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference {
 	var returns S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference
 	_jsii_.Get(
@@ -439,7 +463,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
 func NewS3ControlStorageLensConfiguration(scope constructs.Construct, id *string, config *S3ControlStorageLensConfigurationConfig) S3ControlStorageLensConfiguration {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewS3ControlStorageLensConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
 func NewS3ControlStorageLensConfiguration_Override(s S3ControlStorageLensConfiguration, scope constructs.Construct, id *string, config *S3ControlStorageLensConfigurationConfig) {
 	_init_.Initialize()
 
@@ -565,6 +589,17 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -975,6 +1010,14 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

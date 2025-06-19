@@ -5,14 +5,14 @@ package dxhostedconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxhostedconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection}.
 type DxHostedConnection interface {
 	cdktf.TerraformResource
 	AwsDevice() *string
@@ -28,6 +28,7 @@ type DxHostedConnection interface {
 	ConnectionId() *string
 	SetConnectionId(val *string)
 	ConnectionIdInput() *string
+	ConnectionRegion() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -219,6 +220,16 @@ func (j *jsiiProxy_DxHostedConnection) ConnectionIdInput() *string {
 	_jsii_.Get(
 		j,
 		"connectionIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxHostedConnection) ConnectionRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionRegion",
 		&returns,
 	)
 	return returns
@@ -535,7 +546,7 @@ func (j *jsiiProxy_DxHostedConnection) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
 func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHostedConnectionConfig) DxHostedConnection {
 	_init_.Initialize()
 
@@ -553,7 +564,7 @@ func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_connection aws_dx_hosted_connection} Resource.
 func NewDxHostedConnection_Override(d DxHostedConnection, scope constructs.Construct, id *string, config *DxHostedConnectionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package mediapackagev2channelgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagev2channelgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagev2channelgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group}.
 type MediaPackagev2ChannelGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type MediaPackagev2ChannelGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -120,6 +123,7 @@ type MediaPackagev2ChannelGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_MediaPackagev2ChannelGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MediaPackagev2ChannelGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaPackagev2ChannelGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaPackagev2ChannelGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_MediaPackagev2ChannelGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource.
 func NewMediaPackagev2ChannelGroup(scope constructs.Construct, id *string, config *MediaPackagev2ChannelGroupConfig) MediaPackagev2ChannelGroup {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewMediaPackagev2ChannelGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_packagev2_channel_group aws_media_packagev2_channel_group} Resource.
 func NewMediaPackagev2ChannelGroup_Override(m MediaPackagev2ChannelGroup, scope constructs.Construct, id *string, config *MediaPackagev2ChannelGroupConfig) {
 	_init_.Initialize()
 
@@ -505,6 +529,17 @@ func (j *jsiiProxy_MediaPackagev2ChannelGroup)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaPackagev2ChannelGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (m *jsiiProxy_MediaPackagev2ChannelGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaPackagev2ChannelGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2SpotPriceParameters(scope constructs.Construct, id *string, config *DataAwsEc2SpotPriceConfig) error {
 	return nil
 }

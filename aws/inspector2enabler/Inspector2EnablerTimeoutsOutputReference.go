@@ -5,9 +5,9 @@ package inspector2enabler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspector2enabler/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspector2enabler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

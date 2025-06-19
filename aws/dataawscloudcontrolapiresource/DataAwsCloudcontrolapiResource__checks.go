@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package cloudtrail
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudtrail/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudtrail/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail aws_cloudtrail}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail aws_cloudtrail}.
 type Cloudtrail interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailAdvancedEventSelectorList
@@ -93,6 +93,9 @@ type Cloudtrail interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3BucketName() *string
 	SetS3BucketName(val *string)
 	S3BucketNameInput() *string
@@ -176,6 +179,7 @@ type Cloudtrail interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3KeyPrefix()
 	ResetSnsTopicName()
 	ResetTags()
@@ -608,6 +612,26 @@ func (j *jsiiProxy_Cloudtrail) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cloudtrail) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudtrail) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cloudtrail) S3BucketName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -749,7 +773,7 @@ func (j *jsiiProxy_Cloudtrail) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
 func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailConfig) Cloudtrail {
 	_init_.Initialize()
 
@@ -767,7 +791,7 @@ func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail aws_cloudtrail} Resource.
 func NewCloudtrail_Override(c Cloudtrail, scope constructs.Construct, id *string, config *CloudtrailConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (j *jsiiProxy_Cloudtrail)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cloudtrail)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1497,6 +1532,14 @@ func (c *jsiiProxy_Cloudtrail) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudtrail) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -437,6 +437,14 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSsoadminPermissionsBoundaryAttachmentParameters(scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

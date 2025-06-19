@@ -5,14 +5,14 @@ package computeoptimizerrecommendationpreferences
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/computeoptimizerrecommendationpreferences/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences}.
 type ComputeoptimizerRecommendationPreferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type ComputeoptimizerRecommendationPreferences interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -140,6 +143,7 @@ type ComputeoptimizerRecommendationPreferences interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredResource()
+	ResetRegion()
 	ResetSavingsEstimationMode()
 	ResetScope()
 	ResetUtilizationPreference()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) RawOverrides() int
 	return returns
 }
 
+func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) ResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) UtilizationPrefere
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
 func NewComputeoptimizerRecommendationPreferences(scope constructs.Construct, id *string, config *ComputeoptimizerRecommendationPreferencesConfig) ComputeoptimizerRecommendationPreferences {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewComputeoptimizerRecommendationPreferences(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
 func NewComputeoptimizerRecommendationPreferences_Override(c ComputeoptimizerRecommendationPreferences, scope constructs.Construct, id *string, config *ComputeoptimizerRecommendationPreferencesConfig) {
 	_init_.Initialize()
 
@@ -638,6 +662,17 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences)SetProvisioners(val
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (c *jsiiProxy_ComputeoptimizerRecommendationPreferences) ResetPreferredReso
 	_jsii_.InvokeVoid(
 		c,
 		"resetPreferredResource",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeoptimizerRecommendationPreferences) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

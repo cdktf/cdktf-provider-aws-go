@@ -111,6 +111,10 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetTransitGatewayAttachmentIdParameters(val *string) error {
 	return nil
 }

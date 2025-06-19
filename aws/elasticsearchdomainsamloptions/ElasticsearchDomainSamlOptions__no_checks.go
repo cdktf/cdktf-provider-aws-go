@@ -123,6 +123,10 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewElasticsearchDomainSamlOptionsParameters(scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) error {
 	return nil
 }

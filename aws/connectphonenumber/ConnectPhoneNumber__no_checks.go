@@ -127,6 +127,10 @@ func (j *jsiiProxy_ConnectPhoneNumber) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_ConnectPhoneNumber) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectPhoneNumber) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

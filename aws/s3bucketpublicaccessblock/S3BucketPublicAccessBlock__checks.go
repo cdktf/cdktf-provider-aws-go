@@ -467,6 +467,14 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetRestrictPublicBucketsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

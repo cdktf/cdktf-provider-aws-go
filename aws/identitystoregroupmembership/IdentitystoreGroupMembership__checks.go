@@ -423,6 +423,14 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewIdentitystoreGroupMembershipParameters(scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

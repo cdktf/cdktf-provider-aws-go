@@ -5,14 +5,14 @@ package grafanaworkspaceapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceapikey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
 type GrafanaWorkspaceApiKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type GrafanaWorkspaceApiKey interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecondsToLive() *float64
 	SetSecondsToLive(val *float64)
 	SecondsToLiveInput() *float64
@@ -124,6 +127,7 @@ type GrafanaWorkspaceApiKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -342,6 +346,26 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceApiKey) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceApiKey) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceApiKey) SecondsToLive() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -413,7 +437,7 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) GrafanaWorkspaceApiKey {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey_Override(g GrafanaWorkspaceApiKey, scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) {
 	_init_.Initialize()
 
@@ -539,6 +563,17 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceApiKey)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (g *jsiiProxy_GrafanaWorkspaceApiKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceApiKey) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

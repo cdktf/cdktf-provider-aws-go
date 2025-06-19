@@ -5,14 +5,14 @@ package dataawsnetworkinterfaces
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsnetworkinterfaces/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsnetworkinterfaces/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interfaces aws_network_interfaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interfaces aws_network_interfaces}.
 type DataAwsNetworkInterfaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsNetworkInterfaces interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -96,6 +99,7 @@ type DataAwsNetworkInterfaces interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -277,6 +281,26 @@ func (j *jsiiProxy_DataAwsNetworkInterfaces) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkInterfaces) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkInterfaces) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkInterfaces) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -348,7 +372,7 @@ func (j *jsiiProxy_DataAwsNetworkInterfaces) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
 func NewDataAwsNetworkInterfaces(scope constructs.Construct, id *string, config *DataAwsNetworkInterfacesConfig) DataAwsNetworkInterfaces {
 	_init_.Initialize()
 
@@ -366,7 +390,7 @@ func NewDataAwsNetworkInterfaces(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
 func NewDataAwsNetworkInterfaces_Override(d DataAwsNetworkInterfaces, scope constructs.Construct, id *string, config *DataAwsNetworkInterfacesConfig) {
 	_init_.Initialize()
 
@@ -430,6 +454,17 @@ func (j *jsiiProxy_DataAwsNetworkInterfaces)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkInterfaces)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -772,6 +807,14 @@ func (d *jsiiProxy_DataAwsNetworkInterfaces) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkInterfaces) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

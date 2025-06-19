@@ -111,6 +111,10 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

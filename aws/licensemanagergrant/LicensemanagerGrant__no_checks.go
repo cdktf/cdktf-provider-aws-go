@@ -127,6 +127,10 @@ func (j *jsiiProxy_LicensemanagerGrant) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_LicensemanagerGrant) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLicensemanagerGrantParameters(scope constructs.Construct, id *string, config *LicensemanagerGrantConfig) error {
 	return nil
 }

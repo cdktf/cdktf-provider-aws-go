@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetQueryAsOfTimeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetTransactionIdParameters(val *float64) error {
 	return nil
 }

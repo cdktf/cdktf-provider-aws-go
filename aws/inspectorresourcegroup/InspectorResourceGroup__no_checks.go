@@ -111,6 +111,10 @@ func (j *jsiiProxy_InspectorResourceGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_InspectorResourceGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InspectorResourceGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

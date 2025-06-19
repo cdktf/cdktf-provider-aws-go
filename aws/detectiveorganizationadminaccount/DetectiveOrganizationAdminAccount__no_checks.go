@@ -115,6 +115,10 @@ func (j *jsiiProxy_DetectiveOrganizationAdminAccount) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveOrganizationAdminAccount) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDetectiveOrganizationAdminAccountParameters(scope constructs.Construct, id *string, config *DetectiveOrganizationAdminAccountConfig) error {
 	return nil
 }

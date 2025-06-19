@@ -5,14 +5,14 @@ package backuprestoretestingplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/backuprestoretestingplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/backuprestoretestingplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan}.
 type BackupRestoreTestingPlan interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -61,6 +61,9 @@ type BackupRestoreTestingPlan interface {
 	RawOverrides() interface{}
 	RecoveryPointSelection() BackupRestoreTestingPlanRecoveryPointSelectionList
 	RecoveryPointSelectionInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
@@ -128,6 +131,7 @@ type BackupRestoreTestingPlan interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecoveryPointSelection()
+	ResetRegion()
 	ResetScheduleExpressionTimezone()
 	ResetStartWindowHours()
 	ResetTags()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_BackupRestoreTestingPlan) RecoveryPointSelectionInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_BackupRestoreTestingPlan) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupRestoreTestingPlan) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupRestoreTestingPlan) ScheduleExpression() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_BackupRestoreTestingPlan) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
 func NewBackupRestoreTestingPlan(scope constructs.Construct, id *string, config *BackupRestoreTestingPlanConfig) BackupRestoreTestingPlan {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewBackupRestoreTestingPlan(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
 func NewBackupRestoreTestingPlan_Override(b BackupRestoreTestingPlan, scope constructs.Construct, id *string, config *BackupRestoreTestingPlanConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_BackupRestoreTestingPlan)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupRestoreTestingPlan)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -978,6 +1013,14 @@ func (b *jsiiProxy_BackupRestoreTestingPlan) ResetRecoveryPointSelection() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRecoveryPointSelection",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupRestoreTestingPlan) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

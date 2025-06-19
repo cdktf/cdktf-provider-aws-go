@@ -5,14 +5,14 @@ package transferuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transferuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_user aws_transfer_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_user aws_transfer_user}.
 type TransferUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type TransferUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -150,6 +153,7 @@ type TransferUser interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetPosixProfile()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -431,6 +435,26 @@ func (j *jsiiProxy_TransferUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferUser) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -582,7 +606,7 @@ func (j *jsiiProxy_TransferUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_user aws_transfer_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_user aws_transfer_user} Resource.
 func NewTransferUser(scope constructs.Construct, id *string, config *TransferUserConfig) TransferUser {
 	_init_.Initialize()
 
@@ -600,7 +624,7 @@ func NewTransferUser(scope constructs.Construct, id *string, config *TransferUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_user aws_transfer_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_user aws_transfer_user} Resource.
 func NewTransferUser_Override(t TransferUser, scope constructs.Construct, id *string, config *TransferUserConfig) {
 	_init_.Initialize()
 
@@ -719,6 +743,17 @@ func (j *jsiiProxy_TransferUser)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1216,6 +1251,14 @@ func (t *jsiiProxy_TransferUser) ResetPosixProfile() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPosixProfile",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package timestreamqueryscheduledquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/timestreamqueryscheduledquery/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/timestreamqueryscheduledquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query}.
 type TimestreamqueryScheduledQuery interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type TimestreamqueryScheduledQuery interface {
 	RawOverrides() interface{}
 	RecentlyFailedRuns() TimestreamqueryScheduledQueryRecentlyFailedRunsList
 	RecentlyFailedRunsInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduleConfiguration() TimestreamqueryScheduledQueryScheduleConfigurationList
 	ScheduleConfigurationInput() interface{}
 	State() *string
@@ -154,6 +157,7 @@ type TimestreamqueryScheduledQuery interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecentlyFailedRuns()
+	ResetRegion()
 	ResetScheduleConfiguration()
 	ResetTags()
 	ResetTargetConfiguration()
@@ -506,6 +510,26 @@ func (j *jsiiProxy_TimestreamqueryScheduledQuery) RecentlyFailedRunsInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_TimestreamqueryScheduledQuery) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreamqueryScheduledQuery) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TimestreamqueryScheduledQuery) ScheduleConfiguration() TimestreamqueryScheduledQueryScheduleConfigurationList {
 	var returns TimestreamqueryScheduledQueryScheduleConfigurationList
 	_jsii_.Get(
@@ -637,7 +661,7 @@ func (j *jsiiProxy_TimestreamqueryScheduledQuery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
 func NewTimestreamqueryScheduledQuery(scope constructs.Construct, id *string, config *TimestreamqueryScheduledQueryConfig) TimestreamqueryScheduledQuery {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewTimestreamqueryScheduledQuery(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreamquery_scheduled_query aws_timestreamquery_scheduled_query} Resource.
 func NewTimestreamqueryScheduledQuery_Override(t TimestreamqueryScheduledQuery, scope constructs.Construct, id *string, config *TimestreamqueryScheduledQueryConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (j *jsiiProxy_TimestreamqueryScheduledQuery)SetQueryString(val *string) {
 	_jsii_.Set(
 		j,
 		"queryString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TimestreamqueryScheduledQuery)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1263,6 +1298,14 @@ func (t *jsiiProxy_TimestreamqueryScheduledQuery) ResetRecentlyFailedRuns() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetRecentlyFailedRuns",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreamqueryScheduledQuery) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

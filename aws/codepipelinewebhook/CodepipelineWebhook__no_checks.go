@@ -127,6 +127,10 @@ func (j *jsiiProxy_CodepipelineWebhook) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CodepipelineWebhook) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodepipelineWebhook) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

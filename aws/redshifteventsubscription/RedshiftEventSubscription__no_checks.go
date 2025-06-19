@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftEventSubscription) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftEventSubscription) validateSetSeverityParameters(val *string) error {
 	return nil
 }

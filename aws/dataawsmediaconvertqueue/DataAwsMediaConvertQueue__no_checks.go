@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsMediaConvertQueue) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMediaConvertQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMediaConvertQueue) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

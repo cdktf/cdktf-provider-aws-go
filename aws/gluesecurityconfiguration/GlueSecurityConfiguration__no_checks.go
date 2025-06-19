@@ -119,6 +119,10 @@ func (j *jsiiProxy_GlueSecurityConfiguration) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GlueSecurityConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueSecurityConfigurationParameters(scope constructs.Construct, id *string, config *GlueSecurityConfigurationConfig) error {
 	return nil
 }

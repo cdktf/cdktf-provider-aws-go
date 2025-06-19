@@ -127,6 +127,10 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetResponseTemplatesParameters(val *map[string]*string) error {
 	return nil
 }

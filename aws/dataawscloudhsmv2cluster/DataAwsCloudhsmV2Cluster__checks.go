@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsCloudhsmV2ClusterParameters(scope constructs.Construct, id *string, config *DataAwsCloudhsmV2ClusterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

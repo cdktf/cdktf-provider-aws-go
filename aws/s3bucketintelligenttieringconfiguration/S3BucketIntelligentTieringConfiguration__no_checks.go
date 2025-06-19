@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetStatusParameters(val *string) error {
 	return nil
 }

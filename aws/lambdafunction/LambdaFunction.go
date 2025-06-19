@@ -5,14 +5,14 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdafunction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -112,6 +112,9 @@ type LambdaFunction interface {
 	QualifiedInvokeArn() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplacementSecurityGroupIds() *[]*string
 	SetReplacementSecurityGroupIds(val *[]*string)
 	ReplacementSecurityGroupIdsInput() *[]*string
@@ -243,6 +246,7 @@ type LambdaFunction interface {
 	ResetOverrideLogicalId()
 	ResetPackageType()
 	ResetPublish()
+	ResetRegion()
 	ResetReplacementSecurityGroupIds()
 	ResetReplaceSecurityGroupsOnDestroy()
 	ResetReservedConcurrentExecutions()
@@ -847,6 +851,26 @@ func (j *jsiiProxy_LambdaFunction) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunction) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunction) ReplacementSecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1258,7 +1282,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1276,7 +1300,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -1494,6 +1518,17 @@ func (j *jsiiProxy_LambdaFunction)SetPublish(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publish",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2252,6 +2287,14 @@ func (l *jsiiProxy_LambdaFunction) ResetPublish() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublish",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpclatticeListenerRule) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeListenerRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeListenerRule) validateSetServiceIdentifierParameters(val *string) error {
 	return nil
 }

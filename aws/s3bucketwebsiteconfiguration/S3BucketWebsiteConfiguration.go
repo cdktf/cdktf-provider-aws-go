@@ -5,14 +5,14 @@ package s3bucketwebsiteconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketwebsiteconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketwebsiteconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}.
 type S3BucketWebsiteConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -70,6 +70,9 @@ type S3BucketWebsiteConfiguration interface {
 	RawOverrides() interface{}
 	RedirectAllRequestsTo() S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
 	RedirectAllRequestsToInput() *S3BucketWebsiteConfigurationRedirectAllRequestsTo
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoutingRule() S3BucketWebsiteConfigurationRoutingRuleList
 	RoutingRuleInput() interface{}
 	RoutingRules() *string
@@ -138,6 +141,7 @@ type S3BucketWebsiteConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedirectAllRequestsTo()
+	ResetRegion()
 	ResetRoutingRule()
 	ResetRoutingRules()
 	SynthesizeAttributes() *map[string]interface{}
@@ -408,6 +412,26 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) RedirectAllRequestsToInput() *S
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketWebsiteConfiguration) RoutingRule() S3BucketWebsiteConfigurationRoutingRuleList {
 	var returns S3BucketWebsiteConfigurationRoutingRuleList
 	_jsii_.Get(
@@ -499,7 +523,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) WebsiteEndpoint() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration_Override(s S3BucketWebsiteConfiguration, scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) {
 	_init_.Initialize()
 
@@ -625,6 +649,17 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketWebsiteConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1081,6 +1116,14 @@ func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetRedirectAllRequestsTo() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRedirectAllRequestsTo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

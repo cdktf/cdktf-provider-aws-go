@@ -111,6 +111,10 @@ func (j *jsiiProxy_BackupRegionSettings) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_BackupRegionSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupRegionSettings) validateSetResourceTypeManagementPreferenceParameters(val *map[string]interface{}) error {
 	return nil
 }

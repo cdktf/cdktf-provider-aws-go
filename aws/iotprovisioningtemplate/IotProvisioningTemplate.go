@@ -5,14 +5,14 @@ package iotprovisioningtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotprovisioningtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotprovisioningtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
 type IotProvisioningTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type IotProvisioningTemplate interface {
 	ProvisioningRoleArnInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -143,6 +146,7 @@ type IotProvisioningTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreProvisioningHook()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetType()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_IotProvisioningTemplate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IotProvisioningTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotProvisioningTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotProvisioningTemplate) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_IotProvisioningTemplate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
 func NewIotProvisioningTemplate(scope constructs.Construct, id *string, config *IotProvisioningTemplateConfig) IotProvisioningTemplate {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewIotProvisioningTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
 func NewIotProvisioningTemplate_Override(i IotProvisioningTemplate, scope constructs.Construct, id *string, config *IotProvisioningTemplateConfig) {
 	_init_.Initialize()
 
@@ -693,6 +717,17 @@ func (j *jsiiProxy_IotProvisioningTemplate)SetProvisioningRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"provisioningRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotProvisioningTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1141,6 +1176,14 @@ func (i *jsiiProxy_IotProvisioningTemplate) ResetPreProvisioningHook() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPreProvisioningHook",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotProvisioningTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

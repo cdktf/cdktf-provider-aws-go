@@ -123,6 +123,10 @@ func (j *jsiiProxy_SagemakerImage) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImage) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package sagemakerdevicefleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerdevicefleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerdevicefleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet}.
 type SagemakerDeviceFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type SagemakerDeviceFleet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -136,6 +139,7 @@ type SagemakerDeviceFleet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -406,6 +410,26 @@ func (j *jsiiProxy_SagemakerDeviceFleet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerDeviceFleet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDeviceFleet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerDeviceFleet) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_SagemakerDeviceFleet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet} Resource.
 func NewSagemakerDeviceFleet(scope constructs.Construct, id *string, config *SagemakerDeviceFleetConfig) SagemakerDeviceFleet {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewSagemakerDeviceFleet(scope constructs.Construct, id *string, config *Sag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_device_fleet aws_sagemaker_device_fleet} Resource.
 func NewSagemakerDeviceFleet_Override(s SagemakerDeviceFleet, scope constructs.Construct, id *string, config *SagemakerDeviceFleetConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_SagemakerDeviceFleet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerDeviceFleet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (s *jsiiProxy_SagemakerDeviceFleet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDeviceFleet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

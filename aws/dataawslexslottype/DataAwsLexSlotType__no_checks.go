@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLexSlotType) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLexSlotType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexSlotType) validateSetVersionParameters(val *string) error {
 	return nil
 }

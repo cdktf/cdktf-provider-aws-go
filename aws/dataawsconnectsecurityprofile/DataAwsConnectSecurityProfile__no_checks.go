@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectSecurityProfile) validateSetNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectSecurityProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectSecurityProfile) validateSetSecurityProfileIdParameters(val *string) error {
 	return nil
 }

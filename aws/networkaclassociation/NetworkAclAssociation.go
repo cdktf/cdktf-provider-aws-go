@@ -5,14 +5,14 @@ package networkaclassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkaclassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkaclassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl_association aws_network_acl_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl_association aws_network_acl_association}.
 type NetworkAclAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type NetworkAclAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -117,6 +120,7 @@ type NetworkAclAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_NetworkAclAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkAclAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkAclAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkAclAssociation) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_NetworkAclAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl_association aws_network_acl_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl_association aws_network_acl_association} Resource.
 func NewNetworkAclAssociation(scope constructs.Construct, id *string, config *NetworkAclAssociationConfig) NetworkAclAssociation {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewNetworkAclAssociation(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_acl_association aws_network_acl_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_acl_association aws_network_acl_association} Resource.
 func NewNetworkAclAssociation_Override(n NetworkAclAssociation, scope constructs.Construct, id *string, config *NetworkAclAssociationConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_NetworkAclAssociation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkAclAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (n *jsiiProxy_NetworkAclAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkAclAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

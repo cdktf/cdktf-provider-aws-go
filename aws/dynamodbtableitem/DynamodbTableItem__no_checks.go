@@ -123,6 +123,10 @@ func (j *jsiiProxy_DynamodbTableItem) validateSetRangeKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableItem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableItem) validateSetTableNameParameters(val *string) error {
 	return nil
 }

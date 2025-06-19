@@ -127,6 +127,10 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

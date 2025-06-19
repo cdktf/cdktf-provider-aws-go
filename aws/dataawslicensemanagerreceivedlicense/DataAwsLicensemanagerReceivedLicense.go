@@ -5,14 +5,14 @@ package dataawslicensemanagerreceivedlicense
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslicensemanagerreceivedlicense/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslicensemanagerreceivedlicense/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
 type DataAwsLicensemanagerReceivedLicense interface {
 	cdktf.TerraformDataSource
 	Beneficiary() *string
@@ -64,6 +64,9 @@ type DataAwsLicensemanagerReceivedLicense interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReceivedMetadata() DataAwsLicensemanagerReceivedLicenseReceivedMetadataList
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -102,6 +105,7 @@ type DataAwsLicensemanagerReceivedLicense interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -381,6 +385,26 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) ReceivedMetadata() Data
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -442,7 +466,7 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
 func NewDataAwsLicensemanagerReceivedLicense(scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicenseConfig) DataAwsLicensemanagerReceivedLicense {
 	_init_.Initialize()
 
@@ -460,7 +484,7 @@ func NewDataAwsLicensemanagerReceivedLicense(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
 func NewDataAwsLicensemanagerReceivedLicense_Override(d DataAwsLicensemanagerReceivedLicense, scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicenseConfig) {
 	_init_.Initialize()
 
@@ -535,6 +559,17 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -836,6 +871,14 @@ func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicense) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicense) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

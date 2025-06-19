@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsServicequotasTemplates) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplates) validatePutTemplatesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsServicequotasTemplates_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,6 +68,10 @@ func validateDataAwsServicequotasTemplates_IsTerraformDataSourceParameters(x int
 }
 
 func validateDataAwsServicequotasTemplates_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsServicequotasTemplates) validateSetAwsRegionParameters(val *string) error {
 	return nil
 }
 

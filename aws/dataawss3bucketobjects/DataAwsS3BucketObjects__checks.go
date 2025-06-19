@@ -287,6 +287,14 @@ func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetPrefixParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetStartAfterParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package eksaccesspolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/eksaccesspolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/eksaccesspolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association}.
 type EksAccessPolicyAssociation interface {
 	cdktf.TerraformResource
 	AccessScope() EksAccessPolicyAssociationAccessScopeOutputReference
@@ -71,6 +71,9 @@ type EksAccessPolicyAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type EksAccessPolicyAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -397,6 +401,26 @@ func (j *jsiiProxy_EksAccessPolicyAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EksAccessPolicyAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAccessPolicyAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksAccessPolicyAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -448,7 +472,7 @@ func (j *jsiiProxy_EksAccessPolicyAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association} Resource.
 func NewEksAccessPolicyAssociation(scope constructs.Construct, id *string, config *EksAccessPolicyAssociationConfig) EksAccessPolicyAssociation {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewEksAccessPolicyAssociation(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_access_policy_association aws_eks_access_policy_association} Resource.
 func NewEksAccessPolicyAssociation_Override(e EksAccessPolicyAssociation, scope constructs.Construct, id *string, config *EksAccessPolicyAssociationConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_EksAccessPolicyAssociation)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAccessPolicyAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (e *jsiiProxy_EksAccessPolicyAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAccessPolicyAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

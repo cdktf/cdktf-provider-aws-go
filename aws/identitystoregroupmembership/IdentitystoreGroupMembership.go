@@ -5,14 +5,14 @@ package identitystoregroupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/identitystoregroupmembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/identitystoregroupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
 type IdentitystoreGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type IdentitystoreGroupMembership interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type IdentitystoreGroupMembership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -359,6 +363,26 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentitystoreGroupMembership) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentitystoreGroupMembership) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentitystoreGroupMembership) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) IdentitystoreGroupMembership {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership_Override(i IdentitystoreGroupMembership, scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -527,6 +551,17 @@ func (j *jsiiProxy_IdentitystoreGroupMembership)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentitystoreGroupMembership)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (i *jsiiProxy_IdentitystoreGroupMembership) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentitystoreGroupMembership) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

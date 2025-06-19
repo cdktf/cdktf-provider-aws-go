@@ -119,6 +119,10 @@ func (j *jsiiProxy_CloudwatchEventBusPolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventBusPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudwatchEventBusPolicyParameters(scope constructs.Construct, id *string, config *CloudwatchEventBusPolicyConfig) error {
 	return nil
 }

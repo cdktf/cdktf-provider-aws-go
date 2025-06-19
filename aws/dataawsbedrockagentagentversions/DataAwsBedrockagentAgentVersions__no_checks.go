@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBedrockagentAgentVersions) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBedrockagentAgentVersions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsBedrockagentAgentVersionsParameters(scope constructs.Construct, id *string, config *DataAwsBedrockagentAgentVersionsConfig) error {
 	return nil
 }

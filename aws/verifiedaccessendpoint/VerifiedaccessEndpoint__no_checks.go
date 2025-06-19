@@ -163,6 +163,10 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

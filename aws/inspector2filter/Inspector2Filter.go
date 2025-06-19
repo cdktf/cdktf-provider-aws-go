@@ -5,14 +5,14 @@ package inspector2filter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspector2filter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspector2filter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_filter aws_inspector2_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_filter aws_inspector2_filter}.
 type Inspector2Filter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -70,6 +70,9 @@ type Inspector2Filter interface {
 	Reason() *string
 	SetReason(val *string)
 	ReasonInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -130,6 +133,7 @@ type Inspector2Filter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReason()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -389,6 +393,26 @@ func (j *jsiiProxy_Inspector2Filter) ReasonInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Inspector2Filter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2Filter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Inspector2Filter) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_Inspector2Filter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
 func NewInspector2Filter(scope constructs.Construct, id *string, config *Inspector2FilterConfig) Inspector2Filter {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewInspector2Filter(scope constructs.Construct, id *string, config *Inspect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
 func NewInspector2Filter_Override(i Inspector2Filter, scope constructs.Construct, id *string, config *Inspector2FilterConfig) {
 	_init_.Initialize()
 
@@ -587,6 +611,17 @@ func (j *jsiiProxy_Inspector2Filter)SetReason(val *string) {
 	_jsii_.Set(
 		j,
 		"reason",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Inspector2Filter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -994,6 +1029,14 @@ func (i *jsiiProxy_Inspector2Filter) ResetReason() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetReason",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2Filter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

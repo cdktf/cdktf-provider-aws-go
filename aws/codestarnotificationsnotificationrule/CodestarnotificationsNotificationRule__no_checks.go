@@ -127,6 +127,10 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetResourceParameters(val *string) error {
 	return nil
 }

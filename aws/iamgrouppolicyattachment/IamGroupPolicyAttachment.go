@@ -5,14 +5,14 @@ package iamgrouppolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iamgrouppolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamgrouppolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment}.
 type IamGroupPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IamGroupPolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment} Resource.
 func NewIamGroupPolicyAttachment(scope constructs.Construct, id *string, config *IamGroupPolicyAttachmentConfig) IamGroupPolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIamGroupPolicyAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_group_policy_attachment aws_iam_group_policy_attachment} Resource.
 func NewIamGroupPolicyAttachment_Override(i IamGroupPolicyAttachment, scope constructs.Construct, id *string, config *IamGroupPolicyAttachmentConfig) {
 	_init_.Initialize()
 

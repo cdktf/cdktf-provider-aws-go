@@ -147,6 +147,10 @@ func (j *jsiiProxy_CodebuildFleet) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildFleet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

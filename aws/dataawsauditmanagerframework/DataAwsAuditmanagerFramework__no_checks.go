@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerFramework) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFramework) validatePutControlSetsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsAuditmanagerFramework_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +84,10 @@ func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetLifecycleParameters(
 }
 
 func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

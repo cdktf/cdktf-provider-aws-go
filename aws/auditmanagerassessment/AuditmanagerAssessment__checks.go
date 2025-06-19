@@ -508,6 +508,14 @@ func (j *jsiiProxy_AuditmanagerAssessment) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAssessment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerAssessment) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -119,6 +119,10 @@ func (j *jsiiProxy_IotThing) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_IotThing) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThing) validateSetThingTypeNameParameters(val *string) error {
 	return nil
 }

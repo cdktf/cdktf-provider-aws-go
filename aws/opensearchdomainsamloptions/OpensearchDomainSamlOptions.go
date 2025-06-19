@@ -5,14 +5,14 @@ package opensearchdomainsamloptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchdomainsamloptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchdomainsamloptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options}.
 type OpensearchDomainSamlOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type OpensearchDomainSamlOptions interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SamlOptions() OpensearchDomainSamlOptionsSamlOptionsOutputReference
 	SamlOptionsInput() *OpensearchDomainSamlOptionsSamlOptions
 	// Experimental.
@@ -120,6 +123,7 @@ type OpensearchDomainSamlOptions interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSamlOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -310,6 +314,26 @@ func (j *jsiiProxy_OpensearchDomainSamlOptions) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchDomainSamlOptions) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainSamlOptions) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchDomainSamlOptions) SamlOptions() OpensearchDomainSamlOptionsSamlOptionsOutputReference {
 	var returns OpensearchDomainSamlOptionsSamlOptionsOutputReference
 	_jsii_.Get(
@@ -381,7 +405,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
 func NewOpensearchDomainSamlOptions(scope constructs.Construct, id *string, config *OpensearchDomainSamlOptionsConfig) OpensearchDomainSamlOptions {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewOpensearchDomainSamlOptions(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
 func NewOpensearchDomainSamlOptions_Override(o OpensearchDomainSamlOptions, scope constructs.Construct, id *string, config *OpensearchDomainSamlOptionsConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_OpensearchDomainSamlOptions)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomainSamlOptions)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -887,6 +922,14 @@ func (o *jsiiProxy_OpensearchDomainSamlOptions) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomainSamlOptions) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

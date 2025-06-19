@@ -123,6 +123,10 @@ func (j *jsiiProxy_GlacierVault) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_GlacierVault) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlacierVault) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

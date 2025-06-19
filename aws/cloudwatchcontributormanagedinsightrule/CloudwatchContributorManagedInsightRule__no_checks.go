@@ -107,6 +107,10 @@ func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

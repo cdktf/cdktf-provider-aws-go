@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordO
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) validateSetInternalValueParameters(val *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword) error {
 	return nil
 }
 

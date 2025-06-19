@@ -119,6 +119,10 @@ func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3ControlBucketLifecycleConfigurationParameters(scope constructs.Construct, id *string, config *S3ControlBucketLifecycleConfigurationConfig) error {
 	return nil
 }

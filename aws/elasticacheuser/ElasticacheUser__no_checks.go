@@ -135,6 +135,10 @@ func (j *jsiiProxy_ElasticacheUser) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheUser) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

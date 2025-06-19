@@ -5,14 +5,14 @@ package lexv2modelsbotlocale
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexv2modelsbotlocale/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexv2modelsbotlocale/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}.
 type Lexv2ModelsBotLocale interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -74,6 +74,9 @@ type Lexv2ModelsBotLocale interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -134,6 +137,7 @@ type Lexv2ModelsBotLocale interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetVoiceSettings()
 	SynthesizeAttributes() *map[string]interface{}
@@ -414,6 +418,26 @@ func (j *jsiiProxy_Lexv2ModelsBotLocale) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lexv2ModelsBotLocale) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lexv2ModelsBotLocale) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lexv2ModelsBotLocale) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_Lexv2ModelsBotLocale) VoiceSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
 func NewLexv2ModelsBotLocale(scope constructs.Construct, id *string, config *Lexv2ModelsBotLocaleConfig) Lexv2ModelsBotLocale {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewLexv2ModelsBotLocale(scope constructs.Construct, id *string, config *Lex
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
 func NewLexv2ModelsBotLocale_Override(l Lexv2ModelsBotLocale, scope constructs.Construct, id *string, config *Lexv2ModelsBotLocaleConfig) {
 	_init_.Initialize()
 
@@ -644,6 +668,17 @@ func (j *jsiiProxy_Lexv2ModelsBotLocale)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lexv2ModelsBotLocale)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1043,6 +1078,14 @@ func (l *jsiiProxy_Lexv2ModelsBotLocale) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lexv2ModelsBotLocale) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

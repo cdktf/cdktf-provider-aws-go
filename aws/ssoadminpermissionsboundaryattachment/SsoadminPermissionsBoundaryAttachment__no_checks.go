@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsoadminPermissionsBoundaryAttachmentParameters(scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) error {
 	return nil
 }

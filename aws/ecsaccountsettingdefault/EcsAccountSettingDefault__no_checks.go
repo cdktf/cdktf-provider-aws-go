@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcsAccountSettingDefault) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EcsAccountSettingDefault) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsAccountSettingDefault) validateSetValueParameters(val *string) error {
 	return nil
 }

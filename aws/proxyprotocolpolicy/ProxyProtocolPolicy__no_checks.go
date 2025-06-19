@@ -119,6 +119,10 @@ func (j *jsiiProxy_ProxyProtocolPolicy) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ProxyProtocolPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewProxyProtocolPolicyParameters(scope constructs.Construct, id *string, config *ProxyProtocolPolicyConfig) error {
 	return nil
 }

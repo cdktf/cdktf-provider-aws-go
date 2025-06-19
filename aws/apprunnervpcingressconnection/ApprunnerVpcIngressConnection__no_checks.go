@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetServiceArnParameters(val *string) error {
 	return nil
 }

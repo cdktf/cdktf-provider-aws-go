@@ -5,14 +5,14 @@ package memorydbacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/memorydbacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/memorydbacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_acl aws_memorydb_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_acl aws_memorydb_acl}.
 type MemorydbAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type MemorydbAcl interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -130,6 +133,7 @@ type MemorydbAcl interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetUserNames()
@@ -361,6 +365,26 @@ func (j *jsiiProxy_MemorydbAcl) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MemorydbAcl) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbAcl) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorydbAcl) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_MemorydbAcl) UserNamesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_acl aws_memorydb_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_acl aws_memorydb_acl} Resource.
 func NewMemorydbAcl(scope constructs.Construct, id *string, config *MemorydbAclConfig) MemorydbAcl {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewMemorydbAcl(scope constructs.Construct, id *string, config *MemorydbAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_acl aws_memorydb_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_acl aws_memorydb_acl} Resource.
 func NewMemorydbAcl_Override(m MemorydbAcl, scope constructs.Construct, id *string, config *MemorydbAclConfig) {
 	_init_.Initialize()
 
@@ -578,6 +602,17 @@ func (j *jsiiProxy_MemorydbAcl)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorydbAcl)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -996,6 +1031,14 @@ func (m *jsiiProxy_MemorydbAcl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbAcl) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

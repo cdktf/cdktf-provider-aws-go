@@ -5,14 +5,14 @@ package macie2customdataidentifier
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2customdataidentifier/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2customdataidentifier/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier}.
 type Macie2CustomDataIdentifier interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -81,6 +81,9 @@ type Macie2CustomDataIdentifier interface {
 	Regex() *string
 	SetRegex(val *string)
 	RegexInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -150,6 +153,7 @@ type Macie2CustomDataIdentifier interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegex()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -481,6 +485,26 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) RegexInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2CustomDataIdentifier) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2CustomDataIdentifier) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Macie2CustomDataIdentifier) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -572,7 +596,7 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) Macie2CustomDataIdentifier {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_custom_data_identifier aws_macie2_custom_data_identifier} Resource.
 func NewMacie2CustomDataIdentifier_Override(m Macie2CustomDataIdentifier, scope constructs.Construct, id *string, config *Macie2CustomDataIdentifierConfig) {
 	_init_.Initialize()
 
@@ -753,6 +777,17 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier)SetRegex(val *string) {
 	_jsii_.Set(
 		j,
 		"regex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2CustomDataIdentifier)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1211,6 +1246,14 @@ func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetRegex() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRegex",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2CustomDataIdentifier) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

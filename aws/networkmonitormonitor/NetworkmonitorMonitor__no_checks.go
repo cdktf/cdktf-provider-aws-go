@@ -115,6 +115,10 @@ func (j *jsiiProxy_NetworkmonitorMonitor) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmonitorMonitor) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmonitorMonitor) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

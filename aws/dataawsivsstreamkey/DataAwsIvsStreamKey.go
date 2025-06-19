@@ -5,14 +5,14 @@ package dataawsivsstreamkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsivsstreamkey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsivsstreamkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
 type DataAwsIvsStreamKey interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,9 @@ type DataAwsIvsStreamKey interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -93,6 +96,7 @@ type DataAwsIvsStreamKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -273,6 +277,26 @@ func (j *jsiiProxy_DataAwsIvsStreamKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIvsStreamKey) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIvsStreamKey) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIvsStreamKey) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -334,7 +358,7 @@ func (j *jsiiProxy_DataAwsIvsStreamKey) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key} Data Source.
 func NewDataAwsIvsStreamKey(scope constructs.Construct, id *string, config *DataAwsIvsStreamKeyConfig) DataAwsIvsStreamKey {
 	_init_.Initialize()
 
@@ -352,7 +376,7 @@ func NewDataAwsIvsStreamKey(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key} Data Source.
 func NewDataAwsIvsStreamKey_Override(d DataAwsIvsStreamKey, scope constructs.Construct, id *string, config *DataAwsIvsStreamKeyConfig) {
 	_init_.Initialize()
 
@@ -427,6 +451,17 @@ func (j *jsiiProxy_DataAwsIvsStreamKey)SetProvider(val cdktf.TerraformProvider) 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsIvsStreamKey)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -739,6 +774,14 @@ func (d *jsiiProxy_DataAwsIvsStreamKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIvsStreamKey) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

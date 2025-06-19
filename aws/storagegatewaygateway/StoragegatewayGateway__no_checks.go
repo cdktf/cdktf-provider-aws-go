@@ -163,6 +163,10 @@ func (j *jsiiProxy_StoragegatewayGateway) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayGateway) validateSetSmbFileShareVisibilityParameters(val interface{}) error {
 	return nil
 }

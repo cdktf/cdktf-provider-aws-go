@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEc2PublicIpv4Pools) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2PublicIpv4Pools) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2PublicIpv4Pools) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

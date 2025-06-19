@@ -5,14 +5,14 @@ package dynamodbtableitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dynamodbtableitem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}.
 type DynamodbTableItem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type DynamodbTableItem interface {
 	RangeKeyInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -124,6 +127,7 @@ type DynamodbTableItem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRangeKey()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -352,6 +356,26 @@ func (j *jsiiProxy_DynamodbTableItem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTableItem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableItem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTableItem) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_DynamodbTableItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource.
 func NewDynamodbTableItem(scope constructs.Construct, id *string, config *DynamodbTableItemConfig) DynamodbTableItem {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewDynamodbTableItem(scope constructs.Construct, id *string, config *Dynamo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource.
 func NewDynamodbTableItem_Override(d DynamodbTableItem, scope constructs.Construct, id *string, config *DynamodbTableItemConfig) {
 	_init_.Initialize()
 
@@ -540,6 +564,17 @@ func (j *jsiiProxy_DynamodbTableItem)SetRangeKey(val *string) {
 	_jsii_.Set(
 		j,
 		"rangeKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableItem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -928,6 +963,14 @@ func (d *jsiiProxy_DynamodbTableItem) ResetRangeKey() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRangeKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableItem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessNamespace) validateSetNamespaceNameP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessNamespace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRedshiftserverlessNamespaceParameters(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessNamespaceConfig) error {
 	return nil
 }

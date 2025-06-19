@@ -119,6 +119,10 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEmrManagedScalingPolicyParameters(scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) error {
 	return nil
 }

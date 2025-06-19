@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudwatchEventSource) validateSetNamePrefixParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchEventSource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCloudwatchEventSourceParameters(scope constructs.Construct, id *string, config *DataAwsCloudwatchEventSourceConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package quicksightaccountsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightaccountsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightaccountsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
 type QuicksightAccountSubscription interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -107,6 +107,9 @@ type QuicksightAccountSubscription interface {
 	Realm() *string
 	SetRealm(val *string)
 	RealmInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -175,6 +178,7 @@ type QuicksightAccountSubscription interface {
 	ResetOverrideLogicalId()
 	ResetReaderGroup()
 	ResetRealm()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -674,6 +678,26 @@ func (j *jsiiProxy_QuicksightAccountSubscription) RealmInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -725,7 +749,7 @@ func (j *jsiiProxy_QuicksightAccountSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription {
 	_init_.Initialize()
 
@@ -743,7 +767,7 @@ func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription_Override(q QuicksightAccountSubscription, scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1005,6 +1029,17 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetRealm(val *string) {
 	_jsii_.Set(
 		j,
 		"realm",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1481,6 +1516,14 @@ func (q *jsiiProxy_QuicksightAccountSubscription) ResetRealm() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetRealm",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAccountSubscription) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_DetectiveGraph) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveGraph) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveGraph) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

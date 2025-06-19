@@ -5,14 +5,14 @@ package apigatewayv2integration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayv2integration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayv2integration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration}.
 type Apigatewayv2Integration interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -95,6 +95,9 @@ type Apigatewayv2Integration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequestParameters() *map[string]*string
 	SetRequestParameters(val *map[string]*string)
 	RequestParametersInput() *map[string]*string
@@ -176,6 +179,7 @@ type Apigatewayv2Integration interface {
 	ResetOverrideLogicalId()
 	ResetPassthroughBehavior()
 	ResetPayloadFormatVersion()
+	ResetRegion()
 	ResetRequestParameters()
 	ResetRequestTemplates()
 	ResetResponseParameters()
@@ -600,6 +604,26 @@ func (j *jsiiProxy_Apigatewayv2Integration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Apigatewayv2Integration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Apigatewayv2Integration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Apigatewayv2Integration) RequestParameters() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -751,7 +775,7 @@ func (j *jsiiProxy_Apigatewayv2Integration) TlsConfigInput() *Apigatewayv2Integr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
 func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *Apigatewayv2IntegrationConfig) Apigatewayv2Integration {
 	_init_.Initialize()
 
@@ -769,7 +793,7 @@ func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
 func NewApigatewayv2Integration_Override(a Apigatewayv2Integration, scope constructs.Construct, id *string, config *Apigatewayv2IntegrationConfig) {
 	_init_.Initialize()
 
@@ -987,6 +1011,17 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Apigatewayv2Integration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1502,6 +1537,14 @@ func (a *jsiiProxy_Apigatewayv2Integration) ResetPayloadFormatVersion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPayloadFormatVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Apigatewayv2Integration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

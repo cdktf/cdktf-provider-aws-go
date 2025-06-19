@@ -5,14 +5,14 @@ package ecrrepositorycreationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecrrepositorycreationtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrrepositorycreationtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
 type EcrRepositoryCreationTemplate interface {
 	cdktf.TerraformResource
 	AppliedFor() *[]*string
@@ -78,6 +78,9 @@ type EcrRepositoryCreationTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistryId() *string
 	RepositoryPolicy() *string
 	SetRepositoryPolicy(val *string)
@@ -144,6 +147,7 @@ type EcrRepositoryCreationTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRepositoryPolicy()
 	ResetResourceTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -454,6 +458,26 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EcrRepositoryCreationTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrRepositoryCreationTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcrRepositoryCreationTemplate) RegistryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) EcrRepositoryCreationTemplate {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate_Override(e EcrRepositoryCreationTemplate, scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) {
 	_init_.Initialize()
 
@@ -705,6 +729,17 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcrRepositoryCreationTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1147,6 +1182,14 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcrRepositoryCreationTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_ImagebuilderComponent) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderComponent) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderComponent) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

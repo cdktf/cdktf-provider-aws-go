@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

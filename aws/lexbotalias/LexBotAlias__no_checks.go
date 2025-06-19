@@ -135,6 +135,10 @@ func (j *jsiiProxy_LexBotAlias) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_LexBotAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLexBotAliasParameters(scope constructs.Construct, id *string, config *LexBotAliasConfig) error {
 	return nil
 }

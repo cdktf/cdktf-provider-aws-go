@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSignerSigningProfile) validateSetNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSignerSigningProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSignerSigningProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

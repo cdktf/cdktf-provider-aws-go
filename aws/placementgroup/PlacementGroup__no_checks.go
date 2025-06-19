@@ -119,6 +119,10 @@ func (j *jsiiProxy_PlacementGroup) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_PlacementGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PlacementGroup) validateSetSpreadLevelParameters(val *string) error {
 	return nil
 }

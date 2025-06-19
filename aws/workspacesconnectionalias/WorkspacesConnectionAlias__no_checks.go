@@ -115,6 +115,10 @@ func (j *jsiiProxy_WorkspacesConnectionAlias) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_WorkspacesConnectionAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesConnectionAlias) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validatePutControlsParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateSetInternalValueParameters(val *DataAwsAuditmanagerFrameworkControlSets) error {
 	return nil
 }
 

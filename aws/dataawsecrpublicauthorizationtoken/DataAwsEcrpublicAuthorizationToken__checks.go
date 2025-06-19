@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsEcrpublicAuthorizationTokenParameters(scope constructs.Construct, id *string, config *DataAwsEcrpublicAuthorizationTokenConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -5,14 +5,14 @@ package dataawsdynamodbtableitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdynamodbtableitem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdynamodbtableitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
 type DataAwsDynamodbTableItem interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,9 @@ type DataAwsDynamodbTableItem interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -100,6 +103,7 @@ type DataAwsDynamodbTableItem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectionExpression()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -319,6 +323,26 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTableItem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTableItem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTableItem) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,7 +394,7 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
 func NewDataAwsDynamodbTableItem(scope constructs.Construct, id *string, config *DataAwsDynamodbTableItemConfig) DataAwsDynamodbTableItem {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewDataAwsDynamodbTableItem(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
 func NewDataAwsDynamodbTableItem_Override(d DataAwsDynamodbTableItem, scope constructs.Construct, id *string, config *DataAwsDynamodbTableItemConfig) {
 	_init_.Initialize()
 
@@ -485,6 +509,17 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTableItem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -813,6 +848,14 @@ func (d *jsiiProxy_DataAwsDynamodbTableItem) ResetProjectionExpression() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProjectionExpression",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDynamodbTableItem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

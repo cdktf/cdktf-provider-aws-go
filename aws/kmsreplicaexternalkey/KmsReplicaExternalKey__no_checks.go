@@ -139,6 +139,10 @@ func (j *jsiiProxy_KmsReplicaExternalKey) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_KmsReplicaExternalKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsReplicaExternalKey) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

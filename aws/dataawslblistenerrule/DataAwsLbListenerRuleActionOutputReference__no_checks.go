@@ -47,7 +47,23 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validateInterpola
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutForwardParameters(value *DataAwsLbListenerRuleActionForward) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutAuthenticateCognitoParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutAuthenticateOidcParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutFixedResponseParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutForwardParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutRedirectParameters(value interface{}) error {
 	return nil
 }
 

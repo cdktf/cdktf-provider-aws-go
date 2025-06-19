@@ -5,14 +5,14 @@ package dataawsroute53resolverfirewallrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsroute53resolverfirewallrules/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute53resolverfirewallrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules}.
 type DataAwsRoute53ResolverFirewallRules interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -60,6 +60,9 @@ type DataAwsRoute53ResolverFirewallRules interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -97,6 +100,7 @@ type DataAwsRoute53ResolverFirewallRules interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -316,6 +320,26 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -347,7 +371,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
 func NewDataAwsRoute53ResolverFirewallRules(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) DataAwsRoute53ResolverFirewallRules {
 	_init_.Initialize()
 
@@ -365,7 +389,7 @@ func NewDataAwsRoute53ResolverFirewallRules(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
 func NewDataAwsRoute53ResolverFirewallRules_Override(d DataAwsRoute53ResolverFirewallRules, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) {
 	_init_.Initialize()
 
@@ -462,6 +486,17 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -779,6 +814,14 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRules) ResetPriority() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRules) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

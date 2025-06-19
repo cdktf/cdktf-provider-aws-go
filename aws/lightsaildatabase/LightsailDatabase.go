@@ -5,14 +5,14 @@ package lightsaildatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildatabase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_database aws_lightsail_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_database aws_lightsail_database}.
 type LightsailDatabase interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -104,6 +104,9 @@ type LightsailDatabase interface {
 	RamSize() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RelationalDatabaseName() *string
 	SetRelationalDatabaseName(val *string)
 	RelationalDatabaseNameInput() *string
@@ -178,6 +181,7 @@ type LightsailDatabase interface {
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetSkipFinalSnapshot()
 	ResetTags()
 	ResetTagsAll()
@@ -689,6 +693,26 @@ func (j *jsiiProxy_LightsailDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailDatabase) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailDatabase) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailDatabase) RelationalDatabaseName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -820,7 +844,7 @@ func (j *jsiiProxy_LightsailDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
 func NewLightsailDatabase(scope constructs.Construct, id *string, config *LightsailDatabaseConfig) LightsailDatabase {
 	_init_.Initialize()
 
@@ -838,7 +862,7 @@ func NewLightsailDatabase(scope constructs.Construct, id *string, config *Lights
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
 func NewLightsailDatabase_Override(l LightsailDatabase, scope constructs.Construct, id *string, config *LightsailDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1056,6 +1080,17 @@ func (j *jsiiProxy_LightsailDatabase)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailDatabase)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1525,6 +1560,14 @@ func (l *jsiiProxy_LightsailDatabase) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailDatabase) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package bedrockmodelinvocationloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockmodelinvocationloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockmodelinvocationloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
 type BedrockModelInvocationLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,7 +44,7 @@ type BedrockModelInvocationLoggingConfiguration interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LoggingConfig() BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference
+	LoggingConfig() BedrockModelInvocationLoggingConfigurationLoggingConfigList
 	LoggingConfigInput() interface{}
 	// The tree node.
 	Node() constructs.Node
@@ -58,6 +58,9 @@ type BedrockModelInvocationLoggingConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,11 +110,12 @@ type BedrockModelInvocationLoggingConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLoggingConfig(value *BedrockModelInvocationLoggingConfigurationLoggingConfig)
+	PutLoggingConfig(value interface{})
 	ResetLoggingConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -230,8 +234,8 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) Lifecycle() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) LoggingConfig() BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference {
-	var returns BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) LoggingConfig() BedrockModelInvocationLoggingConfigurationLoggingConfigList {
+	var returns BedrockModelInvocationLoggingConfigurationLoggingConfigList
 	_jsii_.Get(
 		j,
 		"loggingConfig",
@@ -290,6 +294,26 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) BedrockModelInvocationLoggingConfiguration {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration_Override(b BedrockModelInvocationLoggingConfiguration, scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration)SetProvisioners(va
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -771,7 +806,7 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) OverrideLogicalId
 	)
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) PutLoggingConfig(value *BedrockModelInvocationLoggingConfigurationLoggingConfig) {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) PutLoggingConfig(value interface{}) {
 	if err := b.validatePutLoggingConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -794,6 +829,14 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

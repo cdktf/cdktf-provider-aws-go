@@ -123,6 +123,10 @@ func (j *jsiiProxy_SesConfigurationSet) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_SesConfigurationSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesConfigurationSet) validateSetReputationMetricsEnabledParameters(val interface{}) error {
 	return nil
 }

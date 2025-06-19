@@ -447,6 +447,14 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_LambdaLayerVersion) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaLayerVersion) validateSetS3BucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

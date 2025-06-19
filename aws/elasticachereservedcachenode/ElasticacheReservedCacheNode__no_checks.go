@@ -119,6 +119,10 @@ func (j *jsiiProxy_ElasticacheReservedCacheNode) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReservedCacheNode) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReservedCacheNode) validateSetReservedCacheNodesOfferingIdParameters(val *string) error {
 	return nil
 }

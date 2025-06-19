@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApprunnerVpcConnector) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerVpcConnector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerVpcConnector) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

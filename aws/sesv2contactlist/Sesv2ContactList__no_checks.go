@@ -123,6 +123,10 @@ func (j *jsiiProxy_Sesv2ContactList) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ContactList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ContactList) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

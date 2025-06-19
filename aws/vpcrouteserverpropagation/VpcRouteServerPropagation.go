@@ -5,14 +5,14 @@ package vpcrouteserverpropagation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcrouteserverpropagation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcrouteserverpropagation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
 type VpcRouteServerPropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type VpcRouteServerPropagation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteServerId() *string
 	SetRouteServerId(val *string)
 	RouteServerIdInput() *string
@@ -116,6 +119,7 @@ type VpcRouteServerPropagation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -265,6 +269,26 @@ func (j *jsiiProxy_VpcRouteServerPropagation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcRouteServerPropagation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcRouteServerPropagation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcRouteServerPropagation) RouteServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_VpcRouteServerPropagation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
 func NewVpcRouteServerPropagation(scope constructs.Construct, id *string, config *VpcRouteServerPropagationConfig) VpcRouteServerPropagation {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewVpcRouteServerPropagation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
 func NewVpcRouteServerPropagation_Override(v VpcRouteServerPropagation, scope constructs.Construct, id *string, config *VpcRouteServerPropagationConfig) {
 	_init_.Initialize()
 
@@ -449,6 +473,17 @@ func (j *jsiiProxy_VpcRouteServerPropagation)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcRouteServerPropagation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -843,6 +878,14 @@ func (v *jsiiProxy_VpcRouteServerPropagation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcRouteServerPropagation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

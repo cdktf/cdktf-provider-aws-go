@@ -143,6 +143,10 @@ func (j *jsiiProxy_Apigatewayv2Route) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Route) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Route) validateSetRequestModelsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SecurityhubStandardsControl) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubStandardsControl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubStandardsControl) validateSetStandardsControlArnParameters(val *string) error {
 	return nil
 }

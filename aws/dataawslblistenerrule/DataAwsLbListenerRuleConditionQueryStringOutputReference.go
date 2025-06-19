@@ -5,9 +5,9 @@ package dataawslblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -174,29 +174,29 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) Val
 }
 
 
-func NewDataAwsLbListenerRuleConditionQueryStringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsLbListenerRuleConditionQueryStringOutputReference {
+func NewDataAwsLbListenerRuleConditionQueryStringOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsLbListenerRuleConditionQueryStringOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAwsLbListenerRuleConditionQueryStringOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAwsLbListenerRuleConditionQueryStringOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAwsLbListenerRuleConditionQueryStringOutputReference_Override(d DataAwsLbListenerRuleConditionQueryStringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAwsLbListenerRuleConditionQueryStringOutputReference_Override(d DataAwsLbListenerRuleConditionQueryStringOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleConditionQueryStringOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }

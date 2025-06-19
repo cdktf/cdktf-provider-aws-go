@@ -115,6 +115,10 @@ func (j *jsiiProxy_GlueRegistry) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_GlueRegistry) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueRegistry) validateSetRegistryNameParameters(val *string) error {
 	return nil
 }

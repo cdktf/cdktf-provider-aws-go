@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudwatchLogGroup) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogGroup) validateSetRetentionInDaysParameters(val *float64) error {
 	return nil
 }

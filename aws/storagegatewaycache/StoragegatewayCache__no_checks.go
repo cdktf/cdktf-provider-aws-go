@@ -119,6 +119,10 @@ func (j *jsiiProxy_StoragegatewayCache) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayCache) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewStoragegatewayCacheParameters(scope constructs.Construct, id *string, config *StoragegatewayCacheConfig) error {
 	return nil
 }

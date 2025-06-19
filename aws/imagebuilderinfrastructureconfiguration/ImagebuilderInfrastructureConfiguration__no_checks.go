@@ -143,6 +143,10 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }

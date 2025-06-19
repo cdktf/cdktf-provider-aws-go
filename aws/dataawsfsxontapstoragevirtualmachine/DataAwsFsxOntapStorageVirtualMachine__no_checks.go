@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachine) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachine) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachine) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

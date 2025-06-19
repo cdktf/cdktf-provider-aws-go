@@ -5,23 +5,20 @@ package networkmanagercorenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkmanagercorenetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmanagercorenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
 type NetworkmanagerCoreNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
 	BasePolicyDocument() *string
 	SetBasePolicyDocument(val *string)
 	BasePolicyDocumentInput() *string
-	BasePolicyRegion() *string
-	SetBasePolicyRegion(val *string)
-	BasePolicyRegionInput() *string
 	BasePolicyRegions() *[]*string
 	SetBasePolicyRegions(val *[]*string)
 	BasePolicyRegionsInput() *[]*string
@@ -140,7 +137,6 @@ type NetworkmanagerCoreNetwork interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkmanagerCoreNetworkTimeouts)
 	ResetBasePolicyDocument()
-	ResetBasePolicyRegion()
 	ResetBasePolicyRegions()
 	ResetCreateBasePolicy()
 	ResetDescription()
@@ -194,26 +190,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyDocumentInput() *string 
 	_jsii_.Get(
 		j,
 		"basePolicyDocumentInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyRegion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"basePolicyRegion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyRegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"basePolicyRegionInput",
 		&returns,
 	)
 	return returns
@@ -580,7 +556,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork {
 	_init_.Initialize()
 
@@ -598,7 +574,7 @@ func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) {
 	_init_.Initialize()
 
@@ -616,17 +592,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyDocument(val *string) 
 	_jsii_.Set(
 		j,
 		"basePolicyDocument",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyRegion(val *string) {
-	if err := j.validateSetBasePolicyRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"basePolicyRegion",
 		val,
 	)
 }
@@ -1144,14 +1109,6 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetBasePolicyDocument() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetBasePolicyDocument",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetBasePolicyRegion() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetBasePolicyRegion",
 		nil, // no parameters
 	)
 }

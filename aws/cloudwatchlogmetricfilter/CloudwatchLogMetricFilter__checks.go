@@ -434,6 +434,14 @@ func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCloudwatchLogMetricFilterParameters(scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

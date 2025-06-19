@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) validateSetQualifierParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLambdaFunctionUrlParameters(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionUrlConfig) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

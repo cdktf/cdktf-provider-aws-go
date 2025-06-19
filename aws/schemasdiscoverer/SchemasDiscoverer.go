@@ -5,14 +5,14 @@ package schemasdiscoverer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/schemasdiscoverer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/schemasdiscoverer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_discoverer aws_schemas_discoverer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_discoverer aws_schemas_discoverer}.
 type SchemasDiscoverer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type SchemasDiscoverer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceArn() *string
 	SetSourceArn(val *string)
 	SourceArnInput() *string
@@ -125,6 +128,7 @@ type SchemasDiscoverer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -325,6 +329,26 @@ func (j *jsiiProxy_SchemasDiscoverer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SchemasDiscoverer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemasDiscoverer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SchemasDiscoverer) SourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_SchemasDiscoverer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_discoverer aws_schemas_discoverer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_discoverer aws_schemas_discoverer} Resource.
 func NewSchemasDiscoverer(scope constructs.Construct, id *string, config *SchemasDiscovererConfig) SchemasDiscoverer {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewSchemasDiscoverer(scope constructs.Construct, id *string, config *Schema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_discoverer aws_schemas_discoverer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_discoverer aws_schemas_discoverer} Resource.
 func NewSchemasDiscoverer_Override(s SchemasDiscoverer, scope constructs.Construct, id *string, config *SchemasDiscovererConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_SchemasDiscoverer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SchemasDiscoverer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (s *jsiiProxy_SchemasDiscoverer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SchemasDiscoverer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

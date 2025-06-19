@@ -461,6 +461,14 @@ func (j *jsiiProxy_DefaultSecurityGroup) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DefaultSecurityGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DefaultSecurityGroup) validateSetRevokeRulesOnDeleteParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

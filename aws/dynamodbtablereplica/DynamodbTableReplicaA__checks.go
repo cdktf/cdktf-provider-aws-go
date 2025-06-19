@@ -466,6 +466,14 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) validateSetTableClassOverrideParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

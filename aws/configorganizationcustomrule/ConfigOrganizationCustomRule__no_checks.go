@@ -139,6 +139,10 @@ func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetResourceIdScopeParameters(val *string) error {
 	return nil
 }

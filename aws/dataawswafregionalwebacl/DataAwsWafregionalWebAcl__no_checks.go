@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsWafregionalWebAcl) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalWebAcl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsWafregionalWebAclParameters(scope constructs.Construct, id *string, config *DataAwsWafregionalWebAclConfig) error {
 	return nil
 }

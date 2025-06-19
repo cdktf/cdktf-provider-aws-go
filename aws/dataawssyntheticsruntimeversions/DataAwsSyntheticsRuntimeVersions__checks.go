@@ -114,37 +114,6 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validatePutRuntimeVersionsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsSyntheticsRuntimeVersionsRuntimeVersions:
-		value := value.(*[]*DataAwsSyntheticsRuntimeVersionsRuntimeVersions)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsSyntheticsRuntimeVersionsRuntimeVersions:
-		value_ := value.([]*DataAwsSyntheticsRuntimeVersionsRuntimeVersions)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsSyntheticsRuntimeVersionsRuntimeVersions; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateDataAwsSyntheticsRuntimeVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -245,6 +214,14 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetCountParameters(
 func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

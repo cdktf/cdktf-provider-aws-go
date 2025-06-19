@@ -143,6 +143,10 @@ func (j *jsiiProxy_EbsVolume) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_EbsVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsVolume) validateSetSizeParameters(val *float64) error {
 	return nil
 }

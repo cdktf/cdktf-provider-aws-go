@@ -131,6 +131,10 @@ func (j *jsiiProxy_DataexchangeRevisionAssets) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataexchangeRevisionAssets) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataexchangeRevisionAssets) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

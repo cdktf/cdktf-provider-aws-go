@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpcEndpointService) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointService) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointService) validateSetSupportedIpAddressTypesParameters(val *[]*string) error {
 	return nil
 }

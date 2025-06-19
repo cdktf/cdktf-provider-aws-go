@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) validateSetPriorityParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsRoute53ResolverFirewallRulesParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

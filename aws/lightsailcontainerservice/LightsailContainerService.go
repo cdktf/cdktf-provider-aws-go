@@ -5,14 +5,14 @@ package lightsailcontainerservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailcontainerservice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailcontainerservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_container_service aws_lightsail_container_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_container_service aws_lightsail_container_service}.
 type LightsailContainerService interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type LightsailContainerService interface {
 	PublicDomainNamesInput() *LightsailContainerServicePublicDomainNames
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceType() *string
 	Scale() *float64
 	SetScale(val *float64)
@@ -150,6 +153,7 @@ type LightsailContainerService interface {
 	ResetOverrideLogicalId()
 	ResetPrivateRegistryAccess()
 	ResetPublicDomainNames()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -481,6 +485,26 @@ func (j *jsiiProxy_LightsailContainerService) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailContainerService) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailContainerService) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailContainerService) ResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -622,7 +646,7 @@ func (j *jsiiProxy_LightsailContainerService) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
 func NewLightsailContainerService(scope constructs.Construct, id *string, config *LightsailContainerServiceConfig) LightsailContainerService {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewLightsailContainerService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
 func NewLightsailContainerService_Override(l LightsailContainerService, scope constructs.Construct, id *string, config *LightsailContainerServiceConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,17 @@ func (j *jsiiProxy_LightsailContainerService)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailContainerService)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1218,6 +1253,14 @@ func (l *jsiiProxy_LightsailContainerService) ResetPublicDomainNames() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublicDomainNames",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailContainerService) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

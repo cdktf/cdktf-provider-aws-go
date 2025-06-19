@@ -47,7 +47,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) v
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) validatePutBoundingBoxParameters(value *RekognitionStreamProcessorRegionsOfInterestBoundingBox) error {
+func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) validatePutBoundingBoxParameters(value interface{}) error {
 	return nil
 }
 

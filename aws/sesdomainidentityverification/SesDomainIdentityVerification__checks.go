@@ -418,6 +418,14 @@ func (j *jsiiProxy_SesDomainIdentityVerification) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainIdentityVerification) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSesDomainIdentityVerificationParameters(scope constructs.Construct, id *string, config *SesDomainIdentityVerificationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

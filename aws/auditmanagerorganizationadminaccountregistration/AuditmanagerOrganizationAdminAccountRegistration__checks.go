@@ -399,6 +399,14 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAuditmanagerOrganizationAdminAccountRegistrationParameters(scope constructs.Construct, id *string, config *AuditmanagerOrganizationAdminAccountRegistrationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

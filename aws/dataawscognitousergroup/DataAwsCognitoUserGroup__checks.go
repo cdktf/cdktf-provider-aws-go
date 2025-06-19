@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsCognitoUserGroup) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserGroup) validateSetUserPoolIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

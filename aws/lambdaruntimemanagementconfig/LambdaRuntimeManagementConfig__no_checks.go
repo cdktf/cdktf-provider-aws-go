@@ -115,6 +115,10 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetQualifierParameters
 	return nil
 }
 
+func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetRuntimeVersionArnParameters(val *string) error {
 	return nil
 }

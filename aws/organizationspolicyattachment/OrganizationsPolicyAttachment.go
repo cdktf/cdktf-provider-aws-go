@@ -5,14 +5,14 @@ package organizationspolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/organizationspolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/organizationspolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment}.
 type OrganizationsPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_OrganizationsPolicyAttachment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource.
 func NewOrganizationsPolicyAttachment(scope constructs.Construct, id *string, config *OrganizationsPolicyAttachmentConfig) OrganizationsPolicyAttachment {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewOrganizationsPolicyAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/organizations_policy_attachment aws_organizations_policy_attachment} Resource.
 func NewOrganizationsPolicyAttachment_Override(o OrganizationsPolicyAttachment, scope constructs.Construct, id *string, config *OrganizationsPolicyAttachmentConfig) {
 	_init_.Initialize()
 

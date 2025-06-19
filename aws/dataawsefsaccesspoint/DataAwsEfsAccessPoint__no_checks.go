@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

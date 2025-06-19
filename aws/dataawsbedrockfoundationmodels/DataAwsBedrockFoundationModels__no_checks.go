@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModels) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBedrockFoundationModels) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsBedrockFoundationModelsParameters(scope constructs.Construct, id *string, config *DataAwsBedrockFoundationModelsConfig) error {
 	return nil
 }

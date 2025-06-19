@@ -123,6 +123,10 @@ func (j *jsiiProxy_SecuritylakeSubscriber) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeSubscriber) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecuritylakeSubscriber) validateSetSubscriberDescriptionParameters(val *string) error {
 	return nil
 }

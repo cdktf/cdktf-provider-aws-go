@@ -127,6 +127,10 @@ func (j *jsiiProxy_EksAccessEntry) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_EksAccessEntry) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksAccessEntry) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

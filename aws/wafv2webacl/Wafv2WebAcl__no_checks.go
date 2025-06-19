@@ -155,6 +155,10 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) validateSetRuleJsonParameters(val *string) error {
 	return nil
 }

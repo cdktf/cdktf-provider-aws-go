@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApiGatewayUsagePlanKey) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayUsagePlanKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayUsagePlanKey) validateSetUsagePlanIdParameters(val *string) error {
 	return nil
 }

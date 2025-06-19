@@ -127,6 +127,10 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package chimesdkmediapipelinesmediainsightspipelineconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/chimesdkmediapipelinesmediainsightspipelineconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimesdkmediapipelinesmediainsightspipelineconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration}.
 type ChimesdkmediapipelinesMediaInsightsPipelineConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -64,6 +64,9 @@ type ChimesdkmediapipelinesMediaInsightsPipelineConfiguration interface {
 	RawOverrides() interface{}
 	RealTimeAlertConfiguration() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference
 	RealTimeAlertConfigurationInput() *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceAccessRoleArn() *string
 	SetResourceAccessRoleArn(val *string)
 	ResourceAccessRoleArnInput() *string
@@ -131,6 +134,7 @@ type ChimesdkmediapipelinesMediaInsightsPipelineConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRealTimeAlertConfiguration()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -362,6 +366,26 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Rea
 	return returns
 }
 
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) ResourceAccessRoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Tim
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
 func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration(scope constructs.Construct, id *string, config *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig) ChimesdkmediapipelinesMediaInsightsPipelineConfiguration {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
 func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration_Override(c ChimesdkmediapipelinesMediaInsightsPipelineConfiguration, scope constructs.Construct, id *string, config *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration)SetP
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1012,6 +1047,14 @@ func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetRealTimeAlertConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

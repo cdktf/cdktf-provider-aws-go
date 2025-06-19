@@ -5,14 +5,14 @@ package amifrominstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/amifrominstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/amifrominstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_from_instance aws_ami_from_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_from_instance aws_ami_from_instance}.
 type AmiFromInstance interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -88,6 +88,9 @@ type AmiFromInstance interface {
 	RamdiskId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootDeviceName() *string
 	RootSnapshotId() *string
 	SnapshotWithoutReboot() interface{}
@@ -169,6 +172,7 @@ type AmiFromInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSnapshotWithoutReboot()
 	ResetTags()
 	ResetTagsAll()
@@ -611,6 +615,26 @@ func (j *jsiiProxy_AmiFromInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AmiFromInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmiFromInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmiFromInstance) RootDeviceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -812,7 +836,7 @@ func (j *jsiiProxy_AmiFromInstance) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
 func NewAmiFromInstance(scope constructs.Construct, id *string, config *AmiFromInstanceConfig) AmiFromInstance {
 	_init_.Initialize()
 
@@ -830,7 +854,7 @@ func NewAmiFromInstance(scope constructs.Construct, id *string, config *AmiFromI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami_from_instance aws_ami_from_instance} Resource.
 func NewAmiFromInstance_Override(a AmiFromInstance, scope constructs.Construct, id *string, config *AmiFromInstanceConfig) {
 	_init_.Initialize()
 
@@ -949,6 +973,17 @@ func (j *jsiiProxy_AmiFromInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AmiFromInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1427,6 +1462,14 @@ func (a *jsiiProxy_AmiFromInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmiFromInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

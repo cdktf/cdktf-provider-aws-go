@@ -115,6 +115,10 @@ func (j *jsiiProxy_CodebuildResourcePolicy) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

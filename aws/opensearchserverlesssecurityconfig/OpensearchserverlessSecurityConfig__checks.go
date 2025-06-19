@@ -207,12 +207,32 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validateOverrideLogicalId
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value *OpensearchserverlessSecurityConfigSamlOptions) error {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OpensearchserverlessSecurityConfigSamlOptions:
+		value := value.(*[]*OpensearchserverlessSecurityConfigSamlOptions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OpensearchserverlessSecurityConfigSamlOptions:
+		value_ := value.([]*OpensearchserverlessSecurityConfigSamlOptions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OpensearchserverlessSecurityConfigSamlOptions; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -413,6 +433,14 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) validateSetProvisionersPa
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

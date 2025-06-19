@@ -127,6 +127,10 @@ func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGuarddutyPublishingDestinationParameters(scope constructs.Construct, id *string, config *GuarddutyPublishingDestinationConfig) error {
 	return nil
 }

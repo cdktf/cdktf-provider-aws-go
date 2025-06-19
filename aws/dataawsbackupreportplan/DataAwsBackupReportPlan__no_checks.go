@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBackupReportPlan) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBackupReportPlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBackupReportPlan) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

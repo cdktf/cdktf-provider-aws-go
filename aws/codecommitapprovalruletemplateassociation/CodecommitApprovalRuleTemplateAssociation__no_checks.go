@@ -115,6 +115,10 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

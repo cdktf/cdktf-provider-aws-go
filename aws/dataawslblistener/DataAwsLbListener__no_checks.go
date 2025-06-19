@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsLbListener) validateSetPortParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbListener) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbListener) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

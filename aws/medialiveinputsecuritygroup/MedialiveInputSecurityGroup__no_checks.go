@@ -119,6 +119,10 @@ func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_KinesisResourcePolicy) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_KinesisResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

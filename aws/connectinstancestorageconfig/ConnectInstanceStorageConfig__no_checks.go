@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

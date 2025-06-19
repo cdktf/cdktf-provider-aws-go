@@ -5,14 +5,14 @@ package securitygrouprule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securitygrouprule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitygrouprule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/security_group_rule aws_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/security_group_rule aws_security_group_rule}.
 type SecurityGroupRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type SecurityGroupRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
@@ -152,6 +155,7 @@ type SecurityGroupRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrefixListIds()
+	ResetRegion()
 	ResetSelfAttribute()
 	ResetSourceSecurityGroupId()
 	ResetTimeouts()
@@ -443,6 +447,26 @@ func (j *jsiiProxy_SecurityGroupRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityGroupRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityGroupRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityGroupRule) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -604,7 +628,7 @@ func (j *jsiiProxy_SecurityGroupRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
 func NewSecurityGroupRule(scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) SecurityGroupRule {
 	_init_.Initialize()
 
@@ -622,7 +646,7 @@ func NewSecurityGroupRule(scope constructs.Construct, id *string, config *Securi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
 func NewSecurityGroupRule_Override(s SecurityGroupRule, scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (j *jsiiProxy_SecurityGroupRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityGroupRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1241,6 +1276,14 @@ func (s *jsiiProxy_SecurityGroupRule) ResetPrefixListIds() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPrefixListIds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityGroupRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

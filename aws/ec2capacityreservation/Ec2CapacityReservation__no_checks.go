@@ -159,6 +159,10 @@ func (j *jsiiProxy_Ec2CapacityReservation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2CapacityReservation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CapacityReservation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

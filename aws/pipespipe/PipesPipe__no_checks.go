@@ -155,6 +155,10 @@ func (j *jsiiProxy_PipesPipe) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_PipesPipe) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipesPipe) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

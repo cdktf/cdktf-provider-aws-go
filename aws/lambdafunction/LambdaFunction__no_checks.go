@@ -199,6 +199,10 @@ func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunction) validateSetReplacementSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

@@ -163,6 +163,10 @@ func (j *jsiiProxy_GameliftFleet) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_GameliftFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftFleet) validateSetScriptIdParameters(val *string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_DevicefarmUpload) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmUpload) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmUpload) validateSetTypeParameters(val *string) error {
 	return nil
 }

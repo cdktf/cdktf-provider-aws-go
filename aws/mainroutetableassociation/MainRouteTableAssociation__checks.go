@@ -410,6 +410,14 @@ func (j *jsiiProxy_MainRouteTableAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MainRouteTableAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MainRouteTableAssociation) validateSetRouteTableIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

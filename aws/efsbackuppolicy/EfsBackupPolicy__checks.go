@@ -418,6 +418,14 @@ func (j *jsiiProxy_EfsBackupPolicy) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_EfsBackupPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEfsBackupPolicyParameters(scope constructs.Construct, id *string, config *EfsBackupPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

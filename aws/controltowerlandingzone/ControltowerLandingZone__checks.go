@@ -418,6 +418,14 @@ func (j *jsiiProxy_ControltowerLandingZone) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ControltowerLandingZone) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ControltowerLandingZone) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

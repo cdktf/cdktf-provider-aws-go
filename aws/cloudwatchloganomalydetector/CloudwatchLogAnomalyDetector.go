@@ -5,14 +5,14 @@ package cloudwatchloganomalydetector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchloganomalydetector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchloganomalydetector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector}.
 type CloudwatchLogAnomalyDetector interface {
 	cdktf.TerraformResource
 	AnomalyVisibilityTime() *float64
@@ -77,6 +77,9 @@ type CloudwatchLogAnomalyDetector interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -138,6 +141,7 @@ type CloudwatchLogAnomalyDetector interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_CloudwatchLogAnomalyDetector) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchLogAnomalyDetector) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogAnomalyDetector) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchLogAnomalyDetector) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -498,7 +522,7 @@ func (j *jsiiProxy_CloudwatchLogAnomalyDetector) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
 func NewCloudwatchLogAnomalyDetector(scope constructs.Construct, id *string, config *CloudwatchLogAnomalyDetectorConfig) CloudwatchLogAnomalyDetector {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewCloudwatchLogAnomalyDetector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_log_anomaly_detector aws_cloudwatch_log_anomaly_detector} Resource.
 func NewCloudwatchLogAnomalyDetector_Override(c CloudwatchLogAnomalyDetector, scope constructs.Construct, id *string, config *CloudwatchLogAnomalyDetectorConfig) {
 	_init_.Initialize()
 
@@ -668,6 +692,17 @@ func (j *jsiiProxy_CloudwatchLogAnomalyDetector)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchLogAnomalyDetector)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (c *jsiiProxy_CloudwatchLogAnomalyDetector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogAnomalyDetector) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

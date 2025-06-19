@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetReferencedSecurityGro
 	return nil
 }
 
+func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetSecurityGroupIdParameters(val *string) error {
 	return nil
 }

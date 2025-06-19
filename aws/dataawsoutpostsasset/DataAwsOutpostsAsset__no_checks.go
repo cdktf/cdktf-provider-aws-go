@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOutpostsAssetParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsAssetConfig) error {
 	return nil
 }

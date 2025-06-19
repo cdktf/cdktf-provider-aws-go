@@ -339,6 +339,10 @@ func (j *jsiiProxy_RdsCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetReplicationSourceIdentifierParameters(val *string) error {
 	return nil
 }

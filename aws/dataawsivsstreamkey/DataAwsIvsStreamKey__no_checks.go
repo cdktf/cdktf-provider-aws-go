@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

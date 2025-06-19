@@ -5,14 +5,14 @@ package loadbalancerbackendserverpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/loadbalancerbackendserverpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/loadbalancerbackendserverpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy}.
 type LoadBalancerBackendServerPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type LoadBalancerBackendServerPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +124,7 @@ type LoadBalancerBackendServerPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyNames()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -349,6 +353,26 @@ func (j *jsiiProxy_LoadBalancerBackendServerPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerBackendServerPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerBackendServerPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadBalancerBackendServerPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_LoadBalancerBackendServerPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy} Resource.
 func NewLoadBalancerBackendServerPolicy(scope constructs.Construct, id *string, config *LoadBalancerBackendServerPolicyConfig) LoadBalancerBackendServerPolicy {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewLoadBalancerBackendServerPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/load_balancer_backend_server_policy aws_load_balancer_backend_server_policy} Resource.
 func NewLoadBalancerBackendServerPolicy_Override(l LoadBalancerBackendServerPolicy, scope constructs.Construct, id *string, config *LoadBalancerBackendServerPolicyConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_LoadBalancerBackendServerPolicy)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerBackendServerPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (l *jsiiProxy_LoadBalancerBackendServerPolicy) ResetPolicyNames() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPolicyNames",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerBackendServerPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

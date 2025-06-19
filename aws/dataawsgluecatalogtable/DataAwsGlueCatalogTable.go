@@ -5,14 +5,14 @@ package dataawsgluecatalogtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsgluecatalogtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsgluecatalogtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table}.
 type DataAwsGlueCatalogTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -68,6 +68,9 @@ type DataAwsGlueCatalogTable interface {
 	QueryAsOfTimeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Retention() *float64
 	StorageDescriptor() DataAwsGlueCatalogTableStorageDescriptorList
 	TableType() *string
@@ -114,6 +117,7 @@ type DataAwsGlueCatalogTable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueryAsOfTime()
+	ResetRegion()
 	ResetTransactionId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -404,6 +408,26 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsGlueCatalogTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlueCatalogTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsGlueCatalogTable) Retention() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -515,7 +539,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) ViewOriginalText() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
 func NewDataAwsGlueCatalogTable(scope constructs.Construct, id *string, config *DataAwsGlueCatalogTableConfig) DataAwsGlueCatalogTable {
 	_init_.Initialize()
 
@@ -533,7 +557,7 @@ func NewDataAwsGlueCatalogTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
 func NewDataAwsGlueCatalogTable_Override(d DataAwsGlueCatalogTable, scope constructs.Construct, id *string, config *DataAwsGlueCatalogTableConfig) {
 	_init_.Initialize()
 
@@ -641,6 +665,17 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable)SetQueryAsOfTime(val *string) {
 	_jsii_.Set(
 		j,
 		"queryAsOfTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsGlueCatalogTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -969,6 +1004,14 @@ func (d *jsiiProxy_DataAwsGlueCatalogTable) ResetQueryAsOfTime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryAsOfTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsGlueCatalogTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dataawsservicediscoveryservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryservice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
 type DataAwsServiceDiscoveryService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -61,11 +61,11 @@ type DataAwsServiceDiscoveryService interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
-	TagsAll() *map[string]*string
-	SetTagsAll(val *map[string]*string)
-	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -102,8 +102,8 @@ type DataAwsServiceDiscoveryService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
-	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -343,31 +343,31 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServiceDiscoveryService) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServiceDiscoveryService) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsServiceDiscoveryService) TagsAll() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAll",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsServiceDiscoveryService) TagsAllInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
 func NewDataAwsServiceDiscoveryService(scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryServiceConfig) DataAwsServiceDiscoveryService {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewDataAwsServiceDiscoveryService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
 func NewDataAwsServiceDiscoveryService_Override(d DataAwsServiceDiscoveryService, scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryServiceConfig) {
 	_init_.Initialize()
 
@@ -522,6 +522,17 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService)SetProvider(val cdktf.Terrafor
 	)
 }
 
+func (j *jsiiProxy_DataAwsServiceDiscoveryService)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryService)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -529,17 +540,6 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService)SetTags(val *map[string]*strin
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsServiceDiscoveryService)SetTagsAll(val *map[string]*string) {
-	if err := j.validateSetTagsAllParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagsAll",
 		val,
 	)
 }
@@ -845,18 +845,18 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryService) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryService) ResetTags() {
+func (d *jsiiProxy_DataAwsServiceDiscoveryService) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTags",
+		"resetRegion",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryService) ResetTagsAll() {
+func (d *jsiiProxy_DataAwsServiceDiscoveryService) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTagsAll",
+		"resetTags",
 		nil, // no parameters
 	)
 }

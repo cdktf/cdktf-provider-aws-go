@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateSetStaticSourcesSupportParameters(val *string) error {
 	return nil
 }

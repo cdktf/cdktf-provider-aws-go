@@ -111,6 +111,10 @@ func (j *jsiiProxy_SesReceiptRuleSet) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptRuleSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptRuleSet) validateSetRuleSetNameParameters(val *string) error {
 	return nil
 }

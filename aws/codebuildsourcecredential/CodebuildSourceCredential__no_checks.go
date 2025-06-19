@@ -115,6 +115,10 @@ func (j *jsiiProxy_CodebuildSourceCredential) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildSourceCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildSourceCredential) validateSetServerTypeParameters(val *string) error {
 	return nil
 }

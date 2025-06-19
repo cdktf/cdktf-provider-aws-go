@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsOamSinks) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamSinks) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOamSinksParameters(scope constructs.Construct, id *string, config *DataAwsOamSinksConfig) error {
 	return nil
 }

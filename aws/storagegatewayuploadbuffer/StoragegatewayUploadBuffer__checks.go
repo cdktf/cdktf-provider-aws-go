@@ -423,6 +423,14 @@ func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewStoragegatewayUploadBufferParameters(scope constructs.Construct, id *string, config *StoragegatewayUploadBufferConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

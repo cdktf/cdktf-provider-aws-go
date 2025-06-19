@@ -5,14 +5,14 @@ package snstopicdataprotectionpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/snstopicdataprotectionpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/snstopicdataprotectionpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy}.
 type SnsTopicDataProtectionPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -64,6 +64,9 @@ type SnsTopicDataProtectionPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type SnsTopicDataProtectionPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,6 +329,26 @@ func (j *jsiiProxy_SnsTopicDataProtectionPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopicDataProtectionPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopicDataProtectionPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopicDataProtectionPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_SnsTopicDataProtectionPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
 func NewSnsTopicDataProtectionPolicy(scope constructs.Construct, id *string, config *SnsTopicDataProtectionPolicyConfig) SnsTopicDataProtectionPolicy {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewSnsTopicDataProtectionPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
 func NewSnsTopicDataProtectionPolicy_Override(s SnsTopicDataProtectionPolicy, scope constructs.Construct, id *string, config *SnsTopicDataProtectionPolicyConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_SnsTopicDataProtectionPolicy)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopicDataProtectionPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (s *jsiiProxy_SnsTopicDataProtectionPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopicDataProtectionPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package elastictranscoderpipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/elastictranscoderpipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/elastictranscoderpipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
 type ElastictranscoderPipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type ElastictranscoderPipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -148,6 +151,7 @@ type ElastictranscoderPipeline interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetThumbnailConfig()
 	ResetThumbnailConfigPermissions()
 	SynthesizeAttributes() *map[string]interface{}
@@ -468,6 +472,26 @@ func (j *jsiiProxy_ElastictranscoderPipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ElastictranscoderPipeline) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastictranscoderPipeline) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -559,7 +583,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
 func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) ElastictranscoderPipeline {
 	_init_.Initialize()
 
@@ -577,7 +601,7 @@ func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
 func NewElastictranscoderPipeline_Override(e ElastictranscoderPipeline, scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) {
 	_init_.Initialize()
 
@@ -707,6 +731,17 @@ func (j *jsiiProxy_ElastictranscoderPipeline)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastictranscoderPipeline)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1190,6 +1225,14 @@ func (e *jsiiProxy_ElastictranscoderPipeline) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

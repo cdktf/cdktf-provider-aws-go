@@ -139,6 +139,10 @@ func (j *jsiiProxy_KinesisStream) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStream) validateSetRetentionPeriodParameters(val *float64) error {
 	return nil
 }

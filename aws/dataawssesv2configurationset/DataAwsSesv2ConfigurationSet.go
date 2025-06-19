@@ -5,14 +5,14 @@ package dataawssesv2configurationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssesv2configurationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssesv2configurationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set}.
 type DataAwsSesv2ConfigurationSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,9 @@ type DataAwsSesv2ConfigurationSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReputationOptions() DataAwsSesv2ConfigurationSetReputationOptionsList
 	SendingOptions() DataAwsSesv2ConfigurationSetSendingOptionsList
 	SuppressionOptions() DataAwsSesv2ConfigurationSetSuppressionOptionsList
@@ -98,6 +101,7 @@ type DataAwsSesv2ConfigurationSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -288,6 +292,26 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) ReputationOptions() DataAwsSesv2ConfigurationSetReputationOptionsList {
 	var returns DataAwsSesv2ConfigurationSetReputationOptionsList
 	_jsii_.Get(
@@ -389,7 +413,7 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) VdmOptions() DataAwsSesv2Config
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
 func NewDataAwsSesv2ConfigurationSet(scope constructs.Construct, id *string, config *DataAwsSesv2ConfigurationSetConfig) DataAwsSesv2ConfigurationSet {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewDataAwsSesv2ConfigurationSet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sesv2_configuration_set aws_sesv2_configuration_set} Data Source.
 func NewDataAwsSesv2ConfigurationSet_Override(d DataAwsSesv2ConfigurationSet, scope constructs.Construct, id *string, config *DataAwsSesv2ConfigurationSetConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSet)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSesv2ConfigurationSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

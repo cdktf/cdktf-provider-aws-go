@@ -115,6 +115,10 @@ func (j *jsiiProxy_InspectorAssessmentTarget) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_InspectorAssessmentTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InspectorAssessmentTarget) validateSetResourceGroupArnParameters(val *string) error {
 	return nil
 }

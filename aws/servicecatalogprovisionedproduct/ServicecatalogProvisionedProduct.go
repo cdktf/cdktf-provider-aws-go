@@ -5,14 +5,14 @@ package servicecatalogprovisionedproduct
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogprovisionedproduct/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogprovisionedproduct/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product}.
 type ServicecatalogProvisionedProduct interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -98,6 +98,9 @@ type ServicecatalogProvisionedProduct interface {
 	ProvisioningParametersInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetainPhysicalResources() interface{}
 	SetRetainPhysicalResources(val interface{})
 	RetainPhysicalResourcesInput() interface{}
@@ -180,6 +183,7 @@ type ServicecatalogProvisionedProduct interface {
 	ResetProvisioningArtifactId()
 	ResetProvisioningArtifactName()
 	ResetProvisioningParameters()
+	ResetRegion()
 	ResetRetainPhysicalResources()
 	ResetStackSetProvisioningPreferences()
 	ResetTags()
@@ -653,6 +657,26 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogProvisionedProduct) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogProvisionedProduct) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProduct) RetainPhysicalResources() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -814,7 +838,7 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product} Resource.
 func NewServicecatalogProvisionedProduct(scope constructs.Construct, id *string, config *ServicecatalogProvisionedProductConfig) ServicecatalogProvisionedProduct {
 	_init_.Initialize()
 
@@ -832,7 +856,7 @@ func NewServicecatalogProvisionedProduct(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioned_product aws_servicecatalog_provisioned_product} Resource.
 func NewServicecatalogProvisionedProduct_Override(s ServicecatalogProvisionedProduct, scope constructs.Construct, id *string, config *ServicecatalogProvisionedProductConfig) {
 	_init_.Initialize()
 
@@ -1028,6 +1052,17 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct)SetProvisioningArtifactName(
 	_jsii_.Set(
 		j,
 		"provisioningArtifactName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogProvisionedProduct)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1543,6 +1578,14 @@ func (s *jsiiProxy_ServicecatalogProvisionedProduct) ResetProvisioningParameters
 	_jsii_.InvokeVoid(
 		s,
 		"resetProvisioningParameters",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogProvisionedProduct) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

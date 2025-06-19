@@ -5,14 +5,14 @@ package rdsshardgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsshardgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsshardgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_shard_group aws_rds_shard_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_shard_group aws_rds_shard_group}.
 type RdsShardGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,9 @@ type RdsShardGroup interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -138,6 +141,7 @@ type RdsShardGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -438,6 +442,26 @@ func (j *jsiiProxy_RdsShardGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsShardGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsShardGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsShardGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_RdsShardGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_shard_group aws_rds_shard_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_shard_group aws_rds_shard_group} Resource.
 func NewRdsShardGroup(scope constructs.Construct, id *string, config *RdsShardGroupConfig) RdsShardGroup {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewRdsShardGroup(scope constructs.Construct, id *string, config *RdsShardGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_shard_group aws_rds_shard_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_shard_group aws_rds_shard_group} Resource.
 func NewRdsShardGroup_Override(r RdsShardGroup, scope constructs.Construct, id *string, config *RdsShardGroupConfig) {
 	_init_.Initialize()
 
@@ -678,6 +702,17 @@ func (j *jsiiProxy_RdsShardGroup)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsShardGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1085,6 +1120,14 @@ func (r *jsiiProxy_RdsShardGroup) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsShardGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

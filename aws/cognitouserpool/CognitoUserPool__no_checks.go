@@ -203,6 +203,10 @@ func (j *jsiiProxy_CognitoUserPool) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPool) validateSetSmsAuthenticationMessageParameters(val *string) error {
 	return nil
 }

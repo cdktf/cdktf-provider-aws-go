@@ -119,6 +119,10 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewWafregionalSqlInjectionMatchSetParameters(scope constructs.Construct, id *string, config *WafregionalSqlInjectionMatchSetConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package resiliencehubresiliencypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/resiliencehubresiliencypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/resiliencehubresiliencypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy}.
 type ResiliencehubResiliencyPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,7 +56,7 @@ type ResiliencehubResiliencyPolicy interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Policy() ResiliencehubResiliencyPolicyPolicyOutputReference
+	Policy() ResiliencehubResiliencyPolicyPolicyList
 	PolicyInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -68,6 +68,9 @@ type ResiliencehubResiliencyPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -126,7 +129,7 @@ type ResiliencehubResiliencyPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutPolicy(value *ResiliencehubResiliencyPolicyPolicy)
+	PutPolicy(value interface{})
 	PutTimeouts(value *ResiliencehubResiliencyPolicyTimeouts)
 	ResetDataLocationConstraint()
 	ResetDescription()
@@ -134,6 +137,7 @@ type ResiliencehubResiliencyPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -334,8 +338,8 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicy) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ResiliencehubResiliencyPolicy) Policy() ResiliencehubResiliencyPolicyPolicyOutputReference {
-	var returns ResiliencehubResiliencyPolicyPolicyOutputReference
+func (j *jsiiProxy_ResiliencehubResiliencyPolicy) Policy() ResiliencehubResiliencyPolicyPolicyList {
+	var returns ResiliencehubResiliencyPolicyPolicyList
 	_jsii_.Get(
 		j,
 		"policy",
@@ -379,6 +383,26 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicy) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResiliencehubResiliencyPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResiliencehubResiliencyPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -485,7 +509,7 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource.
 func NewResiliencehubResiliencyPolicy(scope constructs.Construct, id *string, config *ResiliencehubResiliencyPolicyConfig) ResiliencehubResiliencyPolicy {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewResiliencehubResiliencyPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resiliencehub_resiliency_policy aws_resiliencehub_resiliency_policy} Resource.
 func NewResiliencehubResiliencyPolicy_Override(r ResiliencehubResiliencyPolicy, scope constructs.Construct, id *string, config *ResiliencehubResiliencyPolicyConfig) {
 	_init_.Initialize()
 
@@ -611,6 +635,17 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicy)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResiliencehubResiliencyPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -990,7 +1025,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicy) OverrideLogicalId(newLogicalId
 	)
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicy) PutPolicy(value *ResiliencehubResiliencyPolicyPolicy) {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicy) PutPolicy(value interface{}) {
 	if err := r.validatePutPolicyParameters(value); err != nil {
 		panic(err)
 	}
@@ -1040,6 +1075,14 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicy) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResiliencehubResiliencyPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

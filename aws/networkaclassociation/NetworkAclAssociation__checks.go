@@ -407,6 +407,14 @@ func (j *jsiiProxy_NetworkAclAssociation) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkAclAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkAclAssociation) validateSetSubnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

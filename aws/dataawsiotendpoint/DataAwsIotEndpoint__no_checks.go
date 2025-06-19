@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsIotEndpoint) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIotEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsIotEndpointParameters(scope constructs.Construct, id *string, config *DataAwsIotEndpointConfig) error {
 	return nil
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_AppflowFlow) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlow) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlow) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

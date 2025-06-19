@@ -135,6 +135,10 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetTemplateBodyParameters(val *string) error {
 	return nil
 }

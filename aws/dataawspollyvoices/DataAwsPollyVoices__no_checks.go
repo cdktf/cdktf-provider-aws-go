@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsPollyVoices) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPollyVoices) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsPollyVoicesParameters(scope constructs.Construct, id *string, config *DataAwsPollyVoicesConfig) error {
 	return nil
 }

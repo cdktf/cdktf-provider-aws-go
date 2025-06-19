@@ -123,6 +123,10 @@ func (j *jsiiProxy_GlueSchema) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_GlueSchema) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueSchema) validateSetRegistryArnParameters(val *string) error {
 	return nil
 }

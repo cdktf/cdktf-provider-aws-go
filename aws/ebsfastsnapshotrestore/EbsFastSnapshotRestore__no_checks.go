@@ -115,6 +115,10 @@ func (j *jsiiProxy_EbsFastSnapshotRestore) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EbsFastSnapshotRestore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsFastSnapshotRestore) validateSetSnapshotIdParameters(val *string) error {
 	return nil
 }

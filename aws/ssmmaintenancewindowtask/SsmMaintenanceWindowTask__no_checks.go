@@ -143,6 +143,10 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetServiceRoleArnParameters(val *string) error {
 	return nil
 }

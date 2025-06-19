@@ -127,6 +127,10 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

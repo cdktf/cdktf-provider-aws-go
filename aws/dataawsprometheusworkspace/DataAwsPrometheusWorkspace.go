@@ -5,14 +5,14 @@ package dataawsprometheusworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsprometheusworkspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsprometheusworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace}.
 type DataAwsPrometheusWorkspace interface {
 	cdktf.TerraformDataSource
 	Alias() *string
@@ -55,6 +55,9 @@ type DataAwsPrometheusWorkspace interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -97,6 +100,7 @@ type DataAwsPrometheusWorkspace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsPrometheusWorkspace) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace} Data Source.
 func NewDataAwsPrometheusWorkspace(scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspaceConfig) DataAwsPrometheusWorkspace {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewDataAwsPrometheusWorkspace(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace} Data Source.
 func NewDataAwsPrometheusWorkspace_Override(d DataAwsPrometheusWorkspace, scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsPrometheusWorkspace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -783,6 +818,14 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

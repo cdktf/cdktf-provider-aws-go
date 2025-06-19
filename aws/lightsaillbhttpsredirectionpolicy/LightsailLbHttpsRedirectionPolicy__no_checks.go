@@ -119,6 +119,10 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailLbHttpsRedirectionPolicyParameters(scope constructs.Construct, id *string, config *LightsailLbHttpsRedirectionPolicyConfig) error {
 	return nil
 }

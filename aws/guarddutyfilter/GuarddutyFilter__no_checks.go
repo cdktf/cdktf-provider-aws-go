@@ -135,6 +135,10 @@ func (j *jsiiProxy_GuarddutyFilter) validateSetRankParameters(val *float64) erro
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyFilter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_LbListener) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_LbListener) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListener) validateSetRoutingHttpRequestXAmznMtlsClientcertHeaderNameParameters(val *string) error {
 	return nil
 }

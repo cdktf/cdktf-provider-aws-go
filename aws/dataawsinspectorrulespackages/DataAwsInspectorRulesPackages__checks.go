@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsInspectorRulesPackages) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsInspectorRulesPackages) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsInspectorRulesPackagesParameters(scope constructs.Construct, id *string, config *DataAwsInspectorRulesPackagesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

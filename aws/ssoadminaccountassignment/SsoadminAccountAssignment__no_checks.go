@@ -131,6 +131,10 @@ func (j *jsiiProxy_SsoadminAccountAssignment) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminAccountAssignment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminAccountAssignment) validateSetTargetIdParameters(val *string) error {
 	return nil
 }

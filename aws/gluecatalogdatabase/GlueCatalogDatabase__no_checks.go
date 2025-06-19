@@ -143,6 +143,10 @@ func (j *jsiiProxy_GlueCatalogDatabase) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogDatabase) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

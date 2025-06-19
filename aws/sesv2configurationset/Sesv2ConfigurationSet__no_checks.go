@@ -139,6 +139,10 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

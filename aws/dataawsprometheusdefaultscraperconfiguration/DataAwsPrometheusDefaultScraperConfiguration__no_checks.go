@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsPrometheusDefaultScraperConfiguration) validateSetLife
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrometheusDefaultScraperConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsPrometheusDefaultScraperConfigurationParameters(scope constructs.Construct, id *string, config *DataAwsPrometheusDefaultScraperConfigurationConfig) error {
 	return nil
 }

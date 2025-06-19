@@ -127,6 +127,10 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetStageNameParameters(val *string) error {
 	return nil
 }

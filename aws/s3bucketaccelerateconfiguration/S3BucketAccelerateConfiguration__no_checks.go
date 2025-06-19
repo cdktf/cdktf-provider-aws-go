@@ -119,6 +119,10 @@ func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetStatusParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2SerialConsoleAccessParameters(scope constructs.Construct, id *string, config *DataAwsEc2SerialConsoleAccessConfig) error {
 	return nil
 }

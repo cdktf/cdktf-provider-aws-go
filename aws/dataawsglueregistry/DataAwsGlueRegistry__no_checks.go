@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsGlueRegistry) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueRegistry) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsGlueRegistryParameters(scope constructs.Construct, id *string, config *DataAwsGlueRegistryConfig) error {
 	return nil
 }

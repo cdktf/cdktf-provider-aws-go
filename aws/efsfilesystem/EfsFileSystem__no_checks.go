@@ -143,6 +143,10 @@ func (j *jsiiProxy_EfsFileSystem) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_EfsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsFileSystem) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

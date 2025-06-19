@@ -5,14 +5,14 @@ package ec2transitgatewaypeeringattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaypeeringattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}.
 type Ec2TransitGatewayPeeringAttachment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type Ec2TransitGatewayPeeringAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -136,6 +139,7 @@ type Ec2TransitGatewayPeeringAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPeerAccountId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -396,6 +400,26 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) TransitGatewayIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
 func NewEc2TransitGatewayPeeringAttachment(scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentConfig) Ec2TransitGatewayPeeringAttachment {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewEc2TransitGatewayPeeringAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
 func NewEc2TransitGatewayPeeringAttachment_Override(e Ec2TransitGatewayPeeringAttachment, scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) ResetPeerAccountId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPeerAccountId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

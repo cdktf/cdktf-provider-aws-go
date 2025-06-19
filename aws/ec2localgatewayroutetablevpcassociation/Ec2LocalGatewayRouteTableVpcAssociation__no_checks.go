@@ -115,6 +115,10 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

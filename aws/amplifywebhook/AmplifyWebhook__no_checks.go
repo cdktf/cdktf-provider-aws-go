@@ -123,6 +123,10 @@ func (j *jsiiProxy_AmplifyWebhook) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyWebhook) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAmplifyWebhookParameters(scope constructs.Construct, id *string, config *AmplifyWebhookConfig) error {
 	return nil
 }

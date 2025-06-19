@@ -115,6 +115,10 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMacie2ClassificationExportConfigurationParameters(scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) error {
 	return nil
 }

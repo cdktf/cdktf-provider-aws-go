@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

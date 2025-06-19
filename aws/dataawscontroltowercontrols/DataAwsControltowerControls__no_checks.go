@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsControltowerControls) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsControltowerControls) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsControltowerControls) validateSetTargetIdentifierParameters(val *string) error {
 	return nil
 }

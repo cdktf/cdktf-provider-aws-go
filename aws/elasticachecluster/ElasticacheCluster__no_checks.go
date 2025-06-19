@@ -195,6 +195,10 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetReplicationGroupIdParameters(val *string) error {
 	return nil
 }

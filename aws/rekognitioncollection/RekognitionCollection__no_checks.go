@@ -115,6 +115,10 @@ func (j *jsiiProxy_RekognitionCollection) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RekognitionCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RekognitionCollection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

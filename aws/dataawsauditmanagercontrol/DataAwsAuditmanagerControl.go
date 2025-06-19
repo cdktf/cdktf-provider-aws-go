@@ -5,14 +5,14 @@ package dataawsauditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsauditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsauditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 type DataAwsAuditmanagerControl interface {
 	cdktf.TerraformDataSource
 	ActionPlanInstructions() *string
@@ -23,7 +23,6 @@ type DataAwsAuditmanagerControl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	ControlMappingSources() DataAwsAuditmanagerControlControlMappingSourcesList
-	ControlMappingSourcesInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -57,6 +56,9 @@ type DataAwsAuditmanagerControl interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -93,11 +95,10 @@ type DataAwsAuditmanagerControl interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutControlMappingSources(value interface{})
-	ResetControlMappingSources()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -172,16 +173,6 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSources() DataAwsAu
 	_jsii_.Get(
 		j,
 		"controlMappingSources",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSourcesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"controlMappingSourcesInput",
 		&returns,
 	)
 	return returns
@@ -317,6 +308,26 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAuditmanagerControl) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAuditmanagerControl) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAuditmanagerControl) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -388,7 +399,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl {
 	_init_.Initialize()
 
@@ -406,7 +417,7 @@ func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) {
 	_init_.Initialize()
 
@@ -470,6 +481,17 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAuditmanagerControl)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -770,29 +792,18 @@ func (d *jsiiProxy_DataAwsAuditmanagerControl) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControl) PutControlMappingSources(value interface{}) {
-	if err := d.validatePutControlMappingSourcesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putControlMappingSources",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsAuditmanagerControl) ResetControlMappingSources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetControlMappingSources",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsAuditmanagerControl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAuditmanagerControl) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcrRegistryPolicy) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_EcrRegistryPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEcrRegistryPolicyParameters(scope constructs.Construct, id *string, config *EcrRegistryPolicyConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SqsQueuePolicy) validateSetQueueUrlParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueuePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSqsQueuePolicyParameters(scope constructs.Construct, id *string, config *SqsQueuePolicyConfig) error {
 	return nil
 }

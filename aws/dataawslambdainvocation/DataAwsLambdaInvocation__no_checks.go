@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetQualifierParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLambdaInvocationParameters(scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) error {
 	return nil
 }

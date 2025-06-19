@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateSetInternalValueParameters(val *DataAwsSyntheticsRuntimeVersionsRuntimeVersions) error {
 	return nil
 }
 

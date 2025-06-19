@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetOwnerIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetResolverEndpointIdParameters(val *string) error {
 	return nil
 }

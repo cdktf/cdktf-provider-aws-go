@@ -123,6 +123,10 @@ func (j *jsiiProxy_AutoscalingAttachment) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAutoscalingAttachmentParameters(scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) error {
 	return nil
 }

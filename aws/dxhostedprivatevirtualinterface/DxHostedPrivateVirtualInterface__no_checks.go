@@ -151,6 +151,10 @@ func (j *jsiiProxy_DxHostedPrivateVirtualInterface) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_DxHostedPrivateVirtualInterface) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedPrivateVirtualInterface) validateSetVlanParameters(val *float64) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_CodestarconnectionsConnection) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_CodestarconnectionsConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarconnectionsConnection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetVersionParameters(val *float64) error {
 	return nil
 }

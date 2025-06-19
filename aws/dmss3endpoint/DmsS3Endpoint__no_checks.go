@@ -271,6 +271,10 @@ func (j *jsiiProxy_DmsS3Endpoint) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) validateSetRfc4180Parameters(val interface{}) error {
 	return nil
 }

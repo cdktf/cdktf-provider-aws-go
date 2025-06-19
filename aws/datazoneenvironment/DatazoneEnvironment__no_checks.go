@@ -151,6 +151,10 @@ func (j *jsiiProxy_DatazoneEnvironment) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatazoneEnvironmentParameters(scope constructs.Construct, id *string, config *DatazoneEnvironmentConfig) error {
 	return nil
 }

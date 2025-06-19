@@ -127,6 +127,10 @@ func (j *jsiiProxy_DmsEventSubscription) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DmsEventSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEventSubscription) validateSetSnsTopicArnParameters(val *string) error {
 	return nil
 }

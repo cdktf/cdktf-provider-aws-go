@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsRamResourceShare) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRamResourceShare) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRamResourceShare) validateSetResourceOwnerParameters(val *string) error {
 	return nil
 }

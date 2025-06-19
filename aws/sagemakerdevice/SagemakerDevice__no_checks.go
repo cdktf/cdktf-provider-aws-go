@@ -119,6 +119,10 @@ func (j *jsiiProxy_SagemakerDevice) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDevice) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSagemakerDeviceParameters(scope constructs.Construct, id *string, config *SagemakerDeviceConfig) error {
 	return nil
 }

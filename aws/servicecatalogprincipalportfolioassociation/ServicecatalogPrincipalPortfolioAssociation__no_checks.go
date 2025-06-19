@@ -131,6 +131,10 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetProvi
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewServicecatalogPrincipalPortfolioAssociationParameters(scope constructs.Construct, id *string, config *ServicecatalogPrincipalPortfolioAssociationConfig) error {
 	return nil
 }

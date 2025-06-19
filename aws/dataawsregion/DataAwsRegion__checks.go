@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsRegion) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRegion) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsRegionParameters(scope constructs.Construct, id *string, config *DataAwsRegionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

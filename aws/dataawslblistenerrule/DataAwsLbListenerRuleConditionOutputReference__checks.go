@@ -93,12 +93,187 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value *DataAwsLbListenerRuleConditionQueryString) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHostHeaderParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionHostHeader:
+		value := value.(*[]*DataAwsLbListenerRuleConditionHostHeader)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionHostHeader:
+		value_ := value.([]*DataAwsLbListenerRuleConditionHostHeader)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionHostHeader; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionHttpHeader:
+		value := value.(*[]*DataAwsLbListenerRuleConditionHttpHeader)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionHttpHeader:
+		value_ := value.([]*DataAwsLbListenerRuleConditionHttpHeader)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionHttpHeader; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHttpRequestMethodParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionHttpRequestMethod:
+		value := value.(*[]*DataAwsLbListenerRuleConditionHttpRequestMethod)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionHttpRequestMethod:
+		value_ := value.([]*DataAwsLbListenerRuleConditionHttpRequestMethod)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionHttpRequestMethod; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutPathPatternParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionPathPattern:
+		value := value.(*[]*DataAwsLbListenerRuleConditionPathPattern)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionPathPattern:
+		value_ := value.([]*DataAwsLbListenerRuleConditionPathPattern)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionPathPattern; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionQueryString:
+		value := value.(*[]*DataAwsLbListenerRuleConditionQueryString)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionQueryString:
+		value_ := value.([]*DataAwsLbListenerRuleConditionQueryString)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionQueryString; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutSourceIpParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleConditionSourceIp:
+		value := value.(*[]*DataAwsLbListenerRuleConditionSourceIp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleConditionSourceIp:
+		value_ := value.([]*DataAwsLbListenerRuleConditionSourceIp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleConditionSourceIp; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

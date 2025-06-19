@@ -123,6 +123,10 @@ func (j *jsiiProxy_WorkspacesIpGroup) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_WorkspacesIpGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesIpGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

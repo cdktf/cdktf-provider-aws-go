@@ -135,6 +135,10 @@ func (j *jsiiProxy_IvschatRoom) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_IvschatRoom) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvschatRoom) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

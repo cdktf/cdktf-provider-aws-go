@@ -119,6 +119,10 @@ func (j *jsiiProxy_Sesv2AccountVdmAttributes) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2AccountVdmAttributes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2AccountVdmAttributes) validateSetVdmEnabledParameters(val *string) error {
 	return nil
 }

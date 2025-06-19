@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2AvailabilityZoneGroupParameters(scope constructs.Construct, id *string, config *Ec2AvailabilityZoneGroupConfig) error {
 	return nil
 }

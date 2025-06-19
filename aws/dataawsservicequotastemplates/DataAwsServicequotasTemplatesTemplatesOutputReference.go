@@ -5,9 +5,9 @@ package dataawsservicequotastemplates
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicequotastemplates/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicequotastemplates/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsServicequotasTemplatesTemplatesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GlobalQuota() cdktf.IResolvable
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsServicequotasTemplatesTemplates
+	SetInternalValue(val *DataAwsServicequotasTemplatesTemplates)
 	QuotaCode() *string
 	QuotaName() *string
 	Region() *string
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) Global
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) InternalValue() *DataAwsServicequotasTemplatesTemplates {
+	var returns *DataAwsServicequotasTemplatesTemplates
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference)SetInternalValue(val *DataAwsServicequotasTemplatesTemplates) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableAssociations) validateSetLi
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableAssociations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableAssociations) validateSetTransitGatewayRouteTableIdParameters(val *string) error {
 	return nil
 }

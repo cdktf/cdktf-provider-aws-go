@@ -5,14 +5,14 @@ package batchjobqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/batchjobqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/batchjobqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_job_queue aws_batch_job_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_job_queue aws_batch_job_queue}.
 type BatchJobQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -20,9 +20,6 @@ type BatchJobQueue interface {
 	CdktfStack() cdktf.TerraformStack
 	ComputeEnvironmentOrder() BatchJobQueueComputeEnvironmentOrderList
 	ComputeEnvironmentOrderInput() interface{}
-	ComputeEnvironments() *[]*string
-	SetComputeEnvironments(val *[]*string)
-	ComputeEnvironmentsInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -70,6 +67,9 @@ type BatchJobQueue interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SchedulingPolicyArn() *string
 	SetSchedulingPolicyArn(val *string)
 	SchedulingPolicyArnInput() *string
@@ -135,11 +135,11 @@ type BatchJobQueue interface {
 	PutJobStateTimeLimitAction(value interface{})
 	PutTimeouts(value *BatchJobQueueTimeouts)
 	ResetComputeEnvironmentOrder()
-	ResetComputeEnvironments()
 	ResetJobStateTimeLimitAction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSchedulingPolicyArn()
 	ResetTags()
 	ResetTimeouts()
@@ -196,26 +196,6 @@ func (j *jsiiProxy_BatchJobQueue) ComputeEnvironmentOrderInput() interface{} {
 	_jsii_.Get(
 		j,
 		"computeEnvironmentOrderInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchJobQueue) ComputeEnvironments() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"computeEnvironments",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchJobQueue) ComputeEnvironmentsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentsInput",
 		&returns,
 	)
 	return returns
@@ -411,6 +391,26 @@ func (j *jsiiProxy_BatchJobQueue) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BatchJobQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchJobQueue) SchedulingPolicyArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +532,7 @@ func (j *jsiiProxy_BatchJobQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQueueConfig) BatchJobQueue {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue_Override(b BatchJobQueue, scope constructs.Construct, id *string, config *BatchJobQueueConfig) {
 	_init_.Initialize()
 
@@ -558,17 +558,6 @@ func NewBatchJobQueue_Override(b BatchJobQueue, scope constructs.Construct, id *
 		"@cdktf/provider-aws.batchJobQueue.BatchJobQueue",
 		[]interface{}{scope, id, config},
 		b,
-	)
-}
-
-func (j *jsiiProxy_BatchJobQueue)SetComputeEnvironments(val *[]*string) {
-	if err := j.validateSetComputeEnvironmentsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeEnvironments",
-		val,
 	)
 }
 
@@ -658,6 +647,17 @@ func (j *jsiiProxy_BatchJobQueue)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchJobQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1089,14 +1089,6 @@ func (b *jsiiProxy_BatchJobQueue) ResetComputeEnvironmentOrder() {
 	)
 }
 
-func (b *jsiiProxy_BatchJobQueue) ResetComputeEnvironments() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetComputeEnvironments",
-		nil, // no parameters
-	)
-}
-
 func (b *jsiiProxy_BatchJobQueue) ResetJobStateTimeLimitAction() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1109,6 +1101,14 @@ func (b *jsiiProxy_BatchJobQueue) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

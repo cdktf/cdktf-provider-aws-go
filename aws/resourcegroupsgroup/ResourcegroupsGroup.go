@@ -5,14 +5,14 @@ package resourcegroupsgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/resourcegroupsgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/resourcegroupsgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resourcegroups_group aws_resourcegroups_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resourcegroups_group aws_resourcegroups_group}.
 type ResourcegroupsGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type ResourcegroupsGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceQuery() ResourcegroupsGroupResourceQueryOutputReference
 	ResourceQueryInput() *ResourcegroupsGroupResourceQuery
 	Tags() *map[string]*string
@@ -135,6 +138,7 @@ type ResourcegroupsGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceQuery()
 	ResetTags()
 	ResetTagsAll()
@@ -377,6 +381,26 @@ func (j *jsiiProxy_ResourcegroupsGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ResourcegroupsGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ResourcegroupsGroup) ResourceQuery() ResourcegroupsGroupResourceQueryOutputReference {
 	var returns ResourcegroupsGroupResourceQueryOutputReference
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_ResourcegroupsGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
 func NewResourcegroupsGroup(scope constructs.Construct, id *string, config *ResourcegroupsGroupConfig) ResourcegroupsGroup {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewResourcegroupsGroup(scope constructs.Construct, id *string, config *Reso
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/resourcegroups_group aws_resourcegroups_group} Resource.
 func NewResourcegroupsGroup_Override(r ResourcegroupsGroup, scope constructs.Construct, id *string, config *ResourcegroupsGroupConfig) {
 	_init_.Initialize()
 
@@ -614,6 +638,17 @@ func (j *jsiiProxy_ResourcegroupsGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1054,6 +1089,14 @@ func (r *jsiiProxy_ResourcegroupsGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourcegroupsGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

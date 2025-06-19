@@ -123,6 +123,10 @@ func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewNeptuneClusterSnapshotParameters(scope constructs.Construct, id *string, config *NeptuneClusterSnapshotConfig) error {
 	return nil
 }

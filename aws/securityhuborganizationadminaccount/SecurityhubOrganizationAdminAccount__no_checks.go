@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecurityhubOrganizationAdminAccountParameters(scope constructs.Construct, id *string, config *SecurityhubOrganizationAdminAccountConfig) error {
 	return nil
 }

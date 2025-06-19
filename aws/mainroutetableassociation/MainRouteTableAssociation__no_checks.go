@@ -115,6 +115,10 @@ func (j *jsiiProxy_MainRouteTableAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MainRouteTableAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MainRouteTableAssociation) validateSetRouteTableIdParameters(val *string) error {
 	return nil
 }

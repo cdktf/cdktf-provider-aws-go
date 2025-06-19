@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetProjectNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetSpaceNameParameters(val *string) error {
 	return nil
 }

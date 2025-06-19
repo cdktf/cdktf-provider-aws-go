@@ -5,14 +5,14 @@ package rekognitionstreamprocessor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor}.
 type RekognitionStreamProcessor interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type RekognitionStreamProcessor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegionsOfInterest() RekognitionStreamProcessorRegionsOfInterestList
 	RegionsOfInterestInput() interface{}
 	RoleArn() *string
@@ -148,6 +151,7 @@ type RekognitionStreamProcessor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegionsOfInterest()
 	ResetSettings()
 	ResetTags()
@@ -430,6 +434,26 @@ func (j *jsiiProxy_RekognitionStreamProcessor) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RekognitionStreamProcessor) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RekognitionStreamProcessor) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RekognitionStreamProcessor) RegionsOfInterest() RekognitionStreamProcessorRegionsOfInterestList {
 	var returns RekognitionStreamProcessorRegionsOfInterestList
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_RekognitionStreamProcessor) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
 func NewRekognitionStreamProcessor(scope constructs.Construct, id *string, config *RekognitionStreamProcessorConfig) RekognitionStreamProcessor {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewRekognitionStreamProcessor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rekognition_stream_processor aws_rekognition_stream_processor} Resource.
 func NewRekognitionStreamProcessor_Override(r RekognitionStreamProcessor, scope constructs.Construct, id *string, config *RekognitionStreamProcessorConfig) {
 	_init_.Initialize()
 
@@ -696,6 +720,17 @@ func (j *jsiiProxy_RekognitionStreamProcessor)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RekognitionStreamProcessor)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1196,6 +1231,14 @@ func (r *jsiiProxy_RekognitionStreamProcessor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RekognitionStreamProcessor) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

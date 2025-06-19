@@ -119,6 +119,10 @@ func (j *jsiiProxy_QuicksightRoleMembership) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightRoleMembership) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightRoleMembership) validateSetRoleParameters(val *string) error {
 	return nil
 }

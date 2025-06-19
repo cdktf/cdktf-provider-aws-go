@@ -159,6 +159,10 @@ func (j *jsiiProxy_AppstreamImageBuilder) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamImageBuilder) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamImageBuilder) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

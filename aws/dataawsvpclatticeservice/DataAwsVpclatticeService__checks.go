@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsVpclatticeService) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeService) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeService) validateSetServiceIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

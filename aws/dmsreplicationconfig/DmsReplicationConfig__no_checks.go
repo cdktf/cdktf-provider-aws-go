@@ -119,6 +119,10 @@ func (j *jsiiProxy_DmsReplicationConfig) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationConfig) validateSetReplicationConfigIdentifierParameters(val *string) error {
 	return nil
 }

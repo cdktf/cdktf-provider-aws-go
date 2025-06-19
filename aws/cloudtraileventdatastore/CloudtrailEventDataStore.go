@@ -5,14 +5,14 @@ package cloudtraileventdatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudtraileventdatastore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudtraileventdatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
 type CloudtrailEventDataStore interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailEventDataStoreAdvancedEventSelectorList
@@ -76,6 +76,9 @@ type CloudtrailEventDataStore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetentionPeriod() *float64
 	SetRetentionPeriod(val *float64)
 	RetentionPeriodInput() *float64
@@ -153,6 +156,7 @@ type CloudtrailEventDataStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRetentionPeriod()
 	ResetSuspend()
 	ResetTags()
@@ -457,6 +461,26 @@ func (j *jsiiProxy_CloudtrailEventDataStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) RetentionPeriod() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -608,7 +632,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) CloudtrailEventDataStore {
 	_init_.Initialize()
 
@@ -626,7 +650,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) {
 	_init_.Initialize()
 
@@ -767,6 +791,17 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1253,6 +1288,14 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

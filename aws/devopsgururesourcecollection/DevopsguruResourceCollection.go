@@ -5,14 +5,14 @@ package devopsgururesourcecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devopsgururesourcecollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devopsgururesourcecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection}.
 type DevopsguruResourceCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type DevopsguruResourceCollection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() DevopsguruResourceCollectionTagsList
 	TagsInput() interface{}
 	// Experimental.
@@ -118,6 +121,7 @@ type DevopsguruResourceCollection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_DevopsguruResourceCollection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevopsguruResourceCollection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevopsguruResourceCollection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevopsguruResourceCollection) Tags() DevopsguruResourceCollectionTagsList {
 	var returns DevopsguruResourceCollectionTagsList
 	_jsii_.Get(
@@ -368,7 +392,7 @@ func (j *jsiiProxy_DevopsguruResourceCollection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource.
 func NewDevopsguruResourceCollection(scope constructs.Construct, id *string, config *DevopsguruResourceCollectionConfig) DevopsguruResourceCollection {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewDevopsguruResourceCollection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource.
 func NewDevopsguruResourceCollection_Override(d DevopsguruResourceCollection, scope constructs.Construct, id *string, config *DevopsguruResourceCollectionConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_DevopsguruResourceCollection)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevopsguruResourceCollection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (d *jsiiProxy_DevopsguruResourceCollection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevopsguruResourceCollection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

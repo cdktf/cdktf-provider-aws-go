@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppsyncSourceApiAssociation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncSourceApiAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncSourceApiAssociation) validateSetSourceApiArnParameters(val *string) error {
 	return nil
 }

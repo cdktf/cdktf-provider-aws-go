@@ -426,6 +426,14 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCloudsearchDomainServiceAccessPolicyParameters(scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

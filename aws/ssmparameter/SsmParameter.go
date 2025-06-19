@@ -5,14 +5,14 @@ package ssmparameter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmparameter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmparameter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter aws_ssm_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter aws_ssm_parameter}.
 type SsmParameter interface {
 	cdktf.TerraformResource
 	AllowedPattern() *string
@@ -83,6 +83,9 @@ type SsmParameter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -165,6 +168,7 @@ type SsmParameter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOverwrite()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTier()
@@ -509,6 +513,26 @@ func (j *jsiiProxy_SsmParameter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmParameter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmParameter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmParameter) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -690,7 +714,7 @@ func (j *jsiiProxy_SsmParameter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
 func NewSsmParameter(scope constructs.Construct, id *string, config *SsmParameterConfig) SsmParameter {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewSsmParameter(scope constructs.Construct, id *string, config *SsmParamete
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_parameter aws_ssm_parameter} Resource.
 func NewSsmParameter_Override(s SsmParameter, scope constructs.Construct, id *string, config *SsmParameterConfig) {
 	_init_.Initialize()
 
@@ -882,6 +906,17 @@ func (j *jsiiProxy_SsmParameter)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmParameter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1384,6 +1419,14 @@ func (s *jsiiProxy_SsmParameter) ResetOverwrite() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverwrite",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmParameter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

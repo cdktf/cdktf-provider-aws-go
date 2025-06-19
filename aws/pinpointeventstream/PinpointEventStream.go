@@ -5,14 +5,14 @@ package pinpointeventstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/pinpointeventstream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/pinpointeventstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
 type PinpointEventStream interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -64,6 +64,9 @@ type PinpointEventStream interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -120,6 +123,7 @@ type PinpointEventStream interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -328,6 +332,26 @@ func (j *jsiiProxy_PinpointEventStream) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PinpointEventStream) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointEventStream) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PinpointEventStream) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_PinpointEventStream) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
 func NewPinpointEventStream(scope constructs.Construct, id *string, config *PinpointEventStreamConfig) PinpointEventStream {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewPinpointEventStream(scope constructs.Construct, id *string, config *Pinp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
 func NewPinpointEventStream_Override(p PinpointEventStream, scope constructs.Construct, id *string, config *PinpointEventStreamConfig) {
 	_init_.Initialize()
 
@@ -505,6 +529,17 @@ func (j *jsiiProxy_PinpointEventStream)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointEventStream)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (p *jsiiProxy_PinpointEventStream) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointEventStream) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

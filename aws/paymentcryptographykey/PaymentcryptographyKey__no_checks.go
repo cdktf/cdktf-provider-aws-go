@@ -75,7 +75,7 @@ func (p *jsiiProxy_PaymentcryptographyKey) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (p *jsiiProxy_PaymentcryptographyKey) validatePutKeyAttributesParameters(value *PaymentcryptographyKeyKeyAttributes) error {
+func (p *jsiiProxy_PaymentcryptographyKey) validatePutKeyAttributesParameters(value interface{}) error {
 	return nil
 }
 
@@ -128,6 +128,10 @@ func (j *jsiiProxy_PaymentcryptographyKey) validateSetLifecycleParameters(val *c
 }
 
 func (j *jsiiProxy_PaymentcryptographyKey) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PaymentcryptographyKey) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

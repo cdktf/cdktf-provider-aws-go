@@ -5,14 +5,14 @@ package paymentcryptographykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/paymentcryptographykey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/paymentcryptographykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}.
 type PaymentcryptographyKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -50,7 +50,7 @@ type PaymentcryptographyKey interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	KeyAttributes() PaymentcryptographyKeyKeyAttributesOutputReference
+	KeyAttributes() PaymentcryptographyKeyKeyAttributesList
 	KeyAttributesInput() interface{}
 	KeyCheckValue() *string
 	KeyCheckValueAlgorithm() *string
@@ -74,6 +74,9 @@ type PaymentcryptographyKey interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -129,7 +132,7 @@ type PaymentcryptographyKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutKeyAttributes(value *PaymentcryptographyKeyKeyAttributes)
+	PutKeyAttributes(value interface{})
 	PutTimeouts(value *PaymentcryptographyKeyTimeouts)
 	ResetDeletionWindowInDays()
 	ResetEnabled()
@@ -138,6 +141,7 @@ type PaymentcryptographyKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -318,8 +322,8 @@ func (j *jsiiProxy_PaymentcryptographyKey) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PaymentcryptographyKey) KeyAttributes() PaymentcryptographyKeyKeyAttributesOutputReference {
-	var returns PaymentcryptographyKeyKeyAttributesOutputReference
+func (j *jsiiProxy_PaymentcryptographyKey) KeyAttributes() PaymentcryptographyKeyKeyAttributesList {
+	var returns PaymentcryptographyKeyKeyAttributesList
 	_jsii_.Get(
 		j,
 		"keyAttributes",
@@ -438,6 +442,26 @@ func (j *jsiiProxy_PaymentcryptographyKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PaymentcryptographyKey) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PaymentcryptographyKey) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PaymentcryptographyKey) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_PaymentcryptographyKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
 func NewPaymentcryptographyKey(scope constructs.Construct, id *string, config *PaymentcryptographyKeyConfig) PaymentcryptographyKey {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewPaymentcryptographyKey(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
 func NewPaymentcryptographyKey_Override(p PaymentcryptographyKey, scope constructs.Construct, id *string, config *PaymentcryptographyKeyConfig) {
 	_init_.Initialize()
 
@@ -656,6 +680,17 @@ func (j *jsiiProxy_PaymentcryptographyKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PaymentcryptographyKey)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1024,7 +1059,7 @@ func (p *jsiiProxy_PaymentcryptographyKey) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (p *jsiiProxy_PaymentcryptographyKey) PutKeyAttributes(value *PaymentcryptographyKeyKeyAttributes) {
+func (p *jsiiProxy_PaymentcryptographyKey) PutKeyAttributes(value interface{}) {
 	if err := p.validatePutKeyAttributesParameters(value); err != nil {
 		panic(err)
 	}
@@ -1082,6 +1117,14 @@ func (p *jsiiProxy_PaymentcryptographyKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PaymentcryptographyKey) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

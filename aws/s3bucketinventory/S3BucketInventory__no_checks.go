@@ -143,6 +143,10 @@ func (j *jsiiProxy_S3BucketInventory) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketInventory) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketInventoryParameters(scope constructs.Construct, id *string, config *S3BucketInventoryConfig) error {
 	return nil
 }

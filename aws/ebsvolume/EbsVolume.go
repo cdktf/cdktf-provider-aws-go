@@ -5,14 +5,14 @@ package ebsvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ebsvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ebsvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_volume aws_ebs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_volume aws_ebs_volume}.
 type EbsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -81,6 +81,9 @@ type EbsVolume interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -161,6 +164,7 @@ type EbsVolume interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSize()
 	ResetSnapshotId()
 	ResetTags()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_EbsVolume) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EbsVolume) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EbsVolume) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EbsVolume) Size() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -667,7 +691,7 @@ func (j *jsiiProxy_EbsVolume) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfig) EbsVolume {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume_Override(e EbsVolume, scope constructs.Construct, id *string, config *EbsVolumeConfig) {
 	_init_.Initialize()
 
@@ -848,6 +872,17 @@ func (j *jsiiProxy_EbsVolume)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EbsVolume)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1342,6 +1377,14 @@ func (e *jsiiProxy_EbsVolume) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EbsVolume) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

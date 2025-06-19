@@ -5,14 +5,14 @@ package dataawsmqbrokerinstancetypeofferings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmqbrokerinstancetypeofferings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings}.
 type DataAwsMqBrokerInstanceTypeOfferings interface {
 	cdktf.TerraformDataSource
 	BrokerInstanceOptions() DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList
@@ -57,6 +57,9 @@ type DataAwsMqBrokerInstanceTypeOfferings interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -97,6 +100,7 @@ type DataAwsMqBrokerInstanceTypeOfferings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStorageType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) StorageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -348,7 +372,7 @@ func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
 func NewDataAwsMqBrokerInstanceTypeOfferings(scope constructs.Construct, id *string, config *DataAwsMqBrokerInstanceTypeOfferingsConfig) DataAwsMqBrokerInstanceTypeOfferings {
 	_init_.Initialize()
 
@@ -366,7 +390,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_instance_type_offerings aws_mq_broker_instance_type_offerings} Data Source.
 func NewDataAwsMqBrokerInstanceTypeOfferings_Override(d DataAwsMqBrokerInstanceTypeOfferings, scope constructs.Construct, id *string, config *DataAwsMqBrokerInstanceTypeOfferingsConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,17 @@ func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -780,6 +815,14 @@ func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

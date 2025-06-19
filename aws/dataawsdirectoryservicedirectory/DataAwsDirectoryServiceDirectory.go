@@ -5,14 +5,14 @@ package dataawsdirectoryservicedirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdirectoryservicedirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdirectoryservicedirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory aws_directory_service_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory aws_directory_service_directory}.
 type DataAwsDirectoryServiceDirectory interface {
 	cdktf.TerraformDataSource
 	AccessUrl() *string
@@ -62,6 +62,9 @@ type DataAwsDirectoryServiceDirectory interface {
 	RadiusSettings() DataAwsDirectoryServiceDirectoryRadiusSettingsList
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	ShortName() *string
 	Size() *string
@@ -105,6 +108,7 @@ type DataAwsDirectoryServiceDirectory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -466,7 +490,7 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) VpcSettings() DataAwsDirect
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory aws_directory_service_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory aws_directory_service_directory} Data Source.
 func NewDataAwsDirectoryServiceDirectory(scope constructs.Construct, id *string, config *DataAwsDirectoryServiceDirectoryConfig) DataAwsDirectoryServiceDirectory {
 	_init_.Initialize()
 
@@ -484,7 +508,7 @@ func NewDataAwsDirectoryServiceDirectory(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/directory_service_directory aws_directory_service_directory} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/directory_service_directory aws_directory_service_directory} Data Source.
 func NewDataAwsDirectoryServiceDirectory_Override(d DataAwsDirectoryServiceDirectory, scope constructs.Construct, id *string, config *DataAwsDirectoryServiceDirectoryConfig) {
 	_init_.Initialize()
 
@@ -559,6 +583,17 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectory)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectory)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -871,6 +906,14 @@ func (d *jsiiProxy_DataAwsDirectoryServiceDirectory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectory) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

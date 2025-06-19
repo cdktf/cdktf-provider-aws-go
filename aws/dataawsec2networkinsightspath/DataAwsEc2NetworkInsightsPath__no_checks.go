@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetNetworkInsightsPath
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

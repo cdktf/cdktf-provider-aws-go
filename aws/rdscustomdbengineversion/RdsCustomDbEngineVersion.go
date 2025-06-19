@@ -5,14 +5,14 @@ package rdscustomdbengineversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdscustomdbengineversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdscustomdbengineversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version}.
 type RdsCustomDbEngineVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -91,6 +91,9 @@ type RdsCustomDbEngineVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceImageId() *string
 	SetSourceImageId(val *string)
 	SourceImageIdInput() *string
@@ -166,6 +169,7 @@ type RdsCustomDbEngineVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSourceImageId()
 	ResetStatus()
 	ResetTags()
@@ -579,6 +583,26 @@ func (j *jsiiProxy_RdsCustomDbEngineVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCustomDbEngineVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCustomDbEngineVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCustomDbEngineVersion) SourceImageId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -710,7 +734,7 @@ func (j *jsiiProxy_RdsCustomDbEngineVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version} Resource.
 func NewRdsCustomDbEngineVersion(scope constructs.Construct, id *string, config *RdsCustomDbEngineVersionConfig) RdsCustomDbEngineVersion {
 	_init_.Initialize()
 
@@ -728,7 +752,7 @@ func NewRdsCustomDbEngineVersion(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_custom_db_engine_version aws_rds_custom_db_engine_version} Resource.
 func NewRdsCustomDbEngineVersion_Override(r RdsCustomDbEngineVersion, scope constructs.Construct, id *string, config *RdsCustomDbEngineVersionConfig) {
 	_init_.Initialize()
 
@@ -913,6 +937,17 @@ func (j *jsiiProxy_RdsCustomDbEngineVersion)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCustomDbEngineVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1393,6 +1428,14 @@ func (r *jsiiProxy_RdsCustomDbEngineVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCustomDbEngineVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

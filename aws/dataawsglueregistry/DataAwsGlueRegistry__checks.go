@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsGlueRegistry) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueRegistry) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsGlueRegistryParameters(scope constructs.Construct, id *string, config *DataAwsGlueRegistryConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

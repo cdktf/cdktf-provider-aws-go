@@ -143,6 +143,10 @@ func (j *jsiiProxy_WorkspacesDirectory) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

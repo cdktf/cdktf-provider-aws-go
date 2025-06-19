@@ -123,6 +123,10 @@ func (j *jsiiProxy_IvsPlaybackKeyPair) validateSetPublicKeyParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_IvsPlaybackKeyPair) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvsPlaybackKeyPair) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

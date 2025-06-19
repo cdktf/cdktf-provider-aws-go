@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsS3BucketPolicy) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3BucketPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsS3BucketPolicyParameters(scope constructs.Construct, id *string, config *DataAwsS3BucketPolicyConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsecstaskexecution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecstaskexecution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecstaskexecution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution}.
 type DataAwsEcsTaskExecution interface {
 	cdktf.TerraformDataSource
 	CapacityProviderStrategy() DataAwsEcsTaskExecutionCapacityProviderStrategyList
@@ -90,6 +90,9 @@ type DataAwsEcsTaskExecution interface {
 	ReferenceId() *string
 	SetReferenceId(val *string)
 	ReferenceIdInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StartedBy() *string
 	SetStartedBy(val *string)
 	StartedByInput() *string
@@ -154,6 +157,7 @@ type DataAwsEcsTaskExecution interface {
 	ResetPlatformVersion()
 	ResetPropagateTags()
 	ResetReferenceId()
+	ResetRegion()
 	ResetStartedBy()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -605,6 +609,26 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) ReferenceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskExecution) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskExecution) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskExecution) StartedBy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -706,7 +730,7 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
 func NewDataAwsEcsTaskExecution(scope constructs.Construct, id *string, config *DataAwsEcsTaskExecutionConfig) DataAwsEcsTaskExecution {
 	_init_.Initialize()
 
@@ -724,7 +748,7 @@ func NewDataAwsEcsTaskExecution(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
 func NewDataAwsEcsTaskExecution_Override(d DataAwsEcsTaskExecution, scope constructs.Construct, id *string, config *DataAwsEcsTaskExecutionConfig) {
 	_init_.Initialize()
 
@@ -898,6 +922,17 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution)SetReferenceId(val *string) {
 	_jsii_.Set(
 		j,
 		"referenceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskExecution)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1399,6 +1434,14 @@ func (d *jsiiProxy_DataAwsEcsTaskExecution) ResetReferenceId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReferenceId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcsTaskExecution) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

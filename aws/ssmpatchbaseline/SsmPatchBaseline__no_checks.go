@@ -147,6 +147,10 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SsmPatchBaseline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmPatchBaseline) validateSetRejectedPatchesParameters(val *[]*string) error {
 	return nil
 }

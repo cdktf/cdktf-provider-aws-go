@@ -79,7 +79,7 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3Conf
 	return nil
 }
 
-func validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

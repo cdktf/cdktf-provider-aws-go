@@ -5,14 +5,14 @@ package dataawsmediaconvertqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmediaconvertqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmediaconvertqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
 type DataAwsMediaConvertQueue interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -52,6 +52,9 @@ type DataAwsMediaConvertQueue interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -90,6 +93,7 @@ type DataAwsMediaConvertQueue interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -260,6 +264,26 @@ func (j *jsiiProxy_DataAwsMediaConvertQueue) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMediaConvertQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMediaConvertQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMediaConvertQueue) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_DataAwsMediaConvertQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
 func NewDataAwsMediaConvertQueue(scope constructs.Construct, id *string, config *DataAwsMediaConvertQueueConfig) DataAwsMediaConvertQueue {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewDataAwsMediaConvertQueue(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
 func NewDataAwsMediaConvertQueue_Override(d DataAwsMediaConvertQueue, scope constructs.Construct, id *string, config *DataAwsMediaConvertQueueConfig) {
 	_init_.Initialize()
 
@@ -403,6 +427,17 @@ func (j *jsiiProxy_DataAwsMediaConvertQueue)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMediaConvertQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DataAwsMediaConvertQueue) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMediaConvertQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package lakeformationdatacellsfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationdatacellsfilter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationdatacellsfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
 type LakeformationDataCellsFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type LakeformationDataCellsFilter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableData() LakeformationDataCellsFilterTableDataList
 	TableDataInput() interface{}
 	// Experimental.
@@ -114,6 +117,7 @@ type LakeformationDataCellsFilter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTableData()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -274,6 +278,26 @@ func (j *jsiiProxy_LakeformationDataCellsFilter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationDataCellsFilter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataCellsFilter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LakeformationDataCellsFilter) TableData() LakeformationDataCellsFilterTableDataList {
 	var returns LakeformationDataCellsFilterTableDataList
 	_jsii_.Get(
@@ -345,7 +369,7 @@ func (j *jsiiProxy_LakeformationDataCellsFilter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
 func NewLakeformationDataCellsFilter(scope constructs.Construct, id *string, config *LakeformationDataCellsFilterConfig) LakeformationDataCellsFilter {
 	_init_.Initialize()
 
@@ -363,7 +387,7 @@ func NewLakeformationDataCellsFilter(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
 func NewLakeformationDataCellsFilter_Override(l LakeformationDataCellsFilter, scope constructs.Construct, id *string, config *LakeformationDataCellsFilterConfig) {
 	_init_.Initialize()
 
@@ -438,6 +462,17 @@ func (j *jsiiProxy_LakeformationDataCellsFilter)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataCellsFilter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -821,6 +856,14 @@ func (l *jsiiProxy_LakeformationDataCellsFilter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationDataCellsFilter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

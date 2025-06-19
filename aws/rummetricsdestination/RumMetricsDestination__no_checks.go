@@ -127,6 +127,10 @@ func (j *jsiiProxy_RumMetricsDestination) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RumMetricsDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRumMetricsDestinationParameters(scope constructs.Construct, id *string, config *RumMetricsDestinationConfig) error {
 	return nil
 }

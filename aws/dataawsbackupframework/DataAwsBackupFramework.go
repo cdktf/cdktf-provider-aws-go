@@ -5,14 +5,14 @@ package dataawsbackupframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsbackupframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/backup_framework aws_backup_framework}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/backup_framework aws_backup_framework}.
 type DataAwsBackupFramework interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -58,6 +58,9 @@ type DataAwsBackupFramework interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -97,6 +100,7 @@ type DataAwsBackupFramework interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -317,6 +321,26 @@ func (j *jsiiProxy_DataAwsBackupFramework) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBackupFramework) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBackupFramework) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBackupFramework) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataAwsBackupFramework) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
 func NewDataAwsBackupFramework(scope constructs.Construct, id *string, config *DataAwsBackupFrameworkConfig) DataAwsBackupFramework {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewDataAwsBackupFramework(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
 func NewDataAwsBackupFramework_Override(d DataAwsBackupFramework, scope constructs.Construct, id *string, config *DataAwsBackupFrameworkConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_DataAwsBackupFramework)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBackupFramework)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -783,6 +818,14 @@ func (d *jsiiProxy_DataAwsBackupFramework) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBackupFramework) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

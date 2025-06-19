@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetSnapshotIdentifierParameters(val *string) error {
 	return nil
 }

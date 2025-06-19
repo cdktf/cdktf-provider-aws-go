@@ -75,7 +75,7 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) val
 	return nil
 }
 
-func validateNewDataAwsLbListenerRuleConditionQueryStringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsLbListenerRuleConditionQueryStringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

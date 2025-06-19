@@ -203,6 +203,10 @@ func (j *jsiiProxy_IotTopicRule) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRule) validateSetSqlParameters(val *string) error {
 	return nil
 }

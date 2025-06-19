@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) validateSetLifec
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogappregistryApplicationParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryApplicationConfig) error {
 	return nil
 }

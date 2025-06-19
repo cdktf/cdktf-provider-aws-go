@@ -131,6 +131,10 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

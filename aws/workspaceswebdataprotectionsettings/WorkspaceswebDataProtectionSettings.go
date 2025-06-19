@@ -5,14 +5,14 @@ package workspaceswebdataprotectionsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebdataprotectionsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings}.
 type WorkspaceswebDataProtectionSettings interface {
 	cdktf.TerraformResource
 	AdditionalEncryptionContext() *map[string]*string
@@ -71,6 +71,9 @@ type WorkspaceswebDataProtectionSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -132,6 +135,7 @@ type WorkspaceswebDataProtectionSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
 func NewWorkspaceswebDataProtectionSettings(scope constructs.Construct, id *string, config *WorkspaceswebDataProtectionSettingsConfig) WorkspaceswebDataProtectionSettings {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewWorkspaceswebDataProtectionSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
 func NewWorkspaceswebDataProtectionSettings_Override(w WorkspaceswebDataProtectionSettings, scope constructs.Construct, id *string, config *WorkspaceswebDataProtectionSettingsConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_WorkspaceswebDataProtectionSettings)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceswebDataProtectionSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1014,6 +1049,14 @@ func (w *jsiiProxy_WorkspaceswebDataProtectionSettings) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceswebDataProtectionSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -75,7 +75,7 @@ func (v *jsiiProxy_VerifiedpermissionsSchema) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsSchema) validatePutDefinitionParameters(value *VerifiedpermissionsSchemaDefinition) error {
+func (v *jsiiProxy_VerifiedpermissionsSchema) validatePutDefinitionParameters(value interface{}) error {
 	return nil
 }
 
@@ -112,6 +112,10 @@ func (j *jsiiProxy_VerifiedpermissionsSchema) validateSetPolicyStoreIdParameters
 }
 
 func (j *jsiiProxy_VerifiedpermissionsSchema) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VerifiedpermissionsSchema) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

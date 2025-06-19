@@ -147,6 +147,10 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPipeline) validateSetRoleParameters(val *string) error {
 	return nil
 }

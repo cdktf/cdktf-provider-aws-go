@@ -123,6 +123,10 @@ func (j *jsiiProxy_RedshiftLogging) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftLogging) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftLogging) validateSetS3KeyPrefixParameters(val *string) error {
 	return nil
 }

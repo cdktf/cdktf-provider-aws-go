@@ -75,7 +75,7 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validateOverrideLogicalId
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value *OpensearchserverlessSecurityConfigSamlOptions) error {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value interface{}) error {
 	return nil
 }
 
@@ -116,6 +116,10 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) validateSetNameParameters
 }
 
 func (j *jsiiProxy_OpensearchserverlessSecurityConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

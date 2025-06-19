@@ -123,6 +123,10 @@ func (j *jsiiProxy_SchedulerScheduleGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SchedulerScheduleGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchedulerScheduleGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

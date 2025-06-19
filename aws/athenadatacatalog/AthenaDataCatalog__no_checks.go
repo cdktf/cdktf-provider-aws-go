@@ -123,6 +123,10 @@ func (j *jsiiProxy_AthenaDataCatalog) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_AthenaDataCatalog) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaDataCatalog) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

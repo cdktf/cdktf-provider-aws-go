@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

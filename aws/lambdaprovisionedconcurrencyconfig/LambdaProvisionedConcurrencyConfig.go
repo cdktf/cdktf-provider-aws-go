@@ -5,14 +5,14 @@ package lambdaprovisionedconcurrencyconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdaprovisionedconcurrencyconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdaprovisionedconcurrencyconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config}.
 type LambdaProvisionedConcurrencyConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type LambdaProvisionedConcurrencyConfig interface {
 	QualifierInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SkipDestroy() interface{}
 	SetSkipDestroy(val interface{})
 	SkipDestroyInput() interface{}
@@ -126,6 +129,7 @@ type LambdaProvisionedConcurrencyConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSkipDestroy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -356,6 +360,26 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) SkipDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
 func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) LambdaProvisionedConcurrencyConfig {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_provisioned_concurrency_config aws_lambda_provisioned_concurrency_config} Resource.
 func NewLambdaProvisionedConcurrencyConfig_Override(l LambdaProvisionedConcurrencyConfig, scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) {
 	_init_.Initialize()
 
@@ -564,6 +588,17 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetQualifier(val *string) 
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -955,6 +990,14 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

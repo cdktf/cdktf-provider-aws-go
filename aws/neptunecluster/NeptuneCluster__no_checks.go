@@ -207,6 +207,10 @@ func (j *jsiiProxy_NeptuneCluster) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneCluster) validateSetReplicationSourceIdentifierParameters(val *string) error {
 	return nil
 }

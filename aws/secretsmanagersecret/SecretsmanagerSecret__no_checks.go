@@ -143,6 +143,10 @@ func (j *jsiiProxy_SecretsmanagerSecret) validateSetRecoveryWindowInDaysParamete
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecret) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecret) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

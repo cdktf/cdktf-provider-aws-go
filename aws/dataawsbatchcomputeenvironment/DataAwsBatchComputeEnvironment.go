@@ -5,22 +5,19 @@ package dataawsbatchcomputeenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsbatchcomputeenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
 type DataAwsBatchComputeEnvironment interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ComputeEnvironmentName() *string
-	SetComputeEnvironmentName(val *string)
-	ComputeEnvironmentNameInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -47,6 +44,9 @@ type DataAwsBatchComputeEnvironment interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -55,6 +55,9 @@ type DataAwsBatchComputeEnvironment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceRole() *string
 	State() *string
 	Status() *string
@@ -99,6 +102,7 @@ type DataAwsBatchComputeEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -134,26 +138,6 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) CdktfStack() cdktf.TerraformS
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsBatchComputeEnvironment) ComputeEnvironmentName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsBatchComputeEnvironment) ComputeEnvironmentNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentNameInput",
 		&returns,
 	)
 	return returns
@@ -259,6 +243,26 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) Lifecycle() *cdktf.TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -284,6 +288,26 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -400,7 +424,7 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) UpdatePolicy() DataAwsBatchCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
 func NewDataAwsBatchComputeEnvironment(scope constructs.Construct, id *string, config *DataAwsBatchComputeEnvironmentConfig) DataAwsBatchComputeEnvironment {
 	_init_.Initialize()
 
@@ -418,7 +442,7 @@ func NewDataAwsBatchComputeEnvironment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
 func NewDataAwsBatchComputeEnvironment_Override(d DataAwsBatchComputeEnvironment, scope constructs.Construct, id *string, config *DataAwsBatchComputeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -426,17 +450,6 @@ func NewDataAwsBatchComputeEnvironment_Override(d DataAwsBatchComputeEnvironment
 		"@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAwsBatchComputeEnvironment)SetComputeEnvironmentName(val *string) {
-	if err := j.validateSetComputeEnvironmentNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeEnvironmentName",
-		val,
 	)
 }
 
@@ -489,10 +502,32 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -805,6 +840,14 @@ func (d *jsiiProxy_DataAwsBatchComputeEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBatchComputeEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

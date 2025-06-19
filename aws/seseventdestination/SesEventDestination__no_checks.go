@@ -139,6 +139,10 @@ func (j *jsiiProxy_SesEventDestination) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_SesEventDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesEventDestinationParameters(scope constructs.Construct, id *string, config *SesEventDestinationConfig) error {
 	return nil
 }

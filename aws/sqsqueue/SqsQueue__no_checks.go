@@ -175,6 +175,10 @@ func (j *jsiiProxy_SqsQueue) validateSetRedrivePolicyParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueue) validateSetSqsManagedSseEnabledParameters(val interface{}) error {
 	return nil
 }

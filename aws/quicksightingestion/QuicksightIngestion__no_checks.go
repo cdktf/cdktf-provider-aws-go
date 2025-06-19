@@ -123,6 +123,10 @@ func (j *jsiiProxy_QuicksightIngestion) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightIngestion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuicksightIngestionParameters(scope constructs.Construct, id *string, config *QuicksightIngestionConfig) error {
 	return nil
 }

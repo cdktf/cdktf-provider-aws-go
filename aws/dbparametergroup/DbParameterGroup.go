@@ -5,14 +5,14 @@ package dbparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dbparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_parameter_group aws_db_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_parameter_group aws_db_parameter_group}.
 type DbParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type DbParameterGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SkipDestroy() interface{}
 	SetSkipDestroy(val interface{})
 	SkipDestroyInput() interface{}
@@ -140,6 +143,7 @@ type DbParameterGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetRegion()
 	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_DbParameterGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbParameterGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbParameterGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbParameterGroup) SkipDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_DbParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
 func NewDbParameterGroup(scope constructs.Construct, id *string, config *DbParameterGroupConfig) DbParameterGroup {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewDbParameterGroup(scope constructs.Construct, id *string, config *DbParam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
 func NewDbParameterGroup_Override(d DbParameterGroup, scope constructs.Construct, id *string, config *DbParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_DbParameterGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbParameterGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (d *jsiiProxy_DbParameterGroup) ResetParameter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbParameterGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

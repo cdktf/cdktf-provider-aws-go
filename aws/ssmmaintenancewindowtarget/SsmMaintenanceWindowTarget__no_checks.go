@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTarget) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_EbsSnapshotCopy) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_EbsSnapshotCopy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsSnapshotCopy) validateSetSourceRegionParameters(val *string) error {
 	return nil
 }

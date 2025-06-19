@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

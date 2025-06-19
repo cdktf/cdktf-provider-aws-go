@@ -5,14 +5,14 @@ package dataawsappmeshgatewayroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsappmeshgatewayroute/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappmeshgatewayroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
 type DataAwsAppmeshGatewayRoute interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -62,6 +62,9 @@ type DataAwsAppmeshGatewayRoute interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceOwner() *string
 	Spec() DataAwsAppmeshGatewayRouteSpecList
 	Tags() *map[string]*string
@@ -106,6 +109,7 @@ type DataAwsAppmeshGatewayRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -346,6 +350,26 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) ResourceOwner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -437,7 +461,7 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) VirtualGatewayNameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
 func NewDataAwsAppmeshGatewayRoute(scope constructs.Construct, id *string, config *DataAwsAppmeshGatewayRouteConfig) DataAwsAppmeshGatewayRoute {
 	_init_.Initialize()
 
@@ -455,7 +479,7 @@ func NewDataAwsAppmeshGatewayRoute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
 func NewDataAwsAppmeshGatewayRoute_Override(d DataAwsAppmeshGatewayRoute, scope constructs.Construct, id *string, config *DataAwsAppmeshGatewayRouteConfig) {
 	_init_.Initialize()
 
@@ -552,6 +576,17 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRoute)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAppmeshGatewayRoute)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -883,6 +918,14 @@ func (d *jsiiProxy_DataAwsAppmeshGatewayRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAppmeshGatewayRoute) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_IotRoleAlias) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_IotRoleAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotRoleAlias) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

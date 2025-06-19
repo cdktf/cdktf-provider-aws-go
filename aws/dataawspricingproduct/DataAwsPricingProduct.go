@@ -5,14 +5,14 @@ package dataawspricingproduct
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawspricingproduct/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawspricingproduct/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/pricing_product aws_pricing_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/pricing_product aws_pricing_product}.
 type DataAwsPricingProduct interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataAwsPricingProduct) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/pricing_product aws_pricing_product} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/pricing_product aws_pricing_product} Data Source.
 func NewDataAwsPricingProduct(scope constructs.Construct, id *string, config *DataAwsPricingProductConfig) DataAwsPricingProduct {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataAwsPricingProduct(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/pricing_product aws_pricing_product} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/pricing_product aws_pricing_product} Data Source.
 func NewDataAwsPricingProduct_Override(d DataAwsPricingProduct, scope constructs.Construct, id *string, config *DataAwsPricingProductConfig) {
 	_init_.Initialize()
 

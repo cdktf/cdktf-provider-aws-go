@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEbsVolumes) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsVolumes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsVolumes) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

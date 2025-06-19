@@ -462,6 +462,14 @@ func (j *jsiiProxy_DbParameterGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_DbParameterGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbParameterGroup) validateSetSkipDestroyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

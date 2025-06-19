@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetScanTypeParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

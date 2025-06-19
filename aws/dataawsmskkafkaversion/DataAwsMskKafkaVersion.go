@@ -5,14 +5,14 @@ package dataawsmskkafkaversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmskkafkaversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmskkafkaversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version}.
 type DataAwsMskKafkaVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsMskKafkaVersion interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -93,6 +96,7 @@ type DataAwsMskKafkaVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredVersions()
+	ResetRegion()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -263,6 +267,26 @@ func (j *jsiiProxy_DataAwsMskKafkaVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMskKafkaVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMskKafkaVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMskKafkaVersion) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataAwsMskKafkaVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version} Data Source.
 func NewDataAwsMskKafkaVersion(scope constructs.Construct, id *string, config *DataAwsMskKafkaVersionConfig) DataAwsMskKafkaVersion {
 	_init_.Initialize()
 
@@ -342,7 +366,7 @@ func NewDataAwsMskKafkaVersion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/msk_kafka_version aws_msk_kafka_version} Data Source.
 func NewDataAwsMskKafkaVersion_Override(d DataAwsMskKafkaVersion, scope constructs.Construct, id *string, config *DataAwsMskKafkaVersionConfig) {
 	_init_.Initialize()
 
@@ -417,6 +441,17 @@ func (j *jsiiProxy_DataAwsMskKafkaVersion)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMskKafkaVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (d *jsiiProxy_DataAwsMskKafkaVersion) ResetPreferredVersions() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredVersions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMskKafkaVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

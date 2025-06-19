@@ -123,6 +123,10 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetTopicArnParameters(val *string) error {
 	return nil
 }

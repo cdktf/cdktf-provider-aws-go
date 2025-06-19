@@ -5,14 +5,14 @@ package gluedevendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluedevendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluedevendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}.
 type GlueDevEndpoint interface {
 	cdktf.TerraformResource
 	Arguments() *map[string]*string
@@ -90,6 +90,9 @@ type GlueDevEndpoint interface {
 	PublicKeysInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -176,6 +179,7 @@ type GlueDevEndpoint interface {
 	ResetOverrideLogicalId()
 	ResetPublicKey()
 	ResetPublicKeys()
+	ResetRegion()
 	ResetSecurityConfiguration()
 	ResetSecurityGroupIds()
 	ResetSubnetId()
@@ -580,6 +584,26 @@ func (j *jsiiProxy_GlueDevEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlueDevEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueDevEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueDevEndpoint) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -791,7 +815,7 @@ func (j *jsiiProxy_GlueDevEndpoint) ZeppelinRemoteSparkInterpreterPort() *float6
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
 func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevEndpointConfig) GlueDevEndpoint {
 	_init_.Initialize()
 
@@ -809,7 +833,7 @@ func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
 func NewGlueDevEndpoint_Override(g GlueDevEndpoint, scope constructs.Construct, id *string, config *GlueDevEndpointConfig) {
 	_init_.Initialize()
 
@@ -994,6 +1018,17 @@ func (j *jsiiProxy_GlueDevEndpoint)SetPublicKeys(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"publicKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueDevEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1504,6 +1539,14 @@ func (g *jsiiProxy_GlueDevEndpoint) ResetPublicKeys() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPublicKeys",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueDevEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

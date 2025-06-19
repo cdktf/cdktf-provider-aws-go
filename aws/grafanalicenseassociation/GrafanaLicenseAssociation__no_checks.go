@@ -123,6 +123,10 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }

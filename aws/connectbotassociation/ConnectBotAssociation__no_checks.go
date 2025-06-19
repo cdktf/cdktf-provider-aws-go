@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConnectBotAssociation) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ConnectBotAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewConnectBotAssociationParameters(scope constructs.Construct, id *string, config *ConnectBotAssociationConfig) error {
 	return nil
 }

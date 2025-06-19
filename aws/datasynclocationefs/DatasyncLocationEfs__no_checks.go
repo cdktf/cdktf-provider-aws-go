@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatasyncLocationEfs) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationEfs) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationEfs) validateSetSubdirectoryParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_CloudwatchLogIndexPolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogIndexPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudwatchLogIndexPolicyParameters(scope constructs.Construct, id *string, config *CloudwatchLogIndexPolicyConfig) error {
 	return nil
 }

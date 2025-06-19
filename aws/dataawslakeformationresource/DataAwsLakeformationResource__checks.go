@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsLakeformationResource) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLakeformationResource) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsLakeformationResourceParameters(scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

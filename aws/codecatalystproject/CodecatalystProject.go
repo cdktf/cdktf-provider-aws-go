@@ -5,14 +5,14 @@ package codecatalystproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codecatalystproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codecatalystproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_project aws_codecatalyst_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_project aws_codecatalyst_project}.
 type CodecatalystProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type CodecatalystProject interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SpaceName() *string
 	SetSpaceName(val *string)
 	SpaceNameInput() *string
@@ -125,6 +128,7 @@ type CodecatalystProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -344,6 +348,26 @@ func (j *jsiiProxy_CodecatalystProject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodecatalystProject) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodecatalystProject) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodecatalystProject) SpaceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -415,7 +439,7 @@ func (j *jsiiProxy_CodecatalystProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
 func NewCodecatalystProject(scope constructs.Construct, id *string, config *CodecatalystProjectConfig) CodecatalystProject {
 	_init_.Initialize()
 
@@ -433,7 +457,7 @@ func NewCodecatalystProject(scope constructs.Construct, id *string, config *Code
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecatalyst_project aws_codecatalyst_project} Resource.
 func NewCodecatalystProject_Override(c CodecatalystProject, scope constructs.Construct, id *string, config *CodecatalystProjectConfig) {
 	_init_.Initialize()
 
@@ -541,6 +565,17 @@ func (j *jsiiProxy_CodecatalystProject)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodecatalystProject)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -940,6 +975,14 @@ func (c *jsiiProxy_CodecatalystProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodecatalystProject) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

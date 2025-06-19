@@ -5,14 +5,14 @@ package vpclatticelistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpclatticelistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticelistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener aws_vpclattice_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener aws_vpclattice_listener}.
 type VpclatticeListener interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type VpclatticeListener interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceArn() *string
 	SetServiceArn(val *string)
 	ServiceArnInput() *string
@@ -143,6 +146,7 @@ type VpclatticeListener interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
+	ResetRegion()
 	ResetServiceArn()
 	ResetServiceIdentifier()
 	ResetTags()
@@ -436,6 +440,26 @@ func (j *jsiiProxy_VpclatticeListener) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeListener) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeListener) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeListener) ServiceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,7 +591,7 @@ func (j *jsiiProxy_VpclatticeListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource.
 func NewVpclatticeListener(scope constructs.Construct, id *string, config *VpclatticeListenerConfig) VpclatticeListener {
 	_init_.Initialize()
 
@@ -585,7 +609,7 @@ func NewVpclatticeListener(scope constructs.Construct, id *string, config *Vpcla
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_listener aws_vpclattice_listener} Resource.
 func NewVpclatticeListener_Override(v VpclatticeListener, scope constructs.Construct, id *string, config *VpclatticeListenerConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_VpclatticeListener)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeListener)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1147,6 +1182,14 @@ func (v *jsiiProxy_VpclatticeListener) ResetPort() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeListener) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

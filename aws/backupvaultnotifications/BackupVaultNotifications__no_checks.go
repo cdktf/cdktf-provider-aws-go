@@ -119,6 +119,10 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BackupVaultNotifications) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupVaultNotifications) validateSetSnsTopicArnParameters(val *string) error {
 	return nil
 }

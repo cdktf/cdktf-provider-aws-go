@@ -5,14 +5,14 @@ package lblistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lblistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lblistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_listener aws_lb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_listener aws_lb_listener}.
 type LbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -78,6 +78,9 @@ type LbListener interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoutingHttpRequestXAmznMtlsClientcertHeaderName() *string
 	SetRoutingHttpRequestXAmznMtlsClientcertHeaderName(val *string)
 	RoutingHttpRequestXAmznMtlsClientcertHeaderNameInput() *string
@@ -210,6 +213,7 @@ type LbListener interface {
 	ResetOverrideLogicalId()
 	ResetPort()
 	ResetProtocol()
+	ResetRegion()
 	ResetRoutingHttpRequestXAmznMtlsClientcertHeaderName()
 	ResetRoutingHttpRequestXAmznMtlsClientcertIssuerHeaderName()
 	ResetRoutingHttpRequestXAmznMtlsClientcertLeafHeaderName()
@@ -547,6 +551,26 @@ func (j *jsiiProxy_LbListener) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListener) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -1063,7 +1087,7 @@ func (j *jsiiProxy_LbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_listener aws_lb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_listener aws_lb_listener} Resource.
 func NewLbListener(scope constructs.Construct, id *string, config *LbListenerConfig) LbListener {
 	_init_.Initialize()
 
@@ -1081,7 +1105,7 @@ func NewLbListener(scope constructs.Construct, id *string, config *LbListenerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_listener aws_lb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_listener aws_lb_listener} Resource.
 func NewLbListener_Override(l LbListener, scope constructs.Construct, id *string, config *LbListenerConfig) {
 	_init_.Initialize()
 
@@ -1222,6 +1246,17 @@ func (j *jsiiProxy_LbListener)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListener)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1917,6 +1952,14 @@ func (l *jsiiProxy_LbListener) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListener) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

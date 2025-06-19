@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudformationExport) validateSetNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationExport) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCloudformationExportParameters(scope constructs.Construct, id *string, config *DataAwsCloudformationExportConfig) error {
 	return nil
 }

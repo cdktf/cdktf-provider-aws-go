@@ -5,9 +5,9 @@ package dataawsemrsupportedinstancetypes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrsupportedinstancetypes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrsupportedinstancetypes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,8 +35,8 @@ type DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference inter
 	// Experimental.
 	Fqn() *string
 	InstanceFamilyId() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes
+	SetInternalValue(val *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes)
 	Is64BitsOnly() cdktf.IResolvable
 	MemoryGb() *float64
 	NumberOfDisks() *float64
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputR
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) InternalValue() *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes {
+	var returns *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputR
 	)
 }
 
-func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference)SetInternalValue(val *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

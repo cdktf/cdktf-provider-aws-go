@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsAthenaNamedQuery) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAthenaNamedQuery) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAthenaNamedQuery) validateSetWorkgroupParameters(val *string) error {
 	return nil
 }

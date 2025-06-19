@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetOwnerIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetRetentionPeriodParameters(val *float64) error {
 	return nil
 }

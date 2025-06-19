@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) validatePutC
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) validatePutInferenceAcceleratorOverridesParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

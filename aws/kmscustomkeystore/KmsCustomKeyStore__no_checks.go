@@ -135,6 +135,10 @@ func (j *jsiiProxy_KmsCustomKeyStore) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCustomKeyStore) validateSetTrustAnchorCertificateParameters(val *string) error {
 	return nil
 }

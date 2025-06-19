@@ -179,6 +179,10 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetRealmParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuicksightAccountSubscriptionParameters(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) error {
 	return nil
 }

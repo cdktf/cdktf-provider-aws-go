@@ -5,14 +5,14 @@ package ec2transitgatewayroutetableassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewayroutetableassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayroutetableassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association}.
 type Ec2TransitGatewayRouteTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type Ec2TransitGatewayRouteTableAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplaceExistingAssociation() interface{}
 	SetReplaceExistingAssociation(val interface{})
 	ReplaceExistingAssociationInput() interface{}
@@ -122,6 +125,7 @@ type Ec2TransitGatewayRouteTableAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReplaceExistingAssociation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -291,6 +295,26 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) ReplaceExistingAssociation() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) TransitGatewayRouteTa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association} Resource.
 func NewEc2TransitGatewayRouteTableAssociation(scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTableAssociationConfig) Ec2TransitGatewayRouteTableAssociation {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewEc2TransitGatewayRouteTableAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table_association aws_ec2_transit_gateway_route_table_association} Resource.
 func NewEc2TransitGatewayRouteTableAssociation_Override(e Ec2TransitGatewayRouteTableAssociation, scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTableAssociationConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation)SetProvisioners(val *[
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (e *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

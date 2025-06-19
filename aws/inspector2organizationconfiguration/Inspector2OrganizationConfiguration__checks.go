@@ -421,6 +421,14 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewInspector2OrganizationConfigurationParameters(scope constructs.Construct, id *string, config *Inspector2OrganizationConfigurationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

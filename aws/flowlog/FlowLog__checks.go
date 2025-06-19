@@ -412,14 +412,6 @@ func (j *jsiiProxy_FlowLog) validateSetLogFormatParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FlowLog) validateSetLogGroupNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_FlowLog) validateSetMaxAggregationIntervalParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -469,6 +461,14 @@ func (j *jsiiProxy_FlowLog) validateSetProvisionersParameters(val *[]interface{}
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FlowLog) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -423,6 +423,14 @@ func (j *jsiiProxy_LightsailDiskAttachment) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDiskAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLightsailDiskAttachmentParameters(scope constructs.Construct, id *string, config *LightsailDiskAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

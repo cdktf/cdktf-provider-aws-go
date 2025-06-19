@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClients) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPoolClients) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolClients) validateSetUserPoolIdParameters(val *string) error {
 	return nil
 }

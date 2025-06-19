@@ -5,14 +5,14 @@ package redshiftresourcepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftresourcepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftresourcepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy}.
 type RedshiftResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type RedshiftResourcePolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -117,6 +120,7 @@ type RedshiftResourcePolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_RedshiftResourcePolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftResourcePolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftResourcePolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftResourcePolicy) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_RedshiftResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy} Resource.
 func NewRedshiftResourcePolicy(scope constructs.Construct, id *string, config *RedshiftResourcePolicyConfig) RedshiftResourcePolicy {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewRedshiftResourcePolicy(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy} Resource.
 func NewRedshiftResourcePolicy_Override(r RedshiftResourcePolicy, scope constructs.Construct, id *string, config *RedshiftResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_RedshiftResourcePolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftResourcePolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (r *jsiiProxy_RedshiftResourcePolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftResourcePolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

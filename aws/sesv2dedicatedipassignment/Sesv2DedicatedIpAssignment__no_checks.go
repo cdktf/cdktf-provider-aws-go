@@ -123,6 +123,10 @@ func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesv2DedicatedIpAssignmentParameters(scope constructs.Construct, id *string, config *Sesv2DedicatedIpAssignmentConfig) error {
 	return nil
 }

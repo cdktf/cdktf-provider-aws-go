@@ -119,6 +119,10 @@ func (j *jsiiProxy_Inspector2Enabler) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2Enabler) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2Enabler) validateSetResourceTypesParameters(val *[]*string) error {
 	return nil
 }

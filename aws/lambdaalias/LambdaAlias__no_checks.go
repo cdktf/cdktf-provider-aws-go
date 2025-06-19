@@ -131,6 +131,10 @@ func (j *jsiiProxy_LambdaAlias) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_LambdaAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLambdaAliasParameters(scope constructs.Construct, id *string, config *LambdaAliasConfig) error {
 	return nil
 }

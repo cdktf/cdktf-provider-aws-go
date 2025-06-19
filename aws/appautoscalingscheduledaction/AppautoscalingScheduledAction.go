@@ -5,14 +5,14 @@ package appautoscalingscheduledaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appautoscalingscheduledaction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appautoscalingscheduledaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action}.
 type AppautoscalingScheduledAction interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type AppautoscalingScheduledAction interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
@@ -140,6 +143,7 @@ type AppautoscalingScheduledAction interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStartTime()
 	ResetTimezone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -360,6 +364,26 @@ func (j *jsiiProxy_AppautoscalingScheduledAction) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppautoscalingScheduledAction) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingScheduledAction) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppautoscalingScheduledAction) ResourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,7 +555,7 @@ func (j *jsiiProxy_AppautoscalingScheduledAction) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
 func NewAppautoscalingScheduledAction(scope constructs.Construct, id *string, config *AppautoscalingScheduledActionConfig) AppautoscalingScheduledAction {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewAppautoscalingScheduledAction(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
 func NewAppautoscalingScheduledAction_Override(a AppautoscalingScheduledAction, scope constructs.Construct, id *string, config *AppautoscalingScheduledActionConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_AppautoscalingScheduledAction)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppautoscalingScheduledAction)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1111,6 +1146,14 @@ func (a *jsiiProxy_AppautoscalingScheduledAction) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingScheduledAction) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

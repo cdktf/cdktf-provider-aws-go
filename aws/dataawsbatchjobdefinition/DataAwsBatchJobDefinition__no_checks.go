@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBatchJobDefinition) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchJobDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchJobDefinition) validateSetRevisionParameters(val *float64) error {
 	return nil
 }

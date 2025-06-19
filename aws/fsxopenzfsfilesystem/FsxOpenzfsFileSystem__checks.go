@@ -544,6 +544,14 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetRouteTableIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

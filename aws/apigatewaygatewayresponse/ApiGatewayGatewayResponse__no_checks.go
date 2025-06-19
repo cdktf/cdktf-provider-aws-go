@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApiGatewayGatewayResponse) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayGatewayResponse) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayGatewayResponse) validateSetResponseParametersParameters(val *map[string]*string) error {
 	return nil
 }

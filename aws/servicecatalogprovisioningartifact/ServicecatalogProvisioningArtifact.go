@@ -5,14 +5,14 @@ package servicecatalogprovisioningartifact
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogprovisioningartifact/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogprovisioningartifact/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact}.
 type ServicecatalogProvisioningArtifact interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -81,6 +81,9 @@ type ServicecatalogProvisioningArtifact interface {
 	ProvisioningArtifactId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TemplatePhysicalId() *string
 	SetTemplatePhysicalId(val *string)
 	TemplatePhysicalIdInput() *string
@@ -152,6 +155,7 @@ type ServicecatalogProvisioningArtifact interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTemplatePhysicalId()
 	ResetTemplateUrl()
 	ResetTimeouts()
@@ -484,6 +488,26 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TemplatePhysicalId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,7 +619,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
 func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *string, config *ServicecatalogProvisioningArtifactConfig) ServicecatalogProvisioningArtifact {
 	_init_.Initialize()
 
@@ -613,7 +637,7 @@ func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
 func NewServicecatalogProvisioningArtifact_Override(s ServicecatalogProvisioningArtifact, scope constructs.Construct, id *string, config *ServicecatalogProvisioningArtifactConfig) {
 	_init_.Initialize()
 
@@ -776,6 +800,17 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1237,6 +1272,14 @@ func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogProvisioningArtifact) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -218,37 +218,6 @@ func (e *jsiiProxy_EcsTaskDefinition) validatePutEphemeralStorageParameters(valu
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) validatePutInferenceAcceleratorParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*EcsTaskDefinitionInferenceAccelerator:
-		value := value.(*[]*EcsTaskDefinitionInferenceAccelerator)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*EcsTaskDefinitionInferenceAccelerator:
-		value_ := value.([]*EcsTaskDefinitionInferenceAccelerator)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EcsTaskDefinitionInferenceAccelerator; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (e *jsiiProxy_EcsTaskDefinition) validatePutPlacementConstraintsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -604,6 +573,14 @@ func (j *jsiiProxy_EcsTaskDefinition) validateSetProvisionersParameters(val *[]i
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

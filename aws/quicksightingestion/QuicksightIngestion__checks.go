@@ -423,6 +423,14 @@ func (j *jsiiProxy_QuicksightIngestion) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightIngestion) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewQuicksightIngestionParameters(scope constructs.Construct, id *string, config *QuicksightIngestionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

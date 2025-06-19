@@ -119,6 +119,10 @@ func (j *jsiiProxy_GlueCatalogTableOptimizer) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableOptimizer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableOptimizer) validateSetTableNameParameters(val *string) error {
 	return nil
 }

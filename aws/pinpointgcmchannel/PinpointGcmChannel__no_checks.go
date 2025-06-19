@@ -127,6 +127,10 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_PinpointGcmChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) validateSetServiceJsonParameters(val *string) error {
 	return nil
 }

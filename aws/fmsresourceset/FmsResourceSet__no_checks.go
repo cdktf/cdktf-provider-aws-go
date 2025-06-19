@@ -115,6 +115,10 @@ func (j *jsiiProxy_FmsResourceSet) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_FmsResourceSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsResourceSet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

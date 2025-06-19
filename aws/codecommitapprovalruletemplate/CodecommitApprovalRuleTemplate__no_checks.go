@@ -123,6 +123,10 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCodecommitApprovalRuleTemplateParameters(scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateConfig) error {
 	return nil
 }

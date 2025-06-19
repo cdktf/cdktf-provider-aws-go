@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

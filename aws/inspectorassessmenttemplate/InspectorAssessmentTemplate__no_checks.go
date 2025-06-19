@@ -123,6 +123,10 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetRulesPackageArnsParameters(val *[]*string) error {
 	return nil
 }

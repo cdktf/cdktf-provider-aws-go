@@ -5,14 +5,14 @@ package dynamodbtablereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dynamodbtablereplica/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtablereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
 type DynamodbTableReplicaA interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type DynamodbTableReplicaA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableClassOverride() *string
 	SetTableClassOverride(val *string)
 	TableClassOverrideInput() *string
@@ -139,6 +142,7 @@ type DynamodbTableReplicaA interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPointInTimeRecovery()
+	ResetRegion()
 	ResetTableClassOverride()
 	ResetTags()
 	ResetTagsAll()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_DynamodbTableReplicaA) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) TableClassOverride() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) DynamodbTableReplicaA {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *Dy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA_Override(d DynamodbTableReplicaA, scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_DynamodbTableReplicaA)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1097,6 +1132,14 @@ func (d *jsiiProxy_DynamodbTableReplicaA) ResetPointInTimeRecovery() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPointInTimeRecovery",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

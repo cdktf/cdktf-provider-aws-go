@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validateOverrideLogicalI
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validatePutCloudformationParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validatePutTagsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsDevopsguruResourceCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,6 +76,10 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetCountParamete
 }
 
 func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

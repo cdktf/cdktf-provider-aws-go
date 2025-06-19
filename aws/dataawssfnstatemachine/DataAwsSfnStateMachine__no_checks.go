@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSfnStateMachine) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSfnStateMachineParameters(scope constructs.Construct, id *string, config *DataAwsSfnStateMachineConfig) error {
 	return nil
 }

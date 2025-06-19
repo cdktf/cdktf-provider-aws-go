@@ -135,6 +135,10 @@ func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetRetrievalRoleArnParameters(val *string) error {
 	return nil
 }

@@ -418,6 +418,14 @@ func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetResourceTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -115,6 +115,10 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetScalingModeParameters(val *string) error {
 	return nil
 }

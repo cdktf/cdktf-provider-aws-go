@@ -5,14 +5,14 @@ package cognitoriskconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cognitoriskconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitoriskconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
 type CognitoRiskConfiguration interface {
 	cdktf.TerraformResource
 	AccountTakeoverRiskConfiguration() CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference
@@ -65,6 +65,9 @@ type CognitoRiskConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RiskExceptionConfiguration() CognitoRiskConfigurationRiskExceptionConfigurationOutputReference
 	RiskExceptionConfigurationInput() *CognitoRiskConfigurationRiskExceptionConfiguration
 	// Experimental.
@@ -129,6 +132,7 @@ type CognitoRiskConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRiskExceptionConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_CognitoRiskConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CognitoRiskConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoRiskConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoRiskConfiguration) RiskExceptionConfiguration() CognitoRiskConfigurationRiskExceptionConfigurationOutputReference {
 	var returns CognitoRiskConfigurationRiskExceptionConfigurationOutputReference
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_CognitoRiskConfiguration) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
 func NewCognitoRiskConfiguration(scope constructs.Construct, id *string, config *CognitoRiskConfigurationConfig) CognitoRiskConfiguration {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewCognitoRiskConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration} Resource.
 func NewCognitoRiskConfiguration_Override(c CognitoRiskConfiguration, scope constructs.Construct, id *string, config *CognitoRiskConfigurationConfig) {
 	_init_.Initialize()
 
@@ -544,6 +568,17 @@ func (j *jsiiProxy_CognitoRiskConfiguration)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoRiskConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -981,6 +1016,14 @@ func (c *jsiiProxy_CognitoRiskConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoRiskConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -103,10 +103,6 @@ func (d *jsiiProxy_DmsEndpoint) validatePutRedshiftSettingsParameters(value *Dms
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpoint) validatePutS3SettingsParameters(value *DmsEndpointS3Settings) error {
-	return nil
-}
-
 func (d *jsiiProxy_DmsEndpoint) validatePutTimeoutsParameters(value *DmsEndpointTimeouts) error {
 	return nil
 }
@@ -184,6 +180,10 @@ func (j *jsiiProxy_DmsEndpoint) validateSetPortParameters(val *float64) error {
 }
 
 func (j *jsiiProxy_DmsEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DmsEndpoint) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

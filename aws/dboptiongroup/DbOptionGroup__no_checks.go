@@ -139,6 +139,10 @@ func (j *jsiiProxy_DbOptionGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_DbOptionGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbOptionGroup) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

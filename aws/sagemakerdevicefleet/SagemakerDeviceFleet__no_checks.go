@@ -127,6 +127,10 @@ func (j *jsiiProxy_SagemakerDeviceFleet) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDeviceFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDeviceFleet) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

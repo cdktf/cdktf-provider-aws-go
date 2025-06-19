@@ -5,14 +5,14 @@ package daxcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/daxcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/daxcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_cluster aws_dax_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_cluster aws_dax_cluster}.
 type DaxCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -90,6 +90,9 @@ type DaxCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationFactor() *float64
 	SetReplicationFactor(val *float64)
 	ReplicationFactorInput() *float64
@@ -170,6 +173,7 @@ type DaxCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameterGroupName()
+	ResetRegion()
 	ResetSecurityGroupIds()
 	ResetServerSideEncryption()
 	ResetSubnetGroupName()
@@ -574,6 +578,26 @@ func (j *jsiiProxy_DaxCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DaxCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DaxCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DaxCluster) ReplicationFactor() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -745,7 +769,7 @@ func (j *jsiiProxy_DaxCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_cluster aws_dax_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_cluster aws_dax_cluster} Resource.
 func NewDaxCluster(scope constructs.Construct, id *string, config *DaxClusterConfig) DaxCluster {
 	_init_.Initialize()
 
@@ -763,7 +787,7 @@ func NewDaxCluster(scope constructs.Construct, id *string, config *DaxClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dax_cluster aws_dax_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dax_cluster aws_dax_cluster} Resource.
 func NewDaxCluster_Override(d DaxCluster, scope constructs.Construct, id *string, config *DaxClusterConfig) {
 	_init_.Initialize()
 
@@ -948,6 +972,17 @@ func (j *jsiiProxy_DaxCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DaxCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1442,6 +1477,14 @@ func (d *jsiiProxy_DaxCluster) ResetParameterGroupName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameterGroupName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DaxCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

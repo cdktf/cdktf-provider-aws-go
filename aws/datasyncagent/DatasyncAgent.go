@@ -5,14 +5,14 @@ package datasyncagent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datasyncagent/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datasyncagent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_agent aws_datasync_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_agent aws_datasync_agent}.
 type DatasyncAgent interface {
 	cdktf.TerraformResource
 	ActivationKey() *string
@@ -71,6 +71,9 @@ type DatasyncAgent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupArns() *[]*string
 	SetSecurityGroupArns(val *[]*string)
 	SecurityGroupArnsInput() *[]*string
@@ -146,6 +149,7 @@ type DatasyncAgent interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateLinkEndpoint()
+	ResetRegion()
 	ResetSecurityGroupArns()
 	ResetSubnetArns()
 	ResetTags()
@@ -410,6 +414,26 @@ func (j *jsiiProxy_DatasyncAgent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncAgent) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncAgent) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncAgent) SecurityGroupArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -561,7 +585,7 @@ func (j *jsiiProxy_DatasyncAgent) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
 func NewDatasyncAgent(scope constructs.Construct, id *string, config *DatasyncAgentConfig) DatasyncAgent {
 	_init_.Initialize()
 
@@ -579,7 +603,7 @@ func NewDatasyncAgent(scope constructs.Construct, id *string, config *DatasyncAg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
 func NewDatasyncAgent_Override(d DatasyncAgent, scope constructs.Construct, id *string, config *DatasyncAgentConfig) {
 	_init_.Initialize()
 
@@ -709,6 +733,17 @@ func (j *jsiiProxy_DatasyncAgent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncAgent)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1176,6 +1211,14 @@ func (d *jsiiProxy_DatasyncAgent) ResetPrivateLinkEndpoint() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateLinkEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncAgent) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

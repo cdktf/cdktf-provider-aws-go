@@ -107,6 +107,10 @@ func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package auditmanagerassessment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/auditmanagerassessment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/auditmanagerassessment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment}.
 type AuditmanagerAssessment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type AuditmanagerAssessment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Roles() AuditmanagerAssessmentRolesList
 	RolesAll() AuditmanagerAssessmentRolesAllList
 	RolesInput() interface{}
@@ -135,6 +138,8 @@ type AuditmanagerAssessment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
+	ResetRoles()
 	ResetScope()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -385,6 +390,26 @@ func (j *jsiiProxy_AuditmanagerAssessment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AuditmanagerAssessment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuditmanagerAssessment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuditmanagerAssessment) Roles() AuditmanagerAssessmentRolesList {
 	var returns AuditmanagerAssessmentRolesList
 	_jsii_.Get(
@@ -506,7 +531,7 @@ func (j *jsiiProxy_AuditmanagerAssessment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment} Resource.
 func NewAuditmanagerAssessment(scope constructs.Construct, id *string, config *AuditmanagerAssessmentConfig) AuditmanagerAssessment {
 	_init_.Initialize()
 
@@ -524,7 +549,7 @@ func NewAuditmanagerAssessment(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_assessment aws_auditmanager_assessment} Resource.
 func NewAuditmanagerAssessment_Override(a AuditmanagerAssessment, scope constructs.Construct, id *string, config *AuditmanagerAssessmentConfig) {
 	_init_.Initialize()
 
@@ -632,6 +657,17 @@ func (j *jsiiProxy_AuditmanagerAssessment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuditmanagerAssessment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1053,6 +1089,22 @@ func (a *jsiiProxy_AuditmanagerAssessment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuditmanagerAssessment) ResetRoles() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

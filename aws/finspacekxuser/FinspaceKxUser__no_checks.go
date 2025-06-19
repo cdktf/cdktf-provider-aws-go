@@ -127,6 +127,10 @@ func (j *jsiiProxy_FinspaceKxUser) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxUser) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsCodeartifactAuthorizationTokenParameters(scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -554,6 +554,14 @@ func (j *jsiiProxy_SqsQueue) validateSetRedrivePolicyParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueue) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueue) validateSetSqsManagedSseEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

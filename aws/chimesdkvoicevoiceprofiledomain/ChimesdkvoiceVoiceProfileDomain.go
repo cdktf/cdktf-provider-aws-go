@@ -5,14 +5,14 @@ package chimesdkvoicevoiceprofiledomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/chimesdkvoicevoiceprofiledomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimesdkvoicevoiceprofiledomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain}.
 type ChimesdkvoiceVoiceProfileDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type ChimesdkvoiceVoiceProfileDomain interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerSideEncryptionConfiguration() ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference
 	ServerSideEncryptionConfigurationInput() *ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration
 	Tags() *map[string]*string
@@ -128,6 +131,7 @@ type ChimesdkvoiceVoiceProfileDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) ServerSideEncryptionConfiguration() ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference {
 	var returns ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain} Resource.
 func NewChimesdkvoiceVoiceProfileDomain(scope constructs.Construct, id *string, config *ChimesdkvoiceVoiceProfileDomainConfig) ChimesdkvoiceVoiceProfileDomain {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewChimesdkvoiceVoiceProfileDomain(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chimesdkvoice_voice_profile_domain aws_chimesdkvoice_voice_profile_domain} Resource.
 func NewChimesdkvoiceVoiceProfileDomain_Override(c ChimesdkvoiceVoiceProfileDomain, scope constructs.Construct, id *string, config *ChimesdkvoiceVoiceProfileDomainConfig) {
 	_init_.Initialize()
 
@@ -565,6 +589,17 @@ func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ChimesdkvoiceVoiceProfileDomain)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -978,6 +1013,14 @@ func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

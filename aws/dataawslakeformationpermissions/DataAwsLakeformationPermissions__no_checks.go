@@ -123,6 +123,10 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions) validateSetPrincipalParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLakeformationPermissions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLakeformationPermissionsParameters(scope constructs.Construct, id *string, config *DataAwsLakeformationPermissionsConfig) error {
 	return nil
 }

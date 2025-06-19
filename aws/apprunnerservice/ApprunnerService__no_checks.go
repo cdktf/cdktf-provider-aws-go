@@ -139,6 +139,10 @@ func (j *jsiiProxy_ApprunnerService) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerService) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerService) validateSetServiceNameParameters(val *string) error {
 	return nil
 }

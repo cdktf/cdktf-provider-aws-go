@@ -123,6 +123,10 @@ func (j *jsiiProxy_VpcRouteServer) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_VpcRouteServer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcRouteServer) validateSetSnsNotificationsEnabledParameters(val interface{}) error {
 	return nil
 }

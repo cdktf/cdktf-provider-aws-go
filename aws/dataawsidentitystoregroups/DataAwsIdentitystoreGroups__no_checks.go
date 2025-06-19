@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroups) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIdentitystoreGroups) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsIdentitystoreGroupsParameters(scope constructs.Construct, id *string, config *DataAwsIdentitystoreGroupsConfig) error {
 	return nil
 }

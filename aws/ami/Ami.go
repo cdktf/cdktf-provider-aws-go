@@ -5,14 +5,14 @@ package ami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami aws_ami}.
 type Ami interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -102,6 +102,9 @@ type Ami interface {
 	RamdiskIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootDeviceName() *string
 	SetRootDeviceName(val *string)
 	RootDeviceNameInput() *string
@@ -194,6 +197,7 @@ type Ami interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRamdiskId()
+	ResetRegion()
 	ResetRootDeviceName()
 	ResetSriovNetSupport()
 	ResetTags()
@@ -710,6 +714,26 @@ func (j *jsiiProxy_Ami) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ami) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ami) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ami) RootDeviceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -921,7 +945,7 @@ func (j *jsiiProxy_Ami) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami aws_ami} Resource.
 func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	_init_.Initialize()
 
@@ -939,7 +963,7 @@ func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ami aws_ami} Resource.
 func NewAmi_Override(a Ami, scope constructs.Construct, id *string, config *AmiConfig) {
 	_init_.Initialize()
 
@@ -1135,6 +1159,17 @@ func (j *jsiiProxy_Ami)SetRamdiskId(val *string) {
 	_jsii_.Set(
 		j,
 		"ramdiskId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ami)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1702,6 +1737,14 @@ func (a *jsiiProxy_Ami) ResetRamdiskId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRamdiskId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Ami) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

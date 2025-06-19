@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLexIntent) validateSetNameParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLexIntent) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexIntent) validateSetVersionParameters(val *string) error {
 	return nil
 }

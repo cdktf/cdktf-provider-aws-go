@@ -171,6 +171,10 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetServiceRoleArnParameters(val *string) error {
 	return nil
 }

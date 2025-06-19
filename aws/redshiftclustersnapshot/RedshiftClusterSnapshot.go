@@ -5,14 +5,14 @@ package redshiftclustersnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftclustersnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftclustersnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot}.
 type RedshiftClusterSnapshot interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type RedshiftClusterSnapshot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotIdentifier() *string
 	SetSnapshotIdentifier(val *string)
 	SnapshotIdentifierInput() *string
@@ -130,6 +133,7 @@ type RedshiftClusterSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -370,6 +374,26 @@ func (j *jsiiProxy_RedshiftClusterSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftClusterSnapshot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftClusterSnapshot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftClusterSnapshot) SnapshotIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -461,7 +485,7 @@ func (j *jsiiProxy_RedshiftClusterSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot} Resource.
 func NewRedshiftClusterSnapshot(scope constructs.Construct, id *string, config *RedshiftClusterSnapshotConfig) RedshiftClusterSnapshot {
 	_init_.Initialize()
 
@@ -479,7 +503,7 @@ func NewRedshiftClusterSnapshot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_snapshot aws_redshift_cluster_snapshot} Resource.
 func NewRedshiftClusterSnapshot_Override(r RedshiftClusterSnapshot, scope constructs.Construct, id *string, config *RedshiftClusterSnapshotConfig) {
 	_init_.Initialize()
 
@@ -587,6 +611,17 @@ func (j *jsiiProxy_RedshiftClusterSnapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftClusterSnapshot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -997,6 +1032,14 @@ func (r *jsiiProxy_RedshiftClusterSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftClusterSnapshot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

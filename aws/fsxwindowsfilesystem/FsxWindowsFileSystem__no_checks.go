@@ -167,6 +167,10 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxWindowsFileSystem) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

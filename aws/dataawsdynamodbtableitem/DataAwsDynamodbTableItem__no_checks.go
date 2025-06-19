@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetProjectionExpressionPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetTableNameParameters(val *string) error {
 	return nil
 }

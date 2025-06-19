@@ -131,6 +131,10 @@ func (j *jsiiProxy_SnsSmsPreferences) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SnsSmsPreferences) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsSmsPreferences) validateSetUsageReportS3BucketParameters(val *string) error {
 	return nil
 }

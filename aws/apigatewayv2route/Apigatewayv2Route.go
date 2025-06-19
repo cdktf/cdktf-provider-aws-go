@@ -5,14 +5,14 @@ package apigatewayv2route
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayv2route/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayv2route/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route}.
 type Apigatewayv2Route interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -79,6 +79,9 @@ type Apigatewayv2Route interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequestModels() *map[string]*string
 	SetRequestModels(val *map[string]*string)
 	RequestModelsInput() *map[string]*string
@@ -153,6 +156,7 @@ type Apigatewayv2Route interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRequestModels()
 	ResetRequestParameter()
 	ResetRouteResponseSelectionExpression()
@@ -465,6 +469,26 @@ func (j *jsiiProxy_Apigatewayv2Route) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Apigatewayv2Route) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Apigatewayv2Route) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Apigatewayv2Route) RequestModels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -596,7 +620,7 @@ func (j *jsiiProxy_Apigatewayv2Route) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
 func NewApigatewayv2Route(scope constructs.Construct, id *string, config *Apigatewayv2RouteConfig) Apigatewayv2Route {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewApigatewayv2Route(scope constructs.Construct, id *string, config *Apigat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
 func NewApigatewayv2Route_Override(a Apigatewayv2Route, scope constructs.Construct, id *string, config *Apigatewayv2RouteConfig) {
 	_init_.Initialize()
 
@@ -777,6 +801,17 @@ func (j *jsiiProxy_Apigatewayv2Route)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Apigatewayv2Route)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1249,6 +1284,14 @@ func (a *jsiiProxy_Apigatewayv2Route) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Apigatewayv2Route) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

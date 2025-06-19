@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketServerSideEncryptionConfigurationAParameters(scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationAConfig) error {
 	return nil
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectPrompt) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectPrompt) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsConnectPromptParameters(scope constructs.Construct, id *string, config *DataAwsConnectPromptConfig) error {
 	return nil
 }

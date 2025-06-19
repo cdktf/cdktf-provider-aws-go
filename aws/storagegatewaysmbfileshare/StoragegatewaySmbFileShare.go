@@ -5,14 +5,14 @@ package storagegatewaysmbfileshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/storagegatewaysmbfileshare/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/storagegatewaysmbfileshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
 type StoragegatewaySmbFileShare interface {
 	cdktf.TerraformResource
 	AccessBasedEnumeration() interface{}
@@ -117,6 +117,9 @@ type StoragegatewaySmbFileShare interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequesterPays() interface{}
 	SetRequesterPays(val interface{})
 	RequesterPaysInput() interface{}
@@ -212,6 +215,7 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReadOnly()
+	ResetRegion()
 	ResetRequesterPays()
 	ResetSmbAclEnabled()
 	ResetTags()
@@ -797,6 +801,26 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ReadOnlyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StoragegatewaySmbFileShare) RequesterPays() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -988,7 +1012,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) VpcEndpointDnsNameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
 func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) StoragegatewaySmbFileShare {
 	_init_.Initialize()
 
@@ -1006,7 +1030,7 @@ func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
 func NewStoragegatewaySmbFileShare_Override(s StoragegatewaySmbFileShare, scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) {
 	_init_.Initialize()
 
@@ -1290,6 +1314,17 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetReadOnly(val interface{}) {
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1894,6 +1929,14 @@ func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetReadOnly() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewaySmbFileShare) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

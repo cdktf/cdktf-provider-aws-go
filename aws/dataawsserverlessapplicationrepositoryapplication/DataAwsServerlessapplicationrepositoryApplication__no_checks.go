@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSetSemanticVersionParameters(val *string) error {
 	return nil
 }

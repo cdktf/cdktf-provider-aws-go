@@ -5,14 +5,14 @@ package dataawsguarddutyfindingids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsguarddutyfindingids/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsguarddutyfindingids/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}.
 type DataAwsGuarddutyFindingIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsGuarddutyFindingIds interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -87,6 +90,7 @@ type DataAwsGuarddutyFindingIds interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -266,6 +270,26 @@ func (j *jsiiProxy_DataAwsGuarddutyFindingIds) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsGuarddutyFindingIds) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGuarddutyFindingIds) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsGuarddutyFindingIds) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -297,7 +321,7 @@ func (j *jsiiProxy_DataAwsGuarddutyFindingIds) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source.
 func NewDataAwsGuarddutyFindingIds(scope constructs.Construct, id *string, config *DataAwsGuarddutyFindingIdsConfig) DataAwsGuarddutyFindingIds {
 	_init_.Initialize()
 
@@ -315,7 +339,7 @@ func NewDataAwsGuarddutyFindingIds(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source.
 func NewDataAwsGuarddutyFindingIds_Override(d DataAwsGuarddutyFindingIds, scope constructs.Construct, id *string, config *DataAwsGuarddutyFindingIdsConfig) {
 	_init_.Initialize()
 
@@ -379,6 +403,17 @@ func (j *jsiiProxy_DataAwsGuarddutyFindingIds)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsGuarddutyFindingIds)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (d *jsiiProxy_DataAwsGuarddutyFindingIds) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsGuarddutyFindingIds) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package s3bucketlifecycleconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketlifecycleconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketlifecycleconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
 type S3BucketLifecycleConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -62,6 +62,9 @@ type S3BucketLifecycleConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() S3BucketLifecycleConfigurationRuleList
 	RuleInput() interface{}
 	// Experimental.
@@ -124,6 +127,7 @@ type S3BucketLifecycleConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRule()
 	ResetTimeouts()
 	ResetTransitionDefaultMinimumObjectSize()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketLifecycleConfiguration) Rule() S3BucketLifecycleConfigurationRuleList {
 	var returns S3BucketLifecycleConfigurationRuleList
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) TransitionDefaultMinimumObjec
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) S3BucketLifecycleConfiguration {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration_Override(s S3BucketLifecycleConfiguration, scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketLifecycleConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -933,6 +968,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

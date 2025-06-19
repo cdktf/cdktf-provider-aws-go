@@ -5,14 +5,14 @@ package autoscalingtrafficsourceattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingtrafficsourceattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingtrafficsourceattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment}.
 type AutoscalingTrafficSourceAttachment interface {
 	cdktf.TerraformResource
 	AutoscalingGroupName() *string
@@ -61,6 +61,9 @@ type AutoscalingTrafficSourceAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +123,7 @@ type AutoscalingTrafficSourceAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetTrafficSource()
 	SynthesizeAttributes() *map[string]interface{}
@@ -310,6 +314,26 @@ func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -381,7 +405,7 @@ func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) TrafficSourceInput() *Aut
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
 func NewAutoscalingTrafficSourceAttachment(scope constructs.Construct, id *string, config *AutoscalingTrafficSourceAttachmentConfig) AutoscalingTrafficSourceAttachment {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewAutoscalingTrafficSourceAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
 func NewAutoscalingTrafficSourceAttachment_Override(a AutoscalingTrafficSourceAttachment, scope constructs.Construct, id *string, config *AutoscalingTrafficSourceAttachmentConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_AutoscalingTrafficSourceAttachment)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingTrafficSourceAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -887,6 +922,14 @@ func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

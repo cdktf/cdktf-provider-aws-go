@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetQuickConnectIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

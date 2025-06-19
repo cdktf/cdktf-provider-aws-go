@@ -5,14 +5,14 @@ package qldbledger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/qldbledger/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/qldbledger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_ledger aws_qldb_ledger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_ledger aws_qldb_ledger}.
 type QldbLedger interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type QldbLedger interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -136,6 +139,7 @@ type QldbLedger interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -397,6 +401,26 @@ func (j *jsiiProxy_QldbLedger) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QldbLedger) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QldbLedger) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QldbLedger) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_QldbLedger) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
 func NewQldbLedger(scope constructs.Construct, id *string, config *QldbLedgerConfig) QldbLedger {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewQldbLedger(scope constructs.Construct, id *string, config *QldbLedgerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
 func NewQldbLedger_Override(q QldbLedger, scope constructs.Construct, id *string, config *QldbLedgerConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_QldbLedger)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QldbLedger)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1062,6 +1097,14 @@ func (q *jsiiProxy_QldbLedger) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QldbLedger) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

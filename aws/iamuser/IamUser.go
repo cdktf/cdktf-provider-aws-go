@@ -5,14 +5,14 @@ package iamuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iamuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user aws_iam_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user aws_iam_user}.
 type IamUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_IamUser) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user aws_iam_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user aws_iam_user} Resource.
 func NewIamUser(scope constructs.Construct, id *string, config *IamUserConfig) IamUser {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewIamUser(scope constructs.Construct, id *string, config *IamUserConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_user aws_iam_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_user aws_iam_user} Resource.
 func NewIamUser_Override(i IamUser, scope constructs.Construct, id *string, config *IamUserConfig) {
 	_init_.Initialize()
 

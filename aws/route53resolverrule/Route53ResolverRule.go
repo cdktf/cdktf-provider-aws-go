@@ -5,14 +5,14 @@ package route53resolverrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/route53resolverrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/route53resolverrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule}.
 type Route53ResolverRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type Route53ResolverRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResolverEndpointId() *string
 	SetResolverEndpointId(val *string)
 	ResolverEndpointIdInput() *string
@@ -139,6 +142,7 @@ type Route53ResolverRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResolverEndpointId()
 	ResetTags()
 	ResetTagsAll()
@@ -372,6 +376,26 @@ func (j *jsiiProxy_Route53ResolverRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverRule) ResolverEndpointId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_Route53ResolverRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule} Resource.
 func NewRoute53ResolverRule(scope constructs.Construct, id *string, config *Route53ResolverRuleConfig) Route53ResolverRule {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewRoute53ResolverRule(scope constructs.Construct, id *string, config *Rout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_rule aws_route53_resolver_rule} Resource.
 func NewRoute53ResolverRule_Override(r Route53ResolverRule, scope constructs.Construct, id *string, config *Route53ResolverRuleConfig) {
 	_init_.Initialize()
 
@@ -659,6 +683,17 @@ func (j *jsiiProxy_Route53ResolverRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1102,6 +1137,14 @@ func (r *jsiiProxy_Route53ResolverRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

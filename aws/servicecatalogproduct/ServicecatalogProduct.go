@@ -5,14 +5,14 @@ package servicecatalogproduct
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogproduct/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogproduct/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_product aws_servicecatalog_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_product aws_servicecatalog_product}.
 type ServicecatalogProduct interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -78,6 +78,9 @@ type ServicecatalogProduct interface {
 	ProvisioningArtifactParametersInput() *ServicecatalogProductProvisioningArtifactParameters
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	SupportDescription() *string
 	SetSupportDescription(val *string)
@@ -157,6 +160,7 @@ type ServicecatalogProduct interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSupportDescription()
 	ResetSupportEmail()
 	ResetSupportUrl()
@@ -481,6 +485,26 @@ func (j *jsiiProxy_ServicecatalogProduct) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogProduct) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogProduct) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogProduct) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -662,7 +686,7 @@ func (j *jsiiProxy_ServicecatalogProduct) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
 func NewServicecatalogProduct(scope constructs.Construct, id *string, config *ServicecatalogProductConfig) ServicecatalogProduct {
 	_init_.Initialize()
 
@@ -680,7 +704,7 @@ func NewServicecatalogProduct(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
 func NewServicecatalogProduct_Override(s ServicecatalogProduct, scope constructs.Construct, id *string, config *ServicecatalogProductConfig) {
 	_init_.Initialize()
 
@@ -821,6 +845,17 @@ func (j *jsiiProxy_ServicecatalogProduct)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogProduct)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1302,6 +1337,14 @@ func (s *jsiiProxy_ServicecatalogProduct) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogProduct) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

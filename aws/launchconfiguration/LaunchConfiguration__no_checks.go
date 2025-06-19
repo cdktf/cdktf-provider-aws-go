@@ -167,6 +167,10 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_LaunchConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchConfiguration) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

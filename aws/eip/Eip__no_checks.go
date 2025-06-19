@@ -151,15 +151,15 @@ func (j *jsiiProxy_Eip) validateSetPublicIpv4PoolParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Eip) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eip) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_Eip) validateSetTagsAllParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_Eip) validateSetVpcParameters(val interface{}) error {
 	return nil
 }
 

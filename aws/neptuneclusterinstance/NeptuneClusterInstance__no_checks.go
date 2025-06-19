@@ -179,6 +179,10 @@ func (j *jsiiProxy_NeptuneClusterInstance) validateSetPubliclyAccessibleParamete
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneClusterInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterInstance) validateSetSkipFinalSnapshotParameters(val interface{}) error {
 	return nil
 }

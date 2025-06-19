@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) validateSetRecursiveParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmParametersByPath) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParametersByPath) validateSetWithDecryptionParameters(val interface{}) error {
 	return nil
 }

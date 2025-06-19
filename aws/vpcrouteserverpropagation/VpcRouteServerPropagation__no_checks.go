@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpcRouteServerPropagation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VpcRouteServerPropagation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcRouteServerPropagation) validateSetRouteServerIdParameters(val *string) error {
 	return nil
 }

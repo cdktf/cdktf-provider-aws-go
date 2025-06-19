@@ -399,6 +399,14 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRouteTableAssociation) validateSetReplaceExistingAssociationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

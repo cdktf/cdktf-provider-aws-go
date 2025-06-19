@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateSetPipelineIdP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDatapipelinePipelineDefinitionParameters(scope constructs.Construct, id *string, config *DataAwsDatapipelinePipelineDefinitionConfig) error {
 	return nil
 }

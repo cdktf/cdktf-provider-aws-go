@@ -5,14 +5,14 @@ package directoryserviceconditionalforwarder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/directoryserviceconditionalforwarder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/directoryserviceconditionalforwarder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder}.
 type DirectoryServiceConditionalForwarder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type DirectoryServiceConditionalForwarder interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RemoteDomainName() *string
 	SetRemoteDomainName(val *string)
 	RemoteDomainNameInput() *string
@@ -120,6 +123,7 @@ type DirectoryServiceConditionalForwarder interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -328,6 +332,26 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DirectoryServiceConditionalForwarder) RemoteDomainName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
 func NewDirectoryServiceConditionalForwarder(scope constructs.Construct, id *string, config *DirectoryServiceConditionalForwarderConfig) DirectoryServiceConditionalForwarder {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewDirectoryServiceConditionalForwarder(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
 func NewDirectoryServiceConditionalForwarder_Override(d DirectoryServiceConditionalForwarder, scope constructs.Construct, id *string, config *DirectoryServiceConditionalForwarderConfig) {
 	_init_.Initialize()
 
@@ -505,6 +529,17 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (d *jsiiProxy_DirectoryServiceConditionalForwarder) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceConditionalForwarder) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

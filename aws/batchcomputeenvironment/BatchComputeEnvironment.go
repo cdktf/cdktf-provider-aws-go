@@ -5,25 +5,19 @@ package batchcomputeenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/batchcomputeenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/batchcomputeenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
 type BatchComputeEnvironment interface {
 	cdktf.TerraformResource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ComputeEnvironmentName() *string
-	SetComputeEnvironmentName(val *string)
-	ComputeEnvironmentNameInput() *string
-	ComputeEnvironmentNamePrefix() *string
-	SetComputeEnvironmentNamePrefix(val *string)
-	ComputeEnvironmentNamePrefixInput() *string
 	ComputeResources() BatchComputeEnvironmentComputeResourcesOutputReference
 	ComputeResourcesInput() *BatchComputeEnvironmentComputeResources
 	// Experimental.
@@ -58,6 +52,12 @@ type BatchComputeEnvironment interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -70,6 +70,9 @@ type BatchComputeEnvironment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceRole() *string
 	SetServiceRole(val *string)
 	ServiceRoleInput() *string
@@ -141,14 +144,15 @@ type BatchComputeEnvironment interface {
 	PutComputeResources(value *BatchComputeEnvironmentComputeResources)
 	PutEksConfiguration(value *BatchComputeEnvironmentEksConfiguration)
 	PutUpdatePolicy(value *BatchComputeEnvironmentUpdatePolicy)
-	ResetComputeEnvironmentName()
-	ResetComputeEnvironmentNamePrefix()
 	ResetComputeResources()
 	ResetEksConfiguration()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetServiceRole()
 	ResetState()
 	ResetTags()
@@ -187,46 +191,6 @@ func (j *jsiiProxy_BatchComputeEnvironment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) ComputeEnvironmentName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) ComputeEnvironmentNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentNameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) ComputeEnvironmentNamePrefix() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentNamePrefix",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) ComputeEnvironmentNamePrefixInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"computeEnvironmentNamePrefixInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +346,46 @@ func (j *jsiiProxy_BatchComputeEnvironment) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -417,6 +421,26 @@ func (j *jsiiProxy_BatchComputeEnvironment) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -593,7 +617,7 @@ func (j *jsiiProxy_BatchComputeEnvironment) UpdatePolicyInput() *BatchComputeEnv
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) BatchComputeEnvironment {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -619,28 +643,6 @@ func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constr
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironment",
 		[]interface{}{scope, id, config},
 		b,
-	)
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentName(val *string) {
-	if err := j.validateSetComputeEnvironmentNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeEnvironmentName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment)SetComputeEnvironmentNamePrefix(val *string) {
-	if err := j.validateSetComputeEnvironmentNamePrefixParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"computeEnvironmentNamePrefix",
-		val,
 	)
 }
 
@@ -704,6 +706,28 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -719,6 +743,17 @@ func (j *jsiiProxy_BatchComputeEnvironment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1164,22 +1199,6 @@ func (b *jsiiProxy_BatchComputeEnvironment) PutUpdatePolicy(value *BatchComputeE
 	)
 }
 
-func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeEnvironmentName() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetComputeEnvironmentName",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeEnvironmentNamePrefix() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetComputeEnvironmentNamePrefix",
-		nil, // no parameters
-	)
-}
-
 func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeResources() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1204,10 +1223,34 @@ func (b *jsiiProxy_BatchComputeEnvironment) ResetId() {
 	)
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) ResetName() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

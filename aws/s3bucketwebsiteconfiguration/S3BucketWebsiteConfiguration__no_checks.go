@@ -135,6 +135,10 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetRoutingRulesParameters(val *string) error {
 	return nil
 }

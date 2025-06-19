@@ -119,6 +119,10 @@ func (j *jsiiProxy_DatasyncLocationS3) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationS3) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationS3) validateSetS3BucketArnParameters(val *string) error {
 	return nil
 }

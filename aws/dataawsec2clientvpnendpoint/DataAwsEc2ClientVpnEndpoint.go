@@ -5,14 +5,14 @@ package dataawsec2clientvpnendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2clientvpnendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2clientvpnendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type DataAwsEc2ClientVpnEndpoint interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -65,6 +65,9 @@ type DataAwsEc2ClientVpnEndpoint interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupIds() *[]*string
 	SelfServicePortal() *string
 	SelfServicePortalUrl() *string
@@ -118,6 +121,7 @@ type DataAwsEc2ClientVpnEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -409,6 +413,26 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -570,7 +594,7 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) VpnPort() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
 func NewDataAwsEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *DataAwsEc2ClientVpnEndpointConfig) DataAwsEc2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewDataAwsEc2ClientVpnEndpoint(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Data Source.
 func NewDataAwsEc2ClientVpnEndpoint_Override(d DataAwsEc2ClientVpnEndpoint, scope constructs.Construct, id *string, config *DataAwsEc2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 
@@ -663,6 +687,17 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1013,6 +1048,14 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

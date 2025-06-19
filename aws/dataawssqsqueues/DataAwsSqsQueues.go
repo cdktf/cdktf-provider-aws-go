@@ -5,14 +5,14 @@ package dataawssqsqueues
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssqsqueues/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssqsqueues/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sqs_queues aws_sqs_queues}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sqs_queues aws_sqs_queues}.
 type DataAwsSqsQueues interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataAwsSqsQueues interface {
 	QueueUrls() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +93,7 @@ type DataAwsSqsQueues interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueueNamePrefix()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_DataAwsSqsQueues) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSqsQueues) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSqsQueues) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSqsQueues) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataAwsSqsQueues) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
 func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) DataAwsSqsQueues {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
 func NewDataAwsSqsQueues_Override(d DataAwsSqsQueues, scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) {
 	_init_.Initialize()
 
@@ -393,6 +417,17 @@ func (j *jsiiProxy_DataAwsSqsQueues)SetQueueNamePrefix(val *string) {
 	_jsii_.Set(
 		j,
 		"queueNamePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSqsQueues)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DataAwsSqsQueues) ResetQueueNamePrefix() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueueNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSqsQueues) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

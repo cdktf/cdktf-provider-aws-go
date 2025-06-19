@@ -5,14 +5,14 @@ package redshiftcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -45,11 +45,7 @@ type RedshiftCluster interface {
 	SetClusterParameterGroupName(val *string)
 	ClusterParameterGroupNameInput() *string
 	ClusterPublicKey() *string
-	SetClusterPublicKey(val *string)
-	ClusterPublicKeyInput() *string
 	ClusterRevisionNumber() *string
-	SetClusterRevisionNumber(val *string)
-	ClusterRevisionNumberInput() *string
 	ClusterSubnetGroupName() *string
 	SetClusterSubnetGroupName(val *string)
 	ClusterSubnetGroupNameInput() *string
@@ -83,12 +79,10 @@ type RedshiftCluster interface {
 	ElasticIp() *string
 	SetElasticIp(val *string)
 	ElasticIpInput() *string
-	Encrypted() interface{}
-	SetEncrypted(val interface{})
-	EncryptedInput() interface{}
+	Encrypted() *string
+	SetEncrypted(val *string)
+	EncryptedInput() *string
 	Endpoint() *string
-	SetEndpoint(val *string)
-	EndpointInput() *string
 	EnhancedVpcRouting() interface{}
 	SetEnhancedVpcRouting(val interface{})
 	EnhancedVpcRoutingInput() interface{}
@@ -116,8 +110,6 @@ type RedshiftCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Logging() RedshiftClusterLoggingOutputReference
-	LoggingInput() *RedshiftClusterLogging
 	MaintenanceTrackName() *string
 	SetMaintenanceTrackName(val *string)
 	MaintenanceTrackNameInput() *string
@@ -176,6 +168,9 @@ type RedshiftCluster interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -185,8 +180,6 @@ type RedshiftCluster interface {
 	SnapshotClusterIdentifier() *string
 	SetSnapshotClusterIdentifier(val *string)
 	SnapshotClusterIdentifierInput() *string
-	SnapshotCopy() RedshiftClusterSnapshotCopyOutputReference
-	SnapshotCopyInput() *RedshiftClusterSnapshotCopy
 	SnapshotIdentifier() *string
 	SetSnapshotIdentifier(val *string)
 	SnapshotIdentifierInput() *string
@@ -250,8 +243,6 @@ type RedshiftCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLogging(value *RedshiftClusterLogging)
-	PutSnapshotCopy(value *RedshiftClusterSnapshotCopy)
 	PutTimeouts(value *RedshiftClusterTimeouts)
 	ResetAllowVersionUpgrade()
 	ResetApplyImmediately()
@@ -260,8 +251,6 @@ type RedshiftCluster interface {
 	ResetAvailabilityZone()
 	ResetAvailabilityZoneRelocationEnabled()
 	ResetClusterParameterGroupName()
-	ResetClusterPublicKey()
-	ResetClusterRevisionNumber()
 	ResetClusterSubnetGroupName()
 	ResetClusterType()
 	ResetClusterVersion()
@@ -269,13 +258,11 @@ type RedshiftCluster interface {
 	ResetDefaultIamRoleArn()
 	ResetElasticIp()
 	ResetEncrypted()
-	ResetEndpoint()
 	ResetEnhancedVpcRouting()
 	ResetFinalSnapshotIdentifier()
 	ResetIamRoles()
 	ResetId()
 	ResetKmsKeyId()
-	ResetLogging()
 	ResetMaintenanceTrackName()
 	ResetManageMasterPassword()
 	ResetManualSnapshotRetentionPeriod()
@@ -293,10 +280,10 @@ type RedshiftCluster interface {
 	ResetPort()
 	ResetPreferredMaintenanceWindow()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotArn()
 	ResetSnapshotClusterIdentifier()
-	ResetSnapshotCopy()
 	ResetSnapshotIdentifier()
 	ResetTags()
 	ResetTagsAll()
@@ -530,31 +517,11 @@ func (j *jsiiProxy_RedshiftCluster) ClusterPublicKey() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) ClusterPublicKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterPublicKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RedshiftCluster) ClusterRevisionNumber() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"clusterRevisionNumber",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) ClusterRevisionNumberInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clusterRevisionNumberInput",
 		&returns,
 	)
 	return returns
@@ -730,8 +697,8 @@ func (j *jsiiProxy_RedshiftCluster) ElasticIpInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) Encrypted() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) Encrypted() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"encrypted",
@@ -740,8 +707,8 @@ func (j *jsiiProxy_RedshiftCluster) Encrypted() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftCluster) EncryptedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedshiftCluster) EncryptedInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"encryptedInput",
@@ -755,16 +722,6 @@ func (j *jsiiProxy_RedshiftCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) EndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"endpointInput",
 		&returns,
 	)
 	return returns
@@ -905,26 +862,6 @@ func (j *jsiiProxy_RedshiftCluster) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) Logging() RedshiftClusterLoggingOutputReference {
-	var returns RedshiftClusterLoggingOutputReference
-	_jsii_.Get(
-		j,
-		"logging",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) LoggingInput() *RedshiftClusterLogging {
-	var returns *RedshiftClusterLogging
-	_jsii_.Get(
-		j,
-		"loggingInput",
 		&returns,
 	)
 	return returns
@@ -1280,6 +1217,26 @@ func (j *jsiiProxy_RedshiftCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1335,26 +1292,6 @@ func (j *jsiiProxy_RedshiftCluster) SnapshotClusterIdentifierInput() *string {
 	_jsii_.Get(
 		j,
 		"snapshotClusterIdentifierInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) SnapshotCopy() RedshiftClusterSnapshotCopyOutputReference {
-	var returns RedshiftClusterSnapshotCopyOutputReference
-	_jsii_.Get(
-		j,
-		"snapshotCopy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) SnapshotCopyInput() *RedshiftClusterSnapshotCopy {
-	var returns *RedshiftClusterSnapshotCopy
-	_jsii_.Get(
-		j,
-		"snapshotCopyInput",
 		&returns,
 	)
 	return returns
@@ -1491,7 +1428,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1509,7 +1446,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -1604,28 +1541,6 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterParameterGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterParameterGroupName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedshiftCluster)SetClusterPublicKey(val *string) {
-	if err := j.validateSetClusterPublicKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterPublicKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedshiftCluster)SetClusterRevisionNumber(val *string) {
-	if err := j.validateSetClusterRevisionNumberParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterRevisionNumber",
 		val,
 	)
 }
@@ -1726,24 +1641,13 @@ func (j *jsiiProxy_RedshiftCluster)SetElasticIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftCluster)SetEncrypted(val interface{}) {
+func (j *jsiiProxy_RedshiftCluster)SetEncrypted(val *string) {
 	if err := j.validateSetEncryptedParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"encrypted",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedshiftCluster)SetEndpoint(val *string) {
-	if err := j.validateSetEndpointParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"endpoint",
 		val,
 	)
 }
@@ -2002,6 +1906,17 @@ func (j *jsiiProxy_RedshiftCluster)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2436,28 +2351,6 @@ func (r *jsiiProxy_RedshiftCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) PutLogging(value *RedshiftClusterLogging) {
-	if err := r.validatePutLoggingParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putLogging",
-		[]interface{}{value},
-	)
-}
-
-func (r *jsiiProxy_RedshiftCluster) PutSnapshotCopy(value *RedshiftClusterSnapshotCopy) {
-	if err := r.validatePutSnapshotCopyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putSnapshotCopy",
-		[]interface{}{value},
-	)
-}
-
 func (r *jsiiProxy_RedshiftCluster) PutTimeouts(value *RedshiftClusterTimeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2525,22 +2418,6 @@ func (r *jsiiProxy_RedshiftCluster) ResetClusterParameterGroupName() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) ResetClusterPublicKey() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetClusterPublicKey",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedshiftCluster) ResetClusterRevisionNumber() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetClusterRevisionNumber",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RedshiftCluster) ResetClusterSubnetGroupName() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2597,14 +2474,6 @@ func (r *jsiiProxy_RedshiftCluster) ResetEncrypted() {
 	)
 }
 
-func (r *jsiiProxy_RedshiftCluster) ResetEndpoint() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (r *jsiiProxy_RedshiftCluster) ResetEnhancedVpcRouting() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2641,14 +2510,6 @@ func (r *jsiiProxy_RedshiftCluster) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetKmsKeyId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedshiftCluster) ResetLogging() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetLogging",
 		nil, // no parameters
 	)
 }
@@ -2773,6 +2634,14 @@ func (r *jsiiProxy_RedshiftCluster) ResetPubliclyAccessible() {
 	)
 }
 
+func (r *jsiiProxy_RedshiftCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedshiftCluster) ResetSkipFinalSnapshot() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2793,14 +2662,6 @@ func (r *jsiiProxy_RedshiftCluster) ResetSnapshotClusterIdentifier() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSnapshotClusterIdentifier",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedshiftCluster) ResetSnapshotCopy() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetSnapshotCopy",
 		nil, // no parameters
 	)
 }

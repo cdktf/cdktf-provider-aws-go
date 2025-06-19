@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDbProxy) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbProxy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDbProxyParameters(scope constructs.Construct, id *string, config *DataAwsDbProxyConfig) error {
 	return nil
 }

@@ -453,6 +453,14 @@ func (j *jsiiProxy_LambdaFunctionUrl) validateSetQualifierParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionUrl) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLambdaFunctionUrlParameters(scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

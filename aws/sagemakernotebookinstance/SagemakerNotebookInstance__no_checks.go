@@ -95,10 +95,6 @@ func validateSagemakerNotebookInstance_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerNotebookInstance) validateSetAcceleratorTypesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SagemakerNotebookInstance) validateSetAdditionalCodeRepositoriesParameters(val *[]*string) error {
 	return nil
 }
@@ -148,6 +144,10 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetPlatformIdentifierParam
 }
 
 func (j *jsiiProxy_SagemakerNotebookInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

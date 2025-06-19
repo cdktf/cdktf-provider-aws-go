@@ -127,6 +127,10 @@ func (j *jsiiProxy_ImagebuilderLifecyclePolicy) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderLifecyclePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderLifecyclePolicy) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

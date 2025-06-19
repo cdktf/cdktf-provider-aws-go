@@ -5,14 +5,14 @@ package cleanroomsconfiguredtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cleanroomsconfiguredtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cleanroomsconfiguredtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table}.
 type CleanroomsConfiguredTable interface {
 	cdktf.TerraformResource
 	AllowedColumns() *[]*string
@@ -72,6 +72,9 @@ type CleanroomsConfiguredTable interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableReference() CleanroomsConfiguredTableTableReferenceOutputReference
 	TableReferenceInput() *CleanroomsConfiguredTableTableReference
 	Tags() *map[string]*string
@@ -139,6 +142,7 @@ type CleanroomsConfiguredTable interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -410,6 +414,26 @@ func (j *jsiiProxy_CleanroomsConfiguredTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CleanroomsConfiguredTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CleanroomsConfiguredTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CleanroomsConfiguredTable) TableReference() CleanroomsConfiguredTableTableReferenceOutputReference {
 	var returns CleanroomsConfiguredTableTableReferenceOutputReference
 	_jsii_.Get(
@@ -531,7 +555,7 @@ func (j *jsiiProxy_CleanroomsConfiguredTable) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource.
 func NewCleanroomsConfiguredTable(scope constructs.Construct, id *string, config *CleanroomsConfiguredTableConfig) CleanroomsConfiguredTable {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewCleanroomsConfiguredTable(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource.
 func NewCleanroomsConfiguredTable_Override(c CleanroomsConfiguredTable, scope constructs.Construct, id *string, config *CleanroomsConfiguredTableConfig) {
 	_init_.Initialize()
 
@@ -679,6 +703,17 @@ func (j *jsiiProxy_CleanroomsConfiguredTable)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CleanroomsConfiguredTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1100,6 +1135,14 @@ func (c *jsiiProxy_CleanroomsConfiguredTable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CleanroomsConfiguredTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

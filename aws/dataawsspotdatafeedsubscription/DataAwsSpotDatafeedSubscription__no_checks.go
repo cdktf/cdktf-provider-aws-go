@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsSpotDatafeedSubscription) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSpotDatafeedSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSpotDatafeedSubscriptionParameters(scope constructs.Construct, id *string, config *DataAwsSpotDatafeedSubscriptionConfig) error {
 	return nil
 }

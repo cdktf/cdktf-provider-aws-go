@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsOamLinks) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamLinks) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsOamLinksParameters(scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

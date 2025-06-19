@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAvailabilityZones) validateSetStateParameters(val *string) error {
 	return nil
 }

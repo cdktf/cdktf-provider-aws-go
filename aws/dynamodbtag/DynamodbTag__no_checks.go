@@ -115,6 +115,10 @@ func (j *jsiiProxy_DynamodbTag) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTag) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

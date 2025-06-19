@@ -415,6 +415,14 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetResponseModelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2LocalGateway) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGateway) validateSetStateParameters(val *string) error {
 	return nil
 }

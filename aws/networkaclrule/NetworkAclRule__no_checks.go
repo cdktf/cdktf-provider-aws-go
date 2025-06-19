@@ -143,6 +143,10 @@ func (j *jsiiProxy_NetworkAclRule) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_NetworkAclRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkAclRule) validateSetRuleActionParameters(val *string) error {
 	return nil
 }

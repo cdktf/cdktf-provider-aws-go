@@ -5,14 +5,14 @@ package vpclatticetargetgroupattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpclatticetargetgroupattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticetargetgroupattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment}.
 type VpclatticeTargetGroupAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type VpclatticeTargetGroupAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Target() VpclatticeTargetGroupAttachmentTargetOutputReference
 	TargetGroupIdentifier() *string
 	SetTargetGroupIdentifier(val *string)
@@ -120,6 +123,7 @@ type VpclatticeTargetGroupAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -289,6 +293,26 @@ func (j *jsiiProxy_VpclatticeTargetGroupAttachment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroupAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeTargetGroupAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroupAttachment) Target() VpclatticeTargetGroupAttachmentTargetOutputReference {
 	var returns VpclatticeTargetGroupAttachmentTargetOutputReference
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_VpclatticeTargetGroupAttachment) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
 func NewVpclatticeTargetGroupAttachment(scope constructs.Construct, id *string, config *VpclatticeTargetGroupAttachmentConfig) VpclatticeTargetGroupAttachment {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewVpclatticeTargetGroupAttachment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
 func NewVpclatticeTargetGroupAttachment_Override(v VpclatticeTargetGroupAttachment, scope constructs.Construct, id *string, config *VpclatticeTargetGroupAttachmentConfig) {
 	_init_.Initialize()
 
@@ -484,6 +508,17 @@ func (j *jsiiProxy_VpclatticeTargetGroupAttachment)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeTargetGroupAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (v *jsiiProxy_VpclatticeTargetGroupAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroupAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

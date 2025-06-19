@@ -115,6 +115,10 @@ func (j *jsiiProxy_LbTrustStoreRevocation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LbTrustStoreRevocation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbTrustStoreRevocation) validateSetRevocationsS3BucketParameters(val *string) error {
 	return nil
 }

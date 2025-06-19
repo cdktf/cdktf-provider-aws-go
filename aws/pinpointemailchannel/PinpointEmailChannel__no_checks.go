@@ -135,6 +135,10 @@ func (j *jsiiProxy_PinpointEmailChannel) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEmailChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

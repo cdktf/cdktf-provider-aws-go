@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsAlb) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAlb) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAlb) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

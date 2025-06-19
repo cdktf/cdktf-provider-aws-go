@@ -115,6 +115,10 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

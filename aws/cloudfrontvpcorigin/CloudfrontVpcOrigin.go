@@ -5,14 +5,14 @@ package cloudfrontvpcorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudfrontvpcorigin/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudfrontvpcorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin}.
 type CloudfrontVpcOrigin interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_CloudfrontVpcOrigin) VpcOriginEndpointConfigInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin} Resource.
 func NewCloudfrontVpcOrigin(scope constructs.Construct, id *string, config *CloudfrontVpcOriginConfig) CloudfrontVpcOrigin {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewCloudfrontVpcOrigin(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_vpc_origin aws_cloudfront_vpc_origin} Resource.
 func NewCloudfrontVpcOrigin_Override(c CloudfrontVpcOrigin, scope constructs.Construct, id *string, config *CloudfrontVpcOriginConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package dataawsssmpatchbaselines
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssmpatchbaselines/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssmpatchbaselines/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines}.
 type DataAwsSsmPatchBaselines interface {
 	cdktf.TerraformDataSource
 	BaselineIdentities() DataAwsSsmPatchBaselinesBaselineIdentitiesList
@@ -53,6 +53,9 @@ type DataAwsSsmPatchBaselines interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +93,7 @@ type DataAwsSsmPatchBaselines interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_DataAwsSsmPatchBaselines) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsmPatchBaselines) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsmPatchBaselines) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsmPatchBaselines) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataAwsSsmPatchBaselines) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines} Data Source.
 func NewDataAwsSsmPatchBaselines(scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselinesConfig) DataAwsSsmPatchBaselines {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataAwsSsmPatchBaselines(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssm_patch_baselines aws_ssm_patch_baselines} Data Source.
 func NewDataAwsSsmPatchBaselines_Override(d DataAwsSsmPatchBaselines, scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselinesConfig) {
 	_init_.Initialize()
 
@@ -382,6 +406,17 @@ func (j *jsiiProxy_DataAwsSsmPatchBaselines)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsmPatchBaselines)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DataAwsSsmPatchBaselines) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsmPatchBaselines) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package ec2localgatewayroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2localgatewayroute/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2localgatewayroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route}.
 type Ec2LocalGatewayRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type Ec2LocalGatewayRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +123,7 @@ type Ec2LocalGatewayRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRoute) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2LocalGatewayRoute) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRoute) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
 func NewEc2LocalGatewayRoute(scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteConfig) Ec2LocalGatewayRoute {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewEc2LocalGatewayRoute(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
 func NewEc2LocalGatewayRoute_Override(e Ec2LocalGatewayRoute, scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteConfig) {
 	_init_.Initialize()
 
@@ -516,6 +540,17 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2LocalGatewayRoute)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (e *jsiiProxy_Ec2LocalGatewayRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2LocalGatewayRoute) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

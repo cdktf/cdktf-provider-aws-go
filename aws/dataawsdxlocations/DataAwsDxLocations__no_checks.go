@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDxLocations) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDxLocations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDxLocationsParameters(scope constructs.Construct, id *string, config *DataAwsDxLocationsConfig) error {
 	return nil
 }

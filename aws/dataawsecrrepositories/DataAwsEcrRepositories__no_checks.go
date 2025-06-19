@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsEcrRepositories) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrRepositories) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEcrRepositoriesParameters(scope constructs.Construct, id *string, config *DataAwsEcrRepositoriesConfig) error {
 	return nil
 }

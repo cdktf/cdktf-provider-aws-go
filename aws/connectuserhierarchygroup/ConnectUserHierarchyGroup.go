@@ -5,14 +5,14 @@ package connectuserhierarchygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectuserhierarchygroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectuserhierarchygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
 type ConnectUserHierarchyGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type ConnectUserHierarchyGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,6 +134,7 @@ type ConnectUserHierarchyGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentGroupId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ConnectUserHierarchyGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectUserHierarchyGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectUserHierarchyGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -472,7 +496,7 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
 func NewConnectUserHierarchyGroup(scope constructs.Construct, id *string, config *ConnectUserHierarchyGroupConfig) ConnectUserHierarchyGroup {
 	_init_.Initialize()
 
@@ -490,7 +514,7 @@ func NewConnectUserHierarchyGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
 func NewConnectUserHierarchyGroup_Override(c ConnectUserHierarchyGroup, scope constructs.Construct, id *string, config *ConnectUserHierarchyGroupConfig) {
 	_init_.Initialize()
 
@@ -609,6 +633,17 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectUserHierarchyGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1008,6 +1043,14 @@ func (c *jsiiProxy_ConnectUserHierarchyGroup) ResetParentGroupId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetParentGroupId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectUserHierarchyGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

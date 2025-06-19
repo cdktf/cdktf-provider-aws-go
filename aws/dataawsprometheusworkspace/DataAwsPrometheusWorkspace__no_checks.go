@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

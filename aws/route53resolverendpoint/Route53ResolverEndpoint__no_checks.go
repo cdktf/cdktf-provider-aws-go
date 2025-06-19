@@ -131,6 +131,10 @@ func (j *jsiiProxy_Route53ResolverEndpoint) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) validateSetResolverEndpointTypeParameters(val *string) error {
 	return nil
 }

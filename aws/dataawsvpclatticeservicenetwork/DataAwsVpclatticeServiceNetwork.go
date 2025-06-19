@@ -5,14 +5,14 @@ package dataawsvpclatticeservicenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeservicenetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservicenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
 type DataAwsVpclatticeServiceNetwork interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -57,6 +57,9 @@ type DataAwsVpclatticeServiceNetwork interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceNetworkIdentifier() *string
 	SetServiceNetworkIdentifier(val *string)
 	ServiceNetworkIdentifierInput() *string
@@ -98,6 +101,7 @@ type DataAwsVpclatticeServiceNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -318,6 +322,26 @@ func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) ServiceNetworkIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -389,7 +413,7 @@ func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
 func NewDataAwsVpclatticeServiceNetwork(scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceNetworkConfig) DataAwsVpclatticeServiceNetwork {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewDataAwsVpclatticeServiceNetwork(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
 func NewDataAwsVpclatticeServiceNetwork_Override(d DataAwsVpclatticeServiceNetwork, scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceNetworkConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DataAwsVpclatticeServiceNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpclatticeServiceNetwork) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

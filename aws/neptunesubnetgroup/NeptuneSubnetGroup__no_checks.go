@@ -123,6 +123,10 @@ func (j *jsiiProxy_NeptuneSubnetGroup) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

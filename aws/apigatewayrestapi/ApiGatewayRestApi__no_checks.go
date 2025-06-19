@@ -159,6 +159,10 @@ func (j *jsiiProxy_ApiGatewayRestApi) validateSetPutRestApiModeParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApi) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

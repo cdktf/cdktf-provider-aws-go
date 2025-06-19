@@ -455,6 +455,14 @@ func (j *jsiiProxy_RedshiftDataShareConsumerAssociation) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftDataShareConsumerAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewRedshiftDataShareConsumerAssociationParameters(scope constructs.Construct, id *string, config *RedshiftDataShareConsumerAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

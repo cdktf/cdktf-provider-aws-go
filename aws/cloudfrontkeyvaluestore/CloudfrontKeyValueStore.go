@@ -5,14 +5,14 @@ package cloudfrontkeyvaluestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudfrontkeyvaluestore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudfrontkeyvaluestore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store}.
 type CloudfrontKeyValueStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_CloudfrontKeyValueStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store} Resource.
 func NewCloudfrontKeyValueStore(scope constructs.Construct, id *string, config *CloudfrontKeyValueStoreConfig) CloudfrontKeyValueStore {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewCloudfrontKeyValueStore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_key_value_store aws_cloudfront_key_value_store} Resource.
 func NewCloudfrontKeyValueStore_Override(c CloudfrontKeyValueStore, scope constructs.Construct, id *string, config *CloudfrontKeyValueStoreConfig) {
 	_init_.Initialize()
 

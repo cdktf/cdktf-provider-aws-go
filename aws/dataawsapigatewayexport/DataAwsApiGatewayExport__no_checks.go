@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsApiGatewayExport) validateSetParametersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayExport) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayExport) validateSetRestApiIdParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsappmeshvirtualnode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsappmeshvirtualnode/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappmeshvirtualnode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}.
 type DataAwsAppmeshVirtualNode interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -62,6 +62,9 @@ type DataAwsAppmeshVirtualNode interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceOwner() *string
 	Spec() DataAwsAppmeshVirtualNodeSpecList
 	Tags() *map[string]*string
@@ -103,6 +106,7 @@ type DataAwsAppmeshVirtualNode interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -343,6 +347,26 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualNode) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppmeshVirtualNode) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppmeshVirtualNode) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppmeshVirtualNode) ResourceOwner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +438,7 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualNode) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
 func NewDataAwsAppmeshVirtualNode(scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualNodeConfig) DataAwsAppmeshVirtualNode {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewDataAwsAppmeshVirtualNode(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
 func NewDataAwsAppmeshVirtualNode_Override(d DataAwsAppmeshVirtualNode, scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualNodeConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualNode)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAppmeshVirtualNode)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -849,6 +884,14 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNode) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAppmeshVirtualNode) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

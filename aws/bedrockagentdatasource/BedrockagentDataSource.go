@@ -5,14 +5,14 @@ package bedrockagentdatasource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockagentdatasource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentdatasource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}.
 type BedrockagentDataSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type BedrockagentDataSource interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerSideEncryptionConfiguration() BedrockagentDataSourceServerSideEncryptionConfigurationList
 	ServerSideEncryptionConfigurationInput() interface{}
 	// Experimental.
@@ -136,6 +139,7 @@ type BedrockagentDataSource interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetServerSideEncryptionConfiguration()
 	ResetTimeouts()
 	ResetVectorIngestionConfiguration()
@@ -407,6 +411,26 @@ func (j *jsiiProxy_BedrockagentDataSource) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentDataSource) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentDataSource) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentDataSource) ServerSideEncryptionConfiguration() BedrockagentDataSourceServerSideEncryptionConfigurationList {
 	var returns BedrockagentDataSourceServerSideEncryptionConfigurationList
 	_jsii_.Get(
@@ -498,7 +522,7 @@ func (j *jsiiProxy_BedrockagentDataSource) VectorIngestionConfigurationInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource.
 func NewBedrockagentDataSource(scope constructs.Construct, id *string, config *BedrockagentDataSourceConfig) BedrockagentDataSource {
 	_init_.Initialize()
 
@@ -516,7 +540,7 @@ func NewBedrockagentDataSource(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource.
 func NewBedrockagentDataSource_Override(b BedrockagentDataSource, scope constructs.Construct, id *string, config *BedrockagentDataSourceConfig) {
 	_init_.Initialize()
 
@@ -635,6 +659,17 @@ func (j *jsiiProxy_BedrockagentDataSource)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentDataSource)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1064,6 +1099,14 @@ func (b *jsiiProxy_BedrockagentDataSource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentDataSource) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

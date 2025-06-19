@@ -119,6 +119,10 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetRedrivePolicyParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSqsQueueRedrivePolicyParameters(scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) error {
 	return nil
 }

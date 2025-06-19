@@ -285,6 +285,14 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsEc2SpotPriceParameters(scope constructs.Construct, id *string, config *DataAwsEc2SpotPriceConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

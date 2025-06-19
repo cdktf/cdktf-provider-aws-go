@@ -131,6 +131,10 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetSemanticVersionParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsVpcIpamPools) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPools) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsVpcIpamPoolsParameters(scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolsConfig) error {
 	return nil
 }

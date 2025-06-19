@@ -119,6 +119,10 @@ func (j *jsiiProxy_EipDomainName) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_EipDomainName) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEipDomainNameParameters(scope constructs.Construct, id *string, config *EipDomainNameConfig) error {
 	return nil
 }

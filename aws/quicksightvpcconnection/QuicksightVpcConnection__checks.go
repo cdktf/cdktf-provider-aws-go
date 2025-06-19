@@ -426,6 +426,14 @@ func (j *jsiiProxy_QuicksightVpcConnection) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightVpcConnection) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightVpcConnection) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

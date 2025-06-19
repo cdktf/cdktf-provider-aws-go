@@ -5,14 +5,14 @@ package wafv2webaclloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2webaclloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
 type Wafv2WebAclLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type Wafv2WebAclLoggingConfiguration interface {
 	RawOverrides() interface{}
 	RedactedFields() Wafv2WebAclLoggingConfigurationRedactedFieldsList
 	RedactedFieldsInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -125,6 +128,7 @@ type Wafv2WebAclLoggingConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedactedFields()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -353,6 +357,26 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) RedactedFieldsInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
 func NewWafv2WebAclLoggingConfiguration(scope constructs.Construct, id *string, config *Wafv2WebAclLoggingConfigurationConfig) Wafv2WebAclLoggingConfiguration {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewWafv2WebAclLoggingConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
 func NewWafv2WebAclLoggingConfiguration_Override(w Wafv2WebAclLoggingConfiguration, scope constructs.Construct, id *string, config *Wafv2WebAclLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -519,6 +543,17 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -937,6 +972,14 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) ResetRedactedFields() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRedactedFields",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclLoggingConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

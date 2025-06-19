@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetOwnerParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsmPatchBaselineParameters(scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselineConfig) error {
 	return nil
 }

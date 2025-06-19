@@ -115,6 +115,10 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

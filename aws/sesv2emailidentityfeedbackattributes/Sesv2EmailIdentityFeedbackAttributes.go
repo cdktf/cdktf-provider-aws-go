@@ -5,14 +5,14 @@ package sesv2emailidentityfeedbackattributes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sesv2emailidentityfeedbackattributes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2emailidentityfeedbackattributes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes}.
 type Sesv2EmailIdentityFeedbackAttributes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type Sesv2EmailIdentityFeedbackAttributes interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
 func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) Sesv2EmailIdentityFeedbackAttributes {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
 func NewSesv2EmailIdentityFeedbackAttributes_Override(s Sesv2EmailIdentityFeedbackAttributes, scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) {
 	_init_.Initialize()
 
@@ -483,6 +507,17 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -860,6 +895,14 @@ func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

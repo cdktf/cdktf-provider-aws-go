@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsSesActiveReceiptRuleSetParameters(scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsGlueConnection) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueConnection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

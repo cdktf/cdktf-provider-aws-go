@@ -5,14 +5,14 @@ package ekspodidentityassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ekspodidentityassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ekspodidentityassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
 type EksPodIdentityAssociation interface {
 	cdktf.TerraformResource
 	AssociationArn() *string
@@ -64,6 +64,9 @@ type EksPodIdentityAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -126,6 +129,7 @@ type EksPodIdentityAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -345,6 +349,26 @@ func (j *jsiiProxy_EksPodIdentityAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EksPodIdentityAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksPodIdentityAssociation) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -446,7 +470,7 @@ func (j *jsiiProxy_EksPodIdentityAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) EksPodIdentityAssociation {
 	_init_.Initialize()
 
@@ -464,7 +488,7 @@ func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation_Override(e EksPodIdentityAssociation, scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) {
 	_init_.Initialize()
 
@@ -561,6 +585,17 @@ func (j *jsiiProxy_EksPodIdentityAssociation)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -955,6 +990,14 @@ func (e *jsiiProxy_EksPodIdentityAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksPodIdentityAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

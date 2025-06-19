@@ -5,14 +5,14 @@ package datasynclocationhdfs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datasynclocationhdfs/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datasynclocationhdfs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
 type DatasyncLocationHdfs interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -90,6 +90,9 @@ type DatasyncLocationHdfs interface {
 	QopConfigurationInput() *DatasyncLocationHdfsQopConfiguration
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationFactor() *float64
 	SetReplicationFactor(val *float64)
 	ReplicationFactorInput() *float64
@@ -170,6 +173,7 @@ type DatasyncLocationHdfs interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQopConfiguration()
+	ResetRegion()
 	ResetReplicationFactor()
 	ResetSimpleUser()
 	ResetSubdirectory()
@@ -573,6 +577,26 @@ func (j *jsiiProxy_DatasyncLocationHdfs) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) ReplicationFactor() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -714,7 +738,7 @@ func (j *jsiiProxy_DatasyncLocationHdfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) DatasyncLocationHdfs {
 	_init_.Initialize()
 
@@ -732,7 +756,7 @@ func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs_Override(d DatasyncLocationHdfs, scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) {
 	_init_.Initialize()
 
@@ -917,6 +941,17 @@ func (j *jsiiProxy_DatasyncLocationHdfs)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1435,6 +1470,14 @@ func (d *jsiiProxy_DatasyncLocationHdfs) ResetQopConfiguration() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQopConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncLocationHdfs) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -495,6 +495,14 @@ func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetSpaceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

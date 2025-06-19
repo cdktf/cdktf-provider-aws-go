@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetServiceNameParameters(val *string) error {
 	return nil
 }

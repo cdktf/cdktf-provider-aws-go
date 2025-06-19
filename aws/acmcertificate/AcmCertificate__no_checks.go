@@ -147,6 +147,10 @@ func (j *jsiiProxy_AcmCertificate) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_AcmCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificate) validateSetSubjectAlternativeNamesParameters(val *[]*string) error {
 	return nil
 }

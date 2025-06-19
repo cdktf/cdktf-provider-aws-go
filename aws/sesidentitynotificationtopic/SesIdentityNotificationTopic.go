@@ -5,14 +5,14 @@ package sesidentitynotificationtopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sesidentitynotificationtopic/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesidentitynotificationtopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic}.
 type SesIdentityNotificationTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type SesIdentityNotificationTopic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +127,7 @@ type SesIdentityNotificationTopic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTopicArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -353,6 +357,26 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SesIdentityNotificationTopic) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesIdentityNotificationTopic) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SesIdentityNotificationTopic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) TopicArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
 func NewSesIdentityNotificationTopic(scope constructs.Construct, id *string, config *SesIdentityNotificationTopicConfig) SesIdentityNotificationTopic {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewSesIdentityNotificationTopic(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ses_identity_notification_topic aws_ses_identity_notification_topic} Resource.
 func NewSesIdentityNotificationTopic_Override(s SesIdentityNotificationTopic, scope constructs.Construct, id *string, config *SesIdentityNotificationTopicConfig) {
 	_init_.Initialize()
 
@@ -541,6 +565,17 @@ func (j *jsiiProxy_SesIdentityNotificationTopic)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesIdentityNotificationTopic)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -929,6 +964,14 @@ func (s *jsiiProxy_SesIdentityNotificationTopic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesIdentityNotificationTopic) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

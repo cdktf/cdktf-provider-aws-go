@@ -175,6 +175,10 @@ func (j *jsiiProxy_ElasticsearchDomain) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ElasticsearchDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

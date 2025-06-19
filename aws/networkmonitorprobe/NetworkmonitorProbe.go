@@ -5,14 +5,14 @@ package networkmonitorprobe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkmonitorprobe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
 type NetworkmonitorProbe interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -74,6 +74,9 @@ type NetworkmonitorProbe interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceArn() *string
 	SetSourceArn(val *string)
 	SourceArnInput() *string
@@ -136,6 +139,7 @@ type NetworkmonitorProbe interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPacketSize()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -425,6 +429,26 @@ func (j *jsiiProxy_NetworkmonitorProbe) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkmonitorProbe) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmonitorProbe) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkmonitorProbe) SourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -516,7 +540,7 @@ func (j *jsiiProxy_NetworkmonitorProbe) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
 func NewNetworkmonitorProbe(scope constructs.Construct, id *string, config *NetworkmonitorProbeConfig) NetworkmonitorProbe {
 	_init_.Initialize()
 
@@ -534,7 +558,7 @@ func NewNetworkmonitorProbe(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
 func NewNetworkmonitorProbe_Override(n NetworkmonitorProbe, scope constructs.Construct, id *string, config *NetworkmonitorProbeConfig) {
 	_init_.Initialize()
 
@@ -664,6 +688,17 @@ func (j *jsiiProxy_NetworkmonitorProbe)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmonitorProbe)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (n *jsiiProxy_NetworkmonitorProbe) ResetPacketSize() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPacketSize",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmonitorProbe) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

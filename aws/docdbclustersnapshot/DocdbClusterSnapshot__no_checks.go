@@ -123,6 +123,10 @@ func (j *jsiiProxy_DocdbClusterSnapshot) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DocdbClusterSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDocdbClusterSnapshotParameters(scope constructs.Construct, id *string, config *DocdbClusterSnapshotConfig) error {
 	return nil
 }

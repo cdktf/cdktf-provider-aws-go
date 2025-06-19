@@ -175,6 +175,10 @@ func (j *jsiiProxy_GlueJob) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GlueJob) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJob) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetPreferredNodeType
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRedshiftOrderableClusterParameters(scope constructs.Construct, id *string, config *DataAwsRedshiftOrderableClusterConfig) error {
 	return nil
 }

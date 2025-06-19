@@ -111,6 +111,10 @@ func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetStudioLifecycleConfigAppTypeParameters(val *string) error {
 	return nil
 }

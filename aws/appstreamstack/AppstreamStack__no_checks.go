@@ -155,6 +155,10 @@ func (j *jsiiProxy_AppstreamStack) validateSetRedirectUrlParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamStack) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamStack) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package codestarconnectionshost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codestarconnectionshost/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codestarconnectionshost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_host aws_codestarconnections_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_host aws_codestarconnections_host}.
 type CodestarconnectionsHost interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type CodestarconnectionsHost interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -128,6 +131,7 @@ type CodestarconnectionsHost interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetVpcConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
@@ -368,6 +372,26 @@ func (j *jsiiProxy_CodestarconnectionsHost) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodestarconnectionsHost) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodestarconnectionsHost) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodestarconnectionsHost) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_CodestarconnectionsHost) VpcConfigurationInput() *Codestarcon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
 func NewCodestarconnectionsHost(scope constructs.Construct, id *string, config *CodestarconnectionsHostConfig) CodestarconnectionsHost {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewCodestarconnectionsHost(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
 func NewCodestarconnectionsHost_Override(c CodestarconnectionsHost, scope constructs.Construct, id *string, config *CodestarconnectionsHostConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_CodestarconnectionsHost)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodestarconnectionsHost)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -977,6 +1012,14 @@ func (c *jsiiProxy_CodestarconnectionsHost) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

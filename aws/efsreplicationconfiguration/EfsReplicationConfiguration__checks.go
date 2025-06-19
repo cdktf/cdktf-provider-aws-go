@@ -421,6 +421,14 @@ func (j *jsiiProxy_EfsReplicationConfiguration) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_EfsReplicationConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EfsReplicationConfiguration) validateSetSourceFileSystemIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

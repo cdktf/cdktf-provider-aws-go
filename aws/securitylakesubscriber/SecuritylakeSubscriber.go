@@ -5,14 +5,14 @@ package securitylakesubscriber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securitylakesubscriber/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakesubscriber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber}.
 type SecuritylakeSubscriber interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -60,6 +60,9 @@ type SecuritylakeSubscriber interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceShareArn() *string
 	ResourceShareName() *string
 	RoleArn() *string
@@ -138,6 +141,7 @@ type SecuritylakeSubscriber interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSource()
 	ResetSubscriberDescription()
 	ResetSubscriberIdentity()
@@ -327,6 +331,26 @@ func (j *jsiiProxy_SecuritylakeSubscriber) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecuritylakeSubscriber) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecuritylakeSubscriber) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -553,7 +577,7 @@ func (j *jsiiProxy_SecuritylakeSubscriber) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
 func NewSecuritylakeSubscriber(scope constructs.Construct, id *string, config *SecuritylakeSubscriberConfig) SecuritylakeSubscriber {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewSecuritylakeSubscriber(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_subscriber aws_securitylake_subscriber} Resource.
 func NewSecuritylakeSubscriber_Override(s SecuritylakeSubscriber, scope constructs.Construct, id *string, config *SecuritylakeSubscriberConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_SecuritylakeSubscriber)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecuritylakeSubscriber)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1092,6 +1127,14 @@ func (s *jsiiProxy_SecuritylakeSubscriber) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecuritylakeSubscriber) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

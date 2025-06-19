@@ -127,6 +127,10 @@ func (j *jsiiProxy_MskReplicator) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_MskReplicator) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskReplicator) validateSetReplicatorNameParameters(val *string) error {
 	return nil
 }

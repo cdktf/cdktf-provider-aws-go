@@ -119,6 +119,10 @@ func (j *jsiiProxy_GlueResourcePolicy) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_GlueResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueResourcePolicyParameters(scope constructs.Construct, id *string, config *GlueResourcePolicyConfig) error {
 	return nil
 }

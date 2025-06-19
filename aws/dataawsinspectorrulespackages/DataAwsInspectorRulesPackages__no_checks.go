@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsInspectorRulesPackages) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsInspectorRulesPackages) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsInspectorRulesPackagesParameters(scope constructs.Construct, id *string, config *DataAwsInspectorRulesPackagesConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsconnectroutingprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectroutingprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectroutingprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}.
 type DataAwsConnectRoutingProfile interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -61,6 +61,9 @@ type DataAwsConnectRoutingProfile interface {
 	QueueConfigs() DataAwsConnectRoutingProfileQueueConfigsList
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoutingProfileId() *string
 	SetRoutingProfileId(val *string)
 	RoutingProfileIdInput() *string
@@ -103,6 +106,7 @@ type DataAwsConnectRoutingProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRoutingProfileId()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -344,6 +348,26 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectRoutingProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectRoutingProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectRoutingProfile) RoutingProfileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -415,7 +439,7 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfile) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
 func NewDataAwsConnectRoutingProfile(scope constructs.Construct, id *string, config *DataAwsConnectRoutingProfileConfig) DataAwsConnectRoutingProfile {
 	_init_.Initialize()
 
@@ -433,7 +457,7 @@ func NewDataAwsConnectRoutingProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
 func NewDataAwsConnectRoutingProfile_Override(d DataAwsConnectRoutingProfile, scope constructs.Construct, id *string, config *DataAwsConnectRoutingProfileConfig) {
 	_init_.Initialize()
 
@@ -519,6 +543,17 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfile)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectRoutingProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectRoutingProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

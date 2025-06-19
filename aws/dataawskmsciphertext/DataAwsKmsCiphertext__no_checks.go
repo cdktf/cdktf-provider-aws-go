@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetPlaintextParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKmsCiphertextParameters(scope constructs.Construct, id *string, config *DataAwsKmsCiphertextConfig) error {
 	return nil
 }

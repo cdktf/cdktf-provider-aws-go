@@ -5,14 +5,14 @@ package ec2trafficmirrorsession
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2trafficmirrorsession/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2trafficmirrorsession/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
 type Ec2TrafficMirrorSession interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type Ec2TrafficMirrorSession interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SessionNumber() *float64
 	SetSessionNumber(val *float64)
 	SessionNumberInput() *float64
@@ -142,6 +145,7 @@ type Ec2TrafficMirrorSession interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPacketLength()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetVirtualNetworkId()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TrafficMirrorSession) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorSession) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorSession) SessionNumber() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -544,7 +568,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) VirtualNetworkIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) Ec2TrafficMirrorSession {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession_Override(e Ec2TrafficMirrorSession, scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) {
 	_init_.Initialize()
 
@@ -681,6 +705,17 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorSession)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1132,6 +1167,14 @@ func (e *jsiiProxy_Ec2TrafficMirrorSession) ResetPacketLength() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPacketLength",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorSession) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

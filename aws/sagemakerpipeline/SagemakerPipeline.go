@@ -5,14 +5,14 @@ package sagemakerpipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerpipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerpipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}.
 type SagemakerPipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type SagemakerPipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -143,6 +146,7 @@ type SagemakerPipeline interface {
 	ResetPipelineDefinition()
 	ResetPipelineDefinitionS3Location()
 	ResetPipelineDescription()
+	ResetRegion()
 	ResetRoleArn()
 	ResetTags()
 	ResetTagsAll()
@@ -444,6 +448,26 @@ func (j *jsiiProxy_SagemakerPipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerPipeline) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerPipeline) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerPipeline) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_SagemakerPipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource.
 func NewSagemakerPipeline(scope constructs.Construct, id *string, config *SagemakerPipelineConfig) SagemakerPipeline {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewSagemakerPipeline(scope constructs.Construct, id *string, config *Sagema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource.
 func NewSagemakerPipeline_Override(s SagemakerPipeline, scope constructs.Construct, id *string, config *SagemakerPipelineConfig) {
 	_init_.Initialize()
 
@@ -683,6 +707,17 @@ func (j *jsiiProxy_SagemakerPipeline)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerPipeline)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (s *jsiiProxy_SagemakerPipeline) ResetPipelineDescription() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPipelineDescription",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerPipeline) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

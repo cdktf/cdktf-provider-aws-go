@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeAccessLogSubscription) validateSetResourceIdentifierParameters(val *string) error {
 	return nil
 }

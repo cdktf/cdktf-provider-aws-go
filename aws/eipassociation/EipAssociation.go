@@ -5,14 +5,14 @@ package eipassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/eipassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/eipassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_association aws_eip_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_association aws_eip_association}.
 type EipAssociation interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -76,6 +76,9 @@ type EipAssociation interface {
 	PublicIpInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +138,7 @@ type EipAssociation interface {
 	ResetOverrideLogicalId()
 	ResetPrivateIpAddress()
 	ResetPublicIp()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -423,6 +427,26 @@ func (j *jsiiProxy_EipAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EipAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EipAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EipAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -454,7 +478,7 @@ func (j *jsiiProxy_EipAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_association aws_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_association aws_eip_association} Resource.
 func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssociationConfig) EipAssociation {
 	_init_.Initialize()
 
@@ -472,7 +496,7 @@ func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip_association aws_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip_association aws_eip_association} Resource.
 func NewEipAssociation_Override(e EipAssociation, scope constructs.Construct, id *string, config *EipAssociationConfig) {
 	_init_.Initialize()
 
@@ -624,6 +648,17 @@ func (j *jsiiProxy_EipAssociation)SetPublicIp(val *string) {
 	_jsii_.Set(
 		j,
 		"publicIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EipAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1041,6 +1076,14 @@ func (e *jsiiProxy_EipAssociation) ResetPublicIp() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPublicIp",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EipAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

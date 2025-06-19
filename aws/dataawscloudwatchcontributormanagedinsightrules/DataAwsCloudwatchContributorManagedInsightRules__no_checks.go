@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRules) validateSetL
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRules) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRules) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

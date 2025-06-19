@@ -5,14 +5,14 @@ package dataawsec2managedprefixlists
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2managedprefixlists/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2managedprefixlists/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists}.
 type DataAwsEc2ManagedPrefixLists interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsEc2ManagedPrefixLists interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -93,6 +96,7 @@ type DataAwsEc2ManagedPrefixLists interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -273,6 +277,26 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
 func NewDataAwsEc2ManagedPrefixLists(scope constructs.Construct, id *string, config *DataAwsEc2ManagedPrefixListsConfig) DataAwsEc2ManagedPrefixLists {
 	_init_.Initialize()
 
@@ -342,7 +366,7 @@ func NewDataAwsEc2ManagedPrefixLists(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
 func NewDataAwsEc2ManagedPrefixLists_Override(d DataAwsEc2ManagedPrefixLists, scope constructs.Construct, id *string, config *DataAwsEc2ManagedPrefixListsConfig) {
 	_init_.Initialize()
 
@@ -406,6 +430,17 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixLists) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

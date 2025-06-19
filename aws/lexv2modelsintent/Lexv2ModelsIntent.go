@@ -5,14 +5,14 @@ package lexv2modelsintent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexv2modelsintent/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexv2modelsintent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_intent aws_lexv2models_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_intent aws_lexv2models_intent}.
 type Lexv2ModelsIntent interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -93,6 +93,9 @@ type Lexv2ModelsIntent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SampleUtterance() Lexv2ModelsIntentSampleUtteranceList
 	SampleUtteranceInput() interface{}
 	SlotPriority() Lexv2ModelsIntentSlotPriorityList
@@ -172,6 +175,7 @@ type Lexv2ModelsIntent interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentIntentSignature()
+	ResetRegion()
 	ResetSampleUtterance()
 	ResetSlotPriority()
 	ResetTimeouts()
@@ -643,6 +647,26 @@ func (j *jsiiProxy_Lexv2ModelsIntent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lexv2ModelsIntent) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lexv2ModelsIntent) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lexv2ModelsIntent) SampleUtterance() Lexv2ModelsIntentSampleUtteranceList {
 	var returns Lexv2ModelsIntentSampleUtteranceList
 	_jsii_.Get(
@@ -734,7 +758,7 @@ func (j *jsiiProxy_Lexv2ModelsIntent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource.
 func NewLexv2ModelsIntent(scope constructs.Construct, id *string, config *Lexv2ModelsIntentConfig) Lexv2ModelsIntent {
 	_init_.Initialize()
 
@@ -752,7 +776,7 @@ func NewLexv2ModelsIntent(scope constructs.Construct, id *string, config *Lexv2M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource.
 func NewLexv2ModelsIntent_Override(l Lexv2ModelsIntent, scope constructs.Construct, id *string, config *Lexv2ModelsIntentConfig) {
 	_init_.Initialize()
 
@@ -893,6 +917,17 @@ func (j *jsiiProxy_Lexv2ModelsIntent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lexv2ModelsIntent)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1455,6 +1490,14 @@ func (l *jsiiProxy_Lexv2ModelsIntent) ResetParentIntentSignature() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetParentIntentSignature",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lexv2ModelsIntent) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

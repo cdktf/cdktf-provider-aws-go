@@ -423,6 +423,14 @@ func (j *jsiiProxy_Ec2InstanceMetadataDefaults) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceMetadataDefaults) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEc2InstanceMetadataDefaultsParameters(scope constructs.Construct, id *string, config *Ec2InstanceMetadataDefaultsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

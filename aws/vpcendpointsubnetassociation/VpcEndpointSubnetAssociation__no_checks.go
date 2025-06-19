@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

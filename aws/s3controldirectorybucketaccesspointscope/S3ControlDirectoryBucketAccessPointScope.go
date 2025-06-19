@@ -5,14 +5,14 @@ package s3controldirectorybucketaccesspointscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controldirectorybucketaccesspointscope/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controldirectorybucketaccesspointscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope}.
 type S3ControlDirectoryBucketAccessPointScope interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,6 +61,9 @@ type S3ControlDirectoryBucketAccessPointScope interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Scope() S3ControlDirectoryBucketAccessPointScopeScopeList
 	ScopeInput() interface{}
 	// Experimental.
@@ -116,6 +119,7 @@ type S3ControlDirectoryBucketAccessPointScope interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetScope()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -305,6 +309,26 @@ func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) RawOverrides() inte
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) Scope() S3ControlDirectoryBucketAccessPointScopeScopeList {
 	var returns S3ControlDirectoryBucketAccessPointScopeScopeList
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope} Resource.
 func NewS3ControlDirectoryBucketAccessPointScope(scope constructs.Construct, id *string, config *S3ControlDirectoryBucketAccessPointScopeConfig) S3ControlDirectoryBucketAccessPointScope {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewS3ControlDirectoryBucketAccessPointScope(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_directory_bucket_access_point_scope aws_s3control_directory_bucket_access_point_scope} Resource.
 func NewS3ControlDirectoryBucketAccessPointScope_Override(s S3ControlDirectoryBucketAccessPointScope, scope constructs.Construct, id *string, config *S3ControlDirectoryBucketAccessPointScopeConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -843,6 +878,14 @@ func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

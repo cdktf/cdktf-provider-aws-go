@@ -5,19 +5,16 @@ package sagemakernotebookinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakernotebookinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakernotebookinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance}.
 type SagemakerNotebookInstance interface {
 	cdktf.TerraformResource
-	AcceleratorTypes() *[]*string
-	SetAcceleratorTypes(val *[]*string)
-	AcceleratorTypesInput() *[]*string
 	AdditionalCodeRepositories() *[]*string
 	SetAdditionalCodeRepositories(val *[]*string)
 	AdditionalCodeRepositoriesInput() *[]*string
@@ -89,6 +86,9 @@ type SagemakerNotebookInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -161,7 +161,6 @@ type SagemakerNotebookInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutInstanceMetadataServiceConfiguration(value *SagemakerNotebookInstanceInstanceMetadataServiceConfiguration)
-	ResetAcceleratorTypes()
 	ResetAdditionalCodeRepositories()
 	ResetDefaultCodeRepository()
 	ResetDirectInternetAccess()
@@ -173,6 +172,7 @@ type SagemakerNotebookInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformIdentifier()
+	ResetRegion()
 	ResetRootAccess()
 	ResetSecurityGroups()
 	ResetSubnetId()
@@ -195,26 +195,6 @@ type SagemakerNotebookInstance interface {
 // The jsii proxy struct for SagemakerNotebookInstance
 type jsiiProxy_SagemakerNotebookInstance struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_SagemakerNotebookInstance) AcceleratorTypes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"acceleratorTypes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SagemakerNotebookInstance) AcceleratorTypesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"acceleratorTypesInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_SagemakerNotebookInstance) AdditionalCodeRepositories() *[]*string {
@@ -567,6 +547,26 @@ func (j *jsiiProxy_SagemakerNotebookInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerNotebookInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerNotebookInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerNotebookInstance) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -748,7 +748,7 @@ func (j *jsiiProxy_SagemakerNotebookInstance) VolumeSizeInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance} Resource.
 func NewSagemakerNotebookInstance(scope constructs.Construct, id *string, config *SagemakerNotebookInstanceConfig) SagemakerNotebookInstance {
 	_init_.Initialize()
 
@@ -766,7 +766,7 @@ func NewSagemakerNotebookInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_notebook_instance aws_sagemaker_notebook_instance} Resource.
 func NewSagemakerNotebookInstance_Override(s SagemakerNotebookInstance, scope constructs.Construct, id *string, config *SagemakerNotebookInstanceConfig) {
 	_init_.Initialize()
 
@@ -774,17 +774,6 @@ func NewSagemakerNotebookInstance_Override(s SagemakerNotebookInstance, scope co
 		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstance",
 		[]interface{}{scope, id, config},
 		s,
-	)
-}
-
-func (j *jsiiProxy_SagemakerNotebookInstance)SetAcceleratorTypes(val *[]*string) {
-	if err := j.validateSetAcceleratorTypesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"acceleratorTypes",
-		val,
 	)
 }
 
@@ -951,6 +940,17 @@ func (j *jsiiProxy_SagemakerNotebookInstance)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerNotebookInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1396,14 +1396,6 @@ func (s *jsiiProxy_SagemakerNotebookInstance) PutInstanceMetadataServiceConfigur
 	)
 }
 
-func (s *jsiiProxy_SagemakerNotebookInstance) ResetAcceleratorTypes() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAcceleratorTypes",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SagemakerNotebookInstance) ResetAdditionalCodeRepositories() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1472,6 +1464,14 @@ func (s *jsiiProxy_SagemakerNotebookInstance) ResetPlatformIdentifier() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPlatformIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerNotebookInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

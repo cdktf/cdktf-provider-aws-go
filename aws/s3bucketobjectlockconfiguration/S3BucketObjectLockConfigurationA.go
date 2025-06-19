@@ -5,14 +5,14 @@ package s3bucketobjectlockconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketobjectlockconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketobjectlockconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration}.
 type S3BucketObjectLockConfigurationA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -67,6 +67,9 @@ type S3BucketObjectLockConfigurationA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() S3BucketObjectLockConfigurationRuleAOutputReference
 	RuleInput() *S3BucketObjectLockConfigurationRuleA
 	// Experimental.
@@ -128,6 +131,7 @@ type S3BucketObjectLockConfigurationA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRule()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
@@ -358,6 +362,26 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketObjectLockConfigurationA) Rule() S3BucketObjectLockConfigurationRuleAOutputReference {
 	var returns S3BucketObjectLockConfigurationRuleAOutputReference
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource.
 func NewS3BucketObjectLockConfigurationA(scope constructs.Construct, id *string, config *S3BucketObjectLockConfigurationAConfig) S3BucketObjectLockConfigurationA {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewS3BucketObjectLockConfigurationA(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_object_lock_configuration aws_s3_bucket_object_lock_configuration} Resource.
 func NewS3BucketObjectLockConfigurationA_Override(s S3BucketObjectLockConfigurationA, scope constructs.Construct, id *string, config *S3BucketObjectLockConfigurationAConfig) {
 	_init_.Initialize()
 
@@ -566,6 +590,17 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -973,6 +1008,14 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

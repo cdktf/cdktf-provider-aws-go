@@ -135,7 +135,7 @@ func (j *jsiiProxy_DxGatewayAssociation) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) validateSetVpnGatewayIdParameters(val *string) error {
+func (j *jsiiProxy_DxGatewayAssociation) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package ssmmaintenancewindowtask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmmaintenancewindowtask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmmaintenancewindowtask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task}.
 type SsmMaintenanceWindowTask interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type SsmMaintenanceWindowTask interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceRoleArn() *string
 	SetServiceRoleArn(val *string)
 	ServiceRoleArnInput() *string
@@ -155,6 +158,7 @@ type SsmMaintenanceWindowTask interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPriority()
+	ResetRegion()
 	ResetServiceRoleArn()
 	ResetTargets()
 	ResetTaskInvocationParameters()
@@ -456,6 +460,26 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTask) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmMaintenanceWindowTask) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTask) ServiceRoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -617,7 +641,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) WindowTaskId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
 func NewSsmMaintenanceWindowTask(scope constructs.Construct, id *string, config *SsmMaintenanceWindowTaskConfig) SsmMaintenanceWindowTask {
 	_init_.Initialize()
 
@@ -635,7 +659,7 @@ func NewSsmMaintenanceWindowTask(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
 func NewSsmMaintenanceWindowTask_Override(s SsmMaintenanceWindowTask, scope constructs.Construct, id *string, config *SsmMaintenanceWindowTaskConfig) {
 	_init_.Initialize()
 
@@ -787,6 +811,17 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmMaintenanceWindowTask)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1270,6 +1305,14 @@ func (s *jsiiProxy_SsmMaintenanceWindowTask) ResetPriority() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmMaintenanceWindowTask) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsFileSystem) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspaces) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspaces) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsPrometheusWorkspacesParameters(scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspacesConfig) error {
 	return nil
 }

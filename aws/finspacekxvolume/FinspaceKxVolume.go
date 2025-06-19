@@ -5,14 +5,14 @@ package finspacekxvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/finspacekxvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/finspacekxvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
 type FinspaceKxVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type FinspaceKxVolume interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	StatusReason() *string
 	Tags() *map[string]*string
@@ -149,6 +152,7 @@ type FinspaceKxVolume interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -480,6 +484,26 @@ func (j *jsiiProxy_FinspaceKxVolume) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxVolume) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxVolume) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxVolume) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -611,7 +635,7 @@ func (j *jsiiProxy_FinspaceKxVolume) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
 func NewFinspaceKxVolume(scope constructs.Construct, id *string, config *FinspaceKxVolumeConfig) FinspaceKxVolume {
 	_init_.Initialize()
 
@@ -629,7 +653,7 @@ func NewFinspaceKxVolume(scope constructs.Construct, id *string, config *Finspac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
 func NewFinspaceKxVolume_Override(f FinspaceKxVolume, scope constructs.Construct, id *string, config *FinspaceKxVolumeConfig) {
 	_init_.Initialize()
 
@@ -770,6 +794,17 @@ func (j *jsiiProxy_FinspaceKxVolume)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxVolume)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1210,6 +1245,14 @@ func (f *jsiiProxy_FinspaceKxVolume) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxVolume) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

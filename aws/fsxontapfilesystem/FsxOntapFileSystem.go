@@ -5,14 +5,14 @@ package fsxontapfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxontapfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxontapfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
 type FsxOntapFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,9 @@ type FsxOntapFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteTableIds() *[]*string
 	SetRouteTableIds(val *[]*string)
 	RouteTableIdsInput() *[]*string
@@ -184,6 +187,7 @@ type FsxOntapFileSystem interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
 	ResetStorageType()
@@ -591,6 +595,26 @@ func (j *jsiiProxy_FsxOntapFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) RouteTableIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -852,7 +876,7 @@ func (j *jsiiProxy_FsxOntapFileSystem) WeeklyMaintenanceStartTimeInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
 func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOntapFileSystemConfig) FsxOntapFileSystem {
 	_init_.Initialize()
 
@@ -870,7 +894,7 @@ func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
 func NewFsxOntapFileSystem_Override(f FsxOntapFileSystem, scope constructs.Construct, id *string, config *FsxOntapFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1068,17 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1601,6 +1636,14 @@ func (f *jsiiProxy_FsxOntapFileSystem) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftPartner) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftPartner) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftPartnerParameters(scope constructs.Construct, id *string, config *RedshiftPartnerConfig) error {
 	return nil
 }

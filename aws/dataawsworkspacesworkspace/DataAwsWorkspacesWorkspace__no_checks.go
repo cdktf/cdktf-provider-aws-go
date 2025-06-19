@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsWorkspacesWorkspace) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesWorkspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesWorkspace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

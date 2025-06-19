@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLambdaCodeSigningConfigParameters(scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) error {
 	return nil
 }

@@ -79,10 +79,6 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetCountParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

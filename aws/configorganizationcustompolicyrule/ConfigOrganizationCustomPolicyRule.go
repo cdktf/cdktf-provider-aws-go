@@ -5,14 +5,14 @@ package configorganizationcustompolicyrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/configorganizationcustompolicyrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/configorganizationcustompolicyrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule}.
 type ConfigOrganizationCustomPolicyRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,9 @@ type ConfigOrganizationCustomPolicyRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceIdScope() *string
 	SetResourceIdScope(val *string)
 	ResourceIdScopeInput() *string
@@ -159,6 +162,7 @@ type ConfigOrganizationCustomPolicyRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceIdScope()
 	ResetResourceTypesScope()
 	ResetTagKeyScope()
@@ -502,6 +506,26 @@ func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) ResourceIdScope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -653,7 +677,7 @@ func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) TriggerTypesInput() *[]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
 func NewConfigOrganizationCustomPolicyRule(scope constructs.Construct, id *string, config *ConfigOrganizationCustomPolicyRuleConfig) ConfigOrganizationCustomPolicyRule {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewConfigOrganizationCustomPolicyRule(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
 func NewConfigOrganizationCustomPolicyRule_Override(c ConfigOrganizationCustomPolicyRule, scope constructs.Construct, id *string, config *ConfigOrganizationCustomPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -845,6 +869,17 @@ func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1320,6 +1355,14 @@ func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

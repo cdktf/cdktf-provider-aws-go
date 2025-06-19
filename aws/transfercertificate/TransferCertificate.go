@@ -5,14 +5,14 @@ package transfercertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transfercertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transfercertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate aws_transfer_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate aws_transfer_certificate}.
 type TransferCertificate interface {
 	cdktf.TerraformResource
 	ActiveDate() *string
@@ -74,6 +74,9 @@ type TransferCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -139,6 +142,7 @@ type TransferCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateKey()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -429,6 +433,26 @@ func (j *jsiiProxy_TransferCertificate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferCertificate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferCertificate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferCertificate) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -520,7 +544,7 @@ func (j *jsiiProxy_TransferCertificate) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource.
 func NewTransferCertificate(scope constructs.Construct, id *string, config *TransferCertificateConfig) TransferCertificate {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewTransferCertificate(scope constructs.Construct, id *string, config *Tran
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_certificate aws_transfer_certificate} Resource.
 func NewTransferCertificate_Override(t TransferCertificate, scope constructs.Construct, id *string, config *TransferCertificateConfig) {
 	_init_.Initialize()
 
@@ -668,6 +692,17 @@ func (j *jsiiProxy_TransferCertificate)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferCertificate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1094,6 +1129,14 @@ func (t *jsiiProxy_TransferCertificate) ResetPrivateKey() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferCertificate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) validateSetStatusParameters(val *string) error {
 	return nil
 }

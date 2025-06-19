@@ -5,14 +5,14 @@ package quicksightanalysis
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightanalysis/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightanalysis/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
 type QuicksightAnalysis interface {
 	cdktf.TerraformResource
 	AnalysisId() *string
@@ -81,6 +81,9 @@ type QuicksightAnalysis interface {
 	RecoveryWindowInDays() *float64
 	SetRecoveryWindowInDays(val *float64)
 	RecoveryWindowInDaysInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceEntity() QuicksightAnalysisSourceEntityOutputReference
 	SourceEntityInput() *QuicksightAnalysisSourceEntity
 	Status() *string
@@ -157,6 +160,7 @@ type QuicksightAnalysis interface {
 	ResetParameters()
 	ResetPermissions()
 	ResetRecoveryWindowInDays()
+	ResetRegion()
 	ResetSourceEntity()
 	ResetTags()
 	ResetTagsAll()
@@ -510,6 +514,26 @@ func (j *jsiiProxy_QuicksightAnalysis) RecoveryWindowInDaysInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAnalysis) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAnalysis) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAnalysis) SourceEntity() QuicksightAnalysisSourceEntityOutputReference {
 	var returns QuicksightAnalysisSourceEntityOutputReference
 	_jsii_.Get(
@@ -651,7 +675,7 @@ func (j *jsiiProxy_QuicksightAnalysis) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) QuicksightAnalysis {
 	_init_.Initialize()
 
@@ -669,7 +693,7 @@ func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *Quick
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis_Override(q QuicksightAnalysis, scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) {
 	_init_.Initialize()
 
@@ -810,6 +834,17 @@ func (j *jsiiProxy_QuicksightAnalysis)SetRecoveryWindowInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"recoveryWindowInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAnalysis)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1296,6 +1331,14 @@ func (q *jsiiProxy_QuicksightAnalysis) ResetRecoveryWindowInDays() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetRecoveryWindowInDays",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAnalysis) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

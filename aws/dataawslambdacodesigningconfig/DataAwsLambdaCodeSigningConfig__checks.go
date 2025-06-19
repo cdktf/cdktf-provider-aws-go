@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsLambdaCodeSigningConfigParameters(scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

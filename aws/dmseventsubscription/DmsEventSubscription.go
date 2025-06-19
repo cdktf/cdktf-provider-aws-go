@@ -5,14 +5,14 @@ package dmseventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dmseventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dmseventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_event_subscription aws_dms_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_event_subscription aws_dms_event_subscription}.
 type DmsEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type DmsEventSubscription interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnsTopicArn() *string
 	SetSnsTopicArn(val *string)
 	SnsTopicArnInput() *string
@@ -140,6 +143,7 @@ type DmsEventSubscription interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSourceIds()
 	ResetTags()
 	ResetTagsAll()
@@ -382,6 +386,26 @@ func (j *jsiiProxy_DmsEventSubscription) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DmsEventSubscription) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEventSubscription) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsEventSubscription) SnsTopicArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_DmsEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
 func NewDmsEventSubscription(scope constructs.Construct, id *string, config *DmsEventSubscriptionConfig) DmsEventSubscription {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewDmsEventSubscription(scope constructs.Construct, id *string, config *Dms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
 func NewDmsEventSubscription_Override(d DmsEventSubscription, scope constructs.Construct, id *string, config *DmsEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -670,6 +694,17 @@ func (j *jsiiProxy_DmsEventSubscription)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEventSubscription)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1113,6 +1148,14 @@ func (d *jsiiProxy_DmsEventSubscription) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEventSubscription) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

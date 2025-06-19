@@ -119,6 +119,10 @@ func (j *jsiiProxy_MemorydbAcl) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbAcl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbAcl) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package s3controlmultiregionaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controlmultiregionaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlmultiregionaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point}.
 type S3ControlMultiRegionAccessPoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -66,6 +66,9 @@ type S3ControlMultiRegionAccessPoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -125,6 +128,7 @@ type S3ControlMultiRegionAccessPoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -364,6 +368,26 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,7 +449,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource.
 func NewS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointConfig) S3ControlMultiRegionAccessPoint {
 	_init_.Initialize()
 
@@ -443,7 +467,7 @@ func NewS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource.
 func NewS3ControlMultiRegionAccessPoint_Override(s S3ControlMultiRegionAccessPoint, scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointConfig) {
 	_init_.Initialize()
 
@@ -540,6 +564,17 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

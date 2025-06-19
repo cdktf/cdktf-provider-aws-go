@@ -143,6 +143,10 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetRadiusTimeoutParam
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetSharedSecretParameters(val *string) error {
 	return nil
 }

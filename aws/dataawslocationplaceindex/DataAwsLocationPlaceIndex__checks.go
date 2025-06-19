@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

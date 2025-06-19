@@ -115,6 +115,10 @@ func (j *jsiiProxy_AthenaCapacityReservation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AthenaCapacityReservation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaCapacityReservation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

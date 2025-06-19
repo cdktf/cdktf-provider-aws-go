@@ -131,6 +131,10 @@ func (j *jsiiProxy_M2Application) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_M2Application) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_M2Application) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

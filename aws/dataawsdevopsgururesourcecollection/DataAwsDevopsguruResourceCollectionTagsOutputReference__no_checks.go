@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) validateSetInternalValueParameters(val *DataAwsDevopsguruResourceCollectionTags) error {
 	return nil
 }
 

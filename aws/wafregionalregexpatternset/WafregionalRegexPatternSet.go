@@ -5,14 +5,14 @@ package wafregionalregexpatternset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafregionalregexpatternset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafregionalregexpatternset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set}.
 type WafregionalRegexPatternSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type WafregionalRegexPatternSet interface {
 	RegexPatternStrings() *[]*string
 	SetRegexPatternStrings(val *[]*string)
 	RegexPatternStringsInput() *[]*string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegexPatternStrings()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) RegexPatternStringsInput() *[]*st
 	return returns
 }
 
+func (j *jsiiProxy_WafregionalRegexPatternSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafregionalRegexPatternSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_WafregionalRegexPatternSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set} Resource.
 func NewWafregionalRegexPatternSet(scope constructs.Construct, id *string, config *WafregionalRegexPatternSetConfig) WafregionalRegexPatternSet {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewWafregionalRegexPatternSet(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_pattern_set aws_wafregional_regex_pattern_set} Resource.
 func NewWafregionalRegexPatternSet_Override(w WafregionalRegexPatternSet, scope constructs.Construct, id *string, config *WafregionalRegexPatternSetConfig) {
 	_init_.Initialize()
 
@@ -483,6 +507,17 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetRegexPatternStrings(val *[]*str
 	_jsii_.Set(
 		j,
 		"regexPatternStrings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafregionalRegexPatternSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -860,6 +895,14 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) ResetRegexPatternStrings() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRegexPatternStrings",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafregionalRegexPatternSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

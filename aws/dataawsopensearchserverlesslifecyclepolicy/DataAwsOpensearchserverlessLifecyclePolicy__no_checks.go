@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessLifecyclePolicy) validateSetNamePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOpensearchserverlessLifecyclePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOpensearchserverlessLifecyclePolicy) validateSetTypeParameters(val *string) error {
 	return nil
 }

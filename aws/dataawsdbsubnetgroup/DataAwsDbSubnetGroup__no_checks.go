@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDbSubnetGroup) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDbSubnetGroupParameters(scope constructs.Construct, id *string, config *DataAwsDbSubnetGroupConfig) error {
 	return nil
 }

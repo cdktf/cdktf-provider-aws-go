@@ -452,6 +452,14 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 	return nil
 }
 
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetResourceAccessRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

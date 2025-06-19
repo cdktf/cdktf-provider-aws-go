@@ -415,6 +415,14 @@ func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEc2AvailabilityZoneGroupParameters(scope constructs.Construct, id *string, config *Ec2AvailabilityZoneGroupConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

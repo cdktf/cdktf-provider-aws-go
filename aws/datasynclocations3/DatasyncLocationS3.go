@@ -5,14 +5,14 @@ package datasynclocations3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datasynclocations3/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datasynclocations3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
 type DatasyncLocationS3 interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -62,6 +62,9 @@ type DatasyncLocationS3 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3BucketArn() *string
 	SetS3BucketArn(val *string)
 	S3BucketArnInput() *string
@@ -135,6 +138,7 @@ type DatasyncLocationS3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3StorageClass()
 	ResetTags()
 	ResetTagsAll()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_DatasyncLocationS3) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncLocationS3) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationS3) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncLocationS3) S3BucketArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_DatasyncLocationS3) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
 func NewDatasyncLocationS3(scope constructs.Construct, id *string, config *DatasyncLocationS3Config) DatasyncLocationS3 {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewDatasyncLocationS3(scope constructs.Construct, id *string, config *Datas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
 func NewDatasyncLocationS3_Override(d DatasyncLocationS3, scope constructs.Construct, id *string, config *DatasyncLocationS3Config) {
 	_init_.Initialize()
 
@@ -612,6 +636,17 @@ func (j *jsiiProxy_DatasyncLocationS3)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncLocationS3)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1055,6 +1090,14 @@ func (d *jsiiProxy_DatasyncLocationS3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncLocationS3) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

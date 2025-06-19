@@ -119,6 +119,10 @@ func (j *jsiiProxy_EfsReplicationConfiguration) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_EfsReplicationConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsReplicationConfiguration) validateSetSourceFileSystemIdParameters(val *string) error {
 	return nil
 }

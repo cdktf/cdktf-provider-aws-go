@@ -151,6 +151,10 @@ func (j *jsiiProxy_KeyspacesTable) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_KeyspacesTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyspacesTable) validateSetTableNameParameters(val *string) error {
 	return nil
 }

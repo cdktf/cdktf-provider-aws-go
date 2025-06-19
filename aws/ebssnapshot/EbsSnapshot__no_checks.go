@@ -127,6 +127,10 @@ func (j *jsiiProxy_EbsSnapshot) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_EbsSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsSnapshot) validateSetStorageTierParameters(val *string) error {
 	return nil
 }

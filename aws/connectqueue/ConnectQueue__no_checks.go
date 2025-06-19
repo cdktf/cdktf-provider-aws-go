@@ -139,6 +139,10 @@ func (j *jsiiProxy_ConnectQueue) validateSetQuickConnectIdsParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_ConnectQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectQueue) validateSetStatusParameters(val *string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetStackNameParameters(val *string) error {
 	return nil
 }

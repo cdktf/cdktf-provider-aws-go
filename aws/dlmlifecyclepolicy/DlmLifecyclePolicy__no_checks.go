@@ -123,6 +123,10 @@ func (j *jsiiProxy_DlmLifecyclePolicy) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicy) validateSetStateParameters(val *string) error {
 	return nil
 }

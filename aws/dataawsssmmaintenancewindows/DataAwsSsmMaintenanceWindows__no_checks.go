@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsmMaintenanceWindowsParameters(scope constructs.Construct, id *string, config *DataAwsSsmMaintenanceWindowsConfig) error {
 	return nil
 }

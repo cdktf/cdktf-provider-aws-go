@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsmActivation) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_SsmActivation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmActivation) validateSetRegistrationLimitParameters(val *float64) error {
 	return nil
 }

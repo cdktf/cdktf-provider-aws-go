@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

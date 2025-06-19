@@ -438,6 +438,14 @@ func (j *jsiiProxy_SsmcontactsPlan) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SsmcontactsPlan) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSsmcontactsPlanParameters(scope constructs.Construct, id *string, config *SsmcontactsPlanConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

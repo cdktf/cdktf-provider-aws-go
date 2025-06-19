@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsoadminManagedPolicyAttachmentParameters(scope constructs.Construct, id *string, config *SsoadminManagedPolicyAttachmentConfig) error {
 	return nil
 }

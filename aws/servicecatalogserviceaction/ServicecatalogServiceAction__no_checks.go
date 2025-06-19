@@ -131,6 +131,10 @@ func (j *jsiiProxy_ServicecatalogServiceAction) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogServiceAction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewServicecatalogServiceActionParameters(scope constructs.Construct, id *string, config *ServicecatalogServiceActionConfig) error {
 	return nil
 }

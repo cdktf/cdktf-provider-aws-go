@@ -91,6 +91,10 @@ func validateServicequotasTemplate_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasTemplate) validateSetAwsRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

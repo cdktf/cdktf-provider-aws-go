@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsVpcIpam) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpam) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsVpcIpamParameters(scope constructs.Construct, id *string, config *DataAwsVpcIpamConfig) error {
 	return nil
 }

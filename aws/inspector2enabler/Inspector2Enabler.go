@@ -5,14 +5,14 @@ package inspector2enabler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/inspector2enabler/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspector2enabler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
 type Inspector2Enabler interface {
 	cdktf.TerraformResource
 	AccountIds() *[]*string
@@ -61,6 +61,9 @@ type Inspector2Enabler interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
@@ -120,6 +123,7 @@ type Inspector2Enabler interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -309,6 +313,26 @@ func (j *jsiiProxy_Inspector2Enabler) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Inspector2Enabler) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2Enabler) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Inspector2Enabler) ResourceTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspector2EnablerConfig) Inspector2Enabler {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler_Override(i Inspector2Enabler, scope constructs.Construct, id *string, config *Inspector2EnablerConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_Inspector2Enabler)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Inspector2Enabler)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (i *jsiiProxy_Inspector2Enabler) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2Enabler) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

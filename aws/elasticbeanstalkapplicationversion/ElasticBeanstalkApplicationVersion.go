@@ -5,14 +5,14 @@ package elasticbeanstalkapplicationversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/elasticbeanstalkapplicationversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticbeanstalkapplicationversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}.
 type ElasticBeanstalkApplicationVersion interface {
 	cdktf.TerraformResource
 	Application() *string
@@ -80,6 +80,9 @@ type ElasticBeanstalkApplicationVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -142,6 +145,7 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProcess()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -462,6 +466,26 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
 func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationVersionConfig) ElasticBeanstalkApplicationVersion {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
 func NewElasticBeanstalkApplicationVersion_Override(e ElasticBeanstalkApplicationVersion, scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationVersionConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1129,6 +1164,14 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ResetProcess() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProcess",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

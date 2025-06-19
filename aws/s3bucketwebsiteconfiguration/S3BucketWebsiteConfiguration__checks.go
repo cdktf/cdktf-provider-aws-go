@@ -479,6 +479,14 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetRoutingRulesParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

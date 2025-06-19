@@ -119,6 +119,10 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDirectoryServiceLogSubscriptionParameters(scope constructs.Construct, id *string, config *DirectoryServiceLogSubscriptionConfig) error {
 	return nil
 }

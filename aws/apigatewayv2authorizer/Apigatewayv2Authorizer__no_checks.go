@@ -155,6 +155,10 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewApigatewayv2AuthorizerParameters(scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) error {
 	return nil
 }

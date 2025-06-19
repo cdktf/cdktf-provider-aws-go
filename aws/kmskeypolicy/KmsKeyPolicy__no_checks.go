@@ -123,6 +123,10 @@ func (j *jsiiProxy_KmsKeyPolicy) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_KmsKeyPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewKmsKeyPolicyParameters(scope constructs.Construct, id *string, config *KmsKeyPolicyConfig) error {
 	return nil
 }

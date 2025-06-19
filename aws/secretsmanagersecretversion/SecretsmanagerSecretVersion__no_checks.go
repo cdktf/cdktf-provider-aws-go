@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetSecretBinaryParameters(val *string) error {
 	return nil
 }

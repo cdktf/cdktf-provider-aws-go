@@ -115,6 +115,10 @@ func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) validateSetResourcePolicyParameters(val *string) error {
 	return nil
 }

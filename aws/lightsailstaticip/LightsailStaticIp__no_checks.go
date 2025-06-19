@@ -115,6 +115,10 @@ func (j *jsiiProxy_LightsailStaticIp) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_LightsailStaticIp) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailStaticIpParameters(scope constructs.Construct, id *string, config *LightsailStaticIpConfig) error {
 	return nil
 }

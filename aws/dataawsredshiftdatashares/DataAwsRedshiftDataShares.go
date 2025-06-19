@@ -5,14 +5,14 @@ package dataawsredshiftdatashares
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsredshiftdatashares/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsredshiftdatashares/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
 type DataAwsRedshiftDataShares interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,7 +24,6 @@ type DataAwsRedshiftDataShares interface {
 	// Experimental.
 	SetCount(val interface{})
 	DataShares() DataAwsRedshiftDataSharesDataSharesList
-	DataSharesInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,6 +49,9 @@ type DataAwsRedshiftDataShares interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -81,11 +83,10 @@ type DataAwsRedshiftDataShares interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDataShares(value interface{})
-	ResetDataShares()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -140,16 +141,6 @@ func (j *jsiiProxy_DataAwsRedshiftDataShares) DataShares() DataAwsRedshiftDataSh
 	_jsii_.Get(
 		j,
 		"dataShares",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsRedshiftDataShares) DataSharesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"dataSharesInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +236,26 @@ func (j *jsiiProxy_DataAwsRedshiftDataShares) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRedshiftDataShares) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRedshiftDataShares) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRedshiftDataShares) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -276,7 +287,7 @@ func (j *jsiiProxy_DataAwsRedshiftDataShares) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source.
 func NewDataAwsRedshiftDataShares(scope constructs.Construct, id *string, config *DataAwsRedshiftDataSharesConfig) DataAwsRedshiftDataShares {
 	_init_.Initialize()
 
@@ -294,7 +305,7 @@ func NewDataAwsRedshiftDataShares(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares} Data Source.
 func NewDataAwsRedshiftDataShares_Override(d DataAwsRedshiftDataShares, scope constructs.Construct, id *string, config *DataAwsRedshiftDataSharesConfig) {
 	_init_.Initialize()
 
@@ -347,6 +358,17 @@ func (j *jsiiProxy_DataAwsRedshiftDataShares)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRedshiftDataShares)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -636,29 +658,18 @@ func (d *jsiiProxy_DataAwsRedshiftDataShares) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (d *jsiiProxy_DataAwsRedshiftDataShares) PutDataShares(value interface{}) {
-	if err := d.validatePutDataSharesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putDataShares",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsRedshiftDataShares) ResetDataShares() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDataShares",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsRedshiftDataShares) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRedshiftDataShares) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

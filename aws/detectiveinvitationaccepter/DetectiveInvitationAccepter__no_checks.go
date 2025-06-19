@@ -115,6 +115,10 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDetectiveInvitationAccepterParameters(scope constructs.Construct, id *string, config *DetectiveInvitationAccepterConfig) error {
 	return nil
 }

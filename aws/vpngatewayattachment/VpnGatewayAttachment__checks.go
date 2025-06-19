@@ -399,6 +399,14 @@ func (j *jsiiProxy_VpnGatewayAttachment) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayAttachment) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

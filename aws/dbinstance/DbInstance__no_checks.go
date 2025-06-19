@@ -351,6 +351,10 @@ func (j *jsiiProxy_DbInstance) validateSetPubliclyAccessibleParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetReplicaModeParameters(val *string) error {
 	return nil
 }

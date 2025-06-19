@@ -415,6 +415,14 @@ func (j *jsiiProxy_SecurityhubStandardsControl) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubStandardsControl) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubStandardsControl) validateSetStandardsControlArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

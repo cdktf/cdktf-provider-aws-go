@@ -5,14 +5,14 @@ package dataawsecrpublicauthorizationtoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecrpublicauthorizationtoken/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrpublicauthorizationtoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}.
 type DataAwsEcrpublicAuthorizationToken interface {
 	cdktf.TerraformDataSource
 	AuthorizationToken() *string
@@ -53,6 +53,9 @@ type DataAwsEcrpublicAuthorizationToken interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,6 +92,7 @@ type DataAwsEcrpublicAuthorizationToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -268,6 +272,26 @@ func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -309,7 +333,7 @@ func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) UserName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source.
 func NewDataAwsEcrpublicAuthorizationToken(scope constructs.Construct, id *string, config *DataAwsEcrpublicAuthorizationTokenConfig) DataAwsEcrpublicAuthorizationToken {
 	_init_.Initialize()
 
@@ -327,7 +351,7 @@ func NewDataAwsEcrpublicAuthorizationToken(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source.
 func NewDataAwsEcrpublicAuthorizationToken_Override(d DataAwsEcrpublicAuthorizationToken, scope constructs.Construct, id *string, config *DataAwsEcrpublicAuthorizationTokenConfig) {
 	_init_.Initialize()
 
@@ -391,6 +415,17 @@ func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -692,6 +727,14 @@ func (d *jsiiProxy_DataAwsEcrpublicAuthorizationToken) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcrpublicAuthorizationToken) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

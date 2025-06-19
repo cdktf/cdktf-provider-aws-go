@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

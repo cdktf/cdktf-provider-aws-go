@@ -5,14 +5,14 @@ package devicefarminstanceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devicefarminstanceprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devicefarminstanceprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile}.
 type DevicefarmInstanceProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type DevicefarmInstanceProfile interface {
 	RebootAfterUse() interface{}
 	SetRebootAfterUse(val interface{})
 	RebootAfterUseInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -137,6 +140,7 @@ type DevicefarmInstanceProfile interface {
 	ResetOverrideLogicalId()
 	ResetPackageCleanup()
 	ResetRebootAfterUse()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) RebootAfterUseInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DevicefarmInstanceProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicefarmInstanceProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicefarmInstanceProfile) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile} Resource.
 func NewDevicefarmInstanceProfile(scope constructs.Construct, id *string, config *DevicefarmInstanceProfileConfig) DevicefarmInstanceProfile {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewDevicefarmInstanceProfile(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_instance_profile aws_devicefarm_instance_profile} Resource.
 func NewDevicefarmInstanceProfile_Override(d DevicefarmInstanceProfile, scope constructs.Construct, id *string, config *DevicefarmInstanceProfileConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func (j *jsiiProxy_DevicefarmInstanceProfile)SetRebootAfterUse(val interface{}) 
 	_jsii_.Set(
 		j,
 		"rebootAfterUse",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicefarmInstanceProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (d *jsiiProxy_DevicefarmInstanceProfile) ResetRebootAfterUse() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRebootAfterUse",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicefarmInstanceProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) validateSetInternalValueParameters(val *DataAwsAuditmanagerFrameworkControlSetsControls) error {
 	return nil
 }
 

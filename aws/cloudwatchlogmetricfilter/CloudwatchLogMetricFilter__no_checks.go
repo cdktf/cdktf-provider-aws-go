@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudwatchLogMetricFilterParameters(scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) error {
 	return nil
 }

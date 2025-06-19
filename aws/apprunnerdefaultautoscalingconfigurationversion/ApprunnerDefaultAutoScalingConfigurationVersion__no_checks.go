@@ -111,6 +111,10 @@ func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateSetP
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewApprunnerDefaultAutoScalingConfigurationVersionParameters(scope constructs.Construct, id *string, config *ApprunnerDefaultAutoScalingConfigurationVersionConfig) error {
 	return nil
 }

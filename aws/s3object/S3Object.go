@@ -5,14 +5,14 @@ package s3object
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3object/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3object/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_object aws_s3_object}.
 type S3Object interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -123,6 +123,9 @@ type S3Object interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerSideEncryption() *string
 	SetServerSideEncryption(val *string)
 	ServerSideEncryptionInput() *string
@@ -217,6 +220,7 @@ type S3Object interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOverrideProvider()
+	ResetRegion()
 	ResetServerSideEncryption()
 	ResetSource()
 	ResetSourceHash()
@@ -852,6 +856,26 @@ func (j *jsiiProxy_S3Object) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3Object) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3Object) ServerSideEncryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1033,7 +1057,7 @@ func (j *jsiiProxy_S3Object) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig) S3Object {
 	_init_.Initialize()
 
@@ -1051,7 +1075,7 @@ func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object_Override(s S3Object, scope constructs.Construct, id *string, config *S3ObjectConfig) {
 	_init_.Initialize()
 
@@ -1346,6 +1370,17 @@ func (j *jsiiProxy_S3Object)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3Object)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1947,6 +1982,14 @@ func (s *jsiiProxy_S3Object) ResetOverrideProvider() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideProvider",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Object) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

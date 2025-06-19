@@ -123,6 +123,10 @@ func (j *jsiiProxy_PinpointBaiduChannel) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PinpointBaiduChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointBaiduChannel) validateSetSecretKeyParameters(val *string) error {
 	return nil
 }

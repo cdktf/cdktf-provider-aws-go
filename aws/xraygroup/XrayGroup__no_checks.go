@@ -123,6 +123,10 @@ func (j *jsiiProxy_XrayGroup) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_XrayGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_XrayGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpcBlockPublicAccessOptions) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_VpcBlockPublicAccessOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewVpcBlockPublicAccessOptionsParameters(scope constructs.Construct, id *string, config *VpcBlockPublicAccessOptionsConfig) error {
 	return nil
 }

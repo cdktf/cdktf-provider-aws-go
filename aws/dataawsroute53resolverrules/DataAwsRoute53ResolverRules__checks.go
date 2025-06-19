@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetOwnerIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverRules) validateSetResolverEndpointIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

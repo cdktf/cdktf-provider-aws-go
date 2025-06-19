@@ -123,6 +123,10 @@ func (j *jsiiProxy_OpensearchVpcEndpoint) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchVpcEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchVpcEndpointParameters(scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) error {
 	return nil
 }

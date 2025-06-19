@@ -5,14 +5,14 @@ package identitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/identitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/identitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_user aws_identitystore_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_user aws_identitystore_user}.
 type IdentitystoreUser interface {
 	cdktf.TerraformResource
 	Addresses() IdentitystoreUserAddressesOutputReference
@@ -85,6 +85,9 @@ type IdentitystoreUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -162,6 +165,7 @@ type IdentitystoreUser interface {
 	ResetPhoneNumbers()
 	ResetPreferredLanguage()
 	ResetProfileUrl()
+	ResetRegion()
 	ResetTimezone()
 	ResetTitle()
 	ResetUserType()
@@ -543,6 +547,26 @@ func (j *jsiiProxy_IdentitystoreUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentitystoreUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentitystoreUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentitystoreUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -664,7 +688,7 @@ func (j *jsiiProxy_IdentitystoreUser) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
 func NewIdentitystoreUser(scope constructs.Construct, id *string, config *IdentitystoreUserConfig) IdentitystoreUser {
 	_init_.Initialize()
 
@@ -682,7 +706,7 @@ func NewIdentitystoreUser(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
 func NewIdentitystoreUser_Override(i IdentitystoreUser, scope constructs.Construct, id *string, config *IdentitystoreUserConfig) {
 	_init_.Initialize()
 
@@ -834,6 +858,17 @@ func (j *jsiiProxy_IdentitystoreUser)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentitystoreUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1347,6 +1382,14 @@ func (i *jsiiProxy_IdentitystoreUser) ResetProfileUrl() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProfileUrl",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentitystoreUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

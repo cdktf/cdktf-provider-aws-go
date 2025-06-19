@@ -131,6 +131,10 @@ func (j *jsiiProxy_WafregionalRateBasedRule) validateSetRateLimitParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalRateBasedRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalRateBasedRule) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

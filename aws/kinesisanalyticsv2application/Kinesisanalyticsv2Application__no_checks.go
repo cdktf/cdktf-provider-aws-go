@@ -139,6 +139,10 @@ func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetRuntimeEnvironmentParameters(val *string) error {
 	return nil
 }

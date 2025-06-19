@@ -131,6 +131,10 @@ func (j *jsiiProxy_IotProvisioningTemplate) validateSetProvisioningRoleArnParame
 	return nil
 }
 
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotProvisioningTemplate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

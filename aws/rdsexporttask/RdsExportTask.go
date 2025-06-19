@@ -5,14 +5,14 @@ package rdsexporttask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsexporttask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsexporttask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task aws_rds_export_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task aws_rds_export_task}.
 type RdsExportTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type RdsExportTask interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3BucketName() *string
 	SetS3BucketName(val *string)
 	S3BucketNameInput() *string
@@ -141,6 +144,7 @@ type RdsExportTask interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3Prefix()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_RdsExportTask) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsExportTask) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsExportTask) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsExportTask) S3BucketName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -572,7 +596,7 @@ func (j *jsiiProxy_RdsExportTask) WarningMessage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportTaskConfig) RdsExportTask {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask_Override(r RdsExportTask, scope constructs.Construct, id *string, config *RdsExportTaskConfig) {
 	_init_.Initialize()
 
@@ -709,6 +733,17 @@ func (j *jsiiProxy_RdsExportTask)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsExportTask)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1122,6 +1157,14 @@ func (r *jsiiProxy_RdsExportTask) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsExportTask) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

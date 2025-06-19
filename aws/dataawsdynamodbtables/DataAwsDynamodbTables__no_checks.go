@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsDynamodbTables) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTables) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDynamodbTablesParameters(scope constructs.Construct, id *string, config *DataAwsDynamodbTablesConfig) error {
 	return nil
 }

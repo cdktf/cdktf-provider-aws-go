@@ -5,14 +5,14 @@ package ssmdocument
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmdocument/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmdocument/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_document aws_ssm_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_document aws_ssm_document}.
 type SsmDocument interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -86,6 +86,9 @@ type SsmDocument interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SchemaVersion() *string
 	Status() *string
 	Tags() *map[string]*string
@@ -157,6 +160,7 @@ type SsmDocument interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissions()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTargetType()
@@ -559,6 +563,26 @@ func (j *jsiiProxy_SsmDocument) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmDocument) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmDocument) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmDocument) SchemaVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -690,7 +714,7 @@ func (j *jsiiProxy_SsmDocument) VersionNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_document aws_ssm_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_document aws_ssm_document} Resource.
 func NewSsmDocument(scope constructs.Construct, id *string, config *SsmDocumentConfig) SsmDocument {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewSsmDocument(scope constructs.Construct, id *string, config *SsmDocumentC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_document aws_ssm_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_document aws_ssm_document} Resource.
 func NewSsmDocument_Override(s SsmDocument, scope constructs.Construct, id *string, config *SsmDocumentConfig) {
 	_init_.Initialize()
 
@@ -849,6 +873,17 @@ func (j *jsiiProxy_SsmDocument)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmDocument)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1297,6 +1332,14 @@ func (s *jsiiProxy_SsmDocument) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmDocument) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

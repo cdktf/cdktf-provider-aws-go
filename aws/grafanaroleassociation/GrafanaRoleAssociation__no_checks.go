@@ -119,6 +119,10 @@ func (j *jsiiProxy_GrafanaRoleAssociation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaRoleAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaRoleAssociation) validateSetRoleParameters(val *string) error {
 	return nil
 }

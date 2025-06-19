@@ -107,6 +107,10 @@ func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetSuppressedReasonsParameters(val *[]*string) error {
 	return nil
 }

@@ -429,6 +429,14 @@ func (j *jsiiProxy_OpensearchVpcEndpoint) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchVpcEndpoint) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewOpensearchVpcEndpointParameters(scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmcontactsPlan) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SsmcontactsPlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsmcontactsPlanParameters(scope constructs.Construct, id *string, config *SsmcontactsPlanConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package servicediscoverypublicdnsnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicediscoverypublicdnsnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicediscoverypublicdnsnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace}.
 type ServiceDiscoveryPublicDnsNamespace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type ServiceDiscoveryPublicDnsNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -126,6 +129,7 @@ type ServiceDiscoveryPublicDnsNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -356,6 +360,26 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
 func NewServiceDiscoveryPublicDnsNamespace(scope constructs.Construct, id *string, config *ServiceDiscoveryPublicDnsNamespaceConfig) ServiceDiscoveryPublicDnsNamespace {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewServiceDiscoveryPublicDnsNamespace(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
 func NewServiceDiscoveryPublicDnsNamespace_Override(s ServiceDiscoveryPublicDnsNamespace, scope constructs.Construct, id *string, config *ServiceDiscoveryPublicDnsNamespaceConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_RdsClusterParameterGroup) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterParameterGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterParameterGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

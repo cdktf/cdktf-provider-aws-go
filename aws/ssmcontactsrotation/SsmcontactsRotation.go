@@ -5,14 +5,14 @@ package ssmcontactsrotation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmcontactsrotation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmcontactsrotation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
 type SsmcontactsRotation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type SsmcontactsRotation interface {
 	RawOverrides() interface{}
 	Recurrence() SsmcontactsRotationRecurrenceList
 	RecurrenceInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -129,6 +132,7 @@ type SsmcontactsRotation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecurrence()
+	ResetRegion()
 	ResetStartTime()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -359,6 +363,26 @@ func (j *jsiiProxy_SsmcontactsRotation) RecurrenceInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmcontactsRotation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmcontactsRotation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmcontactsRotation) StartTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_SsmcontactsRotation) TimeZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation} Resource.
 func NewSsmcontactsRotation(scope constructs.Construct, id *string, config *SsmcontactsRotationConfig) SsmcontactsRotation {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewSsmcontactsRotation(scope constructs.Construct, id *string, config *Ssmc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmcontacts_rotation aws_ssmcontacts_rotation} Resource.
 func NewSsmcontactsRotation_Override(s SsmcontactsRotation, scope constructs.Construct, id *string, config *SsmcontactsRotationConfig) {
 	_init_.Initialize()
 
@@ -575,6 +599,17 @@ func (j *jsiiProxy_SsmcontactsRotation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmcontactsRotation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (s *jsiiProxy_SsmcontactsRotation) ResetRecurrence() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRecurrence",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmcontactsRotation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

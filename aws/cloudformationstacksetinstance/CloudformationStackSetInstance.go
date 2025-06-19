@@ -5,14 +5,14 @@ package cloudformationstacksetinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudformationstacksetinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudformationstacksetinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance}.
 type CloudformationStackSetInstance interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -80,6 +80,9 @@ type CloudformationStackSetInstance interface {
 	RetainStackInput() interface{}
 	StackId() *string
 	StackInstanceSummaries() CloudformationStackSetInstanceStackInstanceSummariesList
+	StackSetInstanceRegion() *string
+	SetStackSetInstanceRegion(val *string)
+	StackSetInstanceRegionInput() *string
 	StackSetName() *string
 	SetStackSetName(val *string)
 	StackSetNameInput() *string
@@ -148,6 +151,7 @@ type CloudformationStackSetInstance interface {
 	ResetParameterOverrides()
 	ResetRegion()
 	ResetRetainStack()
+	ResetStackSetInstanceRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -487,6 +491,26 @@ func (j *jsiiProxy_CloudformationStackSetInstance) StackInstanceSummaries() Clou
 	return returns
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstance) StackSetInstanceRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackSetInstanceRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstance) StackSetInstanceRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackSetInstanceRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstance) StackSetName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -558,7 +582,7 @@ func (j *jsiiProxy_CloudformationStackSetInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance} Resource.
 func NewCloudformationStackSetInstance(scope constructs.Construct, id *string, config *CloudformationStackSetInstanceConfig) CloudformationStackSetInstance {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewCloudformationStackSetInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set_instance aws_cloudformation_stack_set_instance} Resource.
 func NewCloudformationStackSetInstance_Override(c CloudformationStackSetInstance, scope constructs.Construct, id *string, config *CloudformationStackSetInstanceConfig) {
 	_init_.Initialize()
 
@@ -717,6 +741,17 @@ func (j *jsiiProxy_CloudformationStackSetInstance)SetRetainStack(val interface{}
 	_jsii_.Set(
 		j,
 		"retainStack",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstance)SetStackSetInstanceRegion(val *string) {
+	if err := j.validateSetStackSetInstanceRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackSetInstanceRegion",
 		val,
 	)
 }
@@ -1186,6 +1221,14 @@ func (c *jsiiProxy_CloudformationStackSetInstance) ResetRetainStack() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetainStack",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstance) ResetStackSetInstanceRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStackSetInstanceRegion",
 		nil, // no parameters
 	)
 }

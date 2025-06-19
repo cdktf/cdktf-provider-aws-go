@@ -123,6 +123,10 @@ func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetSecurityGroupArnsParameters(val *[]*string) error {
 	return nil
 }

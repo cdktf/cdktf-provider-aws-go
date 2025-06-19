@@ -5,14 +5,14 @@ package efsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/efsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/efsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_file_system aws_efs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_file_system aws_efs_file_system}.
 type EfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -86,6 +86,9 @@ type EfsFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SizeInBytes() EfsFileSystemSizeInBytesList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -159,6 +162,7 @@ type EfsFileSystem interface {
 	ResetPerformanceMode()
 	ResetProtection()
 	ResetProvisionedThroughputInMibps()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetThroughputMode()
@@ -550,6 +554,26 @@ func (j *jsiiProxy_EfsFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EfsFileSystem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsFileSystem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsFileSystem) SizeInBytes() EfsFileSystemSizeInBytesList {
 	var returns EfsFileSystemSizeInBytesList
 	_jsii_.Get(
@@ -651,7 +675,7 @@ func (j *jsiiProxy_EfsFileSystem) ThroughputModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSystemConfig) EfsFileSystem {
 	_init_.Initialize()
 
@@ -669,7 +693,7 @@ func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSys
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem_Override(e EfsFileSystem, scope constructs.Construct, id *string, config *EfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -821,6 +845,17 @@ func (j *jsiiProxy_EfsFileSystem)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsFileSystem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1309,6 +1344,14 @@ func (e *jsiiProxy_EfsFileSystem) ResetProvisionedThroughputInMibps() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProvisionedThroughputInMibps",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsFileSystem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_RdsInstanceState) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_RdsInstanceState) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsInstanceState) validateSetStateParameters(val *string) error {
 	return nil
 }

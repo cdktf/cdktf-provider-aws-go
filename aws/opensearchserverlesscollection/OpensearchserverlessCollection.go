@@ -5,14 +5,14 @@ package opensearchserverlesscollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchserverlesscollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchserverlesscollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection}.
 type OpensearchserverlessCollection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type OpensearchserverlessCollection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StandbyReplicas() *string
 	SetStandbyReplicas(val *string)
 	StandbyReplicasInput() *string
@@ -132,6 +135,7 @@ type OpensearchserverlessCollection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStandbyReplicas()
 	ResetTags()
 	ResetTimeouts()
@@ -374,6 +378,26 @@ func (j *jsiiProxy_OpensearchserverlessCollection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchserverlessCollection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchserverlessCollection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchserverlessCollection) StandbyReplicas() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_OpensearchserverlessCollection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource.
 func NewOpensearchserverlessCollection(scope constructs.Construct, id *string, config *OpensearchserverlessCollectionConfig) OpensearchserverlessCollection {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewOpensearchserverlessCollection(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_collection aws_opensearchserverless_collection} Resource.
 func NewOpensearchserverlessCollection_Override(o OpensearchserverlessCollection, scope constructs.Construct, id *string, config *OpensearchserverlessCollectionConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_OpensearchserverlessCollection)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchserverlessCollection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (o *jsiiProxy_OpensearchserverlessCollection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchserverlessCollection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

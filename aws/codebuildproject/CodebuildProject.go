@@ -5,14 +5,14 @@ package codebuildproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codebuildproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codebuildproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codebuild_project aws_codebuild_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codebuild_project aws_codebuild_project}.
 type CodebuildProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -97,6 +97,9 @@ type CodebuildProject interface {
 	QueuedTimeoutInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceAccessRole() *string
 	SetResourceAccessRole(val *string)
 	ResourceAccessRoleInput() *string
@@ -197,6 +200,7 @@ type CodebuildProject interface {
 	ResetOverrideLogicalId()
 	ResetProjectVisibility()
 	ResetQueuedTimeout()
+	ResetRegion()
 	ResetResourceAccessRole()
 	ResetSecondaryArtifacts()
 	ResetSecondarySources()
@@ -683,6 +687,26 @@ func (j *jsiiProxy_CodebuildProject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodebuildProject) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProject) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodebuildProject) ResourceAccessRole() *string {
 	var returns *string
 	_jsii_.Get(
@@ -914,7 +938,7 @@ func (j *jsiiProxy_CodebuildProject) VpcConfigInput() *CodebuildProjectVpcConfig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
 func NewCodebuildProject(scope constructs.Construct, id *string, config *CodebuildProjectConfig) CodebuildProject {
 	_init_.Initialize()
 
@@ -932,7 +956,7 @@ func NewCodebuildProject(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
 func NewCodebuildProject_Override(c CodebuildProject, scope constructs.Construct, id *string, config *CodebuildProjectConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1130,17 @@ func (j *jsiiProxy_CodebuildProject)SetQueuedTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"queuedTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodebuildProject)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1739,6 +1774,14 @@ func (c *jsiiProxy_CodebuildProject) ResetQueuedTimeout() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetQueuedTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildProject) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

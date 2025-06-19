@@ -79,10 +79,6 @@ func (e *jsiiProxy_EcsTaskDefinition) validatePutEphemeralStorageParameters(valu
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) validatePutInferenceAcceleratorParameters(value interface{}) error {
-	return nil
-}
-
 func (e *jsiiProxy_EcsTaskDefinition) validatePutPlacementConstraintsParameters(value interface{}) error {
 	return nil
 }
@@ -168,6 +164,10 @@ func (j *jsiiProxy_EcsTaskDefinition) validateSetPidModeParameters(val *string) 
 }
 
 func (j *jsiiProxy_EcsTaskDefinition) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

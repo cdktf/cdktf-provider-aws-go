@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) validateSetOutpostArnParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) validateSetStateParameters(val *string) error {
 	return nil
 }

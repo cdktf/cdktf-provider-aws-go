@@ -139,6 +139,10 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SecurityGroupRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityGroupRule) validateSetSecurityGroupIdParameters(val *string) error {
 	return nil
 }

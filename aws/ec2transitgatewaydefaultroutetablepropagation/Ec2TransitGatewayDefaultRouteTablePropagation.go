@@ -5,14 +5,14 @@ package ec2transitgatewaydefaultroutetablepropagation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewaydefaultroutetablepropagation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewaydefaultroutetablepropagation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation}.
 type Ec2TransitGatewayDefaultRouteTablePropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type Ec2TransitGatewayDefaultRouteTablePropagation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type Ec2TransitGatewayDefaultRouteTablePropagation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -287,6 +291,26 @@ func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) RawOverrides()
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) TransitGateway
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
 func NewEc2TransitGatewayDefaultRouteTablePropagation(scope constructs.Construct, id *string, config *Ec2TransitGatewayDefaultRouteTablePropagationConfig) Ec2TransitGatewayDefaultRouteTablePropagation {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewEc2TransitGatewayDefaultRouteTablePropagation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
 func NewEc2TransitGatewayDefaultRouteTablePropagation_Override(e Ec2TransitGatewayDefaultRouteTablePropagation, scope constructs.Construct, id *string, config *Ec2TransitGatewayDefaultRouteTablePropagationConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation)SetProvisioners
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -865,6 +900,14 @@ func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) ResetOverrideL
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

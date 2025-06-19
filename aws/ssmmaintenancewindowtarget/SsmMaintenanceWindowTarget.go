@@ -5,14 +5,14 @@ package ssmmaintenancewindowtarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmmaintenancewindowtarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmmaintenancewindowtarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target}.
 type SsmMaintenanceWindowTarget interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type SsmMaintenanceWindowTarget interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
@@ -132,6 +135,7 @@ type SsmMaintenanceWindowTarget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerInformation()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -360,6 +364,26 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmMaintenanceWindowTarget) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTarget) ResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) WindowIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
 func NewSsmMaintenanceWindowTarget(scope constructs.Construct, id *string, config *SsmMaintenanceWindowTargetConfig) SsmMaintenanceWindowTarget {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewSsmMaintenanceWindowTarget(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
 func NewSsmMaintenanceWindowTarget_Override(s SsmMaintenanceWindowTarget, scope constructs.Construct, id *string, config *SsmMaintenanceWindowTargetConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmMaintenanceWindowTarget)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1014,6 +1049,14 @@ func (s *jsiiProxy_SsmMaintenanceWindowTarget) ResetOwnerInformation() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOwnerInformation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmMaintenanceWindowTarget) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

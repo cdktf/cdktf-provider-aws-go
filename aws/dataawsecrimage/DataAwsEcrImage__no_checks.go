@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEcrImage) validateSetMostRecentParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrImage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrImage) validateSetRegistryIdParameters(val *string) error {
 	return nil
 }

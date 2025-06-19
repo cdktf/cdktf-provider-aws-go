@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetServiceIdentifierParameters(val *string) error {
 	return nil
 }

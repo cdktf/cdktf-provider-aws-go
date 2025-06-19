@@ -115,6 +115,10 @@ func (j *jsiiProxy_IotBillingGroup) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_IotBillingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotBillingGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

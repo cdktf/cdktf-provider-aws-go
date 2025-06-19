@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsVpcs) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcs) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcs) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

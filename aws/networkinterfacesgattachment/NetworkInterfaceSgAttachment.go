@@ -5,14 +5,14 @@ package networkinterfacesgattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterfacesgattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterfacesgattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
 type NetworkInterfaceSgAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type NetworkInterfaceSgAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
@@ -120,6 +123,7 @@ type NetworkInterfaceSgAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -309,6 +313,26 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterfaceSgAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterfaceSgAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkInterfaceSgAttachment) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) NetworkInterfaceSgAttachment {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment_Override(n NetworkInterfaceSgAttachment, scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterfaceSgAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (n *jsiiProxy_NetworkInterfaceSgAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterfaceSgAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

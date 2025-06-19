@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsApiGatewayVpcLink) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayVpcLink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayVpcLink) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

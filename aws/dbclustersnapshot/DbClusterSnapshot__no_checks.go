@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbClusterSnapshot) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_DbClusterSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbClusterSnapshot) validateSetSharedAccountsParameters(val *[]*string) error {
 	return nil
 }

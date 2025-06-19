@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetQuotaNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetServiceCodeParameters(val *string) error {
 	return nil
 }

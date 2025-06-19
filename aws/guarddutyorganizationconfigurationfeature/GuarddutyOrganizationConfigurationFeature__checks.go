@@ -454,6 +454,14 @@ func (j *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGuarddutyOrganizationConfigurationFeatureParameters(scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationFeatureConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

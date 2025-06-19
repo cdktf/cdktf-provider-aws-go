@@ -5,14 +5,14 @@ package dataawsrdsorderabledbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsrdsorderabledbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsorderabledbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance}.
 type DataAwsRdsOrderableDbInstance interface {
 	cdktf.TerraformDataSource
 	AvailabilityZoneGroup() *string
@@ -86,6 +86,9 @@ type DataAwsRdsOrderableDbInstance interface {
 	ReadReplicaCapable() interface{}
 	SetReadReplicaCapable(val interface{})
 	ReadReplicaCapableInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -171,6 +174,7 @@ type DataAwsRdsOrderableDbInstance interface {
 	ResetPreferredEngineVersions()
 	ResetPreferredInstanceClasses()
 	ResetReadReplicaCapable()
+	ResetRegion()
 	ResetStorageType()
 	ResetSupportedEngineModes()
 	ResetSupportedNetworkTypes()
@@ -604,6 +608,26 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) ReadReplicaCapableInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) StorageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -915,7 +939,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
 func NewDataAwsRdsOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsRdsOrderableDbInstanceConfig) DataAwsRdsOrderableDbInstance {
 	_init_.Initialize()
 
@@ -933,7 +957,7 @@ func NewDataAwsRdsOrderableDbInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
 func NewDataAwsRdsOrderableDbInstance_Override(d DataAwsRdsOrderableDbInstance, scope constructs.Construct, id *string, config *DataAwsRdsOrderableDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1096,6 +1120,17 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetReadReplicaCapable(val inter
 	_jsii_.Set(
 		j,
 		"readReplicaCapable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1615,6 +1650,14 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetReadReplicaCapable() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReadReplicaCapable",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

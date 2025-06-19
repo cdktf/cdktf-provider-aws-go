@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEbsDefaultKmsKeyParameters(scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) error {
 	return nil
 }

@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) validateOverrideLogica
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) validatePutApplicationAssignmentsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsSsoadminApplicationAssignments_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,6 +80,10 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) validateSetCountParame
 }
 
 func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

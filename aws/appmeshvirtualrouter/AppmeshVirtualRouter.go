@@ -5,14 +5,14 @@ package appmeshvirtualrouter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appmeshvirtualrouter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appmeshvirtualrouter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router}.
 type AppmeshVirtualRouter interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type AppmeshVirtualRouter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceOwner() *string
 	Spec() AppmeshVirtualRouterSpecOutputReference
 	SpecInput() *AppmeshVirtualRouterSpec
@@ -134,6 +137,7 @@ type AppmeshVirtualRouter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -394,6 +398,26 @@ func (j *jsiiProxy_AppmeshVirtualRouter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppmeshVirtualRouter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualRouter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppmeshVirtualRouter) ResourceOwner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_AppmeshVirtualRouter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router} Resource.
 func NewAppmeshVirtualRouter(scope constructs.Construct, id *string, config *AppmeshVirtualRouterConfig) AppmeshVirtualRouter {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewAppmeshVirtualRouter(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appmesh_virtual_router aws_appmesh_virtual_router} Resource.
 func NewAppmeshVirtualRouter_Override(a AppmeshVirtualRouter, scope constructs.Construct, id *string, config *AppmeshVirtualRouterConfig) {
 	_init_.Initialize()
 
@@ -632,6 +656,17 @@ func (j *jsiiProxy_AppmeshVirtualRouter)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshVirtualRouter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1042,6 +1077,14 @@ func (a *jsiiProxy_AppmeshVirtualRouter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshVirtualRouter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

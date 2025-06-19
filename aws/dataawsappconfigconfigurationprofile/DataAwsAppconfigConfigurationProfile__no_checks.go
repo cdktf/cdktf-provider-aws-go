@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

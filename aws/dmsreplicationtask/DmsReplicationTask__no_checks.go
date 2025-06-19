@@ -123,6 +123,10 @@ func (j *jsiiProxy_DmsReplicationTask) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationTask) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationTask) validateSetReplicationInstanceArnParameters(val *string) error {
 	return nil
 }

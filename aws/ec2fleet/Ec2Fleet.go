@@ -5,14 +5,14 @@ package ec2fleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2fleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2fleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_fleet aws_ec2_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_fleet aws_ec2_fleet}.
 type Ec2Fleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type Ec2Fleet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplaceUnhealthyInstances() interface{}
 	SetReplaceUnhealthyInstances(val interface{})
 	ReplaceUnhealthyInstancesInput() interface{}
@@ -176,6 +179,7 @@ type Ec2Fleet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReplaceUnhealthyInstances()
 	ResetSpotOptions()
 	ResetTags()
@@ -524,6 +528,26 @@ func (j *jsiiProxy_Ec2Fleet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2Fleet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2Fleet) ReplaceUnhealthyInstances() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -775,7 +799,7 @@ func (j *jsiiProxy_Ec2Fleet) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
 func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig) Ec2Fleet {
 	_init_.Initialize()
 
@@ -793,7 +817,7 @@ func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
 func NewEc2Fleet_Override(e Ec2Fleet, scope constructs.Construct, id *string, config *Ec2FleetConfig) {
 	_init_.Initialize()
 
@@ -934,6 +958,17 @@ func (j *jsiiProxy_Ec2Fleet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2Fleet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1513,6 +1548,14 @@ func (e *jsiiProxy_Ec2Fleet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

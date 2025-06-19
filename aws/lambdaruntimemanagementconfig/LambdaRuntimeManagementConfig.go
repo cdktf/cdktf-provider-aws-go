@@ -5,14 +5,14 @@ package lambdaruntimemanagementconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdaruntimemanagementconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdaruntimemanagementconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config}.
 type LambdaRuntimeManagementConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type LambdaRuntimeManagementConfig interface {
 	QualifierInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuntimeVersionArn() *string
 	SetRuntimeVersionArn(val *string)
 	RuntimeVersionArnInput() *string
@@ -121,6 +124,7 @@ type LambdaRuntimeManagementConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQualifier()
+	ResetRegion()
 	ResetRuntimeVersionArn()
 	ResetUpdateRuntimeOn()
 	SynthesizeAttributes() *map[string]interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaRuntimeManagementConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaRuntimeManagementConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaRuntimeManagementConfig) RuntimeVersionArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -392,7 +416,7 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig) UpdateRuntimeOnInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
 func NewLambdaRuntimeManagementConfig(scope constructs.Construct, id *string, config *LambdaRuntimeManagementConfigConfig) LambdaRuntimeManagementConfig {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewLambdaRuntimeManagementConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_runtime_management_config aws_lambda_runtime_management_config} Resource.
 func NewLambdaRuntimeManagementConfig_Override(l LambdaRuntimeManagementConfig, scope constructs.Construct, id *string, config *LambdaRuntimeManagementConfigConfig) {
 	_init_.Initialize()
 
@@ -507,6 +531,17 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig)SetQualifier(val *string) {
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaRuntimeManagementConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -898,6 +933,14 @@ func (l *jsiiProxy_LambdaRuntimeManagementConfig) ResetQualifier() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQualifier",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaRuntimeManagementConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package fsxlustrefilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxlustrefilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxlustrefilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -117,6 +117,9 @@ type FsxLustreFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootSquashConfiguration() FsxLustreFileSystemRootSquashConfigurationOutputReference
 	RootSquashConfigurationInput() *FsxLustreFileSystemRootSquashConfiguration
 	SecurityGroupIds() *[]*string
@@ -226,6 +229,7 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerUnitStorageThroughput()
+	ResetRegion()
 	ResetRootSquashConfiguration()
 	ResetSecurityGroupIds()
 	ResetSkipFinalBackup()
@@ -834,6 +838,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) RootSquashConfiguration() FsxLustreFileSystemRootSquashConfigurationOutputReference {
 	var returns FsxLustreFileSystemRootSquashConfigurationOutputReference
 	_jsii_.Get(
@@ -1095,7 +1119,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -1113,7 +1137,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1375,6 +1399,17 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2050,6 +2085,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetPerUnitStorageThroughput() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetPerUnitStorageThroughput",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

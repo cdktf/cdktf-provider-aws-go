@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsApiGatewaySdk) validateSetParametersParameters(val *ma
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewaySdk) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewaySdk) validateSetRestApiIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

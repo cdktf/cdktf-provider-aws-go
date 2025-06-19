@@ -115,6 +115,10 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetThingParameters(val *string) error {
 	return nil
 }

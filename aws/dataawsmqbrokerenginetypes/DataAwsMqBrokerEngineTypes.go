@@ -5,14 +5,14 @@ package dataawsmqbrokerenginetypes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmqbrokerenginetypes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types}.
 type DataAwsMqBrokerEngineTypes interface {
 	cdktf.TerraformDataSource
 	BrokerEngineTypes() DataAwsMqBrokerEngineTypesBrokerEngineTypesList
@@ -54,6 +54,9 @@ type DataAwsMqBrokerEngineTypes interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +93,7 @@ type DataAwsMqBrokerEngineTypes interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types} Data Source.
 func NewDataAwsMqBrokerEngineTypes(scope constructs.Construct, id *string, config *DataAwsMqBrokerEngineTypesConfig) DataAwsMqBrokerEngineTypes {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataAwsMqBrokerEngineTypes(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types} Data Source.
 func NewDataAwsMqBrokerEngineTypes_Override(d DataAwsMqBrokerEngineTypes, scope constructs.Construct, id *string, config *DataAwsMqBrokerEngineTypesConfig) {
 	_init_.Initialize()
 
@@ -393,6 +417,17 @@ func (j *jsiiProxy_DataAwsMqBrokerEngineTypes)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMqBrokerEngineTypes)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (d *jsiiProxy_DataAwsMqBrokerEngineTypes) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMqBrokerEngineTypes) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

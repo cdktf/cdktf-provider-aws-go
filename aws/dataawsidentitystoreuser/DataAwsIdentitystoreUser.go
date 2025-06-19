@@ -5,14 +5,14 @@ package dataawsidentitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsidentitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsidentitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_user aws_identitystore_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_user aws_identitystore_user}.
 type DataAwsIdentitystoreUser interface {
 	cdktf.TerraformDataSource
 	Addresses() DataAwsIdentitystoreUserAddressesList
@@ -33,8 +33,6 @@ type DataAwsIdentitystoreUser interface {
 	DisplayName() *string
 	Emails() DataAwsIdentitystoreUserEmailsList
 	ExternalIds() DataAwsIdentitystoreUserExternalIdsList
-	Filter() DataAwsIdentitystoreUserFilterOutputReference
-	FilterInput() *DataAwsIdentitystoreUserFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,6 +65,9 @@ type DataAwsIdentitystoreUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -106,13 +107,12 @@ type DataAwsIdentitystoreUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlternateIdentifier(value *DataAwsIdentitystoreUserAlternateIdentifier)
-	PutFilter(value *DataAwsIdentitystoreUserFilter)
 	ResetAlternateIdentifier()
-	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetUserId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -228,26 +228,6 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) ExternalIds() DataAwsIdentitystoreU
 	_jsii_.Get(
 		j,
 		"externalIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsIdentitystoreUser) Filter() DataAwsIdentitystoreUserFilterOutputReference {
-	var returns DataAwsIdentitystoreUserFilterOutputReference
-	_jsii_.Get(
-		j,
-		"filter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsIdentitystoreUser) FilterInput() *DataAwsIdentitystoreUserFilter {
-	var returns *DataAwsIdentitystoreUserFilter
-	_jsii_.Get(
-		j,
-		"filterInput",
 		&returns,
 	)
 	return returns
@@ -423,6 +403,26 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIdentitystoreUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -514,7 +514,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) DataAwsIdentitystoreUser {
 	_init_.Initialize()
 
@@ -532,7 +532,7 @@ func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser_Override(d DataAwsIdentitystoreUser, scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) {
 	_init_.Initialize()
 
@@ -607,6 +607,17 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -918,29 +929,10 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) PutAlternateIdentifier(value *DataA
 	)
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUser) PutFilter(value *DataAwsIdentitystoreUserFilter) {
-	if err := d.validatePutFilterParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFilter",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetAlternateIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAlternateIdentifier",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetFilter() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFilter",
 		nil, // no parameters
 	)
 }
@@ -957,6 +949,14 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

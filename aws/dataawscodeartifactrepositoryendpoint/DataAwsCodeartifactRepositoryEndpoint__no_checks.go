@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

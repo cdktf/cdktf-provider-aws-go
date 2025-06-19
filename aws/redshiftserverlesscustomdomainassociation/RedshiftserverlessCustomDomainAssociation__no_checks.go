@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedshiftserverlessCustomDomainAssociation) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessCustomDomainAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessCustomDomainAssociation) validateSetWorkgroupNameParameters(val *string) error {
 	return nil
 }

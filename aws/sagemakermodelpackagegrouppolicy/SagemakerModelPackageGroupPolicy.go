@@ -5,14 +5,14 @@ package sagemakermodelpackagegrouppolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakermodelpackagegrouppolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakermodelpackagegrouppolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy}.
 type SagemakerModelPackageGroupPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type SagemakerModelPackageGroupPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourcePolicy() *string
 	SetResourcePolicy(val *string)
 	ResourcePolicyInput() *string
@@ -117,6 +120,7 @@ type SagemakerModelPackageGroupPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) ResourcePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_SagemakerModelPackageGroupPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy} Resource.
 func NewSagemakerModelPackageGroupPolicy(scope constructs.Construct, id *string, config *SagemakerModelPackageGroupPolicyConfig) SagemakerModelPackageGroupPolicy {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewSagemakerModelPackageGroupPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model_package_group_policy aws_sagemaker_model_package_group_policy} Resource.
 func NewSagemakerModelPackageGroupPolicy_Override(s SagemakerModelPackageGroupPolicy, scope constructs.Construct, id *string, config *SagemakerModelPackageGroupPolicyConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_SagemakerModelPackageGroupPolicy)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerModelPackageGroupPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (s *jsiiProxy_SagemakerModelPackageGroupPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelPackageGroupPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

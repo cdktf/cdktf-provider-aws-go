@@ -179,6 +179,10 @@ func (j *jsiiProxy_GlueCrawler) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawler) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawler) validateSetRoleParameters(val *string) error {
 	return nil
 }

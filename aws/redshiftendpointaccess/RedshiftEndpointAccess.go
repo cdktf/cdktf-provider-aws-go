@@ -5,14 +5,14 @@ package redshiftendpointaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftendpointaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftendpointaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access}.
 type RedshiftEndpointAccess interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -66,6 +66,9 @@ type RedshiftEndpointAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceOwner() *string
 	SetResourceOwner(val *string)
 	ResourceOwnerInput() *string
@@ -129,6 +132,7 @@ type RedshiftEndpointAccess interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceOwner()
 	ResetVpcSecurityGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -359,6 +363,26 @@ func (j *jsiiProxy_RedshiftEndpointAccess) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftEndpointAccess) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftEndpointAccess) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftEndpointAccess) ResourceOwner() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_RedshiftEndpointAccess) VpcSecurityGroupIdsInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access} Resource.
 func NewRedshiftEndpointAccess(scope constructs.Construct, id *string, config *RedshiftEndpointAccessConfig) RedshiftEndpointAccess {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewRedshiftEndpointAccess(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_endpoint_access aws_redshift_endpoint_access} Resource.
 func NewRedshiftEndpointAccess_Override(r RedshiftEndpointAccess, scope constructs.Construct, id *string, config *RedshiftEndpointAccessConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_RedshiftEndpointAccess)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftEndpointAccess)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (r *jsiiProxy_RedshiftEndpointAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftEndpointAccess) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

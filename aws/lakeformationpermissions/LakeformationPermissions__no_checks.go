@@ -159,6 +159,10 @@ func (j *jsiiProxy_LakeformationPermissions) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationPermissions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLakeformationPermissionsParameters(scope constructs.Construct, id *string, config *LakeformationPermissionsConfig) error {
 	return nil
 }

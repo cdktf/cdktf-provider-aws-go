@@ -127,6 +127,10 @@ func (j *jsiiProxy_SagemakerSpace) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerSpace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerSpace) validateSetSpaceDisplayNameParameters(val *string) error {
 	return nil
 }

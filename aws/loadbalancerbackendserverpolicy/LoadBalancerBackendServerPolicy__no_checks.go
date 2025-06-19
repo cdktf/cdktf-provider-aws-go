@@ -123,6 +123,10 @@ func (j *jsiiProxy_LoadBalancerBackendServerPolicy) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerBackendServerPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLoadBalancerBackendServerPolicyParameters(scope constructs.Construct, id *string, config *LoadBalancerBackendServerPolicyConfig) error {
 	return nil
 }

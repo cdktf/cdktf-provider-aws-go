@@ -500,6 +500,14 @@ func (j *jsiiProxy_DirectoryServiceDirectory) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceDirectory) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceDirectory) validateSetShortNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

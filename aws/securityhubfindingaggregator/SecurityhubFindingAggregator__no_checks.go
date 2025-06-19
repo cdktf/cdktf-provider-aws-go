@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetSpecifiedRegionsParameters(val *[]*string) error {
 	return nil
 }

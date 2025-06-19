@@ -5,14 +5,14 @@ package licensemanagergrantaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/licensemanagergrantaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/licensemanagergrantaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
 type LicensemanagerGrantAccepter interface {
 	cdktf.TerraformResource
 	AllowedOperations() *[]*string
@@ -67,6 +67,9 @@ type LicensemanagerGrantAccepter interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -122,6 +125,7 @@ type LicensemanagerGrantAccepter interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -370,6 +374,26 @@ func (j *jsiiProxy_LicensemanagerGrantAccepter) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LicensemanagerGrantAccepter) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LicensemanagerGrantAccepter) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LicensemanagerGrantAccepter) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,7 +445,7 @@ func (j *jsiiProxy_LicensemanagerGrantAccepter) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
 func NewLicensemanagerGrantAccepter(scope constructs.Construct, id *string, config *LicensemanagerGrantAccepterConfig) LicensemanagerGrantAccepter {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewLicensemanagerGrantAccepter(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
 func NewLicensemanagerGrantAccepter_Override(l LicensemanagerGrantAccepter, scope constructs.Construct, id *string, config *LicensemanagerGrantAccepterConfig) {
 	_init_.Initialize()
 
@@ -536,6 +560,17 @@ func (j *jsiiProxy_LicensemanagerGrantAccepter)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LicensemanagerGrantAccepter)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -905,6 +940,14 @@ func (l *jsiiProxy_LicensemanagerGrantAccepter) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LicensemanagerGrantAccepter) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package computeoptimizerenrollmentstatus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/computeoptimizerenrollmentstatus/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerenrollmentstatus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status}.
 type ComputeoptimizerEnrollmentStatus interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,9 @@ type ComputeoptimizerEnrollmentStatus interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -119,6 +122,7 @@ type ComputeoptimizerEnrollmentStatus interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -308,6 +312,26 @@ func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource.
 func NewComputeoptimizerEnrollmentStatus(scope constructs.Construct, id *string, config *ComputeoptimizerEnrollmentStatusConfig) ComputeoptimizerEnrollmentStatus {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewComputeoptimizerEnrollmentStatus(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/computeoptimizer_enrollment_status aws_computeoptimizer_enrollment_status} Resource.
 func NewComputeoptimizerEnrollmentStatus_Override(c ComputeoptimizerEnrollmentStatus, scope constructs.Construct, id *string, config *ComputeoptimizerEnrollmentStatusConfig) {
 	_init_.Initialize()
 
@@ -483,6 +507,17 @@ func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeoptimizerEnrollmentStatus)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -874,6 +909,14 @@ func (c *jsiiProxy_ComputeoptimizerEnrollmentStatus) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeoptimizerEnrollmentStatus) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

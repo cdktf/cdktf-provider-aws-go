@@ -123,6 +123,10 @@ func (j *jsiiProxy_CloudwatchQueryDefinition) validateSetQueryStringParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchQueryDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudwatchQueryDefinitionParameters(scope constructs.Construct, id *string, config *CloudwatchQueryDefinitionConfig) error {
 	return nil
 }

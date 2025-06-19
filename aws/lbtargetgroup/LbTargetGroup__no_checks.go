@@ -187,6 +187,10 @@ func (j *jsiiProxy_LbTargetGroup) validateSetProxyProtocolV2Parameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LbTargetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbTargetGroup) validateSetSlowStartParameters(val *float64) error {
 	return nil
 }

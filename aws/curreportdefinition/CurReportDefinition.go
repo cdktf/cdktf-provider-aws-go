@@ -5,14 +5,14 @@ package curreportdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/curreportdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/curreportdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cur_report_definition aws_cur_report_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cur_report_definition aws_cur_report_definition}.
 type CurReportDefinition interface {
 	cdktf.TerraformResource
 	AdditionalArtifacts() *[]*string
@@ -154,7 +154,6 @@ type CurReportDefinition interface {
 	ResetOverrideLogicalId()
 	ResetRefreshClosedReports()
 	ResetReportVersioning()
-	ResetS3Prefix()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_CurReportDefinition) TimeUnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
 func NewCurReportDefinition(scope constructs.Construct, id *string, config *CurReportDefinitionConfig) CurReportDefinition {
 	_init_.Initialize()
 
@@ -644,7 +643,7 @@ func NewCurReportDefinition(scope constructs.Construct, id *string, config *CurR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
 func NewCurReportDefinition_Override(c CurReportDefinition, scope constructs.Construct, id *string, config *CurReportDefinitionConfig) {
 	_init_.Initialize()
 
@@ -1266,14 +1265,6 @@ func (c *jsiiProxy_CurReportDefinition) ResetReportVersioning() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReportVersioning",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CurReportDefinition) ResetS3Prefix() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetS3Prefix",
 		nil, // no parameters
 	)
 }

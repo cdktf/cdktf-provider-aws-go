@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validatePutSourceKeywordParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) validateSetInternalValueParameters(val *DataAwsAuditmanagerControlControlMappingSources) error {
 	return nil
 }
 

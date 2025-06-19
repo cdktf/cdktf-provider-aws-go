@@ -493,7 +493,7 @@ func (j *jsiiProxy_EksAddon) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetResolveConflictsParameters(val *string) error {
+func (j *jsiiProxy_EksAddon) validateSetRegionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

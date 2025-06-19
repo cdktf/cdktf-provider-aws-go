@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketAnalyticsConfigurationParameters(scope constructs.Construct, id *string, config *S3BucketAnalyticsConfigurationConfig) error {
 	return nil
 }

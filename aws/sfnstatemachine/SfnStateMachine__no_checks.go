@@ -143,6 +143,10 @@ func (j *jsiiProxy_SfnStateMachine) validateSetPublishParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_SfnStateMachine) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnStateMachine) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

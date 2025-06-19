@@ -5,14 +5,14 @@ package glueuserdefinedfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/glueuserdefinedfunction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/glueuserdefinedfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function}.
 type GlueUserDefinedFunction interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -78,6 +78,9 @@ type GlueUserDefinedFunction interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceUris() GlueUserDefinedFunctionResourceUrisList
 	ResourceUrisInput() interface{}
 	// Experimental.
@@ -135,6 +138,7 @@ type GlueUserDefinedFunction interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceUris()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -444,6 +448,26 @@ func (j *jsiiProxy_GlueUserDefinedFunction) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlueUserDefinedFunction) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueUserDefinedFunction) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueUserDefinedFunction) ResourceUris() GlueUserDefinedFunctionResourceUrisList {
 	var returns GlueUserDefinedFunctionResourceUrisList
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_GlueUserDefinedFunction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource.
 func NewGlueUserDefinedFunction(scope constructs.Construct, id *string, config *GlueUserDefinedFunctionConfig) GlueUserDefinedFunction {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewGlueUserDefinedFunction(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource.
 func NewGlueUserDefinedFunction_Override(g GlueUserDefinedFunction, scope constructs.Construct, id *string, config *GlueUserDefinedFunctionConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_GlueUserDefinedFunction)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueUserDefinedFunction)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1053,6 +1088,14 @@ func (g *jsiiProxy_GlueUserDefinedFunction) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueUserDefinedFunction) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

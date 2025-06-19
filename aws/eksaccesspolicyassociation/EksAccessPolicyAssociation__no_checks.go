@@ -131,6 +131,10 @@ func (j *jsiiProxy_EksAccessPolicyAssociation) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_EksAccessPolicyAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEksAccessPolicyAssociationParameters(scope constructs.Construct, id *string, config *EksAccessPolicyAssociationConfig) error {
 	return nil
 }

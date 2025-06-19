@@ -415,6 +415,14 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BackupVaultNotifications) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BackupVaultNotifications) validateSetSnsTopicArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

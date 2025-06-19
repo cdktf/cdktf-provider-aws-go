@@ -131,6 +131,10 @@ func (j *jsiiProxy_QldbLedger) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_QldbLedger) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QldbLedger) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

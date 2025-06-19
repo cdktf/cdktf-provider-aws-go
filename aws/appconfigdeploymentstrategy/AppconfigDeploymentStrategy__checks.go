@@ -447,6 +447,14 @@ func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetReplicateToParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

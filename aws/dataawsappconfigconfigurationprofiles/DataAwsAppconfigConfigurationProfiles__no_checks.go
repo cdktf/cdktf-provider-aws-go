@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsAppconfigConfigurationProfilesParameters(scope constructs.Construct, id *string, config *DataAwsAppconfigConfigurationProfilesConfig) error {
 	return nil
 }

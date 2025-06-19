@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) validateSetSlackTeamNameParameters(val *string) error {
 	return nil
 }

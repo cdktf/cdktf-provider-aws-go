@@ -5,14 +5,14 @@ package ec2networkinsightsanalysis
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2networkinsightsanalysis/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2networkinsightsanalysis/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis}.
 type Ec2NetworkInsightsAnalysis interface {
 	cdktf.TerraformResource
 	AlternatePathHints() Ec2NetworkInsightsAnalysisAlternatePathHintsList
@@ -69,6 +69,9 @@ type Ec2NetworkInsightsAnalysis interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReturnPathComponents() Ec2NetworkInsightsAnalysisReturnPathComponentsList
 	StartDate() *string
 	Status() *string
@@ -137,6 +140,7 @@ type Ec2NetworkInsightsAnalysis interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetWaitForCompletion()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) ReturnPathComponents() Ec2NetworkInsightsAnalysisReturnPathComponentsList {
 	var returns Ec2NetworkInsightsAnalysisReturnPathComponentsList
 	_jsii_.Get(
@@ -539,7 +563,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) WarningMessage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource.
 func NewEc2NetworkInsightsAnalysis(scope constructs.Construct, id *string, config *Ec2NetworkInsightsAnalysisConfig) Ec2NetworkInsightsAnalysis {
 	_init_.Initialize()
 
@@ -557,7 +581,7 @@ func NewEc2NetworkInsightsAnalysis(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_analysis aws_ec2_network_insights_analysis} Resource.
 func NewEc2NetworkInsightsAnalysis_Override(e Ec2NetworkInsightsAnalysis, scope constructs.Construct, id *string, config *Ec2NetworkInsightsAnalysisConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysis)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysis)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1075,6 +1110,14 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysis) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysis) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

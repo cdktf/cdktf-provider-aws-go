@@ -587,6 +587,14 @@ func (j *jsiiProxy_CustomerprofilesProfile) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CustomerprofilesProfile) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewCustomerprofilesProfileParameters(scope constructs.Construct, id *string, config *CustomerprofilesProfileConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -127,6 +127,10 @@ func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetStaticMembersParameters(val *[]*string) error {
 	return nil
 }

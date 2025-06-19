@@ -5,14 +5,14 @@ package route53resolverfirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/route53resolverfirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/route53resolverfirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule}.
 type Route53ResolverFirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -91,6 +91,9 @@ type Route53ResolverFirewallRule interface {
 	QTypeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -150,6 +153,7 @@ type Route53ResolverFirewallRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQType()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -538,6 +542,26 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
 func NewRoute53ResolverFirewallRule(scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleConfig) Route53ResolverFirewallRule {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewRoute53ResolverFirewallRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
 func NewRoute53ResolverFirewallRule_Override(r Route53ResolverFirewallRule, scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -794,6 +818,17 @@ func (j *jsiiProxy_Route53ResolverFirewallRule)SetQType(val *string) {
 	_jsii_.Set(
 		j,
 		"qType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1211,6 +1246,14 @@ func (r *jsiiProxy_Route53ResolverFirewallRule) ResetQType() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetQType",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

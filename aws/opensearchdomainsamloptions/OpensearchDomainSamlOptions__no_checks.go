@@ -123,6 +123,10 @@ func (j *jsiiProxy_OpensearchDomainSamlOptions) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomainSamlOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchDomainSamlOptionsParameters(scope constructs.Construct, id *string, config *OpensearchDomainSamlOptionsConfig) error {
 	return nil
 }

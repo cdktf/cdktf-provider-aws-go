@@ -131,6 +131,10 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetRulesParameters(val *string) error {
 	return nil
 }

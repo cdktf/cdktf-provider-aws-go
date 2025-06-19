@@ -5,14 +5,14 @@ package secretsmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/secretsmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/secretsmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
 type SecretsmanagerSecret interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type SecretsmanagerSecret interface {
 	RecoveryWindowInDays() *float64
 	SetRecoveryWindowInDays(val *float64)
 	RecoveryWindowInDaysInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Replica() SecretsmanagerSecretReplicaList
 	ReplicaInput() interface{}
 	Tags() *map[string]*string
@@ -149,6 +152,7 @@ type SecretsmanagerSecret interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetRecoveryWindowInDays()
+	ResetRegion()
 	ResetReplica()
 	ResetTags()
 	ResetTagsAll()
@@ -470,6 +474,26 @@ func (j *jsiiProxy_SecretsmanagerSecret) RecoveryWindowInDaysInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerSecret) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecret) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerSecret) Replica() SecretsmanagerSecretReplicaList {
 	var returns SecretsmanagerSecretReplicaList
 	_jsii_.Get(
@@ -561,7 +585,7 @@ func (j *jsiiProxy_SecretsmanagerSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
 func NewSecretsmanagerSecret(scope constructs.Construct, id *string, config *SecretsmanagerSecretConfig) SecretsmanagerSecret {
 	_init_.Initialize()
 
@@ -579,7 +603,7 @@ func NewSecretsmanagerSecret(scope constructs.Construct, id *string, config *Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
 func NewSecretsmanagerSecret_Override(s SecretsmanagerSecret, scope constructs.Construct, id *string, config *SecretsmanagerSecretConfig) {
 	_init_.Initialize()
 
@@ -742,6 +766,17 @@ func (j *jsiiProxy_SecretsmanagerSecret)SetRecoveryWindowInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"recoveryWindowInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerSecret)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1200,6 +1235,14 @@ func (s *jsiiProxy_SecretsmanagerSecret) ResetRecoveryWindowInDays() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRecoveryWindowInDays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecret) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -147,6 +147,10 @@ func (j *jsiiProxy_QuicksightDashboard) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightDashboard) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDashboard) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

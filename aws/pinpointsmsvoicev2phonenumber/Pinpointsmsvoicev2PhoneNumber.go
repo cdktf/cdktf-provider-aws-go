@@ -5,14 +5,14 @@ package pinpointsmsvoicev2phonenumber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/pinpointsmsvoicev2phonenumber/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/pinpointsmsvoicev2phonenumber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number}.
 type Pinpointsmsvoicev2PhoneNumber interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type Pinpointsmsvoicev2PhoneNumber interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistrationId() *string
 	SetRegistrationId(val *string)
 	RegistrationIdInput() *string
@@ -153,6 +156,7 @@ type Pinpointsmsvoicev2PhoneNumber interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegistrationId()
 	ResetSelfManagedOptOutsEnabled()
 	ResetTags()
@@ -468,6 +472,26 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) RegistrationId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -649,7 +673,7 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) TwoWayChannelRoleInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) Pinpointsmsvoicev2PhoneNumber {
 	_init_.Initialize()
 
@@ -667,7 +691,7 @@ func NewPinpointsmsvoicev2PhoneNumber(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpointsmsvoicev2_phone_number aws_pinpointsmsvoicev2_phone_number} Resource.
 func NewPinpointsmsvoicev2PhoneNumber_Override(p Pinpointsmsvoicev2PhoneNumber, scope constructs.Construct, id *string, config *Pinpointsmsvoicev2PhoneNumberConfig) {
 	_init_.Initialize()
 
@@ -808,6 +832,17 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1262,6 +1297,14 @@ func (p *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

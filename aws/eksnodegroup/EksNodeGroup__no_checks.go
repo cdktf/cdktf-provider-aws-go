@@ -179,6 +179,10 @@ func (j *jsiiProxy_EksNodeGroup) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_EksNodeGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksNodeGroup) validateSetReleaseVersionParameters(val *string) error {
 	return nil
 }

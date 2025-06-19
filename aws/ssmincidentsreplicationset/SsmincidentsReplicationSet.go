@@ -5,14 +5,14 @@ package ssmincidentsreplicationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmincidentsreplicationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmincidentsreplicationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
 type SsmincidentsReplicationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -64,6 +64,8 @@ type SsmincidentsReplicationSet interface {
 	RawOverrides() interface{}
 	Region() SsmincidentsReplicationSetRegionList
 	RegionInput() interface{}
+	Regions() SsmincidentsReplicationSetRegionsList
+	RegionsInput() interface{}
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -123,11 +125,14 @@ type SsmincidentsReplicationSet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRegion(value interface{})
+	PutRegions(value interface{})
 	PutTimeouts(value *SsmincidentsReplicationSetTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
+	ResetRegions()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -359,6 +364,26 @@ func (j *jsiiProxy_SsmincidentsReplicationSet) RegionInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmincidentsReplicationSet) Regions() SsmincidentsReplicationSetRegionsList {
+	var returns SsmincidentsReplicationSetRegionsList
+	_jsii_.Get(
+		j,
+		"regions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmincidentsReplicationSet) RegionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"regionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmincidentsReplicationSet) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,7 +485,7 @@ func (j *jsiiProxy_SsmincidentsReplicationSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
 func NewSsmincidentsReplicationSet(scope constructs.Construct, id *string, config *SsmincidentsReplicationSetConfig) SsmincidentsReplicationSet {
 	_init_.Initialize()
 
@@ -478,7 +503,7 @@ func NewSsmincidentsReplicationSet(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
 func NewSsmincidentsReplicationSet_Override(s SsmincidentsReplicationSet, scope constructs.Construct, id *string, config *SsmincidentsReplicationSetConfig) {
 	_init_.Initialize()
 
@@ -954,6 +979,17 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) PutRegion(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_SsmincidentsReplicationSet) PutRegions(value interface{}) {
+	if err := s.validatePutRegionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRegions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SsmincidentsReplicationSet) PutTimeouts(value *SsmincidentsReplicationSetTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -977,6 +1013,22 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmincidentsReplicationSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmincidentsReplicationSet) ResetRegions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegions",
 		nil, // no parameters
 	)
 }

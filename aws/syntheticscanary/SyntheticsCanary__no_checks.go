@@ -151,6 +151,10 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCanary) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanary) validateSetRuntimeVersionParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package networkfirewallrulegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkfirewallrulegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkfirewallrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group}.
 type NetworkfirewallRuleGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type NetworkfirewallRuleGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleGroup() NetworkfirewallRuleGroupRuleGroupOutputReference
 	RuleGroupInput() *NetworkfirewallRuleGroupRuleGroup
 	Rules() *string
@@ -142,6 +145,7 @@ type NetworkfirewallRuleGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRuleGroup()
 	ResetRules()
 	ResetTags()
@@ -404,6 +408,26 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkfirewallRuleGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkfirewallRuleGroup) RuleGroup() NetworkfirewallRuleGroupRuleGroupOutputReference {
 	var returns NetworkfirewallRuleGroupRuleGroupOutputReference
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) UpdateToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group} Resource.
 func NewNetworkfirewallRuleGroup(scope constructs.Construct, id *string, config *NetworkfirewallRuleGroupConfig) NetworkfirewallRuleGroup {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewNetworkfirewallRuleGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkfirewall_rule_group aws_networkfirewall_rule_group} Resource.
 func NewNetworkfirewallRuleGroup_Override(n NetworkfirewallRuleGroup, scope constructs.Construct, id *string, config *NetworkfirewallRuleGroupConfig) {
 	_init_.Initialize()
 
@@ -682,6 +706,17 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1133,6 +1168,14 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

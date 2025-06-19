@@ -5,14 +5,14 @@ package routetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/routetable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/routetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route_table aws_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route_table aws_route_table}.
 type RouteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type RouteTable interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Route() RouteTableRouteList
 	RouteInput() interface{}
 	Tags() *map[string]*string
@@ -132,6 +135,7 @@ type RouteTable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPropagatingVgws()
+	ResetRegion()
 	ResetRoute()
 	ResetTags()
 	ResetTagsAll()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_RouteTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RouteTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RouteTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RouteTable) Route() RouteTableRouteList {
 	var returns RouteTableRouteList
 	_jsii_.Get(
@@ -475,7 +499,7 @@ func (j *jsiiProxy_RouteTable) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableConfig) RouteTable {
 	_init_.Initialize()
 
@@ -493,7 +517,7 @@ func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable_Override(r RouteTable, scope constructs.Construct, id *string, config *RouteTableConfig) {
 	_init_.Initialize()
 
@@ -590,6 +614,17 @@ func (j *jsiiProxy_RouteTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RouteTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1022,6 +1057,14 @@ func (r *jsiiProxy_RouteTable) ResetPropagatingVgws() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPropagatingVgws",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RouteTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

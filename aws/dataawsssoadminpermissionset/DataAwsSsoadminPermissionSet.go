@@ -5,14 +5,14 @@ package dataawsssoadminpermissionset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
 type DataAwsSsoadminPermissionSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -61,6 +61,9 @@ type DataAwsSsoadminPermissionSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RelayState() *string
 	SessionDuration() *string
 	Tags() *map[string]*string
@@ -103,6 +106,7 @@ type DataAwsSsoadminPermissionSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -333,6 +337,26 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsoadminPermissionSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsoadminPermissionSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsoadminPermissionSet) RelayState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSet) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
 func NewDataAwsSsoadminPermissionSet(scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetConfig) DataAwsSsoadminPermissionSet {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewDataAwsSsoadminPermissionSet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
 func NewDataAwsSsoadminPermissionSet_Override(d DataAwsSsoadminPermissionSet, scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetConfig) {
 	_init_.Initialize()
 
@@ -519,6 +543,17 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSet)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsoadminPermissionSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -847,6 +882,14 @@ func (d *jsiiProxy_DataAwsSsoadminPermissionSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsoadminPermissionSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

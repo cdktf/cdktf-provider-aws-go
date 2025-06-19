@@ -5,14 +5,14 @@ package dataawscodecatalystdevenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscodecatalystdevenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscodecatalystdevenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
 type DataAwsCodecatalystDevEnvironment interface {
 	cdktf.TerraformDataSource
 	Alias() *string
@@ -67,6 +67,9 @@ type DataAwsCodecatalystDevEnvironment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Repositories() DataAwsCodecatalystDevEnvironmentRepositoriesList
 	RepositoriesInput() interface{}
 	SpaceName() *string
@@ -115,6 +118,7 @@ type DataAwsCodecatalystDevEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRepositories()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -396,6 +400,26 @@ func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) Repositories() DataAwsCodecatalystDevEnvironmentRepositoriesList {
 	var returns DataAwsCodecatalystDevEnvironmentRepositoriesList
 	_jsii_.Get(
@@ -507,7 +531,7 @@ func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Data Source.
 func NewDataAwsCodecatalystDevEnvironment(scope constructs.Construct, id *string, config *DataAwsCodecatalystDevEnvironmentConfig) DataAwsCodecatalystDevEnvironment {
 	_init_.Initialize()
 
@@ -525,7 +549,7 @@ func NewDataAwsCodecatalystDevEnvironment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Data Source.
 func NewDataAwsCodecatalystDevEnvironment_Override(d DataAwsCodecatalystDevEnvironment, scope constructs.Construct, id *string, config *DataAwsCodecatalystDevEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -983,6 +1018,14 @@ func (d *jsiiProxy_DataAwsCodecatalystDevEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCodecatalystDevEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

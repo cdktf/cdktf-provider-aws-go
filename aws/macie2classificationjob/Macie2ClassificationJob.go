@@ -5,14 +5,14 @@ package macie2classificationjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2classificationjob/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2classificationjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_job aws_macie2_classification_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_job aws_macie2_classification_job}.
 type Macie2ClassificationJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,6 +82,9 @@ type Macie2ClassificationJob interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3JobDefinition() Macie2ClassificationJobS3JobDefinitionOutputReference
 	S3JobDefinitionInput() *Macie2ClassificationJobS3JobDefinition
 	SamplingPercentage() *float64
@@ -160,6 +163,7 @@ type Macie2ClassificationJob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSamplingPercentage()
 	ResetScheduleFrequency()
 	ResetTags()
@@ -503,6 +507,26 @@ func (j *jsiiProxy_Macie2ClassificationJob) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Macie2ClassificationJob) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2ClassificationJob) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Macie2ClassificationJob) S3JobDefinition() Macie2ClassificationJobS3JobDefinitionOutputReference {
 	var returns Macie2ClassificationJobS3JobDefinitionOutputReference
 	_jsii_.Get(
@@ -664,7 +688,7 @@ func (j *jsiiProxy_Macie2ClassificationJob) UserPausedDetails() Macie2Classifica
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) Macie2ClassificationJob {
 	_init_.Initialize()
 
@@ -682,7 +706,7 @@ func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob_Override(m Macie2ClassificationJob, scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) {
 	_init_.Initialize()
 
@@ -845,6 +869,17 @@ func (j *jsiiProxy_Macie2ClassificationJob)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2ClassificationJob)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1328,6 +1363,14 @@ func (m *jsiiProxy_Macie2ClassificationJob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

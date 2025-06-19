@@ -439,6 +439,14 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_AmiLaunchPermission) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAmiLaunchPermissionParameters(scope constructs.Construct, id *string, config *AmiLaunchPermissionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

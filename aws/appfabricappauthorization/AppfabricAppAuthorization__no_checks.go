@@ -131,6 +131,10 @@ func (j *jsiiProxy_AppfabricAppAuthorization) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AppfabricAppAuthorization) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppfabricAppAuthorization) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

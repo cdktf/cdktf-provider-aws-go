@@ -127,6 +127,10 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LocationRouteCalculator) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationRouteCalculator) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_LexSlotType) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_LexSlotType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexSlotType) validateSetValueSelectionStrategyParameters(val *string) error {
 	return nil
 }

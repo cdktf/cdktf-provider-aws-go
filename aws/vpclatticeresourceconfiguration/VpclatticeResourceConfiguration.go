@@ -5,14 +5,14 @@ package vpclatticeresourceconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpclatticeresourceconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeresourceconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
 type VpclatticeResourceConfiguration interface {
 	cdktf.TerraformResource
 	AllowAssociationToShareableServiceNetwork() interface{}
@@ -69,6 +69,9 @@ type VpclatticeResourceConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceConfigurationDefinition() VpclatticeResourceConfigurationResourceConfigurationDefinitionList
 	ResourceConfigurationDefinitionInput() interface{}
 	ResourceConfigurationGroupId() *string
@@ -143,6 +146,7 @@ type VpclatticeResourceConfiguration interface {
 	ResetOverrideLogicalId()
 	ResetPortRanges()
 	ResetProtocol()
+	ResetRegion()
 	ResetResourceConfigurationDefinition()
 	ResetResourceConfigurationGroupId()
 	ResetResourceGatewayIdentifier()
@@ -397,6 +401,26 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeResourceConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeResourceConfiguration) ResourceConfigurationDefinition() VpclatticeResourceConfigurationResourceConfigurationDefinitionList {
 	var returns VpclatticeResourceConfigurationResourceConfigurationDefinitionList
 	_jsii_.Get(
@@ -558,7 +582,7 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) VpclatticeResourceConfiguration {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration_Override(v VpclatticeResourceConfiguration, scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1146,6 +1181,14 @@ func (v *jsiiProxy_VpclatticeResourceConfiguration) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeResourceConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

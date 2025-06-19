@@ -135,6 +135,10 @@ func (j *jsiiProxy_CloudwatchLogAnomalyDetector) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogAnomalyDetector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogAnomalyDetector) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

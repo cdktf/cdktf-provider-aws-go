@@ -5,14 +5,14 @@ package iamrolepolicyattachmentsexclusive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iamrolepolicyattachmentsexclusive/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamrolepolicyattachmentsexclusive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive}.
 type IamRolePolicyAttachmentsExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IamRolePolicyAttachmentsExclusive) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
 func NewIamRolePolicyAttachmentsExclusive(scope constructs.Construct, id *string, config *IamRolePolicyAttachmentsExclusiveConfig) IamRolePolicyAttachmentsExclusive {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIamRolePolicyAttachmentsExclusive(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policy_attachments_exclusive aws_iam_role_policy_attachments_exclusive} Resource.
 func NewIamRolePolicyAttachmentsExclusive_Override(i IamRolePolicyAttachmentsExclusive, scope constructs.Construct, id *string, config *IamRolePolicyAttachmentsExclusiveConfig) {
 	_init_.Initialize()
 

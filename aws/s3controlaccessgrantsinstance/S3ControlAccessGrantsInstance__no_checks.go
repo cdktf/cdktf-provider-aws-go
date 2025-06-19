@@ -115,6 +115,10 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_AppflowConnectorProfile) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppflowConnectorProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppflowConnectorProfileParameters(scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) error {
 	return nil
 }

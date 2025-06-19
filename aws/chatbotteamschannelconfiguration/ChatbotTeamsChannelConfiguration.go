@@ -5,14 +5,14 @@ package chatbotteamschannelconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/chatbotteamschannelconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/chatbotteamschannelconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration}.
 type ChatbotTeamsChannelConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type ChatbotTeamsChannelConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnsTopicArns() *[]*string
 	SetSnsTopicArns(val *[]*string)
 	SnsTopicArnsInput() *[]*string
@@ -151,6 +154,7 @@ type ChatbotTeamsChannelConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSnsTopicArns()
 	ResetTags()
 	ResetTeamName()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) SnsTopicArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -615,7 +639,7 @@ func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) UserAuthorizationRequiredIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
 func NewChatbotTeamsChannelConfiguration(scope constructs.Construct, id *string, config *ChatbotTeamsChannelConfigurationConfig) ChatbotTeamsChannelConfiguration {
 	_init_.Initialize()
 
@@ -633,7 +657,7 @@ func NewChatbotTeamsChannelConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_teams_channel_configuration aws_chatbot_teams_channel_configuration} Resource.
 func NewChatbotTeamsChannelConfiguration_Override(c ChatbotTeamsChannelConfiguration, scope constructs.Construct, id *string, config *ChatbotTeamsChannelConfigurationConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (j *jsiiProxy_ChatbotTeamsChannelConfiguration)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ChatbotTeamsChannelConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1236,6 +1271,14 @@ func (c *jsiiProxy_ChatbotTeamsChannelConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChatbotTeamsChannelConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

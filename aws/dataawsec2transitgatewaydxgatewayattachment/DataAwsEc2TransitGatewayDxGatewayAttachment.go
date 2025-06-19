@@ -5,14 +5,14 @@ package dataawsec2transitgatewaydxgatewayattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2transitgatewaydxgatewayattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2transitgatewaydxgatewayattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment}.
 type DataAwsEc2TransitGatewayDxGatewayAttachment interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -56,6 +56,9 @@ type DataAwsEc2TransitGatewayDxGatewayAttachment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -103,6 +106,7 @@ type DataAwsEc2TransitGatewayDxGatewayAttachment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	ResetTransitGatewayId()
@@ -305,6 +309,26 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) RawOverrides() i
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -396,7 +420,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) TransitGatewayId
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayDxGatewayAttachment(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayDxGatewayAttachmentConfig) DataAwsEc2TransitGatewayDxGatewayAttachment {
 	_init_.Initialize()
 
@@ -414,7 +438,7 @@ func NewDataAwsEc2TransitGatewayDxGatewayAttachment(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayDxGatewayAttachment_Override(d DataAwsEc2TransitGatewayDxGatewayAttachment, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayDxGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -489,6 +513,17 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment)SetProvider(val c
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) ResetOverrideLog
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

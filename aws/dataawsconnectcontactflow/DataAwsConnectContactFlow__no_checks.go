@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsConnectContactFlow) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectContactFlow) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectContactFlow) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

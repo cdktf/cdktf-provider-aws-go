@@ -5,14 +5,14 @@ package appsyncgraphqlapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncgraphqlapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncgraphqlapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -87,6 +87,9 @@ type AppsyncGraphqlApi interface {
 	QueryDepthLimitInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResolverCountLimit() *float64
 	SetResolverCountLimit(val *float64)
 	ResolverCountLimitInput() *float64
@@ -176,6 +179,7 @@ type AppsyncGraphqlApi interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueryDepthLimit()
+	ResetRegion()
 	ResetResolverCountLimit()
 	ResetSchema()
 	ResetTags()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) ResolverCountLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -762,7 +786,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -780,7 +804,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -932,6 +956,17 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetQueryDepthLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"queryDepthLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1505,6 +1540,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetQueryDepthLimit() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetQueryDepthLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

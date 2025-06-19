@@ -5,9 +5,9 @@ package resiliencehubresiliencypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/resiliencehubresiliencypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/resiliencehubresiliencypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -198,29 +198,29 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyRegionOutputReference) Ter
 }
 
 
-func NewResiliencehubResiliencyPolicyPolicyRegionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ResiliencehubResiliencyPolicyPolicyRegionOutputReference {
+func NewResiliencehubResiliencyPolicyPolicyRegionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyRegionOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewResiliencehubResiliencyPolicyPolicyRegionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewResiliencehubResiliencyPolicyPolicyRegionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ResiliencehubResiliencyPolicyPolicyRegionOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewResiliencehubResiliencyPolicyPolicyRegionOutputReference_Override(r ResiliencehubResiliencyPolicyPolicyRegionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewResiliencehubResiliencyPolicyPolicyRegionOutputReference_Override(r ResiliencehubResiliencyPolicyPolicyRegionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyRegionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }

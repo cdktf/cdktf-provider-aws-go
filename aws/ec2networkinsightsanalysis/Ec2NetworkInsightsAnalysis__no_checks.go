@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsAnalysis) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

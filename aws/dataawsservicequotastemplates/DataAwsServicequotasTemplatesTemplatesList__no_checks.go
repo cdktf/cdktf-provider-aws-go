@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

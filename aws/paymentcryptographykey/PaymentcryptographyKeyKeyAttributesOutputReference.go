@@ -5,9 +5,9 @@ package paymentcryptographykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/paymentcryptographykey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/paymentcryptographykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,7 +38,7 @@ type PaymentcryptographyKeyKeyAttributesOutputReference interface {
 	KeyClass() *string
 	SetKeyClass(val *string)
 	KeyClassInput() *string
-	KeyModesOfUse() PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference
+	KeyModesOfUse() PaymentcryptographyKeyKeyAttributesKeyModesOfUseList
 	KeyModesOfUseInput() interface{}
 	KeyUsage() *string
 	SetKeyUsage(val *string)
@@ -75,7 +75,7 @@ type PaymentcryptographyKeyKeyAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutKeyModesOfUse(value *PaymentcryptographyKeyKeyAttributesKeyModesOfUse)
+	PutKeyModesOfUse(value interface{})
 	ResetKeyModesOfUse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) KeyClassI
 	return returns
 }
 
-func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) KeyModesOfUse() PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference {
-	var returns PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference
+func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) KeyModesOfUse() PaymentcryptographyKeyKeyAttributesKeyModesOfUseList {
+	var returns PaymentcryptographyKeyKeyAttributesKeyModesOfUseList
 	_jsii_.Get(
 		j,
 		"keyModesOfUse",
@@ -243,29 +243,29 @@ func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) Terraform
 }
 
 
-func NewPaymentcryptographyKeyKeyAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PaymentcryptographyKeyKeyAttributesOutputReference {
+func NewPaymentcryptographyKeyKeyAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PaymentcryptographyKeyKeyAttributesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPaymentcryptographyKeyKeyAttributesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewPaymentcryptographyKeyKeyAttributesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPaymentcryptographyKeyKeyAttributesOutputReference_Override(p PaymentcryptographyKeyKeyAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPaymentcryptographyKeyKeyAttributesOutputReference_Override(p PaymentcryptographyKeyKeyAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }
@@ -544,7 +544,7 @@ func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) Interpola
 	return returns
 }
 
-func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) PutKeyModesOfUse(value *PaymentcryptographyKeyKeyAttributesKeyModesOfUse) {
+func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) PutKeyModesOfUse(value interface{}) {
 	if err := p.validatePutKeyModesOfUseParameters(value); err != nil {
 		panic(err)
 	}

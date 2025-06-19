@@ -5,14 +5,14 @@ package dataawsfsxopenzfssnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfsxopenzfssnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsfsxopenzfssnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot}.
 type DataAwsFsxOpenzfsSnapshot interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -60,6 +60,9 @@ type DataAwsFsxOpenzfsSnapshot interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotId() *string
 	SnapshotIds() *[]*string
 	SetSnapshotIds(val *[]*string)
@@ -107,6 +110,7 @@ type DataAwsFsxOpenzfsSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSnapshotIds()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -338,6 +342,26 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) SnapshotId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) VolumeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Data Source.
 func NewDataAwsFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *DataAwsFsxOpenzfsSnapshotConfig) DataAwsFsxOpenzfsSnapshot {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewDataAwsFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Data Source.
 func NewDataAwsFsxOpenzfsSnapshot_Override(d DataAwsFsxOpenzfsSnapshot, scope constructs.Construct, id *string, config *DataAwsFsxOpenzfsSnapshotConfig) {
 	_init_.Initialize()
 
@@ -533,6 +557,17 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -891,6 +926,14 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package verifiedaccessgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/verifiedaccessgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/verifiedaccessgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
 type VerifiedaccessGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type VerifiedaccessGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SseConfiguration() VerifiedaccessGroupSseConfigurationOutputReference
 	SseConfigurationInput() *VerifiedaccessGroupSseConfiguration
 	Tags() *map[string]*string
@@ -137,6 +140,7 @@ type VerifiedaccessGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyDocument()
+	ResetRegion()
 	ResetSseConfiguration()
 	ResetTags()
 	ResetTagsAll()
@@ -388,6 +392,26 @@ func (j *jsiiProxy_VerifiedaccessGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessGroup) SseConfiguration() VerifiedaccessGroupSseConfigurationOutputReference {
 	var returns VerifiedaccessGroupSseConfigurationOutputReference
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_VerifiedaccessGroup) VerifiedaccessInstanceIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) VerifiedaccessGroup {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *Veri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup_Override(v VerifiedaccessGroup, scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) {
 	_init_.Initialize()
 
@@ -645,6 +669,17 @@ func (j *jsiiProxy_VerifiedaccessGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedaccessGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1074,6 +1109,14 @@ func (v *jsiiProxy_VerifiedaccessGroup) ResetPolicyDocument() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPolicyDocument",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

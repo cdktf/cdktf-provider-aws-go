@@ -5,14 +5,14 @@ package vpcipamscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcipamscope/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcipamscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope}.
 type VpcIpamScope interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type VpcIpamScope interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -132,6 +135,7 @@ type VpcIpamScope interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_VpcIpamScope) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamScope) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamScope) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpamScope) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -484,7 +508,7 @@ func (j *jsiiProxy_VpcIpamScope) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource.
 func NewVpcIpamScope(scope constructs.Construct, id *string, config *VpcIpamScopeConfig) VpcIpamScope {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewVpcIpamScope(scope constructs.Construct, id *string, config *VpcIpamScop
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_scope aws_vpc_ipam_scope} Resource.
 func NewVpcIpamScope_Override(v VpcIpamScope, scope constructs.Construct, id *string, config *VpcIpamScopeConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_VpcIpamScope)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamScope)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1020,6 +1055,14 @@ func (v *jsiiProxy_VpcIpamScope) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamScope) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisioningArtifact) validateSetTemplatePhysicalIdParameters(val *string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_AcmpcaPermission) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaPermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaPermission) validateSetSourceAccountParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetSnapshotCopyGrantNameParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_CloudwatchDashboard) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchDashboard) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudwatchDashboardParameters(scope constructs.Construct, id *string, config *CloudwatchDashboardConfig) error {
 	return nil
 }

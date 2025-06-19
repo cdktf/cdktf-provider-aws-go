@@ -483,6 +483,14 @@ func (j *jsiiProxy_SagemakerDomain) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomain) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomain) validateSetSubnetIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

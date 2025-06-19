@@ -135,6 +135,10 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

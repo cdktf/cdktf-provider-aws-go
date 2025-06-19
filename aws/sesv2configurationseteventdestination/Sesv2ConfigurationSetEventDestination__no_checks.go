@@ -123,6 +123,10 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesv2ConfigurationSetEventDestinationParameters(scope constructs.Construct, id *string, config *Sesv2ConfigurationSetEventDestinationConfig) error {
 	return nil
 }

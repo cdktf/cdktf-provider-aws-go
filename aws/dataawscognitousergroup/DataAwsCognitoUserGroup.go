@@ -5,14 +5,14 @@ package dataawscognitousergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscognitousergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_group aws_cognito_user_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_group aws_cognito_user_group}.
 type DataAwsCognitoUserGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsCognitoUserGroup interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -91,6 +94,7 @@ type DataAwsCognitoUserGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -270,6 +274,26 @@ func (j *jsiiProxy_DataAwsCognitoUserGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCognitoUserGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserGroup) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -331,7 +355,7 @@ func (j *jsiiProxy_DataAwsCognitoUserGroup) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_group aws_cognito_user_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_group aws_cognito_user_group} Data Source.
 func NewDataAwsCognitoUserGroup(scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupConfig) DataAwsCognitoUserGroup {
 	_init_.Initialize()
 
@@ -349,7 +373,7 @@ func NewDataAwsCognitoUserGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_group aws_cognito_user_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_group aws_cognito_user_group} Data Source.
 func NewDataAwsCognitoUserGroup_Override(d DataAwsCognitoUserGroup, scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupConfig) {
 	_init_.Initialize()
 
@@ -413,6 +437,17 @@ func (j *jsiiProxy_DataAwsCognitoUserGroup)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCognitoUserGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -717,6 +752,14 @@ func (d *jsiiProxy_DataAwsCognitoUserGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCognitoUserGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

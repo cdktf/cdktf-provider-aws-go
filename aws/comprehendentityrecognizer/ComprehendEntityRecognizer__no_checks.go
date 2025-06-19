@@ -139,6 +139,10 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

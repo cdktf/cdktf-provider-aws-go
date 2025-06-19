@@ -123,6 +123,10 @@ func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetSecretKeyParameters(val *string) error {
 	return nil
 }

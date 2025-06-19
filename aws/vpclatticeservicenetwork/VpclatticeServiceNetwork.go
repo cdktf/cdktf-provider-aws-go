@@ -5,14 +5,14 @@ package vpclatticeservicenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpclatticeservicenetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeservicenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
 type VpclatticeServiceNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type VpclatticeServiceNetwork interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -125,6 +128,7 @@ type VpclatticeServiceNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -345,6 +349,26 @@ func (j *jsiiProxy_VpclatticeServiceNetwork) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetwork) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeServiceNetwork) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetwork) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_VpclatticeServiceNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
 func NewVpclatticeServiceNetwork(scope constructs.Construct, id *string, config *VpclatticeServiceNetworkConfig) VpclatticeServiceNetwork {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewVpclatticeServiceNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
 func NewVpclatticeServiceNetwork_Override(v VpclatticeServiceNetwork, scope constructs.Construct, id *string, config *VpclatticeServiceNetworkConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_VpclatticeServiceNetwork)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeServiceNetwork)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (v *jsiiProxy_VpclatticeServiceNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeServiceNetwork) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

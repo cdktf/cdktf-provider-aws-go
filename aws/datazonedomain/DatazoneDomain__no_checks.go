@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatazoneDomain) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatazoneDomain) validateSetSkipDeletionCheckParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package xrayencryptionconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/xrayencryptionconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/xrayencryptionconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config aws_xray_encryption_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config aws_xray_encryption_config}.
 type XrayEncryptionConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type XrayEncryptionConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type XrayEncryptionConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -306,6 +310,26 @@ func (j *jsiiProxy_XrayEncryptionConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_XrayEncryptionConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_XrayEncryptionConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_XrayEncryptionConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_XrayEncryptionConfig) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config aws_xray_encryption_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config aws_xray_encryption_config} Resource.
 func NewXrayEncryptionConfig(scope constructs.Construct, id *string, config *XrayEncryptionConfigConfig) XrayEncryptionConfig {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewXrayEncryptionConfig(scope constructs.Construct, id *string, config *Xra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/xray_encryption_config aws_xray_encryption_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/xray_encryption_config aws_xray_encryption_config} Resource.
 func NewXrayEncryptionConfig_Override(x XrayEncryptionConfig, scope constructs.Construct, id *string, config *XrayEncryptionConfigConfig) {
 	_init_.Initialize()
 
@@ -472,6 +496,17 @@ func (j *jsiiProxy_XrayEncryptionConfig)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_XrayEncryptionConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -860,6 +895,14 @@ func (x *jsiiProxy_XrayEncryptionConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		x,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (x *jsiiProxy_XrayEncryptionConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		x,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

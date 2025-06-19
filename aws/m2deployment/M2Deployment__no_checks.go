@@ -127,6 +127,10 @@ func (j *jsiiProxy_M2Deployment) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_M2Deployment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_M2Deployment) validateSetStartParameters(val interface{}) error {
 	return nil
 }

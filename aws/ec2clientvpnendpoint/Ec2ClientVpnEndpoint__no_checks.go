@@ -147,6 +147,10 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

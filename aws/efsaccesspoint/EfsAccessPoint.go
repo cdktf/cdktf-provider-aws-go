@@ -5,14 +5,14 @@ package efsaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/efsaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/efsaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_access_point aws_efs_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_access_point aws_efs_access_point}.
 type EfsAccessPoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type EfsAccessPoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootDirectory() EfsAccessPointRootDirectoryOutputReference
 	RootDirectoryInput() *EfsAccessPointRootDirectory
 	Tags() *map[string]*string
@@ -130,6 +133,7 @@ type EfsAccessPoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPosixUser()
+	ResetRegion()
 	ResetRootDirectory()
 	ResetTags()
 	ResetTagsAll()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_EfsAccessPoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EfsAccessPoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsAccessPoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsAccessPoint) RootDirectory() EfsAccessPointRootDirectoryOutputReference {
 	var returns EfsAccessPointRootDirectoryOutputReference
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_EfsAccessPoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
 func NewEfsAccessPoint(scope constructs.Construct, id *string, config *EfsAccessPointConfig) EfsAccessPoint {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewEfsAccessPoint(scope constructs.Construct, id *string, config *EfsAccess
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
 func NewEfsAccessPoint_Override(e EfsAccessPoint, scope constructs.Construct, id *string, config *EfsAccessPointConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_EfsAccessPoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsAccessPoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -998,6 +1033,14 @@ func (e *jsiiProxy_EfsAccessPoint) ResetPosixUser() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPosixUser",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsAccessPoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

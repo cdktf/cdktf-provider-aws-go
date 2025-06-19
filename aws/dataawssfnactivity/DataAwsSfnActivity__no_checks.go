@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsSfnActivity) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSfnActivity) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSfnActivityParameters(scope constructs.Construct, id *string, config *DataAwsSfnActivityConfig) error {
 	return nil
 }

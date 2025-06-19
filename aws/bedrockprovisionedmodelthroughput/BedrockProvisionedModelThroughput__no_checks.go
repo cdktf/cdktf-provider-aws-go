@@ -127,6 +127,10 @@ func (j *jsiiProxy_BedrockProvisionedModelThroughput) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_BedrockProvisionedModelThroughput) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockProvisionedModelThroughput) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

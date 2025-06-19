@@ -431,6 +431,14 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetSkipDestroyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package launchconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/launchconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/launchconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_configuration aws_launch_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_configuration aws_launch_configuration}.
 type LaunchConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -95,6 +95,9 @@ type LaunchConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootBlockDevice() LaunchConfigurationRootBlockDeviceOutputReference
 	RootBlockDeviceInput() *LaunchConfigurationRootBlockDevice
 	SecurityGroups() *[]*string
@@ -177,6 +180,7 @@ type LaunchConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlacementTenancy()
+	ResetRegion()
 	ResetRootBlockDevice()
 	ResetSecurityGroups()
 	ResetSpotPrice()
@@ -620,6 +624,26 @@ func (j *jsiiProxy_LaunchConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LaunchConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchConfiguration) RootBlockDevice() LaunchConfigurationRootBlockDeviceOutputReference {
 	var returns LaunchConfigurationRootBlockDeviceOutputReference
 	_jsii_.Get(
@@ -751,7 +775,7 @@ func (j *jsiiProxy_LaunchConfiguration) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
 func NewLaunchConfiguration(scope constructs.Construct, id *string, config *LaunchConfigurationConfig) LaunchConfiguration {
 	_init_.Initialize()
 
@@ -769,7 +793,7 @@ func NewLaunchConfiguration(scope constructs.Construct, id *string, config *Laun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
 func NewLaunchConfiguration_Override(l LaunchConfiguration, scope constructs.Construct, id *string, config *LaunchConfigurationConfig) {
 	_init_.Initialize()
 
@@ -965,6 +989,17 @@ func (j *jsiiProxy_LaunchConfiguration)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1510,6 +1545,14 @@ func (l *jsiiProxy_LaunchConfiguration) ResetPlacementTenancy() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPlacementTenancy",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

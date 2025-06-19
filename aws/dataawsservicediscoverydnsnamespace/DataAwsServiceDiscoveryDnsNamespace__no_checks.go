@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

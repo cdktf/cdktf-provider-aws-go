@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference) validateSetInternalValueParameters(val *DataAwsSsoadminApplicationAssignmentsApplicationAssignments) error {
 	return nil
 }
 

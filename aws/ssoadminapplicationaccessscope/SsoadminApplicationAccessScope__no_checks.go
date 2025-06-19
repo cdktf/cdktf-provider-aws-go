@@ -115,6 +115,10 @@ func (j *jsiiProxy_SsoadminApplicationAccessScope) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminApplicationAccessScope) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminApplicationAccessScope) validateSetScopeParameters(val *string) error {
 	return nil
 }

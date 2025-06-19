@@ -5,14 +5,14 @@ package memorydbsubnetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/memorydbsubnetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/memorydbsubnetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group}.
 type MemorydbSubnetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type MemorydbSubnetGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -134,6 +137,7 @@ type MemorydbSubnetGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -374,6 +378,26 @@ func (j *jsiiProxy_MemorydbSubnetGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MemorydbSubnetGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbSubnetGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorydbSubnetGroup) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -475,7 +499,7 @@ func (j *jsiiProxy_MemorydbSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group} Resource.
 func NewMemorydbSubnetGroup(scope constructs.Construct, id *string, config *MemorydbSubnetGroupConfig) MemorydbSubnetGroup {
 	_init_.Initialize()
 
@@ -493,7 +517,7 @@ func NewMemorydbSubnetGroup(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group} Resource.
 func NewMemorydbSubnetGroup_Override(m MemorydbSubnetGroup, scope constructs.Construct, id *string, config *MemorydbSubnetGroupConfig) {
 	_init_.Initialize()
 
@@ -612,6 +636,17 @@ func (j *jsiiProxy_MemorydbSubnetGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorydbSubnetGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1038,6 +1073,14 @@ func (m *jsiiProxy_MemorydbSubnetGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbSubnetGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

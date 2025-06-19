@@ -179,6 +179,10 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

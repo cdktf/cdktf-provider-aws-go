@@ -143,6 +143,10 @@ func (j *jsiiProxy_RdsGlobalCluster) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsGlobalCluster) validateSetSourceDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

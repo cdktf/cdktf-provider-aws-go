@@ -5,14 +5,14 @@ package autoscalingschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/autoscalingschedule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/autoscalingschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule}.
 type AutoscalingSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type AutoscalingSchedule interface {
 	Recurrence() *string
 	SetRecurrence(val *string)
 	RecurrenceInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduledActionName() *string
 	SetScheduledActionName(val *string)
 	ScheduledActionNameInput() *string
@@ -144,6 +147,7 @@ type AutoscalingSchedule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecurrence()
+	ResetRegion()
 	ResetStartTime()
 	ResetTimeZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -444,6 +448,26 @@ func (j *jsiiProxy_AutoscalingSchedule) RecurrenceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingSchedule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingSchedule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingSchedule) ScheduledActionName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_AutoscalingSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
 func NewAutoscalingSchedule(scope constructs.Construct, id *string, config *AutoscalingScheduleConfig) AutoscalingSchedule {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewAutoscalingSchedule(scope constructs.Construct, id *string, config *Auto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
 func NewAutoscalingSchedule_Override(a AutoscalingSchedule, scope constructs.Construct, id *string, config *AutoscalingScheduleConfig) {
 	_init_.Initialize()
 
@@ -705,6 +729,17 @@ func (j *jsiiProxy_AutoscalingSchedule)SetRecurrence(val *string) {
 	_jsii_.Set(
 		j,
 		"recurrence",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingSchedule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1147,6 +1182,14 @@ func (a *jsiiProxy_AutoscalingSchedule) ResetRecurrence() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRecurrence",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingSchedule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

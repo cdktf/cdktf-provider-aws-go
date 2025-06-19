@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationPlaceIndex) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

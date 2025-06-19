@@ -211,6 +211,10 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetPubliclyAccessibleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

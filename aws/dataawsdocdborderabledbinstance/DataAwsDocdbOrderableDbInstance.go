@@ -5,14 +5,14 @@ package dataawsdocdborderabledbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdocdborderabledbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance}.
 type DataAwsDocdbOrderableDbInstance interface {
 	cdktf.TerraformDataSource
 	AvailabilityZones() *[]*string
@@ -66,6 +66,9 @@ type DataAwsDocdbOrderableDbInstance interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,6 +112,7 @@ type DataAwsDocdbOrderableDbInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredInstanceClasses()
+	ResetRegion()
 	ResetVpc()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -369,6 +373,26 @@ func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -420,7 +444,7 @@ func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance} Data Source.
 func NewDataAwsDocdbOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsDocdbOrderableDbInstanceConfig) DataAwsDocdbOrderableDbInstance {
 	_init_.Initialize()
 
@@ -438,7 +462,7 @@ func NewDataAwsDocdbOrderableDbInstance(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/docdb_orderable_db_instance aws_docdb_orderable_db_instance} Data Source.
 func NewDataAwsDocdbOrderableDbInstance_Override(d DataAwsDocdbOrderableDbInstance, scope constructs.Construct, id *string, config *DataAwsDocdbOrderableDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -557,6 +581,17 @@ func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -909,6 +944,14 @@ func (d *jsiiProxy_DataAwsDocdbOrderableDbInstance) ResetPreferredInstanceClasse
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredInstanceClasses",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDocdbOrderableDbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

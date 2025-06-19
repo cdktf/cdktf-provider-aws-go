@@ -5,14 +5,14 @@ package backupregionsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/backupregionsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/backupregionsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_region_settings aws_backup_region_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_region_settings aws_backup_region_settings}.
 type BackupRegionSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type BackupRegionSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceTypeManagementPreference() *map[string]interface{}
 	SetResourceTypeManagementPreference(val *map[string]interface{})
 	ResourceTypeManagementPreferenceInput() *map[string]interface{}
@@ -117,6 +120,7 @@ type BackupRegionSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceTypeManagementPreference()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -286,6 +290,26 @@ func (j *jsiiProxy_BackupRegionSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BackupRegionSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupRegionSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupRegionSettings) ResourceTypeManagementPreference() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_BackupRegionSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_region_settings aws_backup_region_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_region_settings aws_backup_region_settings} Resource.
 func NewBackupRegionSettings(scope constructs.Construct, id *string, config *BackupRegionSettingsConfig) BackupRegionSettings {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewBackupRegionSettings(scope constructs.Construct, id *string, config *Bac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_region_settings aws_backup_region_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_region_settings aws_backup_region_settings} Resource.
 func NewBackupRegionSettings_Override(b BackupRegionSettings, scope constructs.Construct, id *string, config *BackupRegionSettingsConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_BackupRegionSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupRegionSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -852,6 +887,14 @@ func (b *jsiiProxy_BackupRegionSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupRegionSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

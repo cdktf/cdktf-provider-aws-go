@@ -139,6 +139,10 @@ func (j *jsiiProxy_CleanroomsCollaboration) validateSetQueryLogStatusParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CleanroomsCollaboration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CleanroomsCollaboration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

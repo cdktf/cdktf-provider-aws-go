@@ -143,6 +143,10 @@ func (j *jsiiProxy_ElastictranscoderPreset) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPreset) validateSetTypeParameters(val *string) error {
 	return nil
 }

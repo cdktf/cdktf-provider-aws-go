@@ -5,14 +5,14 @@ package dataawsorganizationspolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsorganizationspolicies/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsorganizationspolicies/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_policies aws_organizations_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_policies aws_organizations_policies}.
 type DataAwsOrganizationsPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsOrganizationsPolicies) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_policies aws_organizations_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_policies aws_organizations_policies} Data Source.
 func NewDataAwsOrganizationsPolicies(scope constructs.Construct, id *string, config *DataAwsOrganizationsPoliciesConfig) DataAwsOrganizationsPolicies {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsOrganizationsPolicies(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/organizations_policies aws_organizations_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/organizations_policies aws_organizations_policies} Data Source.
 func NewDataAwsOrganizationsPolicies_Override(d DataAwsOrganizationsPolicies, scope constructs.Construct, id *string, config *DataAwsOrganizationsPoliciesConfig) {
 	_init_.Initialize()
 

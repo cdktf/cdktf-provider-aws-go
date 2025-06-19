@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecuritylakeSubscriberNotification) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeSubscriberNotification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecuritylakeSubscriberNotification) validateSetSubscriberIdParameters(val *string) error {
 	return nil
 }

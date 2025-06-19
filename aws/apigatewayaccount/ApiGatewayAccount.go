@@ -5,14 +5,14 @@ package apigatewayaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account}.
 type ApiGatewayAccount interface {
 	cdktf.TerraformResource
 	ApiKeyVersion() *string
@@ -61,9 +61,9 @@ type ApiGatewayAccount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ResetOnDelete() interface{}
-	SetResetOnDelete(val interface{})
-	ResetOnDeleteInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,7 +118,7 @@ type ApiGatewayAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetResetOnDelete()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -317,21 +317,21 @@ func (j *jsiiProxy_ApiGatewayAccount) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayAccount) ResetOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayAccount) Region() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"resetOnDelete",
+		"region",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayAccount) ResetOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiGatewayAccount) RegionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"resetOnDeleteInput",
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ApiGatewayAccount) ThrottleSettings() ApiGatewayAccountThrott
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) ApiGatewayAccount {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount_Override(a ApiGatewayAccount, scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) {
 	_init_.Initialize()
 
@@ -486,13 +486,13 @@ func (j *jsiiProxy_ApiGatewayAccount)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayAccount)SetResetOnDelete(val interface{}) {
-	if err := j.validateSetResetOnDeleteParameters(val); err != nil {
+func (j *jsiiProxy_ApiGatewayAccount)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"resetOnDelete",
+		"region",
 		val,
 	)
 }
@@ -866,10 +866,10 @@ func (a *jsiiProxy_ApiGatewayAccount) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayAccount) ResetResetOnDelete() {
+func (a *jsiiProxy_ApiGatewayAccount) ResetRegion() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetResetOnDelete",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

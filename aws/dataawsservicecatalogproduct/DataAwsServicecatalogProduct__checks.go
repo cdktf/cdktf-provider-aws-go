@@ -246,6 +246,14 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogProduct) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogProduct) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

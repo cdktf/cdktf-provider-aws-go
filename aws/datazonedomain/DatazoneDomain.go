@@ -5,14 +5,14 @@ package datazonedomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazonedomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazonedomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_domain aws_datazone_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_domain aws_datazone_domain}.
 type DatazoneDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type DatazoneDomain interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SingleSignOn() DatazoneDomainSingleSignOnList
 	SingleSignOnInput() interface{}
 	SkipDeletionCheck() interface{}
@@ -137,6 +140,7 @@ type DatazoneDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSingleSignOn()
 	ResetSkipDeletionCheck()
 	ResetTags()
@@ -399,6 +403,26 @@ func (j *jsiiProxy_DatazoneDomain) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneDomain) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneDomain) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneDomain) SingleSignOn() DatazoneDomainSingleSignOnList {
 	var returns DatazoneDomainSingleSignOnList
 	_jsii_.Get(
@@ -520,7 +544,7 @@ func (j *jsiiProxy_DatazoneDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneDomainConfig) DatazoneDomain {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain_Override(d DatazoneDomain, scope constructs.Construct, id *string, config *DatazoneDomainConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_DatazoneDomain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneDomain)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1078,6 +1113,14 @@ func (d *jsiiProxy_DatazoneDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneDomain) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsSsoadminPrincipalApplicationAssignments) validateSetPr
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsoadminPrincipalApplicationAssignments) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsoadminPrincipalApplicationAssignmentsParameters(scope constructs.Construct, id *string, config *DataAwsSsoadminPrincipalApplicationAssignmentsConfig) error {
 	return nil
 }

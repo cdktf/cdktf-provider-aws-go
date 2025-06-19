@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecurityhubInviteAccepterParameters(scope constructs.Construct, id *string, config *SecurityhubInviteAccepterConfig) error {
 	return nil
 }

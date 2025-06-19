@@ -5,14 +5,14 @@ package route
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/route/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/route/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route aws_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route aws_route}.
 type Route interface {
 	cdktf.TerraformResource
 	CarrierGatewayId() *string
@@ -91,6 +91,9 @@ type Route interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteTableId() *string
 	SetRouteTableId(val *string)
 	RouteTableIdInput() *string
@@ -170,6 +173,7 @@ type Route interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetTransitGatewayId()
 	ResetVpcEndpointId()
@@ -572,6 +576,26 @@ func (j *jsiiProxy_Route) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Route) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route) RouteTableId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -713,7 +737,7 @@ func (j *jsiiProxy_Route) VpcPeeringConnectionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route aws_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route aws_route} Resource.
 func NewRoute(scope constructs.Construct, id *string, config *RouteConfig) Route {
 	_init_.Initialize()
 
@@ -731,7 +755,7 @@ func NewRoute(scope constructs.Construct, id *string, config *RouteConfig) Route
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route aws_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route aws_route} Resource.
 func NewRoute_Override(r Route, scope constructs.Construct, id *string, config *RouteConfig) {
 	_init_.Initialize()
 
@@ -927,6 +951,17 @@ func (j *jsiiProxy_Route)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1431,6 +1466,14 @@ func (r *jsiiProxy_Route) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

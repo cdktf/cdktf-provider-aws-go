@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsRdsCertificate) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRdsCertificateParameters(scope constructs.Construct, id *string, config *DataAwsRdsCertificateConfig) error {
 	return nil
 }

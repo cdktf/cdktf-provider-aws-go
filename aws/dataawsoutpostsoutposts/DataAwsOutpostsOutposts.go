@@ -5,14 +5,14 @@ package dataawsoutpostsoutposts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsoutpostsoutposts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsoutpostsoutposts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outposts aws_outposts_outposts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outposts aws_outposts_outposts}.
 type DataAwsOutpostsOutposts interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -61,6 +61,9 @@ type DataAwsOutpostsOutposts interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SiteId() *string
 	SetSiteId(val *string)
 	SiteIdInput() *string
@@ -102,6 +105,7 @@ type DataAwsOutpostsOutposts interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerId()
+	ResetRegion()
 	ResetSiteId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -332,6 +336,26 @@ func (j *jsiiProxy_DataAwsOutpostsOutposts) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutposts) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutposts) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutposts) SiteId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -383,7 +407,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutposts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outposts aws_outposts_outposts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outposts aws_outposts_outposts} Data Source.
 func NewDataAwsOutpostsOutposts(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostsConfig) DataAwsOutpostsOutposts {
 	_init_.Initialize()
 
@@ -401,7 +425,7 @@ func NewDataAwsOutpostsOutposts(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outposts aws_outposts_outposts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outposts aws_outposts_outposts} Data Source.
 func NewDataAwsOutpostsOutposts_Override(d DataAwsOutpostsOutposts, scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostsConfig) {
 	_init_.Initialize()
 
@@ -498,6 +522,17 @@ func (j *jsiiProxy_DataAwsOutpostsOutposts)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutposts)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -834,6 +869,14 @@ func (d *jsiiProxy_DataAwsOutpostsOutposts) ResetOwnerId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwnerId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsOutpostsOutposts) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

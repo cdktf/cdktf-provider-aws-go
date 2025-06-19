@@ -123,6 +123,10 @@ func (j *jsiiProxy_IotPolicy) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_IotPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotPolicy) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDxGatewayAssociationProposalParameters(scope constructs.Construct, id *string, config *DxGatewayAssociationProposalConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package quicksighttheme
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksighttheme/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksighttheme/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme aws_quicksight_theme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme aws_quicksight_theme}.
 type QuicksightTheme interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type QuicksightTheme interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -149,6 +152,7 @@ type QuicksightTheme interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissions()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -451,6 +455,26 @@ func (j *jsiiProxy_QuicksightTheme) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightTheme) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightTheme) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightTheme) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -602,7 +626,7 @@ func (j *jsiiProxy_QuicksightTheme) VersionNumber() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
 func NewQuicksightTheme(scope constructs.Construct, id *string, config *QuicksightThemeConfig) QuicksightTheme {
 	_init_.Initialize()
 
@@ -620,7 +644,7 @@ func NewQuicksightTheme(scope constructs.Construct, id *string, config *Quicksig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
 func NewQuicksightTheme_Override(q QuicksightTheme, scope constructs.Construct, id *string, config *QuicksightThemeConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (j *jsiiProxy_QuicksightTheme)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightTheme)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1209,6 +1244,14 @@ func (q *jsiiProxy_QuicksightTheme) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightTheme) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

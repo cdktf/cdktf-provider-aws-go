@@ -127,6 +127,10 @@ func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_DatapipelinePipelineDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatapipelinePipelineDefinitionParameters(scope constructs.Construct, id *string, config *DatapipelinePipelineDefinitionConfig) error {
 	return nil
 }

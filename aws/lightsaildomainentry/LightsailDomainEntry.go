@@ -5,14 +5,14 @@ package lightsaildomainentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildomainentry/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildomainentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}.
 type LightsailDomainEntry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type LightsailDomainEntry interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -127,6 +130,7 @@ type LightsailDomainEntry interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -355,6 +359,26 @@ func (j *jsiiProxy_LightsailDomainEntry) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailDomainEntry) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailDomainEntry) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailDomainEntry) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_LightsailDomainEntry) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
 func NewLightsailDomainEntry(scope constructs.Construct, id *string, config *LightsailDomainEntryConfig) LightsailDomainEntry {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewLightsailDomainEntry(scope constructs.Construct, id *string, config *Lig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
 func NewLightsailDomainEntry_Override(l LightsailDomainEntry, scope constructs.Construct, id *string, config *LightsailDomainEntryConfig) {
 	_init_.Initialize()
 
@@ -563,6 +587,17 @@ func (j *jsiiProxy_LightsailDomainEntry)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailDomainEntry)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -962,6 +997,14 @@ func (l *jsiiProxy_LightsailDomainEntry) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailDomainEntry) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

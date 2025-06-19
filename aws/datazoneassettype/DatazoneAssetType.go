@@ -5,14 +5,14 @@ package datazoneassettype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazoneassettype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneassettype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type aws_datazone_asset_type}.
 type DatazoneAssetType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type DatazoneAssetType interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Revision() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -130,6 +133,7 @@ type DatazoneAssetType interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_DatazoneAssetType) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneAssetType) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneAssetType) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneAssetType) Revision() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_DatazoneAssetType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
 func NewDatazoneAssetType(scope constructs.Construct, id *string, config *DatazoneAssetTypeConfig) DatazoneAssetType {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewDatazoneAssetType(scope constructs.Construct, id *string, config *Datazo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_asset_type aws_datazone_asset_type} Resource.
 func NewDatazoneAssetType_Override(d DatazoneAssetType, scope constructs.Construct, id *string, config *DatazoneAssetTypeConfig) {
 	_init_.Initialize()
 
@@ -597,6 +621,17 @@ func (j *jsiiProxy_DatazoneAssetType)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneAssetType)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -996,6 +1031,14 @@ func (d *jsiiProxy_DatazoneAssetType) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneAssetType) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

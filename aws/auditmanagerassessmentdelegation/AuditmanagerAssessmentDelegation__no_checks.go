@@ -119,6 +119,10 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

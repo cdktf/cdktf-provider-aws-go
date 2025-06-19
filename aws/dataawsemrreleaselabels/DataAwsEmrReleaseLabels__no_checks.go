@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEmrReleaseLabelsParameters(scope constructs.Construct, id *string, config *DataAwsEmrReleaseLabelsConfig) error {
 	return nil
 }

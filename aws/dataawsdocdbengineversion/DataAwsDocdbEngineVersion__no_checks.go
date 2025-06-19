@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) validateSetPreferredVersionsParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDocdbEngineVersion) validateSetVersionParameters(val *string) error {
 	return nil
 }

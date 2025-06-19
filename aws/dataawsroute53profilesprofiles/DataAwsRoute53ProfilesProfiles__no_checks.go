@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsRoute53ProfilesProfiles) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ProfilesProfiles) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRoute53ProfilesProfilesParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ProfilesProfilesConfig) error {
 	return nil
 }

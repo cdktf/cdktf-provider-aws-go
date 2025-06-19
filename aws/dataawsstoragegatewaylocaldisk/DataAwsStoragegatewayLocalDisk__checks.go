@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsStoragegatewayLocalDiskParameters(scope constructs.Construct, id *string, config *DataAwsStoragegatewayLocalDiskConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

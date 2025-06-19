@@ -5,14 +5,14 @@ package quicksightdataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightdataset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightdataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_set aws_quicksight_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_set aws_quicksight_data_set}.
 type QuicksightDataSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -88,6 +88,9 @@ type QuicksightDataSet interface {
 	RawOverrides() interface{}
 	RefreshProperties() QuicksightDataSetRefreshPropertiesOutputReference
 	RefreshPropertiesInput() *QuicksightDataSetRefreshProperties
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RowLevelPermissionDataSet() QuicksightDataSetRowLevelPermissionDataSetOutputReference
 	RowLevelPermissionDataSetInput() *QuicksightDataSetRowLevelPermissionDataSet
 	RowLevelPermissionTagConfiguration() QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference
@@ -170,6 +173,7 @@ type QuicksightDataSet interface {
 	ResetPermissions()
 	ResetPhysicalTableMap()
 	ResetRefreshProperties()
+	ResetRegion()
 	ResetRowLevelPermissionDataSet()
 	ResetRowLevelPermissionTagConfiguration()
 	ResetTags()
@@ -602,6 +606,26 @@ func (j *jsiiProxy_QuicksightDataSet) RefreshPropertiesInput() *QuicksightDataSe
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDataSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDataSet) RowLevelPermissionDataSet() QuicksightDataSetRowLevelPermissionDataSetOutputReference {
 	var returns QuicksightDataSetRowLevelPermissionDataSetOutputReference
 	_jsii_.Get(
@@ -713,7 +737,7 @@ func (j *jsiiProxy_QuicksightDataSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
 func NewQuicksightDataSet(scope constructs.Construct, id *string, config *QuicksightDataSetConfig) QuicksightDataSet {
 	_init_.Initialize()
 
@@ -731,7 +755,7 @@ func NewQuicksightDataSet(scope constructs.Construct, id *string, config *Quicks
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
 func NewQuicksightDataSet_Override(q QuicksightDataSet, scope constructs.Construct, id *string, config *QuicksightDataSetConfig) {
 	_init_.Initialize()
 
@@ -861,6 +885,17 @@ func (j *jsiiProxy_QuicksightDataSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightDataSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1434,6 +1469,14 @@ func (q *jsiiProxy_QuicksightDataSet) ResetRefreshProperties() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetRefreshProperties",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

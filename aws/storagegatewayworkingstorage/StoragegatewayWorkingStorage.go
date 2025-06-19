@@ -5,14 +5,14 @@ package storagegatewayworkingstorage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/storagegatewayworkingstorage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/storagegatewayworkingstorage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage}.
 type StoragegatewayWorkingStorage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type StoragegatewayWorkingStorage interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type StoragegatewayWorkingStorage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,6 +329,26 @@ func (j *jsiiProxy_StoragegatewayWorkingStorage) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StoragegatewayWorkingStorage) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewayWorkingStorage) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StoragegatewayWorkingStorage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_StoragegatewayWorkingStorage) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage} Resource.
 func NewStoragegatewayWorkingStorage(scope constructs.Construct, id *string, config *StoragegatewayWorkingStorageConfig) StoragegatewayWorkingStorage {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewStoragegatewayWorkingStorage(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_working_storage aws_storagegateway_working_storage} Resource.
 func NewStoragegatewayWorkingStorage_Override(s StoragegatewayWorkingStorage, scope constructs.Construct, id *string, config *StoragegatewayWorkingStorageConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_StoragegatewayWorkingStorage)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewayWorkingStorage)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (s *jsiiProxy_StoragegatewayWorkingStorage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewayWorkingStorage) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

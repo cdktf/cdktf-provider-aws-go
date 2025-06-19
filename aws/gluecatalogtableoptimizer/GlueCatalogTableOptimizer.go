@@ -5,14 +5,14 @@ package gluecatalogtableoptimizer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluecatalogtableoptimizer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluecatalogtableoptimizer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer}.
 type GlueCatalogTableOptimizer interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -63,6 +63,9 @@ type GlueCatalogTableOptimizer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -123,6 +126,7 @@ type GlueCatalogTableOptimizer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -331,6 +335,26 @@ func (j *jsiiProxy_GlueCatalogTableOptimizer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlueCatalogTableOptimizer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCatalogTableOptimizer) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_GlueCatalogTableOptimizer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource.
 func NewGlueCatalogTableOptimizer(scope constructs.Construct, id *string, config *GlueCatalogTableOptimizerConfig) GlueCatalogTableOptimizer {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewGlueCatalogTableOptimizer(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_catalog_table_optimizer aws_glue_catalog_table_optimizer} Resource.
 func NewGlueCatalogTableOptimizer_Override(g GlueCatalogTableOptimizer, scope constructs.Construct, id *string, config *GlueCatalogTableOptimizerConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_GlueCatalogTableOptimizer)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -919,6 +954,14 @@ func (g *jsiiProxy_GlueCatalogTableOptimizer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

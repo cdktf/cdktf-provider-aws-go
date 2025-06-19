@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayConnect) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayConnect) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayConnect) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

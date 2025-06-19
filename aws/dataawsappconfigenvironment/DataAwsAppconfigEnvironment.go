@@ -5,14 +5,14 @@ package dataawsappconfigenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsappconfigenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappconfigenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appconfig_environment aws_appconfig_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appconfig_environment aws_appconfig_environment}.
 type DataAwsAppconfigEnvironment interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -60,6 +60,9 @@ type DataAwsAppconfigEnvironment interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -99,6 +102,7 @@ type DataAwsAppconfigEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppconfigEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppconfigEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppconfigEnvironment) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,7 +414,7 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) DataAwsAppconfigEnvironment {
 	_init_.Initialize()
 
@@ -408,7 +432,7 @@ func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment_Override(d DataAwsAppconfigEnvironment, scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAppconfigEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -806,6 +841,14 @@ func (d *jsiiProxy_DataAwsAppconfigEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAppconfigEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsGuarddutyFindingIds) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGuarddutyFindingIds) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsGuarddutyFindingIdsParameters(scope constructs.Construct, id *string, config *DataAwsGuarddutyFindingIdsConfig) error {
 	return nil
 }

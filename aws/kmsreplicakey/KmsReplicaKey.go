@@ -5,14 +5,14 @@ package kmsreplicakey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/kmsreplicakey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/kmsreplicakey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_replica_key aws_kms_replica_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_replica_key aws_kms_replica_key}.
 type KmsReplicaKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -81,6 +81,9 @@ type KmsReplicaKey interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -145,6 +148,7 @@ type KmsReplicaKey interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -485,6 +489,26 @@ func (j *jsiiProxy_KmsReplicaKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmsReplicaKey) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsReplicaKey) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsReplicaKey) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -556,7 +580,7 @@ func (j *jsiiProxy_KmsReplicaKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
 func NewKmsReplicaKey(scope constructs.Construct, id *string, config *KmsReplicaKeyConfig) KmsReplicaKey {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewKmsReplicaKey(scope constructs.Construct, id *string, config *KmsReplica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_replica_key aws_kms_replica_key} Resource.
 func NewKmsReplicaKey_Override(k KmsReplicaKey, scope constructs.Construct, id *string, config *KmsReplicaKeyConfig) {
 	_init_.Initialize()
 
@@ -726,6 +750,17 @@ func (j *jsiiProxy_KmsReplicaKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsReplicaKey)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1157,6 +1192,14 @@ func (k *jsiiProxy_KmsReplicaKey) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsReplicaKey) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

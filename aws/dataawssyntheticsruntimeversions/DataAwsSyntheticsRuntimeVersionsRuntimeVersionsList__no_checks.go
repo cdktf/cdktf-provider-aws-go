@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

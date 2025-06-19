@@ -465,6 +465,14 @@ func (j *jsiiProxy_Route53ResolverEndpoint) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) validateSetResolverEndpointTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

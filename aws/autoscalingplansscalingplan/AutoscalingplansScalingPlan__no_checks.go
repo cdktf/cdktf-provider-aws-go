@@ -123,6 +123,10 @@ func (j *jsiiProxy_AutoscalingplansScalingPlan) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingplansScalingPlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAutoscalingplansScalingPlanParameters(scope constructs.Construct, id *string, config *AutoscalingplansScalingPlanConfig) error {
 	return nil
 }

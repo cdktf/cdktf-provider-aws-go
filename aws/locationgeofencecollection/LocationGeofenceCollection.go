@@ -5,14 +5,14 @@ package locationgeofencecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/locationgeofencecollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/locationgeofencecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_geofence_collection aws_location_geofence_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_geofence_collection aws_location_geofence_collection}.
 type LocationGeofenceCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type LocationGeofenceCollection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -134,6 +137,7 @@ type LocationGeofenceCollection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -385,6 +389,26 @@ func (j *jsiiProxy_LocationGeofenceCollection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LocationGeofenceCollection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocationGeofenceCollection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LocationGeofenceCollection) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -486,7 +510,7 @@ func (j *jsiiProxy_LocationGeofenceCollection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection(scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) LocationGeofenceCollection {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewLocationGeofenceCollection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection_Override(l LocationGeofenceCollection, scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_LocationGeofenceCollection)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LocationGeofenceCollection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1041,6 +1076,14 @@ func (l *jsiiProxy_LocationGeofenceCollection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LocationGeofenceCollection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

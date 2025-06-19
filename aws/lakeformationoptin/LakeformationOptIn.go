@@ -5,14 +5,14 @@ package lakeformationoptin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationoptin/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationoptin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in}.
 type LakeformationOptIn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type LakeformationOptIn interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceData() LakeformationOptInResourceDataList
 	ResourceDataInput() interface{}
 	// Experimental.
@@ -120,6 +123,7 @@ type LakeformationOptIn interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrincipal()
+	ResetRegion()
 	ResetResourceData()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_LakeformationOptIn) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationOptIn) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationOptIn) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LakeformationOptIn) ResourceData() LakeformationOptInResourceDataList {
 	var returns LakeformationOptInResourceDataList
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_LakeformationOptIn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource.
 func NewLakeformationOptIn(scope constructs.Construct, id *string, config *LakeformationOptInConfig) LakeformationOptIn {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewLakeformationOptIn(scope constructs.Construct, id *string, config *Lakef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in aws_lakeformation_opt_in} Resource.
 func NewLakeformationOptIn_Override(l LakeformationOptIn, scope constructs.Construct, id *string, config *LakeformationOptInConfig) {
 	_init_.Initialize()
 
@@ -473,6 +497,17 @@ func (j *jsiiProxy_LakeformationOptIn)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationOptIn)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -883,6 +918,14 @@ func (l *jsiiProxy_LakeformationOptIn) ResetPrincipal() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPrincipal",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationOptIn) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -494,6 +494,14 @@ func (j *jsiiProxy_CognitoIdentityPool) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPool) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPool) validateSetSamlProviderArnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

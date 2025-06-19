@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsElasticacheReservedCacheNodeOffering) validateSetProdu
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheReservedCacheNodeOffering) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsElasticacheReservedCacheNodeOfferingParameters(scope constructs.Construct, id *string, config *DataAwsElasticacheReservedCacheNodeOfferingConfig) error {
 	return nil
 }

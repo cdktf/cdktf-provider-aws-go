@@ -5,14 +5,14 @@ package dataawsvpclatticeauthpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpclatticeauthpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeauthpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
 type DataAwsVpclatticeAuthPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsVpclatticeAuthPolicy interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceIdentifier() *string
 	SetResourceIdentifier(val *string)
 	ResourceIdentifierInput() *string
@@ -95,6 +98,7 @@ type DataAwsVpclatticeAuthPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRegion()
 	ResetState()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -265,6 +269,26 @@ func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) ResourceIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -336,7 +360,7 @@ func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy} Data Source.
 func NewDataAwsVpclatticeAuthPolicy(scope constructs.Construct, id *string, config *DataAwsVpclatticeAuthPolicyConfig) DataAwsVpclatticeAuthPolicy {
 	_init_.Initialize()
 
@@ -354,7 +378,7 @@ func NewDataAwsVpclatticeAuthPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy} Data Source.
 func NewDataAwsVpclatticeAuthPolicy_Override(d DataAwsVpclatticeAuthPolicy, scope constructs.Construct, id *string, config *DataAwsVpclatticeAuthPolicyConfig) {
 	_init_.Initialize()
 
@@ -429,6 +453,17 @@ func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -760,6 +795,14 @@ func (d *jsiiProxy_DataAwsVpclatticeAuthPolicy) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpclatticeAuthPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

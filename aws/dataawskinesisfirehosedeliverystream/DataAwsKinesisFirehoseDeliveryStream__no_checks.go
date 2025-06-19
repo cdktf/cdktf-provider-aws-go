@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKinesisFirehoseDeliveryStreamParameters(scope constructs.Construct, id *string, config *DataAwsKinesisFirehoseDeliveryStreamConfig) error {
 	return nil
 }

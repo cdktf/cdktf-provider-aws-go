@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEcrRepository) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrRepository) validateSetRegistryIdParameters(val *string) error {
 	return nil
 }

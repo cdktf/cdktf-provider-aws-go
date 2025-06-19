@@ -453,6 +453,14 @@ func (j *jsiiProxy_DevopsguruNotificationChannel) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevopsguruNotificationChannel) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDevopsguruNotificationChannelParameters(scope constructs.Construct, id *string, config *DevopsguruNotificationChannelConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

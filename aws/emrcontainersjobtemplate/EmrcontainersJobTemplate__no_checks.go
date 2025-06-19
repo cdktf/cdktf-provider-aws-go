@@ -127,6 +127,10 @@ func (j *jsiiProxy_EmrcontainersJobTemplate) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EmrcontainersJobTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrcontainersJobTemplate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

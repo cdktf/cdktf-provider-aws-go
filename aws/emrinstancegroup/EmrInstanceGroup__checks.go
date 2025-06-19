@@ -506,6 +506,14 @@ func (j *jsiiProxy_EmrInstanceGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_EmrInstanceGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEmrInstanceGroupParameters(scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

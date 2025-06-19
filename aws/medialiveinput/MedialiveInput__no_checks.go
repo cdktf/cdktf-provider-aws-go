@@ -143,6 +143,10 @@ func (j *jsiiProxy_MedialiveInput) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveInput) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveInput) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

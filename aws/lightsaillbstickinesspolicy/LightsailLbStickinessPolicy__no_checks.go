@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailLbStickinessPolicyParameters(scope constructs.Construct, id *string, config *LightsailLbStickinessPolicyConfig) error {
 	return nil
 }

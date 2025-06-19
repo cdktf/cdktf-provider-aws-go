@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsRouteTable) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRouteTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRouteTable) validateSetRouteTableIdParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetSecondsToLiveParameters(val *float64) error {
 	return nil
 }

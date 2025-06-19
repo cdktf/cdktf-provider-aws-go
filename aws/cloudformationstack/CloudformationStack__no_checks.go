@@ -151,6 +151,10 @@ func (j *jsiiProxy_CloudformationStack) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStack) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStack) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_KmsGrant) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_KmsGrant) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsGrant) validateSetRetireOnDeleteParameters(val interface{}) error {
 	return nil
 }

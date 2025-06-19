@@ -131,6 +131,10 @@ func (j *jsiiProxy_SagemakerFlowDefinition) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFlowDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFlowDefinition) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

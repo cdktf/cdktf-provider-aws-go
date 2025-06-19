@@ -131,6 +131,10 @@ func (j *jsiiProxy_NeptuneGlobalCluster) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneGlobalCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneGlobalCluster) validateSetSourceDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsElb) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElb) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElb) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

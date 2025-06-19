@@ -127,6 +127,10 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecurityhubOrganizationConfigurationParameters(scope constructs.Construct, id *string, config *SecurityhubOrganizationConfigurationConfig) error {
 	return nil
 }

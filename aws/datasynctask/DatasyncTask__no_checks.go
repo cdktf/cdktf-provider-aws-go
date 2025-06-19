@@ -147,6 +147,10 @@ func (j *jsiiProxy_DatasyncTask) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTask) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTask) validateSetSourceLocationArnParameters(val *string) error {
 	return nil
 }

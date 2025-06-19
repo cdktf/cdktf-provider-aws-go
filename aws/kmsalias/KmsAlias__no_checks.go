@@ -119,6 +119,10 @@ func (j *jsiiProxy_KmsAlias) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_KmsAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsAlias) validateSetTargetKeyIdParameters(val *string) error {
 	return nil
 }

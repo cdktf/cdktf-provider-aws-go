@@ -47,11 +47,11 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) validatePutCloudwatchConfigParameters(value *BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) validatePutCloudwatchConfigParameters(value interface{}) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) validatePutS3ConfigParameters(value *BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference) validatePutS3ConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigOutput
 	return nil
 }
 
-func validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

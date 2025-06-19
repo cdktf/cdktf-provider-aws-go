@@ -5,14 +5,14 @@ package qldbstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/qldbstream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/qldbstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_stream aws_qldb_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_stream aws_qldb_stream}.
 type QldbStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type QldbStream interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -140,6 +143,7 @@ type QldbStream interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_QldbStream) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QldbStream) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QldbStream) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QldbStream) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +556,7 @@ func (j *jsiiProxy_QldbStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamConfig) QldbStream {
 	_init_.Initialize()
 
@@ -550,7 +574,7 @@ func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream_Override(q QldbStream, scope constructs.Construct, id *string, config *QldbStreamConfig) {
 	_init_.Initialize()
 
@@ -669,6 +693,17 @@ func (j *jsiiProxy_QldbStream)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QldbStream)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1112,6 +1147,14 @@ func (q *jsiiProxy_QldbStream) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QldbStream) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

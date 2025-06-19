@@ -5,14 +5,14 @@ package dataawsconnectsecurityprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectsecurityprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectsecurityprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_security_profile aws_connect_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_security_profile aws_connect_security_profile}.
 type DataAwsConnectSecurityProfile interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -60,6 +60,9 @@ type DataAwsConnectSecurityProfile interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityProfileId() *string
 	SetSecurityProfileId(val *string)
 	SecurityProfileIdInput() *string
@@ -102,6 +105,7 @@ type DataAwsConnectSecurityProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSecurityProfileId()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -333,6 +337,26 @@ func (j *jsiiProxy_DataAwsConnectSecurityProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectSecurityProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectSecurityProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectSecurityProfile) SecurityProfileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_DataAwsConnectSecurityProfile) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
 func NewDataAwsConnectSecurityProfile(scope constructs.Construct, id *string, config *DataAwsConnectSecurityProfileConfig) DataAwsConnectSecurityProfile {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewDataAwsConnectSecurityProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
 func NewDataAwsConnectSecurityProfile_Override(d DataAwsConnectSecurityProfile, scope constructs.Construct, id *string, config *DataAwsConnectSecurityProfileConfig) {
 	_init_.Initialize()
 
@@ -508,6 +532,17 @@ func (j *jsiiProxy_DataAwsConnectSecurityProfile)SetProvider(val cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectSecurityProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -839,6 +874,14 @@ func (d *jsiiProxy_DataAwsConnectSecurityProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectSecurityProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

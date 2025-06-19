@@ -147,6 +147,10 @@ func (j *jsiiProxy_EmrserverlessApplication) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) validateSetReleaseLabelParameters(val *string) error {
 	return nil
 }

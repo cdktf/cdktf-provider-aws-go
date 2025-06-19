@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

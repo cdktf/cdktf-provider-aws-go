@@ -454,6 +454,14 @@ func (j *jsiiProxy_NeptuneEventSubscription) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneEventSubscription) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneEventSubscription) validateSetSnsTopicArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

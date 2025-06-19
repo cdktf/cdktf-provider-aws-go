@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsLicensemanagerReceivedLicenseParameters(scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicenseConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

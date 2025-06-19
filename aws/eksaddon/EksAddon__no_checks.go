@@ -139,7 +139,7 @@ func (j *jsiiProxy_EksAddon) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
-func (j *jsiiProxy_EksAddon) validateSetResolveConflictsParameters(val *string) error {
+func (j *jsiiProxy_EksAddon) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

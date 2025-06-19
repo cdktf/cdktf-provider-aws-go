@@ -155,6 +155,10 @@ func (j *jsiiProxy_Ec2Fleet) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_Ec2Fleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Fleet) validateSetReplaceUnhealthyInstancesParameters(val interface{}) error {
 	return nil
 }

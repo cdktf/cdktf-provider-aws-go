@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsAutoscalingGroupParameters(scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) error {
 	return nil
 }

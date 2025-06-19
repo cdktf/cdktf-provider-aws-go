@@ -123,6 +123,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetStreamingNotificationTargetsParameters(val *[]*string) error {
 	return nil
 }

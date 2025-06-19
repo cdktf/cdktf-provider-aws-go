@@ -127,6 +127,10 @@ func (j *jsiiProxy_RdsExportTask) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_RdsExportTask) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsExportTask) validateSetS3BucketNameParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package ec2transitgatewayconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgatewayconnect/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgatewayconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect}.
 type Ec2TransitGatewayConnect interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type Ec2TransitGatewayConnect interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -136,6 +139,7 @@ type Ec2TransitGatewayConnect interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtocol()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_Ec2TransitGatewayConnect) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayConnect) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayConnect) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayConnect) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -500,7 +524,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnect) TransportAttachmentIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Resource.
 func NewEc2TransitGatewayConnect(scope constructs.Construct, id *string, config *Ec2TransitGatewayConnectConfig) Ec2TransitGatewayConnect {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewEc2TransitGatewayConnect(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_connect aws_ec2_transit_gateway_connect} Resource.
 func NewEc2TransitGatewayConnect_Override(e Ec2TransitGatewayConnect, scope constructs.Construct, id *string, config *Ec2TransitGatewayConnectConfig) {
 	_init_.Initialize()
 
@@ -615,6 +639,17 @@ func (j *jsiiProxy_Ec2TransitGatewayConnect)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayConnect)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (e *jsiiProxy_Ec2TransitGatewayConnect) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayConnect) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsoadminApplicationAssignment) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminApplicationAssignment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsoadminApplicationAssignmentParameters(scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsservicecataloglaunchpaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicecataloglaunchpaths/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
 type DataAwsServicecatalogLaunchPaths interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -56,6 +56,9 @@ type DataAwsServicecatalogLaunchPaths interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Summaries() DataAwsServicecatalogLaunchPathsSummariesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -96,6 +99,7 @@ type DataAwsServicecatalogLaunchPaths interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -286,6 +290,26 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) Summaries() DataAwsServicecatalogLaunchPathsSummariesList {
 	var returns DataAwsServicecatalogLaunchPathsSummariesList
 	_jsii_.Get(
@@ -347,7 +371,7 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
 func NewDataAwsServicecatalogLaunchPaths(scope constructs.Construct, id *string, config *DataAwsServicecatalogLaunchPathsConfig) DataAwsServicecatalogLaunchPaths {
 	_init_.Initialize()
 
@@ -365,7 +389,7 @@ func NewDataAwsServicecatalogLaunchPaths(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
 func NewDataAwsServicecatalogLaunchPaths_Override(d DataAwsServicecatalogLaunchPaths, scope constructs.Construct, id *string, config *DataAwsServicecatalogLaunchPathsConfig) {
 	_init_.Initialize()
 
@@ -451,6 +475,17 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -771,6 +806,14 @@ func (d *jsiiProxy_DataAwsServicecatalogLaunchPaths) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServicecatalogLaunchPaths) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

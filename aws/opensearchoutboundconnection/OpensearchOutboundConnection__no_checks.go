@@ -139,6 +139,10 @@ func (j *jsiiProxy_OpensearchOutboundConnection) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchOutboundConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchOutboundConnectionParameters(scope constructs.Construct, id *string, config *OpensearchOutboundConnectionConfig) error {
 	return nil
 }

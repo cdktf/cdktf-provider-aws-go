@@ -5,14 +5,14 @@ package redshiftclusteriamroles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftclusteriamroles/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftclusteriamroles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles}.
 type RedshiftClusterIamRoles interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type RedshiftClusterIamRoles interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +128,7 @@ type RedshiftClusterIamRoles interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -354,6 +358,26 @@ func (j *jsiiProxy_RedshiftClusterIamRoles) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftClusterIamRoles) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftClusterIamRoles) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftClusterIamRoles) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -405,7 +429,7 @@ func (j *jsiiProxy_RedshiftClusterIamRoles) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles} Resource.
 func NewRedshiftClusterIamRoles(scope constructs.Construct, id *string, config *RedshiftClusterIamRolesConfig) RedshiftClusterIamRoles {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewRedshiftClusterIamRoles(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_cluster_iam_roles aws_redshift_cluster_iam_roles} Resource.
 func NewRedshiftClusterIamRoles_Override(r RedshiftClusterIamRoles, scope constructs.Construct, id *string, config *RedshiftClusterIamRolesConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_RedshiftClusterIamRoles)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftClusterIamRoles)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (r *jsiiProxy_RedshiftClusterIamRoles) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftClusterIamRoles) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

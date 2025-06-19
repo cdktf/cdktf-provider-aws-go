@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafv2WebAcl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafv2WebAcl) validateSetScopeParameters(val *string) error {
 	return nil
 }

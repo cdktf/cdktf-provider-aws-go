@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcrReplicationConfiguration) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_EcrReplicationConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEcrReplicationConfigurationParameters(scope constructs.Construct, id *string, config *EcrReplicationConfigurationConfig) error {
 	return nil
 }

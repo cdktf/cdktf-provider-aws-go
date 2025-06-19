@@ -5,14 +5,14 @@ package dynamodbcontributorinsights
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dynamodbcontributorinsights/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbcontributorinsights/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
 type DynamodbContributorInsights interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type DynamodbContributorInsights interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -121,6 +124,7 @@ type DynamodbContributorInsights interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -310,6 +314,26 @@ func (j *jsiiProxy_DynamodbContributorInsights) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbContributorInsights) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,7 +405,7 @@ func (j *jsiiProxy_DynamodbContributorInsights) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights(scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) DynamodbContributorInsights {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewDynamodbContributorInsights(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights_Override(d DynamodbContributorInsights, scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_DynamodbContributorInsights)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbContributorInsights)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -895,6 +930,14 @@ func (d *jsiiProxy_DynamodbContributorInsights) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbContributorInsights) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

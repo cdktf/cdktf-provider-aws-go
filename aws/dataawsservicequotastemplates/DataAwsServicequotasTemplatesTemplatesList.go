@@ -5,9 +5,9 @@ package dataawsservicequotastemplates
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicequotastemplates/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicequotastemplates/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -20,8 +20,6 @@ type DataAwsServicequotasTemplatesTemplatesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -69,16 +67,6 @@ func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
 		&returns,
 	)
 	return returns
@@ -139,17 +127,6 @@ func NewDataAwsServicequotasTemplatesTemplatesList_Override(d DataAwsServicequot
 		"@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesTemplatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
 	)
 }
 

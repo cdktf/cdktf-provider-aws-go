@@ -5,14 +5,14 @@ package appsyncdatasource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncdatasource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncdatasource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_datasource aws_appsync_datasource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_datasource aws_appsync_datasource}.
 type AppsyncDatasource interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -80,6 +80,9 @@ type AppsyncDatasource interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RelationalDatabaseConfig() AppsyncDatasourceRelationalDatabaseConfigOutputReference
 	RelationalDatabaseConfigInput() *AppsyncDatasourceRelationalDatabaseConfig
 	ServiceRoleArn() *string
@@ -155,6 +158,7 @@ type AppsyncDatasource interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRelationalDatabaseConfig()
 	ResetServiceRoleArn()
 	SynthesizeAttributes() *map[string]interface{}
@@ -515,6 +519,26 @@ func (j *jsiiProxy_AppsyncDatasource) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncDatasource) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncDatasource) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncDatasource) RelationalDatabaseConfig() AppsyncDatasourceRelationalDatabaseConfigOutputReference {
 	var returns AppsyncDatasourceRelationalDatabaseConfigOutputReference
 	_jsii_.Get(
@@ -606,7 +630,7 @@ func (j *jsiiProxy_AppsyncDatasource) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
 func NewAppsyncDatasource(scope constructs.Construct, id *string, config *AppsyncDatasourceConfig) AppsyncDatasource {
 	_init_.Initialize()
 
@@ -624,7 +648,7 @@ func NewAppsyncDatasource(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
 func NewAppsyncDatasource_Override(a AppsyncDatasource, scope constructs.Construct, id *string, config *AppsyncDatasourceConfig) {
 	_init_.Initialize()
 
@@ -743,6 +767,17 @@ func (j *jsiiProxy_AppsyncDatasource)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncDatasource)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1267,6 +1302,14 @@ func (a *jsiiProxy_AppsyncDatasource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncDatasource) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

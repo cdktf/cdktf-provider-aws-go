@@ -5,14 +5,14 @@ package verifiedpermissionsschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/verifiedpermissionsschema/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/verifiedpermissionsschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
 type VerifiedpermissionsSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,7 +27,7 @@ type VerifiedpermissionsSchema interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Definition() VerifiedpermissionsSchemaDefinitionOutputReference
+	Definition() VerifiedpermissionsSchemaDefinitionList
 	DefinitionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,6 +62,9 @@ type VerifiedpermissionsSchema interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,10 +114,12 @@ type VerifiedpermissionsSchema interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDefinition(value *VerifiedpermissionsSchemaDefinition)
+	PutDefinition(value interface{})
+	ResetDefinition()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -173,8 +178,8 @@ func (j *jsiiProxy_VerifiedpermissionsSchema) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VerifiedpermissionsSchema) Definition() VerifiedpermissionsSchemaDefinitionOutputReference {
-	var returns VerifiedpermissionsSchemaDefinitionOutputReference
+func (j *jsiiProxy_VerifiedpermissionsSchema) Definition() VerifiedpermissionsSchemaDefinitionList {
+	var returns VerifiedpermissionsSchemaDefinitionList
 	_jsii_.Get(
 		j,
 		"definition",
@@ -323,6 +328,26 @@ func (j *jsiiProxy_VerifiedpermissionsSchema) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedpermissionsSchema) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedpermissionsSchema) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedpermissionsSchema) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -354,7 +379,7 @@ func (j *jsiiProxy_VerifiedpermissionsSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
 func NewVerifiedpermissionsSchema(scope constructs.Construct, id *string, config *VerifiedpermissionsSchemaConfig) VerifiedpermissionsSchema {
 	_init_.Initialize()
 
@@ -372,7 +397,7 @@ func NewVerifiedpermissionsSchema(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
 func NewVerifiedpermissionsSchema_Override(v VerifiedpermissionsSchema, scope constructs.Construct, id *string, config *VerifiedpermissionsSchemaConfig) {
 	_init_.Initialize()
 
@@ -458,6 +483,17 @@ func (j *jsiiProxy_VerifiedpermissionsSchema)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedpermissionsSchema)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -815,7 +851,7 @@ func (v *jsiiProxy_VerifiedpermissionsSchema) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (v *jsiiProxy_VerifiedpermissionsSchema) PutDefinition(value *VerifiedpermissionsSchemaDefinition) {
+func (v *jsiiProxy_VerifiedpermissionsSchema) PutDefinition(value interface{}) {
 	if err := v.validatePutDefinitionParameters(value); err != nil {
 		panic(err)
 	}
@@ -826,10 +862,26 @@ func (v *jsiiProxy_VerifiedpermissionsSchema) PutDefinition(value *Verifiedpermi
 	)
 }
 
+func (v *jsiiProxy_VerifiedpermissionsSchema) ResetDefinition() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDefinition",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VerifiedpermissionsSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedpermissionsSchema) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

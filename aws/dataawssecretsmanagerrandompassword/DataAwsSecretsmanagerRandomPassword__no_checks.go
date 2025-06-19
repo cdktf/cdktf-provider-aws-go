@@ -111,6 +111,10 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetPasswordLengt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRequireEachIncludedTypeParameters(val interface{}) error {
 	return nil
 }

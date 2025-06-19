@@ -127,6 +127,10 @@ func (j *jsiiProxy_ChatbotSlackChannelConfiguration) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ChatbotSlackChannelConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChatbotSlackChannelConfiguration) validateSetSlackChannelIdParameters(val *string) error {
 	return nil
 }

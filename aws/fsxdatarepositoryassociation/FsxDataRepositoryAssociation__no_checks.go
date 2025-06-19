@@ -143,6 +143,10 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

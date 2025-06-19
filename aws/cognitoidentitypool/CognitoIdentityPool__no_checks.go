@@ -135,6 +135,10 @@ func (j *jsiiProxy_CognitoIdentityPool) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPool) validateSetSamlProviderArnsParameters(val *[]*string) error {
 	return nil
 }

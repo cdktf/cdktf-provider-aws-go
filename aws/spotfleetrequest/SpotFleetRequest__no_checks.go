@@ -171,6 +171,10 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SpotFleetRequest) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotFleetRequest) validateSetReplaceUnhealthyInstancesParameters(val interface{}) error {
 	return nil
 }

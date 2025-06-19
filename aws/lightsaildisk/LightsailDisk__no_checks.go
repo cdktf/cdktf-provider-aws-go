@@ -119,6 +119,10 @@ func (j *jsiiProxy_LightsailDisk) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDisk) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDisk) validateSetSizeInGbParameters(val *float64) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package route53profilesresourceassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/route53profilesresourceassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/route53profilesresourceassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association}.
 type Route53ProfilesResourceAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type Route53ProfilesResourceAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -127,6 +130,7 @@ type Route53ProfilesResourceAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceProperties()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -337,6 +341,26 @@ func (j *jsiiProxy_Route53ProfilesResourceAssociation) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_Route53ProfilesResourceAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ProfilesResourceAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ProfilesResourceAssociation) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -458,7 +482,7 @@ func (j *jsiiProxy_Route53ProfilesResourceAssociation) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource.
 func NewRoute53ProfilesResourceAssociation(scope constructs.Construct, id *string, config *Route53ProfilesResourceAssociationConfig) Route53ProfilesResourceAssociation {
 	_init_.Initialize()
 
@@ -476,7 +500,7 @@ func NewRoute53ProfilesResourceAssociation(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource.
 func NewRoute53ProfilesResourceAssociation_Override(r Route53ProfilesResourceAssociation, scope constructs.Construct, id *string, config *Route53ProfilesResourceAssociationConfig) {
 	_init_.Initialize()
 
@@ -573,6 +597,17 @@ func (j *jsiiProxy_Route53ProfilesResourceAssociation)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ProfilesResourceAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -967,6 +1002,14 @@ func (r *jsiiProxy_Route53ProfilesResourceAssociation) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ProfilesResourceAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

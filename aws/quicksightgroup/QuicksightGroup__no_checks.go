@@ -127,6 +127,10 @@ func (j *jsiiProxy_QuicksightGroup) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuicksightGroupParameters(scope constructs.Construct, id *string, config *QuicksightGroupConfig) error {
 	return nil
 }

@@ -147,6 +147,10 @@ func (j *jsiiProxy_GlueDevEndpoint) validateSetPublicKeysParameters(val *[]*stri
 	return nil
 }
 
+func (j *jsiiProxy_GlueDevEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDevEndpoint) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

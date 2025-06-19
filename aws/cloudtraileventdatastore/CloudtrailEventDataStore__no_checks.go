@@ -139,6 +139,10 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetRetentionPeriodParameters(val *float64) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_QuicksightUser) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightUser) validateSetSessionNameParameters(val *string) error {
 	return nil
 }

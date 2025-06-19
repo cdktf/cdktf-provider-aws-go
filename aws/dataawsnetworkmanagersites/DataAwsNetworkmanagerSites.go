@@ -5,14 +5,14 @@ package dataawsnetworkmanagersites
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsnetworkmanagersites/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsnetworkmanagersites/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
 type DataAwsNetworkmanagerSites interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerSites) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
 func NewDataAwsNetworkmanagerSites(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerSitesConfig) DataAwsNetworkmanagerSites {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAwsNetworkmanagerSites(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
 func NewDataAwsNetworkmanagerSites_Override(d DataAwsNetworkmanagerSites, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerSitesConfig) {
 	_init_.Initialize()
 

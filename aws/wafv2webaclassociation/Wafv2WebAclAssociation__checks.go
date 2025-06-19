@@ -410,6 +410,14 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetResourceArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

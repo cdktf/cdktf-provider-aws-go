@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetStatusIdFilterParameters(val *[]*string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailBucket) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_LightsailBucket) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailBucket) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

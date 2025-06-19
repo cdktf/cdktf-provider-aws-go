@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryAttributeGroup) validateSetNa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogappregistryAttributeGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogappregistryAttributeGroupParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryAttributeGroupConfig) error {
 	return nil
 }

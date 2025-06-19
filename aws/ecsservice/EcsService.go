@@ -5,18 +5,19 @@ package ecsservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecsservice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
 	AlarmsInput() *EcsServiceAlarms
+	Arn() *string
 	AvailabilityZoneRebalancing() *string
 	SetAvailabilityZoneRebalancing(val *string)
 	AvailabilityZoneRebalancingInput() *string
@@ -119,6 +120,9 @@ type EcsService interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SchedulingStrategy() *string
 	SetSchedulingStrategy(val *string)
 	SchedulingStrategyInput() *string
@@ -235,6 +239,7 @@ type EcsService interface {
 	ResetPlacementConstraints()
 	ResetPlatformVersion()
 	ResetPropagateTags()
+	ResetRegion()
 	ResetSchedulingStrategy()
 	ResetServiceConnectConfiguration()
 	ResetServiceRegistries()
@@ -279,6 +284,16 @@ func (j *jsiiProxy_EcsService) AlarmsInput() *EcsServiceAlarms {
 	_jsii_.Get(
 		j,
 		"alarmsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
 		&returns,
 	)
 	return returns
@@ -874,6 +889,26 @@ func (j *jsiiProxy_EcsService) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EcsService) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsService) SchedulingStrategy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1125,7 +1160,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1143,7 +1178,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1394,6 +1429,17 @@ func (j *jsiiProxy_EcsService)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsService)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2148,6 +2194,14 @@ func (e *jsiiProxy_EcsService) ResetPropagateTags() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPropagateTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

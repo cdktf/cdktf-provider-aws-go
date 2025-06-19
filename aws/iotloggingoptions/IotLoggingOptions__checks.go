@@ -427,6 +427,14 @@ func (j *jsiiProxy_IotLoggingOptions) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_IotLoggingOptions) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IotLoggingOptions) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

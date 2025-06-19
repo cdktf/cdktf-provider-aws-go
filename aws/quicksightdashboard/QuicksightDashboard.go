@@ -5,14 +5,14 @@ package quicksightdashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightdashboard/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightdashboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard}.
 type QuicksightDashboard interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type QuicksightDashboard interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceEntity() QuicksightDashboardSourceEntityOutputReference
 	SourceEntityArn() *string
 	SourceEntityInput() *QuicksightDashboardSourceEntity
@@ -162,6 +165,7 @@ type QuicksightDashboard interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetPermissions()
+	ResetRegion()
 	ResetSourceEntity()
 	ResetTags()
 	ResetTagsAll()
@@ -515,6 +519,26 @@ func (j *jsiiProxy_QuicksightDashboard) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDashboard) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDashboard) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDashboard) SourceEntity() QuicksightDashboardSourceEntityOutputReference {
 	var returns QuicksightDashboardSourceEntityOutputReference
 	_jsii_.Get(
@@ -696,7 +720,7 @@ func (j *jsiiProxy_QuicksightDashboard) VersionNumber() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource.
 func NewQuicksightDashboard(scope constructs.Construct, id *string, config *QuicksightDashboardConfig) QuicksightDashboard {
 	_init_.Initialize()
 
@@ -714,7 +738,7 @@ func NewQuicksightDashboard(scope constructs.Construct, id *string, config *Quic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_dashboard aws_quicksight_dashboard} Resource.
 func NewQuicksightDashboard_Override(q QuicksightDashboard, scope constructs.Construct, id *string, config *QuicksightDashboardConfig) {
 	_init_.Initialize()
 
@@ -844,6 +868,17 @@ func (j *jsiiProxy_QuicksightDashboard)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightDashboard)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1352,6 +1387,14 @@ func (q *jsiiProxy_QuicksightDashboard) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDashboard) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

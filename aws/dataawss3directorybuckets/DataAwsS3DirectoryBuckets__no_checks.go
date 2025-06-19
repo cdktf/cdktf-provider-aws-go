@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsS3DirectoryBuckets) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3DirectoryBuckets) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsS3DirectoryBucketsParameters(scope constructs.Construct, id *string, config *DataAwsS3DirectoryBucketsConfig) error {
 	return nil
 }

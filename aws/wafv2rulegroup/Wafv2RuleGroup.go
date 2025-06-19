@@ -5,14 +5,14 @@ package wafv2rulegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2rulegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafv2rulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
 type Wafv2RuleGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type Wafv2RuleGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() Wafv2RuleGroupRuleList
 	RuleInput() interface{}
 	Scope() *string
@@ -147,6 +150,7 @@ type Wafv2RuleGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRule()
 	ResetTags()
 	ResetTagsAll()
@@ -438,6 +442,26 @@ func (j *jsiiProxy_Wafv2RuleGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) Rule() Wafv2RuleGroupRuleList {
 	var returns Wafv2RuleGroupRuleList
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) VisibilityConfigInput() *Wafv2RuleGroupVisibi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) Wafv2RuleGroup {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2Rule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup_Override(w Wafv2RuleGroup, scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) {
 	_init_.Initialize()
 
@@ -717,6 +741,17 @@ func (j *jsiiProxy_Wafv2RuleGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1184,6 +1219,14 @@ func (w *jsiiProxy_Wafv2RuleGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

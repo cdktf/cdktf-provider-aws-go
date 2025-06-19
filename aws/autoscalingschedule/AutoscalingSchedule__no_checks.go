@@ -135,6 +135,10 @@ func (j *jsiiProxy_AutoscalingSchedule) validateSetRecurrenceParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingSchedule) validateSetScheduledActionNameParameters(val *string) error {
 	return nil
 }

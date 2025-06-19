@@ -123,6 +123,10 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewIdentitystoreGroupMembershipParameters(scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) error {
 	return nil
 }

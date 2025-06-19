@@ -5,14 +5,14 @@ package neptunegraphgraph
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunegraphgraph/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunegraphgraph/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph}.
 type NeptunegraphGraph interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,9 @@ type NeptunegraphGraph interface {
 	PublicConnectivityInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
@@ -146,6 +149,7 @@ type NeptunegraphGraph interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicConnectivity()
+	ResetRegion()
 	ResetReplicaCount()
 	ResetTags()
 	ResetTimeouts()
@@ -448,6 +452,26 @@ func (j *jsiiProxy_NeptunegraphGraph) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptunegraphGraph) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptunegraphGraph) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptunegraphGraph) ReplicaCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_NeptunegraphGraph) VectorSearchConfigurationInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource.
 func NewNeptunegraphGraph(scope constructs.Construct, id *string, config *NeptunegraphGraphConfig) NeptunegraphGraph {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewNeptunegraphGraph(scope constructs.Construct, id *string, config *Neptun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptunegraph_graph aws_neptunegraph_graph} Resource.
 func NewNeptunegraphGraph_Override(n NeptunegraphGraph, scope constructs.Construct, id *string, config *NeptunegraphGraphConfig) {
 	_init_.Initialize()
 
@@ -728,6 +752,17 @@ func (j *jsiiProxy_NeptunegraphGraph)SetPublicConnectivity(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publicConnectivity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptunegraphGraph)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1173,6 +1208,14 @@ func (n *jsiiProxy_NeptunegraphGraph) ResetPublicConnectivity() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPublicConnectivity",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptunegraphGraph) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRedshiftClusterCredentialsParameters(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterCredentialsConfig) error {
 	return nil
 }

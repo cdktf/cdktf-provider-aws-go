@@ -5,14 +5,14 @@ package mediaconvertqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediaconvertqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediaconvertqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue aws_media_convert_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue aws_media_convert_queue}.
 type MediaConvertQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type MediaConvertQueue interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservationPlanSettings() MediaConvertQueueReservationPlanSettingsOutputReference
 	ReservationPlanSettingsInput() *MediaConvertQueueReservationPlanSettings
 	Status() *string
@@ -139,6 +142,7 @@ type MediaConvertQueue interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPricingPlan()
+	ResetRegion()
 	ResetReservationPlanSettings()
 	ResetStatus()
 	ResetTags()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_MediaConvertQueue) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MediaConvertQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaConvertQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaConvertQueue) ReservationPlanSettings() MediaConvertQueueReservationPlanSettingsOutputReference {
 	var returns MediaConvertQueueReservationPlanSettingsOutputReference
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_MediaConvertQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
 func NewMediaConvertQueue(scope constructs.Construct, id *string, config *MediaConvertQueueConfig) MediaConvertQueue {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewMediaConvertQueue(scope constructs.Construct, id *string, config *MediaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_convert_queue aws_media_convert_queue} Resource.
 func NewMediaConvertQueue_Override(m MediaConvertQueue, scope constructs.Construct, id *string, config *MediaConvertQueueConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_MediaConvertQueue)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaConvertQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1097,6 +1132,14 @@ func (m *jsiiProxy_MediaConvertQueue) ResetPricingPlan() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaConvertQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

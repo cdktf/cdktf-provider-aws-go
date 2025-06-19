@@ -119,6 +119,10 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAutoscalingGroupTagAParameters(scope constructs.Construct, id *string, config *AutoscalingGroupTagAConfig) error {
 	return nil
 }

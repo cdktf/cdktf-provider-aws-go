@@ -5,14 +5,14 @@ package cognitouserpoolclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cognitouserpoolclient/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouserpoolclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client}.
 type CognitoUserPoolClient interface {
 	cdktf.TerraformResource
 	AccessTokenValidity() *float64
@@ -112,6 +112,9 @@ type CognitoUserPoolClient interface {
 	RefreshTokenValidity() *float64
 	SetRefreshTokenValidity(val *float64)
 	RefreshTokenValidityInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SupportedIdentityProviders() *[]*string
 	SetSupportedIdentityProviders(val *[]*string)
 	SupportedIdentityProvidersInput() *[]*string
@@ -196,6 +199,7 @@ type CognitoUserPoolClient interface {
 	ResetReadAttributes()
 	ResetRefreshTokenRotation()
 	ResetRefreshTokenValidity()
+	ResetRegion()
 	ResetSupportedIdentityProviders()
 	ResetTokenValidityUnits()
 	ResetWriteAttributes()
@@ -747,6 +751,26 @@ func (j *jsiiProxy_CognitoUserPoolClient) RefreshTokenValidityInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPoolClient) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolClient) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPoolClient) SupportedIdentityProviders() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -858,7 +882,7 @@ func (j *jsiiProxy_CognitoUserPoolClient) WriteAttributesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client} Resource.
 func NewCognitoUserPoolClient(scope constructs.Construct, id *string, config *CognitoUserPoolClientConfig) CognitoUserPoolClient {
 	_init_.Initialize()
 
@@ -876,7 +900,7 @@ func NewCognitoUserPoolClient(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_user_pool_client aws_cognito_user_pool_client} Resource.
 func NewCognitoUserPoolClient_Override(c CognitoUserPoolClient, scope constructs.Construct, id *string, config *CognitoUserPoolClientConfig) {
 	_init_.Initialize()
 
@@ -1138,6 +1162,17 @@ func (j *jsiiProxy_CognitoUserPoolClient)SetRefreshTokenValidity(val *float64) {
 	_jsii_.Set(
 		j,
 		"refreshTokenValidity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPoolClient)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1709,6 +1744,14 @@ func (c *jsiiProxy_CognitoUserPoolClient) ResetRefreshTokenValidity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRefreshTokenValidity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolClient) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

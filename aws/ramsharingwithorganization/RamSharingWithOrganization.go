@@ -5,14 +5,14 @@ package ramsharingwithorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ramsharingwithorganization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ramsharingwithorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
 type RamSharingWithOrganization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_RamSharingWithOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization} Resource.
 func NewRamSharingWithOrganization(scope constructs.Construct, id *string, config *RamSharingWithOrganizationConfig) RamSharingWithOrganization {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewRamSharingWithOrganization(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization} Resource.
 func NewRamSharingWithOrganization_Override(r RamSharingWithOrganization, scope constructs.Construct, id *string, config *RamSharingWithOrganizationConfig) {
 	_init_.Initialize()
 

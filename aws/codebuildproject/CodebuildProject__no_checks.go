@@ -187,6 +187,10 @@ func (j *jsiiProxy_CodebuildProject) validateSetQueuedTimeoutParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildProject) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildProject) validateSetResourceAccessRoleParameters(val *string) error {
 	return nil
 }

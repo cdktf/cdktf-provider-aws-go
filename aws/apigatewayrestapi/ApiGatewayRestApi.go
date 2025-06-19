@@ -5,14 +5,14 @@ package apigatewayrestapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api}.
 type ApiGatewayRestApi interface {
 	cdktf.TerraformResource
 	ApiKeySource() *string
@@ -96,6 +96,9 @@ type ApiGatewayRestApi interface {
 	PutRestApiModeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootResourceId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -168,6 +171,7 @@ type ApiGatewayRestApi interface {
 	ResetParameters()
 	ResetPolicy()
 	ResetPutRestApiMode()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -608,6 +612,26 @@ func (j *jsiiProxy_ApiGatewayRestApi) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayRestApi) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) RootResourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -689,7 +713,7 @@ func (j *jsiiProxy_ApiGatewayRestApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api} Resource.
 func NewApiGatewayRestApi(scope constructs.Construct, id *string, config *ApiGatewayRestApiConfig) ApiGatewayRestApi {
 	_init_.Initialize()
 
@@ -707,7 +731,7 @@ func NewApiGatewayRestApi(scope constructs.Construct, id *string, config *ApiGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api aws_api_gateway_rest_api} Resource.
 func NewApiGatewayRestApi_Override(a ApiGatewayRestApi, scope constructs.Construct, id *string, config *ApiGatewayRestApiConfig) {
 	_init_.Initialize()
 
@@ -914,6 +938,17 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetPutRestApiMode(val *string) {
 	_jsii_.Set(
 		j,
 		"putRestApiMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1404,6 +1439,14 @@ func (a *jsiiProxy_ApiGatewayRestApi) ResetPutRestApiMode() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPutRestApiMode",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayRestApi) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

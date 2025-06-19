@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsAutoscalingGroupParameters(scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -123,6 +123,10 @@ func (j *jsiiProxy_Sesv2EmailIdentity) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentity) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentity) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

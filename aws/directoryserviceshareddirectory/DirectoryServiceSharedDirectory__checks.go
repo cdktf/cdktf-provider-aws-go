@@ -445,6 +445,14 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDirectoryServiceSharedDirectoryParameters(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

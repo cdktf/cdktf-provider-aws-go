@@ -5,14 +5,14 @@ package dataawsresourceexplorer2search
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsresourceexplorer2search/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsresourceexplorer2search/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
 type DataAwsResourceexplorer2Search interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsResourceexplorer2Search interface {
 	QueryStringInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceCount() DataAwsResourceexplorer2SearchResourceCountList
 	Resources() DataAwsResourceexplorer2SearchResourcesList
 	// Experimental.
@@ -90,6 +93,7 @@ type DataAwsResourceexplorer2Search interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetViewArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -250,6 +254,26 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsResourceexplorer2Search) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsResourceexplorer2Search) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsResourceexplorer2Search) ResourceCount() DataAwsResourceexplorer2SearchResourceCountList {
 	var returns DataAwsResourceexplorer2SearchResourceCountList
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search) ViewArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
 func NewDataAwsResourceexplorer2Search(scope constructs.Construct, id *string, config *DataAwsResourceexplorer2SearchConfig) DataAwsResourceexplorer2Search {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewDataAwsResourceexplorer2Search(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
 func NewDataAwsResourceexplorer2Search_Override(d DataAwsResourceexplorer2Search, scope constructs.Construct, id *string, config *DataAwsResourceexplorer2SearchConfig) {
 	_init_.Initialize()
 
@@ -403,6 +427,17 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search)SetQueryString(val *string) {
 	_jsii_.Set(
 		j,
 		"queryString",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsResourceexplorer2Search)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (d *jsiiProxy_DataAwsResourceexplorer2Search) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsResourceexplorer2Search) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

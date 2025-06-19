@@ -127,6 +127,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetProvi
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

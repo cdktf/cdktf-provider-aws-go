@@ -115,6 +115,10 @@ func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetRetentionPeriodInDaysParameters(val *float64) error {
 	return nil
 }

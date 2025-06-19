@@ -139,6 +139,10 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueUserDefinedFunctionParameters(scope constructs.Construct, id *string, config *GlueUserDefinedFunctionConfig) error {
 	return nil
 }

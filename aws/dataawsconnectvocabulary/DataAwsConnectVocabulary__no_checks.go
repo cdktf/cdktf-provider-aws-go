@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectVocabulary) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectVocabulary) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectVocabulary) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

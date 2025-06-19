@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppsyncDomainName) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncDomainName) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppsyncDomainNameParameters(scope constructs.Construct, id *string, config *AppsyncDomainNameConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package codeguruprofilerprofilinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codeguruprofilerprofilinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
 type CodeguruprofilerProfilingGroup interface {
 	cdktf.TerraformResource
 	AgentOrchestrationConfig() CodeguruprofilerProfilingGroupAgentOrchestrationConfigList
@@ -65,6 +65,9 @@ type CodeguruprofilerProfilingGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -124,6 +127,7 @@ type CodeguruprofilerProfilingGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -353,6 +357,26 @@ func (j *jsiiProxy_CodeguruprofilerProfilingGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodeguruprofilerProfilingGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodeguruprofilerProfilingGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodeguruprofilerProfilingGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -414,7 +438,7 @@ func (j *jsiiProxy_CodeguruprofilerProfilingGroup) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
 func NewCodeguruprofilerProfilingGroup(scope constructs.Construct, id *string, config *CodeguruprofilerProfilingGroupConfig) CodeguruprofilerProfilingGroup {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewCodeguruprofilerProfilingGroup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
 func NewCodeguruprofilerProfilingGroup_Override(c CodeguruprofilerProfilingGroup, scope constructs.Construct, id *string, config *CodeguruprofilerProfilingGroupConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_CodeguruprofilerProfilingGroup)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodeguruprofilerProfilingGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -928,6 +963,14 @@ func (c *jsiiProxy_CodeguruprofilerProfilingGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodeguruprofilerProfilingGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

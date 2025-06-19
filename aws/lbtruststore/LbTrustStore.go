@@ -5,14 +5,14 @@ package lbtruststore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lbtruststore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lbtruststore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_trust_store aws_lb_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_trust_store aws_lb_trust_store}.
 type LbTrustStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type LbTrustStore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -140,6 +143,7 @@ type LbTrustStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -431,6 +435,26 @@ func (j *jsiiProxy_LbTrustStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbTrustStore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTrustStore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbTrustStore) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_LbTrustStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
 func NewLbTrustStore(scope constructs.Construct, id *string, config *LbTrustStoreConfig) LbTrustStore {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewLbTrustStore(scope constructs.Construct, id *string, config *LbTrustStor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
 func NewLbTrustStore_Override(l LbTrustStore, scope constructs.Construct, id *string, config *LbTrustStoreConfig) {
 	_init_.Initialize()
 
@@ -681,6 +705,17 @@ func (j *jsiiProxy_LbTrustStore)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbTrustStore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1107,6 +1142,14 @@ func (l *jsiiProxy_LbTrustStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTrustStore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

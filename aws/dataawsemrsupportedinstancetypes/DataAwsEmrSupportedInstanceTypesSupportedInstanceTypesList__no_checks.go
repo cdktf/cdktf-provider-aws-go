@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

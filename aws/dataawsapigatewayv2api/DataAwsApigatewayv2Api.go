@@ -5,14 +5,14 @@ package dataawsapigatewayv2api
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsapigatewayv2api/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsapigatewayv2api/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
 type DataAwsApigatewayv2Api interface {
 	cdktf.TerraformDataSource
 	ApiEndpoint() *string
@@ -63,6 +63,9 @@ type DataAwsApigatewayv2Api interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteSelectionExpression() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -103,6 +106,7 @@ type DataAwsApigatewayv2Api interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -373,6 +377,26 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Api) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApigatewayv2Api) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Api) RouteSelectionExpression() *string {
 	var returns *string
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) DataAwsApigatewayv2Api {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api_Override(d DataAwsApigatewayv2Api, scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) {
 	_init_.Initialize()
 
@@ -537,6 +561,17 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsApigatewayv2Api)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -849,6 +884,14 @@ func (d *jsiiProxy_DataAwsApigatewayv2Api) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsApigatewayv2Api) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

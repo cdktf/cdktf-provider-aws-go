@@ -5,14 +5,14 @@ package dataawslocationroutecalculator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslocationroutecalculator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslocationroutecalculator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
 type DataAwsLocationRouteCalculator interface {
 	cdktf.TerraformDataSource
 	CalculatorArn() *string
@@ -57,6 +57,9 @@ type DataAwsLocationRouteCalculator interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -96,6 +99,7 @@ type DataAwsLocationRouteCalculator interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -306,6 +310,26 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLocationRouteCalculator) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLocationRouteCalculator) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLocationRouteCalculator) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
 func NewDataAwsLocationRouteCalculator(scope constructs.Construct, id *string, config *DataAwsLocationRouteCalculatorConfig) DataAwsLocationRouteCalculator {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewDataAwsLocationRouteCalculator(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
 func NewDataAwsLocationRouteCalculator_Override(d DataAwsLocationRouteCalculator, scope constructs.Construct, id *string, config *DataAwsLocationRouteCalculatorConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLocationRouteCalculator)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -772,6 +807,14 @@ func (d *jsiiProxy_DataAwsLocationRouteCalculator) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLocationRouteCalculator) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

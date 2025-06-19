@@ -123,6 +123,10 @@ func (j *jsiiProxy_GuarddutyDetector) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyDetector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyDetector) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

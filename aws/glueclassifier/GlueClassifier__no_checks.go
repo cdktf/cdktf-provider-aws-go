@@ -131,6 +131,10 @@ func (j *jsiiProxy_GlueClassifier) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_GlueClassifier) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueClassifierParameters(scope constructs.Construct, id *string, config *GlueClassifierConfig) error {
 	return nil
 }

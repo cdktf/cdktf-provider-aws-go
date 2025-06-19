@@ -167,6 +167,10 @@ func (j *jsiiProxy_VpcIpamPool) validateSetPubliclyAdvertisableParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetSourceIpamPoolIdParameters(val *string) error {
 	return nil
 }

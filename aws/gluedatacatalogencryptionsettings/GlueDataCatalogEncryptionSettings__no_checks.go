@@ -119,6 +119,10 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueDataCatalogEncryptionSettingsParameters(scope constructs.Construct, id *string, config *GlueDataCatalogEncryptionSettingsConfig) error {
 	return nil
 }

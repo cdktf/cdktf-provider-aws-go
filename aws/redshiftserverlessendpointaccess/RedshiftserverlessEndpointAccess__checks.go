@@ -415,6 +415,14 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetSubnetIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

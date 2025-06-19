@@ -5,14 +5,14 @@ package directoryserviceradiussettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/directoryserviceradiussettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/directoryserviceradiussettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings}.
 type DirectoryServiceRadiusSettings interface {
 	cdktf.TerraformResource
 	AuthenticationProtocol() *string
@@ -79,6 +79,9 @@ type DirectoryServiceRadiusSettings interface {
 	RadiusTimeoutInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SharedSecret() *string
 	SetSharedSecret(val *string)
 	SharedSecretInput() *string
@@ -141,6 +144,7 @@ type DirectoryServiceRadiusSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetUseSameUsername()
 	SynthesizeAttributes() *map[string]interface{}
@@ -451,6 +455,26 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DirectoryServiceRadiusSettings) SharedSecret() *string {
 	var returns *string
 	_jsii_.Get(
@@ -542,7 +566,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsernameInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
 func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, config *DirectoryServiceRadiusSettingsConfig) DirectoryServiceRadiusSettings {
 	_init_.Initialize()
 
@@ -560,7 +584,7 @@ func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
 func NewDirectoryServiceRadiusSettings_Override(d DirectoryServiceRadiusSettings, scope constructs.Construct, id *string, config *DirectoryServiceRadiusSettingsConfig) {
 	_init_.Initialize()
 
@@ -723,6 +747,17 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRadiusTimeout(val *float64)
 	_jsii_.Set(
 		j,
 		"radiusTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DirectoryServiceRadiusSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1125,6 +1160,14 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

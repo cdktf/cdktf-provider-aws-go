@@ -5,14 +5,14 @@ package schedulerschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/schedulerschedule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/schedulerschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
 type SchedulerSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type SchedulerSchedule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
@@ -154,6 +157,7 @@ type SchedulerSchedule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetScheduleExpressionTimezone()
 	ResetStartDate()
 	ResetState()
@@ -475,6 +479,26 @@ func (j *jsiiProxy_SchedulerSchedule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SchedulerSchedule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchedulerSchedule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SchedulerSchedule) ScheduleExpression() *string {
 	var returns *string
 	_jsii_.Get(
@@ -606,7 +630,7 @@ func (j *jsiiProxy_SchedulerSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule(scope constructs.Construct, id *string, config *SchedulerScheduleConfig) SchedulerSchedule {
 	_init_.Initialize()
 
@@ -624,7 +648,7 @@ func NewSchedulerSchedule(scope constructs.Construct, id *string, config *Schedu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Construct, id *string, config *SchedulerScheduleConfig) {
 	_init_.Initialize()
 
@@ -776,6 +800,17 @@ func (j *jsiiProxy_SchedulerSchedule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SchedulerSchedule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1259,6 +1294,14 @@ func (s *jsiiProxy_SchedulerSchedule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SchedulerSchedule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

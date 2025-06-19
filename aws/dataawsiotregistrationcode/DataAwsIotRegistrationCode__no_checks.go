@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsIotRegistrationCode) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIotRegistrationCode) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsIotRegistrationCodeParameters(scope constructs.Construct, id *string, config *DataAwsIotRegistrationCodeConfig) error {
 	return nil
 }

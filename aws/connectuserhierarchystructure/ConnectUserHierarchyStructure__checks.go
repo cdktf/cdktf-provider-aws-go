@@ -418,6 +418,14 @@ func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewConnectUserHierarchyStructureParameters(scope constructs.Construct, id *string, config *ConnectUserHierarchyStructureConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetServiceArnParameters(val *string) error {
 	return nil
 }

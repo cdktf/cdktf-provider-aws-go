@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3BucketRequestPaymentConfiguration) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketRequestPaymentConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketRequestPaymentConfigurationParameters(scope constructs.Construct, id *string, config *S3BucketRequestPaymentConfigurationConfig) error {
 	return nil
 }

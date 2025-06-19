@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEc2CapacityBlockOffering) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2CapacityBlockOffering) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2CapacityBlockOffering) validateSetStartDateRangeParameters(val *string) error {
 	return nil
 }

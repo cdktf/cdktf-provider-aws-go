@@ -5,14 +5,14 @@ package vpcipampool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcipampool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcipampool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
 type VpcIpamPool interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -100,6 +100,9 @@ type VpcIpamPool interface {
 	PubliclyAdvertisableInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceIpamPoolId() *string
 	SetSourceIpamPoolId(val *string)
 	SourceIpamPoolIdInput() *string
@@ -177,6 +180,7 @@ type VpcIpamPool interface {
 	ResetOverrideLogicalId()
 	ResetPublicIpSource()
 	ResetPubliclyAdvertisable()
+	ResetRegion()
 	ResetSourceIpamPoolId()
 	ResetTags()
 	ResetTagsAll()
@@ -639,6 +643,26 @@ func (j *jsiiProxy_VpcIpamPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamPool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpamPool) SourceIpamPoolId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -760,7 +784,7 @@ func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolConfig) VpcIpamPool {
 	_init_.Initialize()
 
@@ -778,7 +802,7 @@ func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool_Override(v VpcIpamPool, scope constructs.Construct, id *string, config *VpcIpamPoolConfig) {
 	_init_.Initialize()
 
@@ -1007,6 +1031,17 @@ func (j *jsiiProxy_VpcIpamPool)SetPubliclyAdvertisable(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAdvertisable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamPool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (v *jsiiProxy_VpcIpamPool) ResetPubliclyAdvertisable() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPubliclyAdvertisable",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

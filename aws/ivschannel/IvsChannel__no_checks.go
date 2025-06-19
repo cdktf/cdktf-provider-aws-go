@@ -131,6 +131,10 @@ func (j *jsiiProxy_IvsChannel) validateSetRecordingConfigurationArnParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IvsChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvsChannel) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

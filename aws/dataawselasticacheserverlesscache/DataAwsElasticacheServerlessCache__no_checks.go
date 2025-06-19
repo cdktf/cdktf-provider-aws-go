@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsElasticacheServerlessCache) validateSetNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheServerlessCache) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsElasticacheServerlessCacheParameters(scope constructs.Construct, id *string, config *DataAwsElasticacheServerlessCacheConfig) error {
 	return nil
 }

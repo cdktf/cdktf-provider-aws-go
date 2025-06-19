@@ -131,6 +131,10 @@ func (j *jsiiProxy_NeptuneParameterGroup) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneParameterGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneParameterGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

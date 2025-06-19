@@ -231,6 +231,10 @@ func (j *jsiiProxy_S3ObjectCopy) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_S3ObjectCopy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ObjectCopy) validateSetRequestPayerParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLexBot) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLexBot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexBot) validateSetVersionParameters(val *string) error {
 	return nil
 }

@@ -489,6 +489,14 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetServiceRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

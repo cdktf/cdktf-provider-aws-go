@@ -5,14 +5,14 @@ package dataawsworkspacesbundle
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsworkspacesbundle/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsworkspacesbundle/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle}.
 type DataAwsWorkspacesBundle interface {
 	cdktf.TerraformDataSource
 	BundleId() *string
@@ -61,6 +61,9 @@ type DataAwsWorkspacesBundle interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootStorage() DataAwsWorkspacesBundleRootStorageList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -101,6 +104,7 @@ type DataAwsWorkspacesBundle interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwner()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -330,6 +334,26 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesBundle) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWorkspacesBundle) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesBundle) RootStorage() DataAwsWorkspacesBundleRootStorageList {
 	var returns DataAwsWorkspacesBundleRootStorageList
 	_jsii_.Get(
@@ -381,7 +405,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) UserStorage() DataAwsWorkspacesBundl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
 func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *DataAwsWorkspacesBundleConfig) DataAwsWorkspacesBundle {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
 func NewDataAwsWorkspacesBundle_Override(d DataAwsWorkspacesBundle, scope constructs.Construct, id *string, config *DataAwsWorkspacesBundleConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsWorkspacesBundle)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -821,6 +856,14 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) ResetOwner() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwner",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsWorkspacesBundle) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

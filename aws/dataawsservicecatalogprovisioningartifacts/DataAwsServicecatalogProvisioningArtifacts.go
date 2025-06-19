@@ -5,14 +5,14 @@ package dataawsservicecatalogprovisioningartifacts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicecatalogprovisioningartifacts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogprovisioningartifacts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
 type DataAwsServicecatalogProvisioningArtifacts interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -57,6 +57,9 @@ type DataAwsServicecatalogProvisioningArtifacts interface {
 	ProvisioningArtifactDetails() DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,6 +99,7 @@ type DataAwsServicecatalogProvisioningArtifacts interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -347,7 +371,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) DataAwsServicecatalogProvisioningArtifacts {
 	_init_.Initialize()
 
@@ -365,7 +389,7 @@ func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts_Override(d DataAwsServicecatalogProvisioningArtifacts, scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) {
 	_init_.Initialize()
 
@@ -451,6 +475,17 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts)SetProvider(val cd
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -771,6 +806,14 @@ func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

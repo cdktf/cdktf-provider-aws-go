@@ -127,6 +127,10 @@ func (j *jsiiProxy_VolumeAttachment) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_VolumeAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VolumeAttachment) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetRouteTableIdParameters(val *string) error {
 	return nil
 }

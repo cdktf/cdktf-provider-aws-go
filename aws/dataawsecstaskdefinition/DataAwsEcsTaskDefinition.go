@@ -5,14 +5,14 @@ package dataawsecstaskdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecstaskdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecstaskdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
 type DataAwsEcsTaskDefinition interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -46,7 +46,6 @@ type DataAwsEcsTaskDefinition interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InferenceAccelerator() DataAwsEcsTaskDefinitionInferenceAcceleratorList
 	IpcMode() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -65,6 +64,9 @@ type DataAwsEcsTaskDefinition interface {
 	ProxyConfiguration() DataAwsEcsTaskDefinitionProxyConfigurationList
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequiresCompatibilities() *[]*string
 	Revision() *float64
 	RuntimePlatform() DataAwsEcsTaskDefinitionRuntimePlatformList
@@ -109,6 +111,7 @@ type DataAwsEcsTaskDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -298,16 +301,6 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsTaskDefinition) InferenceAccelerator() DataAwsEcsTaskDefinitionInferenceAcceleratorList {
-	var returns DataAwsEcsTaskDefinitionInferenceAcceleratorList
-	_jsii_.Get(
-		j,
-		"inferenceAccelerator",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) IpcMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -403,6 +396,26 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +532,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) Volume() DataAwsEcsTaskDefinitionVo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition {
 	_init_.Initialize()
 
@@ -537,7 +550,7 @@ func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition_Override(d DataAwsEcsTaskDefinition, scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) {
 	_init_.Initialize()
 
@@ -601,6 +614,17 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -913,6 +937,14 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcsTaskDefinition) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

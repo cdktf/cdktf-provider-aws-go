@@ -5,14 +5,14 @@ package dataawssecretsmanagerrandompassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssecretsmanagerrandompassword/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssecretsmanagerrandompassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
 type DataAwsSecretsmanagerRandomPassword interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -72,6 +72,9 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	RandomPassword() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequireEachIncludedType() interface{}
 	SetRequireEachIncludedType(val interface{})
 	RequireEachIncludedTypeInput() interface{}
@@ -117,6 +120,7 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPasswordLength()
+	ResetRegion()
 	ResetRequireEachIncludedType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RequireEachIncludedType() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -468,7 +492,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword {
 	_init_.Initialize()
 
@@ -486,7 +510,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRandomPassword, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) {
 	_init_.Initialize()
 
@@ -627,6 +651,17 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -995,6 +1030,14 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ResetPasswordLength() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswordLength",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

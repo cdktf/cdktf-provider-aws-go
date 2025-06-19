@@ -5,14 +5,14 @@ package lexv2modelsslottype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexv2modelsslottype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexv2modelsslottype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type}.
 type Lexv2ModelsSlotType interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -78,6 +78,9 @@ type Lexv2ModelsSlotType interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SlotTypeId() *string
 	SlotTypeValues() Lexv2ModelsSlotTypeSlotTypeValuesList
 	SlotTypeValuesInput() interface{}
@@ -146,6 +149,7 @@ type Lexv2ModelsSlotType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentSlotTypeSignature()
+	ResetRegion()
 	ResetSlotTypeValues()
 	ResetTimeouts()
 	ResetValueSelectionSetting()
@@ -467,6 +471,26 @@ func (j *jsiiProxy_Lexv2ModelsSlotType) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lexv2ModelsSlotType) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lexv2ModelsSlotType) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lexv2ModelsSlotType) SlotTypeId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,7 +592,7 @@ func (j *jsiiProxy_Lexv2ModelsSlotType) ValueSelectionSettingInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type} Resource.
 func NewLexv2ModelsSlotType(scope constructs.Construct, id *string, config *Lexv2ModelsSlotTypeConfig) Lexv2ModelsSlotType {
 	_init_.Initialize()
 
@@ -586,7 +610,7 @@ func NewLexv2ModelsSlotType(scope constructs.Construct, id *string, config *Lexv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_slot_type aws_lexv2models_slot_type} Resource.
 func NewLexv2ModelsSlotType_Override(l Lexv2ModelsSlotType, scope constructs.Construct, id *string, config *Lexv2ModelsSlotTypeConfig) {
 	_init_.Initialize()
 
@@ -727,6 +751,17 @@ func (j *jsiiProxy_Lexv2ModelsSlotType)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lexv2ModelsSlotType)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1175,6 +1210,14 @@ func (l *jsiiProxy_Lexv2ModelsSlotType) ResetParentSlotTypeSignature() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetParentSlotTypeSignature",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lexv2ModelsSlotType) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

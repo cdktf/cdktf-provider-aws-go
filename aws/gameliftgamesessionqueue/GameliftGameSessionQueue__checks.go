@@ -462,6 +462,14 @@ func (j *jsiiProxy_GameliftGameSessionQueue) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GameliftGameSessionQueue) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameSessionQueue) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

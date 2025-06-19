@@ -5,14 +5,14 @@ package dataawsserviceprincipal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsserviceprincipal/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsserviceprincipal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_principal aws_service_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_principal aws_service_principal}.
 type DataAwsServicePrincipal interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataAwsServicePrincipal) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_principal aws_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_principal aws_service_principal} Data Source.
 func NewDataAwsServicePrincipal(scope constructs.Construct, id *string, config *DataAwsServicePrincipalConfig) DataAwsServicePrincipal {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataAwsServicePrincipal(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_principal aws_service_principal} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_principal aws_service_principal} Data Source.
 func NewDataAwsServicePrincipal_Override(d DataAwsServicePrincipal, scope constructs.Construct, id *string, config *DataAwsServicePrincipalConfig) {
 	_init_.Initialize()
 

@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetRestrictPublicBucketsParameters(val interface{}) error {
 	return nil
 }

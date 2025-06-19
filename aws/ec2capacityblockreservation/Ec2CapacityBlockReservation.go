@@ -5,14 +5,14 @@ package ec2capacityblockreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2capacityblockreservation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2capacityblockreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
 type Ec2CapacityBlockReservation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type Ec2CapacityBlockReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservationType() *string
 	StartDate() *string
 	Tags() *map[string]*string
@@ -134,6 +137,7 @@ type Ec2CapacityBlockReservation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -434,6 +438,26 @@ func (j *jsiiProxy_Ec2CapacityBlockReservation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2CapacityBlockReservation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2CapacityBlockReservation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2CapacityBlockReservation) ReservationType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_Ec2CapacityBlockReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation} Resource.
 func NewEc2CapacityBlockReservation(scope constructs.Construct, id *string, config *Ec2CapacityBlockReservationConfig) Ec2CapacityBlockReservation {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewEc2CapacityBlockReservation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation} Resource.
 func NewEc2CapacityBlockReservation_Override(e Ec2CapacityBlockReservation, scope constructs.Construct, id *string, config *Ec2CapacityBlockReservationConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_Ec2CapacityBlockReservation)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2CapacityBlockReservation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1043,6 +1078,14 @@ func (e *jsiiProxy_Ec2CapacityBlockReservation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2CapacityBlockReservation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

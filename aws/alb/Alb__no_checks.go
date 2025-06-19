@@ -215,6 +215,10 @@ func (j *jsiiProxy_Alb) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

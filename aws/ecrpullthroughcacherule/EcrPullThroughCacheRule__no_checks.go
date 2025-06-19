@@ -123,6 +123,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRegistryUrlParameters(val *string) error {
 	return nil
 }

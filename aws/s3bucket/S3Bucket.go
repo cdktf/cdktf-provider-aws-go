@@ -5,14 +5,14 @@ package s3bucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucket/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket aws_s3_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket aws_s3_bucket}.
 type S3Bucket interface {
 	cdktf.TerraformResource
 	AccelerationStatus() *string
@@ -29,6 +29,7 @@ type S3Bucket interface {
 	BucketPrefix() *string
 	SetBucketPrefix(val *string)
 	BucketPrefixInput() *string
+	BucketRegion() *string
 	BucketRegionalDomainName() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -94,6 +95,8 @@ type S3Bucket interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationConfiguration() S3BucketReplicationConfigurationOutputReference
 	ReplicationConfigurationInput() *S3BucketReplicationConfiguration
 	RequestPayer() *string
@@ -190,6 +193,7 @@ type S3Bucket interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRegion()
 	ResetReplicationConfiguration()
 	ResetRequestPayer()
 	ResetServerSideEncryptionConfiguration()
@@ -311,6 +315,16 @@ func (j *jsiiProxy_S3Bucket) BucketPrefixInput() *string {
 	_jsii_.Get(
 		j,
 		"bucketPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Bucket) BucketRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketRegion",
 		&returns,
 	)
 	return returns
@@ -656,6 +670,16 @@ func (j *jsiiProxy_S3Bucket) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_S3Bucket) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3Bucket) ReplicationConfiguration() S3BucketReplicationConfigurationOutputReference {
 	var returns S3BucketReplicationConfigurationOutputReference
 	_jsii_.Get(
@@ -867,7 +891,7 @@ func (j *jsiiProxy_S3Bucket) WebsiteInput() *S3BucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket aws_s3_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket aws_s3_bucket} Resource.
 func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig) S3Bucket {
 	_init_.Initialize()
 
@@ -885,7 +909,7 @@ func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket aws_s3_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket aws_s3_bucket} Resource.
 func NewS3Bucket_Override(s S3Bucket, scope constructs.Construct, id *string, config *S3BucketConfig) {
 	_init_.Initialize()
 
@@ -1048,6 +1072,17 @@ func (j *jsiiProxy_S3Bucket)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3Bucket)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1656,6 +1691,14 @@ func (s *jsiiProxy_S3Bucket) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Bucket) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package lambdapermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdapermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdapermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_permission aws_lambda_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_permission aws_lambda_permission}.
 type LambdaPermission interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -79,6 +79,9 @@ type LambdaPermission interface {
 	QualifierInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceAccount() *string
 	SetSourceAccount(val *string)
 	SourceAccountInput() *string
@@ -148,6 +151,7 @@ type LambdaPermission interface {
 	ResetOverrideLogicalId()
 	ResetPrincipalOrgId()
 	ResetQualifier()
+	ResetRegion()
 	ResetSourceAccount()
 	ResetSourceArn()
 	ResetStatementId()
@@ -460,6 +464,26 @@ func (j *jsiiProxy_LambdaPermission) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaPermission) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaPermission) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaPermission) SourceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +595,7 @@ func (j *jsiiProxy_LambdaPermission) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_permission aws_lambda_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_permission aws_lambda_permission} Resource.
 func NewLambdaPermission(scope constructs.Construct, id *string, config *LambdaPermissionConfig) LambdaPermission {
 	_init_.Initialize()
 
@@ -589,7 +613,7 @@ func NewLambdaPermission(scope constructs.Construct, id *string, config *LambdaP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_permission aws_lambda_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_permission aws_lambda_permission} Resource.
 func NewLambdaPermission_Override(l LambdaPermission, scope constructs.Construct, id *string, config *LambdaPermissionConfig) {
 	_init_.Initialize()
 
@@ -752,6 +776,17 @@ func (j *jsiiProxy_LambdaPermission)SetQualifier(val *string) {
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaPermission)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1197,6 +1232,14 @@ func (l *jsiiProxy_LambdaPermission) ResetQualifier() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQualifier",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaPermission) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

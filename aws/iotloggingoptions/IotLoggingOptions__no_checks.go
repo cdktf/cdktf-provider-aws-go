@@ -119,6 +119,10 @@ func (j *jsiiProxy_IotLoggingOptions) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_IotLoggingOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotLoggingOptions) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

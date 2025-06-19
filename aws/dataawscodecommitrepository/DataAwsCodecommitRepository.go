@@ -5,14 +5,14 @@ package dataawscodecommitrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscodecommitrepository/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscodecommitrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_repository aws_codecommit_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_repository aws_codecommit_repository}.
 type DataAwsCodecommitRepository interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,9 @@ type DataAwsCodecommitRepository interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RepositoryId() *string
 	RepositoryName() *string
 	SetRepositoryName(val *string)
@@ -93,6 +96,7 @@ type DataAwsCodecommitRepository interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -282,6 +286,26 @@ func (j *jsiiProxy_DataAwsCodecommitRepository) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCodecommitRepository) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCodecommitRepository) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCodecommitRepository) RepositoryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,7 +367,7 @@ func (j *jsiiProxy_DataAwsCodecommitRepository) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_repository aws_codecommit_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_repository aws_codecommit_repository} Data Source.
 func NewDataAwsCodecommitRepository(scope constructs.Construct, id *string, config *DataAwsCodecommitRepositoryConfig) DataAwsCodecommitRepository {
 	_init_.Initialize()
 
@@ -361,7 +385,7 @@ func NewDataAwsCodecommitRepository(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_repository aws_codecommit_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_repository aws_codecommit_repository} Data Source.
 func NewDataAwsCodecommitRepository_Override(d DataAwsCodecommitRepository, scope constructs.Construct, id *string, config *DataAwsCodecommitRepositoryConfig) {
 	_init_.Initialize()
 
@@ -425,6 +449,17 @@ func (j *jsiiProxy_DataAwsCodecommitRepository)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCodecommitRepository)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (d *jsiiProxy_DataAwsCodecommitRepository) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCodecommitRepository) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

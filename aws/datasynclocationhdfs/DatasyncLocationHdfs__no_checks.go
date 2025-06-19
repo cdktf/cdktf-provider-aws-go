@@ -155,6 +155,10 @@ func (j *jsiiProxy_DatasyncLocationHdfs) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) validateSetReplicationFactorParameters(val *float64) error {
 	return nil
 }

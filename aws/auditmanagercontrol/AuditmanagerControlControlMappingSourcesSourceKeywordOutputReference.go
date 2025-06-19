@@ -5,9 +5,9 @@ package auditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/auditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/auditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,8 @@ type AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKeywordInputType()
+	ResetKeywordValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordOutputRe
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) ResetKeywordInputType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeywordInputType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) ResetKeywordValue() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeywordValue",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

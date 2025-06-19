@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificate) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAcmpcaCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsAcmpcaCertificateParameters(scope constructs.Construct, id *string, config *DataAwsAcmpcaCertificateConfig) error {
 	return nil
 }

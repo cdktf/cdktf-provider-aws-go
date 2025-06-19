@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsMskBootstrapBrokers) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskBootstrapBrokers) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsMskBootstrapBrokersParameters(scope constructs.Construct, id *string, config *DataAwsMskBootstrapBrokersConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

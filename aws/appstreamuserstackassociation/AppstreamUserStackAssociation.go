@@ -5,14 +5,14 @@ package appstreamuserstackassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appstreamuserstackassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appstreamuserstackassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
 type AppstreamUserStackAssociation interface {
 	cdktf.TerraformResource
 	AuthenticationType() *string
@@ -61,6 +61,9 @@ type AppstreamUserStackAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SendEmailNotification() interface{}
 	SetSendEmailNotification(val interface{})
 	SendEmailNotificationInput() interface{}
@@ -123,6 +126,7 @@ type AppstreamUserStackAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSendEmailNotification()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -312,6 +316,26 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppstreamUserStackAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamUserStackAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppstreamUserStackAssociation) SendEmailNotification() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -403,7 +427,7 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association} Resource.
 func NewAppstreamUserStackAssociation(scope constructs.Construct, id *string, config *AppstreamUserStackAssociationConfig) AppstreamUserStackAssociation {
 	_init_.Initialize()
 
@@ -421,7 +445,7 @@ func NewAppstreamUserStackAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association} Resource.
 func NewAppstreamUserStackAssociation_Override(a AppstreamUserStackAssociation, scope constructs.Construct, id *string, config *AppstreamUserStackAssociationConfig) {
 	_init_.Initialize()
 
@@ -518,6 +542,17 @@ func (j *jsiiProxy_AppstreamUserStackAssociation)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamUserStackAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -920,6 +955,14 @@ func (a *jsiiProxy_AppstreamUserStackAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamUserStackAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

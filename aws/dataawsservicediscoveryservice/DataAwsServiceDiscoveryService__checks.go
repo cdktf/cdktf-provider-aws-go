@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetNamespaceIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetTagsParameters(val *map[string]*string) error {
+func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetRegionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetTagsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetTagsAllParameters(val *map[string]*string) error {
+func (j *jsiiProxy_DataAwsServiceDiscoveryService) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

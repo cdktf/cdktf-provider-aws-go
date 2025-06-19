@@ -131,6 +131,10 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetRebootAfterUseParameter
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

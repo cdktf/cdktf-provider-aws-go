@@ -167,6 +167,10 @@ func (j *jsiiProxy_Elb) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Elb) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Elb) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

@@ -443,6 +443,14 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_PinpointAdmChannel) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPinpointAdmChannelParameters(scope constructs.Construct, id *string, config *PinpointAdmChannelConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

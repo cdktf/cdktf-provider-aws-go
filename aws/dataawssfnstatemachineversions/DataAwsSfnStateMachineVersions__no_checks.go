@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsSfnStateMachineVersions) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSfnStateMachineVersions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSfnStateMachineVersions) validateSetStatemachineArnParameters(val *string) error {
 	return nil
 }

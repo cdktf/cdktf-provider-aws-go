@@ -123,6 +123,10 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

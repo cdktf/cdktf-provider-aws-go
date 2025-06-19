@@ -159,6 +159,10 @@ func (j *jsiiProxy_LightsailDatabase) validateSetPubliclyAccessibleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDatabase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDatabase) validateSetRelationalDatabaseNameParameters(val *string) error {
 	return nil
 }

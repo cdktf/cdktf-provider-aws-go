@@ -5,14 +5,14 @@ package dataawsssoadminpermissionsets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminpermissionsets/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminpermissionsets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets}.
 type DataAwsSsoadminPermissionSets interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -52,6 +52,9 @@ type DataAwsSsoadminPermissionSets interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,6 +89,7 @@ type DataAwsSsoadminPermissionSets interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -255,6 +259,26 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSets) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsoadminPermissionSets) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsoadminPermissionSets) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsoadminPermissionSets) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -286,7 +310,7 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSets) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets} Data Source.
 func NewDataAwsSsoadminPermissionSets(scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetsConfig) DataAwsSsoadminPermissionSets {
 	_init_.Initialize()
 
@@ -304,7 +328,7 @@ func NewDataAwsSsoadminPermissionSets(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_permission_sets aws_ssoadmin_permission_sets} Data Source.
 func NewDataAwsSsoadminPermissionSets_Override(d DataAwsSsoadminPermissionSets, scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetsConfig) {
 	_init_.Initialize()
 
@@ -368,6 +392,17 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSets)SetProvider(val cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsoadminPermissionSets)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -661,6 +696,14 @@ func (d *jsiiProxy_DataAwsSsoadminPermissionSets) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsoadminPermissionSets) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_TransferProfile) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_TransferProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pinpointsmsvoicev2PhoneNumber) validateSetRegistrationIdParameters(val *string) error {
 	return nil
 }

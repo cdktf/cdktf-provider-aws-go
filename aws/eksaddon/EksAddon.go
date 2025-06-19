@@ -5,14 +5,14 @@ package eksaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/eksaddon/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/eksaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_addon aws_eks_addon}.
 type EksAddon interface {
 	cdktf.TerraformResource
 	AddonName() *string
@@ -78,9 +78,9 @@ type EksAddon interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	ResolveConflicts() *string
-	SetResolveConflicts(val *string)
-	ResolveConflictsInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResolveConflictsOnCreate() *string
 	SetResolveConflictsOnCreate(val *string)
 	ResolveConflictsOnCreateInput() *string
@@ -157,7 +157,7 @@ type EksAddon interface {
 	ResetOverrideLogicalId()
 	ResetPodIdentityAssociation()
 	ResetPreserve()
-	ResetResolveConflicts()
+	ResetRegion()
 	ResetResolveConflictsOnCreate()
 	ResetResolveConflictsOnUpdate()
 	ResetServiceAccountRoleArn()
@@ -482,21 +482,21 @@ func (j *jsiiProxy_EksAddon) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) ResolveConflicts() *string {
+func (j *jsiiProxy_EksAddon) Region() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"resolveConflicts",
+		"region",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EksAddon) ResolveConflictsInput() *string {
+func (j *jsiiProxy_EksAddon) RegionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"resolveConflictsInput",
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +653,7 @@ func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig) EksAddon {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, config *EksAddonConfig) {
 	_init_.Initialize()
 
@@ -816,13 +816,13 @@ func (j *jsiiProxy_EksAddon)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EksAddon)SetResolveConflicts(val *string) {
-	if err := j.validateSetResolveConflictsParameters(val); err != nil {
+func (j *jsiiProxy_EksAddon)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"resolveConflicts",
+		"region",
 		val,
 	)
 }
@@ -1305,10 +1305,10 @@ func (e *jsiiProxy_EksAddon) ResetPreserve() {
 	)
 }
 
-func (e *jsiiProxy_EksAddon) ResetResolveConflicts() {
+func (e *jsiiProxy_EksAddon) ResetRegion() {
 	_jsii_.InvokeVoid(
 		e,
-		"resetResolveConflicts",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

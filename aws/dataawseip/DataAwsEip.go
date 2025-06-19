@@ -5,14 +5,14 @@ package dataawseip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawseip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawseip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eip aws_eip}.
 type DataAwsEip interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -70,6 +70,9 @@ type DataAwsEip interface {
 	PublicIpv4Pool() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -114,6 +117,7 @@ type DataAwsEip interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicIp()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -455,6 +459,26 @@ func (j *jsiiProxy_DataAwsEip) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEip) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEip) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEip) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -526,7 +550,7 @@ func (j *jsiiProxy_DataAwsEip) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eip aws_eip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eip aws_eip} Data Source.
 func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipConfig) DataAwsEip {
 	_init_.Initialize()
 
@@ -544,7 +568,7 @@ func NewDataAwsEip(scope constructs.Construct, id *string, config *DataAwsEipCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/eip aws_eip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/eip aws_eip} Data Source.
 func NewDataAwsEip_Override(d DataAwsEip, scope constructs.Construct, id *string, config *DataAwsEipConfig) {
 	_init_.Initialize()
 
@@ -619,6 +643,17 @@ func (j *jsiiProxy_DataAwsEip)SetPublicIp(val *string) {
 	_jsii_.Set(
 		j,
 		"publicIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEip)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -969,6 +1004,14 @@ func (d *jsiiProxy_DataAwsEip) ResetPublicIp() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPublicIp",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEip) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

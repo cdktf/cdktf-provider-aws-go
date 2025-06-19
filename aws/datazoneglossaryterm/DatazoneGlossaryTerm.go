@@ -5,14 +5,14 @@ package datazoneglossaryterm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazoneglossaryterm/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneglossaryterm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
 type DatazoneGlossaryTerm interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type DatazoneGlossaryTerm interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ShortDescription() *string
 	SetShortDescription(val *string)
 	ShortDescriptionInput() *string
@@ -136,6 +139,7 @@ type DatazoneGlossaryTerm interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetShortDescription()
 	ResetStatus()
 	ResetTermRelations()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_DatazoneGlossaryTerm) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneGlossaryTerm) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneGlossaryTerm) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneGlossaryTerm) ShortDescription() *string {
 	var returns *string
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_DatazoneGlossaryTerm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term} Resource.
 func NewDatazoneGlossaryTerm(scope constructs.Construct, id *string, config *DatazoneGlossaryTermConfig) DatazoneGlossaryTerm {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewDatazoneGlossaryTerm(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term} Resource.
 func NewDatazoneGlossaryTerm_Override(d DatazoneGlossaryTerm, scope constructs.Construct, id *string, config *DatazoneGlossaryTermConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func (j *jsiiProxy_DatazoneGlossaryTerm)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneGlossaryTerm)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1067,6 +1102,14 @@ func (d *jsiiProxy_DatazoneGlossaryTerm) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneGlossaryTerm) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

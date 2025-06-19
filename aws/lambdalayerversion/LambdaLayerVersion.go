@@ -5,14 +5,14 @@ package lambdalayerversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdalayerversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdalayerversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_layer_version aws_lambda_layer_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_layer_version aws_lambda_layer_version}.
 type LambdaLayerVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type LambdaLayerVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3Bucket() *string
 	SetS3Bucket(val *string)
 	S3BucketInput() *string
@@ -157,6 +160,7 @@ type LambdaLayerVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3Bucket()
 	ResetS3Key()
 	ResetS3ObjectVersion()
@@ -490,6 +494,26 @@ func (j *jsiiProxy_LambdaLayerVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaLayerVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaLayerVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaLayerVersion) S3Bucket() *string {
 	var returns *string
 	_jsii_.Get(
@@ -661,7 +685,7 @@ func (j *jsiiProxy_LambdaLayerVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
 func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *LambdaLayerVersionConfig) LambdaLayerVersion {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *Lambd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
 func NewLambdaLayerVersion_Override(l LambdaLayerVersion, scope constructs.Construct, id *string, config *LambdaLayerVersionConfig) {
 	_init_.Initialize()
 
@@ -831,6 +855,17 @@ func (j *jsiiProxy_LambdaLayerVersion)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaLayerVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1295,6 +1330,14 @@ func (l *jsiiProxy_LambdaLayerVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaLayerVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

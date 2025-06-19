@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroup) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DbProxyDefaultTargetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDbProxyDefaultTargetGroupParameters(scope constructs.Construct, id *string, config *DbProxyDefaultTargetGroupConfig) error {
 	return nil
 }

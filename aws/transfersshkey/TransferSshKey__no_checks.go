@@ -115,6 +115,10 @@ func (j *jsiiProxy_TransferSshKey) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_TransferSshKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferSshKey) validateSetServerIdParameters(val *string) error {
 	return nil
 }

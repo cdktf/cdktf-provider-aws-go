@@ -421,6 +421,14 @@ func (j *jsiiProxy_IotEventConfigurations) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IotEventConfigurations) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewIotEventConfigurationsParameters(scope constructs.Construct, id *string, config *IotEventConfigurationsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

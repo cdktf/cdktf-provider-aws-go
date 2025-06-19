@@ -93,45 +93,125 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validateI
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutAzParameters(value *ResiliencehubResiliencyPolicyPolicyAz) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutAzParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ResiliencehubResiliencyPolicyPolicyAz:
+		value := value.(*[]*ResiliencehubResiliencyPolicyPolicyAz)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ResiliencehubResiliencyPolicyPolicyAz:
+		value_ := value.([]*ResiliencehubResiliencyPolicyPolicyAz)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ResiliencehubResiliencyPolicyPolicyAz; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutHardwareParameters(value *ResiliencehubResiliencyPolicyPolicyHardware) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutHardwareParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ResiliencehubResiliencyPolicyPolicyHardware:
+		value := value.(*[]*ResiliencehubResiliencyPolicyPolicyHardware)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ResiliencehubResiliencyPolicyPolicyHardware:
+		value_ := value.([]*ResiliencehubResiliencyPolicyPolicyHardware)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ResiliencehubResiliencyPolicyPolicyHardware; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutRegionParameters(value *ResiliencehubResiliencyPolicyPolicyRegion) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutRegionParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ResiliencehubResiliencyPolicyPolicyRegion:
+		value := value.(*[]*ResiliencehubResiliencyPolicyPolicyRegion)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ResiliencehubResiliencyPolicyPolicyRegion:
+		value_ := value.([]*ResiliencehubResiliencyPolicyPolicyRegion)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ResiliencehubResiliencyPolicyPolicyRegion; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutSoftwareAttributeParameters(value *ResiliencehubResiliencyPolicyPolicySoftware) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutSoftwareAttributeParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ResiliencehubResiliencyPolicyPolicySoftware:
+		value := value.(*[]*ResiliencehubResiliencyPolicyPolicySoftware)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ResiliencehubResiliencyPolicyPolicySoftware:
+		value_ := value.([]*ResiliencehubResiliencyPolicyPolicySoftware)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ResiliencehubResiliencyPolicyPolicySoftware; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -250,13 +330,21 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validateS
 	return nil
 }
 
-func validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

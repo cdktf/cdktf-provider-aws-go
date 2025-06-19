@@ -5,14 +5,14 @@ package sagemakermodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakermodel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakermodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model aws_sagemaker_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model aws_sagemaker_model}.
 type SagemakerModel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type SagemakerModel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -144,6 +147,7 @@ type SagemakerModel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrimaryContainer()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetVpcConfig()
@@ -445,6 +449,26 @@ func (j *jsiiProxy_SagemakerModel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerModel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerModel) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -536,7 +560,7 @@ func (j *jsiiProxy_SagemakerModel) VpcConfigInput() *SagemakerModelVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
 func NewSagemakerModel(scope constructs.Construct, id *string, config *SagemakerModelConfig) SagemakerModel {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewSagemakerModel(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
 func NewSagemakerModel_Override(s SagemakerModel, scope constructs.Construct, id *string, config *SagemakerModelConfig) {
 	_init_.Initialize()
 
@@ -673,6 +697,17 @@ func (j *jsiiProxy_SagemakerModel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerModel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1148,6 +1183,14 @@ func (s *jsiiProxy_SagemakerModel) ResetPrimaryContainer() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPrimaryContainer",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerModel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

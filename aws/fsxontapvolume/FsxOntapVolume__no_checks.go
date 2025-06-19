@@ -151,6 +151,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetSecurityStyleParameters(val *string) error {
 	return nil
 }

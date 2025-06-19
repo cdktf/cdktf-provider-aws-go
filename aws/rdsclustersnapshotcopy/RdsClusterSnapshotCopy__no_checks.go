@@ -127,6 +127,10 @@ func (j *jsiiProxy_RdsClusterSnapshotCopy) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterSnapshotCopy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterSnapshotCopy) validateSetSharedAccountsParameters(val *[]*string) error {
 	return nil
 }

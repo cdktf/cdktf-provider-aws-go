@@ -5,14 +5,14 @@ package backuprestoretestingselection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/backuprestoretestingselection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/backuprestoretestingselection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection}.
 type BackupRestoreTestingSelection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type BackupRestoreTestingSelection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RestoreMetadataOverrides() *map[string]*string
 	SetRestoreMetadataOverrides(val *map[string]*string)
 	RestoreMetadataOverridesInput() *map[string]*string
@@ -133,6 +136,7 @@ type BackupRestoreTestingSelection interface {
 	ResetOverrideLogicalId()
 	ResetProtectedResourceArns()
 	ResetProtectedResourceConditions()
+	ResetRegion()
 	ResetRestoreMetadataOverrides()
 	ResetValidationWindowHours()
 	SynthesizeAttributes() *map[string]interface{}
@@ -383,6 +387,26 @@ func (j *jsiiProxy_BackupRestoreTestingSelection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BackupRestoreTestingSelection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupRestoreTestingSelection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupRestoreTestingSelection) RestoreMetadataOverrides() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -474,7 +498,7 @@ func (j *jsiiProxy_BackupRestoreTestingSelection) ValidationWindowHoursInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection} Resource.
 func NewBackupRestoreTestingSelection(scope constructs.Construct, id *string, config *BackupRestoreTestingSelectionConfig) BackupRestoreTestingSelection {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewBackupRestoreTestingSelection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/backup_restore_testing_selection aws_backup_restore_testing_selection} Resource.
 func NewBackupRestoreTestingSelection_Override(b BackupRestoreTestingSelection, scope constructs.Construct, id *string, config *BackupRestoreTestingSelectionConfig) {
 	_init_.Initialize()
 
@@ -611,6 +635,17 @@ func (j *jsiiProxy_BackupRestoreTestingSelection)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupRestoreTestingSelection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1032,6 +1067,14 @@ func (b *jsiiProxy_BackupRestoreTestingSelection) ResetProtectedResourceConditio
 	_jsii_.InvokeVoid(
 		b,
 		"resetProtectedResourceConditions",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupRestoreTestingSelection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

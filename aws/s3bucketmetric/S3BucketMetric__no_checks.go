@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3BucketMetric) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketMetric) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketMetricParameters(scope constructs.Construct, id *string, config *S3BucketMetricConfig) error {
 	return nil
 }

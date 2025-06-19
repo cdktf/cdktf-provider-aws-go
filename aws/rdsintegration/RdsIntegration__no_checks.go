@@ -127,6 +127,10 @@ func (j *jsiiProxy_RdsIntegration) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_RdsIntegration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsIntegration) validateSetSourceArnParameters(val *string) error {
 	return nil
 }

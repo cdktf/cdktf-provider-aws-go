@@ -115,6 +115,10 @@ func (j *jsiiProxy_OpensearchAuthorizeVpcEndpointAccess) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchAuthorizeVpcEndpointAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchAuthorizeVpcEndpointAccessParameters(scope constructs.Construct, id *string, config *OpensearchAuthorizeVpcEndpointAccessConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawscognitoidentitypool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscognitoidentitypool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitoidentitypool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool}.
 type DataAwsCognitoIdentityPool interface {
 	cdktf.TerraformDataSource
 	AllowClassicFlow() cdktf.IResolvable
@@ -59,6 +59,9 @@ type DataAwsCognitoIdentityPool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SamlProviderArns() *[]*string
 	SupportedLoginProviders() cdktf.StringMap
 	Tags() *map[string]*string
@@ -99,6 +102,7 @@ type DataAwsCognitoIdentityPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -329,6 +333,26 @@ func (j *jsiiProxy_DataAwsCognitoIdentityPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCognitoIdentityPool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCognitoIdentityPool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCognitoIdentityPool) SamlProviderArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -400,7 +424,7 @@ func (j *jsiiProxy_DataAwsCognitoIdentityPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source.
 func NewDataAwsCognitoIdentityPool(scope constructs.Construct, id *string, config *DataAwsCognitoIdentityPoolConfig) DataAwsCognitoIdentityPool {
 	_init_.Initialize()
 
@@ -418,7 +442,7 @@ func NewDataAwsCognitoIdentityPool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source.
 func NewDataAwsCognitoIdentityPool_Override(d DataAwsCognitoIdentityPool, scope constructs.Construct, id *string, config *DataAwsCognitoIdentityPoolConfig) {
 	_init_.Initialize()
 
@@ -493,6 +517,17 @@ func (j *jsiiProxy_DataAwsCognitoIdentityPool)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCognitoIdentityPool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -805,6 +840,14 @@ func (d *jsiiProxy_DataAwsCognitoIdentityPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCognitoIdentityPool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

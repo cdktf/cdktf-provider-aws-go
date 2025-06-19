@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsElasticacheServerlessCache) validateSetNameParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheServerlessCache) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsElasticacheServerlessCacheParameters(scope constructs.Construct, id *string, config *DataAwsElasticacheServerlessCacheConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

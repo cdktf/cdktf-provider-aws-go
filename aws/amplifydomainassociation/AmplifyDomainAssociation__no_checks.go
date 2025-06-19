@@ -131,6 +131,10 @@ func (j *jsiiProxy_AmplifyDomainAssociation) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyDomainAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyDomainAssociation) validateSetWaitForVerificationParameters(val interface{}) error {
 	return nil
 }

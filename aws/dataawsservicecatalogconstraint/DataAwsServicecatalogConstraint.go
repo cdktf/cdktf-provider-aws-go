@@ -5,14 +5,14 @@ package dataawsservicecatalogconstraint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicecatalogconstraint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogconstraint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint}.
 type DataAwsServicecatalogConstraint interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -60,6 +60,9 @@ type DataAwsServicecatalogConstraint interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -101,6 +104,7 @@ type DataAwsServicecatalogConstraint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -331,6 +335,26 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogConstraint) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source.
 func NewDataAwsServicecatalogConstraint(scope constructs.Construct, id *string, config *DataAwsServicecatalogConstraintConfig) DataAwsServicecatalogConstraint {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewDataAwsServicecatalogConstraint(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalog_constraint aws_servicecatalog_constraint} Data Source.
 func NewDataAwsServicecatalogConstraint_Override(d DataAwsServicecatalogConstraint, scope constructs.Construct, id *string, config *DataAwsServicecatalogConstraintConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogConstraint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (d *jsiiProxy_DataAwsServicecatalogConstraint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServicecatalogConstraint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

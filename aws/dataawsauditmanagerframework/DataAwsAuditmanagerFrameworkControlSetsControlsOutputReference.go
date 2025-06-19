@@ -5,9 +5,9 @@ package dataawsauditmanagerframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsauditmanagerframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsauditmanagerframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAuditmanagerFrameworkControlSetsControls
+	SetInternalValue(val *DataAwsAuditmanagerFrameworkControlSetsControls)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) InternalValue() *DataAwsAuditmanagerFrameworkControlSetsControls {
+	var returns *DataAwsAuditmanagerFrameworkControlSetsControls
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference)SetInternalValue(val *DataAwsAuditmanagerFrameworkControlSetsControls) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

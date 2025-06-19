@@ -277,6 +277,14 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsVpcIpamPoolCidrsParameters(scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolCidrsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

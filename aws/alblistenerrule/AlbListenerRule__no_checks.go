@@ -127,6 +127,10 @@ func (j *jsiiProxy_AlbListenerRule) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_AlbListenerRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerRule) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

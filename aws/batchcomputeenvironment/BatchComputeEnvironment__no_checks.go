@@ -103,14 +103,6 @@ func validateBatchComputeEnvironment_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) validateSetComputeEnvironmentNamePrefixParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -127,7 +119,19 @@ func (j *jsiiProxy_BatchComputeEnvironment) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

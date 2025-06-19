@@ -115,6 +115,10 @@ func (j *jsiiProxy_IotPolicyAttachment) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_IotPolicyAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotPolicyAttachment) validateSetTargetParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsbedrockinferenceprofiles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsbedrockinferenceprofiles/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbedrockinferenceprofiles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}.
 type DataAwsBedrockInferenceProfiles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,6 +48,9 @@ type DataAwsBedrockInferenceProfiles interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -82,6 +85,7 @@ type DataAwsBedrockInferenceProfiles interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -221,6 +225,26 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -252,7 +276,7 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
 func NewDataAwsBedrockInferenceProfiles(scope constructs.Construct, id *string, config *DataAwsBedrockInferenceProfilesConfig) DataAwsBedrockInferenceProfiles {
 	_init_.Initialize()
 
@@ -270,7 +294,7 @@ func NewDataAwsBedrockInferenceProfiles(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
 func NewDataAwsBedrockInferenceProfiles_Override(d DataAwsBedrockInferenceProfiles, scope constructs.Construct, id *string, config *DataAwsBedrockInferenceProfilesConfig) {
 	_init_.Initialize()
 
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfiles)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (d *jsiiProxy_DataAwsBedrockInferenceProfiles) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBedrockInferenceProfiles) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

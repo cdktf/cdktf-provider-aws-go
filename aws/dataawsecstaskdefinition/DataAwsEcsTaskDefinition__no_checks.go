@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) validateSetTaskDefinitionParameters(val *string) error {
 	return nil
 }

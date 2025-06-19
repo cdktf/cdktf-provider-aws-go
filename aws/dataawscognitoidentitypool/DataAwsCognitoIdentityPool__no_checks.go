@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCognitoIdentityPool) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoIdentityPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoIdentityPool) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

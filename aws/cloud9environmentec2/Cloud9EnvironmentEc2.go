@@ -5,14 +5,14 @@ package cloud9environmentec2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloud9environmentec2/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloud9environmentec2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
 type Cloud9EnvironmentEc2 interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type Cloud9EnvironmentEc2 interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -147,6 +150,7 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerArn()
+	ResetRegion()
 	ResetSubnetId()
 	ResetTags()
 	ResetTagsAll()
@@ -468,6 +472,26 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentEc2) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloud9EnvironmentEc2) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) Cloud9EnvironmentEc2 {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2_Override(c Cloud9EnvironmentEc2, scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) {
 	_init_.Initialize()
 
@@ -750,6 +774,17 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cloud9EnvironmentEc2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1184,6 +1219,14 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) ResetOwnerArn() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOwnerArn",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentEc2) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

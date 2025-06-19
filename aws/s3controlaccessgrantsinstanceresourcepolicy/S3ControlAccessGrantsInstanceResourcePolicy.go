@@ -5,14 +5,14 @@ package s3controlaccessgrantsinstanceresourcepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controlaccessgrantsinstanceresourcepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlaccessgrantsinstanceresourcepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
 type S3ControlAccessGrantsInstanceResourcePolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -62,6 +62,9 @@ type S3ControlAccessGrantsInstanceResourcePolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,6 +118,7 @@ type S3ControlAccessGrantsInstanceResourcePolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -313,6 +317,26 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) RawOverrides() i
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -344,7 +368,7 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
 func NewS3ControlAccessGrantsInstanceResourcePolicy(scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceResourcePolicyConfig) S3ControlAccessGrantsInstanceResourcePolicy {
 	_init_.Initialize()
 
@@ -362,7 +386,7 @@ func NewS3ControlAccessGrantsInstanceResourcePolicy(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
 func NewS3ControlAccessGrantsInstanceResourcePolicy_Override(s S3ControlAccessGrantsInstanceResourcePolicy, scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -459,6 +483,17 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy)SetProvisioners(v
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) ResetOverrideLog
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

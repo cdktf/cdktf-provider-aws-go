@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) validatePutSupportedInstanceTypesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsEmrSupportedInstanceTypes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,6 +76,10 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) validateSetCountParameters(
 }
 
 func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

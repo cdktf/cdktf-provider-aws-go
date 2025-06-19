@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

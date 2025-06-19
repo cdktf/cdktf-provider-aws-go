@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmPatchGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_SsmPatchGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsmPatchGroupParameters(scope constructs.Construct, id *string, config *SsmPatchGroupConfig) error {
 	return nil
 }

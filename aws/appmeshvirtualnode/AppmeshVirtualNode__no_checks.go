@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppmeshVirtualNode) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshVirtualNode) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshVirtualNode) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

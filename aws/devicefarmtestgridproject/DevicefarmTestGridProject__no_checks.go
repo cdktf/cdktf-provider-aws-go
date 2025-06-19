@@ -123,6 +123,10 @@ func (j *jsiiProxy_DevicefarmTestGridProject) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmTestGridProject) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmTestGridProject) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

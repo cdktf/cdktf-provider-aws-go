@@ -139,6 +139,10 @@ func (j *jsiiProxy_SsmincidentsResponsePlan) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SsmincidentsResponsePlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmincidentsResponsePlan) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package lightsailkeypair
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailkeypair/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailkeypair/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
 type LightsailKeyPair interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type LightsailKeyPair interface {
 	PublicKeyInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -138,6 +141,7 @@ type LightsailKeyPair interface {
 	ResetOverrideLogicalId()
 	ResetPgpKey()
 	ResetPublicKey()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -438,6 +442,26 @@ func (j *jsiiProxy_LightsailKeyPair) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailKeyPair) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailKeyPair) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailKeyPair) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_LightsailKeyPair) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
 func NewLightsailKeyPair(scope constructs.Construct, id *string, config *LightsailKeyPairConfig) LightsailKeyPair {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewLightsailKeyPair(scope constructs.Construct, id *string, config *Lightsa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
 func NewLightsailKeyPair_Override(l LightsailKeyPair, scope constructs.Construct, id *string, config *LightsailKeyPairConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_LightsailKeyPair)SetPublicKey(val *string) {
 	_jsii_.Set(
 		j,
 		"publicKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailKeyPair)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (l *jsiiProxy_LightsailKeyPair) ResetPublicKey() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublicKey",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailKeyPair) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

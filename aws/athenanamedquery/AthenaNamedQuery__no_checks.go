@@ -127,6 +127,10 @@ func (j *jsiiProxy_AthenaNamedQuery) validateSetQueryParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_AthenaNamedQuery) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaNamedQuery) validateSetWorkgroupParameters(val *string) error {
 	return nil
 }

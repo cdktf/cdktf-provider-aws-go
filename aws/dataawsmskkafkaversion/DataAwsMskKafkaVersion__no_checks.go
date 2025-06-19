@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskKafkaVersion) validateSetPreferredVersionsParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskKafkaVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskKafkaVersion) validateSetVersionParameters(val *string) error {
 	return nil
 }

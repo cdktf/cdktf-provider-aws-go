@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailLbCertificate) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbCertificate) validateSetSubjectAlternativeNamesParameters(val *[]*string) error {
 	return nil
 }

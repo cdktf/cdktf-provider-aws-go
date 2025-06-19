@@ -119,6 +119,10 @@ func (j *jsiiProxy_DaxSubnetGroup) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_DaxSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

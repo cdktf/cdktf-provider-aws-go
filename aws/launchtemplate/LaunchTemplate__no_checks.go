@@ -91,14 +91,6 @@ func (l *jsiiProxy_LaunchTemplate) validatePutCreditSpecificationParameters(valu
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplate) validatePutElasticGpuSpecificationsParameters(value interface{}) error {
-	return nil
-}
-
-func (l *jsiiProxy_LaunchTemplate) validatePutElasticInferenceAcceleratorParameters(value *LaunchTemplateElasticInferenceAccelerator) error {
-	return nil
-}
-
 func (l *jsiiProxy_LaunchTemplate) validatePutEnclaveOptionsParameters(value *LaunchTemplateEnclaveOptions) error {
 	return nil
 }
@@ -236,6 +228,10 @@ func (j *jsiiProxy_LaunchTemplate) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_LaunchTemplate) validateSetRamDiskIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LaunchTemplate) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

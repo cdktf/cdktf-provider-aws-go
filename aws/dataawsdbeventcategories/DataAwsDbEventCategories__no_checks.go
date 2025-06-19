@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDbEventCategories) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbEventCategories) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbEventCategories) validateSetSourceTypeParameters(val *string) error {
 	return nil
 }

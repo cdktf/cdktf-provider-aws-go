@@ -119,6 +119,10 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetRuleNameParameters(val *string) error {
 	return nil
 }

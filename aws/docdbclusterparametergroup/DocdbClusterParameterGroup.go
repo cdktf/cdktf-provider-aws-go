@@ -5,14 +5,14 @@ package docdbclusterparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/docdbclusterparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/docdbclusterparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group}.
 type DocdbClusterParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type DocdbClusterParameterGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -137,6 +140,7 @@ type DocdbClusterParameterGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_DocdbClusterParameterGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbClusterParameterGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterParameterGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbClusterParameterGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_DocdbClusterParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group} Resource.
 func NewDocdbClusterParameterGroup(scope constructs.Construct, id *string, config *DocdbClusterParameterGroupConfig) DocdbClusterParameterGroup {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewDocdbClusterParameterGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster_parameter_group aws_docdb_cluster_parameter_group} Resource.
 func NewDocdbClusterParameterGroup_Override(d DocdbClusterParameterGroup, scope constructs.Construct, id *string, config *DocdbClusterParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_DocdbClusterParameterGroup)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbClusterParameterGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (d *jsiiProxy_DocdbClusterParameterGroup) ResetParameter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbClusterParameterGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,16 +5,19 @@ package dataawsservicequotastemplates
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicequotastemplates/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicequotastemplates/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
 type DataAwsServicequotasTemplates interface {
 	cdktf.TerraformDataSource
+	AwsRegion() *string
+	SetAwsRegion(val *string)
+	AwsRegionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -52,7 +55,6 @@ type DataAwsServicequotasTemplates interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Templates() DataAwsServicequotasTemplatesTemplatesList
-	TemplatesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,11 +86,11 @@ type DataAwsServicequotasTemplates interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTemplates(value interface{})
+	ResetAwsRegion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTemplates()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -106,6 +108,26 @@ type DataAwsServicequotasTemplates interface {
 // The jsii proxy struct for DataAwsServicequotasTemplates
 type jsiiProxy_DataAwsServicequotasTemplates struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsServicequotasTemplates) AwsRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicequotasTemplates) AwsRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRegionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsServicequotasTemplates) CdktfStack() cdktf.TerraformStack {
@@ -258,16 +280,6 @@ func (j *jsiiProxy_DataAwsServicequotasTemplates) Templates() DataAwsServicequot
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicequotasTemplates) TemplatesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"templatesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsServicequotasTemplates) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -299,7 +311,7 @@ func (j *jsiiProxy_DataAwsServicequotasTemplates) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
 func NewDataAwsServicequotasTemplates(scope constructs.Construct, id *string, config *DataAwsServicequotasTemplatesConfig) DataAwsServicequotasTemplates {
 	_init_.Initialize()
 
@@ -317,7 +329,7 @@ func NewDataAwsServicequotasTemplates(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates} Data Source.
 func NewDataAwsServicequotasTemplates_Override(d DataAwsServicequotasTemplates, scope constructs.Construct, id *string, config *DataAwsServicequotasTemplatesConfig) {
 	_init_.Initialize()
 
@@ -325,6 +337,17 @@ func NewDataAwsServicequotasTemplates_Override(d DataAwsServicequotasTemplates, 
 		"@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicequotasTemplates)SetAwsRegion(val *string) {
+	if err := j.validateSetAwsRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsRegion",
+		val,
 	)
 }
 
@@ -670,14 +693,11 @@ func (d *jsiiProxy_DataAwsServicequotasTemplates) OverrideLogicalId(newLogicalId
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplates) PutTemplates(value interface{}) {
-	if err := d.validatePutTemplatesParameters(value); err != nil {
-		panic(err)
-	}
+func (d *jsiiProxy_DataAwsServicequotasTemplates) ResetAwsRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"putTemplates",
-		[]interface{}{value},
+		"resetAwsRegion",
+		nil, // no parameters
 	)
 }
 
@@ -689,10 +709,10 @@ func (d *jsiiProxy_DataAwsServicequotasTemplates) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplates) ResetTemplates() {
+func (d *jsiiProxy_DataAwsServicequotasTemplates) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTemplates",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkInterfaceAttachmentAParameters(scope constructs.Construct, id *string, config *NetworkInterfaceAttachmentAConfig) error {
 	return nil
 }

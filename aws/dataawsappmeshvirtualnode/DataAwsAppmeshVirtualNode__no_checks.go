@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualNode) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshVirtualNode) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshVirtualNode) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -187,6 +187,10 @@ func (j *jsiiProxy_OpensearchDomain) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

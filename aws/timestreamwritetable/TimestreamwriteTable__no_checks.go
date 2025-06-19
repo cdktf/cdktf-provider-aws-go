@@ -127,6 +127,10 @@ func (j *jsiiProxy_TimestreamwriteTable) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TimestreamwriteTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamwriteTable) validateSetTableNameParameters(val *string) error {
 	return nil
 }

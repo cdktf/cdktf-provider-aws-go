@@ -5,14 +5,14 @@ package directoryserviceregion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/directoryserviceregion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/directoryserviceregion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_region aws_directory_service_region}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_region aws_directory_service_region}.
 type DirectoryServiceRegion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type DirectoryServiceRegion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegionName() *string
 	SetRegionName(val *string)
 	RegionNameInput() *string
@@ -133,6 +136,7 @@ type DirectoryServiceRegion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_DirectoryServiceRegion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DirectoryServiceRegion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DirectoryServiceRegion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DirectoryServiceRegion) RegionName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,7 +499,7 @@ func (j *jsiiProxy_DirectoryServiceRegion) VpcSettingsInput() *DirectoryServiceR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) DirectoryServiceRegion {
 	_init_.Initialize()
 
@@ -493,7 +517,7 @@ func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion_Override(d DirectoryServiceRegion, scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) {
 	_init_.Initialize()
 
@@ -601,6 +625,17 @@ func (j *jsiiProxy_DirectoryServiceRegion)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DirectoryServiceRegion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1033,6 +1068,14 @@ func (d *jsiiProxy_DirectoryServiceRegion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceRegion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

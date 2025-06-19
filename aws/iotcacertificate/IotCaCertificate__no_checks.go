@@ -131,6 +131,10 @@ func (j *jsiiProxy_IotCaCertificate) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_IotCaCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotCaCertificate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

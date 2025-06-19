@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsApigatewayv2VpcLink) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2VpcLink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2VpcLink) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package mqbroker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mqbroker/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mqbroker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mq_broker aws_mq_broker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mq_broker aws_mq_broker}.
 type MqBroker interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -104,6 +104,9 @@ type MqBroker interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -195,6 +198,7 @@ type MqBroker interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetSecurityGroups()
 	ResetStorageType()
 	ResetSubnetIds()
@@ -719,6 +723,26 @@ func (j *jsiiProxy_MqBroker) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MqBroker) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MqBroker) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -890,7 +914,7 @@ func (j *jsiiProxy_MqBroker) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig) MqBroker {
 	_init_.Initialize()
 
@@ -908,7 +932,7 @@ func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker_Override(m MqBroker, scope constructs.Construct, id *string, config *MqBrokerConfig) {
 	_init_.Initialize()
 
@@ -1115,6 +1139,17 @@ func (j *jsiiProxy_MqBroker)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MqBroker)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1712,6 +1747,14 @@ func (m *jsiiProxy_MqBroker) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MqBroker) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

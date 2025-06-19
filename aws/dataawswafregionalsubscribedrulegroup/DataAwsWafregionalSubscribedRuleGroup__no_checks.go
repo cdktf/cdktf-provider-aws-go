@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsWafregionalSubscribedRuleGroupParameters(scope constructs.Construct, id *string, config *DataAwsWafregionalSubscribedRuleGroupConfig) error {
 	return nil
 }

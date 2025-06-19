@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsConnectUserHierarchyStructureParameters(scope constructs.Construct, id *string, config *DataAwsConnectUserHierarchyStructureConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

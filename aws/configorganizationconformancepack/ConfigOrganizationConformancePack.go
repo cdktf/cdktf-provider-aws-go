@@ -5,14 +5,14 @@ package configorganizationconformancepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/configorganizationconformancepack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/configorganizationconformancepack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack}.
 type ConfigOrganizationConformancePack interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type ConfigOrganizationConformancePack interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TemplateBody() *string
 	SetTemplateBody(val *string)
 	TemplateBodyInput() *string
@@ -140,6 +143,7 @@ type ConfigOrganizationConformancePack interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTemplateBody()
 	ResetTemplateS3Uri()
 	ResetTimeouts()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_ConfigOrganizationConformancePack) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigOrganizationConformancePack) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConfigOrganizationConformancePack) TemplateBody() *string {
 	var returns *string
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
 func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string, config *ConfigOrganizationConformancePackConfig) ConfigOrganizationConformancePack {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
 func NewConfigOrganizationConformancePack_Override(c ConfigOrganizationConformancePack, scope constructs.Construct, id *string, config *ConfigOrganizationConformancePackConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConfigOrganizationConformancePack)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

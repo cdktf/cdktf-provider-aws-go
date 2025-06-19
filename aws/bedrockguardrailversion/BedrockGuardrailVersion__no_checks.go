@@ -119,6 +119,10 @@ func (j *jsiiProxy_BedrockGuardrailVersion) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrailVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrailVersion) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

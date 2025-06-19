@@ -290,6 +290,14 @@ func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetProjectNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecatalystDevEnvironment) validateSetSpaceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

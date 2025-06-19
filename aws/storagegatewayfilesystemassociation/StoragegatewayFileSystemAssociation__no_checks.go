@@ -135,6 +135,10 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

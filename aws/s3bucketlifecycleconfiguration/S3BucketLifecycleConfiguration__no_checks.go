@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketLifecycleConfiguration) validateSetTransitionDefaultMinimumObjectSizeParameters(val *string) error {
 	return nil
 }

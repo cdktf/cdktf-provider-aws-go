@@ -143,6 +143,10 @@ func (j *jsiiProxy_EvidentlyFeature) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_EvidentlyFeature) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlyFeature) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

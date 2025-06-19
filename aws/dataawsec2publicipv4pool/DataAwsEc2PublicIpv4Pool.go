@@ -5,14 +5,14 @@ package dataawsec2publicipv4pool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2publicipv4pool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2publicipv4pool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool}.
 type DataAwsEc2PublicIpv4Pool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataAwsEc2PublicIpv4Pool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -96,6 +99,7 @@ type DataAwsEc2PublicIpv4Pool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -296,6 +300,26 @@ func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) TotalAvailableAddressCount() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
 func NewDataAwsEc2PublicIpv4Pool(scope constructs.Construct, id *string, config *DataAwsEc2PublicIpv4PoolConfig) DataAwsEc2PublicIpv4Pool {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewDataAwsEc2PublicIpv4Pool(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
 func NewDataAwsEc2PublicIpv4Pool_Override(d DataAwsEc2PublicIpv4Pool, scope constructs.Construct, id *string, config *DataAwsEc2PublicIpv4PoolConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -772,6 +807,14 @@ func (d *jsiiProxy_DataAwsEc2PublicIpv4Pool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2PublicIpv4Pool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

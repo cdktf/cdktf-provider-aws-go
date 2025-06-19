@@ -123,6 +123,10 @@ func (j *jsiiProxy_EmrStudioSessionMapping) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EmrStudioSessionMapping) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudioSessionMapping) validateSetSessionPolicyArnParameters(val *string) error {
 	return nil
 }

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsQuicksightGroup) validateSetNamespaceParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsQuicksightGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsQuicksightGroupParameters(scope constructs.Construct, id *string, config *DataAwsQuicksightGroupConfig) error {
 	return nil
 }

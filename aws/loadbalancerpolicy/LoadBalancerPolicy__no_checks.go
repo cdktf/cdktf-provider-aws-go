@@ -127,6 +127,10 @@ func (j *jsiiProxy_LoadBalancerPolicy) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLoadBalancerPolicyParameters(scope constructs.Construct, id *string, config *LoadBalancerPolicyConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawselasticacheuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawselasticacheuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawselasticacheuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_user aws_elasticache_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_user aws_elasticache_user}.
 type DataAwsElasticacheUser interface {
 	cdktf.TerraformDataSource
 	AccessString() *string
@@ -64,6 +64,9 @@ type DataAwsElasticacheUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +114,7 @@ type DataAwsElasticacheUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPasswords()
+	ResetRegion()
 	ResetUserName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -361,6 +365,26 @@ func (j *jsiiProxy_DataAwsElasticacheUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsElasticacheUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsElasticacheUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -432,7 +456,7 @@ func (j *jsiiProxy_DataAwsElasticacheUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source.
 func NewDataAwsElasticacheUser(scope constructs.Construct, id *string, config *DataAwsElasticacheUserConfig) DataAwsElasticacheUser {
 	_init_.Initialize()
 
@@ -450,7 +474,7 @@ func NewDataAwsElasticacheUser(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source.
 func NewDataAwsElasticacheUser_Override(d DataAwsElasticacheUser, scope constructs.Construct, id *string, config *DataAwsElasticacheUserConfig) {
 	_init_.Initialize()
 
@@ -558,6 +582,17 @@ func (j *jsiiProxy_DataAwsElasticacheUser)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsElasticacheUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -932,6 +967,14 @@ func (d *jsiiProxy_DataAwsElasticacheUser) ResetPasswords() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswords",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsElasticacheUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

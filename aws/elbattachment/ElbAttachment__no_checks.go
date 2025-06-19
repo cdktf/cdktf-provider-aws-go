@@ -119,6 +119,10 @@ func (j *jsiiProxy_ElbAttachment) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_ElbAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewElbAttachmentParameters(scope constructs.Construct, id *string, config *ElbAttachmentConfig) error {
 	return nil
 }

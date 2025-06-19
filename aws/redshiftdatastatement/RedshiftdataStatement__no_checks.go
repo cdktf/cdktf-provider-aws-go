@@ -131,6 +131,10 @@ func (j *jsiiProxy_RedshiftdataStatement) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftdataStatement) validateSetSecretArnParameters(val *string) error {
 	return nil
 }

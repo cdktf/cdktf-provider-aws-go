@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetWorkgroupNameParameters(val *string) error {
 	return nil
 }

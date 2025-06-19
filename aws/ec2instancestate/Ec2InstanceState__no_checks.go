@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2InstanceState) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceState) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2InstanceState) validateSetStateParameters(val *string) error {
 	return nil
 }

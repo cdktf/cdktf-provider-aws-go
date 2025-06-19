@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskBootstrapBrokers) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskBootstrapBrokers) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsMskBootstrapBrokersParameters(scope constructs.Construct, id *string, config *DataAwsMskBootstrapBrokersConfig) error {
 	return nil
 }

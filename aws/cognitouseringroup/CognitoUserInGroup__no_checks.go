@@ -115,6 +115,10 @@ func (j *jsiiProxy_CognitoUserInGroup) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserInGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserInGroup) validateSetUsernameParameters(val *string) error {
 	return nil
 }

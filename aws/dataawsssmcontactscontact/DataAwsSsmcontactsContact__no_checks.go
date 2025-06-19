@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSsmcontactsContact) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmcontactsContact) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmcontactsContact) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

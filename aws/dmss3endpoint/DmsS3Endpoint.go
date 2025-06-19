@@ -5,14 +5,14 @@ package dmss3endpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dmss3endpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dmss3endpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint}.
 type DmsS3Endpoint interface {
 	cdktf.TerraformResource
 	AddColumnName() interface{}
@@ -178,6 +178,9 @@ type DmsS3Endpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rfc4180() interface{}
 	SetRfc4180(val interface{})
 	Rfc4180Input() interface{}
@@ -301,6 +304,7 @@ type DmsS3Endpoint interface {
 	ResetParquetTimestampInMillisecond()
 	ResetParquetVersion()
 	ResetPreserveTransactions()
+	ResetRegion()
 	ResetRfc4180()
 	ResetRowGroupLength()
 	ResetServerSideEncryptionKmsKeyId()
@@ -1289,6 +1293,26 @@ func (j *jsiiProxy_DmsS3Endpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) Rfc4180() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1550,7 +1574,7 @@ func (j *jsiiProxy_DmsS3Endpoint) UseTaskStartTimeForFullLoadTimestampInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
 func NewDmsS3Endpoint(scope constructs.Construct, id *string, config *DmsS3EndpointConfig) DmsS3Endpoint {
 	_init_.Initialize()
 
@@ -1568,7 +1592,7 @@ func NewDmsS3Endpoint(scope constructs.Construct, id *string, config *DmsS3Endpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
 func NewDmsS3Endpoint_Override(d DmsS3Endpoint, scope constructs.Construct, id *string, config *DmsS3EndpointConfig) {
 	_init_.Initialize()
 
@@ -2083,6 +2107,17 @@ func (j *jsiiProxy_DmsS3Endpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2861,6 +2896,14 @@ func (d *jsiiProxy_DmsS3Endpoint) ResetPreserveTransactions() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreserveTransactions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

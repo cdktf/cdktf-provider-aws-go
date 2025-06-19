@@ -5,14 +5,14 @@ package ec2transitgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2transitgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2transitgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type Ec2TransitGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *float64
@@ -83,6 +83,9 @@ type Ec2TransitGateway interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupReferencingSupport() *string
 	SetSecurityGroupReferencingSupport(val *string)
 	SecurityGroupReferencingSupportInput() *string
@@ -161,6 +164,7 @@ type Ec2TransitGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSecurityGroupReferencingSupport()
 	ResetTags()
 	ResetTagsAll()
@@ -515,6 +519,26 @@ func (j *jsiiProxy_Ec2TransitGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TransitGateway) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGateway) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TransitGateway) SecurityGroupReferencingSupport() *string {
 	var returns *string
 	_jsii_.Get(
@@ -666,7 +690,7 @@ func (j *jsiiProxy_Ec2TransitGateway) VpnEcmpSupportInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) Ec2TransitGateway {
 	_init_.Initialize()
 
@@ -684,7 +708,7 @@ func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2Tra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway_Override(e Ec2TransitGateway, scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) {
 	_init_.Initialize()
 
@@ -847,6 +871,17 @@ func (j *jsiiProxy_Ec2TransitGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGateway)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1338,6 +1373,14 @@ func (e *jsiiProxy_Ec2TransitGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGateway) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEcrRepositoryCreationTemplate) validateSetPrefixParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrRepositoryCreationTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrRepositoryCreationTemplate) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }

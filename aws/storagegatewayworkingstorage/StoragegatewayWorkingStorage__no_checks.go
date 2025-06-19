@@ -119,6 +119,10 @@ func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewStoragegatewayWorkingStorageParameters(scope constructs.Construct, id *string, config *StoragegatewayWorkingStorageConfig) error {
 	return nil
 }

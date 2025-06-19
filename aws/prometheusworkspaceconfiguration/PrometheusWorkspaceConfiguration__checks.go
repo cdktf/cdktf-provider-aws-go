@@ -433,6 +433,14 @@ func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusWorkspaceConfiguration) validateSetRetentionPeriodInDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

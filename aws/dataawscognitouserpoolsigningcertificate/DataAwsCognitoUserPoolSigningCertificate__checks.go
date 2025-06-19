@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetUserPoolIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

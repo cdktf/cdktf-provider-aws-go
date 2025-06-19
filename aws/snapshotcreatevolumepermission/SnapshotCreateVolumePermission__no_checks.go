@@ -119,6 +119,10 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetSnapshotIdParameters(val *string) error {
 	return nil
 }

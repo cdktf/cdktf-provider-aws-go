@@ -115,6 +115,10 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetSendEmailNotificationParameters(val interface{}) error {
 	return nil
 }

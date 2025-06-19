@@ -5,14 +5,14 @@ package dataawsappstreamimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsappstreamimage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappstreamimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image aws_appstream_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image aws_appstream_image}.
 type DataAwsAppstreamImage interface {
 	cdktf.TerraformDataSource
 	Applications() DataAwsAppstreamImageApplicationsList
@@ -70,6 +70,9 @@ type DataAwsAppstreamImage interface {
 	PublicBaseImageReleasedDate() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	StateChangeReason() DataAwsAppstreamImageStateChangeReasonList
 	// Experimental.
@@ -113,6 +116,7 @@ type DataAwsAppstreamImage interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -433,6 +437,26 @@ func (j *jsiiProxy_DataAwsAppstreamImage) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppstreamImage) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppstreamImage) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppstreamImage) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -504,7 +528,7 @@ func (j *jsiiProxy_DataAwsAppstreamImage) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image aws_appstream_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image aws_appstream_image} Data Source.
 func NewDataAwsAppstreamImage(scope constructs.Construct, id *string, config *DataAwsAppstreamImageConfig) DataAwsAppstreamImage {
 	_init_.Initialize()
 
@@ -522,7 +546,7 @@ func NewDataAwsAppstreamImage(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appstream_image aws_appstream_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appstream_image aws_appstream_image} Data Source.
 func NewDataAwsAppstreamImage_Override(d DataAwsAppstreamImage, scope constructs.Construct, id *string, config *DataAwsAppstreamImageConfig) {
 	_init_.Initialize()
 
@@ -619,6 +643,17 @@ func (j *jsiiProxy_DataAwsAppstreamImage)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAppstreamImage)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -955,6 +990,14 @@ func (d *jsiiProxy_DataAwsAppstreamImage) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAppstreamImage) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

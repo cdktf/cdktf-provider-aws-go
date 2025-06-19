@@ -5,14 +5,14 @@ package lexv2modelsbot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexv2modelsbot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexv2modelsbot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot aws_lexv2models_bot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot aws_lexv2models_bot}.
 type Lexv2ModelsBot interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type Lexv2ModelsBot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -143,6 +146,7 @@ type Lexv2ModelsBot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTestBotAliasTags()
 	ResetTimeouts()
@@ -415,6 +419,26 @@ func (j *jsiiProxy_Lexv2ModelsBot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lexv2ModelsBot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lexv2ModelsBot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lexv2ModelsBot) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,7 +580,7 @@ func (j *jsiiProxy_Lexv2ModelsBot) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot aws_lexv2models_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot aws_lexv2models_bot} Resource.
 func NewLexv2ModelsBot(scope constructs.Construct, id *string, config *Lexv2ModelsBotConfig) Lexv2ModelsBot {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewLexv2ModelsBot(scope constructs.Construct, id *string, config *Lexv2Mode
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lexv2models_bot aws_lexv2models_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lexv2models_bot aws_lexv2models_bot} Resource.
 func NewLexv2ModelsBot_Override(l Lexv2ModelsBot, scope constructs.Construct, id *string, config *Lexv2ModelsBotConfig) {
 	_init_.Initialize()
 
@@ -682,6 +706,17 @@ func (j *jsiiProxy_Lexv2ModelsBot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lexv2ModelsBot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1144,6 +1179,14 @@ func (l *jsiiProxy_Lexv2ModelsBot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lexv2ModelsBot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

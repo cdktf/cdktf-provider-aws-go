@@ -5,14 +5,14 @@ package dmsendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dmsendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dmsendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,8 +103,9 @@ type DmsEndpoint interface {
 	RedisSettingsInput() *DmsEndpointRedisSettings
 	RedshiftSettings() DmsEndpointRedshiftSettingsOutputReference
 	RedshiftSettingsInput() *DmsEndpointRedshiftSettings
-	S3Settings() DmsEndpointS3SettingsOutputReference
-	S3SettingsInput() *DmsEndpointS3Settings
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecretsManagerAccessRoleArn() *string
 	SetSecretsManagerAccessRoleArn(val *string)
 	SecretsManagerAccessRoleArnInput() *string
@@ -187,7 +188,6 @@ type DmsEndpoint interface {
 	PutPostgresSettings(value *DmsEndpointPostgresSettings)
 	PutRedisSettings(value *DmsEndpointRedisSettings)
 	PutRedshiftSettings(value *DmsEndpointRedshiftSettings)
-	PutS3Settings(value *DmsEndpointS3Settings)
 	PutTimeouts(value *DmsEndpointTimeouts)
 	ResetCertificateArn()
 	ResetDatabaseName()
@@ -207,7 +207,7 @@ type DmsEndpoint interface {
 	ResetPostgresSettings()
 	ResetRedisSettings()
 	ResetRedshiftSettings()
-	ResetS3Settings()
+	ResetRegion()
 	ResetSecretsManagerAccessRoleArn()
 	ResetSecretsManagerArn()
 	ResetServerName()
@@ -735,21 +735,21 @@ func (j *jsiiProxy_DmsEndpoint) RedshiftSettingsInput() *DmsEndpointRedshiftSett
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) S3Settings() DmsEndpointS3SettingsOutputReference {
-	var returns DmsEndpointS3SettingsOutputReference
+func (j *jsiiProxy_DmsEndpoint) Region() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"s3Settings",
+		"region",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DmsEndpoint) S3SettingsInput() *DmsEndpointS3Settings {
-	var returns *DmsEndpointS3Settings
+func (j *jsiiProxy_DmsEndpoint) RegionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"s3SettingsInput",
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -966,7 +966,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -984,7 +984,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -1180,6 +1180,17 @@ func (j *jsiiProxy_DmsEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1702,17 +1713,6 @@ func (d *jsiiProxy_DmsEndpoint) PutRedshiftSettings(value *DmsEndpointRedshiftSe
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) PutS3Settings(value *DmsEndpointS3Settings) {
-	if err := d.validatePutS3SettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putS3Settings",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DmsEndpoint) PutTimeouts(value *DmsEndpointTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1852,10 +1852,10 @@ func (d *jsiiProxy_DmsEndpoint) ResetRedshiftSettings() {
 	)
 }
 
-func (d *jsiiProxy_DmsEndpoint) ResetS3Settings() {
+func (d *jsiiProxy_DmsEndpoint) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetS3Settings",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

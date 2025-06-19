@@ -5,14 +5,14 @@ package quicksightfolder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightfolder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightfolder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder aws_quicksight_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder aws_quicksight_folder}.
 type QuicksightFolder interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type QuicksightFolder interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -147,6 +150,7 @@ type QuicksightFolder interface {
 	ResetOverrideLogicalId()
 	ResetParentFolderArn()
 	ResetPermissions()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -478,6 +482,26 @@ func (j *jsiiProxy_QuicksightFolder) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightFolder) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightFolder) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightFolder) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_QuicksightFolder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder aws_quicksight_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder aws_quicksight_folder} Resource.
 func NewQuicksightFolder(scope constructs.Construct, id *string, config *QuicksightFolderConfig) QuicksightFolder {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewQuicksightFolder(scope constructs.Construct, id *string, config *Quicksi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_folder aws_quicksight_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_folder aws_quicksight_folder} Resource.
 func NewQuicksightFolder_Override(q QuicksightFolder, scope constructs.Construct, id *string, config *QuicksightFolderConfig) {
 	_init_.Initialize()
 
@@ -728,6 +752,17 @@ func (j *jsiiProxy_QuicksightFolder)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightFolder)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1181,6 +1216,14 @@ func (q *jsiiProxy_QuicksightFolder) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightFolder) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

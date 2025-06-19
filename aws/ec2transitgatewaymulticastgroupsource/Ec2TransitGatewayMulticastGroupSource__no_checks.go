@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetTransitGatewayMulticastDomainIdParameters(val *string) error {
 	return nil
 }

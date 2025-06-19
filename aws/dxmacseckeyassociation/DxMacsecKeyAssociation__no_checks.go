@@ -123,6 +123,10 @@ func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetSecretArnParameters(val *string) error {
 	return nil
 }

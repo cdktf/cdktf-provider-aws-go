@@ -147,6 +147,10 @@ func (j *jsiiProxy_DrsReplicationConfigurationTemplate) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_DrsReplicationConfigurationTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DrsReplicationConfigurationTemplate) validateSetReplicationServerInstanceTypeParameters(val *string) error {
 	return nil
 }

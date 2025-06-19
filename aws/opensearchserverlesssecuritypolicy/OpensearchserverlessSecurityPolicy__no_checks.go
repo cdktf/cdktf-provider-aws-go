@@ -119,6 +119,10 @@ func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDatapipelinePipeline) validateSetPipelineIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDatapipelinePipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDatapipelinePipeline) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

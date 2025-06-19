@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsConnectHoursOfOperation) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectHoursOfOperation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectHoursOfOperation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

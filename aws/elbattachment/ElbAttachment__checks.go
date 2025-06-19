@@ -415,6 +415,14 @@ func (j *jsiiProxy_ElbAttachment) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_ElbAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewElbAttachmentParameters(scope constructs.Construct, id *string, config *ElbAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

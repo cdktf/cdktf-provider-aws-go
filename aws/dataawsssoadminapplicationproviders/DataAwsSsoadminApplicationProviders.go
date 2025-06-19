@@ -5,18 +5,17 @@ package dataawsssoadminapplicationproviders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplicationproviders/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers}.
 type DataAwsSsoadminApplicationProviders interface {
 	cdktf.TerraformDataSource
 	ApplicationProviders() DataAwsSsoadminApplicationProvidersApplicationProvidersList
-	ApplicationProvidersInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -50,6 +49,9 @@ type DataAwsSsoadminApplicationProviders interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -81,11 +83,10 @@ type DataAwsSsoadminApplicationProviders interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApplicationProviders(value interface{})
-	ResetApplicationProviders()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -110,16 +111,6 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) ApplicationProviders() D
 	_jsii_.Get(
 		j,
 		"applicationProviders",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) ApplicationProvidersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"applicationProvidersInput",
 		&returns,
 	)
 	return returns
@@ -245,6 +236,26 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -276,7 +287,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
 func NewDataAwsSsoadminApplicationProviders(scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationProvidersConfig) DataAwsSsoadminApplicationProviders {
 	_init_.Initialize()
 
@@ -294,7 +305,7 @@ func NewDataAwsSsoadminApplicationProviders(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
 func NewDataAwsSsoadminApplicationProviders_Override(d DataAwsSsoadminApplicationProviders, scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationProvidersConfig) {
 	_init_.Initialize()
 
@@ -347,6 +358,17 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProviders)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplicationProviders)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -636,29 +658,18 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProviders) OverrideLogicalId(newLog
 	)
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationProviders) PutApplicationProviders(value interface{}) {
-	if err := d.validatePutApplicationProvidersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putApplicationProviders",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationProviders) ResetApplicationProviders() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApplicationProviders",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsSsoadminApplicationProviders) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsoadminApplicationProviders) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

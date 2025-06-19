@@ -5,14 +5,14 @@ package dataawsdefaulttags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdefaulttags/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdefaulttags/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/default_tags aws_default_tags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/default_tags aws_default_tags}.
 type DataAwsDefaultTags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataAwsDefaultTags) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/default_tags aws_default_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/default_tags aws_default_tags} Data Source.
 func NewDataAwsDefaultTags(scope constructs.Construct, id *string, config *DataAwsDefaultTagsConfig) DataAwsDefaultTags {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataAwsDefaultTags(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/default_tags aws_default_tags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/default_tags aws_default_tags} Data Source.
 func NewDataAwsDefaultTags_Override(d DataAwsDefaultTags, scope constructs.Construct, id *string, config *DataAwsDefaultTagsConfig) {
 	_init_.Initialize()
 

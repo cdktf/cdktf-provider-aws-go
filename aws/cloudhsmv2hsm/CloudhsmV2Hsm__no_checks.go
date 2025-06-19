@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Hsm) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

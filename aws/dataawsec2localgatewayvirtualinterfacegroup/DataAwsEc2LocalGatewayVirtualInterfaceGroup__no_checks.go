@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetLocal
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

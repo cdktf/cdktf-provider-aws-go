@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateSetWorkgroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

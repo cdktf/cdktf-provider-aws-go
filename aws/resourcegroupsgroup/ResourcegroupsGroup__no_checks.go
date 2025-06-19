@@ -131,6 +131,10 @@ func (j *jsiiProxy_ResourcegroupsGroup) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ResourcegroupsGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcegroupsGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

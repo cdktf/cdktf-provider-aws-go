@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUserHierarchyStructure) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewConnectUserHierarchyStructureParameters(scope constructs.Construct, id *string, config *ConnectUserHierarchyStructureConfig) error {
 	return nil
 }

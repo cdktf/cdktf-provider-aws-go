@@ -115,6 +115,10 @@ func (j *jsiiProxy_GuarddutyOrganizationAdminAccount) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyOrganizationAdminAccount) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGuarddutyOrganizationAdminAccountParameters(scope constructs.Construct, id *string, config *GuarddutyOrganizationAdminAccountConfig) error {
 	return nil
 }

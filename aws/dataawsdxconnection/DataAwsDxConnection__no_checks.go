@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDxConnection) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDxConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDxConnection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

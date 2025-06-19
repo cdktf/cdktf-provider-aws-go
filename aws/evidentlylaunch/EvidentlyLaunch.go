@@ -5,14 +5,14 @@ package evidentlylaunch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/evidentlylaunch/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/evidentlylaunch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_launch aws_evidently_launch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_launch aws_evidently_launch}.
 type EvidentlyLaunch interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -78,6 +78,9 @@ type EvidentlyLaunch interface {
 	RandomizationSaltInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduledSplitsConfig() EvidentlyLaunchScheduledSplitsConfigOutputReference
 	ScheduledSplitsConfigInput() *EvidentlyLaunchScheduledSplitsConfig
 	Status() *string
@@ -151,6 +154,7 @@ type EvidentlyLaunch interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRandomizationSalt()
+	ResetRegion()
 	ResetScheduledSplitsConfig()
 	ResetTags()
 	ResetTagsAll()
@@ -483,6 +487,26 @@ func (j *jsiiProxy_EvidentlyLaunch) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EvidentlyLaunch) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EvidentlyLaunch) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EvidentlyLaunch) ScheduledSplitsConfig() EvidentlyLaunchScheduledSplitsConfigOutputReference {
 	var returns EvidentlyLaunchScheduledSplitsConfigOutputReference
 	_jsii_.Get(
@@ -624,7 +648,7 @@ func (j *jsiiProxy_EvidentlyLaunch) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_launch aws_evidently_launch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_launch aws_evidently_launch} Resource.
 func NewEvidentlyLaunch(scope constructs.Construct, id *string, config *EvidentlyLaunchConfig) EvidentlyLaunch {
 	_init_.Initialize()
 
@@ -642,7 +666,7 @@ func NewEvidentlyLaunch(scope constructs.Construct, id *string, config *Evidentl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/evidently_launch aws_evidently_launch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/evidently_launch aws_evidently_launch} Resource.
 func NewEvidentlyLaunch_Override(e EvidentlyLaunch, scope constructs.Construct, id *string, config *EvidentlyLaunchConfig) {
 	_init_.Initialize()
 
@@ -772,6 +796,17 @@ func (j *jsiiProxy_EvidentlyLaunch)SetRandomizationSalt(val *string) {
 	_jsii_.Set(
 		j,
 		"randomizationSalt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EvidentlyLaunch)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1231,6 +1266,14 @@ func (e *jsiiProxy_EvidentlyLaunch) ResetRandomizationSalt() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetRandomizationSalt",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EvidentlyLaunch) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

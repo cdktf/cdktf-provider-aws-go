@@ -163,6 +163,10 @@ func (j *jsiiProxy_Ami) validateSetRamdiskIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Ami) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ami) validateSetRootDeviceNameParameters(val *string) error {
 	return nil
 }

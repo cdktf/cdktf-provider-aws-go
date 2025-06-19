@@ -123,6 +123,10 @@ func (j *jsiiProxy_CodecommitRepository) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitRepository) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

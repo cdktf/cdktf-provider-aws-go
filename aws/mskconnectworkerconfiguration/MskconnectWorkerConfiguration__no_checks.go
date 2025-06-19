@@ -127,6 +127,10 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

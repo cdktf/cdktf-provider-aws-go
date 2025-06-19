@@ -5,14 +5,14 @@ package schemasregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/schemasregistry/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/schemasregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry aws_schemas_registry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry aws_schemas_registry}.
 type SchemasRegistry interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type SchemasRegistry interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -125,6 +128,7 @@ type SchemasRegistry interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -345,6 +349,26 @@ func (j *jsiiProxy_SchemasRegistry) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SchemasRegistry) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchemasRegistry) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SchemasRegistry) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_SchemasRegistry) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry aws_schemas_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry aws_schemas_registry} Resource.
 func NewSchemasRegistry(scope constructs.Construct, id *string, config *SchemasRegistryConfig) SchemasRegistry {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewSchemasRegistry(scope constructs.Construct, id *string, config *SchemasR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/schemas_registry aws_schemas_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/schemas_registry aws_schemas_registry} Resource.
 func NewSchemasRegistry_Override(s SchemasRegistry, scope constructs.Construct, id *string, config *SchemasRegistryConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_SchemasRegistry)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SchemasRegistry)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (s *jsiiProxy_SchemasRegistry) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SchemasRegistry) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

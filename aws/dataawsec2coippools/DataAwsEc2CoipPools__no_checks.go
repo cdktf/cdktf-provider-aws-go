@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2CoipPools) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2CoipPools) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2CoipPools) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

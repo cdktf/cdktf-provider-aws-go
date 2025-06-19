@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudwatchLogGroups) validateSetLogGroupNamePrefixPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchLogGroups) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCloudwatchLogGroupsParameters(scope constructs.Construct, id *string, config *DataAwsCloudwatchLogGroupsConfig) error {
 	return nil
 }

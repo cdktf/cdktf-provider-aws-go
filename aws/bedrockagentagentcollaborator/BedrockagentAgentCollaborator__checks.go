@@ -485,6 +485,14 @@ func (j *jsiiProxy_BedrockagentAgentCollaborator) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgentCollaborator) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentAgentCollaborator) validateSetRelayConversationHistoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

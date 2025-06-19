@@ -5,9 +5,9 @@ package verifiedpermissionsschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/verifiedpermissionsschema/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/verifiedpermissionsschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -173,29 +173,29 @@ func (j *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) ValueInpu
 }
 
 
-func NewVerifiedpermissionsSchemaDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VerifiedpermissionsSchemaDefinitionOutputReference {
+func NewVerifiedpermissionsSchemaDefinitionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VerifiedpermissionsSchemaDefinitionOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewVerifiedpermissionsSchemaDefinitionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewVerifiedpermissionsSchemaDefinitionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewVerifiedpermissionsSchemaDefinitionOutputReference_Override(v VerifiedpermissionsSchemaDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVerifiedpermissionsSchemaDefinitionOutputReference_Override(v VerifiedpermissionsSchemaDefinitionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.verifiedpermissionsSchema.VerifiedpermissionsSchemaDefinitionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }

@@ -5,14 +5,14 @@ package codestarnotificationsnotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codestarnotificationsnotificationrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codestarnotificationsnotificationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}.
 type CodestarnotificationsNotificationRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type CodestarnotificationsNotificationRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Resource() *string
 	SetResource(val *string)
 	ResourceInput() *string
@@ -136,6 +139,7 @@ type CodestarnotificationsNotificationRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStatus()
 	ResetTags()
 	ResetTagsAll()
@@ -378,6 +382,26 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodestarnotificationsNotificationRule) Resource() *string {
 	var returns *string
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
 func NewCodestarnotificationsNotificationRule(scope constructs.Construct, id *string, config *CodestarnotificationsNotificationRuleConfig) CodestarnotificationsNotificationRule {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewCodestarnotificationsNotificationRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
 func NewCodestarnotificationsNotificationRule_Override(c CodestarnotificationsNotificationRule, scope constructs.Construct, id *string, config *CodestarnotificationsNotificationRuleConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodestarnotificationsNotificationRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRule) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodestarnotificationsNotificationRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

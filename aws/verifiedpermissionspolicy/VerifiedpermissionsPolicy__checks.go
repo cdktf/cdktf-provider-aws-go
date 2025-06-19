@@ -430,6 +430,14 @@ func (j *jsiiProxy_VerifiedpermissionsPolicy) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedpermissionsPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewVerifiedpermissionsPolicyParameters(scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

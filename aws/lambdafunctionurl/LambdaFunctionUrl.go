@@ -5,14 +5,14 @@ package lambdafunctionurl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdafunctionurl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdafunctionurl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_url aws_lambda_function_url}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_url aws_lambda_function_url}.
 type LambdaFunctionUrl interface {
 	cdktf.TerraformResource
 	AuthorizationType() *string
@@ -74,6 +74,9 @@ type LambdaFunctionUrl interface {
 	QualifierInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +138,7 @@ type LambdaFunctionUrl interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQualifier()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -424,6 +428,26 @@ func (j *jsiiProxy_LambdaFunctionUrl) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunctionUrl) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionUrl) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunctionUrl) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_LambdaFunctionUrl) UrlId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
 func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) LambdaFunctionUrl {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewLambdaFunctionUrl(scope constructs.Construct, id *string, config *Lambda
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_url aws_lambda_function_url} Resource.
 func NewLambdaFunctionUrl_Override(l LambdaFunctionUrl, scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetQualifier(val *string) {
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionUrl)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1048,6 +1083,14 @@ func (l *jsiiProxy_LambdaFunctionUrl) ResetQualifier() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQualifier",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

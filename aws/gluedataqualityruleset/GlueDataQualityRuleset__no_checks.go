@@ -123,6 +123,10 @@ func (j *jsiiProxy_GlueDataQualityRuleset) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GlueDataQualityRuleset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDataQualityRuleset) validateSetRulesetParameters(val *string) error {
 	return nil
 }

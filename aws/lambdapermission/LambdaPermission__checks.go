@@ -455,6 +455,14 @@ func (j *jsiiProxy_LambdaPermission) validateSetQualifierParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_LambdaPermission) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaPermission) validateSetSourceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypes) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2InstanceTypesParameters(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypesConfig) error {
 	return nil
 }

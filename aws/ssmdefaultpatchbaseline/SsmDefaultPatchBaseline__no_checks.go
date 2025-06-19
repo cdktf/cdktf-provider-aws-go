@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmDefaultPatchBaseline) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SsmDefaultPatchBaseline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsmDefaultPatchBaselineParameters(scope constructs.Construct, id *string, config *SsmDefaultPatchBaselineConfig) error {
 	return nil
 }

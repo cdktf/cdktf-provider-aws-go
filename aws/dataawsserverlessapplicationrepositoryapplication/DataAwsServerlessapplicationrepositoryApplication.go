@@ -5,14 +5,14 @@ package dataawsserverlessapplicationrepositoryapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsserverlessapplicationrepositoryapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsserverlessapplicationrepositoryapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application}.
 type DataAwsServerlessapplicationrepositoryApplication interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -54,6 +54,9 @@ type DataAwsServerlessapplicationrepositoryApplication interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequiredCapabilities() *[]*string
 	SemanticVersion() *string
 	SetSemanticVersion(val *string)
@@ -95,6 +98,7 @@ type DataAwsServerlessapplicationrepositoryApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSemanticVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -275,6 +279,26 @@ func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) RawOverrid
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) RequiredCapabilities() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) TerraformR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application} Data Source.
 func NewDataAwsServerlessapplicationrepositoryApplication(scope constructs.Construct, id *string, config *DataAwsServerlessapplicationrepositoryApplicationConfig) DataAwsServerlessapplicationrepositoryApplication {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewDataAwsServerlessapplicationrepositoryApplication(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/serverlessapplicationrepository_application aws_serverlessapplicationrepository_application} Data Source.
 func NewDataAwsServerlessapplicationrepositoryApplication_Override(d DataAwsServerlessapplicationrepositoryApplication, scope constructs.Construct, id *string, config *DataAwsServerlessapplicationrepositoryApplicationConfig) {
 	_init_.Initialize()
 
@@ -449,6 +473,17 @@ func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication)SetProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -761,6 +796,14 @@ func (d *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) ResetOverr
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package datasynclocationazureblob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datasynclocationazureblob/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datasynclocationazureblob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob}.
 type DatasyncLocationAzureBlob interface {
 	cdktf.TerraformResource
 	AccessTier() *string
@@ -74,6 +74,9 @@ type DatasyncLocationAzureBlob interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SasConfiguration() DatasyncLocationAzureBlobSasConfigurationOutputReference
 	SasConfigurationInput() *DatasyncLocationAzureBlobSasConfiguration
 	Subdirectory() *string
@@ -142,6 +145,7 @@ type DatasyncLocationAzureBlob interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSasConfiguration()
 	ResetSubdirectory()
 	ResetTags()
@@ -424,6 +428,26 @@ func (j *jsiiProxy_DatasyncLocationAzureBlob) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncLocationAzureBlob) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationAzureBlob) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncLocationAzureBlob) SasConfiguration() DatasyncLocationAzureBlobSasConfigurationOutputReference {
 	var returns DatasyncLocationAzureBlobSasConfigurationOutputReference
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_DatasyncLocationAzureBlob) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob} Resource.
 func NewDatasyncLocationAzureBlob(scope constructs.Construct, id *string, config *DatasyncLocationAzureBlobConfig) DatasyncLocationAzureBlob {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewDatasyncLocationAzureBlob(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_azure_blob aws_datasync_location_azure_blob} Resource.
 func NewDatasyncLocationAzureBlob_Override(d DatasyncLocationAzureBlob, scope constructs.Construct, id *string, config *DatasyncLocationAzureBlobConfig) {
 	_init_.Initialize()
 
@@ -704,6 +728,17 @@ func (j *jsiiProxy_DatasyncLocationAzureBlob)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncLocationAzureBlob)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1133,6 +1168,14 @@ func (d *jsiiProxy_DatasyncLocationAzureBlob) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncLocationAzureBlob) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

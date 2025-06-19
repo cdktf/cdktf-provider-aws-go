@@ -151,6 +151,10 @@ func (j *jsiiProxy_BedrockCustomModel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_BedrockCustomModel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockCustomModel) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

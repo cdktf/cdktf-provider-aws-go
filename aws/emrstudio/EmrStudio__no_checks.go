@@ -143,6 +143,10 @@ func (j *jsiiProxy_EmrStudio) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_EmrStudio) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudio) validateSetServiceRoleParameters(val *string) error {
 	return nil
 }

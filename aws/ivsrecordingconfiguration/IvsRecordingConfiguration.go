@@ -5,14 +5,14 @@ package ivsrecordingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ivsrecordingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ivsrecordingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration}.
 type IvsRecordingConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type IvsRecordingConfiguration interface {
 	RecordingReconnectWindowSeconds() *float64
 	SetRecordingReconnectWindowSeconds(val *float64)
 	RecordingReconnectWindowSecondsInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -136,6 +139,7 @@ type IvsRecordingConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecordingReconnectWindowSeconds()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetThumbnailConfiguration()
@@ -378,6 +382,26 @@ func (j *jsiiProxy_IvsRecordingConfiguration) RecordingReconnectWindowSecondsInp
 	return returns
 }
 
+func (j *jsiiProxy_IvsRecordingConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IvsRecordingConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IvsRecordingConfiguration) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -499,7 +523,7 @@ func (j *jsiiProxy_IvsRecordingConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration} Resource.
 func NewIvsRecordingConfiguration(scope constructs.Construct, id *string, config *IvsRecordingConfigurationConfig) IvsRecordingConfiguration {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewIvsRecordingConfiguration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_recording_configuration aws_ivs_recording_configuration} Resource.
 func NewIvsRecordingConfiguration_Override(i IvsRecordingConfiguration, scope constructs.Construct, id *string, config *IvsRecordingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -625,6 +649,17 @@ func (j *jsiiProxy_IvsRecordingConfiguration)SetRecordingReconnectWindowSeconds(
 	_jsii_.Set(
 		j,
 		"recordingReconnectWindowSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IvsRecordingConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (i *jsiiProxy_IvsRecordingConfiguration) ResetRecordingReconnectWindowSecon
 	_jsii_.InvokeVoid(
 		i,
 		"resetRecordingReconnectWindowSeconds",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

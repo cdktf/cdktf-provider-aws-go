@@ -135,6 +135,10 @@ func (j *jsiiProxy_LambdaFunctionUrl) validateSetQualifierParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionUrl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLambdaFunctionUrlParameters(scope constructs.Construct, id *string, config *LambdaFunctionUrlConfig) error {
 	return nil
 }

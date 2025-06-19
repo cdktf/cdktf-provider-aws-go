@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsLbs) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbs) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbs) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

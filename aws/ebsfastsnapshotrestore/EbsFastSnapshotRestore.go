@@ -5,14 +5,14 @@ package ebsfastsnapshotrestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ebsfastsnapshotrestore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ebsfastsnapshotrestore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore}.
 type EbsFastSnapshotRestore interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -59,6 +59,9 @@ type EbsFastSnapshotRestore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotId() *string
 	SetSnapshotId(val *string)
 	SnapshotIdInput() *string
@@ -118,6 +121,7 @@ type EbsFastSnapshotRestore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_EbsFastSnapshotRestore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EbsFastSnapshotRestore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EbsFastSnapshotRestore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EbsFastSnapshotRestore) SnapshotId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_EbsFastSnapshotRestore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore} Resource.
 func NewEbsFastSnapshotRestore(scope constructs.Construct, id *string, config *EbsFastSnapshotRestoreConfig) EbsFastSnapshotRestore {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewEbsFastSnapshotRestore(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_fast_snapshot_restore aws_ebs_fast_snapshot_restore} Resource.
 func NewEbsFastSnapshotRestore_Override(e EbsFastSnapshotRestore, scope constructs.Construct, id *string, config *EbsFastSnapshotRestoreConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_EbsFastSnapshotRestore)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EbsFastSnapshotRestore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -865,6 +900,14 @@ func (e *jsiiProxy_EbsFastSnapshotRestore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EbsFastSnapshotRestore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

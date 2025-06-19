@@ -119,6 +119,10 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewWafregionalGeoMatchSetParameters(scope constructs.Construct, id *string, config *WafregionalGeoMatchSetConfig) error {
 	return nil
 }

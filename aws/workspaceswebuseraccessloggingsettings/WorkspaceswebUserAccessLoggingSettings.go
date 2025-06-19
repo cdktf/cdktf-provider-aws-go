@@ -5,14 +5,14 @@ package workspaceswebuseraccessloggingsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebuseraccessloggingsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebuseraccessloggingsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings}.
 type WorkspaceswebUserAccessLoggingSettings interface {
 	cdktf.TerraformResource
 	AssociatedPortalArns() *[]*string
@@ -59,6 +59,9 @@ type WorkspaceswebUserAccessLoggingSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -116,6 +119,7 @@ type WorkspaceswebUserAccessLoggingSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -295,6 +299,26 @@ func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -366,7 +390,7 @@ func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) UserAccessLoggingSett
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
 func NewWorkspaceswebUserAccessLoggingSettings(scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsConfig) WorkspaceswebUserAccessLoggingSettings {
 	_init_.Initialize()
 
@@ -384,7 +408,7 @@ func NewWorkspaceswebUserAccessLoggingSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
 func NewWorkspaceswebUserAccessLoggingSettings_Override(w WorkspaceswebUserAccessLoggingSettings, scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsConfig) {
 	_init_.Initialize()
 
@@ -470,6 +494,17 @@ func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings)SetProvisioners(val *[
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -842,6 +877,14 @@ func (w *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

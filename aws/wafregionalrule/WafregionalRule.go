@@ -5,14 +5,14 @@ package wafregionalrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafregionalrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafregionalrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rule aws_wafregional_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rule aws_wafregional_rule}.
 type WafregionalRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type WafregionalRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -128,6 +131,7 @@ type WafregionalRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPredicate()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -368,6 +372,26 @@ func (j *jsiiProxy_WafregionalRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WafregionalRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafregionalRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafregionalRule) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -439,7 +463,7 @@ func (j *jsiiProxy_WafregionalRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rule aws_wafregional_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rule aws_wafregional_rule} Resource.
 func NewWafregionalRule(scope constructs.Construct, id *string, config *WafregionalRuleConfig) WafregionalRule {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewWafregionalRule(scope constructs.Construct, id *string, config *Wafregio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rule aws_wafregional_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rule aws_wafregional_rule} Resource.
 func NewWafregionalRule_Override(w WafregionalRule, scope constructs.Construct, id *string, config *WafregionalRuleConfig) {
 	_init_.Initialize()
 
@@ -565,6 +589,17 @@ func (j *jsiiProxy_WafregionalRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafregionalRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -975,6 +1010,14 @@ func (w *jsiiProxy_WafregionalRule) ResetPredicate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPredicate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafregionalRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

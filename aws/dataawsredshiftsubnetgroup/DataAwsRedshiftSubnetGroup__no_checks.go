@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

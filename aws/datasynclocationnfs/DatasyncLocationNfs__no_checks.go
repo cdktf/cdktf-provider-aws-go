@@ -119,6 +119,10 @@ func (j *jsiiProxy_DatasyncLocationNfs) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationNfs) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationNfs) validateSetServerHostnameParameters(val *string) error {
 	return nil
 }

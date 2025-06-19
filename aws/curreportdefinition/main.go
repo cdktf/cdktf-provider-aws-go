@@ -67,7 +67,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshClosedReports", GoMethod: "ResetRefreshClosedReports"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReportVersioning", GoMethod: "ResetReportVersioning"},
-			_jsii_.MemberMethod{JsiiMethod: "resetS3Prefix", GoMethod: "ResetS3Prefix"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberProperty{JsiiProperty: "s3Bucket", GoGetter: "S3Bucket"},

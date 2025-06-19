@@ -199,6 +199,10 @@ func (j *jsiiProxy_EmrCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_EmrCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrCluster) validateSetReleaseLabelParameters(val *string) error {
 	return nil
 }

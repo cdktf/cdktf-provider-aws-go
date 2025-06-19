@@ -143,6 +143,10 @@ func (j *jsiiProxy_SchedulerSchedule) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SchedulerSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchedulerSchedule) validateSetScheduleExpressionParameters(val *string) error {
 	return nil
 }

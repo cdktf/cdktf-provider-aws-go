@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsConnectBotAssociationParameters(scope constructs.Construct, id *string, config *DataAwsConnectBotAssociationConfig) error {
 	return nil
 }

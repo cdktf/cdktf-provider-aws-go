@@ -5,14 +5,14 @@ package dataawstimestreamwritedatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstimestreamwritedatabase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstimestreamwritedatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database}.
 type DataAwsTimestreamwriteDatabase interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,9 @@ type DataAwsTimestreamwriteDatabase interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableCount() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -89,6 +92,7 @@ type DataAwsTimestreamwriteDatabase interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_DataAwsTimestreamwriteDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsTimestreamwriteDatabase) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsTimestreamwriteDatabase) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsTimestreamwriteDatabase) TableCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -319,7 +343,7 @@ func (j *jsiiProxy_DataAwsTimestreamwriteDatabase) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database} Data Source.
 func NewDataAwsTimestreamwriteDatabase(scope constructs.Construct, id *string, config *DataAwsTimestreamwriteDatabaseConfig) DataAwsTimestreamwriteDatabase {
 	_init_.Initialize()
 
@@ -337,7 +361,7 @@ func NewDataAwsTimestreamwriteDatabase(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_database aws_timestreamwrite_database} Data Source.
 func NewDataAwsTimestreamwriteDatabase_Override(d DataAwsTimestreamwriteDatabase, scope constructs.Construct, id *string, config *DataAwsTimestreamwriteDatabaseConfig) {
 	_init_.Initialize()
 
@@ -401,6 +425,17 @@ func (j *jsiiProxy_DataAwsTimestreamwriteDatabase)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsTimestreamwriteDatabase)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (d *jsiiProxy_DataAwsTimestreamwriteDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsTimestreamwriteDatabase) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

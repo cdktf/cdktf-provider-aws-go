@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOpensearchserverlessSecurityConfig) validateOverrideLo
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsOpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataAwsOpensearchserverlessSecurityConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessSecurityConfig) validateSetIdParam
 }
 
 func (j *jsiiProxy_DataAwsOpensearchserverlessSecurityConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsOpensearchserverlessSecurityConfig) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEksClusterVersions) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksClusterVersions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksClusterVersions) validateSetVersionStatusParameters(val *string) error {
 	return nil
 }

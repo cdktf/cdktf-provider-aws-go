@@ -111,6 +111,10 @@ func (j *jsiiProxy_SsmServiceSetting) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SsmServiceSetting) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmServiceSetting) validateSetSettingIdParameters(val *string) error {
 	return nil
 }

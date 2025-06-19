@@ -99,10 +99,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyDocumentParam
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyRegionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyRegionsParameters(val *[]*string) error {
 	return nil
 }

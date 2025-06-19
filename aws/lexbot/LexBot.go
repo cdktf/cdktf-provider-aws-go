@@ -5,14 +5,14 @@ package lexbot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexbot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexbot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_bot aws_lex_bot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_bot aws_lex_bot}.
 type LexBot interface {
 	cdktf.TerraformResource
 	AbortStatement() LexBotAbortStatementOutputReference
@@ -99,6 +99,9 @@ type LexBot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -172,6 +175,7 @@ type LexBot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProcessBehavior()
+	ResetRegion()
 	ResetTimeouts()
 	ResetVoiceId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -652,6 +656,26 @@ func (j *jsiiProxy_LexBot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LexBot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LexBot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LexBot) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -743,7 +767,7 @@ func (j *jsiiProxy_LexBot) VoiceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_bot aws_lex_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_bot aws_lex_bot} Resource.
 func NewLexBot(scope constructs.Construct, id *string, config *LexBotConfig) LexBot {
 	_init_.Initialize()
 
@@ -761,7 +785,7 @@ func NewLexBot(scope constructs.Construct, id *string, config *LexBotConfig) Lex
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_bot aws_lex_bot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_bot aws_lex_bot} Resource.
 func NewLexBot_Override(l LexBot, scope constructs.Construct, id *string, config *LexBotConfig) {
 	_init_.Initialize()
 
@@ -957,6 +981,17 @@ func (j *jsiiProxy_LexBot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LexBot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1453,6 +1488,14 @@ func (l *jsiiProxy_LexBot) ResetProcessBehavior() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProcessBehavior",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LexBot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

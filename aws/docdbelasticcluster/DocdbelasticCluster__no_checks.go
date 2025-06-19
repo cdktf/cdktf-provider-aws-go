@@ -143,6 +143,10 @@ func (j *jsiiProxy_DocdbelasticCluster) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DocdbelasticCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbelasticCluster) validateSetShardCapacityParameters(val *float64) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsbedrockcustommodels
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsbedrockcustommodels/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbedrockcustommodels/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
 type DataAwsBedrockCustomModels interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -49,6 +49,9 @@ type DataAwsBedrockCustomModels interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -83,6 +86,7 @@ type DataAwsBedrockCustomModels interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -232,6 +236,26 @@ func (j *jsiiProxy_DataAwsBedrockCustomModels) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBedrockCustomModels) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBedrockCustomModels) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBedrockCustomModels) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -263,7 +287,7 @@ func (j *jsiiProxy_DataAwsBedrockCustomModels) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
 func NewDataAwsBedrockCustomModels(scope constructs.Construct, id *string, config *DataAwsBedrockCustomModelsConfig) DataAwsBedrockCustomModels {
 	_init_.Initialize()
 
@@ -281,7 +305,7 @@ func NewDataAwsBedrockCustomModels(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models} Data Source.
 func NewDataAwsBedrockCustomModels_Override(d DataAwsBedrockCustomModels, scope constructs.Construct, id *string, config *DataAwsBedrockCustomModelsConfig) {
 	_init_.Initialize()
 
@@ -334,6 +358,17 @@ func (j *jsiiProxy_DataAwsBedrockCustomModels)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBedrockCustomModels)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -627,6 +662,14 @@ func (d *jsiiProxy_DataAwsBedrockCustomModels) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBedrockCustomModels) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -418,6 +418,14 @@ func (j *jsiiProxy_DsqlClusterPeering) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DsqlClusterPeering) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DsqlClusterPeering) validateSetWitnessRegionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

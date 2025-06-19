@@ -280,22 +280,6 @@ func validateBatchComputeEnvironment_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_BatchComputeEnvironment) validateSetComputeEnvironmentNamePrefixParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -402,6 +386,22 @@ func (j *jsiiProxy_BatchComputeEnvironment) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetNamePrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -443,6 +443,14 @@ func (j *jsiiProxy_BatchComputeEnvironment) validateSetProvisionersParameters(va
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

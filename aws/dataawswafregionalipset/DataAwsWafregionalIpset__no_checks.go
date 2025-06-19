@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsWafregionalIpset) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalIpset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsWafregionalIpsetParameters(scope constructs.Construct, id *string, config *DataAwsWafregionalIpsetConfig) error {
 	return nil
 }

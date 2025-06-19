@@ -5,14 +5,14 @@ package lightsaildisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildisk/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_disk aws_lightsail_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_disk aws_lightsail_disk}.
 type LightsailDisk interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type LightsailDisk interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SizeInGb() *float64
 	SetSizeInGb(val *float64)
 	SizeInGbInput() *float64
@@ -129,6 +132,7 @@ type LightsailDisk interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -359,6 +363,26 @@ func (j *jsiiProxy_LightsailDisk) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailDisk) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailDisk) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailDisk) SizeInGb() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_LightsailDisk) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
 func NewLightsailDisk(scope constructs.Construct, id *string, config *LightsailDiskConfig) LightsailDisk {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewLightsailDisk(scope constructs.Construct, id *string, config *LightsailD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
 func NewLightsailDisk_Override(l LightsailDisk, scope constructs.Construct, id *string, config *LightsailDiskConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_LightsailDisk)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailDisk)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (l *jsiiProxy_LightsailDisk) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailDisk) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

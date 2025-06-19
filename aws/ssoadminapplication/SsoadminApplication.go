@@ -5,14 +5,14 @@ package ssoadminapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssoadminapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
 type SsoadminApplication interface {
 	cdktf.TerraformResource
 	ApplicationAccount() *string
@@ -20,6 +20,7 @@ type SsoadminApplication interface {
 	ApplicationProviderArn() *string
 	SetApplicationProviderArn(val *string)
 	ApplicationProviderArnInput() *string
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientToken() *string
@@ -75,6 +76,9 @@ type SsoadminApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -138,6 +142,7 @@ type SsoadminApplication interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPortalOptions()
+	ResetRegion()
 	ResetStatus()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -193,6 +198,16 @@ func (j *jsiiProxy_SsoadminApplication) ApplicationProviderArnInput() *string {
 	_jsii_.Get(
 		j,
 		"applicationProviderArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsoadminApplication) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
 		&returns,
 	)
 	return returns
@@ -438,6 +453,26 @@ func (j *jsiiProxy_SsoadminApplication) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsoadminApplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsoadminApplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsoadminApplication) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,7 +554,7 @@ func (j *jsiiProxy_SsoadminApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
 func NewSsoadminApplication(scope constructs.Construct, id *string, config *SsoadminApplicationConfig) SsoadminApplication {
 	_init_.Initialize()
 
@@ -537,7 +572,7 @@ func NewSsoadminApplication(scope constructs.Construct, id *string, config *Ssoa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
 func NewSsoadminApplication_Override(s SsoadminApplication, scope constructs.Construct, id *string, config *SsoadminApplicationConfig) {
 	_init_.Initialize()
 
@@ -667,6 +702,17 @@ func (j *jsiiProxy_SsoadminApplication)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsoadminApplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1085,6 +1131,14 @@ func (s *jsiiProxy_SsoadminApplication) ResetPortalOptions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPortalOptions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsoadminApplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dxconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection aws_dx_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection aws_dx_connection}.
 type DxConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -81,6 +81,9 @@ type DxConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequestMacsec() interface{}
 	SetRequestMacsec(val interface{})
 	RequestMacsecInput() interface{}
@@ -149,6 +152,7 @@ type DxConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderName()
+	ResetRegion()
 	ResetRequestMacsec()
 	ResetSkipDestroy()
 	ResetTags()
@@ -501,6 +505,26 @@ func (j *jsiiProxy_DxConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DxConnection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DxConnection) RequestMacsec() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -622,7 +646,7 @@ func (j *jsiiProxy_DxConnection) VlanId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection aws_dx_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection aws_dx_connection} Resource.
 func NewDxConnection(scope constructs.Construct, id *string, config *DxConnectionConfig) DxConnection {
 	_init_.Initialize()
 
@@ -640,7 +664,7 @@ func NewDxConnection(scope constructs.Construct, id *string, config *DxConnectio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_connection aws_dx_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_connection aws_dx_connection} Resource.
 func NewDxConnection_Override(d DxConnection, scope constructs.Construct, id *string, config *DxConnectionConfig) {
 	_init_.Initialize()
 
@@ -781,6 +805,17 @@ func (j *jsiiProxy_DxConnection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DxConnection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1210,6 +1245,14 @@ func (d *jsiiProxy_DxConnection) ResetProviderName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProviderName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DxConnection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

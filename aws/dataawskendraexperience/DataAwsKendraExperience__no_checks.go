@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKendraExperience) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraExperience) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKendraExperienceParameters(scope constructs.Construct, id *string, config *DataAwsKendraExperienceConfig) error {
 	return nil
 }

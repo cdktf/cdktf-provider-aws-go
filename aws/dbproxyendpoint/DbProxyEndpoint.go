@@ -5,14 +5,14 @@ package dbproxyendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dbproxyendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbproxyendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint}.
 type DbProxyEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type DbProxyEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -139,6 +142,7 @@ type DbProxyEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTargetRole()
@@ -382,6 +386,26 @@ func (j *jsiiProxy_DbProxyEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbProxyEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbProxyEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbProxyEndpoint) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -543,7 +567,7 @@ func (j *jsiiProxy_DbProxyEndpoint) VpcSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint} Resource.
 func NewDbProxyEndpoint(scope constructs.Construct, id *string, config *DbProxyEndpointConfig) DbProxyEndpoint {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewDbProxyEndpoint(scope constructs.Construct, id *string, config *DbProxyE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_proxy_endpoint aws_db_proxy_endpoint} Resource.
 func NewDbProxyEndpoint_Override(d DbProxyEndpoint, scope constructs.Construct, id *string, config *DbProxyEndpointConfig) {
 	_init_.Initialize()
 
@@ -669,6 +693,17 @@ func (j *jsiiProxy_DbProxyEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbProxyEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1104,6 +1139,14 @@ func (d *jsiiProxy_DbProxyEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbProxyEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

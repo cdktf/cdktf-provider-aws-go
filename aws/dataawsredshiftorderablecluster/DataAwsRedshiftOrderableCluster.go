@@ -5,14 +5,14 @@ package dataawsredshiftorderablecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsredshiftorderablecluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsredshiftorderablecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}.
 type DataAwsRedshiftOrderableCluster interface {
 	cdktf.TerraformDataSource
 	AvailabilityZones() *[]*string
@@ -63,6 +63,9 @@ type DataAwsRedshiftOrderableCluster interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -102,6 +105,7 @@ type DataAwsRedshiftOrderableCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredNodeTypes()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -341,6 +345,26 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -372,7 +396,7 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
 func NewDataAwsRedshiftOrderableCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftOrderableClusterConfig) DataAwsRedshiftOrderableCluster {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataAwsRedshiftOrderableCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
 func NewDataAwsRedshiftOrderableCluster_Override(d DataAwsRedshiftOrderableCluster, scope constructs.Construct, id *string, config *DataAwsRedshiftOrderableClusterConfig) {
 	_init_.Initialize()
 
@@ -498,6 +522,17 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRedshiftOrderableCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -831,6 +866,14 @@ func (d *jsiiProxy_DataAwsRedshiftOrderableCluster) ResetPreferredNodeTypes() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredNodeTypes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRedshiftOrderableCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

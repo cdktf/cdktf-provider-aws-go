@@ -5,14 +5,14 @@ package transferserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transferserver/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_server aws_transfer_server}.
 type TransferServer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,9 @@ type TransferServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3StorageOptions() TransferServerS3StorageOptionsOutputReference
 	S3StorageOptionsInput() *TransferServerS3StorageOptions
 	SecurityPolicyName() *string
@@ -198,6 +201,7 @@ type TransferServer interface {
 	ResetPreAuthenticationLoginBanner()
 	ResetProtocolDetails()
 	ResetProtocols()
+	ResetRegion()
 	ResetS3StorageOptions()
 	ResetSecurityPolicyName()
 	ResetSftpAuthenticationMethods()
@@ -704,6 +708,26 @@ func (j *jsiiProxy_TransferServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferServer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferServer) S3StorageOptions() TransferServerS3StorageOptionsOutputReference {
 	var returns TransferServerS3StorageOptionsOutputReference
 	_jsii_.Get(
@@ -895,7 +919,7 @@ func (j *jsiiProxy_TransferServer) WorkflowDetailsInput() *TransferServerWorkflo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer(scope constructs.Construct, id *string, config *TransferServerConfig) TransferServer {
 	_init_.Initialize()
 
@@ -913,7 +937,7 @@ func NewTransferServer(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer_Override(t TransferServer, scope constructs.Construct, id *string, config *TransferServerConfig) {
 	_init_.Initialize()
 
@@ -1142,6 +1166,17 @@ func (j *jsiiProxy_TransferServer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferServer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1741,6 +1776,14 @@ func (t *jsiiProxy_TransferServer) ResetProtocols() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetProtocols",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferServer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

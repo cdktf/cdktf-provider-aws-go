@@ -119,6 +119,10 @@ func (j *jsiiProxy_PinpointSmsChannel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_PinpointSmsChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointSmsChannel) validateSetSenderIdParameters(val *string) error {
 	return nil
 }

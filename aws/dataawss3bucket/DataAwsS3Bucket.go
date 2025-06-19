@@ -5,14 +5,14 @@ package dataawss3bucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawss3bucket/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawss3bucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket aws_s3_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket aws_s3_bucket}.
 type DataAwsS3Bucket interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,6 +20,7 @@ type DataAwsS3Bucket interface {
 	SetBucket(val *string)
 	BucketDomainName() *string
 	BucketInput() *string
+	BucketRegion() *string
 	BucketRegionalDomainName() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -58,6 +59,8 @@ type DataAwsS3Bucket interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -95,6 +98,7 @@ type DataAwsS3Bucket interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -149,6 +153,16 @@ func (j *jsiiProxy_DataAwsS3Bucket) BucketInput() *string {
 	_jsii_.Get(
 		j,
 		"bucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Bucket) BucketRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketRegion",
 		&returns,
 	)
 	return returns
@@ -314,6 +328,16 @@ func (j *jsiiProxy_DataAwsS3Bucket) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsS3Bucket) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsS3Bucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -365,7 +389,7 @@ func (j *jsiiProxy_DataAwsS3Bucket) WebsiteEndpoint() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
 func NewDataAwsS3Bucket(scope constructs.Construct, id *string, config *DataAwsS3BucketConfig) DataAwsS3Bucket {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewDataAwsS3Bucket(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
 func NewDataAwsS3Bucket_Override(d DataAwsS3Bucket, scope constructs.Construct, id *string, config *DataAwsS3BucketConfig) {
 	_init_.Initialize()
 
@@ -458,6 +482,17 @@ func (j *jsiiProxy_DataAwsS3Bucket)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsS3Bucket)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -759,6 +794,14 @@ func (d *jsiiProxy_DataAwsS3Bucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsS3Bucket) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_VpnConnection) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetRemoteIpv4NetworkCidrParameters(val *string) error {
 	return nil
 }

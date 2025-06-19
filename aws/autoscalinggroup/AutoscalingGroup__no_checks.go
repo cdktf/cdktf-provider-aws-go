@@ -251,6 +251,10 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroup) validateSetServiceLinkedRoleArnParameters(val *string) error {
 	return nil
 }

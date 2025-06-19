@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLakeformationResource) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLakeformationResource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLakeformationResourceParameters(scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) error {
 	return nil
 }

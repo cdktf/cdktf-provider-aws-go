@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3OutpostsEndpoint) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_S3OutpostsEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetSecurityGroupIdParameters(val *string) error {
 	return nil
 }

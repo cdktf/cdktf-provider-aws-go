@@ -5,14 +5,14 @@ package natgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/natgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/natgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/nat_gateway aws_nat_gateway}.
 type NatGateway interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -70,6 +70,9 @@ type NatGateway interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecondaryAllocationIds() *[]*string
 	SetSecondaryAllocationIds(val *[]*string)
 	SecondaryAllocationIdsInput() *[]*string
@@ -147,6 +150,7 @@ type NatGateway interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateIp()
+	ResetRegion()
 	ResetSecondaryAllocationIds()
 	ResetSecondaryPrivateIpAddressCount()
 	ResetSecondaryPrivateIpAddresses()
@@ -411,6 +415,26 @@ func (j *jsiiProxy_NatGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NatGateway) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NatGateway) SecondaryAllocationIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -582,7 +606,7 @@ func (j *jsiiProxy_NatGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayConfig) NatGateway {
 	_init_.Initialize()
 
@@ -600,7 +624,7 @@ func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway_Override(n NatGateway, scope constructs.Construct, id *string, config *NatGatewayConfig) {
 	_init_.Initialize()
 
@@ -719,6 +743,17 @@ func (j *jsiiProxy_NatGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1189,6 +1224,14 @@ func (n *jsiiProxy_NatGateway) ResetPrivateIp() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPrivateIp",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

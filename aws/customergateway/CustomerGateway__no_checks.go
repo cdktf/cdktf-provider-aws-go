@@ -131,6 +131,10 @@ func (j *jsiiProxy_CustomerGateway) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_CustomerGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomerGateway) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

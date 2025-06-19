@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailDiskAttachment) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDiskAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailDiskAttachmentParameters(scope constructs.Construct, id *string, config *LightsailDiskAttachmentConfig) error {
 	return nil
 }

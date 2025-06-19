@@ -123,6 +123,10 @@ func (j *jsiiProxy_BedrockInferenceProfile) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_BedrockInferenceProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockInferenceProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

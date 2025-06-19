@@ -123,6 +123,10 @@ func (j *jsiiProxy_DsqlCluster) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_DsqlCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DsqlCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

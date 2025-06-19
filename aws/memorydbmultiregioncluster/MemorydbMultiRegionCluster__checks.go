@@ -458,6 +458,14 @@ func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

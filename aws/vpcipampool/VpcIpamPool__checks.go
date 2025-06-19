@@ -550,6 +550,14 @@ func (j *jsiiProxy_VpcIpamPool) validateSetPubliclyAdvertisableParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPool) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetSourceIpamPoolIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

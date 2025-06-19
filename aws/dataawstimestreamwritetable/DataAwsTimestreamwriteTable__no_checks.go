@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsTimestreamwriteTable) validateSetNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsTimestreamwriteTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsTimestreamwriteTableParameters(scope constructs.Construct, id *string, config *DataAwsTimestreamwriteTableConfig) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfile) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBedrockInferenceProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsBedrockInferenceProfileParameters(scope constructs.Construct, id *string, config *DataAwsBedrockInferenceProfileConfig) error {
 	return nil
 }

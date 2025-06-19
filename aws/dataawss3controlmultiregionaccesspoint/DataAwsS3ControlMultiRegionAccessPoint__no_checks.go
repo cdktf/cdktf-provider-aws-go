@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsS3ControlMultiRegionAccessPointParameters(scope constructs.Construct, id *string, config *DataAwsS3ControlMultiRegionAccessPointConfig) error {
 	return nil
 }

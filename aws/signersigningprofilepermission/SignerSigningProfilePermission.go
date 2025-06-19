@@ -5,14 +5,14 @@ package signersigningprofilepermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/signersigningprofilepermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/signersigningprofilepermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission}.
 type SignerSigningProfilePermission interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -70,6 +70,9 @@ type SignerSigningProfilePermission interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StatementId() *string
 	SetStatementId(val *string)
 	StatementIdInput() *string
@@ -130,6 +133,7 @@ type SignerSigningProfilePermission interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProfileVersion()
+	ResetRegion()
 	ResetStatementId()
 	ResetStatementIdPrefix()
 	SynthesizeAttributes() *map[string]interface{}
@@ -380,6 +384,26 @@ func (j *jsiiProxy_SignerSigningProfilePermission) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SignerSigningProfilePermission) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignerSigningProfilePermission) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignerSigningProfilePermission) StatementId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_SignerSigningProfilePermission) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
 func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, config *SignerSigningProfilePermissionConfig) SignerSigningProfilePermission {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewSignerSigningProfilePermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/signer_signing_profile_permission aws_signer_signing_profile_permission} Resource.
 func NewSignerSigningProfilePermission_Override(s SignerSigningProfilePermission, scope constructs.Construct, id *string, config *SignerSigningProfilePermissionConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_SignerSigningProfilePermission)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SignerSigningProfilePermission)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -998,6 +1033,14 @@ func (s *jsiiProxy_SignerSigningProfilePermission) ResetProfileVersion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProfileVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignerSigningProfilePermission) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

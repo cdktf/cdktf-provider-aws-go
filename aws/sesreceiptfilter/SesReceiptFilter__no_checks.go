@@ -123,6 +123,10 @@ func (j *jsiiProxy_SesReceiptFilter) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesReceiptFilterParameters(scope constructs.Construct, id *string, config *SesReceiptFilterConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package iotdomainconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iotdomainconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotdomainconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration}.
 type IotDomainConfiguration interface {
 	cdktf.TerraformResource
 	ApplicationProtocol() *string
@@ -74,6 +74,9 @@ type IotDomainConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerCertificateArns() *[]*string
 	SetServerCertificateArns(val *[]*string)
 	ServerCertificateArnsInput() *[]*string
@@ -153,6 +156,7 @@ type IotDomainConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetServerCertificateArns()
 	ResetServiceType()
 	ResetStatus()
@@ -448,6 +452,26 @@ func (j *jsiiProxy_IotDomainConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IotDomainConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotDomainConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotDomainConfiguration) ServerCertificateArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -619,7 +643,7 @@ func (j *jsiiProxy_IotDomainConfiguration) ValidationCertificateArnInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
 func NewIotDomainConfiguration(scope constructs.Construct, id *string, config *IotDomainConfigurationConfig) IotDomainConfiguration {
 	_init_.Initialize()
 
@@ -637,7 +661,7 @@ func NewIotDomainConfiguration(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iot_domain_configuration aws_iot_domain_configuration} Resource.
 func NewIotDomainConfiguration_Override(i IotDomainConfiguration, scope constructs.Construct, id *string, config *IotDomainConfigurationConfig) {
 	_init_.Initialize()
 
@@ -767,6 +791,17 @@ func (j *jsiiProxy_IotDomainConfiguration)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotDomainConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1256,6 +1291,14 @@ func (i *jsiiProxy_IotDomainConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotDomainConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

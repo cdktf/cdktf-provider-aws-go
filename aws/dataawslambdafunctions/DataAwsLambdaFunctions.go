@@ -5,14 +5,14 @@ package dataawslambdafunctions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslambdafunctions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslambdafunctions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_functions aws_lambda_functions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_functions aws_lambda_functions}.
 type DataAwsLambdaFunctions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,6 +52,9 @@ type DataAwsLambdaFunctions interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -87,6 +90,7 @@ type DataAwsLambdaFunctions interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -256,6 +260,26 @@ func (j *jsiiProxy_DataAwsLambdaFunctions) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunctions) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaFunctions) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLambdaFunctions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -287,7 +311,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
 func NewDataAwsLambdaFunctions(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionsConfig) DataAwsLambdaFunctions {
 	_init_.Initialize()
 
@@ -305,7 +329,7 @@ func NewDataAwsLambdaFunctions(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
 func NewDataAwsLambdaFunctions_Override(d DataAwsLambdaFunctions, scope constructs.Construct, id *string, config *DataAwsLambdaFunctionsConfig) {
 	_init_.Initialize()
 
@@ -369,6 +393,17 @@ func (j *jsiiProxy_DataAwsLambdaFunctions)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLambdaFunctions)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -670,6 +705,14 @@ func (d *jsiiProxy_DataAwsLambdaFunctions) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLambdaFunctions) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

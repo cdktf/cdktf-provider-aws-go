@@ -139,6 +139,10 @@ func (j *jsiiProxy_Macie2FindingsFilter) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Macie2FindingsFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2FindingsFilter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_DevicefarmProject) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmProject) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmProject) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

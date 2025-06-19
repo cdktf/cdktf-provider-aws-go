@@ -5,14 +5,14 @@ package quicksightiampolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightiampolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiampolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
 type QuicksightIamPolicyAssignment interface {
 	cdktf.TerraformResource
 	AssignmentId() *string
@@ -74,6 +74,9 @@ type QuicksightIamPolicyAssignment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,6 +134,7 @@ type QuicksightIamPolicyAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyArn()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -419,6 +423,26 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightIamPolicyAssignment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightIamPolicyAssignment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightIamPolicyAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
 func NewQuicksightIamPolicyAssignment(scope constructs.Construct, id *string, config *QuicksightIamPolicyAssignmentConfig) QuicksightIamPolicyAssignment {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewQuicksightIamPolicyAssignment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
 func NewQuicksightIamPolicyAssignment_Override(q QuicksightIamPolicyAssignment, scope constructs.Construct, id *string, config *QuicksightIamPolicyAssignmentConfig) {
 	_init_.Initialize()
 
@@ -598,6 +622,17 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightIamPolicyAssignment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1002,6 +1037,14 @@ func (q *jsiiProxy_QuicksightIamPolicyAssignment) ResetPolicyArn() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPolicyArn",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightIamPolicyAssignment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

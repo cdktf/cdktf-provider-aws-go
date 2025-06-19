@@ -115,6 +115,10 @@ func (j *jsiiProxy_DevopsguruNotificationChannel) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_DevopsguruNotificationChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDevopsguruNotificationChannelParameters(scope constructs.Construct, id *string, config *DevopsguruNotificationChannelConfig) error {
 	return nil
 }

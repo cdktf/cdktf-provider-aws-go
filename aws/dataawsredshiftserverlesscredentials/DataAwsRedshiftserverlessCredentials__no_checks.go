@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) validateSetWorkgroupNameParameters(val *string) error {
 	return nil
 }

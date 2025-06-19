@@ -115,6 +115,10 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetSnapshotNameParameters(val *string) error {
 	return nil
 }

@@ -451,6 +451,14 @@ func (j *jsiiProxy_SagemakerFlowDefinition) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFlowDefinition) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFlowDefinition) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

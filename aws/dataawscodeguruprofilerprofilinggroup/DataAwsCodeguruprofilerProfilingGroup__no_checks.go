@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsCodeguruprofilerProfilingGroup) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodeguruprofilerProfilingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCodeguruprofilerProfilingGroupParameters(scope constructs.Construct, id *string, config *DataAwsCodeguruprofilerProfilingGroupConfig) error {
 	return nil
 }

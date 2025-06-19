@@ -5,14 +5,14 @@ package cloudwatcheventtarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatcheventtarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatcheventtarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
 type CloudwatchEventTarget interface {
 	cdktf.TerraformResource
 	AppsyncTarget() CloudwatchEventTargetAppsyncTargetOutputReference
@@ -89,6 +89,9 @@ type CloudwatchEventTarget interface {
 	RawOverrides() interface{}
 	RedshiftTarget() CloudwatchEventTargetRedshiftTargetOutputReference
 	RedshiftTargetInput() *CloudwatchEventTargetRedshiftTarget
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetryPolicy() CloudwatchEventTargetRetryPolicyOutputReference
 	RetryPolicyInput() *CloudwatchEventTargetRetryPolicy
 	RoleArn() *string
@@ -183,6 +186,7 @@ type CloudwatchEventTarget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedshiftTarget()
+	ResetRegion()
 	ResetRetryPolicy()
 	ResetRoleArn()
 	ResetRunCommandTargets()
@@ -617,6 +621,26 @@ func (j *jsiiProxy_CloudwatchEventTarget) RedshiftTargetInput() *CloudwatchEvent
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchEventTarget) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchEventTarget) RetryPolicy() CloudwatchEventTargetRetryPolicyOutputReference {
 	var returns CloudwatchEventTargetRetryPolicyOutputReference
 	_jsii_.Get(
@@ -788,7 +812,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) CloudwatchEventTarget {
 	_init_.Initialize()
 
@@ -806,7 +830,7 @@ func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) {
 	_init_.Initialize()
 
@@ -947,6 +971,17 @@ func (j *jsiiProxy_CloudwatchEventTarget)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1577,6 +1612,14 @@ func (c *jsiiProxy_CloudwatchEventTarget) ResetRedshiftTarget() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRedshiftTarget",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

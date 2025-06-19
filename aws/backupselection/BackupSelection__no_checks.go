@@ -135,6 +135,10 @@ func (j *jsiiProxy_BackupSelection) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_BackupSelection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupSelection) validateSetResourcesParameters(val *[]*string) error {
 	return nil
 }

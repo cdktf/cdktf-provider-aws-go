@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipelines) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderImagePipelines) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsImagebuilderImagePipelinesParameters(scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelinesConfig) error {
 	return nil
 }

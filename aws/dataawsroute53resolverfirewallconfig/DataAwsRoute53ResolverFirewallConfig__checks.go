@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetResourceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

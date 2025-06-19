@@ -139,6 +139,10 @@ func (j *jsiiProxy_GuarddutyMember) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyMember) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGuarddutyMemberParameters(scope constructs.Construct, id *string, config *GuarddutyMemberConfig) error {
 	return nil
 }

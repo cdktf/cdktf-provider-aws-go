@@ -147,6 +147,10 @@ func (j *jsiiProxy_KendraIndex) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_KendraIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraIndex) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

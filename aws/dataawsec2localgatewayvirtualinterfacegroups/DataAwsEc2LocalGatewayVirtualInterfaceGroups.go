@@ -5,14 +5,14 @@ package dataawsec2localgatewayvirtualinterfacegroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2localgatewayvirtualinterfacegroups/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterfacegroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
 type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -97,6 +100,7 @@ type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -288,6 +292,26 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) RawOverrides() 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -359,7 +383,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) DataAwsEc2LocalGatewayVirtualInterfaceGroups {
 	_init_.Initialize()
 
@@ -377,7 +401,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups_Override(d DataAwsEc2LocalGatewayVirtualInterfaceGroups, scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) {
 	_init_.Initialize()
 
@@ -441,6 +465,17 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups)SetProvider(val 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -783,6 +818,14 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) ResetOverrideLo
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

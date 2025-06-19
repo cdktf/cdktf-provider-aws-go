@@ -5,14 +5,14 @@ package workspacesworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspacesworkspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspacesworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_workspace aws_workspaces_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_workspace aws_workspaces_workspace}.
 type WorkspacesWorkspace interface {
 	cdktf.TerraformResource
 	BundleId() *string
@@ -66,6 +66,9 @@ type WorkspacesWorkspace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootVolumeEncryptionEnabled() interface{}
 	SetRootVolumeEncryptionEnabled(val interface{})
 	RootVolumeEncryptionEnabledInput() interface{}
@@ -144,6 +147,7 @@ type WorkspacesWorkspace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRootVolumeEncryptionEnabled()
 	ResetTags()
 	ResetTagsAll()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_WorkspacesWorkspace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesWorkspace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesWorkspace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesWorkspace) RootVolumeEncryptionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -580,7 +604,7 @@ func (j *jsiiProxy_WorkspacesWorkspace) WorkspacePropertiesInput() *WorkspacesWo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_workspace aws_workspaces_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_workspace aws_workspaces_workspace} Resource.
 func NewWorkspacesWorkspace(scope constructs.Construct, id *string, config *WorkspacesWorkspaceConfig) WorkspacesWorkspace {
 	_init_.Initialize()
 
@@ -598,7 +622,7 @@ func NewWorkspacesWorkspace(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspaces_workspace aws_workspaces_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspaces_workspace aws_workspaces_workspace} Resource.
 func NewWorkspacesWorkspace_Override(w WorkspacesWorkspace, scope constructs.Construct, id *string, config *WorkspacesWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -706,6 +730,17 @@ func (j *jsiiProxy_WorkspacesWorkspace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesWorkspace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1163,6 +1198,14 @@ func (w *jsiiProxy_WorkspacesWorkspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesWorkspace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

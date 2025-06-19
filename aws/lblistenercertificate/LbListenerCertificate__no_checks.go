@@ -119,6 +119,10 @@ func (j *jsiiProxy_LbListenerCertificate) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLbListenerCertificateParameters(scope constructs.Construct, id *string, config *LbListenerCertificateConfig) error {
 	return nil
 }

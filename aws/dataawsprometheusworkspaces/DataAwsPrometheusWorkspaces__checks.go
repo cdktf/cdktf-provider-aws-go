@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspaces) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspaces) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsPrometheusWorkspacesParameters(scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspacesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

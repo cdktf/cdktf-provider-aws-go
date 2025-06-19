@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDxLocation) validateSetLocationCodeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDxLocation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDxLocationParameters(scope constructs.Construct, id *string, config *DataAwsDxLocationConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_BatchSchedulingPolicy) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BatchSchedulingPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchSchedulingPolicy) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

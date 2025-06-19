@@ -5,14 +5,14 @@ package dataawslocationplaceindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslocationplaceindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslocationplaceindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_place_index aws_location_place_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_place_index aws_location_place_index}.
 type DataAwsLocationPlaceIndex interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -58,6 +58,9 @@ type DataAwsLocationPlaceIndex interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -97,6 +100,7 @@ type DataAwsLocationPlaceIndex interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -317,6 +321,26 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLocationPlaceIndex) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLocationPlaceIndex) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLocationPlaceIndex) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -378,7 +402,7 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
 func NewDataAwsLocationPlaceIndex(scope constructs.Construct, id *string, config *DataAwsLocationPlaceIndexConfig) DataAwsLocationPlaceIndex {
 	_init_.Initialize()
 
@@ -396,7 +420,7 @@ func NewDataAwsLocationPlaceIndex(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
 func NewDataAwsLocationPlaceIndex_Override(d DataAwsLocationPlaceIndex, scope constructs.Construct, id *string, config *DataAwsLocationPlaceIndexConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLocationPlaceIndex)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -783,6 +818,14 @@ func (d *jsiiProxy_DataAwsLocationPlaceIndex) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLocationPlaceIndex) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

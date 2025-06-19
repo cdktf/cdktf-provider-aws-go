@@ -123,6 +123,10 @@ func (j *jsiiProxy_EmrSecurityConfiguration) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EmrSecurityConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEmrSecurityConfigurationParameters(scope constructs.Construct, id *string, config *EmrSecurityConfigurationConfig) error {
 	return nil
 }

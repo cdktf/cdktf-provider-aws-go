@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsServicequotasService) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicequotasService) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicequotasService) validateSetServiceNameParameters(val *string) error {
 	return nil
 }

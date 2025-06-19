@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

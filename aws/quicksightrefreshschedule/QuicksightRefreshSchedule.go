@@ -5,14 +5,14 @@ package quicksightrefreshschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightrefreshschedule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightrefreshschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule}.
 type QuicksightRefreshSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type QuicksightRefreshSchedule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Schedule() QuicksightRefreshScheduleScheduleList
 	ScheduleId() *string
 	SetScheduleId(val *string)
@@ -122,6 +125,7 @@ type QuicksightRefreshSchedule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSchedule()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -331,6 +335,26 @@ func (j *jsiiProxy_QuicksightRefreshSchedule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightRefreshSchedule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightRefreshSchedule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightRefreshSchedule) Schedule() QuicksightRefreshScheduleScheduleList {
 	var returns QuicksightRefreshScheduleScheduleList
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_QuicksightRefreshSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
 func NewQuicksightRefreshSchedule(scope constructs.Construct, id *string, config *QuicksightRefreshScheduleConfig) QuicksightRefreshSchedule {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewQuicksightRefreshSchedule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
 func NewQuicksightRefreshSchedule_Override(q QuicksightRefreshSchedule, scope constructs.Construct, id *string, config *QuicksightRefreshScheduleConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_QuicksightRefreshSchedule)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightRefreshSchedule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightRefreshSchedule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

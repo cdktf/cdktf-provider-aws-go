@@ -135,6 +135,10 @@ func (j *jsiiProxy_DxBgpPeer) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_DxBgpPeer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxBgpPeer) validateSetVirtualInterfaceIdParameters(val *string) error {
 	return nil
 }

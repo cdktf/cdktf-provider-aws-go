@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsSsmDocument) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmDocument) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsmDocumentParameters(scope constructs.Construct, id *string, config *DataAwsSsmDocumentConfig) error {
 	return nil
 }

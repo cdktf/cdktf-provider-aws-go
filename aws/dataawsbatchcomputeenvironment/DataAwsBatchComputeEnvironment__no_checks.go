@@ -71,10 +71,6 @@ func validateDataAwsBatchComputeEnvironment_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +80,14 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetIdParameters(val *
 }
 
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -175,6 +175,10 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetStatisticParameters(val *string) error {
 	return nil
 }

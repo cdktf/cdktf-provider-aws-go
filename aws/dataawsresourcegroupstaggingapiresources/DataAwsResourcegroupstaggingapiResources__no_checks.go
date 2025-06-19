@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetResourceArnListParameters(val *[]*string) error {
 	return nil
 }

@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsRoute53ResolverFirewallRuleGroupAssociationParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRuleGroupAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -5,14 +5,14 @@ package dataawsmemorydbsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsmemorydbsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsmemorydbsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot}.
 type DataAwsMemorydbSnapshot interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -57,6 +57,9 @@ type DataAwsMemorydbSnapshot interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Source() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -96,6 +99,7 @@ type DataAwsMemorydbSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -306,6 +310,26 @@ func (j *jsiiProxy_DataAwsMemorydbSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMemorydbSnapshot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMemorydbSnapshot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMemorydbSnapshot) Source() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_DataAwsMemorydbSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot} Data Source.
 func NewDataAwsMemorydbSnapshot(scope constructs.Construct, id *string, config *DataAwsMemorydbSnapshotConfig) DataAwsMemorydbSnapshot {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewDataAwsMemorydbSnapshot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/memorydb_snapshot aws_memorydb_snapshot} Data Source.
 func NewDataAwsMemorydbSnapshot_Override(d DataAwsMemorydbSnapshot, scope constructs.Construct, id *string, config *DataAwsMemorydbSnapshotConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_DataAwsMemorydbSnapshot)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMemorydbSnapshot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -772,6 +807,14 @@ func (d *jsiiProxy_DataAwsMemorydbSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMemorydbSnapshot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecatalystDevEnvironment) validateSetSpaceNameParameters(val *string) error {
 	return nil
 }

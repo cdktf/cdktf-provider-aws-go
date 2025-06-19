@@ -123,6 +123,10 @@ func (j *jsiiProxy_KeyspacesKeyspace) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_KeyspacesKeyspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyspacesKeyspace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

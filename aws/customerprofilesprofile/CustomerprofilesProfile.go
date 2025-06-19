@@ -5,14 +5,14 @@ package customerprofilesprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/customerprofilesprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/customerprofilesprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile}.
 type CustomerprofilesProfile interface {
 	cdktf.TerraformResource
 	AccountNumber() *string
@@ -118,6 +118,9 @@ type CustomerprofilesProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ShippingAddress() CustomerprofilesProfileShippingAddressOutputReference
 	ShippingAddressInput() *CustomerprofilesProfileShippingAddress
 	// Experimental.
@@ -197,6 +200,7 @@ type CustomerprofilesProfile interface {
 	ResetPartyTypeString()
 	ResetPersonalEmailAddress()
 	ResetPhoneNumber()
+	ResetRegion()
 	ResetShippingAddress()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -786,6 +790,26 @@ func (j *jsiiProxy_CustomerprofilesProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CustomerprofilesProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomerprofilesProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CustomerprofilesProfile) ShippingAddress() CustomerprofilesProfileShippingAddressOutputReference {
 	var returns CustomerprofilesProfileShippingAddressOutputReference
 	_jsii_.Get(
@@ -837,7 +861,7 @@ func (j *jsiiProxy_CustomerprofilesProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource.
 func NewCustomerprofilesProfile(scope constructs.Construct, id *string, config *CustomerprofilesProfileConfig) CustomerprofilesProfile {
 	_init_.Initialize()
 
@@ -855,7 +879,7 @@ func NewCustomerprofilesProfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/customerprofiles_profile aws_customerprofiles_profile} Resource.
 func NewCustomerprofilesProfile_Override(c CustomerprofilesProfile, scope constructs.Construct, id *string, config *CustomerprofilesProfileConfig) {
 	_init_.Initialize()
 
@@ -1139,6 +1163,17 @@ func (j *jsiiProxy_CustomerprofilesProfile)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomerprofilesProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1712,6 +1747,14 @@ func (c *jsiiProxy_CustomerprofilesProfile) ResetPhoneNumber() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPhoneNumber",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomerprofilesProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

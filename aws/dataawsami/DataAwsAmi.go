@@ -5,16 +5,19 @@ package dataawsami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami aws_ami}.
 type DataAwsAmi interface {
 	cdktf.TerraformDataSource
+	AllowUnsafeFilter() interface{}
+	SetAllowUnsafeFilter(val interface{})
+	AllowUnsafeFilterInput() interface{}
 	Architecture() *string
 	Arn() *string
 	BlockDeviceMappings() DataAwsAmiBlockDeviceMappingsList
@@ -90,6 +93,9 @@ type DataAwsAmi interface {
 	RamdiskId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootDeviceName() *string
 	RootDeviceType() *string
 	RootSnapshotId() *string
@@ -140,6 +146,7 @@ type DataAwsAmi interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value interface{})
 	PutTimeouts(value *DataAwsAmiTimeouts)
+	ResetAllowUnsafeFilter()
 	ResetExecutableUsers()
 	ResetFilter()
 	ResetId()
@@ -150,6 +157,7 @@ type DataAwsAmi interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwners()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	ResetUefiData()
@@ -170,6 +178,26 @@ type DataAwsAmi interface {
 // The jsii proxy struct for DataAwsAmi
 type jsiiProxy_DataAwsAmi struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsAmi) AllowUnsafeFilter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowUnsafeFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAmi) AllowUnsafeFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowUnsafeFilterInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsAmi) Architecture() *string {
@@ -652,6 +680,26 @@ func (j *jsiiProxy_DataAwsAmi) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAmi) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAmi) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAmi) RootDeviceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -833,7 +881,7 @@ func (j *jsiiProxy_DataAwsAmi) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiConfig) DataAwsAmi {
 	_init_.Initialize()
 
@@ -851,7 +899,7 @@ func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string, config *DataAwsAmiConfig) {
 	_init_.Initialize()
 
@@ -859,6 +907,17 @@ func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string
 		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmi",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAmi)SetAllowUnsafeFilter(val interface{}) {
+	if err := j.validateSetAllowUnsafeFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowUnsafeFilter",
+		val,
 	)
 }
 
@@ -970,6 +1029,17 @@ func (j *jsiiProxy_DataAwsAmi)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAmi)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1303,6 +1373,14 @@ func (d *jsiiProxy_DataAwsAmi) PutTimeouts(value *DataAwsAmiTimeouts) {
 	)
 }
 
+func (d *jsiiProxy_DataAwsAmi) ResetAllowUnsafeFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowUnsafeFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsAmi) ResetExecutableUsers() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1363,6 +1441,14 @@ func (d *jsiiProxy_DataAwsAmi) ResetOwners() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwners",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAmi) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

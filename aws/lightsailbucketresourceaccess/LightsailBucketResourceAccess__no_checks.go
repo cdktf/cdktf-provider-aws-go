@@ -115,6 +115,10 @@ func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetResourceNameParameters(val *string) error {
 	return nil
 }

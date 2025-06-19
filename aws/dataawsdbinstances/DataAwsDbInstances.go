@@ -5,14 +5,14 @@ package dataawsdbinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdbinstances/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdbinstances/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instances aws_db_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instances aws_db_instances}.
 type DataAwsDbInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataAwsDbInstances interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -94,6 +97,7 @@ type DataAwsDbInstances interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -284,6 +288,26 @@ func (j *jsiiProxy_DataAwsDbInstances) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDbInstances) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbInstances) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDbInstances) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -335,7 +359,7 @@ func (j *jsiiProxy_DataAwsDbInstances) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) DataAwsDbInstances {
 	_init_.Initialize()
 
@@ -353,7 +377,7 @@ func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances_Override(d DataAwsDbInstances, scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) {
 	_init_.Initialize()
 
@@ -417,6 +441,17 @@ func (j *jsiiProxy_DataAwsDbInstances)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDbInstances)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -748,6 +783,14 @@ func (d *jsiiProxy_DataAwsDbInstances) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDbInstances) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

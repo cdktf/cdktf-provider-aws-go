@@ -5,14 +5,14 @@ package snapshotcreatevolumepermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/snapshotcreatevolumepermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/snapshotcreatevolumepermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
 type SnapshotCreateVolumePermission interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -61,6 +61,9 @@ type SnapshotCreateVolumePermission interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotId() *string
 	SetSnapshotId(val *string)
 	SnapshotIdInput() *string
@@ -120,6 +123,7 @@ type SnapshotCreateVolumePermission interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -309,6 +313,26 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SnapshotCreateVolumePermission) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnapshotCreateVolumePermission) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnapshotCreateVolumePermission) SnapshotId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
 func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, config *SnapshotCreateVolumePermissionConfig) SnapshotCreateVolumePermission {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
 func NewSnapshotCreateVolumePermission_Override(s SnapshotCreateVolumePermission, scope constructs.Construct, id *string, config *SnapshotCreateVolumePermissionConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnapshotCreateVolumePermission)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnapshotCreateVolumePermission) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package opensearchserverlesssecurityconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchserverlesssecurityconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchserverlesssecurityconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
 type OpensearchserverlessSecurityConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,7 +63,10 @@ type OpensearchserverlessSecurityConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SamlOptions() OpensearchserverlessSecurityConfigSamlOptionsOutputReference
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	SamlOptions() OpensearchserverlessSecurityConfigSamlOptionsList
 	SamlOptionsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -117,11 +120,12 @@ type OpensearchserverlessSecurityConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSamlOptions(value *OpensearchserverlessSecurityConfigSamlOptions)
+	PutSamlOptions(value interface{})
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSamlOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -331,8 +335,28 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) RawOverrides() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchserverlessSecurityConfig) SamlOptions() OpensearchserverlessSecurityConfigSamlOptionsOutputReference {
-	var returns OpensearchserverlessSecurityConfigSamlOptionsOutputReference
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) SamlOptions() OpensearchserverlessSecurityConfigSamlOptionsList {
+	var returns OpensearchserverlessSecurityConfigSamlOptionsList
 	_jsii_.Get(
 		j,
 		"samlOptions",
@@ -402,7 +426,7 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
 func NewOpensearchserverlessSecurityConfig(scope constructs.Construct, id *string, config *OpensearchserverlessSecurityConfigConfig) OpensearchserverlessSecurityConfig {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewOpensearchserverlessSecurityConfig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
 func NewOpensearchserverlessSecurityConfig_Override(o OpensearchserverlessSecurityConfig, scope constructs.Construct, id *string, config *OpensearchserverlessSecurityConfigConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -885,7 +920,7 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) OverrideLogicalId(newLogi
 	)
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfig) PutSamlOptions(value *OpensearchserverlessSecurityConfigSamlOptions) {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) PutSamlOptions(value interface{}) {
 	if err := o.validatePutSamlOptionsParameters(value); err != nil {
 		panic(err)
 	}
@@ -908,6 +943,14 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

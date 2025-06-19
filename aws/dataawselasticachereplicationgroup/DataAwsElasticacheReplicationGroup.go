@@ -5,14 +5,14 @@ package dataawselasticachereplicationgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawselasticachereplicationgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawselasticachereplicationgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
 type DataAwsElasticacheReplicationGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -65,6 +65,9 @@ type DataAwsElasticacheReplicationGroup interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReaderEndpointAddress() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicasPerNodeGroup() *float64
 	ReplicationGroupId() *string
 	SetReplicationGroupId(val *string)
@@ -106,6 +109,7 @@ type DataAwsElasticacheReplicationGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -405,6 +409,26 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ReaderEndpointAddress() *
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ReplicasPerNodeGroup() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -486,7 +510,7 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) DataAwsElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup_Override(d DataAwsElasticacheReplicationGroup, scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -568,6 +592,17 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -880,6 +915,14 @@ func (d *jsiiProxy_DataAwsElasticacheReplicationGroup) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsElasticacheReplicationGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

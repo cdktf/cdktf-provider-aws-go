@@ -119,6 +119,10 @@ func (j *jsiiProxy_CodeartifactDomain) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_CodeartifactDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

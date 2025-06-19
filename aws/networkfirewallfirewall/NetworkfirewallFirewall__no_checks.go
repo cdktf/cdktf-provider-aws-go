@@ -147,6 +147,10 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewall) validateSetSubnetChangeProtectionParameters(val interface{}) error {
 	return nil
 }

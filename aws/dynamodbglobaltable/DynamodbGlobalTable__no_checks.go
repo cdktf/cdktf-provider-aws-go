@@ -123,6 +123,10 @@ func (j *jsiiProxy_DynamodbGlobalTable) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbGlobalTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDynamodbGlobalTableParameters(scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) error {
 	return nil
 }

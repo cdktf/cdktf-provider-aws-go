@@ -131,10 +131,6 @@ func (j *jsiiProxy_SsmAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SsmAssociation) validateSetInstanceIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SsmAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -156,6 +152,10 @@ func (j *jsiiProxy_SsmAssociation) validateSetParametersParameters(val *map[stri
 }
 
 func (j *jsiiProxy_SsmAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SsmAssociation) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

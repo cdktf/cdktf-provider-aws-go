@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBackupSelection) validateSetPlanIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBackupSelection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBackupSelection) validateSetSelectionIdParameters(val *string) error {
 	return nil
 }

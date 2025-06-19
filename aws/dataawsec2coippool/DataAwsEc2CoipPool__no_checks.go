@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetPoolIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

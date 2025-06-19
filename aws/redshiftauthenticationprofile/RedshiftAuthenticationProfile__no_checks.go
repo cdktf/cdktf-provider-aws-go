@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftAuthenticationProfileParameters(scope constructs.Construct, id *string, config *RedshiftAuthenticationProfileConfig) error {
 	return nil
 }

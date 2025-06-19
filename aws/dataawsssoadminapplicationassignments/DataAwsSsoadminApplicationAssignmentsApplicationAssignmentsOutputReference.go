@@ -5,9 +5,9 @@ package dataawsssoadminapplicationassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplicationassignments/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplicationassignments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSsoadminApplicationAssignmentsApplicationAssignments
+	SetInternalValue(val *DataAwsSsoadminApplicationAssignmentsApplicationAssignments)
 	PrincipalId() *string
 	PrincipalType() *string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference) InternalValue() *DataAwsSsoadminApplicationAssignmentsApplicationAssignments {
+	var returns *DataAwsSsoadminApplicationAssignmentsApplicationAssignments
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOu
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsOutputReference)SetInternalValue(val *DataAwsSsoadminApplicationAssignmentsApplicationAssignments) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

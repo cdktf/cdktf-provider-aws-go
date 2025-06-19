@@ -143,6 +143,10 @@ func (j *jsiiProxy_RekognitionStreamProcessor) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_RekognitionStreamProcessor) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RekognitionStreamProcessor) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

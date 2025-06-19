@@ -123,6 +123,10 @@ func (j *jsiiProxy_CognitoResourceServer) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CognitoResourceServer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoResourceServer) validateSetUserPoolIdParameters(val *string) error {
 	return nil
 }

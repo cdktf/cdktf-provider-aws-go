@@ -5,14 +5,14 @@ package route53recordsexclusive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/route53recordsexclusive/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/route53recordsexclusive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive}.
 type Route53RecordsExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_Route53RecordsExclusive) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource.
 func NewRoute53RecordsExclusive(scope constructs.Construct, id *string, config *Route53RecordsExclusiveConfig) Route53RecordsExclusive {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewRoute53RecordsExclusive(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/route53_records_exclusive aws_route53_records_exclusive} Resource.
 func NewRoute53RecordsExclusive_Override(r Route53RecordsExclusive, scope constructs.Construct, id *string, config *Route53RecordsExclusiveConfig) {
 	_init_.Initialize()
 

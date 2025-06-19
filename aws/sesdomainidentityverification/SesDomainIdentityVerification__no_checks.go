@@ -119,6 +119,10 @@ func (j *jsiiProxy_SesDomainIdentityVerification) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainIdentityVerification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesDomainIdentityVerificationParameters(scope constructs.Construct, id *string, config *SesDomainIdentityVerificationConfig) error {
 	return nil
 }

@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) val
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

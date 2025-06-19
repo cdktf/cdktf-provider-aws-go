@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApiGatewayVpcLink) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayVpcLink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayVpcLink) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

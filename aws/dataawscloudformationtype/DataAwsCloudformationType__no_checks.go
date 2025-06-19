@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudformationType) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationType) validateSetTypeParameters(val *string) error {
 	return nil
 }

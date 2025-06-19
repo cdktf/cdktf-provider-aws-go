@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3ControlMultiRegionAccessPointParameters(scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointConfig) error {
 	return nil
 }

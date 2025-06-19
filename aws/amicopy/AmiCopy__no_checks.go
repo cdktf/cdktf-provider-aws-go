@@ -147,6 +147,10 @@ func (j *jsiiProxy_AmiCopy) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AmiCopy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmiCopy) validateSetSourceAmiIdParameters(val *string) error {
 	return nil
 }

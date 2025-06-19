@@ -167,6 +167,10 @@ func (j *jsiiProxy_AmplifyBranch) validateSetPullRequestEnvironmentNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyBranch) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyBranch) validateSetStageParameters(val *string) error {
 	return nil
 }

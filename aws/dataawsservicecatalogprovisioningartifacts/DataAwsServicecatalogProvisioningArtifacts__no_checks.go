@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) validateSetProduc
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogProvisioningArtifactsParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) error {
 	return nil
 }

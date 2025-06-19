@@ -450,6 +450,14 @@ func (j *jsiiProxy_AppflowConnectorProfile) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppflowConnectorProfile) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAppflowConnectorProfileParameters(scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

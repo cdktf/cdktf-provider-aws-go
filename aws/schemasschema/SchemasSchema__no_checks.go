@@ -123,6 +123,10 @@ func (j *jsiiProxy_SchemasSchema) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_SchemasSchema) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasSchema) validateSetRegistryNameParameters(val *string) error {
 	return nil
 }

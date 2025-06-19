@@ -155,23 +155,11 @@ func (j *jsiiProxy_SpotInstanceRequest) validateSetAvailabilityZoneParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequest) validateSetBlockDurationMinutesParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_SpotInstanceRequest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SpotInstanceRequest) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SpotInstanceRequest) validateSetCpuCoreCountParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SpotInstanceRequest) validateSetCpuThreadsPerCoreParameters(val *float64) error {
 	return nil
 }
 
@@ -264,6 +252,10 @@ func (j *jsiiProxy_SpotInstanceRequest) validateSetPrivateIpParameters(val *stri
 }
 
 func (j *jsiiProxy_SpotInstanceRequest) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

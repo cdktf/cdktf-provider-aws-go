@@ -123,6 +123,10 @@ func (j *jsiiProxy_SwfDomain) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_SwfDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwfDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

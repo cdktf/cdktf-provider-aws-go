@@ -111,6 +111,10 @@ func (j *jsiiProxy_Macie2OrganizationConfiguration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_Macie2OrganizationConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMacie2OrganizationConfigurationParameters(scope constructs.Construct, id *string, config *Macie2OrganizationConfigurationConfig) error {
 	return nil
 }

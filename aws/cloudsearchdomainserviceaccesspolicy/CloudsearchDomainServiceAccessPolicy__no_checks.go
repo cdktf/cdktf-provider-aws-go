@@ -123,6 +123,10 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudsearchDomainServiceAccessPolicyParameters(scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) error {
 	return nil
 }

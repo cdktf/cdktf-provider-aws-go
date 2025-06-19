@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetReplaceDefaultAssociationParameters(val interface{}) error {
 	return nil
 }

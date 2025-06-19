@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecuritylakeAwsLogSource) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeAwsLogSource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecuritylakeAwsLogSourceParameters(scope constructs.Construct, id *string, config *SecuritylakeAwsLogSourceConfig) error {
 	return nil
 }

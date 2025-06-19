@@ -151,6 +151,10 @@ func (j *jsiiProxy_IdentitystoreUser) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_IdentitystoreUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentitystoreUser) validateSetTimezoneParameters(val *string) error {
 	return nil
 }

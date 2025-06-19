@@ -5,14 +5,14 @@ package ecstaskdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecstaskdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecstaskdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
 type EcsTaskDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -61,8 +61,6 @@ type EcsTaskDefinition interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InferenceAccelerator() EcsTaskDefinitionInferenceAcceleratorList
-	InferenceAcceleratorInput() interface{}
 	IpcMode() *string
 	SetIpcMode(val *string)
 	IpcModeInput() *string
@@ -95,6 +93,9 @@ type EcsTaskDefinition interface {
 	ProxyConfigurationInput() *EcsTaskDefinitionProxyConfiguration
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequiresCompatibilities() *[]*string
 	SetRequiresCompatibilities(val *[]*string)
 	RequiresCompatibilitiesInput() *[]*string
@@ -168,7 +169,6 @@ type EcsTaskDefinition interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEphemeralStorage(value *EcsTaskDefinitionEphemeralStorage)
-	PutInferenceAccelerator(value interface{})
 	PutPlacementConstraints(value interface{})
 	PutProxyConfiguration(value *EcsTaskDefinitionProxyConfiguration)
 	PutRuntimePlatform(value *EcsTaskDefinitionRuntimePlatform)
@@ -178,7 +178,6 @@ type EcsTaskDefinition interface {
 	ResetEphemeralStorage()
 	ResetExecutionRoleArn()
 	ResetId()
-	ResetInferenceAccelerator()
 	ResetIpcMode()
 	ResetMemory()
 	ResetNetworkMode()
@@ -188,6 +187,7 @@ type EcsTaskDefinition interface {
 	ResetPidMode()
 	ResetPlacementConstraints()
 	ResetProxyConfiguration()
+	ResetRegion()
 	ResetRequiresCompatibilities()
 	ResetRuntimePlatform()
 	ResetSkipDestroy()
@@ -454,26 +454,6 @@ func (j *jsiiProxy_EcsTaskDefinition) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EcsTaskDefinition) InferenceAccelerator() EcsTaskDefinitionInferenceAcceleratorList {
-	var returns EcsTaskDefinitionInferenceAcceleratorList
-	_jsii_.Get(
-		j,
-		"inferenceAccelerator",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EcsTaskDefinition) InferenceAcceleratorInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"inferenceAcceleratorInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_EcsTaskDefinition) IpcMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -639,6 +619,26 @@ func (j *jsiiProxy_EcsTaskDefinition) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -845,7 +845,7 @@ func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) EcsTaskDefinition {
 	_init_.Initialize()
 
@@ -863,7 +863,7 @@ func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) {
 	_init_.Initialize()
 
@@ -1048,6 +1048,17 @@ func (j *jsiiProxy_EcsTaskDefinition)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1482,17 +1493,6 @@ func (e *jsiiProxy_EcsTaskDefinition) PutEphemeralStorage(value *EcsTaskDefiniti
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) PutInferenceAccelerator(value interface{}) {
-	if err := e.validatePutInferenceAcceleratorParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putInferenceAccelerator",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_EcsTaskDefinition) PutPlacementConstraints(value interface{}) {
 	if err := e.validatePutPlacementConstraintsParameters(value); err != nil {
 		panic(err)
@@ -1577,14 +1577,6 @@ func (e *jsiiProxy_EcsTaskDefinition) ResetId() {
 	)
 }
 
-func (e *jsiiProxy_EcsTaskDefinition) ResetInferenceAccelerator() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetInferenceAccelerator",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_EcsTaskDefinition) ResetIpcMode() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1637,6 +1629,14 @@ func (e *jsiiProxy_EcsTaskDefinition) ResetProxyConfiguration() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProxyConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

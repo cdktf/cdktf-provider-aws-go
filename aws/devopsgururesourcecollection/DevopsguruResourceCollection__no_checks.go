@@ -115,6 +115,10 @@ func (j *jsiiProxy_DevopsguruResourceCollection) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_DevopsguruResourceCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevopsguruResourceCollection) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -476,6 +476,14 @@ func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetRuntimeEnvironmentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

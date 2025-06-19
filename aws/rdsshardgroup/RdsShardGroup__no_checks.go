@@ -135,6 +135,10 @@ func (j *jsiiProxy_RdsShardGroup) validateSetPubliclyAccessibleParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_RdsShardGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsShardGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

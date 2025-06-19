@@ -5,14 +5,14 @@ package vpcendpointserviceprivatednsverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcendpointserviceprivatednsverification/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcendpointserviceprivatednsverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification}.
 type VpcEndpointServicePrivateDnsVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type VpcEndpointServicePrivateDnsVerification interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
@@ -116,6 +119,7 @@ type VpcEndpointServicePrivateDnsVerification interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	ResetWaitForVerification()
 	SynthesizeAttributes() *map[string]interface{}
@@ -266,6 +270,26 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) RawOverrides() inte
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) ServiceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) WaitForVerification
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
 func NewVpcEndpointServicePrivateDnsVerification(scope constructs.Construct, id *string, config *VpcEndpointServicePrivateDnsVerificationConfig) VpcEndpointServicePrivateDnsVerification {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewVpcEndpointServicePrivateDnsVerification(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
 func NewVpcEndpointServicePrivateDnsVerification_Override(v VpcEndpointServicePrivateDnsVerification, scope constructs.Construct, id *string, config *VpcEndpointServicePrivateDnsVerificationConfig) {
 	_init_.Initialize()
 
@@ -450,6 +474,17 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -844,6 +879,14 @@ func (v *jsiiProxy_VpcEndpointServicePrivateDnsVerification) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpointServicePrivateDnsVerification) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

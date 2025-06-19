@@ -135,6 +135,10 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

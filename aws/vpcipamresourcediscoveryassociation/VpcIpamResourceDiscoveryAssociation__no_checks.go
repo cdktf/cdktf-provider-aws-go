@@ -123,6 +123,10 @@ func (j *jsiiProxy_VpcIpamResourceDiscoveryAssociation) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamResourceDiscoveryAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamResourceDiscoveryAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

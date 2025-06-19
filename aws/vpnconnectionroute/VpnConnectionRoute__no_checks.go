@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpnConnectionRoute) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnectionRoute) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnectionRoute) validateSetVpnConnectionIdParameters(val *string) error {
 	return nil
 }

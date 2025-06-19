@@ -5,14 +5,14 @@ package devicefarmdevicepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devicefarmdevicepool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devicefarmdevicepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool}.
 type DevicefarmDevicePool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type DevicefarmDevicePool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() DevicefarmDevicePoolRuleList
 	RuleInput() interface{}
 	Tags() *map[string]*string
@@ -136,6 +139,7 @@ type DevicefarmDevicePool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -396,6 +400,26 @@ func (j *jsiiProxy_DevicefarmDevicePool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevicefarmDevicePool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicefarmDevicePool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicefarmDevicePool) Rule() DevicefarmDevicePoolRuleList {
 	var returns DevicefarmDevicePoolRuleList
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_DevicefarmDevicePool) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool} Resource.
 func NewDevicefarmDevicePool(scope constructs.Construct, id *string, config *DevicefarmDevicePoolConfig) DevicefarmDevicePool {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewDevicefarmDevicePool(scope constructs.Construct, id *string, config *Dev
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_device_pool aws_devicefarm_device_pool} Resource.
 func NewDevicefarmDevicePool_Override(d DevicefarmDevicePool, scope constructs.Construct, id *string, config *DevicefarmDevicePoolConfig) {
 	_init_.Initialize()
 
@@ -645,6 +669,17 @@ func (j *jsiiProxy_DevicefarmDevicePool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicefarmDevicePool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (d *jsiiProxy_DevicefarmDevicePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicefarmDevicePool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

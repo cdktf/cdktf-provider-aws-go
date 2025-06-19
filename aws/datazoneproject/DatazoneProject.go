@@ -5,14 +5,14 @@ package datazoneproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazoneproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_project aws_datazone_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_project aws_datazone_project}.
 type DatazoneProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type DatazoneProject interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SkipDeletionCheck() interface{}
 	SetSkipDeletionCheck(val interface{})
 	SkipDeletionCheckInput() interface{}
@@ -133,6 +136,7 @@ type DatazoneProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSkipDeletionCheck()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -423,6 +427,26 @@ func (j *jsiiProxy_DatazoneProject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneProject) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneProject) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneProject) SkipDeletionCheck() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -494,7 +518,7 @@ func (j *jsiiProxy_DatazoneProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_project aws_datazone_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_project aws_datazone_project} Resource.
 func NewDatazoneProject(scope constructs.Construct, id *string, config *DatazoneProjectConfig) DatazoneProject {
 	_init_.Initialize()
 
@@ -512,7 +536,7 @@ func NewDatazoneProject(scope constructs.Construct, id *string, config *Datazone
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_project aws_datazone_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_project aws_datazone_project} Resource.
 func NewDatazoneProject_Override(d DatazoneProject, scope constructs.Construct, id *string, config *DatazoneProjectConfig) {
 	_init_.Initialize()
 
@@ -631,6 +655,17 @@ func (j *jsiiProxy_DatazoneProject)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneProject)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1030,6 +1065,14 @@ func (d *jsiiProxy_DatazoneProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneProject) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

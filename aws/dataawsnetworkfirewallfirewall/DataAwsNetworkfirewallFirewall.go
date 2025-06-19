@@ -5,14 +5,14 @@ package dataawsnetworkfirewallfirewall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsnetworkfirewallfirewall/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsnetworkfirewallfirewall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type DataAwsNetworkfirewallFirewall interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -63,6 +63,9 @@ type DataAwsNetworkfirewallFirewall interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetChangeProtection() cdktf.IResolvable
 	SubnetMapping() DataAwsNetworkfirewallFirewallSubnetMappingList
 	Tags() *map[string]*string
@@ -107,6 +110,7 @@ type DataAwsNetworkfirewallFirewall interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -367,6 +371,26 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) SubnetChangeProtection() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -458,7 +482,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) DataAwsNetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -476,7 +500,7 @@ func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall_Override(d DataAwsNetworkfirewallFirewall, scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 
@@ -562,6 +586,17 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -890,6 +925,14 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewall) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

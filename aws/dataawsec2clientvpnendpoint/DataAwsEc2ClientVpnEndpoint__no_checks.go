@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

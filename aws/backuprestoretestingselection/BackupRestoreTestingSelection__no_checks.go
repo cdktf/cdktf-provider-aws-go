@@ -127,6 +127,10 @@ func (j *jsiiProxy_BackupRestoreTestingSelection) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_BackupRestoreTestingSelection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupRestoreTestingSelection) validateSetRestoreMetadataOverridesParameters(val *map[string]*string) error {
 	return nil
 }

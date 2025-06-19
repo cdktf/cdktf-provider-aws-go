@@ -115,6 +115,10 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEbsEncryptionByDefaultParameters(scope constructs.Construct, id *string, config *EbsEncryptionByDefaultConfig) error {
 	return nil
 }

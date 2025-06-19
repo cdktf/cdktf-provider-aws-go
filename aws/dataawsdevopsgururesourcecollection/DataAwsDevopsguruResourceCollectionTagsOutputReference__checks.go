@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsDevopsguruResourceCollectionTags:
-		val := val.(*DataAwsDevopsguruResourceCollectionTags)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsDevopsguruResourceCollectionTags:
-		val_ := val.(DataAwsDevopsguruResourceCollectionTags)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsDevopsguruResourceCollectionTags; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) validateSetInternalValueParameters(val *DataAwsDevopsguruResourceCollectionTags) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

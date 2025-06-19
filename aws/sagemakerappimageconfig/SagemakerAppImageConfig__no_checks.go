@@ -127,6 +127,10 @@ func (j *jsiiProxy_SagemakerAppImageConfig) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerAppImageConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerAppImageConfig) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

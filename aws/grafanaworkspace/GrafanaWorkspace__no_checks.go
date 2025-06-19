@@ -167,6 +167,10 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

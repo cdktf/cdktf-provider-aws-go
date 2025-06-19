@@ -512,6 +512,14 @@ func (j *jsiiProxy_EmrserverlessApplication) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) validateSetReleaseLabelParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

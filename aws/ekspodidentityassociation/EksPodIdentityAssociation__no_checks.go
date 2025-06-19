@@ -115,6 +115,10 @@ func (j *jsiiProxy_EksPodIdentityAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EksPodIdentityAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksPodIdentityAssociation) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

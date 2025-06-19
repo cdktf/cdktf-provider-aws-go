@@ -127,6 +127,10 @@ func (j *jsiiProxy_Lexv2ModelsBotVersion) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Lexv2ModelsBotVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLexv2ModelsBotVersionParameters(scope constructs.Construct, id *string, config *Lexv2ModelsBotVersionConfig) error {
 	return nil
 }

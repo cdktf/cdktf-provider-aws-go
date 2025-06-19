@@ -123,6 +123,10 @@ func (j *jsiiProxy_ControltowerControl) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ControltowerControl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ControltowerControl) validateSetTargetIdentifierParameters(val *string) error {
 	return nil
 }

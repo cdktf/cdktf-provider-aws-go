@@ -676,6 +676,14 @@ func (j *jsiiProxy_CodebuildProject) validateSetQueuedTimeoutParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildProject) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildProject) validateSetResourceAccessRoleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package cloudformationstackset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudformationstackset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudformationstackset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
 type CloudformationStackSet interface {
 	cdktf.TerraformResource
 	AdministrationRoleArn() *string
@@ -89,6 +89,9 @@ type CloudformationStackSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StackSetId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -171,6 +174,7 @@ type CloudformationStackSet interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetPermissionModel()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTemplateBody()
@@ -574,6 +578,26 @@ func (j *jsiiProxy_CloudformationStackSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudformationStackSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudformationStackSet) StackSetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,7 +739,7 @@ func (j *jsiiProxy_CloudformationStackSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet(scope constructs.Construct, id *string, config *CloudformationStackSetConfig) CloudformationStackSet {
 	_init_.Initialize()
 
@@ -733,7 +757,7 @@ func NewCloudformationStackSet(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet_Override(c CloudformationStackSet, scope constructs.Construct, id *string, config *CloudformationStackSetConfig) {
 	_init_.Initialize()
 
@@ -907,6 +931,17 @@ func (j *jsiiProxy_CloudformationStackSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudformationStackSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1444,6 +1479,14 @@ func (c *jsiiProxy_CloudformationStackSet) ResetPermissionModel() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPermissionModel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudformationStackSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

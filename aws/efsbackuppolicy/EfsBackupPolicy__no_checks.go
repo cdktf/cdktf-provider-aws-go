@@ -119,6 +119,10 @@ func (j *jsiiProxy_EfsBackupPolicy) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_EfsBackupPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEfsBackupPolicyParameters(scope constructs.Construct, id *string, config *EfsBackupPolicyConfig) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_TransferCertificate) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_TransferCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferCertificate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

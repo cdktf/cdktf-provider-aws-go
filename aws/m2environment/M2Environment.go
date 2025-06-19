@@ -5,14 +5,14 @@ package m2environment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/m2environment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/m2environment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_environment aws_m2_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment}.
 type M2Environment interface {
 	cdktf.TerraformResource
 	ApplyChangesDuringMaintenanceWindow() interface{}
@@ -91,6 +91,9 @@ type M2Environment interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -168,6 +171,7 @@ type M2Environment interface {
 	ResetOverrideLogicalId()
 	ResetPreferredMaintenanceWindow()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetSecurityGroupIds()
 	ResetStorageConfiguration()
 	ResetSubnetIds()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_M2Environment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_M2Environment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_M2Environment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_M2Environment) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -722,7 +746,7 @@ func (j *jsiiProxy_M2Environment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_environment aws_m2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment} Resource.
 func NewM2Environment(scope constructs.Construct, id *string, config *M2EnvironmentConfig) M2Environment {
 	_init_.Initialize()
 
@@ -740,7 +764,7 @@ func NewM2Environment(scope constructs.Construct, id *string, config *M2Environm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_environment aws_m2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment} Resource.
 func NewM2Environment_Override(m M2Environment, scope constructs.Construct, id *string, config *M2EnvironmentConfig) {
 	_init_.Initialize()
 
@@ -925,6 +949,17 @@ func (j *jsiiProxy_M2Environment)SetPubliclyAccessible(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_M2Environment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1416,6 +1451,14 @@ func (m *jsiiProxy_M2Environment) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_M2Environment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

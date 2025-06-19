@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppautoscalingPolicy) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AppautoscalingPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppautoscalingPolicy) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

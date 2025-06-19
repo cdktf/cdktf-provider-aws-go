@@ -5,14 +5,14 @@ package locationtracker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/locationtracker/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/locationtracker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker aws_location_tracker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker aws_location_tracker}.
 type LocationTracker interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type LocationTracker interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -135,6 +138,7 @@ type LocationTracker interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPositionFiltering()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -375,6 +379,26 @@ func (j *jsiiProxy_LocationTracker) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LocationTracker) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LocationTracker) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LocationTracker) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -486,7 +510,7 @@ func (j *jsiiProxy_LocationTracker) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker aws_location_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker aws_location_tracker} Resource.
 func NewLocationTracker(scope constructs.Construct, id *string, config *LocationTrackerConfig) LocationTracker {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewLocationTracker(scope constructs.Construct, id *string, config *Location
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/location_tracker aws_location_tracker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/location_tracker aws_location_tracker} Resource.
 func NewLocationTracker_Override(l LocationTracker, scope constructs.Construct, id *string, config *LocationTrackerConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_LocationTracker)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LocationTracker)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1049,6 +1084,14 @@ func (l *jsiiProxy_LocationTracker) ResetPositionFiltering() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPositionFiltering",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LocationTracker) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

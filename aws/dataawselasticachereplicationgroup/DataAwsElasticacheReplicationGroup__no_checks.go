@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) validateSetReplicationGroupIdParameters(val *string) error {
 	return nil
 }

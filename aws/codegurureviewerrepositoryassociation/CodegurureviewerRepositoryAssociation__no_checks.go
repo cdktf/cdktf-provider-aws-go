@@ -123,6 +123,10 @@ func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

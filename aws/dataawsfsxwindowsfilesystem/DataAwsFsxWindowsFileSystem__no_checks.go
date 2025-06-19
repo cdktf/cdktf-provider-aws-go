@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

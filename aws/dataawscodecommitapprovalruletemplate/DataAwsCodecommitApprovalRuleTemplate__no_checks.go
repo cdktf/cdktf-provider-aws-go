@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCodecommitApprovalRuleTemplateParameters(scope constructs.Construct, id *string, config *DataAwsCodecommitApprovalRuleTemplateConfig) error {
 	return nil
 }

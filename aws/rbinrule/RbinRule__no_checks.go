@@ -127,6 +127,10 @@ func (j *jsiiProxy_RbinRule) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_RbinRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RbinRule) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

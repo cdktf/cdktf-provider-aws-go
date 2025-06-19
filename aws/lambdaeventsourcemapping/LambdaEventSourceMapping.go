@@ -5,14 +5,14 @@ package lambdaeventsourcemapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdaeventsourcemapping/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdaeventsourcemapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
@@ -110,6 +110,9 @@ type LambdaEventSourceMapping interface {
 	QueuesInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference
 	ScalingConfigInput() *LambdaEventSourceMappingScalingConfig
 	SelfManagedEventSource() LambdaEventSourceMappingSelfManagedEventSourceOutputReference
@@ -219,6 +222,7 @@ type LambdaEventSourceMapping interface {
 	ResetParallelizationFactor()
 	ResetProvisionedPollerConfig()
 	ResetQueues()
+	ResetRegion()
 	ResetScalingConfig()
 	ResetSelfManagedEventSource()
 	ResetSelfManagedKafkaEventSourceConfig()
@@ -797,6 +801,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference {
 	var returns LambdaEventSourceMappingScalingConfigOutputReference
 	_jsii_.Get(
@@ -1058,7 +1082,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -1076,7 +1100,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 
@@ -1294,6 +1318,17 @@ func (j *jsiiProxy_LambdaEventSourceMapping)SetQueues(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"queues",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1975,6 +2010,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetQueues() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQueues",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

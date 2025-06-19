@@ -119,6 +119,10 @@ func (j *jsiiProxy_DsqlClusterPeering) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DsqlClusterPeering) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DsqlClusterPeering) validateSetWitnessRegionParameters(val *string) error {
 	return nil
 }

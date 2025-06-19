@@ -123,6 +123,10 @@ func (j *jsiiProxy_EfsFileSystemPolicy) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_EfsFileSystemPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEfsFileSystemPolicyParameters(scope constructs.Construct, id *string, config *EfsFileSystemPolicyConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package memorydbparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/memorydbparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/memorydbparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group}.
 type MemorydbParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type MemorydbParameterGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -137,6 +140,7 @@ type MemorydbParameterGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_MemorydbParameterGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MemorydbParameterGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbParameterGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorydbParameterGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_MemorydbParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group} Resource.
 func NewMemorydbParameterGroup(scope constructs.Construct, id *string, config *MemorydbParameterGroupConfig) MemorydbParameterGroup {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewMemorydbParameterGroup(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/memorydb_parameter_group aws_memorydb_parameter_group} Resource.
 func NewMemorydbParameterGroup_Override(m MemorydbParameterGroup, scope constructs.Construct, id *string, config *MemorydbParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_MemorydbParameterGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorydbParameterGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (m *jsiiProxy_MemorydbParameterGroup) ResetParameter() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbParameterGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

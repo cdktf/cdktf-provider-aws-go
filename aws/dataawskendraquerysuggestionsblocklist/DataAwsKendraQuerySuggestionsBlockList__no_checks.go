@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetQuerySugge
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

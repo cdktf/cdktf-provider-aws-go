@@ -5,14 +5,14 @@ package guarddutymember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/guarddutymember/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/guarddutymember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member aws_guardduty_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member aws_guardduty_member}.
 type GuarddutyMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -76,6 +76,9 @@ type GuarddutyMember interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RelationshipStatus() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -136,6 +139,7 @@ type GuarddutyMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -425,6 +429,26 @@ func (j *jsiiProxy_GuarddutyMember) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GuarddutyMember) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuarddutyMember) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GuarddutyMember) RelationshipStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -486,7 +510,7 @@ func (j *jsiiProxy_GuarddutyMember) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member aws_guardduty_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member aws_guardduty_member} Resource.
 func NewGuarddutyMember(scope constructs.Construct, id *string, config *GuarddutyMemberConfig) GuarddutyMember {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewGuarddutyMember(scope constructs.Construct, id *string, config *Guarddut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member aws_guardduty_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member aws_guardduty_member} Resource.
 func NewGuarddutyMember_Override(g GuarddutyMember, scope constructs.Construct, id *string, config *GuarddutyMemberConfig) {
 	_init_.Initialize()
 
@@ -656,6 +680,17 @@ func (j *jsiiProxy_GuarddutyMember)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GuarddutyMember)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1060,6 +1095,14 @@ func (g *jsiiProxy_GuarddutyMember) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GuarddutyMember) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

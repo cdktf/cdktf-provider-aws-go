@@ -5,14 +5,14 @@ package dataawsconnectlambdafunctionassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectlambdafunctionassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectlambdafunctionassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association}.
 type DataAwsConnectLambdaFunctionAssociation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataAwsConnectLambdaFunctionAssociation interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -91,6 +94,7 @@ type DataAwsConnectLambdaFunctionAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -280,6 +284,26 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -311,7 +335,7 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association} Data Source.
 func NewDataAwsConnectLambdaFunctionAssociation(scope constructs.Construct, id *string, config *DataAwsConnectLambdaFunctionAssociationConfig) DataAwsConnectLambdaFunctionAssociation {
 	_init_.Initialize()
 
@@ -329,7 +353,7 @@ func NewDataAwsConnectLambdaFunctionAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_lambda_function_association aws_connect_lambda_function_association} Data Source.
 func NewDataAwsConnectLambdaFunctionAssociation_Override(d DataAwsConnectLambdaFunctionAssociation, scope constructs.Construct, id *string, config *DataAwsConnectLambdaFunctionAssociationConfig) {
 	_init_.Initialize()
 
@@ -415,6 +439,17 @@ func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetProvider(val cdktf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -716,6 +751,14 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

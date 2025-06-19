@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskConfiguration) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsMskConfigurationParameters(scope constructs.Construct, id *string, config *DataAwsMskConfigurationConfig) error {
 	return nil
 }

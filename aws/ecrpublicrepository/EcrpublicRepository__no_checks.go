@@ -123,6 +123,10 @@ func (j *jsiiProxy_EcrpublicRepository) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_EcrpublicRepository) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrpublicRepository) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_NeptunegraphGraph) validateSetPublicConnectivityParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NeptunegraphGraph) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptunegraphGraph) validateSetReplicaCountParameters(val *float64) error {
 	return nil
 }

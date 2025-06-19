@@ -127,6 +127,10 @@ func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetSnapshotIdParameters(val *string) error {
 	return nil
 }

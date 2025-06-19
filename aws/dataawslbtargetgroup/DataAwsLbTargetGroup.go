@@ -5,14 +5,14 @@ package dataawslbtargetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslbtargetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslbtargetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_target_group aws_lb_target_group}.
 type DataAwsLbTargetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -72,6 +72,9 @@ type DataAwsLbTargetGroup interface {
 	ProxyProtocolV2() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SlowStart() *float64
 	Stickiness() DataAwsLbTargetGroupStickinessList
 	Tags() *map[string]*string
@@ -120,6 +123,7 @@ type DataAwsLbTargetGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -461,6 +465,26 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLbTargetGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbTargetGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLbTargetGroup) SlowStart() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -572,7 +596,7 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
 func NewDataAwsLbTargetGroup(scope constructs.Construct, id *string, config *DataAwsLbTargetGroupConfig) DataAwsLbTargetGroup {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewDataAwsLbTargetGroup(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
 func NewDataAwsLbTargetGroup_Override(d DataAwsLbTargetGroup, scope constructs.Construct, id *string, config *DataAwsLbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -687,6 +711,17 @@ func (j *jsiiProxy_DataAwsLbTargetGroup)SetProvider(val cdktf.TerraformProvider)
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLbTargetGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1034,6 +1069,14 @@ func (d *jsiiProxy_DataAwsLbTargetGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbTargetGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

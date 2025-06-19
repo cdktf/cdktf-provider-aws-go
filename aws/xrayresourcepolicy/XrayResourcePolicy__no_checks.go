@@ -123,6 +123,10 @@ func (j *jsiiProxy_XrayResourcePolicy) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_XrayResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewXrayResourcePolicyParameters(scope constructs.Construct, id *string, config *XrayResourcePolicyConfig) error {
 	return nil
 }

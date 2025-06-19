@@ -131,6 +131,10 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) validateSetTableClassOverrideParameters(val *string) error {
 	return nil
 }

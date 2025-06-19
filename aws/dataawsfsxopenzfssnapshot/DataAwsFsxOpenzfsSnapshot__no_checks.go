@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetSnapshotIdsParameters(val *[]*string) error {
 	return nil
 }

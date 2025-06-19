@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKendraFaq) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraFaq) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraFaq) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

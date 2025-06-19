@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftEndpointAccess) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftEndpointAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftEndpointAccess) validateSetResourceOwnerParameters(val *string) error {
 	return nil
 }

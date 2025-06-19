@@ -285,6 +285,14 @@ func (j *jsiiProxy_DataAwsInstances) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsInstances) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsInstancesParameters(scope constructs.Construct, id *string, config *DataAwsInstancesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

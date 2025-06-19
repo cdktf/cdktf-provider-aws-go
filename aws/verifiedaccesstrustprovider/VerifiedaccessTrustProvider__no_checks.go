@@ -143,6 +143,10 @@ func (j *jsiiProxy_VerifiedaccessTrustProvider) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessTrustProvider) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessTrustProvider) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

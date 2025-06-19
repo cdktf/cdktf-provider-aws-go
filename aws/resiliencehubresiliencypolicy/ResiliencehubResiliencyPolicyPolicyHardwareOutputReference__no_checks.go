@@ -79,7 +79,7 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyHardwareOutputReference) v
 	return nil
 }
 
-func validateNewResiliencehubResiliencyPolicyPolicyHardwareOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResiliencehubResiliencyPolicyPolicyHardwareOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

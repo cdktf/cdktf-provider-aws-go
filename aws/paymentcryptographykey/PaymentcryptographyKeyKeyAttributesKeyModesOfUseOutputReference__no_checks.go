@@ -107,7 +107,7 @@ func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferen
 	return nil
 }
 
-func validateNewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

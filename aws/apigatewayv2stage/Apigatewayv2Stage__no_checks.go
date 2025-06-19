@@ -147,6 +147,10 @@ func (j *jsiiProxy_Apigatewayv2Stage) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Stage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Stage) validateSetStageVariablesParameters(val *map[string]*string) error {
 	return nil
 }

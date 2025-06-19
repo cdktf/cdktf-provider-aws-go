@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDevopsguruNotificationChannelParameters(scope constructs.Construct, id *string, config *DataAwsDevopsguruNotificationChannelConfig) error {
 	return nil
 }

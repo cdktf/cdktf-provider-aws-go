@@ -5,14 +5,14 @@ package lambdafunctionrecursionconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lambdafunctionrecursionconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdafunctionrecursionconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config}.
 type LambdaFunctionRecursionConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type LambdaFunctionRecursionConfig interface {
 	RecursiveLoop() *string
 	SetRecursiveLoop(val *string)
 	RecursiveLoopInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,6 +116,7 @@ type LambdaFunctionRecursionConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_LambdaFunctionRecursionConfig) RecursiveLoopInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunctionRecursionConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionRecursionConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunctionRecursionConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -332,7 +356,7 @@ func (j *jsiiProxy_LambdaFunctionRecursionConfig) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config} Resource.
 func NewLambdaFunctionRecursionConfig(scope constructs.Construct, id *string, config *LambdaFunctionRecursionConfigConfig) LambdaFunctionRecursionConfig {
 	_init_.Initialize()
 
@@ -350,7 +374,7 @@ func NewLambdaFunctionRecursionConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lambda_function_recursion_config aws_lambda_function_recursion_config} Resource.
 func NewLambdaFunctionRecursionConfig_Override(l LambdaFunctionRecursionConfig, scope constructs.Construct, id *string, config *LambdaFunctionRecursionConfigConfig) {
 	_init_.Initialize()
 
@@ -447,6 +471,17 @@ func (j *jsiiProxy_LambdaFunctionRecursionConfig)SetRecursiveLoop(val *string) {
 	_jsii_.Set(
 		j,
 		"recursiveLoop",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionRecursionConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -808,6 +843,14 @@ func (l *jsiiProxy_LambdaFunctionRecursionConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunctionRecursionConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

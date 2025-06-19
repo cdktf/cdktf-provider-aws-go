@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEksNodeGroup) validateSetNodeGroupNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksNodeGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksNodeGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

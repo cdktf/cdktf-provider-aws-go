@@ -111,6 +111,10 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAuditmanagerOrganizationAdminAccountRegistrationParameters(scope constructs.Construct, id *string, config *AuditmanagerOrganizationAdminAccountRegistrationConfig) error {
 	return nil
 }

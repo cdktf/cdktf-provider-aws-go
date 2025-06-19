@@ -119,6 +119,10 @@ func (j *jsiiProxy_DynamodbContributorInsights) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) validateSetTableNameParameters(val *string) error {
 	return nil
 }

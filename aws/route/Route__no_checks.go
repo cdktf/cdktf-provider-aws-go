@@ -155,6 +155,10 @@ func (j *jsiiProxy_Route) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Route) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route) validateSetRouteTableIdParameters(val *string) error {
 	return nil
 }

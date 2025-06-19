@@ -5,14 +5,14 @@ package dataawsecscontainerdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecscontainerdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecscontainerdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
 type DataAwsEcsContainerDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -61,6 +61,9 @@ type DataAwsEcsContainerDefinition interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TaskDefinition() *string
 	SetTaskDefinition(val *string)
 	TaskDefinitionInput() *string
@@ -99,6 +102,7 @@ type DataAwsEcsContainerDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsContainerDefinition) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsContainerDefinition) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsContainerDefinition) TaskDefinition() *string {
 	var returns *string
 	_jsii_.Get(
@@ -399,7 +423,7 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
 func NewDataAwsEcsContainerDefinition(scope constructs.Construct, id *string, config *DataAwsEcsContainerDefinitionConfig) DataAwsEcsContainerDefinition {
 	_init_.Initialize()
 
@@ -417,7 +441,7 @@ func NewDataAwsEcsContainerDefinition(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
 func NewDataAwsEcsContainerDefinition_Override(d DataAwsEcsContainerDefinition, scope constructs.Construct, id *string, config *DataAwsEcsContainerDefinitionConfig) {
 	_init_.Initialize()
 
@@ -492,6 +516,17 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition)SetProvider(val cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcsContainerDefinition)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -804,6 +839,14 @@ func (d *jsiiProxy_DataAwsEcsContainerDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcsContainerDefinition) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

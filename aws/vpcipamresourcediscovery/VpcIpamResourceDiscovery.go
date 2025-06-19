@@ -5,14 +5,14 @@ package vpcipamresourcediscovery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcipamresourcediscovery/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcipamresourcediscovery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
 type VpcIpamResourceDiscovery interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type VpcIpamResourceDiscovery interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,6 +134,7 @@ type VpcIpamResourceDiscovery interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -382,6 +386,26 @@ func (j *jsiiProxy_VpcIpamResourceDiscovery) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamResourceDiscovery) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamResourceDiscovery) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpamResourceDiscovery) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_VpcIpamResourceDiscovery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
 func NewVpcIpamResourceDiscovery(scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryConfig) VpcIpamResourceDiscovery {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewVpcIpamResourceDiscovery(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
 func NewVpcIpamResourceDiscovery_Override(v VpcIpamResourceDiscovery, scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_VpcIpamResourceDiscovery)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamResourceDiscovery)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (v *jsiiProxy_VpcIpamResourceDiscovery) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamResourceDiscovery) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

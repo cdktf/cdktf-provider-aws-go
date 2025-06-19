@@ -455,6 +455,14 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetSubnetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

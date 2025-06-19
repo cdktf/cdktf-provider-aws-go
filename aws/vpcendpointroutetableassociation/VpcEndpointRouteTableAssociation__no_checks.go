@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetRouteTableIdParameters(val *string) error {
 	return nil
 }

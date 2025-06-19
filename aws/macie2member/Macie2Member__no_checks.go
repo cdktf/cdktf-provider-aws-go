@@ -135,6 +135,10 @@ func (j *jsiiProxy_Macie2Member) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_Macie2Member) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2Member) validateSetStatusParameters(val *string) error {
 	return nil
 }

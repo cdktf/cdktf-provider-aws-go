@@ -277,6 +277,14 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferings) validateSetLocationTypeParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferings) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsEc2InstanceTypeOfferingsParameters(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

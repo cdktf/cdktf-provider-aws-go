@@ -5,14 +5,14 @@ package sfnstatemachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sfnstatemachine/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sfnstatemachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
 type SfnStateMachine interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type SfnStateMachine interface {
 	PublishInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RevisionId() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
@@ -159,6 +162,7 @@ type SfnStateMachine interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublish()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -482,6 +486,26 @@ func (j *jsiiProxy_SfnStateMachine) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SfnStateMachine) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SfnStateMachine) RevisionId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -673,7 +697,7 @@ func (j *jsiiProxy_SfnStateMachine) VersionDescription() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnStateMachineConfig) SfnStateMachine {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, id *string, config *SfnStateMachineConfig) {
 	_init_.Initialize()
 
@@ -821,6 +845,17 @@ func (j *jsiiProxy_SfnStateMachine)SetPublish(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publish",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfnStateMachine)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1318,6 +1353,14 @@ func (s *jsiiProxy_SfnStateMachine) ResetPublish() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPublish",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_LakeformationDataCellsFilter) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataCellsFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLakeformationDataCellsFilterParameters(scope constructs.Construct, id *string, config *LakeformationDataCellsFilterConfig) error {
 	return nil
 }

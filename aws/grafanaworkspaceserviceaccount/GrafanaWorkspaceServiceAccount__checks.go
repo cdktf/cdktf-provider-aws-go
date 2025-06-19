@@ -407,6 +407,14 @@ func (j *jsiiProxy_GrafanaWorkspaceServiceAccount) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceServiceAccount) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceServiceAccount) validateSetWorkspaceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

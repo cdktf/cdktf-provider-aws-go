@@ -135,6 +135,10 @@ func (j *jsiiProxy_AmiFromInstance) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_AmiFromInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmiFromInstance) validateSetSnapshotWithoutRebootParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package quicksightnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_namespace aws_quicksight_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_namespace aws_quicksight_namespace}.
 type QuicksightNamespace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type QuicksightNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -129,6 +132,7 @@ type QuicksightNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -379,6 +383,26 @@ func (j *jsiiProxy_QuicksightNamespace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightNamespace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightNamespace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightNamespace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_QuicksightNamespace) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource.
 func NewQuicksightNamespace(scope constructs.Construct, id *string, config *QuicksightNamespaceConfig) QuicksightNamespace {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewQuicksightNamespace(scope constructs.Construct, id *string, config *Quic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource.
 func NewQuicksightNamespace_Override(q QuicksightNamespace, scope constructs.Construct, id *string, config *QuicksightNamespaceConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_QuicksightNamespace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightNamespace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -985,6 +1020,14 @@ func (q *jsiiProxy_QuicksightNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightNamespace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

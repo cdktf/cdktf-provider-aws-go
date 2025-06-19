@@ -5,16 +5,19 @@ package sagemakerimageversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerimageversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerimageversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version}.
 type SagemakerImageVersion interface {
 	cdktf.TerraformResource
+	Aliases() *[]*string
+	SetAliases(val *[]*string)
+	AliasesInput() *[]*string
 	Arn() *string
 	BaseImage() *string
 	SetBaseImage(val *string)
@@ -82,6 +85,9 @@ type SagemakerImageVersion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReleaseNotes() *string
 	SetReleaseNotes(val *string)
 	ReleaseNotesInput() *string
@@ -138,6 +144,7 @@ type SagemakerImageVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliases()
 	ResetHorovod()
 	ResetId()
 	ResetJobType()
@@ -147,6 +154,7 @@ type SagemakerImageVersion interface {
 	ResetOverrideLogicalId()
 	ResetProcessor()
 	ResetProgrammingLang()
+	ResetRegion()
 	ResetReleaseNotes()
 	ResetVendorGuidance()
 	SynthesizeAttributes() *map[string]interface{}
@@ -165,6 +173,26 @@ type SagemakerImageVersion interface {
 // The jsii proxy struct for SagemakerImageVersion
 type jsiiProxy_SagemakerImageVersion struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) Aliases() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) AliasesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aliasesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerImageVersion) Arn() *string {
@@ -487,6 +515,26 @@ func (j *jsiiProxy_SagemakerImageVersion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) ReleaseNotes() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,7 +616,7 @@ func (j *jsiiProxy_SagemakerImageVersion) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
 func NewSagemakerImageVersion(scope constructs.Construct, id *string, config *SagemakerImageVersionConfig) SagemakerImageVersion {
 	_init_.Initialize()
 
@@ -586,7 +634,7 @@ func NewSagemakerImageVersion(scope constructs.Construct, id *string, config *Sa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version aws_sagemaker_image_version} Resource.
 func NewSagemakerImageVersion_Override(s SagemakerImageVersion, scope constructs.Construct, id *string, config *SagemakerImageVersionConfig) {
 	_init_.Initialize()
 
@@ -594,6 +642,17 @@ func NewSagemakerImageVersion_Override(s SagemakerImageVersion, scope constructs
 		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetAliases(val *[]*string) {
+	if err := j.validateSetAliasesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliases",
+		val,
 	)
 }
 
@@ -749,6 +808,17 @@ func (j *jsiiProxy_SagemakerImageVersion)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerImageVersion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1128,6 +1198,14 @@ func (s *jsiiProxy_SagemakerImageVersion) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_SagemakerImageVersion) ResetAliases() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAliases",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerImageVersion) ResetHorovod() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1180,6 +1258,14 @@ func (s *jsiiProxy_SagemakerImageVersion) ResetProgrammingLang() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProgrammingLang",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

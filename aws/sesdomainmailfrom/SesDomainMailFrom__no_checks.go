@@ -123,6 +123,10 @@ func (j *jsiiProxy_SesDomainMailFrom) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainMailFrom) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesDomainMailFromParameters(scope constructs.Construct, id *string, config *SesDomainMailFromConfig) error {
 	return nil
 }

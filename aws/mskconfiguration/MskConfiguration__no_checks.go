@@ -123,6 +123,10 @@ func (j *jsiiProxy_MskConfiguration) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_MskConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskConfiguration) validateSetServerPropertiesParameters(val *string) error {
 	return nil
 }

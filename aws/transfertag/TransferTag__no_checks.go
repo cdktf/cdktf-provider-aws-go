@@ -115,6 +115,10 @@ func (j *jsiiProxy_TransferTag) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_TransferTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferTag) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

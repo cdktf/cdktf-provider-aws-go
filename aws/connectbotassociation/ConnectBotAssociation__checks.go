@@ -418,6 +418,14 @@ func (j *jsiiProxy_ConnectBotAssociation) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ConnectBotAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewConnectBotAssociationParameters(scope constructs.Construct, id *string, config *ConnectBotAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

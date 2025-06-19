@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsSsmParameter) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmParameter) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParameter) validateSetWithDecryptionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

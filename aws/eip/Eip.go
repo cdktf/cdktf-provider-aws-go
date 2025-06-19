@@ -5,14 +5,14 @@ package eip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/eip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -95,6 +95,9 @@ type Eip interface {
 	PublicIpv4PoolInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -109,9 +112,6 @@ type Eip interface {
 	TerraformResourceType() *string
 	Timeouts() EipTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	Vpc() interface{}
-	SetVpc(val interface{})
-	VpcInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -169,10 +169,10 @@ type Eip interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicIpv4Pool()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
-	ResetVpc()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -621,6 +621,26 @@ func (j *jsiiProxy_Eip) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Eip) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Eip) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Eip) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -711,28 +731,8 @@ func (j *jsiiProxy_Eip) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Vpc() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vpc",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Eip) VpcInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"vpcInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -750,7 +750,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 
@@ -939,6 +939,17 @@ func (j *jsiiProxy_Eip)SetPublicIpv4Pool(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Eip)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Eip)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -957,17 +968,6 @@ func (j *jsiiProxy_Eip)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Eip)SetVpc(val interface{}) {
-	if err := j.validateSetVpcParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vpc",
 		val,
 	)
 }
@@ -1424,6 +1424,14 @@ func (e *jsiiProxy_Eip) ResetPublicIpv4Pool() {
 	)
 }
 
+func (e *jsiiProxy_Eip) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_Eip) ResetTags() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1444,14 +1452,6 @@ func (e *jsiiProxy_Eip) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_Eip) ResetVpc() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetVpc",
 		nil, // no parameters
 	)
 }

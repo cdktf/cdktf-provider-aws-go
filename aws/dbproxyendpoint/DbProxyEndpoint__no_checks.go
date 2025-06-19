@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbProxyEndpoint) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_DbProxyEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyEndpoint) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

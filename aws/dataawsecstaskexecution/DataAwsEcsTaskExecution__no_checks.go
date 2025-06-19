@@ -143,6 +143,10 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetReferenceIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetStartedByParameters(val *string) error {
 	return nil
 }

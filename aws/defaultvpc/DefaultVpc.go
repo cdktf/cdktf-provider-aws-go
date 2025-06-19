@@ -5,14 +5,14 @@ package defaultvpc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/defaultvpc/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/defaultvpc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_vpc aws_default_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_vpc aws_default_vpc}.
 type DefaultVpc interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -96,6 +96,9 @@ type DefaultVpc interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -164,6 +167,7 @@ type DefaultVpc interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -624,6 +628,26 @@ func (j *jsiiProxy_DefaultVpc) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DefaultVpc) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultVpc) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DefaultVpc) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -695,7 +719,7 @@ func (j *jsiiProxy_DefaultVpc) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_vpc aws_default_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_vpc aws_default_vpc} Resource.
 func NewDefaultVpc(scope constructs.Construct, id *string, config *DefaultVpcConfig) DefaultVpc {
 	_init_.Initialize()
 
@@ -713,7 +737,7 @@ func NewDefaultVpc(scope constructs.Construct, id *string, config *DefaultVpcCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_vpc aws_default_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_vpc aws_default_vpc} Resource.
 func NewDefaultVpc_Override(d DefaultVpc, scope constructs.Construct, id *string, config *DefaultVpcConfig) {
 	_init_.Initialize()
 
@@ -898,6 +922,17 @@ func (j *jsiiProxy_DefaultVpc)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DefaultVpc)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1361,6 +1396,14 @@ func (d *jsiiProxy_DefaultVpc) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DefaultVpc) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

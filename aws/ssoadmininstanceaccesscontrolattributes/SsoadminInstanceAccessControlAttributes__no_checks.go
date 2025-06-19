@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsoadminInstanceAccessControlAttributesParameters(scope constructs.Construct, id *string, config *SsoadminInstanceAccessControlAttributesConfig) error {
 	return nil
 }

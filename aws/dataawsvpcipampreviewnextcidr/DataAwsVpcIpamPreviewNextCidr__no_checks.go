@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsVpcIpamPreviewNextCidr) validateSetNetmaskLengthParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPreviewNextCidr) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsVpcIpamPreviewNextCidrParameters(scope constructs.Construct, id *string, config *DataAwsVpcIpamPreviewNextCidrConfig) error {
 	return nil
 }

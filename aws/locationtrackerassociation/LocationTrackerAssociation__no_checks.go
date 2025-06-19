@@ -119,6 +119,10 @@ func (j *jsiiProxy_LocationTrackerAssociation) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LocationTrackerAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationTrackerAssociation) validateSetTrackerNameParameters(val *string) error {
 	return nil
 }

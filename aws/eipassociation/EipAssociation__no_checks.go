@@ -135,6 +135,10 @@ func (j *jsiiProxy_EipAssociation) validateSetPublicIpParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_EipAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEipAssociationParameters(scope constructs.Construct, id *string, config *EipAssociationConfig) error {
 	return nil
 }

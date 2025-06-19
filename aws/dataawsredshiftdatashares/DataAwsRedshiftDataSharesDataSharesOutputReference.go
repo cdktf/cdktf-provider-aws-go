@@ -5,9 +5,9 @@ package dataawsredshiftdatashares
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsredshiftdatashares/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsredshiftdatashares/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsRedshiftDataSharesDataSharesOutputReference interface {
 	DataShareArn() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsRedshiftDataSharesDataShares
+	SetInternalValue(val *DataAwsRedshiftDataSharesDataShares)
 	ManagedBy() *string
 	ProducerArn() *string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) InternalValue() *DataAwsRedshiftDataSharesDataShares {
+	var returns *DataAwsRedshiftDataSharesDataShares
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference)SetInternalValue(val *DataAwsRedshiftDataSharesDataShares) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

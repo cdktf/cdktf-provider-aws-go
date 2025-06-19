@@ -5,14 +5,14 @@ package opensearchserverlesssecuritypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/opensearchserverlesssecuritypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
 type OpensearchserverlessSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,6 +66,9 @@ type OpensearchserverlessSecurityPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +125,7 @@ type OpensearchserverlessSecurityPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -350,6 +354,26 @@ func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -401,7 +425,7 @@ func (j *jsiiProxy_OpensearchserverlessSecurityPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource.
 func NewOpensearchserverlessSecurityPolicy(scope constructs.Construct, id *string, config *OpensearchserverlessSecurityPolicyConfig) OpensearchserverlessSecurityPolicy {
 	_init_.Initialize()
 
@@ -419,7 +443,7 @@ func NewOpensearchserverlessSecurityPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource.
 func NewOpensearchserverlessSecurityPolicy_Override(o OpensearchserverlessSecurityPolicy, scope constructs.Construct, id *string, config *OpensearchserverlessSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -527,6 +551,17 @@ func (j *jsiiProxy_OpensearchserverlessSecurityPolicy)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchserverlessSecurityPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -907,6 +942,14 @@ func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -533,6 +533,14 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetQueryDepthLimitParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetResolverCountLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

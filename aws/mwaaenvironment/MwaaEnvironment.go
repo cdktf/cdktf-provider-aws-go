@@ -5,14 +5,14 @@ package mwaaenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mwaaenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mwaaenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mwaa_environment aws_mwaa_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mwaa_environment aws_mwaa_environment}.
 type MwaaEnvironment interface {
 	cdktf.TerraformResource
 	AirflowConfigurationOptions() *map[string]*string
@@ -108,6 +108,9 @@ type MwaaEnvironment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequirementsS3ObjectVersion() *string
 	SetRequirementsS3ObjectVersion(val *string)
 	RequirementsS3ObjectVersionInput() *string
@@ -212,6 +215,7 @@ type MwaaEnvironment interface {
 	ResetOverrideLogicalId()
 	ResetPluginsS3ObjectVersion()
 	ResetPluginsS3Path()
+	ResetRegion()
 	ResetRequirementsS3ObjectVersion()
 	ResetRequirementsS3Path()
 	ResetSchedulers()
@@ -750,6 +754,26 @@ func (j *jsiiProxy_MwaaEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwaaEnvironment) RequirementsS3ObjectVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1041,7 +1065,7 @@ func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStartInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) MwaaEnvironment {
 	_init_.Initialize()
 
@@ -1059,7 +1083,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1299,6 +1323,17 @@ func (j *jsiiProxy_MwaaEnvironment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwaaEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1907,6 +1942,14 @@ func (m *jsiiProxy_MwaaEnvironment) ResetPluginsS3Path() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPluginsS3Path",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

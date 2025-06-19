@@ -115,6 +115,10 @@ func (j *jsiiProxy_Macie2Account) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_Macie2Account) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2Account) validateSetStatusParameters(val *string) error {
 	return nil
 }

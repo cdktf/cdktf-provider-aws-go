@@ -5,14 +5,14 @@ package placementgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/placementgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/placementgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/placement_group aws_placement_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/placement_group aws_placement_group}.
 type PlacementGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type PlacementGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SpreadLevel() *string
 	SetSpreadLevel(val *string)
 	SpreadLevelInput() *string
@@ -132,6 +135,7 @@ type PlacementGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPartitionCount()
+	ResetRegion()
 	ResetSpreadLevel()
 	ResetTags()
 	ResetTagsAll()
@@ -363,6 +367,26 @@ func (j *jsiiProxy_PlacementGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PlacementGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PlacementGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PlacementGroup) SpreadLevel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,7 +498,7 @@ func (j *jsiiProxy_PlacementGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/placement_group aws_placement_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/placement_group aws_placement_group} Resource.
 func NewPlacementGroup(scope constructs.Construct, id *string, config *PlacementGroupConfig) PlacementGroup {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewPlacementGroup(scope constructs.Construct, id *string, config *Placement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/placement_group aws_placement_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/placement_group aws_placement_group} Resource.
 func NewPlacementGroup_Override(p PlacementGroup, scope constructs.Construct, id *string, config *PlacementGroupConfig) {
 	_init_.Initialize()
 
@@ -600,6 +624,17 @@ func (j *jsiiProxy_PlacementGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PlacementGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1021,6 +1056,14 @@ func (p *jsiiProxy_PlacementGroup) ResetPartitionCount() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPartitionCount",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PlacementGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

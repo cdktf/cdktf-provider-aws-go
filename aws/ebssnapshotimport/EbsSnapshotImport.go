@@ -5,14 +5,14 @@ package ebssnapshotimport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ebssnapshotimport/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ebssnapshotimport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import}.
 type EbsSnapshotImport interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type EbsSnapshotImport interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
@@ -159,6 +162,7 @@ type EbsSnapshotImport interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermanentRestore()
+	ResetRegion()
 	ResetRoleName()
 	ResetStorageTier()
 	ResetTags()
@@ -503,6 +507,26 @@ func (j *jsiiProxy_EbsSnapshotImport) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EbsSnapshotImport) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EbsSnapshotImport) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EbsSnapshotImport) RoleName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -674,7 +698,7 @@ func (j *jsiiProxy_EbsSnapshotImport) VolumeSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource.
 func NewEbsSnapshotImport(scope constructs.Construct, id *string, config *EbsSnapshotImportConfig) EbsSnapshotImport {
 	_init_.Initialize()
 
@@ -692,7 +716,7 @@ func NewEbsSnapshotImport(scope constructs.Construct, id *string, config *EbsSna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ebs_snapshot_import aws_ebs_snapshot_import} Resource.
 func NewEbsSnapshotImport_Override(e EbsSnapshotImport, scope constructs.Construct, id *string, config *EbsSnapshotImportConfig) {
 	_init_.Initialize()
 
@@ -822,6 +846,17 @@ func (j *jsiiProxy_EbsSnapshotImport)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EbsSnapshotImport)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1319,6 +1354,14 @@ func (e *jsiiProxy_EbsSnapshotImport) ResetPermanentRestore() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPermanentRestore",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EbsSnapshotImport) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

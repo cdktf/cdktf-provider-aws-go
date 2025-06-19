@@ -127,6 +127,10 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveMultiplex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveMultiplex) validateSetStartMultiplexParameters(val interface{}) error {
 	return nil
 }

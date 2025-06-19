@@ -131,6 +131,10 @@ func (j *jsiiProxy_Wafv2IpSet) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2IpSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2IpSet) validateSetScopeParameters(val *string) error {
 	return nil
 }

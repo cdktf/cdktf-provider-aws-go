@@ -119,6 +119,10 @@ func (j *jsiiProxy_AlbTargetGroupAttachment) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AlbTargetGroupAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbTargetGroupAttachment) validateSetTargetGroupArnParameters(val *string) error {
 	return nil
 }

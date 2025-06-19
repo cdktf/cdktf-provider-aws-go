@@ -115,6 +115,10 @@ func (j *jsiiProxy_KinesisStreamConsumer) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStreamConsumer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStreamConsumer) validateSetStreamArnParameters(val *string) error {
 	return nil
 }

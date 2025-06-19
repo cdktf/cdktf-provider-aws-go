@@ -5,14 +5,14 @@ package ssoadminapplicationassignmentconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssoadminapplicationassignmentconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationassignmentconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}.
 type SsoadminApplicationAssignmentConfiguration interface {
 	cdktf.TerraformResource
 	ApplicationArn() *string
@@ -62,6 +62,9 @@ type SsoadminApplicationAssignmentConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,6 +117,7 @@ type SsoadminApplicationAssignmentConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -312,6 +316,26 @@ func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -343,7 +367,7 @@ func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
 func NewSsoadminApplicationAssignmentConfiguration(scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfigurationConfig) SsoadminApplicationAssignmentConfiguration {
 	_init_.Initialize()
 
@@ -361,7 +385,7 @@ func NewSsoadminApplicationAssignmentConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
 func NewSsoadminApplicationAssignmentConfiguration_Override(s SsoadminApplicationAssignmentConfiguration, scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfigurationConfig) {
 	_init_.Initialize()
 
@@ -458,6 +482,17 @@ func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration)SetProvisioners(va
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -819,6 +854,14 @@ func (s *jsiiProxy_SsoadminApplicationAssignmentConfiguration) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsoadminApplicationAssignmentConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

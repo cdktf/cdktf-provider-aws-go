@@ -135,6 +135,10 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetSourceParameters(val *string) error {
 	return nil
 }

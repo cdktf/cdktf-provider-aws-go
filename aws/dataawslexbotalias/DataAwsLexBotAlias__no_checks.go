@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLexBotAlias) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLexBotAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLexBotAliasParameters(scope constructs.Construct, id *string, config *DataAwsLexBotAliasConfig) error {
 	return nil
 }

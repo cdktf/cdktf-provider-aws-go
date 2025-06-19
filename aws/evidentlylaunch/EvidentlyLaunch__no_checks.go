@@ -143,6 +143,10 @@ func (j *jsiiProxy_EvidentlyLaunch) validateSetRandomizationSaltParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_EvidentlyLaunch) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlyLaunch) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -191,6 +191,10 @@ func (j *jsiiProxy_S3Object) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_S3Object) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Object) validateSetServerSideEncryptionParameters(val *string) error {
 	return nil
 }

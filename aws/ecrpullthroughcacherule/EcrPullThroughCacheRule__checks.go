@@ -423,6 +423,14 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetUpstreamRegistryUrlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

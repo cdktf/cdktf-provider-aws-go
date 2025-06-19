@@ -5,14 +5,14 @@ package dataawskendraindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskendraindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskendraindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_index aws_kendra_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_index aws_kendra_index}.
 type DataAwsKendraIndex interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -59,6 +59,9 @@ type DataAwsKendraIndex interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	ServerSideEncryptionConfiguration() DataAwsKendraIndexServerSideEncryptionConfigurationList
 	Status() *string
@@ -103,6 +106,7 @@ type DataAwsKendraIndex interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -343,6 +347,26 @@ func (j *jsiiProxy_DataAwsKendraIndex) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKendraIndex) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKendraIndex) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKendraIndex) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -464,7 +488,7 @@ func (j *jsiiProxy_DataAwsKendraIndex) UserTokenConfigurations() DataAwsKendraIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
 func NewDataAwsKendraIndex(scope constructs.Construct, id *string, config *DataAwsKendraIndexConfig) DataAwsKendraIndex {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewDataAwsKendraIndex(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
 func NewDataAwsKendraIndex_Override(d DataAwsKendraIndex, scope constructs.Construct, id *string, config *DataAwsKendraIndexConfig) {
 	_init_.Initialize()
 
@@ -546,6 +570,17 @@ func (j *jsiiProxy_DataAwsKendraIndex)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKendraIndex)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (d *jsiiProxy_DataAwsKendraIndex) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKendraIndex) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

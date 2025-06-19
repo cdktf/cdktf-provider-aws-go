@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsConnectUserHierarchyStructureParameters(scope constructs.Construct, id *string, config *DataAwsConnectUserHierarchyStructureConfig) error {
 	return nil
 }

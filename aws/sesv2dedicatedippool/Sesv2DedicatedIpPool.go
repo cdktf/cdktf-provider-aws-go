@@ -5,14 +5,14 @@ package sesv2dedicatedippool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sesv2dedicatedippool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2dedicatedippool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 type Sesv2DedicatedIpPool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type Sesv2DedicatedIpPool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScalingMode() *string
 	SetScalingMode(val *string)
 	ScalingModeInput() *string
@@ -124,6 +127,7 @@ type Sesv2DedicatedIpPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetScalingMode()
 	ResetTags()
 	ResetTagsAll()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Sesv2DedicatedIpPool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2DedicatedIpPool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpPool) ScalingMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) Sesv2DedicatedIpPool {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *Ses
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Resource.
 func NewSesv2DedicatedIpPool_Override(s Sesv2DedicatedIpPool, scope constructs.Construct, id *string, config *Sesv2DedicatedIpPoolConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Sesv2DedicatedIpPool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -933,6 +968,14 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

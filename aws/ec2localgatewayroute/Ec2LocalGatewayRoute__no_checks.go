@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2LocalGatewayRouteParameters(scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteConfig) error {
 	return nil
 }

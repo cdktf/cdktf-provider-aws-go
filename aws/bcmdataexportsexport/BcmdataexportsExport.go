@@ -5,16 +5,17 @@ package bcmdataexportsexport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bcmdataexportsexport/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bcmdataexportsexport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export}.
 type BcmdataexportsExport interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,6 +138,16 @@ type BcmdataexportsExport interface {
 // The jsii proxy struct for BcmdataexportsExport
 type jsiiProxy_BcmdataexportsExport struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BcmdataexportsExport) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BcmdataexportsExport) CdktfStack() cdktf.TerraformStack {
@@ -380,7 +391,7 @@ func (j *jsiiProxy_BcmdataexportsExport) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource.
 func NewBcmdataexportsExport(scope constructs.Construct, id *string, config *BcmdataexportsExportConfig) BcmdataexportsExport {
 	_init_.Initialize()
 
@@ -398,7 +409,7 @@ func NewBcmdataexportsExport(scope constructs.Construct, id *string, config *Bcm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/bcmdataexports_export aws_bcmdataexports_export} Resource.
 func NewBcmdataexportsExport_Override(b BcmdataexportsExport, scope constructs.Construct, id *string, config *BcmdataexportsExportConfig) {
 	_init_.Initialize()
 

@@ -450,6 +450,14 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetVoiceConnectorIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

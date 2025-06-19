@@ -5,14 +5,14 @@ package redshiftdatastatement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftdatastatement/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftdatastatement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement}.
 type RedshiftdataStatement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type RedshiftdataStatement interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecretArn() *string
 	SetSecretArn(val *string)
 	SecretArnInput() *string
@@ -144,6 +147,7 @@ type RedshiftdataStatement interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	ResetSecretArn()
 	ResetStatementName()
 	ResetTimeouts()
@@ -397,6 +401,26 @@ func (j *jsiiProxy_RedshiftdataStatement) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftdataStatement) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftdataStatement) SecretArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -548,7 +572,7 @@ func (j *jsiiProxy_RedshiftdataStatement) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) RedshiftdataStatement {
 	_init_.Initialize()
 
@@ -566,7 +590,7 @@ func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement_Override(r RedshiftdataStatement, scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) {
 	_init_.Initialize()
 
@@ -685,6 +709,17 @@ func (j *jsiiProxy_RedshiftdataStatement)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftdataStatement)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1155,6 +1190,14 @@ func (r *jsiiProxy_RedshiftdataStatement) ResetParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftdataStatement) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

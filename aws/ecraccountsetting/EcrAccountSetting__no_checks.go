@@ -111,6 +111,10 @@ func (j *jsiiProxy_EcrAccountSetting) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_EcrAccountSetting) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrAccountSetting) validateSetValueParameters(val *string) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_PinpointApp) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApp) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApp) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

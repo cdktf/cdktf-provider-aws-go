@@ -5,14 +5,14 @@ package pinpointapnschannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/pinpointapnschannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/pinpointapnschannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
 type PinpointApnsChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -76,6 +76,9 @@ type PinpointApnsChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TeamId() *string
 	SetTeamId(val *string)
 	TeamIdInput() *string
@@ -143,6 +146,7 @@ type PinpointApnsChannel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateKey()
+	ResetRegion()
 	ResetTeamId()
 	ResetTokenKey()
 	ResetTokenKeyId()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_PinpointApnsChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PinpointApnsChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointApnsChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PinpointApnsChannel) TeamId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -525,7 +549,7 @@ func (j *jsiiProxy_PinpointApnsChannel) TokenKeyInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) PinpointApnsChannel {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *Pinp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel_Override(p PinpointApnsChannel, scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (j *jsiiProxy_PinpointApnsChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointApnsChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1137,6 +1172,14 @@ func (p *jsiiProxy_PinpointApnsChannel) ResetPrivateKey() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointApnsChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

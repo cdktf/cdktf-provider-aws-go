@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudformationStack) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationStack) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationStack) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

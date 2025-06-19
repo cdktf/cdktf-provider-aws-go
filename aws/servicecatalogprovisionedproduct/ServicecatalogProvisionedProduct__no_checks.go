@@ -163,6 +163,10 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetProvisioningArti
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetRetainPhysicalResourcesParameters(val interface{}) error {
 	return nil
 }

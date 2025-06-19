@@ -175,6 +175,10 @@ func (j *jsiiProxy_Lexv2ModelsIntent) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_Lexv2ModelsIntent) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLexv2ModelsIntentParameters(scope constructs.Construct, id *string, config *Lexv2ModelsIntentConfig) error {
 	return nil
 }

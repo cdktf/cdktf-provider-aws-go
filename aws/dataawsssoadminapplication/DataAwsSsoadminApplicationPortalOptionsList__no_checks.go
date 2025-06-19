@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

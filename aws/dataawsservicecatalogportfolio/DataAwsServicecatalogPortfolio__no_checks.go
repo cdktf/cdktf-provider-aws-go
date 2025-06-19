@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

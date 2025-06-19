@@ -5,14 +5,14 @@ package ecrpublicrepositorypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecrpublicrepositorypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrpublicrepositorypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy}.
 type EcrpublicRepositoryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type EcrpublicRepositoryPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistryId() *string
 	RepositoryName() *string
 	SetRepositoryName(val *string)
@@ -118,6 +121,7 @@ type EcrpublicRepositoryPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -306,6 +310,26 @@ func (j *jsiiProxy_EcrpublicRepositoryPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EcrpublicRepositoryPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrpublicRepositoryPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcrpublicRepositoryPolicy) RegistryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_EcrpublicRepositoryPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
 func NewEcrpublicRepositoryPolicy(scope constructs.Construct, id *string, config *EcrpublicRepositoryPolicyConfig) EcrpublicRepositoryPolicy {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewEcrpublicRepositoryPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
 func NewEcrpublicRepositoryPolicy_Override(e EcrpublicRepositoryPolicy, scope constructs.Construct, id *string, config *EcrpublicRepositoryPolicyConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_EcrpublicRepositoryPolicy)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcrpublicRepositoryPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -862,6 +897,14 @@ func (e *jsiiProxy_EcrpublicRepositoryPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcrpublicRepositoryPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

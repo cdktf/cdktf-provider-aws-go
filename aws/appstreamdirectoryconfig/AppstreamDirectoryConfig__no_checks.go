@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppstreamDirectoryConfigParameters(scope constructs.Construct, id *string, config *AppstreamDirectoryConfigConfig) error {
 	return nil
 }

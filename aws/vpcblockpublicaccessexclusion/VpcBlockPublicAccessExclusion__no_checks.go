@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpcBlockPublicAccessExclusion) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_VpcBlockPublicAccessExclusion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcBlockPublicAccessExclusion) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

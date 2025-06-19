@@ -442,6 +442,14 @@ func (j *jsiiProxy_DatasyncLocationEfs) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationEfs) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationEfs) validateSetSubdirectoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

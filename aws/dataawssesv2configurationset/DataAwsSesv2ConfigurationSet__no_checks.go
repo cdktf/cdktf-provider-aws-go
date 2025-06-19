@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesv2ConfigurationSet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

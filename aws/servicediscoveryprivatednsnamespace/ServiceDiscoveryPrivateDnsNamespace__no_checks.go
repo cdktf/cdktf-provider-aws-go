@@ -119,6 +119,10 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

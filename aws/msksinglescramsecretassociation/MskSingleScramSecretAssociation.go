@@ -5,14 +5,14 @@ package msksinglescramsecretassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/msksinglescramsecretassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/msksinglescramsecretassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association}.
 type MskSingleScramSecretAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type MskSingleScramSecretAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecretArn() *string
 	SetSecretArn(val *string)
 	SecretArnInput() *string
@@ -114,6 +117,7 @@ type MskSingleScramSecretAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_MskSingleScramSecretAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MskSingleScramSecretAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskSingleScramSecretAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskSingleScramSecretAssociation) SecretArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,7 +367,7 @@ func (j *jsiiProxy_MskSingleScramSecretAssociation) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource.
 func NewMskSingleScramSecretAssociation(scope constructs.Construct, id *string, config *MskSingleScramSecretAssociationConfig) MskSingleScramSecretAssociation {
 	_init_.Initialize()
 
@@ -361,7 +385,7 @@ func NewMskSingleScramSecretAssociation(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_single_scram_secret_association aws_msk_single_scram_secret_association} Resource.
 func NewMskSingleScramSecretAssociation_Override(m MskSingleScramSecretAssociation, scope constructs.Construct, id *string, config *MskSingleScramSecretAssociationConfig) {
 	_init_.Initialize()
 
@@ -447,6 +471,17 @@ func (j *jsiiProxy_MskSingleScramSecretAssociation)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskSingleScramSecretAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -819,6 +854,14 @@ func (m *jsiiProxy_MskSingleScramSecretAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskSingleScramSecretAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

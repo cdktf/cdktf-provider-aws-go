@@ -151,6 +151,10 @@ func (j *jsiiProxy_Macie2ClassificationJob) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_Macie2ClassificationJob) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2ClassificationJob) validateSetSamplingPercentageParameters(val *float64) error {
 	return nil
 }

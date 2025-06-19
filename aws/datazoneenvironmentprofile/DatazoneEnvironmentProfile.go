@@ -5,14 +5,14 @@ package datazoneenvironmentprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datazoneenvironmentprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironmentprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile}.
 type DatazoneEnvironmentProfile interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -79,6 +79,9 @@ type DatazoneEnvironmentProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,6 +140,7 @@ type DatazoneEnvironmentProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetUserParameters()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -456,6 +460,26 @@ func (j *jsiiProxy_DatazoneEnvironmentProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneEnvironmentProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneEnvironmentProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneEnvironmentProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -517,7 +541,7 @@ func (j *jsiiProxy_DatazoneEnvironmentProfile) UserParametersInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile} Resource.
 func NewDatazoneEnvironmentProfile(scope constructs.Construct, id *string, config *DatazoneEnvironmentProfileConfig) DatazoneEnvironmentProfile {
 	_init_.Initialize()
 
@@ -535,7 +559,7 @@ func NewDatazoneEnvironmentProfile(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datazone_environment_profile aws_datazone_environment_profile} Resource.
 func NewDatazoneEnvironmentProfile_Override(d DatazoneEnvironmentProfile, scope constructs.Construct, id *string, config *DatazoneEnvironmentProfileConfig) {
 	_init_.Initialize()
 
@@ -687,6 +711,17 @@ func (j *jsiiProxy_DatazoneEnvironmentProfile)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneEnvironmentProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1075,6 +1110,14 @@ func (d *jsiiProxy_DatazoneEnvironmentProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneEnvironmentProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

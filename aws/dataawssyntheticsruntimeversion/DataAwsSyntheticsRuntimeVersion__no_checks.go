@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersion) validateSetPrefixParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersion) validateSetVersionParameters(val *string) error {
 	return nil
 }

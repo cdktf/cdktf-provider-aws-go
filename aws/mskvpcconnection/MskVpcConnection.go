@@ -5,14 +5,14 @@ package mskvpcconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mskvpcconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mskvpcconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection}.
 type MskVpcConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type MskVpcConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -133,6 +136,7 @@ type MskVpcConnection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -353,6 +357,26 @@ func (j *jsiiProxy_MskVpcConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MskVpcConnection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskVpcConnection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskVpcConnection) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -484,7 +508,7 @@ func (j *jsiiProxy_MskVpcConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection} Resource.
 func NewMskVpcConnection(scope constructs.Construct, id *string, config *MskVpcConnectionConfig) MskVpcConnection {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewMskVpcConnection(scope constructs.Construct, id *string, config *MskVpcC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/msk_vpc_connection aws_msk_vpc_connection} Resource.
 func NewMskVpcConnection_Override(m MskVpcConnection, scope constructs.Construct, id *string, config *MskVpcConnectionConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_MskVpcConnection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskVpcConnection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1034,6 +1069,14 @@ func (m *jsiiProxy_MskVpcConnection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskVpcConnection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -438,6 +438,14 @@ func (j *jsiiProxy_WafregionalByteMatchSet) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalByteMatchSet) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewWafregionalByteMatchSetParameters(scope constructs.Construct, id *string, config *WafregionalByteMatchSetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

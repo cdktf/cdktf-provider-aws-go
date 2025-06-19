@@ -123,6 +123,10 @@ func (j *jsiiProxy_SecurityhubConfigurationPolicy) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubConfigurationPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecurityhubConfigurationPolicyParameters(scope constructs.Construct, id *string, config *SecurityhubConfigurationPolicyConfig) error {
 	return nil
 }

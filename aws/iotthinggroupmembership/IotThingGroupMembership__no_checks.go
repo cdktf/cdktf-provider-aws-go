@@ -115,6 +115,10 @@ func (j *jsiiProxy_IotThingGroupMembership) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IotThingGroupMembership) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingGroupMembership) validateSetThingGroupNameParameters(val *string) error {
 	return nil
 }

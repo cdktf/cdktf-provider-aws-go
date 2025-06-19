@@ -5,14 +5,14 @@ package dataawswafv2ipset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawswafv2ipset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawswafv2ipset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
 type DataAwsWafv2IpSet interface {
 	cdktf.TerraformDataSource
 	Addresses() *[]*string
@@ -57,6 +57,9 @@ type DataAwsWafv2IpSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -95,6 +98,7 @@ type DataAwsWafv2IpSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -304,6 +308,26 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWafv2IpSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWafv2IpSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWafv2IpSet) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,7 +379,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
 func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAwsWafv2IpSetConfig) DataAwsWafv2IpSet {
 	_init_.Initialize()
 
@@ -373,7 +397,7 @@ func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
 func NewDataAwsWafv2IpSet_Override(d DataAwsWafv2IpSet, scope constructs.Construct, id *string, config *DataAwsWafv2IpSetConfig) {
 	_init_.Initialize()
 
@@ -448,6 +472,17 @@ func (j *jsiiProxy_DataAwsWafv2IpSet)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsWafv2IpSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -760,6 +795,14 @@ func (d *jsiiProxy_DataAwsWafv2IpSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsWafv2IpSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

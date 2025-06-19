@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

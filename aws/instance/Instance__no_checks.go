@@ -167,14 +167,6 @@ func (j *jsiiProxy_Instance) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Instance) validateSetCpuCoreCountParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_Instance) validateSetCpuThreadsPerCoreParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_Instance) validateSetDisableApiStopParameters(val interface{}) error {
 	return nil
 }
@@ -256,6 +248,10 @@ func (j *jsiiProxy_Instance) validateSetPrivateIpParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Instance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Instance) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

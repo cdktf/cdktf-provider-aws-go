@@ -5,14 +5,14 @@ package dataawsiamrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsiamrole/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsiamrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iam_role aws_iam_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iam_role aws_iam_role}.
 type DataAwsIamRole interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -411,7 +411,7 @@ func (j *jsiiProxy_DataAwsIamRole) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iam_role aws_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iam_role aws_iam_role} Data Source.
 func NewDataAwsIamRole(scope constructs.Construct, id *string, config *DataAwsIamRoleConfig) DataAwsIamRole {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewDataAwsIamRole(scope constructs.Construct, id *string, config *DataAwsIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/iam_role aws_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/iam_role aws_iam_role} Data Source.
 func NewDataAwsIamRole_Override(d DataAwsIamRole, scope constructs.Construct, id *string, config *DataAwsIamRoleConfig) {
 	_init_.Initialize()
 

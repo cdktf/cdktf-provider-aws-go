@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEksClusterAuth) validateSetNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksClusterAuth) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEksClusterAuthParameters(scope constructs.Construct, id *string, config *DataAwsEksClusterAuthConfig) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsRdsClusterParameterGroup) validateSetNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsClusterParameterGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRdsClusterParameterGroupParameters(scope constructs.Construct, id *string, config *DataAwsRdsClusterParameterGroupConfig) error {
 	return nil
 }

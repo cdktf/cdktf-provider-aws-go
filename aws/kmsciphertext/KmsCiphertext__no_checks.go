@@ -123,6 +123,10 @@ func (j *jsiiProxy_KmsCiphertext) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_KmsCiphertext) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewKmsCiphertextParameters(scope constructs.Construct, id *string, config *KmsCiphertextConfig) error {
 	return nil
 }

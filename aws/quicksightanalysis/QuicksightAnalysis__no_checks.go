@@ -147,6 +147,10 @@ func (j *jsiiProxy_QuicksightAnalysis) validateSetRecoveryWindowInDaysParameters
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAnalysis) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAnalysis) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

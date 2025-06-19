@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) validateSetNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package applicationinsightsapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/applicationinsightsapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/applicationinsightsapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/applicationinsights_application aws_applicationinsights_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/applicationinsights_application aws_applicationinsights_application}.
 type ApplicationinsightsApplication interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type ApplicationinsightsApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
@@ -145,6 +148,7 @@ type ApplicationinsightsApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -445,6 +449,26 @@ func (j *jsiiProxy_ApplicationinsightsApplication) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationinsightsApplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationinsightsApplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationinsightsApplication) ResourceGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -536,7 +560,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
 func NewApplicationinsightsApplication(scope constructs.Construct, id *string, config *ApplicationinsightsApplicationConfig) ApplicationinsightsApplication {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewApplicationinsightsApplication(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
 func NewApplicationinsightsApplication_Override(a ApplicationinsightsApplication, scope constructs.Construct, id *string, config *ApplicationinsightsApplicationConfig) {
 	_init_.Initialize()
 
@@ -706,6 +730,17 @@ func (j *jsiiProxy_ApplicationinsightsApplication)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationinsightsApplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1156,6 +1191,14 @@ func (a *jsiiProxy_ApplicationinsightsApplication) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationinsightsApplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

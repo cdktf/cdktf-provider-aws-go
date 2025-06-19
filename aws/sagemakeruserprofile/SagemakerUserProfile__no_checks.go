@@ -119,6 +119,10 @@ func (j *jsiiProxy_SagemakerUserProfile) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerUserProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerUserProfile) validateSetSingleSignOnUserIdentifierParameters(val *string) error {
 	return nil
 }

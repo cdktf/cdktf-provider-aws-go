@@ -477,6 +477,14 @@ func (j *jsiiProxy_S3ControlAccessGrant) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessGrant) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessGrant) validateSetS3PrefixTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

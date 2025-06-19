@@ -5,14 +5,14 @@ package redshiftlogging
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftlogging/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftlogging/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging aws_redshift_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_logging aws_redshift_logging}.
 type RedshiftLogging interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -68,6 +68,9 @@ type RedshiftLogging interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3KeyPrefix() *string
 	SetS3KeyPrefix(val *string)
 	S3KeyPrefixInput() *string
@@ -126,6 +129,7 @@ type RedshiftLogging interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3KeyPrefix()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_RedshiftLogging) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftLogging) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftLogging) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftLogging) S3KeyPrefix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_RedshiftLogging) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging aws_redshift_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_logging aws_redshift_logging} Resource.
 func NewRedshiftLogging(scope constructs.Construct, id *string, config *RedshiftLoggingConfig) RedshiftLogging {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewRedshiftLogging(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshift_logging aws_redshift_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshift_logging aws_redshift_logging} Resource.
 func NewRedshiftLogging_Override(r RedshiftLogging, scope constructs.Construct, id *string, config *RedshiftLoggingConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_RedshiftLogging)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftLogging)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -949,6 +984,14 @@ func (r *jsiiProxy_RedshiftLogging) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftLogging) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

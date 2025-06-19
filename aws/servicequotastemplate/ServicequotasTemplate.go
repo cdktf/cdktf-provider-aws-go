@@ -5,16 +5,19 @@ package servicequotastemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicequotastemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicequotastemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template}.
 type ServicequotasTemplate interface {
 	cdktf.TerraformResource
+	AwsRegion() *string
+	SetAwsRegion(val *string)
+	AwsRegionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -121,9 +124,11 @@ type ServicequotasTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAwsRegion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -140,6 +145,26 @@ type ServicequotasTemplate interface {
 // The jsii proxy struct for ServicequotasTemplate
 type jsiiProxy_ServicequotasTemplate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ServicequotasTemplate) AwsRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicequotasTemplate) AwsRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsRegionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ServicequotasTemplate) CdktfStack() cdktf.TerraformStack {
@@ -433,7 +458,7 @@ func (j *jsiiProxy_ServicequotasTemplate) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
 func NewServicequotasTemplate(scope constructs.Construct, id *string, config *ServicequotasTemplateConfig) ServicequotasTemplate {
 	_init_.Initialize()
 
@@ -451,7 +476,7 @@ func NewServicequotasTemplate(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
 func NewServicequotasTemplate_Override(s ServicequotasTemplate, scope constructs.Construct, id *string, config *ServicequotasTemplateConfig) {
 	_init_.Initialize()
 
@@ -459,6 +484,17 @@ func NewServicequotasTemplate_Override(s ServicequotasTemplate, scope constructs
 		"@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ServicequotasTemplate)SetAwsRegion(val *string) {
+	if err := j.validateSetAwsRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsRegion",
+		val,
 	)
 }
 
@@ -927,10 +963,26 @@ func (s *jsiiProxy_ServicequotasTemplate) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_ServicequotasTemplate) ResetAwsRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAwsRegion",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_ServicequotasTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicequotasTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

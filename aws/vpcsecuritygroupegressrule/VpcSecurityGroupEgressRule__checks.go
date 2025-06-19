@@ -447,6 +447,14 @@ func (j *jsiiProxy_VpcSecurityGroupEgressRule) validateSetReferencedSecurityGrou
 	return nil
 }
 
+func (j *jsiiProxy_VpcSecurityGroupEgressRule) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcSecurityGroupEgressRule) validateSetSecurityGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

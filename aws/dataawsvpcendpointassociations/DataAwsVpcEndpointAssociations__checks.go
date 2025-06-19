@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetVpcEndpointIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,14 +5,14 @@ package gameliftbuild
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftbuild/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftbuild/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_build aws_gamelift_build}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_build aws_gamelift_build}.
 type GameliftBuild interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type GameliftBuild interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageLocation() GameliftBuildStorageLocationOutputReference
 	StorageLocationInput() *GameliftBuildStorageLocation
 	Tags() *map[string]*string
@@ -130,6 +133,7 @@ type GameliftBuild interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetVersion()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_GameliftBuild) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GameliftBuild) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GameliftBuild) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GameliftBuild) StorageLocation() GameliftBuildStorageLocationOutputReference {
 	var returns GameliftBuildStorageLocationOutputReference
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_GameliftBuild) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
 func NewGameliftBuild(scope constructs.Construct, id *string, config *GameliftBuildConfig) GameliftBuild {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewGameliftBuild(scope constructs.Construct, id *string, config *GameliftBu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
 func NewGameliftBuild_Override(g GameliftBuild, scope constructs.Construct, id *string, config *GameliftBuildConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_GameliftBuild)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GameliftBuild)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1001,6 +1036,14 @@ func (g *jsiiProxy_GameliftBuild) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GameliftBuild) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

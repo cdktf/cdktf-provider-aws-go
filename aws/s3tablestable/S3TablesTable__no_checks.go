@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3TablesTable) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_S3TablesTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3TablesTable) validateSetTableBucketArnParameters(val *string) error {
 	return nil
 }

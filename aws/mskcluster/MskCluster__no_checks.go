@@ -155,6 +155,10 @@ func (j *jsiiProxy_MskCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_MskCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskCluster) validateSetStorageModeParameters(val *string) error {
 	return nil
 }

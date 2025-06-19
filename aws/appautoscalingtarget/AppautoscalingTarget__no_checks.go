@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppautoscalingTarget) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AppautoscalingTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppautoscalingTarget) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

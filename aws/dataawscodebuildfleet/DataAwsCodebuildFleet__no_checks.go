@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsCodebuildFleet) validateSetNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodebuildFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodebuildFleet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

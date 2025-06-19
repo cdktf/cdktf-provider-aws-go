@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_StoragegatewayTapePool) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayTapePool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayTapePool) validateSetRetentionLockTimeInDaysParameters(val *float64) error {
 	return nil
 }

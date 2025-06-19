@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

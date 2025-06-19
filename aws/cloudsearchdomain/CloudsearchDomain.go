@@ -5,14 +5,14 @@ package cloudsearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudsearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudsearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain}.
 type CloudsearchDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type CloudsearchDomain interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScalingParameters() CloudsearchDomainScalingParametersOutputReference
 	ScalingParametersInput() *CloudsearchDomainScalingParameters
 	SearchServiceEndpoint() *string
@@ -136,6 +139,7 @@ type CloudsearchDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetScalingParameters()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -416,6 +420,26 @@ func (j *jsiiProxy_CloudsearchDomain) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudsearchDomain) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudsearchDomain) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudsearchDomain) ScalingParameters() CloudsearchDomainScalingParametersOutputReference {
 	var returns CloudsearchDomainScalingParametersOutputReference
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_CloudsearchDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource.
 func NewCloudsearchDomain(scope constructs.Construct, id *string, config *CloudsearchDomainConfig) CloudsearchDomain {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewCloudsearchDomain(scope constructs.Construct, id *string, config *Clouds
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudsearch_domain aws_cloudsearch_domain} Resource.
 func NewCloudsearchDomain_Override(c CloudsearchDomain, scope constructs.Construct, id *string, config *CloudsearchDomainConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_CloudsearchDomain)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudsearchDomain)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1060,6 +1095,14 @@ func (c *jsiiProxy_CloudsearchDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudsearchDomain) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

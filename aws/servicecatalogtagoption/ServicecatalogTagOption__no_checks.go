@@ -123,6 +123,10 @@ func (j *jsiiProxy_ServicecatalogTagOption) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogTagOption) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogTagOption) validateSetValueParameters(val *string) error {
 	return nil
 }

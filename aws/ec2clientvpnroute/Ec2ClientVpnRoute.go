@@ -5,14 +5,14 @@ package ec2clientvpnroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2clientvpnroute/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2clientvpnroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route}.
 type Ec2ClientVpnRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type Ec2ClientVpnRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetVpcSubnetId() *string
 	SetTargetVpcSubnetId(val *string)
 	TargetVpcSubnetIdInput() *string
@@ -129,6 +132,7 @@ type Ec2ClientVpnRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -368,6 +372,26 @@ func (j *jsiiProxy_Ec2ClientVpnRoute) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2ClientVpnRoute) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnRoute) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2ClientVpnRoute) TargetVpcSubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,7 +473,7 @@ func (j *jsiiProxy_Ec2ClientVpnRoute) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route} Resource.
 func NewEc2ClientVpnRoute(scope constructs.Construct, id *string, config *Ec2ClientVpnRouteConfig) Ec2ClientVpnRoute {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewEc2ClientVpnRoute(scope constructs.Construct, id *string, config *Ec2Cli
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_route aws_ec2_client_vpn_route} Resource.
 func NewEc2ClientVpnRoute_Override(e Ec2ClientVpnRoute, scope constructs.Construct, id *string, config *Ec2ClientVpnRouteConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_Ec2ClientVpnRoute)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ClientVpnRoute)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -985,6 +1020,14 @@ func (e *jsiiProxy_Ec2ClientVpnRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnRoute) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

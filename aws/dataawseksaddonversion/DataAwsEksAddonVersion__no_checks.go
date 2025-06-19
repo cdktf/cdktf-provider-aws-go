@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEksAddonVersion) validateSetMostRecentParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksAddonVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEksAddonVersionParameters(scope constructs.Construct, id *string, config *DataAwsEksAddonVersionConfig) error {
 	return nil
 }

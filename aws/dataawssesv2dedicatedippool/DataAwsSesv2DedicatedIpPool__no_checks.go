@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetPoolNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

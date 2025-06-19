@@ -5,14 +5,14 @@ package defaultsecuritygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/defaultsecuritygroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/defaultsecuritygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_security_group aws_default_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_security_group aws_default_security_group}.
 type DefaultSecurityGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type DefaultSecurityGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RevokeRulesOnDelete() interface{}
 	SetRevokeRulesOnDelete(val interface{})
 	RevokeRulesOnDeleteInput() interface{}
@@ -136,6 +139,7 @@ type DefaultSecurityGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRevokeRulesOnDelete()
 	ResetTags()
 	ResetTagsAll()
@@ -398,6 +402,26 @@ func (j *jsiiProxy_DefaultSecurityGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DefaultSecurityGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultSecurityGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DefaultSecurityGroup) RevokeRulesOnDelete() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_DefaultSecurityGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_security_group aws_default_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_security_group aws_default_security_group} Resource.
 func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *DefaultSecurityGroupConfig) DefaultSecurityGroup {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *Def
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/default_security_group aws_default_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/default_security_group aws_default_security_group} Resource.
 func NewDefaultSecurityGroup_Override(d DefaultSecurityGroup, scope constructs.Construct, id *string, config *DefaultSecurityGroupConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_DefaultSecurityGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DefaultSecurityGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1064,6 +1099,14 @@ func (d *jsiiProxy_DefaultSecurityGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DefaultSecurityGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

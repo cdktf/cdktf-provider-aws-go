@@ -47,19 +47,19 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validateI
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutAzParameters(value *ResiliencehubResiliencyPolicyPolicyAz) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutAzParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutHardwareParameters(value *ResiliencehubResiliencyPolicyPolicyHardware) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutHardwareParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutRegionParameters(value *ResiliencehubResiliencyPolicyPolicyRegion) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutRegionParameters(value interface{}) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutSoftwareAttributeParameters(value *ResiliencehubResiliencyPolicyPolicySoftware) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validatePutSoftwareAttributeParameters(value interface{}) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) validateS
 	return nil
 }
 
-func validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

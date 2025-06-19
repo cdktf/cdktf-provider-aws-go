@@ -119,6 +119,10 @@ func (j *jsiiProxy_AccessanalyzerAnalyzer) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AccessanalyzerAnalyzer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessanalyzerAnalyzer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

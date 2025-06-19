@@ -115,6 +115,10 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetProvi
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

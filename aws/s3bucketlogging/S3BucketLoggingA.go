@@ -5,14 +5,14 @@ package s3bucketlogging
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketlogging/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketlogging/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
 type S3BucketLoggingA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -64,6 +64,9 @@ type S3BucketLoggingA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetBucket() *string
 	SetTargetBucket(val *string)
 	TargetBucketInput() *string
@@ -130,6 +133,7 @@ type S3BucketLoggingA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTargetGrant()
 	ResetTargetObjectKeyFormat()
 	SynthesizeAttributes() *map[string]interface{}
@@ -340,6 +344,26 @@ func (j *jsiiProxy_S3BucketLoggingA) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketLoggingA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketLoggingA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketLoggingA) TargetBucket() *string {
 	var returns *string
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) S3BucketLoggingA {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3Bucke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA_Override(s S3BucketLoggingA, scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_S3BucketLoggingA)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketLoggingA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -998,6 +1033,14 @@ func (s *jsiiProxy_S3BucketLoggingA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

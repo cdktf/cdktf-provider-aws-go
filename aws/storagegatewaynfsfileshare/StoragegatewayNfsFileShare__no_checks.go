@@ -175,6 +175,10 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetReadOnlyParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetRequesterPaysParameters(val interface{}) error {
 	return nil
 }

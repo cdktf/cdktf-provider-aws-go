@@ -127,6 +127,10 @@ func (j *jsiiProxy_WorkspaceswebIpAccessSettings) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_WorkspaceswebIpAccessSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspaceswebIpAccessSettings) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

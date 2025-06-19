@@ -5,14 +5,14 @@ package dataawssyntheticsruntimeversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssyntheticsruntimeversions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssyntheticsruntimeversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions}.
 type DataAwsSyntheticsRuntimeVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,8 +48,10 @@ type DataAwsSyntheticsRuntimeVersions interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuntimeVersions() DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
-	RuntimeVersionsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -81,11 +83,10 @@ type DataAwsSyntheticsRuntimeVersions interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRuntimeVersions(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRuntimeVersions()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -225,21 +226,31 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) RawOverrides() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) RuntimeVersions() DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList {
-	var returns DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) Region() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"runtimeVersions",
+		"region",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) RuntimeVersionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) RegionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"runtimeVersionsInput",
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) RuntimeVersions() DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList {
+	var returns DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList
+	_jsii_.Get(
+		j,
+		"runtimeVersions",
 		&returns,
 	)
 	return returns
@@ -276,7 +287,7 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions} Data Source.
 func NewDataAwsSyntheticsRuntimeVersions(scope constructs.Construct, id *string, config *DataAwsSyntheticsRuntimeVersionsConfig) DataAwsSyntheticsRuntimeVersions {
 	_init_.Initialize()
 
@@ -294,7 +305,7 @@ func NewDataAwsSyntheticsRuntimeVersions(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/synthetics_runtime_versions aws_synthetics_runtime_versions} Data Source.
 func NewDataAwsSyntheticsRuntimeVersions_Override(d DataAwsSyntheticsRuntimeVersions, scope constructs.Construct, id *string, config *DataAwsSyntheticsRuntimeVersionsConfig) {
 	_init_.Initialize()
 
@@ -347,6 +358,17 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -636,17 +658,6 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) OverrideLogicalId(newLogica
 	)
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) PutRuntimeVersions(value interface{}) {
-	if err := d.validatePutRuntimeVersionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRuntimeVersions",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -655,10 +666,10 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) ResetRuntimeVersions() {
+func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetRuntimeVersions",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

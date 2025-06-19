@@ -5,14 +5,14 @@ package appfabricingestiondestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appfabricingestiondestination/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination}.
 type AppfabricIngestionDestination interface {
 	cdktf.TerraformResource
 	AppBundleArn() *string
@@ -67,6 +67,9 @@ type AppfabricIngestionDestination interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -130,6 +133,7 @@ type AppfabricIngestionDestination interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProcessingConfiguration()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -380,6 +384,26 @@ func (j *jsiiProxy_AppfabricIngestionDestination) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppfabricIngestionDestination) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppfabricIngestionDestination) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppfabricIngestionDestination) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -461,7 +485,7 @@ func (j *jsiiProxy_AppfabricIngestionDestination) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination} Resource.
 func NewAppfabricIngestionDestination(scope constructs.Construct, id *string, config *AppfabricIngestionDestinationConfig) AppfabricIngestionDestination {
 	_init_.Initialize()
 
@@ -479,7 +503,7 @@ func NewAppfabricIngestionDestination(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination} Resource.
 func NewAppfabricIngestionDestination_Override(a AppfabricIngestionDestination, scope constructs.Construct, id *string, config *AppfabricIngestionDestinationConfig) {
 	_init_.Initialize()
 
@@ -576,6 +600,17 @@ func (j *jsiiProxy_AppfabricIngestionDestination)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppfabricIngestionDestination)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -997,6 +1032,14 @@ func (a *jsiiProxy_AppfabricIngestionDestination) ResetProcessingConfiguration()
 	_jsii_.InvokeVoid(
 		a,
 		"resetProcessingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppfabricIngestionDestination) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

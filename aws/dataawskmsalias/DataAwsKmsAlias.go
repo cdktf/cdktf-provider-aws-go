@@ -5,14 +5,14 @@ package dataawskmsalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmsalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmsalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias aws_kms_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias aws_kms_alias}.
 type DataAwsKmsAlias interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,9 @@ type DataAwsKmsAlias interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetKeyArn() *string
 	TargetKeyId() *string
 	// Experimental.
@@ -91,6 +94,7 @@ type DataAwsKmsAlias interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -270,6 +274,26 @@ func (j *jsiiProxy_DataAwsKmsAlias) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsAlias) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsAlias) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsAlias) TargetKeyArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_DataAwsKmsAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
 func NewDataAwsKmsAlias(scope constructs.Construct, id *string, config *DataAwsKmsAliasConfig) DataAwsKmsAlias {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewDataAwsKmsAlias(scope constructs.Construct, id *string, config *DataAwsK
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
 func NewDataAwsKmsAlias_Override(d DataAwsKmsAlias, scope constructs.Construct, id *string, config *DataAwsKmsAliasConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_DataAwsKmsAlias)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKmsAlias)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -715,6 +750,14 @@ func (d *jsiiProxy_DataAwsKmsAlias) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKmsAlias) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

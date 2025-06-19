@@ -115,6 +115,10 @@ func (j *jsiiProxy_SchemasDiscoverer) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SchemasDiscoverer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasDiscoverer) validateSetSourceArnParameters(val *string) error {
 	return nil
 }

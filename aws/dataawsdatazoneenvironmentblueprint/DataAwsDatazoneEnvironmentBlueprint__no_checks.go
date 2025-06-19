@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsDatazoneEnvironmentBlueprintParameters(scope constructs.Construct, id *string, config *DataAwsDatazoneEnvironmentBlueprintConfig) error {
 	return nil
 }

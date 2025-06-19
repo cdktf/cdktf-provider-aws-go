@@ -119,6 +119,10 @@ func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlDirectoryBucketAccessPointScope) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3ControlDirectoryBucketAccessPointScopeParameters(scope constructs.Construct, id *string, config *S3ControlDirectoryBucketAccessPointScopeConfig) error {
 	return nil
 }

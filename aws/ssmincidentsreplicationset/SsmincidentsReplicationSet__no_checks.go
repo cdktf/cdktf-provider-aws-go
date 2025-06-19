@@ -79,6 +79,10 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) validatePutRegionParameters(value
 	return nil
 }
 
+func (s *jsiiProxy_SsmincidentsReplicationSet) validatePutRegionsParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsReplicationSet) validatePutTimeoutsParameters(value *SsmincidentsReplicationSetTimeouts) error {
 	return nil
 }

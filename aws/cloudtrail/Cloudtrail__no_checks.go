@@ -159,6 +159,10 @@ func (j *jsiiProxy_Cloudtrail) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_Cloudtrail) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudtrail) validateSetS3BucketNameParameters(val *string) error {
 	return nil
 }

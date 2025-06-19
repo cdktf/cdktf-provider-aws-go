@@ -5,14 +5,14 @@ package servicecatalogappregistryapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogappregistryapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogappregistryapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 type ServicecatalogappregistryApplication interface {
 	cdktf.TerraformResource
 	ApplicationTag() cdktf.StringMap
@@ -64,6 +64,9 @@ type ServicecatalogappregistryApplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -121,6 +124,7 @@ type ServicecatalogappregistryApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -340,6 +344,26 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogappregistryApplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogappregistryApplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogappregistryApplication) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -401,7 +425,7 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
 func NewServicecatalogappregistryApplication(scope constructs.Construct, id *string, config *ServicecatalogappregistryApplicationConfig) ServicecatalogappregistryApplication {
 	_init_.Initialize()
 
@@ -419,7 +443,7 @@ func NewServicecatalogappregistryApplication(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Resource.
 func NewServicecatalogappregistryApplication_Override(s ServicecatalogappregistryApplication, scope constructs.Construct, id *string, config *ServicecatalogappregistryApplicationConfig) {
 	_init_.Initialize()
 
@@ -516,6 +540,17 @@ func (j *jsiiProxy_ServicecatalogappregistryApplication)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogappregistryApplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (s *jsiiProxy_ServicecatalogappregistryApplication) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogappregistryApplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMqBrokerEngineTypes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsMqBrokerEngineTypesParameters(scope constructs.Construct, id *string, config *DataAwsMqBrokerEngineTypesConfig) error {
 	return nil
 }

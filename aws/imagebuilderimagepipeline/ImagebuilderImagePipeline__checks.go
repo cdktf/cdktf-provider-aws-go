@@ -539,6 +539,14 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

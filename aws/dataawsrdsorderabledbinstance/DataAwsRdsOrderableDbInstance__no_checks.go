@@ -119,6 +119,10 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetReadReplicaCapableP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetStorageTypeParameters(val *string) error {
 	return nil
 }

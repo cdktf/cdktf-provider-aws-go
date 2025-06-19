@@ -127,6 +127,10 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetQualifierParam
 	return nil
 }
 
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }

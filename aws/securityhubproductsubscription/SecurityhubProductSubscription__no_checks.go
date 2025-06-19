@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecurityhubProductSubscription) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubProductSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecurityhubProductSubscriptionParameters(scope constructs.Construct, id *string, config *SecurityhubProductSubscriptionConfig) error {
 	return nil
 }

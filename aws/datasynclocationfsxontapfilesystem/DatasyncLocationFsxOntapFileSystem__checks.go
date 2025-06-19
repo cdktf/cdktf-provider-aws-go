@@ -410,6 +410,14 @@ func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateSetSecurityGroupArnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

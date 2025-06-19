@@ -127,6 +127,10 @@ func (j *jsiiProxy_NatGateway) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_NatGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatGateway) validateSetSecondaryAllocationIdsParameters(val *[]*string) error {
 	return nil
 }

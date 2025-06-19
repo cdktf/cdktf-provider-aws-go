@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsTimestreamwriteTable) validateSetNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsTimestreamwriteTable) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsTimestreamwriteTableParameters(scope constructs.Construct, id *string, config *DataAwsTimestreamwriteTableConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

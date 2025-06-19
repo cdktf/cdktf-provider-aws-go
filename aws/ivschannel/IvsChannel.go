@@ -5,14 +5,14 @@ package ivschannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ivschannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ivschannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_channel aws_ivs_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_channel aws_ivs_channel}.
 type IvsChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type IvsChannel interface {
 	RecordingConfigurationArn() *string
 	SetRecordingConfigurationArn(val *string)
 	RecordingConfigurationArnInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -142,6 +145,7 @@ type IvsChannel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecordingConfigurationArn()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -424,6 +428,26 @@ func (j *jsiiProxy_IvsChannel) RecordingConfigurationArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IvsChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IvsChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IvsChannel) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_IvsChannel) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelConfig) IvsChannel {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel_Override(i IvsChannel, scope constructs.Construct, id *string, config *IvsChannelConfig) {
 	_init_.Initialize()
 
@@ -683,6 +707,17 @@ func (j *jsiiProxy_IvsChannel)SetRecordingConfigurationArn(val *string) {
 	_jsii_.Set(
 		j,
 		"recordingConfigurationArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IvsChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1128,6 +1163,14 @@ func (i *jsiiProxy_IvsChannel) ResetRecordingConfigurationArn() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRecordingConfigurationArn",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IvsChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

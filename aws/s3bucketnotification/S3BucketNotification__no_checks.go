@@ -131,6 +131,10 @@ func (j *jsiiProxy_S3BucketNotification) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketNotification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketNotificationParameters(scope constructs.Construct, id *string, config *S3BucketNotificationConfig) error {
 	return nil
 }

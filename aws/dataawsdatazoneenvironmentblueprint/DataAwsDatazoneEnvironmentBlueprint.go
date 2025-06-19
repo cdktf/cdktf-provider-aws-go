@@ -5,14 +5,14 @@ package dataawsdatazoneenvironmentblueprint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdatazoneenvironmentblueprint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdatazoneenvironmentblueprint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint}.
 type DataAwsDatazoneEnvironmentBlueprint interface {
 	cdktf.TerraformDataSource
 	BlueprintProvider() *string
@@ -59,6 +59,9 @@ type DataAwsDatazoneEnvironmentBlueprint interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -93,6 +96,7 @@ type DataAwsDatazoneEnvironmentBlueprint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -312,6 +316,26 @@ func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -343,7 +367,7 @@ func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint} Data Source.
 func NewDataAwsDatazoneEnvironmentBlueprint(scope constructs.Construct, id *string, config *DataAwsDatazoneEnvironmentBlueprintConfig) DataAwsDatazoneEnvironmentBlueprint {
 	_init_.Initialize()
 
@@ -361,7 +385,7 @@ func NewDataAwsDatazoneEnvironmentBlueprint(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/datazone_environment_blueprint aws_datazone_environment_blueprint} Data Source.
 func NewDataAwsDatazoneEnvironmentBlueprint_Override(d DataAwsDatazoneEnvironmentBlueprint, scope constructs.Construct, id *string, config *DataAwsDatazoneEnvironmentBlueprintConfig) {
 	_init_.Initialize()
 
@@ -447,6 +471,17 @@ func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -740,6 +775,14 @@ func (d *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDatazoneEnvironmentBlueprint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

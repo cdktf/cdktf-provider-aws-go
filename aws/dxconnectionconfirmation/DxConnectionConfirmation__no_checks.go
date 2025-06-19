@@ -115,6 +115,10 @@ func (j *jsiiProxy_DxConnectionConfirmation) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DxConnectionConfirmation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDxConnectionConfirmationParameters(scope constructs.Construct, id *string, config *DxConnectionConfirmationConfig) error {
 	return nil
 }

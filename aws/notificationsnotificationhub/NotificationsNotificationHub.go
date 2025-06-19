@@ -5,14 +5,14 @@ package notificationsnotificationhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/notificationsnotificationhub/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/notificationsnotificationhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub}.
 type NotificationsNotificationHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_NotificationsNotificationHub) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource.
 func NewNotificationsNotificationHub(scope constructs.Construct, id *string, config *NotificationsNotificationHubConfig) NotificationsNotificationHub {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewNotificationsNotificationHub(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/notifications_notification_hub aws_notifications_notification_hub} Resource.
 func NewNotificationsNotificationHub_Override(n NotificationsNotificationHub, scope constructs.Construct, id *string, config *NotificationsNotificationHubConfig) {
 	_init_.Initialize()
 

@@ -119,6 +119,10 @@ func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppsyncDomainNameApiAssociationParameters(scope constructs.Construct, id *string, config *AppsyncDomainNameApiAssociationConfig) error {
 	return nil
 }

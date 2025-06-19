@@ -5,9 +5,9 @@ package dbeventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dbeventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbeventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

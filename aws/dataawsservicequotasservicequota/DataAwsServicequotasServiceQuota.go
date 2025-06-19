@@ -5,14 +5,14 @@ package dataawsservicequotasservicequota
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicequotasservicequota/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicequotasservicequota/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota}.
 type DataAwsServicequotasServiceQuota interface {
 	cdktf.TerraformDataSource
 	Adjustable() cdktf.IResolvable
@@ -60,6 +60,9 @@ type DataAwsServicequotasServiceQuota interface {
 	QuotaNameInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceCode() *string
 	SetServiceCode(val *string)
 	ServiceCodeInput() *string
@@ -103,6 +106,7 @@ type DataAwsServicequotasServiceQuota interface {
 	ResetOverrideLogicalId()
 	ResetQuotaCode()
 	ResetQuotaName()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -332,6 +336,26 @@ func (j *jsiiProxy_DataAwsServicequotasServiceQuota) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServicequotasServiceQuota) ServiceCode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,7 +437,7 @@ func (j *jsiiProxy_DataAwsServicequotasServiceQuota) Value() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota} Data Source.
 func NewDataAwsServicequotasServiceQuota(scope constructs.Construct, id *string, config *DataAwsServicequotasServiceQuotaConfig) DataAwsServicequotasServiceQuota {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewDataAwsServicequotasServiceQuota(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicequotas_service_quota aws_servicequotas_service_quota} Data Source.
 func NewDataAwsServicequotasServiceQuota_Override(d DataAwsServicequotasServiceQuota, scope constructs.Construct, id *string, config *DataAwsServicequotasServiceQuotaConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_DataAwsServicequotasServiceQuota)SetQuotaName(val *string) {
 	_jsii_.Set(
 		j,
 		"quotaName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -845,6 +880,14 @@ func (d *jsiiProxy_DataAwsServicequotasServiceQuota) ResetQuotaName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQuotaName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServicequotasServiceQuota) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

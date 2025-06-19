@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) validateSetPolicyParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeAuthPolicy) validateSetResourceIdentifierParameters(val *string) error {
 	return nil
 }

@@ -434,6 +434,14 @@ func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSsoadminManagedPolicyAttachmentParameters(scope constructs.Construct, id *string, config *SsoadminManagedPolicyAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

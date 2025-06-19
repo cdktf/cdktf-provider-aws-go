@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKmsPublicKey) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsPublicKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKmsPublicKeyParameters(scope constructs.Construct, id *string, config *DataAwsKmsPublicKeyConfig) error {
 	return nil
 }

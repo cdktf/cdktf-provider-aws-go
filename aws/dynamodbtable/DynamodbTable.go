@@ -5,14 +5,14 @@ package dynamodbtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dynamodbtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,9 @@ type DynamodbTable interface {
 	ReadCapacity() *float64
 	SetReadCapacity(val *float64)
 	ReadCapacityInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Replica() DynamodbTableReplicaList
 	ReplicaInput() interface{}
 	RestoreDateTime() *string
@@ -203,6 +206,7 @@ type DynamodbTable interface {
 	ResetPointInTimeRecovery()
 	ResetRangeKey()
 	ResetReadCapacity()
+	ResetRegion()
 	ResetReplica()
 	ResetRestoreDateTime()
 	ResetRestoreSourceName()
@@ -635,6 +639,26 @@ func (j *jsiiProxy_DynamodbTable) ReadCapacityInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTable) Replica() DynamodbTableReplicaList {
 	var returns DynamodbTableReplicaList
 	_jsii_.Get(
@@ -966,7 +990,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -984,7 +1008,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -1136,6 +1160,17 @@ func (j *jsiiProxy_DynamodbTable)SetReadCapacity(val *float64) {
 	_jsii_.Set(
 		j,
 		"readCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1813,6 +1848,14 @@ func (d *jsiiProxy_DynamodbTable) ResetReadCapacity() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReadCapacity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

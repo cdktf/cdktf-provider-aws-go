@@ -407,6 +407,14 @@ func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetStreamArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

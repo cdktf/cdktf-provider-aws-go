@@ -5,14 +5,14 @@ package auditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/auditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/auditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_control aws_auditmanager_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_control aws_auditmanager_control}.
 type AuditmanagerControl interface {
 	cdktf.TerraformResource
 	ActionPlanInstructions() *string
@@ -71,6 +71,9 @@ type AuditmanagerControl interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -136,6 +139,7 @@ type AuditmanagerControl interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTestingInformation()
 	SynthesizeAttributes() *map[string]interface{}
@@ -406,6 +410,26 @@ func (j *jsiiProxy_AuditmanagerControl) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AuditmanagerControl) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuditmanagerControl) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuditmanagerControl) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_AuditmanagerControl) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
 func NewAuditmanagerControl(scope constructs.Construct, id *string, config *AuditmanagerControlConfig) AuditmanagerControl {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewAuditmanagerControl(scope constructs.Construct, id *string, config *Audi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
 func NewAuditmanagerControl_Override(a AuditmanagerControl, scope constructs.Construct, id *string, config *AuditmanagerControlConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_AuditmanagerControl)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuditmanagerControl)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1060,6 +1095,14 @@ func (a *jsiiProxy_AuditmanagerControl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuditmanagerControl) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

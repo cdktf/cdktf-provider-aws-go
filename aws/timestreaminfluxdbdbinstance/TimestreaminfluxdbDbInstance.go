@@ -5,14 +5,14 @@ package timestreaminfluxdbdbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/timestreaminfluxdbdbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/timestreaminfluxdbdbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance}.
 type TimestreaminfluxdbDbInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -98,6 +98,9 @@ type TimestreaminfluxdbDbInstance interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecondaryAvailabilityZone() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -175,6 +178,7 @@ type TimestreaminfluxdbDbInstance interface {
 	ResetOverrideLogicalId()
 	ResetPort()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -635,6 +639,26 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance) SecondaryAvailabilityZone() *string {
 	var returns *string
 	_jsii_.Get(
@@ -786,7 +810,7 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) VpcSubnetIdsInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
 func NewTimestreaminfluxdbDbInstance(scope constructs.Construct, id *string, config *TimestreaminfluxdbDbInstanceConfig) TimestreaminfluxdbDbInstance {
 	_init_.Initialize()
 
@@ -804,7 +828,7 @@ func NewTimestreaminfluxdbDbInstance(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/timestreaminfluxdb_db_instance aws_timestreaminfluxdb_db_instance} Resource.
 func NewTimestreaminfluxdbDbInstance_Override(t TimestreaminfluxdbDbInstance, scope constructs.Construct, id *string, config *TimestreaminfluxdbDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1035,17 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetPubliclyAccessible(val interf
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1494,6 +1529,14 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreaminfluxdbDbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

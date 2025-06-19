@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) validateSetMountTargetIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsMountTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEfsMountTargetParameters(scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) error {
 	return nil
 }

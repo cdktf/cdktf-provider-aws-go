@@ -5,14 +5,14 @@ package instance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/instance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/instance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -39,14 +39,8 @@ type Instance interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CpuCoreCount() *float64
-	SetCpuCoreCount(val *float64)
-	CpuCoreCountInput() *float64
 	CpuOptions() InstanceCpuOptionsOutputReference
 	CpuOptionsInput() *InstanceCpuOptions
-	CpuThreadsPerCore() *float64
-	SetCpuThreadsPerCore(val *float64)
-	CpuThreadsPerCoreInput() *float64
 	CreditSpecification() InstanceCreditSpecificationOutputReference
 	CreditSpecificationInput() *InstanceCreditSpecification
 	// Experimental.
@@ -160,6 +154,9 @@ type Instance interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootBlockDevice() InstanceRootBlockDeviceOutputReference
 	RootBlockDeviceInput() *InstanceRootBlockDevice
 	SecondaryPrivateIps() *[]*string
@@ -268,9 +265,7 @@ type Instance interface {
 	ResetAssociatePublicIpAddress()
 	ResetAvailabilityZone()
 	ResetCapacityReservationSpecification()
-	ResetCpuCoreCount()
 	ResetCpuOptions()
-	ResetCpuThreadsPerCore()
 	ResetCreditSpecification()
 	ResetDisableApiStop()
 	ResetDisableApiTermination()
@@ -303,6 +298,7 @@ type Instance interface {
 	ResetPlacementPartitionNumber()
 	ResetPrivateDnsNameOptions()
 	ResetPrivateIp()
+	ResetRegion()
 	ResetRootBlockDevice()
 	ResetSecondaryPrivateIps()
 	ResetSecurityGroups()
@@ -465,26 +461,6 @@ func (j *jsiiProxy_Instance) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Instance) CpuCoreCount() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"cpuCoreCount",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Instance) CpuCoreCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"cpuCoreCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Instance) CpuOptions() InstanceCpuOptionsOutputReference {
 	var returns InstanceCpuOptionsOutputReference
 	_jsii_.Get(
@@ -500,26 +476,6 @@ func (j *jsiiProxy_Instance) CpuOptionsInput() *InstanceCpuOptions {
 	_jsii_.Get(
 		j,
 		"cpuOptionsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Instance) CpuThreadsPerCore() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"cpuThreadsPerCore",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Instance) CpuThreadsPerCoreInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"cpuThreadsPerCoreInput",
 		&returns,
 	)
 	return returns
@@ -1275,6 +1231,26 @@ func (j *jsiiProxy_Instance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Instance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Instance) RootBlockDevice() InstanceRootBlockDeviceOutputReference {
 	var returns InstanceRootBlockDeviceOutputReference
 	_jsii_.Get(
@@ -1596,7 +1572,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1614,7 +1590,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -1676,28 +1652,6 @@ func (j *jsiiProxy_Instance)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Instance)SetCpuCoreCount(val *float64) {
-	if err := j.validateSetCpuCoreCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cpuCoreCount",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Instance)SetCpuThreadsPerCore(val *float64) {
-	if err := j.validateSetCpuThreadsPerCoreParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cpuThreadsPerCore",
 		val,
 	)
 }
@@ -1953,6 +1907,17 @@ func (j *jsiiProxy_Instance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Instance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2628,26 +2593,10 @@ func (i *jsiiProxy_Instance) ResetCapacityReservationSpecification() {
 	)
 }
 
-func (i *jsiiProxy_Instance) ResetCpuCoreCount() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetCpuCoreCount",
-		nil, // no parameters
-	)
-}
-
 func (i *jsiiProxy_Instance) ResetCpuOptions() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetCpuOptions",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_Instance) ResetCpuThreadsPerCore() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetCpuThreadsPerCore",
 		nil, // no parameters
 	)
 }
@@ -2888,6 +2837,14 @@ func (i *jsiiProxy_Instance) ResetPrivateIp() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPrivateIp",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

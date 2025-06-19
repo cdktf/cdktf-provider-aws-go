@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsLambdaFunctions) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunctions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLambdaFunctionsParameters(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionsConfig) error {
 	return nil
 }

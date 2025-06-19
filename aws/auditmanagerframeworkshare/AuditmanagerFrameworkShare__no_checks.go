@@ -123,6 +123,10 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerFrameworkShare) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAuditmanagerFrameworkShareParameters(scope constructs.Construct, id *string, config *AuditmanagerFrameworkShareConfig) error {
 	return nil
 }

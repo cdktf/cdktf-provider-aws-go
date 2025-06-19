@@ -123,6 +123,10 @@ func (j *jsiiProxy_VerifiedaccessGroup) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

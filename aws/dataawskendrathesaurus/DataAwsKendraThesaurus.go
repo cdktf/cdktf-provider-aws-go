@@ -5,14 +5,14 @@ package dataawskendrathesaurus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskendrathesaurus/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskendrathesaurus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus}.
 type DataAwsKendraThesaurus interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -59,6 +59,9 @@ type DataAwsKendraThesaurus interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SourceS3Path() DataAwsKendraThesaurusSourceS3PathList
 	Status() *string
@@ -106,6 +109,7 @@ type DataAwsKendraThesaurus interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -336,6 +340,26 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKendraThesaurus) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKendraThesaurus) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKendraThesaurus) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -467,7 +491,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source.
 func NewDataAwsKendraThesaurus(scope constructs.Construct, id *string, config *DataAwsKendraThesaurusConfig) DataAwsKendraThesaurus {
 	_init_.Initialize()
 
@@ -485,7 +509,7 @@ func NewDataAwsKendraThesaurus(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source.
 func NewDataAwsKendraThesaurus_Override(d DataAwsKendraThesaurus, scope constructs.Construct, id *string, config *DataAwsKendraThesaurusConfig) {
 	_init_.Initialize()
 
@@ -560,6 +584,17 @@ func (j *jsiiProxy_DataAwsKendraThesaurus)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKendraThesaurus)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -883,6 +918,14 @@ func (d *jsiiProxy_DataAwsKendraThesaurus) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKendraThesaurus) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

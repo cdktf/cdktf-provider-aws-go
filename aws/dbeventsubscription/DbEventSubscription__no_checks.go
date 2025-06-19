@@ -131,6 +131,10 @@ func (j *jsiiProxy_DbEventSubscription) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DbEventSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbEventSubscription) validateSetSnsTopicParameters(val *string) error {
 	return nil
 }

@@ -24,15 +24,19 @@ type LakeformationOptInConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in#condition LakeformationOptIn#condition}
 	Condition interface{} `field:"optional" json:"condition" yaml:"condition"`
 	// principal block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in#principal LakeformationOptIn#principal}
 	Principal interface{} `field:"optional" json:"principal" yaml:"principal"`
+	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in#region LakeformationOptIn#region}
+	Region *string `field:"optional" json:"region" yaml:"region"`
 	// resource_data block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_opt_in#resource_data LakeformationOptIn#resource_data}
 	ResourceData interface{} `field:"optional" json:"resourceData" yaml:"resourceData"`
 }
 

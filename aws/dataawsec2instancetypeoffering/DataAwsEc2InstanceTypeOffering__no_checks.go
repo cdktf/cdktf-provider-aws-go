@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) validateSetPreferredInstanceT
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2InstanceTypeOfferingParameters(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingConfig) error {
 	return nil
 }

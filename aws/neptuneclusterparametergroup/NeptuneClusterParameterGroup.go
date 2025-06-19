@@ -5,14 +5,14 @@ package neptuneclusterparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptuneclusterparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptuneclusterparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
 type NeptuneClusterParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type NeptuneClusterParameterGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -137,6 +140,7 @@ type NeptuneClusterParameterGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneClusterParameterGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneClusterParameterGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneClusterParameterGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup_Override(n NeptuneClusterParameterGroup, scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneClusterParameterGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) ResetParameter() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneClusterParameterGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

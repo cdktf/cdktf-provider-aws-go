@@ -415,6 +415,14 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetTransitGatewayMulticastDomainIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

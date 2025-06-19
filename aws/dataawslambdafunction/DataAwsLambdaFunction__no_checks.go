@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLambdaFunction) validateSetQualifierParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaFunction) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

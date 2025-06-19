@@ -119,6 +119,10 @@ func (j *jsiiProxy_SyntheticsGroupAssociation) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsGroupAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSyntheticsGroupAssociationParameters(scope constructs.Construct, id *string, config *SyntheticsGroupAssociationConfig) error {
 	return nil
 }

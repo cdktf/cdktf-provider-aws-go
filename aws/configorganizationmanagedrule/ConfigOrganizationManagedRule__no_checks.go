@@ -135,6 +135,10 @@ func (j *jsiiProxy_ConfigOrganizationManagedRule) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_ConfigOrganizationManagedRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationManagedRule) validateSetResourceIdScopeParameters(val *string) error {
 	return nil
 }

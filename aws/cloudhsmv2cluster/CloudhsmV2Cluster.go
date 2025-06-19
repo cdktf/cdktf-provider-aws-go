@@ -5,14 +5,14 @@ package cloudhsmv2cluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudhsmv2cluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudhsmv2cluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
 type CloudhsmV2Cluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type CloudhsmV2Cluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupId() *string
 	SourceBackupIdentifier() *string
 	SetSourceBackupIdentifier(val *string)
@@ -138,6 +141,7 @@ type CloudhsmV2Cluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSourceBackupIdentifier()
 	ResetTags()
 	ResetTagsAll()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_CloudhsmV2Cluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudhsmV2Cluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudhsmV2Cluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudhsmV2Cluster) SecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,7 +555,7 @@ func (j *jsiiProxy_CloudhsmV2Cluster) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
 func NewCloudhsmV2Cluster(scope constructs.Construct, id *string, config *CloudhsmV2ClusterConfig) CloudhsmV2Cluster {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewCloudhsmV2Cluster(scope constructs.Construct, id *string, config *Cloudh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
 func NewCloudhsmV2Cluster_Override(c CloudhsmV2Cluster, scope constructs.Construct, id *string, config *CloudhsmV2ClusterConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_CloudhsmV2Cluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudhsmV2Cluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1089,6 +1124,14 @@ func (c *jsiiProxy_CloudhsmV2Cluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudhsmV2Cluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

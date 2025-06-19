@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateSetInternalValueParameters(val *DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes) error {
 	return nil
 }
 

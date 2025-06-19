@@ -131,6 +131,10 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetTargetNetworkCidrParameters(val *string) error {
 	return nil
 }

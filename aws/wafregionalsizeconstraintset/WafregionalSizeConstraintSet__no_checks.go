@@ -119,6 +119,10 @@ func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalSizeConstraintSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewWafregionalSizeConstraintSetParameters(scope constructs.Construct, id *string, config *WafregionalSizeConstraintSetConfig) error {
 	return nil
 }

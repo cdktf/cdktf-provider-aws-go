@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsRedshiftProducerDataSharesDataSharesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRedshiftProducerDataSharesDataSharesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsRedshiftProducerDataSharesDataSharesOutputReference) validateSetInternalValueParameters(val *DataAwsRedshiftProducerDataSharesDataShares) error {
 	return nil
 }
 

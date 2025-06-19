@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetPreferredInsta
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOutpostsOutpostInstanceTypeParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) error {
 	return nil
 }

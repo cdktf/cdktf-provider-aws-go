@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorFilter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package appconfigdeploymentstrategy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appconfigdeploymentstrategy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appconfigdeploymentstrategy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy}.
 type AppconfigDeploymentStrategy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type AppconfigDeploymentStrategy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicateTo() *string
 	SetReplicateTo(val *string)
 	ReplicateToInput() *string
@@ -142,6 +145,7 @@ type AppconfigDeploymentStrategy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -442,6 +446,26 @@ func (j *jsiiProxy_AppconfigDeploymentStrategy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppconfigDeploymentStrategy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppconfigDeploymentStrategy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppconfigDeploymentStrategy) ReplicateTo() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_AppconfigDeploymentStrategy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy} Resource.
 func NewAppconfigDeploymentStrategy(scope constructs.Construct, id *string, config *AppconfigDeploymentStrategyConfig) AppconfigDeploymentStrategy {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewAppconfigDeploymentStrategy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appconfig_deployment_strategy aws_appconfig_deployment_strategy} Resource.
 func NewAppconfigDeploymentStrategy_Override(a AppconfigDeploymentStrategy, scope constructs.Construct, id *string, config *AppconfigDeploymentStrategyConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func (j *jsiiProxy_AppconfigDeploymentStrategy)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppconfigDeploymentStrategy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1129,6 +1164,14 @@ func (a *jsiiProxy_AppconfigDeploymentStrategy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppconfigDeploymentStrategy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

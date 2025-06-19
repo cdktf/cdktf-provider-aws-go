@@ -5,14 +5,14 @@ package dataawsemrsupportedinstancetypes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsemrsupportedinstancetypes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsemrsupportedinstancetypes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}.
 type DataAwsEmrSupportedInstanceTypes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,11 +48,13 @@ type DataAwsEmrSupportedInstanceTypes interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReleaseLabel() *string
 	SetReleaseLabel(val *string)
 	ReleaseLabelInput() *string
 	SupportedInstanceTypes() DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList
-	SupportedInstanceTypesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,11 +86,10 @@ type DataAwsEmrSupportedInstanceTypes interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSupportedInstanceTypes(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSupportedInstanceTypes()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -228,6 +229,26 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) ReleaseLabel() *string {
 	var returns *string
 	_jsii_.Get(
@@ -253,16 +274,6 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) SupportedInstanceTypes() Da
 	_jsii_.Get(
 		j,
 		"supportedInstanceTypes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) SupportedInstanceTypesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"supportedInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +310,7 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source.
 func NewDataAwsEmrSupportedInstanceTypes(scope constructs.Construct, id *string, config *DataAwsEmrSupportedInstanceTypesConfig) DataAwsEmrSupportedInstanceTypes {
 	_init_.Initialize()
 
@@ -317,7 +328,7 @@ func NewDataAwsEmrSupportedInstanceTypes(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types} Data Source.
 func NewDataAwsEmrSupportedInstanceTypes_Override(d DataAwsEmrSupportedInstanceTypes, scope constructs.Construct, id *string, config *DataAwsEmrSupportedInstanceTypesConfig) {
 	_init_.Initialize()
 
@@ -370,6 +381,17 @@ func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEmrSupportedInstanceTypes)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -670,17 +692,6 @@ func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) OverrideLogicalId(newLogica
 	)
 }
 
-func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) PutSupportedInstanceTypes(value interface{}) {
-	if err := d.validatePutSupportedInstanceTypesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSupportedInstanceTypes",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -689,10 +700,10 @@ func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) ResetSupportedInstanceTypes() {
+func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypes) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetSupportedInstanceTypes",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

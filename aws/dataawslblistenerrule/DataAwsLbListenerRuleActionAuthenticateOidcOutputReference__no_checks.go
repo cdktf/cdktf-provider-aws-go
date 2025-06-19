@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionAuthenticateOidcOutputReference) v
 	return nil
 }
 
-func validateNewDataAwsLbListenerRuleActionAuthenticateOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsLbListenerRuleActionAuthenticateOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

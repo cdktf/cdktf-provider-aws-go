@@ -199,6 +199,10 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetQueuesParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) validateSetStartingPositionParameters(val *string) error {
 	return nil
 }

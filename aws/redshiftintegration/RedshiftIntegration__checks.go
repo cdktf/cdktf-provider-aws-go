@@ -434,6 +434,14 @@ func (j *jsiiProxy_RedshiftIntegration) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftIntegration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftIntegration) validateSetSourceArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

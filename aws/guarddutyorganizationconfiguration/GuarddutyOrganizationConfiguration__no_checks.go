@@ -95,10 +95,6 @@ func validateGuarddutyOrganizationConfiguration_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnableOrganizationMembersParameters(val *string) error {
 	return nil
 }
@@ -124,6 +120,10 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetLifecycleParam
 }
 
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

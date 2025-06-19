@@ -5,20 +5,23 @@ package configaggregateauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/configaggregateauthorization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/configaggregateauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
 type ConfigAggregateAuthorization interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Arn() *string
+	AuthorizedAwsRegion() *string
+	SetAuthorizedAwsRegion(val *string)
+	AuthorizedAwsRegionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -120,10 +123,12 @@ type ConfigAggregateAuthorization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAuthorizedAwsRegion()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -169,6 +174,26 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigAggregateAuthorization) AuthorizedAwsRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedAwsRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigAggregateAuthorization) AuthorizedAwsRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authorizedAwsRegionInput",
 		&returns,
 	)
 	return returns
@@ -415,7 +440,7 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
 func NewConfigAggregateAuthorization(scope constructs.Construct, id *string, config *ConfigAggregateAuthorizationConfig) ConfigAggregateAuthorization {
 	_init_.Initialize()
 
@@ -433,7 +458,7 @@ func NewConfigAggregateAuthorization(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
 func NewConfigAggregateAuthorization_Override(c ConfigAggregateAuthorization, scope constructs.Construct, id *string, config *ConfigAggregateAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -451,6 +476,17 @@ func (j *jsiiProxy_ConfigAggregateAuthorization)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConfigAggregateAuthorization)SetAuthorizedAwsRegion(val *string) {
+	if err := j.validateSetAuthorizedAwsRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedAwsRegion",
 		val,
 	)
 }
@@ -920,6 +956,14 @@ func (c *jsiiProxy_ConfigAggregateAuthorization) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (c *jsiiProxy_ConfigAggregateAuthorization) ResetAuthorizedAwsRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuthorizedAwsRegion",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConfigAggregateAuthorization) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -932,6 +976,14 @@ func (c *jsiiProxy_ConfigAggregateAuthorization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigAggregateAuthorization) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

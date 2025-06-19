@@ -135,6 +135,10 @@ func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsSandboxChannel) validateSetTeamIdParameters(val *string) error {
 	return nil
 }

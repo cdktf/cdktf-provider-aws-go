@@ -5,14 +5,14 @@ package lightsailbucketresourceaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailbucketresourceaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailbucketresourceaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access}.
 type LightsailBucketResourceAccess interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -61,6 +61,9 @@ type LightsailBucketResourceAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceName() *string
 	SetResourceName(val *string)
 	ResourceNameInput() *string
@@ -117,6 +120,7 @@ type LightsailBucketResourceAccess interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_LightsailBucketResourceAccess) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailBucketResourceAccess) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailBucketResourceAccess) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailBucketResourceAccess) ResourceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_LightsailBucketResourceAccess) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access} Resource.
 func NewLightsailBucketResourceAccess(scope constructs.Construct, id *string, config *LightsailBucketResourceAccessConfig) LightsailBucketResourceAccess {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewLightsailBucketResourceAccess(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_bucket_resource_access aws_lightsail_bucket_resource_access} Resource.
 func NewLightsailBucketResourceAccess_Override(l LightsailBucketResourceAccess, scope constructs.Construct, id *string, config *LightsailBucketResourceAccessConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_LightsailBucketResourceAccess)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailBucketResourceAccess)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (l *jsiiProxy_LightsailBucketResourceAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailBucketResourceAccess) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

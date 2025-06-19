@@ -5,14 +5,14 @@ package kendraexperience
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/kendraexperience/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/kendraexperience/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_experience aws_kendra_experience}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_experience aws_kendra_experience}.
 type KendraExperience interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type KendraExperience interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -135,6 +138,7 @@ type KendraExperience interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -414,6 +418,26 @@ func (j *jsiiProxy_KendraExperience) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KendraExperience) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KendraExperience) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KendraExperience) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_KendraExperience) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience(scope constructs.Construct, id *string, config *KendraExperienceConfig) KendraExperience {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewKendraExperience(scope constructs.Construct, id *string, config *KendraE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience_Override(k KendraExperience, scope constructs.Construct, id *string, config *KendraExperienceConfig) {
 	_init_.Initialize()
 
@@ -632,6 +656,17 @@ func (j *jsiiProxy_KendraExperience)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KendraExperience)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1050,6 +1085,14 @@ func (k *jsiiProxy_KendraExperience) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KendraExperience) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

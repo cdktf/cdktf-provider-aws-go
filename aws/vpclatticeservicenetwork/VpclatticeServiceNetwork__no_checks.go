@@ -119,6 +119,10 @@ func (j *jsiiProxy_VpclatticeServiceNetwork) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetwork) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetwork) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

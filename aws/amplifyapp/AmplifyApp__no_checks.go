@@ -187,6 +187,10 @@ func (j *jsiiProxy_AmplifyApp) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyApp) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyApp) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

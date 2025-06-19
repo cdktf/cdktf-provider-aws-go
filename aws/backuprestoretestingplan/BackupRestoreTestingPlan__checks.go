@@ -430,6 +430,14 @@ func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetScheduleExpressionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

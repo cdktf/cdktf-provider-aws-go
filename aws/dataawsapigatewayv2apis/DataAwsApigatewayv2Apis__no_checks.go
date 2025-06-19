@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetProtocolTypeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

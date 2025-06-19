@@ -143,6 +143,10 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetRegexParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

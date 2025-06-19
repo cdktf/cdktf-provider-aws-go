@@ -5,14 +5,14 @@ package s3bucketinventory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketinventory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketinventory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory}.
 type S3BucketInventory interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -77,6 +77,9 @@ type S3BucketInventory interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Schedule() S3BucketInventoryScheduleOutputReference
 	ScheduleInput() *S3BucketInventorySchedule
 	// Experimental.
@@ -138,6 +141,7 @@ type S3BucketInventory interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -446,6 +450,26 @@ func (j *jsiiProxy_S3BucketInventory) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketInventory) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketInventory) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketInventory) Schedule() S3BucketInventoryScheduleOutputReference {
 	var returns S3BucketInventoryScheduleOutputReference
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_S3BucketInventory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource.
 func NewS3BucketInventory(scope constructs.Construct, id *string, config *S3BucketInventoryConfig) S3BucketInventory {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewS3BucketInventory(scope constructs.Construct, id *string, config *S3Buck
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_inventory aws_s3_bucket_inventory} Resource.
 func NewS3BucketInventory_Override(s S3BucketInventory, scope constructs.Construct, id *string, config *S3BucketInventoryConfig) {
 	_init_.Initialize()
 
@@ -656,6 +680,17 @@ func (j *jsiiProxy_S3BucketInventory)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketInventory)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1082,6 +1117,14 @@ func (s *jsiiProxy_S3BucketInventory) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketInventory) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

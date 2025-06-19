@@ -123,6 +123,10 @@ func (j *jsiiProxy_GameliftBuild) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_GameliftBuild) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftBuild) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

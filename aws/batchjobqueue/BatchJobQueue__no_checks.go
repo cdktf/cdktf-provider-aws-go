@@ -103,10 +103,6 @@ func validateBatchJobQueue_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobQueue) validateSetComputeEnvironmentsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BatchJobQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -128,6 +124,10 @@ func (j *jsiiProxy_BatchJobQueue) validateSetPriorityParameters(val *float64) er
 }
 
 func (j *jsiiProxy_BatchJobQueue) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BatchJobQueue) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package dataawstimestreamwritetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawstimestreamwritetable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawstimestreamwritetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table}.
 type DataAwsTimestreamwriteTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -57,6 +57,9 @@ type DataAwsTimestreamwriteTable interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetentionProperties() DataAwsTimestreamwriteTableRetentionPropertiesList
 	Schema() DataAwsTimestreamwriteTableSchemaList
 	TableStatus() *string
@@ -94,6 +97,7 @@ type DataAwsTimestreamwriteTable interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -303,6 +307,26 @@ func (j *jsiiProxy_DataAwsTimestreamwriteTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsTimestreamwriteTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsTimestreamwriteTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsTimestreamwriteTable) RetentionProperties() DataAwsTimestreamwriteTableRetentionPropertiesList {
 	var returns DataAwsTimestreamwriteTableRetentionPropertiesList
 	_jsii_.Get(
@@ -364,7 +388,7 @@ func (j *jsiiProxy_DataAwsTimestreamwriteTable) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table} Data Source.
 func NewDataAwsTimestreamwriteTable(scope constructs.Construct, id *string, config *DataAwsTimestreamwriteTableConfig) DataAwsTimestreamwriteTable {
 	_init_.Initialize()
 
@@ -382,7 +406,7 @@ func NewDataAwsTimestreamwriteTable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/timestreamwrite_table aws_timestreamwrite_table} Data Source.
 func NewDataAwsTimestreamwriteTable_Override(d DataAwsTimestreamwriteTable, scope constructs.Construct, id *string, config *DataAwsTimestreamwriteTableConfig) {
 	_init_.Initialize()
 
@@ -457,6 +481,17 @@ func (j *jsiiProxy_DataAwsTimestreamwriteTable)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsTimestreamwriteTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -750,6 +785,14 @@ func (d *jsiiProxy_DataAwsTimestreamwriteTable) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsTimestreamwriteTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dxgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway aws_dx_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway aws_dx_gateway}.
 type DxGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DxGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
 func NewDxGateway(scope constructs.Construct, id *string, config *DxGatewayConfig) DxGateway {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDxGateway(scope constructs.Construct, id *string, config *DxGatewayConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway aws_dx_gateway} Resource.
 func NewDxGateway_Override(d DxGateway, scope constructs.Construct, id *string, config *DxGatewayConfig) {
 	_init_.Initialize()
 

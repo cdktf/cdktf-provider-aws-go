@@ -119,6 +119,10 @@ func (j *jsiiProxy_VerifiedpermissionsIdentitySource) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedpermissionsIdentitySource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewVerifiedpermissionsIdentitySourceParameters(scope constructs.Construct, id *string, config *VerifiedpermissionsIdentitySourceConfig) error {
 	return nil
 }

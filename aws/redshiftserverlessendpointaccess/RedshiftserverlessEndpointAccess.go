@@ -5,14 +5,14 @@ package redshiftserverlessendpointaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/redshiftserverlessendpointaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/redshiftserverlessendpointaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access}.
 type RedshiftserverlessEndpointAccess interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -67,6 +67,9 @@ type RedshiftserverlessEndpointAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -131,6 +134,7 @@ type RedshiftserverlessEndpointAccess interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerAccount()
+	ResetRegion()
 	ResetVpcSecurityGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -370,6 +374,26 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -471,7 +495,7 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) WorkgroupNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
 func NewRedshiftserverlessEndpointAccess(scope constructs.Construct, id *string, config *RedshiftserverlessEndpointAccessConfig) RedshiftserverlessEndpointAccess {
 	_init_.Initialize()
 
@@ -489,7 +513,7 @@ func NewRedshiftserverlessEndpointAccess(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
 func NewRedshiftserverlessEndpointAccess_Override(r RedshiftserverlessEndpointAccess, scope constructs.Construct, id *string, config *RedshiftserverlessEndpointAccessConfig) {
 	_init_.Initialize()
 
@@ -597,6 +621,17 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1007,6 +1042,14 @@ func (r *jsiiProxy_RedshiftserverlessEndpointAccess) ResetOwnerAccount() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOwnerAccount",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessEndpointAccess) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

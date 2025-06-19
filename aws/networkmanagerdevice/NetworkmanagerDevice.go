@@ -5,14 +5,14 @@ package networkmanagerdevice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkmanagerdevice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmanagerdevice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_device aws_networkmanager_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_device aws_networkmanager_device}.
 type NetworkmanagerDevice interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -608,7 +608,7 @@ func (j *jsiiProxy_NetworkmanagerDevice) VendorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_device aws_networkmanager_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_device aws_networkmanager_device} Resource.
 func NewNetworkmanagerDevice(scope constructs.Construct, id *string, config *NetworkmanagerDeviceConfig) NetworkmanagerDevice {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewNetworkmanagerDevice(scope constructs.Construct, id *string, config *Net
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/networkmanager_device aws_networkmanager_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/networkmanager_device aws_networkmanager_device} Resource.
 func NewNetworkmanagerDevice_Override(n NetworkmanagerDevice, scope constructs.Construct, id *string, config *NetworkmanagerDeviceConfig) {
 	_init_.Initialize()
 

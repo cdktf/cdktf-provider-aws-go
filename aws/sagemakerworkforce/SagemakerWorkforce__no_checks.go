@@ -127,6 +127,10 @@ func (j *jsiiProxy_SagemakerWorkforce) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerWorkforce) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerWorkforce) validateSetWorkforceNameParameters(val *string) error {
 	return nil
 }

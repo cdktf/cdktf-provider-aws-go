@@ -119,6 +119,10 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchInboundConnectionAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchInboundConnectionAccepterParameters(scope constructs.Construct, id *string, config *OpensearchInboundConnectionAccepterConfig) error {
 	return nil
 }

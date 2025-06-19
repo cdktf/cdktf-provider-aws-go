@@ -75,14 +75,6 @@ func (r *jsiiProxy_RedshiftCluster) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftCluster) validatePutLoggingParameters(value *RedshiftClusterLogging) error {
-	return nil
-}
-
-func (r *jsiiProxy_RedshiftCluster) validatePutSnapshotCopyParameters(value *RedshiftClusterSnapshotCopy) error {
-	return nil
-}
-
 func (r *jsiiProxy_RedshiftCluster) validatePutTimeoutsParameters(value *RedshiftClusterTimeouts) error {
 	return nil
 }
@@ -135,14 +127,6 @@ func (j *jsiiProxy_RedshiftCluster) validateSetClusterParameterGroupNameParamete
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetClusterPublicKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_RedshiftCluster) validateSetClusterRevisionNumberParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RedshiftCluster) validateSetClusterSubnetGroupNameParameters(val *string) error {
 	return nil
 }
@@ -175,11 +159,7 @@ func (j *jsiiProxy_RedshiftCluster) validateSetElasticIpParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetEncryptedParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_RedshiftCluster) validateSetEndpointParameters(val *string) error {
+func (j *jsiiProxy_RedshiftCluster) validateSetEncryptedParameters(val *string) error {
 	return nil
 }
 
@@ -268,6 +248,10 @@ func (j *jsiiProxy_RedshiftCluster) validateSetProvisionersParameters(val *[]int
 }
 
 func (j *jsiiProxy_RedshiftCluster) validateSetPubliclyAccessibleParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftCluster) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

@@ -131,6 +131,10 @@ func (j *jsiiProxy_FinspaceKxScalingGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxScalingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxScalingGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

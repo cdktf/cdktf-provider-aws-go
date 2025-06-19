@@ -127,6 +127,10 @@ func (j *jsiiProxy_PrometheusScraper) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusScraper) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusScraper) validateSetScrapeConfigurationParameters(val *string) error {
 	return nil
 }

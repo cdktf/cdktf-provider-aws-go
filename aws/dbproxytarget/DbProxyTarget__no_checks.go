@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbProxyTarget) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_DbProxyTarget) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyTarget) validateSetTargetGroupNameParameters(val *string) error {
 	return nil
 }

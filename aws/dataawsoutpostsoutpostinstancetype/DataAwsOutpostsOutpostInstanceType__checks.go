@@ -251,6 +251,14 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetPreferredInsta
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsOutpostsOutpostInstanceTypeParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

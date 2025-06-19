@@ -5,14 +5,14 @@ package codeconnectionsconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codeconnectionsconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codeconnectionsconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeconnections_connection aws_codeconnections_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeconnections_connection aws_codeconnections_connection}.
 type CodeconnectionsConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type CodeconnectionsConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -129,6 +132,7 @@ type CodeconnectionsConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderType()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -379,6 +383,26 @@ func (j *jsiiProxy_CodeconnectionsConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodeconnectionsConnection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodeconnectionsConnection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodeconnectionsConnection) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_CodeconnectionsConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource.
 func NewCodeconnectionsConnection(scope constructs.Construct, id *string, config *CodeconnectionsConnectionConfig) CodeconnectionsConnection {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewCodeconnectionsConnection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeconnections_connection aws_codeconnections_connection} Resource.
 func NewCodeconnectionsConnection_Override(c CodeconnectionsConnection, scope constructs.Construct, id *string, config *CodeconnectionsConnectionConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_CodeconnectionsConnection)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodeconnectionsConnection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -985,6 +1020,14 @@ func (c *jsiiProxy_CodeconnectionsConnection) ResetProviderType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProviderType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodeconnectionsConnection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

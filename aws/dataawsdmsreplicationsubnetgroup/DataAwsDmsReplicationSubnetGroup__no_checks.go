@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateSetReplicationSubnetGroupIdParameters(val *string) error {
 	return nil
 }

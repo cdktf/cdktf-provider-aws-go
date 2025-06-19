@@ -135,6 +135,10 @@ func (j *jsiiProxy_ConnectContactFlow) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_ConnectContactFlow) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectContactFlow) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package neptunecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptunecluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptunecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster aws_neptune_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster aws_neptune_cluster}.
 type NeptuneCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -130,6 +130,9 @@ type NeptuneCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReaderEndpoint() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationSourceIdentifier() *string
 	SetReplicationSourceIdentifier(val *string)
 	ReplicationSourceIdentifierInput() *string
@@ -235,6 +238,7 @@ type NeptuneCluster interface {
 	ResetPort()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
+	ResetRegion()
 	ResetReplicationSourceIdentifier()
 	ResetServerlessV2ScalingConfiguration()
 	ResetSkipFinalSnapshot()
@@ -913,6 +917,26 @@ func (j *jsiiProxy_NeptuneCluster) ReaderEndpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneCluster) ReplicationSourceIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1144,7 +1168,7 @@ func (j *jsiiProxy_NeptuneCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneClusterConfig) NeptuneCluster {
 	_init_.Initialize()
 
@@ -1162,7 +1186,7 @@ func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster_Override(n NeptuneCluster, scope constructs.Construct, id *string, config *NeptuneClusterConfig) {
 	_init_.Initialize()
 
@@ -1490,6 +1514,17 @@ func (j *jsiiProxy_NeptuneCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2145,6 +2180,14 @@ func (n *jsiiProxy_NeptuneCluster) ResetPreferredMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

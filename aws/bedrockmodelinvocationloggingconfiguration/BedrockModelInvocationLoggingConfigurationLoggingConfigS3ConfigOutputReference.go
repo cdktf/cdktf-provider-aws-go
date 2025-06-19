@@ -5,9 +5,9 @@ package bedrockmodelinvocationloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/bedrockmodelinvocationloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockmodelinvocationloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -198,29 +198,29 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3Conf
 }
 
 
-func NewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference {
+func NewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference_Override(b BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference_Override(b BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }

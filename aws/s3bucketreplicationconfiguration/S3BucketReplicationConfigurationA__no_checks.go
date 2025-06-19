@@ -119,6 +119,10 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationA) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketReplicationConfigurationA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketReplicationConfigurationA) validateSetRoleParameters(val *string) error {
 	return nil
 }

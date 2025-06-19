@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateSetInternalValueParameters(val *DataAwsSsoadminApplicationPortalOptionsSignInOptions) error {
 	return nil
 }
 

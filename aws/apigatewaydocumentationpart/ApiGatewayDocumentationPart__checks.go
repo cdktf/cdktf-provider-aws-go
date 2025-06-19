@@ -418,6 +418,14 @@ func (j *jsiiProxy_ApiGatewayDocumentationPart) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayDocumentationPart) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayDocumentationPart) validateSetRestApiIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

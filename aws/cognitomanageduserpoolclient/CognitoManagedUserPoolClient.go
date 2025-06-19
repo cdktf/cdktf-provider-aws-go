@@ -5,14 +5,14 @@ package cognitomanageduserpoolclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cognitomanageduserpoolclient/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitomanageduserpoolclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client}.
 type CognitoManagedUserPoolClient interface {
 	cdktf.TerraformResource
 	AccessTokenValidity() *float64
@@ -113,6 +113,9 @@ type CognitoManagedUserPoolClient interface {
 	RefreshTokenValidity() *float64
 	SetRefreshTokenValidity(val *float64)
 	RefreshTokenValidityInput() *float64
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SupportedIdentityProviders() *[]*string
 	SetSupportedIdentityProviders(val *[]*string)
 	SupportedIdentityProvidersInput() *[]*string
@@ -198,6 +201,7 @@ type CognitoManagedUserPoolClient interface {
 	ResetReadAttributes()
 	ResetRefreshTokenRotation()
 	ResetRefreshTokenValidity()
+	ResetRegion()
 	ResetSupportedIdentityProviders()
 	ResetTokenValidityUnits()
 	ResetWriteAttributes()
@@ -759,6 +763,26 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) RefreshTokenValidityInput() *fl
 	return returns
 }
 
+func (j *jsiiProxy_CognitoManagedUserPoolClient) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoManagedUserPoolClient) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoManagedUserPoolClient) SupportedIdentityProviders() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -870,7 +894,7 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) WriteAttributesInput() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
 func NewCognitoManagedUserPoolClient(scope constructs.Construct, id *string, config *CognitoManagedUserPoolClientConfig) CognitoManagedUserPoolClient {
 	_init_.Initialize()
 
@@ -888,7 +912,7 @@ func NewCognitoManagedUserPoolClient(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cognito_managed_user_pool_client aws_cognito_managed_user_pool_client} Resource.
 func NewCognitoManagedUserPoolClient_Override(c CognitoManagedUserPoolClient, scope constructs.Construct, id *string, config *CognitoManagedUserPoolClientConfig) {
 	_init_.Initialize()
 
@@ -1150,6 +1174,17 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient)SetRefreshTokenValidity(val *flo
 	_jsii_.Set(
 		j,
 		"refreshTokenValidity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoManagedUserPoolClient)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1729,6 +1764,14 @@ func (c *jsiiProxy_CognitoManagedUserPoolClient) ResetRefreshTokenValidity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRefreshTokenValidity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoManagedUserPoolClient) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

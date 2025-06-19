@@ -459,6 +459,14 @@ func (j *jsiiProxy_PinpointEmailChannel) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEmailChannel) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

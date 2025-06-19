@@ -426,6 +426,14 @@ func (j *jsiiProxy_S3BucketMetric) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketMetric) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewS3BucketMetricParameters(scope constructs.Construct, id *string, config *S3BucketMetricConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

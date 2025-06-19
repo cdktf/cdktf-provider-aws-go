@@ -258,6 +258,14 @@ func (j *jsiiProxy_DataAwsBedrockagentAgentVersions) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBedrockagentAgentVersions) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsBedrockagentAgentVersionsParameters(scope constructs.Construct, id *string, config *DataAwsBedrockagentAgentVersionsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEksAddon) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksAddon) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksAddon) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

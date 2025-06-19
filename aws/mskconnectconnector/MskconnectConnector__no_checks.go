@@ -159,6 +159,10 @@ func (j *jsiiProxy_MskconnectConnector) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectConnector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectConnector) validateSetServiceExecutionRoleArnParameters(val *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsOutpostsSite) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsSite) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOutpostsSiteParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsSiteConfig) error {
 	return nil
 }

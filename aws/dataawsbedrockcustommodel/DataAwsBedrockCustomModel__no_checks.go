@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsBedrockCustomModel) validateSetModelIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBedrockCustomModel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsBedrockCustomModelParameters(scope constructs.Construct, id *string, config *DataAwsBedrockCustomModelConfig) error {
 	return nil
 }

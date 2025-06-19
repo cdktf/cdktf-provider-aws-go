@@ -410,6 +410,14 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetSharedDirectoryIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

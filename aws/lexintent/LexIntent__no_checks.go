@@ -159,6 +159,10 @@ func (j *jsiiProxy_LexIntent) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_LexIntent) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexIntent) validateSetSampleUtterancesParameters(val *[]*string) error {
 	return nil
 }

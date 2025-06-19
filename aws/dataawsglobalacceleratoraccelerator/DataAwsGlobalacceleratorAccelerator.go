@@ -5,14 +5,14 @@ package dataawsglobalacceleratoraccelerator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsglobalacceleratoraccelerator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsglobalacceleratoraccelerator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
 type DataAwsGlobalacceleratorAccelerator interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -44,8 +44,6 @@ type DataAwsGlobalacceleratorAccelerator interface {
 	FriendlyUniqueId() *string
 	HostedZoneId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IpAddressType() *string
 	IpSets() DataAwsGlobalacceleratorAcceleratorIpSetsList
 	// Experimental.
@@ -96,7 +94,6 @@ type DataAwsGlobalacceleratorAccelerator interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetArn()
-	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -270,16 +267,6 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) IpAddressType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,7 +388,7 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorAccelerator(scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorAcceleratorConfig) DataAwsGlobalacceleratorAccelerator {
 	_init_.Initialize()
 
@@ -419,7 +406,7 @@ func NewDataAwsGlobalacceleratorAccelerator(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorAccelerator_Override(d DataAwsGlobalacceleratorAccelerator, scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorAcceleratorConfig) {
 	_init_.Initialize()
 
@@ -464,17 +451,6 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator)SetForEach(val cdktf.ITer
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -798,14 +774,6 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) ResetArn() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetArn",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
 		nil, // no parameters
 	)
 }

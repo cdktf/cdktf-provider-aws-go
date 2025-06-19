@@ -5,14 +5,14 @@ package devopsgurueventsourcesconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devopsgurueventsourcesconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devopsgurueventsourcesconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
 type DevopsguruEventSourcesConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type DevopsguruEventSourcesConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -112,6 +115,7 @@ type DevopsguruEventSourcesConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -290,6 +294,26 @@ func (j *jsiiProxy_DevopsguruEventSourcesConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevopsguruEventSourcesConfig) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevopsguruEventSourcesConfig) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevopsguruEventSourcesConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_DevopsguruEventSourcesConfig) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
 func NewDevopsguruEventSourcesConfig(scope constructs.Construct, id *string, config *DevopsguruEventSourcesConfigConfig) DevopsguruEventSourcesConfig {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewDevopsguruEventSourcesConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
 func NewDevopsguruEventSourcesConfig_Override(d DevopsguruEventSourcesConfig, scope constructs.Construct, id *string, config *DevopsguruEventSourcesConfigConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_DevopsguruEventSourcesConfig)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevopsguruEventSourcesConfig)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DevopsguruEventSourcesConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevopsguruEventSourcesConfig) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

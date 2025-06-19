@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEbsEncryptionByDefaultParameters(scope constructs.Construct, id *string, config *DataAwsEbsEncryptionByDefaultConfig) error {
 	return nil
 }

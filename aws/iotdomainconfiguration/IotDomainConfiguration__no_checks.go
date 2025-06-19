@@ -135,6 +135,10 @@ func (j *jsiiProxy_IotDomainConfiguration) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IotDomainConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotDomainConfiguration) validateSetServerCertificateArnsParameters(val *[]*string) error {
 	return nil
 }

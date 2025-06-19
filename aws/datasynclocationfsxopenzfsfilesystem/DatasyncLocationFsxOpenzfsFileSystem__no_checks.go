@@ -119,6 +119,10 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetSecurityGroupArnsParameters(val *[]*string) error {
 	return nil
 }

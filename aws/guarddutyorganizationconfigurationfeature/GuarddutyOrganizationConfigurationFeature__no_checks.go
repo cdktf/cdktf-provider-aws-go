@@ -127,6 +127,10 @@ func (j *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGuarddutyOrganizationConfigurationFeatureParameters(scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationFeatureConfig) error {
 	return nil
 }

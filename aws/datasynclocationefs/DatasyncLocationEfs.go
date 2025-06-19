@@ -5,14 +5,14 @@ package datasynclocationefs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/datasynclocationefs/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/datasynclocationefs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
 type DatasyncLocationEfs interface {
 	cdktf.TerraformResource
 	AccessPointArn() *string
@@ -73,6 +73,9 @@ type DatasyncLocationEfs interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Subdirectory() *string
 	SetSubdirectory(val *string)
 	SubdirectoryInput() *string
@@ -140,6 +143,7 @@ type DatasyncLocationEfs interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSubdirectory()
 	ResetTags()
 	ResetTagsAll()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_DatasyncLocationEfs) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncLocationEfs) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationEfs) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncLocationEfs) Subdirectory() *string {
 	var returns *string
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_DatasyncLocationEfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
 func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *DatasyncLocationEfsConfig) DatasyncLocationEfs {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
 func NewDatasyncLocationEfs_Override(d DatasyncLocationEfs, scope constructs.Construct, id *string, config *DatasyncLocationEfsConfig) {
 	_init_.Initialize()
 
@@ -670,6 +694,17 @@ func (j *jsiiProxy_DatasyncLocationEfs)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncLocationEfs)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1107,6 +1142,14 @@ func (d *jsiiProxy_DatasyncLocationEfs) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncLocationEfs) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

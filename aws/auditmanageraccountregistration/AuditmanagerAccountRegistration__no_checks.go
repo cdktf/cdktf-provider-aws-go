@@ -119,6 +119,10 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAccountRegistration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAuditmanagerAccountRegistrationParameters(scope constructs.Construct, id *string, config *AuditmanagerAccountRegistrationConfig) error {
 	return nil
 }

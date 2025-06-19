@@ -143,6 +143,10 @@ func (j *jsiiProxy_GlueConnection) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_GlueConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueConnection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

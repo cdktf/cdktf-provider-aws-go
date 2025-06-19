@@ -115,6 +115,10 @@ func (j *jsiiProxy_LambdaFunctionRecursionConfig) validateSetRecursiveLoopParame
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionRecursionConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLambdaFunctionRecursionConfigParameters(scope constructs.Construct, id *string, config *LambdaFunctionRecursionConfigConfig) error {
 	return nil
 }

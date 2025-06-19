@@ -5,14 +5,14 @@ package finspacekxdatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/finspacekxdatabase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/finspacekxdatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_database aws_finspace_kx_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_database aws_finspace_kx_database}.
 type FinspaceKxDatabase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type FinspaceKxDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -133,6 +136,7 @@ type FinspaceKxDatabase interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -394,6 +398,26 @@ func (j *jsiiProxy_FinspaceKxDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxDatabase) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxDatabase) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxDatabase) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_FinspaceKxDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
 func NewFinspaceKxDatabase(scope constructs.Construct, id *string, config *FinspaceKxDatabaseConfig) FinspaceKxDatabase {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewFinspaceKxDatabase(scope constructs.Construct, id *string, config *Finsp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_database aws_finspace_kx_database} Resource.
 func NewFinspaceKxDatabase_Override(f FinspaceKxDatabase, scope constructs.Construct, id *string, config *FinspaceKxDatabaseConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_FinspaceKxDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxDatabase)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1032,6 +1067,14 @@ func (f *jsiiProxy_FinspaceKxDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxDatabase) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

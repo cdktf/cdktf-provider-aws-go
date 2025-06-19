@@ -123,6 +123,10 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

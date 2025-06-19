@@ -115,6 +115,10 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetStackNameParameters(val *string) error {
 	return nil
 }

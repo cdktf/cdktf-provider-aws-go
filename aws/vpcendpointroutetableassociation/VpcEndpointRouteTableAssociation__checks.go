@@ -399,6 +399,14 @@ func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetRouteTableIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

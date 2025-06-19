@@ -5,14 +5,14 @@ package s3tablesnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3tablesnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablesnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace aws_s3tables_namespace}.
 type S3TablesNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type S3TablesNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TableBucketArn() *string
 	SetTableBucketArn(val *string)
 	TableBucketArnInput() *string
@@ -116,6 +119,7 @@ type S3TablesNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -314,6 +318,26 @@ func (j *jsiiProxy_S3TablesNamespace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3TablesNamespace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesNamespace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3TablesNamespace) TableBucketArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,7 +389,7 @@ func (j *jsiiProxy_S3TablesNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource.
 func NewS3TablesNamespace(scope constructs.Construct, id *string, config *S3TablesNamespaceConfig) S3TablesNamespace {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewS3TablesNamespace(scope constructs.Construct, id *string, config *S3Tabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_namespace aws_s3tables_namespace} Resource.
 func NewS3TablesNamespace_Override(s S3TablesNamespace, scope constructs.Construct, id *string, config *S3TablesNamespaceConfig) {
 	_init_.Initialize()
 
@@ -469,6 +493,17 @@ func (j *jsiiProxy_S3TablesNamespace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3TablesNamespace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -841,6 +876,14 @@ func (s *jsiiProxy_S3TablesNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3TablesNamespace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetVoiceConnectorIdParameters(val *string) error {
 	return nil
 }

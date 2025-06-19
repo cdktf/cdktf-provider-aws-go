@@ -594,6 +594,14 @@ func (j *jsiiProxy_NetworkInterface) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterface) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterface) validateSetSecurityGroupsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

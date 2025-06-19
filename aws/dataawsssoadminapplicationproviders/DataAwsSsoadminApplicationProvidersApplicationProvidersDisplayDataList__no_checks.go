@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDispla
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package m2deployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/m2deployment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/m2deployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_deployment aws_m2_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_deployment aws_m2_deployment}.
 type M2Deployment interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -69,6 +69,9 @@ type M2Deployment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Start() interface{}
 	SetStart(val interface{})
 	StartInput() interface{}
@@ -128,6 +131,7 @@ type M2Deployment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -377,6 +381,26 @@ func (j *jsiiProxy_M2Deployment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_M2Deployment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_M2Deployment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_M2Deployment) Start() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -448,7 +472,7 @@ func (j *jsiiProxy_M2Deployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_deployment aws_m2_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_deployment aws_m2_deployment} Resource.
 func NewM2Deployment(scope constructs.Construct, id *string, config *M2DeploymentConfig) M2Deployment {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewM2Deployment(scope constructs.Construct, id *string, config *M2Deploymen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/m2_deployment aws_m2_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_deployment aws_m2_deployment} Resource.
 func NewM2Deployment_Override(m M2Deployment, scope constructs.Construct, id *string, config *M2DeploymentConfig) {
 	_init_.Initialize()
 
@@ -585,6 +609,17 @@ func (j *jsiiProxy_M2Deployment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_M2Deployment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (m *jsiiProxy_M2Deployment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_M2Deployment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildWebhook) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCodebuildWebhookParameters(scope constructs.Construct, id *string, config *CodebuildWebhookConfig) error {
 	return nil
 }

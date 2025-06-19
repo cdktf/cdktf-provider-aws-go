@@ -155,6 +155,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetQTypeParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRoute53ResolverFirewallRuleParameters(scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleConfig) error {
 	return nil
 }

@@ -159,6 +159,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetQueryDepthLimitParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetResolverCountLimitParameters(val *float64) error {
 	return nil
 }

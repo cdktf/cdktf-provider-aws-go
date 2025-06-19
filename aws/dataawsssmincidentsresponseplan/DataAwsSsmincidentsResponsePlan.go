@@ -5,14 +5,14 @@ package dataawsssmincidentsresponseplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssmincidentsresponseplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssmincidentsresponseplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan}.
 type DataAwsSsmincidentsResponsePlan interface {
 	cdktf.TerraformDataSource
 	Action() DataAwsSsmincidentsResponsePlanActionList
@@ -60,6 +60,9 @@ type DataAwsSsmincidentsResponsePlan interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -98,6 +101,7 @@ type DataAwsSsmincidentsResponsePlan interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -338,6 +342,26 @@ func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -389,7 +413,7 @@ func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source.
 func NewDataAwsSsmincidentsResponsePlan(scope constructs.Construct, id *string, config *DataAwsSsmincidentsResponsePlanConfig) DataAwsSsmincidentsResponsePlan {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewDataAwsSsmincidentsResponsePlan(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_response_plan aws_ssmincidents_response_plan} Data Source.
 func NewDataAwsSsmincidentsResponsePlan_Override(d DataAwsSsmincidentsResponsePlan, scope constructs.Construct, id *string, config *DataAwsSsmincidentsResponsePlanConfig) {
 	_init_.Initialize()
 
@@ -482,6 +506,17 @@ func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan)SetProvider(val cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsmincidentsResponsePlan)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -794,6 +829,14 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlan) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlan) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

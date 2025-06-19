@@ -123,6 +123,10 @@ func (j *jsiiProxy_ChimesdkvoiceSipRule) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ChimesdkvoiceSipRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimesdkvoiceSipRule) validateSetTriggerTypeParameters(val *string) error {
 	return nil
 }

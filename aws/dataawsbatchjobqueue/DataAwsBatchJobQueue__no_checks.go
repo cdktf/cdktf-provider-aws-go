@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

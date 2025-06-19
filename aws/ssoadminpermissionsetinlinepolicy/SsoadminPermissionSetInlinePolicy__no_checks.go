@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsoadminPermissionSetInlinePolicyParameters(scope constructs.Construct, id *string, config *SsoadminPermissionSetInlinePolicyConfig) error {
 	return nil
 }

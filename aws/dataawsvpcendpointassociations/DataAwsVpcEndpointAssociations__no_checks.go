@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointAssociations) validateSetVpcEndpointIdParameters(val *string) error {
 	return nil
 }

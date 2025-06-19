@@ -139,6 +139,10 @@ func (j *jsiiProxy_Codepipeline) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_Codepipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Codepipeline) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

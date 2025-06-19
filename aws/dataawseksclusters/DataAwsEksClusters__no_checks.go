@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsEksClusters) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksClusters) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEksClustersParameters(scope constructs.Construct, id *string, config *DataAwsEksClustersConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package wafregionalregexmatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafregionalregexmatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafregionalregexmatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set}.
 type WafregionalRegexMatchSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type WafregionalRegexMatchSet interface {
 	RawOverrides() interface{}
 	RegexMatchTuple() WafregionalRegexMatchSetRegexMatchTupleList
 	RegexMatchTupleInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type WafregionalRegexMatchSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegexMatchTuple()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -326,6 +330,26 @@ func (j *jsiiProxy_WafregionalRegexMatchSet) RegexMatchTupleInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_WafregionalRegexMatchSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafregionalRegexMatchSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafregionalRegexMatchSet) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_WafregionalRegexMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
 func NewWafregionalRegexMatchSet(scope constructs.Construct, id *string, config *WafregionalRegexMatchSetConfig) WafregionalRegexMatchSet {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewWafregionalRegexMatchSet(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
 func NewWafregionalRegexMatchSet_Override(w WafregionalRegexMatchSet, scope constructs.Construct, id *string, config *WafregionalRegexMatchSetConfig) {
 	_init_.Initialize()
 
@@ -472,6 +496,17 @@ func (j *jsiiProxy_WafregionalRegexMatchSet)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafregionalRegexMatchSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -860,6 +895,14 @@ func (w *jsiiProxy_WafregionalRegexMatchSet) ResetRegexMatchTuple() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRegexMatchTuple",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafregionalRegexMatchSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

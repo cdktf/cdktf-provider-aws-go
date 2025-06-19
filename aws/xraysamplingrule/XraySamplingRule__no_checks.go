@@ -131,6 +131,10 @@ func (j *jsiiProxy_XraySamplingRule) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_XraySamplingRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_XraySamplingRule) validateSetReservoirSizeParameters(val *float64) error {
 	return nil
 }

@@ -266,6 +266,14 @@ func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetOwnerParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsImagebuilderComponentsParameters(scope constructs.Construct, id *string, config *DataAwsImagebuilderComponentsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

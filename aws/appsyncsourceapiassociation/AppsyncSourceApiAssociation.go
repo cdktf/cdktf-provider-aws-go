@@ -5,14 +5,14 @@ package appsyncsourceapiassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appsyncsourceapiassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appsyncsourceapiassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association}.
 type AppsyncSourceApiAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type AppsyncSourceApiAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceApiArn() *string
 	SetSourceApiArn(val *string)
 	SourceApiArnInput() *string
@@ -134,6 +137,7 @@ type AppsyncSourceApiAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSourceApiArn()
 	ResetSourceApiAssociationConfig()
 	ResetSourceApiId()
@@ -376,6 +380,26 @@ func (j *jsiiProxy_AppsyncSourceApiAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncSourceApiAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncSourceApiAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncSourceApiAssociation) SourceApiArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_AppsyncSourceApiAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association} Resource.
 func NewAppsyncSourceApiAssociation(scope constructs.Construct, id *string, config *AppsyncSourceApiAssociationConfig) AppsyncSourceApiAssociation {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewAppsyncSourceApiAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appsync_source_api_association aws_appsync_source_api_association} Resource.
 func NewAppsyncSourceApiAssociation_Override(a AppsyncSourceApiAssociation, scope constructs.Construct, id *string, config *AppsyncSourceApiAssociationConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_AppsyncSourceApiAssociation)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncSourceApiAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1042,6 +1077,14 @@ func (a *jsiiProxy_AppsyncSourceApiAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncSourceApiAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

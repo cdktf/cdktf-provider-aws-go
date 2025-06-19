@@ -127,6 +127,10 @@ func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCodeartifactDomainPermissionsPolicyParameters(scope constructs.Construct, id *string, config *CodeartifactDomainPermissionsPolicyConfig) error {
 	return nil
 }

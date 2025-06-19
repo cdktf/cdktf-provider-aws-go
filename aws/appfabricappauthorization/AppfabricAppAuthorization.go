@@ -5,14 +5,14 @@ package appfabricappauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appfabricappauthorization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricappauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}.
 type AppfabricAppAuthorization interface {
 	cdktf.TerraformResource
 	App() *string
@@ -71,6 +71,9 @@ type AppfabricAppAuthorization interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -136,6 +139,7 @@ type AppfabricAppAuthorization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTenant()
 	ResetTimeouts()
@@ -417,6 +421,26 @@ func (j *jsiiProxy_AppfabricAppAuthorization) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppfabricAppAuthorization) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppfabricAppAuthorization) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppfabricAppAuthorization) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -528,7 +552,7 @@ func (j *jsiiProxy_AppfabricAppAuthorization) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
 func NewAppfabricAppAuthorization(scope constructs.Construct, id *string, config *AppfabricAppAuthorizationConfig) AppfabricAppAuthorization {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewAppfabricAppAuthorization(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
 func NewAppfabricAppAuthorization_Override(a AppfabricAppAuthorization, scope constructs.Construct, id *string, config *AppfabricAppAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -654,6 +678,17 @@ func (j *jsiiProxy_AppfabricAppAuthorization)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppfabricAppAuthorization)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1067,6 +1102,14 @@ func (a *jsiiProxy_AppfabricAppAuthorization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppfabricAppAuthorization) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_Inspector2MemberAssociation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2MemberAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewInspector2MemberAssociationParameters(scope constructs.Construct, id *string, config *Inspector2MemberAssociationConfig) error {
 	return nil
 }

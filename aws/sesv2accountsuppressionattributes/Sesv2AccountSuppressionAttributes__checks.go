@@ -391,6 +391,14 @@ func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2AccountSuppressionAttributes) validateSetSuppressedReasonsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

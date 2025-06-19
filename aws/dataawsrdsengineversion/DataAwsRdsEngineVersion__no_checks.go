@@ -127,6 +127,10 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetPreferredVersionsParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetVersionParameters(val *string) error {
 	return nil
 }

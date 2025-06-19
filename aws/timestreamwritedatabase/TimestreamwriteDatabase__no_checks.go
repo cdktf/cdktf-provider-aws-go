@@ -119,6 +119,10 @@ func (j *jsiiProxy_TimestreamwriteDatabase) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_TimestreamwriteDatabase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamwriteDatabase) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

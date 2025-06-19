@@ -123,6 +123,10 @@ func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewVpcIpamPreviewNextCidrParameters(scope constructs.Construct, id *string, config *VpcIpamPreviewNextCidrConfig) error {
 	return nil
 }

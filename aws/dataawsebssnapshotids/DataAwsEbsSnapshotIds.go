@@ -5,14 +5,14 @@ package dataawsebssnapshotids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsebssnapshotids/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsebssnapshotids/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids}.
 type DataAwsEbsSnapshotIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataAwsEbsSnapshotIds interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RestorableByUserIds() *[]*string
 	SetRestorableByUserIds(val *[]*string)
 	RestorableByUserIdsInput() *[]*string
@@ -100,6 +103,7 @@ type DataAwsEbsSnapshotIds interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwners()
+	ResetRegion()
 	ResetRestorableByUserIds()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -301,6 +305,26 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEbsSnapshotIds) RestorableByUserIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -372,7 +396,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
 func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *DataAwsEbsSnapshotIdsConfig) DataAwsEbsSnapshotIds {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
 func NewDataAwsEbsSnapshotIds_Override(d DataAwsEbsSnapshotIds, scope constructs.Construct, id *string, config *DataAwsEbsSnapshotIdsConfig) {
 	_init_.Initialize()
 
@@ -465,6 +489,17 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEbsSnapshotIds)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -815,6 +850,14 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) ResetOwners() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwners",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEbsSnapshotIds) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

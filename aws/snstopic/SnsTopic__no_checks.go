@@ -199,6 +199,10 @@ func (j *jsiiProxy_SnsTopic) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopic) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopic) validateSetSignatureVersionParameters(val *float64) error {
 	return nil
 }

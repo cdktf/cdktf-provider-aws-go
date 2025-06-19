@@ -5,14 +5,14 @@ package dataawsebsdefaultkmskey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsebsdefaultkmskey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsebsdefaultkmskey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}.
 type DataAwsEbsDefaultKmsKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsEbsDefaultKmsKey interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,6 +92,7 @@ type DataAwsEbsDefaultKmsKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -249,6 +253,26 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +324,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
 func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) DataAwsEbsDefaultKmsKey {
 	_init_.Initialize()
 
@@ -318,7 +342,7 @@ func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
 func NewDataAwsEbsDefaultKmsKey_Override(d DataAwsEbsDefaultKmsKey, scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) {
 	_init_.Initialize()
 
@@ -382,6 +406,17 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

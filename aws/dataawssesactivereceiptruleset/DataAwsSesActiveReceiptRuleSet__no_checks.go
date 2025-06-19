@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSesActiveReceiptRuleSetParameters(scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) error {
 	return nil
 }

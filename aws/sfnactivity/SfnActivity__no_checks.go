@@ -119,6 +119,10 @@ func (j *jsiiProxy_SfnActivity) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_SfnActivity) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnActivity) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

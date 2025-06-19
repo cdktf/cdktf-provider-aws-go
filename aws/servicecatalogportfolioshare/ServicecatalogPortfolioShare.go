@@ -5,14 +5,14 @@ package servicecatalogportfolioshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/servicecatalogportfolioshare/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/servicecatalogportfolioshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share}.
 type ServicecatalogPortfolioShare interface {
 	cdktf.TerraformResource
 	Accepted() cdktf.IResolvable
@@ -68,6 +68,9 @@ type ServicecatalogPortfolioShare interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SharePrincipals() interface{}
 	SetSharePrincipals(val interface{})
 	SharePrincipalsInput() interface{}
@@ -137,6 +140,7 @@ type ServicecatalogPortfolioShare interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSharePrincipals()
 	ResetShareTagOptions()
 	ResetTimeouts()
@@ -379,6 +383,26 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServicecatalogPortfolioShare) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogPortfolioShare) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServicecatalogPortfolioShare) SharePrincipals() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -510,7 +534,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) WaitForAcceptanceInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share} Resource.
 func NewServicecatalogPortfolioShare(scope constructs.Construct, id *string, config *ServicecatalogPortfolioShareConfig) ServicecatalogPortfolioShare {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewServicecatalogPortfolioShare(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/servicecatalog_portfolio_share aws_servicecatalog_portfolio_share} Resource.
 func NewServicecatalogPortfolioShare_Override(s ServicecatalogPortfolioShare, scope constructs.Construct, id *string, config *ServicecatalogPortfolioShareConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogPortfolioShare)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1079,6 +1114,14 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEips) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEips) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEips) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

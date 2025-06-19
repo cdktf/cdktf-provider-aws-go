@@ -119,6 +119,10 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetPreferredVersionsPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetVersionParameters(val *string) error {
 	return nil
 }

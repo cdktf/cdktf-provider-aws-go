@@ -119,6 +119,10 @@ func (j *jsiiProxy_AutoscalingNotification) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingNotification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingNotification) validateSetTopicArnParameters(val *string) error {
 	return nil
 }

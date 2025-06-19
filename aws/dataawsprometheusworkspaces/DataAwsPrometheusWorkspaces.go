@@ -5,14 +5,14 @@ package dataawsprometheusworkspaces
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsprometheusworkspaces/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsprometheusworkspaces/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces}.
 type DataAwsPrometheusWorkspaces interface {
 	cdktf.TerraformDataSource
 	Aliases() *[]*string
@@ -55,6 +55,9 @@ type DataAwsPrometheusWorkspaces interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -92,6 +95,7 @@ type DataAwsPrometheusWorkspaces interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -281,6 +285,26 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspaces) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspaces) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsPrometheusWorkspaces) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsPrometheusWorkspaces) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -322,7 +346,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspaces) WorkspaceIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces} Data Source.
 func NewDataAwsPrometheusWorkspaces(scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspacesConfig) DataAwsPrometheusWorkspaces {
 	_init_.Initialize()
 
@@ -340,7 +364,7 @@ func NewDataAwsPrometheusWorkspaces(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/prometheus_workspaces aws_prometheus_workspaces} Data Source.
 func NewDataAwsPrometheusWorkspaces_Override(d DataAwsPrometheusWorkspaces, scope constructs.Construct, id *string, config *DataAwsPrometheusWorkspacesConfig) {
 	_init_.Initialize()
 
@@ -415,6 +439,17 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspaces)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsPrometheusWorkspaces)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -724,6 +759,14 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspaces) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsPrometheusWorkspaces) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

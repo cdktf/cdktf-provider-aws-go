@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatazoneGlossaryTerm) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneGlossaryTerm) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatazoneGlossaryTerm) validateSetShortDescriptionParameters(val *string) error {
 	return nil
 }

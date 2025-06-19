@@ -115,6 +115,10 @@ func (j *jsiiProxy_ServicequotasServiceQuota) validateSetQuotaCodeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasServiceQuota) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasServiceQuota) validateSetServiceCodeParameters(val *string) error {
 	return nil
 }

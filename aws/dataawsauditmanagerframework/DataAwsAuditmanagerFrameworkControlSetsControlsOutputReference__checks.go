@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsAuditmanagerFrameworkControlSetsControls:
-		val := val.(*DataAwsAuditmanagerFrameworkControlSetsControls)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsAuditmanagerFrameworkControlSetsControls:
-		val_ := val.(DataAwsAuditmanagerFrameworkControlSetsControls)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsAuditmanagerFrameworkControlSetsControls; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsControlsOutputReference) validateSetInternalValueParameters(val *DataAwsAuditmanagerFrameworkControlSetsControls) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

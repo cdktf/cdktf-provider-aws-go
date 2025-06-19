@@ -5,14 +5,14 @@ package storagegatewaytapepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/storagegatewaytapepool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/storagegatewaytapepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
 type StoragegatewayTapePool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type StoragegatewayTapePool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetentionLockTimeInDays() *float64
 	SetRetentionLockTimeInDays(val *float64)
 	RetentionLockTimeInDaysInput() *float64
@@ -130,6 +133,7 @@ type StoragegatewayTapePool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRetentionLockTimeInDays()
 	ResetRetentionLockType()
 	ResetTags()
@@ -332,6 +336,26 @@ func (j *jsiiProxy_StoragegatewayTapePool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StoragegatewayTapePool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewayTapePool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StoragegatewayTapePool) RetentionLockTimeInDays() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -463,7 +487,7 @@ func (j *jsiiProxy_StoragegatewayTapePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
 func NewStoragegatewayTapePool(scope constructs.Construct, id *string, config *StoragegatewayTapePoolConfig) StoragegatewayTapePool {
 	_init_.Initialize()
 
@@ -481,7 +505,7 @@ func NewStoragegatewayTapePool(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
 func NewStoragegatewayTapePool_Override(s StoragegatewayTapePool, scope constructs.Construct, id *string, config *StoragegatewayTapePoolConfig) {
 	_init_.Initialize()
 
@@ -578,6 +602,17 @@ func (j *jsiiProxy_StoragegatewayTapePool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewayTapePool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1002,6 +1037,14 @@ func (s *jsiiProxy_StoragegatewayTapePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewayTapePool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -478,6 +478,14 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGlueUserDefinedFunctionParameters(scope constructs.Construct, id *string, config *GlueUserDefinedFunctionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -5,14 +5,14 @@ package lbtargetgroupattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lbtargetgroupattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lbtargetgroupattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment}.
 type LbTargetGroupAttachment interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -64,6 +64,9 @@ type LbTargetGroupAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetGroupArn() *string
 	SetTargetGroupArn(val *string)
 	TargetGroupArnInput() *string
@@ -125,6 +128,7 @@ type LbTargetGroupAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPort()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -333,6 +337,26 @@ func (j *jsiiProxy_LbTargetGroupAttachment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbTargetGroupAttachment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroupAttachment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbTargetGroupAttachment) TargetGroupArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,7 +428,7 @@ func (j *jsiiProxy_LbTargetGroupAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment} Resource.
 func NewLbTargetGroupAttachment(scope constructs.Construct, id *string, config *LbTargetGroupAttachmentConfig) LbTargetGroupAttachment {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewLbTargetGroupAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lb_target_group_attachment aws_lb_target_group_attachment} Resource.
 func NewLbTargetGroupAttachment_Override(l LbTargetGroupAttachment, scope constructs.Construct, id *string, config *LbTargetGroupAttachmentConfig) {
 	_init_.Initialize()
 
@@ -530,6 +554,17 @@ func (j *jsiiProxy_LbTargetGroupAttachment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbTargetGroupAttachment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -937,6 +972,14 @@ func (l *jsiiProxy_LbTargetGroupAttachment) ResetPort() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroupAttachment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package pinpointgcmchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/pinpointgcmchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/pinpointgcmchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
 type PinpointGcmChannel interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -70,6 +70,9 @@ type PinpointGcmChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceJson() *string
 	SetServiceJson(val *string)
 	ServiceJsonInput() *string
@@ -129,6 +132,7 @@ type PinpointGcmChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetServiceJson()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_PinpointGcmChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PinpointGcmChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointGcmChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) ServiceJson() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_PinpointGcmChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
 func NewPinpointGcmChannel(scope constructs.Construct, id *string, config *PinpointGcmChannelConfig) PinpointGcmChannel {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewPinpointGcmChannel(scope constructs.Construct, id *string, config *Pinpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
 func NewPinpointGcmChannel_Override(p PinpointGcmChannel, scope constructs.Construct, id *string, config *PinpointGcmChannelConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_PinpointGcmChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointGcmChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -981,6 +1016,14 @@ func (p *jsiiProxy_PinpointGcmChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointGcmChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

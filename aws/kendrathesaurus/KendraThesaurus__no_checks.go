@@ -131,6 +131,10 @@ func (j *jsiiProxy_KendraThesaurus) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_KendraThesaurus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraThesaurus) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

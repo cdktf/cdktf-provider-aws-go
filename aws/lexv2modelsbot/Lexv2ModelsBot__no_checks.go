@@ -131,6 +131,10 @@ func (j *jsiiProxy_Lexv2ModelsBot) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_Lexv2ModelsBot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lexv2ModelsBot) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

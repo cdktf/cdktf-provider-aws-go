@@ -5,14 +5,14 @@ package dataawscodecommitapprovalruletemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscodecommitapprovalruletemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscodecommitapprovalruletemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
 type DataAwsCodecommitApprovalRuleTemplate interface {
 	cdktf.TerraformDataSource
 	ApprovalRuleTemplateId() *string
@@ -59,6 +59,9 @@ type DataAwsCodecommitApprovalRuleTemplate interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleContentSha256() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -95,6 +98,7 @@ type DataAwsCodecommitApprovalRuleTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -324,6 +328,26 @@ func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) RuleContentSha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -365,7 +389,7 @@ func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
 func NewDataAwsCodecommitApprovalRuleTemplate(scope constructs.Construct, id *string, config *DataAwsCodecommitApprovalRuleTemplateConfig) DataAwsCodecommitApprovalRuleTemplate {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewDataAwsCodecommitApprovalRuleTemplate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
 func NewDataAwsCodecommitApprovalRuleTemplate_Override(d DataAwsCodecommitApprovalRuleTemplate, scope constructs.Construct, id *string, config *DataAwsCodecommitApprovalRuleTemplateConfig) {
 	_init_.Initialize()
 
@@ -458,6 +482,17 @@ func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate)SetProvider(val cdktf.T
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -759,6 +794,14 @@ func (d *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

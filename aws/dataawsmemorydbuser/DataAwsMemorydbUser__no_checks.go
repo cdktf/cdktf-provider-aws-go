@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsMemorydbUser) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMemorydbUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMemorydbUser) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

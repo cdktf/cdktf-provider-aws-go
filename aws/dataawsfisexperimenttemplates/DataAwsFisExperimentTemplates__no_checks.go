@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataAwsFisExperimentTemplates) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsFisExperimentTemplates) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsFisExperimentTemplates) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -151,6 +151,10 @@ func (j *jsiiProxy_Lexv2ModelsSlot) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_Lexv2ModelsSlot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lexv2ModelsSlot) validateSetSlotTypeIdParameters(val *string) error {
 	return nil
 }

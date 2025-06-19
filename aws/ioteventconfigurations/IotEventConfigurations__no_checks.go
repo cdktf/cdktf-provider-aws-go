@@ -115,6 +115,10 @@ func (j *jsiiProxy_IotEventConfigurations) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IotEventConfigurations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotEventConfigurationsParameters(scope constructs.Construct, id *string, config *IotEventConfigurationsConfig) error {
 	return nil
 }

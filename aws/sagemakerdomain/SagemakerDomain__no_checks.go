@@ -147,6 +147,10 @@ func (j *jsiiProxy_SagemakerDomain) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomain) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

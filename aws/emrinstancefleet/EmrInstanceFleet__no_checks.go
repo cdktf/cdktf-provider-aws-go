@@ -127,6 +127,10 @@ func (j *jsiiProxy_EmrInstanceFleet) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_EmrInstanceFleet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrInstanceFleet) validateSetTargetOnDemandCapacityParameters(val *float64) error {
 	return nil
 }

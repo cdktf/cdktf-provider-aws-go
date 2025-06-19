@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsWafregionalRateBasedRuleParameters(scope constructs.Construct, id *string, config *DataAwsWafregionalRateBasedRuleConfig) error {
 	return nil
 }

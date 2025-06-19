@@ -111,6 +111,10 @@ func (j *jsiiProxy_PinpointEmailTemplate) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEmailTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailTemplate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

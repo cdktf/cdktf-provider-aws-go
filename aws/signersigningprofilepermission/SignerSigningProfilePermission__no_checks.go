@@ -127,6 +127,10 @@ func (j *jsiiProxy_SignerSigningProfilePermission) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_SignerSigningProfilePermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignerSigningProfilePermission) validateSetStatementIdParameters(val *string) error {
 	return nil
 }

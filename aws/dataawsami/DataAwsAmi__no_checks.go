@@ -79,6 +79,10 @@ func validateDataAwsAmi_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmi) validateSetAllowUnsafeFilterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAmi) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_DataAwsAmi) validateSetNameRegexParameters(val *string) error
 }
 
 func (j *jsiiProxy_DataAwsAmi) validateSetOwnersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsAmi) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

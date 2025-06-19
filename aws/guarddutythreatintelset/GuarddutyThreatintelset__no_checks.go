@@ -131,6 +131,10 @@ func (j *jsiiProxy_GuarddutyThreatintelset) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyThreatintelset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyThreatintelset) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

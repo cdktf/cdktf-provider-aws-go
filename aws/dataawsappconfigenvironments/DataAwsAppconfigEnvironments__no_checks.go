@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironments) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppconfigEnvironments) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsAppconfigEnvironmentsParameters(scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentsConfig) error {
 	return nil
 }

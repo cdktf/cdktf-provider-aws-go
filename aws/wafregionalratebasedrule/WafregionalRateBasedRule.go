@@ -5,14 +5,14 @@ package wafregionalratebasedrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafregionalratebasedrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafregionalratebasedrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}.
 type WafregionalRateBasedRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type WafregionalRateBasedRule interface {
 	RateLimitInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -134,6 +137,7 @@ type WafregionalRateBasedRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPredicate()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -414,6 +418,26 @@ func (j *jsiiProxy_WafregionalRateBasedRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WafregionalRateBasedRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafregionalRateBasedRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafregionalRateBasedRule) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_WafregionalRateBasedRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource.
 func NewWafregionalRateBasedRule(scope constructs.Construct, id *string, config *WafregionalRateBasedRuleConfig) WafregionalRateBasedRule {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewWafregionalRateBasedRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource.
 func NewWafregionalRateBasedRule_Override(w WafregionalRateBasedRule, scope constructs.Construct, id *string, config *WafregionalRateBasedRuleConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_WafregionalRateBasedRule)SetRateLimit(val *float64) {
 	_jsii_.Set(
 		j,
 		"rateLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WafregionalRateBasedRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1043,6 +1078,14 @@ func (w *jsiiProxy_WafregionalRateBasedRule) ResetPredicate() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetPredicate",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafregionalRateBasedRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

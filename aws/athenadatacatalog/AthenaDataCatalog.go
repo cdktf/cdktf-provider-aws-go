@@ -5,14 +5,14 @@ package athenadatacatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenadatacatalog/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenadatacatalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
 type AthenaDataCatalog interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type AthenaDataCatalog interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -130,6 +133,7 @@ type AthenaDataCatalog interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -370,6 +374,26 @@ func (j *jsiiProxy_AthenaDataCatalog) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AthenaDataCatalog) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaDataCatalog) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AthenaDataCatalog) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -461,7 +485,7 @@ func (j *jsiiProxy_AthenaDataCatalog) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
 func NewAthenaDataCatalog(scope constructs.Construct, id *string, config *AthenaDataCatalogConfig) AthenaDataCatalog {
 	_init_.Initialize()
 
@@ -479,7 +503,7 @@ func NewAthenaDataCatalog(scope constructs.Construct, id *string, config *Athena
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
 func NewAthenaDataCatalog_Override(a AthenaDataCatalog, scope constructs.Construct, id *string, config *AthenaDataCatalogConfig) {
 	_init_.Initialize()
 
@@ -598,6 +622,17 @@ func (j *jsiiProxy_AthenaDataCatalog)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AthenaDataCatalog)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1000,6 +1035,14 @@ func (a *jsiiProxy_AthenaDataCatalog) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaDataCatalog) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package rdsinstancestate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsinstancestate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsinstancestate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_instance_state aws_rds_instance_state}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_instance_state aws_rds_instance_state}.
 type RdsInstanceState interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type RdsInstanceState interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -116,6 +119,7 @@ type RdsInstanceState interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -285,6 +289,26 @@ func (j *jsiiProxy_RdsInstanceState) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RdsInstanceState) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsInstanceState) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsInstanceState) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_RdsInstanceState) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_instance_state aws_rds_instance_state} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_instance_state aws_rds_instance_state} Resource.
 func NewRdsInstanceState(scope constructs.Construct, id *string, config *RdsInstanceStateConfig) RdsInstanceState {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewRdsInstanceState(scope constructs.Construct, id *string, config *RdsInst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_instance_state aws_rds_instance_state} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_instance_state aws_rds_instance_state} Resource.
 func NewRdsInstanceState_Override(r RdsInstanceState, scope constructs.Construct, id *string, config *RdsInstanceStateConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_RdsInstanceState)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsInstanceState)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -843,6 +878,14 @@ func (r *jsiiProxy_RdsInstanceState) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsInstanceState) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

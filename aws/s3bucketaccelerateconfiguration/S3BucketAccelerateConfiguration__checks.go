@@ -415,6 +415,14 @@ func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

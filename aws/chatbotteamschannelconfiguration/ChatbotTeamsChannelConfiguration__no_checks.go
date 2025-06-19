@@ -135,6 +135,10 @@ func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChatbotTeamsChannelConfiguration) validateSetSnsTopicArnsParameters(val *[]*string) error {
 	return nil
 }

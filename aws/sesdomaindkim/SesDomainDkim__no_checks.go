@@ -115,6 +115,10 @@ func (j *jsiiProxy_SesDomainDkim) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainDkim) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesDomainDkimParameters(scope constructs.Construct, id *string, config *SesDomainDkimConfig) error {
 	return nil
 }

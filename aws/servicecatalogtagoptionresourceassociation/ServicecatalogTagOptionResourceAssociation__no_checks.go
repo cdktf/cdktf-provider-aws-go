@@ -115,6 +115,10 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

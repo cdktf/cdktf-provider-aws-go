@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) validateSetSecurityGroupRuleIdParameters(val *string) error {
 	return nil
 }

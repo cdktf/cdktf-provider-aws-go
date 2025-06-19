@@ -131,6 +131,10 @@ func (j *jsiiProxy_MediaConvertQueue) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_MediaConvertQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaConvertQueue) validateSetStatusParameters(val *string) error {
 	return nil
 }

@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateIn
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validatePutStickinessParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validatePutTargetGroupParameters(value interface{}) error {
 	return nil
 }
@@ -75,7 +79,7 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateSe
 	return nil
 }
 
-func validateNewDataAwsLbListenerRuleActionForwardOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsLbListenerRuleActionForwardOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

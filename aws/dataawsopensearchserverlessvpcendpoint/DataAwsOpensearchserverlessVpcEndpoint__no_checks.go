@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessVpcEndpoint) validateSetLifecycleP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOpensearchserverlessVpcEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOpensearchserverlessVpcEndpoint) validateSetVpcEndpointIdParameters(val *string) error {
 	return nil
 }

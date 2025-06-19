@@ -5,14 +5,14 @@ package securityhubconfigurationpolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubconfigurationpolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association}.
 type SecurityhubConfigurationPolicyAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type SecurityhubConfigurationPolicyAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetId() *string
 	SetTargetId(val *string)
 	TargetIdInput() *string
@@ -120,6 +123,7 @@ type SecurityhubConfigurationPolicyAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -309,6 +313,26 @@ func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation) RawOverrides() int
 	return returns
 }
 
+func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation) TargetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association} Resource.
 func NewSecurityhubConfigurationPolicyAssociation(scope constructs.Construct, id *string, config *SecurityhubConfigurationPolicyAssociationConfig) SecurityhubConfigurationPolicyAssociation {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewSecurityhubConfigurationPolicyAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_configuration_policy_association aws_securityhub_configuration_policy_association} Resource.
 func NewSecurityhubConfigurationPolicyAssociation_Override(s SecurityhubConfigurationPolicyAssociation, scope constructs.Construct, id *string, config *SecurityhubConfigurationPolicyAssociationConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation)SetProvisioners(val
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityhubConfigurationPolicyAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyAssociation) ResetOverrideLogic
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityhubConfigurationPolicyAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

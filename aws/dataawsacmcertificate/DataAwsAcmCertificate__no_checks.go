@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsAcmCertificate) validateSetMostRecentParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAcmCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAcmCertificate) validateSetStatusesParameters(val *[]*string) error {
 	return nil
 }

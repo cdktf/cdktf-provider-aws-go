@@ -119,6 +119,10 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

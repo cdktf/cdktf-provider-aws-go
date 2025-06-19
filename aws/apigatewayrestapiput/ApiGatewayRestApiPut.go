@@ -5,14 +5,14 @@ package apigatewayrestapiput
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewayrestapiput/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewayrestapiput/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put}.
 type ApiGatewayRestApiPut interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -64,6 +64,9 @@ type ApiGatewayRestApiPut interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
@@ -127,6 +130,7 @@ type ApiGatewayRestApiPut interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	ResetTimeouts()
 	ResetTriggers()
 	SynthesizeAttributes() *map[string]interface{}
@@ -337,6 +341,26 @@ func (j *jsiiProxy_ApiGatewayRestApiPut) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayRestApiPut) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApiPut) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayRestApiPut) RestApiId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_ApiGatewayRestApiPut) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource.
 func NewApiGatewayRestApiPut(scope constructs.Construct, id *string, config *ApiGatewayRestApiPutConfig) ApiGatewayRestApiPut {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewApiGatewayRestApiPut(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_rest_api_put aws_api_gateway_rest_api_put} Resource.
 func NewApiGatewayRestApiPut_Override(a ApiGatewayRestApiPut, scope constructs.Construct, id *string, config *ApiGatewayRestApiPutConfig) {
 	_init_.Initialize()
 
@@ -554,6 +578,17 @@ func (j *jsiiProxy_ApiGatewayRestApiPut)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayRestApiPut)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -964,6 +999,14 @@ func (a *jsiiProxy_ApiGatewayRestApiPut) ResetParameters() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayRestApiPut) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

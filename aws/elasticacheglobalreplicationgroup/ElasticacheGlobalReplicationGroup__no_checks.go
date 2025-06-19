@@ -147,6 +147,10 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewElasticacheGlobalReplicationGroupParameters(scope constructs.Construct, id *string, config *ElasticacheGlobalReplicationGroupConfig) error {
 	return nil
 }

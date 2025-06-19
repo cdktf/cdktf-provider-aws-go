@@ -5,14 +5,14 @@ package connectroutingprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectroutingprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectroutingprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_routing_profile aws_connect_routing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_routing_profile aws_connect_routing_profile}.
 type ConnectRoutingProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type ConnectRoutingProfile interface {
 	QueueConfigsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoutingProfileId() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -138,6 +141,7 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueueConfigs()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -438,6 +442,26 @@ func (j *jsiiProxy_ConnectRoutingProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ConnectRoutingProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectRoutingProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectRoutingProfile) RoutingProfileId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) ConnectRoutingProfile {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile_Override(c ConnectRoutingProfile, scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) {
 	_init_.Initialize()
 
@@ -667,6 +691,17 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectRoutingProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1088,6 +1123,14 @@ func (c *jsiiProxy_ConnectRoutingProfile) ResetQueueConfigs() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetQueueConfigs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectRoutingProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

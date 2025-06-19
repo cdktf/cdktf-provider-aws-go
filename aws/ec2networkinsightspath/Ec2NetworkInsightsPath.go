@@ -5,14 +5,14 @@ package ec2networkinsightspath
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2networkinsightspath/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2networkinsightspath/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path}.
 type Ec2NetworkInsightsPath interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,9 @@ type Ec2NetworkInsightsPath interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Source() *string
 	SetSource(val *string)
 	SourceArn() *string
@@ -149,6 +152,7 @@ type Ec2NetworkInsightsPath interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSourceIp()
 	ResetTags()
 	ResetTagsAll()
@@ -460,6 +464,26 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2NetworkInsightsPath) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsPath) Source() *string {
 	var returns *string
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
 func NewEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *Ec2NetworkInsightsPathConfig) Ec2NetworkInsightsPath {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_network_insights_path aws_ec2_network_insights_path} Resource.
 func NewEc2NetworkInsightsPath_Override(e Ec2NetworkInsightsPath, scope constructs.Construct, id *string, config *Ec2NetworkInsightsPathConfig) {
 	_init_.Initialize()
 
@@ -729,6 +753,17 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2NetworkInsightsPath)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1204,6 +1239,14 @@ func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2NetworkInsightsPath) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

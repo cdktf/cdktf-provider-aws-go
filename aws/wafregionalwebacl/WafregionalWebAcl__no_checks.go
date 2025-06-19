@@ -131,6 +131,10 @@ func (j *jsiiProxy_WafregionalWebAcl) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalWebAcl) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalWebAcl) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

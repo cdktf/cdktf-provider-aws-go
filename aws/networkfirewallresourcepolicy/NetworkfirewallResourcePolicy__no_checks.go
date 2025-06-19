@@ -115,6 +115,10 @@ func (j *jsiiProxy_NetworkfirewallResourcePolicy) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

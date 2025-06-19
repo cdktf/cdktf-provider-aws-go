@@ -5,14 +5,14 @@ package wafv2regexpatternset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/wafv2regexpatternset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/wafv2regexpatternset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set}.
 type Wafv2RegexPatternSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type Wafv2RegexPatternSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegularExpression() Wafv2RegexPatternSetRegularExpressionList
 	RegularExpressionInput() interface{}
 	Scope() *string
@@ -137,6 +140,7 @@ type Wafv2RegexPatternSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegularExpression()
 	ResetTags()
 	ResetTagsAll()
@@ -388,6 +392,26 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RegexPatternSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RegexPatternSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RegexPatternSet) RegularExpression() Wafv2RegexPatternSetRegularExpressionList {
 	var returns Wafv2RegexPatternSetRegularExpressionList
 	_jsii_.Get(
@@ -499,7 +523,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
 func NewWafv2RegexPatternSet(scope constructs.Construct, id *string, config *Wafv2RegexPatternSetConfig) Wafv2RegexPatternSet {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewWafv2RegexPatternSet(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_regex_pattern_set aws_wafv2_regex_pattern_set} Resource.
 func NewWafv2RegexPatternSet_Override(w Wafv2RegexPatternSet, scope constructs.Construct, id *string, config *Wafv2RegexPatternSetConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_Wafv2RegexPatternSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RegexPatternSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1073,6 +1108,14 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

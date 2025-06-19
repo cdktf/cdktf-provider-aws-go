@@ -131,6 +131,10 @@ func (j *jsiiProxy_IvsRecordingConfiguration) validateSetRecordingReconnectWindo
 	return nil
 }
 
+func (j *jsiiProxy_IvsRecordingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvsRecordingConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

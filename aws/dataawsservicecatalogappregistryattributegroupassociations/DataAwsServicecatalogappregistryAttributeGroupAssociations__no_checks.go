@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryAttributeGroupAssociations) v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogappregistryAttributeGroupAssociations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogappregistryAttributeGroupAssociationsParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig) error {
 	return nil
 }

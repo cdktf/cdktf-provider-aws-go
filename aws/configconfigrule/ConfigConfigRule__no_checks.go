@@ -139,6 +139,10 @@ func (j *jsiiProxy_ConfigConfigRule) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigRule) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

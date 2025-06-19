@@ -155,6 +155,10 @@ func (j *jsiiProxy_FinspaceKxDataview) validateSetReadWriteParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxDataview) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxDataview) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

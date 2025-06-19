@@ -167,6 +167,10 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetRouteTableIdsParameters(val *[]*string) error {
 	return nil
 }

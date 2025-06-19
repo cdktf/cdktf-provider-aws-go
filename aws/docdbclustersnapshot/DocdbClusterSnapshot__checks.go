@@ -426,6 +426,14 @@ func (j *jsiiProxy_DocdbClusterSnapshot) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DocdbClusterSnapshot) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDocdbClusterSnapshotParameters(scope constructs.Construct, id *string, config *DocdbClusterSnapshotConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

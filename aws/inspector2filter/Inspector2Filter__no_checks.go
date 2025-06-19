@@ -127,6 +127,10 @@ func (j *jsiiProxy_Inspector2Filter) validateSetReasonParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2Filter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2Filter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

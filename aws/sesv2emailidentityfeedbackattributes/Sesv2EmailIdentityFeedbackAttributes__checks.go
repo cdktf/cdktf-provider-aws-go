@@ -427,6 +427,14 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSesv2EmailIdentityFeedbackAttributesParameters(scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

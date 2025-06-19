@@ -135,6 +135,10 @@ func (j *jsiiProxy_SsmDocument) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_SsmDocument) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmDocument) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

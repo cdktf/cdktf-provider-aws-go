@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalRateBasedRule) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsWafregionalRateBasedRuleParameters(scope constructs.Construct, id *string, config *DataAwsWafregionalRateBasedRuleConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

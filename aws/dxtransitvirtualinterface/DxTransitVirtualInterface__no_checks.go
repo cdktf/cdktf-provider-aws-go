@@ -151,6 +151,10 @@ func (j *jsiiProxy_DxTransitVirtualInterface) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DxTransitVirtualInterface) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxTransitVirtualInterface) validateSetSitelinkEnabledParameters(val interface{}) error {
 	return nil
 }

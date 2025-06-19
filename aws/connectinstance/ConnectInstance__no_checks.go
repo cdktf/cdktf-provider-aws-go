@@ -155,6 +155,10 @@ func (j *jsiiProxy_ConnectInstance) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_MskconnectCustomPlugin) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectCustomPlugin) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectCustomPlugin) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

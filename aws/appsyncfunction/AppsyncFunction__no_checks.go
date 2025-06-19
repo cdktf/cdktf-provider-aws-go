@@ -147,6 +147,10 @@ func (j *jsiiProxy_AppsyncFunction) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncFunction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncFunction) validateSetRequestMappingTemplateParameters(val *string) error {
 	return nil
 }

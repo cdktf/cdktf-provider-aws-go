@@ -423,6 +423,14 @@ func (j *jsiiProxy_SesReceiptFilter) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptFilter) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSesReceiptFilterParameters(scope constructs.Construct, id *string, config *SesReceiptFilterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetOwnerParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderComponents) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsImagebuilderComponentsParameters(scope constructs.Construct, id *string, config *DataAwsImagebuilderComponentsConfig) error {
 	return nil
 }

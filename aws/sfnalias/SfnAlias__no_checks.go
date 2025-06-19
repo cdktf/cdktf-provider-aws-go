@@ -127,6 +127,10 @@ func (j *jsiiProxy_SfnAlias) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_SfnAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSfnAliasParameters(scope constructs.Construct, id *string, config *SfnAliasConfig) error {
 	return nil
 }

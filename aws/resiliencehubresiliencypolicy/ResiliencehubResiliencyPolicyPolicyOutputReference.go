@@ -5,15 +5,15 @@ package resiliencehubresiliencypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/resiliencehubresiliencypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/resiliencehubresiliencypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type ResiliencehubResiliencyPolicyPolicyOutputReference interface {
 	cdktf.ComplexObject
-	Az() ResiliencehubResiliencyPolicyPolicyAzOutputReference
+	Az() ResiliencehubResiliencyPolicyPolicyAzList
 	AzInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -32,13 +32,13 @@ type ResiliencehubResiliencyPolicyPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Hardware() ResiliencehubResiliencyPolicyPolicyHardwareOutputReference
+	Hardware() ResiliencehubResiliencyPolicyPolicyHardwareList
 	HardwareInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Region() ResiliencehubResiliencyPolicyPolicyRegionOutputReference
+	Region() ResiliencehubResiliencyPolicyPolicyRegionList
 	RegionInput() interface{}
-	SoftwareAttribute() ResiliencehubResiliencyPolicyPolicySoftwareOutputReference
+	SoftwareAttribute() ResiliencehubResiliencyPolicyPolicySoftwareList
 	SoftwareAttributeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -72,11 +72,14 @@ type ResiliencehubResiliencyPolicyPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAz(value *ResiliencehubResiliencyPolicyPolicyAz)
-	PutHardware(value *ResiliencehubResiliencyPolicyPolicyHardware)
-	PutRegion(value *ResiliencehubResiliencyPolicyPolicyRegion)
-	PutSoftwareAttribute(value *ResiliencehubResiliencyPolicyPolicySoftware)
+	PutAz(value interface{})
+	PutHardware(value interface{})
+	PutRegion(value interface{})
+	PutSoftwareAttribute(value interface{})
+	ResetAz()
+	ResetHardware()
 	ResetRegion()
+	ResetSoftwareAttribute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -92,8 +95,8 @@ type jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Az() ResiliencehubResiliencyPolicyPolicyAzOutputReference {
-	var returns ResiliencehubResiliencyPolicyPolicyAzOutputReference
+func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Az() ResiliencehubResiliencyPolicyPolicyAzList {
+	var returns ResiliencehubResiliencyPolicyPolicyAzList
 	_jsii_.Get(
 		j,
 		"az",
@@ -152,8 +155,8 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Hardware() ResiliencehubResiliencyPolicyPolicyHardwareOutputReference {
-	var returns ResiliencehubResiliencyPolicyPolicyHardwareOutputReference
+func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Hardware() ResiliencehubResiliencyPolicyPolicyHardwareList {
+	var returns ResiliencehubResiliencyPolicyPolicyHardwareList
 	_jsii_.Get(
 		j,
 		"hardware",
@@ -182,8 +185,8 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) InternalV
 	return returns
 }
 
-func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Region() ResiliencehubResiliencyPolicyPolicyRegionOutputReference {
-	var returns ResiliencehubResiliencyPolicyPolicyRegionOutputReference
+func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Region() ResiliencehubResiliencyPolicyPolicyRegionList {
+	var returns ResiliencehubResiliencyPolicyPolicyRegionList
 	_jsii_.Get(
 		j,
 		"region",
@@ -202,8 +205,8 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) RegionInp
 	return returns
 }
 
-func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) SoftwareAttribute() ResiliencehubResiliencyPolicyPolicySoftwareOutputReference {
-	var returns ResiliencehubResiliencyPolicyPolicySoftwareOutputReference
+func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) SoftwareAttribute() ResiliencehubResiliencyPolicyPolicySoftwareList {
+	var returns ResiliencehubResiliencyPolicyPolicySoftwareList
 	_jsii_.Get(
 		j,
 		"softwareAttribute",
@@ -243,29 +246,29 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Terraform
 }
 
 
-func NewResiliencehubResiliencyPolicyPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ResiliencehubResiliencyPolicyPolicyOutputReference {
+func NewResiliencehubResiliencyPolicyPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ResiliencehubResiliencyPolicyPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewResiliencehubResiliencyPolicyPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewResiliencehubResiliencyPolicyPolicyOutputReference_Override(r ResiliencehubResiliencyPolicyPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewResiliencehubResiliencyPolicyPolicyOutputReference_Override(r ResiliencehubResiliencyPolicyPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.resiliencehubResiliencyPolicy.ResiliencehubResiliencyPolicyPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
@@ -511,7 +514,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) Interpola
 	return returns
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutAz(value *ResiliencehubResiliencyPolicyPolicyAz) {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutAz(value interface{}) {
 	if err := r.validatePutAzParameters(value); err != nil {
 		panic(err)
 	}
@@ -522,7 +525,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutAz(val
 	)
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutHardware(value *ResiliencehubResiliencyPolicyPolicyHardware) {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutHardware(value interface{}) {
 	if err := r.validatePutHardwareParameters(value); err != nil {
 		panic(err)
 	}
@@ -533,7 +536,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutHardwa
 	)
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutRegion(value *ResiliencehubResiliencyPolicyPolicyRegion) {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutRegion(value interface{}) {
 	if err := r.validatePutRegionParameters(value); err != nil {
 		panic(err)
 	}
@@ -544,7 +547,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutRegion
 	)
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutSoftwareAttribute(value *ResiliencehubResiliencyPolicyPolicySoftware) {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutSoftwareAttribute(value interface{}) {
 	if err := r.validatePutSoftwareAttributeParameters(value); err != nil {
 		panic(err)
 	}
@@ -555,10 +558,34 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) PutSoftwa
 	)
 }
 
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) ResetAz() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAz",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) ResetHardware() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetHardware",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) ResetRegion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyOutputReference) ResetSoftwareAttribute() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSoftwareAttribute",
 		nil, // no parameters
 	)
 }

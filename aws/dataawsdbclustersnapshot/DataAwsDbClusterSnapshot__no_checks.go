@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetMostRecentParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetSnapshotTypeParameters(val *string) error {
 	return nil
 }

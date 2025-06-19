@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicy) validateSetNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicy) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

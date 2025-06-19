@@ -407,6 +407,14 @@ func (j *jsiiProxy_ServicecatalogappregistryAttributeGroupAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogappregistryAttributeGroupAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewServicecatalogappregistryAttributeGroupAssociationParameters(scope constructs.Construct, id *string, config *ServicecatalogappregistryAttributeGroupAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

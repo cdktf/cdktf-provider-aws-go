@@ -5,14 +5,14 @@ package drsreplicationconfigurationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/drsreplicationconfigurationtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/drsreplicationconfigurationtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template}.
 type DrsReplicationConfigurationTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,9 @@ type DrsReplicationConfigurationTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationServerInstanceType() *string
 	SetReplicationServerInstanceType(val *string)
 	ReplicationServerInstanceTypeInput() *string
@@ -161,6 +164,7 @@ type DrsReplicationConfigurationTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPitPolicy()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -511,6 +515,26 @@ func (j *jsiiProxy_DrsReplicationConfigurationTemplate) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DrsReplicationConfigurationTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DrsReplicationConfigurationTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DrsReplicationConfigurationTemplate) ReplicationServerInstanceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -692,7 +716,7 @@ func (j *jsiiProxy_DrsReplicationConfigurationTemplate) UseDedicatedReplicationS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
 func NewDrsReplicationConfigurationTemplate(scope constructs.Construct, id *string, config *DrsReplicationConfigurationTemplateConfig) DrsReplicationConfigurationTemplate {
 	_init_.Initialize()
 
@@ -710,7 +734,7 @@ func NewDrsReplicationConfigurationTemplate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
 func NewDrsReplicationConfigurationTemplate_Override(d DrsReplicationConfigurationTemplate, scope constructs.Construct, id *string, config *DrsReplicationConfigurationTemplateConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (j *jsiiProxy_DrsReplicationConfigurationTemplate)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DrsReplicationConfigurationTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1346,6 +1381,14 @@ func (d *jsiiProxy_DrsReplicationConfigurationTemplate) ResetPitPolicy() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPitPolicy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DrsReplicationConfigurationTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

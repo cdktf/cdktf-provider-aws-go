@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudwatchLogDelivery) validateSetRecordFieldsParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogDelivery) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogDelivery) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

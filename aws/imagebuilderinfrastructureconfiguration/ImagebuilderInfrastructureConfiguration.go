@@ -5,14 +5,14 @@ package imagebuilderinfrastructureconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/imagebuilderinfrastructureconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/imagebuilderinfrastructureconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration}.
 type ImagebuilderInfrastructureConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -82,6 +82,9 @@ type ImagebuilderInfrastructureConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceTags() *map[string]*string
 	SetResourceTags(val *map[string]*string)
 	ResourceTagsInput() *map[string]*string
@@ -165,6 +168,7 @@ type ImagebuilderInfrastructureConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlacement()
+	ResetRegion()
 	ResetResourceTags()
 	ResetSecurityGroupIds()
 	ResetSnsTopicArn()
@@ -530,6 +534,26 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResourceTags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -701,7 +725,7 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
 func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *string, config *ImagebuilderInfrastructureConfigurationConfig) ImagebuilderInfrastructureConfiguration {
 	_init_.Initialize()
 
@@ -719,7 +743,7 @@ func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_infrastructure_configuration aws_imagebuilder_infrastructure_configuration} Resource.
 func NewImagebuilderInfrastructureConfiguration_Override(i ImagebuilderInfrastructureConfiguration, scope constructs.Construct, id *string, config *ImagebuilderInfrastructureConfigurationConfig) {
 	_init_.Initialize()
 
@@ -860,6 +884,17 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderInfrastructureConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1387,6 +1422,14 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetPlacement() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPlacement",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderInfrastructureConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

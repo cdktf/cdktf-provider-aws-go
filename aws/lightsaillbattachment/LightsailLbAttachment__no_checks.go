@@ -119,6 +119,10 @@ func (j *jsiiProxy_LightsailLbAttachment) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailLbAttachmentParameters(scope constructs.Construct, id *string, config *LightsailLbAttachmentConfig) error {
 	return nil
 }

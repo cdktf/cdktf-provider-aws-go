@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetStateParameters(val *string) error {
 	return nil
 }

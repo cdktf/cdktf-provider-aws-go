@@ -139,6 +139,10 @@ func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbMultiRegionCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

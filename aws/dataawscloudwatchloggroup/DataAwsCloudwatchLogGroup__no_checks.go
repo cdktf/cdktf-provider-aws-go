@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudwatchLogGroup) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchLogGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchLogGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

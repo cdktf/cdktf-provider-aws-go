@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionRedirectOutputReference) validateS
 	return nil
 }
 
-func validateNewDataAwsLbListenerRuleActionRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsLbListenerRuleActionRedirectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

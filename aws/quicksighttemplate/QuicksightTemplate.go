@@ -5,14 +5,14 @@ package quicksighttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksighttemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksighttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_template aws_quicksight_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_template aws_quicksight_template}.
 type QuicksightTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type QuicksightTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SourceEntity() QuicksightTemplateSourceEntityOutputReference
 	SourceEntityArn() *string
 	SourceEntityInput() *QuicksightTemplateSourceEntity
@@ -150,6 +153,7 @@ type QuicksightTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissions()
+	ResetRegion()
 	ResetSourceEntity()
 	ResetTags()
 	ResetTagsAll()
@@ -432,6 +436,26 @@ func (j *jsiiProxy_QuicksightTemplate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightTemplate) SourceEntity() QuicksightTemplateSourceEntityOutputReference {
 	var returns QuicksightTemplateSourceEntityOutputReference
 	_jsii_.Get(
@@ -613,7 +637,7 @@ func (j *jsiiProxy_QuicksightTemplate) VersionNumber() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_template aws_quicksight_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_template aws_quicksight_template} Resource.
 func NewQuicksightTemplate(scope constructs.Construct, id *string, config *QuicksightTemplateConfig) QuicksightTemplate {
 	_init_.Initialize()
 
@@ -631,7 +655,7 @@ func NewQuicksightTemplate(scope constructs.Construct, id *string, config *Quick
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_template aws_quicksight_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_template aws_quicksight_template} Resource.
 func NewQuicksightTemplate_Override(q QuicksightTemplate, scope constructs.Construct, id *string, config *QuicksightTemplateConfig) {
 	_init_.Initialize()
 
@@ -750,6 +774,17 @@ func (j *jsiiProxy_QuicksightTemplate)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1220,6 +1255,14 @@ func (q *jsiiProxy_QuicksightTemplate) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

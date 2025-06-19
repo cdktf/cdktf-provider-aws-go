@@ -5,14 +5,14 @@ package cloudwatchcontributormanagedinsightrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudwatchcontributormanagedinsightrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudwatchcontributormanagedinsightrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule}.
 type CloudwatchContributorManagedInsightRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,6 +56,9 @@ type CloudwatchContributorManagedInsightRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -122,6 +125,7 @@ type CloudwatchContributorManagedInsightRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetState()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -282,6 +286,26 @@ func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,7 +437,7 @@ func (j *jsiiProxy_CloudwatchContributorManagedInsightRule) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule} Resource.
 func NewCloudwatchContributorManagedInsightRule(scope constructs.Construct, id *string, config *CloudwatchContributorManagedInsightRuleConfig) CloudwatchContributorManagedInsightRule {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewCloudwatchContributorManagedInsightRule(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudwatch_contributor_managed_insight_rule aws_cloudwatch_contributor_managed_insight_rule} Resource.
 func NewCloudwatchContributorManagedInsightRule_Override(c CloudwatchContributorManagedInsightRule, scope constructs.Construct, id *string, config *CloudwatchContributorManagedInsightRuleConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_CloudwatchContributorManagedInsightRule)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchContributorManagedInsightRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -911,6 +946,14 @@ func (c *jsiiProxy_CloudwatchContributorManagedInsightRule) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchContributorManagedInsightRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

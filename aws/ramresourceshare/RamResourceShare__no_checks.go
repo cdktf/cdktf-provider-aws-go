@@ -127,6 +127,10 @@ func (j *jsiiProxy_RamResourceShare) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_RamResourceShare) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RamResourceShare) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

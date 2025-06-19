@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) validateSetProductIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogLaunchPathsParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogLaunchPathsConfig) error {
 	return nil
 }

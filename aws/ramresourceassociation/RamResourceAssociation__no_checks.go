@@ -111,6 +111,10 @@ func (j *jsiiProxy_RamResourceAssociation) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RamResourceAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RamResourceAssociation) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

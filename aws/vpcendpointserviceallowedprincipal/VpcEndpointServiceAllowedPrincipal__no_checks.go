@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointServiceAllowedPrincipal) validateSetVpcEndpointServiceIdParameters(val *string) error {
 	return nil
 }

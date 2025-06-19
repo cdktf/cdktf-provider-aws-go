@@ -119,6 +119,10 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

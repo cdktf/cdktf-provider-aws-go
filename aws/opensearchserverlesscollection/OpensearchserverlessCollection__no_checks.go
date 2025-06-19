@@ -119,6 +119,10 @@ func (j *jsiiProxy_OpensearchserverlessCollection) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchserverlessCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchserverlessCollection) validateSetStandbyReplicasParameters(val *string) error {
 	return nil
 }

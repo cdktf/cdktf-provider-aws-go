@@ -5,14 +5,14 @@ package dataawschatbotslackworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawschatbotslackworkspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawschatbotslackworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace}.
 type DataAwsChatbotSlackWorkspace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -47,6 +47,9 @@ type DataAwsChatbotSlackWorkspace interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SlackTeamId() *string
 	SlackTeamName() *string
 	SetSlackTeamName(val *string)
@@ -85,6 +88,7 @@ type DataAwsChatbotSlackWorkspace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -214,6 +218,26 @@ func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) SlackTeamId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -275,7 +299,7 @@ func (j *jsiiProxy_DataAwsChatbotSlackWorkspace) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace} Data Source.
 func NewDataAwsChatbotSlackWorkspace(scope constructs.Construct, id *string, config *DataAwsChatbotSlackWorkspaceConfig) DataAwsChatbotSlackWorkspace {
 	_init_.Initialize()
 
@@ -293,7 +317,7 @@ func NewDataAwsChatbotSlackWorkspace(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/chatbot_slack_workspace aws_chatbot_slack_workspace} Data Source.
 func NewDataAwsChatbotSlackWorkspace_Override(d DataAwsChatbotSlackWorkspace, scope constructs.Construct, id *string, config *DataAwsChatbotSlackWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -346,6 +370,17 @@ func (j *jsiiProxy_DataAwsChatbotSlackWorkspace)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsChatbotSlackWorkspace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -650,6 +685,14 @@ func (d *jsiiProxy_DataAwsChatbotSlackWorkspace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsChatbotSlackWorkspace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

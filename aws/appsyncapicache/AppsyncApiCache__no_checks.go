@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncApiCache) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncApiCache) validateSetTransitEncryptionEnabledParameters(val interface{}) error {
 	return nil
 }

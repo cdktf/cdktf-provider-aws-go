@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateSetInternalValueParameters(val *DataAwsServicequotasTemplatesTemplates) error {
 	return nil
 }
 

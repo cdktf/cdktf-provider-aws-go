@@ -5,14 +5,14 @@ package dsqlclusterpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dsqlclusterpeering/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dsqlclusterpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering}.
 type DsqlClusterPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type DsqlClusterPeering interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,6 +122,7 @@ type DsqlClusterPeering interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -308,6 +312,26 @@ func (j *jsiiProxy_DsqlClusterPeering) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DsqlClusterPeering) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DsqlClusterPeering) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DsqlClusterPeering) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +403,7 @@ func (j *jsiiProxy_DsqlClusterPeering) WitnessRegionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering} Resource.
 func NewDsqlClusterPeering(scope constructs.Construct, id *string, config *DsqlClusterPeeringConfig) DsqlClusterPeering {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewDsqlClusterPeering(scope constructs.Construct, id *string, config *DsqlC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster_peering aws_dsql_cluster_peering} Resource.
 func NewDsqlClusterPeering_Override(d DsqlClusterPeering, scope constructs.Construct, id *string, config *DsqlClusterPeeringConfig) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_DsqlClusterPeering)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DsqlClusterPeering)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -877,6 +912,14 @@ func (d *jsiiProxy_DsqlClusterPeering) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DsqlClusterPeering) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

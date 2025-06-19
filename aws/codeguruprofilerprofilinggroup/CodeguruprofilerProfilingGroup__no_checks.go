@@ -119,6 +119,10 @@ func (j *jsiiProxy_CodeguruprofilerProfilingGroup) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_CodeguruprofilerProfilingGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeguruprofilerProfilingGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_DatasyncLocationSmb) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationSmb) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationSmb) validateSetServerHostnameParameters(val *string) error {
 	return nil
 }

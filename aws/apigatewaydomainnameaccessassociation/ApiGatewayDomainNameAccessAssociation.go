@@ -5,14 +5,14 @@ package apigatewaydomainnameaccessassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewaydomainnameaccessassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewaydomainnameaccessassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association}.
 type ApiGatewayDomainNameAccessAssociation interface {
 	cdktf.TerraformResource
 	AccessAssociationSource() *string
@@ -66,6 +66,9 @@ type ApiGatewayDomainNameAccessAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -122,6 +125,7 @@ type ApiGatewayDomainNameAccessAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -351,6 +355,26 @@ func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
 func NewApiGatewayDomainNameAccessAssociation(scope constructs.Construct, id *string, config *ApiGatewayDomainNameAccessAssociationConfig) ApiGatewayDomainNameAccessAssociation {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewApiGatewayDomainNameAccessAssociation(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_domain_name_access_association aws_api_gateway_domain_name_access_association} Resource.
 func NewApiGatewayDomainNameAccessAssociation_Override(a ApiGatewayDomainNameAccessAssociation, scope constructs.Construct, id *string, config *ApiGatewayDomainNameAccessAssociationConfig) {
 	_init_.Initialize()
 
@@ -538,6 +562,17 @@ func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayDomainNameAccessAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -910,6 +945,14 @@ func (a *jsiiProxy_ApiGatewayDomainNameAccessAssociation) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDomainNameAccessAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

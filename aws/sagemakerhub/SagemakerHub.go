@@ -5,14 +5,14 @@ package sagemakerhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerhub/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_hub aws_sagemaker_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_hub aws_sagemaker_hub}.
 type SagemakerHub interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type SagemakerHub interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3StorageConfig() SagemakerHubS3StorageConfigOutputReference
 	S3StorageConfigInput() *SagemakerHubS3StorageConfig
 	Tags() *map[string]*string
@@ -135,6 +138,7 @@ type SagemakerHub interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3StorageConfig()
 	ResetTags()
 	ResetTagsAll()
@@ -396,6 +400,26 @@ func (j *jsiiProxy_SagemakerHub) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerHub) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerHub) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerHub) S3StorageConfig() SagemakerHubS3StorageConfigOutputReference {
 	var returns SagemakerHubS3StorageConfigOutputReference
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_SagemakerHub) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_hub aws_sagemaker_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_hub aws_sagemaker_hub} Resource.
 func NewSagemakerHub(scope constructs.Construct, id *string, config *SagemakerHubConfig) SagemakerHub {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewSagemakerHub(scope constructs.Construct, id *string, config *SagemakerHu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_hub aws_sagemaker_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_hub aws_sagemaker_hub} Resource.
 func NewSagemakerHub_Override(s SagemakerHub, scope constructs.Construct, id *string, config *SagemakerHubConfig) {
 	_init_.Initialize()
 
@@ -635,6 +659,17 @@ func (j *jsiiProxy_SagemakerHub)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerHub)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1053,6 +1088,14 @@ func (s *jsiiProxy_SagemakerHub) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerHub) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

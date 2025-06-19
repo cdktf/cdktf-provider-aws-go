@@ -5,14 +5,14 @@ package guarddutymemberdetectorfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/guarddutymemberdetectorfeature/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/guarddutymemberdetectorfeature/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature}.
 type GuarddutyMemberDetectorFeature interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -66,6 +66,9 @@ type GuarddutyMemberDetectorFeature interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -123,6 +126,7 @@ type GuarddutyMemberDetectorFeature interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -351,6 +355,26 @@ func (j *jsiiProxy_GuarddutyMemberDetectorFeature) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GuarddutyMemberDetectorFeature) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuarddutyMemberDetectorFeature) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GuarddutyMemberDetectorFeature) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_GuarddutyMemberDetectorFeature) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
 func NewGuarddutyMemberDetectorFeature(scope constructs.Construct, id *string, config *GuarddutyMemberDetectorFeatureConfig) GuarddutyMemberDetectorFeature {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewGuarddutyMemberDetectorFeature(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
 func NewGuarddutyMemberDetectorFeature_Override(g GuarddutyMemberDetectorFeature, scope constructs.Construct, id *string, config *GuarddutyMemberDetectorFeatureConfig) {
 	_init_.Initialize()
 
@@ -528,6 +552,17 @@ func (j *jsiiProxy_GuarddutyMemberDetectorFeature)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GuarddutyMemberDetectorFeature)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -919,6 +954,14 @@ func (g *jsiiProxy_GuarddutyMemberDetectorFeature) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GuarddutyMemberDetectorFeature) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

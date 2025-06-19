@@ -574,6 +574,14 @@ func (j *jsiiProxy_BedrockCustomModel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_BedrockCustomModel) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BedrockCustomModel) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

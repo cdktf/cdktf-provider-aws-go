@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-aws-go/aws/v20
+module github.com/cdktf/cdktf-provider-aws-go/aws/v21
 
 go 1.18
 

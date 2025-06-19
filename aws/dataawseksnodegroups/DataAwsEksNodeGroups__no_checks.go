@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEksNodeGroupsParameters(scope constructs.Construct, id *string, config *DataAwsEksNodeGroupsConfig) error {
 	return nil
 }

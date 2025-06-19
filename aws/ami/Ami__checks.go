@@ -564,6 +564,14 @@ func (j *jsiiProxy_Ami) validateSetRamdiskIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Ami) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ami) validateSetRootDeviceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

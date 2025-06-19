@@ -123,6 +123,10 @@ func (j *jsiiProxy_ApiGatewayRestApiPut) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApiPut) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApiPut) validateSetRestApiIdParameters(val *string) error {
 	return nil
 }

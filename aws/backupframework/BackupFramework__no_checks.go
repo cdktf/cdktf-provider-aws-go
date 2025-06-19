@@ -127,6 +127,10 @@ func (j *jsiiProxy_BackupFramework) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_BackupFramework) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupFramework) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

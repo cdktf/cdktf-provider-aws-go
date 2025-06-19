@@ -5,14 +5,14 @@ package snstopicsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/snstopicsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/snstopicsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
 type SnsTopicSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,9 @@ type SnsTopicSubscription interface {
 	RedrivePolicy() *string
 	SetRedrivePolicy(val *string)
 	RedrivePolicyInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplayPolicy() *string
 	SetReplayPolicy(val *string)
 	ReplayPolicyInput() *string
@@ -158,6 +161,7 @@ type SnsTopicSubscription interface {
 	ResetOverrideLogicalId()
 	ResetRawMessageDelivery()
 	ResetRedrivePolicy()
+	ResetRegion()
 	ResetReplayPolicy()
 	ResetSubscriptionRoleArn()
 	SynthesizeAttributes() *map[string]interface{}
@@ -548,6 +552,26 @@ func (j *jsiiProxy_SnsTopicSubscription) RedrivePolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopicSubscription) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopicSubscription) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) ReplayPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -639,7 +663,7 @@ func (j *jsiiProxy_SnsTopicSubscription) TopicArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
 func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *SnsTopicSubscriptionConfig) SnsTopicSubscription {
 	_init_.Initialize()
 
@@ -657,7 +681,7 @@ func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *Sns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
 func NewSnsTopicSubscription_Override(s SnsTopicSubscription, scope constructs.Construct, id *string, config *SnsTopicSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -842,6 +866,17 @@ func (j *jsiiProxy_SnsTopicSubscription)SetRedrivePolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"redrivePolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopicSubscription)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1300,6 +1335,14 @@ func (s *jsiiProxy_SnsTopicSubscription) ResetRedrivePolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRedrivePolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopicSubscription) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

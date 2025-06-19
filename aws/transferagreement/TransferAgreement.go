@@ -5,14 +5,14 @@ package transferagreement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transferagreement/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferagreement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_agreement aws_transfer_agreement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_agreement aws_transfer_agreement}.
 type TransferAgreement interface {
 	cdktf.TerraformResource
 	AccessRole() *string
@@ -75,6 +75,9 @@ type TransferAgreement interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -139,6 +142,7 @@ type TransferAgreement interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -429,6 +433,26 @@ func (j *jsiiProxy_TransferAgreement) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferAgreement) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferAgreement) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferAgreement) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -530,7 +554,7 @@ func (j *jsiiProxy_TransferAgreement) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
 func NewTransferAgreement(scope constructs.Construct, id *string, config *TransferAgreementConfig) TransferAgreement {
 	_init_.Initialize()
 
@@ -548,7 +572,7 @@ func NewTransferAgreement(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transfer_agreement aws_transfer_agreement} Resource.
 func NewTransferAgreement_Override(t TransferAgreement, scope constructs.Construct, id *string, config *TransferAgreementConfig) {
 	_init_.Initialize()
 
@@ -689,6 +713,17 @@ func (j *jsiiProxy_TransferAgreement)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferAgreement)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1099,6 +1134,14 @@ func (t *jsiiProxy_TransferAgreement) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferAgreement) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

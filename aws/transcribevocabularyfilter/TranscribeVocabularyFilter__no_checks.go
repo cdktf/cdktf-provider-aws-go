@@ -115,6 +115,10 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

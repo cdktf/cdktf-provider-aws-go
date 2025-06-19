@@ -131,6 +131,10 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetQualifierParamete
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLambdaFunctionEventInvokeConfigParameters(scope constructs.Construct, id *string, config *LambdaFunctionEventInvokeConfigConfig) error {
 	return nil
 }

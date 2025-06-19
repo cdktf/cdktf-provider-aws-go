@@ -442,6 +442,14 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetSemanticVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

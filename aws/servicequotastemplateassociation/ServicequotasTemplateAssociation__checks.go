@@ -391,6 +391,14 @@ func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasTemplateAssociation) validateSetSkipDestroyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

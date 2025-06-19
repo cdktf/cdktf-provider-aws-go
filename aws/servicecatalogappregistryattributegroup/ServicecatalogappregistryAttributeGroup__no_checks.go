@@ -119,6 +119,10 @@ func (j *jsiiProxy_ServicecatalogappregistryAttributeGroup) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogappregistryAttributeGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogappregistryAttributeGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

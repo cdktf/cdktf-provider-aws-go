@@ -255,6 +255,14 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAccountIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAuthorizedAwsRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

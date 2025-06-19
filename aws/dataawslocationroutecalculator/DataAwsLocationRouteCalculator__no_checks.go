@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

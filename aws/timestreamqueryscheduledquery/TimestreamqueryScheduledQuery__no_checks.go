@@ -151,6 +151,10 @@ func (j *jsiiProxy_TimestreamqueryScheduledQuery) validateSetQueryStringParamete
 	return nil
 }
 
+func (j *jsiiProxy_TimestreamqueryScheduledQuery) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamqueryScheduledQuery) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

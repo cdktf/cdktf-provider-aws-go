@@ -123,6 +123,10 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

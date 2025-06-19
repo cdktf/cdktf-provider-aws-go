@@ -5,14 +5,14 @@ package fsxontapstoragevirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxontapstoragevirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxontapstoragevirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine}.
 type FsxOntapStorageVirtualMachine interface {
 	cdktf.TerraformResource
 	ActiveDirectoryConfiguration() FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference
@@ -68,6 +68,9 @@ type FsxOntapStorageVirtualMachine interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootVolumeSecurityStyle() *string
 	SetRootVolumeSecurityStyle(val *string)
 	RootVolumeSecurityStyleInput() *string
@@ -140,6 +143,7 @@ type FsxOntapStorageVirtualMachine interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRootVolumeSecurityStyle()
 	ResetSvmAdminPassword()
 	ResetTags()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachine) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapStorageVirtualMachine) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapStorageVirtualMachine) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapStorageVirtualMachine) RootVolumeSecurityStyle() *string {
 	var returns *string
 	_jsii_.Get(
@@ -544,7 +568,7 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachine) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine} Resource.
 func NewFsxOntapStorageVirtualMachine(scope constructs.Construct, id *string, config *FsxOntapStorageVirtualMachineConfig) FsxOntapStorageVirtualMachine {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewFsxOntapStorageVirtualMachine(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_ontap_storage_virtual_machine aws_fsx_ontap_storage_virtual_machine} Resource.
 func NewFsxOntapStorageVirtualMachine_Override(f FsxOntapStorageVirtualMachine, scope constructs.Construct, id *string, config *FsxOntapStorageVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -670,6 +694,17 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachine)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapStorageVirtualMachine)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1113,6 +1148,14 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

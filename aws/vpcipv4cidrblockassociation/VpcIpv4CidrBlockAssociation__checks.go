@@ -434,6 +434,14 @@ func (j *jsiiProxy_VpcIpv4CidrBlockAssociation) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpv4CidrBlockAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv4CidrBlockAssociation) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

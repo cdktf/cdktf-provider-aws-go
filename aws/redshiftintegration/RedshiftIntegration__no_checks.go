@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftIntegration) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftIntegration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftIntegration) validateSetSourceArnParameters(val *string) error {
 	return nil
 }

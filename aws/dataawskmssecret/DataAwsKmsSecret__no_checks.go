@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsKmsSecret) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsSecret) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKmsSecretParameters(scope constructs.Construct, id *string, config *DataAwsKmsSecretConfig) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

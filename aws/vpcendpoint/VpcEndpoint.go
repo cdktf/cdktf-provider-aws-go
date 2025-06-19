@@ -5,14 +5,14 @@ package vpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint aws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint aws_vpc_endpoint}.
 type VpcEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -78,6 +78,9 @@ type VpcEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequesterManaged() cdktf.IResolvable
 	ResourceConfigurationArn() *string
 	SetResourceConfigurationArn(val *string)
@@ -178,6 +181,7 @@ type VpcEndpoint interface {
 	ResetOverrideLogicalId()
 	ResetPolicy()
 	ResetPrivateDnsEnabled()
+	ResetRegion()
 	ResetResourceConfigurationArn()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
@@ -518,6 +522,26 @@ func (j *jsiiProxy_VpcEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpoint) RequesterManaged() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -829,7 +853,7 @@ func (j *jsiiProxy_VpcEndpoint) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointConfig) VpcEndpoint {
 	_init_.Initialize()
 
@@ -847,7 +871,7 @@ func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint_Override(v VpcEndpoint, scope constructs.Construct, id *string, config *VpcEndpointConfig) {
 	_init_.Initialize()
 
@@ -977,6 +1001,17 @@ func (j *jsiiProxy_VpcEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1540,6 +1575,14 @@ func (v *jsiiProxy_VpcEndpoint) ResetPrivateDnsEnabled() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPrivateDnsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

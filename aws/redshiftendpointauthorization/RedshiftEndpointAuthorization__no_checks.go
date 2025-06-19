@@ -123,6 +123,10 @@ func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftEndpointAuthorization) validateSetVpcIdsParameters(val *[]*string) error {
 	return nil
 }

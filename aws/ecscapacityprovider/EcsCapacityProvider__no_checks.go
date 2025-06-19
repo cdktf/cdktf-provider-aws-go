@@ -119,6 +119,10 @@ func (j *jsiiProxy_EcsCapacityProvider) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_EcsCapacityProvider) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsCapacityProvider) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

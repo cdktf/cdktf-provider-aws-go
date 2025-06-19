@@ -123,6 +123,10 @@ func (j *jsiiProxy_RdsReservedInstance) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_RdsReservedInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsReservedInstance) validateSetReservationIdParameters(val *string) error {
 	return nil
 }

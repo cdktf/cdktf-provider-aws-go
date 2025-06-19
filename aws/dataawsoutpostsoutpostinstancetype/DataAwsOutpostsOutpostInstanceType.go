@@ -5,14 +5,14 @@ package dataawsoutpostsoutpostinstancetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsoutpostsoutpostinstancetype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsoutpostsoutpostinstancetype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type}.
 type DataAwsOutpostsOutpostInstanceType interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -59,6 +59,9 @@ type DataAwsOutpostsOutpostInstanceType interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,6 +99,7 @@ type DataAwsOutpostsOutpostInstanceType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredInstanceTypes()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -336,7 +360,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
 func NewDataAwsOutpostsOutpostInstanceType(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) DataAwsOutpostsOutpostInstanceType {
 	_init_.Initialize()
 
@@ -354,7 +378,7 @@ func NewDataAwsOutpostsOutpostInstanceType(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
 func NewDataAwsOutpostsOutpostInstanceType_Override(d DataAwsOutpostsOutpostInstanceType, scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) {
 	_init_.Initialize()
 
@@ -451,6 +475,17 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType)SetProvider(val cdktf.Terr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -768,6 +803,14 @@ func (d *jsiiProxy_DataAwsOutpostsOutpostInstanceType) ResetPreferredInstanceTyp
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredInstanceTypes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsOutpostsOutpostInstanceType) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

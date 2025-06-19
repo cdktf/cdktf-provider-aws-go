@@ -119,6 +119,10 @@ func (j *jsiiProxy_VpclatticeTargetGroupAttachment) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroupAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroupAttachment) validateSetTargetGroupIdentifierParameters(val *string) error {
 	return nil
 }

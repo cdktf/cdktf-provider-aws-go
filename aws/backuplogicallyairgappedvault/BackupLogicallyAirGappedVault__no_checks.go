@@ -123,6 +123,10 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

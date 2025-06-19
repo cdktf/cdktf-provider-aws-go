@@ -5,14 +5,14 @@ package chatbotslackchannelconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/chatbotslackchannelconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/chatbotslackchannelconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration}.
 type ChatbotSlackChannelConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type ChatbotSlackChannelConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SlackChannelId() *string
 	SetSlackChannelId(val *string)
 	SlackChannelIdInput() *string
@@ -143,6 +146,7 @@ type ChatbotSlackChannelConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSnsTopicArns()
 	ResetTags()
 	ResetTimeouts()
@@ -385,6 +389,26 @@ func (j *jsiiProxy_ChatbotSlackChannelConfiguration) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ChatbotSlackChannelConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChatbotSlackChannelConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ChatbotSlackChannelConfiguration) SlackChannelId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -566,7 +590,7 @@ func (j *jsiiProxy_ChatbotSlackChannelConfiguration) UserAuthorizationRequiredIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration} Resource.
 func NewChatbotSlackChannelConfiguration(scope constructs.Construct, id *string, config *ChatbotSlackChannelConfigurationConfig) ChatbotSlackChannelConfiguration {
 	_init_.Initialize()
 
@@ -584,7 +608,7 @@ func NewChatbotSlackChannelConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/chatbot_slack_channel_configuration aws_chatbot_slack_channel_configuration} Resource.
 func NewChatbotSlackChannelConfiguration_Override(c ChatbotSlackChannelConfiguration, scope constructs.Construct, id *string, config *ChatbotSlackChannelConfigurationConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func (j *jsiiProxy_ChatbotSlackChannelConfiguration)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ChatbotSlackChannelConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1146,6 +1181,14 @@ func (c *jsiiProxy_ChatbotSlackChannelConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChatbotSlackChannelConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

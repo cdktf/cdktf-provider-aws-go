@@ -5,14 +5,14 @@ package workspaceswebnetworksettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/workspaceswebnetworksettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebnetworksettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings}.
 type WorkspaceswebNetworkSettings interface {
 	cdktf.TerraformResource
 	AssociatedPortalArns() *[]*string
@@ -57,6 +57,9 @@ type WorkspaceswebNetworkSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -122,6 +125,7 @@ type WorkspaceswebNetworkSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -291,6 +295,26 @@ func (j *jsiiProxy_WorkspaceswebNetworkSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspaceswebNetworkSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspaceswebNetworkSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspaceswebNetworkSettings) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_WorkspaceswebNetworkSettings) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
 func NewWorkspaceswebNetworkSettings(scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsConfig) WorkspaceswebNetworkSettings {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewWorkspaceswebNetworkSettings(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
 func NewWorkspaceswebNetworkSettings_Override(w WorkspaceswebNetworkSettings, scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsConfig) {
 	_init_.Initialize()
 
@@ -505,6 +529,17 @@ func (j *jsiiProxy_WorkspaceswebNetworkSettings)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspaceswebNetworkSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -910,6 +945,14 @@ func (w *jsiiProxy_WorkspaceswebNetworkSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspaceswebNetworkSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

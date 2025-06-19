@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) validateSetProductDescrip
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRdsReservedInstanceOfferingParameters(scope constructs.Construct, id *string, config *DataAwsRdsReservedInstanceOfferingConfig) error {
 	return nil
 }

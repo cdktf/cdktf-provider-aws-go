@@ -119,6 +119,10 @@ func (j *jsiiProxy_MskClusterPolicy) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_MskClusterPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMskClusterPolicyParameters(scope constructs.Construct, id *string, config *MskClusterPolicyConfig) error {
 	return nil
 }

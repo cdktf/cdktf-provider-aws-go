@@ -5,15 +5,15 @@ package rekognitionstreamprocessor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type RekognitionStreamProcessorRegionsOfInterestOutputReference interface {
 	cdktf.ComplexObject
-	BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
+	BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxList
 	BoundingBoxInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
@@ -68,7 +68,7 @@ type RekognitionStreamProcessorRegionsOfInterestOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBoundingBox(value *RekognitionStreamProcessorRegionsOfInterestBoundingBox)
+	PutBoundingBox(value interface{})
 	PutPolygon(value interface{})
 	ResetBoundingBox()
 	ResetPolygon()
@@ -87,8 +87,8 @@ type jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference {
-	var returns RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
+func (j *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) BoundingBox() RekognitionStreamProcessorRegionsOfInterestBoundingBoxList {
+	var returns RekognitionStreamProcessorRegionsOfInterestBoundingBoxList
 	_jsii_.Get(
 		j,
 		"boundingBox",
@@ -466,7 +466,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) I
 	return returns
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) PutBoundingBox(value *RekognitionStreamProcessorRegionsOfInterestBoundingBox) {
+func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestOutputReference) PutBoundingBox(value interface{}) {
 	if err := r.validatePutBoundingBoxParameters(value); err != nil {
 		panic(err)
 	}

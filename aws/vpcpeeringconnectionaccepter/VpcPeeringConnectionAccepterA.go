@@ -5,14 +5,14 @@ package vpcpeeringconnectionaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcpeeringconnectionaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcpeeringconnectionaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter}.
 type VpcPeeringConnectionAccepterA interface {
 	cdktf.TerraformResource
 	Accepter() VpcPeeringConnectionAccepterAccepterOutputReference
@@ -67,6 +67,9 @@ type VpcPeeringConnectionAccepterA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Requester() VpcPeeringConnectionAccepterRequesterOutputReference
 	RequesterInput() *VpcPeeringConnectionAccepterRequester
 	Tags() *map[string]*string
@@ -139,6 +142,7 @@ type VpcPeeringConnectionAccepterA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRequester()
 	ResetTags()
 	ResetTagsAll()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcPeeringConnectionAccepterA) Requester() VpcPeeringConnectionAccepterRequesterOutputReference {
 	var returns VpcPeeringConnectionAccepterRequesterOutputReference
 	_jsii_.Get(
@@ -532,7 +556,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) VpcPeeringConnectionIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
 func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterAConfig) VpcPeeringConnectionAccepterA {
 	_init_.Initialize()
 
@@ -550,7 +574,7 @@ func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
 func NewVpcPeeringConnectionAccepterA_Override(v VpcPeeringConnectionAccepterA, scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterAConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1098,6 +1133,14 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

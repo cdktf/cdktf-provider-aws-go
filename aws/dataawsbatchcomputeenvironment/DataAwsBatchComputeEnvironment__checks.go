@@ -154,14 +154,6 @@ func validateDataAwsBatchComputeEnvironment_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -230,6 +222,22 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetIdParameters(val *
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

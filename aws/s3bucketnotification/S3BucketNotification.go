@@ -5,14 +5,14 @@ package s3bucketnotification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketnotification/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketnotification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}.
 type S3BucketNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -68,6 +68,9 @@ type S3BucketNotification interface {
 	QueueInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -129,6 +132,7 @@ type S3BucketNotification interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueue()
+	ResetRegion()
 	ResetTopic()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_S3BucketNotification) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketNotification) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketNotification) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketNotification) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_S3BucketNotification) TopicInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3BucketNotificationConfig) S3BucketNotification {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification_Override(s S3BucketNotification, scope constructs.Construct, id *string, config *S3BucketNotificationConfig) {
 	_init_.Initialize()
 
@@ -555,6 +579,17 @@ func (j *jsiiProxy_S3BucketNotification)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketNotification)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -981,6 +1016,14 @@ func (s *jsiiProxy_S3BucketNotification) ResetQueue() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetQueue",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketNotification) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

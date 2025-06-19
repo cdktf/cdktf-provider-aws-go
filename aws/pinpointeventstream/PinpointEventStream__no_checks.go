@@ -119,6 +119,10 @@ func (j *jsiiProxy_PinpointEventStream) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEventStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEventStream) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

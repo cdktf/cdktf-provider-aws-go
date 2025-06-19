@@ -119,6 +119,10 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

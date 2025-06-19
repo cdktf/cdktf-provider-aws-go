@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) validateSetLif
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsImagebuilderDistributionConfigurationsParameters(scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationsConfig) error {
 	return nil
 }

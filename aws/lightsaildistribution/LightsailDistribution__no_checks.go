@@ -151,6 +151,10 @@ func (j *jsiiProxy_LightsailDistribution) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDistribution) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDistribution) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

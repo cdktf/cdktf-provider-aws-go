@@ -215,6 +215,10 @@ func (j *jsiiProxy_DocdbCluster) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetSkipFinalSnapshotParameters(val interface{}) error {
 	return nil
 }

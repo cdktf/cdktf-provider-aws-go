@@ -119,6 +119,10 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkfirewallLoggingConfigurationParameters(scope constructs.Construct, id *string, config *NetworkfirewallLoggingConfigurationConfig) error {
 	return nil
 }

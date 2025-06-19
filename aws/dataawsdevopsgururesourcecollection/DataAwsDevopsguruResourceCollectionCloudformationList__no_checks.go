@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

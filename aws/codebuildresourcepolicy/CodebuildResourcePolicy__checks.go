@@ -407,6 +407,14 @@ func (j *jsiiProxy_CodebuildResourcePolicy) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildResourcePolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

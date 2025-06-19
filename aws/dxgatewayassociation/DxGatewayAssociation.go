@@ -5,14 +5,14 @@ package dxgatewayassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxgatewayassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxgatewayassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
 type DxGatewayAssociation interface {
 	cdktf.TerraformResource
 	AllowedPrefixes() *[]*string
@@ -76,6 +76,9 @@ type DxGatewayAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,9 +87,6 @@ type DxGatewayAssociation interface {
 	TerraformResourceType() *string
 	Timeouts() DxGatewayAssociationTimeoutsOutputReference
 	TimeoutsInput() interface{}
-	VpnGatewayId() *string
-	SetVpnGatewayId(val *string)
-	VpnGatewayIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -139,8 +139,8 @@ type DxGatewayAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProposalId()
+	ResetRegion()
 	ResetTimeouts()
-	ResetVpnGatewayId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -439,6 +439,26 @@ func (j *jsiiProxy_DxGatewayAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DxGatewayAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxGatewayAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DxGatewayAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -489,28 +509,8 @@ func (j *jsiiProxy_DxGatewayAssociation) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DxGatewayAssociation) VpnGatewayId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpnGatewayId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DxGatewayAssociation) VpnGatewayIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpnGatewayIdInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) DxGatewayAssociation {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation_Override(d DxGatewayAssociation, scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) {
 	_init_.Initialize()
 
@@ -673,13 +673,13 @@ func (j *jsiiProxy_DxGatewayAssociation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DxGatewayAssociation)SetVpnGatewayId(val *string) {
-	if err := j.validateSetVpnGatewayIdParameters(val); err != nil {
+func (j *jsiiProxy_DxGatewayAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"vpnGatewayId",
+		"region",
 		val,
 	)
 }
@@ -1096,18 +1096,18 @@ func (d *jsiiProxy_DxGatewayAssociation) ResetProposalId() {
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) ResetTimeouts() {
+func (d *jsiiProxy_DxGatewayAssociation) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTimeouts",
+		"resetRegion",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DxGatewayAssociation) ResetVpnGatewayId() {
+func (d *jsiiProxy_DxGatewayAssociation) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetVpnGatewayId",
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

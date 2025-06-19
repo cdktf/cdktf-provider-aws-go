@@ -5,14 +5,14 @@ package devopsgurunotificationchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devopsgurunotificationchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devopsgurunotificationchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
 type DevopsguruNotificationChannel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type DevopsguruNotificationChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Sns() DevopsguruNotificationChannelSnsList
 	SnsInput() interface{}
 	// Experimental.
@@ -115,6 +118,7 @@ type DevopsguruNotificationChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSns()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -294,6 +298,26 @@ func (j *jsiiProxy_DevopsguruNotificationChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevopsguruNotificationChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevopsguruNotificationChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevopsguruNotificationChannel) Sns() DevopsguruNotificationChannelSnsList {
 	var returns DevopsguruNotificationChannelSnsList
 	_jsii_.Get(
@@ -345,7 +369,7 @@ func (j *jsiiProxy_DevopsguruNotificationChannel) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource.
 func NewDevopsguruNotificationChannel(scope constructs.Construct, id *string, config *DevopsguruNotificationChannelConfig) DevopsguruNotificationChannel {
 	_init_.Initialize()
 
@@ -363,7 +387,7 @@ func NewDevopsguruNotificationChannel(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel} Resource.
 func NewDevopsguruNotificationChannel_Override(d DevopsguruNotificationChannel, scope constructs.Construct, id *string, config *DevopsguruNotificationChannelConfig) {
 	_init_.Initialize()
 
@@ -438,6 +462,17 @@ func (j *jsiiProxy_DevopsguruNotificationChannel)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevopsguruNotificationChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -829,6 +864,14 @@ func (d *jsiiProxy_DevopsguruNotificationChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevopsguruNotificationChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

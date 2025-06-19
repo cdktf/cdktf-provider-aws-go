@@ -131,6 +131,10 @@ func (j *jsiiProxy_DxConnection) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_DxConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnection) validateSetRequestMacsecParameters(val interface{}) error {
 	return nil
 }

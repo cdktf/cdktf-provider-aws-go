@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) validatePutDisplayDataParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference) validateSetInternalValueParameters(val *DataAwsSsoadminApplicationProvidersApplicationProviders) error {
 	return nil
 }
 

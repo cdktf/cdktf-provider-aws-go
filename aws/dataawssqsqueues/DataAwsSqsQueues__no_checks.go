@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSqsQueues) validateSetQueueNamePrefixParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSqsQueues) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSqsQueuesParameters(scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) error {
 	return nil
 }

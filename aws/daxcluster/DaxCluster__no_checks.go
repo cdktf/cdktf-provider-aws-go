@@ -155,6 +155,10 @@ func (j *jsiiProxy_DaxCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_DaxCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxCluster) validateSetReplicationFactorParameters(val *float64) error {
 	return nil
 }

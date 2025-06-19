@@ -119,6 +119,10 @@ func (j *jsiiProxy_OamSink) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_OamSink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OamSink) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

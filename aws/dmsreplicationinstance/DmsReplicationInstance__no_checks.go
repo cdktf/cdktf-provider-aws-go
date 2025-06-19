@@ -159,6 +159,10 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetPubliclyAccessibleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) validateSetReplicationInstanceClassParameters(val *string) error {
 	return nil
 }

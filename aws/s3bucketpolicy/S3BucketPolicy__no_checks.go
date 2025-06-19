@@ -119,6 +119,10 @@ func (j *jsiiProxy_S3BucketPolicy) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3BucketPolicyParameters(scope constructs.Construct, id *string, config *S3BucketPolicyConfig) error {
 	return nil
 }

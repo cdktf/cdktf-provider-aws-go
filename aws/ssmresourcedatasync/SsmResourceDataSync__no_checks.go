@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmResourceDataSync) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_SsmResourceDataSync) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSsmResourceDataSyncParameters(scope constructs.Construct, id *string, config *SsmResourceDataSyncConfig) error {
 	return nil
 }

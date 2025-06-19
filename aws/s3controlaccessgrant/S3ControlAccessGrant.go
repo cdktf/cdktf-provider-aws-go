@@ -5,14 +5,14 @@ package s3controlaccessgrant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controlaccessgrant/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlaccessgrant/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grant aws_s3control_access_grant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grant aws_s3control_access_grant}.
 type S3ControlAccessGrant interface {
 	cdktf.TerraformResource
 	AccessGrantArn() *string
@@ -72,6 +72,9 @@ type S3ControlAccessGrant interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3PrefixType() *string
 	SetS3PrefixType(val *string)
 	S3PrefixTypeInput() *string
@@ -136,6 +139,7 @@ type S3ControlAccessGrant interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3PrefixType()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -426,6 +430,26 @@ func (j *jsiiProxy_S3ControlAccessGrant) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlAccessGrant) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlAccessGrant) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlAccessGrant) S3PrefixType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -507,7 +531,7 @@ func (j *jsiiProxy_S3ControlAccessGrant) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grant aws_s3control_access_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grant aws_s3control_access_grant} Resource.
 func NewS3ControlAccessGrant(scope constructs.Construct, id *string, config *S3ControlAccessGrantConfig) S3ControlAccessGrant {
 	_init_.Initialize()
 
@@ -525,7 +549,7 @@ func NewS3ControlAccessGrant(scope constructs.Construct, id *string, config *S3C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_access_grant aws_s3control_access_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_access_grant aws_s3control_access_grant} Resource.
 func NewS3ControlAccessGrant_Override(s S3ControlAccessGrant, scope constructs.Construct, id *string, config *S3ControlAccessGrantConfig) {
 	_init_.Initialize()
 
@@ -633,6 +657,17 @@ func (j *jsiiProxy_S3ControlAccessGrant)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlAccessGrant)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1062,6 +1097,14 @@ func (s *jsiiProxy_S3ControlAccessGrant) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlAccessGrant) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

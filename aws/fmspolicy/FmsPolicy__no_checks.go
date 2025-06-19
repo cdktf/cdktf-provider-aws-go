@@ -143,6 +143,10 @@ func (j *jsiiProxy_FmsPolicy) validateSetProvisionersParameters(val *[]interface
 	return nil
 }
 
+func (j *jsiiProxy_FmsPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsPolicy) validateSetRemediationEnabledParameters(val interface{}) error {
 	return nil
 }

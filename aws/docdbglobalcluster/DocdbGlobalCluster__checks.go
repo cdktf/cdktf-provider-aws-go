@@ -462,6 +462,14 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DocdbGlobalCluster) validateSetSourceDbClusterIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

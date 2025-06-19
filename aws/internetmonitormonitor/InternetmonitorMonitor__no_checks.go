@@ -127,6 +127,10 @@ func (j *jsiiProxy_InternetmonitorMonitor) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_InternetmonitorMonitor) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InternetmonitorMonitor) validateSetResourcesParameters(val *[]*string) error {
 	return nil
 }

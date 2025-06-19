@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

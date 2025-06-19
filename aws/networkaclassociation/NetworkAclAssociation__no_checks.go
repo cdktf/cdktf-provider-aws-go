@@ -115,6 +115,10 @@ func (j *jsiiProxy_NetworkAclAssociation) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkAclAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkAclAssociation) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

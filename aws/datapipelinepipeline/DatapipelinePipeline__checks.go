@@ -415,6 +415,14 @@ func (j *jsiiProxy_DatapipelinePipeline) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DatapipelinePipeline) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatapipelinePipeline) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -5,20 +5,19 @@ package dataawsdevopsgururesourcecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdevopsgururesourcecollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgururesourcecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection}.
 type DataAwsDevopsguruResourceCollection interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cloudformation() DataAwsDevopsguruResourceCollectionCloudformationList
-	CloudformationInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -50,8 +49,10 @@ type DataAwsDevopsguruResourceCollection interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() DataAwsDevopsguruResourceCollectionTagsList
-	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -86,13 +87,10 @@ type DataAwsDevopsguruResourceCollection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCloudformation(value interface{})
-	PutTags(value interface{})
-	ResetCloudformation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -127,16 +125,6 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) Cloudformation() DataAws
 	_jsii_.Get(
 		j,
 		"cloudformation",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) CloudformationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"cloudformationInput",
 		&returns,
 	)
 	return returns
@@ -252,21 +240,31 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) Tags() DataAwsDevopsguruResourceCollectionTagsList {
-	var returns DataAwsDevopsguruResourceCollectionTagsList
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) Region() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"tags",
+		"region",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) TagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) RegionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"tagsInput",
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) Tags() DataAwsDevopsguruResourceCollectionTagsList {
+	var returns DataAwsDevopsguruResourceCollectionTagsList
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns
@@ -323,7 +321,7 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source.
 func NewDataAwsDevopsguruResourceCollection(scope constructs.Construct, id *string, config *DataAwsDevopsguruResourceCollectionConfig) DataAwsDevopsguruResourceCollection {
 	_init_.Initialize()
 
@@ -341,7 +339,7 @@ func NewDataAwsDevopsguruResourceCollection(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_resource_collection aws_devopsguru_resource_collection} Data Source.
 func NewDataAwsDevopsguruResourceCollection_Override(d DataAwsDevopsguruResourceCollection, scope constructs.Construct, id *string, config *DataAwsDevopsguruResourceCollectionConfig) {
 	_init_.Initialize()
 
@@ -394,6 +392,17 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -694,36 +703,6 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) OverrideLogicalId(newLog
 	)
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) PutCloudformation(value interface{}) {
-	if err := d.validatePutCloudformationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCloudformation",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) PutTags(value interface{}) {
-	if err := d.validatePutTagsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putTags",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) ResetCloudformation() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCloudformation",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -732,10 +711,10 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) ResetOverrideLogicalId()
 	)
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) ResetTags() {
+func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTags",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

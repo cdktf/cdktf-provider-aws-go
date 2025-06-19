@@ -5,9 +5,9 @@ package dataawsauditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsauditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsauditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,13 +30,12 @@ type DataAwsAuditmanagerControlControlMappingSourcesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAuditmanagerControlControlMappingSources
+	SetInternalValue(val *DataAwsAuditmanagerControlControlMappingSources)
 	SourceDescription() *string
 	SourceFrequency() *string
 	SourceId() *string
 	SourceKeyword() DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList
-	SourceKeywordInput() interface{}
 	SourceName() *string
 	SourceSetUpOption() *string
 	SourceType() *string
@@ -73,8 +72,6 @@ type DataAwsAuditmanagerControlControlMappingSourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSourceKeyword(value interface{})
-	ResetSourceKeyword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,8 +127,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) InternalValue() *DataAwsAuditmanagerControlControlMappingSources {
+	var returns *DataAwsAuditmanagerControlControlMappingSources
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -175,16 +172,6 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	_jsii_.Get(
 		j,
 		"sourceKeyword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) SourceKeywordInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"sourceKeywordInput",
 		&returns,
 	)
 	return returns
@@ -300,7 +287,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference)SetInternalValue(val *DataAwsAuditmanagerControlControlMappingSources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,25 +504,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReferenc
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) PutSourceKeyword(value interface{}) {
-	if err := d.validatePutSourceKeywordParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSourceKeyword",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) ResetSourceKeyword() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSourceKeyword",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

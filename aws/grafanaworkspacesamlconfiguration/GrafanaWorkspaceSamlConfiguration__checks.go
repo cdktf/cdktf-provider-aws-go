@@ -498,6 +498,14 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetRoleAssertionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

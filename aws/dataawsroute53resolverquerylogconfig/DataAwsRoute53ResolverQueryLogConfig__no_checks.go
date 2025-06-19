@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfig) validateSetNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfig) validateSetResolverQueryLogConfigIdParameters(val *string) error {
 	return nil
 }

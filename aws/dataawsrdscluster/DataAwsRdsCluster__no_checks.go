@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsRdsCluster) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

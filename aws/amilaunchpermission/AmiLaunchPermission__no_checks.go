@@ -131,6 +131,10 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_AmiLaunchPermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAmiLaunchPermissionParameters(scope constructs.Construct, id *string, config *AmiLaunchPermissionConfig) error {
 	return nil
 }

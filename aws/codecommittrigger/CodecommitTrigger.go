@@ -5,14 +5,14 @@ package codecommittrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/codecommittrigger/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/codecommittrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecommit_trigger aws_codecommit_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecommit_trigger aws_codecommit_trigger}.
 type CodecommitTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type CodecommitTrigger interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RepositoryName() *string
 	SetRepositoryName(val *string)
 	RepositoryNameInput() *string
@@ -118,6 +121,7 @@ type CodecommitTrigger interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -296,6 +300,26 @@ func (j *jsiiProxy_CodecommitTrigger) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodecommitTrigger) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodecommitTrigger) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodecommitTrigger) RepositoryName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -367,7 +391,7 @@ func (j *jsiiProxy_CodecommitTrigger) TriggerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
 func NewCodecommitTrigger(scope constructs.Construct, id *string, config *CodecommitTriggerConfig) CodecommitTrigger {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewCodecommitTrigger(scope constructs.Construct, id *string, config *Codeco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
 func NewCodecommitTrigger_Override(c CodecommitTrigger, scope constructs.Construct, id *string, config *CodecommitTriggerConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_CodecommitTrigger)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodecommitTrigger)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -862,6 +897,14 @@ func (c *jsiiProxy_CodecommitTrigger) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodecommitTrigger) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_OamSinkPolicy) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_OamSinkPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OamSinkPolicy) validateSetSinkIdentifierParameters(val *string) error {
 	return nil
 }

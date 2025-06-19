@@ -5,14 +5,14 @@ package sagemakerspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_space aws_sagemaker_space}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_space aws_sagemaker_space}.
 type SagemakerSpace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type SagemakerSpace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SpaceDisplayName() *string
 	SetSpaceDisplayName(val *string)
 	SpaceDisplayNameInput() *string
@@ -139,6 +142,7 @@ type SagemakerSpace interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnershipSettings()
+	ResetRegion()
 	ResetSpaceDisplayName()
 	ResetSpaceSettings()
 	ResetSpaceSharingSettings()
@@ -372,6 +376,26 @@ func (j *jsiiProxy_SagemakerSpace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerSpace) SpaceDisplayName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_SagemakerSpace) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace(scope constructs.Construct, id *string, config *SagemakerSpaceConfig) SagemakerSpace {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewSagemakerSpace(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace_Override(s SagemakerSpace, scope constructs.Construct, id *string, config *SagemakerSpaceConfig) {
 	_init_.Initialize()
 
@@ -648,6 +672,17 @@ func (j *jsiiProxy_SagemakerSpace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerSpace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1102,6 +1137,14 @@ func (s *jsiiProxy_SagemakerSpace) ResetOwnershipSettings() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOwnershipSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

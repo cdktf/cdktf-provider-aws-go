@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEcrPullThroughCacheRuleParameters(scope constructs.Construct, id *string, config *DataAwsEcrPullThroughCacheRuleConfig) error {
 	return nil
 }

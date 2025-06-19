@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsVpclatticeListener) validateSetListenerIdentifierParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeListener) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeListener) validateSetServiceIdentifierParameters(val *string) error {
 	return nil
 }

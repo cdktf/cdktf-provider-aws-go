@@ -47,7 +47,27 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validateInterp
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value *DataAwsLbListenerRuleConditionQueryString) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHostHeaderParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHttpHeaderParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutHttpRequestMethodParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutPathPatternParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutQueryStringParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) validatePutSourceIpParameters(value interface{}) error {
 	return nil
 }
 

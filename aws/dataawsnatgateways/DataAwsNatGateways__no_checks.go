@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsNatGateways) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNatGateways) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNatGateways) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

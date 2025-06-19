@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsVpnGateway) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpnGateway) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpnGateway) validateSetStateParameters(val *string) error {
 	return nil
 }

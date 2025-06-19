@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessSnapshot) validateSetRetentionPeriodParameters(val *float64) error {
 	return nil
 }

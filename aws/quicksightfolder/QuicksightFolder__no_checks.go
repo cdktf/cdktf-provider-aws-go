@@ -139,6 +139,10 @@ func (j *jsiiProxy_QuicksightFolder) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightFolder) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightFolder) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

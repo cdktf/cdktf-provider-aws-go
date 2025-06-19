@@ -5,14 +5,14 @@ package glueschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/glueschema/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/glueschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_schema aws_glue_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_schema aws_glue_schema}.
 type GlueSchema interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type GlueSchema interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistryArn() *string
 	SetRegistryArn(val *string)
 	RegistryArnInput() *string
@@ -141,6 +144,7 @@ type GlueSchema interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegistryArn()
 	ResetTags()
 	ResetTagsAll()
@@ -402,6 +406,26 @@ func (j *jsiiProxy_GlueSchema) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlueSchema) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueSchema) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueSchema) RegistryArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -553,7 +577,7 @@ func (j *jsiiProxy_GlueSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_schema aws_glue_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_schema aws_glue_schema} Resource.
 func NewGlueSchema(scope constructs.Construct, id *string, config *GlueSchemaConfig) GlueSchema {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewGlueSchema(scope constructs.Construct, id *string, config *GlueSchemaCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_schema aws_glue_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_schema aws_glue_schema} Resource.
 func NewGlueSchema_Override(g GlueSchema, scope constructs.Construct, id *string, config *GlueSchemaConfig) {
 	_init_.Initialize()
 
@@ -690,6 +714,17 @@ func (j *jsiiProxy_GlueSchema)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueSchema)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1122,6 +1157,14 @@ func (g *jsiiProxy_GlueSchema) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueSchema) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

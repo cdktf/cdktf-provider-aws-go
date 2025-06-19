@@ -175,6 +175,10 @@ func (j *jsiiProxy_Subnet) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Subnet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Subnet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

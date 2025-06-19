@@ -143,6 +143,10 @@ func (j *jsiiProxy_SsmParameter) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_SsmParameter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmParameter) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

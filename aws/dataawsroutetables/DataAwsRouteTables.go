@@ -5,14 +5,14 @@ package dataawsroutetables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsroutetables/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroutetables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route_tables aws_route_tables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route_tables aws_route_tables}.
 type DataAwsRouteTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -53,6 +53,9 @@ type DataAwsRouteTables interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -99,6 +102,7 @@ type DataAwsRouteTables interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	ResetVpcId()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_DataAwsRouteTables) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRouteTables) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRouteTables) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRouteTables) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -372,7 +396,7 @@ func (j *jsiiProxy_DataAwsRouteTables) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route_tables aws_route_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route_tables aws_route_tables} Data Source.
 func NewDataAwsRouteTables(scope constructs.Construct, id *string, config *DataAwsRouteTablesConfig) DataAwsRouteTables {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataAwsRouteTables(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/route_tables aws_route_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/route_tables aws_route_tables} Data Source.
 func NewDataAwsRouteTables_Override(d DataAwsRouteTables, scope constructs.Construct, id *string, config *DataAwsRouteTablesConfig) {
 	_init_.Initialize()
 
@@ -454,6 +478,17 @@ func (j *jsiiProxy_DataAwsRouteTables)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRouteTables)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -807,6 +842,14 @@ func (d *jsiiProxy_DataAwsRouteTables) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRouteTables) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

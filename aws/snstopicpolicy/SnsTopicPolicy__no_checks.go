@@ -119,6 +119,10 @@ func (j *jsiiProxy_SnsTopicPolicy) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopicPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSnsTopicPolicyParameters(scope constructs.Construct, id *string, config *SnsTopicPolicyConfig) error {
 	return nil
 }

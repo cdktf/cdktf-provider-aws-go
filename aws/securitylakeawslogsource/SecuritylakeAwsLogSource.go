@@ -5,14 +5,14 @@ package securitylakeawslogsource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securitylakeawslogsource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakeawslogsource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
 type SecuritylakeAwsLogSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type SecuritylakeAwsLogSource interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Source() SecuritylakeAwsLogSourceSourceList
 	SourceInput() interface{}
 	// Experimental.
@@ -111,6 +114,7 @@ type SecuritylakeAwsLogSource interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -270,6 +274,26 @@ func (j *jsiiProxy_SecuritylakeAwsLogSource) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecuritylakeAwsLogSource) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecuritylakeAwsLogSource) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecuritylakeAwsLogSource) Source() SecuritylakeAwsLogSourceSourceList {
 	var returns SecuritylakeAwsLogSourceSourceList
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_SecuritylakeAwsLogSource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
 func NewSecuritylakeAwsLogSource(scope constructs.Construct, id *string, config *SecuritylakeAwsLogSourceConfig) SecuritylakeAwsLogSource {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewSecuritylakeAwsLogSource(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
 func NewSecuritylakeAwsLogSource_Override(s SecuritylakeAwsLogSource, scope constructs.Construct, id *string, config *SecuritylakeAwsLogSourceConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_SecuritylakeAwsLogSource)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecuritylakeAwsLogSource)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -786,6 +821,14 @@ func (s *jsiiProxy_SecuritylakeAwsLogSource) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecuritylakeAwsLogSource) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

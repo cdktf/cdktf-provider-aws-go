@@ -119,6 +119,10 @@ func (j *jsiiProxy_SsmcontactsContact) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_SsmcontactsContact) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmcontactsContact) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

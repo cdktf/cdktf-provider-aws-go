@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppsyncApiKey) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncApiKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppsyncApiKeyParameters(scope constructs.Construct, id *string, config *AppsyncApiKeyConfig) error {
 	return nil
 }

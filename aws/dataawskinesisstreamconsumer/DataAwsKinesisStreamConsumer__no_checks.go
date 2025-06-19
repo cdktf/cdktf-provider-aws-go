@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetStreamArnParameters(val *string) error {
 	return nil
 }

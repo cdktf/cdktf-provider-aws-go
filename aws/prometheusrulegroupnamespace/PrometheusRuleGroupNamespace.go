@@ -5,14 +5,14 @@ package prometheusrulegroupnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/prometheusrulegroupnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusrulegroupnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
 type PrometheusRuleGroupNamespace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type PrometheusRuleGroupNamespace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -127,6 +130,7 @@ type PrometheusRuleGroupNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -347,6 +351,26 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrometheusRuleGroupNamespace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -438,7 +462,7 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
 func NewPrometheusRuleGroupNamespace(scope constructs.Construct, id *string, config *PrometheusRuleGroupNamespaceConfig) PrometheusRuleGroupNamespace {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewPrometheusRuleGroupNamespace(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace} Resource.
 func NewPrometheusRuleGroupNamespace_Override(p PrometheusRuleGroupNamespace, scope constructs.Construct, id *string, config *PrometheusRuleGroupNamespaceConfig) {
 	_init_.Initialize()
 
@@ -564,6 +588,17 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrometheusRuleGroupNamespace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -966,6 +1001,14 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

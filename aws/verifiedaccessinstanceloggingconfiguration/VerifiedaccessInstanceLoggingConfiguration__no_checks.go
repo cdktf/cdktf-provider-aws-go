@@ -115,6 +115,10 @@ func (j *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateSetVerifiedaccessInstanceIdParameters(val *string) error {
 	return nil
 }

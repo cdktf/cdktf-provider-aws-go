@@ -143,6 +143,10 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetRetainStackParamet
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetStackSetInstanceRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstance) validateSetStackSetNameParameters(val *string) error {
 	return nil
 }

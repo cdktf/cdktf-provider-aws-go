@@ -5,14 +5,14 @@ package vpcendpointsubnetassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcendpointsubnetassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcendpointsubnetassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association}.
 type VpcEndpointSubnetAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type VpcEndpointSubnetAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -120,6 +123,7 @@ type VpcEndpointSubnetAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -289,6 +293,26 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpointSubnetAssociation) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association} Resource.
 func NewVpcEndpointSubnetAssociation(scope constructs.Construct, id *string, config *VpcEndpointSubnetAssociationConfig) VpcEndpointSubnetAssociation {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewVpcEndpointSubnetAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_subnet_association aws_vpc_endpoint_subnet_association} Resource.
 func NewVpcEndpointSubnetAssociation_Override(v VpcEndpointSubnetAssociation, scope constructs.Construct, id *string, config *VpcEndpointSubnetAssociationConfig) {
 	_init_.Initialize()
 
@@ -484,6 +508,17 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpointSubnetAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

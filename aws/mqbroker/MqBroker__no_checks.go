@@ -183,6 +183,10 @@ func (j *jsiiProxy_MqBroker) validateSetPubliclyAccessibleParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MqBroker) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqBroker) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

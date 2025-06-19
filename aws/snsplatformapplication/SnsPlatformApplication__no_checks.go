@@ -155,6 +155,10 @@ func (j *jsiiProxy_SnsPlatformApplication) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SnsPlatformApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsPlatformApplication) validateSetSuccessFeedbackRoleArnParameters(val *string) error {
 	return nil
 }

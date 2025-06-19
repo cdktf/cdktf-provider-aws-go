@@ -415,6 +415,14 @@ func (j *jsiiProxy_BackupVaultPolicy) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_BackupVaultPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewBackupVaultPolicyParameters(scope constructs.Construct, id *string, config *BackupVaultPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

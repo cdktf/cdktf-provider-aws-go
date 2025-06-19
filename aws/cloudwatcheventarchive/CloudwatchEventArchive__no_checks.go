@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudwatchEventArchive) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventArchive) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventArchive) validateSetRetentionDaysParameters(val *float64) error {
 	return nil
 }

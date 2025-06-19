@@ -115,6 +115,10 @@ func (j *jsiiProxy_ApiGatewayClientCertificate) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayClientCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayClientCertificate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_PinpointAdmChannel) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_PinpointAdmChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewPinpointAdmChannelParameters(scope constructs.Construct, id *string, config *PinpointAdmChannelConfig) error {
 	return nil
 }

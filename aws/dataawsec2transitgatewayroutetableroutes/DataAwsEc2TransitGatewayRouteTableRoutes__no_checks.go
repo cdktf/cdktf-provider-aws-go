@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableRoutes) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableRoutes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTableRoutes) validateSetTransitGatewayRouteTableIdParameters(val *string) error {
 	return nil
 }

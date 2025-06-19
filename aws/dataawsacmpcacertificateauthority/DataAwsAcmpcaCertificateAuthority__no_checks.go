@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

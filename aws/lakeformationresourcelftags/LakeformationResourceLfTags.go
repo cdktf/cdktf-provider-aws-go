@@ -5,14 +5,14 @@ package lakeformationresourcelftags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lakeformationresourcelftags/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lakeformationresourcelftags/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags}.
 type LakeformationResourceLfTags interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -65,6 +65,9 @@ type LakeformationResourceLfTags interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Table() LakeformationResourceLfTagsTableOutputReference
 	TableInput() *LakeformationResourceLfTagsTable
 	TableWithColumns() LakeformationResourceLfTagsTableWithColumnsOutputReference
@@ -131,6 +134,7 @@ type LakeformationResourceLfTags interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTable()
 	ResetTableWithColumns()
 	ResetTimeouts()
@@ -362,6 +366,26 @@ func (j *jsiiProxy_LakeformationResourceLfTags) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationResourceLfTags) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationResourceLfTags) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LakeformationResourceLfTags) Table() LakeformationResourceLfTagsTableOutputReference {
 	var returns LakeformationResourceLfTagsTableOutputReference
 	_jsii_.Get(
@@ -453,7 +477,7 @@ func (j *jsiiProxy_LakeformationResourceLfTags) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags} Resource.
 func NewLakeformationResourceLfTags(scope constructs.Construct, id *string, config *LakeformationResourceLfTagsConfig) LakeformationResourceLfTags {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewLakeformationResourceLfTags(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lakeformation_resource_lf_tags aws_lakeformation_resource_lf_tags} Resource.
 func NewLakeformationResourceLfTags_Override(l LakeformationResourceLfTags, scope constructs.Construct, id *string, config *LakeformationResourceLfTagsConfig) {
 	_init_.Initialize()
 
@@ -568,6 +592,17 @@ func (j *jsiiProxy_LakeformationResourceLfTags)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationResourceLfTags)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1008,6 +1043,14 @@ func (l *jsiiProxy_LakeformationResourceLfTags) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationResourceLfTags) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

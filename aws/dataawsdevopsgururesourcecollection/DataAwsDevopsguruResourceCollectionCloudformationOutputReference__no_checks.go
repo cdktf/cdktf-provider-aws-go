@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateSetInternalValueParameters(val *DataAwsDevopsguruResourceCollectionCloudformation) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package dataawsdevopsgururesourcecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdevopsgururesourcecollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgururesourcecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsDevopsguruResourceCollectionTagsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsDevopsguruResourceCollectionTags
+	SetInternalValue(val *DataAwsDevopsguruResourceCollectionTags)
 	TagValues() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference) InternalValue() *DataAwsDevopsguruResourceCollectionTags {
+	var returns *DataAwsDevopsguruResourceCollectionTags
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsOutputReference)SetInternalValue(val *DataAwsDevopsguruResourceCollectionTags) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

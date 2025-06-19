@@ -5,14 +5,14 @@ package dataawskendraquerysuggestionsblocklist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskendraquerysuggestionsblocklist/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskendraquerysuggestionsblocklist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
 type DataAwsKendraQuerySuggestionsBlockList interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -63,6 +63,9 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	QuerySuggestionsBlockListIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SourceS3Path() DataAwsKendraQuerySuggestionsBlockListSourceS3PathList
 	Status() *string
@@ -105,6 +108,7 @@ type DataAwsKendraQuerySuggestionsBlockList interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -456,7 +480,7 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Data Source.
 func NewDataAwsKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, config *DataAwsKendraQuerySuggestionsBlockListConfig) DataAwsKendraQuerySuggestionsBlockList {
 	_init_.Initialize()
 
@@ -474,7 +498,7 @@ func NewDataAwsKendraQuerySuggestionsBlockList(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Data Source.
 func NewDataAwsKendraQuerySuggestionsBlockList_Override(d DataAwsKendraQuerySuggestionsBlockList, scope constructs.Construct, id *string, config *DataAwsKendraQuerySuggestionsBlockListConfig) {
 	_init_.Initialize()
 
@@ -560,6 +584,17 @@ func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetQuerySuggestionsBlo
 	_jsii_.Set(
 		j,
 		"querySuggestionsBlockListId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -872,6 +907,14 @@ func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

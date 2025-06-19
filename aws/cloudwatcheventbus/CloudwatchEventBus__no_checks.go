@@ -131,6 +131,10 @@ func (j *jsiiProxy_CloudwatchEventBus) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventBus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventBus) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

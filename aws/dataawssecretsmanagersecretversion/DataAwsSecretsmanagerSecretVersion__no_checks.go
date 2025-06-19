@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecretVersion) validateSetSecretIdParameters(val *string) error {
 	return nil
 }

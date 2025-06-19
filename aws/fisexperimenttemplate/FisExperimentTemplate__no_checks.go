@@ -143,6 +143,10 @@ func (j *jsiiProxy_FisExperimentTemplate) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_FisExperimentTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FisExperimentTemplate) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

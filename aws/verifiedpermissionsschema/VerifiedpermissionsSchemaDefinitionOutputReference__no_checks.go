@@ -75,7 +75,7 @@ func (j *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateS
 	return nil
 }
 
-func validateNewVerifiedpermissionsSchemaDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVerifiedpermissionsSchemaDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

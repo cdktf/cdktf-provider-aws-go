@@ -143,6 +143,10 @@ func (j *jsiiProxy_SagemakerFeatureGroup) validateSetRecordIdentifierFeatureName
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFeatureGroup) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

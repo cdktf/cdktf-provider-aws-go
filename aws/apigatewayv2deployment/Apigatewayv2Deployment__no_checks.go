@@ -119,6 +119,10 @@ func (j *jsiiProxy_Apigatewayv2Deployment) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Deployment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Deployment) validateSetTriggersParameters(val *map[string]*string) error {
 	return nil
 }

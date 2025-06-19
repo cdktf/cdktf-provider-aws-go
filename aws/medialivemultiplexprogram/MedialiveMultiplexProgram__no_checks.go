@@ -123,6 +123,10 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMedialiveMultiplexProgramParameters(scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) error {
 	return nil
 }

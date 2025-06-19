@@ -179,6 +179,10 @@ func (j *jsiiProxy_TransferServer) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_TransferServer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferServer) validateSetSecurityPolicyNameParameters(val *string) error {
 	return nil
 }

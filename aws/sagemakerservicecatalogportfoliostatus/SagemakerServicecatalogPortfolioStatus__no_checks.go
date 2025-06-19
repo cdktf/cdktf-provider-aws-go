@@ -111,6 +111,10 @@ func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetStatusParameters(val *string) error {
 	return nil
 }

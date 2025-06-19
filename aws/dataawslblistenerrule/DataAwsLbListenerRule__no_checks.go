@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsLbListenerRule) validateSetPriorityParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbListenerRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLbListenerRuleParameters(scope constructs.Construct, id *string, config *DataAwsLbListenerRuleConfig) error {
 	return nil
 }

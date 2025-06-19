@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSesDomainIdentity) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesDomainIdentity) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSesDomainIdentityParameters(scope constructs.Construct, id *string, config *DataAwsSesDomainIdentityConfig) error {
 	return nil
 }

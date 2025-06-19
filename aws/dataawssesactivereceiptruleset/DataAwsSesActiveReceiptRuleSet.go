@@ -5,14 +5,14 @@ package dataawssesactivereceiptruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssesactivereceiptruleset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssesactivereceiptruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
 type DataAwsSesActiveReceiptRuleSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -51,6 +51,9 @@ type DataAwsSesActiveReceiptRuleSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleSetName() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -87,6 +90,7 @@ type DataAwsSesActiveReceiptRuleSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -246,6 +250,26 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) RuleSetName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,7 +311,7 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
 func NewDataAwsSesActiveReceiptRuleSet(scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) DataAwsSesActiveReceiptRuleSet {
 	_init_.Initialize()
 
@@ -305,7 +329,7 @@ func NewDataAwsSesActiveReceiptRuleSet(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Data Source.
 func NewDataAwsSesActiveReceiptRuleSet_Override(d DataAwsSesActiveReceiptRuleSet, scope constructs.Construct, id *string, config *DataAwsSesActiveReceiptRuleSetConfig) {
 	_init_.Initialize()
 
@@ -369,6 +393,17 @@ func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -670,6 +705,14 @@ func (d *jsiiProxy_DataAwsSesActiveReceiptRuleSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSesActiveReceiptRuleSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSesv2EmailIdentityMailFromAttributes) validateSetLifec
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesv2EmailIdentityMailFromAttributes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSesv2EmailIdentityMailFromAttributesParameters(scope constructs.Construct, id *string, config *DataAwsSesv2EmailIdentityMailFromAttributesConfig) error {
 	return nil
 }

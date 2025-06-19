@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetOutputTypeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Export) validateSetSpecificationParameters(val *string) error {
 	return nil
 }

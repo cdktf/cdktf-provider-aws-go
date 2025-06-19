@@ -423,6 +423,14 @@ func (j *jsiiProxy_RedshiftLogging) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftLogging) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftLogging) validateSetS3KeyPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

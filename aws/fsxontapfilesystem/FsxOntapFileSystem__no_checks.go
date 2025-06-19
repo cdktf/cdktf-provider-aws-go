@@ -151,6 +151,10 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetRouteTableIdsParameters(val *[]*string) error {
 	return nil
 }

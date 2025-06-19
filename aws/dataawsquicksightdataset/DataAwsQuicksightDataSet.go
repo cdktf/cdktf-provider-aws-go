@@ -5,14 +5,14 @@ package dataawsquicksightdataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsquicksightdataset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsquicksightdataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
 type DataAwsQuicksightDataSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -66,13 +66,13 @@ type DataAwsQuicksightDataSet interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RowLevelPermissionDataSet() DataAwsQuicksightDataSetRowLevelPermissionDataSetList
 	RowLevelPermissionTagConfiguration() DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
-	TagsAll() *map[string]*string
-	SetTagsAll(val *map[string]*string)
-	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -110,8 +110,8 @@ type DataAwsQuicksightDataSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
-	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -401,6 +401,26 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsQuicksightDataSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsQuicksightDataSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsQuicksightDataSet) RowLevelPermissionDataSet() DataAwsQuicksightDataSetRowLevelPermissionDataSetList {
 	var returns DataAwsQuicksightDataSetRowLevelPermissionDataSetList
 	_jsii_.Get(
@@ -426,26 +446,6 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) Tags() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsQuicksightDataSet) TagsAll() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAll",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsQuicksightDataSet) TagsAllInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -492,7 +492,7 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) DataAwsQuicksightDataSet {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet_Override(d DataAwsQuicksightDataSet, scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) {
 	_init_.Initialize()
 
@@ -600,6 +600,17 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
+func (j *jsiiProxy_DataAwsQuicksightDataSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsQuicksightDataSet)SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
@@ -607,17 +618,6 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsQuicksightDataSet)SetTagsAll(val *map[string]*string) {
-	if err := j.validateSetTagsAllParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagsAll",
 		val,
 	)
 }
@@ -931,18 +931,18 @@ func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetTags() {
+func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTags",
+		"resetRegion",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetTagsAll() {
+func (d *jsiiProxy_DataAwsQuicksightDataSet) ResetTags() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetTagsAll",
+		"resetTags",
 		nil, // no parameters
 	)
 }

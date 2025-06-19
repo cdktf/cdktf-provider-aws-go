@@ -5,14 +5,14 @@ package kmsgrant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/kmsgrant/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/kmsgrant/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant aws_kms_grant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant aws_kms_grant}.
 type KmsGrant interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,9 @@ type KmsGrant interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetireOnDelete() interface{}
 	SetRetireOnDelete(val interface{})
 	RetireOnDeleteInput() interface{}
@@ -140,6 +143,7 @@ type KmsGrant interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRetireOnDelete()
 	ResetRetiringPrincipal()
 	SynthesizeAttributes() *map[string]interface{}
@@ -450,6 +454,26 @@ func (j *jsiiProxy_KmsGrant) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmsGrant) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsGrant) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsGrant) RetireOnDelete() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_KmsGrant) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant aws_kms_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant aws_kms_grant} Resource.
 func NewKmsGrant(scope constructs.Construct, id *string, config *KmsGrantConfig) KmsGrant {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewKmsGrant(scope constructs.Construct, id *string, config *KmsGrantConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kms_grant aws_kms_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kms_grant aws_kms_grant} Resource.
 func NewKmsGrant_Override(k KmsGrant, scope constructs.Construct, id *string, config *KmsGrantConfig) {
 	_init_.Initialize()
 
@@ -680,6 +704,17 @@ func (j *jsiiProxy_KmsGrant)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsGrant)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1106,6 +1141,14 @@ func (k *jsiiProxy_KmsGrant) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsGrant) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

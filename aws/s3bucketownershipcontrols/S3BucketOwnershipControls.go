@@ -5,14 +5,14 @@ package s3bucketownershipcontrols
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketownershipcontrols/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketownershipcontrols/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
 type S3BucketOwnershipControls interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -61,6 +61,9 @@ type S3BucketOwnershipControls interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() S3BucketOwnershipControlsRuleOutputReference
 	RuleInput() *S3BucketOwnershipControlsRule
 	// Experimental.
@@ -117,6 +120,7 @@ type S3BucketOwnershipControls interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_S3BucketOwnershipControls) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketOwnershipControls) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketOwnershipControls) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketOwnershipControls) Rule() S3BucketOwnershipControlsRuleOutputReference {
 	var returns S3BucketOwnershipControlsRuleOutputReference
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_S3BucketOwnershipControls) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
 func NewS3BucketOwnershipControls(scope constructs.Construct, id *string, config *S3BucketOwnershipControlsConfig) S3BucketOwnershipControls {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewS3BucketOwnershipControls(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
 func NewS3BucketOwnershipControls_Override(s S3BucketOwnershipControls, scope constructs.Construct, id *string, config *S3BucketOwnershipControlsConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_S3BucketOwnershipControls)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketOwnershipControls)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (s *jsiiProxy_S3BucketOwnershipControls) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketOwnershipControls) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

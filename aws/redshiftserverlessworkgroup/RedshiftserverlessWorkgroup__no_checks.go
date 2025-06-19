@@ -147,6 +147,10 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetPubliclyAccessiblePar
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

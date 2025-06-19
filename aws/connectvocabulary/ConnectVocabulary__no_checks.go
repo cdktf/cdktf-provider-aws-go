@@ -131,6 +131,10 @@ func (j *jsiiProxy_ConnectVocabulary) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_ConnectVocabulary) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectVocabulary) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

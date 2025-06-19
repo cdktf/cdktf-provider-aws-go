@@ -5,14 +5,14 @@ package sfnalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sfnalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sfnalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_alias aws_sfn_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_alias aws_sfn_alias}.
 type SfnAlias interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type SfnAlias interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoutingConfiguration() SfnAliasRoutingConfigurationList
 	RoutingConfigurationInput() interface{}
 	// Experimental.
@@ -126,6 +129,7 @@ type SfnAlias interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -355,6 +359,26 @@ func (j *jsiiProxy_SfnAlias) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SfnAlias) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnAlias) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SfnAlias) RoutingConfiguration() SfnAliasRoutingConfigurationList {
 	var returns SfnAliasRoutingConfigurationList
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_SfnAlias) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_alias aws_sfn_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_alias aws_sfn_alias} Resource.
 func NewSfnAlias(scope constructs.Construct, id *string, config *SfnAliasConfig) SfnAlias {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewSfnAlias(scope constructs.Construct, id *string, config *SfnAliasConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sfn_alias aws_sfn_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sfn_alias aws_sfn_alias} Resource.
 func NewSfnAlias_Override(s SfnAlias, scope constructs.Construct, id *string, config *SfnAliasConfig) {
 	_init_.Initialize()
 
@@ -552,6 +576,17 @@ func (j *jsiiProxy_SfnAlias)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfnAlias)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -951,6 +986,14 @@ func (s *jsiiProxy_SfnAlias) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnAlias) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

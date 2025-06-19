@@ -123,6 +123,10 @@ func (j *jsiiProxy_MemorydbSubnetGroup) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

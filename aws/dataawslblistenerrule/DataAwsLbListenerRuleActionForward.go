@@ -5,9 +5,13 @@ package dataawslblistenerrule
 
 
 type DataAwsLbListenerRuleActionForward struct {
+	// stickiness block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_listener_rule#stickiness DataAwsLbListenerRule#stickiness}
+	Stickiness interface{} `field:"optional" json:"stickiness" yaml:"stickiness"`
 	// target_group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lb_listener_rule#target_group DataAwsLbListenerRule#target_group}
 	TargetGroup interface{} `field:"optional" json:"targetGroup" yaml:"targetGroup"`
 }
 

@@ -139,6 +139,10 @@ func (j *jsiiProxy_KmsExternalKey) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_KmsExternalKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsExternalKey) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

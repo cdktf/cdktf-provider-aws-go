@@ -123,6 +123,10 @@ func (j *jsiiProxy_EfsAccessPoint) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_EfsAccessPoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsAccessPoint) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

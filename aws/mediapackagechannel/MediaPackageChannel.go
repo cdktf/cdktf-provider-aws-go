@@ -5,14 +5,14 @@ package mediapackagechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/mediapackagechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/mediapackagechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_package_channel aws_media_package_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_package_channel aws_media_package_channel}.
 type MediaPackageChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type MediaPackageChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -126,6 +129,7 @@ type MediaPackageChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -356,6 +360,26 @@ func (j *jsiiProxy_MediaPackageChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MediaPackageChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MediaPackageChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MediaPackageChannel) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -427,7 +451,7 @@ func (j *jsiiProxy_MediaPackageChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
 func NewMediaPackageChannel(scope constructs.Construct, id *string, config *MediaPackageChannelConfig) MediaPackageChannel {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewMediaPackageChannel(scope constructs.Construct, id *string, config *Medi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
 func NewMediaPackageChannel_Override(m MediaPackageChannel, scope constructs.Construct, id *string, config *MediaPackageChannelConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_MediaPackageChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MediaPackageChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (m *jsiiProxy_MediaPackageChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MediaPackageChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

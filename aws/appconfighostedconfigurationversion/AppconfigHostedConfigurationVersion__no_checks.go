@@ -131,6 +131,10 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppconfigHostedConfigurationVersionParameters(scope constructs.Construct, id *string, config *AppconfigHostedConfigurationVersionConfig) error {
 	return nil
 }

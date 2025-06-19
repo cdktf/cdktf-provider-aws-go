@@ -119,6 +119,10 @@ func (j *jsiiProxy_AppfabricIngestion) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AppfabricIngestion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppfabricIngestion) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

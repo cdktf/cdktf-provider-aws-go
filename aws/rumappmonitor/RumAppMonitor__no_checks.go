@@ -135,6 +135,10 @@ func (j *jsiiProxy_RumAppMonitor) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_RumAppMonitor) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RumAppMonitor) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

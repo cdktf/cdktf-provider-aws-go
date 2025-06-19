@@ -59,10 +59,6 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutAlternateIdentifierPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutFilterParameters(value *DataAwsIdentitystoreGroupFilter) error {
-	return nil
-}
-
 func validateDataAwsIdentitystoreGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -96,6 +92,10 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetIdentityStoreIdParamete
 }
 
 func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

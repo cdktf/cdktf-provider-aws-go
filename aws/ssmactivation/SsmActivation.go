@@ -5,14 +5,14 @@ package ssmactivation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmactivation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmactivation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation aws_ssm_activation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation aws_ssm_activation}.
 type SsmActivation interface {
 	cdktf.TerraformResource
 	ActivationCode() *string
@@ -72,6 +72,9 @@ type SsmActivation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistrationCount() *float64
 	RegistrationLimit() *float64
 	SetRegistrationLimit(val *float64)
@@ -138,6 +141,7 @@ type SsmActivation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRegistrationLimit()
 	ResetTags()
 	ResetTagsAll()
@@ -409,6 +413,26 @@ func (j *jsiiProxy_SsmActivation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SsmActivation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmActivation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmActivation) RegistrationCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -510,7 +534,7 @@ func (j *jsiiProxy_SsmActivation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
 func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivationConfig) SsmActivation {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
 func NewSsmActivation_Override(s SsmActivation, scope constructs.Construct, id *string, config *SsmActivationConfig) {
 	_init_.Initialize()
 
@@ -658,6 +682,17 @@ func (j *jsiiProxy_SsmActivation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmActivation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1084,6 +1119,14 @@ func (s *jsiiProxy_SsmActivation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmActivation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

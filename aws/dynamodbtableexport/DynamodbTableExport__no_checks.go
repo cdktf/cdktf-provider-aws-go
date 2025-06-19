@@ -131,6 +131,10 @@ func (j *jsiiProxy_DynamodbTableExport) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableExport) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableExport) validateSetS3BucketParameters(val *string) error {
 	return nil
 }

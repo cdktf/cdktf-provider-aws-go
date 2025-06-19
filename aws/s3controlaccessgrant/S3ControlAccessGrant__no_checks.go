@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3ControlAccessGrant) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessGrant) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessGrant) validateSetS3PrefixTypeParameters(val *string) error {
 	return nil
 }

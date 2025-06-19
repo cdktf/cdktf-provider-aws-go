@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsKmsAlias) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKmsAliasParameters(scope constructs.Construct, id *string, config *DataAwsKmsAliasConfig) error {
 	return nil
 }

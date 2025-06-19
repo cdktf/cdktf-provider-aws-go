@@ -5,14 +5,14 @@ package gluecrawler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluecrawler/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluecrawler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_crawler aws_glue_crawler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_crawler aws_glue_crawler}.
 type GlueCrawler interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -94,6 +94,9 @@ type GlueCrawler interface {
 	RawOverrides() interface{}
 	RecrawlPolicy() GlueCrawlerRecrawlPolicyOutputReference
 	RecrawlPolicyInput() *GlueCrawlerRecrawlPolicy
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -194,6 +197,7 @@ type GlueCrawler interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecrawlPolicy()
+	ResetRegion()
 	ResetS3Target()
 	ResetSchedule()
 	ResetSchemaChangePolicy()
@@ -679,6 +683,26 @@ func (j *jsiiProxy_GlueCrawler) RecrawlPolicyInput() *GlueCrawlerRecrawlPolicy {
 	return returns
 }
 
+func (j *jsiiProxy_GlueCrawler) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawler) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCrawler) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -870,7 +894,7 @@ func (j *jsiiProxy_GlueCrawler) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
 func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerConfig) GlueCrawler {
 	_init_.Initialize()
 
@@ -888,7 +912,7 @@ func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
 func NewGlueCrawler_Override(g GlueCrawler, scope constructs.Construct, id *string, config *GlueCrawlerConfig) {
 	_init_.Initialize()
 
@@ -1029,6 +1053,17 @@ func (j *jsiiProxy_GlueCrawler)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCrawler)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1700,6 +1735,14 @@ func (g *jsiiProxy_GlueCrawler) ResetRecrawlPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRecrawlPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawler) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

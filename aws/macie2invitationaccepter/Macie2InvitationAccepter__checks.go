@@ -418,6 +418,14 @@ func (j *jsiiProxy_Macie2InvitationAccepter) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Macie2InvitationAccepter) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewMacie2InvitationAccepterParameters(scope constructs.Construct, id *string, config *Macie2InvitationAccepterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

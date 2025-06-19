@@ -151,6 +151,10 @@ func (j *jsiiProxy_DirectoryServiceDirectory) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceDirectory) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceDirectory) validateSetShortNameParameters(val *string) error {
 	return nil
 }

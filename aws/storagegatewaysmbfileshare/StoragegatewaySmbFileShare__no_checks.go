@@ -191,6 +191,10 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetReadOnlyParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetRequesterPaysParameters(val interface{}) error {
 	return nil
 }

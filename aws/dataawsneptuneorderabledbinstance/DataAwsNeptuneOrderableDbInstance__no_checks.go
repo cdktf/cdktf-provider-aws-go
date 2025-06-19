@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetPreferredInstan
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetVpcParameters(val interface{}) error {
 	return nil
 }

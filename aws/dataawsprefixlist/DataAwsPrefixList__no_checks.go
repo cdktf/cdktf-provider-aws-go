@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsPrefixList) validateSetPrefixListIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrefixList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsPrefixListParameters(scope constructs.Construct, id *string, config *DataAwsPrefixListConfig) error {
 	return nil
 }

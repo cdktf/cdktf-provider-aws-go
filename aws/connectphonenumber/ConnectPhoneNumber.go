@@ -5,14 +5,14 @@ package connectphonenumber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectphonenumber/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectphonenumber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_phone_number aws_connect_phone_number}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_phone_number aws_connect_phone_number}.
 type ConnectPhoneNumber interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type ConnectPhoneNumber interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() ConnectPhoneNumberStatusList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -140,6 +143,7 @@ type ConnectPhoneNumber interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrefix()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_ConnectPhoneNumber) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ConnectPhoneNumber) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectPhoneNumber) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectPhoneNumber) Status() ConnectPhoneNumberStatusList {
 	var returns ConnectPhoneNumberStatusList
 	_jsii_.Get(
@@ -532,7 +556,7 @@ func (j *jsiiProxy_ConnectPhoneNumber) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
 func NewConnectPhoneNumber(scope constructs.Construct, id *string, config *ConnectPhoneNumberConfig) ConnectPhoneNumber {
 	_init_.Initialize()
 
@@ -550,7 +574,7 @@ func NewConnectPhoneNumber(scope constructs.Construct, id *string, config *Conne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
 func NewConnectPhoneNumber_Override(c ConnectPhoneNumber, scope constructs.Construct, id *string, config *ConnectPhoneNumberConfig) {
 	_init_.Initialize()
 
@@ -669,6 +693,17 @@ func (j *jsiiProxy_ConnectPhoneNumber)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectPhoneNumber)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1109,6 +1144,14 @@ func (c *jsiiProxy_ConnectPhoneNumber) ResetPrefix() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectPhoneNumber) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

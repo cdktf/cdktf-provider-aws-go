@@ -5,9 +5,9 @@ package dataawsauditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsauditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsauditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,8 @@ type DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword
+	SetInternalValue(val *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword)
 	KeywordInputType() *string
 	KeywordValue() *string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordO
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference) InternalValue() *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword {
+	var returns *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordO
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference)SetInternalValue(val *DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

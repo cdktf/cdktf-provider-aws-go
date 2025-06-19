@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsElasticBeanstalkApplicationParameters(scope constructs.Construct, id *string, config *DataAwsElasticBeanstalkApplicationConfig) error {
 	return nil
 }

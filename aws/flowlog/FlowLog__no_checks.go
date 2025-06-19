@@ -135,15 +135,15 @@ func (j *jsiiProxy_FlowLog) validateSetLogFormatParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FlowLog) validateSetLogGroupNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_FlowLog) validateSetMaxAggregationIntervalParameters(val *float64) error {
 	return nil
 }
 
 func (j *jsiiProxy_FlowLog) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FlowLog) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

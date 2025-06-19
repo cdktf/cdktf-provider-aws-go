@@ -75,7 +75,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicy) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicy) validatePutPolicyParameters(value *ResiliencehubResiliencyPolicyPolicy) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicy) validatePutPolicyParameters(value interface{}) error {
 	return nil
 }
 
@@ -124,6 +124,10 @@ func (j *jsiiProxy_ResiliencehubResiliencyPolicy) validateSetNameParameters(val 
 }
 
 func (j *jsiiProxy_ResiliencehubResiliencyPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ResiliencehubResiliencyPolicy) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

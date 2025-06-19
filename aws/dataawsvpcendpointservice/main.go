@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceName", GoGetter: "ServiceName"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceNameInput", GoGetter: "ServiceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceRegion", GoGetter: "ServiceRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRegions", GoGetter: "ServiceRegions"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRegionsInput", GoGetter: "ServiceRegionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceType", GoGetter: "ServiceType"},

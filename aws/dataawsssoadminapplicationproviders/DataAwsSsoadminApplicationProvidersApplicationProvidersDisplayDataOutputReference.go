@@ -5,9 +5,9 @@ package dataawsssoadminapplicationproviders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplicationproviders/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputRef
 	// Experimental.
 	Fqn() *string
 	IconUrl() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData
+	SetInternalValue(val *DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDispla
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) InternalValue() *DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData {
+	var returns *DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDispla
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference)SetInternalValue(val *DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

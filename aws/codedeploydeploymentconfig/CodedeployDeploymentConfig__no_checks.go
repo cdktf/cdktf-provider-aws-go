@@ -131,6 +131,10 @@ func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCodedeployDeploymentConfigParameters(scope constructs.Construct, id *string, config *CodedeployDeploymentConfigConfig) error {
 	return nil
 }

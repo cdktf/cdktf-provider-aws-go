@@ -5,14 +5,14 @@ package sagemakerproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sagemakerproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakerproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_project aws_sagemaker_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_project aws_sagemaker_project}.
 type SagemakerProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type SagemakerProject interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceCatalogProvisioningDetails() SagemakerProjectServiceCatalogProvisioningDetailsOutputReference
 	ServiceCatalogProvisioningDetailsInput() *SagemakerProjectServiceCatalogProvisioningDetails
 	Tags() *map[string]*string
@@ -129,6 +132,7 @@ type SagemakerProject interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProjectDescription()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -359,6 +363,26 @@ func (j *jsiiProxy_SagemakerProject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerProject) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerProject) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerProject) ServiceCatalogProvisioningDetails() SagemakerProjectServiceCatalogProvisioningDetailsOutputReference {
 	var returns SagemakerProjectServiceCatalogProvisioningDetailsOutputReference
 	_jsii_.Get(
@@ -450,7 +474,7 @@ func (j *jsiiProxy_SagemakerProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
 func NewSagemakerProject(scope constructs.Construct, id *string, config *SagemakerProjectConfig) SagemakerProject {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewSagemakerProject(scope constructs.Construct, id *string, config *Sagemak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
 func NewSagemakerProject_Override(s SagemakerProject, scope constructs.Construct, id *string, config *SagemakerProjectConfig) {
 	_init_.Initialize()
 
@@ -576,6 +600,17 @@ func (j *jsiiProxy_SagemakerProject)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerProject)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -986,6 +1021,14 @@ func (s *jsiiProxy_SagemakerProject) ResetProjectDescription() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProjectDescription",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerProject) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

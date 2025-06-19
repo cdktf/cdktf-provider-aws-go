@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

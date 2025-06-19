@@ -119,6 +119,10 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

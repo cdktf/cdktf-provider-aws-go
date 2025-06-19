@@ -5,14 +5,14 @@ package dataawsnetworkfirewallresourcepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsnetworkfirewallresourcepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
 type DataAwsNetworkfirewallResourcePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsNetworkfirewallResourcePolicy interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SetResourceArn(val *string)
 	ResourceArnInput() *string
@@ -89,6 +92,7 @@ type DataAwsNetworkfirewallResourcePolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -299,7 +323,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
 func NewDataAwsNetworkfirewallResourcePolicy(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallResourcePolicyConfig) DataAwsNetworkfirewallResourcePolicy {
 	_init_.Initialize()
 
@@ -317,7 +341,7 @@ func NewDataAwsNetworkfirewallResourcePolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
 func NewDataAwsNetworkfirewallResourcePolicy_Override(d DataAwsNetworkfirewallResourcePolicy, scope constructs.Construct, id *string, config *DataAwsNetworkfirewallResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -381,6 +405,17 @@ func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -693,6 +728,14 @@ func (d *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

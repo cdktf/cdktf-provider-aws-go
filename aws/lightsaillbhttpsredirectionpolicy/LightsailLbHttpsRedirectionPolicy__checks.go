@@ -427,6 +427,14 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLightsailLbHttpsRedirectionPolicyParameters(scope constructs.Construct, id *string, config *LightsailLbHttpsRedirectionPolicyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

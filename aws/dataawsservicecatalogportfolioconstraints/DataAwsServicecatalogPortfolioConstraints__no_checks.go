@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetProduct
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogPortfolioConstraintsParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConstraintsConfig) error {
 	return nil
 }

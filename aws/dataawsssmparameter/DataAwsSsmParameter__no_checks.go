@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSsmParameter) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmParameter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParameter) validateSetWithDecryptionParameters(val interface{}) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_PaymentcryptographyKeyAlias) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_PaymentcryptographyKeyAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewPaymentcryptographyKeyAliasParameters(scope constructs.Construct, id *string, config *PaymentcryptographyKeyAliasConfig) error {
 	return nil
 }

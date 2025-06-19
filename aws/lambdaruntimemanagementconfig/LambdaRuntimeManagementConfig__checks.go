@@ -407,6 +407,14 @@ func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetQualifierParameters
 	return nil
 }
 
+func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaRuntimeManagementConfig) validateSetRuntimeVersionArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

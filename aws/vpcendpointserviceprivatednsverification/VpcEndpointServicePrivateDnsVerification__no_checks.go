@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) validateSetServiceIdParameters(val *string) error {
 	return nil
 }

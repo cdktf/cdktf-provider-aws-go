@@ -115,6 +115,10 @@ func (j *jsiiProxy_LightsailBucketAccessKey) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LightsailBucketAccessKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailBucketAccessKeyParameters(scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) error {
 	return nil
 }

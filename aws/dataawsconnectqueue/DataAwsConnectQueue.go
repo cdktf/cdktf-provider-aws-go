@@ -5,14 +5,14 @@ package dataawsconnectqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsconnectqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsconnectqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_queue aws_connect_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_queue aws_connect_queue}.
 type DataAwsConnectQueue interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -64,6 +64,9 @@ type DataAwsConnectQueue interface {
 	QueueIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -105,6 +108,7 @@ type DataAwsConnectQueue interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQueueId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_DataAwsConnectQueue) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsConnectQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsConnectQueue) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -426,7 +450,7 @@ func (j *jsiiProxy_DataAwsConnectQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_queue aws_connect_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_queue aws_connect_queue} Data Source.
 func NewDataAwsConnectQueue(scope constructs.Construct, id *string, config *DataAwsConnectQueueConfig) DataAwsConnectQueue {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewDataAwsConnectQueue(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/connect_queue aws_connect_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/connect_queue aws_connect_queue} Data Source.
 func NewDataAwsConnectQueue_Override(d DataAwsConnectQueue, scope constructs.Construct, id *string, config *DataAwsConnectQueueConfig) {
 	_init_.Initialize()
 
@@ -541,6 +565,17 @@ func (j *jsiiProxy_DataAwsConnectQueue)SetQueueId(val *string) {
 	_jsii_.Set(
 		j,
 		"queueId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsConnectQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -869,6 +904,14 @@ func (d *jsiiProxy_DataAwsConnectQueue) ResetQueueId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueueId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsConnectQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEip) validateSetPublicIpParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEip) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEip) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

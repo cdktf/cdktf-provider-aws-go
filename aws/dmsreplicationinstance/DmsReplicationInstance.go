@@ -5,14 +5,14 @@ package dmsreplicationinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dmsreplicationinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dmsreplicationinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
 type DmsReplicationInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -91,6 +91,9 @@ type DmsReplicationInstance interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplicationInstanceArn() *string
 	ReplicationInstanceClass() *string
 	SetReplicationInstanceClass(val *string)
@@ -179,6 +182,7 @@ type DmsReplicationInstance interface {
 	ResetOverrideLogicalId()
 	ResetPreferredMaintenanceWindow()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetReplicationSubnetGroupId()
 	ResetTags()
 	ResetTagsAll()
@@ -572,6 +576,26 @@ func (j *jsiiProxy_DmsReplicationInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) ReplicationInstanceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -773,7 +797,7 @@ func (j *jsiiProxy_DmsReplicationInstance) VpcSecurityGroupIdsInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) DmsReplicationInstance {
 	_init_.Initialize()
 
@@ -791,7 +815,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) {
 	_init_.Initialize()
 
@@ -998,6 +1022,17 @@ func (j *jsiiProxy_DmsReplicationInstance)SetPubliclyAccessible(val interface{})
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1532,6 +1567,14 @@ func (d *jsiiProxy_DmsReplicationInstance) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

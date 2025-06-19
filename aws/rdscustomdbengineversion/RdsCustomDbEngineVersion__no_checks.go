@@ -151,6 +151,10 @@ func (j *jsiiProxy_RdsCustomDbEngineVersion) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RdsCustomDbEngineVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCustomDbEngineVersion) validateSetSourceImageIdParameters(val *string) error {
 	return nil
 }

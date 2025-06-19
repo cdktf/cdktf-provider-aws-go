@@ -5,14 +5,14 @@ package sesv2configurationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sesv2configurationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sesv2configurationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
 type Sesv2ConfigurationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -64,6 +64,9 @@ type Sesv2ConfigurationSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReputationOptions() Sesv2ConfigurationSetReputationOptionsOutputReference
 	ReputationOptionsInput() *Sesv2ConfigurationSetReputationOptions
 	SendingOptions() Sesv2ConfigurationSetSendingOptionsOutputReference
@@ -140,6 +143,7 @@ type Sesv2ConfigurationSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReputationOptions()
 	ResetSendingOptions()
 	ResetSuppressionOptions()
@@ -365,6 +369,26 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSet) ReputationOptions() Sesv2ConfigurationSetReputationOptionsOutputReference {
 	var returns Sesv2ConfigurationSetReputationOptionsOutputReference
 	_jsii_.Get(
@@ -536,7 +560,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) VdmOptionsInput() *Sesv2ConfigurationS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
 func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Sesv2ConfigurationSetConfig) Sesv2ConfigurationSet {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
 func NewSesv2ConfigurationSet_Override(s Sesv2ConfigurationSet, scope constructs.Construct, id *string, config *Sesv2ConfigurationSetConfig) {
 	_init_.Initialize()
 
@@ -651,6 +675,17 @@ func (j *jsiiProxy_Sesv2ConfigurationSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1116,6 +1151,14 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sesv2ConfigurationSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_LambdaPermission) validateSetQualifierParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_LambdaPermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaPermission) validateSetSourceAccountParameters(val *string) error {
 	return nil
 }

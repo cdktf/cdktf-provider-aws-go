@@ -617,6 +617,14 @@ func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunction) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunction) validateSetReplacementSecurityGroupIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

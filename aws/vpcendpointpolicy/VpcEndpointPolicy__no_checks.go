@@ -119,6 +119,10 @@ func (j *jsiiProxy_VpcEndpointPolicy) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointPolicy) validateSetVpcEndpointIdParameters(val *string) error {
 	return nil
 }

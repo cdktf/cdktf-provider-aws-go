@@ -127,6 +127,10 @@ func (j *jsiiProxy_GluePartitionIndex) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_GluePartitionIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionIndex) validateSetTableNameParameters(val *string) error {
 	return nil
 }

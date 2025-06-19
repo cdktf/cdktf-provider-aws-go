@@ -199,6 +199,10 @@ func (j *jsiiProxy_CustomerprofilesProfile) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CustomerprofilesProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCustomerprofilesProfileParameters(scope constructs.Construct, id *string, config *CustomerprofilesProfileConfig) error {
 	return nil
 }

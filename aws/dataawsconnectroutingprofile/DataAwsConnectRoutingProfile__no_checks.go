@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfile) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectRoutingProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectRoutingProfile) validateSetRoutingProfileIdParameters(val *string) error {
 	return nil
 }

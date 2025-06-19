@@ -5,14 +5,14 @@ package dataawsopensearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsopensearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
 type DataAwsOpensearchDomain interface {
 	cdktf.TerraformDataSource
 	AccessPolicies() *string
@@ -60,7 +60,6 @@ type DataAwsOpensearchDomain interface {
 	SetId(val *string)
 	IdInput() *string
 	IpAddressType() *string
-	KibanaEndpoint() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -78,6 +77,9 @@ type DataAwsOpensearchDomain interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotOptions() DataAwsOpensearchDomainSnapshotOptionsList
 	SoftwareUpdateOptions() DataAwsOpensearchDomainSoftwareUpdateOptionsList
 	Tags() *map[string]*string
@@ -121,6 +123,7 @@ type DataAwsOpensearchDomain interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -441,16 +444,6 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) IpAddressType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomain) KibanaEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kibanaEndpoint",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsOpensearchDomain) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -541,6 +534,26 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOpensearchDomain) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomain) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOpensearchDomain) SnapshotOptions() DataAwsOpensearchDomainSnapshotOptionsList {
 	var returns DataAwsOpensearchDomainSnapshotOptionsList
 	_jsii_.Get(
@@ -622,7 +635,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) VpcOptions() DataAwsOpensearchDomain
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain {
 	_init_.Initialize()
 
@@ -640,7 +653,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -715,6 +728,17 @@ func (j *jsiiProxy_DataAwsOpensearchDomain)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomain)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1046,6 +1070,14 @@ func (d *jsiiProxy_DataAwsOpensearchDomain) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsOpensearchDomain) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

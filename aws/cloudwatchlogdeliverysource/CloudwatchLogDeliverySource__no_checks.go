@@ -115,6 +115,10 @@ func (j *jsiiProxy_CloudwatchLogDeliverySource) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogDeliverySource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogDeliverySource) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

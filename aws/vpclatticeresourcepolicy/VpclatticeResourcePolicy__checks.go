@@ -407,6 +407,14 @@ func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

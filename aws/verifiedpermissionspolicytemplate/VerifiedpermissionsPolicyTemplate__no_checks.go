@@ -115,6 +115,10 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyTemplate) validateSetProvisionersPar
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedpermissionsPolicyTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedpermissionsPolicyTemplate) validateSetStatementParameters(val *string) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3BucketObjectLockConfigurationA) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketObjectLockConfigurationA) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketObjectLockConfigurationA) validateSetTokenParameters(val *string) error {
 	return nil
 }

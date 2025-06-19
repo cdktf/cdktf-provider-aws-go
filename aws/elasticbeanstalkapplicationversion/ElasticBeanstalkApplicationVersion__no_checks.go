@@ -139,6 +139,10 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

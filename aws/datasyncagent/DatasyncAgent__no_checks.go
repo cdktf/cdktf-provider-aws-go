@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatasyncAgent) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncAgent) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncAgent) validateSetSecurityGroupArnsParameters(val *[]*string) error {
 	return nil
 }

@@ -277,6 +277,14 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetOwnersParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetRestorableByUserIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

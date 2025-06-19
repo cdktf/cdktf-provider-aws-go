@@ -531,6 +531,14 @@ func (j *jsiiProxy_LightsailDatabase) validateSetPubliclyAccessibleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDatabase) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDatabase) validateSetRelationalDatabaseNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

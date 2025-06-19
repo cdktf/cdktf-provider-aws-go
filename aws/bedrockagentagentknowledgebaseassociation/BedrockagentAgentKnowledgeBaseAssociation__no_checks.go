@@ -131,6 +131,10 @@ func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewBedrockagentAgentKnowledgeBaseAssociationParameters(scope constructs.Construct, id *string, config *BedrockagentAgentKnowledgeBaseAssociationConfig) error {
 	return nil
 }

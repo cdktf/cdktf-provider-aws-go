@@ -131,6 +131,10 @@ func (j *jsiiProxy_CodestarconnectionsHost) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CodestarconnectionsHost) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewCodestarconnectionsHostParameters(scope constructs.Construct, id *string, config *CodestarconnectionsHostConfig) error {
 	return nil
 }

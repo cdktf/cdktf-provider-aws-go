@@ -5,14 +5,14 @@ package lightsailcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsailcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsailcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_certificate aws_lightsail_certificate}.
 type LightsailCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type LightsailCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubjectAlternativeNames() *[]*string
 	SetSubjectAlternativeNames(val *[]*string)
 	SubjectAlternativeNamesInput() *[]*string
@@ -130,6 +133,7 @@ type LightsailCertificate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSubjectAlternativeNames()
 	ResetTags()
 	ResetTagsAll()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_LightsailCertificate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailCertificate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailCertificate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailCertificate) SubjectAlternativeNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_LightsailCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_certificate aws_lightsail_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_certificate aws_lightsail_certificate} Resource.
 func NewLightsailCertificate(scope constructs.Construct, id *string, config *LightsailCertificateConfig) LightsailCertificate {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewLightsailCertificate(scope constructs.Construct, id *string, config *Lig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_certificate aws_lightsail_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_certificate aws_lightsail_certificate} Resource.
 func NewLightsailCertificate_Override(l LightsailCertificate, scope constructs.Construct, id *string, config *LightsailCertificateConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_LightsailCertificate)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailCertificate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -998,6 +1033,14 @@ func (l *jsiiProxy_LightsailCertificate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailCertificate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

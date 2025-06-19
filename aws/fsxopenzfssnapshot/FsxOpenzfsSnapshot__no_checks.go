@@ -119,6 +119,10 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsSnapshot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsSnapshot) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

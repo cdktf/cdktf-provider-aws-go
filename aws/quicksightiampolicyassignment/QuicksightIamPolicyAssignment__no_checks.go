@@ -131,6 +131,10 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightIamPolicyAssignment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuicksightIamPolicyAssignmentParameters(scope constructs.Construct, id *string, config *QuicksightIamPolicyAssignmentConfig) error {
 	return nil
 }

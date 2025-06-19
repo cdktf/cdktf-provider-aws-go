@@ -5,14 +5,14 @@ package keyspacestable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/keyspacestable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/keyspacestable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/keyspaces_table aws_keyspaces_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/keyspaces_table aws_keyspaces_table}.
 type KeyspacesTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -75,6 +75,9 @@ type KeyspacesTable interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SchemaDefinition() KeyspacesTableSchemaDefinitionOutputReference
 	SchemaDefinitionInput() *KeyspacesTableSchemaDefinition
 	TableName() *string
@@ -157,6 +160,7 @@ type KeyspacesTable interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPointInTimeRecovery()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -479,6 +483,26 @@ func (j *jsiiProxy_KeyspacesTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KeyspacesTable) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyspacesTable) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyspacesTable) SchemaDefinition() KeyspacesTableSchemaDefinitionOutputReference {
 	var returns KeyspacesTableSchemaDefinitionOutputReference
 	_jsii_.Get(
@@ -630,7 +654,7 @@ func (j *jsiiProxy_KeyspacesTable) TtlInput() *KeyspacesTableTtl {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable(scope constructs.Construct, id *string, config *KeyspacesTableConfig) KeyspacesTable {
 	_init_.Initialize()
 
@@ -648,7 +672,7 @@ func NewKeyspacesTable(scope constructs.Construct, id *string, config *Keyspaces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable_Override(k KeyspacesTable, scope constructs.Construct, id *string, config *KeyspacesTableConfig) {
 	_init_.Initialize()
 
@@ -756,6 +780,17 @@ func (j *jsiiProxy_KeyspacesTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyspacesTable)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1294,6 +1329,14 @@ func (k *jsiiProxy_KeyspacesTable) ResetPointInTimeRecovery() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPointInTimeRecovery",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyspacesTable) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

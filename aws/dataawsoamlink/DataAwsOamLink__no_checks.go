@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsOamLink) validateSetLinkIdentifierParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamLink) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOamLink) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package elasticbeanstalkenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/elasticbeanstalkenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticbeanstalkenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
 type ElasticBeanstalkEnvironment interface {
 	cdktf.TerraformResource
 	AllSettings() ElasticBeanstalkEnvironmentAllSettingsList
@@ -85,6 +85,9 @@ type ElasticBeanstalkEnvironment interface {
 	Queues() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Setting() ElasticBeanstalkEnvironmentSettingList
 	SettingInput() interface{}
 	SolutionStackName() *string
@@ -167,6 +170,7 @@ type ElasticBeanstalkEnvironment interface {
 	ResetOverrideLogicalId()
 	ResetPlatformArn()
 	ResetPollInterval()
+	ResetRegion()
 	ResetSetting()
 	ResetSolutionStackName()
 	ResetTags()
@@ -553,6 +557,26 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticBeanstalkEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticBeanstalkEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticBeanstalkEnvironment) Setting() ElasticBeanstalkEnvironmentSettingList {
 	var returns ElasticBeanstalkEnvironmentSettingList
 	_jsii_.Get(
@@ -754,7 +778,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) WaitForReadyTimeoutInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) ElasticBeanstalkEnvironment {
 	_init_.Initialize()
 
@@ -772,7 +796,7 @@ func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment_Override(e ElasticBeanstalkEnvironment, scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -924,6 +948,17 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1413,6 +1448,14 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironment) ResetPollInterval() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPollInterval",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticBeanstalkEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

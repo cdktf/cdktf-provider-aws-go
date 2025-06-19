@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplication) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplication) validatePutPortalOptionsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsSsoadminApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,6 +80,10 @@ func (j *jsiiProxy_DataAwsSsoadminApplication) validateSetCountParameters(val in
 }
 
 func (j *jsiiProxy_DataAwsSsoadminApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplication) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

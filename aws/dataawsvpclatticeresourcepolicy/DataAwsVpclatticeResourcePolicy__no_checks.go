@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsVpclatticeResourcePolicy) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

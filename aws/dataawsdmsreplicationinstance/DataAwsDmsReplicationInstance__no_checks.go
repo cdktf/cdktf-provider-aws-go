@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDmsReplicationInstance) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsReplicationInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsReplicationInstance) validateSetReplicationInstanceIdParameters(val *string) error {
 	return nil
 }

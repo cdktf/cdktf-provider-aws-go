@@ -431,6 +431,14 @@ func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetStageNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

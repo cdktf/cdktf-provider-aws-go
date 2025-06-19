@@ -171,6 +171,10 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DocdbClusterInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbClusterInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

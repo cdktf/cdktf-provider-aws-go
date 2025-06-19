@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetLifecycleParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsServicecatalogConstraintParameters(scope constructs.Construct, id *string, config *DataAwsServicecatalogConstraintConfig) error {
 	return nil
 }

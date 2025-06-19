@@ -119,6 +119,10 @@ func (j *jsiiProxy_IotIndexingConfiguration) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_IotIndexingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotIndexingConfigurationParameters(scope constructs.Construct, id *string, config *IotIndexingConfigurationConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLightsailInstancePublicPortsParameters(scope constructs.Construct, id *string, config *LightsailInstancePublicPortsConfig) error {
 	return nil
 }

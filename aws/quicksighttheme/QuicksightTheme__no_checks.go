@@ -135,6 +135,10 @@ func (j *jsiiProxy_QuicksightTheme) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightTheme) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightTheme) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

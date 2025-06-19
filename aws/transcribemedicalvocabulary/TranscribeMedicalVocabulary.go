@@ -5,14 +5,14 @@ package transcribemedicalvocabulary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/transcribemedicalvocabulary/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/transcribemedicalvocabulary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
 type TranscribeMedicalVocabulary interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type TranscribeMedicalVocabulary interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,6 +134,7 @@ type TranscribeMedicalVocabulary interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -342,6 +346,26 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TranscribeMedicalVocabulary) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TranscribeMedicalVocabulary) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TranscribeMedicalVocabulary) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) VocabularyNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) TranscribeMedicalVocabulary {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary_Override(t TranscribeMedicalVocabulary, scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) {
 	_init_.Initialize()
 
@@ -588,6 +612,17 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TranscribeMedicalVocabulary)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1012,6 +1047,14 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TranscribeMedicalVocabulary) ResetRegion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

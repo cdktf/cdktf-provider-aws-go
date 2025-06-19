@@ -123,6 +123,10 @@ func (j *jsiiProxy_RouteTable) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_RouteTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteTable) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

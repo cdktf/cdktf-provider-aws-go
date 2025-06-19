@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsKendraThesaurus) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraThesaurus) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraThesaurus) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

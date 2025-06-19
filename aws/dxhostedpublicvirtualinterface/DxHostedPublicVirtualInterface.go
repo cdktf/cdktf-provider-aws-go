@@ -5,14 +5,14 @@ package dxhostedpublicvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dxhostedpublicvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dxhostedpublicvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface}.
 type DxHostedPublicVirtualInterface interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -85,6 +85,9 @@ type DxHostedPublicVirtualInterface interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RouteFilterPrefixes() *[]*string
 	SetRouteFilterPrefixes(val *[]*string)
 	RouteFilterPrefixesInput() *[]*string
@@ -150,6 +153,7 @@ type DxHostedPublicVirtualInterface interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -509,6 +513,26 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterface) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DxHostedPublicVirtualInterface) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxHostedPublicVirtualInterface) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DxHostedPublicVirtualInterface) RouteFilterPrefixes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -600,7 +624,7 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterface) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface} Resource.
 func NewDxHostedPublicVirtualInterface(scope constructs.Construct, id *string, config *DxHostedPublicVirtualInterfaceConfig) DxHostedPublicVirtualInterface {
 	_init_.Initialize()
 
@@ -618,7 +642,7 @@ func NewDxHostedPublicVirtualInterface(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dx_hosted_public_virtual_interface aws_dx_hosted_public_virtual_interface} Resource.
 func NewDxHostedPublicVirtualInterface_Override(d DxHostedPublicVirtualInterface, scope constructs.Construct, id *string, config *DxHostedPublicVirtualInterfaceConfig) {
 	_init_.Initialize()
 
@@ -792,6 +816,17 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterface)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DxHostedPublicVirtualInterface)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1218,6 +1253,14 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterface) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DxHostedPublicVirtualInterface) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

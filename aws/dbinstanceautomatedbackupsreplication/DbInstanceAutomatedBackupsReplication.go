@@ -5,14 +5,14 @@ package dbinstanceautomatedbackupsreplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dbinstanceautomatedbackupsreplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstanceautomatedbackupsreplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication}.
 type DbInstanceAutomatedBackupsReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type DbInstanceAutomatedBackupsReplication interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RetentionPeriod() *float64
 	SetRetentionPeriod(val *float64)
 	RetentionPeriodInput() *float64
@@ -128,6 +131,7 @@ type DbInstanceAutomatedBackupsReplication interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreSignedUrl()
+	ResetRegion()
 	ResetRetentionPeriod()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -338,6 +342,26 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) RetentionPeriod() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -429,7 +453,7 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
 func NewDbInstanceAutomatedBackupsReplication(scope constructs.Construct, id *string, config *DbInstanceAutomatedBackupsReplicationConfig) DbInstanceAutomatedBackupsReplication {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewDbInstanceAutomatedBackupsReplication(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
 func NewDbInstanceAutomatedBackupsReplication_Override(d DbInstanceAutomatedBackupsReplication, scope constructs.Construct, id *string, config *DbInstanceAutomatedBackupsReplicationConfig) {
 	_init_.Initialize()
 
@@ -555,6 +579,17 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication)SetProvisioners(val *[]
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -973,6 +1008,14 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) ResetPreSignedUrl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreSignedUrl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

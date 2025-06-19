@@ -91,11 +91,11 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSet) validateSetTagsParameters(val *map[string]*string) error {
+func (j *jsiiProxy_DataAwsQuicksightDataSet) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsQuicksightDataSet) validateSetTagsAllParameters(val *map[string]*string) error {
+func (j *jsiiProxy_DataAwsQuicksightDataSet) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

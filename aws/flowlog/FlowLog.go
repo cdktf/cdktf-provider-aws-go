@@ -5,14 +5,14 @@ package flowlog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/flowlog/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/flow_log aws_flow_log}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/flow_log aws_flow_log}.
 type FlowLog interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,9 +67,6 @@ type FlowLog interface {
 	LogFormat() *string
 	SetLogFormat(val *string)
 	LogFormatInput() *string
-	LogGroupName() *string
-	SetLogGroupName(val *string)
-	LogGroupNameInput() *string
 	MaxAggregationInterval() *float64
 	SetMaxAggregationInterval(val *float64)
 	MaxAggregationIntervalInput() *float64
@@ -85,6 +82,9 @@ type FlowLog interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -164,11 +164,11 @@ type FlowLog interface {
 	ResetLogDestination()
 	ResetLogDestinationType()
 	ResetLogFormat()
-	ResetLogGroupName()
 	ResetMaxAggregationInterval()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSubnetId()
 	ResetTags()
 	ResetTagsAll()
@@ -454,26 +454,6 @@ func (j *jsiiProxy_FlowLog) LogFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FlowLog) LogGroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"logGroupName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_FlowLog) LogGroupNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"logGroupNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_FlowLog) MaxAggregationInterval() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -529,6 +509,26 @@ func (j *jsiiProxy_FlowLog) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlowLog) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlowLog) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -705,7 +705,7 @@ func (j *jsiiProxy_FlowLog) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/flow_log aws_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/flow_log aws_flow_log} Resource.
 func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) FlowLog {
 	_init_.Initialize()
 
@@ -723,7 +723,7 @@ func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/flow_log aws_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/flow_log aws_flow_log} Resource.
 func NewFlowLog_Override(f FlowLog, scope constructs.Construct, id *string, config *FlowLogConfig) {
 	_init_.Initialize()
 
@@ -860,17 +860,6 @@ func (j *jsiiProxy_FlowLog)SetLogFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FlowLog)SetLogGroupName(val *string) {
-	if err := j.validateSetLogGroupNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"logGroupName",
-		val,
-	)
-}
-
 func (j *jsiiProxy_FlowLog)SetMaxAggregationInterval(val *float64) {
 	if err := j.validateSetMaxAggregationIntervalParameters(val); err != nil {
 		panic(err)
@@ -897,6 +886,17 @@ func (j *jsiiProxy_FlowLog)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FlowLog)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1406,14 +1406,6 @@ func (f *jsiiProxy_FlowLog) ResetLogFormat() {
 	)
 }
 
-func (f *jsiiProxy_FlowLog) ResetLogGroupName() {
-	_jsii_.InvokeVoid(
-		f,
-		"resetLogGroupName",
-		nil, // no parameters
-	)
-}
-
 func (f *jsiiProxy_FlowLog) ResetMaxAggregationInterval() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1426,6 +1418,14 @@ func (f *jsiiProxy_FlowLog) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FlowLog) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

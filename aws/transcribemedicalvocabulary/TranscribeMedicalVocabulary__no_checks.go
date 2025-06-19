@@ -119,6 +119,10 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_MskSingleScramSecretAssociation) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_MskSingleScramSecretAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskSingleScramSecretAssociation) validateSetSecretArnParameters(val *string) error {
 	return nil
 }

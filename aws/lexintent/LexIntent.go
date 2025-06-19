@@ -5,14 +5,14 @@ package lexintent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lexintent/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lexintent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_intent aws_lex_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_intent aws_lex_intent}.
 type LexIntent interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -84,6 +84,9 @@ type LexIntent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RejectionStatement() LexIntentRejectionStatementOutputReference
 	RejectionStatementInput() *LexIntentRejectionStatement
 	SampleUtterances() *[]*string
@@ -162,6 +165,7 @@ type LexIntent interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentIntentSignature()
+	ResetRegion()
 	ResetRejectionStatement()
 	ResetSampleUtterances()
 	ResetSlot()
@@ -554,6 +558,26 @@ func (j *jsiiProxy_LexIntent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LexIntent) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LexIntent) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LexIntent) RejectionStatement() LexIntentRejectionStatementOutputReference {
 	var returns LexIntentRejectionStatementOutputReference
 	_jsii_.Get(
@@ -675,7 +699,7 @@ func (j *jsiiProxy_LexIntent) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_intent aws_lex_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_intent aws_lex_intent} Resource.
 func NewLexIntent(scope constructs.Construct, id *string, config *LexIntentConfig) LexIntent {
 	_init_.Initialize()
 
@@ -693,7 +717,7 @@ func NewLexIntent(scope constructs.Construct, id *string, config *LexIntentConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lex_intent aws_lex_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lex_intent aws_lex_intent} Resource.
 func NewLexIntent_Override(l LexIntent, scope constructs.Construct, id *string, config *LexIntentConfig) {
 	_init_.Initialize()
 
@@ -823,6 +847,17 @@ func (j *jsiiProxy_LexIntent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LexIntent)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1347,6 +1382,14 @@ func (l *jsiiProxy_LexIntent) ResetParentIntentSignature() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetParentIntentSignature",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LexIntent) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -503,6 +503,14 @@ func (j *jsiiProxy_PrometheusScraper) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusScraper) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusScraper) validateSetScrapeConfigurationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

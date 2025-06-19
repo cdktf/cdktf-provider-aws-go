@@ -246,6 +246,14 @@ func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsConnectBotAssociationParameters(scope constructs.Construct, id *string, config *DataAwsConnectBotAssociationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

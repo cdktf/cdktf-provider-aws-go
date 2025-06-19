@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCodeartifactAuthorizationTokenParameters(scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) error {
 	return nil
 }

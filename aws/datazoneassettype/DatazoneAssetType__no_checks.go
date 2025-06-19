@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatazoneAssetType) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneAssetType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDatazoneAssetTypeParameters(scope constructs.Construct, id *string, config *DatazoneAssetTypeConfig) error {
 	return nil
 }

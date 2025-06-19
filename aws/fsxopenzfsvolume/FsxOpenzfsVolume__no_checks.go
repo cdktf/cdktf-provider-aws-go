@@ -155,6 +155,10 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetRecordSizeKibParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) validateSetStorageCapacityQuotaGibParameters(val *float64) error {
 	return nil
 }

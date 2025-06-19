@@ -5,14 +5,14 @@ package vpcblockpublicaccessexclusion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcblockpublicaccessexclusion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcblockpublicaccessexclusion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion}.
 type VpcBlockPublicAccessExclusion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type VpcBlockPublicAccessExclusion interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceArn() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
@@ -125,6 +128,7 @@ type VpcBlockPublicAccessExclusion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSubnetId()
 	ResetTags()
 	ResetTimeouts()
@@ -307,6 +311,26 @@ func (j *jsiiProxy_VpcBlockPublicAccessExclusion) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcBlockPublicAccessExclusion) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcBlockPublicAccessExclusion) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcBlockPublicAccessExclusion) ResourceArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -438,7 +462,7 @@ func (j *jsiiProxy_VpcBlockPublicAccessExclusion) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
 func NewVpcBlockPublicAccessExclusion(scope constructs.Construct, id *string, config *VpcBlockPublicAccessExclusionConfig) VpcBlockPublicAccessExclusion {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewVpcBlockPublicAccessExclusion(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
 func NewVpcBlockPublicAccessExclusion_Override(v VpcBlockPublicAccessExclusion, scope constructs.Construct, id *string, config *VpcBlockPublicAccessExclusionConfig) {
 	_init_.Initialize()
 
@@ -542,6 +566,17 @@ func (j *jsiiProxy_VpcBlockPublicAccessExclusion)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcBlockPublicAccessExclusion)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -947,6 +982,14 @@ func (v *jsiiProxy_VpcBlockPublicAccessExclusion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcBlockPublicAccessExclusion) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

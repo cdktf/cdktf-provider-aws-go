@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

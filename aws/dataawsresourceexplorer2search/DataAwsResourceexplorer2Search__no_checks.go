@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search) validateSetQueryStringParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsResourceexplorer2Search) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsResourceexplorer2Search) validateSetViewArnParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package dataawsfisexperimenttemplates
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfisexperimenttemplates/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsfisexperimenttemplates/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates}.
 type DataAwsFisExperimentTemplates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,6 +48,9 @@ type DataAwsFisExperimentTemplates interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -85,6 +88,7 @@ type DataAwsFisExperimentTemplates interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -225,6 +229,26 @@ func (j *jsiiProxy_DataAwsFisExperimentTemplates) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsFisExperimentTemplates) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFisExperimentTemplates) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsFisExperimentTemplates) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -276,7 +300,7 @@ func (j *jsiiProxy_DataAwsFisExperimentTemplates) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source.
 func NewDataAwsFisExperimentTemplates(scope constructs.Construct, id *string, config *DataAwsFisExperimentTemplatesConfig) DataAwsFisExperimentTemplates {
 	_init_.Initialize()
 
@@ -294,7 +318,7 @@ func NewDataAwsFisExperimentTemplates(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fis_experiment_templates aws_fis_experiment_templates} Data Source.
 func NewDataAwsFisExperimentTemplates_Override(d DataAwsFisExperimentTemplates, scope constructs.Construct, id *string, config *DataAwsFisExperimentTemplatesConfig) {
 	_init_.Initialize()
 
@@ -347,6 +371,17 @@ func (j *jsiiProxy_DataAwsFisExperimentTemplates)SetProvider(val cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFisExperimentTemplates)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -651,6 +686,14 @@ func (d *jsiiProxy_DataAwsFisExperimentTemplates) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsFisExperimentTemplates) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

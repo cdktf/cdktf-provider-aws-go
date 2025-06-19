@@ -5,14 +5,14 @@ package elasticachereservedcachenode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/elasticachereservedcachenode/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node}.
 type ElasticacheReservedCacheNode interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type ElasticacheReservedCacheNode interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RecurringCharges() ElasticacheReservedCacheNodeRecurringChargesList
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservedCacheNodesOfferingId() *string
 	SetReservedCacheNodesOfferingId(val *string)
 	ReservedCacheNodesOfferingIdInput() *string
@@ -135,6 +138,7 @@ type ElasticacheReservedCacheNode interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -395,6 +399,26 @@ func (j *jsiiProxy_ElasticacheReservedCacheNode) RecurringCharges() ElasticacheR
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheReservedCacheNode) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReservedCacheNode) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheReservedCacheNode) ReservedCacheNodesOfferingId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -526,7 +550,7 @@ func (j *jsiiProxy_ElasticacheReservedCacheNode) UsagePrice() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
 func NewElasticacheReservedCacheNode(scope constructs.Construct, id *string, config *ElasticacheReservedCacheNodeConfig) ElasticacheReservedCacheNode {
 	_init_.Initialize()
 
@@ -544,7 +568,7 @@ func NewElasticacheReservedCacheNode(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/elasticache_reserved_cache_node aws_elasticache_reserved_cache_node} Resource.
 func NewElasticacheReservedCacheNode_Override(e ElasticacheReservedCacheNode, scope constructs.Construct, id *string, config *ElasticacheReservedCacheNodeConfig) {
 	_init_.Initialize()
 
@@ -641,6 +665,17 @@ func (j *jsiiProxy_ElasticacheReservedCacheNode)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheReservedCacheNode)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1051,6 +1086,14 @@ func (e *jsiiProxy_ElasticacheReservedCacheNode) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheReservedCacheNode) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

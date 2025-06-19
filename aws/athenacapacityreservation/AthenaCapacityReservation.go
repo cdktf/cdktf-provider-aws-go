@@ -5,14 +5,14 @@ package athenacapacityreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/athenacapacityreservation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation}.
 type AthenaCapacityReservation interface {
 	cdktf.TerraformResource
 	AllocatedDpus() *float64
@@ -60,6 +60,9 @@ type AthenaCapacityReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -123,6 +126,7 @@ type AthenaCapacityReservation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -313,6 +317,26 @@ func (j *jsiiProxy_AthenaCapacityReservation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AthenaCapacityReservation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaCapacityReservation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AthenaCapacityReservation) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,7 +448,7 @@ func (j *jsiiProxy_AthenaCapacityReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource.
 func NewAthenaCapacityReservation(scope constructs.Construct, id *string, config *AthenaCapacityReservationConfig) AthenaCapacityReservation {
 	_init_.Initialize()
 
@@ -442,7 +466,7 @@ func NewAthenaCapacityReservation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/athena_capacity_reservation aws_athena_capacity_reservation} Resource.
 func NewAthenaCapacityReservation_Override(a AthenaCapacityReservation, scope constructs.Construct, id *string, config *AthenaCapacityReservationConfig) {
 	_init_.Initialize()
 
@@ -528,6 +552,17 @@ func (j *jsiiProxy_AthenaCapacityReservation)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AthenaCapacityReservation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (a *jsiiProxy_AthenaCapacityReservation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaCapacityReservation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

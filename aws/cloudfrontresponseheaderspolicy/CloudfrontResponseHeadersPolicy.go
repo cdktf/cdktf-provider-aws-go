@@ -5,14 +5,14 @@ package cloudfrontresponseheaderspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/cloudfrontresponseheaderspolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/cloudfrontresponseheaderspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
 type CloudfrontResponseHeadersPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -40,8 +40,6 @@ type CloudfrontResponseHeadersPolicy interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
-	SetEtag(val *string)
-	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,7 +133,6 @@ type CloudfrontResponseHeadersPolicy interface {
 	ResetComment()
 	ResetCorsConfig()
 	ResetCustomHeadersConfig()
-	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -286,16 +283,6 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) EtagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"etagInput",
 		&returns,
 	)
 	return returns
@@ -512,7 +499,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) CloudfrontResponseHeadersPolicy {
 	_init_.Initialize()
 
@@ -530,7 +517,7 @@ func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy_Override(c CloudfrontResponseHeadersPolicy, scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) {
 	_init_.Initialize()
 
@@ -578,17 +565,6 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicy)SetEtag(val *string) {
-	if err := j.validateSetEtagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"etag",
 		val,
 	)
 }
@@ -1081,14 +1057,6 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) ResetCustomHeadersConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomHeadersConfig",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) ResetEtag() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEtag",
 		nil, // no parameters
 	)
 }

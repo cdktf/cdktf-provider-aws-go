@@ -115,6 +115,10 @@ func (j *jsiiProxy_SchemasRegistryPolicy) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SchemasRegistryPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasRegistryPolicy) validateSetRegistryNameParameters(val *string) error {
 	return nil
 }

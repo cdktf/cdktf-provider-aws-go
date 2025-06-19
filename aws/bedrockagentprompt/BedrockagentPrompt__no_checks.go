@@ -127,6 +127,10 @@ func (j *jsiiProxy_BedrockagentPrompt) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentPrompt) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentPrompt) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

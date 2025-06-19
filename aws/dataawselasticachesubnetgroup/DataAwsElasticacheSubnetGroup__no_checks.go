@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsElasticacheSubnetGroup) validateSetNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheSubnetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

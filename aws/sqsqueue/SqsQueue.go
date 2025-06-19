@@ -5,14 +5,14 @@ package sqsqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/sqsqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/sqsqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sqs_queue aws_sqs_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sqs_queue aws_sqs_queue}.
 type SqsQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,9 @@ type SqsQueue interface {
 	RedrivePolicy() *string
 	SetRedrivePolicy(val *string)
 	RedrivePolicyInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SqsManagedSseEnabled() interface{}
 	SetSqsManagedSseEnabled(val interface{})
 	SqsManagedSseEnabledInput() interface{}
@@ -188,6 +191,7 @@ type SqsQueue interface {
 	ResetReceiveWaitTimeSeconds()
 	ResetRedriveAllowPolicy()
 	ResetRedrivePolicy()
+	ResetRegion()
 	ResetSqsManagedSseEnabled()
 	ResetTags()
 	ResetTagsAll()
@@ -671,6 +675,26 @@ func (j *jsiiProxy_SqsQueue) RedrivePolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqsQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqsQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqsQueue) SqsManagedSseEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -812,7 +836,7 @@ func (j *jsiiProxy_SqsQueue) VisibilityTimeoutSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig) SqsQueue {
 	_init_.Initialize()
 
@@ -830,7 +854,7 @@ func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue_Override(s SqsQueue, scope constructs.Construct, id *string, config *SqsQueueConfig) {
 	_init_.Initialize()
 
@@ -1081,6 +1105,17 @@ func (j *jsiiProxy_SqsQueue)SetRedrivePolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"redrivePolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqsQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1625,6 +1660,14 @@ func (s *jsiiProxy_SqsQueue) ResetRedrivePolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRedrivePolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqsQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

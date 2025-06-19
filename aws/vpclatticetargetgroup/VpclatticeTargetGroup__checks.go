@@ -429,6 +429,14 @@ func (j *jsiiProxy_VpclatticeTargetGroup) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

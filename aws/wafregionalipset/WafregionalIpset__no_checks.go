@@ -119,6 +119,10 @@ func (j *jsiiProxy_WafregionalIpset) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalIpset) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewWafregionalIpsetParameters(scope constructs.Construct, id *string, config *WafregionalIpsetConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_BackupVaultPolicy) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_BackupVaultPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewBackupVaultPolicyParameters(scope constructs.Construct, id *string, config *BackupVaultPolicyConfig) error {
 	return nil
 }

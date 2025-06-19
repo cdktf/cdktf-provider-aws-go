@@ -5,14 +5,14 @@ package securityhubautomationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securityhubautomationrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securityhubautomationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule}.
 type SecurityhubAutomationRule interface {
 	cdktf.TerraformResource
 	Actions() SecurityhubAutomationRuleActionsList
@@ -67,6 +67,9 @@ type SecurityhubAutomationRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleName() *string
 	SetRuleName(val *string)
 	RuleNameInput() *string
@@ -137,6 +140,7 @@ type SecurityhubAutomationRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRuleStatus()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -387,6 +391,26 @@ func (j *jsiiProxy_SecurityhubAutomationRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityhubAutomationRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAutomationRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityhubAutomationRule) RuleName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,7 +532,7 @@ func (j *jsiiProxy_SecurityhubAutomationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule} Resource.
 func NewSecurityhubAutomationRule(scope constructs.Construct, id *string, config *SecurityhubAutomationRuleConfig) SecurityhubAutomationRule {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewSecurityhubAutomationRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securityhub_automation_rule aws_securityhub_automation_rule} Resource.
 func NewSecurityhubAutomationRule_Override(s SecurityhubAutomationRule, scope constructs.Construct, id *string, config *SecurityhubAutomationRuleConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_SecurityhubAutomationRule)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityhubAutomationRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1074,6 +1109,14 @@ func (s *jsiiProxy_SecurityhubAutomationRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityhubAutomationRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

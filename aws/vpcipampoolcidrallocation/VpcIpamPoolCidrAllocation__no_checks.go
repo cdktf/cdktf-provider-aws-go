@@ -131,6 +131,10 @@ func (j *jsiiProxy_VpcIpamPoolCidrAllocation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPoolCidrAllocation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewVpcIpamPoolCidrAllocationParameters(scope constructs.Construct, id *string, config *VpcIpamPoolCidrAllocationConfig) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_RdsClusterActivityStream) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterActivityStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterActivityStream) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

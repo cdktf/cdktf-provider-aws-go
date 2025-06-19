@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

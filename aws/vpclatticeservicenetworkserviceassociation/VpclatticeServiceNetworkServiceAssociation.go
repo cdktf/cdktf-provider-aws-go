@@ -5,14 +5,14 @@ package vpclatticeservicenetworkserviceassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpclatticeservicenetworkserviceassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeservicenetworkserviceassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association}.
 type VpclatticeServiceNetworkServiceAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type VpclatticeServiceNetworkServiceAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServiceIdentifier() *string
 	SetServiceIdentifier(val *string)
 	ServiceIdentifierInput() *string
@@ -131,6 +134,7 @@ type VpclatticeServiceNetworkServiceAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -342,6 +346,26 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) ServiceIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,7 +507,7 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
 func NewVpclatticeServiceNetworkServiceAssociation(scope constructs.Construct, id *string, config *VpclatticeServiceNetworkServiceAssociationConfig) VpclatticeServiceNetworkServiceAssociation {
 	_init_.Initialize()
 
@@ -501,7 +525,7 @@ func NewVpclatticeServiceNetworkServiceAssociation(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
 func NewVpclatticeServiceNetworkServiceAssociation_Override(v VpclatticeServiceNetworkServiceAssociation, scope constructs.Construct, id *string, config *VpclatticeServiceNetworkServiceAssociationConfig) {
 	_init_.Initialize()
 
@@ -587,6 +611,17 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation)SetProvisioners(va
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1011,6 +1046,14 @@ func (v *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

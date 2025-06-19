@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

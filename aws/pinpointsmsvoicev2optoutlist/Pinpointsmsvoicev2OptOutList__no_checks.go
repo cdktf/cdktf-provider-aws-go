@@ -111,6 +111,10 @@ func (j *jsiiProxy_Pinpointsmsvoicev2OptOutList) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_Pinpointsmsvoicev2OptOutList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Pinpointsmsvoicev2OptOutList) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

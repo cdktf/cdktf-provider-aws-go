@@ -123,6 +123,10 @@ func (j *jsiiProxy_DaxParameterGroup) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_DaxParameterGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDaxParameterGroupParameters(scope constructs.Construct, id *string, config *DaxParameterGroupConfig) error {
 	return nil
 }

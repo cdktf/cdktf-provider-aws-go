@@ -123,6 +123,10 @@ func (j *jsiiProxy_SsmcontactsContactChannel) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SsmcontactsContactChannel) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmcontactsContactChannel) validateSetTypeParameters(val *string) error {
 	return nil
 }

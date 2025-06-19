@@ -5,14 +5,14 @@ package dataawsvpcsecuritygrouprules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpcsecuritygrouprules/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpcsecuritygrouprules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules}.
 type DataAwsVpcSecurityGroupRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsVpcSecurityGroupRules interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -90,6 +93,7 @@ type DataAwsVpcSecurityGroupRules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -260,6 +264,26 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -311,7 +335,7 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules} Data Source.
 func NewDataAwsVpcSecurityGroupRules(scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRulesConfig) DataAwsVpcSecurityGroupRules {
 	_init_.Initialize()
 
@@ -329,7 +353,7 @@ func NewDataAwsVpcSecurityGroupRules(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rules aws_vpc_security_group_rules} Data Source.
 func NewDataAwsVpcSecurityGroupRules_Override(d DataAwsVpcSecurityGroupRules, scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRulesConfig) {
 	_init_.Initialize()
 
@@ -382,6 +406,17 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRules)SetProvider(val cdktf.TerraformP
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRules)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -705,6 +740,14 @@ func (d *jsiiProxy_DataAwsVpcSecurityGroupRules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpcSecurityGroupRules) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

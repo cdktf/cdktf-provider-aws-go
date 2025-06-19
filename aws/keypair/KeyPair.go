@@ -5,14 +5,14 @@ package keypair
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/keypair/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/keypair/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/key_pair aws_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/key_pair aws_key_pair}.
 type KeyPair interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type KeyPair interface {
 	PublicKeyInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -132,6 +135,7 @@ type KeyPair interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -402,6 +406,26 @@ func (j *jsiiProxy_KeyPair) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KeyPair) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyPair) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KeyPair) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_KeyPair) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/key_pair aws_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/key_pair aws_key_pair} Resource.
 func NewKeyPair(scope constructs.Construct, id *string, config *KeyPairConfig) KeyPair {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewKeyPair(scope constructs.Construct, id *string, config *KeyPairConfig) K
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/key_pair aws_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/key_pair aws_key_pair} Resource.
 func NewKeyPair_Override(k KeyPair, scope constructs.Construct, id *string, config *KeyPairConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_KeyPair)SetPublicKey(val *string) {
 	_jsii_.Set(
 		j,
 		"publicKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KeyPair)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (k *jsiiProxy_KeyPair) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyPair) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

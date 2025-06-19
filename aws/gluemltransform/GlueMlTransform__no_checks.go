@@ -143,6 +143,10 @@ func (j *jsiiProxy_GlueMlTransform) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_GlueMlTransform) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueMlTransform) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

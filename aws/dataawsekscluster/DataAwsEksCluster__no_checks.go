@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEksCluster) validateSetNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

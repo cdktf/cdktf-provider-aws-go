@@ -115,6 +115,10 @@ func (j *jsiiProxy_RdsCertificate) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_RdsCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRdsCertificateParameters(scope constructs.Construct, id *string, config *RdsCertificateConfig) error {
 	return nil
 }

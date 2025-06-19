@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsRedshiftDataShares) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRedshiftDataShares) validatePutDataSharesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsRedshiftDataShares_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,6 +76,10 @@ func (j *jsiiProxy_DataAwsRedshiftDataShares) validateSetCountParameters(val int
 }
 
 func (j *jsiiProxy_DataAwsRedshiftDataShares) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRedshiftDataShares) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

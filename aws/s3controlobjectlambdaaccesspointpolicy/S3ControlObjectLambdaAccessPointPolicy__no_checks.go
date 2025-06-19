@@ -123,6 +123,10 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewS3ControlObjectLambdaAccessPointPolicyParameters(scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointPolicyConfig) error {
 	return nil
 }

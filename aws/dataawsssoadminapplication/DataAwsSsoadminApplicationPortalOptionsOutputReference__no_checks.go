@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validatePutSignInOptionsParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateSetInternalValueParameters(val *DataAwsSsoadminApplicationPortalOptions) error {
 	return nil
 }
 

@@ -418,6 +418,14 @@ func (j *jsiiProxy_DynamodbContributorInsights) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) validateSetTableNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

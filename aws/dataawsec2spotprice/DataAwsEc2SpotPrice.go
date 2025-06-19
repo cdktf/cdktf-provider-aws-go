@@ -5,14 +5,14 @@ package dataawsec2spotprice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2spotprice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2spotprice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price}.
 type DataAwsEc2SpotPrice interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -58,6 +58,9 @@ type DataAwsEc2SpotPrice interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SpotPrice() *string
 	SpotPriceTimestamp() *string
 	// Experimental.
@@ -102,6 +105,7 @@ type DataAwsEc2SpotPrice interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -312,6 +316,26 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2SpotPrice) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2SpotPrice) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2SpotPrice) SpotPrice() *string {
 	var returns *string
 	_jsii_.Get(
@@ -383,7 +407,7 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price} Data Source.
 func NewDataAwsEc2SpotPrice(scope constructs.Construct, id *string, config *DataAwsEc2SpotPriceConfig) DataAwsEc2SpotPrice {
 	_init_.Initialize()
 
@@ -401,7 +425,7 @@ func NewDataAwsEc2SpotPrice(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_spot_price aws_ec2_spot_price} Data Source.
 func NewDataAwsEc2SpotPrice_Override(d DataAwsEc2SpotPrice, scope constructs.Construct, id *string, config *DataAwsEc2SpotPriceConfig) {
 	_init_.Initialize()
 
@@ -487,6 +511,17 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice)SetProvider(val cdktf.TerraformProvider) 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2SpotPrice)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -834,6 +869,14 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2SpotPrice) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_NetworkfirewallTlsInspectionConfiguration) validateSetProvisi
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallTlsInspectionConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallTlsInspectionConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package rdsreservedinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rdsreservedinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rdsreservedinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
 type RdsReservedInstance interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type RdsReservedInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RecurringCharges() RdsReservedInstanceRecurringChargesList
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservationId() *string
 	SetReservationId(val *string)
 	ReservationIdInput() *string
@@ -143,6 +146,7 @@ type RdsReservedInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReservationId()
 	ResetTags()
 	ResetTagsAll()
@@ -455,6 +459,26 @@ func (j *jsiiProxy_RdsReservedInstance) RecurringCharges() RdsReservedInstanceRe
 	return returns
 }
 
+func (j *jsiiProxy_RdsReservedInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsReservedInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsReservedInstance) ReservationId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -596,7 +620,7 @@ func (j *jsiiProxy_RdsReservedInstance) UsagePrice() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) RdsReservedInstance {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance_Override(r RdsReservedInstance, scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) {
 	_init_.Initialize()
 
@@ -722,6 +746,17 @@ func (j *jsiiProxy_RdsReservedInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsReservedInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1143,6 +1178,14 @@ func (r *jsiiProxy_RdsReservedInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsReservedInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

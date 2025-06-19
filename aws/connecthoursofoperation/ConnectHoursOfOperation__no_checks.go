@@ -127,6 +127,10 @@ func (j *jsiiProxy_ConnectHoursOfOperation) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ConnectHoursOfOperation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectHoursOfOperation) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

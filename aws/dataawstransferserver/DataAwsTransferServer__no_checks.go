@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsTransferServer) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsTransferServer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsTransferServer) validateSetServerIdParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_EcsTag) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_EcsTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTag) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

@@ -5,21 +5,20 @@ package dataawsssoadminapplicationassignments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplicationassignments/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplicationassignments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments}.
 type DataAwsSsoadminApplicationAssignments interface {
 	cdktf.TerraformDataSource
 	ApplicationArn() *string
 	SetApplicationArn(val *string)
 	ApplicationArnInput() *string
 	ApplicationAssignments() DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList
-	ApplicationAssignmentsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -53,6 +52,9 @@ type DataAwsSsoadminApplicationAssignments interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -84,11 +86,10 @@ type DataAwsSsoadminApplicationAssignments interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutApplicationAssignments(value interface{})
-	ResetApplicationAssignments()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -133,16 +134,6 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) ApplicationAssignments
 	_jsii_.Get(
 		j,
 		"applicationAssignments",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) ApplicationAssignmentsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"applicationAssignmentsInput",
 		&returns,
 	)
 	return returns
@@ -268,6 +259,26 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -299,7 +310,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
 func NewDataAwsSsoadminApplicationAssignments(scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationAssignmentsConfig) DataAwsSsoadminApplicationAssignments {
 	_init_.Initialize()
 
@@ -317,7 +328,7 @@ func NewDataAwsSsoadminApplicationAssignments(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssoadmin_application_assignments aws_ssoadmin_application_assignments} Data Source.
 func NewDataAwsSsoadminApplicationAssignments_Override(d DataAwsSsoadminApplicationAssignments, scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationAssignmentsConfig) {
 	_init_.Initialize()
 
@@ -381,6 +392,17 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments)SetProvider(val cdktf.T
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSsoadminApplicationAssignments)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -670,29 +692,18 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) OverrideLogicalId(newL
 	)
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) PutApplicationAssignments(value interface{}) {
-	if err := d.validatePutApplicationAssignmentsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putApplicationAssignments",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) ResetApplicationAssignments() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetApplicationAssignments",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSsoadminApplicationAssignments) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

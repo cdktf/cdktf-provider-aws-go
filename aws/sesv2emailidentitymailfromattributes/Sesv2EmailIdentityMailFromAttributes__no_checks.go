@@ -123,6 +123,10 @@ func (j *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSesv2EmailIdentityMailFromAttributesParameters(scope constructs.Construct, id *string, config *Sesv2EmailIdentityMailFromAttributesConfig) error {
 	return nil
 }

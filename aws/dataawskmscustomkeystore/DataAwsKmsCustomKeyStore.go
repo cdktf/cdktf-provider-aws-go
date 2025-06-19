@@ -5,14 +5,14 @@ package dataawskmscustomkeystore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskmscustomkeystore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskmscustomkeystore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store}.
 type DataAwsKmsCustomKeyStore interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -59,6 +59,9 @@ type DataAwsKmsCustomKeyStore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -97,6 +100,7 @@ type DataAwsKmsCustomKeyStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -316,6 +320,26 @@ func (j *jsiiProxy_DataAwsKmsCustomKeyStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsCustomKeyStore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsCustomKeyStore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsCustomKeyStore) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_DataAwsKmsCustomKeyStore) TrustAnchorCertificate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store} Data Source.
 func NewDataAwsKmsCustomKeyStore(scope constructs.Construct, id *string, config *DataAwsKmsCustomKeyStoreConfig) DataAwsKmsCustomKeyStore {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewDataAwsKmsCustomKeyStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store} Data Source.
 func NewDataAwsKmsCustomKeyStore_Override(d DataAwsKmsCustomKeyStore, scope constructs.Construct, id *string, config *DataAwsKmsCustomKeyStoreConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_DataAwsKmsCustomKeyStore)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKmsCustomKeyStore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -778,6 +813,14 @@ func (d *jsiiProxy_DataAwsKmsCustomKeyStore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKmsCustomKeyStore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

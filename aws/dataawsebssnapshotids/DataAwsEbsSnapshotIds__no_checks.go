@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetOwnersParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetRestorableByUserIdsParameters(val *[]*string) error {
 	return nil
 }

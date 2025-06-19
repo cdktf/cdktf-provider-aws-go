@@ -5,14 +5,14 @@ package dataawsec2instancetypeoffering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsec2instancetypeoffering/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsec2instancetypeoffering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}.
 type DataAwsEc2InstanceTypeOffering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -59,6 +59,9 @@ type DataAwsEc2InstanceTypeOffering interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,6 +104,7 @@ type DataAwsEc2InstanceTypeOffering interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredInstanceTypes()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -372,7 +396,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
 func NewDataAwsEc2InstanceTypeOffering(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingConfig) DataAwsEc2InstanceTypeOffering {
 	_init_.Initialize()
 
@@ -390,7 +414,7 @@ func NewDataAwsEc2InstanceTypeOffering(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
 func NewDataAwsEc2InstanceTypeOffering_Override(d DataAwsEc2InstanceTypeOffering, scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering)SetProvider(val cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -823,6 +858,14 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeOffering) ResetPreferredInstanceTypes()
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredInstanceTypes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEc2InstanceTypeOffering) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

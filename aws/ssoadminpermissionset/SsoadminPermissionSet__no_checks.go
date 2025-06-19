@@ -127,6 +127,10 @@ func (j *jsiiProxy_SsoadminPermissionSet) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminPermissionSet) validateSetRelayStateParameters(val *string) error {
 	return nil
 }

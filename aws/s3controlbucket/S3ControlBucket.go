@@ -5,14 +5,14 @@ package s3controlbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3controlbucket/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3controlbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_bucket aws_s3control_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_bucket aws_s3control_bucket}.
 type S3ControlBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -67,6 +67,9 @@ type S3ControlBucket interface {
 	PublicAccessBlockEnabled() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -126,6 +129,7 @@ type S3ControlBucket interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -366,6 +370,26 @@ func (j *jsiiProxy_S3ControlBucket) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlBucket) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlBucket) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlBucket) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -437,7 +461,7 @@ func (j *jsiiProxy_S3ControlBucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_bucket aws_s3control_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_bucket aws_s3control_bucket} Resource.
 func NewS3ControlBucket(scope constructs.Construct, id *string, config *S3ControlBucketConfig) S3ControlBucket {
 	_init_.Initialize()
 
@@ -455,7 +479,7 @@ func NewS3ControlBucket(scope constructs.Construct, id *string, config *S3Contro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3control_bucket aws_s3control_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3control_bucket aws_s3control_bucket} Resource.
 func NewS3ControlBucket_Override(s S3ControlBucket, scope constructs.Construct, id *string, config *S3ControlBucketConfig) {
 	_init_.Initialize()
 
@@ -563,6 +587,17 @@ func (j *jsiiProxy_S3ControlBucket)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlBucket)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -954,6 +989,14 @@ func (s *jsiiProxy_S3ControlBucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlBucket) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

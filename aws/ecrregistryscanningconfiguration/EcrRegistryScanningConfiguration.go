@@ -5,14 +5,14 @@ package ecrregistryscanningconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ecrregistryscanningconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecrregistryscanningconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}.
 type EcrRegistryScanningConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type EcrRegistryScanningConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RegistryId() *string
 	Rule() EcrRegistryScanningConfigurationRuleList
 	RuleInput() interface{}
@@ -118,6 +121,7 @@ type EcrRegistryScanningConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRule()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -287,6 +291,26 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_EcrRegistryScanningConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrRegistryScanningConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcrRegistryScanningConfiguration) RegistryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,7 +392,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
 func NewEcrRegistryScanningConfiguration(scope constructs.Construct, id *string, config *EcrRegistryScanningConfigurationConfig) EcrRegistryScanningConfiguration {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewEcrRegistryScanningConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
 func NewEcrRegistryScanningConfiguration_Override(e EcrRegistryScanningConfiguration, scope constructs.Construct, id *string, config *EcrRegistryScanningConfigurationConfig) {
 	_init_.Initialize()
 
@@ -472,6 +496,17 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcrRegistryScanningConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

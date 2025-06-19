@@ -115,6 +115,10 @@ func (j *jsiiProxy_DatazoneUserProfile) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneUserProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatazoneUserProfile) validateSetStatusParameters(val *string) error {
 	return nil
 }

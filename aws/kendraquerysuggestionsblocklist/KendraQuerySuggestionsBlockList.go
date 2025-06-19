@@ -5,14 +5,14 @@ package kendraquerysuggestionsblocklist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/kendraquerysuggestionsblocklist/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/kendraquerysuggestionsblocklist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
 type KendraQuerySuggestionsBlockList interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,9 @@ type KendraQuerySuggestionsBlockList interface {
 	QuerySuggestionsBlockListId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -139,6 +142,7 @@ type KendraQuerySuggestionsBlockList interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -390,6 +394,26 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KendraQuerySuggestionsBlockList) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,7 +555,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
 func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, config *KendraQuerySuggestionsBlockListConfig) KendraQuerySuggestionsBlockList {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
 func NewKendraQuerySuggestionsBlockList_Override(k KendraQuerySuggestionsBlockList, scope constructs.Construct, id *string, config *KendraQuerySuggestionsBlockListConfig) {
 	_init_.Initialize()
 
@@ -668,6 +692,17 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetProvisioners(val *[]interf
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1100,6 +1135,14 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

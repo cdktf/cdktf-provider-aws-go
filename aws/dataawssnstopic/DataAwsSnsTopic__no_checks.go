@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSnsTopic) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSnsTopic) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSnsTopic) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

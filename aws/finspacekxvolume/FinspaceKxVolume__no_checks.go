@@ -139,6 +139,10 @@ func (j *jsiiProxy_FinspaceKxVolume) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxVolume) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

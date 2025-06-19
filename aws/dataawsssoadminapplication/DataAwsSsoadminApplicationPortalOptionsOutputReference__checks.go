@@ -93,37 +93,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validatePutSignInOptionsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsSsoadminApplicationPortalOptionsSignInOptions:
-		value := value.(*[]*DataAwsSsoadminApplicationPortalOptionsSignInOptions)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsSsoadminApplicationPortalOptionsSignInOptions:
-		value_ := value.([]*DataAwsSsoadminApplicationPortalOptionsSignInOptions)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsSsoadminApplicationPortalOptionsSignInOptions; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -197,25 +166,9 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsSsoadminApplicationPortalOptions:
-		val := val.(*DataAwsSsoadminApplicationPortalOptions)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsSsoadminApplicationPortalOptions:
-		val_ := val.(DataAwsSsoadminApplicationPortalOptions)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsSsoadminApplicationPortalOptions; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) validateSetInternalValueParameters(val *DataAwsSsoadminApplicationPortalOptions) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

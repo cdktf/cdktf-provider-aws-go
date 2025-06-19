@@ -227,6 +227,14 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsVerifiedpermissionsPolicyStoreParameters(scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

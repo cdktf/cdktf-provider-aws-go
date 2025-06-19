@@ -5,9 +5,9 @@ package dataawslblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,7 +32,8 @@ type DataAwsLbListenerRuleActionForwardOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Stickiness() DataAwsLbListenerRuleActionForwardStickinessOutputReference
+	Stickiness() DataAwsLbListenerRuleActionForwardStickinessList
+	StickinessInput() interface{}
 	TargetGroup() DataAwsLbListenerRuleActionForwardTargetGroupList
 	TargetGroupInput() interface{}
 	// Experimental.
@@ -67,7 +68,9 @@ type DataAwsLbListenerRuleActionForwardOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStickiness(value interface{})
 	PutTargetGroup(value interface{})
+	ResetStickiness()
 	ResetTargetGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,11 +137,21 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) Stickiness() DataAwsLbListenerRuleActionForwardStickinessOutputReference {
-	var returns DataAwsLbListenerRuleActionForwardStickinessOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) Stickiness() DataAwsLbListenerRuleActionForwardStickinessList {
+	var returns DataAwsLbListenerRuleActionForwardStickinessList
 	_jsii_.Get(
 		j,
 		"stickiness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) StickinessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stickinessInput",
 		&returns,
 	)
 	return returns
@@ -185,29 +198,29 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) TerraformR
 }
 
 
-func NewDataAwsLbListenerRuleActionForwardOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsLbListenerRuleActionForwardOutputReference {
+func NewDataAwsLbListenerRuleActionForwardOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsLbListenerRuleActionForwardOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAwsLbListenerRuleActionForwardOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAwsLbListenerRuleActionForwardOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAwsLbListenerRuleActionForwardOutputReference_Override(d DataAwsLbListenerRuleActionForwardOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAwsLbListenerRuleActionForwardOutputReference_Override(d DataAwsLbListenerRuleActionForwardOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsLbListenerRule.DataAwsLbListenerRuleActionForwardOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -453,6 +466,17 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) Interpolat
 	return returns
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) PutStickiness(value interface{}) {
+	if err := d.validatePutStickinessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putStickiness",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) PutTargetGroup(value interface{}) {
 	if err := d.validatePutTargetGroupParameters(value); err != nil {
 		panic(err)
@@ -461,6 +485,14 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) PutTargetG
 		d,
 		"putTargetGroup",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) ResetStickiness() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStickiness",
+		nil, // no parameters
 	)
 }
 

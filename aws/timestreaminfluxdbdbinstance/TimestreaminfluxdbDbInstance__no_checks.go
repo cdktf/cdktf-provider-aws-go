@@ -163,6 +163,10 @@ func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetPubliclyAccessiblePa
 	return nil
 }
 
+func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreaminfluxdbDbInstance) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

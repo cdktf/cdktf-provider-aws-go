@@ -597,6 +597,14 @@ func (j *jsiiProxy_BedrockGuardrail) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrail) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrail) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

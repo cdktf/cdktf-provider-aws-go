@@ -418,6 +418,14 @@ func (j *jsiiProxy_InternetGatewayAttachment) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_InternetGatewayAttachment) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_InternetGatewayAttachment) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

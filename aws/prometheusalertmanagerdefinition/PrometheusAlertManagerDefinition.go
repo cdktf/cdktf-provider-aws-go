@@ -5,14 +5,14 @@ package prometheusalertmanagerdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/prometheusalertmanagerdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusalertmanagerdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
 type PrometheusAlertManagerDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type PrometheusAlertManagerDefinition interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type PrometheusAlertManagerDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_PrometheusAlertManagerDefinition) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusAlertManagerDefinition) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrometheusAlertManagerDefinition) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition) WorkspaceIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
 func NewPrometheusAlertManagerDefinition(scope constructs.Construct, id *string, config *PrometheusAlertManagerDefinitionConfig) PrometheusAlertManagerDefinition {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewPrometheusAlertManagerDefinition(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
 func NewPrometheusAlertManagerDefinition_Override(p PrometheusAlertManagerDefinition, scope constructs.Construct, id *string, config *PrometheusAlertManagerDefinitionConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrometheusAlertManagerDefinition)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (p *jsiiProxy_PrometheusAlertManagerDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

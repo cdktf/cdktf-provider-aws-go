@@ -119,6 +119,10 @@ func (j *jsiiProxy_QuicksightRefreshSchedule) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightRefreshSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightRefreshSchedule) validateSetScheduleIdParameters(val *string) error {
 	return nil
 }

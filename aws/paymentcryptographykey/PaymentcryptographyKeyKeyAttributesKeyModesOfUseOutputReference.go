@@ -5,9 +5,9 @@ package paymentcryptographykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/paymentcryptographykey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/paymentcryptographykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -366,29 +366,29 @@ func (j *jsiiProxy_PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferen
 }
 
 
-func NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference {
+func NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference_Override(p PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference_Override(p PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.paymentcryptographyKey.PaymentcryptographyKeyKeyAttributesKeyModesOfUseOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
 }

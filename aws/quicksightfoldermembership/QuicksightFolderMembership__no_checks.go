@@ -123,6 +123,10 @@ func (j *jsiiProxy_QuicksightFolderMembership) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightFolderMembership) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuicksightFolderMembershipParameters(scope constructs.Construct, id *string, config *QuicksightFolderMembershipConfig) error {
 	return nil
 }

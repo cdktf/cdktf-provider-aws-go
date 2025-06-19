@@ -481,6 +481,14 @@ func (j *jsiiProxy_SecurityhubAutomationRule) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubAutomationRule) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubAutomationRule) validateSetRuleNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

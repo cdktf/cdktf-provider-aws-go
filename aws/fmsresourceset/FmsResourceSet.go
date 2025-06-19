@@ -5,14 +5,14 @@ package fmsresourceset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fmsresourceset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fmsresourceset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fms_resource_set aws_fms_resource_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_resource_set aws_fms_resource_set}.
 type FmsResourceSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -57,6 +57,9 @@ type FmsResourceSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceSet() FmsResourceSetResourceSetList
 	ResourceSetInput() interface{}
 	Tags() *map[string]*string
@@ -119,6 +122,7 @@ type FmsResourceSet interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetResourceSet()
 	ResetTags()
 	ResetTimeouts()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_FmsResourceSet) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FmsResourceSet) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsResourceSet) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FmsResourceSet) ResourceSet() FmsResourceSetResourceSetList {
 	var returns FmsResourceSetResourceSetList
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_FmsResourceSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
 func NewFmsResourceSet(scope constructs.Construct, id *string, config *FmsResourceSetConfig) FmsResourceSet {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewFmsResourceSet(scope constructs.Construct, id *string, config *FmsResour
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_resource_set aws_fms_resource_set} Resource.
 func NewFmsResourceSet_Override(f FmsResourceSet, scope constructs.Construct, id *string, config *FmsResourceSetConfig) {
 	_init_.Initialize()
 
@@ -484,6 +508,17 @@ func (j *jsiiProxy_FmsResourceSet)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FmsResourceSet)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -878,6 +913,14 @@ func (f *jsiiProxy_FmsResourceSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsResourceSet) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

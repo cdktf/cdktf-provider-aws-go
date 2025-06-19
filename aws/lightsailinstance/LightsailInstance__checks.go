@@ -458,6 +458,14 @@ func (j *jsiiProxy_LightsailInstance) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_LightsailInstance) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstance) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

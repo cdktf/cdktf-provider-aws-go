@@ -437,6 +437,14 @@ func (j *jsiiProxy_GluePartitionIndex) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_GluePartitionIndex) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionIndex) validateSetTableNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

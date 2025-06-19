@@ -5,14 +5,14 @@ package dataawslaunchtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslaunchtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslaunchtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/launch_template aws_launch_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/launch_template aws_launch_template}.
 type DataAwsLaunchTemplate interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -37,8 +37,6 @@ type DataAwsLaunchTemplate interface {
 	DisableApiStop() cdktf.IResolvable
 	DisableApiTermination() cdktf.IResolvable
 	EbsOptimized() *string
-	ElasticGpuSpecifications() DataAwsLaunchTemplateElasticGpuSpecificationsList
-	ElasticInferenceAccelerator() DataAwsLaunchTemplateElasticInferenceAcceleratorList
 	EnclaveOptions() DataAwsLaunchTemplateEnclaveOptionsList
 	Filter() DataAwsLaunchTemplateFilterList
 	FilterInput() interface{}
@@ -86,6 +84,9 @@ type DataAwsLaunchTemplate interface {
 	RamDiskId() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupNames() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -134,6 +135,7 @@ type DataAwsLaunchTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -290,26 +292,6 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) EbsOptimized() *string {
 	_jsii_.Get(
 		j,
 		"ebsOptimized",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsLaunchTemplate) ElasticGpuSpecifications() DataAwsLaunchTemplateElasticGpuSpecificationsList {
-	var returns DataAwsLaunchTemplateElasticGpuSpecificationsList
-	_jsii_.Get(
-		j,
-		"elasticGpuSpecifications",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsLaunchTemplate) ElasticInferenceAccelerator() DataAwsLaunchTemplateElasticInferenceAcceleratorList {
-	var returns DataAwsLaunchTemplateElasticInferenceAcceleratorList
-	_jsii_.Get(
-		j,
-		"elasticInferenceAccelerator",
 		&returns,
 	)
 	return returns
@@ -635,6 +617,26 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLaunchTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLaunchTemplate) SecurityGroupNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -746,7 +748,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/launch_template aws_launch_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/launch_template aws_launch_template} Data Source.
 func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *DataAwsLaunchTemplateConfig) DataAwsLaunchTemplate {
 	_init_.Initialize()
 
@@ -764,7 +766,7 @@ func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/launch_template aws_launch_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/launch_template aws_launch_template} Data Source.
 func NewDataAwsLaunchTemplate_Override(d DataAwsLaunchTemplate, scope constructs.Construct, id *string, config *DataAwsLaunchTemplateConfig) {
 	_init_.Initialize()
 
@@ -839,6 +841,17 @@ func (j *jsiiProxy_DataAwsLaunchTemplate)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1189,6 +1202,14 @@ func (d *jsiiProxy_DataAwsLaunchTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLaunchTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

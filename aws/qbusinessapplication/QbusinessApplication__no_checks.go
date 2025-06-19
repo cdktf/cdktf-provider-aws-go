@@ -135,6 +135,10 @@ func (j *jsiiProxy_QbusinessApplication) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_QbusinessApplication) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QbusinessApplication) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

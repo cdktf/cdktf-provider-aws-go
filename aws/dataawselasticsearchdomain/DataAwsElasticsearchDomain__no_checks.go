@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

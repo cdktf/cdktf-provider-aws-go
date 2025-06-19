@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsKendraIndex) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraIndex) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

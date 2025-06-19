@@ -5,14 +5,14 @@ package ec2clientvpnauthorizationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2clientvpnauthorizationrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2clientvpnauthorizationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule}.
 type Ec2ClientVpnAuthorizationRule interface {
 	cdktf.TerraformResource
 	AccessGroupId() *string
@@ -70,6 +70,9 @@ type Ec2ClientVpnAuthorizationRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetNetworkCidr() *string
 	SetTargetNetworkCidr(val *string)
 	TargetNetworkCidrInput() *string
@@ -132,6 +135,7 @@ type Ec2ClientVpnAuthorizationRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -381,6 +385,26 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TargetNetworkCidr() *string {
 	var returns *string
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
 func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, config *Ec2ClientVpnAuthorizationRuleConfig) Ec2ClientVpnAuthorizationRule {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
 func NewEc2ClientVpnAuthorizationRule_Override(e Ec2ClientVpnAuthorizationRule, scope constructs.Construct, id *string, config *Ec2ClientVpnAuthorizationRuleConfig) {
 	_init_.Initialize()
 
@@ -600,6 +624,17 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1015,6 +1050,14 @@ func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnAuthorizationRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

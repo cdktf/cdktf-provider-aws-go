@@ -123,6 +123,10 @@ func (j *jsiiProxy_QuicksightVpcConnection) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightVpcConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightVpcConnection) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

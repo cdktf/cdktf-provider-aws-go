@@ -119,6 +119,10 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewInspector2DelegatedAdminAccountParameters(scope constructs.Construct, id *string, config *Inspector2DelegatedAdminAccountConfig) error {
 	return nil
 }

@@ -159,6 +159,10 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

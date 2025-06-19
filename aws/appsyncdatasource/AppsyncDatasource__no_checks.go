@@ -151,6 +151,10 @@ func (j *jsiiProxy_AppsyncDatasource) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncDatasource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncDatasource) validateSetServiceRoleArnParameters(val *string) error {
 	return nil
 }

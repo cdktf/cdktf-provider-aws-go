@@ -115,6 +115,10 @@ func (j *jsiiProxy_SyntheticsGroup) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

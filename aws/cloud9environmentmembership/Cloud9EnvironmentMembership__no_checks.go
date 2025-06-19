@@ -119,6 +119,10 @@ func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetUserArnParameters(val *string) error {
 	return nil
 }

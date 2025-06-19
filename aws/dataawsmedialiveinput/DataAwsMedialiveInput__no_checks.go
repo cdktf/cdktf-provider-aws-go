@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsMedialiveInput) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMedialiveInput) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsMedialiveInputParameters(scope constructs.Construct, id *string, config *DataAwsMedialiveInputConfig) error {
 	return nil
 }

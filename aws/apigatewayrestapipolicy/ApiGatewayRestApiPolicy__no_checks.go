@@ -115,6 +115,10 @@ func (j *jsiiProxy_ApiGatewayRestApiPolicy) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApiPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApiPolicy) validateSetRestApiIdParameters(val *string) error {
 	return nil
 }

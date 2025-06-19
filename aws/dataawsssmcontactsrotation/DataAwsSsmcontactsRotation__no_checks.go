@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsSsmcontactsRotation) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmcontactsRotation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsmcontactsRotationParameters(scope constructs.Construct, id *string, config *DataAwsSsmcontactsRotationConfig) error {
 	return nil
 }

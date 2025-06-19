@@ -5,14 +5,14 @@ package dataawsneptuneorderabledbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsneptuneorderabledbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsneptuneorderabledbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance}.
 type DataAwsNeptuneOrderableDbInstance interface {
 	cdktf.TerraformDataSource
 	AvailabilityZones() *[]*string
@@ -74,6 +74,9 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReadReplicaCapable() cdktf.IResolvable
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageType() *string
 	SupportsEnhancedMonitoring() cdktf.IResolvable
 	SupportsIamDatabaseAuthentication() cdktf.IResolvable
@@ -123,6 +126,7 @@ type DataAwsNeptuneOrderableDbInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredInstanceClasses()
+	ResetRegion()
 	ResetVpc()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -463,6 +467,26 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ReadReplicaCapable() cdktf
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) StorageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,7 +598,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
 func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsNeptuneOrderableDbInstanceConfig) DataAwsNeptuneOrderableDbInstance {
 	_init_.Initialize()
 
@@ -592,7 +616,7 @@ func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
 func NewDataAwsNeptuneOrderableDbInstance_Override(d DataAwsNeptuneOrderableDbInstance, scope constructs.Construct, id *string, config *DataAwsNeptuneOrderableDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -711,6 +735,17 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1063,6 +1098,14 @@ func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ResetPreferredInstanceClas
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredInstanceClasses",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNeptuneOrderableDbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

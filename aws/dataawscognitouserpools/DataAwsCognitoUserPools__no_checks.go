@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCognitoUserPools) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPools) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsCognitoUserPoolsParameters(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolsConfig) error {
 	return nil
 }

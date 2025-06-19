@@ -5,9 +5,9 @@ package rekognitionstreamprocessor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/rekognitionstreamprocessor/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/rekognitionstreamprocessor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -246,29 +246,29 @@ func (j *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputR
 }
 
 
-func NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference {
+func NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference_Override(r RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference_Override(r RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }

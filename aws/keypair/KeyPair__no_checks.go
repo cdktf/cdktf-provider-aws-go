@@ -123,6 +123,10 @@ func (j *jsiiProxy_KeyPair) validateSetPublicKeyParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_KeyPair) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyPair) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

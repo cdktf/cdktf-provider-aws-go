@@ -5,14 +5,14 @@ package fsxopenzfsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxopenzfsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxopenzfsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
 type FsxOpenzfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -98,6 +98,9 @@ type FsxOpenzfsFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RootVolumeConfiguration() FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference
 	RootVolumeConfigurationInput() *FsxOpenzfsFileSystemRootVolumeConfiguration
 	RootVolumeId() *string
@@ -201,6 +204,7 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredSubnetId()
+	ResetRegion()
 	ResetRootVolumeConfiguration()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
@@ -669,6 +673,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) RootVolumeConfiguration() FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference {
 	var returns FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference
 	_jsii_.Get(
@@ -960,7 +984,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
 
@@ -978,7 +1002,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1185,6 +1209,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1785,6 +1820,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetPreferredSubnetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetPreferredSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

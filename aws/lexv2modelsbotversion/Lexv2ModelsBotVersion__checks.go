@@ -457,6 +457,14 @@ func (j *jsiiProxy_Lexv2ModelsBotVersion) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Lexv2ModelsBotVersion) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLexv2ModelsBotVersionParameters(scope constructs.Construct, id *string, config *Lexv2ModelsBotVersionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

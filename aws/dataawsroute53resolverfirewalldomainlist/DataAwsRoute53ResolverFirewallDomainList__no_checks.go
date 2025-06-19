@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) validateSetLifecycl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRoute53ResolverFirewallDomainListParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallDomainListConfig) error {
 	return nil
 }

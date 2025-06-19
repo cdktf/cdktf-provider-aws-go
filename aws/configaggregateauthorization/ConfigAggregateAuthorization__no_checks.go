@@ -95,6 +95,10 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAccountIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAuthorizedAwsRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

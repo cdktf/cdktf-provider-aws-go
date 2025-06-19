@@ -5,14 +5,14 @@ package lightsaildistribution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/lightsaildistribution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/lightsaildistribution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_distribution aws_lightsail_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_distribution aws_lightsail_distribution}.
 type LightsailDistribution interface {
 	cdktf.TerraformResource
 	AlternativeDomainNames() *[]*string
@@ -87,6 +87,9 @@ type LightsailDistribution interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceType() *string
 	Status() *string
 	SupportCode() *string
@@ -161,6 +164,7 @@ type LightsailDistribution interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -572,6 +576,26 @@ func (j *jsiiProxy_LightsailDistribution) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailDistribution) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailDistribution) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailDistribution) ResourceType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -693,7 +717,7 @@ func (j *jsiiProxy_LightsailDistribution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
 func NewLightsailDistribution(scope constructs.Construct, id *string, config *LightsailDistributionConfig) LightsailDistribution {
 	_init_.Initialize()
 
@@ -711,7 +735,7 @@ func NewLightsailDistribution(scope constructs.Construct, id *string, config *Li
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
 func NewLightsailDistribution_Override(l LightsailDistribution, scope constructs.Construct, id *string, config *LightsailDistributionConfig) {
 	_init_.Initialize()
 
@@ -852,6 +876,17 @@ func (j *jsiiProxy_LightsailDistribution)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailDistribution)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1338,6 +1373,14 @@ func (l *jsiiProxy_LightsailDistribution) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailDistribution) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

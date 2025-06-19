@@ -5,9 +5,9 @@ package dataawsssoadminapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,10 +30,9 @@ type DataAwsSsoadminApplicationPortalOptionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSsoadminApplicationPortalOptions
+	SetInternalValue(val *DataAwsSsoadminApplicationPortalOptions)
 	SignInOptions() DataAwsSsoadminApplicationPortalOptionsSignInOptionsList
-	SignInOptionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +66,6 @@ type DataAwsSsoadminApplicationPortalOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSignInOptions(value interface{})
-	ResetSignInOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,8 +121,8 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) InternalValue() *DataAwsSsoadminApplicationPortalOptions {
+	var returns *DataAwsSsoadminApplicationPortalOptions
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -139,16 +136,6 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) SignI
 	_jsii_.Get(
 		j,
 		"signInOptions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) SignInOptionsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"signInOptionsInput",
 		&returns,
 	)
 	return returns
@@ -234,7 +221,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference)SetInternalValue(val *DataAwsSsoadminApplicationPortalOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,25 +438,6 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) PutSignInOptions(value interface{}) {
-	if err := d.validatePutSignInOptionsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putSignInOptions",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) ResetSignInOptions() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSignInOptions",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -5,14 +5,14 @@ package s3bucketserversideencryptionconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3bucketserversideencryptionconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3bucketserversideencryptionconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration}.
 type S3BucketServerSideEncryptionConfigurationA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -64,6 +64,9 @@ type S3BucketServerSideEncryptionConfigurationA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rule() S3BucketServerSideEncryptionConfigurationRuleAList
 	RuleInput() interface{}
 	// Experimental.
@@ -121,6 +124,7 @@ type S3BucketServerSideEncryptionConfigurationA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -329,6 +333,26 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) Rule() S3BucketServerSideEncryptionConfigurationRuleAList {
 	var returns S3BucketServerSideEncryptionConfigurationRuleAList
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfigurationA(scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationAConfig) S3BucketServerSideEncryptionConfigurationA {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewS3BucketServerSideEncryptionConfigurationA(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfigurationA_Override(s S3BucketServerSideEncryptionConfigurationA, scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationAConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA)SetProvisioners(va
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) ResetOverrideLogi
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

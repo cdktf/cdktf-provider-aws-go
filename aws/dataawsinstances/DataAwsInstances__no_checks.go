@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsInstances) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsInstances) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsInstancesParameters(scope constructs.Construct, id *string, config *DataAwsInstancesConfig) error {
 	return nil
 }

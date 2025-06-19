@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpnGatewayAttachment) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayAttachment) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

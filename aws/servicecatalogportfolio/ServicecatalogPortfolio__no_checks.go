@@ -127,6 +127,10 @@ func (j *jsiiProxy_ServicecatalogPortfolio) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogPortfolio) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogPortfolio) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

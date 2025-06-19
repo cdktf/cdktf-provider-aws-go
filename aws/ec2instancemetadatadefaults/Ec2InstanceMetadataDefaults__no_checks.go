@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2InstanceMetadataDefaults) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceMetadataDefaults) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2InstanceMetadataDefaultsParameters(scope constructs.Construct, id *string, config *Ec2InstanceMetadataDefaultsConfig) error {
 	return nil
 }

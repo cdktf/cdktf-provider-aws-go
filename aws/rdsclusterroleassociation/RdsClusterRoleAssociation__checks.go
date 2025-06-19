@@ -426,6 +426,14 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsTransferConnector) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsTransferConnector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsTransferConnectorParameters(scope constructs.Construct, id *string, config *DataAwsTransferConnectorConfig) error {
 	return nil
 }

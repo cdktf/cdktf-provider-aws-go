@@ -151,6 +151,10 @@ func (j *jsiiProxy_ApiGatewayDomainName) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayDomainName) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayDomainName) validateSetRegionalCertificateArnParameters(val *string) error {
 	return nil
 }

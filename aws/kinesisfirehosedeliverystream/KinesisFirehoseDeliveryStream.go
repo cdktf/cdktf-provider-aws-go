@@ -5,14 +5,14 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -88,6 +88,9 @@ type KinesisFirehoseDeliveryStream interface {
 	RawOverrides() interface{}
 	RedshiftConfiguration() KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference
 	RedshiftConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfiguration
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerSideEncryption() KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 	ServerSideEncryptionInput() *KinesisFirehoseDeliveryStreamServerSideEncryption
 	SnowflakeConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference
@@ -182,6 +185,7 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedshiftConfiguration()
+	ResetRegion()
 	ResetServerSideEncryption()
 	ResetSnowflakeConfiguration()
 	ResetSplunkConfiguration()
@@ -617,6 +621,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) RedshiftConfigurationInput() *
 	return returns
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ServerSideEncryption() KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference {
 	var returns KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 	_jsii_.Get(
@@ -788,7 +812,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -806,7 +830,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -936,6 +960,17 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1569,6 +1604,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetRedshiftConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRedshiftConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetRegion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

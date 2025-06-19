@@ -115,6 +115,10 @@ func (j *jsiiProxy_QuicksightTemplateAlias) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightTemplateAlias) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightTemplateAlias) validateSetTemplateIdParameters(val *string) error {
 	return nil
 }

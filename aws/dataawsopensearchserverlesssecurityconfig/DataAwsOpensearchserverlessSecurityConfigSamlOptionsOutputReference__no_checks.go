@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputRef
 	return nil
 }
 
-func validateNewDataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsOpensearchserverlessSecurityConfigSamlOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -5,14 +5,14 @@ package dataawscognitouserpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawscognitouserpool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitouserpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool}.
 type DataAwsCognitoUserPool interface {
 	cdktf.TerraformDataSource
 	AccountRecoverySetting() DataAwsCognitoUserPoolAccountRecoverySettingList
@@ -63,6 +63,9 @@ type DataAwsCognitoUserPool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SchemaAttributes() DataAwsCognitoUserPoolSchemaAttributesList
 	SmsAuthenticationMessage() *string
 	SmsConfigurationFailure() *string
@@ -108,6 +111,7 @@ type DataAwsCognitoUserPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -397,6 +401,26 @@ func (j *jsiiProxy_DataAwsCognitoUserPool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPool) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCognitoUserPool) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPool) SchemaAttributes() DataAwsCognitoUserPoolSchemaAttributesList {
 	var returns DataAwsCognitoUserPoolSchemaAttributesList
 	_jsii_.Get(
@@ -528,7 +552,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPool) UserPoolTags() cdktf.StringMap {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
 func NewDataAwsCognitoUserPool(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolConfig) DataAwsCognitoUserPool {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewDataAwsCognitoUserPool(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/cognito_user_pool aws_cognito_user_pool} Data Source.
 func NewDataAwsCognitoUserPool_Override(d DataAwsCognitoUserPool, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolConfig) {
 	_init_.Initialize()
 
@@ -599,6 +623,17 @@ func (j *jsiiProxy_DataAwsCognitoUserPool)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCognitoUserPool)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -903,6 +938,14 @@ func (d *jsiiProxy_DataAwsCognitoUserPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCognitoUserPool) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

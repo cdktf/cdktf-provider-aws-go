@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsKinesisStream) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisStream) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisStream) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

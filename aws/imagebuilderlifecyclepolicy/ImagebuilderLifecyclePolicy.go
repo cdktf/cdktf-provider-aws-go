@@ -5,14 +5,14 @@ package imagebuilderlifecyclepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/imagebuilderlifecyclepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/imagebuilderlifecyclepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy}.
 type ImagebuilderLifecyclePolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type ImagebuilderLifecyclePolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceSelection() ImagebuilderLifecyclePolicyResourceSelectionList
 	ResourceSelectionInput() interface{}
 	ResourceType() *string
@@ -136,6 +139,7 @@ type ImagebuilderLifecyclePolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyDetail()
+	ResetRegion()
 	ResetResourceSelection()
 	ResetStatus()
 	ResetTags()
@@ -387,6 +391,26 @@ func (j *jsiiProxy_ImagebuilderLifecyclePolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderLifecyclePolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderLifecyclePolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderLifecyclePolicy) ResourceSelection() ImagebuilderLifecyclePolicyResourceSelectionList {
 	var returns ImagebuilderLifecyclePolicyResourceSelectionList
 	_jsii_.Get(
@@ -508,7 +532,7 @@ func (j *jsiiProxy_ImagebuilderLifecyclePolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy} Resource.
 func NewImagebuilderLifecyclePolicy(scope constructs.Construct, id *string, config *ImagebuilderLifecyclePolicyConfig) ImagebuilderLifecyclePolicy {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewImagebuilderLifecyclePolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/imagebuilder_lifecycle_policy aws_imagebuilder_lifecycle_policy} Resource.
 func NewImagebuilderLifecyclePolicy_Override(i ImagebuilderLifecyclePolicy, scope constructs.Construct, id *string, config *ImagebuilderLifecyclePolicyConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_ImagebuilderLifecyclePolicy)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderLifecyclePolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1066,6 +1101,14 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicy) ResetPolicyDetail() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPolicyDetail",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderLifecyclePolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

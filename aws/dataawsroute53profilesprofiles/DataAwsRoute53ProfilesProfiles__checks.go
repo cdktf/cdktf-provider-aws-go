@@ -219,6 +219,14 @@ func (j *jsiiProxy_DataAwsRoute53ProfilesProfiles) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ProfilesProfiles) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsRoute53ProfilesProfilesParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ProfilesProfilesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

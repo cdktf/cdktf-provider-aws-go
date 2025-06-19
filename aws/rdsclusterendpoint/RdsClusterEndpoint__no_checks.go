@@ -127,6 +127,10 @@ func (j *jsiiProxy_RdsClusterEndpoint) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterEndpoint) validateSetStaticMembersParameters(val *[]*string) error {
 	return nil
 }

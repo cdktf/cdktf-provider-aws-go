@@ -115,6 +115,10 @@ func (j *jsiiProxy_CodecommitTrigger) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitTrigger) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitTrigger) validateSetRepositoryNameParameters(val *string) error {
 	return nil
 }

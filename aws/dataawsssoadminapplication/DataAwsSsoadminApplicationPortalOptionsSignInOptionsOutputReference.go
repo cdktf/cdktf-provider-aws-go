@@ -5,9 +5,9 @@ package dataawsssoadminapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssoadminapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssoadminapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,8 +31,8 @@ type DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsSsoadminApplicationPortalOptionsSignInOptions
+	SetInternalValue(val *DataAwsSsoadminApplicationPortalOptionsSignInOptions)
 	Origin() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference) InternalValue() *DataAwsSsoadminApplicationPortalOptionsSignInOptions {
+	var returns *DataAwsSsoadminApplicationPortalOptionsSignInOptions
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference)SetInternalValue(val *DataAwsSsoadminApplicationPortalOptionsSignInOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

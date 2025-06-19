@@ -195,6 +195,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

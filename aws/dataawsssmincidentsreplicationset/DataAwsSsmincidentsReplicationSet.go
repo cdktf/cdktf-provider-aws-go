@@ -5,14 +5,14 @@ package dataawsssmincidentsreplicationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsssmincidentsreplicationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsssmincidentsreplicationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
 type DataAwsSsmincidentsReplicationSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,7 @@ type DataAwsSsmincidentsReplicationSet interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() DataAwsSsmincidentsReplicationSetRegionList
+	Regions() DataAwsSsmincidentsReplicationSetRegionsList
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -294,6 +295,16 @@ func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) Region() DataAwsSsminciden
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) Regions() DataAwsSsmincidentsReplicationSetRegionsList {
+	var returns DataAwsSsmincidentsReplicationSetRegionsList
+	_jsii_.Get(
+		j,
+		"regions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,7 +366,7 @@ func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
 func NewDataAwsSsmincidentsReplicationSet(scope constructs.Construct, id *string, config *DataAwsSsmincidentsReplicationSetConfig) DataAwsSsmincidentsReplicationSet {
 	_init_.Initialize()
 
@@ -373,7 +384,7 @@ func NewDataAwsSsmincidentsReplicationSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
 func NewDataAwsSsmincidentsReplicationSet_Override(d DataAwsSsmincidentsReplicationSet, scope constructs.Construct, id *string, config *DataAwsSsmincidentsReplicationSetConfig) {
 	_init_.Initialize()
 

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskconnectConnector) validateSetNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskconnectConnector) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskconnectConnector) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

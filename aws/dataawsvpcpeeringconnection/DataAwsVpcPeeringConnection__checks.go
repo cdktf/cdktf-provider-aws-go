@@ -301,23 +301,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerOwnerIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerRegionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetPeerVpcIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetRegionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

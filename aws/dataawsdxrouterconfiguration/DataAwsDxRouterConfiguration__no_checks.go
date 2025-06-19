@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDxRouterConfiguration) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDxRouterConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDxRouterConfiguration) validateSetRouterTypeIdentifierParameters(val *string) error {
 	return nil
 }

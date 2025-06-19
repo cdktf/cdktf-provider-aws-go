@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsApiGatewayApiKeys) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayApiKeys) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsApiGatewayApiKeysParameters(scope constructs.Construct, id *string, config *DataAwsApiGatewayApiKeysConfig) error {
 	return nil
 }

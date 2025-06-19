@@ -5,18 +5,16 @@ package apigatewaydeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/apigatewaydeployment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/apigatewaydeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
 type ApiGatewayDeployment interface {
 	cdktf.TerraformResource
-	CanarySettings() ApiGatewayDeploymentCanarySettingsOutputReference
-	CanarySettingsInput() *ApiGatewayDeploymentCanarySettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,7 +35,6 @@ type ApiGatewayDeployment interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	ExecutionArn() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,7 +46,6 @@ type ApiGatewayDeployment interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InvokeUrl() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,15 +62,12 @@ type ApiGatewayDeployment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
-	StageDescription() *string
-	SetStageDescription(val *string)
-	StageDescriptionInput() *string
-	StageName() *string
-	SetStageName(val *string)
-	StageNameInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,15 +123,12 @@ type ApiGatewayDeployment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCanarySettings(value *ApiGatewayDeploymentCanarySettings)
-	ResetCanarySettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStageDescription()
-	ResetStageName()
+	ResetRegion()
 	ResetTriggers()
 	ResetVariables()
 	SynthesizeAttributes() *map[string]interface{}
@@ -157,26 +147,6 @@ type ApiGatewayDeployment interface {
 // The jsii proxy struct for ApiGatewayDeployment
 type jsiiProxy_ApiGatewayDeployment struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) CanarySettings() ApiGatewayDeploymentCanarySettingsOutputReference {
-	var returns ApiGatewayDeploymentCanarySettingsOutputReference
-	_jsii_.Get(
-		j,
-		"canarySettings",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) CanarySettingsInput() *ApiGatewayDeploymentCanarySettings {
-	var returns *ApiGatewayDeploymentCanarySettings
-	_jsii_.Get(
-		j,
-		"canarySettingsInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ApiGatewayDeployment) CdktfStack() cdktf.TerraformStack {
@@ -259,16 +229,6 @@ func (j *jsiiProxy_ApiGatewayDeployment) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayDeployment) ExecutionArn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"executionArn",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ApiGatewayDeployment) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -314,16 +274,6 @@ func (j *jsiiProxy_ApiGatewayDeployment) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) InvokeUrl() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"invokeUrl",
 		&returns,
 	)
 	return returns
@@ -379,6 +329,26 @@ func (j *jsiiProxy_ApiGatewayDeployment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayDeployment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayDeployment) RestApiId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,46 +364,6 @@ func (j *jsiiProxy_ApiGatewayDeployment) RestApiIdInput() *string {
 	_jsii_.Get(
 		j,
 		"restApiIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) StageDescription() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stageDescription",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) StageDescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stageDescriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) StageName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stageName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment) StageNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"stageNameInput",
 		&returns,
 	)
 	return returns
@@ -510,7 +440,7 @@ func (j *jsiiProxy_ApiGatewayDeployment) VariablesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) ApiGatewayDeployment {
 	_init_.Initialize()
 
@@ -528,7 +458,7 @@ func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment_Override(a ApiGatewayDeployment, scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) {
 	_init_.Initialize()
 
@@ -629,6 +559,17 @@ func (j *jsiiProxy_ApiGatewayDeployment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ApiGatewayDeployment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiGatewayDeployment)SetRestApiId(val *string) {
 	if err := j.validateSetRestApiIdParameters(val); err != nil {
 		panic(err)
@@ -636,28 +577,6 @@ func (j *jsiiProxy_ApiGatewayDeployment)SetRestApiId(val *string) {
 	_jsii_.Set(
 		j,
 		"restApiId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment)SetStageDescription(val *string) {
-	if err := j.validateSetStageDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"stageDescription",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ApiGatewayDeployment)SetStageName(val *string) {
-	if err := j.validateSetStageNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"stageName",
 		val,
 	)
 }
@@ -1037,25 +956,6 @@ func (a *jsiiProxy_ApiGatewayDeployment) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayDeployment) PutCanarySettings(value *ApiGatewayDeploymentCanarySettings) {
-	if err := a.validatePutCanarySettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		a,
-		"putCanarySettings",
-		[]interface{}{value},
-	)
-}
-
-func (a *jsiiProxy_ApiGatewayDeployment) ResetCanarySettings() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetCanarySettings",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_ApiGatewayDeployment) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1080,18 +980,10 @@ func (a *jsiiProxy_ApiGatewayDeployment) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApiGatewayDeployment) ResetStageDescription() {
+func (a *jsiiProxy_ApiGatewayDeployment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetStageDescription",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_ApiGatewayDeployment) ResetStageName() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetStageName",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package finspacekxenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/finspacekxenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/finspacekxenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
 type FinspaceKxEnvironment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,9 @@ type FinspaceKxEnvironment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -140,6 +143,7 @@ type FinspaceKxEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -432,6 +436,26 @@ func (j *jsiiProxy_FinspaceKxEnvironment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxEnvironment) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxEnvironment) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxEnvironment) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -553,7 +577,7 @@ func (j *jsiiProxy_FinspaceKxEnvironment) TransitGatewayConfigurationInput() *Fi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
 func NewFinspaceKxEnvironment(scope constructs.Construct, id *string, config *FinspaceKxEnvironmentConfig) FinspaceKxEnvironment {
 	_init_.Initialize()
 
@@ -571,7 +595,7 @@ func NewFinspaceKxEnvironment(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
 func NewFinspaceKxEnvironment_Override(f FinspaceKxEnvironment, scope constructs.Construct, id *string, config *FinspaceKxEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -679,6 +703,17 @@ func (j *jsiiProxy_FinspaceKxEnvironment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxEnvironment)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1111,6 +1146,14 @@ func (f *jsiiProxy_FinspaceKxEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxEnvironment) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

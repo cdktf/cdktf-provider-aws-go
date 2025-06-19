@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsQuicksightAnalysis) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsQuicksightAnalysis) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsQuicksightAnalysis) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

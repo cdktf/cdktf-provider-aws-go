@@ -115,6 +115,10 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetSharedDirectoryIdParameters(val *string) error {
 	return nil
 }

@@ -114,68 +114,6 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validateOverrideLogicalI
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validatePutCloudformationParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsDevopsguruResourceCollectionCloudformation:
-		value := value.(*[]*DataAwsDevopsguruResourceCollectionCloudformation)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsDevopsguruResourceCollectionCloudformation:
-		value_ := value.([]*DataAwsDevopsguruResourceCollectionCloudformation)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsDevopsguruResourceCollectionCloudformation; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollection) validatePutTagsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsDevopsguruResourceCollectionTags:
-		value := value.(*[]*DataAwsDevopsguruResourceCollectionTags)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsDevopsguruResourceCollectionTags:
-		value_ := value.([]*DataAwsDevopsguruResourceCollectionTags)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsDevopsguruResourceCollectionTags; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateDataAwsDevopsguruResourceCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -276,6 +214,14 @@ func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetCountParamete
 func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruResourceCollection) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

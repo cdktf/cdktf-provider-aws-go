@@ -5,14 +5,14 @@ package devicefarmnetworkprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/devicefarmnetworkprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/devicefarmnetworkprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile}.
 type DevicefarmNetworkProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type DevicefarmNetworkProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -159,6 +162,7 @@ type DevicefarmNetworkProfile interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetType()
@@ -484,6 +488,26 @@ func (j *jsiiProxy_DevicefarmNetworkProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DevicefarmNetworkProfile) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DevicefarmNetworkProfile) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DevicefarmNetworkProfile) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -655,7 +679,7 @@ func (j *jsiiProxy_DevicefarmNetworkProfile) UplinkLossPercentInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile} Resource.
 func NewDevicefarmNetworkProfile(scope constructs.Construct, id *string, config *DevicefarmNetworkProfileConfig) DevicefarmNetworkProfile {
 	_init_.Initialize()
 
@@ -673,7 +697,7 @@ func NewDevicefarmNetworkProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/devicefarm_network_profile aws_devicefarm_network_profile} Resource.
 func NewDevicefarmNetworkProfile_Override(d DevicefarmNetworkProfile, scope constructs.Construct, id *string, config *DevicefarmNetworkProfileConfig) {
 	_init_.Initialize()
 
@@ -836,6 +860,17 @@ func (j *jsiiProxy_DevicefarmNetworkProfile)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DevicefarmNetworkProfile)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1322,6 +1357,14 @@ func (d *jsiiProxy_DevicefarmNetworkProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DevicefarmNetworkProfile) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

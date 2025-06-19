@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

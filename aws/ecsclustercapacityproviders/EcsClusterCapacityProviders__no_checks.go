@@ -123,6 +123,10 @@ func (j *jsiiProxy_EcsClusterCapacityProviders) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_EcsClusterCapacityProviders) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEcsClusterCapacityProvidersParameters(scope constructs.Construct, id *string, config *EcsClusterCapacityProvidersConfig) error {
 	return nil
 }

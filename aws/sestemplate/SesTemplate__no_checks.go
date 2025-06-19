@@ -119,6 +119,10 @@ func (j *jsiiProxy_SesTemplate) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_SesTemplate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesTemplate) validateSetSubjectParameters(val *string) error {
 	return nil
 }

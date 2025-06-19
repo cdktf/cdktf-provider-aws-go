@@ -5,14 +5,14 @@ package neptuneclustersnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptuneclustersnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptuneclustersnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot}.
 type NeptuneClusterSnapshot interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -72,6 +72,9 @@ type NeptuneClusterSnapshot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SnapshotType() *string
 	SourceDbClusterSnapshotArn() *string
 	Status() *string
@@ -133,6 +136,7 @@ type NeptuneClusterSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -422,6 +426,26 @@ func (j *jsiiProxy_NeptuneClusterSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneClusterSnapshot) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneClusterSnapshot) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneClusterSnapshot) SnapshotType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_NeptuneClusterSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource.
 func NewNeptuneClusterSnapshot(scope constructs.Construct, id *string, config *NeptuneClusterSnapshotConfig) NeptuneClusterSnapshot {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewNeptuneClusterSnapshot(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource.
 func NewNeptuneClusterSnapshot_Override(n NeptuneClusterSnapshot, scope constructs.Construct, id *string, config *NeptuneClusterSnapshotConfig) {
 	_init_.Initialize()
 
@@ -649,6 +673,17 @@ func (j *jsiiProxy_NeptuneClusterSnapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneClusterSnapshot)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1029,6 +1064,14 @@ func (n *jsiiProxy_NeptuneClusterSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneClusterSnapshot) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

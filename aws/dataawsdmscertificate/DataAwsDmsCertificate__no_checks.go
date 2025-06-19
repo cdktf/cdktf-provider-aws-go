@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsDmsCertificate) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsCertificate) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

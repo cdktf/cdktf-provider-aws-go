@@ -5,14 +5,14 @@ package dataawsfsxwindowsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsfsxwindowsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsfsxwindowsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system}.
 type DataAwsFsxWindowsFileSystem interface {
 	cdktf.TerraformDataSource
 	ActiveDirectoryId() *string
@@ -66,6 +66,9 @@ type DataAwsFsxWindowsFileSystem interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupIds() *[]*string
 	SkipFinalBackup() cdktf.IResolvable
 	StorageCapacity() *float64
@@ -111,6 +114,7 @@ type DataAwsFsxWindowsFileSystem interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -421,6 +425,26 @@ func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -552,7 +576,7 @@ func (j *jsiiProxy_DataAwsFsxWindowsFileSystem) WeeklyMaintenanceStartTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source.
 func NewDataAwsFsxWindowsFileSystem(scope constructs.Construct, id *string, config *DataAwsFsxWindowsFileSystemConfig) DataAwsFsxWindowsFileSystem {
 	_init_.Initialize()
 
@@ -570,7 +594,7 @@ func NewDataAwsFsxWindowsFileSystem(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source.
 func NewDataAwsFsxWindowsFileSystem_Override(d DataAwsFsxWindowsFileSystem, scope constructs.Construct, id *string, config *DataAwsFsxWindowsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_DataAwsFsxWindowsFileSystem)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFsxWindowsFileSystem)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (d *jsiiProxy_DataAwsFsxWindowsFileSystem) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsFsxWindowsFileSystem) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

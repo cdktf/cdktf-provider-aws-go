@@ -5,14 +5,14 @@ package finspacekxscalinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/finspacekxscalinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/finspacekxscalinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
 type FinspaceKxScalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type FinspaceKxScalingGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	StatusReason() *string
 	Tags() *map[string]*string
@@ -138,6 +141,7 @@ type FinspaceKxScalingGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -429,6 +433,26 @@ func (j *jsiiProxy_FinspaceKxScalingGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxScalingGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxScalingGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxScalingGroup) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -540,7 +564,7 @@ func (j *jsiiProxy_FinspaceKxScalingGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
 func NewFinspaceKxScalingGroup(scope constructs.Construct, id *string, config *FinspaceKxScalingGroupConfig) FinspaceKxScalingGroup {
 	_init_.Initialize()
 
@@ -558,7 +582,7 @@ func NewFinspaceKxScalingGroup(scope constructs.Construct, id *string, config *F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
 func NewFinspaceKxScalingGroup_Override(f FinspaceKxScalingGroup, scope constructs.Construct, id *string, config *FinspaceKxScalingGroupConfig) {
 	_init_.Initialize()
 
@@ -688,6 +712,17 @@ func (j *jsiiProxy_FinspaceKxScalingGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxScalingGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1090,6 +1125,14 @@ func (f *jsiiProxy_FinspaceKxScalingGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxScalingGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

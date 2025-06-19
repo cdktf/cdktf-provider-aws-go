@@ -5,9 +5,9 @@ package dataawslblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,15 +30,20 @@ type DataAwsLbListenerRuleConditionOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	HostHeader() DataAwsLbListenerRuleConditionHostHeaderOutputReference
-	HttpHeader() DataAwsLbListenerRuleConditionHttpHeaderOutputReference
-	HttpRequestMethod() DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference
+	HostHeader() DataAwsLbListenerRuleConditionHostHeaderList
+	HostHeaderInput() interface{}
+	HttpHeader() DataAwsLbListenerRuleConditionHttpHeaderList
+	HttpHeaderInput() interface{}
+	HttpRequestMethod() DataAwsLbListenerRuleConditionHttpRequestMethodList
+	HttpRequestMethodInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	PathPattern() DataAwsLbListenerRuleConditionPathPatternOutputReference
-	QueryString() DataAwsLbListenerRuleConditionQueryStringOutputReference
+	PathPattern() DataAwsLbListenerRuleConditionPathPatternList
+	PathPatternInput() interface{}
+	QueryString() DataAwsLbListenerRuleConditionQueryStringList
 	QueryStringInput() interface{}
-	SourceIp() DataAwsLbListenerRuleConditionSourceIpOutputReference
+	SourceIp() DataAwsLbListenerRuleConditionSourceIpList
+	SourceIpInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,8 +76,18 @@ type DataAwsLbListenerRuleConditionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutQueryString(value *DataAwsLbListenerRuleConditionQueryString)
+	PutHostHeader(value interface{})
+	PutHttpHeader(value interface{})
+	PutHttpRequestMethod(value interface{})
+	PutPathPattern(value interface{})
+	PutQueryString(value interface{})
+	PutSourceIp(value interface{})
+	ResetHostHeader()
+	ResetHttpHeader()
+	ResetHttpRequestMethod()
+	ResetPathPattern()
 	ResetQueryString()
+	ResetSourceIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,8 +143,8 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HostHeader() DataAwsLbListenerRuleConditionHostHeaderOutputReference {
-	var returns DataAwsLbListenerRuleConditionHostHeaderOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HostHeader() DataAwsLbListenerRuleConditionHostHeaderList {
+	var returns DataAwsLbListenerRuleConditionHostHeaderList
 	_jsii_.Get(
 		j,
 		"hostHeader",
@@ -138,8 +153,18 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HostHeader() D
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpHeader() DataAwsLbListenerRuleConditionHttpHeaderOutputReference {
-	var returns DataAwsLbListenerRuleConditionHttpHeaderOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HostHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hostHeaderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpHeader() DataAwsLbListenerRuleConditionHttpHeaderList {
+	var returns DataAwsLbListenerRuleConditionHttpHeaderList
 	_jsii_.Get(
 		j,
 		"httpHeader",
@@ -148,11 +173,31 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpHeader() D
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpRequestMethod() DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference {
-	var returns DataAwsLbListenerRuleConditionHttpRequestMethodOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpHeaderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpRequestMethod() DataAwsLbListenerRuleConditionHttpRequestMethodList {
+	var returns DataAwsLbListenerRuleConditionHttpRequestMethodList
 	_jsii_.Get(
 		j,
 		"httpRequestMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) HttpRequestMethodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"httpRequestMethodInput",
 		&returns,
 	)
 	return returns
@@ -168,8 +213,8 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InternalValue(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PathPattern() DataAwsLbListenerRuleConditionPathPatternOutputReference {
-	var returns DataAwsLbListenerRuleConditionPathPatternOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PathPattern() DataAwsLbListenerRuleConditionPathPatternList {
+	var returns DataAwsLbListenerRuleConditionPathPatternList
 	_jsii_.Get(
 		j,
 		"pathPattern",
@@ -178,8 +223,18 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PathPattern() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) QueryString() DataAwsLbListenerRuleConditionQueryStringOutputReference {
-	var returns DataAwsLbListenerRuleConditionQueryStringOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PathPatternInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pathPatternInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) QueryString() DataAwsLbListenerRuleConditionQueryStringList {
+	var returns DataAwsLbListenerRuleConditionQueryStringList
 	_jsii_.Get(
 		j,
 		"queryString",
@@ -198,11 +253,21 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) QueryStringInp
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) SourceIp() DataAwsLbListenerRuleConditionSourceIpOutputReference {
-	var returns DataAwsLbListenerRuleConditionSourceIpOutputReference
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) SourceIp() DataAwsLbListenerRuleConditionSourceIpList {
+	var returns DataAwsLbListenerRuleConditionSourceIpList
 	_jsii_.Get(
 		j,
 		"sourceIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) SourceIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourceIpInput",
 		&returns,
 	)
 	return returns
@@ -497,7 +562,51 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InterpolationF
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutQueryString(value *DataAwsLbListenerRuleConditionQueryString) {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutHostHeader(value interface{}) {
+	if err := d.validatePutHostHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHostHeader",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutHttpHeader(value interface{}) {
+	if err := d.validatePutHttpHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHttpHeader",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutHttpRequestMethod(value interface{}) {
+	if err := d.validatePutHttpRequestMethodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHttpRequestMethod",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutPathPattern(value interface{}) {
+	if err := d.validatePutPathPatternParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPathPattern",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutQueryString(value interface{}) {
 	if err := d.validatePutQueryStringParameters(value); err != nil {
 		panic(err)
 	}
@@ -508,10 +617,61 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutQueryString
 	)
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) PutSourceIp(value interface{}) {
+	if err := d.validatePutSourceIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSourceIp",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetHostHeader() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostHeader",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetHttpHeader() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpHeader",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetHttpRequestMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpRequestMethod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetPathPattern() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPathPattern",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetQueryString() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQueryString",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetSourceIp() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceIp",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package dataawslambdainvocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawslambdainvocation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawslambdainvocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_invocation aws_lambda_invocation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_invocation aws_lambda_invocation}.
 type DataAwsLambdaInvocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -59,6 +59,9 @@ type DataAwsLambdaInvocation interface {
 	QualifierInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Result() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -96,6 +99,7 @@ type DataAwsLambdaInvocation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQualifier()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLambdaInvocation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaInvocation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLambdaInvocation) Result() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,7 +370,7 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
 func NewDataAwsLambdaInvocation(scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) DataAwsLambdaInvocation {
 	_init_.Initialize()
 
@@ -364,7 +388,7 @@ func NewDataAwsLambdaInvocation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
 func NewDataAwsLambdaInvocation_Override(d DataAwsLambdaInvocation, scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_DataAwsLambdaInvocation)SetQualifier(val *string) {
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLambdaInvocation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -770,6 +805,14 @@ func (d *jsiiProxy_DataAwsLambdaInvocation) ResetQualifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetQualifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLambdaInvocation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

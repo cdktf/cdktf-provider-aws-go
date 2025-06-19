@@ -123,6 +123,10 @@ func (j *jsiiProxy_SagemakerMlflowTrackingServer) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerMlflowTrackingServer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerMlflowTrackingServer) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

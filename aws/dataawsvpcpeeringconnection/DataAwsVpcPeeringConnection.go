@@ -5,14 +5,14 @@ package dataawsvpcpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsvpcpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpcpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
 type DataAwsVpcPeeringConnection interface {
 	cdktf.TerraformDataSource
 	Accepter() cdktf.BooleanMap
@@ -64,8 +64,6 @@ type DataAwsVpcPeeringConnection interface {
 	SetPeerOwnerId(val *string)
 	PeerOwnerIdInput() *string
 	PeerRegion() *string
-	SetPeerRegion(val *string)
-	PeerRegionInput() *string
 	PeerVpcId() *string
 	SetPeerVpcId(val *string)
 	PeerVpcIdInput() *string
@@ -76,9 +74,8 @@ type DataAwsVpcPeeringConnection interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	Requester() cdktf.BooleanMap
+	RequesterRegion() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -132,9 +129,7 @@ type DataAwsVpcPeeringConnection interface {
 	ResetOwnerId()
 	ResetPeerCidrBlock()
 	ResetPeerOwnerId()
-	ResetPeerRegion()
 	ResetPeerVpcId()
-	ResetRegion()
 	ResetStatus()
 	ResetTags()
 	ResetTimeouts()
@@ -428,16 +423,6 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) PeerRegion() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) PeerRegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"peerRegionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) PeerVpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -488,21 +473,21 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) Region() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) Requester() cdktf.BooleanMap {
 	var returns cdktf.BooleanMap
 	_jsii_.Get(
 		j,
 		"requester",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcPeeringConnection) RequesterRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requesterRegion",
 		&returns,
 	)
 	return returns
@@ -619,7 +604,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) DataAwsVpcPeeringConnection {
 	_init_.Initialize()
 
@@ -637,7 +622,7 @@ func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection_Override(d DataAwsVpcPeeringConnection, scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -741,17 +726,6 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetPeerOwnerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetPeerRegion(val *string) {
-	if err := j.validateSetPeerRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"peerRegion",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetPeerVpcId(val *string) {
 	if err := j.validateSetPeerVpcIdParameters(val); err != nil {
 		panic(err)
@@ -767,17 +741,6 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetRegion(val *string) {
-	if err := j.validateSetRegionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"region",
 		val,
 	)
 }
@@ -1178,26 +1141,10 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnection) ResetPeerOwnerId() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnection) ResetPeerRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPeerRegion",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsVpcPeeringConnection) ResetPeerVpcId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPeerVpcId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsVpcPeeringConnection) ResetRegion() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

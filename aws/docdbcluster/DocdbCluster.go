@@ -5,14 +5,14 @@ package docdbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/docdbcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/docdbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -136,6 +136,9 @@ type DocdbCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReaderEndpoint() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RestoreToPointInTime() DocdbClusterRestoreToPointInTimeOutputReference
 	RestoreToPointInTimeInput() *DocdbClusterRestoreToPointInTime
 	SkipFinalSnapshot() interface{}
@@ -240,6 +243,7 @@ type DocdbCluster interface {
 	ResetPort()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
+	ResetRegion()
 	ResetRestoreToPointInTime()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
@@ -957,6 +961,26 @@ func (j *jsiiProxy_DocdbCluster) ReaderEndpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) RestoreToPointInTime() DocdbClusterRestoreToPointInTimeOutputReference {
 	var returns DocdbClusterRestoreToPointInTimeOutputReference
 	_jsii_.Get(
@@ -1168,7 +1192,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1186,7 +1210,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1536,6 +1560,17 @@ func (j *jsiiProxy_DocdbCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2196,6 +2231,14 @@ func (d *jsiiProxy_DocdbCluster) ResetPreferredMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

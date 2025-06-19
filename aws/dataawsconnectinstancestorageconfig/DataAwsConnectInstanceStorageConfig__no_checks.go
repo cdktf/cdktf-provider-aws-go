@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetLifecyclePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetResourceTypeParameters(val *string) error {
 	return nil
 }

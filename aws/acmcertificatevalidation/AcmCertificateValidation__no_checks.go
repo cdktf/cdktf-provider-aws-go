@@ -119,6 +119,10 @@ func (j *jsiiProxy_AcmCertificateValidation) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AcmCertificateValidation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificateValidation) validateSetValidationRecordFqdnsParameters(val *[]*string) error {
 	return nil
 }

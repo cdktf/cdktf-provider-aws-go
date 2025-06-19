@@ -5,14 +5,14 @@ package ssmassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ssmassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssmassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association aws_ssm_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
 	ApplyOnlyAtCronInterval() interface{}
@@ -59,9 +59,6 @@ type SsmAssociation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InstanceId() *string
-	SetInstanceId(val *string)
-	InstanceIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -92,6 +89,9 @@ type SsmAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
@@ -166,7 +166,6 @@ type SsmAssociation interface {
 	ResetComplianceSeverity()
 	ResetDocumentVersion()
 	ResetId()
-	ResetInstanceId()
 	ResetMaxConcurrency()
 	ResetMaxErrors()
 	ResetOutputLocation()
@@ -174,6 +173,7 @@ type SsmAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	ResetScheduleExpression()
 	ResetSyncCompliance()
 	ResetTags()
@@ -418,26 +418,6 @@ func (j *jsiiProxy_SsmAssociation) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) InstanceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SsmAssociation) InstanceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SsmAssociation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -583,6 +563,26 @@ func (j *jsiiProxy_SsmAssociation) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -739,7 +739,7 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id *string, config *SsmAssociationConfig) {
 	_init_.Initialize()
 
@@ -872,17 +872,6 @@ func (j *jsiiProxy_SsmAssociation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetInstanceId(val *string) {
-	if err := j.validateSetInstanceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"instanceId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SsmAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -953,6 +942,17 @@ func (j *jsiiProxy_SsmAssociation)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1435,14 +1435,6 @@ func (s *jsiiProxy_SsmAssociation) ResetId() {
 	)
 }
 
-func (s *jsiiProxy_SsmAssociation) ResetInstanceId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetInstanceId",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SsmAssociation) ResetMaxConcurrency() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1479,6 +1471,14 @@ func (s *jsiiProxy_SsmAssociation) ResetParameters() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

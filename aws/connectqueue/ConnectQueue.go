@@ -5,14 +5,14 @@ package connectqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/connectqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/connectqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_queue aws_connect_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_queue aws_connect_queue}.
 type ConnectQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,9 @@ type ConnectQueue interface {
 	QuickConnectIdsInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -147,6 +150,7 @@ type ConnectQueue interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQuickConnectIds()
+	ResetRegion()
 	ResetStatus()
 	ResetTags()
 	ResetTagsAll()
@@ -478,6 +482,26 @@ func (j *jsiiProxy_ConnectQueue) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ConnectQueue) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectQueue) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectQueue) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_ConnectQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_queue aws_connect_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_queue aws_connect_queue} Resource.
 func NewConnectQueue(scope constructs.Construct, id *string, config *ConnectQueueConfig) ConnectQueue {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewConnectQueue(scope constructs.Construct, id *string, config *ConnectQueu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/connect_queue aws_connect_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/connect_queue aws_connect_queue} Resource.
 func NewConnectQueue_Override(c ConnectQueue, scope constructs.Construct, id *string, config *ConnectQueueConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (j *jsiiProxy_ConnectQueue)SetQuickConnectIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"quickConnectIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectQueue)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1184,6 +1219,14 @@ func (c *jsiiProxy_ConnectQueue) ResetQuickConnectIds() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetQuickConnectIds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectQueue) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

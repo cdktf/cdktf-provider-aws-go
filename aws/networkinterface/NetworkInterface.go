@@ -5,14 +5,14 @@ package networkinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/networkinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface aws_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface aws_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -113,6 +113,9 @@ type NetworkInterface interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -199,6 +202,7 @@ type NetworkInterface interface {
 	ResetPrivateIpListEnabled()
 	ResetPrivateIps()
 	ResetPrivateIpsCount()
+	ResetRegion()
 	ResetSecurityGroups()
 	ResetSourceDestCheck()
 	ResetTags()
@@ -761,6 +765,26 @@ func (j *jsiiProxy_NetworkInterface) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterface) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterface) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkInterface) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -892,7 +916,7 @@ func (j *jsiiProxy_NetworkInterface) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -910,7 +934,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 
@@ -1172,6 +1196,17 @@ func (j *jsiiProxy_NetworkInterface)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterface)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1743,6 +1778,14 @@ func (n *jsiiProxy_NetworkInterface) ResetPrivateIpsCount() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPrivateIpsCount",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterface) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

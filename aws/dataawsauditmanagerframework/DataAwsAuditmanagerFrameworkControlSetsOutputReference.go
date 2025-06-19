@@ -5,9 +5,9 @@ package dataawsauditmanagerframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsauditmanagerframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsauditmanagerframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -24,7 +24,6 @@ type DataAwsAuditmanagerFrameworkControlSetsOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Controls() DataAwsAuditmanagerFrameworkControlSetsControlsList
-	ControlsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,8 +32,8 @@ type DataAwsAuditmanagerFrameworkControlSetsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAuditmanagerFrameworkControlSets
+	SetInternalValue(val *DataAwsAuditmanagerFrameworkControlSets)
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -68,8 +67,6 @@ type DataAwsAuditmanagerFrameworkControlSetsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutControls(value interface{})
-	ResetControls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -115,16 +112,6 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) Contr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) ControlsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"controlsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -155,8 +142,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) Id() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) InternalValue() *DataAwsAuditmanagerFrameworkControlSets {
+	var returns *DataAwsAuditmanagerFrameworkControlSets
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -245,7 +232,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference)SetInternalValue(val *DataAwsAuditmanagerFrameworkControlSets) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,25 +449,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) PutControls(value interface{}) {
-	if err := d.validatePutControlsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putControls",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) ResetControls() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetControls",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

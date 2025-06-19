@@ -139,6 +139,10 @@ func (j *jsiiProxy_BedrockagentDataSource) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentDataSource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewBedrockagentDataSourceParameters(scope constructs.Construct, id *string, config *BedrockagentDataSourceConfig) error {
 	return nil
 }

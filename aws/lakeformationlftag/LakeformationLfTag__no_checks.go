@@ -119,6 +119,10 @@ func (j *jsiiProxy_LakeformationLfTag) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationLfTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationLfTag) validateSetValuesParameters(val *[]*string) error {
 	return nil
 }

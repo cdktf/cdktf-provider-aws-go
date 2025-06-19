@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsDmsReplicationTask) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsReplicationTask) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsReplicationTask) validateSetReplicationTaskIdParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorGroup) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewChimeVoiceConnectorGroupParameters(scope constructs.Construct, id *string, config *ChimeVoiceConnectorGroupConfig) error {
 	return nil
 }

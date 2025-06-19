@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetPrefixParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3BucketObjects) validateSetStartAfterParameters(val *string) error {
 	return nil
 }

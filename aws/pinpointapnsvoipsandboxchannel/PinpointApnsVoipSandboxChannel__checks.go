@@ -459,6 +459,14 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetTeamIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

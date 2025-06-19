@@ -139,6 +139,10 @@ func (j *jsiiProxy_CloudwatchEventRule) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventRule) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

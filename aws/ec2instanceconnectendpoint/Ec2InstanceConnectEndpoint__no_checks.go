@@ -115,6 +115,10 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

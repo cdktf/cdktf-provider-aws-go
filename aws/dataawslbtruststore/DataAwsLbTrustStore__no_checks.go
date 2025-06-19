@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLbTrustStore) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbTrustStore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLbTrustStoreParameters(scope constructs.Construct, id *string, config *DataAwsLbTrustStoreConfig) error {
 	return nil
 }

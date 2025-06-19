@@ -5,14 +5,14 @@ package quicksightaccountsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightaccountsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightaccountsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
 type QuicksightAccountSettings interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -382,7 +382,7 @@ func (j *jsiiProxy_QuicksightAccountSettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
 func NewQuicksightAccountSettings(scope constructs.Construct, id *string, config *QuicksightAccountSettingsConfig) QuicksightAccountSettings {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewQuicksightAccountSettings(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
 func NewQuicksightAccountSettings_Override(q QuicksightAccountSettings, scope constructs.Construct, id *string, config *QuicksightAccountSettingsConfig) {
 	_init_.Initialize()
 

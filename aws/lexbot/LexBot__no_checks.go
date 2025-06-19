@@ -167,6 +167,10 @@ func (j *jsiiProxy_LexBot) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LexBot) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexBot) validateSetVoiceIdParameters(val *string) error {
 	return nil
 }

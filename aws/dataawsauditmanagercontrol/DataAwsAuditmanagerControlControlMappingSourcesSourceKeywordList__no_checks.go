@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordL
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

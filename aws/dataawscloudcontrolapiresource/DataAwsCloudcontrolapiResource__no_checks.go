@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

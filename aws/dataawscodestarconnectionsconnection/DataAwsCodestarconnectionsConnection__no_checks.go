@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package launchtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/launchtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/launchtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_template aws_launch_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_template aws_launch_template}.
 type LaunchTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,10 +55,6 @@ type LaunchTemplate interface {
 	EbsOptimized() *string
 	SetEbsOptimized(val *string)
 	EbsOptimizedInput() *string
-	ElasticGpuSpecifications() LaunchTemplateElasticGpuSpecificationsList
-	ElasticGpuSpecificationsInput() interface{}
-	ElasticInferenceAccelerator() LaunchTemplateElasticInferenceAcceleratorOutputReference
-	ElasticInferenceAcceleratorInput() *LaunchTemplateElasticInferenceAccelerator
 	EnclaveOptions() LaunchTemplateEnclaveOptionsOutputReference
 	EnclaveOptionsInput() *LaunchTemplateEnclaveOptions
 	// Experimental.
@@ -135,6 +131,9 @@ type LaunchTemplate interface {
 	RamDiskIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupNames() *[]*string
 	SetSecurityGroupNames(val *[]*string)
 	SecurityGroupNamesInput() *[]*string
@@ -208,8 +207,6 @@ type LaunchTemplate interface {
 	PutCapacityReservationSpecification(value *LaunchTemplateCapacityReservationSpecification)
 	PutCpuOptions(value *LaunchTemplateCpuOptions)
 	PutCreditSpecification(value *LaunchTemplateCreditSpecification)
-	PutElasticGpuSpecifications(value interface{})
-	PutElasticInferenceAccelerator(value *LaunchTemplateElasticInferenceAccelerator)
 	PutEnclaveOptions(value *LaunchTemplateEnclaveOptions)
 	PutHibernationOptions(value *LaunchTemplateHibernationOptions)
 	PutIamInstanceProfile(value *LaunchTemplateIamInstanceProfile)
@@ -232,8 +229,6 @@ type LaunchTemplate interface {
 	ResetDisableApiStop()
 	ResetDisableApiTermination()
 	ResetEbsOptimized()
-	ResetElasticGpuSpecifications()
-	ResetElasticInferenceAccelerator()
 	ResetEnclaveOptions()
 	ResetHibernationOptions()
 	ResetIamInstanceProfile()
@@ -258,6 +253,7 @@ type LaunchTemplate interface {
 	ResetPlacement()
 	ResetPrivateDnsNameOptions()
 	ResetRamDiskId()
+	ResetRegion()
 	ResetSecurityGroupNames()
 	ResetTags()
 	ResetTagsAll()
@@ -518,46 +514,6 @@ func (j *jsiiProxy_LaunchTemplate) EbsOptimizedInput() *string {
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchTemplate) ElasticGpuSpecifications() LaunchTemplateElasticGpuSpecificationsList {
-	var returns LaunchTemplateElasticGpuSpecificationsList
-	_jsii_.Get(
-		j,
-		"elasticGpuSpecifications",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchTemplate) ElasticGpuSpecificationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"elasticGpuSpecificationsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchTemplate) ElasticInferenceAccelerator() LaunchTemplateElasticInferenceAcceleratorOutputReference {
-	var returns LaunchTemplateElasticInferenceAcceleratorOutputReference
-	_jsii_.Get(
-		j,
-		"elasticInferenceAccelerator",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchTemplate) ElasticInferenceAcceleratorInput() *LaunchTemplateElasticInferenceAccelerator {
-	var returns *LaunchTemplateElasticInferenceAccelerator
-	_jsii_.Get(
-		j,
-		"elasticInferenceAcceleratorInput",
 		&returns,
 	)
 	return returns
@@ -1073,6 +1029,26 @@ func (j *jsiiProxy_LaunchTemplate) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LaunchTemplate) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplate) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchTemplate) SecurityGroupNames() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1244,7 +1220,7 @@ func (j *jsiiProxy_LaunchTemplate) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_template aws_launch_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_template aws_launch_template} Resource.
 func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTemplateConfig) LaunchTemplate {
 	_init_.Initialize()
 
@@ -1262,7 +1238,7 @@ func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/launch_template aws_launch_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/launch_template aws_launch_template} Resource.
 func NewLaunchTemplate_Override(l LaunchTemplate, scope constructs.Construct, id *string, config *LaunchTemplateConfig) {
 	_init_.Initialize()
 
@@ -1491,6 +1467,17 @@ func (j *jsiiProxy_LaunchTemplate)SetRamDiskId(val *string) {
 	_jsii_.Set(
 		j,
 		"ramDiskId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplate)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1958,28 +1945,6 @@ func (l *jsiiProxy_LaunchTemplate) PutCreditSpecification(value *LaunchTemplateC
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) PutElasticGpuSpecifications(value interface{}) {
-	if err := l.validatePutElasticGpuSpecificationsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putElasticGpuSpecifications",
-		[]interface{}{value},
-	)
-}
-
-func (l *jsiiProxy_LaunchTemplate) PutElasticInferenceAccelerator(value *LaunchTemplateElasticInferenceAccelerator) {
-	if err := l.validatePutElasticInferenceAcceleratorParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		l,
-		"putElasticInferenceAccelerator",
-		[]interface{}{value},
-	)
-}
-
 func (l *jsiiProxy_LaunchTemplate) PutEnclaveOptions(value *LaunchTemplateEnclaveOptions) {
 	if err := l.validatePutEnclaveOptionsParameters(value); err != nil {
 		panic(err)
@@ -2195,22 +2160,6 @@ func (l *jsiiProxy_LaunchTemplate) ResetEbsOptimized() {
 	)
 }
 
-func (l *jsiiProxy_LaunchTemplate) ResetElasticGpuSpecifications() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetElasticGpuSpecifications",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LaunchTemplate) ResetElasticInferenceAccelerator() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetElasticInferenceAccelerator",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LaunchTemplate) ResetEnclaveOptions() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2383,6 +2332,14 @@ func (l *jsiiProxy_LaunchTemplate) ResetRamDiskId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRamDiskId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplate) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

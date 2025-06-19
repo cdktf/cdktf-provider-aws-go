@@ -111,6 +111,10 @@ func (j *jsiiProxy_DevopsguruEventSourcesConfig) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_DevopsguruEventSourcesConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDevopsguruEventSourcesConfigParameters(scope constructs.Construct, id *string, config *DevopsguruEventSourcesConfigConfig) error {
 	return nil
 }

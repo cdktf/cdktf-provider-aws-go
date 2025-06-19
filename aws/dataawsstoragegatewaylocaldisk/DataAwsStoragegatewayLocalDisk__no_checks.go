@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsStoragegatewayLocalDiskParameters(scope constructs.Construct, id *string, config *DataAwsStoragegatewayLocalDiskConfig) error {
 	return nil
 }

@@ -258,6 +258,14 @@ func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsSsmMaintenanceWindowsParameters(scope constructs.Construct, id *string, config *DataAwsSsmMaintenanceWindowsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

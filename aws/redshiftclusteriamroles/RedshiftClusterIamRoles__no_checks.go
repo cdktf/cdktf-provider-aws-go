@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftClusterIamRolesParameters(scope constructs.Construct, id *string, config *RedshiftClusterIamRolesConfig) error {
 	return nil
 }

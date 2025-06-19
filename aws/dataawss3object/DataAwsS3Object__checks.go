@@ -259,6 +259,14 @@ func (j *jsiiProxy_DataAwsS3Object) validateSetRangeParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3Object) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3Object) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

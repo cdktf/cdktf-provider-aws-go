@@ -5,14 +5,14 @@ package verifiedaccessendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/verifiedaccessendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/verifiedaccessendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
 type VerifiedaccessEndpoint interface {
 	cdktf.TerraformResource
 	ApplicationDomain() *string
@@ -89,6 +89,9 @@ type VerifiedaccessEndpoint interface {
 	RawOverrides() interface{}
 	RdsOptions() VerifiedaccessEndpointRdsOptionsOutputReference
 	RdsOptionsInput() *VerifiedaccessEndpointRdsOptions
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -174,6 +177,7 @@ type VerifiedaccessEndpoint interface {
 	ResetOverrideLogicalId()
 	ResetPolicyDocument()
 	ResetRdsOptions()
+	ResetRegion()
 	ResetSecurityGroupIds()
 	ResetSseSpecification()
 	ResetTags()
@@ -587,6 +591,26 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) RdsOptionsInput() *VerifiedaccessEndp
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessEndpoint) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -748,7 +772,7 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) VerifiedAccessInstanceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) VerifiedaccessEndpoint {
 	_init_.Initialize()
 
@@ -766,7 +790,7 @@ func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint_Override(v VerifiedaccessEndpoint, scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) {
 	_init_.Initialize()
 
@@ -929,6 +953,17 @@ func (j *jsiiProxy_VerifiedaccessEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1480,6 +1515,14 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) ResetRdsOptions() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetRdsOptions",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

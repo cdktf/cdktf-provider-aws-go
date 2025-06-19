@@ -5,14 +5,14 @@ package snstopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/snstopic/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/snstopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic aws_sns_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic aws_sns_topic}.
 type SnsTopic interface {
 	cdktf.TerraformResource
 	ApplicationFailureFeedbackRoleArn() *string
@@ -127,6 +127,9 @@ type SnsTopic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SignatureVersion() *float64
 	SetSignatureVersion(val *float64)
 	SignatureVersionInput() *float64
@@ -223,6 +226,7 @@ type SnsTopic interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRegion()
 	ResetSignatureVersion()
 	ResetSqsFailureFeedbackRoleArn()
 	ResetSqsSuccessFeedbackRoleArn()
@@ -868,6 +872,26 @@ func (j *jsiiProxy_SnsTopic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopic) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopic) SignatureVersion() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1039,7 +1063,7 @@ func (j *jsiiProxy_SnsTopic) TracingConfigInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig) SnsTopic {
 	_init_.Initialize()
 
@@ -1057,7 +1081,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, config *SnsTopicConfig) {
 	_init_.Initialize()
 
@@ -1385,6 +1409,17 @@ func (j *jsiiProxy_SnsTopic)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopic)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -2007,6 +2042,14 @@ func (s *jsiiProxy_SnsTopic) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopic) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

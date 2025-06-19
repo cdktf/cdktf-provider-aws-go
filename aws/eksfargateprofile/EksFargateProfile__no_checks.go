@@ -131,6 +131,10 @@ func (j *jsiiProxy_EksFargateProfile) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_EksFargateProfile) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksFargateProfile) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

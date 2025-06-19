@@ -123,6 +123,10 @@ func (j *jsiiProxy_DocdbSubnetGroup) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_DocdbSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbSubnetGroup) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

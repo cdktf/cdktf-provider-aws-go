@@ -119,6 +119,10 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceSgAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceSgAttachment) validateSetSecurityGroupIdParameters(val *string) error {
 	return nil
 }

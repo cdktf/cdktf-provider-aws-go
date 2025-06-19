@@ -123,6 +123,10 @@ func (j *jsiiProxy_NetworkInterfacePermission) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfacePermission) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkInterfacePermissionParameters(scope constructs.Construct, id *string, config *NetworkInterfacePermissionConfig) error {
 	return nil
 }

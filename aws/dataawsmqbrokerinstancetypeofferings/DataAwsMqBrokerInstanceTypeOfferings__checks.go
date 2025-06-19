@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) validateSetStorageTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

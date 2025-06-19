@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSqsQueue) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSqsQueue) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSqsQueue) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

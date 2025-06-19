@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsGlueScript) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueScript) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsGlueScriptParameters(scope constructs.Construct, id *string, config *DataAwsGlueScriptConfig) error {
 	return nil
 }

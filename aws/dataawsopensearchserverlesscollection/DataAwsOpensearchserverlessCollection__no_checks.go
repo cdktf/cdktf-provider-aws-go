@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) validateSetNameParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOpensearchserverlessCollectionParameters(scope constructs.Construct, id *string, config *DataAwsOpensearchserverlessCollectionConfig) error {
 	return nil
 }

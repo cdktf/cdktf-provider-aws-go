@@ -115,6 +115,10 @@ func (j *jsiiProxy_LicensemanagerAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LicensemanagerAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LicensemanagerAssociation) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

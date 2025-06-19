@@ -5,14 +5,14 @@ package grafanaworkspaceserviceaccounttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspaceserviceaccounttoken/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspaceserviceaccounttoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token}.
 type GrafanaWorkspaceServiceAccountToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type GrafanaWorkspaceServiceAccountToken interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecondsToLive() *float64
 	SetSecondsToLive(val *float64)
 	SecondsToLiveInput() *float64
@@ -124,6 +127,7 @@ type GrafanaWorkspaceServiceAccountToken interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -332,6 +336,26 @@ func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken) SecondsToLive() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -433,7 +457,7 @@ func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken) WorkspaceIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token} Resource.
 func NewGrafanaWorkspaceServiceAccountToken(scope constructs.Construct, id *string, config *GrafanaWorkspaceServiceAccountTokenConfig) GrafanaWorkspaceServiceAccountToken {
 	_init_.Initialize()
 
@@ -451,7 +475,7 @@ func NewGrafanaWorkspaceServiceAccountToken(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_service_account_token aws_grafana_workspace_service_account_token} Resource.
 func NewGrafanaWorkspaceServiceAccountToken_Override(g GrafanaWorkspaceServiceAccountToken, scope constructs.Construct, id *string, config *GrafanaWorkspaceServiceAccountTokenConfig) {
 	_init_.Initialize()
 
@@ -537,6 +561,17 @@ func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceServiceAccountToken)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -931,6 +966,14 @@ func (g *jsiiProxy_GrafanaWorkspaceServiceAccountToken) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceServiceAccountToken) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

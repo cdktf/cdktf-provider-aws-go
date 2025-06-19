@@ -143,6 +143,10 @@ func (j *jsiiProxy_Ec2Host) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Ec2Host) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Host) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

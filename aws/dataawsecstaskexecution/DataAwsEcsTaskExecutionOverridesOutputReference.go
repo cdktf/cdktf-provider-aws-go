@@ -5,9 +5,9 @@ package dataawsecstaskexecution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsecstaskexecution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecstaskexecution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,8 +38,6 @@ type DataAwsEcsTaskExecutionOverridesOutputReference interface {
 	ExecutionRoleArnInput() *string
 	// Experimental.
 	Fqn() *string
-	InferenceAcceleratorOverrides() DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesList
-	InferenceAcceleratorOverridesInput() interface{}
 	InternalValue() *DataAwsEcsTaskExecutionOverrides
 	SetInternalValue(val *DataAwsEcsTaskExecutionOverrides)
 	Memory() *string
@@ -81,11 +79,9 @@ type DataAwsEcsTaskExecutionOverridesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainerOverrides(value interface{})
-	PutInferenceAcceleratorOverrides(value interface{})
 	ResetContainerOverrides()
 	ResetCpu()
 	ResetExecutionRoleArn()
-	ResetInferenceAcceleratorOverrides()
 	ResetMemory()
 	ResetTaskRoleArn()
 	// Produce the Token's value at resolution time.
@@ -198,26 +194,6 @@ func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) Fqn() *strin
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) InferenceAcceleratorOverrides() DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesList {
-	var returns DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesList
-	_jsii_.Get(
-		j,
-		"inferenceAcceleratorOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) InferenceAcceleratorOverridesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"inferenceAcceleratorOverridesInput",
 		&returns,
 	)
 	return returns
@@ -617,17 +593,6 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) PutContainer
 	)
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) PutInferenceAcceleratorOverrides(value interface{}) {
-	if err := d.validatePutInferenceAcceleratorOverridesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putInferenceAcceleratorOverrides",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) ResetContainerOverrides() {
 	_jsii_.InvokeVoid(
 		d,
@@ -648,14 +613,6 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) ResetExecuti
 	_jsii_.InvokeVoid(
 		d,
 		"resetExecutionRoleArn",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesOutputReference) ResetInferenceAcceleratorOverrides() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetInferenceAcceleratorOverrides",
 		nil, // no parameters
 	)
 }

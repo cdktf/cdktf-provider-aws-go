@@ -5,14 +5,14 @@ package neptuneclusterinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/neptuneclusterinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/neptuneclusterinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
 type NeptuneClusterInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -111,6 +111,9 @@ type NeptuneClusterInstance interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -193,6 +196,7 @@ type NeptuneClusterInstance interface {
 	ResetPreferredMaintenanceWindow()
 	ResetPromotionTier()
 	ResetPubliclyAccessible()
+	ResetRegion()
 	ResetSkipFinalSnapshot()
 	ResetTags()
 	ResetTagsAll()
@@ -735,6 +739,26 @@ func (j *jsiiProxy_NeptuneClusterInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneClusterInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneClusterInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneClusterInstance) SkipFinalSnapshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -876,7 +900,7 @@ func (j *jsiiProxy_NeptuneClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) NeptuneClusterInstance {
 	_init_.Initialize()
 
@@ -894,7 +918,7 @@ func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance_Override(n NeptuneClusterInstance, scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) {
 	_init_.Initialize()
 
@@ -1156,6 +1180,17 @@ func (j *jsiiProxy_NeptuneClusterInstance)SetPubliclyAccessible(val interface{})
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneClusterInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1681,6 +1716,14 @@ func (n *jsiiProxy_NeptuneClusterInstance) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneClusterInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

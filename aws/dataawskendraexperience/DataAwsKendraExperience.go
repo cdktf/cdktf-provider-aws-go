@@ -5,14 +5,14 @@ package dataawskendraexperience
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawskendraexperience/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawskendraexperience/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_experience aws_kendra_experience}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_experience aws_kendra_experience}.
 type DataAwsKendraExperience interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -63,6 +63,9 @@ type DataAwsKendraExperience interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	Status() *string
 	// Experimental.
@@ -101,6 +104,7 @@ type DataAwsKendraExperience interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -360,6 +364,26 @@ func (j *jsiiProxy_DataAwsKendraExperience) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKendraExperience) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKendraExperience) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKendraExperience) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,7 +445,7 @@ func (j *jsiiProxy_DataAwsKendraExperience) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_experience aws_kendra_experience} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_experience aws_kendra_experience} Data Source.
 func NewDataAwsKendraExperience(scope constructs.Construct, id *string, config *DataAwsKendraExperienceConfig) DataAwsKendraExperience {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewDataAwsKendraExperience(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/kendra_experience aws_kendra_experience} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/kendra_experience aws_kendra_experience} Data Source.
 func NewDataAwsKendraExperience_Override(d DataAwsKendraExperience, scope constructs.Construct, id *string, config *DataAwsKendraExperienceConfig) {
 	_init_.Initialize()
 
@@ -525,6 +549,17 @@ func (j *jsiiProxy_DataAwsKendraExperience)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKendraExperience)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (d *jsiiProxy_DataAwsKendraExperience) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKendraExperience) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

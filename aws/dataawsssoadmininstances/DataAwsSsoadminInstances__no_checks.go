@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsSsoadminInstances) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsoadminInstances) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsoadminInstancesParameters(scope constructs.Construct, id *string, config *DataAwsSsoadminInstancesConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package grafanaworkspacesamlconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/grafanaworkspacesamlconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/grafanaworkspacesamlconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration}.
 type GrafanaWorkspaceSamlConfiguration interface {
 	cdktf.TerraformResource
 	AdminRoleValues() *[]*string
@@ -91,6 +91,9 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleAssertion() *string
 	SetRoleAssertion(val *string)
 	RoleAssertionInput() *string
@@ -164,6 +167,7 @@ type GrafanaWorkspaceSamlConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRoleAssertion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -554,6 +558,26 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) RoleAssertion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -655,7 +679,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) WorkspaceIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
 func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string, config *GrafanaWorkspaceSamlConfigurationConfig) GrafanaWorkspaceSamlConfiguration {
 	_init_.Initialize()
 
@@ -673,7 +697,7 @@ func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
 func NewGrafanaWorkspaceSamlConfiguration_Override(g GrafanaWorkspaceSamlConfiguration, scope constructs.Construct, id *string, config *GrafanaWorkspaceSamlConfigurationConfig) {
 	_init_.Initialize()
 
@@ -880,6 +904,17 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1362,6 +1397,14 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

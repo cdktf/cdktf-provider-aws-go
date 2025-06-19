@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetLifecyclePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetResourceIdParameters(val *string) error {
 	return nil
 }

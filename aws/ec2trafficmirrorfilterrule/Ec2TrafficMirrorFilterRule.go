@@ -5,14 +5,14 @@ package ec2trafficmirrorfilterrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/ec2trafficmirrorfilterrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule}.
 type Ec2TrafficMirrorFilterRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -70,6 +70,9 @@ type Ec2TrafficMirrorFilterRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RuleAction() *string
 	SetRuleAction(val *string)
 	RuleActionInput() *string
@@ -145,6 +148,7 @@ type Ec2TrafficMirrorFilterRule interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProtocol()
+	ResetRegion()
 	ResetSourcePortRange()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -404,6 +408,26 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) RuleAction() *string {
 	var returns *string
 	_jsii_.Get(
@@ -555,7 +579,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) TrafficMirrorFilterIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule} Resource.
 func NewEc2TrafficMirrorFilterRule(scope constructs.Construct, id *string, config *Ec2TrafficMirrorFilterRuleConfig) Ec2TrafficMirrorFilterRule {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewEc2TrafficMirrorFilterRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_traffic_mirror_filter_rule aws_ec2_traffic_mirror_filter_rule} Resource.
 func NewEc2TrafficMirrorFilterRule_Override(e Ec2TrafficMirrorFilterRule, scope constructs.Construct, id *string, config *Ec2TrafficMirrorFilterRuleConfig) {
 	_init_.Initialize()
 
@@ -692,6 +716,17 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRule)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1162,6 +1197,14 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

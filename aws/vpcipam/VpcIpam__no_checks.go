@@ -131,6 +131,10 @@ func (j *jsiiProxy_VpcIpam) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpam) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpam) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

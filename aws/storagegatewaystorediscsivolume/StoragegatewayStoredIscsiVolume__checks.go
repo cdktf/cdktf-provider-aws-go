@@ -471,6 +471,14 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetSnapshotIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

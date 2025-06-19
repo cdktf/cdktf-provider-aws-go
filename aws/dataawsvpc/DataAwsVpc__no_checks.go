@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsVpc) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpc) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpc) validateSetStateParameters(val *string) error {
 	return nil
 }

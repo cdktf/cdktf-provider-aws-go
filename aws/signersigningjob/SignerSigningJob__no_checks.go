@@ -127,6 +127,10 @@ func (j *jsiiProxy_SignerSigningJob) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_SignerSigningJob) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSignerSigningJobParameters(scope constructs.Construct, id *string, config *SignerSigningJobConfig) error {
 	return nil
 }

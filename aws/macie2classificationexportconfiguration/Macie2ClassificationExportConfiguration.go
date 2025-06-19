@@ -5,14 +5,14 @@ package macie2classificationexportconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/macie2classificationexportconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/macie2classificationexportconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration}.
 type Macie2ClassificationExportConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type Macie2ClassificationExportConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3Destination() Macie2ClassificationExportConfigurationS3DestinationOutputReference
 	S3DestinationInput() *Macie2ClassificationExportConfigurationS3Destination
 	// Experimental.
@@ -114,7 +117,7 @@ type Macie2ClassificationExportConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetS3Destination()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -283,6 +286,26 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Macie2ClassificationExportConfiguration) S3Destination() Macie2ClassificationExportConfigurationS3DestinationOutputReference {
 	var returns Macie2ClassificationExportConfigurationS3DestinationOutputReference
 	_jsii_.Get(
@@ -334,7 +357,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
 func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) Macie2ClassificationExportConfiguration {
 	_init_.Initialize()
 
@@ -352,7 +375,7 @@ func NewMacie2ClassificationExportConfiguration(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/macie2_classification_export_configuration aws_macie2_classification_export_configuration} Resource.
 func NewMacie2ClassificationExportConfiguration_Override(m Macie2ClassificationExportConfiguration, scope constructs.Construct, id *string, config *Macie2ClassificationExportConfigurationConfig) {
 	_init_.Initialize()
 
@@ -438,6 +461,17 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -822,10 +856,10 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ResetOverrideLogical
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ResetS3Destination() {
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) ResetRegion() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetS3Destination",
+		"resetRegion",
 		nil, // no parameters
 	)
 }

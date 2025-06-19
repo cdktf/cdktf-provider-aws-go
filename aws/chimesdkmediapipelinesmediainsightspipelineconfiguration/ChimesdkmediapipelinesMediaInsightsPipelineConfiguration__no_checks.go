@@ -123,6 +123,10 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 	return nil
 }
 
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetResourceAccessRoleArnParameters(val *string) error {
 	return nil
 }

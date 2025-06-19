@@ -123,6 +123,10 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) validateSetProvisioner
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAcmpcaCertificateAuthorityCertificateParameters(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityCertificateConfig) error {
 	return nil
 }

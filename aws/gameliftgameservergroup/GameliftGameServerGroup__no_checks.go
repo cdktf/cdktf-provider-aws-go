@@ -147,6 +147,10 @@ func (j *jsiiProxy_GameliftGameServerGroup) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GameliftGameServerGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameServerGroup) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

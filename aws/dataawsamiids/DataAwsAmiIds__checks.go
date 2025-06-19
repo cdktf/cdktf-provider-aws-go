@@ -313,6 +313,14 @@ func (j *jsiiProxy_DataAwsAmiIds) validateSetOwnersParameters(val *[]*string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmiIds) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAmiIds) validateSetSortAscendingParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

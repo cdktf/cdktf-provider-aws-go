@@ -123,6 +123,10 @@ func (j *jsiiProxy_IvschatLoggingConfiguration) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_IvschatLoggingConfiguration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvschatLoggingConfiguration) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

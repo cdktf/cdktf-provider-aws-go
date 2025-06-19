@@ -258,6 +258,14 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipelines) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderImagePipelines) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsImagebuilderImagePipelinesParameters(scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelinesConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

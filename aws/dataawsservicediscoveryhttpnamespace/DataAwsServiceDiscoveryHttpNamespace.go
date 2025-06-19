@@ -5,14 +5,14 @@ package dataawsservicediscoveryhttpnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicediscoveryhttpnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicediscoveryhttpnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace}.
 type DataAwsServiceDiscoveryHttpNamespace interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -56,6 +56,9 @@ type DataAwsServiceDiscoveryHttpNamespace interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -94,6 +97,7 @@ type DataAwsServiceDiscoveryHttpNamespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -294,6 +298,26 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -345,7 +369,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace} Data Source.
 func NewDataAwsServiceDiscoveryHttpNamespace(scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryHttpNamespaceConfig) DataAwsServiceDiscoveryHttpNamespace {
 	_init_.Initialize()
 
@@ -363,7 +387,7 @@ func NewDataAwsServiceDiscoveryHttpNamespace(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/service_discovery_http_namespace aws_service_discovery_http_namespace} Data Source.
 func NewDataAwsServiceDiscoveryHttpNamespace_Override(d DataAwsServiceDiscoveryHttpNamespace, scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryHttpNamespaceConfig) {
 	_init_.Initialize()
 
@@ -438,6 +462,17 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -750,6 +785,14 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetReservationTypeParameters(val *string) error {
 	return nil
 }

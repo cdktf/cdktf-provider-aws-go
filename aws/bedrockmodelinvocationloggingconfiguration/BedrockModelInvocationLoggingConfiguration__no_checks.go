@@ -75,7 +75,7 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateOverrideL
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validatePutLoggingConfigParameters(value *BedrockModelInvocationLoggingConfigurationLoggingConfig) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validatePutLoggingConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -108,6 +108,10 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateSetLifecy
 }
 
 func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

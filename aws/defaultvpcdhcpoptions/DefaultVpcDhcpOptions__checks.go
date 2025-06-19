@@ -407,6 +407,14 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

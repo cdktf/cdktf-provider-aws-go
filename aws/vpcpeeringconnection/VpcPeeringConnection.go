@@ -5,14 +5,14 @@ package vpcpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection}.
 type VpcPeeringConnection interface {
 	cdktf.TerraformResource
 	Accepter() VpcPeeringConnectionAccepterOutputReference
@@ -73,6 +73,9 @@ type VpcPeeringConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Requester() VpcPeeringConnectionRequesterOutputReference
 	RequesterInput() *VpcPeeringConnectionRequester
 	Tags() *map[string]*string
@@ -146,6 +149,7 @@ type VpcPeeringConnection interface {
 	ResetOverrideLogicalId()
 	ResetPeerOwnerId()
 	ResetPeerRegion()
+	ResetRegion()
 	ResetRequester()
 	ResetTags()
 	ResetTagsAll()
@@ -428,6 +432,26 @@ func (j *jsiiProxy_VpcPeeringConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcPeeringConnection) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcPeeringConnection) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcPeeringConnection) Requester() VpcPeeringConnectionRequesterOutputReference {
 	var returns VpcPeeringConnectionRequesterOutputReference
 	_jsii_.Get(
@@ -559,7 +583,7 @@ func (j *jsiiProxy_VpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
 func NewVpcPeeringConnection(scope constructs.Construct, id *string, config *VpcPeeringConnectionConfig) VpcPeeringConnection {
 	_init_.Initialize()
 
@@ -577,7 +601,7 @@ func NewVpcPeeringConnection(scope constructs.Construct, id *string, config *Vpc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
 func NewVpcPeeringConnection_Override(v VpcPeeringConnection, scope constructs.Construct, id *string, config *VpcPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -707,6 +731,17 @@ func (j *jsiiProxy_VpcPeeringConnection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcPeeringConnection)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1174,6 +1209,14 @@ func (v *jsiiProxy_VpcPeeringConnection) ResetPeerRegion() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPeerRegion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcPeeringConnection) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

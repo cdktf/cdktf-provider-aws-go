@@ -5,14 +5,14 @@ package gluedataqualityruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gluedataqualityruleset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gluedataqualityruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
 type GlueDataQualityRuleset interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,9 @@ type GlueDataQualityRuleset interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RecommendationRunId() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Ruleset() *string
 	SetRuleset(val *string)
 	RulesetInput() *string
@@ -134,6 +137,7 @@ type GlueDataQualityRuleset interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
 	ResetTargetTable()
@@ -385,6 +389,26 @@ func (j *jsiiProxy_GlueDataQualityRuleset) RecommendationRunId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GlueDataQualityRuleset) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueDataQualityRuleset) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueDataQualityRuleset) Ruleset() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_GlueDataQualityRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
 func NewGlueDataQualityRuleset(scope constructs.Construct, id *string, config *GlueDataQualityRulesetConfig) GlueDataQualityRuleset {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewGlueDataQualityRuleset(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
 func NewGlueDataQualityRuleset_Override(g GlueDataQualityRuleset, scope constructs.Construct, id *string, config *GlueDataQualityRulesetConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_GlueDataQualityRuleset)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueDataQualityRuleset)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1043,6 +1078,14 @@ func (g *jsiiProxy_GlueDataQualityRuleset) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueDataQualityRuleset) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

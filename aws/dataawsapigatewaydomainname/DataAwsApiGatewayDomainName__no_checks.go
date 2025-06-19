@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

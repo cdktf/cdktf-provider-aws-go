@@ -5,14 +5,14 @@ package quicksightdatasource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/quicksightdatasource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightdatasource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_source aws_quicksight_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_source aws_quicksight_data_source}.
 type QuicksightDataSource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,9 @@ type QuicksightDataSource interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SslProperties() QuicksightDataSourceSslPropertiesOutputReference
 	SslPropertiesInput() *QuicksightDataSourceSslProperties
 	Tags() *map[string]*string
@@ -148,6 +151,7 @@ type QuicksightDataSource interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermission()
+	ResetRegion()
 	ResetSslProperties()
 	ResetTags()
 	ResetTagsAll()
@@ -450,6 +454,26 @@ func (j *jsiiProxy_QuicksightDataSource) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDataSource) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSource) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDataSource) SslProperties() QuicksightDataSourceSslPropertiesOutputReference {
 	var returns QuicksightDataSourceSslPropertiesOutputReference
 	_jsii_.Get(
@@ -581,7 +605,7 @@ func (j *jsiiProxy_QuicksightDataSource) VpcConnectionPropertiesInput() *Quicksi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
 func NewQuicksightDataSource(scope constructs.Construct, id *string, config *QuicksightDataSourceConfig) QuicksightDataSource {
 	_init_.Initialize()
 
@@ -599,7 +623,7 @@ func NewQuicksightDataSource(scope constructs.Construct, id *string, config *Qui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
 func NewQuicksightDataSource_Override(q QuicksightDataSource, scope constructs.Construct, id *string, config *QuicksightDataSourceConfig) {
 	_init_.Initialize()
 
@@ -718,6 +742,17 @@ func (j *jsiiProxy_QuicksightDataSource)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightDataSource)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1199,6 +1234,14 @@ func (q *jsiiProxy_QuicksightDataSource) ResetPermission() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermission",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSource) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

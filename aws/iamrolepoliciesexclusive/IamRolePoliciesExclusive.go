@@ -5,14 +5,14 @@ package iamrolepoliciesexclusive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/iamrolepoliciesexclusive/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/iamrolepoliciesexclusive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
 type IamRolePoliciesExclusive interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IamRolePoliciesExclusive) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive} Resource.
 func NewIamRolePoliciesExclusive(scope constructs.Construct, id *string, config *IamRolePoliciesExclusiveConfig) IamRolePoliciesExclusive {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIamRolePoliciesExclusive(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive} Resource.
 func NewIamRolePoliciesExclusive_Override(i IamRolePoliciesExclusive, scope constructs.Construct, id *string, config *IamRolePoliciesExclusiveConfig) {
 	_init_.Initialize()
 

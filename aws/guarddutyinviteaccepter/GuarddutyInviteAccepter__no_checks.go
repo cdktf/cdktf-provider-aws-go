@@ -123,6 +123,10 @@ func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyInviteAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGuarddutyInviteAccepterParameters(scope constructs.Construct, id *string, config *GuarddutyInviteAccepterConfig) error {
 	return nil
 }

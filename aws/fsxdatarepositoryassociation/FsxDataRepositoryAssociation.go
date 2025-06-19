@@ -5,14 +5,14 @@ package fsxdatarepositoryassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/fsxdatarepositoryassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxdatarepositoryassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association}.
 type FsxDataRepositoryAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -78,6 +78,9 @@ type FsxDataRepositoryAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3() FsxDataRepositoryAssociationS3OutputReference
 	S3Input() *FsxDataRepositoryAssociationS3
 	Tags() *map[string]*string
@@ -146,6 +149,7 @@ type FsxDataRepositoryAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetS3()
 	ResetTags()
 	ResetTagsAll()
@@ -458,6 +462,26 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxDataRepositoryAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxDataRepositoryAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxDataRepositoryAssociation) S3() FsxDataRepositoryAssociationS3OutputReference {
 	var returns FsxDataRepositoryAssociationS3OutputReference
 	_jsii_.Get(
@@ -569,7 +593,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
 func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, config *FsxDataRepositoryAssociationConfig) FsxDataRepositoryAssociation {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
 func NewFsxDataRepositoryAssociation_Override(f FsxDataRepositoryAssociation, scope constructs.Construct, id *string, config *FsxDataRepositoryAssociationConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxDataRepositoryAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1176,6 +1211,14 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxDataRepositoryAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

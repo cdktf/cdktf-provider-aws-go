@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenses) validateSetLifecyclePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenses) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLicensemanagerReceivedLicensesParameters(scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicensesConfig) error {
 	return nil
 }

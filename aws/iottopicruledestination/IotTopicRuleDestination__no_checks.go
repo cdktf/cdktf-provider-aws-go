@@ -123,6 +123,10 @@ func (j *jsiiProxy_IotTopicRuleDestination) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRuleDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotTopicRuleDestinationParameters(scope constructs.Construct, id *string, config *IotTopicRuleDestinationConfig) error {
 	return nil
 }

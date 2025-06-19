@@ -5,14 +5,14 @@ package dataawsservicecatalogappregistryapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsservicecatalogappregistryapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsservicecatalogappregistryapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 type DataAwsServicecatalogappregistryApplication interface {
 	cdktf.TerraformDataSource
 	ApplicationTag() cdktf.StringMap
@@ -54,6 +54,9 @@ type DataAwsServicecatalogappregistryApplication interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -89,6 +92,7 @@ type DataAwsServicecatalogappregistryApplication interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) RawOverrides() i
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -319,7 +343,7 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Data Source.
 func NewDataAwsServicecatalogappregistryApplication(scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryApplicationConfig) DataAwsServicecatalogappregistryApplication {
 	_init_.Initialize()
 
@@ -337,7 +361,7 @@ func NewDataAwsServicecatalogappregistryApplication(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application} Data Source.
 func NewDataAwsServicecatalogappregistryApplication_Override(d DataAwsServicecatalogappregistryApplication, scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryApplicationConfig) {
 	_init_.Initialize()
 
@@ -401,6 +425,17 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication)SetProvider(val c
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsServicecatalogappregistryApplication)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (d *jsiiProxy_DataAwsServicecatalogappregistryApplication) ResetOverrideLog
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsServicecatalogappregistryApplication) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

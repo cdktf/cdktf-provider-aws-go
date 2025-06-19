@@ -119,6 +119,10 @@ func (j *jsiiProxy_SpotDatafeedSubscription) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SpotDatafeedSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSpotDatafeedSubscriptionParameters(scope constructs.Construct, id *string, config *SpotDatafeedSubscriptionConfig) error {
 	return nil
 }

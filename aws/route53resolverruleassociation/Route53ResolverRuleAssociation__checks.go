@@ -418,6 +418,14 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverRuleAssociation) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverRuleAssociation) validateSetResolverRuleIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

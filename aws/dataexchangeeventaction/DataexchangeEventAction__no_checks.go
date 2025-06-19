@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataexchangeEventAction) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataexchangeEventAction) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataexchangeEventActionParameters(scope constructs.Construct, id *string, config *DataexchangeEventActionConfig) error {
 	return nil
 }

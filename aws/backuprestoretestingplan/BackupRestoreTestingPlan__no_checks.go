@@ -115,6 +115,10 @@ func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupRestoreTestingPlan) validateSetScheduleExpressionParameters(val *string) error {
 	return nil
 }

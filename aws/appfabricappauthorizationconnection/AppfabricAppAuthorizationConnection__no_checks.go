@@ -123,6 +123,10 @@ func (j *jsiiProxy_AppfabricAppAuthorizationConnection) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_AppfabricAppAuthorizationConnection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAppfabricAppAuthorizationConnectionParameters(scope constructs.Construct, id *string, config *AppfabricAppAuthorizationConnectionConfig) error {
 	return nil
 }

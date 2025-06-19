@@ -127,6 +127,10 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetTriggersParameters(val *map[string]*string) error {
 	return nil
 }

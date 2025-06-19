@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) validateSetLifec
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsNetworkAcls) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkAcls) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkAcls) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

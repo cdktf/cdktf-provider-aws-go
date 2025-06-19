@@ -115,6 +115,10 @@ func (j *jsiiProxy_MediaStoreContainer) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_MediaStoreContainer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStoreContainer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

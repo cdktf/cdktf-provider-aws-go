@@ -131,6 +131,10 @@ func (j *jsiiProxy_LakeformationResourceLfTag) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationResourceLfTag) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLakeformationResourceLfTagParameters(scope constructs.Construct, id *string, config *LakeformationResourceLfTagConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_InternetGatewayAttachment) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_InternetGatewayAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InternetGatewayAttachment) validateSetVpcIdParameters(val *string) error {
 	return nil
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsKmsCustomKeyStore) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsCustomKeyStore) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsKmsCustomKeyStoreParameters(scope constructs.Construct, id *string, config *DataAwsKmsCustomKeyStoreConfig) error {
 	return nil
 }

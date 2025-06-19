@@ -455,6 +455,14 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

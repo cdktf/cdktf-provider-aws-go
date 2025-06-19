@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsEfsAccessPoints) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsAccessPoints) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEfsAccessPointsParameters(scope constructs.Construct, id *string, config *DataAwsEfsAccessPointsConfig) error {
 	return nil
 }

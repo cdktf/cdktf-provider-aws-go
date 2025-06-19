@@ -123,6 +123,10 @@ func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

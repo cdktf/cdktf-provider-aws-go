@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorSession) validateSetSessionNumberParameters(val *float64) error {
 	return nil
 }

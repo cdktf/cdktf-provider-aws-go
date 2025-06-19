@@ -5,14 +5,14 @@ package albtargetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/albtargetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/albtargetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/alb_target_group aws_alb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/alb_target_group aws_alb_target_group}.
 type AlbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -105,6 +105,9 @@ type AlbTargetGroup interface {
 	ProxyProtocolV2Input() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SlowStart() *float64
 	SetSlowStart(val *float64)
 	SlowStartInput() *float64
@@ -201,6 +204,7 @@ type AlbTargetGroup interface {
 	ResetProtocol()
 	ResetProtocolVersion()
 	ResetProxyProtocolV2()
+	ResetRegion()
 	ResetSlowStart()
 	ResetStickiness()
 	ResetTags()
@@ -708,6 +712,26 @@ func (j *jsiiProxy_AlbTargetGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlbTargetGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlbTargetGroup) SlowStart() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -919,7 +943,7 @@ func (j *jsiiProxy_AlbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTargetGroupConfig) AlbTargetGroup {
 	_init_.Initialize()
 
@@ -937,7 +961,7 @@ func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTarget
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup_Override(a AlbTargetGroup, scope constructs.Construct, id *string, config *AlbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -1177,6 +1201,17 @@ func (j *jsiiProxy_AlbTargetGroup)SetProxyProtocolV2(val interface{}) {
 	_jsii_.Set(
 		j,
 		"proxyProtocolV2",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1776,6 +1811,14 @@ func (a *jsiiProxy_AlbTargetGroup) ResetProxyProtocolV2() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetProxyProtocolV2",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

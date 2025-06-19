@@ -123,6 +123,10 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetSecurityGroupReferencingSupportParameters(val *string) error {
 	return nil
 }

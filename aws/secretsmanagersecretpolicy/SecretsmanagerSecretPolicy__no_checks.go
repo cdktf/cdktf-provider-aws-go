@@ -119,6 +119,10 @@ func (j *jsiiProxy_SecretsmanagerSecretPolicy) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretPolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretPolicy) validateSetSecretArnParameters(val *string) error {
 	return nil
 }

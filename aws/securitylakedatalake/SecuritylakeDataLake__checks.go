@@ -441,6 +441,14 @@ func (j *jsiiProxy_SecuritylakeDataLake) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SecuritylakeDataLake) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecuritylakeDataLake) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

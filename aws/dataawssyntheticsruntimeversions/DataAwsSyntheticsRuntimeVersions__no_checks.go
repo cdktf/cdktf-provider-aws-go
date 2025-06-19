@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validatePutRuntimeVersionsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsSyntheticsRuntimeVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,6 +76,10 @@ func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetCountParameters(
 }
 
 func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsSyntheticsRuntimeVersions) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

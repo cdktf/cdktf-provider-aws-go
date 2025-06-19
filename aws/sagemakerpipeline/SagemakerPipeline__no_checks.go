@@ -135,6 +135,10 @@ func (j *jsiiProxy_SagemakerPipeline) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerPipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerPipeline) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

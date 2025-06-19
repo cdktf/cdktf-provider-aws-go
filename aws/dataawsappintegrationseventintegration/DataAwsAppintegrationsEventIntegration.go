@@ -5,14 +5,14 @@ package dataawsappintegrationseventintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsappintegrationseventintegration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsappintegrationseventintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration}.
 type DataAwsAppintegrationsEventIntegration interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -57,6 +57,9 @@ type DataAwsAppintegrationsEventIntegration interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -95,6 +98,7 @@ type DataAwsAppintegrationsEventIntegration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -305,6 +309,26 @@ func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration} Data Source.
 func NewDataAwsAppintegrationsEventIntegration(scope constructs.Construct, id *string, config *DataAwsAppintegrationsEventIntegrationConfig) DataAwsAppintegrationsEventIntegration {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewDataAwsAppintegrationsEventIntegration(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/appintegrations_event_integration aws_appintegrations_event_integration} Data Source.
 func NewDataAwsAppintegrationsEventIntegration_Override(d DataAwsAppintegrationsEventIntegration, scope constructs.Construct, id *string, config *DataAwsAppintegrationsEventIntegrationConfig) {
 	_init_.Initialize()
 
@@ -449,6 +473,17 @@ func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration)SetProvider(val cdktf.
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAppintegrationsEventIntegration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -761,6 +796,14 @@ func (d *jsiiProxy_DataAwsAppintegrationsEventIntegration) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAppintegrationsEventIntegration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

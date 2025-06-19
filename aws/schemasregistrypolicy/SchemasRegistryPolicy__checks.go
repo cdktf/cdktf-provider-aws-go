@@ -407,6 +407,14 @@ func (j *jsiiProxy_SchemasRegistryPolicy) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SchemasRegistryPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SchemasRegistryPolicy) validateSetRegistryNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

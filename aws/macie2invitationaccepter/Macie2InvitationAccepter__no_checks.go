@@ -119,6 +119,10 @@ func (j *jsiiProxy_Macie2InvitationAccepter) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Macie2InvitationAccepter) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewMacie2InvitationAccepterParameters(scope constructs.Construct, id *string, config *Macie2InvitationAccepterConfig) error {
 	return nil
 }

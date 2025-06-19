@@ -123,6 +123,10 @@ func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

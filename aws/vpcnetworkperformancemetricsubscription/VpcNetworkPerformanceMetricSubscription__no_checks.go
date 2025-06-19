@@ -119,6 +119,10 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetSourceParameters(val *string) error {
 	return nil
 }

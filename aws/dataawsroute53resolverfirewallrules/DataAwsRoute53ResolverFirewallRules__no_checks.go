@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) validateSetPriorityParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsRoute53ResolverFirewallRulesParameters(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) error {
 	return nil
 }

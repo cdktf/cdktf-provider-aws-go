@@ -183,6 +183,10 @@ func (j *jsiiProxy_MemorydbCluster) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbCluster) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

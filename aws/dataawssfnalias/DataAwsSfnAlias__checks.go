@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataAwsSfnAlias) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSfnAlias) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSfnAlias) validateSetStatemachineArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

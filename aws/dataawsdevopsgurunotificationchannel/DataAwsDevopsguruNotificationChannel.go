@@ -5,14 +5,14 @@ package dataawsdevopsgurunotificationchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsdevopsgurunotificationchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsdevopsgurunotificationchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
 type DataAwsDevopsguruNotificationChannel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,6 +52,9 @@ type DataAwsDevopsguruNotificationChannel interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Sns() DataAwsDevopsguruNotificationChannelSnsList
 	SnsInput() interface{}
 	// Experimental.
@@ -91,6 +94,7 @@ type DataAwsDevopsguruNotificationChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSns()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) Sns() DataAwsDevopsguruNotificationChannelSnsList {
 	var returns DataAwsDevopsguruNotificationChannelSnsList
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel} Data Source.
 func NewDataAwsDevopsguruNotificationChannel(scope constructs.Construct, id *string, config *DataAwsDevopsguruNotificationChannelConfig) DataAwsDevopsguruNotificationChannel {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataAwsDevopsguruNotificationChannel(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/devopsguru_notification_channel aws_devopsguru_notification_channel} Data Source.
 func NewDataAwsDevopsguruNotificationChannel_Override(d DataAwsDevopsguruNotificationChannel, scope constructs.Construct, id *string, config *DataAwsDevopsguruNotificationChannelConfig) {
 	_init_.Initialize()
 
@@ -394,6 +418,17 @@ func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDevopsguruNotificationChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -717,6 +752,14 @@ func (d *jsiiProxy_DataAwsDevopsguruNotificationChannel) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDevopsguruNotificationChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

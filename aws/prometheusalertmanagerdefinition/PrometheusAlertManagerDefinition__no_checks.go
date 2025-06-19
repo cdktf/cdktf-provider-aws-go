@@ -115,6 +115,10 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetWorkspaceIdParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewConnectLambdaFunctionAssociationParameters(scope constructs.Construct, id *string, config *ConnectLambdaFunctionAssociationConfig) error {
 	return nil
 }

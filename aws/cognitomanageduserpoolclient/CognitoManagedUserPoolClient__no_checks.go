@@ -187,6 +187,10 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetRefreshTokenValidity
 	return nil
 }
 
+func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetSupportedIdentityProvidersParameters(val *[]*string) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsOamLinks) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamLinks) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsOamLinksParameters(scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) error {
 	return nil
 }

@@ -131,6 +131,10 @@ func (j *jsiiProxy_MemorydbParameterGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbParameterGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbParameterGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

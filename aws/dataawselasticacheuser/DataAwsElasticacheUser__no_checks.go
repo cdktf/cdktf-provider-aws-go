@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsElasticacheUser) validateSetPasswordsParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheUser) validateSetUserIdParameters(val *string) error {
 	return nil
 }

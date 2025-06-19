@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

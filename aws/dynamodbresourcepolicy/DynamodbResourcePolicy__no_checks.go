@@ -115,6 +115,10 @@ func (j *jsiiProxy_DynamodbResourcePolicy) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbResourcePolicy) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbResourcePolicy) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

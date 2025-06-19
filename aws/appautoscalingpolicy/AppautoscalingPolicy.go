@@ -5,14 +5,14 @@ package appautoscalingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appautoscalingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appautoscalingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy}.
 type AppautoscalingPolicy interface {
 	cdktf.TerraformResource
 	AlarmArns() *[]*string
@@ -66,6 +66,9 @@ type AppautoscalingPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
@@ -135,6 +138,7 @@ type AppautoscalingPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyType()
+	ResetRegion()
 	ResetStepScalingPolicyConfiguration()
 	ResetTargetTrackingScalingPolicyConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
@@ -365,6 +369,26 @@ func (j *jsiiProxy_AppautoscalingPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppautoscalingPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppautoscalingPolicy) ResourceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_AppautoscalingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
 func NewAppautoscalingPolicy(scope constructs.Construct, id *string, config *AppautoscalingPolicyConfig) AppautoscalingPolicy {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewAppautoscalingPolicy(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
 func NewAppautoscalingPolicy_Override(a AppautoscalingPolicy, scope constructs.Construct, id *string, config *AppautoscalingPolicyConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_AppautoscalingPolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppautoscalingPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1054,6 +1089,14 @@ func (a *jsiiProxy_AppautoscalingPolicy) ResetPolicyType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPolicyType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

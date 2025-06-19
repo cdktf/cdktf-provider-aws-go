@@ -5,14 +5,14 @@ package s3tablestablebucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/s3tablestablebucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy}.
 type S3TablesTableBucketPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,6 +55,9 @@ type S3TablesTableBucketPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ResourcePolicy() *string
 	SetResourcePolicy(val *string)
 	ResourcePolicyInput() *string
@@ -113,6 +116,7 @@ type S3TablesTableBucketPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_S3TablesTableBucketPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3TablesTableBucketPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTableBucketPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3TablesTableBucketPolicy) ResourcePolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -332,7 +356,7 @@ func (j *jsiiProxy_S3TablesTableBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy} Resource.
 func NewS3TablesTableBucketPolicy(scope constructs.Construct, id *string, config *S3TablesTableBucketPolicyConfig) S3TablesTableBucketPolicy {
 	_init_.Initialize()
 
@@ -350,7 +374,7 @@ func NewS3TablesTableBucketPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table_bucket_policy aws_s3tables_table_bucket_policy} Resource.
 func NewS3TablesTableBucketPolicy_Override(s S3TablesTableBucketPolicy, scope constructs.Construct, id *string, config *S3TablesTableBucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -425,6 +449,17 @@ func (j *jsiiProxy_S3TablesTableBucketPolicy)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3TablesTableBucketPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -808,6 +843,14 @@ func (s *jsiiProxy_S3TablesTableBucketPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3TablesTableBucketPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

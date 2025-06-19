@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsLocationMap) validateSetMapNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationMap) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationMap) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

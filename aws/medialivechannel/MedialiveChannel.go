@@ -5,14 +5,14 @@ package medialivechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/medialivechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialivechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_channel aws_medialive_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_channel aws_medialive_channel}.
 type MedialiveChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -81,6 +81,9 @@ type MedialiveChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -161,6 +164,7 @@ type MedialiveChannel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRoleArn()
 	ResetStartChannel()
 	ResetTags()
@@ -535,6 +539,26 @@ func (j *jsiiProxy_MedialiveChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannel) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannel) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannel) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +710,7 @@ func (j *jsiiProxy_MedialiveChannel) VpcInput() *MedialiveChannelVpc {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel(scope constructs.Construct, id *string, config *MedialiveChannelConfig) MedialiveChannel {
 	_init_.Initialize()
 
@@ -704,7 +728,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct, id *string, config *MedialiveChannelConfig) {
 	_init_.Initialize()
 
@@ -823,6 +847,17 @@ func (j *jsiiProxy_MedialiveChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannel)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1348,6 +1383,14 @@ func (m *jsiiProxy_MedialiveChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannel) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

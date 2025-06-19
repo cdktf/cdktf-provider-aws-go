@@ -5,14 +5,14 @@ package oamsinkpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/oamsinkpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/oamsinkpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink_policy aws_oam_sink_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink_policy aws_oam_sink_policy}.
 type OamSinkPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type OamSinkPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SinkId() *string
 	SinkIdentifier() *string
 	SetSinkIdentifier(val *string)
@@ -122,6 +125,7 @@ type OamSinkPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_OamSinkPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OamSinkPolicy) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OamSinkPolicy) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OamSinkPolicy) SinkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -402,7 +426,7 @@ func (j *jsiiProxy_OamSinkPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink_policy aws_oam_sink_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink_policy aws_oam_sink_policy} Resource.
 func NewOamSinkPolicy(scope constructs.Construct, id *string, config *OamSinkPolicyConfig) OamSinkPolicy {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewOamSinkPolicy(scope constructs.Construct, id *string, config *OamSinkPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/oam_sink_policy aws_oam_sink_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/oam_sink_policy aws_oam_sink_policy} Resource.
 func NewOamSinkPolicy_Override(o OamSinkPolicy, scope constructs.Construct, id *string, config *OamSinkPolicyConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_OamSinkPolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OamSinkPolicy)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (o *jsiiProxy_OamSinkPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OamSinkPolicy) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

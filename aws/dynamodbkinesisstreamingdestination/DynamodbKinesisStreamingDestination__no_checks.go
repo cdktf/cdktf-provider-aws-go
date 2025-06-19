@@ -115,6 +115,10 @@ func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetStreamArnParameters(val *string) error {
 	return nil
 }

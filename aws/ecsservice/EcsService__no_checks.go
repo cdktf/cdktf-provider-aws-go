@@ -223,6 +223,10 @@ func (j *jsiiProxy_EcsService) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_EcsService) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetSchedulingStrategyParameters(val *string) error {
 	return nil
 }

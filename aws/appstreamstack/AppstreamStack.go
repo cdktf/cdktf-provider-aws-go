@@ -5,14 +5,14 @@ package appstreamstack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/appstreamstack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/appstreamstack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_stack aws_appstream_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_stack aws_appstream_stack}.
 type AppstreamStack interface {
 	cdktf.TerraformResource
 	AccessEndpoints() AppstreamStackAccessEndpointsList
@@ -82,6 +82,9 @@ type AppstreamStack interface {
 	RedirectUrl() *string
 	SetRedirectUrl(val *string)
 	RedirectUrlInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageConnectors() AppstreamStackStorageConnectorsList
 	StorageConnectorsInput() interface{}
 	StreamingExperienceSettings() AppstreamStackStreamingExperienceSettingsOutputReference
@@ -159,6 +162,7 @@ type AppstreamStack interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedirectUrl()
+	ResetRegion()
 	ResetStorageConnectors()
 	ResetStreamingExperienceSettings()
 	ResetTags()
@@ -512,6 +516,26 @@ func (j *jsiiProxy_AppstreamStack) RedirectUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppstreamStack) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppstreamStack) StorageConnectors() AppstreamStackStorageConnectorsList {
 	var returns AppstreamStackStorageConnectorsList
 	_jsii_.Get(
@@ -643,7 +667,7 @@ func (j *jsiiProxy_AppstreamStack) UserSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack(scope constructs.Construct, id *string, config *AppstreamStackConfig) AppstreamStack {
 	_init_.Initialize()
 
@@ -661,7 +685,7 @@ func NewAppstreamStack(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack_Override(a AppstreamStack, scope constructs.Construct, id *string, config *AppstreamStackConfig) {
 	_init_.Initialize()
 
@@ -813,6 +837,17 @@ func (j *jsiiProxy_AppstreamStack)SetRedirectUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"redirectUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamStack)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1315,6 +1350,14 @@ func (a *jsiiProxy_AppstreamStack) ResetRedirectUrl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRedirectUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

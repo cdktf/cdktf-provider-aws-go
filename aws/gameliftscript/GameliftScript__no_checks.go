@@ -119,6 +119,10 @@ func (j *jsiiProxy_GameliftScript) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_GameliftScript) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftScript) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

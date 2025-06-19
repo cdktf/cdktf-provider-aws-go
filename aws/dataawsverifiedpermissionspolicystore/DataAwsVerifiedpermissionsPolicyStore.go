@@ -5,14 +5,14 @@ package dataawsverifiedpermissionspolicystore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawsverifiedpermissionspolicystore/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 type DataAwsVerifiedpermissionsPolicyStore interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -54,6 +54,9 @@ type DataAwsVerifiedpermissionsPolicyStore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -90,6 +93,7 @@ type DataAwsVerifiedpermissionsPolicyStore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -279,6 +283,26 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -330,7 +354,7 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) ValidationSettings() D
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
 func NewDataAwsVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) DataAwsVerifiedpermissionsPolicyStore {
 	_init_.Initialize()
 
@@ -348,7 +372,7 @@ func NewDataAwsVerifiedpermissionsPolicyStore(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Data Source.
 func NewDataAwsVerifiedpermissionsPolicyStore_Override(d DataAwsVerifiedpermissionsPolicyStore, scope constructs.Construct, id *string, config *DataAwsVerifiedpermissionsPolicyStoreConfig) {
 	_init_.Initialize()
 
@@ -412,6 +436,17 @@ func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore)SetProvider(val cdktf.T
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -705,6 +740,14 @@ func (d *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVerifiedpermissionsPolicyStore) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

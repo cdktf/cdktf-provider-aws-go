@@ -139,6 +139,10 @@ func (j *jsiiProxy_CognitoUser) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUser) validateSetTemporaryPasswordParameters(val *string) error {
 	return nil
 }

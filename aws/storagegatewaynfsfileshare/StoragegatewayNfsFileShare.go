@@ -5,14 +5,14 @@ package storagegatewaynfsfileshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/storagegatewaynfsfileshare/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/storagegatewaynfsfileshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share}.
 type StoragegatewayNfsFileShare interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,9 @@ type StoragegatewayNfsFileShare interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RequesterPays() interface{}
 	SetRequesterPays(val interface{})
 	RequesterPaysInput() interface{}
@@ -192,6 +195,7 @@ type StoragegatewayNfsFileShare interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReadOnly()
+	ResetRegion()
 	ResetRequesterPays()
 	ResetSquash()
 	ResetTags()
@@ -696,6 +700,26 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) ReadOnlyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StoragegatewayNfsFileShare) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewayNfsFileShare) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StoragegatewayNfsFileShare) RequesterPays() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -867,7 +891,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) VpcEndpointDnsNameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
 func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, config *StoragegatewayNfsFileShareConfig) StoragegatewayNfsFileShare {
 	_init_.Initialize()
 
@@ -885,7 +909,7 @@ func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
 func NewStoragegatewayNfsFileShare_Override(s StoragegatewayNfsFileShare, scope constructs.Construct, id *string, config *StoragegatewayNfsFileShareConfig) {
 	_init_.Initialize()
 
@@ -1114,6 +1138,17 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare)SetReadOnly(val interface{}) {
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StoragegatewayNfsFileShare)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1678,6 +1713,14 @@ func (s *jsiiProxy_StoragegatewayNfsFileShare) ResetReadOnly() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewayNfsFileShare) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

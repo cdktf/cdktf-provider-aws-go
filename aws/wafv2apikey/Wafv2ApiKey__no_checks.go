@@ -107,6 +107,10 @@ func (j *jsiiProxy_Wafv2ApiKey) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2ApiKey) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2ApiKey) validateSetScopeParameters(val *string) error {
 	return nil
 }

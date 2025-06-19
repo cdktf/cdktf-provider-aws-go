@@ -5,14 +5,14 @@ package docdbelasticcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/docdbelasticcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/docdbelasticcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster}.
 type DocdbelasticCluster interface {
 	cdktf.TerraformResource
 	AdminUserName() *string
@@ -82,6 +82,9 @@ type DocdbelasticCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ShardCapacity() *float64
 	SetShardCapacity(val *float64)
 	ShardCapacityInput() *float64
@@ -157,6 +160,7 @@ type DocdbelasticCluster interface {
 	ResetOverrideLogicalId()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
+	ResetRegion()
 	ResetSubnetIds()
 	ResetTags()
 	ResetTimeouts()
@@ -499,6 +503,26 @@ func (j *jsiiProxy_DocdbelasticCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbelasticCluster) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbelasticCluster) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbelasticCluster) ShardCapacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -660,7 +684,7 @@ func (j *jsiiProxy_DocdbelasticCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
 func NewDocdbelasticCluster(scope constructs.Construct, id *string, config *DocdbelasticClusterConfig) DocdbelasticCluster {
 	_init_.Initialize()
 
@@ -678,7 +702,7 @@ func NewDocdbelasticCluster(scope constructs.Construct, id *string, config *Docd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/docdbelastic_cluster aws_docdbelastic_cluster} Resource.
 func NewDocdbelasticCluster_Override(d DocdbelasticCluster, scope constructs.Construct, id *string, config *DocdbelasticClusterConfig) {
 	_init_.Initialize()
 
@@ -841,6 +865,17 @@ func (j *jsiiProxy_DocdbelasticCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbelasticCluster)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1300,6 +1335,14 @@ func (d *jsiiProxy_DocdbelasticCluster) ResetPreferredMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbelasticCluster) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

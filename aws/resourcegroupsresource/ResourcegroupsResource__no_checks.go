@@ -119,6 +119,10 @@ func (j *jsiiProxy_ResourcegroupsResource) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ResourcegroupsResource) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcegroupsResource) validateSetResourceArnParameters(val *string) error {
 	return nil
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_LocationGeofenceCollection) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LocationGeofenceCollection) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationGeofenceCollection) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

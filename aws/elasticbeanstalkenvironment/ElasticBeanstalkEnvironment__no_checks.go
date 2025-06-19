@@ -139,6 +139,10 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetSolutionStackNameParameters(val *string) error {
 	return nil
 }

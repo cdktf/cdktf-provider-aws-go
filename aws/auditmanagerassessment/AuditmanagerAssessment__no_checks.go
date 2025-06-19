@@ -131,6 +131,10 @@ func (j *jsiiProxy_AuditmanagerAssessment) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAssessment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerAssessment) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

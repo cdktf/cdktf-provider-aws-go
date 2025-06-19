@@ -5,14 +5,14 @@ package dataawssecurityhubstandardscontrolassociations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/dataawssecurityhubstandardscontrolassociations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawssecurityhubstandardscontrolassociations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
 type DataAwsSecurityhubStandardsControlAssociations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,6 +48,9 @@ type DataAwsSecurityhubStandardsControlAssociations interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SecurityControlId() *string
 	SetSecurityControlId(val *string)
 	SecurityControlIdInput() *string
@@ -86,6 +89,7 @@ type DataAwsSecurityhubStandardsControlAssociations interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) RawOverrides(
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) SecurityControlId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -286,7 +310,7 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
 func NewDataAwsSecurityhubStandardsControlAssociations(scope constructs.Construct, id *string, config *DataAwsSecurityhubStandardsControlAssociationsConfig) DataAwsSecurityhubStandardsControlAssociations {
 	_init_.Initialize()
 
@@ -304,7 +328,7 @@ func NewDataAwsSecurityhubStandardsControlAssociations(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source.
 func NewDataAwsSecurityhubStandardsControlAssociations_Override(d DataAwsSecurityhubStandardsControlAssociations, scope constructs.Construct, id *string, config *DataAwsSecurityhubStandardsControlAssociationsConfig) {
 	_init_.Initialize()
 
@@ -357,6 +381,17 @@ func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations)SetProvider(va
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -661,6 +696,14 @@ func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) ResetOverride
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociations) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

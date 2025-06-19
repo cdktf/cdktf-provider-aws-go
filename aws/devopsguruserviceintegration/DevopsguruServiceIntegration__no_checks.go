@@ -119,6 +119,10 @@ func (j *jsiiProxy_DevopsguruServiceIntegration) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_DevopsguruServiceIntegration) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDevopsguruServiceIntegrationParameters(scope constructs.Construct, id *string, config *DevopsguruServiceIntegrationConfig) error {
 	return nil
 }

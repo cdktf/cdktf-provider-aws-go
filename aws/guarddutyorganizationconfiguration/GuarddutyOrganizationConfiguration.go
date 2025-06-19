@@ -5,19 +5,16 @@ package guarddutyorganizationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/guarddutyorganizationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/guarddutyorganizationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration}.
 type GuarddutyOrganizationConfiguration interface {
 	cdktf.TerraformResource
-	AutoEnable() interface{}
-	SetAutoEnable(val interface{})
-	AutoEnableInput() interface{}
 	AutoEnableOrganizationMembers() *string
 	SetAutoEnableOrganizationMembers(val *string)
 	AutoEnableOrganizationMembersInput() *string
@@ -69,6 +66,9 @@ type GuarddutyOrganizationConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,13 +119,12 @@ type GuarddutyOrganizationConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDatasources(value *GuarddutyOrganizationConfigurationDatasources)
-	ResetAutoEnable()
-	ResetAutoEnableOrganizationMembers()
 	ResetDatasources()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -142,26 +141,6 @@ type GuarddutyOrganizationConfiguration interface {
 // The jsii proxy struct for GuarddutyOrganizationConfiguration
 type jsiiProxy_GuarddutyOrganizationConfiguration struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration) AutoEnable() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoEnable",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration) AutoEnableInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoEnableInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) AutoEnableOrganizationMembers() *string {
@@ -374,6 +353,26 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) RawOverrides() interface{
 	return returns
 }
 
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -405,7 +404,7 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) GuarddutyOrganizationConfiguration {
 	_init_.Initialize()
 
@@ -423,7 +422,7 @@ func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration_Override(g GuarddutyOrganizationConfiguration, scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -431,17 +430,6 @@ func NewGuarddutyOrganizationConfiguration_Override(g GuarddutyOrganizationConfi
 		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetAutoEnable(val interface{}) {
-	if err := j.validateSetAutoEnableParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoEnable",
-		val,
 	)
 }
 
@@ -542,6 +530,17 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetProvisioners(val *[]int
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -910,22 +909,6 @@ func (g *jsiiProxy_GuarddutyOrganizationConfiguration) PutDatasources(value *Gua
 	)
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfiguration) ResetAutoEnable() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetAutoEnable",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GuarddutyOrganizationConfiguration) ResetAutoEnableOrganizationMembers() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetAutoEnableOrganizationMembers",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GuarddutyOrganizationConfiguration) ResetDatasources() {
 	_jsii_.InvokeVoid(
 		g,
@@ -946,6 +929,14 @@ func (g *jsiiProxy_GuarddutyOrganizationConfiguration) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationConfiguration) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package vpcendpointsecuritygroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/vpcendpointsecuritygroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpcendpointsecuritygroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association}.
 type VpcEndpointSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type VpcEndpointSecurityGroupAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReplaceDefaultAssociation() interface{}
 	SetReplaceDefaultAssociation(val interface{})
 	ReplaceDefaultAssociationInput() interface{}
@@ -120,6 +123,7 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReplaceDefaultAssociation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -289,6 +293,26 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ReplaceDefaultAssociation() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) VpcEndpointIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
 func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *string, config *VpcEndpointSecurityGroupAssociationConfig) VpcEndpointSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
 func NewVpcEndpointSecurityGroupAssociation_Override(v VpcEndpointSecurityGroupAssociation, scope constructs.Construct, id *string, config *VpcEndpointSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -484,6 +508,17 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -886,6 +921,14 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetStageParameters(val *string) error {
 	return nil
 }

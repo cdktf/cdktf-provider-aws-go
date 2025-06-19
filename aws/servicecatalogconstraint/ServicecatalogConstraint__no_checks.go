@@ -135,6 +135,10 @@ func (j *jsiiProxy_ServicecatalogConstraint) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogConstraint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogConstraint) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package gameliftscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/gameliftscript/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/gameliftscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script aws_gamelift_script}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script aws_gamelift_script}.
 type GameliftScript interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type GameliftScript interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	StorageLocation() GameliftScriptStorageLocationOutputReference
 	StorageLocationInput() *GameliftScriptStorageLocation
 	Tags() *map[string]*string
@@ -130,6 +133,7 @@ type GameliftScript interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStorageLocation()
 	ResetTags()
 	ResetTagsAll()
@@ -333,6 +337,26 @@ func (j *jsiiProxy_GameliftScript) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GameliftScript) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GameliftScript) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GameliftScript) StorageLocation() GameliftScriptStorageLocationOutputReference {
 	var returns GameliftScriptStorageLocationOutputReference
 	_jsii_.Get(
@@ -464,7 +488,7 @@ func (j *jsiiProxy_GameliftScript) ZipFileInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
 func NewGameliftScript(scope constructs.Construct, id *string, config *GameliftScriptConfig) GameliftScript {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewGameliftScript(scope constructs.Construct, id *string, config *GameliftS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
 func NewGameliftScript_Override(g GameliftScript, scope constructs.Construct, id *string, config *GameliftScriptConfig) {
 	_init_.Initialize()
 
@@ -579,6 +603,17 @@ func (j *jsiiProxy_GameliftScript)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GameliftScript)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1003,6 +1038,14 @@ func (g *jsiiProxy_GameliftScript) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GameliftScript) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

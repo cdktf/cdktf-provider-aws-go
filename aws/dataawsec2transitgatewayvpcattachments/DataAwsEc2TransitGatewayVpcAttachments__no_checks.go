@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachments) validateSetLifecycleP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachments) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsEc2TransitGatewayVpcAttachmentsParameters(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayVpcAttachmentsConfig) error {
 	return nil
 }

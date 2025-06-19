@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsAppstreamImage) validateSetNameRegexParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppstreamImage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppstreamImage) validateSetTypeParameters(val *string) error {
 	return nil
 }

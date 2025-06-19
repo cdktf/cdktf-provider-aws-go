@@ -5,14 +5,14 @@ package securitylakedatalake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v20/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v21/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v20/securitylakedatalake/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v21/securitylakedatalake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
 type SecuritylakeDataLake interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type SecuritylakeDataLake interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	S3BucketArn() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -124,6 +127,7 @@ type SecuritylakeDataLake interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -334,6 +338,26 @@ func (j *jsiiProxy_SecuritylakeDataLake) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecuritylakeDataLake) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecuritylakeDataLake) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecuritylakeDataLake) S3BucketArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,7 +449,7 @@ func (j *jsiiProxy_SecuritylakeDataLake) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
 func NewSecuritylakeDataLake(scope constructs.Construct, id *string, config *SecuritylakeDataLakeConfig) SecuritylakeDataLake {
 	_init_.Initialize()
 
@@ -443,7 +467,7 @@ func NewSecuritylakeDataLake(scope constructs.Construct, id *string, config *Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.100.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
 func NewSecuritylakeDataLake_Override(s SecuritylakeDataLake, scope constructs.Construct, id *string, config *SecuritylakeDataLakeConfig) {
 	_init_.Initialize()
 
@@ -529,6 +553,17 @@ func (j *jsiiProxy_SecuritylakeDataLake)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecuritylakeDataLake)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -931,6 +966,14 @@ func (s *jsiiProxy_SecuritylakeDataLake) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecuritylakeDataLake) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

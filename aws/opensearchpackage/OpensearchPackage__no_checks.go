@@ -127,6 +127,10 @@ func (j *jsiiProxy_OpensearchPackage) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchPackage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewOpensearchPackageParameters(scope constructs.Construct, id *string, config *OpensearchPackageConfig) error {
 	return nil
 }

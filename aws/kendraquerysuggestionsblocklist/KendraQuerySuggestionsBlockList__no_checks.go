@@ -131,6 +131,10 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

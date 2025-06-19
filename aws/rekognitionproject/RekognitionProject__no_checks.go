@@ -123,6 +123,10 @@ func (j *jsiiProxy_RekognitionProject) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_RekognitionProject) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RekognitionProject) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

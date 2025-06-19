@@ -131,6 +131,10 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetProvisionersParam
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDirectoryServiceSharedDirectoryParameters(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryConfig) error {
 	return nil
 }

@@ -159,6 +159,10 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetStatusParameters(val *string) error {
 	return nil
 }

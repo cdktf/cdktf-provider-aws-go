@@ -480,6 +480,14 @@ func (j *jsiiProxy_AppfabricIngestionDestination) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppfabricIngestionDestination) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppfabricIngestionDestination) validateSetTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -91,6 +91,10 @@ func validateSagemakerImageVersion_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) validateSetAliasesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetBaseImageParameters(val *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_SagemakerImageVersion) validateSetProgrammingLangParameters(v
 }
 
 func (j *jsiiProxy_SagemakerImageVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerImageVersion) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

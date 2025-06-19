@@ -123,6 +123,10 @@ func (j *jsiiProxy_LightsailDomainEntry) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDomainEntry) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDomainEntry) validateSetTargetParameters(val *string) error {
 	return nil
 }

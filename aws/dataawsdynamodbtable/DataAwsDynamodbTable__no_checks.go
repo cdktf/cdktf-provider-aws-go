@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsDynamodbTable) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTable) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTable) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

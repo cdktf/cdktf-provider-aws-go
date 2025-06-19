@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsSsmPatchBaselines) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmPatchBaselines) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsSsmPatchBaselinesParameters(scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselinesConfig) error {
 	return nil
 }

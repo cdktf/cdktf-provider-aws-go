@@ -111,6 +111,10 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetReplicationSubnetGroupDescriptionParameters(val *string) error {
 	return nil
 }

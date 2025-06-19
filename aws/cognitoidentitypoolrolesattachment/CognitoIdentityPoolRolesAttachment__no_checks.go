@@ -119,6 +119,10 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetRolesParameters(val *map[string]*string) error {
 	return nil
 }

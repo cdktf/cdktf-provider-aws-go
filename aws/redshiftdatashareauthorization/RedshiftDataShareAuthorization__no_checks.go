@@ -119,6 +119,10 @@ func (j *jsiiProxy_RedshiftDataShareAuthorization) validateSetProvisionersParame
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftDataShareAuthorization) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftDataShareAuthorizationParameters(scope constructs.Construct, id *string, config *RedshiftDataShareAuthorizationConfig) error {
 	return nil
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_WafregionalXssMatchSet) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalXssMatchSet) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewWafregionalXssMatchSetParameters(scope constructs.Construct, id *string, config *WafregionalXssMatchSetConfig) error {
 	return nil
 }

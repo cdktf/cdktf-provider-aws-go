@@ -431,6 +431,14 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetProvision
 	return nil
 }
 
+func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetRepositoryParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

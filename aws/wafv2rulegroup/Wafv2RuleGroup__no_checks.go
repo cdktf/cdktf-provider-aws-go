@@ -139,6 +139,10 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) validateSetScopeParameters(val *string) error {
 	return nil
 }
