@@ -34,6 +34,8 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DockerServer() CodebuildProjectEnvironmentDockerServerOutputReference
+	DockerServerInput() *CodebuildProjectEnvironmentDockerServer
 	EnvironmentVariable() CodebuildProjectEnvironmentEnvironmentVariableList
 	EnvironmentVariableInput() interface{}
 	Fleet() CodebuildProjectEnvironmentFleetOutputReference
@@ -88,10 +90,12 @@ type CodebuildProjectEnvironmentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDockerServer(value *CodebuildProjectEnvironmentDockerServer)
 	PutEnvironmentVariable(value interface{})
 	PutFleet(value *CodebuildProjectEnvironmentFleet)
 	PutRegistryCredential(value *CodebuildProjectEnvironmentRegistryCredential)
 	ResetCertificate()
+	ResetDockerServer()
 	ResetEnvironmentVariable()
 	ResetFleet()
 	ResetImagePullCredentialsType()
@@ -177,6 +181,26 @@ func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) DockerServer() CodebuildProjectEnvironmentDockerServerOutputReference {
+	var returns CodebuildProjectEnvironmentDockerServerOutputReference
+	_jsii_.Get(
+		j,
+		"dockerServer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProjectEnvironmentOutputReference) DockerServerInput() *CodebuildProjectEnvironmentDockerServer {
+	var returns *CodebuildProjectEnvironmentDockerServer
+	_jsii_.Get(
+		j,
+		"dockerServerInput",
 		&returns,
 	)
 	return returns
@@ -697,6 +721,17 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) InterpolationForA
 	return returns
 }
 
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutDockerServer(value *CodebuildProjectEnvironmentDockerServer) {
+	if err := c.validatePutDockerServerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDockerServer",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) PutEnvironmentVariable(value interface{}) {
 	if err := c.validatePutEnvironmentVariableParameters(value); err != nil {
 		panic(err)
@@ -734,6 +769,14 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ResetCertificate(
 	_jsii_.InvokeVoid(
 		c,
 		"resetCertificate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) ResetDockerServer() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDockerServer",
 		nil, // no parameters
 	)
 }

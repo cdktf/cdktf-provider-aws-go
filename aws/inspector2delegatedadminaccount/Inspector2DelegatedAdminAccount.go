@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account}.
 type Inspector2DelegatedAdminAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccount) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account} Resource.
 func NewInspector2DelegatedAdminAccount(scope constructs.Construct, id *string, config *Inspector2DelegatedAdminAccountConfig) Inspector2DelegatedAdminAccount {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewInspector2DelegatedAdminAccount(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/inspector2_delegated_admin_account aws_inspector2_delegated_admin_account} Resource.
 func NewInspector2DelegatedAdminAccount_Override(i Inspector2DelegatedAdminAccount, scope constructs.Construct, id *string, config *Inspector2DelegatedAdminAccountConfig) {
 	_init_.Initialize()
 

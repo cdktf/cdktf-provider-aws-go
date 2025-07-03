@@ -103,6 +103,10 @@ func (j *jsiiProxy_EksPodIdentityAssociation) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_EksPodIdentityAssociation) validateSetDisableSessionTagsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksPodIdentityAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_EksPodIdentityAssociation) validateSetServiceAccountParameter
 }
 
 func (j *jsiiProxy_EksPodIdentityAssociation) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) validateSetTargetRoleArnParameters(val *string) error {
 	return nil
 }
 

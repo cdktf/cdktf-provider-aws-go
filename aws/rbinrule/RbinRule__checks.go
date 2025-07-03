@@ -207,6 +207,37 @@ func (r *jsiiProxy_RbinRule) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (r *jsiiProxy_RbinRule) validatePutExcludeResourceTagsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*RbinRuleExcludeResourceTags:
+		value := value.(*[]*RbinRuleExcludeResourceTags)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*RbinRuleExcludeResourceTags:
+		value_ := value.([]*RbinRuleExcludeResourceTags)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*RbinRuleExcludeResourceTags; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RbinRule) validatePutLockConfigurationParameters(value *RbinRuleLockConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -7,11 +7,11 @@ package verifiedpermissionspolicy
 type VerifiedpermissionsPolicyDefinition struct {
 	// static block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_policy#static VerifiedpermissionsPolicy#static}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/verifiedpermissions_policy#static VerifiedpermissionsPolicy#static}
 	Static interface{} `field:"optional" json:"static" yaml:"static"`
 	// template_linked block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/verifiedpermissions_policy#template_linked VerifiedpermissionsPolicy#template_linked}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/verifiedpermissions_policy#template_linked VerifiedpermissionsPolicy#template_linked}
 	TemplateLinked interface{} `field:"optional" json:"templateLinked" yaml:"templateLinked"`
 }
 

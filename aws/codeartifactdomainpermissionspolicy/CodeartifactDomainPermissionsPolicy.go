@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy}.
 type CodeartifactDomainPermissionsPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -128,6 +128,7 @@ type CodeartifactDomainPermissionsPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyDocument()
 	ResetPolicyRevision()
 	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -439,7 +440,7 @@ func (j *jsiiProxy_CodeartifactDomainPermissionsPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy} Resource.
 func NewCodeartifactDomainPermissionsPolicy(scope constructs.Construct, id *string, config *CodeartifactDomainPermissionsPolicyConfig) CodeartifactDomainPermissionsPolicy {
 	_init_.Initialize()
 
@@ -457,7 +458,7 @@ func NewCodeartifactDomainPermissionsPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/codeartifact_domain_permissions_policy aws_codeartifact_domain_permissions_policy} Resource.
 func NewCodeartifactDomainPermissionsPolicy_Override(c CodeartifactDomainPermissionsPolicy, scope constructs.Construct, id *string, config *CodeartifactDomainPermissionsPolicyConfig) {
 	_init_.Initialize()
 
@@ -975,6 +976,14 @@ func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodeartifactDomainPermissionsPolicy) ResetPolicyDocument() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyDocument",
 		nil, // no parameters
 	)
 }

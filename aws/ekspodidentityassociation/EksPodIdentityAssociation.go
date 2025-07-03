@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
 type EksPodIdentityAssociation interface {
 	cdktf.TerraformResource
 	AssociationArn() *string
@@ -36,6 +36,10 @@ type EksPodIdentityAssociation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableSessionTags() interface{}
+	SetDisableSessionTags(val interface{})
+	DisableSessionTagsInput() interface{}
+	ExternalId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -77,6 +81,9 @@ type EksPodIdentityAssociation interface {
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
 	TagsInput() *map[string]*string
+	TargetRoleArn() *string
+	SetTargetRoleArn(val *string)
+	TargetRoleArnInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -126,11 +133,13 @@ type EksPodIdentityAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDisableSessionTags()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetTags()
+	ResetTargetRoleArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -234,6 +243,36 @@ func (j *jsiiProxy_EksPodIdentityAssociation) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) DisableSessionTags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSessionTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) DisableSessionTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSessionTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
 		&returns,
 	)
 	return returns
@@ -439,6 +478,26 @@ func (j *jsiiProxy_EksPodIdentityAssociation) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_EksPodIdentityAssociation) TargetRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation) TargetRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksPodIdentityAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -470,7 +529,7 @@ func (j *jsiiProxy_EksPodIdentityAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) EksPodIdentityAssociation {
 	_init_.Initialize()
 
@@ -488,7 +547,7 @@ func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation_Override(e EksPodIdentityAssociation, scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) {
 	_init_.Initialize()
 
@@ -536,6 +595,17 @@ func (j *jsiiProxy_EksPodIdentityAssociation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation)SetDisableSessionTags(val interface{}) {
+	if err := j.validateSetDisableSessionTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableSessionTags",
 		val,
 	)
 }
@@ -629,6 +699,17 @@ func (j *jsiiProxy_EksPodIdentityAssociation)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksPodIdentityAssociation)SetTargetRoleArn(val *string) {
+	if err := j.validateSetTargetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetRoleArn",
 		val,
 	)
 }
@@ -986,6 +1067,14 @@ func (e *jsiiProxy_EksPodIdentityAssociation) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (e *jsiiProxy_EksPodIdentityAssociation) ResetDisableSessionTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDisableSessionTags",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_EksPodIdentityAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1006,6 +1095,14 @@ func (e *jsiiProxy_EksPodIdentityAssociation) ResetTags() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksPodIdentityAssociation) ResetTargetRoleArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTargetRoleArn",
 		nil, // no parameters
 	)
 }

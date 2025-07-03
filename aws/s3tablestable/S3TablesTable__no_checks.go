@@ -83,6 +83,10 @@ func (s *jsiiProxy_S3TablesTable) validatePutMaintenanceConfigurationParameters(
 	return nil
 }
 
+func (s *jsiiProxy_S3TablesTable) validatePutMetadataParameters(value interface{}) error {
+	return nil
+}
+
 func validateS3TablesTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

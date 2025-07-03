@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table}.
 type Ec2TransitGatewayRouteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTable) TransitGatewayIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Resource.
 func NewEc2TransitGatewayRouteTable(scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTableConfig) Ec2TransitGatewayRouteTable {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewEc2TransitGatewayRouteTable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/ec2_transit_gateway_route_table aws_ec2_transit_gateway_route_table} Resource.
 func NewEc2TransitGatewayRouteTable_Override(e Ec2TransitGatewayRouteTable, scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTableConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package cloudfrontdistribution
 
 
 type CloudfrontDistributionDefaultCacheBehaviorGrpcConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

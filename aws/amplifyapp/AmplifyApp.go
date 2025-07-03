@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_app aws_amplify_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_app aws_amplify_app}.
 type AmplifyApp interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -89,6 +89,8 @@ type AmplifyApp interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JobConfig() AmplifyAppJobConfigOutputReference
+	JobConfigInput() *AmplifyAppJobConfig
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -179,6 +181,7 @@ type AmplifyApp interface {
 	PutAutoBranchCreationConfig(value *AmplifyAppAutoBranchCreationConfig)
 	PutCacheConfig(value *AmplifyAppCacheConfig)
 	PutCustomRule(value interface{})
+	PutJobConfig(value *AmplifyAppJobConfig)
 	ResetAccessToken()
 	ResetAutoBranchCreationConfig()
 	ResetAutoBranchCreationPatterns()
@@ -196,6 +199,7 @@ type AmplifyApp interface {
 	ResetEnvironmentVariables()
 	ResetIamServiceRoleArn()
 	ResetId()
+	ResetJobConfig()
 	ResetOauthToken()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -663,6 +667,26 @@ func (j *jsiiProxy_AmplifyApp) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AmplifyApp) JobConfig() AmplifyAppJobConfigOutputReference {
+	var returns AmplifyAppJobConfigOutputReference
+	_jsii_.Get(
+		j,
+		"jobConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) JobConfigInput() *AmplifyAppJobConfig {
+	var returns *AmplifyAppJobConfig
+	_jsii_.Get(
+		j,
+		"jobConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmplifyApp) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -894,7 +918,7 @@ func (j *jsiiProxy_AmplifyApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppConfig) AmplifyApp {
 	_init_.Initialize()
 
@@ -912,7 +936,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string, config *AmplifyAppConfig) {
 	_init_.Initialize()
 
@@ -1608,6 +1632,17 @@ func (a *jsiiProxy_AmplifyApp) PutCustomRule(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AmplifyApp) PutJobConfig(value *AmplifyAppJobConfig) {
+	if err := a.validatePutJobConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putJobConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AmplifyApp) ResetAccessToken() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1740,6 +1775,14 @@ func (a *jsiiProxy_AmplifyApp) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmplifyApp) ResetJobConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJobConfig",
 		nil, // no parameters
 	)
 }

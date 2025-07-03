@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer}.
 type KinesisStreamConsumer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,12 @@ type KinesisStreamConsumer interface {
 	StreamArn() *string
 	SetStreamArn(val *string)
 	StreamArnInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,6 +129,8 @@ type KinesisStreamConsumer interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -371,6 +379,46 @@ func (j *jsiiProxy_KinesisStreamConsumer) StreamArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KinesisStreamConsumer) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KinesisStreamConsumer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -402,7 +450,7 @@ func (j *jsiiProxy_KinesisStreamConsumer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer} Resource.
 func NewKinesisStreamConsumer(scope constructs.Construct, id *string, config *KinesisStreamConsumerConfig) KinesisStreamConsumer {
 	_init_.Initialize()
 
@@ -420,7 +468,7 @@ func NewKinesisStreamConsumer(scope constructs.Construct, id *string, config *Ki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/kinesis_stream_consumer aws_kinesis_stream_consumer} Resource.
 func NewKinesisStreamConsumer_Override(k KinesisStreamConsumer, scope constructs.Construct, id *string, config *KinesisStreamConsumerConfig) {
 	_init_.Initialize()
 
@@ -539,6 +587,28 @@ func (j *jsiiProxy_KinesisStreamConsumer)SetStreamArn(val *string) {
 	_jsii_.Set(
 		j,
 		"streamArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -916,6 +986,22 @@ func (k *jsiiProxy_KinesisStreamConsumer) ResetRegion() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisStreamConsumer) ResetTags() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisStreamConsumer) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

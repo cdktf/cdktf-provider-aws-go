@@ -5,9 +5,9 @@ package vpcipampoolcidr
 
 
 type VpcIpamPoolCidrCidrAuthorizationContext struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}.
 	Message *string `field:"optional" json:"message" yaml:"message"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}.
 	Signature *string `field:"optional" json:"signature" yaml:"signature"`
 }
 

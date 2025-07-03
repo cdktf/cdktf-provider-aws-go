@@ -139,6 +139,10 @@ func (j *jsiiProxy_GlueJob) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GlueJob) validateSetJobModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJob) validateSetJobRunQueuingEnabledParameters(val interface{}) error {
 	return nil
 }

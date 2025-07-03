@@ -87,6 +87,10 @@ func (a *jsiiProxy_AmplifyApp) validatePutCustomRuleParameters(value interface{}
 	return nil
 }
 
+func (a *jsiiProxy_AmplifyApp) validatePutJobConfigParameters(value *AmplifyAppJobConfig) error {
+	return nil
+}
+
 func validateAmplifyApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}.
 	DestinationRefId *string `field:"required" json:"destinationRefId" yaml:"destinationRefId"`
 }
 

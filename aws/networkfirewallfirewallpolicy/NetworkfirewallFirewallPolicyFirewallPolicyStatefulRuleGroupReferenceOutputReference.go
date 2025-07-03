@@ -28,6 +28,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeepThreatInspection() *string
+	SetDeepThreatInspection(val *string)
+	DeepThreatInspectionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,6 +76,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutput
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOverride(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride)
+	ResetDeepThreatInspection()
 	ResetOverride()
 	ResetPriority()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) DeepThreatInspection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deepThreatInspection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) DeepThreatInspectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deepThreatInspectionInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +290,17 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference)SetDeepThreatInspection(val *string) {
+	if err := j.validateSetDeepThreatInspectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deepThreatInspection",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 		n,
 		"putOverride",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) ResetDeepThreatInspection() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDeepThreatInspection",
+		nil, // no parameters
 	)
 }
 

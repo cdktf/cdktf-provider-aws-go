@@ -75,6 +75,10 @@ func (r *jsiiProxy_RbinRule) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (r *jsiiProxy_RbinRule) validatePutExcludeResourceTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbinRule) validatePutLockConfigurationParameters(value *RbinRuleLockConfiguration) error {
 	return nil
 }

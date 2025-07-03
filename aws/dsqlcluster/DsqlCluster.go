@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster aws_dsql_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/dsql_cluster aws_dsql_cluster}.
 type DsqlCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DsqlCluster) VpcEndpointServiceName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
 func NewDsqlCluster(scope constructs.Construct, id *string, config *DsqlClusterConfig) DsqlCluster {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDsqlCluster(scope constructs.Construct, id *string, config *DsqlClusterC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
 func NewDsqlCluster_Override(d DsqlCluster, scope constructs.Construct, id *string, config *DsqlClusterConfig) {
 	_init_.Initialize()
 

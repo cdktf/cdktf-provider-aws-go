@@ -47,6 +47,10 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validateInterpola
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutDockerServerParameters(value *CodebuildProjectEnvironmentDockerServer) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildProjectEnvironmentOutputReference) validatePutEnvironmentVariableParameters(value interface{}) error {
 	return nil
 }

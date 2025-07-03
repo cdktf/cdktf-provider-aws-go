@@ -22,34 +22,34 @@ type SagemakerImageVersionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#base_image SagemakerImageVersion#base_image}.
 	BaseImage *string `field:"required" json:"baseImage" yaml:"baseImage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#image_name SagemakerImageVersion#image_name}.
 	ImageName *string `field:"required" json:"imageName" yaml:"imageName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#aliases SagemakerImageVersion#aliases}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#aliases SagemakerImageVersion#aliases}.
 	Aliases *[]*string `field:"optional" json:"aliases" yaml:"aliases"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#horovod SagemakerImageVersion#horovod}.
 	Horovod interface{} `field:"optional" json:"horovod" yaml:"horovod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#id SagemakerImageVersion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#job_type SagemakerImageVersion#job_type}.
 	JobType *string `field:"optional" json:"jobType" yaml:"jobType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#ml_framework SagemakerImageVersion#ml_framework}.
 	MlFramework *string `field:"optional" json:"mlFramework" yaml:"mlFramework"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#processor SagemakerImageVersion#processor}.
 	Processor *string `field:"optional" json:"processor" yaml:"processor"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#programming_lang SagemakerImageVersion#programming_lang}.
 	ProgrammingLang *string `field:"optional" json:"programmingLang" yaml:"programmingLang"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#region SagemakerImageVersion#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#region SagemakerImageVersion#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#release_notes SagemakerImageVersion#release_notes}.
 	ReleaseNotes *string `field:"optional" json:"releaseNotes" yaml:"releaseNotes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_image_version#vendor_guidance SagemakerImageVersion#vendor_guidance}.
 	VendorGuidance *string `field:"optional" json:"vendorGuidance" yaml:"vendorGuidance"`
 }
 

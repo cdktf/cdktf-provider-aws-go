@@ -26,15 +26,15 @@ type Wafv2ApiKeyConfig struct {
 	//
 	// Valid values are CLOUDFRONT or REGIONAL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/wafv2_api_key#scope Wafv2ApiKey#scope}
 	Scope *string `field:"required" json:"scope" yaml:"scope"`
 	// The domains that you want to be able to use the API key with, for example example.com. Maximum of 5 domains.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/wafv2_api_key#token_domains Wafv2ApiKey#token_domains}
 	TokenDomains *[]*string `field:"required" json:"tokenDomains" yaml:"tokenDomains"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/wafv2_api_key#region Wafv2ApiKey#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -195,6 +195,10 @@ func (j *jsiiProxy_EmrCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_EmrCluster) validateSetOsReleaseLabelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

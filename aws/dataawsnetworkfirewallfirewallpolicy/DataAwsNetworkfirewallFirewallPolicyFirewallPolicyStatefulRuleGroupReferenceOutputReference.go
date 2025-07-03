@@ -28,6 +28,7 @@ type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeepThreatInspection() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference
@@ -107,6 +108,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRul
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) DeepThreatInspection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deepThreatInspection",
 		&returns,
 	)
 	return returns

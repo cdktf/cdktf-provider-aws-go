@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_branch aws_amplify_branch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_branch aws_amplify_branch}.
 type AmplifyBranch interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -68,6 +68,9 @@ type AmplifyBranch interface {
 	EnablePullRequestPreview() interface{}
 	SetEnablePullRequestPreview(val interface{})
 	EnablePullRequestPreviewInput() interface{}
+	EnableSkewProtection() interface{}
+	SetEnableSkewProtection(val interface{})
+	EnableSkewProtectionInput() interface{}
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
@@ -178,6 +181,7 @@ type AmplifyBranch interface {
 	ResetEnableNotification()
 	ResetEnablePerformanceMode()
 	ResetEnablePullRequestPreview()
+	ResetEnableSkewProtection()
 	ResetEnvironmentVariables()
 	ResetFramework()
 	ResetId()
@@ -518,6 +522,26 @@ func (j *jsiiProxy_AmplifyBranch) EnablePullRequestPreviewInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AmplifyBranch) EnableSkewProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSkewProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyBranch) EnableSkewProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSkewProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AmplifyBranch) EnvironmentVariables() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -819,7 +843,7 @@ func (j *jsiiProxy_AmplifyBranch) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
 func NewAmplifyBranch(scope constructs.Construct, id *string, config *AmplifyBranchConfig) AmplifyBranch {
 	_init_.Initialize()
 
@@ -837,7 +861,7 @@ func NewAmplifyBranch(scope constructs.Construct, id *string, config *AmplifyBra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
 func NewAmplifyBranch_Override(a AmplifyBranch, scope constructs.Construct, id *string, config *AmplifyBranchConfig) {
 	_init_.Initialize()
 
@@ -995,6 +1019,17 @@ func (j *jsiiProxy_AmplifyBranch)SetEnablePullRequestPreview(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enablePullRequestPreview",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AmplifyBranch)SetEnableSkewProtection(val interface{}) {
+	if err := j.validateSetEnableSkewProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSkewProtection",
 		val,
 	)
 }
@@ -1557,6 +1592,14 @@ func (a *jsiiProxy_AmplifyBranch) ResetEnablePullRequestPreview() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnablePullRequestPreview",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmplifyBranch) ResetEnableSkewProtection() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableSkewProtection",
 		nil, // no parameters
 	)
 }

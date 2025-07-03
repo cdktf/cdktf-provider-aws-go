@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials}.
 type DataAwsRedshiftserverlessCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) WorkgroupNameInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
 func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessCredentialsConfig) DataAwsRedshiftserverlessCredentials {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
 func NewDataAwsRedshiftserverlessCredentials_Override(d DataAwsRedshiftserverlessCredentials, scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessCredentialsConfig) {
 	_init_.Initialize()
 

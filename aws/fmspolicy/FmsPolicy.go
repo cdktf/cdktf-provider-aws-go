@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_policy aws_fms_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/fms_policy aws_fms_policy}.
 type FmsPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -88,6 +88,9 @@ type FmsPolicy interface {
 	ResourceSetIds() *[]*string
 	SetResourceSetIds(val *[]*string)
 	ResourceSetIdsInput() *[]*string
+	ResourceTagLogicalOperator() *string
+	SetResourceTagLogicalOperator(val *string)
+	ResourceTagLogicalOperatorInput() *string
 	ResourceTags() *map[string]*string
 	SetResourceTags(val *map[string]*string)
 	ResourceTagsInput() *map[string]*string
@@ -169,6 +172,7 @@ type FmsPolicy interface {
 	ResetRegion()
 	ResetRemediationEnabled()
 	ResetResourceSetIds()
+	ResetResourceTagLogicalOperator()
 	ResetResourceTags()
 	ResetResourceType()
 	ResetResourceTypeList()
@@ -562,6 +566,26 @@ func (j *jsiiProxy_FmsPolicy) ResourceSetIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_FmsPolicy) ResourceTagLogicalOperator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceTagLogicalOperator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicy) ResourceTagLogicalOperatorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceTagLogicalOperatorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FmsPolicy) ResourceTags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -713,7 +737,7 @@ func (j *jsiiProxy_FmsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfig) FmsPolicy {
 	_init_.Initialize()
 
@@ -731,7 +755,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, config *FmsPolicyConfig) {
 	_init_.Initialize()
 
@@ -905,6 +929,17 @@ func (j *jsiiProxy_FmsPolicy)SetResourceSetIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"resourceSetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FmsPolicy)SetResourceTagLogicalOperator(val *string) {
+	if err := j.validateSetResourceTagLogicalOperatorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceTagLogicalOperator",
 		val,
 	)
 }
@@ -1426,6 +1461,14 @@ func (f *jsiiProxy_FmsPolicy) ResetResourceSetIds() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetResourceSetIds",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsPolicy) ResetResourceTagLogicalOperator() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetResourceTagLogicalOperator",
 		nil, // no parameters
 	)
 }

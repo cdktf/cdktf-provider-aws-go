@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule}.
 type DataAwsVpcSecurityGroupRule interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataAwsVpcSecurityGroupRule) ToPort() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
 func NewDataAwsVpcSecurityGroupRule(scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRuleConfig) DataAwsVpcSecurityGroupRule {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataAwsVpcSecurityGroupRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/vpc_security_group_rule aws_vpc_security_group_rule} Data Source.
 func NewDataAwsVpcSecurityGroupRule_Override(d DataAwsVpcSecurityGroupRule, scope constructs.Construct, id *string, config *DataAwsVpcSecurityGroupRuleConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table aws_s3tables_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table aws_s3tables_table}.
 type S3TablesTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -53,6 +53,8 @@ type S3TablesTable interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintenanceConfiguration() S3TablesTableMaintenanceConfigurationOutputReference
 	MaintenanceConfigurationInput() interface{}
+	Metadata() S3TablesTableMetadataList
+	MetadataInput() interface{}
 	MetadataLocation() *string
 	ModifiedAt() *string
 	ModifiedBy() *string
@@ -135,8 +137,10 @@ type S3TablesTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfiguration(value *S3TablesTableEncryptionConfiguration)
 	PutMaintenanceConfiguration(value *S3TablesTableMaintenanceConfiguration)
+	PutMetadata(value interface{})
 	ResetEncryptionConfiguration()
 	ResetMaintenanceConfiguration()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -334,6 +338,26 @@ func (j *jsiiProxy_S3TablesTable) MaintenanceConfigurationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"maintenanceConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTable) Metadata() S3TablesTableMetadataList {
+	var returns S3TablesTableMetadataList
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTable) MetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -560,7 +584,7 @@ func (j *jsiiProxy_S3TablesTable) WarehouseLocation() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table aws_s3tables_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table aws_s3tables_table} Resource.
 func NewS3TablesTable(scope constructs.Construct, id *string, config *S3TablesTableConfig) S3TablesTable {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewS3TablesTable(scope constructs.Construct, id *string, config *S3TablesTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/s3tables_table aws_s3tables_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table aws_s3tables_table} Resource.
 func NewS3TablesTable_Override(s S3TablesTable, scope constructs.Construct, id *string, config *S3TablesTableConfig) {
 	_init_.Initialize()
 
@@ -1087,6 +1111,17 @@ func (s *jsiiProxy_S3TablesTable) PutMaintenanceConfiguration(value *S3TablesTab
 	)
 }
 
+func (s *jsiiProxy_S3TablesTable) PutMetadata(value interface{}) {
+	if err := s.validatePutMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putMetadata",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3TablesTable) ResetEncryptionConfiguration() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1099,6 +1134,14 @@ func (s *jsiiProxy_S3TablesTable) ResetMaintenanceConfiguration() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMaintenanceConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3TablesTable) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

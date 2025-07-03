@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}.
 type AutoscalingGroupTagA interface {
 	cdktf.TerraformResource
 	AutoscalingGroupName() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
 func NewAutoscalingGroupTagA(scope constructs.Construct, id *string, config *AutoscalingGroupTagAConfig) AutoscalingGroupTagA {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewAutoscalingGroupTagA(scope constructs.Construct, id *string, config *Aut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource.
 func NewAutoscalingGroupTagA_Override(a AutoscalingGroupTagA, scope constructs.Construct, id *string, config *AutoscalingGroupTagAConfig) {
 	_init_.Initialize()
 

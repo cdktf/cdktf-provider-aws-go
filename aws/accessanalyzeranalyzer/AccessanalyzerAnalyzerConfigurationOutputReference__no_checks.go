@@ -47,6 +47,10 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateI
 	return nil
 }
 
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validatePutInternalAccessParameters(value *AccessanalyzerAnalyzerConfigurationInternalAccess) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validatePutUnusedAccessParameters(value *AccessanalyzerAnalyzerConfigurationUnusedAccess) error {
 	return nil
 }

@@ -358,6 +358,47 @@ func init() {
 		reflect.TypeOf((*CodebuildProjectEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentDockerServer",
+		reflect.TypeOf((*CodebuildProjectEnvironmentDockerServer)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentDockerServerOutputReference",
+		reflect.TypeOf((*CodebuildProjectEnvironmentDockerServerOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "computeType", GoGetter: "ComputeType"},
+			_jsii_.MemberProperty{JsiiProperty: "computeTypeInput", GoGetter: "ComputeTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CodebuildProjectEnvironmentDockerServerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariable",
 		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariable)(nil)).Elem(),
 	)
@@ -473,6 +514,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "computeType", GoGetter: "ComputeType"},
 			_jsii_.MemberProperty{JsiiProperty: "computeTypeInput", GoGetter: "ComputeTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dockerServer", GoGetter: "DockerServer"},
+			_jsii_.MemberProperty{JsiiProperty: "dockerServerInput", GoGetter: "DockerServerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentVariable", GoGetter: "EnvironmentVariable"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentVariableInput", GoGetter: "EnvironmentVariableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fleet", GoGetter: "Fleet"},
@@ -496,12 +539,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "privilegedMode", GoGetter: "PrivilegedMode"},
 			_jsii_.MemberProperty{JsiiProperty: "privilegedModeInput", GoGetter: "PrivilegedModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDockerServer", GoMethod: "PutDockerServer"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnvironmentVariable", GoMethod: "PutEnvironmentVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "putFleet", GoMethod: "PutFleet"},
 			_jsii_.MemberMethod{JsiiMethod: "putRegistryCredential", GoMethod: "PutRegistryCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "registryCredential", GoGetter: "RegistryCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "registryCredentialInput", GoGetter: "RegistryCredentialInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificate", GoMethod: "ResetCertificate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDockerServer", GoMethod: "ResetDockerServer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnvironmentVariable", GoMethod: "ResetEnvironmentVariable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFleet", GoMethod: "ResetFleet"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImagePullCredentialsType", GoMethod: "ResetImagePullCredentialsType"},

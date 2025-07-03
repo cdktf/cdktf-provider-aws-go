@@ -63,6 +63,10 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) validateSetDeepThreatInspectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/m2_environment aws_m2_environment}.
 type M2Environment interface {
 	cdktf.TerraformResource
 	ApplyChangesDuringMaintenanceWindow() interface{}
@@ -746,7 +746,7 @@ func (j *jsiiProxy_M2Environment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/m2_environment aws_m2_environment} Resource.
 func NewM2Environment(scope constructs.Construct, id *string, config *M2EnvironmentConfig) M2Environment {
 	_init_.Initialize()
 
@@ -764,7 +764,7 @@ func NewM2Environment(scope constructs.Construct, id *string, config *M2Environm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/m2_environment aws_m2_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/m2_environment aws_m2_environment} Resource.
 func NewM2Environment_Override(m M2Environment, scope constructs.Construct, id *string, config *M2EnvironmentConfig) {
 	_init_.Initialize()
 

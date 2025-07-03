@@ -30,6 +30,8 @@ type AccessanalyzerAnalyzerConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalAccess() AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference
+	InternalAccessInput() *AccessanalyzerAnalyzerConfigurationInternalAccess
 	InternalValue() *AccessanalyzerAnalyzerConfiguration
 	SetInternalValue(val *AccessanalyzerAnalyzerConfiguration)
 	// Experimental.
@@ -66,7 +68,9 @@ type AccessanalyzerAnalyzerConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutInternalAccess(value *AccessanalyzerAnalyzerConfigurationInternalAccess)
 	PutUnusedAccess(value *AccessanalyzerAnalyzerConfigurationUnusedAccess)
+	ResetInternalAccess()
 	ResetUnusedAccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -118,6 +122,26 @@ func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) InternalAccess() AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference {
+	var returns AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference
+	_jsii_.Get(
+		j,
+		"internalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) InternalAccessInput() *AccessanalyzerAnalyzerConfigurationInternalAccess {
+	var returns *AccessanalyzerAnalyzerConfigurationInternalAccess
+	_jsii_.Get(
+		j,
+		"internalAccessInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) Interpola
 	return returns
 }
 
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) PutInternalAccess(value *AccessanalyzerAnalyzerConfigurationInternalAccess) {
+	if err := a.validatePutInternalAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putInternalAccess",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) PutUnusedAccess(value *AccessanalyzerAnalyzerConfigurationUnusedAccess) {
 	if err := a.validatePutUnusedAccessParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) PutUnused
 		a,
 		"putUnusedAccess",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) ResetInternalAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetInternalAccess",
+		nil, // no parameters
 	)
 }
 

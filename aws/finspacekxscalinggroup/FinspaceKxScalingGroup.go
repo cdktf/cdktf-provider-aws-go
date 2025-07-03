@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group}.
 type FinspaceKxScalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -564,7 +564,7 @@ func (j *jsiiProxy_FinspaceKxScalingGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
 func NewFinspaceKxScalingGroup(scope constructs.Construct, id *string, config *FinspaceKxScalingGroupConfig) FinspaceKxScalingGroup {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewFinspaceKxScalingGroup(scope constructs.Construct, id *string, config *F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/finspace_kx_scaling_group aws_finspace_kx_scaling_group} Resource.
 func NewFinspaceKxScalingGroup_Override(f FinspaceKxScalingGroup, scope constructs.Construct, id *string, config *FinspaceKxScalingGroupConfig) {
 	_init_.Initialize()
 

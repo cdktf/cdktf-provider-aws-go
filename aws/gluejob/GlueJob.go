@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job aws_glue_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/glue_job aws_glue_job}.
 type GlueJob interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,9 @@ type GlueJob interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JobMode() *string
+	SetJobMode(val *string)
+	JobModeInput() *string
 	JobRunQueuingEnabled() interface{}
 	SetJobRunQueuingEnabled(val interface{})
 	JobRunQueuingEnabledInput() interface{}
@@ -184,6 +187,7 @@ type GlueJob interface {
 	ResetExecutionProperty()
 	ResetGlueVersion()
 	ResetId()
+	ResetJobMode()
 	ResetJobRunQueuingEnabled()
 	ResetMaintenanceWindow()
 	ResetMaxCapacity()
@@ -464,6 +468,26 @@ func (j *jsiiProxy_GlueJob) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) JobMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) JobModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jobModeInput",
 		&returns,
 	)
 	return returns
@@ -870,7 +894,7 @@ func (j *jsiiProxy_GlueJob) WorkerTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) GlueJob {
 	_init_.Initialize()
 
@@ -888,7 +912,7 @@ func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, config *GlueJobConfig) {
 	_init_.Initialize()
 
@@ -999,6 +1023,17 @@ func (j *jsiiProxy_GlueJob)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetJobMode(val *string) {
+	if err := j.validateSetJobModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jobMode",
 		val,
 	)
 }
@@ -1636,6 +1671,14 @@ func (g *jsiiProxy_GlueJob) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetJobMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJobMode",
 		nil, // no parameters
 	)
 }

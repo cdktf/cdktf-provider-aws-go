@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetStreamArnParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsKinesisStreamConsumerParameters(scope constructs.Construct, id *string, config *DataAwsKinesisStreamConsumerConfig) error {
 	return nil
 }

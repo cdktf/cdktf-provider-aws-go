@@ -123,6 +123,14 @@ func (j *jsiiProxy_KinesisStreamConsumer) validateSetStreamArnParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStreamConsumer) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KinesisStreamConsumer) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewKinesisStreamConsumerParameters(scope constructs.Construct, id *string, config *KinesisStreamConsumerConfig) error {
 	return nil
 }

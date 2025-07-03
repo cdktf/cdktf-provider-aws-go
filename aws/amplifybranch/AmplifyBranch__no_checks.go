@@ -143,6 +143,10 @@ func (j *jsiiProxy_AmplifyBranch) validateSetEnablePullRequestPreviewParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyBranch) validateSetEnableSkewProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyBranch) validateSetEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }

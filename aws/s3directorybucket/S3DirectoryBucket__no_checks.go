@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3DirectoryBucket) validateSetRegionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_S3DirectoryBucket) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3DirectoryBucket) validateSetTypeParameters(val *string) error {
 	return nil
 }

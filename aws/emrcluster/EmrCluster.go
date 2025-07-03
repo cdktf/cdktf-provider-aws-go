@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster aws_emr_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster aws_emr_cluster}.
 type EmrCluster interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -103,6 +103,9 @@ type EmrCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OsReleaseLabel() *string
+	SetOsReleaseLabel(val *string)
+	OsReleaseLabelInput() *string
 	PlacementGroupConfig() EmrClusterPlacementGroupConfigList
 	PlacementGroupConfigInput() interface{}
 	// Experimental.
@@ -229,6 +232,7 @@ type EmrCluster interface {
 	ResetLogUri()
 	ResetMasterInstanceFleet()
 	ResetMasterInstanceGroup()
+	ResetOsReleaseLabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -811,6 +815,26 @@ func (j *jsiiProxy_EmrCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EmrCluster) OsReleaseLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osReleaseLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) OsReleaseLabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osReleaseLabelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrCluster) PlacementGroupConfig() EmrClusterPlacementGroupConfigList {
 	var returns EmrClusterPlacementGroupConfigList
 	_jsii_.Get(
@@ -1132,7 +1156,7 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
 	_init_.Initialize()
 
@@ -1150,7 +1174,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.0.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string, config *EmrClusterConfig) {
 	_init_.Initialize()
 
@@ -1349,6 +1373,17 @@ func (j *jsiiProxy_EmrCluster)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetOsReleaseLabel(val *string) {
+	if err := j.validateSetOsReleaseLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osReleaseLabel",
 		val,
 	)
 }
@@ -2112,6 +2147,14 @@ func (e *jsiiProxy_EmrCluster) ResetMasterInstanceGroup() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetMasterInstanceGroup",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetOsReleaseLabel() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOsReleaseLabel",
 		nil, // no parameters
 	)
 }
