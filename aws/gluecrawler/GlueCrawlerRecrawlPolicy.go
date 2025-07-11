@@ -5,7 +5,7 @@ package gluecrawler
 
 
 type GlueCrawlerRecrawlPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
 	RecrawlBehavior *string `field:"optional" json:"recrawlBehavior" yaml:"recrawlBehavior"`
 }
 

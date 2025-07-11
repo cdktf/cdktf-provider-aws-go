@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription}.
 type VpcNetworkPerformanceMetricSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
 func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *string, config *VpcNetworkPerformanceMetricSubscriptionConfig) VpcNetworkPerformanceMetricSubscription {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
 func NewVpcNetworkPerformanceMetricSubscription_Override(v VpcNetworkPerformanceMetricSubscription, scope constructs.Construct, id *string, config *VpcNetworkPerformanceMetricSubscriptionConfig) {
 	_init_.Initialize()
 

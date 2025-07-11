@@ -31,6 +31,9 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DnsSupport() interface{}
+	SetDnsSupport(val interface{})
+	DnsSupportInput() interface{}
 	EdgeLocations() DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList
 	EdgeLocationsInput() interface{}
 	// Experimental.
@@ -40,6 +43,9 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutpu
 	InsideCidrBlocksInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SecurityGroupReferencingSupport() interface{}
+	SetSecurityGroupReferencingSupport(val interface{})
+	SecurityGroupReferencingSupportInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,7 +82,9 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutpu
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEdgeLocations(value interface{})
+	ResetDnsSupport()
 	ResetInsideCidrBlocks()
+	ResetSecurityGroupReferencingSupport()
 	ResetVpnEcmpSupport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -143,6 +151,26 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) DnsSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) DnsSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) EdgeLocations() DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList {
 	var returns DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList
 	_jsii_.Get(
@@ -198,6 +226,26 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) SecurityGroupReferencingSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) SecurityGroupReferencingSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupportInput",
 		&returns,
 	)
 	return returns
@@ -304,6 +352,17 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	)
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference)SetDnsSupport(val interface{}) {
+	if err := j.validateSetDnsSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsSupport",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference)SetInsideCidrBlocks(val *[]*string) {
 	if err := j.validateSetInsideCidrBlocksParameters(val); err != nil {
 		panic(err)
@@ -322,6 +381,17 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference)SetSecurityGroupReferencingSupport(val interface{}) {
+	if err := j.validateSetSecurityGroupReferencingSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupReferencingSupport",
 		val,
 	)
 }
@@ -556,10 +626,26 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	)
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) ResetDnsSupport() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDnsSupport",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) ResetInsideCidrBlocks() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetInsideCidrBlocks",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference) ResetSecurityGroupReferencingSupport() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecurityGroupReferencingSupport",
 		nil, // no parameters
 	)
 }

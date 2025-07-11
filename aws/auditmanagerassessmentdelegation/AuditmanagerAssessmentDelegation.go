@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation}.
 type AuditmanagerAssessmentDelegation interface {
 	cdktf.TerraformResource
 	AssessmentId() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource.
 func NewAuditmanagerAssessmentDelegation(scope constructs.Construct, id *string, config *AuditmanagerAssessmentDelegationConfig) AuditmanagerAssessmentDelegation {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewAuditmanagerAssessmentDelegation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource.
 func NewAuditmanagerAssessmentDelegation_Override(a AuditmanagerAssessmentDelegation, scope constructs.Construct, id *string, config *AuditmanagerAssessmentDelegationConfig) {
 	_init_.Initialize()
 

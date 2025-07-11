@@ -5,7 +5,7 @@ package lexv2modelsslot
 
 
 type Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

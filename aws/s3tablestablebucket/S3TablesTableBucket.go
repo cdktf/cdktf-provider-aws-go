@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
 type S3TablesTableBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_S3TablesTableBucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) S3TablesTableBucket {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3Ta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket_Override(s S3TablesTableBucket, scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) {
 	_init_.Initialize()
 

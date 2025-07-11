@@ -7,7 +7,7 @@ package sagemakerfeaturegroup
 type SagemakerFeatureGroupFeatureDefinitionCollectionConfig struct {
 	// vector_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_feature_group#vector_config SagemakerFeatureGroup#vector_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/sagemaker_feature_group#vector_config SagemakerFeatureGroup#vector_config}
 	VectorConfig *SagemakerFeatureGroupFeatureDefinitionCollectionConfigVectorConfig `field:"optional" json:"vectorConfig" yaml:"vectorConfig"`
 }
 

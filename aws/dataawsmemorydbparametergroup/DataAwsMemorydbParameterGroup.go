@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group}.
 type DataAwsMemorydbParameterGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataAwsMemorydbParameterGroup) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group} Data Source.
 func NewDataAwsMemorydbParameterGroup(scope constructs.Construct, id *string, config *DataAwsMemorydbParameterGroupConfig) DataAwsMemorydbParameterGroup {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataAwsMemorydbParameterGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group} Data Source.
 func NewDataAwsMemorydbParameterGroup_Override(d DataAwsMemorydbParameterGroup, scope constructs.Construct, id *string, config *DataAwsMemorydbParameterGroupConfig) {
 	_init_.Initialize()
 

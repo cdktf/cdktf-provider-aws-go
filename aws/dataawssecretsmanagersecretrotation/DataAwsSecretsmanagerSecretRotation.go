@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
 type DataAwsSecretsmanagerSecretRotation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Data Source.
 func NewDataAwsSecretsmanagerSecretRotation(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretRotationConfig) DataAwsSecretsmanagerSecretRotation {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataAwsSecretsmanagerSecretRotation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Data Source.
 func NewDataAwsSecretsmanagerSecretRotation_Override(d DataAwsSecretsmanagerSecretRotation, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretRotationConfig) {
 	_init_.Initialize()
 

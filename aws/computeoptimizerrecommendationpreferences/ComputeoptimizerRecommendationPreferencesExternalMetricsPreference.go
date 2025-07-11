@@ -5,7 +5,7 @@ package computeoptimizerrecommendationpreferences
 
 
 type ComputeoptimizerRecommendationPreferencesExternalMetricsPreference struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/computeoptimizer_recommendation_preferences#source ComputeoptimizerRecommendationPreferences#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/computeoptimizer_recommendation_preferences#source ComputeoptimizerRecommendationPreferences#source}.
 	Source *string `field:"required" json:"source" yaml:"source"`
 }
 

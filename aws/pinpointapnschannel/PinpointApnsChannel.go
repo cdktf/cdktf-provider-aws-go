@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
 type PinpointApnsChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_PinpointApnsChannel) TokenKeyInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) PinpointApnsChannel {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *Pinp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel_Override(p PinpointApnsChannel, scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) {
 	_init_.Initialize()
 

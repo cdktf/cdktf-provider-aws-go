@@ -24,6 +24,9 @@ type DynamodbTableReplicaOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConsistencyMode() *string
+	SetConsistencyMode(val *string)
+	ConsistencyModeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -79,6 +82,7 @@ type DynamodbTableReplicaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConsistencyMode()
 	ResetKmsKeyArn()
 	ResetPointInTimeRecovery()
 	ResetPropagateTags()
@@ -122,6 +126,26 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ComplexObjectIsFromSet()
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ConsistencyMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistencyMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ConsistencyModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consistencyModeInput",
 		&returns,
 	)
 	return returns
@@ -323,6 +347,17 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetComplexObjectIsFromSet
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetConsistencyMode(val *string) {
+	if err := j.validateSetConsistencyModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consistencyMode",
 		val,
 	)
 }
@@ -588,6 +623,14 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ResetConsistencyMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConsistencyMode",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ResetKmsKeyArn() {

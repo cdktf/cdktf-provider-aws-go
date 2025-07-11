@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule}.
 type SagemakerMonitoringSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_SagemakerMonitoringSchedule) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule} Resource.
 func NewSagemakerMonitoringSchedule(scope constructs.Construct, id *string, config *SagemakerMonitoringScheduleConfig) SagemakerMonitoringSchedule {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewSagemakerMonitoringSchedule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/sagemaker_monitoring_schedule aws_sagemaker_monitoring_schedule} Resource.
 func NewSagemakerMonitoringSchedule_Override(s SagemakerMonitoringSchedule, scope constructs.Construct, id *string, config *SagemakerMonitoringScheduleConfig) {
 	_init_.Initialize()
 

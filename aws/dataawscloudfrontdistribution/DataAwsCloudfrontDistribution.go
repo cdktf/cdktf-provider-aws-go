@@ -12,10 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution}.
 type DataAwsCloudfrontDistribution interface {
 	cdktf.TerraformDataSource
 	Aliases() *[]*string
+	AnycastIpListId() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -122,6 +123,16 @@ func (j *jsiiProxy_DataAwsCloudfrontDistribution) Aliases() *[]*string {
 	_jsii_.Get(
 		j,
 		"aliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCloudfrontDistribution) AnycastIpListId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anycastIpListId",
 		&returns,
 	)
 	return returns
@@ -398,7 +409,7 @@ func (j *jsiiProxy_DataAwsCloudfrontDistribution) WebAclId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution} Data Source.
 func NewDataAwsCloudfrontDistribution(scope constructs.Construct, id *string, config *DataAwsCloudfrontDistributionConfig) DataAwsCloudfrontDistribution {
 	_init_.Initialize()
 
@@ -416,7 +427,7 @@ func NewDataAwsCloudfrontDistribution(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution} Data Source.
 func NewDataAwsCloudfrontDistribution_Override(d DataAwsCloudfrontDistribution, scope constructs.Construct, id *string, config *DataAwsCloudfrontDistributionConfig) {
 	_init_.Initialize()
 

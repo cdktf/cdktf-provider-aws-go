@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
 type CloudfrontDistribution interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
 	SetAliases(val *[]*string)
 	AliasesInput() *[]*string
+	AnycastIpListId() *string
+	SetAnycastIpListId(val *string)
+	AnycastIpListIdInput() *string
 	Arn() *string
 	CallerReference() *string
 	// Experimental.
@@ -184,6 +187,7 @@ type CloudfrontDistribution interface {
 	PutRestrictions(value *CloudfrontDistributionRestrictions)
 	PutViewerCertificate(value *CloudfrontDistributionViewerCertificate)
 	ResetAliases()
+	ResetAnycastIpListId()
 	ResetComment()
 	ResetContinuousDeploymentPolicyId()
 	ResetCustomErrorResponse()
@@ -237,6 +241,26 @@ func (j *jsiiProxy_CloudfrontDistribution) AliasesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"aliasesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) AnycastIpListId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anycastIpListId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) AnycastIpListIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"anycastIpListIdInput",
 		&returns,
 	)
 	return returns
@@ -943,7 +967,7 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
 
@@ -961,7 +985,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.2.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) {
 	_init_.Initialize()
 
@@ -979,6 +1003,17 @@ func (j *jsiiProxy_CloudfrontDistribution)SetAliases(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"aliases",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistribution)SetAnycastIpListId(val *string) {
+	if err := j.validateSetAnycastIpListIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anycastIpListId",
 		val,
 	)
 }
@@ -1650,6 +1685,14 @@ func (c *jsiiProxy_CloudfrontDistribution) ResetAliases() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAliases",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistribution) ResetAnycastIpListId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnycastIpListId",
 		nil, // no parameters
 	)
 }

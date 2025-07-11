@@ -127,6 +127,10 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetAliasesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) validateSetAnycastIpListIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) validateSetCommentParameters(val *string) error {
 	return nil
 }

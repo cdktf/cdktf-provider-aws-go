@@ -423,6 +423,14 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetAliasesParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) validateSetAnycastIpListIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) validateSetCommentParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
