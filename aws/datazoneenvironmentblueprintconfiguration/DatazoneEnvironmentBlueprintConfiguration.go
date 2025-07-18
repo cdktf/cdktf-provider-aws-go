@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration}.
 type DatazoneEnvironmentBlueprintConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,9 +72,9 @@ type DatazoneEnvironmentBlueprintConfiguration interface {
 	RawOverrides() interface{}
 	Region() *string
 	SetRegion(val *string)
-	RegionalParameters() *map[string]*string
-	SetRegionalParameters(val *map[string]*string)
-	RegionalParametersInput() *map[string]*string
+	RegionalParameters() interface{}
+	SetRegionalParameters(val interface{})
+	RegionalParametersInput() interface{}
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -390,8 +390,8 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) Region() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) RegionalParameters() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) RegionalParameters() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"regionalParameters",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) RegionalParameters
 	return returns
 }
 
-func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) RegionalParametersInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) RegionalParametersInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"regionalParametersInput",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
 func NewDatazoneEnvironmentBlueprintConfiguration(scope constructs.Construct, id *string, config *DatazoneEnvironmentBlueprintConfigurationConfig) DatazoneEnvironmentBlueprintConfiguration {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDatazoneEnvironmentBlueprintConfiguration(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/datazone_environment_blueprint_configuration aws_datazone_environment_blueprint_configuration} Resource.
 func NewDatazoneEnvironmentBlueprintConfiguration_Override(d DatazoneEnvironmentBlueprintConfiguration, scope constructs.Construct, id *string, config *DatazoneEnvironmentBlueprintConfigurationConfig) {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration)SetRegion(val *stri
 	)
 }
 
-func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration)SetRegionalParameters(val *map[string]*string) {
+func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration)SetRegionalParameters(val interface{}) {
 	if err := j.validateSetRegionalParametersParameters(val); err != nil {
 		panic(err)
 	}

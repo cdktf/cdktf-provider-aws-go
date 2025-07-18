@@ -135,6 +135,10 @@ func (j *jsiiProxy_LakeformationResource) validateSetWithFederationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationResource) validateSetWithPrivilegedAccessParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewLakeformationResourceParameters(scope constructs.Construct, id *string, config *LakeformationResourceConfig) error {
 	return nil
 }

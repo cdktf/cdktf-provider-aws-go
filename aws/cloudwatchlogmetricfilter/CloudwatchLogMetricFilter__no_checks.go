@@ -95,6 +95,10 @@ func validateCloudwatchLogMetricFilter_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetApplyOnTransformedLogsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

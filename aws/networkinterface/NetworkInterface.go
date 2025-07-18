@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/network_interface aws_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/network_interface aws_network_interface}.
 type NetworkInterface interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -916,7 +916,7 @@ func (j *jsiiProxy_NetworkInterface) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface(scope constructs.Construct, id *string, config *NetworkInterfaceConfig) NetworkInterface {
 	_init_.Initialize()
 
@@ -934,7 +934,7 @@ func NewNetworkInterface(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/network_interface aws_network_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/network_interface aws_network_interface} Resource.
 func NewNetworkInterface_Override(n NetworkInterface, scope constructs.Construct, id *string, config *NetworkInterfaceConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,8 @@ import (
 
 type EcsServiceLoadBalancerOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedConfiguration() EcsServiceLoadBalancerAdvancedConfigurationOutputReference
+	AdvancedConfigurationInput() *EcsServiceLoadBalancerAdvancedConfiguration
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +78,8 @@ type EcsServiceLoadBalancerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedConfiguration(value *EcsServiceLoadBalancerAdvancedConfiguration)
+	ResetAdvancedConfiguration()
 	ResetElbName()
 	ResetTargetGroupArn()
 	// Produce the Token's value at resolution time.
@@ -91,6 +95,26 @@ type EcsServiceLoadBalancerOutputReference interface {
 // The jsii proxy struct for EcsServiceLoadBalancerOutputReference
 type jsiiProxy_EcsServiceLoadBalancerOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_EcsServiceLoadBalancerOutputReference) AdvancedConfiguration() EcsServiceLoadBalancerAdvancedConfigurationOutputReference {
+	var returns EcsServiceLoadBalancerAdvancedConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"advancedConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceLoadBalancerOutputReference) AdvancedConfigurationInput() *EcsServiceLoadBalancerAdvancedConfiguration {
+	var returns *EcsServiceLoadBalancerAdvancedConfiguration
+	_jsii_.Get(
+		j,
+		"advancedConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_EcsServiceLoadBalancerOutputReference) ComplexObjectIndex() interface{} {
@@ -554,6 +578,25 @@ func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) PutAdvancedConfiguration(value *EcsServiceLoadBalancerAdvancedConfiguration) {
+	if err := e.validatePutAdvancedConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putAdvancedConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) ResetAdvancedConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAdvancedConfiguration",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) ResetElbName() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles}.
 type DataAwsRoute53ProfilesProfiles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataAwsRoute53ProfilesProfiles) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source.
 func NewDataAwsRoute53ProfilesProfiles(scope constructs.Construct, id *string, config *DataAwsRoute53ProfilesProfilesConfig) DataAwsRoute53ProfilesProfiles {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataAwsRoute53ProfilesProfiles(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/route53profiles_profiles aws_route53profiles_profiles} Data Source.
 func NewDataAwsRoute53ProfilesProfiles_Override(d DataAwsRoute53ProfilesProfiles, scope constructs.Construct, id *string, config *DataAwsRoute53ProfilesProfilesConfig) {
 	_init_.Initialize()
 

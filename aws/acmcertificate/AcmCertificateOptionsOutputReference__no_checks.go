@@ -63,6 +63,10 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetExportParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificateOptionsOutputReference) validateSetInternalValueParameters(val *AcmCertificateOptions) error {
 	return nil
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetRestrictPublicBucketsPa
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewS3BucketPublicAccessBlockParameters(scope constructs.Construct, id *string, config *S3BucketPublicAccessBlockConfig) error {
 	return nil
 }

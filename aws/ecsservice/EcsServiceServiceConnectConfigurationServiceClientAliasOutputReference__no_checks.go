@@ -47,6 +47,10 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutput
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validatePutTestTrafficRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

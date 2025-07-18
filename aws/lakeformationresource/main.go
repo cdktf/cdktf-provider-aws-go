@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleArn", GoMethod: "ResetRoleArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseServiceLinkedRole", GoMethod: "ResetUseServiceLinkedRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWithFederation", GoMethod: "ResetWithFederation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWithPrivilegedAccess", GoMethod: "ResetWithPrivilegedAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -76,6 +77,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useServiceLinkedRoleInput", GoGetter: "UseServiceLinkedRoleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "withFederation", GoGetter: "WithFederation"},
 			_jsii_.MemberProperty{JsiiProperty: "withFederationInput", GoGetter: "WithFederationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "withPrivilegedAccess", GoGetter: "WithPrivilegedAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "withPrivilegedAccessInput", GoGetter: "WithPrivilegedAccessInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LakeformationResource{}

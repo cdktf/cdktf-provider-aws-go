@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/identitystore_groups aws_identitystore_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/identitystore_groups aws_identitystore_groups}.
 type DataAwsIdentitystoreGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroups) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source.
 func NewDataAwsIdentitystoreGroups(scope constructs.Construct, id *string, config *DataAwsIdentitystoreGroupsConfig) DataAwsIdentitystoreGroups {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsIdentitystoreGroups(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/identitystore_groups aws_identitystore_groups} Data Source.
 func NewDataAwsIdentitystoreGroups_Override(d DataAwsIdentitystoreGroups, scope constructs.Construct, id *string, config *DataAwsIdentitystoreGroupsConfig) {
 	_init_.Initialize()
 

@@ -46,6 +46,8 @@ type EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TestTrafficRules() EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList
+	TestTrafficRulesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,7 +72,9 @@ type EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTestTrafficRules(value interface{})
 	ResetDnsName()
+	ResetTestTrafficRules()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -191,6 +195,26 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutput
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) TestTrafficRules() EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList {
+	var returns EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList
+	_jsii_.Get(
+		j,
+		"testTrafficRules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) TestTrafficRulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"testTrafficRulesInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +511,29 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutput
 	return returns
 }
 
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) PutTestTrafficRules(value interface{}) {
+	if err := e.validatePutTestTrafficRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTestTrafficRules",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) ResetDnsName() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDnsName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasOutputReference) ResetTestTrafficRules() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTestTrafficRules",
 		nil, // no parameters
 	)
 }

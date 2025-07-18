@@ -47,6 +47,10 @@ func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateInterpolationF
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validatePutAdvancedConfigurationParameters(value *EcsServiceLoadBalancerAdvancedConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

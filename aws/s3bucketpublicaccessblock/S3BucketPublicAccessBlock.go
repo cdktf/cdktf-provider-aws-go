@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block}.
 type S3BucketPublicAccessBlock interface {
 	cdktf.TerraformResource
 	BlockPublicAcls() interface{}
@@ -76,6 +76,9 @@ type S3BucketPublicAccessBlock interface {
 	RestrictPublicBuckets() interface{}
 	SetRestrictPublicBuckets(val interface{})
 	RestrictPublicBucketsInput() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -134,6 +137,7 @@ type S3BucketPublicAccessBlock interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetRestrictPublicBuckets()
+	ResetSkipDestroy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -422,6 +426,26 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock) RestrictPublicBucketsInput() inter
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketPublicAccessBlock) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketPublicAccessBlock) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketPublicAccessBlock) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -453,7 +477,7 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block} Resource.
 func NewS3BucketPublicAccessBlock(scope constructs.Construct, id *string, config *S3BucketPublicAccessBlockConfig) S3BucketPublicAccessBlock {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewS3BucketPublicAccessBlock(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_public_access_block aws_s3_bucket_public_access_block} Resource.
 func NewS3BucketPublicAccessBlock_Override(s S3BucketPublicAccessBlock, scope constructs.Construct, id *string, config *S3BucketPublicAccessBlockConfig) {
 	_init_.Initialize()
 
@@ -623,6 +647,17 @@ func (j *jsiiProxy_S3BucketPublicAccessBlock)SetRestrictPublicBuckets(val interf
 	_jsii_.Set(
 		j,
 		"restrictPublicBuckets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3BucketPublicAccessBlock)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -1032,6 +1067,14 @@ func (s *jsiiProxy_S3BucketPublicAccessBlock) ResetRestrictPublicBuckets() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRestrictPublicBuckets",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketPublicAccessBlock) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

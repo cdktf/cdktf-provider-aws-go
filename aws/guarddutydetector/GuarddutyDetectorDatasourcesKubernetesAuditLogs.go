@@ -5,7 +5,7 @@ package guarddutydetector
 
 
 type GuarddutyDetectorDatasourcesKubernetesAuditLogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 	Enable interface{} `field:"required" json:"enable" yaml:"enable"`
 }
 

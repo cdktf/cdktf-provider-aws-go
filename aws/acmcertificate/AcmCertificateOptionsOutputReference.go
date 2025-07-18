@@ -31,6 +31,9 @@ type AcmCertificateOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Export() *string
+	SetExport(val *string)
+	ExportInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AcmCertificateOptions
@@ -68,6 +71,7 @@ type AcmCertificateOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCertificateTransparencyLoggingPreference()
+	ResetExport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,6 +132,26 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) Export() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"export",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference) ExportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"exportInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetComplexObjectIsFromSe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AcmCertificateOptionsOutputReference)SetExport(val *string) {
+	if err := j.validateSetExportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"export",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (a *jsiiProxy_AcmCertificateOptionsOutputReference) ResetCertificateTranspa
 	_jsii_.InvokeVoid(
 		a,
 		"resetCertificateTransparencyLoggingPreference",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmCertificateOptionsOutputReference) ResetExport() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExport",
 		nil, // no parameters
 	)
 }

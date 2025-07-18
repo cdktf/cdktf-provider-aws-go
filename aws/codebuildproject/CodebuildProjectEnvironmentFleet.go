@@ -5,7 +5,7 @@ package codebuildproject
 
 
 type CodebuildProjectEnvironmentFleet struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/codebuild_project#fleet_arn CodebuildProject#fleet_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/codebuild_project#fleet_arn CodebuildProject#fleet_arn}.
 	FleetArn *string `field:"optional" json:"fleetArn" yaml:"fleetArn"`
 }
 

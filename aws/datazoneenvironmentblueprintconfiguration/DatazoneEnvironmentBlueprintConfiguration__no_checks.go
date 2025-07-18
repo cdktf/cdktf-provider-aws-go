@@ -131,7 +131,7 @@ func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) validateSetRegionP
 	return nil
 }
 
-func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) validateSetRegionalParametersParameters(val *map[string]*string) error {
+func (j *jsiiProxy_DatazoneEnvironmentBlueprintConfiguration) validateSetRegionalParametersParameters(val interface{}) error {
 	return nil
 }
 

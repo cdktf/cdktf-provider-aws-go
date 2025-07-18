@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles}.
 type DataAwsBedrockInferenceProfiles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -57,6 +57,9 @@ type DataAwsBedrockInferenceProfiles interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -86,6 +89,7 @@ type DataAwsBedrockInferenceProfiles interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -275,8 +279,28 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
 func NewDataAwsBedrockInferenceProfiles(scope constructs.Construct, id *string, config *DataAwsBedrockInferenceProfilesConfig) DataAwsBedrockInferenceProfiles {
 	_init_.Initialize()
 
@@ -294,7 +318,7 @@ func NewDataAwsBedrockInferenceProfiles(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/bedrock_inference_profiles aws_bedrock_inference_profiles} Data Source.
 func NewDataAwsBedrockInferenceProfiles_Override(d DataAwsBedrockInferenceProfiles, scope constructs.Construct, id *string, config *DataAwsBedrockInferenceProfilesConfig) {
 	_init_.Initialize()
 
@@ -358,6 +382,17 @@ func (j *jsiiProxy_DataAwsBedrockInferenceProfiles)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBedrockInferenceProfiles)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -659,6 +694,14 @@ func (d *jsiiProxy_DataAwsBedrockInferenceProfiles) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBedrockInferenceProfiles) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

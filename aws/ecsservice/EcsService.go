@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
@@ -44,6 +44,8 @@ type EcsService interface {
 	SetDependsOn(val *[]*string)
 	DeploymentCircuitBreaker() EcsServiceDeploymentCircuitBreakerOutputReference
 	DeploymentCircuitBreakerInput() *EcsServiceDeploymentCircuitBreaker
+	DeploymentConfiguration() EcsServiceDeploymentConfigurationOutputReference
+	DeploymentConfigurationInput() *EcsServiceDeploymentConfiguration
 	DeploymentController() EcsServiceDeploymentControllerOutputReference
 	DeploymentControllerInput() *EcsServiceDeploymentController
 	DeploymentMaximumPercent() *float64
@@ -203,6 +205,7 @@ type EcsService interface {
 	PutAlarms(value *EcsServiceAlarms)
 	PutCapacityProviderStrategy(value interface{})
 	PutDeploymentCircuitBreaker(value *EcsServiceDeploymentCircuitBreaker)
+	PutDeploymentConfiguration(value *EcsServiceDeploymentConfiguration)
 	PutDeploymentController(value *EcsServiceDeploymentController)
 	PutLoadBalancer(value interface{})
 	PutNetworkConfiguration(value *EcsServiceNetworkConfiguration)
@@ -218,6 +221,7 @@ type EcsService interface {
 	ResetCapacityProviderStrategy()
 	ResetCluster()
 	ResetDeploymentCircuitBreaker()
+	ResetDeploymentConfiguration()
 	ResetDeploymentController()
 	ResetDeploymentMaximumPercent()
 	ResetDeploymentMinimumHealthyPercent()
@@ -424,6 +428,26 @@ func (j *jsiiProxy_EcsService) DeploymentCircuitBreakerInput() *EcsServiceDeploy
 	_jsii_.Get(
 		j,
 		"deploymentCircuitBreakerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) DeploymentConfiguration() EcsServiceDeploymentConfigurationOutputReference {
+	var returns EcsServiceDeploymentConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"deploymentConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) DeploymentConfigurationInput() *EcsServiceDeploymentConfiguration {
+	var returns *EcsServiceDeploymentConfiguration
+	_jsii_.Get(
+		j,
+		"deploymentConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1160,7 +1184,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1178,7 +1202,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1896,6 +1920,17 @@ func (e *jsiiProxy_EcsService) PutDeploymentCircuitBreaker(value *EcsServiceDepl
 	)
 }
 
+func (e *jsiiProxy_EcsService) PutDeploymentConfiguration(value *EcsServiceDeploymentConfiguration) {
+	if err := e.validatePutDeploymentConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putDeploymentConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsService) PutDeploymentController(value *EcsServiceDeploymentController) {
 	if err := e.validatePutDeploymentControllerParameters(value); err != nil {
 		panic(err)
@@ -2042,6 +2077,14 @@ func (e *jsiiProxy_EcsService) ResetDeploymentCircuitBreaker() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDeploymentCircuitBreaker",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetDeploymentConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDeploymentConfiguration",
 		nil, // no parameters
 	)
 }

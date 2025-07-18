@@ -5,9 +5,9 @@ package qldbstream
 
 
 type QldbStreamTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/qldb_stream#create QldbStream#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/qldb_stream#create QldbStream#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/qldb_stream#delete QldbStream#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/qldb_stream#delete QldbStream#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

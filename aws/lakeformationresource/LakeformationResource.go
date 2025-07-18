@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
 type LakeformationResource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,9 @@ type LakeformationResource interface {
 	WithFederation() interface{}
 	SetWithFederation(val interface{})
 	WithFederationInput() interface{}
+	WithPrivilegedAccess() interface{}
+	SetWithPrivilegedAccess(val interface{})
+	WithPrivilegedAccessInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,6 +138,7 @@ type LakeformationResource interface {
 	ResetRoleArn()
 	ResetUseServiceLinkedRole()
 	ResetWithFederation()
+	ResetWithPrivilegedAccess()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -463,8 +467,28 @@ func (j *jsiiProxy_LakeformationResource) WithFederationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationResource) WithPrivilegedAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withPrivilegedAccess",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+func (j *jsiiProxy_LakeformationResource) WithPrivilegedAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withPrivilegedAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource(scope constructs.Construct, id *string, config *LakeformationResourceConfig) LakeformationResource {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewLakeformationResource(scope constructs.Construct, id *string, config *La
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource_Override(l LakeformationResource, scope constructs.Construct, id *string, config *LakeformationResourceConfig) {
 	_init_.Initialize()
 
@@ -634,6 +658,17 @@ func (j *jsiiProxy_LakeformationResource)SetWithFederation(val interface{}) {
 	_jsii_.Set(
 		j,
 		"withFederation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationResource)SetWithPrivilegedAccess(val interface{}) {
+	if err := j.validateSetWithPrivilegedAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"withPrivilegedAccess",
 		val,
 	)
 }
@@ -1043,6 +1078,14 @@ func (l *jsiiProxy_LakeformationResource) ResetWithFederation() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetWithFederation",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationResource) ResetWithPrivilegedAccess() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWithPrivilegedAccess",
 		nil, // no parameters
 	)
 }

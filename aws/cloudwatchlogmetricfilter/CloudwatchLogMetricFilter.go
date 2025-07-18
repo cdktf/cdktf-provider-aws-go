@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter}.
 type CloudwatchLogMetricFilter interface {
 	cdktf.TerraformResource
+	ApplyOnTransformedLogs() interface{}
+	SetApplyOnTransformedLogs(val interface{})
+	ApplyOnTransformedLogsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -122,6 +125,7 @@ type CloudwatchLogMetricFilter interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetricTransformation(value *CloudwatchLogMetricFilterMetricTransformation)
+	ResetApplyOnTransformedLogs()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -143,6 +147,26 @@ type CloudwatchLogMetricFilter interface {
 // The jsii proxy struct for CloudwatchLogMetricFilter
 type jsiiProxy_CloudwatchLogMetricFilter struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudwatchLogMetricFilter) ApplyOnTransformedLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyOnTransformedLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogMetricFilter) ApplyOnTransformedLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applyOnTransformedLogsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudwatchLogMetricFilter) CdktfStack() cdktf.TerraformStack {
@@ -426,7 +450,7 @@ func (j *jsiiProxy_CloudwatchLogMetricFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
 func NewCloudwatchLogMetricFilter(scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) CloudwatchLogMetricFilter {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewCloudwatchLogMetricFilter(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.3.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/cloudwatch_log_metric_filter aws_cloudwatch_log_metric_filter} Resource.
 func NewCloudwatchLogMetricFilter_Override(c CloudwatchLogMetricFilter, scope constructs.Construct, id *string, config *CloudwatchLogMetricFilterConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,17 @@ func NewCloudwatchLogMetricFilter_Override(c CloudwatchLogMetricFilter, scope co
 		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchLogMetricFilter)SetApplyOnTransformedLogs(val interface{}) {
+	if err := j.validateSetApplyOnTransformedLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applyOnTransformedLogs",
+		val,
 	)
 }
 
@@ -939,6 +974,14 @@ func (c *jsiiProxy_CloudwatchLogMetricFilter) PutMetricTransformation(value *Clo
 		c,
 		"putMetricTransformation",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogMetricFilter) ResetApplyOnTransformedLogs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetApplyOnTransformedLogs",
+		nil, // no parameters
 	)
 }
 

@@ -87,6 +87,10 @@ func (e *jsiiProxy_EcsService) validatePutDeploymentCircuitBreakerParameters(val
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validatePutDeploymentConfigurationParameters(value *EcsServiceDeploymentConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validatePutDeploymentControllerParameters(value *EcsServiceDeploymentController) error {
 	return nil
 }
