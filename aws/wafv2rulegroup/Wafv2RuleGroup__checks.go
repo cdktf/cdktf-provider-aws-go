@@ -512,6 +512,14 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetRegionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetRulesJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) validateSetScopeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

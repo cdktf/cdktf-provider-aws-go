@@ -5,11 +5,11 @@ package opensearchdomain
 
 
 type OpensearchDomainClusterConfigNodeOptionsNodeConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/opensearch_domain#count OpensearchDomain#count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/opensearch_domain#count OpensearchDomain#count}.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/opensearch_domain#type OpensearchDomain#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/opensearch_domain#type OpensearchDomain#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

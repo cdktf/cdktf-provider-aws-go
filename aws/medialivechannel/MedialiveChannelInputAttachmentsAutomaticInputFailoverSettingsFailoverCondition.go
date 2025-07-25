@@ -7,7 +7,7 @@ package medialivechannel
 type MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition struct {
 	// failover_condition_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
 	FailoverConditionSettings *MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings `field:"optional" json:"failoverConditionSettings" yaml:"failoverConditionSettings"`
 }
 

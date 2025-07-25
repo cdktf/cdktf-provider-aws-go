@@ -389,6 +389,7 @@ func init() {
 		reflect.TypeOf((*DataAwsDmsEndpointPostgresSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterConnectScript", GoGetter: "AfterConnectScript"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationMethod", GoGetter: "AuthenticationMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "babelfishDatabaseName", GoGetter: "BabelfishDatabaseName"},
 			_jsii_.MemberProperty{JsiiProperty: "captureDdls", GoGetter: "CaptureDdls"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -421,6 +422,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
 			_jsii_.MemberProperty{JsiiProperty: "pluginName", GoGetter: "PluginName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "slotName", GoGetter: "SlotName"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

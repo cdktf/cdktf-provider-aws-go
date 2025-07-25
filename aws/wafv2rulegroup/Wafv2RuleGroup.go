@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
 type Wafv2RuleGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type Wafv2RuleGroup interface {
 	RegionInput() *string
 	Rule() Wafv2RuleGroupRuleList
 	RuleInput() interface{}
+	RulesJson() *string
+	SetRulesJson(val *string)
+	RulesJsonInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -152,6 +155,7 @@ type Wafv2RuleGroup interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetRule()
+	ResetRulesJson()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -482,6 +486,26 @@ func (j *jsiiProxy_Wafv2RuleGroup) RuleInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) RulesJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rulesJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup) RulesJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rulesJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -593,7 +617,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) VisibilityConfigInput() *Wafv2RuleGroupVisibi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) Wafv2RuleGroup {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2Rule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup_Override(w Wafv2RuleGroup, scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) {
 	_init_.Initialize()
 
@@ -752,6 +776,17 @@ func (j *jsiiProxy_Wafv2RuleGroup)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup)SetRulesJson(val *string) {
+	if err := j.validateSetRulesJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rulesJson",
 		val,
 	)
 }
@@ -1235,6 +1270,14 @@ func (w *jsiiProxy_Wafv2RuleGroup) ResetRule() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRule",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) ResetRulesJson() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRulesJson",
 		nil, // no parameters
 	)
 }

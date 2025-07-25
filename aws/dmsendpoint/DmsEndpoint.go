@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,8 @@ type DmsEndpoint interface {
 	MongodbSettingsInput() *DmsEndpointMongodbSettings
 	// The tree node.
 	Node() constructs.Node
+	OracleSettings() DmsEndpointOracleSettingsOutputReference
+	OracleSettingsInput() *DmsEndpointOracleSettings
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -185,6 +187,7 @@ type DmsEndpoint interface {
 	PutKafkaSettings(value *DmsEndpointKafkaSettings)
 	PutKinesisSettings(value *DmsEndpointKinesisSettings)
 	PutMongodbSettings(value *DmsEndpointMongodbSettings)
+	PutOracleSettings(value *DmsEndpointOracleSettings)
 	PutPostgresSettings(value *DmsEndpointPostgresSettings)
 	PutRedisSettings(value *DmsEndpointRedisSettings)
 	PutRedshiftSettings(value *DmsEndpointRedshiftSettings)
@@ -198,6 +201,7 @@ type DmsEndpoint interface {
 	ResetKinesisSettings()
 	ResetKmsKeyArn()
 	ResetMongodbSettings()
+	ResetOracleSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -585,6 +589,26 @@ func (j *jsiiProxy_DmsEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpoint) OracleSettings() DmsEndpointOracleSettingsOutputReference {
+	var returns DmsEndpointOracleSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"oracleSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) OracleSettingsInput() *DmsEndpointOracleSettings {
+	var returns *DmsEndpointOracleSettings
+	_jsii_.Get(
+		j,
+		"oracleSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsEndpoint) Password() *string {
 	var returns *string
 	_jsii_.Get(
@@ -966,7 +990,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -984,7 +1008,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -1680,6 +1704,17 @@ func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSett
 	)
 }
 
+func (d *jsiiProxy_DmsEndpoint) PutOracleSettings(value *DmsEndpointOracleSettings) {
+	if err := d.validatePutOracleSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOracleSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsEndpoint) PutPostgresSettings(value *DmsEndpointPostgresSettings) {
 	if err := d.validatePutPostgresSettingsParameters(value); err != nil {
 		panic(err)
@@ -1792,6 +1827,14 @@ func (d *jsiiProxy_DmsEndpoint) ResetMongodbSettings() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMongodbSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetOracleSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOracleSettings",
 		nil, // no parameters
 	)
 }

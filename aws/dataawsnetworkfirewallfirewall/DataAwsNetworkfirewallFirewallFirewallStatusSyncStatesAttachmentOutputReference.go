@@ -34,6 +34,7 @@ type DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputRefer
 	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment
 	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment)
 	Status() *string
+	StatusMessage() *string
 	SubnetId() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachm
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference) StatusMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusMessage",
 		&returns,
 	)
 	return returns

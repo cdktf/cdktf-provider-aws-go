@@ -66,6 +66,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "oracleSettings", GoGetter: "OracleSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "oracleSettingsInput", GoGetter: "OracleSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaSettings", GoMethod: "PutKafkaSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putKinesisSettings", GoMethod: "PutKinesisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putMongodbSettings", GoMethod: "PutMongodbSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putOracleSettings", GoMethod: "PutOracleSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostgresSettings", GoMethod: "PutPostgresSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedisSettings", GoMethod: "PutRedisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedshiftSettings", GoMethod: "PutRedshiftSettings"},
@@ -101,6 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKinesisSettings", GoMethod: "ResetKinesisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMongodbSettings", GoMethod: "ResetMongodbSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOracleSettings", GoMethod: "ResetOracleSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPauseReplicationTasks", GoMethod: "ResetPauseReplicationTasks"},
@@ -418,6 +422,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointOracleSettings",
+		reflect.TypeOf((*DmsEndpointOracleSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointOracleSettingsOutputReference",
+		reflect.TypeOf((*DmsEndpointOracleSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authenticationMethod", GoGetter: "AuthenticationMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationMethodInput", GoGetter: "AuthenticationMethodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationMethod", GoMethod: "ResetAuthenticationMethod"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DmsEndpointOracleSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointPostgresSettings",
 		reflect.TypeOf((*DmsEndpointPostgresSettings)(nil)).Elem(),
 	)
@@ -427,6 +470,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterConnectScript", GoGetter: "AfterConnectScript"},
 			_jsii_.MemberProperty{JsiiProperty: "afterConnectScriptInput", GoGetter: "AfterConnectScriptInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationMethod", GoGetter: "AuthenticationMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "authenticationMethodInput", GoGetter: "AuthenticationMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "babelfishDatabaseName", GoGetter: "BabelfishDatabaseName"},
 			_jsii_.MemberProperty{JsiiProperty: "babelfishDatabaseNameInput", GoGetter: "BabelfishDatabaseNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "captureDdls", GoGetter: "CaptureDdls"},
@@ -473,6 +518,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pluginName", GoGetter: "PluginName"},
 			_jsii_.MemberProperty{JsiiProperty: "pluginNameInput", GoGetter: "PluginNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAfterConnectScript", GoMethod: "ResetAfterConnectScript"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationMethod", GoMethod: "ResetAuthenticationMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBabelfishDatabaseName", GoMethod: "ResetBabelfishDatabaseName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaptureDdls", GoMethod: "ResetCaptureDdls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseMode", GoMethod: "ResetDatabaseMode"},
@@ -487,8 +533,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMapLongVarcharAs", GoMethod: "ResetMapLongVarcharAs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxFileSize", GoMethod: "ResetMaxFileSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginName", GoMethod: "ResetPluginName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSlotName", GoMethod: "ResetSlotName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArn", GoGetter: "ServiceAccessRoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAccessRoleArnInput", GoGetter: "ServiceAccessRoleArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "slotName", GoGetter: "SlotName"},
 			_jsii_.MemberProperty{JsiiProperty: "slotNameInput", GoGetter: "SlotNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

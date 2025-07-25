@@ -75,6 +75,10 @@ func (d *jsiiProxy_DmsReplicationInstance) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) validatePutKerberosAuthenticationSettingsParameters(value *DmsReplicationInstanceKerberosAuthenticationSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) validatePutTimeoutsParameters(value *DmsReplicationInstanceTimeouts) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetConnectionParameters(val i
 }
 
 func (j *jsiiProxy_DmsReplicationInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) validateSetDnsNameServersParameters(val *string) error {
 	return nil
 }
 

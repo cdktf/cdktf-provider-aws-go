@@ -109,6 +109,14 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetAfterC
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetAuthenticationMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetBabelfishDatabaseNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -347,6 +355,14 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetMaxFil
 }
 
 func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetPluginNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetServiceAccessRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,9 +5,9 @@ package mskconnectconnector
 
 
 type MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/mskconnect_connector#log_group MskconnectConnector#log_group}.
 	LogGroup *string `field:"optional" json:"logGroup" yaml:"logGroup"`
 }
 

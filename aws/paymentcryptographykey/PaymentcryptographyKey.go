@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key}.
 type PaymentcryptographyKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -543,7 +543,7 @@ func (j *jsiiProxy_PaymentcryptographyKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
 func NewPaymentcryptographyKey(scope constructs.Construct, id *string, config *PaymentcryptographyKeyConfig) PaymentcryptographyKey {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewPaymentcryptographyKey(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/paymentcryptography_key aws_paymentcryptography_key} Resource.
 func NewPaymentcryptographyKey_Override(p PaymentcryptographyKey, scope constructs.Construct, id *string, config *PaymentcryptographyKeyConfig) {
 	_init_.Initialize()
 

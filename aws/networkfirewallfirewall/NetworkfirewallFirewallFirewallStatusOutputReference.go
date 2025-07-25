@@ -41,6 +41,7 @@ type NetworkfirewallFirewallFirewallStatusOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransitGatewayAttachmentSyncStates() NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusOutputReference) Terrafo
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallFirewallStatusOutputReference) TransitGatewayAttachmentSyncStates() NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList {
+	var returns NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList
+	_jsii_.Get(
+		j,
+		"transitGatewayAttachmentSyncStates",
 		&returns,
 	)
 	return returns

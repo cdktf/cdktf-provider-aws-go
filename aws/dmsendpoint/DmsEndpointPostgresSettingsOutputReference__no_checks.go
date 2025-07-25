@@ -55,6 +55,10 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetAfterC
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetAuthenticationMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetBabelfishDatabaseNameParameters(val *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetMaxFil
 }
 
 func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) validateSetServiceAccessRoleArnParameters(val *string) error {
 	return nil
 }
 

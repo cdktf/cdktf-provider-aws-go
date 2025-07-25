@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
 type DmsReplicationInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -46,6 +46,9 @@ type DmsReplicationInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsNameServers() *string
+	SetDnsNameServers(val *string)
+	DnsNameServersInput() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
 	EngineVersionInput() *string
@@ -60,6 +63,8 @@ type DmsReplicationInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KerberosAuthenticationSettings() DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference
+	KerberosAuthenticationSettingsInput() *DmsReplicationInstanceKerberosAuthenticationSettings
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
@@ -166,14 +171,17 @@ type DmsReplicationInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutKerberosAuthenticationSettings(value *DmsReplicationInstanceKerberosAuthenticationSettings)
 	PutTimeouts(value *DmsReplicationInstanceTimeouts)
 	ResetAllocatedStorage()
 	ResetAllowMajorVersionUpgrade()
 	ResetApplyImmediately()
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
+	ResetDnsNameServers()
 	ResetEngineVersion()
 	ResetId()
+	ResetKerberosAuthenticationSettings()
 	ResetKmsKeyArn()
 	ResetMultiAz()
 	ResetNetworkType()
@@ -356,6 +364,26 @@ func (j *jsiiProxy_DmsReplicationInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) DnsNameServers() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsNameServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) DnsNameServersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsNameServersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) EngineVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -421,6 +449,26 @@ func (j *jsiiProxy_DmsReplicationInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) KerberosAuthenticationSettings() DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference {
+	var returns DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"kerberosAuthenticationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) KerberosAuthenticationSettingsInput() *DmsReplicationInstanceKerberosAuthenticationSettings {
+	var returns *DmsReplicationInstanceKerberosAuthenticationSettings
+	_jsii_.Get(
+		j,
+		"kerberosAuthenticationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -797,7 +845,7 @@ func (j *jsiiProxy_DmsReplicationInstance) VpcSecurityGroupIdsInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) DmsReplicationInstance {
 	_init_.Initialize()
 
@@ -815,7 +863,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) {
 	_init_.Initialize()
 
@@ -907,6 +955,17 @@ func (j *jsiiProxy_DmsReplicationInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationInstance)SetDnsNameServers(val *string) {
+	if err := j.validateSetDnsNameServersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsNameServers",
 		val,
 	)
 }
@@ -1456,6 +1515,17 @@ func (d *jsiiProxy_DmsReplicationInstance) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) PutKerberosAuthenticationSettings(value *DmsReplicationInstanceKerberosAuthenticationSettings) {
+	if err := d.validatePutKerberosAuthenticationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKerberosAuthenticationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) PutTimeouts(value *DmsReplicationInstanceTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1507,6 +1577,14 @@ func (d *jsiiProxy_DmsReplicationInstance) ResetAvailabilityZone() {
 	)
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) ResetDnsNameServers() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDnsNameServers",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) ResetEngineVersion() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1519,6 +1597,14 @@ func (d *jsiiProxy_DmsReplicationInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationInstance) ResetKerberosAuthenticationSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKerberosAuthenticationSettings",
 		nil, // no parameters
 	)
 }

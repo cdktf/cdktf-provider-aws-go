@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
 type DxGatewayAssociation interface {
 	cdktf.TerraformResource
 	AllowedPrefixes() *[]*string
@@ -87,6 +87,7 @@ type DxGatewayAssociation interface {
 	TerraformResourceType() *string
 	Timeouts() DxGatewayAssociationTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransitGatewayAttachmentId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -509,8 +510,18 @@ func (j *jsiiProxy_DxGatewayAssociation) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DxGatewayAssociation) TransitGatewayAttachmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayAttachmentId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) DxGatewayAssociation {
 	_init_.Initialize()
 
@@ -528,7 +539,7 @@ func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation_Override(d DxGatewayAssociation, scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) {
 	_init_.Initialize()
 

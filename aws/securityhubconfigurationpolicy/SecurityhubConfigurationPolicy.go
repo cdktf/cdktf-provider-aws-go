@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy}.
 type SecurityhubConfigurationPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_SecurityhubConfigurationPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy} Resource.
 func NewSecurityhubConfigurationPolicy(scope constructs.Construct, id *string, config *SecurityhubConfigurationPolicyConfig) SecurityhubConfigurationPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewSecurityhubConfigurationPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/securityhub_configuration_policy aws_securityhub_configuration_policy} Resource.
 func NewSecurityhubConfigurationPolicy_Override(s SecurityhubConfigurationPolicy, scope constructs.Construct, id *string, config *SecurityhubConfigurationPolicyConfig) {
 	_init_.Initialize()
 

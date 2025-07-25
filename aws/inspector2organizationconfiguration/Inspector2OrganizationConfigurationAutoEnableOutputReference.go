@@ -13,6 +13,9 @@ import (
 
 type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	cdktf.ComplexObject
+	CodeRepository() interface{}
+	SetCodeRepository(val interface{})
+	CodeRepositoryInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +79,7 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCodeRepository()
 	ResetLambda()
 	ResetLambdaCode()
 	// Produce the Token's value at resolution time.
@@ -91,6 +95,26 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 // The jsii proxy struct for Inspector2OrganizationConfigurationAutoEnableOutputReference
 type jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) CodeRepository() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) CodeRepositoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeRepositoryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) ComplexObjectIndex() interface{} {
@@ -268,6 +292,17 @@ func NewInspector2OrganizationConfigurationAutoEnableOutputReference_Override(i 
 		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
+	)
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)SetCodeRepository(val interface{}) {
+	if err := j.validateSetCodeRepositoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"codeRepository",
+		val,
 	)
 }
 
@@ -554,6 +589,14 @@ func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) ResetCodeRepository() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCodeRepository",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) ResetLambda() {

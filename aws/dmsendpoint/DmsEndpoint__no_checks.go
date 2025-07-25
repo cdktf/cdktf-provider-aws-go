@@ -91,6 +91,10 @@ func (d *jsiiProxy_DmsEndpoint) validatePutMongodbSettingsParameters(value *DmsE
 	return nil
 }
 
+func (d *jsiiProxy_DmsEndpoint) validatePutOracleSettingsParameters(value *DmsEndpointOracleSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEndpoint) validatePutPostgresSettingsParameters(value *DmsEndpointPostgresSettings) error {
 	return nil
 }

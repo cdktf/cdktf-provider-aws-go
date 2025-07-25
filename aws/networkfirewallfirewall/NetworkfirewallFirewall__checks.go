@@ -207,6 +207,37 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validatePutAvailabilityZoneMappingParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*NetworkfirewallFirewallAvailabilityZoneMapping:
+		value := value.(*[]*NetworkfirewallFirewallAvailabilityZoneMapping)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*NetworkfirewallFirewallAvailabilityZoneMapping:
+		value_ := value.([]*NetworkfirewallFirewallAvailabilityZoneMapping)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkfirewallFirewallAvailabilityZoneMapping; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) validatePutEncryptionConfigurationParameters(value *NetworkfirewallFirewallEncryptionConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -295,6 +326,26 @@ func validateNetworkfirewallFirewall_IsTerraformElementParameters(x interface{})
 func validateNetworkfirewallFirewall_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetAvailabilityZoneChangeProtectionParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -561,6 +612,14 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTagsParameters(val *map[s
 }
 
 func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTransitGatewayIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

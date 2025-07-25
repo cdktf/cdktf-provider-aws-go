@@ -207,6 +207,17 @@ func (d *jsiiProxy_DmsReplicationInstance) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) validatePutKerberosAuthenticationSettingsParameters(value *DmsReplicationInstanceKerberosAuthenticationSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) validatePutTimeoutsParameters(value *DmsReplicationInstanceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -419,6 +430,14 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetCountParameters(val interf
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) validateSetDnsNameServersParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

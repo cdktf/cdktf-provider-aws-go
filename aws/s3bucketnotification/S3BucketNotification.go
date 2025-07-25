@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}.
 type S3BucketNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_S3BucketNotification) TopicInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3BucketNotificationConfig) S3BucketNotification {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification_Override(s S3BucketNotification, scope constructs.Construct, id *string, config *S3BucketNotificationConfig) {
 	_init_.Initialize()
 

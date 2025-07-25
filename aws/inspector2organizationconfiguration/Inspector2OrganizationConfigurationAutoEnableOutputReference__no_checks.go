@@ -51,6 +51,10 @@ func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetCodeRepositoryParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

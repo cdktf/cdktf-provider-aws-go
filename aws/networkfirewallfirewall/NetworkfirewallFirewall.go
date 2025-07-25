@@ -12,10 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type NetworkfirewallFirewall interface {
 	cdktf.TerraformResource
 	Arn() *string
+	AvailabilityZoneChangeProtection() interface{}
+	SetAvailabilityZoneChangeProtection(val interface{})
+	AvailabilityZoneChangeProtectionInput() interface{}
+	AvailabilityZoneMapping() NetworkfirewallFirewallAvailabilityZoneMappingList
+	AvailabilityZoneMappingInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -102,6 +107,10 @@ type NetworkfirewallFirewall interface {
 	TerraformResourceType() *string
 	Timeouts() NetworkfirewallFirewallTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TransitGatewayId() *string
+	SetTransitGatewayId(val *string)
+	TransitGatewayIdInput() *string
+	TransitGatewayOwnerAccountId() *string
 	UpdateToken() *string
 	VpcId() *string
 	SetVpcId(val *string)
@@ -149,9 +158,12 @@ type NetworkfirewallFirewall interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAvailabilityZoneMapping(value interface{})
 	PutEncryptionConfiguration(value *NetworkfirewallFirewallEncryptionConfiguration)
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *NetworkfirewallFirewallTimeouts)
+	ResetAvailabilityZoneChangeProtection()
+	ResetAvailabilityZoneMapping()
 	ResetDeleteProtection()
 	ResetDescription()
 	ResetEnabledAnalysisTypes()
@@ -163,9 +175,12 @@ type NetworkfirewallFirewall interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetSubnetChangeProtection()
+	ResetSubnetMapping()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetTransitGatewayId()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -189,6 +204,46 @@ func (j *jsiiProxy_NetworkfirewallFirewall) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) AvailabilityZoneChangeProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneChangeProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) AvailabilityZoneChangeProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneChangeProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) AvailabilityZoneMapping() NetworkfirewallFirewallAvailabilityZoneMappingList {
+	var returns NetworkfirewallFirewallAvailabilityZoneMappingList
+	_jsii_.Get(
+		j,
+		"availabilityZoneMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) AvailabilityZoneMappingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneMappingInput",
 		&returns,
 	)
 	return returns
@@ -644,6 +699,36 @@ func (j *jsiiProxy_NetworkfirewallFirewall) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewall) TransitGatewayId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) TransitGatewayIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) TransitGatewayOwnerAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayOwnerAccountId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewall) UpdateToken() *string {
 	var returns *string
 	_jsii_.Get(
@@ -675,7 +760,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) NetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -693,7 +778,7 @@ func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall_Override(n NetworkfirewallFirewall, scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 
@@ -701,6 +786,17 @@ func NewNetworkfirewallFirewall_Override(n NetworkfirewallFirewall, scope constr
 		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewall",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall)SetAvailabilityZoneChangeProtection(val interface{}) {
+	if err := j.validateSetAvailabilityZoneChangeProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityZoneChangeProtection",
+		val,
 	)
 }
 
@@ -889,6 +985,17 @@ func (j *jsiiProxy_NetworkfirewallFirewall)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall)SetTransitGatewayId(val *string) {
+	if err := j.validateSetTransitGatewayIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitGatewayId",
 		val,
 	)
 }
@@ -1257,6 +1364,17 @@ func (n *jsiiProxy_NetworkfirewallFirewall) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) PutAvailabilityZoneMapping(value interface{}) {
+	if err := n.validatePutAvailabilityZoneMappingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAvailabilityZoneMapping",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) PutEncryptionConfiguration(value *NetworkfirewallFirewallEncryptionConfiguration) {
 	if err := n.validatePutEncryptionConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1287,6 +1405,22 @@ func (n *jsiiProxy_NetworkfirewallFirewall) PutTimeouts(value *NetworkfirewallFi
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetAvailabilityZoneChangeProtection() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAvailabilityZoneChangeProtection",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetAvailabilityZoneMapping() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAvailabilityZoneMapping",
+		nil, // no parameters
 	)
 }
 
@@ -1362,6 +1496,14 @@ func (n *jsiiProxy_NetworkfirewallFirewall) ResetSubnetChangeProtection() {
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetSubnetMapping() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSubnetMapping",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) ResetTags() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1382,6 +1524,22 @@ func (n *jsiiProxy_NetworkfirewallFirewall) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetTransitGatewayId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTransitGatewayId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

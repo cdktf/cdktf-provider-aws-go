@@ -14,6 +14,7 @@ import (
 type DataAwsDmsEndpointPostgresSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AfterConnectScript() *string
+	AuthenticationMethod() *string
 	BabelfishDatabaseName() *string
 	CaptureDdls() cdktf.IResolvable
 	// the index of the complex object in a list.
@@ -47,6 +48,7 @@ type DataAwsDmsEndpointPostgresSettingsOutputReference interface {
 	MapLongVarcharAs() *string
 	MaxFileSize() *float64
 	PluginName() *string
+	ServiceAccessRoleArn() *string
 	SlotName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -100,6 +102,16 @@ func (j *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) AfterConne
 	_jsii_.Get(
 		j,
 		"afterConnectScript",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) AuthenticationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMethod",
 		&returns,
 	)
 	return returns
@@ -290,6 +302,16 @@ func (j *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) PluginName
 	_jsii_.Get(
 		j,
 		"pluginName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) ServiceAccessRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleArn",
 		&returns,
 	)
 	return returns

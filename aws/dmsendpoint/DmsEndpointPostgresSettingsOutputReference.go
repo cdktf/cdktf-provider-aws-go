@@ -16,6 +16,9 @@ type DmsEndpointPostgresSettingsOutputReference interface {
 	AfterConnectScript() *string
 	SetAfterConnectScript(val *string)
 	AfterConnectScriptInput() *string
+	AuthenticationMethod() *string
+	SetAuthenticationMethod(val *string)
+	AuthenticationMethodInput() *string
 	BabelfishDatabaseName() *string
 	SetBabelfishDatabaseName(val *string)
 	BabelfishDatabaseNameInput() *string
@@ -77,6 +80,9 @@ type DmsEndpointPostgresSettingsOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	ServiceAccessRoleArn() *string
+	SetServiceAccessRoleArn(val *string)
+	ServiceAccessRoleArnInput() *string
 	SlotName() *string
 	SetSlotName(val *string)
 	SlotNameInput() *string
@@ -113,6 +119,7 @@ type DmsEndpointPostgresSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAfterConnectScript()
+	ResetAuthenticationMethod()
 	ResetBabelfishDatabaseName()
 	ResetCaptureDdls()
 	ResetDatabaseMode()
@@ -127,6 +134,7 @@ type DmsEndpointPostgresSettingsOutputReference interface {
 	ResetMapLongVarcharAs()
 	ResetMaxFileSize()
 	ResetPluginName()
+	ResetServiceAccessRoleArn()
 	ResetSlotName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -158,6 +166,26 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) AfterConnectScrip
 	_jsii_.Get(
 		j,
 		"afterConnectScriptInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) AuthenticationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) AuthenticationMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authenticationMethodInput",
 		&returns,
 	)
 	return returns
@@ -493,6 +521,26 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) PluginNameInput()
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ServiceAccessRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ServiceAccessRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccessRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) SlotName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,6 +616,17 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference)SetAfterConnectScr
 	_jsii_.Set(
 		j,
 		"afterConnectScript",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference)SetAuthenticationMethod(val *string) {
+	if err := j.validateSetAuthenticationMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationMethod",
 		val,
 	)
 }
@@ -755,6 +814,17 @@ func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference)SetPluginName(val 
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpointPostgresSettingsOutputReference)SetServiceAccessRoleArn(val *string) {
+	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccessRoleArn",
 		val,
 	)
 }
@@ -986,6 +1056,14 @@ func (d *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ResetAfterConnect
 	)
 }
 
+func (d *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ResetAuthenticationMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticationMethod",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ResetBabelfishDatabaseName() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1094,6 +1172,14 @@ func (d *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ResetPluginName()
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointPostgresSettingsOutputReference) ResetServiceAccessRoleArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccessRoleArn",
 		nil, // no parameters
 	)
 }

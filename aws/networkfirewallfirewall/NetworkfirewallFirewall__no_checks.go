@@ -75,6 +75,10 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validatePutAvailabilityZoneMappingParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) validatePutEncryptionConfigurationParameters(value *NetworkfirewallFirewallEncryptionConfiguration) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func validateNetworkfirewallFirewall_IsTerraformElementParameters(x interface{})
 }
 
 func validateNetworkfirewallFirewall_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetAvailabilityZoneChangeProtectionParameters(val interface{}) error {
 	return nil
 }
 
@@ -160,6 +168,10 @@ func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTagsParameters(val *map[s
 }
 
 func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) validateSetTransitGatewayIdParameters(val *string) error {
 	return nil
 }
 

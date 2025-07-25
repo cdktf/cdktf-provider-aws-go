@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/codedeploy_app aws_codedeploy_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codedeploy_app aws_codedeploy_app}.
 type CodedeployApp interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_CodedeployApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
 func NewCodedeployApp(scope constructs.Construct, id *string, config *CodedeployAppConfig) CodedeployApp {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewCodedeployApp(scope constructs.Construct, id *string, config *Codedeploy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
 func NewCodedeployApp_Override(c CodedeployApp, scope constructs.Construct, id *string, config *CodedeployAppConfig) {
 	_init_.Initialize()
 

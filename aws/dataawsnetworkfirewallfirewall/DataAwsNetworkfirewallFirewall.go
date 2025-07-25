@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type DataAwsNetworkfirewallFirewall interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
+	AvailabilityZoneChangeProtection() cdktf.IResolvable
+	AvailabilityZoneMapping() DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -77,6 +79,8 @@ type DataAwsNetworkfirewallFirewall interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TransitGatewayId() *string
+	TransitGatewayOwnerAccountId() *string
 	UpdateToken() *string
 	VpcId() *string
 	// Experimental.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) ArnInput() *string {
 	_jsii_.Get(
 		j,
 		"arnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) AvailabilityZoneChangeProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"availabilityZoneChangeProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) AvailabilityZoneMapping() DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList {
+	var returns DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList
+	_jsii_.Get(
+		j,
+		"availabilityZoneMapping",
 		&returns,
 	)
 	return returns
@@ -461,6 +485,26 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TransitGatewayId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) TransitGatewayOwnerAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitGatewayOwnerAccountId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) UpdateToken() *string {
 	var returns *string
 	_jsii_.Get(
@@ -482,7 +526,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) DataAwsNetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -500,7 +544,7 @@ func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.4.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall_Override(d DataAwsNetworkfirewallFirewall, scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 

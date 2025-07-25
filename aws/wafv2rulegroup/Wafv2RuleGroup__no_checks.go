@@ -143,6 +143,10 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetRegionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetRulesJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) validateSetScopeParameters(val *string) error {
 	return nil
 }
