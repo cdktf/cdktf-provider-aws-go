@@ -5,7 +5,7 @@ package ec2clientvpnendpoint
 
 
 type Ec2ClientVpnEndpointClientRouteEnforcementOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ec2_client_vpn_endpoint#enforced Ec2ClientVpnEndpoint#enforced}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_client_vpn_endpoint#enforced Ec2ClientVpnEndpoint#enforced}.
 	Enforced interface{} `field:"optional" json:"enforced" yaml:"enforced"`
 }
 

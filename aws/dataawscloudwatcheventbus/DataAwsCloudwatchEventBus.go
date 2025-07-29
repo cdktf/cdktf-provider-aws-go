@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus}.
 type DataAwsCloudwatchEventBus interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -46,6 +46,7 @@ type DataAwsCloudwatchEventBus interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogConfig() DataAwsCloudwatchEventBusLogConfigList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -255,6 +256,16 @@ func (j *jsiiProxy_DataAwsCloudwatchEventBus) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchEventBus) LogConfig() DataAwsCloudwatchEventBusLogConfigList {
+	var returns DataAwsCloudwatchEventBusLogConfigList
+	_jsii_.Get(
+		j,
+		"logConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchEventBus) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +367,7 @@ func (j *jsiiProxy_DataAwsCloudwatchEventBus) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus} Data Source.
 func NewDataAwsCloudwatchEventBus(scope constructs.Construct, id *string, config *DataAwsCloudwatchEventBusConfig) DataAwsCloudwatchEventBus {
 	_init_.Initialize()
 
@@ -374,7 +385,7 @@ func NewDataAwsCloudwatchEventBus(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/cloudwatch_event_bus aws_cloudwatch_event_bus} Data Source.
 func NewDataAwsCloudwatchEventBus_Override(d DataAwsCloudwatchEventBus, scope constructs.Construct, id *string, config *DataAwsCloudwatchEventBusConfig) {
 	_init_.Initialize()
 

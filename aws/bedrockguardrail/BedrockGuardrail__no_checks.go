@@ -83,6 +83,10 @@ func (b *jsiiProxy_BedrockGuardrail) validatePutContextualGroundingPolicyConfigP
 	return nil
 }
 
+func (b *jsiiProxy_BedrockGuardrail) validatePutCrossRegionConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockGuardrail) validatePutSensitiveInformationPolicyConfigParameters(value interface{}) error {
 	return nil
 }

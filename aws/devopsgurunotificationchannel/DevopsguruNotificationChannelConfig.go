@@ -24,15 +24,15 @@ type DevopsguruNotificationChannelConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
 	Filters interface{} `field:"optional" json:"filters" yaml:"filters"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// sns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
 	Sns interface{} `field:"optional" json:"sns" yaml:"sns"`
 }
 

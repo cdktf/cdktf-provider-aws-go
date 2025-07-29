@@ -5,7 +5,7 @@ package kendradatasource
 
 
 type KendraDataSourceConfigurationTemplateConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/kendra_data_source#template KendraDataSource#template}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/kendra_data_source#template KendraDataSource#template}.
 	Template *string `field:"required" json:"template" yaml:"template"`
 }
 

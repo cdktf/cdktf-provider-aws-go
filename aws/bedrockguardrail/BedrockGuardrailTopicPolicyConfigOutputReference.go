@@ -40,6 +40,8 @@ type BedrockGuardrailTopicPolicyConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TierConfig() BedrockGuardrailTopicPolicyConfigTierConfigList
+	TierConfigInput() interface{}
 	TopicsConfig() BedrockGuardrailTopicPolicyConfigTopicsConfigList
 	TopicsConfigInput() interface{}
 	// Experimental.
@@ -66,7 +68,9 @@ type BedrockGuardrailTopicPolicyConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTierConfig(value interface{})
 	PutTopicsConfig(value interface{})
+	ResetTierConfig()
 	ResetTopicsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) TierConfig() BedrockGuardrailTopicPolicyConfigTierConfigList {
+	var returns BedrockGuardrailTopicPolicyConfigTierConfigList
+	_jsii_.Get(
+		j,
+		"tierConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) TierConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tierConfigInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) Interpolati
 	return returns
 }
 
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) PutTierConfig(value interface{}) {
+	if err := b.validatePutTierConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTierConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) PutTopicsConfig(value interface{}) {
 	if err := b.validatePutTopicsConfigParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) PutTopicsCo
 		b,
 		"putTopicsConfig",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) ResetTierConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTierConfig",
+		nil, // no parameters
 	)
 }
 

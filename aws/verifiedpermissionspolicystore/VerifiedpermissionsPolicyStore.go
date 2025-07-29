@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 type VerifiedpermissionsPolicyStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) ValidationSettingsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) VerifiedpermissionsPolicyStore {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore_Override(v VerifiedpermissionsPolicyStore, scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) {
 	_init_.Initialize()
 

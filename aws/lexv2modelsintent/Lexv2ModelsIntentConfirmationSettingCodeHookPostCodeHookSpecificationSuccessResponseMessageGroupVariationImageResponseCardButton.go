@@ -5,9 +5,9 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationSuccessResponseMessageGroupVariationImageResponseCardButton struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/lexv2models_intent#text Lexv2ModelsIntent#text}.
 	Text *string `field:"required" json:"text" yaml:"text"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/lexv2models_intent#value Lexv2ModelsIntent#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

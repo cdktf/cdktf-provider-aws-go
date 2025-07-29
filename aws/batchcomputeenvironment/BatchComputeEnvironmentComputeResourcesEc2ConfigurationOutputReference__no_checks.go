@@ -63,6 +63,10 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return nil
 }
 
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetImageKubernetesVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }

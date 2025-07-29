@@ -22,27 +22,27 @@ type RdsExportTaskConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#export_task_identifier RdsExportTask#export_task_identifier}.
 	ExportTaskIdentifier *string `field:"required" json:"exportTaskIdentifier" yaml:"exportTaskIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#iam_role_arn RdsExportTask#iam_role_arn}.
 	IamRoleArn *string `field:"required" json:"iamRoleArn" yaml:"iamRoleArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#kms_key_id RdsExportTask#kms_key_id}.
 	KmsKeyId *string `field:"required" json:"kmsKeyId" yaml:"kmsKeyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#s3_bucket_name RdsExportTask#s3_bucket_name}.
 	S3BucketName *string `field:"required" json:"s3BucketName" yaml:"s3BucketName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#source_arn RdsExportTask#source_arn}.
 	SourceArn *string `field:"required" json:"sourceArn" yaml:"sourceArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#export_only RdsExportTask#export_only}.
 	ExportOnly *[]*string `field:"optional" json:"exportOnly" yaml:"exportOnly"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#region RdsExportTask#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#region RdsExportTask#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#s3_prefix RdsExportTask#s3_prefix}.
 	S3Prefix *string `field:"optional" json:"s3Prefix" yaml:"s3Prefix"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_export_task#timeouts RdsExportTask#timeouts}
 	Timeouts *RdsExportTaskTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

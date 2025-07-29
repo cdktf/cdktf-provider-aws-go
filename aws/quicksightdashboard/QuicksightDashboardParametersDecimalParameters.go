@@ -5,9 +5,9 @@ package quicksightdashboard
 
 
 type QuicksightDashboardParametersDecimalParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}.
 	Values *[]*float64 `field:"required" json:"values" yaml:"values"`
 }
 

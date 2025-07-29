@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ec2_tag aws_ec2_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_tag aws_ec2_tag}.
 type Ec2Tag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Ec2Tag) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ec2_tag aws_ec2_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_tag aws_ec2_tag} Resource.
 func NewEc2Tag(scope constructs.Construct, id *string, config *Ec2TagConfig) Ec2Tag {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewEc2Tag(scope constructs.Construct, id *string, config *Ec2TagConfig) Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ec2_tag aws_ec2_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ec2_tag aws_ec2_tag} Resource.
 func NewEc2Tag_Override(e Ec2Tag, scope constructs.Construct, id *string, config *Ec2TagConfig) {
 	_init_.Initialize()
 

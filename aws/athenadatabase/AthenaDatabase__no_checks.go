@@ -147,6 +147,10 @@ func (j *jsiiProxy_AthenaDatabase) validateSetRegionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_AthenaDatabase) validateSetWorkgroupParameters(val *string) error {
+	return nil
+}
+
 func validateNewAthenaDatabaseParameters(scope constructs.Construct, id *string, config *AthenaDatabaseConfig) error {
 	return nil
 }

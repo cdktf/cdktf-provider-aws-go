@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
 type SsmPatchBaseline interface {
 	cdktf.TerraformResource
 	ApprovalRule() SsmPatchBaselineApprovalRuleList
@@ -27,6 +27,9 @@ type SsmPatchBaseline interface {
 	ApprovedPatchesEnableNonSecurityInput() interface{}
 	ApprovedPatchesInput() *[]*string
 	Arn() *string
+	AvailableSecurityUpdatesComplianceStatus() *string
+	SetAvailableSecurityUpdatesComplianceStatus(val *string)
+	AvailableSecurityUpdatesComplianceStatusInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -155,6 +158,7 @@ type SsmPatchBaseline interface {
 	ResetApprovedPatches()
 	ResetApprovedPatchesComplianceLevel()
 	ResetApprovedPatchesEnableNonSecurity()
+	ResetAvailableSecurityUpdatesComplianceStatus()
 	ResetDescription()
 	ResetGlobalFilter()
 	ResetId()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_SsmPatchBaseline) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmPatchBaseline) AvailableSecurityUpdatesComplianceStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availableSecurityUpdatesComplianceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmPatchBaseline) AvailableSecurityUpdatesComplianceStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availableSecurityUpdatesComplianceStatusInput",
 		&returns,
 	)
 	return returns
@@ -667,7 +691,7 @@ func (j *jsiiProxy_SsmPatchBaseline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) SsmPatchBaseline {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline_Override(s SsmPatchBaseline, scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) {
 	_init_.Initialize()
 
@@ -725,6 +749,17 @@ func (j *jsiiProxy_SsmPatchBaseline)SetApprovedPatchesEnableNonSecurity(val inte
 	_jsii_.Set(
 		j,
 		"approvedPatchesEnableNonSecurity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmPatchBaseline)SetAvailableSecurityUpdatesComplianceStatus(val *string) {
+	if err := j.validateSetAvailableSecurityUpdatesComplianceStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availableSecurityUpdatesComplianceStatus",
 		val,
 	)
 }
@@ -1310,6 +1345,14 @@ func (s *jsiiProxy_SsmPatchBaseline) ResetApprovedPatchesEnableNonSecurity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetApprovedPatchesEnableNonSecurity",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmPatchBaseline) ResetAvailableSecurityUpdatesComplianceStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAvailableSecurityUpdatesComplianceStatus",
 		nil, // no parameters
 	)
 }

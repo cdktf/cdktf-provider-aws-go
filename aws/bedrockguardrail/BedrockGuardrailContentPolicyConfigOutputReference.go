@@ -42,6 +42,8 @@ type BedrockGuardrailContentPolicyConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TierConfig() BedrockGuardrailContentPolicyConfigTierConfigList
+	TierConfigInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type BedrockGuardrailContentPolicyConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFiltersConfig(value interface{})
+	PutTierConfig(value interface{})
 	ResetFiltersConfig()
+	ResetTierConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +172,26 @@ func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) TierConfig() BedrockGuardrailContentPolicyConfigTierConfigList {
+	var returns BedrockGuardrailContentPolicyConfigTierConfigList
+	_jsii_.Get(
+		j,
+		"tierConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) TierConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tierConfigInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) PutFilter
 	)
 }
 
+func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) PutTierConfig(value interface{}) {
+	if err := b.validatePutTierConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTierConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) ResetFiltersConfig() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetFiltersConfig",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) ResetTierConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTierConfig",
 		nil, // no parameters
 	)
 }

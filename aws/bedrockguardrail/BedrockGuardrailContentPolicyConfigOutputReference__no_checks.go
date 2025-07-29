@@ -51,6 +51,10 @@ func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) validateP
 	return nil
 }
 
+func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) validatePutTierConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

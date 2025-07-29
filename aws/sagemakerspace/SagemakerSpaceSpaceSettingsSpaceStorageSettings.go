@@ -7,7 +7,7 @@ package sagemakerspace
 type SagemakerSpaceSpaceSettingsSpaceStorageSettings struct {
 	// ebs_storage_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/sagemaker_space#ebs_storage_settings SagemakerSpace#ebs_storage_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/sagemaker_space#ebs_storage_settings SagemakerSpace#ebs_storage_settings}
 	EbsStorageSettings *SagemakerSpaceSpaceSettingsSpaceStorageSettingsEbsStorageSettings `field:"required" json:"ebsStorageSettings" yaml:"ebsStorageSettings"`
 }
 

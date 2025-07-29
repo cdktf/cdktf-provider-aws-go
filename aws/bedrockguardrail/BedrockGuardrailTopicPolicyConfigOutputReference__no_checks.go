@@ -47,6 +47,10 @@ func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) validateInt
 	return nil
 }
 
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) validatePutTierConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigOutputReference) validatePutTopicsConfigParameters(value interface{}) error {
 	return nil
 }

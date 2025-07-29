@@ -115,6 +115,10 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetApprovedPatchesEnableNonSecurity
 	return nil
 }
 
+func (j *jsiiProxy_SsmPatchBaseline) validateSetAvailableSecurityUpdatesComplianceStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmPatchBaseline) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

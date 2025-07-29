@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 type CodebuildWebhook interface {
 	cdktf.TerraformResource
 	BranchFilter() *string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_CodebuildWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook(scope constructs.Construct, id *string, config *CodebuildWebhookConfig) CodebuildWebhook {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewCodebuildWebhook(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook_Override(c CodebuildWebhook, scope constructs.Construct, id *string, config *CodebuildWebhookConfig) {
 	_init_.Initialize()
 

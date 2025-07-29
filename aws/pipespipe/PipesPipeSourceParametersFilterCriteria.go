@@ -7,7 +7,7 @@ package pipespipe
 type PipesPipeSourceParametersFilterCriteria struct {
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/pipes_pipe#filter PipesPipe#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
 }
 

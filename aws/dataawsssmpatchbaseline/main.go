@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "approvedPatches", GoGetter: "ApprovedPatches"},
 			_jsii_.MemberProperty{JsiiProperty: "approvedPatchesComplianceLevel", GoGetter: "ApprovedPatchesComplianceLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "approvedPatchesEnableNonSecurity", GoGetter: "ApprovedPatchesEnableNonSecurity"},
+			_jsii_.MemberProperty{JsiiProperty: "availableSecurityUpdatesComplianceStatus", GoGetter: "AvailableSecurityUpdatesComplianceStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

@@ -5,9 +5,9 @@ package guarddutymemberdetectorfeature
 
 
 type GuarddutyMemberDetectorFeatureAdditionalConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_member_detector_feature#name GuarddutyMemberDetectorFeature#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_member_detector_feature#name GuarddutyMemberDetectorFeature#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/guardduty_member_detector_feature#status GuarddutyMemberDetectorFeature#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/guardduty_member_detector_feature#status GuarddutyMemberDetectorFeature#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

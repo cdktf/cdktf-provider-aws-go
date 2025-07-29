@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/athena_database aws_athena_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_database aws_athena_database}.
 type AthenaDatabase interface {
 	cdktf.TerraformResource
 	AclConfiguration() AthenaDatabaseAclConfigurationOutputReference
@@ -89,6 +89,9 @@ type AthenaDatabase interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Workgroup() *string
+	SetWorkgroup(val *string)
+	WorkgroupInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,6 +149,7 @@ type AthenaDatabase interface {
 	ResetOverrideLogicalId()
 	ResetProperties()
 	ResetRegion()
+	ResetWorkgroup()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -524,8 +528,28 @@ func (j *jsiiProxy_AthenaDatabase) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AthenaDatabase) Workgroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workgroup",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/athena_database aws_athena_database} Resource.
+func (j *jsiiProxy_AthenaDatabase) WorkgroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workgroupInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDatabaseConfig) AthenaDatabase {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/athena_database aws_athena_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase_Override(a AthenaDatabase, scope constructs.Construct, id *string, config *AthenaDatabaseConfig) {
 	_init_.Initialize()
 
@@ -706,6 +730,17 @@ func (j *jsiiProxy_AthenaDatabase)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AthenaDatabase)SetWorkgroup(val *string) {
+	if err := j.validateSetWorkgroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workgroup",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (a *jsiiProxy_AthenaDatabase) ResetRegion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaDatabase) ResetWorkgroup() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkgroup",
 		nil, // no parameters
 	)
 }

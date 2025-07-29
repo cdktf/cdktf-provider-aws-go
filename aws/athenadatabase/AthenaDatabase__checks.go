@@ -489,6 +489,14 @@ func (j *jsiiProxy_AthenaDatabase) validateSetRegionParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_AthenaDatabase) validateSetWorkgroupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAthenaDatabaseParameters(scope constructs.Construct, id *string, config *AthenaDatabaseConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

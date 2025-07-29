@@ -5,7 +5,7 @@ package locationmap
 
 
 type LocationMapConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/location_map#style LocationMap#style}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/location_map#style LocationMap#style}.
 	Style *string `field:"required" json:"style" yaml:"style"`
 }
 

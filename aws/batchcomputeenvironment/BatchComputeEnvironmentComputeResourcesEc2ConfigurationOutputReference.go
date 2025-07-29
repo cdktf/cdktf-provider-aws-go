@@ -33,6 +33,9 @@ type BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference inte
 	ImageIdOverride() *string
 	SetImageIdOverride(val *string)
 	ImageIdOverrideInput() *string
+	ImageKubernetesVersion() *string
+	SetImageKubernetesVersion(val *string)
+	ImageKubernetesVersionInput() *string
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -71,6 +74,7 @@ type BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetImageIdOverride()
+	ResetImageKubernetesVersion()
 	ResetImageType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	_jsii_.Get(
 		j,
 		"imageIdOverrideInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) ImageKubernetesVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageKubernetesVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) ImageKubernetesVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageKubernetesVersionInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	_jsii_.Set(
 		j,
 		"imageIdOverride",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference)SetImageKubernetesVersion(val *string) {
+	if err := j.validateSetImageKubernetesVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imageKubernetesVersion",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	_jsii_.InvokeVoid(
 		b,
 		"resetImageIdOverride",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) ResetImageKubernetesVersion() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetImageKubernetesVersion",
 		nil, // no parameters
 	)
 }

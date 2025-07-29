@@ -7,7 +7,7 @@ package bedrockagentprompt
 type BedrockagentPromptVariantGenAiResource struct {
 	// agent block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/bedrockagent_prompt#agent BedrockagentPrompt#agent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_prompt#agent BedrockagentPrompt#agent}
 	Agent interface{} `field:"optional" json:"agent" yaml:"agent"`
 }
 

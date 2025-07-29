@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail}.
 type BedrockGuardrail interface {
 	cdktf.TerraformResource
 	BlockedInputMessaging() *string
@@ -38,6 +38,8 @@ type BedrockGuardrail interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	CrossRegionConfig() BedrockGuardrailCrossRegionConfigList
+	CrossRegionConfigInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,12 +147,14 @@ type BedrockGuardrail interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContentPolicyConfig(value interface{})
 	PutContextualGroundingPolicyConfig(value interface{})
+	PutCrossRegionConfig(value interface{})
 	PutSensitiveInformationPolicyConfig(value interface{})
 	PutTimeouts(value *BedrockGuardrailTimeouts)
 	PutTopicPolicyConfig(value interface{})
 	PutWordPolicyConfig(value interface{})
 	ResetContentPolicyConfig()
 	ResetContextualGroundingPolicyConfig()
+	ResetCrossRegionConfig()
 	ResetDescription()
 	ResetKmsKeyArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -305,6 +309,26 @@ func (j *jsiiProxy_BedrockGuardrail) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrail) CrossRegionConfig() BedrockGuardrailCrossRegionConfigList {
+	var returns BedrockGuardrailCrossRegionConfigList
+	_jsii_.Get(
+		j,
+		"crossRegionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrail) CrossRegionConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossRegionConfigInput",
 		&returns,
 	)
 	return returns
@@ -661,7 +685,7 @@ func (j *jsiiProxy_BedrockGuardrail) WordPolicyConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
 func NewBedrockGuardrail(scope constructs.Construct, id *string, config *BedrockGuardrailConfig) BedrockGuardrail {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewBedrockGuardrail(scope constructs.Construct, id *string, config *Bedrock
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrock_guardrail aws_bedrock_guardrail} Resource.
 func NewBedrockGuardrail_Override(b BedrockGuardrail, scope constructs.Construct, id *string, config *BedrockGuardrailConfig) {
 	_init_.Initialize()
 
@@ -1210,6 +1234,17 @@ func (b *jsiiProxy_BedrockGuardrail) PutContextualGroundingPolicyConfig(value in
 	)
 }
 
+func (b *jsiiProxy_BedrockGuardrail) PutCrossRegionConfig(value interface{}) {
+	if err := b.validatePutCrossRegionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCrossRegionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockGuardrail) PutSensitiveInformationPolicyConfig(value interface{}) {
 	if err := b.validatePutSensitiveInformationPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -1266,6 +1301,14 @@ func (b *jsiiProxy_BedrockGuardrail) ResetContextualGroundingPolicyConfig() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetContextualGroundingPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrail) ResetCrossRegionConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCrossRegionConfig",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,10 @@ func (c *jsiiProxy_CloudwatchEventBus) validatePutDeadLetterConfigParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventBus) validatePutLogConfigParameters(value *CloudwatchEventBusLogConfig) error {
+	return nil
+}
+
 func validateCloudwatchEventBus_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
