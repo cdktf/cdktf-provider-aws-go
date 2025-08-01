@@ -51,6 +51,10 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutEngin
 	return nil
 }
 
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutIdentityCenterConfigurationParameters(value *AthenaWorkgroupConfigurationIdentityCenterConfiguration) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutResultConfigurationParameters(value *AthenaWorkgroupConfigurationResultConfiguration) error {
 	return nil
 }

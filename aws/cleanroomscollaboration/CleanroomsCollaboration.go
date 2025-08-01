@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration}.
 type CleanroomsCollaboration interface {
 	cdktf.TerraformResource
+	AnalyticsEngine() *string
+	SetAnalyticsEngine(val *string)
+	AnalyticsEngineInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -141,6 +144,7 @@ type CleanroomsCollaboration interface {
 	PutDataEncryptionMetadata(value *CleanroomsCollaborationDataEncryptionMetadata)
 	PutMember(value interface{})
 	PutTimeouts(value *CleanroomsCollaborationTimeouts)
+	ResetAnalyticsEngine()
 	ResetDataEncryptionMetadata()
 	ResetMember()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -166,6 +170,26 @@ type CleanroomsCollaboration interface {
 // The jsii proxy struct for CleanroomsCollaboration
 type jsiiProxy_CleanroomsCollaboration struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CleanroomsCollaboration) AnalyticsEngine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"analyticsEngine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CleanroomsCollaboration) AnalyticsEngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"analyticsEngineInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CleanroomsCollaboration) Arn() *string {
@@ -589,7 +613,7 @@ func (j *jsiiProxy_CleanroomsCollaboration) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration} Resource.
 func NewCleanroomsCollaboration(scope constructs.Construct, id *string, config *CleanroomsCollaborationConfig) CleanroomsCollaboration {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewCleanroomsCollaboration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cleanrooms_collaboration aws_cleanrooms_collaboration} Resource.
 func NewCleanroomsCollaboration_Override(c CleanroomsCollaboration, scope constructs.Construct, id *string, config *CleanroomsCollaborationConfig) {
 	_init_.Initialize()
 
@@ -615,6 +639,17 @@ func NewCleanroomsCollaboration_Override(c CleanroomsCollaboration, scope constr
 		"@cdktf/provider-aws.cleanroomsCollaboration.CleanroomsCollaboration",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CleanroomsCollaboration)SetAnalyticsEngine(val *string) {
+	if err := j.validateSetAnalyticsEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"analyticsEngine",
+		val,
 	)
 }
 
@@ -1157,6 +1192,14 @@ func (c *jsiiProxy_CleanroomsCollaboration) PutTimeouts(value *CleanroomsCollabo
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CleanroomsCollaboration) ResetAnalyticsEngine() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnalyticsEngine",
+		nil, // no parameters
 	)
 }
 

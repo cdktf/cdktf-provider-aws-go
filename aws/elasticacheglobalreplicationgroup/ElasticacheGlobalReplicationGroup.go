@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group}.
 type ElasticacheGlobalReplicationGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -647,7 +647,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) TransitEncryptionEnabled()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
 func NewElasticacheGlobalReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheGlobalReplicationGroupConfig) ElasticacheGlobalReplicationGroup {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewElasticacheGlobalReplicationGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
 func NewElasticacheGlobalReplicationGroup_Override(e ElasticacheGlobalReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheGlobalReplicationGroupConfig) {
 	_init_.Initialize()
 

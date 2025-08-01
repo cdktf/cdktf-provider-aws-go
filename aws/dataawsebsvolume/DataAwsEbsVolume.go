@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ebs_volume aws_ebs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ebs_volume aws_ebs_volume}.
 type DataAwsEbsVolume interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -81,6 +81,7 @@ type DataAwsEbsVolume interface {
 	Timeouts() DataAwsEbsVolumeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VolumeId() *string
+	VolumeInitializationRate() *float64
 	VolumeType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -517,6 +518,16 @@ func (j *jsiiProxy_DataAwsEbsVolume) VolumeId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEbsVolume) VolumeInitializationRate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEbsVolume) VolumeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -528,7 +539,7 @@ func (j *jsiiProxy_DataAwsEbsVolume) VolumeType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
 func NewDataAwsEbsVolume(scope constructs.Construct, id *string, config *DataAwsEbsVolumeConfig) DataAwsEbsVolume {
 	_init_.Initialize()
 
@@ -546,7 +557,7 @@ func NewDataAwsEbsVolume(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
 func NewDataAwsEbsVolume_Override(d DataAwsEbsVolume, scope constructs.Construct, id *string, config *DataAwsEbsVolumeConfig) {
 	_init_.Initialize()
 

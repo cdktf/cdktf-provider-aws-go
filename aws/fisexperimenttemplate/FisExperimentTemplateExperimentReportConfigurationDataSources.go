@@ -7,7 +7,7 @@ package fisexperimenttemplate
 type FisExperimentTemplateExperimentReportConfigurationDataSources struct {
 	// cloudwatch_dashboard block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/fis_experiment_template#cloudwatch_dashboard FisExperimentTemplate#cloudwatch_dashboard}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/fis_experiment_template#cloudwatch_dashboard FisExperimentTemplate#cloudwatch_dashboard}
 	CloudwatchDashboard interface{} `field:"optional" json:"cloudwatchDashboard" yaml:"cloudwatchDashboard"`
 }
 

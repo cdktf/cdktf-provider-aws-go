@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/route53domains_domain aws_route53domains_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/route53domains_domain aws_route53domains_domain}.
 type Route53DomainsDomain interface {
 	cdktf.TerraformResource
 	AbuseContactEmail() *string
@@ -766,7 +766,7 @@ func (j *jsiiProxy_Route53DomainsDomain) WhoisServer() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/route53domains_domain aws_route53domains_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/route53domains_domain aws_route53domains_domain} Resource.
 func NewRoute53DomainsDomain(scope constructs.Construct, id *string, config *Route53DomainsDomainConfig) Route53DomainsDomain {
 	_init_.Initialize()
 
@@ -784,7 +784,7 @@ func NewRoute53DomainsDomain(scope constructs.Construct, id *string, config *Rou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/route53domains_domain aws_route53domains_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/route53domains_domain aws_route53domains_domain} Resource.
 func NewRoute53DomainsDomain_Override(r Route53DomainsDomain, scope constructs.Construct, id *string, config *Route53DomainsDomainConfig) {
 	_init_.Initialize()
 

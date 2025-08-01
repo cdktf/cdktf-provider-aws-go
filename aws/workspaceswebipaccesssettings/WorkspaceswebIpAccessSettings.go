@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings}.
 type WorkspaceswebIpAccessSettings interface {
 	cdktf.TerraformResource
 	AdditionalEncryptionContext() *map[string]*string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_WorkspaceswebIpAccessSettings) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource.
 func NewWorkspaceswebIpAccessSettings(scope constructs.Construct, id *string, config *WorkspaceswebIpAccessSettingsConfig) WorkspaceswebIpAccessSettings {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewWorkspaceswebIpAccessSettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/workspacesweb_ip_access_settings aws_workspacesweb_ip_access_settings} Resource.
 func NewWorkspaceswebIpAccessSettings_Override(w WorkspaceswebIpAccessSettings, scope constructs.Construct, id *string, config *WorkspaceswebIpAccessSettingsConfig) {
 	_init_.Initialize()
 

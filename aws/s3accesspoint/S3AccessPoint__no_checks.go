@@ -143,6 +143,14 @@ func (j *jsiiProxy_S3AccessPoint) validateSetRegionParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_S3AccessPoint) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3AccessPoint) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewS3AccessPointParameters(scope constructs.Construct, id *string, config *S3AccessPointConfig) error {
 	return nil
 }

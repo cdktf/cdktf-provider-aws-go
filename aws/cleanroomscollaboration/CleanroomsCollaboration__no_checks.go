@@ -103,6 +103,10 @@ func validateCleanroomsCollaboration_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_CleanroomsCollaboration) validateSetAnalyticsEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CleanroomsCollaboration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

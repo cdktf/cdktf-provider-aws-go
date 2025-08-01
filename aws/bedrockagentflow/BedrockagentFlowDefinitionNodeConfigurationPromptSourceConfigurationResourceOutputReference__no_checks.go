@@ -63,7 +63,7 @@ func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	return nil
 }
 
-func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) validateSetResourceArnParameters(val *string) error {
+func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) validateSetPromptArnParameters(val *string) error {
 	return nil
 }
 

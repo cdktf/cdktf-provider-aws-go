@@ -5,13 +5,13 @@ package medialivechannel
 
 
 type MedialiveChannelDestinationsSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}.
 	PasswordParam *string `field:"optional" json:"passwordParam" yaml:"passwordParam"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}.
 	StreamName *string `field:"optional" json:"streamName" yaml:"streamName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#url MedialiveChannel#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#url MedialiveChannel#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#username MedialiveChannel#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

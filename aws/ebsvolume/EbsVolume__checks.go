@@ -558,6 +558,14 @@ func (j *jsiiProxy_EbsVolume) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_EbsVolume) validateSetVolumeInitializationRateParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEbsVolumeParameters(scope constructs.Construct, id *string, config *EbsVolumeConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

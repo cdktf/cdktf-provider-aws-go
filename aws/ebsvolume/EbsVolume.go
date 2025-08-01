@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ebs_volume aws_ebs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ebs_volume aws_ebs_volume}.
 type EbsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -110,6 +110,9 @@ type EbsVolume interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VolumeInitializationRate() *float64
+	SetVolumeInitializationRate(val *float64)
+	VolumeInitializationRateInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -172,6 +175,7 @@ type EbsVolume interface {
 	ResetThroughput()
 	ResetTimeouts()
 	ResetType()
+	ResetVolumeInitializationRate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -690,8 +694,28 @@ func (j *jsiiProxy_EbsVolume) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EbsVolume) VolumeInitializationRate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRate",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+func (j *jsiiProxy_EbsVolume) VolumeInitializationRateInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeInitializationRateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfig) EbsVolume {
 	_init_.Initialize()
 
@@ -709,7 +733,7 @@ func NewEbsVolume(scope constructs.Construct, id *string, config *EbsVolumeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ebs_volume aws_ebs_volume} Resource.
 func NewEbsVolume_Override(e EbsVolume, scope constructs.Construct, id *string, config *EbsVolumeConfig) {
 	_init_.Initialize()
 
@@ -949,6 +973,17 @@ func (j *jsiiProxy_EbsVolume)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EbsVolume)SetVolumeInitializationRate(val *float64) {
+	if err := j.validateSetVolumeInitializationRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeInitializationRate",
 		val,
 	)
 }
@@ -1441,6 +1476,14 @@ func (e *jsiiProxy_EbsVolume) ResetType() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EbsVolume) ResetVolumeInitializationRate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVolumeInitializationRate",
 		nil, // no parameters
 	)
 }

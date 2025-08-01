@@ -41,6 +41,8 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	ExecutionRoleInput() *string
 	// Experimental.
 	Fqn() *string
+	IdentityCenterConfiguration() AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference
+	IdentityCenterConfigurationInput() *AthenaWorkgroupConfigurationIdentityCenterConfiguration
 	InternalValue() *AthenaWorkgroupConfiguration
 	SetInternalValue(val *AthenaWorkgroupConfiguration)
 	PublishCloudwatchMetricsEnabled() interface{}
@@ -84,11 +86,13 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEngineVersion(value *AthenaWorkgroupConfigurationEngineVersion)
+	PutIdentityCenterConfiguration(value *AthenaWorkgroupConfigurationIdentityCenterConfiguration)
 	PutResultConfiguration(value *AthenaWorkgroupConfigurationResultConfiguration)
 	ResetBytesScannedCutoffPerQuery()
 	ResetEnforceWorkgroupConfiguration()
 	ResetEngineVersion()
 	ResetExecutionRole()
+	ResetIdentityCenterConfiguration()
 	ResetPublishCloudwatchMetricsEnabled()
 	ResetRequesterPaysEnabled()
 	ResetResultConfiguration()
@@ -222,6 +226,26 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) IdentityCenterConfiguration() AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference {
+	var returns AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"identityCenterConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) IdentityCenterConfigurationInput() *AthenaWorkgroupConfigurationIdentityCenterConfiguration {
+	var returns *AthenaWorkgroupConfigurationIdentityCenterConfiguration
+	_jsii_.Get(
+		j,
+		"identityCenterConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutEngineVersion
 	)
 }
 
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutIdentityCenterConfiguration(value *AthenaWorkgroupConfigurationIdentityCenterConfiguration) {
+	if err := a.validatePutIdentityCenterConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIdentityCenterConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutResultConfiguration(value *AthenaWorkgroupConfigurationResultConfiguration) {
 	if err := a.validatePutResultConfigurationParameters(value); err != nil {
 		panic(err)
@@ -691,6 +726,14 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetExecutionRo
 	_jsii_.InvokeVoid(
 		a,
 		"resetExecutionRole",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetIdentityCenterConfiguration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityCenterConfiguration",
 		nil, // no parameters
 	)
 }

@@ -63,6 +63,10 @@ func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSetInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSetInternalValueParameters(val *CodebuildFleetComputeConfiguration) error {
 	return nil
 }

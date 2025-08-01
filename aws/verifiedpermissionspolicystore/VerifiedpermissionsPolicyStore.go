@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 type VerifiedpermissionsPolicyStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,6 +28,9 @@ type VerifiedpermissionsPolicyStore interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionProtection() *string
+	SetDeletionProtection(val *string)
+	DeletionProtectionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -120,6 +123,7 @@ type VerifiedpermissionsPolicyStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutValidationSettings(value interface{})
+	ResetDeletionProtection()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -190,6 +194,26 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) DeletionProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) DeletionProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) ValidationSettingsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) VerifiedpermissionsPolicyStore {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewVerifiedpermissionsPolicyStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store} Resource.
 func NewVerifiedpermissionsPolicyStore_Override(v VerifiedpermissionsPolicyStore, scope constructs.Construct, id *string, config *VerifiedpermissionsPolicyStoreConfig) {
 	_init_.Initialize()
 
@@ -473,6 +497,17 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore)SetDeletionProtection(val *string) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -917,6 +952,14 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyStore) PutValidationSettings(value i
 		v,
 		"putValidationSettings",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VerifiedpermissionsPolicyStore) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDeletionProtection",
+		nil, // no parameters
 	)
 }
 

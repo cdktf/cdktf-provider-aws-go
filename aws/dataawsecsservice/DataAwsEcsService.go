@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ecs_service aws_ecs_service}.
 type DataAwsEcsService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -49,6 +49,7 @@ type DataAwsEcsService interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancer() DataAwsEcsServiceLoadBalancerList
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -284,6 +285,16 @@ func (j *jsiiProxy_DataAwsEcsService) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) LoadBalancer() DataAwsEcsServiceLoadBalancerList {
+	var returns DataAwsEcsServiceLoadBalancerList
+	_jsii_.Get(
+		j,
+		"loadBalancer",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -425,7 +436,7 @@ func (j *jsiiProxy_DataAwsEcsService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) DataAwsEcsService {
 	_init_.Initialize()
 
@@ -443,7 +454,7 @@ func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService_Override(d DataAwsEcsService, scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) {
 	_init_.Initialize()
 

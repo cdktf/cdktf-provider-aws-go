@@ -171,6 +171,10 @@ func (j *jsiiProxy_EbsVolume) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_EbsVolume) validateSetVolumeInitializationRateParameters(val *float64) error {
+	return nil
+}
+
 func validateNewEbsVolumeParameters(scope constructs.Construct, id *string, config *EbsVolumeConfig) error {
 	return nil
 }

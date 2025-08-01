@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile}.
 type RedshiftAuthenticationProfile interface {
 	cdktf.TerraformResource
 	AuthenticationProfileContent() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile} Resource.
 func NewRedshiftAuthenticationProfile(scope constructs.Construct, id *string, config *RedshiftAuthenticationProfileConfig) RedshiftAuthenticationProfile {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewRedshiftAuthenticationProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshift_authentication_profile aws_redshift_authentication_profile} Resource.
 func NewRedshiftAuthenticationProfile_Override(r RedshiftAuthenticationProfile, scope constructs.Construct, id *string, config *RedshiftAuthenticationProfileConfig) {
 	_init_.Initialize()
 

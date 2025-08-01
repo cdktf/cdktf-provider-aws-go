@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume}.
 type FinspaceKxVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -635,7 +635,7 @@ func (j *jsiiProxy_FinspaceKxVolume) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
 func NewFinspaceKxVolume(scope constructs.Construct, id *string, config *FinspaceKxVolumeConfig) FinspaceKxVolume {
 	_init_.Initialize()
 
@@ -653,7 +653,7 @@ func NewFinspaceKxVolume(scope constructs.Construct, id *string, config *Finspac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/finspace_kx_volume aws_finspace_kx_volume} Resource.
 func NewFinspaceKxVolume_Override(f FinspaceKxVolume, scope constructs.Construct, id *string, config *FinspaceKxVolumeConfig) {
 	_init_.Initialize()
 

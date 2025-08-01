@@ -174,6 +174,14 @@ func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSetInstanceTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) validateSetInternalValueParameters(val *CodebuildFleetComputeConfiguration) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

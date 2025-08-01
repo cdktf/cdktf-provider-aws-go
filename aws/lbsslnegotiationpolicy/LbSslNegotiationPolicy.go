@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy}.
 type LbSslNegotiationPolicy interface {
 	cdktf.TerraformResource
 	Attribute() LbSslNegotiationPolicyAttributeList
@@ -451,7 +451,7 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy} Resource.
 func NewLbSslNegotiationPolicy(scope constructs.Construct, id *string, config *LbSslNegotiationPolicyConfig) LbSslNegotiationPolicy {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewLbSslNegotiationPolicy(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy} Resource.
 func NewLbSslNegotiationPolicy_Override(l LbSslNegotiationPolicy, scope constructs.Construct, id *string, config *LbSslNegotiationPolicyConfig) {
 	_init_.Initialize()
 

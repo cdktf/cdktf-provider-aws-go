@@ -138,6 +138,48 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfiguration",
+		reflect.TypeOf((*AthenaWorkgroupConfigurationIdentityCenterConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference",
+		reflect.TypeOf((*AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableIdentityCenter", GoGetter: "EnableIdentityCenter"},
+			_jsii_.MemberProperty{JsiiProperty: "enableIdentityCenterInput", GoGetter: "EnableIdentityCenterInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterInstanceArn", GoGetter: "IdentityCenterInstanceArn"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterInstanceArnInput", GoGetter: "IdentityCenterInstanceArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableIdentityCenter", GoMethod: "ResetEnableIdentityCenter"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdentityCenterInstanceArn", GoMethod: "ResetIdentityCenterInstanceArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationOutputReference)(nil)).Elem(),
@@ -164,12 +206,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterConfiguration", GoGetter: "IdentityCenterConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterConfigurationInput", GoGetter: "IdentityCenterConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "publishCloudwatchMetricsEnabled", GoGetter: "PublishCloudwatchMetricsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publishCloudwatchMetricsEnabledInput", GoGetter: "PublishCloudwatchMetricsEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putEngineVersion", GoMethod: "PutEngineVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdentityCenterConfiguration", GoMethod: "PutIdentityCenterConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putResultConfiguration", GoMethod: "PutResultConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterPaysEnabled", GoGetter: "RequesterPaysEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterPaysEnabledInput", GoGetter: "RequesterPaysEnabledInput"},
@@ -177,6 +222,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnforceWorkgroupConfiguration", GoMethod: "ResetEnforceWorkgroupConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEngineVersion", GoMethod: "ResetEngineVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExecutionRole", GoMethod: "ResetExecutionRole"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdentityCenterConfiguration", GoMethod: "ResetIdentityCenterConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublishCloudwatchMetricsEnabled", GoMethod: "ResetPublishCloudwatchMetricsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequesterPaysEnabled", GoMethod: "ResetRequesterPaysEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResultConfiguration", GoMethod: "ResetResultConfiguration"},

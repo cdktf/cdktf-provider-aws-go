@@ -5,9 +5,9 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#max_cll MedialiveChannel#max_cll}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#max_cll MedialiveChannel#max_cll}.
 	MaxCll *float64 `field:"optional" json:"maxCll" yaml:"maxCll"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/medialive_channel#max_fall MedialiveChannel#max_fall}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/medialive_channel#max_fall MedialiveChannel#max_fall}.
 	MaxFall *float64 `field:"optional" json:"maxFall" yaml:"maxFall"`
 }
 

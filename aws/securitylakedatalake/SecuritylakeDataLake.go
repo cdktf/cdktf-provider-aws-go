@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}.
 type SecuritylakeDataLake interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SecuritylakeDataLake) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
 func NewSecuritylakeDataLake(scope constructs.Construct, id *string, config *SecuritylakeDataLakeConfig) SecuritylakeDataLake {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSecuritylakeDataLake(scope constructs.Construct, id *string, config *Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource.
 func NewSecuritylakeDataLake_Override(s SecuritylakeDataLake, scope constructs.Construct, id *string, config *SecuritylakeDataLakeConfig) {
 	_init_.Initialize()
 

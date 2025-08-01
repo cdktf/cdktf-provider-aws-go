@@ -5,11 +5,11 @@ package bedrockagentdatasource
 
 
 type BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationTransformation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_data_source#step_to_apply BedrockagentDataSource#step_to_apply}.
 	StepToApply *string `field:"required" json:"stepToApply" yaml:"stepToApply"`
 	// transformation_function block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/bedrockagent_data_source#transformation_function BedrockagentDataSource#transformation_function}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_data_source#transformation_function BedrockagentDataSource#transformation_function}
 	TransformationFunction interface{} `field:"optional" json:"transformationFunction" yaml:"transformationFunction"`
 }
 

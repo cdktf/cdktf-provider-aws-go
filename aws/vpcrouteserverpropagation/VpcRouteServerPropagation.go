@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation}.
 type VpcRouteServerPropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_VpcRouteServerPropagation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
 func NewVpcRouteServerPropagation(scope constructs.Construct, id *string, config *VpcRouteServerPropagationConfig) VpcRouteServerPropagation {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewVpcRouteServerPropagation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/vpc_route_server_propagation aws_vpc_route_server_propagation} Resource.
 func NewVpcRouteServerPropagation_Override(v VpcRouteServerPropagation, scope constructs.Construct, id *string, config *VpcRouteServerPropagationConfig) {
 	_init_.Initialize()
 

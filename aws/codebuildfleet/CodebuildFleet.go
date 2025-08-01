@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet aws_codebuild_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet aws_codebuild_fleet}.
 type CodebuildFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -649,7 +649,7 @@ func (j *jsiiProxy_CodebuildFleet) VpcConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
 func NewCodebuildFleet(scope constructs.Construct, id *string, config *CodebuildFleetConfig) CodebuildFleet {
 	_init_.Initialize()
 
@@ -667,7 +667,7 @@ func NewCodebuildFleet(scope constructs.Construct, id *string, config *Codebuild
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource.
 func NewCodebuildFleet_Override(c CodebuildFleet, scope constructs.Construct, id *string, config *CodebuildFleetConfig) {
 	_init_.Initialize()
 

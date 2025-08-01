@@ -33,6 +33,9 @@ type CodebuildFleetComputeConfigurationOutputReference interface {
 	DiskInput() *float64
 	// Experimental.
 	Fqn() *string
+	InstanceType() *string
+	SetInstanceType(val *string)
+	InstanceTypeInput() *string
 	InternalValue() *CodebuildFleetComputeConfiguration
 	SetInternalValue(val *CodebuildFleetComputeConfiguration)
 	MachineType() *string
@@ -77,6 +80,7 @@ type CodebuildFleetComputeConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisk()
+	ResetInstanceType()
 	ResetMachineType()
 	ResetMemory()
 	ResetVcpu()
@@ -150,6 +154,26 @@ func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) Fqn() *str
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) InstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) InstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference)SetDisk(val
 	_jsii_.Set(
 		j,
 		"disk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceType",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (c *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) ResetDisk(
 	_jsii_.InvokeVoid(
 		c,
 		"resetDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildFleetComputeConfigurationOutputReference) ResetInstanceType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInstanceType",
 		nil, // no parameters
 	)
 }

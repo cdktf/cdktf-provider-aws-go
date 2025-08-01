@@ -31,6 +31,7 @@ type DataAwsCodebuildFleetComputeConfigurationOutputReference interface {
 	Disk() *float64
 	// Experimental.
 	Fqn() *string
+	InstanceType() *string
 	InternalValue() *DataAwsCodebuildFleetComputeConfiguration
 	SetInternalValue(val *DataAwsCodebuildFleetComputeConfiguration)
 	MachineType() *string
@@ -128,6 +129,16 @@ func (j *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) InstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceType",
 		&returns,
 	)
 	return returns

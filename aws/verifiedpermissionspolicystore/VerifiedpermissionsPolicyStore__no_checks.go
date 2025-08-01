@@ -103,6 +103,10 @@ func (j *jsiiProxy_VerifiedpermissionsPolicyStore) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedpermissionsPolicyStore) validateSetDeletionProtectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedpermissionsPolicyStore) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

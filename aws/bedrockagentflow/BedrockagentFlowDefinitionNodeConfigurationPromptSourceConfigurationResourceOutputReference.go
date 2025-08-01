@@ -32,9 +32,9 @@ type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourc
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	ResourceArn() *string
-	SetResourceArn(val *string)
-	ResourceArnInput() *string
+	PromptArn() *string
+	SetPromptArn(val *string)
+	PromptArnInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,21 +132,21 @@ func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	return returns
 }
 
-func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) ResourceArn() *string {
+func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) PromptArn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"resourceArn",
+		"promptArn",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) ResourceArnInput() *string {
+func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference) PromptArnInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"resourceArnInput",
+		"promptArnInput",
 		&returns,
 	)
 	return returns
@@ -233,13 +233,13 @@ func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	)
 }
 
-func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference)SetResourceArn(val *string) {
-	if err := j.validateSetResourceArnParameters(val); err != nil {
+func (j *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceOutputReference)SetPromptArn(val *string) {
+	if err := j.validateSetPromptArnParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"resourceArn",
+		"promptArn",
 		val,
 	)
 }

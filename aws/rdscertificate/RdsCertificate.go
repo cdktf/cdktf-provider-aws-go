@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_certificate aws_rds_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rds_certificate aws_rds_certificate}.
 type RdsCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_RdsCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_certificate aws_rds_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rds_certificate aws_rds_certificate} Resource.
 func NewRdsCertificate(scope constructs.Construct, id *string, config *RdsCertificateConfig) RdsCertificate {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewRdsCertificate(scope constructs.Construct, id *string, config *RdsCertif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.6.0/docs/resources/rds_certificate aws_rds_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/rds_certificate aws_rds_certificate} Resource.
 func NewRdsCertificate_Override(r RdsCertificate, scope constructs.Construct, id *string, config *RdsCertificateConfig) {
 	_init_.Initialize()
 
