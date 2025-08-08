@@ -5,7 +5,7 @@ package quicksightdataset
 
 
 type QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}.
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

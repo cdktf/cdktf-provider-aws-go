@@ -5,7 +5,7 @@ package bedrockagentprompt
 
 
 type BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/bedrockagent_prompt#type BedrockagentPrompt#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

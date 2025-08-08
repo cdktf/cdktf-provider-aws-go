@@ -100,6 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreToPointInTime", GoMethod: "PutRestoreToPointInTime"},
+			_jsii_.MemberMethod{JsiiMethod: "putServerlessV2ScalingConfiguration", GoMethod: "PutServerlessV2ScalingConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readerEndpoint", GoGetter: "ReaderEndpoint"},
@@ -133,6 +134,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredMaintenanceWindow", GoMethod: "ResetPreferredMaintenanceWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreToPointInTime", GoMethod: "ResetRestoreToPointInTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServerlessV2ScalingConfiguration", GoMethod: "ResetServerlessV2ScalingConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipFinalSnapshot", GoMethod: "ResetSkipFinalSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotIdentifier", GoMethod: "ResetSnapshotIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageEncrypted", GoMethod: "ResetStorageEncrypted"},
@@ -143,6 +145,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetVpcSecurityGroupIds", GoMethod: "ResetVpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreToPointInTime", GoGetter: "RestoreToPointInTime"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreToPointInTimeInput", GoGetter: "RestoreToPointInTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "serverlessV2ScalingConfiguration", GoGetter: "ServerlessV2ScalingConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "serverlessV2ScalingConfigurationInput", GoGetter: "ServerlessV2ScalingConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshot", GoGetter: "SkipFinalSnapshot"},
 			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshotInput", GoGetter: "SkipFinalSnapshotInput"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotIdentifier", GoGetter: "SnapshotIdentifier"},
@@ -282,6 +286,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterServerlessV2ScalingConfiguration",
+		reflect.TypeOf((*DocdbClusterServerlessV2ScalingConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterServerlessV2ScalingConfigurationOutputReference",
+		reflect.TypeOf((*DocdbClusterServerlessV2ScalingConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxCapacity", GoGetter: "MaxCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "maxCapacityInput", GoGetter: "MaxCapacityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minCapacity", GoGetter: "MinCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "minCapacityInput", GoGetter: "MinCapacityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

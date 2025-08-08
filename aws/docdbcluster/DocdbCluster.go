@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -141,6 +141,8 @@ type DocdbCluster interface {
 	RegionInput() *string
 	RestoreToPointInTime() DocdbClusterRestoreToPointInTimeOutputReference
 	RestoreToPointInTimeInput() *DocdbClusterRestoreToPointInTime
+	ServerlessV2ScalingConfiguration() DocdbClusterServerlessV2ScalingConfigurationOutputReference
+	ServerlessV2ScalingConfigurationInput() *DocdbClusterServerlessV2ScalingConfiguration
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -214,6 +216,7 @@ type DocdbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRestoreToPointInTime(value *DocdbClusterRestoreToPointInTime)
+	PutServerlessV2ScalingConfiguration(value *DocdbClusterServerlessV2ScalingConfiguration)
 	PutTimeouts(value *DocdbClusterTimeouts)
 	ResetAllowMajorVersionUpgrade()
 	ResetApplyImmediately()
@@ -245,6 +248,7 @@ type DocdbCluster interface {
 	ResetPreferredMaintenanceWindow()
 	ResetRegion()
 	ResetRestoreToPointInTime()
+	ResetServerlessV2ScalingConfiguration()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
@@ -1001,6 +1005,26 @@ func (j *jsiiProxy_DocdbCluster) RestoreToPointInTimeInput() *DocdbClusterRestor
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) ServerlessV2ScalingConfiguration() DocdbClusterServerlessV2ScalingConfigurationOutputReference {
+	var returns DocdbClusterServerlessV2ScalingConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"serverlessV2ScalingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) ServerlessV2ScalingConfigurationInput() *DocdbClusterServerlessV2ScalingConfiguration {
+	var returns *DocdbClusterServerlessV2ScalingConfiguration
+	_jsii_.Get(
+		j,
+		"serverlessV2ScalingConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) SkipFinalSnapshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1192,7 +1216,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1210,7 +1234,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -2016,6 +2040,17 @@ func (d *jsiiProxy_DocdbCluster) PutRestoreToPointInTime(value *DocdbClusterRest
 	)
 }
 
+func (d *jsiiProxy_DocdbCluster) PutServerlessV2ScalingConfiguration(value *DocdbClusterServerlessV2ScalingConfiguration) {
+	if err := d.validatePutServerlessV2ScalingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putServerlessV2ScalingConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DocdbCluster) PutTimeouts(value *DocdbClusterTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2247,6 +2282,14 @@ func (d *jsiiProxy_DocdbCluster) ResetRestoreToPointInTime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRestoreToPointInTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetServerlessV2ScalingConfiguration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServerlessV2ScalingConfiguration",
 		nil, // no parameters
 	)
 }

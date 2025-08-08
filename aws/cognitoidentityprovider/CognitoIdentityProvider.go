@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}.
 type CognitoIdentityProvider interface {
 	cdktf.TerraformResource
 	AttributeMapping() *map[string]*string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_CognitoIdentityProvider) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource.
 func NewCognitoIdentityProvider(scope constructs.Construct, id *string, config *CognitoIdentityProviderConfig) CognitoIdentityProvider {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewCognitoIdentityProvider(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource.
 func NewCognitoIdentityProvider_Override(c CognitoIdentityProvider, scope constructs.Construct, id *string, config *CognitoIdentityProviderConfig) {
 	_init_.Initialize()
 

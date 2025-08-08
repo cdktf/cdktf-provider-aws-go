@@ -33,8 +33,20 @@ type BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputRefe
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InputAction() *string
+	SetInputAction(val *string)
+	InputActionInput() *string
+	InputEnabled() interface{}
+	SetInputEnabled(val interface{})
+	InputEnabledInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OutputAction() *string
+	SetOutputAction(val *string)
+	OutputActionInput() *string
+	OutputEnabled() interface{}
+	SetOutputEnabled(val interface{})
+	OutputEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +82,10 @@ type BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetInputAction()
+	ResetInputEnabled()
+	ResetOutputAction()
+	ResetOutputEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,11 +161,91 @@ func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesCo
 	return returns
 }
 
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) InputAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) InputActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) InputEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inputEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) InputEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inputEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) OutputAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) OutputActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) OutputEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"outputEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) OutputEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"outputEnabledInput",
 		&returns,
 	)
 	return returns
@@ -256,6 +352,28 @@ func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesCo
 	)
 }
 
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference)SetInputAction(val *string) {
+	if err := j.validateSetInputActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference)SetInputEnabled(val interface{}) {
+	if err := j.validateSetInputEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -263,6 +381,28 @@ func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesCo
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference)SetOutputAction(val *string) {
+	if err := j.validateSetOutputActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference)SetOutputEnabled(val interface{}) {
+	if err := j.validateSetOutputEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputEnabled",
 		val,
 	)
 }
@@ -484,6 +624,38 @@ func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesCo
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) ResetInputAction() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetInputAction",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) ResetInputEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetInputEnabled",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) ResetOutputAction() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOutputAction",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) ResetOutputEnabled() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOutputEnabled",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigPiiEntitiesConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

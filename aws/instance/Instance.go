@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -68,6 +68,9 @@ type Instance interface {
 	FetchPasswordData() interface{}
 	SetFetchPasswordData(val interface{})
 	FetchPasswordDataInput() interface{}
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -275,6 +278,7 @@ type Instance interface {
 	ResetEnclaveOptions()
 	ResetEphemeralBlockDevice()
 	ResetFetchPasswordData()
+	ResetForceDestroy()
 	ResetHibernation()
 	ResetHostId()
 	ResetHostResourceGroupArn()
@@ -666,6 +670,26 @@ func (j *jsiiProxy_Instance) FetchPasswordDataInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fetchPasswordDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -1572,7 +1596,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1590,7 +1614,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -1715,6 +1739,17 @@ func (j *jsiiProxy_Instance)SetFetchPasswordData(val interface{}) {
 	_jsii_.Set(
 		j,
 		"fetchPasswordData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Instance)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -2669,6 +2704,14 @@ func (i *jsiiProxy_Instance) ResetFetchPasswordData() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetFetchPasswordData",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }

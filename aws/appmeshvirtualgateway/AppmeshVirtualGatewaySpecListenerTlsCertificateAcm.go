@@ -5,7 +5,7 @@ package appmeshvirtualgateway
 
 
 type AppmeshVirtualGatewaySpecListenerTlsCertificateAcm struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/appmesh_virtual_gateway#certificate_arn AppmeshVirtualGateway#certificate_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/appmesh_virtual_gateway#certificate_arn AppmeshVirtualGateway#certificate_arn}.
 	CertificateArn *string `field:"required" json:"certificateArn" yaml:"certificateArn"`
 }
 

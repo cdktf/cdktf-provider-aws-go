@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}.
 type OpensearchOutboundConnection interface {
 	cdktf.TerraformResource
 	AcceptConnection() interface{}
@@ -510,7 +510,7 @@ func (j *jsiiProxy_OpensearchOutboundConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
 func NewOpensearchOutboundConnection(scope constructs.Construct, id *string, config *OpensearchOutboundConnectionConfig) OpensearchOutboundConnection {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewOpensearchOutboundConnection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
 func NewOpensearchOutboundConnection_Override(o OpensearchOutboundConnection, scope constructs.Construct, id *string, config *OpensearchOutboundConnectionConfig) {
 	_init_.Initialize()
 

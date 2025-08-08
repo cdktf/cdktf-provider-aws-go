@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
 type DataAwsWafv2WebAcl interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -58,6 +58,9 @@ type DataAwsWafv2WebAcl interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ResourceArn() *string
+	SetResourceArn(val *string)
+	ResourceArnInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -93,10 +96,12 @@ type DataAwsWafv2WebAcl interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetResourceArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -306,6 +311,26 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsWafv2WebAcl) ResourceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsWafv2WebAcl) ResourceArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsWafv2WebAcl) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,7 +382,7 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) DataAwsWafv2WebAcl {
 	_init_.Initialize()
 
@@ -375,7 +400,7 @@ func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl_Override(d DataAwsWafv2WebAcl, scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -461,6 +486,17 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsWafv2WebAcl)SetResourceArn(val *string) {
+	if err := j.validateSetResourceArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceArn",
 		val,
 	)
 }
@@ -769,6 +805,14 @@ func (d *jsiiProxy_DataAwsWafv2WebAcl) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsWafv2WebAcl) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsWafv2WebAcl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -781,6 +825,14 @@ func (d *jsiiProxy_DataAwsWafv2WebAcl) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsWafv2WebAcl) ResetResourceArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResourceArn",
 		nil, // no parameters
 	)
 }

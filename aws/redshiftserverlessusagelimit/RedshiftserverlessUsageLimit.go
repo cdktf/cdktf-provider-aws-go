@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit}.
 type RedshiftserverlessUsageLimit interface {
 	cdktf.TerraformResource
 	Amount() *float64
@@ -462,7 +462,7 @@ func (j *jsiiProxy_RedshiftserverlessUsageLimit) UsageTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource.
 func NewRedshiftserverlessUsageLimit(scope constructs.Construct, id *string, config *RedshiftserverlessUsageLimitConfig) RedshiftserverlessUsageLimit {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewRedshiftserverlessUsageLimit(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource.
 func NewRedshiftserverlessUsageLimit_Override(r RedshiftserverlessUsageLimit, scope constructs.Construct, id *string, config *RedshiftserverlessUsageLimitConfig) {
 	_init_.Initialize()
 

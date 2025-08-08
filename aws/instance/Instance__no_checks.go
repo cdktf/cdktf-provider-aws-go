@@ -187,6 +187,10 @@ func (j *jsiiProxy_Instance) validateSetFetchPasswordDataParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_Instance) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Instance) validateSetHibernationParameters(val interface{}) error {
 	return nil
 }

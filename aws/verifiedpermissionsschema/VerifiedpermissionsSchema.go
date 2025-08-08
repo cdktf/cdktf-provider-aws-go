@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}.
 type VerifiedpermissionsSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_VerifiedpermissionsSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
 func NewVerifiedpermissionsSchema(scope constructs.Construct, id *string, config *VerifiedpermissionsSchemaConfig) VerifiedpermissionsSchema {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewVerifiedpermissionsSchema(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource.
 func NewVerifiedpermissionsSchema_Override(v VerifiedpermissionsSchema, scope constructs.Construct, id *string, config *VerifiedpermissionsSchemaConfig) {
 	_init_.Initialize()
 

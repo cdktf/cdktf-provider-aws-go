@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssoadmin_application aws_ssoadmin_application}.
 type SsoadminApplication interface {
 	cdktf.TerraformResource
 	ApplicationAccount() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_SsoadminApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
 func NewSsoadminApplication(scope constructs.Construct, id *string, config *SsoadminApplicationConfig) SsoadminApplication {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewSsoadminApplication(scope constructs.Construct, id *string, config *Ssoa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ssoadmin_application aws_ssoadmin_application} Resource.
 func NewSsoadminApplication_Override(s SsoadminApplication, scope constructs.Construct, id *string, config *SsoadminApplicationConfig) {
 	_init_.Initialize()
 

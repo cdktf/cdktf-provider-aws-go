@@ -13,6 +13,9 @@ import (
 
 type KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AppendOnly() interface{}
+	SetAppendOnly(val interface{})
+	AppendOnlyInput() interface{}
 	BufferingInterval() *float64
 	SetBufferingInterval(val *float64)
 	BufferingIntervalInput() *float64
@@ -94,6 +97,7 @@ type KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference interface 
 	PutDestinationTableConfiguration(value interface{})
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamIcebergConfigurationS3Configuration)
+	ResetAppendOnly()
 	ResetBufferingInterval()
 	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
@@ -114,6 +118,26 @@ type KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference interface 
 // The jsii proxy struct for KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference
 type jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) AppendOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appendOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) AppendOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"appendOnlyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) BufferingInterval() *float64 {
@@ -411,6 +435,17 @@ func NewKinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference_Overrid
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference)SetAppendOnly(val interface{}) {
+	if err := j.validateSetAppendOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appendOnly",
+		val,
 	)
 }
 
@@ -762,6 +797,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputRefere
 		k,
 		"putS3Configuration",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) ResetAppendOnly() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAppendOnly",
+		nil, // no parameters
 	)
 }
 

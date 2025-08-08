@@ -83,6 +83,10 @@ func (e *jsiiProxy_EcrRepository) validatePutImageScanningConfigurationParameter
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepository) validatePutImageTagMutabilityExclusionFilterParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepository) validatePutTimeoutsParameters(value *EcrRepositoryTimeouts) error {
 	return nil
 }

@@ -67,11 +67,27 @@ func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfig
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetInputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetInputEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetOutputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigRegexesConfigOutputReference) validateSetOutputEnabledParameters(val interface{}) error {
 	return nil
 }
 

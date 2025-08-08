@@ -5,13 +5,13 @@ package codepipeline
 
 
 type CodepipelineStageOnSuccessConditionRuleRuleTypeId struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codepipeline#category Codepipeline#category}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codepipeline#category Codepipeline#category}.
 	Category *string `field:"required" json:"category" yaml:"category"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codepipeline#provider Codepipeline#provider}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codepipeline#provider Codepipeline#provider}.
 	Provider *string `field:"required" json:"provider" yaml:"provider"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codepipeline#owner Codepipeline#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codepipeline#owner Codepipeline#owner}.
 	Owner *string `field:"optional" json:"owner" yaml:"owner"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/codepipeline#version Codepipeline#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/codepipeline#version Codepipeline#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

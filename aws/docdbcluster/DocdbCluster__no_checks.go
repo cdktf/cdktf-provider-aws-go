@@ -79,6 +79,10 @@ func (d *jsiiProxy_DocdbCluster) validatePutRestoreToPointInTimeParameters(value
 	return nil
 }
 
+func (d *jsiiProxy_DocdbCluster) validatePutServerlessV2ScalingConfigurationParameters(value *DocdbClusterServerlessV2ScalingConfiguration) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbCluster) validatePutTimeoutsParameters(value *DocdbClusterTimeouts) error {
 	return nil
 }

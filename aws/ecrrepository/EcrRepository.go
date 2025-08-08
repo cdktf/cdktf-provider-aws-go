@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository aws_ecr_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository aws_ecr_repository}.
 type EcrRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -52,6 +52,8 @@ type EcrRepository interface {
 	ImageScanningConfigurationInput() *EcrRepositoryImageScanningConfiguration
 	ImageTagMutability() *string
 	SetImageTagMutability(val *string)
+	ImageTagMutabilityExclusionFilter() EcrRepositoryImageTagMutabilityExclusionFilterList
+	ImageTagMutabilityExclusionFilterInput() interface{}
 	ImageTagMutabilityInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -136,12 +138,14 @@ type EcrRepository interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfiguration(value interface{})
 	PutImageScanningConfiguration(value *EcrRepositoryImageScanningConfiguration)
+	PutImageTagMutabilityExclusionFilter(value interface{})
 	PutTimeouts(value *EcrRepositoryTimeouts)
 	ResetEncryptionConfiguration()
 	ResetForceDelete()
 	ResetId()
 	ResetImageScanningConfiguration()
 	ResetImageTagMutability()
+	ResetImageTagMutabilityExclusionFilter()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -342,6 +346,26 @@ func (j *jsiiProxy_EcrRepository) ImageTagMutability() *string {
 	_jsii_.Get(
 		j,
 		"imageTagMutability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrRepository) ImageTagMutabilityExclusionFilter() EcrRepositoryImageTagMutabilityExclusionFilterList {
+	var returns EcrRepositoryImageTagMutabilityExclusionFilterList
+	_jsii_.Get(
+		j,
+		"imageTagMutabilityExclusionFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrRepository) ImageTagMutabilityExclusionFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imageTagMutabilityExclusionFilterInput",
 		&returns,
 	)
 	return returns
@@ -558,7 +582,7 @@ func (j *jsiiProxy_EcrRepository) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
 func NewEcrRepository(scope constructs.Construct, id *string, config *EcrRepositoryConfig) EcrRepository {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewEcrRepository(scope constructs.Construct, id *string, config *EcrReposit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
 func NewEcrRepository_Override(e EcrRepository, scope constructs.Construct, id *string, config *EcrRepositoryConfig) {
 	_init_.Initialize()
 
@@ -1107,6 +1131,17 @@ func (e *jsiiProxy_EcrRepository) PutImageScanningConfiguration(value *EcrReposi
 	)
 }
 
+func (e *jsiiProxy_EcrRepository) PutImageTagMutabilityExclusionFilter(value interface{}) {
+	if err := e.validatePutImageTagMutabilityExclusionFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putImageTagMutabilityExclusionFilter",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcrRepository) PutTimeouts(value *EcrRepositoryTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1189,14 @@ func (e *jsiiProxy_EcrRepository) ResetImageTagMutability() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetImageTagMutability",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcrRepository) ResetImageTagMutabilityExclusionFilter() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetImageTagMutabilityExclusionFilter",
 		nil, // no parameters
 	)
 }

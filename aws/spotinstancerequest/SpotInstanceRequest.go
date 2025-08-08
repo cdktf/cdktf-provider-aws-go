@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/spot_instance_request aws_spot_instance_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/spot_instance_request aws_spot_instance_request}.
 type SpotInstanceRequest interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -68,6 +68,9 @@ type SpotInstanceRequest interface {
 	FetchPasswordData() interface{}
 	SetFetchPasswordData(val interface{})
 	FetchPasswordDataInput() interface{}
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -294,6 +297,7 @@ type SpotInstanceRequest interface {
 	ResetEnclaveOptions()
 	ResetEphemeralBlockDevice()
 	ResetFetchPasswordData()
+	ResetForceDestroy()
 	ResetHibernation()
 	ResetHostId()
 	ResetHostResourceGroupArn()
@@ -691,6 +695,26 @@ func (j *jsiiProxy_SpotInstanceRequest) FetchPasswordDataInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fetchPasswordDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -1727,7 +1751,7 @@ func (j *jsiiProxy_SpotInstanceRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) SpotInstanceRequest {
 	_init_.Initialize()
 
@@ -1745,7 +1769,7 @@ func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *Spot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.7.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest_Override(s SpotInstanceRequest, scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) {
 	_init_.Initialize()
 
@@ -1870,6 +1894,17 @@ func (j *jsiiProxy_SpotInstanceRequest)SetFetchPasswordData(val interface{}) {
 	_jsii_.Set(
 		j,
 		"fetchPasswordData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotInstanceRequest)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -2890,6 +2925,14 @@ func (s *jsiiProxy_SpotInstanceRequest) ResetFetchPasswordData() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFetchPasswordData",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequest) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }
