@@ -1,0 +1,11 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package appsyncchannelnamespace
+
+
+type AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLambdaConfig struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/appsync_channel_namespace#invoke_type AppsyncChannelNamespace#invoke_type}.
+	InvokeType *string `field:"optional" json:"invokeType" yaml:"invokeType"`
+}
+

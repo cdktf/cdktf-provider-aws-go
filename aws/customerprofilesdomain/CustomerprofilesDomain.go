@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain}.
 type CustomerprofilesDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_CustomerprofilesDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
 func NewCustomerprofilesDomain(scope constructs.Construct, id *string, config *CustomerprofilesDomainConfig) CustomerprofilesDomain {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewCustomerprofilesDomain(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/customerprofiles_domain aws_customerprofiles_domain} Resource.
 func NewCustomerprofilesDomain_Override(c CustomerprofilesDomain, scope constructs.Construct, id *string, config *CustomerprofilesDomainConfig) {
 	_init_.Initialize()
 

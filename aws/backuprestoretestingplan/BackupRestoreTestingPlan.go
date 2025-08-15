@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan}.
 type BackupRestoreTestingPlan interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_BackupRestoreTestingPlan) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
 func NewBackupRestoreTestingPlan(scope constructs.Construct, id *string, config *BackupRestoreTestingPlanConfig) BackupRestoreTestingPlan {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewBackupRestoreTestingPlan(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/backup_restore_testing_plan aws_backup_restore_testing_plan} Resource.
 func NewBackupRestoreTestingPlan_Override(b BackupRestoreTestingPlan, scope constructs.Construct, id *string, config *BackupRestoreTestingPlanConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction}.
 type QuicksightIpRestriction interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -429,7 +429,7 @@ func (j *jsiiProxy_QuicksightIpRestriction) VpcIdRestrictionRuleMapInput() *map[
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction} Resource.
 func NewQuicksightIpRestriction(scope constructs.Construct, id *string, config *QuicksightIpRestrictionConfig) QuicksightIpRestriction {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewQuicksightIpRestriction(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_ip_restriction aws_quicksight_ip_restriction} Resource.
 func NewQuicksightIpRestriction_Override(q QuicksightIpRestriction, scope constructs.Construct, id *string, config *QuicksightIpRestrictionConfig) {
 	_init_.Initialize()
 

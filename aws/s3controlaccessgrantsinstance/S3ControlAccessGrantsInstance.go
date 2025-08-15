@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
 type S3ControlAccessGrantsInstance interface {
 	cdktf.TerraformResource
 	AccessGrantsInstanceArn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
 func NewS3ControlAccessGrantsInstance(scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceConfig) S3ControlAccessGrantsInstance {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewS3ControlAccessGrantsInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
 func NewS3ControlAccessGrantsInstance_Override(s S3ControlAccessGrantsInstance, scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceConfig) {
 	_init_.Initialize()
 

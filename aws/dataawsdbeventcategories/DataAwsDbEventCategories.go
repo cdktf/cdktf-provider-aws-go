@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/db_event_categories aws_db_event_categories}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/db_event_categories aws_db_event_categories}.
 type DataAwsDbEventCategories interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataAwsDbEventCategories) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
 func NewDataAwsDbEventCategories(scope constructs.Construct, id *string, config *DataAwsDbEventCategoriesConfig) DataAwsDbEventCategories {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataAwsDbEventCategories(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
 func NewDataAwsDbEventCategories_Override(d DataAwsDbEventCategories, scope constructs.Construct, id *string, config *DataAwsDbEventCategoriesConfig) {
 	_init_.Initialize()
 

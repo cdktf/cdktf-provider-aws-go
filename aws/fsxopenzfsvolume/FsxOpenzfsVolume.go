@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
 type FsxOpenzfsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -727,7 +727,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) FsxOpenzfsVolume {
 	_init_.Initialize()
 
@@ -745,7 +745,7 @@ func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume_Override(f FsxOpenzfsVolume, scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) {
 	_init_.Initialize()
 

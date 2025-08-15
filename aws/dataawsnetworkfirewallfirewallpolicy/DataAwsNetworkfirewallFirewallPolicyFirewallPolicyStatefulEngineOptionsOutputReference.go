@@ -28,6 +28,7 @@ type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutp
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FlowTimeouts() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEng
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) FlowTimeouts() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsList {
+	var returns DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsFlowTimeoutsList
+	_jsii_.Get(
+		j,
+		"flowTimeouts",
 		&returns,
 	)
 	return returns

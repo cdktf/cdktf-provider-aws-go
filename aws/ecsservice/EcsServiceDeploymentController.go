@@ -5,7 +5,7 @@ package ecsservice
 
 
 type EcsServiceDeploymentController struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecs_service#type EcsService#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/ecs_service#type EcsService#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

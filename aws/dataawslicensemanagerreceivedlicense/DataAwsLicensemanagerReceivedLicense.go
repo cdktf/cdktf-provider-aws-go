@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license}.
 type DataAwsLicensemanagerReceivedLicense interface {
 	cdktf.TerraformDataSource
 	Beneficiary() *string
@@ -466,7 +466,7 @@ func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicense) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
 func NewDataAwsLicensemanagerReceivedLicense(scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicenseConfig) DataAwsLicensemanagerReceivedLicense {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewDataAwsLicensemanagerReceivedLicense(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/licensemanager_received_license aws_licensemanager_received_license} Data Source.
 func NewDataAwsLicensemanagerReceivedLicense_Override(d DataAwsLicensemanagerReceivedLicense, scope constructs.Construct, id *string, config *DataAwsLicensemanagerReceivedLicenseConfig) {
 	_init_.Initialize()
 

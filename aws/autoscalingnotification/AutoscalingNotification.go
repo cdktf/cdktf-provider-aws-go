@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
 type AutoscalingNotification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_AutoscalingNotification) TopicArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/autoscaling_notification aws_autoscaling_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_notification aws_autoscaling_notification} Resource.
 func NewAutoscalingNotification(scope constructs.Construct, id *string, config *AutoscalingNotificationConfig) AutoscalingNotification {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewAutoscalingNotification(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/autoscaling_notification aws_autoscaling_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_notification aws_autoscaling_notification} Resource.
 func NewAutoscalingNotification_Override(a AutoscalingNotification, scope constructs.Construct, id *string, config *AutoscalingNotificationConfig) {
 	_init_.Initialize()
 

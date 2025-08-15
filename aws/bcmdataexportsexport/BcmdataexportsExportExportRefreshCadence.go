@@ -5,7 +5,7 @@ package bcmdataexportsexport
 
 
 type BcmdataexportsExportExportRefreshCadence struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/bcmdataexports_export#frequency BcmdataexportsExport#frequency}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/bcmdataexports_export#frequency BcmdataexportsExport#frequency}.
 	Frequency *string `field:"required" json:"frequency" yaml:"frequency"`
 }
 

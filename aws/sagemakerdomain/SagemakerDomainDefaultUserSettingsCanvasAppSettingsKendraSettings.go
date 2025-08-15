@@ -5,7 +5,7 @@ package sagemakerdomain
 
 
 type SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

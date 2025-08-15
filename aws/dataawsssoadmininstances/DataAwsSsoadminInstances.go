@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances}.
 type DataAwsSsoadminInstances interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataAwsSsoadminInstances) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances} Data Source.
 func NewDataAwsSsoadminInstances(scope constructs.Construct, id *string, config *DataAwsSsoadminInstancesConfig) DataAwsSsoadminInstances {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataAwsSsoadminInstances(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances} Data Source.
 func NewDataAwsSsoadminInstances_Override(d DataAwsSsoadminInstances, scope constructs.Construct, id *string, config *DataAwsSsoadminInstancesConfig) {
 	_init_.Initialize()
 

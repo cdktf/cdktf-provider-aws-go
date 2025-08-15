@@ -32,6 +32,9 @@ type DynamodbTableReplicaOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -83,6 +86,7 @@ type DynamodbTableReplicaOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConsistencyMode()
+	ResetDeletionProtectionEnabled()
 	ResetKmsKeyArn()
 	ResetPointInTimeRecovery()
 	ResetPropagateTags()
@@ -156,6 +160,26 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +382,17 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetConsistencyMode(val *s
 	_jsii_.Set(
 		j,
 		"consistencyMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ResetConsistencyMode() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetConsistencyMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaOutputReference) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeletionProtectionEnabled",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package ecsservice
 type EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRules struct {
 	// header block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/ecs_service#header EcsService#header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/ecs_service#header EcsService#header}
 	Header *EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesHeader `field:"optional" json:"header" yaml:"header"`
 }
 

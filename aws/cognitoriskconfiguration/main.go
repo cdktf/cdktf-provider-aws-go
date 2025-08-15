@@ -466,6 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notifyConfigurationInput", GoGetter: "NotifyConfigurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putActions", GoMethod: "PutActions"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotifyConfiguration", GoMethod: "PutNotifyConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotifyConfiguration", GoMethod: "ResetNotifyConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

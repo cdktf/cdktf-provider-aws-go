@@ -5,9 +5,9 @@ package quicksightdatasource
 
 
 type QuicksightDataSourceParametersSpark struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 	Host *string `field:"required" json:"host" yaml:"host"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 }
 

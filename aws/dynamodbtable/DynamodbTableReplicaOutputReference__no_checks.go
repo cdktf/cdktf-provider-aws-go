@@ -63,6 +63,10 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetConsistencyMo
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

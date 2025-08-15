@@ -5,7 +5,7 @@ package amplifyapp
 
 
 type AmplifyAppCacheConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/amplify_app#type AmplifyApp#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/amplify_app#type AmplifyApp#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
@@ -38,6 +38,9 @@ type EksCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedAt() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,6 +181,7 @@ type EksCluster interface {
 	ResetAccessConfig()
 	ResetBootstrapSelfManagedAddons()
 	ResetComputeConfig()
+	ResetDeletionProtection()
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
 	ResetForceUpdateVersion()
@@ -349,6 +353,26 @@ func (j *jsiiProxy_EksCluster) CreatedAt() *string {
 	_jsii_.Get(
 		j,
 		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -875,7 +899,7 @@ func (j *jsiiProxy_EksCluster) ZonalShiftConfigInput() *EksClusterZonalShiftConf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -893,7 +917,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -933,6 +957,17 @@ func (j *jsiiProxy_EksCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1576,6 +1611,14 @@ func (e *jsiiProxy_EksCluster) ResetComputeConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComputeConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

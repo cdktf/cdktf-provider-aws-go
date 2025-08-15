@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
 type SqsQueueRedrivePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) SqsQueueRedrivePolicy {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy_Override(s SqsQueueRedrivePolicy, scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) {
 	_init_.Initialize()
 

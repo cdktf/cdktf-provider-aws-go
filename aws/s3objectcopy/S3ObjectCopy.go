@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_object_copy aws_s3_object_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_object_copy aws_s3_object_copy}.
 type S3ObjectCopy interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -1447,7 +1447,7 @@ func (j *jsiiProxy_S3ObjectCopy) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCopyConfig) S3ObjectCopy {
 	_init_.Initialize()
 
@@ -1465,7 +1465,7 @@ func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCop
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.8.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy_Override(s S3ObjectCopy, scope constructs.Construct, id *string, config *S3ObjectCopyConfig) {
 	_init_.Initialize()
 

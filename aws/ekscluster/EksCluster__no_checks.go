@@ -147,6 +147,10 @@ func (j *jsiiProxy_EksCluster) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_EksCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksCluster) validateSetEnabledClusterLogTypesParameters(val *[]*string) error {
 	return nil
 }

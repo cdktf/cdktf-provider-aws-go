@@ -70,6 +70,7 @@ type CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActions(value *CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions)
 	PutNotifyConfiguration(value *CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration)
+	ResetNotifyConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,6 +484,14 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutpu
 		c,
 		"putNotifyConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference) ResetNotifyConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNotifyConfiguration",
+		nil, // no parameters
 	)
 }
 
