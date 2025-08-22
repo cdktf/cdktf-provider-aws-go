@@ -5,7 +5,7 @@ package macie2findingsfilter
 
 
 type Macie2FindingsFilterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

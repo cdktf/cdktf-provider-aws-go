@@ -119,6 +119,10 @@ func (i *jsiiProxy_Instance) validatePutNetworkInterfaceParameters(value interfa
 	return nil
 }
 
+func (i *jsiiProxy_Instance) validatePutPrimaryNetworkInterfaceParameters(value *InstancePrimaryNetworkInterface) error {
+	return nil
+}
+
 func (i *jsiiProxy_Instance) validatePutPrivateDnsNameOptionsParameters(value *InstancePrivateDnsNameOptions) error {
 	return nil
 }

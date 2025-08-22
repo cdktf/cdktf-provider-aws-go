@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
 type ElasticsearchDomainPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ElasticsearchDomainPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource.
 func NewElasticsearchDomainPolicy(scope constructs.Construct, id *string, config *ElasticsearchDomainPolicyConfig) ElasticsearchDomainPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewElasticsearchDomainPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource.
 func NewElasticsearchDomainPolicy_Override(e ElasticsearchDomainPolicy, scope constructs.Construct, id *string, config *ElasticsearchDomainPolicyConfig) {
 	_init_.Initialize()
 

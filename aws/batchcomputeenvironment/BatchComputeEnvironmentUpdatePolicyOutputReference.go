@@ -70,6 +70,8 @@ type BatchComputeEnvironmentUpdatePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetJobExecutionTimeoutMinutes()
+	ResetTerminateJobsOnUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +486,22 @@ func (b *jsiiProxy_BatchComputeEnvironmentUpdatePolicyOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BatchComputeEnvironmentUpdatePolicyOutputReference) ResetJobExecutionTimeoutMinutes() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetJobExecutionTimeoutMinutes",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironmentUpdatePolicyOutputReference) ResetTerminateJobsOnUpdate() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTerminateJobsOnUpdate",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BatchComputeEnvironmentUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

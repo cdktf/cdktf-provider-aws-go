@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -138,7 +138,9 @@ type Instance interface {
 	PlacementPartitionNumber() *float64
 	SetPlacementPartitionNumber(val *float64)
 	PlacementPartitionNumberInput() *float64
+	PrimaryNetworkInterface() InstancePrimaryNetworkInterfaceOutputReference
 	PrimaryNetworkInterfaceId() *string
+	PrimaryNetworkInterfaceInput() *InstancePrimaryNetworkInterface
 	PrivateDns() *string
 	PrivateDnsNameOptions() InstancePrivateDnsNameOptionsOutputReference
 	PrivateDnsNameOptionsInput() *InstancePrivateDnsNameOptions
@@ -261,6 +263,7 @@ type Instance interface {
 	PutMaintenanceOptions(value *InstanceMaintenanceOptions)
 	PutMetadataOptions(value *InstanceMetadataOptions)
 	PutNetworkInterface(value interface{})
+	PutPrimaryNetworkInterface(value *InstancePrimaryNetworkInterface)
 	PutPrivateDnsNameOptions(value *InstancePrivateDnsNameOptions)
 	PutRootBlockDevice(value *InstanceRootBlockDevice)
 	PutTimeouts(value *InstanceTimeouts)
@@ -300,6 +303,7 @@ type Instance interface {
 	ResetOverrideLogicalId()
 	ResetPlacementGroup()
 	ResetPlacementPartitionNumber()
+	ResetPrimaryNetworkInterface()
 	ResetPrivateDnsNameOptions()
 	ResetPrivateIp()
 	ResetRegion()
@@ -1145,11 +1149,31 @@ func (j *jsiiProxy_Instance) PlacementPartitionNumberInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Instance) PrimaryNetworkInterface() InstancePrimaryNetworkInterfaceOutputReference {
+	var returns InstancePrimaryNetworkInterfaceOutputReference
+	_jsii_.Get(
+		j,
+		"primaryNetworkInterface",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Instance) PrimaryNetworkInterfaceId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"primaryNetworkInterfaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) PrimaryNetworkInterfaceInput() *InstancePrimaryNetworkInterface {
+	var returns *InstancePrimaryNetworkInterface
+	_jsii_.Get(
+		j,
+		"primaryNetworkInterfaceInput",
 		&returns,
 	)
 	return returns
@@ -1596,7 +1620,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1614,7 +1638,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -2563,6 +2587,17 @@ func (i *jsiiProxy_Instance) PutNetworkInterface(value interface{}) {
 	)
 }
 
+func (i *jsiiProxy_Instance) PutPrimaryNetworkInterface(value *InstancePrimaryNetworkInterface) {
+	if err := i.validatePutPrimaryNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putPrimaryNetworkInterface",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_Instance) PutPrivateDnsNameOptions(value *InstancePrivateDnsNameOptions) {
 	if err := i.validatePutPrivateDnsNameOptionsParameters(value); err != nil {
 		panic(err)
@@ -2864,6 +2899,14 @@ func (i *jsiiProxy_Instance) ResetPlacementPartitionNumber() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPlacementPartitionNumber",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetPrimaryNetworkInterface() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPrimaryNetworkInterface",
 		nil, // no parameters
 	)
 }

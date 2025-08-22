@@ -5,7 +5,7 @@ package devopsgururesourcecollection
 
 
 type DevopsguruResourceCollectionCloudformation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/devopsguru_resource_collection#stack_names DevopsguruResourceCollection#stack_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/devopsguru_resource_collection#stack_names DevopsguruResourceCollection#stack_names}.
 	StackNames *[]*string `field:"required" json:"stackNames" yaml:"stackNames"`
 }
 

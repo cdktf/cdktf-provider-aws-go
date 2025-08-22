@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/spot_instance_request aws_spot_instance_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/spot_instance_request aws_spot_instance_request}.
 type SpotInstanceRequest interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -141,6 +141,7 @@ type SpotInstanceRequest interface {
 	PlacementPartitionNumber() *float64
 	SetPlacementPartitionNumber(val *float64)
 	PlacementPartitionNumberInput() *float64
+	PrimaryNetworkInterface() SpotInstanceRequestPrimaryNetworkInterfaceList
 	PrimaryNetworkInterfaceId() *string
 	PrivateDns() *string
 	PrivateDnsNameOptions() SpotInstanceRequestPrivateDnsNameOptionsOutputReference
@@ -1180,6 +1181,16 @@ func (j *jsiiProxy_SpotInstanceRequest) PlacementPartitionNumberInput() *float64
 	return returns
 }
 
+func (j *jsiiProxy_SpotInstanceRequest) PrimaryNetworkInterface() SpotInstanceRequestPrimaryNetworkInterfaceList {
+	var returns SpotInstanceRequestPrimaryNetworkInterfaceList
+	_jsii_.Get(
+		j,
+		"primaryNetworkInterface",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpotInstanceRequest) PrimaryNetworkInterfaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1751,7 +1762,7 @@ func (j *jsiiProxy_SpotInstanceRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) SpotInstanceRequest {
 	_init_.Initialize()
 
@@ -1769,7 +1780,7 @@ func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *Spot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest_Override(s SpotInstanceRequest, scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) {
 	_init_.Initialize()
 

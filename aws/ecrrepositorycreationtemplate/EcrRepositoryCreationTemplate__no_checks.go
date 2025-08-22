@@ -79,6 +79,10 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplate) validatePutEncryptionConfigura
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepositoryCreationTemplate) validatePutImageTagMutabilityExclusionFilterParameters(value interface{}) error {
+	return nil
+}
+
 func validateEcrRepositoryCreationTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

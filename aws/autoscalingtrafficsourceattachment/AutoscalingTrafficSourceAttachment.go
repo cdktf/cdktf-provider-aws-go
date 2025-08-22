@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment}.
 type AutoscalingTrafficSourceAttachment interface {
 	cdktf.TerraformResource
 	AutoscalingGroupName() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_AutoscalingTrafficSourceAttachment) TrafficSourceInput() *Aut
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
 func NewAutoscalingTrafficSourceAttachment(scope constructs.Construct, id *string, config *AutoscalingTrafficSourceAttachmentConfig) AutoscalingTrafficSourceAttachment {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewAutoscalingTrafficSourceAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/autoscaling_traffic_source_attachment aws_autoscaling_traffic_source_attachment} Resource.
 func NewAutoscalingTrafficSourceAttachment_Override(a AutoscalingTrafficSourceAttachment, scope constructs.Construct, id *string, config *AutoscalingTrafficSourceAttachmentConfig) {
 	_init_.Initialize()
 

@@ -24,17 +24,17 @@ type FmsResourceSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fms_resource_set#region FmsResourceSet#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/fms_resource_set#region FmsResourceSet#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// resource_set block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
 	ResourceSet interface{} `field:"optional" json:"resourceSet" yaml:"resourceSet"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
 	Timeouts *FmsResourceSetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

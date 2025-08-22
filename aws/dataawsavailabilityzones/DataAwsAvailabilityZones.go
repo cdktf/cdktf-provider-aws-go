@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/availability_zones aws_availability_zones}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/availability_zones aws_availability_zones}.
 type DataAwsAvailabilityZones interface {
 	cdktf.TerraformDataSource
 	AllAvailabilityZones() interface{}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZones) ZoneIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/availability_zones aws_availability_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/availability_zones aws_availability_zones} Data Source.
 func NewDataAwsAvailabilityZones(scope constructs.Construct, id *string, config *DataAwsAvailabilityZonesConfig) DataAwsAvailabilityZones {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewDataAwsAvailabilityZones(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/availability_zones aws_availability_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/availability_zones aws_availability_zones} Data Source.
 func NewDataAwsAvailabilityZones_Override(d DataAwsAvailabilityZones, scope constructs.Construct, id *string, config *DataAwsAvailabilityZonesConfig) {
 	_init_.Initialize()
 

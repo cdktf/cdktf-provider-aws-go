@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition}.
 type PrometheusAlertManagerDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition) WorkspaceIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
 func NewPrometheusAlertManagerDefinition(scope constructs.Construct, id *string, config *PrometheusAlertManagerDefinitionConfig) PrometheusAlertManagerDefinition {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewPrometheusAlertManagerDefinition(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/prometheus_alert_manager_definition aws_prometheus_alert_manager_definition} Resource.
 func NewPrometheusAlertManagerDefinition_Override(p PrometheusAlertManagerDefinition, scope constructs.Construct, id *string, config *PrometheusAlertManagerDefinitionConfig) {
 	_init_.Initialize()
 

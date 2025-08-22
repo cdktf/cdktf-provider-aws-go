@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ecr_repository aws_ecr_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/ecr_repository aws_ecr_repository}.
 type DataAwsEcrRepository interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -42,6 +42,7 @@ type DataAwsEcrRepository interface {
 	IdInput() *string
 	ImageScanningConfiguration() DataAwsEcrRepositoryImageScanningConfigurationList
 	ImageTagMutability() *string
+	ImageTagMutabilityExclusionFilter() DataAwsEcrRepositoryImageTagMutabilityExclusionFilterList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -255,6 +256,16 @@ func (j *jsiiProxy_DataAwsEcrRepository) ImageTagMutability() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcrRepository) ImageTagMutabilityExclusionFilter() DataAwsEcrRepositoryImageTagMutabilityExclusionFilterList {
+	var returns DataAwsEcrRepositoryImageTagMutabilityExclusionFilterList
+	_jsii_.Get(
+		j,
+		"imageTagMutabilityExclusionFilter",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcrRepository) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -426,7 +437,7 @@ func (j *jsiiProxy_DataAwsEcrRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ecr_repository aws_ecr_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/ecr_repository aws_ecr_repository} Data Source.
 func NewDataAwsEcrRepository(scope constructs.Construct, id *string, config *DataAwsEcrRepositoryConfig) DataAwsEcrRepository {
 	_init_.Initialize()
 
@@ -444,7 +455,7 @@ func NewDataAwsEcrRepository(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/ecr_repository aws_ecr_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/ecr_repository aws_ecr_repository} Data Source.
 func NewDataAwsEcrRepository_Override(d DataAwsEcrRepository, scope constructs.Construct, id *string, config *DataAwsEcrRepositoryConfig) {
 	_init_.Initialize()
 

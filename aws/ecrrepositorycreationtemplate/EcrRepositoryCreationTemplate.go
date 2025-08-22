@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template}.
 type EcrRepositoryCreationTemplate interface {
 	cdktf.TerraformResource
 	AppliedFor() *[]*string
@@ -55,6 +55,8 @@ type EcrRepositoryCreationTemplate interface {
 	IdInput() *string
 	ImageTagMutability() *string
 	SetImageTagMutability(val *string)
+	ImageTagMutabilityExclusionFilter() EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList
+	ImageTagMutabilityExclusionFilterInput() interface{}
 	ImageTagMutabilityInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -138,11 +140,13 @@ type EcrRepositoryCreationTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfiguration(value interface{})
+	PutImageTagMutabilityExclusionFilter(value interface{})
 	ResetCustomRoleArn()
 	ResetDescription()
 	ResetEncryptionConfiguration()
 	ResetId()
 	ResetImageTagMutability()
+	ResetImageTagMutabilityExclusionFilter()
 	ResetLifecyclePolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -358,6 +362,26 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate) ImageTagMutability() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EcrRepositoryCreationTemplate) ImageTagMutabilityExclusionFilter() EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList {
+	var returns EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList
+	_jsii_.Get(
+		j,
+		"imageTagMutabilityExclusionFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrRepositoryCreationTemplate) ImageTagMutabilityExclusionFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imageTagMutabilityExclusionFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcrRepositoryCreationTemplate) ImageTagMutabilityInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -559,7 +583,7 @@ func (j *jsiiProxy_EcrRepositoryCreationTemplate) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) EcrRepositoryCreationTemplate {
 	_init_.Initialize()
 
@@ -577,7 +601,7 @@ func NewEcrRepositoryCreationTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecr_repository_creation_template aws_ecr_repository_creation_template} Resource.
 func NewEcrRepositoryCreationTemplate_Override(e EcrRepositoryCreationTemplate, scope constructs.Construct, id *string, config *EcrRepositoryCreationTemplateConfig) {
 	_init_.Initialize()
 
@@ -1130,6 +1154,17 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplate) PutEncryptionConfiguration(val
 	)
 }
 
+func (e *jsiiProxy_EcrRepositoryCreationTemplate) PutImageTagMutabilityExclusionFilter(value interface{}) {
+	if err := e.validatePutImageTagMutabilityExclusionFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putImageTagMutabilityExclusionFilter",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcrRepositoryCreationTemplate) ResetCustomRoleArn() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1166,6 +1201,14 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplate) ResetImageTagMutability() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetImageTagMutability",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcrRepositoryCreationTemplate) ResetImageTagMutabilityExclusionFilter() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetImageTagMutabilityExclusionFilter",
 		nil, // no parameters
 	)
 }

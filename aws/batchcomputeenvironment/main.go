@@ -373,6 +373,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jobExecutionTimeoutMinutes", GoGetter: "JobExecutionTimeoutMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "jobExecutionTimeoutMinutesInput", GoGetter: "JobExecutionTimeoutMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJobExecutionTimeoutMinutes", GoMethod: "ResetJobExecutionTimeoutMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTerminateJobsOnUpdate", GoMethod: "ResetTerminateJobsOnUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terminateJobsOnUpdate", GoGetter: "TerminateJobsOnUpdate"},
 			_jsii_.MemberProperty{JsiiProperty: "terminateJobsOnUpdateInput", GoGetter: "TerminateJobsOnUpdateInput"},

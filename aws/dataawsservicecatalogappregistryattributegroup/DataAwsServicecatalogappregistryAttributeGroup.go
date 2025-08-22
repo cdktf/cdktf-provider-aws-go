@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group}.
 type DataAwsServicecatalogappregistryAttributeGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataAwsServicecatalogappregistryAttributeGroup) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group} Data Source.
 func NewDataAwsServicecatalogappregistryAttributeGroup(scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryAttributeGroupConfig) DataAwsServicecatalogappregistryAttributeGroup {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataAwsServicecatalogappregistryAttributeGroup(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/servicecatalogappregistry_attribute_group aws_servicecatalogappregistry_attribute_group} Data Source.
 func NewDataAwsServicecatalogappregistryAttributeGroup_Override(d DataAwsServicecatalogappregistryAttributeGroup, scope constructs.Construct, id *string, config *DataAwsServicecatalogappregistryAttributeGroupConfig) {
 	_init_.Initialize()
 

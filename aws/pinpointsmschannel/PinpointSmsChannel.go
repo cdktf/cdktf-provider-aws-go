@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
 type PinpointSmsChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_PinpointSmsChannel) TransactionalMessagesPerSecond() *float64
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource.
 func NewPinpointSmsChannel(scope constructs.Construct, id *string, config *PinpointSmsChannelConfig) PinpointSmsChannel {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewPinpointSmsChannel(scope constructs.Construct, id *string, config *Pinpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource.
 func NewPinpointSmsChannel_Override(p PinpointSmsChannel, scope constructs.Construct, id *string, config *PinpointSmsChannelConfig) {
 	_init_.Initialize()
 

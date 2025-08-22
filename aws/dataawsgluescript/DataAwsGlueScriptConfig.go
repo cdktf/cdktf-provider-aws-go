@@ -24,22 +24,22 @@ type DataAwsGlueScriptConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// dag_edge block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
 	DagEdge interface{} `field:"required" json:"dagEdge" yaml:"dagEdge"`
 	// dag_node block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
 	DagNode interface{} `field:"required" json:"dagNode" yaml:"dagNode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_script#language DataAwsGlueScript#language}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_script#language DataAwsGlueScript#language}.
 	Language *string `field:"optional" json:"language" yaml:"language"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/data-sources/glue_script#region DataAwsGlueScript#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/glue_script#region DataAwsGlueScript#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

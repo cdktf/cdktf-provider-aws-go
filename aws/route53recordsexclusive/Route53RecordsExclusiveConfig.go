@@ -22,15 +22,15 @@ type Route53RecordsExclusiveConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/route53_records_exclusive#zone_id Route53RecordsExclusive#zone_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/route53_records_exclusive#zone_id Route53RecordsExclusive#zone_id}.
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// resource_record_set block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/route53_records_exclusive#resource_record_set Route53RecordsExclusive#resource_record_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/route53_records_exclusive#resource_record_set Route53RecordsExclusive#resource_record_set}
 	ResourceRecordSet interface{} `field:"optional" json:"resourceRecordSet" yaml:"resourceRecordSet"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.9.0/docs/resources/route53_records_exclusive#timeouts Route53RecordsExclusive#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/route53_records_exclusive#timeouts Route53RecordsExclusive#timeouts}
 	Timeouts *Route53RecordsExclusiveTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
