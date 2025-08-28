@@ -5,7 +5,7 @@ package codepipeline
 
 
 type CodepipelineStageOnFailureRetryConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codepipeline#retry_mode Codepipeline#retry_mode}.
 	RetryMode *string `field:"optional" json:"retryMode" yaml:"retryMode"`
 }
 

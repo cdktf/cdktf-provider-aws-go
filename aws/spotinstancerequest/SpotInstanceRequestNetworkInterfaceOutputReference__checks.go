@@ -218,14 +218,6 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetNetworkCardIndexParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetNetworkInterfaceIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

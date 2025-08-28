@@ -124,6 +124,68 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutAws
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeRepositoryProjectNameParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Inspector2FilterFilterCriteriaCodeRepositoryProjectName:
+		value := value.(*[]*Inspector2FilterFilterCriteriaCodeRepositoryProjectName)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Inspector2FilterFilterCriteriaCodeRepositoryProjectName:
+		value_ := value.([]*Inspector2FilterFilterCriteriaCodeRepositoryProjectName)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Inspector2FilterFilterCriteriaCodeRepositoryProjectName; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeRepositoryProviderTypeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Inspector2FilterFilterCriteriaCodeRepositoryProviderType:
+		value := value.(*[]*Inspector2FilterFilterCriteriaCodeRepositoryProviderType)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Inspector2FilterFilterCriteriaCodeRepositoryProviderType:
+		value_ := value.([]*Inspector2FilterFilterCriteriaCodeRepositoryProviderType)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Inspector2FilterFilterCriteriaCodeRepositoryProviderType; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeVulnerabilityDetectorNameParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -428,6 +490,68 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcr
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Inspector2FilterFilterCriteriaEcrImageHash; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcrImageInUseCountParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Inspector2FilterFilterCriteriaEcrImageInUseCount:
+		value := value.(*[]*Inspector2FilterFilterCriteriaEcrImageInUseCount)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Inspector2FilterFilterCriteriaEcrImageInUseCount:
+		value_ := value.([]*Inspector2FilterFilterCriteriaEcrImageInUseCount)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Inspector2FilterFilterCriteriaEcrImageInUseCount; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcrImageLastInUseAtParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Inspector2FilterFilterCriteriaEcrImageLastInUseAt:
+		value := value.(*[]*Inspector2FilterFilterCriteriaEcrImageLastInUseAt)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Inspector2FilterFilterCriteriaEcrImageLastInUseAt:
+		value_ := value.([]*Inspector2FilterFilterCriteriaEcrImageLastInUseAt)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Inspector2FilterFilterCriteriaEcrImageLastInUseAt; received %#v (a %T)", value, value)
 		}
 	}
 

@@ -13,6 +13,8 @@ import (
 
 type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	cdktf.ComplexObject
+	ArchiveRule() DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference
+	ArchiveRuleInput() *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -88,12 +90,14 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutArchiveRule(value *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule)
 	PutCreateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule)
 	PutCrossRegionCopyRule(value interface{})
 	PutDeprecateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule)
 	PutFastRestoreRule(value *DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule)
 	PutRetainRule(value *DlmLifecyclePolicyPolicyDetailsScheduleRetainRule)
 	PutShareRule(value *DlmLifecyclePolicyPolicyDetailsScheduleShareRule)
+	ResetArchiveRule()
 	ResetCopyTags()
 	ResetCrossRegionCopyRule()
 	ResetDeprecateRule()
@@ -114,6 +118,26 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 // The jsii proxy struct for DlmLifecyclePolicyPolicyDetailsScheduleOutputReference
 type jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ArchiveRule() DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference {
+	var returns DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleOutputReference
+	_jsii_.Get(
+		j,
+		"archiveRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ArchiveRuleInput() *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule {
+	var returns *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule
+	_jsii_.Get(
+		j,
+		"archiveRuleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ComplexObjectIndex() interface{} {
@@ -699,6 +723,17 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Inter
 	return returns
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutArchiveRule(value *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule) {
+	if err := d.validatePutArchiveRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putArchiveRule",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutCreateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule) {
 	if err := d.validatePutCreateRuleParameters(value); err != nil {
 		panic(err)
@@ -762,6 +797,14 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) PutSh
 		d,
 		"putShareRule",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ResetArchiveRule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetArchiveRule",
+		nil, // no parameters
 	)
 }
 

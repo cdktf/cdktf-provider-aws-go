@@ -47,6 +47,10 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) validatePutScriptsParameters(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

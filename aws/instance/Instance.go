@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -1620,7 +1620,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1638,7 +1638,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 

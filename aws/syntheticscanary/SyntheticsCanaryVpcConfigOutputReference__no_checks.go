@@ -63,6 +63,10 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateSetIpv6AllowedForDualStackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

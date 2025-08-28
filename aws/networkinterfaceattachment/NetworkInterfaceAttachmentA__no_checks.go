@@ -115,6 +115,10 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetNetworkCardIndexParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceAttachmentA) validateSetNetworkInterfaceIdParameters(val *string) error {
 	return nil
 }

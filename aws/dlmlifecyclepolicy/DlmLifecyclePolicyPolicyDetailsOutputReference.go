@@ -25,6 +25,12 @@ type DlmLifecyclePolicyPolicyDetailsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CopyTags() interface{}
+	SetCopyTags(val interface{})
+	CopyTagsInput() interface{}
+	CreateInterval() *float64
+	SetCreateInterval(val *float64)
+	CreateIntervalInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,21 +38,35 @@ type DlmLifecyclePolicyPolicyDetailsOutputReference interface {
 	CreationStack() *[]*string
 	EventSource() DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference
 	EventSourceInput() *DlmLifecyclePolicyPolicyDetailsEventSource
+	Exclusions() DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference
+	ExclusionsInput() *DlmLifecyclePolicyPolicyDetailsExclusions
+	ExtendDeletion() interface{}
+	SetExtendDeletion(val interface{})
+	ExtendDeletionInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DlmLifecyclePolicyPolicyDetails
 	SetInternalValue(val *DlmLifecyclePolicyPolicyDetails)
 	Parameters() DlmLifecyclePolicyPolicyDetailsParametersOutputReference
 	ParametersInput() *DlmLifecyclePolicyPolicyDetailsParameters
+	PolicyLanguage() *string
+	SetPolicyLanguage(val *string)
+	PolicyLanguageInput() *string
 	PolicyType() *string
 	SetPolicyType(val *string)
 	PolicyTypeInput() *string
 	ResourceLocations() *[]*string
 	SetResourceLocations(val *[]*string)
 	ResourceLocationsInput() *[]*string
+	ResourceType() *string
+	SetResourceType(val *string)
+	ResourceTypeInput() *string
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
+	RetainInterval() *float64
+	SetRetainInterval(val *float64)
+	RetainIntervalInput() *float64
 	Schedule() DlmLifecyclePolicyPolicyDetailsScheduleList
 	ScheduleInput() interface{}
 	TargetTags() *map[string]*string
@@ -86,14 +106,22 @@ type DlmLifecyclePolicyPolicyDetailsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *DlmLifecyclePolicyPolicyDetailsAction)
 	PutEventSource(value *DlmLifecyclePolicyPolicyDetailsEventSource)
+	PutExclusions(value *DlmLifecyclePolicyPolicyDetailsExclusions)
 	PutParameters(value *DlmLifecyclePolicyPolicyDetailsParameters)
 	PutSchedule(value interface{})
 	ResetAction()
+	ResetCopyTags()
+	ResetCreateInterval()
 	ResetEventSource()
+	ResetExclusions()
+	ResetExtendDeletion()
 	ResetParameters()
+	ResetPolicyLanguage()
 	ResetPolicyType()
 	ResetResourceLocations()
+	ResetResourceType()
 	ResetResourceTypes()
+	ResetRetainInterval()
 	ResetSchedule()
 	ResetTargetTags()
 	// Produce the Token's value at resolution time.
@@ -151,6 +179,46 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ComplexObject
 	return returns
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) CopyTags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) CopyTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) CreateInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) CreateIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"createIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -176,6 +244,46 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) EventSourceIn
 	_jsii_.Get(
 		j,
 		"eventSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) Exclusions() DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference {
+	var returns DlmLifecyclePolicyPolicyDetailsExclusionsOutputReference
+	_jsii_.Get(
+		j,
+		"exclusions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ExclusionsInput() *DlmLifecyclePolicyPolicyDetailsExclusions {
+	var returns *DlmLifecyclePolicyPolicyDetailsExclusions
+	_jsii_.Get(
+		j,
+		"exclusionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ExtendDeletion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extendDeletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ExtendDeletionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extendDeletionInput",
 		&returns,
 	)
 	return returns
@@ -221,6 +329,26 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ParametersInp
 	return returns
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PolicyLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PolicyLanguageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyLanguageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PolicyType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -261,6 +389,26 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResourceLocat
 	return returns
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResourceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResourceTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -276,6 +424,26 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResourceTypes
 	_jsii_.Get(
 		j,
 		"resourceTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) RetainInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retainInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) RetainIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retainIntervalInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +559,39 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetComplexObje
 	)
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetCopyTags(val interface{}) {
+	if err := j.validateSetCopyTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copyTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetCreateInterval(val *float64) {
+	if err := j.validateSetCreateIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetExtendDeletion(val interface{}) {
+	if err := j.validateSetExtendDeletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extendDeletion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetInternalValue(val *DlmLifecyclePolicyPolicyDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -398,6 +599,17 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetPolicyLanguage(val *string) {
+	if err := j.validateSetPolicyLanguageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyLanguage",
 		val,
 	)
 }
@@ -424,6 +636,17 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetResourceLoc
 	)
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetResourceType(val *string) {
+	if err := j.validateSetResourceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetResourceTypes(val *[]*string) {
 	if err := j.validateSetResourceTypesParameters(val); err != nil {
 		panic(err)
@@ -431,6 +654,17 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetResourceTyp
 	_jsii_.Set(
 		j,
 		"resourceTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference)SetRetainInterval(val *float64) {
+	if err := j.validateSetRetainIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retainInterval",
 		val,
 	)
 }
@@ -676,6 +910,17 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PutEventSourc
 	)
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PutExclusions(value *DlmLifecyclePolicyPolicyDetailsExclusions) {
+	if err := d.validatePutExclusionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExclusions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) PutParameters(value *DlmLifecyclePolicyPolicyDetailsParameters) {
 	if err := d.validatePutParametersParameters(value); err != nil {
 		panic(err)
@@ -706,6 +951,22 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetAction()
 	)
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetCopyTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCopyTags",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetCreateInterval() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCreateInterval",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetEventSource() {
 	_jsii_.InvokeVoid(
 		d,
@@ -714,10 +975,34 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetEventSou
 	)
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetExclusions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExclusions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetExtendDeletion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtendDeletion",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetParameters() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetPolicyLanguage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPolicyLanguage",
 		nil, // no parameters
 	)
 }
@@ -738,10 +1023,26 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetResource
 	)
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetResourceType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResourceType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetResourceTypes() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetResourceTypes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) ResetRetainInterval() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetainInterval",
 		nil, // no parameters
 	)
 }

@@ -107,6 +107,10 @@ func (j *jsiiProxy_S3TablesTableBucket) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_S3TablesTableBucket) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3TablesTableBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

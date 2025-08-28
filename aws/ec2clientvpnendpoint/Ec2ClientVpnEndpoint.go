@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type Ec2ClientVpnEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,6 +55,9 @@ type Ec2ClientVpnEndpoint interface {
 	DnsServers() *[]*string
 	SetDnsServers(val *[]*string)
 	DnsServersInput() *[]*string
+	EndpointIpAddressType() *string
+	SetEndpointIpAddressType(val *string)
+	EndpointIpAddressTypeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,6 +116,9 @@ type Ec2ClientVpnEndpoint interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrafficIpAddressType() *string
+	SetTrafficIpAddressType(val *string)
+	TrafficIpAddressTypeInput() *string
 	TransportProtocol() *string
 	SetTransportProtocol(val *string)
 	TransportProtocolInput() *string
@@ -170,12 +176,14 @@ type Ec2ClientVpnEndpoint interface {
 	PutClientLoginBannerOptions(value *Ec2ClientVpnEndpointClientLoginBannerOptions)
 	PutClientRouteEnforcementOptions(value *Ec2ClientVpnEndpointClientRouteEnforcementOptions)
 	PutConnectionLogOptions(value *Ec2ClientVpnEndpointConnectionLogOptions)
+	ResetClientCidrBlock()
 	ResetClientConnectOptions()
 	ResetClientLoginBannerOptions()
 	ResetClientRouteEnforcementOptions()
 	ResetDescription()
 	ResetDisconnectOnSessionTimeout()
 	ResetDnsServers()
+	ResetEndpointIpAddressType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -187,6 +195,7 @@ type Ec2ClientVpnEndpoint interface {
 	ResetSplitTunnel()
 	ResetTags()
 	ResetTagsAll()
+	ResetTrafficIpAddressType()
 	ResetTransportProtocol()
 	ResetVpcId()
 	ResetVpnPort()
@@ -453,6 +462,26 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) DnsServersInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"dnsServersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) EndpointIpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIpAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) EndpointIpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIpAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -758,6 +787,26 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) TrafficIpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficIpAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) TrafficIpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficIpAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) TransportProtocol() *string {
 	var returns *string
 	_jsii_.Get(
@@ -819,7 +868,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) VpnPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -837,7 +886,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 
@@ -918,6 +967,17 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetDnsServers(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dnsServers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetEndpointIpAddressType(val *string) {
+	if err := j.validateSetEndpointIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointIpAddressType",
 		val,
 	)
 }
@@ -1055,6 +1115,17 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint)SetTrafficIpAddressType(val *string) {
+	if err := j.validateSetTrafficIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trafficIpAddressType",
 		val,
 	)
 }
@@ -1500,6 +1571,14 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) PutConnectionLogOptions(value *Ec2Clien
 	)
 }
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetClientCidrBlock() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetClientCidrBlock",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetClientConnectOptions() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1544,6 +1623,14 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetDnsServers() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDnsServers",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetEndpointIpAddressType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEndpointIpAddressType",
 		nil, // no parameters
 	)
 }
@@ -1616,6 +1703,14 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) ResetTrafficIpAddressType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTrafficIpAddressType",
 		nil, // no parameters
 	)
 }

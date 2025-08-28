@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain aws_datazone_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain aws_datazone_domain}.
 type DatazoneDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -38,6 +38,9 @@ type DatazoneDomain interface {
 	DomainExecutionRole() *string
 	SetDomainExecutionRole(val *string)
 	DomainExecutionRoleInput() *string
+	DomainVersion() *string
+	SetDomainVersion(val *string)
+	DomainVersionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +76,9 @@ type DatazoneDomain interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ServiceRole() *string
+	SetServiceRole(val *string)
+	ServiceRoleInput() *string
 	SingleSignOn() DatazoneDomainSingleSignOnList
 	SingleSignOnInput() interface{}
 	SkipDeletionCheck() interface{}
@@ -136,11 +142,13 @@ type DatazoneDomain interface {
 	PutSingleSignOn(value interface{})
 	PutTimeouts(value *DatazoneDomainTimeouts)
 	ResetDescription()
+	ResetDomainVersion()
 	ResetKmsKeyIdentifier()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetServiceRole()
 	ResetSingleSignOn()
 	ResetSkipDeletionCheck()
 	ResetTags()
@@ -258,6 +266,26 @@ func (j *jsiiProxy_DatazoneDomain) DomainExecutionRoleInput() *string {
 	_jsii_.Get(
 		j,
 		"domainExecutionRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneDomain) DomainVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneDomain) DomainVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVersionInput",
 		&returns,
 	)
 	return returns
@@ -423,6 +451,26 @@ func (j *jsiiProxy_DatazoneDomain) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatazoneDomain) ServiceRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatazoneDomain) ServiceRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceRoleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatazoneDomain) SingleSignOn() DatazoneDomainSingleSignOnList {
 	var returns DatazoneDomainSingleSignOnList
 	_jsii_.Get(
@@ -544,7 +592,7 @@ func (j *jsiiProxy_DatazoneDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneDomainConfig) DatazoneDomain {
 	_init_.Initialize()
 
@@ -562,7 +610,7 @@ func NewDatazoneDomain(scope constructs.Construct, id *string, config *DatazoneD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/datazone_domain aws_datazone_domain} Resource.
 func NewDatazoneDomain_Override(d DatazoneDomain, scope constructs.Construct, id *string, config *DatazoneDomainConfig) {
 	_init_.Initialize()
 
@@ -621,6 +669,17 @@ func (j *jsiiProxy_DatazoneDomain)SetDomainExecutionRole(val *string) {
 	_jsii_.Set(
 		j,
 		"domainExecutionRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneDomain)SetDomainVersion(val *string) {
+	if err := j.validateSetDomainVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainVersion",
 		val,
 	)
 }
@@ -692,6 +751,17 @@ func (j *jsiiProxy_DatazoneDomain)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatazoneDomain)SetServiceRole(val *string) {
+	if err := j.validateSetServiceRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceRole",
 		val,
 	)
 }
@@ -1101,6 +1171,14 @@ func (d *jsiiProxy_DatazoneDomain) ResetDescription() {
 	)
 }
 
+func (d *jsiiProxy_DatazoneDomain) ResetDomainVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainVersion",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatazoneDomain) ResetKmsKeyIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1121,6 +1199,14 @@ func (d *jsiiProxy_DatazoneDomain) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatazoneDomain) ResetServiceRole() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceRole",
 		nil, // no parameters
 	)
 }

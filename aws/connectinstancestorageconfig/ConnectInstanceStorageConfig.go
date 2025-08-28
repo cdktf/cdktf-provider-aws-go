@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config}.
 type ConnectInstanceStorageConfig interface {
 	cdktf.TerraformResource
 	AssociationId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfig) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
 func NewConnectInstanceStorageConfig(scope constructs.Construct, id *string, config *ConnectInstanceStorageConfigConfig) ConnectInstanceStorageConfig {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewConnectInstanceStorageConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
 func NewConnectInstanceStorageConfig_Override(c ConnectInstanceStorageConfig, scope constructs.Construct, id *string, config *ConnectInstanceStorageConfigConfig) {
 	_init_.Initialize()
 

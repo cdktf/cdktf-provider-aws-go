@@ -55,6 +55,10 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validatePutEv
 	return nil
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validatePutExclusionsParameters(value *DlmLifecyclePolicyPolicyDetailsExclusions) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validatePutParametersParameters(value *DlmLifecyclePolicyPolicyDetailsParameters) error {
 	return nil
 }
@@ -75,7 +79,23 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetCopyTagsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetCreateIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetExtendDeletionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetInternalValueParameters(val *DlmLifecyclePolicyPolicyDetails) error {
+	return nil
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetPolicyLanguageParameters(val *string) error {
 	return nil
 }
 
@@ -87,7 +107,15 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetRe
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetResourceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetResourceTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference) validateSetRetainIntervalParameters(val *float64) error {
 	return nil
 }
 

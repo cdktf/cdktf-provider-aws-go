@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
 type ApiGatewayUsagePlan interface {
 	cdktf.TerraformResource
 	ApiStages() ApiGatewayUsagePlanApiStagesList
@@ -536,7 +536,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) ThrottleSettingsInput() *ApiGatewayUsage
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) ApiGatewayUsagePlan {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan_Override(a ApiGatewayUsagePlan, scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) {
 	_init_.Initialize()
 

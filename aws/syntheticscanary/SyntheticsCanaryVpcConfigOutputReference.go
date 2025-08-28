@@ -32,6 +32,9 @@ type SyntheticsCanaryVpcConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *SyntheticsCanaryVpcConfig
 	SetInternalValue(val *SyntheticsCanaryVpcConfig)
+	Ipv6AllowedForDualStack() interface{}
+	SetIpv6AllowedForDualStack(val interface{})
+	Ipv6AllowedForDualStackInput() interface{}
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -71,6 +74,7 @@ type SyntheticsCanaryVpcConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpv6AllowedForDualStack()
 	ResetSecurityGroupIds()
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
@@ -133,6 +137,26 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) InternalValue() *Sy
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) Ipv6AllowedForDualStack() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6AllowedForDualStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) Ipv6AllowedForDualStackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6AllowedForDualStackInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetInternalValue(val
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference)SetIpv6AllowedForDualStack(val interface{}) {
+	if err := j.validateSetIpv6AllowedForDualStackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6AllowedForDualStack",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ResetIpv6AllowedForDualStack() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIpv6AllowedForDualStack",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SyntheticsCanaryVpcConfigOutputReference) ResetSecurityGroupIds() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}.
 type CloudwatchEventBusPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_CloudwatchEventBusPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource.
 func NewCloudwatchEventBusPolicy(scope constructs.Construct, id *string, config *CloudwatchEventBusPolicyConfig) CloudwatchEventBusPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewCloudwatchEventBusPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource.
 func NewCloudwatchEventBusPolicy_Override(c CloudwatchEventBusPolicy, scope constructs.Construct, id *string, config *CloudwatchEventBusPolicyConfig) {
 	_init_.Initialize()
 

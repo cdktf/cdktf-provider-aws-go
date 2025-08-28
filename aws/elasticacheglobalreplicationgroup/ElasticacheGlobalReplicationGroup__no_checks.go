@@ -111,6 +111,10 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetEngineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

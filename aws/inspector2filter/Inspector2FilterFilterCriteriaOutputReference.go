@@ -15,6 +15,10 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	cdktf.ComplexObject
 	AwsAccountId() Inspector2FilterFilterCriteriaAwsAccountIdList
 	AwsAccountIdInput() interface{}
+	CodeRepositoryProjectName() Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
+	CodeRepositoryProjectNameInput() interface{}
+	CodeRepositoryProviderType() Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList
+	CodeRepositoryProviderTypeInput() interface{}
 	CodeVulnerabilityDetectorName() Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorNameList
 	CodeVulnerabilityDetectorNameInput() interface{}
 	CodeVulnerabilityDetectorTags() Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorTagsList
@@ -50,6 +54,10 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	EcrImageArchitectureInput() interface{}
 	EcrImageHash() Inspector2FilterFilterCriteriaEcrImageHashList
 	EcrImageHashInput() interface{}
+	EcrImageInUseCount() Inspector2FilterFilterCriteriaEcrImageInUseCountList
+	EcrImageInUseCountInput() interface{}
+	EcrImageLastInUseAt() Inspector2FilterFilterCriteriaEcrImageLastInUseAtList
+	EcrImageLastInUseAtInput() interface{}
 	EcrImagePushedAt() Inspector2FilterFilterCriteriaEcrImagePushedAtList
 	EcrImagePushedAtInput() interface{}
 	EcrImageRegistry() Inspector2FilterFilterCriteriaEcrImageRegistryList
@@ -149,6 +157,8 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccountId(value interface{})
+	PutCodeRepositoryProjectName(value interface{})
+	PutCodeRepositoryProviderType(value interface{})
 	PutCodeVulnerabilityDetectorName(value interface{})
 	PutCodeVulnerabilityDetectorTags(value interface{})
 	PutCodeVulnerabilityFilePath(value interface{})
@@ -159,6 +169,8 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	PutEc2InstanceVpcId(value interface{})
 	PutEcrImageArchitecture(value interface{})
 	PutEcrImageHash(value interface{})
+	PutEcrImageInUseCount(value interface{})
+	PutEcrImageLastInUseAt(value interface{})
 	PutEcrImagePushedAt(value interface{})
 	PutEcrImageRegistry(value interface{})
 	PutEcrImageRepositoryName(value interface{})
@@ -191,6 +203,8 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	PutVulnerabilitySource(value interface{})
 	PutVulnerablePackages(value interface{})
 	ResetAwsAccountId()
+	ResetCodeRepositoryProjectName()
+	ResetCodeRepositoryProviderType()
 	ResetCodeVulnerabilityDetectorName()
 	ResetCodeVulnerabilityDetectorTags()
 	ResetCodeVulnerabilityFilePath()
@@ -201,6 +215,8 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	ResetEc2InstanceVpcId()
 	ResetEcrImageArchitecture()
 	ResetEcrImageHash()
+	ResetEcrImageInUseCount()
+	ResetEcrImageLastInUseAt()
 	ResetEcrImagePushedAt()
 	ResetEcrImageRegistry()
 	ResetEcrImageRepositoryName()
@@ -262,6 +278,46 @@ func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) AwsAccountIdIn
 	_jsii_.Get(
 		j,
 		"awsAccountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) CodeRepositoryProjectName() Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList {
+	var returns Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList
+	_jsii_.Get(
+		j,
+		"codeRepositoryProjectName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) CodeRepositoryProjectNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeRepositoryProjectNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) CodeRepositoryProviderType() Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList {
+	var returns Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList
+	_jsii_.Get(
+		j,
+		"codeRepositoryProviderType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) CodeRepositoryProviderTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeRepositoryProviderTypeInput",
 		&returns,
 	)
 	return returns
@@ -492,6 +548,46 @@ func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) EcrImageHashIn
 	_jsii_.Get(
 		j,
 		"ecrImageHashInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) EcrImageInUseCount() Inspector2FilterFilterCriteriaEcrImageInUseCountList {
+	var returns Inspector2FilterFilterCriteriaEcrImageInUseCountList
+	_jsii_.Get(
+		j,
+		"ecrImageInUseCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) EcrImageInUseCountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ecrImageInUseCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) EcrImageLastInUseAt() Inspector2FilterFilterCriteriaEcrImageLastInUseAtList {
+	var returns Inspector2FilterFilterCriteriaEcrImageLastInUseAtList
+	_jsii_.Get(
+		j,
+		"ecrImageLastInUseAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) EcrImageLastInUseAtInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ecrImageLastInUseAtInput",
 		&returns,
 	)
 	return returns
@@ -1437,6 +1533,28 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutAwsAccountI
 	)
 }
 
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutCodeRepositoryProjectName(value interface{}) {
+	if err := i.validatePutCodeRepositoryProjectNameParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putCodeRepositoryProjectName",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutCodeRepositoryProviderType(value interface{}) {
+	if err := i.validatePutCodeRepositoryProviderTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putCodeRepositoryProviderType",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutCodeVulnerabilityDetectorName(value interface{}) {
 	if err := i.validatePutCodeVulnerabilityDetectorNameParameters(value); err != nil {
 		panic(err)
@@ -1543,6 +1661,28 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutEcrImageHas
 	_jsii_.InvokeVoid(
 		i,
 		"putEcrImageHash",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutEcrImageInUseCount(value interface{}) {
+	if err := i.validatePutEcrImageInUseCountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putEcrImageInUseCount",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) PutEcrImageLastInUseAt(value interface{}) {
+	if err := i.validatePutEcrImageLastInUseAtParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putEcrImageLastInUseAt",
 		[]interface{}{value},
 	)
 }
@@ -1896,6 +2036,22 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetAwsAccoun
 	)
 }
 
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetCodeRepositoryProjectName() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCodeRepositoryProjectName",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetCodeRepositoryProviderType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCodeRepositoryProviderType",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetCodeVulnerabilityDetectorName() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1972,6 +2128,22 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetEcrImageH
 	_jsii_.InvokeVoid(
 		i,
 		"resetEcrImageHash",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetEcrImageInUseCount() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEcrImageInUseCount",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetEcrImageLastInUseAt() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEcrImageLastInUseAt",
 		nil, // no parameters
 	)
 }

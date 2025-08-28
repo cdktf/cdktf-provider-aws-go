@@ -71,6 +71,10 @@ func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetName
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

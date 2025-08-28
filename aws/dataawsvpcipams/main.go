@@ -242,6 +242,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipamRegion", GoGetter: "IpamRegion"},
+			_jsii_.MemberProperty{JsiiProperty: "meteredAccount", GoGetter: "MeteredAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "operatingRegions", GoGetter: "OperatingRegions"},
 			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "privateDefaultScopeId", GoGetter: "PrivateDefaultScopeId"},

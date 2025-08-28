@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy}.
 type CodeartifactRepositoryPermissionsPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy} Resource.
 func NewCodeartifactRepositoryPermissionsPolicy(scope constructs.Construct, id *string, config *CodeartifactRepositoryPermissionsPolicyConfig) CodeartifactRepositoryPermissionsPolicy {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewCodeartifactRepositoryPermissionsPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codeartifact_repository_permissions_policy aws_codeartifact_repository_permissions_policy} Resource.
 func NewCodeartifactRepositoryPermissionsPolicy_Override(c CodeartifactRepositoryPermissionsPolicy, scope constructs.Construct, id *string, config *CodeartifactRepositoryPermissionsPolicyConfig) {
 	_init_.Initialize()
 

@@ -87,6 +87,10 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOut
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) validateSetTargetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

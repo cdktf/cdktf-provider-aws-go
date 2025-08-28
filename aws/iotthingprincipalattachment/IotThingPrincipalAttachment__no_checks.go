@@ -123,6 +123,10 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetThingParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetThingPrincipalTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotThingPrincipalAttachmentParameters(scope constructs.Construct, id *string, config *IotThingPrincipalAttachmentConfig) error {
 	return nil
 }

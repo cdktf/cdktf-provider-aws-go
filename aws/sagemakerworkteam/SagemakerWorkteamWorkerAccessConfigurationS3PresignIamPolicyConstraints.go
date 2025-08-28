@@ -5,9 +5,9 @@ package sagemakerworkteam
 
 
 type SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/sagemaker_workteam#source_ip SagemakerWorkteam#source_ip}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/sagemaker_workteam#source_ip SagemakerWorkteam#source_ip}.
 	SourceIp *string `field:"optional" json:"sourceIp" yaml:"sourceIp"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/sagemaker_workteam#vpc_source_ip SagemakerWorkteam#vpc_source_ip}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/sagemaker_workteam#vpc_source_ip SagemakerWorkteam#vpc_source_ip}.
 	VpcSourceIp *string `field:"optional" json:"vpcSourceIp" yaml:"vpcSourceIp"`
 }
 

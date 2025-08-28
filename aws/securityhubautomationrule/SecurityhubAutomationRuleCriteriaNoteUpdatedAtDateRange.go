@@ -5,9 +5,9 @@ package securityhubautomationrule
 
 
 type SecurityhubAutomationRuleCriteriaNoteUpdatedAtDateRange struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/securityhub_automation_rule#unit SecurityhubAutomationRule#unit}.
 	Unit *string `field:"required" json:"unit" yaml:"unit"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 	Value *float64 `field:"required" json:"value" yaml:"value"`
 }
 

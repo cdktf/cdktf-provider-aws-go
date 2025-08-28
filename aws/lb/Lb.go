@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -132,6 +132,9 @@ type Lb interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecondaryIpsAutoAssignedPerSubnet() *float64
+	SetSecondaryIpsAutoAssignedPerSubnet(val *float64)
+	SecondaryIpsAutoAssignedPerSubnetInput() *float64
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -237,6 +240,7 @@ type Lb interface {
 	ResetOverrideLogicalId()
 	ResetPreserveHostHeader()
 	ResetRegion()
+	ResetSecondaryIpsAutoAssignedPerSubnet()
 	ResetSecurityGroups()
 	ResetSubnetMapping()
 	ResetSubnets()
@@ -942,6 +946,26 @@ func (j *jsiiProxy_Lb) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Lb) SecondaryIpsAutoAssignedPerSubnet() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryIpsAutoAssignedPerSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) SecondaryIpsAutoAssignedPerSubnetInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryIpsAutoAssignedPerSubnetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lb) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1133,7 +1157,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1151,7 +1175,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1468,6 +1492,17 @@ func (j *jsiiProxy_Lb)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetSecondaryIpsAutoAssignedPerSubnet(val *float64) {
+	if err := j.validateSetSecondaryIpsAutoAssignedPerSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryIpsAutoAssignedPerSubnet",
 		val,
 	)
 }
@@ -2158,6 +2193,14 @@ func (l *jsiiProxy_Lb) ResetRegion() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetSecondaryIpsAutoAssignedPerSubnet() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSecondaryIpsAutoAssignedPerSubnet",
 		nil, // no parameters
 	)
 }

@@ -155,6 +155,130 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectName",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProjectName)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaCodeRepositoryProjectNameList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
+			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaCodeRepositoryProjectNameOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderType",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProviderType)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
+			_jsii_.MemberProperty{JsiiProperty: "comparisonInput", GoGetter: "ComparisonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaCodeRepositoryProviderTypeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName",
 		reflect.TypeOf((*Inspector2FilterFilterCriteriaCodeVulnerabilityDetectorName)(nil)).Elem(),
 	)
@@ -770,6 +894,132 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCount",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageInUseCount)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountList",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageInUseCountList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaEcrImageInUseCountList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lowerInclusive", GoGetter: "LowerInclusive"},
+			_jsii_.MemberProperty{JsiiProperty: "lowerInclusiveInput", GoGetter: "LowerInclusiveInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "upperInclusive", GoGetter: "UpperInclusive"},
+			_jsii_.MemberProperty{JsiiProperty: "upperInclusiveInput", GoGetter: "UpperInclusiveInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaEcrImageInUseCountOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAt",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageLastInUseAt)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtList",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageLastInUseAtList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaEcrImageLastInUseAtList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.inspector2Filter.Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference",
+		reflect.TypeOf((*Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endInclusive", GoGetter: "EndInclusive"},
+			_jsii_.MemberProperty{JsiiProperty: "endInclusiveInput", GoGetter: "EndInclusiveInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndInclusive", GoMethod: "ResetEndInclusive"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartInclusive", GoMethod: "ResetStartInclusive"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startInclusive", GoGetter: "StartInclusive"},
+			_jsii_.MemberProperty{JsiiProperty: "startInclusiveInput", GoGetter: "StartInclusiveInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Inspector2FilterFilterCriteriaEcrImageLastInUseAtOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1988,6 +2238,10 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountId", GoGetter: "AwsAccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountIdInput", GoGetter: "AwsAccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryProjectName", GoGetter: "CodeRepositoryProjectName"},
+			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryProjectNameInput", GoGetter: "CodeRepositoryProjectNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryProviderType", GoGetter: "CodeRepositoryProviderType"},
+			_jsii_.MemberProperty{JsiiProperty: "codeRepositoryProviderTypeInput", GoGetter: "CodeRepositoryProviderTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "codeVulnerabilityDetectorName", GoGetter: "CodeVulnerabilityDetectorName"},
 			_jsii_.MemberProperty{JsiiProperty: "codeVulnerabilityDetectorNameInput", GoGetter: "CodeVulnerabilityDetectorNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "codeVulnerabilityDetectorTags", GoGetter: "CodeVulnerabilityDetectorTags"},
@@ -2012,6 +2266,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ecrImageArchitectureInput", GoGetter: "EcrImageArchitectureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrImageHash", GoGetter: "EcrImageHash"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrImageHashInput", GoGetter: "EcrImageHashInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ecrImageInUseCount", GoGetter: "EcrImageInUseCount"},
+			_jsii_.MemberProperty{JsiiProperty: "ecrImageInUseCountInput", GoGetter: "EcrImageInUseCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ecrImageLastInUseAt", GoGetter: "EcrImageLastInUseAt"},
+			_jsii_.MemberProperty{JsiiProperty: "ecrImageLastInUseAtInput", GoGetter: "EcrImageLastInUseAtInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrImagePushedAt", GoGetter: "EcrImagePushedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrImagePushedAtInput", GoGetter: "EcrImagePushedAtInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ecrImageRegistry", GoGetter: "EcrImageRegistry"},
@@ -2066,6 +2324,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "portRange", GoGetter: "PortRange"},
 			_jsii_.MemberProperty{JsiiProperty: "portRangeInput", GoGetter: "PortRangeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAccountId", GoMethod: "PutAwsAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "putCodeRepositoryProjectName", GoMethod: "PutCodeRepositoryProjectName"},
+			_jsii_.MemberMethod{JsiiMethod: "putCodeRepositoryProviderType", GoMethod: "PutCodeRepositoryProviderType"},
 			_jsii_.MemberMethod{JsiiMethod: "putCodeVulnerabilityDetectorName", GoMethod: "PutCodeVulnerabilityDetectorName"},
 			_jsii_.MemberMethod{JsiiMethod: "putCodeVulnerabilityDetectorTags", GoMethod: "PutCodeVulnerabilityDetectorTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putCodeVulnerabilityFilePath", GoMethod: "PutCodeVulnerabilityFilePath"},
@@ -2076,6 +2336,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEc2InstanceVpcId", GoMethod: "PutEc2InstanceVpcId"},
 			_jsii_.MemberMethod{JsiiMethod: "putEcrImageArchitecture", GoMethod: "PutEcrImageArchitecture"},
 			_jsii_.MemberMethod{JsiiMethod: "putEcrImageHash", GoMethod: "PutEcrImageHash"},
+			_jsii_.MemberMethod{JsiiMethod: "putEcrImageInUseCount", GoMethod: "PutEcrImageInUseCount"},
+			_jsii_.MemberMethod{JsiiMethod: "putEcrImageLastInUseAt", GoMethod: "PutEcrImageLastInUseAt"},
 			_jsii_.MemberMethod{JsiiMethod: "putEcrImagePushedAt", GoMethod: "PutEcrImagePushedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "putEcrImageRegistry", GoMethod: "PutEcrImageRegistry"},
 			_jsii_.MemberMethod{JsiiMethod: "putEcrImageRepositoryName", GoMethod: "PutEcrImageRepositoryName"},
@@ -2110,6 +2372,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "relatedVulnerabilities", GoGetter: "RelatedVulnerabilities"},
 			_jsii_.MemberProperty{JsiiProperty: "relatedVulnerabilitiesInput", GoGetter: "RelatedVulnerabilitiesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAccountId", GoMethod: "ResetAwsAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCodeRepositoryProjectName", GoMethod: "ResetCodeRepositoryProjectName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCodeRepositoryProviderType", GoMethod: "ResetCodeRepositoryProviderType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeVulnerabilityDetectorName", GoMethod: "ResetCodeVulnerabilityDetectorName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeVulnerabilityDetectorTags", GoMethod: "ResetCodeVulnerabilityDetectorTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeVulnerabilityFilePath", GoMethod: "ResetCodeVulnerabilityFilePath"},
@@ -2120,6 +2384,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEc2InstanceVpcId", GoMethod: "ResetEc2InstanceVpcId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageArchitecture", GoMethod: "ResetEcrImageArchitecture"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageHash", GoMethod: "ResetEcrImageHash"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageInUseCount", GoMethod: "ResetEcrImageInUseCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageLastInUseAt", GoMethod: "ResetEcrImageLastInUseAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcrImagePushedAt", GoMethod: "ResetEcrImagePushedAt"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageRegistry", GoMethod: "ResetEcrImageRegistry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEcrImageRepositoryName", GoMethod: "ResetEcrImageRepositoryName"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/location_place_index aws_location_place_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/location_place_index aws_location_place_index}.
 type DataAwsLocationPlaceIndex interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataAwsLocationPlaceIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
 func NewDataAwsLocationPlaceIndex(scope constructs.Construct, id *string, config *DataAwsLocationPlaceIndexConfig) DataAwsLocationPlaceIndex {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataAwsLocationPlaceIndex(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/location_place_index aws_location_place_index} Data Source.
 func NewDataAwsLocationPlaceIndex_Override(d DataAwsLocationPlaceIndex, scope constructs.Construct, id *string, config *DataAwsLocationPlaceIndexConfig) {
 	_init_.Initialize()
 

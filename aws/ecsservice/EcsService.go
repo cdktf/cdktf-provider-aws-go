@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
@@ -132,6 +132,9 @@ type EcsService interface {
 	ServiceConnectConfigurationInput() *EcsServiceServiceConnectConfiguration
 	ServiceRegistries() EcsServiceServiceRegistriesOutputReference
 	ServiceRegistriesInput() *EcsServiceServiceRegistries
+	SigintRollback() interface{}
+	SetSigintRollback(val interface{})
+	SigintRollbackInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -247,6 +250,7 @@ type EcsService interface {
 	ResetSchedulingStrategy()
 	ResetServiceConnectConfiguration()
 	ResetServiceRegistries()
+	ResetSigintRollback()
 	ResetTags()
 	ResetTagsAll()
 	ResetTaskDefinition()
@@ -993,6 +997,26 @@ func (j *jsiiProxy_EcsService) ServiceRegistriesInput() *EcsServiceServiceRegist
 	return returns
 }
 
+func (j *jsiiProxy_EcsService) SigintRollback() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sigintRollback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) SigintRollbackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sigintRollbackInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1184,7 +1208,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1202,7 +1226,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1475,6 +1499,17 @@ func (j *jsiiProxy_EcsService)SetSchedulingStrategy(val *string) {
 	_jsii_.Set(
 		j,
 		"schedulingStrategy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsService)SetSigintRollback(val interface{}) {
+	if err := j.validateSetSigintRollbackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sigintRollback",
 		val,
 	)
 }
@@ -2269,6 +2304,14 @@ func (e *jsiiProxy_EcsService) ResetServiceRegistries() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetServiceRegistries",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetSigintRollback() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSigintRollback",
 		nil, // no parameters
 	)
 }

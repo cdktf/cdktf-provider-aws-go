@@ -5,11 +5,11 @@ package appsyncchannelnamespace
 
 
 type AppsyncChannelNamespaceHandlerConfigsOnPublish struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appsync_channel_namespace#behavior AppsyncChannelNamespace#behavior}.
 	Behavior *string `field:"required" json:"behavior" yaml:"behavior"`
 	// integration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appsync_channel_namespace#integration AppsyncChannelNamespace#integration}
 	Integration interface{} `field:"optional" json:"integration" yaml:"integration"`
 }
 

@@ -48,6 +48,9 @@ type DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference i
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
+	TargetRegion() *string
+	SetTargetRegion(val *string)
+	TargetRegionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,6 +89,8 @@ type DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference i
 	ResetCopyTags()
 	ResetDeprecateRule()
 	ResetRetainRule()
+	ResetTarget()
+	ResetTargetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -271,6 +276,26 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOut
 	return returns
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) TargetRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) TargetRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -392,6 +417,17 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOut
 	_jsii_.Set(
 		j,
 		"target",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference)SetTargetRegion(val *string) {
+	if err := j.validateSetTargetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetRegion",
 		val,
 	)
 }
@@ -654,6 +690,22 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOut
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetainRule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) ResetTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTarget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference) ResetTargetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTargetRegion",
 		nil, // no parameters
 	)
 }

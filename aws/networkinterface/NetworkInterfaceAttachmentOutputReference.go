@@ -39,6 +39,9 @@ type NetworkInterfaceAttachmentOutputReference interface {
 	InstanceInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NetworkCardIndex() *float64
+	SetNetworkCardIndex(val *float64)
+	NetworkCardIndexInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type NetworkInterfaceAttachmentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetworkCardIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -186,6 +190,26 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InternalValue() in
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) NetworkCardIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"networkCardIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) NetworkCardIndexInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"networkCardIndexInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +309,17 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference)SetNetworkCardIndex(val *float64) {
+	if err := j.validateSetNetworkCardIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkCardIndex",
 		val,
 	)
 }
@@ -495,6 +530,14 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) ResetNetworkCardIndex() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNetworkCardIndex",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

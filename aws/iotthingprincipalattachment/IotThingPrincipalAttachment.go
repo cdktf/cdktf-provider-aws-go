@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment}.
 type IotThingPrincipalAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type IotThingPrincipalAttachment interface {
 	Thing() *string
 	SetThing(val *string)
 	ThingInput() *string
+	ThingPrincipalType() *string
+	SetThingPrincipalType(val *string)
+	ThingPrincipalTypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -121,6 +124,7 @@ type IotThingPrincipalAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetThingPrincipalType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -379,8 +383,28 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) ThingInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IotThingPrincipalAttachment) ThingPrincipalType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thingPrincipalType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment} Resource.
+func (j *jsiiProxy_IotThingPrincipalAttachment) ThingPrincipalTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"thingPrincipalTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment} Resource.
 func NewIotThingPrincipalAttachment(scope constructs.Construct, id *string, config *IotThingPrincipalAttachmentConfig) IotThingPrincipalAttachment {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewIotThingPrincipalAttachment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/iot_thing_principal_attachment aws_iot_thing_principal_attachment} Resource.
 func NewIotThingPrincipalAttachment_Override(i IotThingPrincipalAttachment, scope constructs.Construct, id *string, config *IotThingPrincipalAttachmentConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_IotThingPrincipalAttachment)SetThing(val *string) {
 	_jsii_.Set(
 		j,
 		"thing",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotThingPrincipalAttachment)SetThingPrincipalType(val *string) {
+	if err := j.validateSetThingPrincipalTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"thingPrincipalType",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotThingPrincipalAttachment) ResetThingPrincipalType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetThingPrincipalType",
 		nil, // no parameters
 	)
 }

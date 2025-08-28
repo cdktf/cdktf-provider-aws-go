@@ -395,6 +395,14 @@ func (j *jsiiProxy_DatazoneDomain) validateSetDomainExecutionRoleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneDomain) validateSetDomainVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatazoneDomain) validateSetKmsKeyIdentifierParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -466,6 +474,14 @@ func (j *jsiiProxy_DatazoneDomain) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_DatazoneDomain) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatazoneDomain) validateSetServiceRoleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

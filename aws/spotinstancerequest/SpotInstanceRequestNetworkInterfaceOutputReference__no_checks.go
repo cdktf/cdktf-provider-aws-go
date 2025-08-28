@@ -71,10 +71,6 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetNetworkCardIndexParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) validateSetNetworkInterfaceIdParameters(val *string) error {
 	return nil
 }

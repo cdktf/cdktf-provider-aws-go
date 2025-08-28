@@ -135,6 +135,10 @@ func (j *jsiiProxy_SignerSigningProfile) validateSetRegionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_SignerSigningProfile) validateSetSigningParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignerSigningProfile) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

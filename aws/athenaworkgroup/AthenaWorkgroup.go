@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/athena_workgroup aws_athena_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/athena_workgroup aws_athena_workgroup}.
 type AthenaWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_AthenaWorkgroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource.
 func NewAthenaWorkgroup(scope constructs.Construct, id *string, config *AthenaWorkgroupConfig) AthenaWorkgroup {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewAthenaWorkgroup(scope constructs.Construct, id *string, config *AthenaWo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource.
 func NewAthenaWorkgroup_Override(a AthenaWorkgroup, scope constructs.Construct, id *string, config *AthenaWorkgroupConfig) {
 	_init_.Initialize()
 

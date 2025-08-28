@@ -103,6 +103,10 @@ func (j *jsiiProxy_DlmLifecyclePolicy) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicy) validateSetDefaultPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

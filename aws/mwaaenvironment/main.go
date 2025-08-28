@@ -117,6 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebserverAccessMode", GoMethod: "ResetWebserverAccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWeeklyMaintenanceWindowStart", GoMethod: "ResetWeeklyMaintenanceWindowStart"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerReplacementStrategy", GoMethod: "ResetWorkerReplacementStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulers", GoGetter: "Schedulers"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulersInput", GoGetter: "SchedulersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRoleArn", GoGetter: "ServiceRoleArn"},
@@ -148,6 +149,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webserverVpcEndpointService", GoGetter: "WebserverVpcEndpointService"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowStart", GoGetter: "WeeklyMaintenanceWindowStart"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceWindowStartInput", GoGetter: "WeeklyMaintenanceWindowStartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerReplacementStrategy", GoGetter: "WorkerReplacementStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "workerReplacementStrategyInput", GoGetter: "WorkerReplacementStrategyInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MwaaEnvironment{}

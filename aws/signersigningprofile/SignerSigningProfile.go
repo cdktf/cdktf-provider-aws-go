@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
 type SignerSigningProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,9 @@ type SignerSigningProfile interface {
 	SignatureValidityPeriodInput() *SignerSigningProfileSignatureValidityPeriod
 	SigningMaterial() SignerSigningProfileSigningMaterialOutputReference
 	SigningMaterialInput() *SignerSigningProfileSigningMaterial
+	SigningParameters() *map[string]*string
+	SetSigningParameters(val *map[string]*string)
+	SigningParametersInput() *map[string]*string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -146,6 +149,7 @@ type SignerSigningProfile interface {
 	ResetRegion()
 	ResetSignatureValidityPeriod()
 	ResetSigningMaterial()
+	ResetSigningParameters()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -466,6 +470,26 @@ func (j *jsiiProxy_SignerSigningProfile) SigningMaterialInput() *SignerSigningPr
 	return returns
 }
 
+func (j *jsiiProxy_SignerSigningProfile) SigningParameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"signingParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignerSigningProfile) SigningParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"signingParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignerSigningProfile) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,7 +591,7 @@ func (j *jsiiProxy_SignerSigningProfile) VersionArn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
 func NewSignerSigningProfile(scope constructs.Construct, id *string, config *SignerSigningProfileConfig) SignerSigningProfile {
 	_init_.Initialize()
 
@@ -585,7 +609,7 @@ func NewSignerSigningProfile(scope constructs.Construct, id *string, config *Sig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
 func NewSignerSigningProfile_Override(s SignerSigningProfile, scope constructs.Construct, id *string, config *SignerSigningProfileConfig) {
 	_init_.Initialize()
 
@@ -715,6 +739,17 @@ func (j *jsiiProxy_SignerSigningProfile)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SignerSigningProfile)SetSigningParameters(val *map[string]*string) {
+	if err := j.validateSetSigningParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signingParameters",
 		val,
 	)
 }
@@ -1168,6 +1203,14 @@ func (s *jsiiProxy_SignerSigningProfile) ResetSigningMaterial() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSigningMaterial",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignerSigningProfile) ResetSigningParameters() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSigningParameters",
 		nil, // no parameters
 	)
 }

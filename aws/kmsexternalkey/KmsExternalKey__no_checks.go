@@ -123,6 +123,14 @@ func (j *jsiiProxy_KmsExternalKey) validateSetKeyMaterialBase64Parameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_KmsExternalKey) validateSetKeySpecParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsExternalKey) validateSetKeyUsageParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsExternalKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

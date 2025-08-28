@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
 type AppfabricIngestion interface {
 	cdktf.TerraformResource
 	App() *string
@@ -459,7 +459,7 @@ func (j *jsiiProxy_AppfabricIngestion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource.
 func NewAppfabricIngestion(scope constructs.Construct, id *string, config *AppfabricIngestionConfig) AppfabricIngestion {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewAppfabricIngestion(scope constructs.Construct, id *string, config *Appfa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource.
 func NewAppfabricIngestion_Override(a AppfabricIngestion, scope constructs.Construct, id *string, config *AppfabricIngestionConfig) {
 	_init_.Initialize()
 

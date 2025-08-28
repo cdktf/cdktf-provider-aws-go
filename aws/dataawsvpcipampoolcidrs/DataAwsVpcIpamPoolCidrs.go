@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs}.
 type DataAwsVpcIpamPoolCidrs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs} Data Source.
 func NewDataAwsVpcIpamPoolCidrs(scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolCidrsConfig) DataAwsVpcIpamPoolCidrs {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataAwsVpcIpamPoolCidrs(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam_pool_cidrs aws_vpc_ipam_pool_cidrs} Data Source.
 func NewDataAwsVpcIpamPoolCidrs_Override(d DataAwsVpcIpamPoolCidrs, scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolCidrsConfig) {
 	_init_.Initialize()
 

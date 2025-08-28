@@ -115,6 +115,10 @@ func (j *jsiiProxy_DynamodbContributorInsights) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

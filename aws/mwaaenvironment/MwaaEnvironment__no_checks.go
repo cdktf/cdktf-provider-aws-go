@@ -223,6 +223,10 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetWeeklyMaintenanceWindowStartParam
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetWorkerReplacementStrategyParameters(val *string) error {
+	return nil
+}
+
 func validateNewMwaaEnvironmentParameters(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) error {
 	return nil
 }

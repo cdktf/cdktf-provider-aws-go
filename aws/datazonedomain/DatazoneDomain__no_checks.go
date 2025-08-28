@@ -115,6 +115,10 @@ func (j *jsiiProxy_DatazoneDomain) validateSetDomainExecutionRoleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DatazoneDomain) validateSetDomainVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatazoneDomain) validateSetKmsKeyIdentifierParameters(val *string) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_DatazoneDomain) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_DatazoneDomain) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatazoneDomain) validateSetServiceRoleParameters(val *string) error {
 	return nil
 }
 

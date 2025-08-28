@@ -423,6 +423,14 @@ func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetThingParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetThingPrincipalTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewIotThingPrincipalAttachmentParameters(scope constructs.Construct, id *string, config *IotThingPrincipalAttachmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

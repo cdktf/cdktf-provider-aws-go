@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/mwaa_environment aws_mwaa_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/mwaa_environment aws_mwaa_environment}.
 type MwaaEnvironment interface {
 	cdktf.TerraformResource
 	AirflowConfigurationOptions() *map[string]*string
@@ -153,6 +153,9 @@ type MwaaEnvironment interface {
 	WeeklyMaintenanceWindowStart() *string
 	SetWeeklyMaintenanceWindowStart(val *string)
 	WeeklyMaintenanceWindowStartInput() *string
+	WorkerReplacementStrategy() *string
+	SetWorkerReplacementStrategy(val *string)
+	WorkerReplacementStrategyInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -226,6 +229,7 @@ type MwaaEnvironment interface {
 	ResetTimeouts()
 	ResetWebserverAccessMode()
 	ResetWeeklyMaintenanceWindowStart()
+	ResetWorkerReplacementStrategy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1064,8 +1068,28 @@ func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStartInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) WorkerReplacementStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerReplacementStrategy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+func (j *jsiiProxy_MwaaEnvironment) WorkerReplacementStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerReplacementStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) MwaaEnvironment {
 	_init_.Initialize()
 
@@ -1083,7 +1107,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1444,6 +1468,17 @@ func (j *jsiiProxy_MwaaEnvironment)SetWeeklyMaintenanceWindowStart(val *string) 
 	_jsii_.Set(
 		j,
 		"weeklyMaintenanceWindowStart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwaaEnvironment)SetWorkerReplacementStrategy(val *string) {
+	if err := j.validateSetWorkerReplacementStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerReplacementStrategy",
 		val,
 	)
 }
@@ -2030,6 +2065,14 @@ func (m *jsiiProxy_MwaaEnvironment) ResetWeeklyMaintenanceWindowStart() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetWeeklyMaintenanceWindowStart",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetWorkerReplacementStrategy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWorkerReplacementStrategy",
 		nil, // no parameters
 	)
 }

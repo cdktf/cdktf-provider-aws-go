@@ -39,6 +39,7 @@ type DataAwsVpcIpamsIpamsOutputReference interface {
 	InternalValue() *DataAwsVpcIpamsIpams
 	SetInternalValue(val *DataAwsVpcIpamsIpams)
 	IpamRegion() *string
+	MeteredAccount() *string
 	OperatingRegions() DataAwsVpcIpamsIpamsOperatingRegionsList
 	OwnerId() *string
 	PrivateDefaultScopeId() *string
@@ -210,6 +211,16 @@ func (j *jsiiProxy_DataAwsVpcIpamsIpamsOutputReference) IpamRegion() *string {
 	_jsii_.Get(
 		j,
 		"ipamRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcIpamsIpamsOutputReference) MeteredAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"meteredAccount",
 		&returns,
 	)
 	return returns

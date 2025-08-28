@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key aws_kms_external_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key aws_kms_external_key}.
 type KmsExternalKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -59,8 +59,13 @@ type KmsExternalKey interface {
 	KeyMaterialBase64() *string
 	SetKeyMaterialBase64(val *string)
 	KeyMaterialBase64Input() *string
+	KeySpec() *string
+	SetKeySpec(val *string)
+	KeySpecInput() *string
 	KeyState() *string
 	KeyUsage() *string
+	SetKeyUsage(val *string)
+	KeyUsageInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -150,6 +155,8 @@ type KmsExternalKey interface {
 	ResetEnabled()
 	ResetId()
 	ResetKeyMaterialBase64()
+	ResetKeySpec()
+	ResetKeyUsage()
 	ResetMultiRegion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -397,6 +404,26 @@ func (j *jsiiProxy_KmsExternalKey) KeyMaterialBase64Input() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KmsExternalKey) KeySpec() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keySpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsExternalKey) KeySpecInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keySpecInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsExternalKey) KeyState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -412,6 +439,16 @@ func (j *jsiiProxy_KmsExternalKey) KeyUsage() *string {
 	_jsii_.Get(
 		j,
 		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsExternalKey) KeyUsageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyUsageInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +655,7 @@ func (j *jsiiProxy_KmsExternalKey) ValidToInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key aws_kms_external_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key aws_kms_external_key} Resource.
 func NewKmsExternalKey(scope constructs.Construct, id *string, config *KmsExternalKeyConfig) KmsExternalKey {
 	_init_.Initialize()
 
@@ -636,7 +673,7 @@ func NewKmsExternalKey(scope constructs.Construct, id *string, config *KmsExtern
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/kms_external_key aws_kms_external_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/kms_external_key aws_kms_external_key} Resource.
 func NewKmsExternalKey_Override(k KmsExternalKey, scope constructs.Construct, id *string, config *KmsExternalKeyConfig) {
 	_init_.Initialize()
 
@@ -747,6 +784,28 @@ func (j *jsiiProxy_KmsExternalKey)SetKeyMaterialBase64(val *string) {
 	_jsii_.Set(
 		j,
 		"keyMaterialBase64",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsExternalKey)SetKeySpec(val *string) {
+	if err := j.validateSetKeySpecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keySpec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsExternalKey)SetKeyUsage(val *string) {
+	if err := j.validateSetKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyUsage",
 		val,
 	)
 }
@@ -1244,6 +1303,22 @@ func (k *jsiiProxy_KmsExternalKey) ResetKeyMaterialBase64() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetKeyMaterialBase64",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsExternalKey) ResetKeySpec() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKeySpec",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsExternalKey) ResetKeyUsage() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetKeyUsage",
 		nil, // no parameters
 	)
 }

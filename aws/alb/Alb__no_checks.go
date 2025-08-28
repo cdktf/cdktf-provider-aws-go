@@ -219,6 +219,10 @@ func (j *jsiiProxy_Alb) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetSecondaryIpsAutoAssignedPerSubnetParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetSecurityGroupsParameters(val *[]*string) error {
 	return nil
 }

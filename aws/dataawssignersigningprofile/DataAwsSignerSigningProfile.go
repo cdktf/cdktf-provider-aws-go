@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}.
 type DataAwsSignerSigningProfile interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -61,6 +61,8 @@ type DataAwsSignerSigningProfile interface {
 	RegionInput() *string
 	RevocationRecord() DataAwsSignerSigningProfileRevocationRecordList
 	SignatureValidityPeriod() DataAwsSignerSigningProfileSignatureValidityPeriodList
+	SigningMaterial() DataAwsSignerSigningProfileSigningMaterialList
+	SigningParameters() cdktf.StringMap
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -343,6 +345,26 @@ func (j *jsiiProxy_DataAwsSignerSigningProfile) SignatureValidityPeriod() DataAw
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSignerSigningProfile) SigningMaterial() DataAwsSignerSigningProfileSigningMaterialList {
+	var returns DataAwsSignerSigningProfileSigningMaterialList
+	_jsii_.Get(
+		j,
+		"signingMaterial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSignerSigningProfile) SigningParameters() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"signingParameters",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSignerSigningProfile) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,7 +446,7 @@ func (j *jsiiProxy_DataAwsSignerSigningProfile) VersionArn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source.
 func NewDataAwsSignerSigningProfile(scope constructs.Construct, id *string, config *DataAwsSignerSigningProfileConfig) DataAwsSignerSigningProfile {
 	_init_.Initialize()
 
@@ -442,7 +464,7 @@ func NewDataAwsSignerSigningProfile(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source.
 func NewDataAwsSignerSigningProfile_Override(d DataAwsSignerSigningProfile, scope constructs.Construct, id *string, config *DataAwsSignerSigningProfileConfig) {
 	_init_.Initialize()
 

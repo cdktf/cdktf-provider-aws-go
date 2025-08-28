@@ -34,6 +34,7 @@ type DataAwsGlueCatalogTablePartitionKeysOutputReference interface {
 	InternalValue() *DataAwsGlueCatalogTablePartitionKeys
 	SetInternalValue(val *DataAwsGlueCatalogTablePartitionKeys)
 	Name() *string
+	Parameters() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionKeysOutputReference) Name() *
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionKeysOutputReference) Parameters() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"parameters",
 		&returns,
 	)
 	return returns

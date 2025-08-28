@@ -51,6 +51,14 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutAws
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeRepositoryProjectNameParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeRepositoryProviderTypeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutCodeVulnerabilityDetectorNameParameters(value interface{}) error {
 	return nil
 }
@@ -88,6 +96,14 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcr
 }
 
 func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcrImageHashParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcrImageInUseCountParameters(value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutEcrImageLastInUseAtParameters(value interface{}) error {
 	return nil
 }
 

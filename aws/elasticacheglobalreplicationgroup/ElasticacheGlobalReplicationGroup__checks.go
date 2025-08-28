@@ -376,6 +376,14 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetEngineParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetEngineVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

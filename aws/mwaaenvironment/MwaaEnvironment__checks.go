@@ -632,6 +632,14 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetWeeklyMaintenanceWindowStartParam
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetWorkerReplacementStrategyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewMwaaEnvironmentParameters(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

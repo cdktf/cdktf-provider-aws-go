@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
 type DlmLifecyclePolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,6 +28,9 @@ type DlmLifecyclePolicy interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultPolicy() *string
+	SetDefaultPolicy(val *string)
+	DefaultPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type DlmLifecyclePolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPolicyDetails(value *DlmLifecyclePolicyPolicyDetails)
+	ResetDefaultPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_DlmLifecyclePolicy) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) DefaultPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy) DefaultPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultPolicyInput",
 		&returns,
 	)
 	return returns
@@ -486,7 +510,7 @@ func (j *jsiiProxy_DlmLifecyclePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
 func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) DlmLifecyclePolicy {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
 func NewDlmLifecyclePolicy_Override(d DlmLifecyclePolicy, scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) {
 	_init_.Initialize()
 
@@ -533,6 +557,17 @@ func (j *jsiiProxy_DlmLifecyclePolicy)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicy)SetDefaultPolicy(val *string) {
+	if err := j.validateSetDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultPolicy",
 		val,
 	)
 }
@@ -1021,6 +1056,14 @@ func (d *jsiiProxy_DlmLifecyclePolicy) PutPolicyDetails(value *DlmLifecyclePolic
 		d,
 		"putPolicyDetails",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) ResetDefaultPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultPolicy",
+		nil, // no parameters
 	)
 }
 

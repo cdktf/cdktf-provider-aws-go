@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/vpc_ipam aws_vpc_ipam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_ipam aws_vpc_ipam}.
 type VpcIpam interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -58,6 +58,9 @@ type VpcIpam interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MeteredAccount() *string
+	SetMeteredAccount(val *string)
+	MeteredAccountInput() *string
 	// The tree node.
 	Node() constructs.Node
 	OperatingRegions() VpcIpamOperatingRegionsList
@@ -144,6 +147,7 @@ type VpcIpam interface {
 	ResetDescription()
 	ResetEnablePrivateGua()
 	ResetId()
+	ResetMeteredAccount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -370,6 +374,26 @@ func (j *jsiiProxy_VpcIpam) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpam) MeteredAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"meteredAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpam) MeteredAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"meteredAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpam) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -591,7 +615,7 @@ func (j *jsiiProxy_VpcIpam) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) VpcIpam {
 	_init_.Initialize()
 
@@ -609,7 +633,7 @@ func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam_Override(v VpcIpam, scope constructs.Construct, id *string, config *VpcIpamConfig) {
 	_init_.Initialize()
 
@@ -709,6 +733,17 @@ func (j *jsiiProxy_VpcIpam)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpam)SetMeteredAccount(val *string) {
+	if err := j.validateSetMeteredAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"meteredAccount",
 		val,
 	)
 }
@@ -1179,6 +1214,14 @@ func (v *jsiiProxy_VpcIpam) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpam) ResetMeteredAccount() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMeteredAccount",
 		nil, // no parameters
 	)
 }

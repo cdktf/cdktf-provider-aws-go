@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/dx_gateway aws_dx_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/dx_gateway aws_dx_gateway}.
 type DataAwsDxGateway interface {
 	cdktf.TerraformDataSource
 	AmazonSideAsn() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataAwsDxGateway) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/dx_gateway aws_dx_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/dx_gateway aws_dx_gateway} Data Source.
 func NewDataAwsDxGateway(scope constructs.Construct, id *string, config *DataAwsDxGatewayConfig) DataAwsDxGateway {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataAwsDxGateway(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/dx_gateway aws_dx_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/dx_gateway aws_dx_gateway} Data Source.
 func NewDataAwsDxGateway_Override(d DataAwsDxGateway, scope constructs.Construct, id *string, config *DataAwsDxGatewayConfig) {
 	_init_.Initialize()
 

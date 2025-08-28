@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam aws_vpc_ipam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam aws_vpc_ipam}.
 type DataAwsVpcIpam interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -48,6 +48,7 @@ type DataAwsVpcIpam interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MeteredAccount() *string
 	// The tree node.
 	Node() constructs.Node
 	OperatingRegions() DataAwsVpcIpamOperatingRegionsList
@@ -283,6 +284,16 @@ func (j *jsiiProxy_DataAwsVpcIpam) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcIpam) MeteredAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"meteredAccount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcIpam) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -464,7 +475,7 @@ func (j *jsiiProxy_DataAwsVpcIpam) Tier() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam aws_vpc_ipam} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam aws_vpc_ipam} Data Source.
 func NewDataAwsVpcIpam(scope constructs.Construct, id *string, config *DataAwsVpcIpamConfig) DataAwsVpcIpam {
 	_init_.Initialize()
 
@@ -482,7 +493,7 @@ func NewDataAwsVpcIpam(scope constructs.Construct, id *string, config *DataAwsVp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/data-sources/vpc_ipam aws_vpc_ipam} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/vpc_ipam aws_vpc_ipam} Data Source.
 func NewDataAwsVpcIpam_Override(d DataAwsVpcIpam, scope constructs.Construct, id *string, config *DataAwsVpcIpamConfig) {
 	_init_.Initialize()
 

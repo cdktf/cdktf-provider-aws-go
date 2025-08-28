@@ -47,6 +47,10 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) valid
 	return nil
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validatePutArchiveRuleParameters(value *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validatePutCreateRuleParameters(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule) error {
 	return nil
 }

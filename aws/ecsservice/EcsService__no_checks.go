@@ -235,6 +235,10 @@ func (j *jsiiProxy_EcsService) validateSetSchedulingStrategyParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_EcsService) validateSetSigintRollbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetNetworkCardIndexParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

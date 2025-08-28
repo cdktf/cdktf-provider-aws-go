@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle}.
 type AppfabricAppBundle interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AppfabricAppBundle) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle} Resource.
 func NewAppfabricAppBundle(scope constructs.Construct, id *string, config *AppfabricAppBundleConfig) AppfabricAppBundle {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAppfabricAppBundle(scope constructs.Construct, id *string, config *Appfa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/appfabric_app_bundle aws_appfabric_app_bundle} Resource.
 func NewAppfabricAppBundle_Override(a AppfabricAppBundle, scope constructs.Construct, id *string, config *AppfabricAppBundleConfig) {
 	_init_.Initialize()
 

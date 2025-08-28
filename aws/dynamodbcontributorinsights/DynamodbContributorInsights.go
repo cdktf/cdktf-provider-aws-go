@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
 type DynamodbContributorInsights interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type DynamodbContributorInsights interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -121,6 +124,7 @@ type DynamodbContributorInsights interface {
 	PutTimeouts(value *DynamodbContributorInsightsTimeouts)
 	ResetId()
 	ResetIndexName()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_DynamodbContributorInsights) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbContributorInsights) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -405,7 +429,7 @@ func (j *jsiiProxy_DynamodbContributorInsights) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights(scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) DynamodbContributorInsights {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewDynamodbContributorInsights(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights_Override(d DynamodbContributorInsights, scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) {
 	_init_.Initialize()
 
@@ -501,6 +525,17 @@ func (j *jsiiProxy_DynamodbContributorInsights)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbContributorInsights)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (d *jsiiProxy_DynamodbContributorInsights) ResetIndexName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIndexName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbContributorInsights) ResetMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMode",
 		nil, // no parameters
 	)
 }

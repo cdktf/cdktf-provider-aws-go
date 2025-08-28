@@ -36,6 +36,7 @@ type DataAwsNetworkInterfaceAttachmentOutputReference interface {
 	InstanceOwnerId() *string
 	InternalValue() *DataAwsNetworkInterfaceAttachment
 	SetInternalValue(val *DataAwsNetworkInterfaceAttachment)
+	NetworkCardIndex() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkInterfaceAttachmentOutputReference) NetworkCardIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"networkCardIndex",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/network_interface_attachment aws_network_interface_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/network_interface_attachment aws_network_interface_attachment}.
 type NetworkInterfaceAttachmentA interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -53,6 +53,9 @@ type NetworkInterfaceAttachmentA interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NetworkCardIndex() *float64
+	SetNetworkCardIndex(val *float64)
+	NetworkCardIndexInput() *float64
 	NetworkInterfaceId() *string
 	SetNetworkInterfaceId(val *string)
 	NetworkInterfaceIdInput() *string
@@ -122,6 +125,7 @@ type NetworkInterfaceAttachmentA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetNetworkCardIndex()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) Lifecycle() *cdktf.TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) NetworkCardIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"networkCardIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkInterfaceAttachmentA) NetworkCardIndexInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"networkCardIndexInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkInterfaceAttachmentA) NetworkInterfaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -425,7 +449,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/network_interface_attachment aws_network_interface_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/network_interface_attachment aws_network_interface_attachment} Resource.
 func NewNetworkInterfaceAttachmentA(scope constructs.Construct, id *string, config *NetworkInterfaceAttachmentAConfig) NetworkInterfaceAttachmentA {
 	_init_.Initialize()
 
@@ -443,7 +467,7 @@ func NewNetworkInterfaceAttachmentA(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/network_interface_attachment aws_network_interface_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/network_interface_attachment aws_network_interface_attachment} Resource.
 func NewNetworkInterfaceAttachmentA_Override(n NetworkInterfaceAttachmentA, scope constructs.Construct, id *string, config *NetworkInterfaceAttachmentAConfig) {
 	_init_.Initialize()
 
@@ -532,6 +556,17 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkInterfaceAttachmentA)SetNetworkCardIndex(val *float64) {
+	if err := j.validateSetNetworkCardIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkCardIndex",
 		val,
 	)
 }
@@ -934,6 +969,14 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) ResetNetworkCardIndex() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNetworkCardIndex",
 		nil, // no parameters
 	)
 }

@@ -135,6 +135,10 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetDnsServersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetEndpointIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -176,6 +180,10 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetTagsParameters(val *map[stri
 }
 
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetTrafficIpAddressTypeParameters(val *string) error {
 	return nil
 }
 

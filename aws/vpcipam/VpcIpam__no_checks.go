@@ -127,6 +127,10 @@ func (j *jsiiProxy_VpcIpam) validateSetLifecycleParameters(val *cdktf.TerraformR
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpam) validateSetMeteredAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpam) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

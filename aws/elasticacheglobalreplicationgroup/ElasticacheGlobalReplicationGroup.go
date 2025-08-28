@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group}.
 type ElasticacheGlobalReplicationGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -42,6 +42,8 @@ type ElasticacheGlobalReplicationGroup interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Engine() *string
+	SetEngine(val *string)
+	EngineInput() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
 	EngineVersionActual() *string
@@ -148,6 +150,7 @@ type ElasticacheGlobalReplicationGroup interface {
 	PutTimeouts(value *ElasticacheGlobalReplicationGroupTimeouts)
 	ResetAutomaticFailoverEnabled()
 	ResetCacheNodeType()
+	ResetEngine()
 	ResetEngineVersion()
 	ResetGlobalReplicationGroupDescription()
 	ResetId()
@@ -311,6 +314,16 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) Engine() *string {
 	_jsii_.Get(
 		j,
 		"engine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) EngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineInput",
 		&returns,
 	)
 	return returns
@@ -647,7 +660,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) TransitEncryptionEnabled()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
 func NewElasticacheGlobalReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheGlobalReplicationGroupConfig) ElasticacheGlobalReplicationGroup {
 	_init_.Initialize()
 
@@ -665,7 +678,7 @@ func NewElasticacheGlobalReplicationGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.10.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/elasticache_global_replication_group aws_elasticache_global_replication_group} Resource.
 func NewElasticacheGlobalReplicationGroup_Override(e ElasticacheGlobalReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheGlobalReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -724,6 +737,17 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetDependsOn(val *[]*string
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engine",
 		val,
 	)
 }
@@ -1230,6 +1254,14 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetCacheNodeType() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCacheNodeType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetEngine() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEngine",
 		nil, // no parameters
 	)
 }

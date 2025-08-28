@@ -38,6 +38,9 @@ type GlueCatalogTablePartitionKeysOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Parameters() *map[string]*string
+	SetParameters(val *map[string]*string)
+	ParametersInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type GlueCatalogTablePartitionKeysOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetComment()
+	ResetParameters()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -175,6 +179,26 @@ func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) NameInput() *st
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) Parameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) ParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parametersInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference)SetName(val *str
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
 		val,
 	)
 }
@@ -526,6 +561,14 @@ func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) ResetComment() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetComment",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

@@ -39,8 +39,6 @@ type SpotInstanceRequestNetworkInterfaceOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	NetworkCardIndex() *float64
-	SetNetworkCardIndex(val *float64)
-	NetworkCardIndexInput() *float64
 	NetworkInterfaceId() *string
 	SetNetworkInterfaceId(val *string)
 	NetworkInterfaceIdInput() *string
@@ -77,7 +75,6 @@ type SpotInstanceRequestNetworkInterfaceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeleteOnTermination()
-	ResetNetworkCardIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -188,16 +185,6 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) NetworkCa
 	_jsii_.Get(
 		j,
 		"networkCardIndex",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) NetworkCardIndexInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"networkCardIndexInput",
 		&returns,
 	)
 	return returns
@@ -322,17 +309,6 @@ func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference)SetNetworkCardIndex(val *float64) {
-	if err := j.validateSetNetworkCardIndexParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"networkCardIndex",
 		val,
 	)
 }
@@ -560,14 +536,6 @@ func (s *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) ResetDele
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeleteOnTermination",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference) ResetNetworkCardIndex() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetNetworkCardIndex",
 		nil, // no parameters
 	)
 }

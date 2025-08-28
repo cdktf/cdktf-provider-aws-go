@@ -44,6 +44,8 @@ type DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference interface 
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Scripts() DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference
+	ScriptsInput() *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,10 +81,12 @@ type DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScripts(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts)
 	ResetCronExpression()
 	ResetInterval()
 	ResetIntervalUnit()
 	ResetLocation()
+	ResetScripts()
 	ResetTimes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -224,6 +228,26 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputRefere
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) Scripts() DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference {
+	var returns DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference
+	_jsii_.Get(
+		j,
+		"scripts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) ScriptsInput() *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts {
+	var returns *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts
+	_jsii_.Get(
+		j,
+		"scriptsInput",
 		&returns,
 	)
 	return returns
@@ -593,6 +617,17 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputRefere
 	return returns
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) PutScripts(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScripts) {
+	if err := d.validatePutScriptsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putScripts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) ResetCronExpression() {
 	_jsii_.InvokeVoid(
 		d,
@@ -621,6 +656,14 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference) ResetScripts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetScripts",
 		nil, // no parameters
 	)
 }
