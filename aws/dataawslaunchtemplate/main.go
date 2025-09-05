@@ -1863,6 +1863,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupId", GoGetter: "GroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "groupName", GoGetter: "GroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "hostId", GoGetter: "HostId"},
 			_jsii_.MemberProperty{JsiiProperty: "hostResourceGroupArn", GoGetter: "HostResourceGroupArn"},

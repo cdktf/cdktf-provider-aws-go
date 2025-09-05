@@ -22,17 +22,17 @@ type DxHostedConnectionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#bandwidth DxHostedConnection#bandwidth}.
 	Bandwidth *string `field:"required" json:"bandwidth" yaml:"bandwidth"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#connection_id DxHostedConnection#connection_id}.
 	ConnectionId *string `field:"required" json:"connectionId" yaml:"connectionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#name DxHostedConnection#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#owner_account_id DxHostedConnection#owner_account_id}.
 	OwnerAccountId *string `field:"required" json:"ownerAccountId" yaml:"ownerAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#vlan DxHostedConnection#vlan}.
 	Vlan *float64 `field:"required" json:"vlan" yaml:"vlan"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dx_hosted_connection#id DxHostedConnection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

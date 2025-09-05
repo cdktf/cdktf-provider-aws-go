@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/efs_mount_target aws_efs_mount_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/efs_mount_target aws_efs_mount_target}.
 type EfsMountTarget interface {
 	cdktf.TerraformResource
 	AvailabilityZoneId() *string
@@ -52,6 +52,12 @@ type EfsMountTarget interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -134,6 +140,8 @@ type EfsMountTarget interface {
 	PutTimeouts(value *EfsMountTargetTimeouts)
 	ResetId()
 	ResetIpAddress()
+	ResetIpAddressType()
+	ResetIpv6Address()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -338,6 +346,46 @@ func (j *jsiiProxy_EfsMountTarget) IpAddressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EfsMountTarget) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsMountTarget) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -529,7 +577,7 @@ func (j *jsiiProxy_EfsMountTarget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
 func NewEfsMountTarget(scope constructs.Construct, id *string, config *EfsMountTargetConfig) EfsMountTarget {
 	_init_.Initialize()
 
@@ -547,7 +595,7 @@ func NewEfsMountTarget(scope constructs.Construct, id *string, config *EfsMountT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/efs_mount_target aws_efs_mount_target} Resource.
 func NewEfsMountTarget_Override(e EfsMountTarget, scope constructs.Construct, id *string, config *EfsMountTargetConfig) {
 	_init_.Initialize()
 
@@ -625,6 +673,28 @@ func (j *jsiiProxy_EfsMountTarget)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsMountTarget)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsMountTarget)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -1068,6 +1138,22 @@ func (e *jsiiProxy_EfsMountTarget) ResetIpAddress() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsMountTarget) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpAddressType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsMountTarget) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

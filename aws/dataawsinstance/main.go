@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordData", GoGetter: "PasswordData"},
 			_jsii_.MemberProperty{JsiiProperty: "placementGroup", GoGetter: "PlacementGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "placementGroupId", GoGetter: "PlacementGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "placementPartitionNumber", GoGetter: "PlacementPartitionNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "privateDns", GoGetter: "PrivateDns"},
 			_jsii_.MemberProperty{JsiiProperty: "privateDnsNameOptions", GoGetter: "PrivateDnsNameOptions"},

@@ -36,6 +36,9 @@ type LaunchTemplatePlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GroupId() *string
+	SetGroupId(val *string)
+	GroupIdInput() *string
 	GroupName() *string
 	SetGroupName(val *string)
 	GroupNameInput() *string
@@ -90,6 +93,7 @@ type LaunchTemplatePlacementOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAffinity()
 	ResetAvailabilityZone()
+	ResetGroupId()
 	ResetGroupName()
 	ResetHostId()
 	ResetHostResourceGroupArn()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) GroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) GroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupIdInput",
 		&returns,
 	)
 	return returns
@@ -409,6 +433,17 @@ func (j *jsiiProxy_LaunchTemplatePlacementOutputReference)SetComplexObjectIsFrom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplatePlacementOutputReference)SetGroupId(val *string) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupId",
 		val,
 	)
 }
@@ -710,6 +745,14 @@ func (l *jsiiProxy_LaunchTemplatePlacementOutputReference) ResetAvailabilityZone
 	_jsii_.InvokeVoid(
 		l,
 		"resetAvailabilityZone",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplatePlacementOutputReference) ResetGroupId() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetGroupId",
 		nil, // no parameters
 	)
 }

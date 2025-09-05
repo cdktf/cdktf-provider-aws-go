@@ -38,9 +38,6 @@ type ServicecatalogProvisionedProductTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Read() *string
-	SetRead(val *string)
-	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -78,7 +75,6 @@ type ServicecatalogProvisionedProductTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -180,26 +176,6 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) Read() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"read",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) ReadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readInput",
 		&returns,
 	)
 	return returns
@@ -324,17 +300,6 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference)SetRead(val *string) {
-	if err := j.validateSetReadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"read",
 		val,
 	)
 }
@@ -570,14 +535,6 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		s,
 		"resetDelete",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) ResetRead() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRead",
 		nil, // no parameters
 	)
 }

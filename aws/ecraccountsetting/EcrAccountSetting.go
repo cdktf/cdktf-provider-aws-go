@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting aws_ecr_account_setting}.
 type EcrAccountSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_EcrAccountSetting) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecr_account_setting aws_ecr_account_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting aws_ecr_account_setting} Resource.
 func NewEcrAccountSetting(scope constructs.Construct, id *string, config *EcrAccountSettingConfig) EcrAccountSetting {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewEcrAccountSetting(scope constructs.Construct, id *string, config *EcrAcc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/ecr_account_setting aws_ecr_account_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/ecr_account_setting aws_ecr_account_setting} Resource.
 func NewEcrAccountSetting_Override(e EcrAccountSetting, scope constructs.Construct, id *string, config *EcrAccountSettingConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package quicksighttemplate
 type QuicksightTemplateSourceEntity struct {
 	// source_analysis block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
 	SourceAnalysis *QuicksightTemplateSourceEntitySourceAnalysis `field:"optional" json:"sourceAnalysis" yaml:"sourceAnalysis"`
 	// source_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
 	SourceTemplate *QuicksightTemplateSourceEntitySourceTemplate `field:"optional" json:"sourceTemplate" yaml:"sourceTemplate"`
 }
 

@@ -840,6 +840,14 @@ func (j *jsiiProxy_SpotInstanceRequest) validateSetPlacementGroupParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SpotInstanceRequest) validateSetPlacementGroupIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequest) validateSetPlacementPartitionNumberParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

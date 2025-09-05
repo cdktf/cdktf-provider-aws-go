@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/efs_mount_target aws_efs_mount_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/efs_mount_target aws_efs_mount_target}.
 type DataAwsEfsMountTarget interface {
 	cdktf.TerraformDataSource
 	AccessPointId() *string
@@ -49,6 +49,8 @@ type DataAwsEfsMountTarget interface {
 	SetId(val *string)
 	IdInput() *string
 	IpAddress() *string
+	IpAddressType() *string
+	Ipv6Address() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -310,6 +312,26 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) IpAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEfsMountTarget) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEfsMountTarget) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEfsMountTarget) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -471,7 +493,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
 func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) DataAwsEfsMountTarget {
 	_init_.Initialize()
 
@@ -489,7 +511,7 @@ func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
 func NewDataAwsEfsMountTarget_Override(d DataAwsEfsMountTarget, scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) {
 	_init_.Initialize()
 

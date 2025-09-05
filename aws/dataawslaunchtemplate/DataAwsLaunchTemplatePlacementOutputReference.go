@@ -32,6 +32,7 @@ type DataAwsLaunchTemplatePlacementOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GroupId() *string
 	GroupName() *string
 	HostId() *string
 	HostResourceGroupArn() *string
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplatePlacementOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplatePlacementOutputReference) GroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupId",
 		&returns,
 	)
 	return returns

@@ -194,6 +194,14 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetEnvironm
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetEphemeralStorageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetInternalValueParameters(val *SyntheticsCanaryRunConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

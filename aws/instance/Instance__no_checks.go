@@ -247,6 +247,10 @@ func (j *jsiiProxy_Instance) validateSetPlacementGroupParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_Instance) validateSetPlacementGroupIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Instance) validateSetPlacementPartitionNumberParameters(val *float64) error {
 	return nil
 }

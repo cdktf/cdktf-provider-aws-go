@@ -7,7 +7,7 @@ package accessanalyzeranalyzer
 type AccessanalyzerAnalyzerConfigurationInternalAccess struct {
 	// analysis_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/accessanalyzer_analyzer#analysis_rule AccessanalyzerAnalyzer#analysis_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/accessanalyzer_analyzer#analysis_rule AccessanalyzerAnalyzer#analysis_rule}
 	AnalysisRule *AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule `field:"optional" json:"analysisRule" yaml:"analysisRule"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/lambda_function aws_lambda_function}.
 type DataAwsLambdaFunction interface {
 	cdktf.TerraformDataSource
 	Architectures() *[]*string
@@ -85,6 +85,7 @@ type DataAwsLambdaFunction interface {
 	SigningProfileVersionArn() *string
 	SourceCodeHash() *string
 	SourceCodeSize() *float64
+	SourceKmsKeyArn() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -599,6 +600,16 @@ func (j *jsiiProxy_DataAwsLambdaFunction) SourceCodeSize() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunction) SourceKmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceKmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLambdaFunction) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -690,7 +701,7 @@ func (j *jsiiProxy_DataAwsLambdaFunction) VpcConfig() DataAwsLambdaFunctionVpcCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/lambda_function aws_lambda_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/lambda_function aws_lambda_function} Data Source.
 func NewDataAwsLambdaFunction(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionConfig) DataAwsLambdaFunction {
 	_init_.Initialize()
 
@@ -708,7 +719,7 @@ func NewDataAwsLambdaFunction(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/data-sources/lambda_function aws_lambda_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/lambda_function aws_lambda_function} Data Source.
 func NewDataAwsLambdaFunction_Override(d DataAwsLambdaFunction, scope constructs.Construct, id *string, config *DataAwsLambdaFunctionConfig) {
 	_init_.Initialize()
 

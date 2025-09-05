@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -150,6 +150,9 @@ type LambdaFunction interface {
 	SetSourceCodeHash(val *string)
 	SourceCodeHashInput() *string
 	SourceCodeSize() *float64
+	SourceKmsKeyArn() *string
+	SetSourceKmsKeyArn(val *string)
+	SourceKmsKeyArnInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -257,6 +260,7 @@ type LambdaFunction interface {
 	ResetSkipDestroy()
 	ResetSnapStart()
 	ResetSourceCodeHash()
+	ResetSourceKmsKeyArn()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeout()
@@ -1121,6 +1125,26 @@ func (j *jsiiProxy_LambdaFunction) SourceCodeSize() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunction) SourceKmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceKmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) SourceKmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceKmsKeyArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunction) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1282,7 +1306,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1300,7 +1324,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -1639,6 +1663,17 @@ func (j *jsiiProxy_LambdaFunction)SetSourceCodeHash(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceCodeHash",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetSourceKmsKeyArn(val *string) {
+	if err := j.validateSetSourceKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceKmsKeyArn",
 		val,
 	)
 }
@@ -2375,6 +2410,14 @@ func (l *jsiiProxy_LambdaFunction) ResetSourceCodeHash() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSourceCodeHash",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetSourceKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSourceKmsKeyArn",
 		nil, // no parameters
 	)
 }

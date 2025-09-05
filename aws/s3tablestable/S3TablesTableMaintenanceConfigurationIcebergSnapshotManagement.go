@@ -5,9 +5,9 @@ package s3tablestable
 
 
 type S3TablesTableMaintenanceConfigurationIcebergSnapshotManagement struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/s3tables_table#settings S3TablesTable#settings}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/s3tables_table#settings S3TablesTable#settings}.
 	Settings *S3TablesTableMaintenanceConfigurationIcebergSnapshotManagementSettings `field:"optional" json:"settings" yaml:"settings"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/s3tables_table#status S3TablesTable#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/s3tables_table#status S3TablesTable#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

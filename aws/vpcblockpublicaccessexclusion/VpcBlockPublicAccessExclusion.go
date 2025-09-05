@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion}.
 type VpcBlockPublicAccessExclusion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_VpcBlockPublicAccessExclusion) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
 func NewVpcBlockPublicAccessExclusion(scope constructs.Construct, id *string, config *VpcBlockPublicAccessExclusionConfig) VpcBlockPublicAccessExclusion {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewVpcBlockPublicAccessExclusion(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/vpc_block_public_access_exclusion aws_vpc_block_public_access_exclusion} Resource.
 func NewVpcBlockPublicAccessExclusion_Override(v VpcBlockPublicAccessExclusion, scope constructs.Construct, id *string, config *VpcBlockPublicAccessExclusionConfig) {
 	_init_.Initialize()
 

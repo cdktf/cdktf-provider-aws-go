@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/bedrockagent_flow#json BedrockagentFlow#json}.
 	Json *string `field:"optional" json:"json" yaml:"json"`
 }
 

@@ -22,15 +22,15 @@ type NotificationsEventRuleConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/notifications_event_rule#event_type NotificationsEventRule#event_type}.
 	EventType *string `field:"required" json:"eventType" yaml:"eventType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/notifications_event_rule#notification_configuration_arn NotificationsEventRule#notification_configuration_arn}.
 	NotificationConfigurationArn *string `field:"required" json:"notificationConfigurationArn" yaml:"notificationConfigurationArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/notifications_event_rule#regions NotificationsEventRule#regions}.
 	Regions *[]*string `field:"required" json:"regions" yaml:"regions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/notifications_event_rule#source NotificationsEventRule#source}.
 	Source *string `field:"required" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/notifications_event_rule#event_pattern NotificationsEventRule#event_pattern}.
 	EventPattern *string `field:"optional" json:"eventPattern" yaml:"eventPattern"`
 }
 

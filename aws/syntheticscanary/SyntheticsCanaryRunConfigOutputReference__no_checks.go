@@ -67,6 +67,10 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetEnvironm
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetEphemeralStorageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateSetInternalValueParameters(val *SyntheticsCanaryRunConfig) error {
 	return nil
 }

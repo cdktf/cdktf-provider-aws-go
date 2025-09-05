@@ -67,6 +67,10 @@ func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetGroupIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplatePlacementOutputReference) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,14 @@ func (j *jsiiProxy_EfsMountTarget) validateSetIpAddressParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_EfsMountTarget) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EfsMountTarget) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsMountTarget) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

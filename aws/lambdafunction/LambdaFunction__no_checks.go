@@ -243,6 +243,10 @@ func (j *jsiiProxy_LambdaFunction) validateSetSourceCodeHashParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunction) validateSetSourceKmsKeyArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunction) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -34,6 +34,9 @@ type SyntheticsCanaryRunConfigOutputReference interface {
 	EnvironmentVariables() *map[string]*string
 	SetEnvironmentVariables(val *map[string]*string)
 	EnvironmentVariablesInput() *map[string]*string
+	EphemeralStorage() *float64
+	SetEphemeralStorage(val *float64)
+	EphemeralStorageInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SyntheticsCanaryRunConfig
@@ -78,6 +81,7 @@ type SyntheticsCanaryRunConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetActiveTracing()
 	ResetEnvironmentVariables()
+	ResetEphemeralStorage()
 	ResetMemoryInMb()
 	ResetTimeoutInSeconds()
 	// Produce the Token's value at resolution time.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) EnvironmentVariable
 	_jsii_.Get(
 		j,
 		"environmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) EphemeralStorage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ephemeralStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) EphemeralStorageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ephemeralStorageInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetEnvironmentVariab
 	_jsii_.Set(
 		j,
 		"environmentVariables",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCanaryRunConfigOutputReference)SetEphemeralStorage(val *float64) {
+	if err := j.validateSetEphemeralStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ephemeralStorage",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ResetEnvironmentVar
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) ResetEphemeralStorage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEphemeralStorage",
 		nil, // no parameters
 	)
 }

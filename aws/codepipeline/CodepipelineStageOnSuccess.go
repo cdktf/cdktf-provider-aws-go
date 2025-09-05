@@ -7,7 +7,7 @@ package codepipeline
 type CodepipelineStageOnSuccess struct {
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/codepipeline#condition Codepipeline#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/codepipeline#condition Codepipeline#condition}
 	Condition *CodepipelineStageOnSuccessCondition `field:"required" json:"condition" yaml:"condition"`
 }
 

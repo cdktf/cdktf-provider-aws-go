@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -134,6 +134,9 @@ type Instance interface {
 	PasswordData() *string
 	PlacementGroup() *string
 	SetPlacementGroup(val *string)
+	PlacementGroupId() *string
+	SetPlacementGroupId(val *string)
+	PlacementGroupIdInput() *string
 	PlacementGroupInput() *string
 	PlacementPartitionNumber() *float64
 	SetPlacementPartitionNumber(val *float64)
@@ -302,6 +305,7 @@ type Instance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlacementGroup()
+	ResetPlacementGroupId()
 	ResetPlacementPartitionNumber()
 	ResetPrimaryNetworkInterface()
 	ResetPrivateDnsNameOptions()
@@ -1119,6 +1123,26 @@ func (j *jsiiProxy_Instance) PlacementGroup() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Instance) PlacementGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroupId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) PlacementGroupIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Instance) PlacementGroupInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1620,7 +1644,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1638,7 +1662,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -1925,6 +1949,17 @@ func (j *jsiiProxy_Instance)SetPlacementGroup(val *string) {
 	_jsii_.Set(
 		j,
 		"placementGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Instance)SetPlacementGroupId(val *string) {
+	if err := j.validateSetPlacementGroupIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"placementGroupId",
 		val,
 	)
 }
@@ -2891,6 +2926,14 @@ func (i *jsiiProxy_Instance) ResetPlacementGroup() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPlacementGroup",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetPlacementGroupId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPlacementGroupId",
 		nil, // no parameters
 	)
 }

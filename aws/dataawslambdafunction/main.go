@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "signingProfileVersionArn", GoGetter: "SigningProfileVersionArn"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCodeHash", GoGetter: "SourceCodeHash"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCodeSize", GoGetter: "SourceCodeSize"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceKmsKeyArn", GoGetter: "SourceKmsKeyArn"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},

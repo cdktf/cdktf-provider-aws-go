@@ -22,14 +22,14 @@ type WafRegexPatternSetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.11.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
 	RegexPatternStrings *[]*string `field:"optional" json:"regexPatternStrings" yaml:"regexPatternStrings"`
 }
 
