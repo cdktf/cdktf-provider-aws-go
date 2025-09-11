@@ -218,6 +218,14 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationI
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateSetRunRateInHoursParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateSetSnapshotRetentionPeriodInDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

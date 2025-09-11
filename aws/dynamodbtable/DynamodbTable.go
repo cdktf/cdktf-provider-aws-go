@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -135,6 +135,8 @@ type DynamodbTable interface {
 	TimeoutsInput() interface{}
 	Ttl() DynamodbTableTtlOutputReference
 	TtlInput() *DynamodbTableTtl
+	WarmThroughput() DynamodbTableWarmThroughputOutputReference
+	WarmThroughputInput() *DynamodbTableWarmThroughput
 	WriteCapacity() *float64
 	SetWriteCapacity(val *float64)
 	WriteCapacityInput() *float64
@@ -191,6 +193,7 @@ type DynamodbTable interface {
 	PutServerSideEncryption(value *DynamodbTableServerSideEncryption)
 	PutTimeouts(value *DynamodbTableTimeouts)
 	PutTtl(value *DynamodbTableTtl)
+	PutWarmThroughput(value *DynamodbTableWarmThroughput)
 	ResetAttribute()
 	ResetBillingMode()
 	ResetDeletionProtectionEnabled()
@@ -220,6 +223,7 @@ type DynamodbTable interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetTtl()
+	ResetWarmThroughput()
 	ResetWriteCapacity()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -969,6 +973,26 @@ func (j *jsiiProxy_DynamodbTable) TtlInput() *DynamodbTableTtl {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTable) WarmThroughput() DynamodbTableWarmThroughputOutputReference {
+	var returns DynamodbTableWarmThroughputOutputReference
+	_jsii_.Get(
+		j,
+		"warmThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) WarmThroughputInput() *DynamodbTableWarmThroughput {
+	var returns *DynamodbTableWarmThroughput
+	_jsii_.Get(
+		j,
+		"warmThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTable) WriteCapacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -990,7 +1014,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -1008,7 +1032,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -1748,6 +1772,17 @@ func (d *jsiiProxy_DynamodbTable) PutTtl(value *DynamodbTableTtl) {
 	)
 }
 
+func (d *jsiiProxy_DynamodbTable) PutWarmThroughput(value *DynamodbTableWarmThroughput) {
+	if err := d.validatePutWarmThroughputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWarmThroughput",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTable) ResetAttribute() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1960,6 +1995,14 @@ func (d *jsiiProxy_DynamodbTable) ResetTtl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTtl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetWarmThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWarmThroughput",
 		nil, // no parameters
 	)
 }

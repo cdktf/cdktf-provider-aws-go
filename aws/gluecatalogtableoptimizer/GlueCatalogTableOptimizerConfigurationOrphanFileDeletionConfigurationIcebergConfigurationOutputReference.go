@@ -38,6 +38,9 @@ type GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIceber
 	OrphanFileRetentionPeriodInDays() *float64
 	SetOrphanFileRetentionPeriodInDays(val *float64)
 	OrphanFileRetentionPeriodInDaysInput() *float64
+	RunRateInHours() *float64
+	SetRunRateInHours(val *float64)
+	RunRateInHoursInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIceber
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetLocation()
 	ResetOrphanFileRetentionPeriodInDays()
+	ResetRunRateInHours()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfi
 	return returns
 }
 
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) RunRateInHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runRateInHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) RunRateInHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runRateInHoursInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfi
 	_jsii_.Set(
 		j,
 		"orphanFileRetentionPeriodInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference)SetRunRateInHours(val *float64) {
+	if err := j.validateSetRunRateInHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runRateInHours",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfi
 	_jsii_.InvokeVoid(
 		g,
 		"resetOrphanFileRetentionPeriodInDays",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) ResetRunRateInHours() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRunRateInHours",
 		nil, // no parameters
 	)
 }

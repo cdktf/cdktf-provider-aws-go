@@ -115,6 +115,10 @@ func (d *jsiiProxy_DynamodbTable) validatePutTtlParameters(value *DynamodbTableT
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTable) validatePutWarmThroughputParameters(value *DynamodbTableWarmThroughput) error {
+	return nil
+}
+
 func validateDynamodbTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

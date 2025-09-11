@@ -5,9 +5,9 @@ package inspector2filter
 
 
 type Inspector2FilterFilterCriteriaVulnerablePackagesEpoch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/inspector2_filter#lower_inclusive Inspector2Filter#lower_inclusive}.
 	LowerInclusive *float64 `field:"required" json:"lowerInclusive" yaml:"lowerInclusive"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/inspector2_filter#upper_inclusive Inspector2Filter#upper_inclusive}.
 	UpperInclusive *float64 `field:"required" json:"upperInclusive" yaml:"upperInclusive"`
 }
 

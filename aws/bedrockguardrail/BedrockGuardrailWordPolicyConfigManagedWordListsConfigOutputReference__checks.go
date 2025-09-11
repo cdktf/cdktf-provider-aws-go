@@ -166,6 +166,34 @@ func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputR
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateSetInputActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateSetInputEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -184,6 +212,34 @@ func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputR
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *BedrockGuardrailWordPolicyConfigManagedWordListsConfig; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateSetOutputActionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateSetOutputEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

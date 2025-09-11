@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check}.
 type Route53RecoveryreadinessReadinessCheck interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessReadinessCheck) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check} Resource.
 func NewRoute53RecoveryreadinessReadinessCheck(scope constructs.Construct, id *string, config *Route53RecoveryreadinessReadinessCheckConfig) Route53RecoveryreadinessReadinessCheck {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewRoute53RecoveryreadinessReadinessCheck(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/route53recoveryreadiness_readiness_check aws_route53recoveryreadiness_readiness_check} Resource.
 func NewRoute53RecoveryreadinessReadinessCheck_Override(r Route53RecoveryreadinessReadinessCheck, scope constructs.Construct, id *string, config *Route53RecoveryreadinessReadinessCheckConfig) {
 	_init_.Initialize()
 

@@ -57,7 +57,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectNameInput", GoGetter: "ProjectNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "pullRequestBuildPolicy", GoGetter: "PullRequestBuildPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "pullRequestBuildPolicyInput", GoGetter: "PullRequestBuildPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilterGroup", GoMethod: "PutFilterGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "putPullRequestBuildPolicy", GoMethod: "PutPullRequestBuildPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putScopeConfiguration", GoMethod: "PutScopeConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
@@ -68,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManualCreation", GoMethod: "ResetManualCreation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPullRequestBuildPolicy", GoMethod: "ResetPullRequestBuildPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScopeConfiguration", GoMethod: "ResetScopeConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeConfiguration", GoGetter: "ScopeConfiguration"},
@@ -217,6 +221,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CodebuildWebhookFilterGroupOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicy",
+		reflect.TypeOf((*CodebuildWebhookPullRequestBuildPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookPullRequestBuildPolicyOutputReference",
+		reflect.TypeOf((*CodebuildWebhookPullRequestBuildPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "approverRoles", GoGetter: "ApproverRoles"},
+			_jsii_.MemberProperty{JsiiProperty: "approverRolesInput", GoGetter: "ApproverRolesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "requiresCommentApproval", GoGetter: "RequiresCommentApproval"},
+			_jsii_.MemberProperty{JsiiProperty: "requiresCommentApprovalInput", GoGetter: "RequiresCommentApprovalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApproverRoles", GoMethod: "ResetApproverRoles"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CodebuildWebhookPullRequestBuildPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

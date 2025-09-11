@@ -24,11 +24,11 @@ type SecuritylakeAwsLogSourceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/securitylake_aws_log_source#region SecuritylakeAwsLogSource#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/securitylake_aws_log_source#region SecuritylakeAwsLogSource#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/securitylake_aws_log_source#source SecuritylakeAwsLogSource#source}
 	Source interface{} `field:"optional" json:"source" yaml:"source"`
 }
 

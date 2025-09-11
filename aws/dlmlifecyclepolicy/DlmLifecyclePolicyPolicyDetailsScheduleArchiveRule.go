@@ -7,7 +7,7 @@ package dlmlifecyclepolicy
 type DlmLifecyclePolicyPolicyDetailsScheduleArchiveRule struct {
 	// archive_retain_rule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/dlm_lifecycle_policy#archive_retain_rule DlmLifecyclePolicy#archive_retain_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dlm_lifecycle_policy#archive_retain_rule DlmLifecyclePolicy#archive_retain_rule}
 	ArchiveRetainRule *DlmLifecyclePolicyPolicyDetailsScheduleArchiveRuleArchiveRetainRule `field:"required" json:"archiveRetainRule" yaml:"archiveRetainRule"`
 }
 

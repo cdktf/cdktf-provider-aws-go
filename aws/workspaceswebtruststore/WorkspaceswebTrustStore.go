@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store}.
 type WorkspaceswebTrustStore interface {
 	cdktf.TerraformResource
 	AssociatedPortalArns() *[]*string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_WorkspaceswebTrustStore) TrustStoreArn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store} Resource.
 func NewWorkspaceswebTrustStore(scope constructs.Construct, id *string, config *WorkspaceswebTrustStoreConfig) WorkspaceswebTrustStore {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewWorkspaceswebTrustStore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_trust_store aws_workspacesweb_trust_store} Resource.
 func NewWorkspaceswebTrustStore_Override(w WorkspaceswebTrustStore, scope constructs.Construct, id *string, config *WorkspaceswebTrustStoreConfig) {
 	_init_.Initialize()
 

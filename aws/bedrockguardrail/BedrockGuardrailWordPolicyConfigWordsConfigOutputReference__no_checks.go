@@ -59,7 +59,23 @@ func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) validateSetInputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) validateSetInputEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) validateSetOutputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailWordPolicyConfigWordsConfigOutputReference) validateSetOutputEnabledParameters(val interface{}) error {
 	return nil
 }
 

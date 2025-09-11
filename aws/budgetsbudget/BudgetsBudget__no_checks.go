@@ -115,6 +115,10 @@ func (j *jsiiProxy_BudgetsBudget) validateSetAccountIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudget) validateSetBillingViewArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudget) validateSetBudgetTypeParameters(val *string) error {
 	return nil
 }

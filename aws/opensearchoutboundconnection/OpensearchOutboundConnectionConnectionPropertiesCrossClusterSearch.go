@@ -5,7 +5,7 @@ package opensearchoutboundconnection
 
 
 type OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_outbound_connection#skip_unavailable OpensearchOutboundConnection#skip_unavailable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_outbound_connection#skip_unavailable OpensearchOutboundConnection#skip_unavailable}.
 	SkipUnavailable *string `field:"optional" json:"skipUnavailable" yaml:"skipUnavailable"`
 }
 

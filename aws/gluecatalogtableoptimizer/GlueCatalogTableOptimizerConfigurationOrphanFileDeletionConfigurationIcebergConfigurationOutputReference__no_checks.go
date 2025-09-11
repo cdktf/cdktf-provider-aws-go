@@ -71,6 +71,10 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfi
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) validateSetRunRateInHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationIcebergConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

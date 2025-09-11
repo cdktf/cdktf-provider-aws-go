@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 type CodebuildWebhook interface {
 	cdktf.TerraformResource
 	BranchFilter() *string
@@ -71,6 +71,8 @@ type CodebuildWebhook interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PullRequestBuildPolicy() CodebuildWebhookPullRequestBuildPolicyOutputReference
+	PullRequestBuildPolicyInput() *CodebuildWebhookPullRequestBuildPolicy
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -130,6 +132,7 @@ type CodebuildWebhook interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilterGroup(value interface{})
+	PutPullRequestBuildPolicy(value *CodebuildWebhookPullRequestBuildPolicy)
 	PutScopeConfiguration(value *CodebuildWebhookScopeConfiguration)
 	ResetBranchFilter()
 	ResetBuildType()
@@ -139,6 +142,7 @@ type CodebuildWebhook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPullRequestBuildPolicy()
 	ResetRegion()
 	ResetScopeConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
@@ -409,6 +413,26 @@ func (j *jsiiProxy_CodebuildWebhook) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodebuildWebhook) PullRequestBuildPolicy() CodebuildWebhookPullRequestBuildPolicyOutputReference {
+	var returns CodebuildWebhookPullRequestBuildPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"pullRequestBuildPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildWebhook) PullRequestBuildPolicyInput() *CodebuildWebhookPullRequestBuildPolicy {
+	var returns *CodebuildWebhookPullRequestBuildPolicy
+	_jsii_.Get(
+		j,
+		"pullRequestBuildPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodebuildWebhook) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -510,7 +534,7 @@ func (j *jsiiProxy_CodebuildWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook(scope constructs.Construct, id *string, config *CodebuildWebhookConfig) CodebuildWebhook {
 	_init_.Initialize()
 
@@ -528,7 +552,7 @@ func NewCodebuildWebhook(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook_Override(c CodebuildWebhook, scope constructs.Construct, id *string, config *CodebuildWebhookConfig) {
 	_init_.Initialize()
 
@@ -1037,6 +1061,17 @@ func (c *jsiiProxy_CodebuildWebhook) PutFilterGroup(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CodebuildWebhook) PutPullRequestBuildPolicy(value *CodebuildWebhookPullRequestBuildPolicy) {
+	if err := c.validatePutPullRequestBuildPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPullRequestBuildPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildWebhook) PutScopeConfiguration(value *CodebuildWebhookScopeConfiguration) {
 	if err := c.validatePutScopeConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1092,6 +1127,14 @@ func (c *jsiiProxy_CodebuildWebhook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildWebhook) ResetPullRequestBuildPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPullRequestBuildPolicy",
 		nil, // no parameters
 	)
 }

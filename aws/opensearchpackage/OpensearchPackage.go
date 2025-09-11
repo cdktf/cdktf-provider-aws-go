@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package}.
 type OpensearchPackage interface {
 	cdktf.TerraformResource
 	AvailablePackageVersion() *string
@@ -32,6 +32,9 @@ type OpensearchPackage interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EngineVersion() *string
+	SetEngineVersion(val *string)
+	EngineVersionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -124,6 +127,7 @@ type OpensearchPackage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPackageSource(value *OpensearchPackagePackageSource)
+	ResetEngineVersion()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_OpensearchPackage) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchPackage) EngineVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchPackage) EngineVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineVersionInput",
 		&returns,
 	)
 	return returns
@@ -449,7 +473,7 @@ func (j *jsiiProxy_OpensearchPackage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
 func NewOpensearchPackage(scope constructs.Construct, id *string, config *OpensearchPackageConfig) OpensearchPackage {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewOpensearchPackage(scope constructs.Construct, id *string, config *Opense
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
 func NewOpensearchPackage_Override(o OpensearchPackage, scope constructs.Construct, id *string, config *OpensearchPackageConfig) {
 	_init_.Initialize()
 
@@ -504,6 +528,17 @@ func (j *jsiiProxy_OpensearchPackage)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchPackage)SetEngineVersion(val *string) {
+	if err := j.validateSetEngineVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineVersion",
 		val,
 	)
 }
@@ -962,6 +997,14 @@ func (o *jsiiProxy_OpensearchPackage) PutPackageSource(value *OpensearchPackageP
 		o,
 		"putPackageSource",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchPackage) ResetEngineVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEngineVersion",
+		nil, // no parameters
 	)
 }
 

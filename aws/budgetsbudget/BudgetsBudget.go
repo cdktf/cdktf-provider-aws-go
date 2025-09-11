@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/budgets_budget aws_budgets_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/budgets_budget aws_budgets_budget}.
 type BudgetsBudget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -21,6 +21,9 @@ type BudgetsBudget interface {
 	Arn() *string
 	AutoAdjustData() BudgetsBudgetAutoAdjustDataOutputReference
 	AutoAdjustDataInput() *BudgetsBudgetAutoAdjustData
+	BillingViewArn() *string
+	SetBillingViewArn(val *string)
+	BillingViewArnInput() *string
 	BudgetType() *string
 	SetBudgetType(val *string)
 	BudgetTypeInput() *string
@@ -158,6 +161,7 @@ type BudgetsBudget interface {
 	PutPlannedLimit(value interface{})
 	ResetAccountId()
 	ResetAutoAdjustData()
+	ResetBillingViewArn()
 	ResetCostFilter()
 	ResetCostTypes()
 	ResetId()
@@ -237,6 +241,26 @@ func (j *jsiiProxy_BudgetsBudget) AutoAdjustDataInput() *BudgetsBudgetAutoAdjust
 	_jsii_.Get(
 		j,
 		"autoAdjustDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) BillingViewArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingViewArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) BillingViewArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingViewArnInput",
 		&returns,
 	)
 	return returns
@@ -703,7 +727,7 @@ func (j *jsiiProxy_BudgetsBudget) TimeUnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBudgetConfig) BudgetsBudget {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *string, config *BudgetsBudgetConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (j *jsiiProxy_BudgetsBudget)SetAccountId(val *string) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetBillingViewArn(val *string) {
+	if err := j.validateSetBillingViewArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingViewArn",
 		val,
 	)
 }
@@ -1352,6 +1387,14 @@ func (b *jsiiProxy_BudgetsBudget) ResetAutoAdjustData() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAutoAdjustData",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetBillingViewArn() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBillingViewArn",
 		nil, // no parameters
 	)
 }

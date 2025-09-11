@@ -5,7 +5,7 @@ package medialivechannel
 
 
 type MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/medialive_channel#program_selection MedialiveChannel#program_selection}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/medialive_channel#program_selection MedialiveChannel#program_selection}.
 	ProgramSelection *string `field:"required" json:"programSelection" yaml:"programSelection"`
 }
 

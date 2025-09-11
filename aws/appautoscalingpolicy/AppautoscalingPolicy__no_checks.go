@@ -75,6 +75,10 @@ func (a *jsiiProxy_AppautoscalingPolicy) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (a *jsiiProxy_AppautoscalingPolicy) validatePutPredictiveScalingPolicyConfigurationParameters(value *AppautoscalingPolicyPredictiveScalingPolicyConfiguration) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppautoscalingPolicy) validatePutStepScalingPolicyConfigurationParameters(value *AppautoscalingPolicyStepScalingPolicyConfiguration) error {
 	return nil
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_OpensearchPackage) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchPackage) validateSetEngineVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchPackage) validateSetIdParameters(val *string) error {
 	return nil
 }

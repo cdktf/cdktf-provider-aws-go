@@ -5,7 +5,7 @@ package sagemakerspace
 
 
 type SagemakerSpaceSpaceSettingsCustomFileSystemEfsFileSystem struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/sagemaker_space#file_system_id SagemakerSpace#file_system_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/sagemaker_space#file_system_id SagemakerSpace#file_system_id}.
 	FileSystemId *string `field:"required" json:"fileSystemId" yaml:"fileSystemId"`
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

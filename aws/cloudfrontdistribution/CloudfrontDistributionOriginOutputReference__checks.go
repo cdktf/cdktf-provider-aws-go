@@ -313,6 +313,14 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetOrigi
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetResponseCompletionTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -79,6 +79,10 @@ func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value inte
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildWebhook) validatePutPullRequestBuildPolicyParameters(value *CodebuildWebhookPullRequestBuildPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildWebhook) validatePutScopeConfigurationParameters(value *CodebuildWebhookScopeConfiguration) error {
 	return nil
 }

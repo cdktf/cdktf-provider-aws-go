@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
 type RdsClusterRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -122,6 +122,7 @@ type RdsClusterRoleAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *RdsClusterRoleAssociationTimeouts)
+	ResetFeatureName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -427,7 +428,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) RdsClusterRoleAssociation {
 	_init_.Initialize()
 
@@ -445,7 +446,7 @@ func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation_Override(r RdsClusterRoleAssociation, scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -940,6 +941,14 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) PutTimeouts(value *RdsClusterRoleA
 		r,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RdsClusterRoleAssociation) ResetFeatureName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFeatureName",
+		nil, // no parameters
 	)
 }
 

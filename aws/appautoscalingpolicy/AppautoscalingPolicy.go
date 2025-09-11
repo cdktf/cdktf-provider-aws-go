@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy}.
 type AppautoscalingPolicy interface {
 	cdktf.TerraformResource
 	AlarmArns() *[]*string
@@ -56,6 +56,8 @@ type AppautoscalingPolicy interface {
 	PolicyType() *string
 	SetPolicyType(val *string)
 	PolicyTypeInput() *string
+	PredictiveScalingPolicyConfiguration() AppautoscalingPolicyPredictiveScalingPolicyConfigurationOutputReference
+	PredictiveScalingPolicyConfigurationInput() *AppautoscalingPolicyPredictiveScalingPolicyConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -131,6 +133,7 @@ type AppautoscalingPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPredictiveScalingPolicyConfiguration(value *AppautoscalingPolicyPredictiveScalingPolicyConfiguration)
 	PutStepScalingPolicyConfiguration(value *AppautoscalingPolicyStepScalingPolicyConfiguration)
 	PutTargetTrackingScalingPolicyConfiguration(value *AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration)
 	ResetId()
@@ -138,6 +141,7 @@ type AppautoscalingPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyType()
+	ResetPredictiveScalingPolicyConfiguration()
 	ResetRegion()
 	ResetStepScalingPolicyConfiguration()
 	ResetTargetTrackingScalingPolicyConfiguration()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_AppautoscalingPolicy) PolicyTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppautoscalingPolicy) PredictiveScalingPolicyConfiguration() AppautoscalingPolicyPredictiveScalingPolicyConfigurationOutputReference {
+	var returns AppautoscalingPolicyPredictiveScalingPolicyConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"predictiveScalingPolicyConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingPolicy) PredictiveScalingPolicyConfigurationInput() *AppautoscalingPolicyPredictiveScalingPolicyConfiguration {
+	var returns *AppautoscalingPolicyPredictiveScalingPolicyConfiguration
+	_jsii_.Get(
+		j,
+		"predictiveScalingPolicyConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppautoscalingPolicy) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -520,7 +544,7 @@ func (j *jsiiProxy_AppautoscalingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
 func NewAppautoscalingPolicy(scope constructs.Construct, id *string, config *AppautoscalingPolicyConfig) AppautoscalingPolicy {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewAppautoscalingPolicy(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/appautoscaling_policy aws_appautoscaling_policy} Resource.
 func NewAppautoscalingPolicy_Override(a AppautoscalingPolicy, scope constructs.Construct, id *string, config *AppautoscalingPolicyConfig) {
 	_init_.Initialize()
 
@@ -1047,6 +1071,17 @@ func (a *jsiiProxy_AppautoscalingPolicy) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (a *jsiiProxy_AppautoscalingPolicy) PutPredictiveScalingPolicyConfiguration(value *AppautoscalingPolicyPredictiveScalingPolicyConfiguration) {
+	if err := a.validatePutPredictiveScalingPolicyConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPredictiveScalingPolicyConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppautoscalingPolicy) PutStepScalingPolicyConfiguration(value *AppautoscalingPolicyStepScalingPolicyConfiguration) {
 	if err := a.validatePutStepScalingPolicyConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1089,6 +1124,14 @@ func (a *jsiiProxy_AppautoscalingPolicy) ResetPolicyType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPolicyType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingPolicy) ResetPredictiveScalingPolicyConfiguration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPredictiveScalingPolicyConfiguration",
 		nil, // no parameters
 	)
 }

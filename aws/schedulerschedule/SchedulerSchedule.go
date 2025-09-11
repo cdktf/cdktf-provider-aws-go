@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
 type SchedulerSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -630,7 +630,7 @@ func (j *jsiiProxy_SchedulerSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule(scope constructs.Construct, id *string, config *SchedulerScheduleConfig) SchedulerSchedule {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewSchedulerSchedule(scope constructs.Construct, id *string, config *Schedu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Construct, id *string, config *SchedulerScheduleConfig) {
 	_init_.Initialize()
 

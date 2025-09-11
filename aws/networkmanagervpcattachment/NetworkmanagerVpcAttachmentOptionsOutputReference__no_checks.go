@@ -63,11 +63,19 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetDnsSupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetInternalValueParameters(val *NetworkmanagerVpcAttachmentOptions) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetIpv6SupportParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetSecurityGroupReferencingSupportParameters(val interface{}) error {
 	return nil
 }
 

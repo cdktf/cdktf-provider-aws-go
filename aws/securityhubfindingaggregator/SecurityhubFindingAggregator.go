@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator}.
 type SecurityhubFindingAggregator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_SecurityhubFindingAggregator) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
 func NewSecurityhubFindingAggregator(scope constructs.Construct, id *string, config *SecurityhubFindingAggregatorConfig) SecurityhubFindingAggregator {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewSecurityhubFindingAggregator(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
 func NewSecurityhubFindingAggregator_Override(s SecurityhubFindingAggregator, scope constructs.Construct, id *string, config *SecurityhubFindingAggregatorConfig) {
 	_init_.Initialize()
 

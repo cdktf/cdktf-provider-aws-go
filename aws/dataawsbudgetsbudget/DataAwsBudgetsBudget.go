@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/budgets_budget aws_budgets_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/budgets_budget aws_budgets_budget}.
 type DataAwsBudgetsBudget interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -20,6 +20,7 @@ type DataAwsBudgetsBudget interface {
 	AccountIdInput() *string
 	Arn() *string
 	AutoAdjustData() DataAwsBudgetsBudgetAutoAdjustDataList
+	BillingViewArn() *string
 	BudgetExceeded() cdktf.IResolvable
 	BudgetLimit() DataAwsBudgetsBudgetBudgetLimitList
 	BudgetType() *string
@@ -167,6 +168,16 @@ func (j *jsiiProxy_DataAwsBudgetsBudget) AutoAdjustData() DataAwsBudgetsBudgetAu
 	_jsii_.Get(
 		j,
 		"autoAdjustData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBudgetsBudget) BillingViewArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingViewArn",
 		&returns,
 	)
 	return returns
@@ -503,7 +514,7 @@ func (j *jsiiProxy_DataAwsBudgetsBudget) TimeUnit() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
 func NewDataAwsBudgetsBudget(scope constructs.Construct, id *string, config *DataAwsBudgetsBudgetConfig) DataAwsBudgetsBudget {
 	_init_.Initialize()
 
@@ -521,7 +532,7 @@ func NewDataAwsBudgetsBudget(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
 func NewDataAwsBudgetsBudget_Override(d DataAwsBudgetsBudget, scope constructs.Construct, id *string, config *DataAwsBudgetsBudgetConfig) {
 	_init_.Initialize()
 

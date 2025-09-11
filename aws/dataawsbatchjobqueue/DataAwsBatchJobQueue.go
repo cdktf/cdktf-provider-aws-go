@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/batch_job_queue aws_batch_job_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/batch_job_queue aws_batch_job_queue}.
 type DataAwsBatchJobQueue interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DataAwsBatchJobQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/batch_job_queue aws_batch_job_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/batch_job_queue aws_batch_job_queue} Data Source.
 func NewDataAwsBatchJobQueue(scope constructs.Construct, id *string, config *DataAwsBatchJobQueueConfig) DataAwsBatchJobQueue {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewDataAwsBatchJobQueue(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/data-sources/batch_job_queue aws_batch_job_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/batch_job_queue aws_batch_job_queue} Data Source.
 func NewDataAwsBatchJobQueue_Override(d DataAwsBatchJobQueue, scope constructs.Construct, id *string, config *DataAwsBatchJobQueueConfig) {
 	_init_.Initialize()
 

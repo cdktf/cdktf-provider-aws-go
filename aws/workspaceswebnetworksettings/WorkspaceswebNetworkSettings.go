@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings}.
 type WorkspaceswebNetworkSettings interface {
 	cdktf.TerraformResource
 	AssociatedPortalArns() *[]*string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_WorkspaceswebNetworkSettings) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
 func NewWorkspaceswebNetworkSettings(scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsConfig) WorkspaceswebNetworkSettings {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewWorkspaceswebNetworkSettings(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings aws_workspacesweb_network_settings} Resource.
 func NewWorkspaceswebNetworkSettings_Override(w WorkspaceswebNetworkSettings, scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsConfig) {
 	_init_.Initialize()
 

@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "autoAdjustData", GoGetter: "AutoAdjustData"},
+			_jsii_.MemberProperty{JsiiProperty: "billingViewArn", GoGetter: "BillingViewArn"},
 			_jsii_.MemberProperty{JsiiProperty: "budgetExceeded", GoGetter: "BudgetExceeded"},
 			_jsii_.MemberProperty{JsiiProperty: "budgetLimit", GoGetter: "BudgetLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "budgetType", GoGetter: "BudgetType"},

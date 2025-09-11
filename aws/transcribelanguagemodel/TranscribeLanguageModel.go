@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/transcribe_language_model aws_transcribe_language_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/transcribe_language_model aws_transcribe_language_model}.
 type TranscribeLanguageModel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_TranscribeLanguageModel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource.
 func NewTranscribeLanguageModel(scope constructs.Construct, id *string, config *TranscribeLanguageModelConfig) TranscribeLanguageModel {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewTranscribeLanguageModel(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.12.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource.
 func NewTranscribeLanguageModel_Override(t TranscribeLanguageModel, scope constructs.Construct, id *string, config *TranscribeLanguageModelConfig) {
 	_init_.Initialize()
 

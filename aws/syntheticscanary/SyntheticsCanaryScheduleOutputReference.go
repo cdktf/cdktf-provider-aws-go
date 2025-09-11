@@ -38,6 +38,8 @@ type SyntheticsCanaryScheduleOutputReference interface {
 	Fqn() *string
 	InternalValue() *SyntheticsCanarySchedule
 	SetInternalValue(val *SyntheticsCanarySchedule)
+	RetryConfig() SyntheticsCanaryScheduleRetryConfigOutputReference
+	RetryConfigInput() *SyntheticsCanaryScheduleRetryConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,7 +72,9 @@ type SyntheticsCanaryScheduleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRetryConfig(value *SyntheticsCanaryScheduleRetryConfig)
 	ResetDurationInSeconds()
+	ResetRetryConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +175,26 @@ func (j *jsiiProxy_SyntheticsCanaryScheduleOutputReference) InternalValue() *Syn
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryScheduleOutputReference) RetryConfig() SyntheticsCanaryScheduleRetryConfigOutputReference {
+	var returns SyntheticsCanaryScheduleRetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"retryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCanaryScheduleOutputReference) RetryConfigInput() *SyntheticsCanaryScheduleRetryConfig {
+	var returns *SyntheticsCanaryScheduleRetryConfig
+	_jsii_.Get(
+		j,
+		"retryConfigInput",
 		&returns,
 	)
 	return returns
@@ -487,10 +511,29 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) InterpolationForAttr
 	return returns
 }
 
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) PutRetryConfig(value *SyntheticsCanaryScheduleRetryConfig) {
+	if err := s.validatePutRetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRetryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) ResetDurationInSeconds() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDurationInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) ResetRetryConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetryConfig",
 		nil, // no parameters
 	)
 }

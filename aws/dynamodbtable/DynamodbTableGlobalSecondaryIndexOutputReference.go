@@ -60,6 +60,8 @@ type DynamodbTableGlobalSecondaryIndexOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WarmThroughput() DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference
+	WarmThroughputInput() *DynamodbTableGlobalSecondaryIndexWarmThroughput
 	WriteCapacity() *float64
 	SetWriteCapacity(val *float64)
 	WriteCapacityInput() *float64
@@ -88,10 +90,12 @@ type DynamodbTableGlobalSecondaryIndexOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOnDemandThroughput(value *DynamodbTableGlobalSecondaryIndexOnDemandThroughput)
+	PutWarmThroughput(value *DynamodbTableGlobalSecondaryIndexWarmThroughput)
 	ResetNonKeyAttributes()
 	ResetOnDemandThroughput()
 	ResetRangeKey()
 	ResetReadCapacity()
+	ResetWarmThroughput()
 	ResetWriteCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -313,6 +317,26 @@ func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) WarmThroughput() DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference {
+	var returns DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference
+	_jsii_.Get(
+		j,
+		"warmThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) WarmThroughputInput() *DynamodbTableGlobalSecondaryIndexWarmThroughput {
+	var returns *DynamodbTableGlobalSecondaryIndexWarmThroughput
+	_jsii_.Get(
+		j,
+		"warmThroughputInput",
 		&returns,
 	)
 	return returns
@@ -695,6 +719,17 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) PutOnDemand
 	)
 }
 
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) PutWarmThroughput(value *DynamodbTableGlobalSecondaryIndexWarmThroughput) {
+	if err := d.validatePutWarmThroughputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWarmThroughput",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) ResetNonKeyAttributes() {
 	_jsii_.InvokeVoid(
 		d,
@@ -723,6 +758,14 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) ResetReadCa
 	_jsii_.InvokeVoid(
 		d,
 		"resetReadCapacity",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexOutputReference) ResetWarmThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWarmThroughput",
 		nil, // no parameters
 	)
 }

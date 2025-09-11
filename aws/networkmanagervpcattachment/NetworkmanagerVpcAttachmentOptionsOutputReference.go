@@ -31,6 +31,9 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DnsSupport() interface{}
+	SetDnsSupport(val interface{})
+	DnsSupportInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NetworkmanagerVpcAttachmentOptions
@@ -38,6 +41,9 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	Ipv6Support() interface{}
 	SetIpv6Support(val interface{})
 	Ipv6SupportInput() interface{}
+	SecurityGroupReferencingSupport() interface{}
+	SetSecurityGroupReferencingSupport(val interface{})
+	SecurityGroupReferencingSupportInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,7 +77,9 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetApplianceModeSupport()
+	ResetDnsSupport()
 	ResetIpv6Support()
+	ResetSecurityGroupReferencingSupport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +145,26 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) DnsSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) DnsSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -172,6 +200,26 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6Suppor
 	_jsii_.Get(
 		j,
 		"ipv6SupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SecurityGroupReferencingSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SecurityGroupReferencingSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityGroupReferencingSupportInput",
 		&returns,
 	)
 	return returns
@@ -258,6 +306,17 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetComplexO
 	)
 }
 
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetDnsSupport(val interface{}) {
+	if err := j.validateSetDnsSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsSupport",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetInternalValue(val *NetworkmanagerVpcAttachmentOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -276,6 +335,17 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetIpv6Supp
 	_jsii_.Set(
 		j,
 		"ipv6Support",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetSecurityGroupReferencingSupport(val interface{}) {
+	if err := j.validateSetSecurityGroupReferencingSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupReferencingSupport",
 		val,
 	)
 }
@@ -496,10 +566,26 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetAppli
 	)
 }
 
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetDnsSupport() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDnsSupport",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetIpv6Support() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIpv6Support",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetSecurityGroupReferencingSupport() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecurityGroupReferencingSupport",
 		nil, // no parameters
 	)
 }

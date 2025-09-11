@@ -38,6 +38,9 @@ type GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigur
 	NumberOfSnapshotsToRetain() *float64
 	SetNumberOfSnapshotsToRetain(val *float64)
 	NumberOfSnapshotsToRetainInput() *float64
+	RunRateInHours() *float64
+	SetRunRateInHours(val *float64)
+	RunRateInHoursInput() *float64
 	SnapshotRetentionPeriodInDays() *float64
 	SetSnapshotRetentionPeriodInDays(val *float64)
 	SnapshotRetentionPeriodInDaysInput() *float64
@@ -75,6 +78,7 @@ type GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigur
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCleanExpiredFiles()
 	ResetNumberOfSnapshotsToRetain()
+	ResetRunRateInHours()
 	ResetSnapshotRetentionPeriodInDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationI
 	_jsii_.Get(
 		j,
 		"numberOfSnapshotsToRetainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) RunRateInHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runRateInHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) RunRateInHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runRateInHoursInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationI
 	_jsii_.Set(
 		j,
 		"numberOfSnapshotsToRetain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference)SetRunRateInHours(val *float64) {
+	if err := j.validateSetRunRateInHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runRateInHours",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationI
 	_jsii_.InvokeVoid(
 		g,
 		"resetNumberOfSnapshotsToRetain",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) ResetRunRateInHours() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRunRateInHours",
 		nil, // no parameters
 	)
 }

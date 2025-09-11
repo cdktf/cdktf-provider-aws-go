@@ -47,6 +47,7 @@ type DataAwsDynamodbTableGlobalSecondaryIndexOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WarmThroughput() DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputList
 	WriteCapacity() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -222,6 +223,16 @@ func (j *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) Terr
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) WarmThroughput() DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputList {
+	var returns DataAwsDynamodbTableGlobalSecondaryIndexWarmThroughputList
+	_jsii_.Get(
+		j,
+		"warmThroughput",
 		&returns,
 	)
 	return returns

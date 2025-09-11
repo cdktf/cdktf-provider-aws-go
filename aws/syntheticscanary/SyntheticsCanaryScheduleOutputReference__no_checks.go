@@ -47,6 +47,10 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validatePutRetryConfigParameters(value *SyntheticsCanaryScheduleRetryConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

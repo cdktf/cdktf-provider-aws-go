@@ -56,6 +56,9 @@ type CloudfrontDistributionOriginOutputReference interface {
 	OriginPathInput() *string
 	OriginShield() CloudfrontDistributionOriginOriginShieldOutputReference
 	OriginShieldInput() *CloudfrontDistributionOriginOriginShield
+	ResponseCompletionTimeout() *float64
+	SetResponseCompletionTimeout(val *float64)
+	ResponseCompletionTimeoutInput() *float64
 	S3OriginConfig() CloudfrontDistributionOriginS3OriginConfigOutputReference
 	S3OriginConfigInput() *CloudfrontDistributionOriginS3OriginConfig
 	// Experimental.
@@ -104,6 +107,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	ResetOriginAccessControlId()
 	ResetOriginPath()
 	ResetOriginShield()
+	ResetResponseCompletionTimeout()
 	ResetS3OriginConfig()
 	ResetVpcOriginConfig()
 	// Produce the Token's value at resolution time.
@@ -351,6 +355,26 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) OriginShieldInpu
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResponseCompletionTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"responseCompletionTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResponseCompletionTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"responseCompletionTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) S3OriginConfig() CloudfrontDistributionOriginS3OriginConfigOutputReference {
 	var returns CloudfrontDistributionOriginS3OriginConfigOutputReference
 	_jsii_.Get(
@@ -534,6 +558,17 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginPath(val
 	_jsii_.Set(
 		j,
 		"originPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetResponseCompletionTimeout(val *float64) {
+	if err := j.validateSetResponseCompletionTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"responseCompletionTimeout",
 		val,
 	)
 }
@@ -853,6 +888,14 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetOriginShiel
 	_jsii_.InvokeVoid(
 		c,
 		"resetOriginShield",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetResponseCompletionTimeout() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResponseCompletionTimeout",
 		nil, // no parameters
 	)
 }
