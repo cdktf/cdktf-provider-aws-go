@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/lightsail_disk aws_lightsail_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/lightsail_disk aws_lightsail_disk}.
 type LightsailDisk interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_LightsailDisk) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
 func NewLightsailDisk(scope constructs.Construct, id *string, config *LightsailDiskConfig) LightsailDisk {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewLightsailDisk(scope constructs.Construct, id *string, config *LightsailD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/lightsail_disk aws_lightsail_disk} Resource.
 func NewLightsailDisk_Override(l LightsailDisk, scope constructs.Construct, id *string, config *LightsailDiskConfig) {
 	_init_.Initialize()
 

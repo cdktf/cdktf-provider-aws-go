@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}.
 type SsoadminApplicationAssignmentConfiguration interface {
 	cdktf.TerraformResource
 	ApplicationArn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_SsoadminApplicationAssignmentConfiguration) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
 func NewSsoadminApplicationAssignmentConfiguration(scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfigurationConfig) SsoadminApplicationAssignmentConfiguration {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewSsoadminApplicationAssignmentConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource.
 func NewSsoadminApplicationAssignmentConfiguration_Override(s SsoadminApplicationAssignmentConfiguration, scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfigurationConfig) {
 	_init_.Initialize()
 

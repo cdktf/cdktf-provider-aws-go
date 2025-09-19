@@ -99,6 +99,10 @@ func validateSchedulerSchedule_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_SchedulerSchedule) validateSetActionAfterCompletionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchedulerSchedule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

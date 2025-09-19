@@ -5,7 +5,7 @@ package apprunnerservice
 
 
 type ApprunnerServiceNetworkConfigurationIngressConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/apprunner_service#is_publicly_accessible ApprunnerService#is_publicly_accessible}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/apprunner_service#is_publicly_accessible ApprunnerService#is_publicly_accessible}.
 	IsPubliclyAccessible interface{} `field:"optional" json:"isPubliclyAccessible" yaml:"isPubliclyAccessible"`
 }
 

@@ -5,9 +5,9 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseGuardrailConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#guardrail_identifier BedrockagentFlow#guardrail_identifier}.
 	GuardrailIdentifier *string `field:"required" json:"guardrailIdentifier" yaml:"guardrailIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#guardrail_version BedrockagentFlow#guardrail_version}.
 	GuardrailVersion *string `field:"required" json:"guardrailVersion" yaml:"guardrailVersion"`
 }
 

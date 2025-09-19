@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group}.
 type DmsReplicationSubnetGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
 func NewDmsReplicationSubnetGroup(scope constructs.Construct, id *string, config *DmsReplicationSubnetGroupConfig) DmsReplicationSubnetGroup {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDmsReplicationSubnetGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/dms_replication_subnet_group aws_dms_replication_subnet_group} Resource.
 func NewDmsReplicationSubnetGroup_Override(d DmsReplicationSubnetGroup, scope constructs.Construct, id *string, config *DmsReplicationSubnetGroupConfig) {
 	_init_.Initialize()
 

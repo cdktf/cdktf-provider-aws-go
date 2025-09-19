@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association}.
 type WorkspaceswebNetworkSettingsAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_WorkspaceswebNetworkSettingsAssociation) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association} Resource.
 func NewWorkspaceswebNetworkSettingsAssociation(scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsAssociationConfig) WorkspaceswebNetworkSettingsAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewWorkspaceswebNetworkSettingsAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/workspacesweb_network_settings_association aws_workspacesweb_network_settings_association} Resource.
 func NewWorkspaceswebNetworkSettingsAssociation_Override(w WorkspaceswebNetworkSettingsAssociation, scope constructs.Construct, id *string, config *WorkspaceswebNetworkSettingsAssociationConfig) {
 	_init_.Initialize()
 

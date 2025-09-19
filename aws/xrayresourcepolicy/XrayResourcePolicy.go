@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/xray_resource_policy aws_xray_resource_policy}.
 type XrayResourcePolicy interface {
 	cdktf.TerraformResource
 	BypassPolicyLockoutCheck() interface{}
@@ -415,7 +415,7 @@ func (j *jsiiProxy_XrayResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource.
 func NewXrayResourcePolicy(scope constructs.Construct, id *string, config *XrayResourcePolicyConfig) XrayResourcePolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewXrayResourcePolicy(scope constructs.Construct, id *string, config *XrayR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/xray_resource_policy aws_xray_resource_policy} Resource.
 func NewXrayResourcePolicy_Override(x XrayResourcePolicy, scope constructs.Construct, id *string, config *XrayResourcePolicyConfig) {
 	_init_.Initialize()
 

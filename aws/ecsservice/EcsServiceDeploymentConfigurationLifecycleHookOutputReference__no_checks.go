@@ -59,6 +59,10 @@ func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) validateSetHookDetailsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) validateSetHookTargetArnParameters(val *string) error {
 	return nil
 }

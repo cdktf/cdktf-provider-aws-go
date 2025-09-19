@@ -30,6 +30,9 @@ type EcsServiceDeploymentConfigurationLifecycleHookOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HookDetails() *string
+	SetHookDetails(val *string)
+	HookDetailsInput() *string
 	HookTargetArn() *string
 	SetHookTargetArn(val *string)
 	HookTargetArnInput() *string
@@ -73,6 +76,7 @@ type EcsServiceDeploymentConfigurationLifecycleHookOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetHookDetails()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -123,6 +127,26 @@ func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) HookDetails() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hookDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) HookDetailsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hookDetailsInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference)SetHookDetails(val *string) {
+	if err := j.validateSetHookDetailsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hookDetails",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) ResetHookDetails() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetHookDetails",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EcsServiceDeploymentConfigurationLifecycleHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

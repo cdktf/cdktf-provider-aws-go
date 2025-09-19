@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/vpc aws_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/vpc aws_vpc}.
 type Vpc interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -758,7 +758,7 @@ func (j *jsiiProxy_Vpc) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/vpc aws_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/vpc aws_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
 
@@ -776,7 +776,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/vpc aws_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/vpc aws_vpc} Resource.
 func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/db_instances aws_db_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/db_instances aws_db_instances}.
 type DataAwsDbInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataAwsDbInstances) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) DataAwsDbInstances {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances_Override(d DataAwsDbInstances, scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) {
 	_init_.Initialize()
 

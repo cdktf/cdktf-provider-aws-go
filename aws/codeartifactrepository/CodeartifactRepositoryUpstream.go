@@ -5,7 +5,7 @@ package codeartifactrepository
 
 
 type CodeartifactRepositoryUpstream struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/codeartifact_repository#repository_name CodeartifactRepository#repository_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/codeartifact_repository#repository_name CodeartifactRepository#repository_name}.
 	RepositoryName *string `field:"required" json:"repositoryName" yaml:"repositoryName"`
 }
 

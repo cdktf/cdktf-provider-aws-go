@@ -5,7 +5,7 @@ package appsyncapi
 
 
 type AppsyncApiEventConfigDefaultPublishAuthMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/appsync_api#auth_type AppsyncApi#auth_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/appsync_api#auth_type AppsyncApi#auth_type}.
 	AuthType *string `field:"required" json:"authType" yaml:"authType"`
 }
 

@@ -7,7 +7,7 @@ package timestreamqueryscheduledquery
 type TimestreamqueryScheduledQueryTargetConfiguration struct {
 	// timestream_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/timestreamquery_scheduled_query#timestream_configuration TimestreamqueryScheduledQuery#timestream_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/timestreamquery_scheduled_query#timestream_configuration TimestreamqueryScheduledQuery#timestream_configuration}
 	TimestreamConfiguration interface{} `field:"optional" json:"timestreamConfiguration" yaml:"timestreamConfiguration"`
 }
 

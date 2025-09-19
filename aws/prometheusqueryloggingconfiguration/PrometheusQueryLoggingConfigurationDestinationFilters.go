@@ -5,7 +5,7 @@ package prometheusqueryloggingconfiguration
 
 
 type PrometheusQueryLoggingConfigurationDestinationFilters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/prometheus_query_logging_configuration#qsp_threshold PrometheusQueryLoggingConfiguration#qsp_threshold}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/prometheus_query_logging_configuration#qsp_threshold PrometheusQueryLoggingConfiguration#qsp_threshold}.
 	QspThreshold *float64 `field:"required" json:"qspThreshold" yaml:"qspThreshold"`
 }
 

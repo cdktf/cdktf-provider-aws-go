@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
 type SchedulerSchedule interface {
 	cdktf.TerraformResource
+	ActionAfterCompletion() *string
+	SetActionAfterCompletion(val *string)
+	ActionAfterCompletionInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -147,6 +150,7 @@ type SchedulerSchedule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFlexibleTimeWindow(value *SchedulerScheduleFlexibleTimeWindow)
 	PutTarget(value *SchedulerScheduleTarget)
+	ResetActionAfterCompletion()
 	ResetDescription()
 	ResetEndDate()
 	ResetGroupName()
@@ -177,6 +181,26 @@ type SchedulerSchedule interface {
 // The jsii proxy struct for SchedulerSchedule
 type jsiiProxy_SchedulerSchedule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SchedulerSchedule) ActionAfterCompletion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionAfterCompletion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SchedulerSchedule) ActionAfterCompletionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionAfterCompletionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SchedulerSchedule) Arn() *string {
@@ -630,7 +654,7 @@ func (j *jsiiProxy_SchedulerSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule(scope constructs.Construct, id *string, config *SchedulerScheduleConfig) SchedulerSchedule {
 	_init_.Initialize()
 
@@ -648,7 +672,7 @@ func NewSchedulerSchedule(scope constructs.Construct, id *string, config *Schedu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Construct, id *string, config *SchedulerScheduleConfig) {
 	_init_.Initialize()
 
@@ -656,6 +680,17 @@ func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Constru
 		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SchedulerSchedule)SetActionAfterCompletion(val *string) {
+	if err := j.validateSetActionAfterCompletionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actionAfterCompletion",
+		val,
 	)
 }
 
@@ -1231,6 +1266,14 @@ func (s *jsiiProxy_SchedulerSchedule) PutTarget(value *SchedulerScheduleTarget) 
 		s,
 		"putTarget",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SchedulerSchedule) ResetActionAfterCompletion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetActionAfterCompletion",
+		nil, // no parameters
 	)
 }
 

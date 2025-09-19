@@ -7,7 +7,7 @@ package bedrockagentflow
 type BedrockagentFlowDefinitionNodeConfigurationStorage struct {
 	// service_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#service_configuration BedrockagentFlow#service_configuration}
 	ServiceConfiguration interface{} `field:"optional" json:"serviceConfiguration" yaml:"serviceConfiguration"`
 }
 

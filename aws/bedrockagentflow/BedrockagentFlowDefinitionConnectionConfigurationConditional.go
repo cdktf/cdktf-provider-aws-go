@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionConnectionConfigurationConditional struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#condition BedrockagentFlow#condition}.
 	Condition *string `field:"required" json:"condition" yaml:"condition"`
 }
 

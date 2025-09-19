@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item}.
 type DataAwsDynamodbTableItem interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
 func NewDataAwsDynamodbTableItem(scope constructs.Construct, id *string, config *DataAwsDynamodbTableItemConfig) DataAwsDynamodbTableItem {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAwsDynamodbTableItem(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/dynamodb_table_item aws_dynamodb_table_item} Data Source.
 func NewDataAwsDynamodbTableItem_Override(d DataAwsDynamodbTableItem, scope constructs.Construct, id *string, config *DataAwsDynamodbTableItemConfig) {
 	_init_.Initialize()
 

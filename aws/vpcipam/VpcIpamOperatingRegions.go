@@ -5,7 +5,7 @@ package vpcipam
 
 
 type VpcIpamOperatingRegions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/vpc_ipam#region_name VpcIpam#region_name}.
 	RegionName *string `field:"required" json:"regionName" yaml:"regionName"`
 }
 

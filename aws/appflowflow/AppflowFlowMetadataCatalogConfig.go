@@ -7,7 +7,7 @@ package appflowflow
 type AppflowFlowMetadataCatalogConfig struct {
 	// glue_data_catalog block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/appflow_flow#glue_data_catalog AppflowFlow#glue_data_catalog}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/appflow_flow#glue_data_catalog AppflowFlow#glue_data_catalog}
 	GlueDataCatalog *AppflowFlowMetadataCatalogConfigGlueDataCatalog `field:"optional" json:"glueDataCatalog" yaml:"glueDataCatalog"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/emr_instance_group aws_emr_instance_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/emr_instance_group aws_emr_instance_group}.
 type EmrInstanceGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() *string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_EmrInstanceGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
 func NewEmrInstanceGroup(scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) EmrInstanceGroup {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewEmrInstanceGroup(scope constructs.Construct, id *string, config *EmrInst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.13.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
 func NewEmrInstanceGroup_Override(e EmrInstanceGroup, scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) {
 	_init_.Initialize()
 
