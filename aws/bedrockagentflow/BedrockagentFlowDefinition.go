@@ -7,11 +7,11 @@ package bedrockagentflow
 type BedrockagentFlowDefinition struct {
 	// connection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#connection BedrockagentFlow#connection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_flow#connection BedrockagentFlow#connection}
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// node block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_flow#node BedrockagentFlow#node}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_flow#node BedrockagentFlow#node}
 	NodeAttribute interface{} `field:"optional" json:"nodeAttribute" yaml:"nodeAttribute"`
 }
 

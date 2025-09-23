@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_organizations_features aws_iam_organizations_features}.
 type IamOrganizationsFeatures interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_IamOrganizationsFeatures) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource.
 func NewIamOrganizationsFeatures(scope constructs.Construct, id *string, config *IamOrganizationsFeaturesConfig) IamOrganizationsFeatures {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewIamOrganizationsFeatures(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_organizations_features aws_iam_organizations_features} Resource.
 func NewIamOrganizationsFeatures_Override(i IamOrganizationsFeatures, scope constructs.Construct, id *string, config *IamOrganizationsFeaturesConfig) {
 	_init_.Initialize()
 

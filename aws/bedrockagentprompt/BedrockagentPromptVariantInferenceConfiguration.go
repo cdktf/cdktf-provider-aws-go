@@ -7,7 +7,7 @@ package bedrockagentprompt
 type BedrockagentPromptVariantInferenceConfiguration struct {
 	// text block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
 	Text interface{} `field:"optional" json:"text" yaml:"text"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/athena_database aws_athena_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/athena_database aws_athena_database}.
 type AthenaDatabase interface {
 	cdktf.TerraformResource
 	AclConfiguration() AthenaDatabaseAclConfigurationOutputReference
@@ -549,7 +549,7 @@ func (j *jsiiProxy_AthenaDatabase) WorkgroupInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/athena_database aws_athena_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDatabaseConfig) AthenaDatabase {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/athena_database aws_athena_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase_Override(a AthenaDatabase, scope constructs.Construct, id *string, config *AthenaDatabaseConfig) {
 	_init_.Initialize()
 

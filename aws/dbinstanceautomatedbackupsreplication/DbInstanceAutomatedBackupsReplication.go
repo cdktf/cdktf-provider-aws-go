@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication}.
 type DbInstanceAutomatedBackupsReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
 func NewDbInstanceAutomatedBackupsReplication(scope constructs.Construct, id *string, config *DbInstanceAutomatedBackupsReplicationConfig) DbInstanceAutomatedBackupsReplication {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewDbInstanceAutomatedBackupsReplication(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_instance_automated_backups_replication aws_db_instance_automated_backups_replication} Resource.
 func NewDbInstanceAutomatedBackupsReplication_Override(d DbInstanceAutomatedBackupsReplication, scope constructs.Construct, id *string, config *DbInstanceAutomatedBackupsReplicationConfig) {
 	_init_.Initialize()
 

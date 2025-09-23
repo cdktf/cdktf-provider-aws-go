@@ -5,11 +5,11 @@ package iottopicrule
 
 
 type IotTopicRuleIotAnalytics struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
 	ChannelName *string `field:"required" json:"channelName" yaml:"channelName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 	RoleArn *string `field:"required" json:"roleArn" yaml:"roleArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 	BatchMode interface{} `field:"optional" json:"batchMode" yaml:"batchMode"`
 }
 

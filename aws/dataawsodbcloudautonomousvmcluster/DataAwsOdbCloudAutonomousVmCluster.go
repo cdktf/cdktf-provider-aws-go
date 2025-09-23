@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}.
 type DataAwsOdbCloudAutonomousVmCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -827,7 +827,7 @@ func (j *jsiiProxy_DataAwsOdbCloudAutonomousVmCluster) TotalContainerDatabases()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster} Data Source.
 func NewDataAwsOdbCloudAutonomousVmCluster(scope constructs.Construct, id *string, config *DataAwsOdbCloudAutonomousVmClusterConfig) DataAwsOdbCloudAutonomousVmCluster {
 	_init_.Initialize()
 
@@ -845,7 +845,7 @@ func NewDataAwsOdbCloudAutonomousVmCluster(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster} Data Source.
 func NewDataAwsOdbCloudAutonomousVmCluster_Override(d DataAwsOdbCloudAutonomousVmCluster, scope constructs.Construct, id *string, config *DataAwsOdbCloudAutonomousVmClusterConfig) {
 	_init_.Initialize()
 

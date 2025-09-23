@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier}.
 type ComprehendDocumentClassifier interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -677,7 +677,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifier) VpcConfigInput() *ComprehendDoc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
 func NewComprehendDocumentClassifier(scope constructs.Construct, id *string, config *ComprehendDocumentClassifierConfig) ComprehendDocumentClassifier {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewComprehendDocumentClassifier(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
 func NewComprehendDocumentClassifier_Override(c ComprehendDocumentClassifier, scope constructs.Construct, id *string, config *ComprehendDocumentClassifierConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations}.
 type DataAwsVpcEndpointAssociations interface {
 	cdktf.TerraformDataSource
 	Associations() DataAwsVpcEndpointAssociationsAssociationsList
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsVpcEndpointAssociations) VpcEndpointIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations} Data Source.
 func NewDataAwsVpcEndpointAssociations(scope constructs.Construct, id *string, config *DataAwsVpcEndpointAssociationsConfig) DataAwsVpcEndpointAssociations {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsVpcEndpointAssociations(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/vpc_endpoint_associations aws_vpc_endpoint_associations} Data Source.
 func NewDataAwsVpcEndpointAssociations_Override(d DataAwsVpcEndpointAssociations, scope constructs.Construct, id *string, config *DataAwsVpcEndpointAssociationsConfig) {
 	_init_.Initialize()
 

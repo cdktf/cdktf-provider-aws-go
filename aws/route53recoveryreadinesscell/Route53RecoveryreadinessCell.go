@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell}.
 type Route53RecoveryreadinessCell interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell} Resource.
 func NewRoute53RecoveryreadinessCell(scope constructs.Construct, id *string, config *Route53RecoveryreadinessCellConfig) Route53RecoveryreadinessCell {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewRoute53RecoveryreadinessCell(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoveryreadiness_cell aws_route53recoveryreadiness_cell} Resource.
 func NewRoute53RecoveryreadinessCell_Override(r Route53RecoveryreadinessCell, scope constructs.Construct, id *string, config *Route53RecoveryreadinessCellConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/default_security_group aws_default_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/default_security_group aws_default_security_group}.
 type DefaultSecurityGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -533,7 +533,7 @@ func (j *jsiiProxy_DefaultSecurityGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/default_security_group aws_default_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/default_security_group aws_default_security_group} Resource.
 func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *DefaultSecurityGroupConfig) DefaultSecurityGroup {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *Def
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/default_security_group aws_default_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/default_security_group aws_default_security_group} Resource.
 func NewDefaultSecurityGroup_Override(d DefaultSecurityGroup, scope constructs.Construct, id *string, config *DefaultSecurityGroupConfig) {
 	_init_.Initialize()
 

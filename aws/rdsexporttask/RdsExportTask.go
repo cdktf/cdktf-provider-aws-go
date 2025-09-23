@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/rds_export_task aws_rds_export_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/rds_export_task aws_rds_export_task}.
 type RdsExportTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -596,7 +596,7 @@ func (j *jsiiProxy_RdsExportTask) WarningMessage() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportTaskConfig) RdsExportTask {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask_Override(r RdsExportTask, scope constructs.Construct, id *string, config *RdsExportTaskConfig) {
 	_init_.Initialize()
 
