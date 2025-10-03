@@ -1,3 +1,3 @@
 # `aws_datasync_location_azure_blob`
 
-Refer to the Terraform Registry for docs: [`aws_datasync_location_azure_blob`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/datasync_location_azure_blob).
+Refer to the Terraform Registry for docs: [`aws_datasync_location_azure_blob`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/datasync_location_azure_blob).

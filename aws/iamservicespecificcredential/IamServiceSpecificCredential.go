@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
 type IamServiceSpecificCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,10 +27,15 @@ type IamServiceSpecificCredential interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateDate() *string
+	CredentialAgeDays() *float64
+	SetCredentialAgeDays(val *float64)
+	CredentialAgeDaysInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationDate() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,6 +63,8 @@ type IamServiceSpecificCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceCredentialAlias() *string
+	ServiceCredentialSecret() *string
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
@@ -119,6 +126,7 @@ type IamServiceSpecificCredential interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCredentialAgeDays()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -182,11 +190,51 @@ func (j *jsiiProxy_IamServiceSpecificCredential) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IamServiceSpecificCredential) CreateDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential) CredentialAgeDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"credentialAgeDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential) CredentialAgeDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"credentialAgeDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IamServiceSpecificCredential) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential) ExpirationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationDate",
 		&returns,
 	)
 	return returns
@@ -287,6 +335,26 @@ func (j *jsiiProxy_IamServiceSpecificCredential) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential) ServiceCredentialAlias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceCredentialAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential) ServiceCredentialSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceCredentialSecret",
 		&returns,
 	)
 	return returns
@@ -413,7 +481,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
 func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, config *IamServiceSpecificCredentialConfig) IamServiceSpecificCredential {
 	_init_.Initialize()
 
@@ -431,7 +499,7 @@ func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
 func NewIamServiceSpecificCredential_Override(i IamServiceSpecificCredential, scope constructs.Construct, id *string, config *IamServiceSpecificCredentialConfig) {
 	_init_.Initialize()
 
@@ -460,6 +528,17 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IamServiceSpecificCredential)SetCredentialAgeDays(val *float64) {
+	if err := j.validateSetCredentialAgeDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialAgeDays",
 		val,
 	)
 }
@@ -904,6 +983,14 @@ func (i *jsiiProxy_IamServiceSpecificCredential) OverrideLogicalId(newLogicalId 
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IamServiceSpecificCredential) ResetCredentialAgeDays() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCredentialAgeDays",
+		nil, // no parameters
 	)
 }
 

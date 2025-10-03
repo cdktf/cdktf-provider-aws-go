@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb aws_lb}.
 type DataAwsLb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsLbAccessLogsList
@@ -82,6 +82,7 @@ type DataAwsLb interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecondaryIpsAutoAssignedPerSubnet() *float64
 	SecurityGroups() *[]*string
 	SubnetMapping() DataAwsLbSubnetMappingList
 	Subnets() *[]*string
@@ -573,6 +574,16 @@ func (j *jsiiProxy_DataAwsLb) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLb) SecondaryIpsAutoAssignedPerSubnet() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryIpsAutoAssignedPerSubnet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLb) SecurityGroups() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -704,7 +715,7 @@ func (j *jsiiProxy_DataAwsLb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfig) DataAwsLb {
 	_init_.Initialize()
 
@@ -722,7 +733,7 @@ func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb_Override(d DataAwsLb, scope constructs.Construct, id *string, config *DataAwsLbConfig) {
 	_init_.Initialize()
 

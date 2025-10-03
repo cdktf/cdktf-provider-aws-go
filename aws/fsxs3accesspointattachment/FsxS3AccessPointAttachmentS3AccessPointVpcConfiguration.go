@@ -5,7 +5,7 @@ package fsxs3accesspointattachment
 
 
 type FsxS3AccessPointAttachmentS3AccessPointVpcConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/fsx_s3_access_point_attachment#vpc_id FsxS3AccessPointAttachment#vpc_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/fsx_s3_access_point_attachment#vpc_id FsxS3AccessPointAttachment#vpc_id}.
 	VpcId *string `field:"optional" json:"vpcId" yaml:"vpcId"`
 }
 

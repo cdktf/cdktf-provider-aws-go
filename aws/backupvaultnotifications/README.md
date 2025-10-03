@@ -1,3 +1,3 @@
 # `aws_backup_vault_notifications`
 
-Refer to the Terraform Registry for docs: [`aws_backup_vault_notifications`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/backup_vault_notifications).
+Refer to the Terraform Registry for docs: [`aws_backup_vault_notifications`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/backup_vault_notifications).

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation}.
 type DataAwsIamPrincipalPolicySimulation interface {
 	cdktf.TerraformDataSource
 	ActionNames() *[]*string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_DataAwsIamPrincipalPolicySimulation) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation} Data Source.
 func NewDataAwsIamPrincipalPolicySimulation(scope constructs.Construct, id *string, config *DataAwsIamPrincipalPolicySimulationConfig) DataAwsIamPrincipalPolicySimulation {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewDataAwsIamPrincipalPolicySimulation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/iam_principal_policy_simulation aws_iam_principal_policy_simulation} Data Source.
 func NewDataAwsIamPrincipalPolicySimulation_Override(d DataAwsIamPrincipalPolicySimulation, scope constructs.Construct, id *string, config *DataAwsIamPrincipalPolicySimulationConfig) {
 	_init_.Initialize()
 

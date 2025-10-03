@@ -1,3 +1,3 @@
 # `aws_customer_gateway`
 
-Refer to the Terraform Registry for docs: [`aws_customer_gateway`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/customer_gateway).
+Refer to the Terraform Registry for docs: [`aws_customer_gateway`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/customer_gateway).

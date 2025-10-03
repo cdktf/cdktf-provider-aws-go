@@ -1,3 +1,3 @@
 # `aws_waf_rule`
 
-Refer to the Terraform Registry for docs: [`aws_waf_rule`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/waf_rule).
+Refer to the Terraform Registry for docs: [`aws_waf_rule`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/waf_rule).

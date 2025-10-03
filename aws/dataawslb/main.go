@@ -76,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "secondaryIpsAutoAssignedPerSubnet", GoGetter: "SecondaryIpsAutoAssignedPerSubnet"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroups", GoGetter: "SecurityGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetMapping", GoGetter: "SubnetMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "subnets", GoGetter: "Subnets"},

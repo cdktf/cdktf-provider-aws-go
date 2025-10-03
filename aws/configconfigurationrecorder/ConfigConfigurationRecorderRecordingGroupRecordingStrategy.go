@@ -5,7 +5,7 @@ package configconfigurationrecorder
 
 
 type ConfigConfigurationRecorderRecordingGroupRecordingStrategy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}.
 	UseOnly *string `field:"optional" json:"useOnly" yaml:"useOnly"`
 }
 

@@ -119,6 +119,14 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewRoute53RecoverycontrolconfigControlPanelParameters(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigControlPanelConfig) error {
 	return nil
 }

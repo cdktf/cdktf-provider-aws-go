@@ -5,9 +5,9 @@ package devopsgururesourcecollection
 
 
 type DevopsguruResourceCollectionTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/devopsguru_resource_collection#app_boundary_key DevopsguruResourceCollection#app_boundary_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devopsguru_resource_collection#app_boundary_key DevopsguruResourceCollection#app_boundary_key}.
 	AppBoundaryKey *string `field:"required" json:"appBoundaryKey" yaml:"appBoundaryKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/devopsguru_resource_collection#tag_values DevopsguruResourceCollection#tag_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devopsguru_resource_collection#tag_values DevopsguruResourceCollection#tag_values}.
 	TagValues *[]*string `field:"required" json:"tagValues" yaml:"tagValues"`
 }
 

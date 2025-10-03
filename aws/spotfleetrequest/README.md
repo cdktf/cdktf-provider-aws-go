@@ -1,3 +1,3 @@
 # `aws_spot_fleet_request`
 
-Refer to the Terraform Registry for docs: [`aws_spot_fleet_request`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/spot_fleet_request).
+Refer to the Terraform Registry for docs: [`aws_spot_fleet_request`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/spot_fleet_request).

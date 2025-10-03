@@ -7,11 +7,11 @@ package bedrockagentprompt
 type BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration struct {
 	// tool block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_prompt#tool BedrockagentPrompt#tool}
 	Tool interface{} `field:"optional" json:"tool" yaml:"tool"`
 	// tool_choice block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_prompt#tool_choice BedrockagentPrompt#tool_choice}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_prompt#tool_choice BedrockagentPrompt#tool_choice}
 	ToolChoice interface{} `field:"optional" json:"toolChoice" yaml:"toolChoice"`
 }
 

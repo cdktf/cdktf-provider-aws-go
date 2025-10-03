@@ -1,3 +1,3 @@
 # `aws_codestarconnections_host`
 
-Refer to the Terraform Registry for docs: [`aws_codestarconnections_host`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/codestarconnections_host).
+Refer to the Terraform Registry for docs: [`aws_codestarconnections_host`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/codestarconnections_host).

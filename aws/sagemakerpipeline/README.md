@@ -1,3 +1,3 @@
 # `aws_sagemaker_pipeline`
 
-Refer to the Terraform Registry for docs: [`aws_sagemaker_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/sagemaker_pipeline).
+Refer to the Terraform Registry for docs: [`aws_sagemaker_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/sagemaker_pipeline).

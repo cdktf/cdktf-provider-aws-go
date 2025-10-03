@@ -5,9 +5,9 @@ package medialivechannel
 
 
 type MedialiveChannelInputAttachmentsInputSettingsVideoSelector struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}.
 	ColorSpace *string `field:"optional" json:"colorSpace" yaml:"colorSpace"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}.
 	ColorSpaceUsage *string `field:"optional" json:"colorSpaceUsage" yaml:"colorSpaceUsage"`
 }
 

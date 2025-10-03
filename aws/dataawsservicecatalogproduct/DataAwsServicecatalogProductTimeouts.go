@@ -5,7 +5,7 @@ package dataawsservicecatalogproduct
 
 
 type DataAwsServicecatalogProductTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/servicecatalog_product#read DataAwsServicecatalogProduct#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/servicecatalog_product#read DataAwsServicecatalogProduct#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

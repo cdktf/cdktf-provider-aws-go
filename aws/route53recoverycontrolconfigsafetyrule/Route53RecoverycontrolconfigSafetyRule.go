@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule}.
 type Route53RecoverycontrolconfigSafetyRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,12 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	RuleConfig() Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference
 	RuleConfigInput() *Route53RecoverycontrolconfigSafetyRuleRuleConfig
 	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	TargetControls() *[]*string
 	SetTargetControls(val *[]*string)
 	TargetControlsInput() *[]*string
@@ -136,6 +142,8 @@ type Route53RecoverycontrolconfigSafetyRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	ResetTargetControls()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -425,6 +433,46 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) TargetControls() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -496,7 +544,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) WaitPeriodMsInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule} Resource.
 func NewRoute53RecoverycontrolconfigSafetyRule(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigSafetyRuleConfig) Route53RecoverycontrolconfigSafetyRule {
 	_init_.Initialize()
 
@@ -514,7 +562,7 @@ func NewRoute53RecoverycontrolconfigSafetyRule(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_safety_rule aws_route53recoverycontrolconfig_safety_rule} Resource.
 func NewRoute53RecoverycontrolconfigSafetyRule_Override(r Route53RecoverycontrolconfigSafetyRule, scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigSafetyRuleConfig) {
 	_init_.Initialize()
 
@@ -644,6 +692,28 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetProvisioners(val *[
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1062,6 +1132,22 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ResetOverrideLogicalI
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package gluepartitionindex
 
 
 type GluePartitionIndexPartitionIndex struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/glue_partition_index#index_name GluePartitionIndex#index_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/glue_partition_index#index_name GluePartitionIndex#index_name}.
 	IndexName *string `field:"optional" json:"indexName" yaml:"indexName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/glue_partition_index#keys GluePartitionIndex#keys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/glue_partition_index#keys GluePartitionIndex#keys}.
 	Keys *[]*string `field:"optional" json:"keys" yaml:"keys"`
 }
 

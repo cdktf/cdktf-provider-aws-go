@@ -5,7 +5,7 @@ package daxcluster
 
 
 type DaxClusterServerSideEncryption struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dax_cluster#enabled DaxCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dax_cluster#enabled DaxCluster#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

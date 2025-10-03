@@ -1,3 +1,3 @@
 # `aws_datazone_form_type`
 
-Refer to the Terraform Registry for docs: [`aws_datazone_form_type`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/datazone_form_type).
+Refer to the Terraform Registry for docs: [`aws_datazone_form_type`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/datazone_form_type).

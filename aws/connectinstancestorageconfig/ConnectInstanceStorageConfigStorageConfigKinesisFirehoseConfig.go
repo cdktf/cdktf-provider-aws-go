@@ -5,7 +5,7 @@ package connectinstancestorageconfig
 
 
 type ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/connect_instance_storage_config#firehose_arn ConnectInstanceStorageConfig#firehose_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/connect_instance_storage_config#firehose_arn ConnectInstanceStorageConfig#firehose_arn}.
 	FirehoseArn *string `field:"required" json:"firehoseArn" yaml:"firehoseArn"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/network_interfaces aws_network_interfaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/network_interfaces aws_network_interfaces}.
 type DataAwsNetworkInterfaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAwsNetworkInterfaces) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
 func NewDataAwsNetworkInterfaces(scope constructs.Construct, id *string, config *DataAwsNetworkInterfacesConfig) DataAwsNetworkInterfaces {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAwsNetworkInterfaces(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/network_interfaces aws_network_interfaces} Data Source.
 func NewDataAwsNetworkInterfaces_Override(d DataAwsNetworkInterfaces, scope constructs.Construct, id *string, config *DataAwsNetworkInterfacesConfig) {
 	_init_.Initialize()
 

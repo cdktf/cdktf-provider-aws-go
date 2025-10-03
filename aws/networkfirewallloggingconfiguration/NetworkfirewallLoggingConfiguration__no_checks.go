@@ -103,6 +103,10 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetEnableMonitoringDashboardParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetFirewallArnParameters(val *string) error {
 	return nil
 }

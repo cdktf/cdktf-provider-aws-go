@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}.
 type EcsCapacityProvider interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -20,6 +20,9 @@ type EcsCapacityProvider interface {
 	AutoScalingGroupProviderInput() *EcsCapacityProviderAutoScalingGroupProvider
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Cluster() *string
+	SetCluster(val *string)
+	ClusterInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -49,6 +52,8 @@ type EcsCapacityProvider interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedInstancesProvider() EcsCapacityProviderManagedInstancesProviderOutputReference
+	ManagedInstancesProviderInput() *EcsCapacityProviderManagedInstancesProvider
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -123,7 +128,11 @@ type EcsCapacityProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoScalingGroupProvider(value *EcsCapacityProviderAutoScalingGroupProvider)
+	PutManagedInstancesProvider(value *EcsCapacityProviderManagedInstancesProvider)
+	ResetAutoScalingGroupProvider()
+	ResetCluster()
 	ResetId()
+	ResetManagedInstancesProvider()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,6 +192,26 @@ func (j *jsiiProxy_EcsCapacityProvider) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProvider) Cluster() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProvider) ClusterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterInput",
 		&returns,
 	)
 	return returns
@@ -283,6 +312,26 @@ func (j *jsiiProxy_EcsCapacityProvider) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProvider) ManagedInstancesProvider() EcsCapacityProviderManagedInstancesProviderOutputReference {
+	var returns EcsCapacityProviderManagedInstancesProviderOutputReference
+	_jsii_.Get(
+		j,
+		"managedInstancesProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProvider) ManagedInstancesProviderInput() *EcsCapacityProviderManagedInstancesProvider {
+	var returns *EcsCapacityProviderManagedInstancesProvider
+	_jsii_.Get(
+		j,
+		"managedInstancesProviderInput",
 		&returns,
 	)
 	return returns
@@ -439,7 +488,7 @@ func (j *jsiiProxy_EcsCapacityProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
 func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsCapacityProviderConfig) EcsCapacityProvider {
 	_init_.Initialize()
 
@@ -457,7 +506,7 @@ func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
 func NewEcsCapacityProvider_Override(e EcsCapacityProvider, scope constructs.Construct, id *string, config *EcsCapacityProviderConfig) {
 	_init_.Initialize()
 
@@ -465,6 +514,17 @@ func NewEcsCapacityProvider_Override(e EcsCapacityProvider, scope constructs.Con
 		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EcsCapacityProvider)SetCluster(val *string) {
+	if err := j.validateSetClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cluster",
+		val,
 	)
 }
 
@@ -955,10 +1015,45 @@ func (e *jsiiProxy_EcsCapacityProvider) PutAutoScalingGroupProvider(value *EcsCa
 	)
 }
 
+func (e *jsiiProxy_EcsCapacityProvider) PutManagedInstancesProvider(value *EcsCapacityProviderManagedInstancesProvider) {
+	if err := e.validatePutManagedInstancesProviderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putManagedInstancesProvider",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) ResetAutoScalingGroupProvider() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAutoScalingGroupProvider",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) ResetCluster() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCluster",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_EcsCapacityProvider) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) ResetManagedInstancesProvider() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetManagedInstancesProvider",
 		nil, // no parameters
 	)
 }

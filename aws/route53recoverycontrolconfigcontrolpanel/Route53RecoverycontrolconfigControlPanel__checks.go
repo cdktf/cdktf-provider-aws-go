@@ -415,6 +415,22 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewRoute53RecoverycontrolconfigControlPanelParameters(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigControlPanelConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

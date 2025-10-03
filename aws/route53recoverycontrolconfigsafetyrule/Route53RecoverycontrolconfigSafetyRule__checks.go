@@ -442,6 +442,22 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTargetControlsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

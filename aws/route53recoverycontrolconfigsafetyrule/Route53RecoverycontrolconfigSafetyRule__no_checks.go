@@ -131,6 +131,14 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetTargetControlsParameters(val *[]*string) error {
 	return nil
 }

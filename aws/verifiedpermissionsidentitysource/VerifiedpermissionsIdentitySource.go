@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source}.
 type VerifiedpermissionsIdentitySource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_VerifiedpermissionsIdentitySource) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source} Resource.
 func NewVerifiedpermissionsIdentitySource(scope constructs.Construct, id *string, config *VerifiedpermissionsIdentitySourceConfig) VerifiedpermissionsIdentitySource {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewVerifiedpermissionsIdentitySource(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/verifiedpermissions_identity_source aws_verifiedpermissions_identity_source} Resource.
 func NewVerifiedpermissionsIdentitySource_Override(v VerifiedpermissionsIdentitySource, scope constructs.Construct, id *string, config *VerifiedpermissionsIdentitySourceConfig) {
 	_init_.Initialize()
 

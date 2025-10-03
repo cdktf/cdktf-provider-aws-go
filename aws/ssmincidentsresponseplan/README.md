@@ -1,3 +1,3 @@
 # `aws_ssmincidents_response_plan`
 
-Refer to the Terraform Registry for docs: [`aws_ssmincidents_response_plan`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/ssmincidents_response_plan).
+Refer to the Terraform Registry for docs: [`aws_ssmincidents_response_plan`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ssmincidents_response_plan).

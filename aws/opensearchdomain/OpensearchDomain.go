@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_domain aws_opensearch_domain}.
 type OpensearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -23,6 +23,8 @@ type OpensearchDomain interface {
 	AdvancedOptionsInput() *map[string]*string
 	AdvancedSecurityOptions() OpensearchDomainAdvancedSecurityOptionsOutputReference
 	AdvancedSecurityOptionsInput() *OpensearchDomainAdvancedSecurityOptions
+	AimlOptions() OpensearchDomainAimlOptionsOutputReference
+	AimlOptionsInput() *OpensearchDomainAimlOptions
 	Arn() *string
 	AutoTuneOptions() OpensearchDomainAutoTuneOptionsOutputReference
 	AutoTuneOptionsInput() *OpensearchDomainAutoTuneOptions
@@ -167,6 +169,7 @@ type OpensearchDomain interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedSecurityOptions(value *OpensearchDomainAdvancedSecurityOptions)
+	PutAimlOptions(value *OpensearchDomainAimlOptions)
 	PutAutoTuneOptions(value *OpensearchDomainAutoTuneOptions)
 	PutClusterConfig(value *OpensearchDomainClusterConfig)
 	PutCognitoOptions(value *OpensearchDomainCognitoOptions)
@@ -183,6 +186,7 @@ type OpensearchDomain interface {
 	ResetAccessPolicies()
 	ResetAdvancedOptions()
 	ResetAdvancedSecurityOptions()
+	ResetAimlOptions()
 	ResetAutoTuneOptions()
 	ResetClusterConfig()
 	ResetCognitoOptions()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_OpensearchDomain) AdvancedSecurityOptionsInput() *OpensearchD
 	_jsii_.Get(
 		j,
 		"advancedSecurityOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AimlOptions() OpensearchDomainAimlOptionsOutputReference {
+	var returns OpensearchDomainAimlOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"aimlOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) AimlOptionsInput() *OpensearchDomainAimlOptions {
+	var returns *OpensearchDomainAimlOptions
+	_jsii_.Get(
+		j,
+		"aimlOptionsInput",
 		&returns,
 	)
 	return returns
@@ -914,7 +938,7 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
 
@@ -932,7 +956,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -1474,6 +1498,17 @@ func (o *jsiiProxy_OpensearchDomain) PutAdvancedSecurityOptions(value *Opensearc
 	)
 }
 
+func (o *jsiiProxy_OpensearchDomain) PutAimlOptions(value *OpensearchDomainAimlOptions) {
+	if err := o.validatePutAimlOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAimlOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchDomain) PutAutoTuneOptions(value *OpensearchDomainAutoTuneOptions) {
 	if err := o.validatePutAutoTuneOptionsParameters(value); err != nil {
 		panic(err)
@@ -1637,6 +1672,14 @@ func (o *jsiiProxy_OpensearchDomain) ResetAdvancedSecurityOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAdvancedSecurityOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetAimlOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAimlOptions",
 		nil, // no parameters
 	)
 }

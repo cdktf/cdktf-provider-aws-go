@@ -5,9 +5,9 @@ package dataawssubnets
 
 
 type DataAwsSubnetsFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/subnets#name DataAwsSubnets#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/subnets#name DataAwsSubnets#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/subnets#values DataAwsSubnets#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/subnets#values DataAwsSubnets#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

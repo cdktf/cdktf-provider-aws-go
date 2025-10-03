@@ -79,6 +79,10 @@ func (e *jsiiProxy_EcsCapacityProvider) validatePutAutoScalingGroupProviderParam
 	return nil
 }
 
+func (e *jsiiProxy_EcsCapacityProvider) validatePutManagedInstancesProviderParameters(value *EcsCapacityProviderManagedInstancesProvider) error {
+	return nil
+}
+
 func validateEcsCapacityProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func validateEcsCapacityProvider_IsTerraformElementParameters(x interface{}) err
 }
 
 func validateEcsCapacityProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_EcsCapacityProvider) validateSetClusterParameters(val *string) error {
 	return nil
 }
 

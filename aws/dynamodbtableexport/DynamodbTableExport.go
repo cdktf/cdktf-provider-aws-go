@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
 type DynamodbTableExport interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -673,7 +673,7 @@ func (j *jsiiProxy_DynamodbTableExport) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
 func NewDynamodbTableExport(scope constructs.Construct, id *string, config *DynamodbTableExportConfig) DynamodbTableExport {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewDynamodbTableExport(scope constructs.Construct, id *string, config *Dyna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export} Resource.
 func NewDynamodbTableExport_Override(d DynamodbTableExport, scope constructs.Construct, id *string, config *DynamodbTableExportConfig) {
 	_init_.Initialize()
 

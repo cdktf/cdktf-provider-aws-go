@@ -7,7 +7,7 @@ package prometheusscraper
 type PrometheusScraperSource struct {
 	// eks block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/prometheus_scraper#eks PrometheusScraper#eks}
 	Eks interface{} `field:"optional" json:"eks" yaml:"eks"`
 }
 

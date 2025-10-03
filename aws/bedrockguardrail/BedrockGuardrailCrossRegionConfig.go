@@ -5,7 +5,7 @@ package bedrockguardrail
 
 
 type BedrockGuardrailCrossRegionConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrock_guardrail#guardrail_profile_identifier BedrockGuardrail#guardrail_profile_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrock_guardrail#guardrail_profile_identifier BedrockGuardrail#guardrail_profile_identifier}.
 	GuardrailProfileIdentifier *string `field:"required" json:"guardrailProfileIdentifier" yaml:"guardrailProfileIdentifier"`
 }
 

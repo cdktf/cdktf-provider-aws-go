@@ -38,6 +38,9 @@ type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
 	HttpsPortInput() *float64
 	InternalValue() *CloudfrontDistributionOriginCustomOriginConfig
 	SetInternalValue(val *CloudfrontDistributionOriginCustomOriginConfig)
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	OriginKeepaliveTimeout() *float64
 	SetOriginKeepaliveTimeout(val *float64)
 	OriginKeepaliveTimeoutInput() *float64
@@ -82,6 +85,7 @@ type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpAddressType()
 	ResetOriginKeepaliveTimeout()
 	ResetOriginReadTimeout()
 	// Produce the Token's value at resolution time.
@@ -184,6 +188,26 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -368,6 +392,17 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
 		val,
 	)
 }
@@ -622,6 +657,14 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpAddressType",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) ResetOriginKeepaliveTimeout() {

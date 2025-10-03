@@ -5,7 +5,7 @@ package dataawsec2transitgatewayconnect
 
 
 type DataAwsEc2TransitGatewayConnectTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/ec2_transit_gateway_connect#read DataAwsEc2TransitGatewayConnect#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/ec2_transit_gateway_connect#read DataAwsEc2TransitGatewayConnect#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter}.
 type LakeformationDataCellsFilter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_LakeformationDataCellsFilter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
 func NewLakeformationDataCellsFilter(scope constructs.Construct, id *string, config *LakeformationDataCellsFilterConfig) LakeformationDataCellsFilter {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewLakeformationDataCellsFilter(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_data_cells_filter aws_lakeformation_data_cells_filter} Resource.
 func NewLakeformationDataCellsFilter_Override(l LakeformationDataCellsFilter, scope constructs.Construct, id *string, config *LakeformationDataCellsFilterConfig) {
 	_init_.Initialize()
 

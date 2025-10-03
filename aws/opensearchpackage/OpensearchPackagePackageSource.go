@@ -5,9 +5,9 @@ package opensearchpackage
 
 
 type OpensearchPackagePackageSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_package#s3_bucket_name OpensearchPackage#s3_bucket_name}.
 	S3BucketName *string `field:"required" json:"s3BucketName" yaml:"s3BucketName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_package#s3_key OpensearchPackage#s3_key}.
 	S3Key *string `field:"required" json:"s3Key" yaml:"s3Key"`
 }
 

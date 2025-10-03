@@ -1,3 +1,3 @@
 # `aws_devicefarm_device_pool`
 
-Refer to the Terraform Registry for docs: [`aws_devicefarm_device_pool`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/devicefarm_device_pool).
+Refer to the Terraform Registry for docs: [`aws_devicefarm_device_pool`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devicefarm_device_pool).

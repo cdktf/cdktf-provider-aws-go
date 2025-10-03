@@ -5,7 +5,7 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentClosingSettingConditionalConditionalBranchCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
 	ExpressionString *string `field:"required" json:"expressionString" yaml:"expressionString"`
 }
 

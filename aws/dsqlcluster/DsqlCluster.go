@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster aws_dsql_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster aws_dsql_cluster}.
 type DsqlCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -36,6 +36,9 @@ type DsqlCluster interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EncryptionDetails() DsqlClusterEncryptionDetailsList
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -128,6 +131,7 @@ type DsqlCluster interface {
 	PutMultiRegionProperties(value interface{})
 	PutTimeouts(value *DsqlClusterTimeouts)
 	ResetDeletionProtectionEnabled()
+	ResetForceDestroy()
 	ResetKmsEncryptionKey()
 	ResetMultiRegionProperties()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_DsqlCluster) EncryptionDetails() DsqlClusterEncryptionDetails
 	_jsii_.Get(
 		j,
 		"encryptionDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DsqlCluster) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DsqlCluster) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -485,7 +509,7 @@ func (j *jsiiProxy_DsqlCluster) VpcEndpointServiceName() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
 func NewDsqlCluster(scope constructs.Construct, id *string, config *DsqlClusterConfig) DsqlCluster {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewDsqlCluster(scope constructs.Construct, id *string, config *DsqlClusterC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dsql_cluster aws_dsql_cluster} Resource.
 func NewDsqlCluster_Override(d DsqlCluster, scope constructs.Construct, id *string, config *DsqlClusterConfig) {
 	_init_.Initialize()
 
@@ -551,6 +575,17 @@ func (j *jsiiProxy_DsqlCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DsqlCluster)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -1005,6 +1040,14 @@ func (d *jsiiProxy_DsqlCluster) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DsqlCluster) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }

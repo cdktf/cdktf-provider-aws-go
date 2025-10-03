@@ -1,3 +1,3 @@
 # `aws_dms_replication_subnet_group`
 
-Refer to the Terraform Registry for docs: [`aws_dms_replication_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dms_replication_subnet_group).
+Refer to the Terraform Registry for docs: [`aws_dms_replication_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dms_replication_subnet_group).

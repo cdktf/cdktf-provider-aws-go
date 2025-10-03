@@ -1,3 +1,3 @@
 # `aws_networkfirewall_vpc_endpoint_association`
 
-Refer to the Terraform Registry for docs: [`aws_networkfirewall_vpc_endpoint_association`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/networkfirewall_vpc_endpoint_association).
+Refer to the Terraform Registry for docs: [`aws_networkfirewall_vpc_endpoint_association`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkfirewall_vpc_endpoint_association).

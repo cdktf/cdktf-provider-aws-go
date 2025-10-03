@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}.
 type OdbCloudVmCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,7 @@ type OdbCloudVmCluster interface {
 	FriendlyUniqueId() *string
 	GiVersion() *string
 	SetGiVersion(val *string)
+	GiVersionComputed() *string
 	GiVersionInput() *string
 	HostnamePrefix() *string
 	SetHostnamePrefix(val *string)
@@ -194,7 +195,6 @@ type OdbCloudVmCluster interface {
 	PutTimeouts(value *OdbCloudVmClusterTimeouts)
 	ResetClusterName()
 	ResetDataCollectionOptions()
-	ResetDataStorageSizeInTbs()
 	ResetDbNodeStorageSizeInGbs()
 	ResetIsLocalBackupEnabled()
 	ResetIsSparseDiskgroupEnabled()
@@ -521,6 +521,16 @@ func (j *jsiiProxy_OdbCloudVmCluster) GiVersion() *string {
 	_jsii_.Get(
 		j,
 		"giVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster) GiVersionComputed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"giVersionComputed",
 		&returns,
 	)
 	return returns
@@ -1057,7 +1067,7 @@ func (j *jsiiProxy_OdbCloudVmCluster) VipIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
 func NewOdbCloudVmCluster(scope constructs.Construct, id *string, config *OdbCloudVmClusterConfig) OdbCloudVmCluster {
 	_init_.Initialize()
 
@@ -1075,7 +1085,7 @@ func NewOdbCloudVmCluster(scope constructs.Construct, id *string, config *OdbClo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
 func NewOdbCloudVmCluster_Override(o OdbCloudVmCluster, scope constructs.Construct, id *string, config *OdbCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -1750,14 +1760,6 @@ func (o *jsiiProxy_OdbCloudVmCluster) ResetDataCollectionOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDataCollectionOptions",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OdbCloudVmCluster) ResetDataStorageSizeInTbs() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetDataStorageSizeInTbs",
 		nil, // no parameters
 	)
 }

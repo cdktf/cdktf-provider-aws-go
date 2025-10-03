@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration}.
 type NetworkfirewallLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type NetworkfirewallLoggingConfiguration interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableMonitoringDashboard() interface{}
+	SetEnableMonitoringDashboard(val interface{})
+	EnableMonitoringDashboardInput() interface{}
 	FirewallArn() *string
 	SetFirewallArn(val *string)
 	FirewallArnInput() *string
@@ -116,6 +119,7 @@ type NetworkfirewallLoggingConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLoggingConfiguration(value *NetworkfirewallLoggingConfigurationLoggingConfiguration)
+	ResetEnableMonitoringDashboard()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -184,6 +188,26 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) EnableMonitoringDashboard() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoringDashboard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) EnableMonitoringDashboardInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoringDashboardInput",
 		&returns,
 	)
 	return returns
@@ -380,7 +404,7 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration} Resource.
 func NewNetworkfirewallLoggingConfiguration(scope constructs.Construct, id *string, config *NetworkfirewallLoggingConfigurationConfig) NetworkfirewallLoggingConfiguration {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewNetworkfirewallLoggingConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkfirewall_logging_configuration aws_networkfirewall_logging_configuration} Resource.
 func NewNetworkfirewallLoggingConfiguration_Override(n NetworkfirewallLoggingConfiguration, scope constructs.Construct, id *string, config *NetworkfirewallLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -435,6 +459,17 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfiguration)SetDependsOn(val *[]*stri
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallLoggingConfiguration)SetEnableMonitoringDashboard(val interface{}) {
+	if err := j.validateSetEnableMonitoringDashboardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMonitoringDashboard",
 		val,
 	)
 }
@@ -871,6 +906,14 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) PutLoggingConfiguration(
 		n,
 		"putLoggingConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallLoggingConfiguration) ResetEnableMonitoringDashboard() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnableMonitoringDashboard",
+		nil, // no parameters
 	)
 }
 

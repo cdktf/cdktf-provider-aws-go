@@ -22,6 +22,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "advancedOptionsInput", GoGetter: "AdvancedOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityOptions", GoGetter: "AdvancedSecurityOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityOptionsInput", GoGetter: "AdvancedSecurityOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "aimlOptions", GoGetter: "AimlOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "aimlOptionsInput", GoGetter: "AimlOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "autoTuneOptions", GoGetter: "AutoTuneOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "autoTuneOptionsInput", GoGetter: "AutoTuneOptionsInput"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedSecurityOptions", GoMethod: "PutAdvancedSecurityOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putAimlOptions", GoMethod: "PutAimlOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoTuneOptions", GoMethod: "PutAutoTuneOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putClusterConfig", GoMethod: "PutClusterConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putCognitoOptions", GoMethod: "PutCognitoOptions"},
@@ -103,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessPolicies", GoMethod: "ResetAccessPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedOptions", GoMethod: "ResetAdvancedOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSecurityOptions", GoMethod: "ResetAdvancedSecurityOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAimlOptions", GoMethod: "ResetAimlOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoTuneOptions", GoMethod: "ResetAutoTuneOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterConfig", GoMethod: "ResetClusterConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCognitoOptions", GoMethod: "ResetCognitoOptions"},
@@ -240,6 +244,128 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptions",
+		reflect.TypeOf((*OpensearchDomainAimlOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptions",
+		reflect.TypeOf((*OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference",
+		reflect.TypeOf((*OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "desiredState", GoGetter: "DesiredState"},
+			_jsii_.MemberProperty{JsiiProperty: "desiredStateInput", GoGetter: "DesiredStateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDesiredState", GoMethod: "ResetDesiredState"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsOutputReference",
+		reflect.TypeOf((*OpensearchDomainAimlOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "naturalLanguageQueryGenerationOptions", GoGetter: "NaturalLanguageQueryGenerationOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "naturalLanguageQueryGenerationOptionsInput", GoGetter: "NaturalLanguageQueryGenerationOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putNaturalLanguageQueryGenerationOptions", GoMethod: "PutNaturalLanguageQueryGenerationOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putS3VectorsEngine", GoMethod: "PutS3VectorsEngine"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNaturalLanguageQueryGenerationOptions", GoMethod: "ResetNaturalLanguageQueryGenerationOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetS3VectorsEngine", GoMethod: "ResetS3VectorsEngine"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "s3VectorsEngine", GoGetter: "S3VectorsEngine"},
+			_jsii_.MemberProperty{JsiiProperty: "s3VectorsEngineInput", GoGetter: "S3VectorsEngineInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OpensearchDomainAimlOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsS3VectorsEngine",
+		reflect.TypeOf((*OpensearchDomainAimlOptionsS3VectorsEngine)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAimlOptionsS3VectorsEngineOutputReference",
+		reflect.TypeOf((*OpensearchDomainAimlOptionsS3VectorsEngineOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OpensearchDomainAimlOptionsS3VectorsEngineOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

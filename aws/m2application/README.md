@@ -1,3 +1,3 @@
 # `aws_m2_application`
 
-Refer to the Terraform Registry for docs: [`aws_m2_application`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/m2_application).
+Refer to the Terraform Registry for docs: [`aws_m2_application`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/m2_application).

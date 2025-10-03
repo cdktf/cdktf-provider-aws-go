@@ -79,6 +79,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutAdvancedSecurityOptionsParameter
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validatePutAimlOptionsParameters(value *OpensearchDomainAimlOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validatePutAutoTuneOptionsParameters(value *OpensearchDomainAutoTuneOptions) error {
 	return nil
 }

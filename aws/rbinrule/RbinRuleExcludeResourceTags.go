@@ -5,9 +5,9 @@ package rbinrule
 
 
 type RbinRuleExcludeResourceTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 	ResourceTagKey *string `field:"required" json:"resourceTagKey" yaml:"resourceTagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 	ResourceTagValue *string `field:"optional" json:"resourceTagValue" yaml:"resourceTagValue"`
 }
 

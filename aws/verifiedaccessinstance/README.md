@@ -1,3 +1,3 @@
 # `aws_verifiedaccess_instance`
 
-Refer to the Terraform Registry for docs: [`aws_verifiedaccess_instance`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/verifiedaccess_instance).
+Refer to the Terraform Registry for docs: [`aws_verifiedaccess_instance`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/verifiedaccess_instance).

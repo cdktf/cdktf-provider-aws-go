@@ -1,3 +1,3 @@
 # `aws_transfer_tag`
 
-Refer to the Terraform Registry for docs: [`aws_transfer_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/transfer_tag).
+Refer to the Terraform Registry for docs: [`aws_transfer_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/transfer_tag).

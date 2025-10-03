@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationAgent struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#agent_alias_arn BedrockagentFlow#agent_alias_arn}.
 	AgentAliasArn *string `field:"required" json:"agentAliasArn" yaml:"agentAliasArn"`
 }
 

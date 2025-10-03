@@ -111,7 +111,19 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetNetworkTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetTagsAllParameters(val *map[string]*string) error {
 	return nil
 }
 

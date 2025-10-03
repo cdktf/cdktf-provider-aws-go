@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group}.
 type DataAwsRdsClusterParameterGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataAwsRdsClusterParameterGroup) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group} Data Source.
 func NewDataAwsRdsClusterParameterGroup(scope constructs.Construct, id *string, config *DataAwsRdsClusterParameterGroupConfig) DataAwsRdsClusterParameterGroup {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataAwsRdsClusterParameterGroup(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group} Data Source.
 func NewDataAwsRdsClusterParameterGroup_Override(d DataAwsRdsClusterParameterGroup, scope constructs.Construct, id *string, config *DataAwsRdsClusterParameterGroupConfig) {
 	_init_.Initialize()
 

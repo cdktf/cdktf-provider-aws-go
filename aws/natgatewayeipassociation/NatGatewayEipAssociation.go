@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
 type NatGatewayEipAssociation interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NatGatewayEipAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association} Resource.
 func NewNatGatewayEipAssociation(scope constructs.Construct, id *string, config *NatGatewayEipAssociationConfig) NatGatewayEipAssociation {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewNatGatewayEipAssociation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association} Resource.
 func NewNatGatewayEipAssociation_Override(n NatGatewayEipAssociation, scope constructs.Construct, id *string, config *NatGatewayEipAssociationConfig) {
 	_init_.Initialize()
 

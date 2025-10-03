@@ -1,3 +1,3 @@
 # `aws_cloudwatch_log_stream`
 
-Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_stream`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/cloudwatch_log_stream).
+Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_stream`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/cloudwatch_log_stream).

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/db_proxy aws_db_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/db_proxy aws_db_proxy}.
 type DataAwsDbProxy interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -26,6 +26,7 @@ type DataAwsDbProxy interface {
 	// Experimental.
 	SetCount(val interface{})
 	DebugLogging() cdktf.IResolvable
+	DefaultAuthScheme() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataAwsDbProxy) DebugLogging() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"debugLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbProxy) DefaultAuthScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAuthScheme",
 		&returns,
 	)
 	return returns
@@ -433,7 +444,7 @@ func (j *jsiiProxy_DataAwsDbProxy) VpcSubnetIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/db_proxy aws_db_proxy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/db_proxy aws_db_proxy} Data Source.
 func NewDataAwsDbProxy(scope constructs.Construct, id *string, config *DataAwsDbProxyConfig) DataAwsDbProxy {
 	_init_.Initialize()
 
@@ -451,7 +462,7 @@ func NewDataAwsDbProxy(scope constructs.Construct, id *string, config *DataAwsDb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/db_proxy aws_db_proxy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/db_proxy aws_db_proxy} Data Source.
 func NewDataAwsDbProxy_Override(d DataAwsDbProxy, scope constructs.Construct, id *string, config *DataAwsDbProxyConfig) {
 	_init_.Initialize()
 

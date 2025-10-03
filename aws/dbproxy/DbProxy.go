@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy aws_db_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy aws_db_proxy}.
 type DbProxy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -33,6 +33,9 @@ type DbProxy interface {
 	DebugLogging() interface{}
 	SetDebugLogging(val interface{})
 	DebugLoggingInput() interface{}
+	DefaultAuthScheme() *string
+	SetDefaultAuthScheme(val *string)
+	DefaultAuthSchemeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,7 +151,9 @@ type DbProxy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuth(value interface{})
 	PutTimeouts(value *DbProxyTimeouts)
+	ResetAuth()
 	ResetDebugLogging()
+	ResetDefaultAuthScheme()
 	ResetId()
 	ResetIdleClientTimeout()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -263,6 +268,26 @@ func (j *jsiiProxy_DbProxy) DebugLoggingInput() interface{} {
 	_jsii_.Get(
 		j,
 		"debugLoggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbProxy) DefaultAuthScheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAuthScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbProxy) DefaultAuthSchemeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAuthSchemeInput",
 		&returns,
 	)
 	return returns
@@ -639,7 +664,7 @@ func (j *jsiiProxy_DbProxy) VpcSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy aws_db_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy aws_db_proxy} Resource.
 func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) DbProxy {
 	_init_.Initialize()
 
@@ -657,7 +682,7 @@ func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/db_proxy aws_db_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/db_proxy aws_db_proxy} Resource.
 func NewDbProxy_Override(d DbProxy, scope constructs.Construct, id *string, config *DbProxyConfig) {
 	_init_.Initialize()
 
@@ -697,6 +722,17 @@ func (j *jsiiProxy_DbProxy)SetDebugLogging(val interface{}) {
 	_jsii_.Set(
 		j,
 		"debugLogging",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbProxy)SetDefaultAuthScheme(val *string) {
+	if err := j.validateSetDefaultAuthSchemeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultAuthScheme",
 		val,
 	)
 }
@@ -1243,10 +1279,26 @@ func (d *jsiiProxy_DbProxy) PutTimeouts(value *DbProxyTimeouts) {
 	)
 }
 
+func (d *jsiiProxy_DbProxy) ResetAuth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuth",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DbProxy) ResetDebugLogging() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDebugLogging",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbProxy) ResetDefaultAuthScheme() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultAuthScheme",
 		nil, // no parameters
 	)
 }

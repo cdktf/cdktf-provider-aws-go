@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link}.
 type DataAwsApigatewayv2VpcLink interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2VpcLink) VpcLinkIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Data Source.
 func NewDataAwsApigatewayv2VpcLink(scope constructs.Construct, id *string, config *DataAwsApigatewayv2VpcLinkConfig) DataAwsApigatewayv2VpcLink {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataAwsApigatewayv2VpcLink(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Data Source.
 func NewDataAwsApigatewayv2VpcLink_Override(d DataAwsApigatewayv2VpcLink, scope constructs.Construct, id *string, config *DataAwsApigatewayv2VpcLinkConfig) {
 	_init_.Initialize()
 

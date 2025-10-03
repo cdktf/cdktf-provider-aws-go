@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association}.
 type WorkspaceswebUserAccessLoggingSettingsAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettingsAssociation) UserAccess
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association} Resource.
 func NewWorkspaceswebUserAccessLoggingSettingsAssociation(scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsAssociationConfig) WorkspaceswebUserAccessLoggingSettingsAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewWorkspaceswebUserAccessLoggingSettingsAssociation(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/workspacesweb_user_access_logging_settings_association aws_workspacesweb_user_access_logging_settings_association} Resource.
 func NewWorkspaceswebUserAccessLoggingSettingsAssociation_Override(w WorkspaceswebUserAccessLoggingSettingsAssociation, scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsAssociationConfig) {
 	_init_.Initialize()
 

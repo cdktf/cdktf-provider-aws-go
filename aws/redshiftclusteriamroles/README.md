@@ -1,3 +1,3 @@
 # `aws_redshift_cluster_iam_roles`
 
-Refer to the Terraform Registry for docs: [`aws_redshift_cluster_iam_roles`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/redshift_cluster_iam_roles).
+Refer to the Terraform Registry for docs: [`aws_redshift_cluster_iam_roles`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/redshift_cluster_iam_roles).

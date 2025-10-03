@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
 type Route53RecoverycontrolconfigCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -51,6 +51,9 @@ type Route53RecoverycontrolconfigCluster interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -64,6 +67,12 @@ type Route53RecoverycontrolconfigCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,9 +123,12 @@ type Route53RecoverycontrolconfigCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -285,6 +297,26 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -335,6 +367,46 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -366,7 +438,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
 func NewRoute53RecoverycontrolconfigCluster(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigClusterConfig) Route53RecoverycontrolconfigCluster {
 	_init_.Initialize()
 
@@ -384,7 +456,7 @@ func NewRoute53RecoverycontrolconfigCluster(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
 func NewRoute53RecoverycontrolconfigCluster_Override(r Route53RecoverycontrolconfigCluster, scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigClusterConfig) {
 	_init_.Initialize()
 
@@ -466,6 +538,17 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -481,6 +564,28 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -846,10 +951,34 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) ResetId() {
 	)
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNetworkType",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

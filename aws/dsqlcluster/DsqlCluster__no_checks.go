@@ -111,6 +111,10 @@ func (j *jsiiProxy_DsqlCluster) validateSetDeletionProtectionEnabledParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DsqlCluster) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DsqlCluster) validateSetKmsEncryptionKeyParameters(val *string) error {
 	return nil
 }

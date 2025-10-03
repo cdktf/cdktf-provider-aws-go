@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering}.
 type DataAwsEc2InstanceTypeOffering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,6 +45,7 @@ type DataAwsEc2InstanceTypeOffering interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
 	LocationType() *string
 	SetLocationType(val *string)
 	LocationTypeInput() *string
@@ -255,6 +256,16 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) Lifecycle() *cdktf.TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) LocationType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -396,7 +407,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
 func NewDataAwsEc2InstanceTypeOffering(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingConfig) DataAwsEc2InstanceTypeOffering {
 	_init_.Initialize()
 
@@ -414,7 +425,7 @@ func NewDataAwsEc2InstanceTypeOffering(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/ec2_instance_type_offering aws_ec2_instance_type_offering} Data Source.
 func NewDataAwsEc2InstanceTypeOffering_Override(d DataAwsEc2InstanceTypeOffering, scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package neptuneparametergroup
 
 
 type NeptuneParameterGroupParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/neptune_parameter_group#name NeptuneParameterGroup#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/neptune_parameter_group#value NeptuneParameterGroup#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/neptune_parameter_group#value NeptuneParameterGroup#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/neptune_parameter_group#apply_method NeptuneParameterGroup#apply_method}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/neptune_parameter_group#apply_method NeptuneParameterGroup#apply_method}.
 	ApplyMethod *string `field:"optional" json:"applyMethod" yaml:"applyMethod"`
 }
 

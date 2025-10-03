@@ -5,7 +5,7 @@ package emrcontainersvirtualcluster
 
 
 type EmrcontainersVirtualClusterContainerProviderInfoEksInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/emrcontainers_virtual_cluster#namespace EmrcontainersVirtualCluster#namespace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/emrcontainers_virtual_cluster#namespace EmrcontainersVirtualCluster#namespace}.
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

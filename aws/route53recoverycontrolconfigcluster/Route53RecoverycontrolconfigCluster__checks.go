@@ -361,6 +361,14 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetNameParameter
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetNetworkTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -402,6 +410,22 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetProvisionersP
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

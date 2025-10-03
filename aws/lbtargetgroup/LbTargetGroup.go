@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lb_target_group aws_lb_target_group}.
 type LbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -943,7 +943,7 @@ func (j *jsiiProxy_LbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGroupConfig) LbTargetGroup {
 	_init_.Initialize()
 
@@ -961,7 +961,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *string, config *LbTargetGroupConfig) {
 	_init_.Initialize()
 

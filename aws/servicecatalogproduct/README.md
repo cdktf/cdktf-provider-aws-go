@@ -1,3 +1,3 @@
 # `aws_servicecatalog_product`
 
-Refer to the Terraform Registry for docs: [`aws_servicecatalog_product`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/servicecatalog_product).
+Refer to the Terraform Registry for docs: [`aws_servicecatalog_product`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/servicecatalog_product).

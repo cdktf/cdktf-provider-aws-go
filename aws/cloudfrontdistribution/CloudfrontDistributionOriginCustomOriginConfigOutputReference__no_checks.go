@@ -71,6 +71,10 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) validateSetOriginKeepaliveTimeoutParameters(val *float64) error {
 	return nil
 }

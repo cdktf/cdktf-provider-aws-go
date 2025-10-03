@@ -5,7 +5,7 @@ package kinesisanalyticsapplication
 
 
 type KinesisAnalyticsApplicationInputsStartingPositionConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/kinesis_analytics_application#starting_position KinesisAnalyticsApplication#starting_position}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/kinesis_analytics_application#starting_position KinesisAnalyticsApplication#starting_position}.
 	StartingPosition *string `field:"optional" json:"startingPosition" yaml:"startingPosition"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type DmsEndpoint interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MongodbSettings() DmsEndpointMongodbSettingsOutputReference
 	MongodbSettingsInput() *DmsEndpointMongodbSettings
+	MysqlSettings() DmsEndpointMysqlSettingsOutputReference
+	MysqlSettingsInput() *DmsEndpointMysqlSettings
 	// The tree node.
 	Node() constructs.Node
 	OracleSettings() DmsEndpointOracleSettingsOutputReference
@@ -187,6 +189,7 @@ type DmsEndpoint interface {
 	PutKafkaSettings(value *DmsEndpointKafkaSettings)
 	PutKinesisSettings(value *DmsEndpointKinesisSettings)
 	PutMongodbSettings(value *DmsEndpointMongodbSettings)
+	PutMysqlSettings(value *DmsEndpointMysqlSettings)
 	PutOracleSettings(value *DmsEndpointOracleSettings)
 	PutPostgresSettings(value *DmsEndpointPostgresSettings)
 	PutRedisSettings(value *DmsEndpointRedisSettings)
@@ -201,6 +204,7 @@ type DmsEndpoint interface {
 	ResetKinesisSettings()
 	ResetKmsKeyArn()
 	ResetMongodbSettings()
+	ResetMysqlSettings()
 	ResetOracleSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -574,6 +578,26 @@ func (j *jsiiProxy_DmsEndpoint) MongodbSettingsInput() *DmsEndpointMongodbSettin
 	_jsii_.Get(
 		j,
 		"mongodbSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) MysqlSettings() DmsEndpointMysqlSettingsOutputReference {
+	var returns DmsEndpointMysqlSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"mysqlSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) MysqlSettingsInput() *DmsEndpointMysqlSettings {
+	var returns *DmsEndpointMysqlSettings
+	_jsii_.Get(
+		j,
+		"mysqlSettingsInput",
 		&returns,
 	)
 	return returns
@@ -990,7 +1014,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -1008,7 +1032,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -1704,6 +1728,17 @@ func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSett
 	)
 }
 
+func (d *jsiiProxy_DmsEndpoint) PutMysqlSettings(value *DmsEndpointMysqlSettings) {
+	if err := d.validatePutMysqlSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMysqlSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsEndpoint) PutOracleSettings(value *DmsEndpointOracleSettings) {
 	if err := d.validatePutOracleSettingsParameters(value); err != nil {
 		panic(err)
@@ -1827,6 +1862,14 @@ func (d *jsiiProxy_DmsEndpoint) ResetMongodbSettings() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMongodbSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetMysqlSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMysqlSettings",
 		nil, // no parameters
 	)
 }

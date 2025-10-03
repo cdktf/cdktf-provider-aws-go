@@ -5,7 +5,7 @@ package bedrockagentdatasource
 
 
 type BedrockagentDataSourceDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_data_source#url BedrockagentDataSource#url}.
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

@@ -99,6 +99,10 @@ func (j *jsiiProxy_IamServiceSpecificCredential) validateSetCountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IamServiceSpecificCredential) validateSetCredentialAgeDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamServiceSpecificCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package dataexchangerevisionassets
 
 
 type DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/dataexchange_revision_assets#filename DataexchangeRevisionAssets#filename}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dataexchange_revision_assets#filename DataexchangeRevisionAssets#filename}.
 	Filename *string `field:"required" json:"filename" yaml:"filename"`
 }
 

@@ -1,3 +1,3 @@
 # `aws_redshiftserverless_endpoint_access`
 
-Refer to the Terraform Registry for docs: [`aws_redshiftserverless_endpoint_access`](https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/redshiftserverless_endpoint_access).
+Refer to the Terraform Registry for docs: [`aws_redshiftserverless_endpoint_access`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/redshiftserverless_endpoint_access).

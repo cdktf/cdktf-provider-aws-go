@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel}.
 type Route53RecoverycontrolconfigControlPanel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,12 @@ type Route53RecoverycontrolconfigControlPanel interface {
 	RawOverrides() interface{}
 	RoutingControlCount() *float64
 	Status() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -121,6 +127,8 @@ type Route53RecoverycontrolconfigControlPanel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -369,6 +377,46 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -400,7 +448,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel} Resource.
 func NewRoute53RecoverycontrolconfigControlPanel(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigControlPanelConfig) Route53RecoverycontrolconfigControlPanel {
 	_init_.Initialize()
 
@@ -418,7 +466,7 @@ func NewRoute53RecoverycontrolconfigControlPanel(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.14.1/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/route53recoverycontrolconfig_control_panel aws_route53recoverycontrolconfig_control_panel} Resource.
 func NewRoute53RecoverycontrolconfigControlPanel_Override(r Route53RecoverycontrolconfigControlPanel, scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigControlPanelConfig) {
 	_init_.Initialize()
 
@@ -526,6 +574,28 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -895,6 +965,22 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) ResetTags() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigControlPanel) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }
