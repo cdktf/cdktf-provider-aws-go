@@ -5,7 +5,7 @@ package appsyncapi
 
 
 type AppsyncApiEventConfigConnectionAuthMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appsync_api#auth_type AppsyncApi#auth_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/appsync_api#auth_type AppsyncApi#auth_type}.
 	AuthType *string `field:"required" json:"authType" yaml:"authType"`
 }
 

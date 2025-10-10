@@ -1,3 +1,3 @@
 # `aws_workspacesweb_data_protection_settings_association`
 
-Refer to the Terraform Registry for docs: [`aws_workspacesweb_data_protection_settings_association`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/workspacesweb_data_protection_settings_association).
+Refer to the Terraform Registry for docs: [`aws_workspacesweb_data_protection_settings_association`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/workspacesweb_data_protection_settings_association).

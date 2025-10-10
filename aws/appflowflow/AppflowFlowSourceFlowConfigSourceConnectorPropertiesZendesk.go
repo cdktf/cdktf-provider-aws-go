@@ -5,7 +5,7 @@ package appflowflow
 
 
 type AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 	Object *string `field:"required" json:"object" yaml:"object"`
 }
 

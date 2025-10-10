@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment}.
 type NetworkmanagerCoreNetworkPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment} Resource.
 func NewNetworkmanagerCoreNetworkPolicyAttachment(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkPolicyAttachmentConfig) NetworkmanagerCoreNetworkPolicyAttachment {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewNetworkmanagerCoreNetworkPolicyAttachment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/networkmanager_core_network_policy_attachment aws_networkmanager_core_network_policy_attachment} Resource.
 func NewNetworkmanagerCoreNetworkPolicyAttachment_Override(n NetworkmanagerCoreNetworkPolicyAttachment, scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkPolicyAttachmentConfig) {
 	_init_.Initialize()
 

@@ -1,3 +1,3 @@
 # `aws_redshiftserverless_resource_policy`
 
-Refer to the Terraform Registry for docs: [`aws_redshiftserverless_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/redshiftserverless_resource_policy).
+Refer to the Terraform Registry for docs: [`aws_redshiftserverless_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/redshiftserverless_resource_policy).

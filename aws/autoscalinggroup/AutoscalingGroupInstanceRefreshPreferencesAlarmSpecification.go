@@ -5,7 +5,7 @@ package autoscalinggroup
 
 
 type AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/autoscaling_group#alarms AutoscalingGroup#alarms}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/autoscaling_group#alarms AutoscalingGroup#alarms}.
 	Alarms *[]*string `field:"optional" json:"alarms" yaml:"alarms"`
 }
 

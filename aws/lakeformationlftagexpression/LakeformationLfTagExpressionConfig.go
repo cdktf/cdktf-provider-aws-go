@@ -24,23 +24,23 @@ type LakeformationLfTagExpressionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the LF-Tag Expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lakeformation_lf_tag_expression#name LakeformationLfTagExpression#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID of the Data Catalog.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lakeformation_lf_tag_expression#catalog_id LakeformationLfTagExpression#catalog_id}
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
 	// A description of the LF-Tag Expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lakeformation_lf_tag_expression#description LakeformationLfTagExpression#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// expression block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lakeformation_lf_tag_expression#expression LakeformationLfTagExpression#expression}
 	Expression interface{} `field:"optional" json:"expression" yaml:"expression"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lakeformation_lf_tag_expression#region LakeformationLfTagExpression#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

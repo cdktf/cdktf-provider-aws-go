@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/codebuild_project aws_codebuild_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codebuild_project aws_codebuild_project}.
 type CodebuildProject interface {
 	cdktf.TerraformResource
 	Arn() *string
 	Artifacts() CodebuildProjectArtifactsOutputReference
 	ArtifactsInput() *CodebuildProjectArtifacts
+	AutoRetryLimit() *float64
+	SetAutoRetryLimit(val *float64)
+	AutoRetryLimitInput() *float64
 	BadgeEnabled() interface{}
 	SetBadgeEnabled(val interface{})
 	BadgeEnabledInput() interface{}
@@ -185,6 +188,7 @@ type CodebuildProject interface {
 	PutSecondarySourceVersion(value interface{})
 	PutSource(value *CodebuildProjectSource)
 	PutVpcConfig(value *CodebuildProjectVpcConfig)
+	ResetAutoRetryLimit()
 	ResetBadgeEnabled()
 	ResetBuildBatchConfig()
 	ResetBuildTimeout()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_CodebuildProject) ArtifactsInput() *CodebuildProjectArtifacts
 	_jsii_.Get(
 		j,
 		"artifactsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProject) AutoRetryLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoRetryLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildProject) AutoRetryLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"autoRetryLimitInput",
 		&returns,
 	)
 	return returns
@@ -938,7 +962,7 @@ func (j *jsiiProxy_CodebuildProject) VpcConfigInput() *CodebuildProjectVpcConfig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
 func NewCodebuildProject(scope constructs.Construct, id *string, config *CodebuildProjectConfig) CodebuildProject {
 	_init_.Initialize()
 
@@ -956,7 +980,7 @@ func NewCodebuildProject(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codebuild_project aws_codebuild_project} Resource.
 func NewCodebuildProject_Override(c CodebuildProject, scope constructs.Construct, id *string, config *CodebuildProjectConfig) {
 	_init_.Initialize()
 
@@ -964,6 +988,17 @@ func NewCodebuildProject_Override(c CodebuildProject, scope constructs.Construct
 		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CodebuildProject)SetAutoRetryLimit(val *float64) {
+	if err := j.validateSetAutoRetryLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRetryLimit",
+		val,
 	)
 }
 
@@ -1671,6 +1706,14 @@ func (c *jsiiProxy_CodebuildProject) PutVpcConfig(value *CodebuildProjectVpcConf
 		c,
 		"putVpcConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CodebuildProject) ResetAutoRetryLimit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoRetryLimit",
+		nil, // no parameters
 	)
 }
 

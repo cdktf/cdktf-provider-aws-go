@@ -1,3 +1,3 @@
 # `data_aws_licensemanager_received_licenses`
 
-Refer to the Terraform Registry for docs: [`data_aws_licensemanager_received_licenses`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/licensemanager_received_licenses).
+Refer to the Terraform Registry for docs: [`data_aws_licensemanager_received_licenses`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/licensemanager_received_licenses).

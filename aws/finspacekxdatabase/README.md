@@ -1,3 +1,3 @@
 # `aws_finspace_kx_database`
 
-Refer to the Terraform Registry for docs: [`aws_finspace_kx_database`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/finspace_kx_database).
+Refer to the Terraform Registry for docs: [`aws_finspace_kx_database`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/finspace_kx_database).

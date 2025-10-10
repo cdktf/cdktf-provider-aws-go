@@ -5,11 +5,11 @@ package quicksightdataset
 
 
 type QuicksightDataSetFieldFolders struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}.
 	FieldFoldersId *string `field:"required" json:"fieldFoldersId" yaml:"fieldFoldersId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
 	Columns *[]*string `field:"optional" json:"columns" yaml:"columns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

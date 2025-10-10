@@ -5,7 +5,7 @@ package opensearchdomain
 
 
 type OpensearchDomainClusterConfigColdStorageOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearch_domain#enabled OpensearchDomain#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

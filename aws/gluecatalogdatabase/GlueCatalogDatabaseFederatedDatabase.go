@@ -5,9 +5,9 @@ package gluecatalogdatabase
 
 
 type GlueCatalogDatabaseFederatedDatabase struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/glue_catalog_database#connection_name GlueCatalogDatabase#connection_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/glue_catalog_database#connection_name GlueCatalogDatabase#connection_name}.
 	ConnectionName *string `field:"optional" json:"connectionName" yaml:"connectionName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/glue_catalog_database#identifier GlueCatalogDatabase#identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/glue_catalog_database#identifier GlueCatalogDatabase#identifier}.
 	Identifier *string `field:"optional" json:"identifier" yaml:"identifier"`
 }
 

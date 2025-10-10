@@ -5,11 +5,11 @@ package evidentlylaunch
 
 
 type EvidentlyLaunchTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/evidently_launch#create EvidentlyLaunch#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/evidently_launch#delete EvidentlyLaunch#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/evidently_launch#update EvidentlyLaunch#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

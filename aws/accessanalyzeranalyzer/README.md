@@ -1,3 +1,3 @@
 # `aws_accessanalyzer_analyzer`
 
-Refer to the Terraform Registry for docs: [`aws_accessanalyzer_analyzer`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/accessanalyzer_analyzer).
+Refer to the Terraform Registry for docs: [`aws_accessanalyzer_analyzer`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/accessanalyzer_analyzer).

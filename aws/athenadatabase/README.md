@@ -1,3 +1,3 @@
 # `aws_athena_database`
 
-Refer to the Terraform Registry for docs: [`aws_athena_database`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/athena_database).
+Refer to the Terraform Registry for docs: [`aws_athena_database`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/athena_database).

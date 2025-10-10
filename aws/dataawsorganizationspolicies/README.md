@@ -1,3 +1,3 @@
 # `data_aws_organizations_policies`
 
-Refer to the Terraform Registry for docs: [`data_aws_organizations_policies`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/organizations_policies).
+Refer to the Terraform Registry for docs: [`data_aws_organizations_policies`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/organizations_policies).

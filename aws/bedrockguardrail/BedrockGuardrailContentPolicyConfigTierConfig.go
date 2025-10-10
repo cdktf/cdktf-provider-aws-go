@@ -5,7 +5,7 @@ package bedrockguardrail
 
 
 type BedrockGuardrailContentPolicyConfigTierConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrock_guardrail#tier_name BedrockGuardrail#tier_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/bedrock_guardrail#tier_name BedrockGuardrail#tier_name}.
 	TierName *string `field:"optional" json:"tierName" yaml:"tierName"`
 }
 

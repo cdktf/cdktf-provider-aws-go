@@ -47,6 +47,10 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutp
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) validatePutSchemaRegistryConfigParameters(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

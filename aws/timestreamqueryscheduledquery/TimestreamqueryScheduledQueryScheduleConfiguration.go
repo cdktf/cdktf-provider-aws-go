@@ -5,7 +5,7 @@ package timestreamqueryscheduledquery
 
 
 type TimestreamqueryScheduledQueryScheduleConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/timestreamquery_scheduled_query#schedule_expression TimestreamqueryScheduledQuery#schedule_expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/timestreamquery_scheduled_query#schedule_expression TimestreamqueryScheduledQuery#schedule_expression}.
 	ScheduleExpression *string `field:"required" json:"scheduleExpression" yaml:"scheduleExpression"`
 }
 

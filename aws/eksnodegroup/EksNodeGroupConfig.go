@@ -22,72 +22,72 @@ type EksNodeGroupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}.
 	NodeRoleArn *string `field:"required" json:"nodeRoleArn" yaml:"nodeRoleArn"`
 	// scaling_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
 	ScalingConfig *EksNodeGroupScalingConfig `field:"required" json:"scalingConfig" yaml:"scalingConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}.
 	SubnetIds *[]*string `field:"required" json:"subnetIds" yaml:"subnetIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}.
 	AmiType *string `field:"optional" json:"amiType" yaml:"amiType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}.
 	CapacityType *string `field:"optional" json:"capacityType" yaml:"capacityType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}.
 	DiskSize *float64 `field:"optional" json:"diskSize" yaml:"diskSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}.
 	ForceUpdateVersion interface{} `field:"optional" json:"forceUpdateVersion" yaml:"forceUpdateVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#id EksNodeGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}.
 	InstanceTypes *[]*string `field:"optional" json:"instanceTypes" yaml:"instanceTypes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}.
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// launch_template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
 	LaunchTemplate *EksNodeGroupLaunchTemplate `field:"optional" json:"launchTemplate" yaml:"launchTemplate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}.
 	NodeGroupName *string `field:"optional" json:"nodeGroupName" yaml:"nodeGroupName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}.
 	NodeGroupNamePrefix *string `field:"optional" json:"nodeGroupNamePrefix" yaml:"nodeGroupNamePrefix"`
 	// node_repair_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#node_repair_config EksNodeGroup#node_repair_config}
 	NodeRepairConfig *EksNodeGroupNodeRepairConfig `field:"optional" json:"nodeRepairConfig" yaml:"nodeRepairConfig"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#region EksNodeGroup#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#region EksNodeGroup#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}.
 	ReleaseVersion *string `field:"optional" json:"releaseVersion" yaml:"releaseVersion"`
 	// remote_access block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
 	RemoteAccess *EksNodeGroupRemoteAccess `field:"optional" json:"remoteAccess" yaml:"remoteAccess"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// taint block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
 	Taint interface{} `field:"optional" json:"taint" yaml:"taint"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
 	Timeouts *EksNodeGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// update_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
 	UpdateConfig *EksNodeGroupUpdateConfig `field:"optional" json:"updateConfig" yaml:"updateConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_node_group#version EksNodeGroup#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

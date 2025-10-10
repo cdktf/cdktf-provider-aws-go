@@ -7,9 +7,9 @@ package bedrockagentflow
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatMessageContent struct {
 	// cache_point block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/bedrockagent_flow#cache_point BedrockagentFlow#cache_point}
 	CachePoint interface{} `field:"optional" json:"cachePoint" yaml:"cachePoint"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/bedrockagent_flow#text BedrockagentFlow#text}.
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

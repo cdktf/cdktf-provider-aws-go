@@ -5,7 +5,7 @@ package sagemakerdomain
 
 
 type SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}.
 	RepositoryUrl *string `field:"required" json:"repositoryUrl" yaml:"repositoryUrl"`
 }
 

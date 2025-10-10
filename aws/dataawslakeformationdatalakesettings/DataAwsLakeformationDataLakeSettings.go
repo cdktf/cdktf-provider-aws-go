@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type DataAwsLakeformationDataLakeSettings interface {
 	cdktf.TerraformDataSource
 	Admins() *[]*string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TrustedResourceOwners()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) DataAwsLakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings_Override(d DataAwsLakeformationDataLakeSettings, scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 

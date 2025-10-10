@@ -103,6 +103,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutNetworkConfigurationPara
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validatePutSchedulerConfigurationParameters(value *EmrserverlessApplicationSchedulerConfiguration) error {
+	return nil
+}
+
 func validateEmrserverlessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

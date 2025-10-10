@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy}.
 type LightsailLbStickinessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_LightsailLbStickinessPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy} Resource.
 func NewLightsailLbStickinessPolicy(scope constructs.Construct, id *string, config *LightsailLbStickinessPolicyConfig) LightsailLbStickinessPolicy {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewLightsailLbStickinessPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lightsail_lb_stickiness_policy aws_lightsail_lb_stickiness_policy} Resource.
 func NewLightsailLbStickinessPolicy_Override(l LightsailLbStickinessPolicy, scope constructs.Construct, id *string, config *LightsailLbStickinessPolicyConfig) {
 	_init_.Initialize()
 

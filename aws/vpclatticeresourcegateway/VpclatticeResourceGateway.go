@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway}.
 type VpclatticeResourceGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -44,6 +44,9 @@ type VpclatticeResourceGateway interface {
 	IpAddressType() *string
 	SetIpAddressType(val *string)
 	IpAddressTypeInput() *string
+	Ipv4AddressesPerEni() *float64
+	SetIpv4AddressesPerEni(val *float64)
+	Ipv4AddressesPerEniInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -133,6 +136,7 @@ type VpclatticeResourceGateway interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *VpclatticeResourceGatewayTimeouts)
 	ResetIpAddressType()
+	ResetIpv4AddressesPerEni()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_VpclatticeResourceGateway) IpAddressTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"ipAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceGateway) Ipv4AddressesPerEni() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ipv4AddressesPerEni",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceGateway) Ipv4AddressesPerEniInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ipv4AddressesPerEniInput",
 		&returns,
 	)
 	return returns
@@ -519,7 +543,7 @@ func (j *jsiiProxy_VpclatticeResourceGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
 func NewVpclatticeResourceGateway(scope constructs.Construct, id *string, config *VpclatticeResourceGatewayConfig) VpclatticeResourceGateway {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewVpclatticeResourceGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/vpclattice_resource_gateway aws_vpclattice_resource_gateway} Resource.
 func NewVpclatticeResourceGateway_Override(v VpclatticeResourceGateway, scope constructs.Construct, id *string, config *VpclatticeResourceGatewayConfig) {
 	_init_.Initialize()
 
@@ -593,6 +617,17 @@ func (j *jsiiProxy_VpclatticeResourceGateway)SetIpAddressType(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddressType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeResourceGateway)SetIpv4AddressesPerEni(val *float64) {
+	if err := j.validateSetIpv4AddressesPerEniParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4AddressesPerEni",
 		val,
 	)
 }
@@ -1061,6 +1096,14 @@ func (v *jsiiProxy_VpclatticeResourceGateway) ResetIpAddressType() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetIpAddressType",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeResourceGateway) ResetIpv4AddressesPerEni() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpv4AddressesPerEni",
 		nil, // no parameters
 	)
 }

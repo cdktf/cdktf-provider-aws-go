@@ -5,7 +5,7 @@ package dataawsnetworkmanagercorenetworkpolicydocument
 
 
 type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/networkmanager_core_network_policy_document#segments DataAwsNetworkmanagerCoreNetworkPolicyDocument#segments}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkmanager_core_network_policy_document#segments DataAwsNetworkmanagerCoreNetworkPolicyDocument#segments}.
 	Segments *[]*string `field:"optional" json:"segments" yaml:"segments"`
 }
 

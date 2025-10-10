@@ -1,3 +1,3 @@
 # `aws_inspector2_filter`
 
-Refer to the Terraform Registry for docs: [`aws_inspector2_filter`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/inspector2_filter).
+Refer to the Terraform Registry for docs: [`aws_inspector2_filter`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/inspector2_filter).

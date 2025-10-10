@@ -356,6 +356,14 @@ func (j *jsiiProxy_VpclatticeResourceGateway) validateSetIpAddressTypeParameters
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeResourceGateway) validateSetIpv4AddressesPerEniParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeResourceGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

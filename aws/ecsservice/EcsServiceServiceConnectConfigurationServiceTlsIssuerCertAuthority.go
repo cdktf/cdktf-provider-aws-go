@@ -5,7 +5,7 @@ package ecsservice
 
 
 type EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthority struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ecs_service#aws_pca_authority_arn EcsService#aws_pca_authority_arn}.
 	AwsPcaAuthorityArn *string `field:"required" json:"awsPcaAuthorityArn" yaml:"awsPcaAuthorityArn"`
 }
 

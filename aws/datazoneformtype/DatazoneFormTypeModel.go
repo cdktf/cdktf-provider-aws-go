@@ -5,7 +5,7 @@ package datazoneformtype
 
 
 type DatazoneFormTypeModel struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}.
 	Smithy *string `field:"required" json:"smithy" yaml:"smithy"`
 }
 

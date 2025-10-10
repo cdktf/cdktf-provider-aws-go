@@ -7,7 +7,7 @@ package sagemakerworkteam
 type SagemakerWorkteamWorkerAccessConfigurationS3Presign struct {
 	// iam_policy_constraints block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/sagemaker_workteam#iam_policy_constraints SagemakerWorkteam#iam_policy_constraints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sagemaker_workteam#iam_policy_constraints SagemakerWorkteam#iam_policy_constraints}
 	IamPolicyConstraints *SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraints `field:"optional" json:"iamPolicyConstraints" yaml:"iamPolicyConstraints"`
 }
 

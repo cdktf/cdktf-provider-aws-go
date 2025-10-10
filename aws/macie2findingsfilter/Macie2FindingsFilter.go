@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
 type Macie2FindingsFilter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -559,7 +559,7 @@ func (j *jsiiProxy_Macie2FindingsFilter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) Macie2FindingsFilter {
 	_init_.Initialize()
 
@@ -577,7 +577,7 @@ func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Mac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter} Resource.
 func NewMacie2FindingsFilter_Override(m Macie2FindingsFilter, scope constructs.Construct, id *string, config *Macie2FindingsFilterConfig) {
 	_init_.Initialize()
 

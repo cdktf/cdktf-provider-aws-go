@@ -5,7 +5,7 @@ package quicksightdatasource
 
 
 type QuicksightDataSourceParametersAthena struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}.
 	WorkGroup *string `field:"optional" json:"workGroup" yaml:"workGroup"`
 }
 

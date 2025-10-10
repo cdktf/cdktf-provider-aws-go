@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/network_acl aws_network_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/network_acl aws_network_acl}.
 type NetworkAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -499,7 +499,7 @@ func (j *jsiiProxy_NetworkAcl) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/network_acl aws_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/network_acl aws_network_acl} Resource.
 func NewNetworkAcl(scope constructs.Construct, id *string, config *NetworkAclConfig) NetworkAcl {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewNetworkAcl(scope constructs.Construct, id *string, config *NetworkAclCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/network_acl aws_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/network_acl aws_network_acl} Resource.
 func NewNetworkAcl_Override(n NetworkAcl, scope constructs.Construct, id *string, config *NetworkAclConfig) {
 	_init_.Initialize()
 

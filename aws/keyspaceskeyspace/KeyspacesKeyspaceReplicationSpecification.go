@@ -5,9 +5,9 @@ package keyspaceskeyspace
 
 
 type KeyspacesKeyspaceReplicationSpecification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/keyspaces_keyspace#region_list KeyspacesKeyspace#region_list}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/keyspaces_keyspace#region_list KeyspacesKeyspace#region_list}.
 	RegionList *[]*string `field:"optional" json:"regionList" yaml:"regionList"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/keyspaces_keyspace#replication_strategy KeyspacesKeyspace#replication_strategy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/keyspaces_keyspace#replication_strategy KeyspacesKeyspace#replication_strategy}.
 	ReplicationStrategy *string `field:"optional" json:"replicationStrategy" yaml:"replicationStrategy"`
 }
 

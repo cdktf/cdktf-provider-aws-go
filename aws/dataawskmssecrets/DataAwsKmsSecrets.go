@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/kms_secrets aws_kms_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/kms_secrets aws_kms_secrets}.
 type DataAwsKmsSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAwsKmsSecrets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source.
 func NewDataAwsKmsSecrets(scope constructs.Construct, id *string, config *DataAwsKmsSecretsConfig) DataAwsKmsSecrets {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAwsKmsSecrets(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/kms_secrets aws_kms_secrets} Data Source.
 func NewDataAwsKmsSecrets_Override(d DataAwsKmsSecrets, scope constructs.Construct, id *string, config *DataAwsKmsSecretsConfig) {
 	_init_.Initialize()
 

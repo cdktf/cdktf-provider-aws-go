@@ -1,3 +1,3 @@
 # `data_aws_devopsguru_resource_collection`
 
-Refer to the Terraform Registry for docs: [`data_aws_devopsguru_resource_collection`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/devopsguru_resource_collection).
+Refer to the Terraform Registry for docs: [`data_aws_devopsguru_resource_collection`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/devopsguru_resource_collection).

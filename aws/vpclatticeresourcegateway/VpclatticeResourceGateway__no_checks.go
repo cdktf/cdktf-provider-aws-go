@@ -107,6 +107,10 @@ func (j *jsiiProxy_VpclatticeResourceGateway) validateSetIpAddressTypeParameters
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeResourceGateway) validateSetIpv4AddressesPerEniParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeResourceGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

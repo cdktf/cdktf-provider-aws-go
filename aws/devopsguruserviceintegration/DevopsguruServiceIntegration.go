@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration}.
 type DevopsguruServiceIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DevopsguruServiceIntegration) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource.
 func NewDevopsguruServiceIntegration(scope constructs.Construct, id *string, config *DevopsguruServiceIntegrationConfig) DevopsguruServiceIntegration {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDevopsguruServiceIntegration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/devopsguru_service_integration aws_devopsguru_service_integration} Resource.
 func NewDevopsguruServiceIntegration_Override(d DevopsguruServiceIntegration, scope constructs.Construct, id *string, config *DevopsguruServiceIntegrationConfig) {
 	_init_.Initialize()
 

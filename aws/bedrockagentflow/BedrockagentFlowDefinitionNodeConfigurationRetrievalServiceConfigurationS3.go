@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationS3 struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/bedrockagent_flow#bucket_name BedrockagentFlow#bucket_name}.
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 }
 

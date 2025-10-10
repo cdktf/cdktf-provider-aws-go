@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationTextCachePoint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/bedrockagent_flow#type BedrockagentFlow#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

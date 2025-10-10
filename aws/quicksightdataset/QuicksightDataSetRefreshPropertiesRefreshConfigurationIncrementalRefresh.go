@@ -7,7 +7,7 @@ package quicksightdataset
 type QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh struct {
 	// lookback_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/quicksight_data_set#lookback_window QuicksightDataSet#lookback_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_set#lookback_window QuicksightDataSet#lookback_window}
 	LookbackWindow *QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow `field:"required" json:"lookbackWindow" yaml:"lookbackWindow"`
 }
 

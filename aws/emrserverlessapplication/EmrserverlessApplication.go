@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/emrserverless_application aws_emrserverless_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/emrserverless_application aws_emrserverless_application}.
 type EmrserverlessApplication interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -85,6 +85,8 @@ type EmrserverlessApplication interface {
 	ReleaseLabel() *string
 	SetReleaseLabel(val *string)
 	ReleaseLabelInput() *string
+	SchedulerConfiguration() EmrserverlessApplicationSchedulerConfigurationOutputReference
+	SchedulerConfigurationInput() *EmrserverlessApplicationSchedulerConfiguration
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -150,6 +152,7 @@ type EmrserverlessApplication interface {
 	PutInteractiveConfiguration(value *EmrserverlessApplicationInteractiveConfiguration)
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
+	PutSchedulerConfiguration(value *EmrserverlessApplicationSchedulerConfiguration)
 	ResetArchitecture()
 	ResetAutoStartConfiguration()
 	ResetAutoStopConfiguration()
@@ -163,6 +166,7 @@ type EmrserverlessApplication interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetSchedulerConfiguration()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -563,6 +567,26 @@ func (j *jsiiProxy_EmrserverlessApplication) ReleaseLabelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) SchedulerConfiguration() EmrserverlessApplicationSchedulerConfigurationOutputReference {
+	var returns EmrserverlessApplicationSchedulerConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"schedulerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) SchedulerConfigurationInput() *EmrserverlessApplicationSchedulerConfiguration {
+	var returns *EmrserverlessApplicationSchedulerConfiguration
+	_jsii_.Get(
+		j,
+		"schedulerConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -654,7 +678,7 @@ func (j *jsiiProxy_EmrserverlessApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication(scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) EmrserverlessApplication {
 	_init_.Initialize()
 
@@ -672,7 +696,7 @@ func NewEmrserverlessApplication(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1269,6 +1293,17 @@ func (e *jsiiProxy_EmrserverlessApplication) PutNetworkConfiguration(value *Emrs
 	)
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) PutSchedulerConfiguration(value *EmrserverlessApplicationSchedulerConfiguration) {
+	if err := e.validatePutSchedulerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSchedulerConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) ResetArchitecture() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1353,6 +1388,14 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetRegion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) ResetSchedulerConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSchedulerConfiguration",
 		nil, // no parameters
 	)
 }

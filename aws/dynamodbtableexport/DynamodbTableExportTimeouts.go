@@ -5,9 +5,9 @@ package dynamodbtableexport
 
 
 type DynamodbTableExportTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

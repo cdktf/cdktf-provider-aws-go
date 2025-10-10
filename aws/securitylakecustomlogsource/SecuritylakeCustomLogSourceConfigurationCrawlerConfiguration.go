@@ -5,7 +5,7 @@ package securitylakecustomlogsource
 
 
 type SecuritylakeCustomLogSourceConfigurationCrawlerConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/securitylake_custom_log_source#role_arn SecuritylakeCustomLogSource#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/securitylake_custom_log_source#role_arn SecuritylakeCustomLogSource#role_arn}.
 	RoleArn *string `field:"required" json:"roleArn" yaml:"roleArn"`
 }
 

@@ -35,6 +35,8 @@ type LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference in
 	Fqn() *string
 	InternalValue() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
 	SetInternalValue(val *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)
+	SchemaRegistryConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference
+	SchemaRegistryConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSchemaRegistryConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig)
 	ResetConsumerGroupId()
+	ResetSchemaRegistryConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) SchemaRegistryConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference {
+	var returns LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"schemaRegistryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) SchemaRegistryConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig {
+	var returns *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
+	_jsii_.Get(
+		j,
+		"schemaRegistryConfigInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutp
 	return returns
 }
 
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) PutSchemaRegistryConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig) {
+	if err := l.validatePutSchemaRegistryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSchemaRegistryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) ResetConsumerGroupId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetConsumerGroupId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference) ResetSchemaRegistryConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSchemaRegistryConfig",
 		nil, // no parameters
 	)
 }

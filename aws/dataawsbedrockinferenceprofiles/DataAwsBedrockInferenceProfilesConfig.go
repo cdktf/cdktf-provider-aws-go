@@ -24,9 +24,9 @@ type DataAwsBedrockInferenceProfilesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/bedrock_inference_profiles#region DataAwsBedrockInferenceProfiles#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/bedrock_inference_profiles#region DataAwsBedrockInferenceProfiles#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/data-sources/bedrock_inference_profiles#type DataAwsBedrockInferenceProfiles#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/bedrock_inference_profiles#type DataAwsBedrockInferenceProfiles#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

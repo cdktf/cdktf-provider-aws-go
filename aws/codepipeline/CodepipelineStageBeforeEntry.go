@@ -7,7 +7,7 @@ package codepipeline
 type CodepipelineStageBeforeEntry struct {
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/codepipeline#condition Codepipeline#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codepipeline#condition Codepipeline#condition}
 	Condition *CodepipelineStageBeforeEntryCondition `field:"required" json:"condition" yaml:"condition"`
 }
 

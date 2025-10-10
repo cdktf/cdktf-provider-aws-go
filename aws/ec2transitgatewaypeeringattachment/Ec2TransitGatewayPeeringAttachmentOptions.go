@@ -5,7 +5,7 @@ package ec2transitgatewaypeeringattachment
 
 
 type Ec2TransitGatewayPeeringAttachmentOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/ec2_transit_gateway_peering_attachment#dynamic_routing Ec2TransitGatewayPeeringAttachment#dynamic_routing}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ec2_transit_gateway_peering_attachment#dynamic_routing Ec2TransitGatewayPeeringAttachment#dynamic_routing}.
 	DynamicRouting *string `field:"optional" json:"dynamicRouting" yaml:"dynamicRouting"`
 }
 

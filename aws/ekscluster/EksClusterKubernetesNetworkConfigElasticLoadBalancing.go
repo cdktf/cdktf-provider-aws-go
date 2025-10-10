@@ -5,7 +5,7 @@ package ekscluster
 
 
 type EksClusterKubernetesNetworkConfigElasticLoadBalancing struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/eks_cluster#enabled EksCluster#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

@@ -135,6 +135,10 @@ func validateCodebuildProject_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildProject) validateSetAutoRetryLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildProject) validateSetBadgeEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -1,3 +1,3 @@
 # `aws_s3control_bucket_lifecycle_configuration`
 
-Refer to the Terraform Registry for docs: [`aws_s3control_bucket_lifecycle_configuration`](https://registry.terraform.io/providers/hashicorp/aws/6.15.0/docs/resources/s3control_bucket_lifecycle_configuration).
+Refer to the Terraform Registry for docs: [`aws_s3control_bucket_lifecycle_configuration`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/s3control_bucket_lifecycle_configuration).
