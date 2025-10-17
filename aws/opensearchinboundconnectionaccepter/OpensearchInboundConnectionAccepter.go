@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}.
 type OpensearchInboundConnectionAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_OpensearchInboundConnectionAccepter) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource.
 func NewOpensearchInboundConnectionAccepter(scope constructs.Construct, id *string, config *OpensearchInboundConnectionAccepterConfig) OpensearchInboundConnectionAccepter {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewOpensearchInboundConnectionAccepter(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource.
 func NewOpensearchInboundConnectionAccepter_Override(o OpensearchInboundConnectionAccepter, scope constructs.Construct, id *string, config *OpensearchInboundConnectionAccepterConfig) {
 	_init_.Initialize()
 

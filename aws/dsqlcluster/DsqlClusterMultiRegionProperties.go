@@ -5,9 +5,9 @@ package dsqlcluster
 
 
 type DsqlClusterMultiRegionProperties struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/dsql_cluster#clusters DsqlCluster#clusters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/dsql_cluster#clusters DsqlCluster#clusters}.
 	Clusters *[]*string `field:"optional" json:"clusters" yaml:"clusters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/dsql_cluster#witness_region DsqlCluster#witness_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/dsql_cluster#witness_region DsqlCluster#witness_region}.
 	WitnessRegion *string `field:"optional" json:"witnessRegion" yaml:"witnessRegion"`
 }
 

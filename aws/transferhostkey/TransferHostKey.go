@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_host_key aws_transfer_host_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_host_key aws_transfer_host_key}.
 type TransferHostKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_TransferHostKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_host_key aws_transfer_host_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_host_key aws_transfer_host_key} Resource.
 func NewTransferHostKey(scope constructs.Construct, id *string, config *TransferHostKeyConfig) TransferHostKey {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewTransferHostKey(scope constructs.Construct, id *string, config *Transfer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_host_key aws_transfer_host_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_host_key aws_transfer_host_key} Resource.
 func NewTransferHostKey_Override(t TransferHostKey, scope constructs.Construct, id *string, config *TransferHostKeyConfig) {
 	_init_.Initialize()
 

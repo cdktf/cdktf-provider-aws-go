@@ -7,7 +7,7 @@ package sagemakerdomain
 type SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagement struct {
 	// idle_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sagemaker_domain#idle_settings SagemakerDomain#idle_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/sagemaker_domain#idle_settings SagemakerDomain#idle_settings}
 	IdleSettings *SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings `field:"optional" json:"idleSettings" yaml:"idleSettings"`
 }
 

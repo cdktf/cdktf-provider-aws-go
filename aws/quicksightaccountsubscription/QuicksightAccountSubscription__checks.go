@@ -282,6 +282,14 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAdminGroupParameter
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAdminProGroupParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthenticationMethodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -291,6 +299,14 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthenticationMetho
 }
 
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthorGroupParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthorProGroupParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -523,6 +539,14 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetProvisionersParamet
 }
 
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetReaderGroupParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetReaderProGroupParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

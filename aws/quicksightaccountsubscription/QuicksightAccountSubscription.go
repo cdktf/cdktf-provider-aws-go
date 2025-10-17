@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
 type QuicksightAccountSubscription interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -25,12 +25,18 @@ type QuicksightAccountSubscription interface {
 	AdminGroup() *[]*string
 	SetAdminGroup(val *[]*string)
 	AdminGroupInput() *[]*string
+	AdminProGroup() *[]*string
+	SetAdminProGroup(val *[]*string)
+	AdminProGroupInput() *[]*string
 	AuthenticationMethod() *string
 	SetAuthenticationMethod(val *string)
 	AuthenticationMethodInput() *string
 	AuthorGroup() *[]*string
 	SetAuthorGroup(val *[]*string)
 	AuthorGroupInput() *[]*string
+	AuthorProGroup() *[]*string
+	SetAuthorProGroup(val *[]*string)
+	AuthorProGroupInput() *[]*string
 	AwsAccountId() *string
 	SetAwsAccountId(val *string)
 	AwsAccountIdInput() *string
@@ -104,6 +110,9 @@ type QuicksightAccountSubscription interface {
 	ReaderGroup() *[]*string
 	SetReaderGroup(val *[]*string)
 	ReaderGroupInput() *[]*string
+	ReaderProGroup() *[]*string
+	SetReaderProGroup(val *[]*string)
+	ReaderProGroupInput() *[]*string
 	Realm() *string
 	SetRealm(val *string)
 	RealmInput() *string
@@ -164,7 +173,9 @@ type QuicksightAccountSubscription interface {
 	PutTimeouts(value *QuicksightAccountSubscriptionTimeouts)
 	ResetActiveDirectoryName()
 	ResetAdminGroup()
+	ResetAdminProGroup()
 	ResetAuthorGroup()
+	ResetAuthorProGroup()
 	ResetAwsAccountId()
 	ResetContactNumber()
 	ResetDirectoryId()
@@ -177,6 +188,7 @@ type QuicksightAccountSubscription interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReaderGroup()
+	ResetReaderProGroup()
 	ResetRealm()
 	ResetRegion()
 	ResetTimeouts()
@@ -268,6 +280,26 @@ func (j *jsiiProxy_QuicksightAccountSubscription) AdminGroupInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) AdminProGroup() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminProGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) AdminProGroupInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"adminProGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) AuthenticationMethod() *string {
 	var returns *string
 	_jsii_.Get(
@@ -303,6 +335,26 @@ func (j *jsiiProxy_QuicksightAccountSubscription) AuthorGroupInput() *[]*string 
 	_jsii_.Get(
 		j,
 		"authorGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) AuthorProGroup() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorProGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) AuthorProGroupInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorProGroupInput",
 		&returns,
 	)
 	return returns
@@ -658,6 +710,26 @@ func (j *jsiiProxy_QuicksightAccountSubscription) ReaderGroupInput() *[]*string 
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) ReaderProGroup() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"readerProGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) ReaderProGroupInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"readerProGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) Realm() *string {
 	var returns *string
 	_jsii_.Get(
@@ -749,7 +821,7 @@ func (j *jsiiProxy_QuicksightAccountSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription {
 	_init_.Initialize()
 
@@ -767,7 +839,7 @@ func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription_Override(q QuicksightAccountSubscription, scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -811,6 +883,17 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetAdminGroup(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription)SetAdminProGroup(val *[]*string) {
+	if err := j.validateSetAdminProGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminProGroup",
+		val,
+	)
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription)SetAuthenticationMethod(val *string) {
 	if err := j.validateSetAuthenticationMethodParameters(val); err != nil {
 		panic(err)
@@ -829,6 +912,17 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetAuthorGroup(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"authorGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription)SetAuthorProGroup(val *[]*string) {
+	if err := j.validateSetAuthorProGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorProGroup",
 		val,
 	)
 }
@@ -1018,6 +1112,17 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetReaderGroup(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"readerGroup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription)SetReaderProGroup(val *[]*string) {
+	if err := j.validateSetReaderProGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readerProGroup",
 		val,
 	)
 }
@@ -1424,10 +1529,26 @@ func (q *jsiiProxy_QuicksightAccountSubscription) ResetAdminGroup() {
 	)
 }
 
+func (q *jsiiProxy_QuicksightAccountSubscription) ResetAdminProGroup() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetAdminProGroup",
+		nil, // no parameters
+	)
+}
+
 func (q *jsiiProxy_QuicksightAccountSubscription) ResetAuthorGroup() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetAuthorGroup",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAccountSubscription) ResetAuthorProGroup() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetAuthorProGroup",
 		nil, // no parameters
 	)
 }
@@ -1508,6 +1629,14 @@ func (q *jsiiProxy_QuicksightAccountSubscription) ResetReaderGroup() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetReaderGroup",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAccountSubscription) ResetReaderProGroup() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetReaderProGroup",
 		nil, // no parameters
 	)
 }

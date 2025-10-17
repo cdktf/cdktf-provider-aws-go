@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
 type Sesv2ContactList interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_Sesv2ContactList) TopicInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
 func NewSesv2ContactList(scope constructs.Construct, id *string, config *Sesv2ContactListConfig) Sesv2ContactList {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewSesv2ContactList(scope constructs.Construct, id *string, config *Sesv2Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
 func NewSesv2ContactList_Override(s Sesv2ContactList, scope constructs.Construct, id *string, config *Sesv2ContactListConfig) {
 	_init_.Initialize()
 

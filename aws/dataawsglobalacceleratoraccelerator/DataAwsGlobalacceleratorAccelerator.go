@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
 type DataAwsGlobalacceleratorAccelerator interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorAccelerator(scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorAcceleratorConfig) DataAwsGlobalacceleratorAccelerator {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewDataAwsGlobalacceleratorAccelerator(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorAccelerator_Override(d DataAwsGlobalacceleratorAccelerator, scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorAcceleratorConfig) {
 	_init_.Initialize()
 

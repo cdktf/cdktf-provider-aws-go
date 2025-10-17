@@ -5,7 +5,7 @@ package quicksightdatasource
 
 
 type QuicksightDataSourceParametersAmazonElasticsearch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}.
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 }
 

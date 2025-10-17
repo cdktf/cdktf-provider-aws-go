@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization}.
 type TransferWebAppCustomization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_TransferWebAppCustomization) WebAppIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization} Resource.
 func NewTransferWebAppCustomization(scope constructs.Construct, id *string, config *TransferWebAppCustomizationConfig) TransferWebAppCustomization {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewTransferWebAppCustomization(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/transfer_web_app_customization aws_transfer_web_app_customization} Resource.
 func NewTransferWebAppCustomization_Override(t TransferWebAppCustomization, scope constructs.Construct, id *string, config *TransferWebAppCustomizationConfig) {
 	_init_.Initialize()
 

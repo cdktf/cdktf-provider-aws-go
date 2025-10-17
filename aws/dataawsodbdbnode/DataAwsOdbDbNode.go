@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_db_node aws_odb_db_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_db_node aws_odb_db_node}.
 type DataAwsOdbDbNode interface {
 	cdktf.TerraformDataSource
 	AdditionalDetails() *string
@@ -608,7 +608,7 @@ func (j *jsiiProxy_DataAwsOdbDbNode) VnicId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_db_node aws_odb_db_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_db_node aws_odb_db_node} Data Source.
 func NewDataAwsOdbDbNode(scope constructs.Construct, id *string, config *DataAwsOdbDbNodeConfig) DataAwsOdbDbNode {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewDataAwsOdbDbNode(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/odb_db_node aws_odb_db_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_db_node aws_odb_db_node} Data Source.
 func NewDataAwsOdbDbNode_Override(d DataAwsOdbDbNode, scope constructs.Construct, id *string, config *DataAwsOdbDbNodeConfig) {
 	_init_.Initialize()
 

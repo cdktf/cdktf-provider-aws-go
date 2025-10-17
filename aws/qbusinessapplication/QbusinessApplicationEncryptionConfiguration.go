@@ -9,7 +9,7 @@ type QbusinessApplicationEncryptionConfiguration struct {
 	//
 	// Amazon Q doesn't support asymmetric keys.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/qbusiness_application#kms_key_id QbusinessApplication#kms_key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/qbusiness_application#kms_key_id QbusinessApplication#kms_key_id}
 	KmsKeyId *string `field:"required" json:"kmsKeyId" yaml:"kmsKeyId"`
 }
 

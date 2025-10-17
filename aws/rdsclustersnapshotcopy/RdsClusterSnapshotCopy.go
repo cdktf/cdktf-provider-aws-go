@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy}.
 type RdsClusterSnapshotCopy interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -645,7 +645,7 @@ func (j *jsiiProxy_RdsClusterSnapshotCopy) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
 func NewRdsClusterSnapshotCopy(scope constructs.Construct, id *string, config *RdsClusterSnapshotCopyConfig) RdsClusterSnapshotCopy {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewRdsClusterSnapshotCopy(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/rds_cluster_snapshot_copy aws_rds_cluster_snapshot_copy} Resource.
 func NewRdsClusterSnapshotCopy_Override(r RdsClusterSnapshotCopy, scope constructs.Construct, id *string, config *RdsClusterSnapshotCopyConfig) {
 	_init_.Initialize()
 

@@ -24,23 +24,23 @@ type OpensearchserverlessSecurityConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearchserverless_security_config#name OpensearchserverlessSecurityConfig#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Type of configuration. Must be `saml`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearchserverless_security_config#type OpensearchserverlessSecurityConfig#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Description of the security configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearchserverless_security_config#description OpensearchserverlessSecurityConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearchserverless_security_config#region OpensearchserverlessSecurityConfig#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearchserverless_security_config#region OpensearchserverlessSecurityConfig#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// saml_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/opensearchserverless_security_config#saml_options OpensearchserverlessSecurityConfig#saml_options}
 	SamlOptions interface{} `field:"optional" json:"samlOptions" yaml:"samlOptions"`
 }
 

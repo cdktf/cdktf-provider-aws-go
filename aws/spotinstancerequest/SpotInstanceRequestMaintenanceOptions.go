@@ -5,7 +5,7 @@ package spotinstancerequest
 
 
 type SpotInstanceRequestMaintenanceOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/spot_instance_request#auto_recovery SpotInstanceRequest#auto_recovery}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/spot_instance_request#auto_recovery SpotInstanceRequest#auto_recovery}.
 	AutoRecovery *string `field:"optional" json:"autoRecovery" yaml:"autoRecovery"`
 }
 

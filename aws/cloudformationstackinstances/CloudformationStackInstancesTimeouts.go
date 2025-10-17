@@ -5,11 +5,11 @@ package cloudformationstackinstances
 
 
 type CloudformationStackInstancesTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudformation_stack_instances#create CloudformationStackInstances#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudformation_stack_instances#create CloudformationStackInstances#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudformation_stack_instances#delete CloudformationStackInstances#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudformation_stack_instances#delete CloudformationStackInstances#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudformation_stack_instances#update CloudformationStackInstances#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudformation_stack_instances#update CloudformationStackInstances#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

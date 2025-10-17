@@ -7,13 +7,13 @@ package codepipeline
 type CodepipelineStageOnFailure struct {
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codepipeline#condition Codepipeline#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline#condition Codepipeline#condition}
 	Condition *CodepipelineStageOnFailureCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codepipeline#result Codepipeline#result}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline#result Codepipeline#result}.
 	Result *string `field:"optional" json:"result" yaml:"result"`
 	// retry_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline#retry_configuration Codepipeline#retry_configuration}
 	RetryConfiguration *CodepipelineStageOnFailureRetryConfiguration `field:"optional" json:"retryConfiguration" yaml:"retryConfiguration"`
 }
 

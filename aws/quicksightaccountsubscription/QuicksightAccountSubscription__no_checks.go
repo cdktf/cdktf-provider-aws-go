@@ -107,11 +107,19 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAdminGroupParameter
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAdminProGroupParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthenticationMethodParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthorGroupParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetAuthorProGroupParameters(val *[]*string) error {
 	return nil
 }
 
@@ -172,6 +180,10 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetProvisionersParamet
 }
 
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetReaderGroupParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetReaderProGroupParameters(val *[]*string) error {
 	return nil
 }
 

@@ -5,11 +5,11 @@ package cecostcategory
 
 
 type CeCostCategoryRuleRuleNotOrTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 	MatchOptions *[]*string `field:"optional" json:"matchOptions" yaml:"matchOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

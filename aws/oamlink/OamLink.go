@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/oam_link aws_oam_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/oam_link aws_oam_link}.
 type OamLink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -543,7 +543,7 @@ func (j *jsiiProxy_OamLink) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/oam_link aws_oam_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/oam_link aws_oam_link} Resource.
 func NewOamLink(scope constructs.Construct, id *string, config *OamLinkConfig) OamLink {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewOamLink(scope constructs.Construct, id *string, config *OamLinkConfig) O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/oam_link aws_oam_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/oam_link aws_oam_link} Resource.
 func NewOamLink_Override(o OamLink, scope constructs.Construct, id *string, config *OamLinkConfig) {
 	_init_.Initialize()
 

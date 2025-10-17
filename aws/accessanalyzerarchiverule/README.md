@@ -1,3 +1,3 @@
 # `aws_accessanalyzer_archive_rule`
 
-Refer to the Terraform Registry for docs: [`aws_accessanalyzer_archive_rule`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/accessanalyzer_archive_rule).
+Refer to the Terraform Registry for docs: [`aws_accessanalyzer_archive_rule`](https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/accessanalyzer_archive_rule).

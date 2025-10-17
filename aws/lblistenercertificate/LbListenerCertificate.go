@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate}.
 type LbListenerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_LbListenerCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate} Resource.
 func NewLbListenerCertificate(scope constructs.Construct, id *string, config *LbListenerCertificateConfig) LbListenerCertificate {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewLbListenerCertificate(scope constructs.Construct, id *string, config *Lb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lb_listener_certificate aws_lb_listener_certificate} Resource.
 func NewLbListenerCertificate_Override(l LbListenerCertificate, scope constructs.Construct, id *string, config *LbListenerCertificateConfig) {
 	_init_.Initialize()
 

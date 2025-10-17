@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger}.
 type WorkspaceswebSessionLogger interface {
 	cdktf.TerraformResource
 	AdditionalEncryptionContext() *map[string]*string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_WorkspaceswebSessionLogger) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger} Resource.
 func NewWorkspaceswebSessionLogger(scope constructs.Construct, id *string, config *WorkspaceswebSessionLoggerConfig) WorkspaceswebSessionLogger {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewWorkspaceswebSessionLogger(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_session_logger aws_workspacesweb_session_logger} Resource.
 func NewWorkspaceswebSessionLogger_Override(w WorkspaceswebSessionLogger, scope constructs.Construct, id *string, config *WorkspaceswebSessionLoggerConfig) {
 	_init_.Initialize()
 

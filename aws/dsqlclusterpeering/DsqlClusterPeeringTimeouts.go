@@ -7,7 +7,7 @@ package dsqlclusterpeering
 type DsqlClusterPeeringTimeouts struct {
 	// A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/dsql_cluster_peering#create DsqlClusterPeering#create}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/dsql_cluster_peering#create DsqlClusterPeering#create}
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

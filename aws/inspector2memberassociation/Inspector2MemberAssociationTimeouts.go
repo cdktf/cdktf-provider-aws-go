@@ -5,9 +5,9 @@ package inspector2memberassociation
 
 
 type Inspector2MemberAssociationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/inspector2_member_association#create Inspector2MemberAssociation#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/inspector2_member_association#create Inspector2MemberAssociation#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/inspector2_member_association#delete Inspector2MemberAssociation#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/inspector2_member_association#delete Inspector2MemberAssociation#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

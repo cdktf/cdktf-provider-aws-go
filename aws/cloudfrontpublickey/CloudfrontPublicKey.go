@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key}.
 type CloudfrontPublicKey interface {
 	cdktf.TerraformResource
 	CallerReference() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CloudfrontPublicKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key} Resource.
 func NewCloudfrontPublicKey(scope constructs.Construct, id *string, config *CloudfrontPublicKeyConfig) CloudfrontPublicKey {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCloudfrontPublicKey(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key} Resource.
 func NewCloudfrontPublicKey_Override(c CloudfrontPublicKey, scope constructs.Construct, id *string, config *CloudfrontPublicKeyConfig) {
 	_init_.Initialize()
 

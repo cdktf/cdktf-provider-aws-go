@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission}.
 type QuicksightUserCustomPermission interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_QuicksightUserCustomPermission) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission} Resource.
 func NewQuicksightUserCustomPermission(scope constructs.Construct, id *string, config *QuicksightUserCustomPermissionConfig) QuicksightUserCustomPermission {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewQuicksightUserCustomPermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/quicksight_user_custom_permission aws_quicksight_user_custom_permission} Resource.
 func NewQuicksightUserCustomPermission_Override(q QuicksightUserCustomPermission, scope constructs.Construct, id *string, config *QuicksightUserCustomPermissionConfig) {
 	_init_.Initialize()
 

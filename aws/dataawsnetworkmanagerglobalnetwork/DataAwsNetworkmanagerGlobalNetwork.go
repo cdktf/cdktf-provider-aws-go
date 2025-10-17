@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network}.
 type DataAwsNetworkmanagerGlobalNetwork interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerGlobalNetwork) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network} Data Source.
 func NewDataAwsNetworkmanagerGlobalNetwork(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerGlobalNetworkConfig) DataAwsNetworkmanagerGlobalNetwork {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataAwsNetworkmanagerGlobalNetwork(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network} Data Source.
 func NewDataAwsNetworkmanagerGlobalNetwork_Override(d DataAwsNetworkmanagerGlobalNetwork, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerGlobalNetworkConfig) {
 	_init_.Initialize()
 

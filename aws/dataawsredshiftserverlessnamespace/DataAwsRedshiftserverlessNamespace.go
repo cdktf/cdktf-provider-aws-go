@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
 type DataAwsRedshiftserverlessNamespace interface {
 	cdktf.TerraformDataSource
 	AdminUsername() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessNamespace) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace} Data Source.
 func NewDataAwsRedshiftserverlessNamespace(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessNamespaceConfig) DataAwsRedshiftserverlessNamespace {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataAwsRedshiftserverlessNamespace(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/redshiftserverless_namespace aws_redshiftserverless_namespace} Data Source.
 func NewDataAwsRedshiftserverlessNamespace_Override(d DataAwsRedshiftserverlessNamespace, scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessNamespaceConfig) {
 	_init_.Initialize()
 

@@ -1,3 +1,3 @@
 # `aws_ses_identity_policy`
 
-Refer to the Terraform Registry for docs: [`aws_ses_identity_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/ses_identity_policy).
+Refer to the Terraform Registry for docs: [`aws_ses_identity_policy`](https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/ses_identity_policy).

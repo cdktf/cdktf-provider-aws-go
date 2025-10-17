@@ -22,7 +22,7 @@ type DataAwsBillingViewsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
 	BillingViewTypes *[]*string `field:"optional" json:"billingViewTypes" yaml:"billingViewTypes"`
 }
 

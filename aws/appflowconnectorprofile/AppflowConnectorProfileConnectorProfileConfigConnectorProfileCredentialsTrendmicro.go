@@ -5,7 +5,7 @@ package appflowconnectorprofile
 
 
 type AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/appflow_connector_profile#api_secret_key AppflowConnectorProfile#api_secret_key}.
 	ApiSecretKey *string `field:"required" json:"apiSecretKey" yaml:"apiSecretKey"`
 }
 

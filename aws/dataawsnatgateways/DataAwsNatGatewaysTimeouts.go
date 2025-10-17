@@ -5,7 +5,7 @@ package dataawsnatgateways
 
 
 type DataAwsNatGatewaysTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/nat_gateways#read DataAwsNatGateways#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/nat_gateways#read DataAwsNatGateways#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

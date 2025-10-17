@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type DataAwsNetworkfirewallFirewall interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) DataAwsNetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/networkfirewall_firewall aws_networkfirewall_firewall} Data Source.
 func NewDataAwsNetworkfirewallFirewall_Override(d DataAwsNetworkfirewallFirewall, scope constructs.Construct, id *string, config *DataAwsNetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 

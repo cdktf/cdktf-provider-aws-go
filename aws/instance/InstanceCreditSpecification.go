@@ -5,7 +5,7 @@ package instance
 
 
 type InstanceCreditSpecification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/resources/instance#cpu_credits Instance#cpu_credits}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/instance#cpu_credits Instance#cpu_credits}.
 	CpuCredits *string `field:"optional" json:"cpuCredits" yaml:"cpuCredits"`
 }
 

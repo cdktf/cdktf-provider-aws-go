@@ -24,15 +24,15 @@ type DataAwsEcrImagesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/ecr_images#repository_name DataAwsEcrImages#repository_name}
 	RepositoryName *string `field:"required" json:"repositoryName" yaml:"repositoryName"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/ecr_images#region DataAwsEcrImages#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// ID of the registry (AWS account ID).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.16.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/ecr_images#registry_id DataAwsEcrImages#registry_id}
 	RegistryId *string `field:"optional" json:"registryId" yaml:"registryId"`
 }
 
