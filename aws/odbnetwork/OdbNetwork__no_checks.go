@@ -127,6 +127,10 @@ func (j *jsiiProxy_OdbNetwork) validateSetDefaultDnsPrefixParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_OdbNetwork) validateSetDeleteAssociatedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OdbNetwork) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

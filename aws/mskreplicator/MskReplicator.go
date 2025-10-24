@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/msk_replicator aws_msk_replicator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/msk_replicator aws_msk_replicator}.
 type MskReplicator interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -544,7 +544,7 @@ func (j *jsiiProxy_MskReplicator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/msk_replicator aws_msk_replicator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/msk_replicator aws_msk_replicator} Resource.
 func NewMskReplicator(scope constructs.Construct, id *string, config *MskReplicatorConfig) MskReplicator {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewMskReplicator(scope constructs.Construct, id *string, config *MskReplica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/msk_replicator aws_msk_replicator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/msk_replicator aws_msk_replicator} Resource.
 func NewMskReplicator_Override(m MskReplicator, scope constructs.Construct, id *string, config *MskReplicatorConfig) {
 	_init_.Initialize()
 

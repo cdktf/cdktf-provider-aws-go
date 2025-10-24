@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/appstream_directory_config aws_appstream_directory_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/appstream_directory_config aws_appstream_directory_config}.
 type AppstreamDirectoryConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateBasedAuthProperties() AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference
+	CertificateBasedAuthPropertiesInput() *AppstreamDirectoryConfigCertificateBasedAuthProperties
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -119,7 +121,9 @@ type AppstreamDirectoryConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCertificateBasedAuthProperties(value *AppstreamDirectoryConfigCertificateBasedAuthProperties)
 	PutServiceAccountCredentials(value *AppstreamDirectoryConfigServiceAccountCredentials)
+	ResetCertificateBasedAuthProperties()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AppstreamDirectoryConfig) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamDirectoryConfig) CertificateBasedAuthProperties() AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference {
+	var returns AppstreamDirectoryConfigCertificateBasedAuthPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"certificateBasedAuthProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamDirectoryConfig) CertificateBasedAuthPropertiesInput() *AppstreamDirectoryConfigCertificateBasedAuthProperties {
+	var returns *AppstreamDirectoryConfigCertificateBasedAuthProperties
+	_jsii_.Get(
+		j,
+		"certificateBasedAuthPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +438,7 @@ func (j *jsiiProxy_AppstreamDirectoryConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource.
 func NewAppstreamDirectoryConfig(scope constructs.Construct, id *string, config *AppstreamDirectoryConfigConfig) AppstreamDirectoryConfig {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewAppstreamDirectoryConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource.
 func NewAppstreamDirectoryConfig_Override(a AppstreamDirectoryConfig, scope constructs.Construct, id *string, config *AppstreamDirectoryConfigConfig) {
 	_init_.Initialize()
 
@@ -908,6 +932,17 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) PutCertificateBasedAuthProperties(value *AppstreamDirectoryConfigCertificateBasedAuthProperties) {
+	if err := a.validatePutCertificateBasedAuthPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCertificateBasedAuthProperties",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) PutServiceAccountCredentials(value *AppstreamDirectoryConfigServiceAccountCredentials) {
 	if err := a.validatePutServiceAccountCredentialsParameters(value); err != nil {
 		panic(err)
@@ -916,6 +951,14 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) PutServiceAccountCredentials(value 
 		a,
 		"putServiceAccountCredentials",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppstreamDirectoryConfig) ResetCertificateBasedAuthProperties() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCertificateBasedAuthProperties",
+		nil, // no parameters
 	)
 }
 

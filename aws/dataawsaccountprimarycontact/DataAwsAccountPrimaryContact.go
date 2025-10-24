@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/account_primary_contact aws_account_primary_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/account_primary_contact aws_account_primary_contact}.
 type DataAwsAccountPrimaryContact interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataAwsAccountPrimaryContact) WebsiteUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source.
 func NewDataAwsAccountPrimaryContact(scope constructs.Construct, id *string, config *DataAwsAccountPrimaryContactConfig) DataAwsAccountPrimaryContact {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataAwsAccountPrimaryContact(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/account_primary_contact aws_account_primary_contact} Data Source.
 func NewDataAwsAccountPrimaryContact_Override(d DataAwsAccountPrimaryContact, scope constructs.Construct, id *string, config *DataAwsAccountPrimaryContactConfig) {
 	_init_.Initialize()
 

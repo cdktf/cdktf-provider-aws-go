@@ -5,7 +5,7 @@ package keyspacestable
 
 
 type KeyspacesTableTtl struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

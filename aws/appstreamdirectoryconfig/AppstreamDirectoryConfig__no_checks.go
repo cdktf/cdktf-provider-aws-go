@@ -75,6 +75,10 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutCertificateBasedAuthPropertiesParameters(value *AppstreamDirectoryConfigCertificateBasedAuthProperties) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutServiceAccountCredentialsParameters(value *AppstreamDirectoryConfigServiceAccountCredentials) error {
 	return nil
 }

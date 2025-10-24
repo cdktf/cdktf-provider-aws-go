@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration}.
 type Macie2OrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() interface{}
@@ -333,7 +333,7 @@ func (j *jsiiProxy_Macie2OrganizationConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource.
 func NewMacie2OrganizationConfiguration(scope constructs.Construct, id *string, config *Macie2OrganizationConfigurationConfig) Macie2OrganizationConfiguration {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewMacie2OrganizationConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/macie2_organization_configuration aws_macie2_organization_configuration} Resource.
 func NewMacie2OrganizationConfiguration_Override(m Macie2OrganizationConfiguration, scope constructs.Construct, id *string, config *Macie2OrganizationConfigurationConfig) {
 	_init_.Initialize()
 

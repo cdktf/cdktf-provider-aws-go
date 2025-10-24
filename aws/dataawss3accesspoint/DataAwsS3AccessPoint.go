@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/s3_access_point aws_s3_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/s3_access_point aws_s3_access_point}.
 type DataAwsS3AccessPoint interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataAwsS3AccessPoint) VpcConfiguration() DataAwsS3AccessPoint
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/s3_access_point aws_s3_access_point} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/s3_access_point aws_s3_access_point} Data Source.
 func NewDataAwsS3AccessPoint(scope constructs.Construct, id *string, config *DataAwsS3AccessPointConfig) DataAwsS3AccessPoint {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDataAwsS3AccessPoint(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/s3_access_point aws_s3_access_point} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/s3_access_point aws_s3_access_point} Data Source.
 func NewDataAwsS3AccessPoint_Override(d DataAwsS3AccessPoint, scope constructs.Construct, id *string, config *DataAwsS3AccessPointConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package lambdaeventsourcemapping
 
 
 type LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

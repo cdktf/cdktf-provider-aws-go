@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/eip_domain_name aws_eip_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/eip_domain_name aws_eip_domain_name}.
 type EipDomainName interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_EipDomainName) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource.
 func NewEipDomainName(scope constructs.Construct, id *string, config *EipDomainNameConfig) EipDomainName {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewEipDomainName(scope constructs.Construct, id *string, config *EipDomainN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource.
 func NewEipDomainName_Override(e EipDomainName, scope constructs.Construct, id *string, config *EipDomainNameConfig) {
 	_init_.Initialize()
 

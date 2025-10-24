@@ -5,9 +5,9 @@ package inspector2filter
 
 
 type Inspector2FilterFilterCriteriaEcrImagePushedAt struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/inspector2_filter#end_inclusive Inspector2Filter#end_inclusive}.
 	EndInclusive *string `field:"optional" json:"endInclusive" yaml:"endInclusive"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/inspector2_filter#start_inclusive Inspector2Filter#start_inclusive}.
 	StartInclusive *string `field:"optional" json:"startInclusive" yaml:"startInclusive"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/iam_account_alias aws_iam_account_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/iam_account_alias aws_iam_account_alias}.
 type IamAccountAlias interface {
 	cdktf.TerraformResource
 	AccountAlias() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_IamAccountAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
 func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccountAliasConfig) IamAccountAlias {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
 func NewIamAccountAlias_Override(i IamAccountAlias, scope constructs.Construct, id *string, config *IamAccountAliasConfig) {
 	_init_.Initialize()
 

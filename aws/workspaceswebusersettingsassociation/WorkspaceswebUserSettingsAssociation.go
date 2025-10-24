@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association}.
 type WorkspaceswebUserSettingsAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_WorkspaceswebUserSettingsAssociation) UserSettingsArnInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association} Resource.
 func NewWorkspaceswebUserSettingsAssociation(scope constructs.Construct, id *string, config *WorkspaceswebUserSettingsAssociationConfig) WorkspaceswebUserSettingsAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewWorkspaceswebUserSettingsAssociation(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/workspacesweb_user_settings_association aws_workspacesweb_user_settings_association} Resource.
 func NewWorkspaceswebUserSettingsAssociation_Override(w WorkspaceswebUserSettingsAssociation, scope constructs.Construct, id *string, config *WorkspaceswebUserSettingsAssociationConfig) {
 	_init_.Initialize()
 

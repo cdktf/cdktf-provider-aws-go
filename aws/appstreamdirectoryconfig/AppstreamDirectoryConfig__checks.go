@@ -207,6 +207,17 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutCertificateBasedAuthPropertiesParameters(value *AppstreamDirectoryConfigCertificateBasedAuthProperties) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutServiceAccountCredentialsParameters(value *AppstreamDirectoryConfigServiceAccountCredentials) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

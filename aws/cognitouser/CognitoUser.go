@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cognito_user aws_cognito_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cognito_user aws_cognito_user}.
 type CognitoUser interface {
 	cdktf.TerraformResource
 	Attributes() *map[string]*string
@@ -662,7 +662,7 @@ func (j *jsiiProxy_CognitoUser) ValidationDataInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cognito_user aws_cognito_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cognito_user aws_cognito_user} Resource.
 func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserConfig) CognitoUser {
 	_init_.Initialize()
 
@@ -680,7 +680,7 @@ func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cognito_user aws_cognito_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cognito_user aws_cognito_user} Resource.
 func NewCognitoUser_Override(c CognitoUser, scope constructs.Construct, id *string, config *CognitoUserConfig) {
 	_init_.Initialize()
 

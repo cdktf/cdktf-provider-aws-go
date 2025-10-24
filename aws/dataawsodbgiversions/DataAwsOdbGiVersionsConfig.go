@@ -24,11 +24,11 @@ type DataAwsOdbGiVersionsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions#region DataAwsOdbGiVersions#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_gi_versions#region DataAwsOdbGiVersions#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// The system shape.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/data-sources/odb_gi_versions#shape DataAwsOdbGiVersions#shape}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/odb_gi_versions#shape DataAwsOdbGiVersions#shape}
 	Shape *string `field:"optional" json:"shape" yaml:"shape"`
 }
 

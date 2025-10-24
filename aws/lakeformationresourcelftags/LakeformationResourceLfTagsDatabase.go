@@ -5,9 +5,9 @@ package lakeformationresourcelftags
 
 
 type LakeformationResourceLfTagsDatabase struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_resource_lf_tags#name LakeformationResourceLfTags#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lakeformation_resource_lf_tags#catalog_id LakeformationResourceLfTags#catalog_id}.
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
 }
 

@@ -35,7 +35,10 @@ type DataAwsOrganizationsOrganizationAccountsOutputReference interface {
 	Id() *string
 	InternalValue() *DataAwsOrganizationsOrganizationAccounts
 	SetInternalValue(val *DataAwsOrganizationsOrganizationAccounts)
+	JoinedMethod() *string
+	JoinedTimestamp() *string
 	Name() *string
+	State() *string
 	Status() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -164,11 +167,41 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) Inte
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) JoinedMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"joinedMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) JoinedTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"joinedTimestamp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns

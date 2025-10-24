@@ -5,7 +5,7 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchNextStepIntentSlotValue struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lexv2models_intent#interpreted_value Lexv2ModelsIntent#interpreted_value}.
 	InterpretedValue *string `field:"optional" json:"interpretedValue" yaml:"interpretedValue"`
 }
 

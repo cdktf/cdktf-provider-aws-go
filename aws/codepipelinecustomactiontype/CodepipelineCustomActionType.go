@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
 type CodepipelineCustomActionType interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) CodepipelineCustomActionType {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType_Override(c CodepipelineCustomActionType, scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) {
 	_init_.Initialize()
 

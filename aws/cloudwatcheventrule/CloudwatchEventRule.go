@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule}.
 type CloudwatchEventRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -633,7 +633,7 @@ func (j *jsiiProxy_CloudwatchEventRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
 func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *CloudwatchEventRuleConfig) CloudwatchEventRule {
 	_init_.Initialize()
 
@@ -651,7 +651,7 @@ func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
 func NewCloudwatchEventRule_Override(c CloudwatchEventRule, scope constructs.Construct, id *string, config *CloudwatchEventRuleConfig) {
 	_init_.Initialize()
 

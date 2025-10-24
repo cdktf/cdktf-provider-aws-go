@@ -5,7 +5,7 @@ package odbcloudexadatainfrastructure
 
 
 type OdbCloudExadataInfrastructureCustomerContactsToSendToOci struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/odb_cloud_exadata_infrastructure#email OdbCloudExadataInfrastructure#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/odb_cloud_exadata_infrastructure#email OdbCloudExadataInfrastructure#email}.
 	Email *string `field:"optional" json:"email" yaml:"email"`
 }
 

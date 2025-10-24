@@ -5,9 +5,9 @@ package globalacceleratoraccelerator
 
 
 type GlobalacceleratorAcceleratorTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/globalaccelerator_accelerator#create GlobalacceleratorAccelerator#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/globalaccelerator_accelerator#create GlobalacceleratorAccelerator#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/globalaccelerator_accelerator#update GlobalacceleratorAccelerator#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/globalaccelerator_accelerator#update GlobalacceleratorAccelerator#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

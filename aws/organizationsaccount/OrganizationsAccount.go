@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/organizations_account aws_organizations_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/organizations_account aws_organizations_account}.
 type OrganizationsAccount interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,7 @@ type OrganizationsAccount interface {
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
+	State() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -502,6 +503,16 @@ func (j *jsiiProxy_OrganizationsAccount) RoleNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationsAccount) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrganizationsAccount) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -603,7 +614,7 @@ func (j *jsiiProxy_OrganizationsAccount) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/organizations_account aws_organizations_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/organizations_account aws_organizations_account} Resource.
 func NewOrganizationsAccount(scope constructs.Construct, id *string, config *OrganizationsAccountConfig) OrganizationsAccount {
 	_init_.Initialize()
 
@@ -621,7 +632,7 @@ func NewOrganizationsAccount(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.17.0/docs/resources/organizations_account aws_organizations_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/organizations_account aws_organizations_account} Resource.
 func NewOrganizationsAccount_Override(o OrganizationsAccount, scope constructs.Construct, id *string, config *OrganizationsAccountConfig) {
 	_init_.Initialize()
 
