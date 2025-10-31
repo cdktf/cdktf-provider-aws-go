@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/identitystore_group aws_identitystore_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/identitystore_group aws_identitystore_group}.
 type IdentitystoreGroup interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -143,6 +144,16 @@ type IdentitystoreGroup interface {
 // The jsii proxy struct for IdentitystoreGroup
 type jsiiProxy_IdentitystoreGroup struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentitystoreGroup) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentitystoreGroup) CdktfStack() cdktf.TerraformStack {
@@ -426,7 +437,7 @@ func (j *jsiiProxy_IdentitystoreGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/identitystore_group aws_identitystore_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/identitystore_group aws_identitystore_group} Resource.
 func NewIdentitystoreGroup(scope constructs.Construct, id *string, config *IdentitystoreGroupConfig) IdentitystoreGroup {
 	_init_.Initialize()
 
@@ -444,7 +455,7 @@ func NewIdentitystoreGroup(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/identitystore_group aws_identitystore_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/identitystore_group aws_identitystore_group} Resource.
 func NewIdentitystoreGroup_Override(i IdentitystoreGroup, scope constructs.Construct, id *string, config *IdentitystoreGroupConfig) {
 	_init_.Initialize()
 

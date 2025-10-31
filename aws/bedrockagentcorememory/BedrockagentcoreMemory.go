@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory}.
 type BedrockagentcoreMemory interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_BedrockagentcoreMemory) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory} Resource.
 func NewBedrockagentcoreMemory(scope constructs.Construct, id *string, config *BedrockagentcoreMemoryConfig) BedrockagentcoreMemory {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewBedrockagentcoreMemory(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_memory aws_bedrockagentcore_memory} Resource.
 func NewBedrockagentcoreMemory_Override(b BedrockagentcoreMemory, scope constructs.Construct, id *string, config *BedrockagentcoreMemoryConfig) {
 	_init_.Initialize()
 

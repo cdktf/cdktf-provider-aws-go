@@ -5,7 +5,9 @@ package lblistenerrule
 
 
 type LbListenerRuleConditionPathPattern struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
-	Values *[]*string `field:"required" json:"values" yaml:"values"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/lb_listener_rule#regex_values LbListenerRule#regex_values}.
+	RegexValues *[]*string `field:"optional" json:"regexValues" yaml:"regexValues"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

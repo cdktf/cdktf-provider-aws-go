@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsLbListenerRule) validatePutConditionParameters(value i
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRule) validatePutTransformParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataAwsLbListenerRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

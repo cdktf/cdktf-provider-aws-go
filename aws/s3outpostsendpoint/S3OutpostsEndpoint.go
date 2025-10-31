@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}.
 type S3OutpostsEndpoint interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -495,7 +495,7 @@ func (j *jsiiProxy_S3OutpostsEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
 func NewS3OutpostsEndpoint(scope constructs.Construct, id *string, config *S3OutpostsEndpointConfig) S3OutpostsEndpoint {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewS3OutpostsEndpoint(scope constructs.Construct, id *string, config *S3Out
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
 func NewS3OutpostsEndpoint_Override(s S3OutpostsEndpoint, scope constructs.Construct, id *string, config *S3OutpostsEndpointConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/alb_listener_rule aws_alb_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/alb_listener_rule aws_alb_listener_rule}.
 type AlbListenerRule interface {
 	cdktf.TerraformResource
 	Action() AlbListenerRuleActionList
@@ -84,6 +84,8 @@ type AlbListenerRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Transform() AlbListenerRuleTransformList
+	TransformInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,6 +131,7 @@ type AlbListenerRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value interface{})
 	PutCondition(value interface{})
+	PutTransform(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -137,6 +140,7 @@ type AlbListenerRule interface {
 	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
+	ResetTransform()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -485,8 +489,28 @@ func (j *jsiiProxy_AlbListenerRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlbListenerRule) Transform() AlbListenerRuleTransformList {
+	var returns AlbListenerRuleTransformList
+	_jsii_.Get(
+		j,
+		"transform",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/alb_listener_rule aws_alb_listener_rule} Resource.
+func (j *jsiiProxy_AlbListenerRule) TransformInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transformInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/alb_listener_rule aws_alb_listener_rule} Resource.
 func NewAlbListenerRule(scope constructs.Construct, id *string, config *AlbListenerRuleConfig) AlbListenerRule {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewAlbListenerRule(scope constructs.Construct, id *string, config *AlbListe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/alb_listener_rule aws_alb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/alb_listener_rule aws_alb_listener_rule} Resource.
 func NewAlbListenerRule_Override(a AlbListenerRule, scope constructs.Construct, id *string, config *AlbListenerRuleConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1048,17 @@ func (a *jsiiProxy_AlbListenerRule) PutCondition(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AlbListenerRule) PutTransform(value interface{}) {
+	if err := a.validatePutTransformParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTransform",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlbListenerRule) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1068,6 +1103,14 @@ func (a *jsiiProxy_AlbListenerRule) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbListenerRule) ResetTransform() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTransform",
 		nil, // no parameters
 	)
 }

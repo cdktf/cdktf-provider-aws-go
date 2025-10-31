@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure}.
 type OdbCloudExadataInfrastructure interface {
 	cdktf.TerraformResource
 	ActivatedStorageCount() *float64
@@ -914,7 +914,7 @@ func (j *jsiiProxy_OdbCloudExadataInfrastructure) TotalStorageSizeInGbs() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure} Resource.
 func NewOdbCloudExadataInfrastructure(scope constructs.Construct, id *string, config *OdbCloudExadataInfrastructureConfig) OdbCloudExadataInfrastructure {
 	_init_.Initialize()
 
@@ -932,7 +932,7 @@ func NewOdbCloudExadataInfrastructure(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/odb_cloud_exadata_infrastructure aws_odb_cloud_exadata_infrastructure} Resource.
 func NewOdbCloudExadataInfrastructure_Override(o OdbCloudExadataInfrastructure, scope constructs.Construct, id *string, config *OdbCloudExadataInfrastructureConfig) {
 	_init_.Initialize()
 

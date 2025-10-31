@@ -32,6 +32,9 @@ type AlbListenerRuleConditionPathPatternOutputReference interface {
 	Fqn() *string
 	InternalValue() *AlbListenerRuleConditionPathPattern
 	SetInternalValue(val *AlbListenerRuleConditionPathPattern)
+	RegexValues() *[]*string
+	SetRegexValues(val *[]*string)
+	RegexValuesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type AlbListenerRuleConditionPathPatternOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRegexValues()
+	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +132,26 @@ func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) RegexValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) RegexValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValuesInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +254,17 @@ func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference)SetRegexValues(val *[]*string) {
+	if err := j.validateSetRegexValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regexValues",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) ResetRegexValues() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegexValues",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) ResetValues() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetValues",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

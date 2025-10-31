@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation}.
 type Ec2TransitGatewayDefaultRouteTablePropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagation) TransitGateway
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
 func NewEc2TransitGatewayDefaultRouteTablePropagation(scope constructs.Construct, id *string, config *Ec2TransitGatewayDefaultRouteTablePropagationConfig) Ec2TransitGatewayDefaultRouteTablePropagation {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewEc2TransitGatewayDefaultRouteTablePropagation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_transit_gateway_default_route_table_propagation aws_ec2_transit_gateway_default_route_table_propagation} Resource.
 func NewEc2TransitGatewayDefaultRouteTablePropagation_Override(e Ec2TransitGatewayDefaultRouteTablePropagation, scope constructs.Construct, id *string, config *Ec2TransitGatewayDefaultRouteTablePropagationConfig) {
 	_init_.Initialize()
 

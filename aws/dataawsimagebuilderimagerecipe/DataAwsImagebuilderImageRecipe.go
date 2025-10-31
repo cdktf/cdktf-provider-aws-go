@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
 type DataAwsImagebuilderImageRecipe interface {
 	cdktf.TerraformDataSource
+	AmiTags() cdktf.StringMap
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
@@ -124,6 +125,16 @@ type DataAwsImagebuilderImageRecipe interface {
 // The jsii proxy struct for DataAwsImagebuilderImageRecipe
 type jsiiProxy_DataAwsImagebuilderImageRecipe struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsImagebuilderImageRecipe) AmiTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"amiTags",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsImagebuilderImageRecipe) Arn() *string {
@@ -457,7 +468,7 @@ func (j *jsiiProxy_DataAwsImagebuilderImageRecipe) WorkingDirectory() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Data Source.
 func NewDataAwsImagebuilderImageRecipe(scope constructs.Construct, id *string, config *DataAwsImagebuilderImageRecipeConfig) DataAwsImagebuilderImageRecipe {
 	_init_.Initialize()
 
@@ -475,7 +486,7 @@ func NewDataAwsImagebuilderImageRecipe(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Data Source.
 func NewDataAwsImagebuilderImageRecipe_Override(d DataAwsImagebuilderImageRecipe, scope constructs.Construct, id *string, config *DataAwsImagebuilderImageRecipeConfig) {
 	_init_.Initialize()
 

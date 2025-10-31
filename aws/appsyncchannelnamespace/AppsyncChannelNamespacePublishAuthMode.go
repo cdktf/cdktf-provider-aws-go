@@ -5,7 +5,7 @@ package appsyncchannelnamespace
 
 
 type AppsyncChannelNamespacePublishAuthMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/appsync_channel_namespace#auth_type AppsyncChannelNamespace#auth_type}.
 	AuthType *string `field:"required" json:"authType" yaml:"authType"`
 }
 

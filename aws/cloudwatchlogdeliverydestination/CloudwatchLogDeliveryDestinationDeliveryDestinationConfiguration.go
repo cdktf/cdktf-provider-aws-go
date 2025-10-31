@@ -5,7 +5,7 @@ package cloudwatchlogdeliverydestination
 
 
 type CloudwatchLogDeliveryDestinationDeliveryDestinationConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/cloudwatch_log_delivery_destination#destination_resource_arn CloudwatchLogDeliveryDestination#destination_resource_arn}.
 	DestinationResourceArn *string `field:"required" json:"destinationResourceArn" yaml:"destinationResourceArn"`
 }
 

@@ -5,7 +5,7 @@ package bedrockagentprompt
 
 
 type BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagent_prompt#json BedrockagentPrompt#json}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_prompt#json BedrockagentPrompt#json}.
 	Json *string `field:"optional" json:"json" yaml:"json"`
 }
 

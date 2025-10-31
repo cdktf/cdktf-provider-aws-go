@@ -103,6 +103,10 @@ func validateImagebuilderImageRecipe_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderImageRecipe) validateSetAmiTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImageRecipe) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (l *jsiiProxy_LbListenerRule) validatePutConditionParameters(value interfac
 	return nil
 }
 
+func (l *jsiiProxy_LbListenerRule) validatePutTransformParameters(value interface{}) error {
+	return nil
+}
+
 func validateLbListenerRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

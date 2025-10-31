@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature}.
 type GuarddutyMemberDetectorFeature interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GuarddutyMemberDetectorFeature) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
 func NewGuarddutyMemberDetectorFeature(scope constructs.Construct, id *string, config *GuarddutyMemberDetectorFeatureConfig) GuarddutyMemberDetectorFeature {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGuarddutyMemberDetectorFeature(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/guardduty_member_detector_feature aws_guardduty_member_detector_feature} Resource.
 func NewGuarddutyMemberDetectorFeature_Override(g GuarddutyMemberDetectorFeature, scope constructs.Construct, id *string, config *GuarddutyMemberDetectorFeatureConfig) {
 	_init_.Initialize()
 

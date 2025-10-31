@@ -63,6 +63,10 @@ func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateSetRegexValuesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

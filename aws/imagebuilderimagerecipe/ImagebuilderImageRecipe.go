@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe}.
 type ImagebuilderImageRecipe interface {
 	cdktf.TerraformResource
+	AmiTags() *map[string]*string
+	SetAmiTags(val *map[string]*string)
+	AmiTagsInput() *map[string]*string
 	Arn() *string
 	BlockDeviceMapping() ImagebuilderImageRecipeBlockDeviceMappingList
 	BlockDeviceMappingInput() interface{}
@@ -147,6 +150,7 @@ type ImagebuilderImageRecipe interface {
 	PutBlockDeviceMapping(value interface{})
 	PutComponent(value interface{})
 	PutSystemsManagerAgent(value *ImagebuilderImageRecipeSystemsManagerAgent)
+	ResetAmiTags()
 	ResetBlockDeviceMapping()
 	ResetDescription()
 	ResetId()
@@ -175,6 +179,26 @@ type ImagebuilderImageRecipe interface {
 // The jsii proxy struct for ImagebuilderImageRecipe
 type jsiiProxy_ImagebuilderImageRecipe struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ImagebuilderImageRecipe) AmiTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"amiTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImageRecipe) AmiTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"amiTagsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ImagebuilderImageRecipe) Arn() *string {
@@ -638,7 +662,7 @@ func (j *jsiiProxy_ImagebuilderImageRecipe) WorkingDirectoryInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
 func NewImagebuilderImageRecipe(scope constructs.Construct, id *string, config *ImagebuilderImageRecipeConfig) ImagebuilderImageRecipe {
 	_init_.Initialize()
 
@@ -656,7 +680,7 @@ func NewImagebuilderImageRecipe(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/imagebuilder_image_recipe aws_imagebuilder_image_recipe} Resource.
 func NewImagebuilderImageRecipe_Override(i ImagebuilderImageRecipe, scope constructs.Construct, id *string, config *ImagebuilderImageRecipeConfig) {
 	_init_.Initialize()
 
@@ -664,6 +688,17 @@ func NewImagebuilderImageRecipe_Override(i ImagebuilderImageRecipe, scope constr
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderImageRecipe)SetAmiTags(val *map[string]*string) {
+	if err := j.validateSetAmiTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"amiTags",
+		val,
 	)
 }
 
@@ -1228,6 +1263,14 @@ func (i *jsiiProxy_ImagebuilderImageRecipe) PutSystemsManagerAgent(value *Imageb
 		i,
 		"putSystemsManagerAgent",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) ResetAmiTags() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAmiTags",
+		nil, // no parameters
 	)
 }
 

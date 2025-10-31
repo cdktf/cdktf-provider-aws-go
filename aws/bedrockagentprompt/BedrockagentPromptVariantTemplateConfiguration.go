@@ -7,11 +7,11 @@ package bedrockagentprompt
 type BedrockagentPromptVariantTemplateConfiguration struct {
 	// chat block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagent_prompt#chat BedrockagentPrompt#chat}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_prompt#chat BedrockagentPrompt#chat}
 	Chat interface{} `field:"optional" json:"chat" yaml:"chat"`
 	// text block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}
 	Text interface{} `field:"optional" json:"text" yaml:"text"`
 }
 

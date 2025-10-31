@@ -5,7 +5,7 @@ package dataawsec2localgatewayroutetables
 
 
 type DataAwsEc2LocalGatewayRouteTablesTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/ec2_local_gateway_route_tables#read DataAwsEc2LocalGatewayRouteTables#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/ec2_local_gateway_route_tables#read DataAwsEc2LocalGatewayRouteTables#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

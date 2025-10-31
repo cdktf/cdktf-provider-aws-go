@@ -67,6 +67,10 @@ func (j *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateSetRegexValuesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListenerRuleConditionHttpHeaderOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

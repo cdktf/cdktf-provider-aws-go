@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule}.
 type DataAwsLbListenerRule interface {
 	cdktf.TerraformDataSource
 	Action() DataAwsLbListenerRuleActionList
@@ -70,6 +70,8 @@ type DataAwsLbListenerRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Transform() DataAwsLbListenerRuleTransformList
+	TransformInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,6 +99,7 @@ type DataAwsLbListenerRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value interface{})
 	PutCondition(value interface{})
+	PutTransform(value interface{})
 	ResetAction()
 	ResetArn()
 	ResetCondition()
@@ -106,6 +109,7 @@ type DataAwsLbListenerRule interface {
 	ResetOverrideLogicalId()
 	ResetPriority()
 	ResetRegion()
+	ResetTransform()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -395,8 +399,28 @@ func (j *jsiiProxy_DataAwsLbListenerRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLbListenerRule) Transform() DataAwsLbListenerRuleTransformList {
+	var returns DataAwsLbListenerRuleTransformList
+	_jsii_.Get(
+		j,
+		"transform",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source.
+func (j *jsiiProxy_DataAwsLbListenerRule) TransformInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transformInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source.
 func NewDataAwsLbListenerRule(scope constructs.Construct, id *string, config *DataAwsLbListenerRuleConfig) DataAwsLbListenerRule {
 	_init_.Initialize()
 
@@ -414,7 +438,7 @@ func NewDataAwsLbListenerRule(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/lb_listener_rule aws_lb_listener_rule} Data Source.
 func NewDataAwsLbListenerRule_Override(d DataAwsLbListenerRule, scope constructs.Construct, id *string, config *DataAwsLbListenerRuleConfig) {
 	_init_.Initialize()
 
@@ -822,6 +846,17 @@ func (d *jsiiProxy_DataAwsLbListenerRule) PutCondition(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRule) PutTransform(value interface{}) {
+	if err := d.validatePutTransformParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTransform",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRule) ResetAction() {
 	_jsii_.InvokeVoid(
 		d,
@@ -874,6 +909,14 @@ func (d *jsiiProxy_DataAwsLbListenerRule) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRule) ResetTransform() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTransform",
 		nil, // no parameters
 	)
 }

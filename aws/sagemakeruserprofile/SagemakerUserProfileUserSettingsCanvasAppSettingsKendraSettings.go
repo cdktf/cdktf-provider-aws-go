@@ -5,7 +5,7 @@ package sagemakeruserprofile
 
 
 type SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

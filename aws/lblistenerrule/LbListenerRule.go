@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lb_listener_rule aws_lb_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/lb_listener_rule aws_lb_listener_rule}.
 type LbListenerRule interface {
 	cdktf.TerraformResource
 	Action() LbListenerRuleActionList
@@ -84,6 +84,8 @@ type LbListenerRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Transform() LbListenerRuleTransformList
+	TransformInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,6 +131,7 @@ type LbListenerRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value interface{})
 	PutCondition(value interface{})
+	PutTransform(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -137,6 +140,7 @@ type LbListenerRule interface {
 	ResetRegion()
 	ResetTags()
 	ResetTagsAll()
+	ResetTransform()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -485,8 +489,28 @@ func (j *jsiiProxy_LbListenerRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LbListenerRule) Transform() LbListenerRuleTransformList {
+	var returns LbListenerRuleTransformList
+	_jsii_.Get(
+		j,
+		"transform",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
+func (j *jsiiProxy_LbListenerRule) TransformInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transformInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListenerRuleConfig) LbListenerRule {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListene
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule_Override(l LbListenerRule, scope constructs.Construct, id *string, config *LbListenerRuleConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1048,17 @@ func (l *jsiiProxy_LbListenerRule) PutCondition(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_LbListenerRule) PutTransform(value interface{}) {
+	if err := l.validatePutTransformParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTransform",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbListenerRule) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1068,6 +1103,14 @@ func (l *jsiiProxy_LbListenerRule) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerRule) ResetTransform() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTransform",
 		nil, // no parameters
 	)
 }

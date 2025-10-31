@@ -32,6 +32,9 @@ type LbListenerRuleConditionPathPatternOutputReference interface {
 	Fqn() *string
 	InternalValue() *LbListenerRuleConditionPathPattern
 	SetInternalValue(val *LbListenerRuleConditionPathPattern)
+	RegexValues() *[]*string
+	SetRegexValues(val *[]*string)
+	RegexValuesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type LbListenerRuleConditionPathPatternOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRegexValues()
+	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +132,26 @@ func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) RegexValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) RegexValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValuesInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +254,17 @@ func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference)SetRegexValues(val *[]*string) {
+	if err := j.validateSetRegexValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regexValues",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (l *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) ResetRegexValues() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegexValues",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) ResetValues() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetValues",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LbListenerRuleConditionPathPatternOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

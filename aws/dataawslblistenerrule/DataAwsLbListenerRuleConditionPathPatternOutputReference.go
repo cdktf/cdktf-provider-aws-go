@@ -32,6 +32,7 @@ type DataAwsLbListenerRuleConditionPathPatternOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RegexValues() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionPathPatternOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionPathPatternOutputReference) RegexValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValues",
 		&returns,
 	)
 	return returns

@@ -99,7 +99,15 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutMaximumCapacityParameter
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validatePutMonitoringConfigurationParameters(value *EmrserverlessApplicationMonitoringConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validatePutNetworkConfigurationParameters(value *EmrserverlessApplicationNetworkConfiguration) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) validatePutRuntimeConfigurationParameters(value interface{}) error {
 	return nil
 }
 

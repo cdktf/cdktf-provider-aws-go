@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/emrserverless_application aws_emrserverless_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/emrserverless_application aws_emrserverless_application}.
 type EmrserverlessApplication interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -62,6 +62,8 @@ type EmrserverlessApplication interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaximumCapacity() EmrserverlessApplicationMaximumCapacityOutputReference
 	MaximumCapacityInput() *EmrserverlessApplicationMaximumCapacity
+	MonitoringConfiguration() EmrserverlessApplicationMonitoringConfigurationOutputReference
+	MonitoringConfigurationInput() *EmrserverlessApplicationMonitoringConfiguration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -85,6 +87,8 @@ type EmrserverlessApplication interface {
 	ReleaseLabel() *string
 	SetReleaseLabel(val *string)
 	ReleaseLabelInput() *string
+	RuntimeConfiguration() EmrserverlessApplicationRuntimeConfigurationList
+	RuntimeConfigurationInput() interface{}
 	SchedulerConfiguration() EmrserverlessApplicationSchedulerConfigurationOutputReference
 	SchedulerConfigurationInput() *EmrserverlessApplicationSchedulerConfiguration
 	Tags() *map[string]*string
@@ -151,7 +155,9 @@ type EmrserverlessApplication interface {
 	PutInitialCapacity(value interface{})
 	PutInteractiveConfiguration(value *EmrserverlessApplicationInteractiveConfiguration)
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
+	PutMonitoringConfiguration(value *EmrserverlessApplicationMonitoringConfiguration)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
+	PutRuntimeConfiguration(value interface{})
 	PutSchedulerConfiguration(value *EmrserverlessApplicationSchedulerConfiguration)
 	ResetArchitecture()
 	ResetAutoStartConfiguration()
@@ -161,11 +167,13 @@ type EmrserverlessApplication interface {
 	ResetInitialCapacity()
 	ResetInteractiveConfiguration()
 	ResetMaximumCapacity()
+	ResetMonitoringConfiguration()
 	ResetNetworkConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRuntimeConfiguration()
 	ResetSchedulerConfiguration()
 	ResetTags()
 	ResetTagsAll()
@@ -447,6 +455,26 @@ func (j *jsiiProxy_EmrserverlessApplication) MaximumCapacityInput() *Emrserverle
 	return returns
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) MonitoringConfiguration() EmrserverlessApplicationMonitoringConfigurationOutputReference {
+	var returns EmrserverlessApplicationMonitoringConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"monitoringConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) MonitoringConfigurationInput() *EmrserverlessApplicationMonitoringConfiguration {
+	var returns *EmrserverlessApplicationMonitoringConfiguration
+	_jsii_.Get(
+		j,
+		"monitoringConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,6 +595,26 @@ func (j *jsiiProxy_EmrserverlessApplication) ReleaseLabelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) RuntimeConfiguration() EmrserverlessApplicationRuntimeConfigurationList {
+	var returns EmrserverlessApplicationRuntimeConfigurationList
+	_jsii_.Get(
+		j,
+		"runtimeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) RuntimeConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"runtimeConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) SchedulerConfiguration() EmrserverlessApplicationSchedulerConfigurationOutputReference {
 	var returns EmrserverlessApplicationSchedulerConfigurationOutputReference
 	_jsii_.Get(
@@ -678,7 +726,7 @@ func (j *jsiiProxy_EmrserverlessApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication(scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) EmrserverlessApplication {
 	_init_.Initialize()
 
@@ -696,7 +744,7 @@ func NewEmrserverlessApplication(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.18.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1282,6 +1330,17 @@ func (e *jsiiProxy_EmrserverlessApplication) PutMaximumCapacity(value *Emrserver
 	)
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) PutMonitoringConfiguration(value *EmrserverlessApplicationMonitoringConfiguration) {
+	if err := e.validatePutMonitoringConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putMonitoringConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration) {
 	if err := e.validatePutNetworkConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1289,6 +1348,17 @@ func (e *jsiiProxy_EmrserverlessApplication) PutNetworkConfiguration(value *Emrs
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) PutRuntimeConfiguration(value interface{}) {
+	if err := e.validatePutRuntimeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRuntimeConfiguration",
 		[]interface{}{value},
 	)
 }
@@ -1368,6 +1438,14 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetMaximumCapacity() {
 	)
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) ResetMonitoringConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMonitoringConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) ResetNetworkConfiguration() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1388,6 +1466,14 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetRegion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) ResetRuntimeConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRuntimeConfiguration",
 		nil, // no parameters
 	)
 }

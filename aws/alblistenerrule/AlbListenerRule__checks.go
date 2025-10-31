@@ -269,6 +269,37 @@ func (a *jsiiProxy_AlbListenerRule) validatePutConditionParameters(value interfa
 	return nil
 }
 
+func (a *jsiiProxy_AlbListenerRule) validatePutTransformParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AlbListenerRuleTransform:
+		value := value.(*[]*AlbListenerRuleTransform)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AlbListenerRuleTransform:
+		value_ := value.([]*AlbListenerRuleTransform)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlbListenerRuleTransform; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateAlbListenerRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

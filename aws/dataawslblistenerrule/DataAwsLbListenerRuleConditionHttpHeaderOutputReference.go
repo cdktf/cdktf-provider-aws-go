@@ -33,6 +33,7 @@ type DataAwsLbListenerRuleConditionHttpHeaderOutputReference interface {
 	HttpHeaderName() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RegexValues() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataAwsLbListenerRuleConditionHttpHeaderOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleConditionHttpHeaderOutputReference) RegexValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regexValues",
 		&returns,
 	)
 	return returns
