@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

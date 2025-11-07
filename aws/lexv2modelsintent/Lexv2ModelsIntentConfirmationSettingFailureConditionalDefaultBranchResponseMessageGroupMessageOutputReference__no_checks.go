@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefault
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefault
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchResponseMessageGroupMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

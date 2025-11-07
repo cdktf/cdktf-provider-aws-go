@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

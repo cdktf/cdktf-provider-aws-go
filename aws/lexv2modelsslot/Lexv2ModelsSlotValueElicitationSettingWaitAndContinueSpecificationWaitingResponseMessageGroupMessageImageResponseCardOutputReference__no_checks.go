@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

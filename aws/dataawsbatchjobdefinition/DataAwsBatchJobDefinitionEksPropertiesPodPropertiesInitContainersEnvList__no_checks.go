@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContai
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

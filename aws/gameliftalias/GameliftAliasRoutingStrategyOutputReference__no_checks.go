@@ -43,11 +43,11 @@ func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftAliasRoutingStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

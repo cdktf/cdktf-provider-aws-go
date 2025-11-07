@@ -15,7 +15,7 @@ func (r *jsiiProxy_RdsClusterMasterUserSecretList) validateGetParameters(index *
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterMasterUserSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterMasterUserSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

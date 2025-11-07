@@ -131,6 +131,10 @@ func (j *jsiiProxy_KinesisStream) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStream) validateSetMaxRecordSizeInKibParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStream) validateSetNameParameters(val *string) error {
 	return nil
 }

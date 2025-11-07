@@ -43,11 +43,11 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsNielsenConfigurationOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

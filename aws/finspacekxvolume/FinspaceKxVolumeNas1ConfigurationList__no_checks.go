@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateGetParameters(
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

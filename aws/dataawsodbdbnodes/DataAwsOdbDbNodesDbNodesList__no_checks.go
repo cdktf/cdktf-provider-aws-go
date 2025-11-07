@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbDbNodesDbNodesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbNodesDbNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbDbNodesDbNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectPhoneNumberStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

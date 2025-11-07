@@ -43,11 +43,11 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

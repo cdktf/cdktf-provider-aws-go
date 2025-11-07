@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsValidationTrustList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

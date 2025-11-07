@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

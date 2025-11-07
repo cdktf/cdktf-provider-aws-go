@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterValueList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionParameterValueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

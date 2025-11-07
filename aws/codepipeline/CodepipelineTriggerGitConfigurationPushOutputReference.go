@@ -69,7 +69,7 @@ type CodepipelineTriggerGitConfigurationPushOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBranches(value *CodepipelineTriggerGitConfigurationPushBranches)
 	PutFilePaths(value *CodepipelineTriggerGitConfigurationPushFilePaths)
 	PutTags(value *CodepipelineTriggerGitConfigurationPushTags)
@@ -78,7 +78,7 @@ type CodepipelineTriggerGitConfigurationPushOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Inter
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPushOutputReference) Resol
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

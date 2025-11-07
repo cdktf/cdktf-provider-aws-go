@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList) vali
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingSubSlotsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

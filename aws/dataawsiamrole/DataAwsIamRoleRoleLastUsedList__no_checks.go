@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

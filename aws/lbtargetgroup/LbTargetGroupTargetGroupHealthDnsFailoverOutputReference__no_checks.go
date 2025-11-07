@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbTargetGroupTargetGroupHealthDnsFailoverOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupTargetGroupHealthDnsFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbTargetGroupTargetGroupHealthDnsFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupTargetGroupHealthDnsFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbTargetGroupTargetGroupHealthDnsFailoverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealT
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

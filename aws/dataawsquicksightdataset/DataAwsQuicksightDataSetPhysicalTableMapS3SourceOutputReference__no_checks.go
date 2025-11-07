@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

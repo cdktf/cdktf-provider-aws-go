@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList) 
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

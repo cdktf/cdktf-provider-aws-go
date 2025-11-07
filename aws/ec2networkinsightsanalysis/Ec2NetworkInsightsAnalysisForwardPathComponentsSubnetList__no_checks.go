@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList) va
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

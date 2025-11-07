@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppfabricIngestionDestinationProcessingConfigurationList) val
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricIngestionDestinationProcessingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricIngestionDestinationProcessingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

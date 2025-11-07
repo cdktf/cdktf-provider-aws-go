@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOu
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOu
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

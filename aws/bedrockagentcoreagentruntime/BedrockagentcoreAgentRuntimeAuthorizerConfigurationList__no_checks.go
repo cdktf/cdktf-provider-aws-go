@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationList) vali
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

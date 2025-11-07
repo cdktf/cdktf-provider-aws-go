@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

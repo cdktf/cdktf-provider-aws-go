@@ -85,17 +85,17 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessage
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCustomPayloadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCustomPayloadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCustomPayloadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupMessageCustomPayloadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

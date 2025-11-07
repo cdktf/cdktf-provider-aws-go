@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesCon
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerResourceRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

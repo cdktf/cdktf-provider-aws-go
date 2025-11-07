@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestList) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

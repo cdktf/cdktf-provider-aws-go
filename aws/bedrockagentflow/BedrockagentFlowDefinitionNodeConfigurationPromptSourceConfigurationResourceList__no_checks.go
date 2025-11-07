@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationResourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

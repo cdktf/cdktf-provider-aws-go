@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMqBrokerEncryptionOptionsList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMqBrokerEncryptionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMqBrokerEncryptionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

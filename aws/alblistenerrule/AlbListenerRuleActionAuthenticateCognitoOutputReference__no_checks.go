@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleActionAuthenticateCognitoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

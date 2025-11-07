@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesEnaSrdSpecificationEnaSrdUdpSp
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesEnaSrdSpecificationEnaSrdUdpSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

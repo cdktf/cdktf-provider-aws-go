@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

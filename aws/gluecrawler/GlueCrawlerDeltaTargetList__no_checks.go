@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateGetParameters(index *floa
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

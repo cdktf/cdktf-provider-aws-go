@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsMan
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

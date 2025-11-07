@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

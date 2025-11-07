@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference)
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

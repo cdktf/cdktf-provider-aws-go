@@ -43,11 +43,11 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

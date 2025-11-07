@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

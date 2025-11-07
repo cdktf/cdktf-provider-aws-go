@@ -103,6 +103,10 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2InstanceConnectEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

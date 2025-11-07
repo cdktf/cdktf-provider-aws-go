@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodeconnectionsHostVpcConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesList) validateGetP
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

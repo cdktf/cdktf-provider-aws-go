@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

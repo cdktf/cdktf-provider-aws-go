@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

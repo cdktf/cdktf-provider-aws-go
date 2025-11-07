@@ -15,7 +15,7 @@ func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailLbCertificateDomainValidationRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcBlockPublicAccessExclusionTimeoutsOutputReference) validat
 	return nil
 }
 
-func (v *jsiiProxy_VpcBlockPublicAccessExclusionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcBlockPublicAccessExclusionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcBlockPublicAccessExclusionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcBlockPublicAccessExclusionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

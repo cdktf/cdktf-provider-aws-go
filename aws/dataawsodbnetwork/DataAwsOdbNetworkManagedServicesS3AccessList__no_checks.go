@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

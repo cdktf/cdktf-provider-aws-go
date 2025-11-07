@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessag
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

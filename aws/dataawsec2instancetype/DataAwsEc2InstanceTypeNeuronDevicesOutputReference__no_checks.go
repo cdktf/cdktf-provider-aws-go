@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeNeuronDevicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

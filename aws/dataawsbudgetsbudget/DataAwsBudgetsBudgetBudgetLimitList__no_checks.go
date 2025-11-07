@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBudgetsBudgetBudgetLimitList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetBudgetLimitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetBudgetLimitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

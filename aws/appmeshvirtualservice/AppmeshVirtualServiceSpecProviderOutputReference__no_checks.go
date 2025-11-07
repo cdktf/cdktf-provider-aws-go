@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validatePut
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualServiceSpecProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

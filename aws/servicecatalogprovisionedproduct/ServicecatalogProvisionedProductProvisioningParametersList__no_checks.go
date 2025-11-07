@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList) v
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

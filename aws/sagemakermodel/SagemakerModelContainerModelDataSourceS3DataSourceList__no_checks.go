@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

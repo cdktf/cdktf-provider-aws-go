@@ -15,7 +15,7 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3Configu
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

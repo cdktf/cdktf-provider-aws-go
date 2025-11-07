@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

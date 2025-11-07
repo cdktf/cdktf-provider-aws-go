@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

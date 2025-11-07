@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList) va
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

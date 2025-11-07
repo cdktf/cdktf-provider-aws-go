@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validatePutWe
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttpRouteActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

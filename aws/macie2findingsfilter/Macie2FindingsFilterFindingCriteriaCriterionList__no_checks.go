@@ -15,7 +15,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

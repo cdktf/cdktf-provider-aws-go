@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvschatRoomTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (i *jsiiProxy_IvschatRoomTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatRoomTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvschatRoomTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatRoomTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

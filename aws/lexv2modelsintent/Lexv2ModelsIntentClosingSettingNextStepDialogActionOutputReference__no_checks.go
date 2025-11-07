@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepDialogActionOutputRefe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepDialogActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepDialogActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepDialogActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingNextStepDialogActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

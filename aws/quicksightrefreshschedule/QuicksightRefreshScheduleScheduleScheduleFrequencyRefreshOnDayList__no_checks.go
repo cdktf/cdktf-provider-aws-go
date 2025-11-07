@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDa
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDayList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

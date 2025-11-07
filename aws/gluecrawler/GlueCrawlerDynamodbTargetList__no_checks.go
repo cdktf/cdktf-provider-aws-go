@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateGetParameters(index *f
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

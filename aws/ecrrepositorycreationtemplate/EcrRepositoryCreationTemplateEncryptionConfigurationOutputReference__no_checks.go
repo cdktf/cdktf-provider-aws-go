@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplateEncryptionConfigurationOutputRef
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

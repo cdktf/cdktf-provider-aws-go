@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerPipelinePipelineDefinitionS3LocationOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerPipelinePipelineDefinitionS3LocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerPipelinePipelineDefinitionS3LocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerPipelinePipelineDefinitionS3LocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerPipelinePipelineDefinitionS3LocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

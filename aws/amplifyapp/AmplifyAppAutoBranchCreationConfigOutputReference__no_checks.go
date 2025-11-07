@@ -43,11 +43,11 @@ func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

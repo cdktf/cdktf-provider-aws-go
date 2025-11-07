@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

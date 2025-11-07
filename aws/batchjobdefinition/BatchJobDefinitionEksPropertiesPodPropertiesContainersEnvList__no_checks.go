@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

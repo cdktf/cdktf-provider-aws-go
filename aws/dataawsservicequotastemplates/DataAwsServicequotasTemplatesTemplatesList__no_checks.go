@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

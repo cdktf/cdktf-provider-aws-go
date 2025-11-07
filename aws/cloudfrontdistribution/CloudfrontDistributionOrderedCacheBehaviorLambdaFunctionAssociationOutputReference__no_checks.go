@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

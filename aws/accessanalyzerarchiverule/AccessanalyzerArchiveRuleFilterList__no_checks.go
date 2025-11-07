@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

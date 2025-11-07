@@ -72,7 +72,7 @@ type QuicksightDataSetPhysicalTableMapOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCustomSql(value *QuicksightDataSetPhysicalTableMapCustomSql)
 	PutRelationalTable(value *QuicksightDataSetPhysicalTableMapRelationalTable)
 	PutS3Source(value *QuicksightDataSetPhysicalTableMapS3Source)
@@ -81,7 +81,7 @@ type QuicksightDataSetPhysicalTableMapOutputReference interface {
 	ResetS3Source()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -508,8 +508,8 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) Interpolati
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -517,7 +517,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) Interpolati
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) ResetS3Sour
 	)
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

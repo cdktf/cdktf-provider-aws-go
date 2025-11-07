@@ -15,7 +15,7 @@ func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateGetParame
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

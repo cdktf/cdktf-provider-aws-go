@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53ZoneVpcList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneVpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53ZoneVpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

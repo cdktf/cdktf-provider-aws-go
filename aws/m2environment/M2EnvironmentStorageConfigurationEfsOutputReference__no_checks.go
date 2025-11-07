@@ -43,11 +43,11 @@ func (m *jsiiProxy_M2EnvironmentStorageConfigurationEfsOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentStorageConfigurationEfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_M2EnvironmentStorageConfigurationEfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentStorageConfigurationEfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2EnvironmentStorageConfigurationEfsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

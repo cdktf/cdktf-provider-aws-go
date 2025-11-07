@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtLi
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

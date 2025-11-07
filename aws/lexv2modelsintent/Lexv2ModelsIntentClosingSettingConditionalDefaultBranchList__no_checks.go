@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchList) 
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

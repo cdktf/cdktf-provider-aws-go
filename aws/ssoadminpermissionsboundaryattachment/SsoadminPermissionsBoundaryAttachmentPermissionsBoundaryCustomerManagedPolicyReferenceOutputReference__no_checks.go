@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCusto
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

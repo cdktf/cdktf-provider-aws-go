@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrClusterStepOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EmrClusterStepOutputReference) validatePutHadoopJarStepParame
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

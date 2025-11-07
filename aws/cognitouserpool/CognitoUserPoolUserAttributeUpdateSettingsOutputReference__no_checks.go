@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

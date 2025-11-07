@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLog
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketGrantList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashList) validateGetPa
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageHashList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

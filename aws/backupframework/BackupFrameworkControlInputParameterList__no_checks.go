@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupFrameworkControlInputParameterList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BackupFrameworkControlInputParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupFrameworkControlInputParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

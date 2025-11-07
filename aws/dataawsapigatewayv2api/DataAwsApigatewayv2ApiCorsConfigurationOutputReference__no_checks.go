@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

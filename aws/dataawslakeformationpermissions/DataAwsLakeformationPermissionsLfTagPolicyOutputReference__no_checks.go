@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

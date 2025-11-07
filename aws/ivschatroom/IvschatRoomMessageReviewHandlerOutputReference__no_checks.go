@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

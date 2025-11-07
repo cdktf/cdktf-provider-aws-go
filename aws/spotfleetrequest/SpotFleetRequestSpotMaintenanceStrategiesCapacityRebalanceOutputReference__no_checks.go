@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOut
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

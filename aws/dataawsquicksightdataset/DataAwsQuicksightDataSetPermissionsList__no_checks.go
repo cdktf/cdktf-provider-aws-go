@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetPermissionsList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

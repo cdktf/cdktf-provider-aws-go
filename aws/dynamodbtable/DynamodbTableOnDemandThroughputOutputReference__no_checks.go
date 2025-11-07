@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTableOnDemandThroughputOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableOnDemandThroughputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableOnDemandThroughputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableOnDemandThroughputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableOnDemandThroughputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

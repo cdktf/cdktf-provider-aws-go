@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationG
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

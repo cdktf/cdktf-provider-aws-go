@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemp
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

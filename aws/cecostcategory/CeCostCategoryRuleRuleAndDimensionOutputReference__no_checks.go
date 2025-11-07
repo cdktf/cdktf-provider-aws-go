@@ -43,11 +43,11 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

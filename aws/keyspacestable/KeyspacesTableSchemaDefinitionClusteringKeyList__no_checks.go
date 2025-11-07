@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateGetP
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

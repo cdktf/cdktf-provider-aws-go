@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalLi
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

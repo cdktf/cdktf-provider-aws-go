@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

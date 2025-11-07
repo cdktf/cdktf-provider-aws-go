@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFile
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

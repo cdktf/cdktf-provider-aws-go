@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegis
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

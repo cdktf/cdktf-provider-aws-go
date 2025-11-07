@@ -15,7 +15,7 @@ func (m *jsiiProxy_M2ApplicationDefinitionList) validateGetParameters(index *flo
 	return nil
 }
 
-func (m *jsiiProxy_M2ApplicationDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2ApplicationDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

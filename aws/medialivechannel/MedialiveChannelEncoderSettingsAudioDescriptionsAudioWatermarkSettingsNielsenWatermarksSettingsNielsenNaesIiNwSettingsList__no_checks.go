@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermar
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

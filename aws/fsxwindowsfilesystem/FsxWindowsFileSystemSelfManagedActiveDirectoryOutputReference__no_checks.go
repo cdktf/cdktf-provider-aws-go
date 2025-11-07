@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxWindowsFileSystemSelfManagedActiveDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

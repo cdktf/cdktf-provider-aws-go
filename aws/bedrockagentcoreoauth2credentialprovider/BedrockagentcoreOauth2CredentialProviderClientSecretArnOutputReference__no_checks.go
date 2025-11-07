@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderClientSecretArnOutput
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderClientSecretArnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

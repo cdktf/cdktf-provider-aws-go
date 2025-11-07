@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

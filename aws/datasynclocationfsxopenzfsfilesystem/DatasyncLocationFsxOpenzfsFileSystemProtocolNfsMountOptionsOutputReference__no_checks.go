@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOu
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

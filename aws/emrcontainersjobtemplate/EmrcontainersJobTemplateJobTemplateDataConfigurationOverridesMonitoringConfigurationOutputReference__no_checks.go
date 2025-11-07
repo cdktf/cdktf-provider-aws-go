@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

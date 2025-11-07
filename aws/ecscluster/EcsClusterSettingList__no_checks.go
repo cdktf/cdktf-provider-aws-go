@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsClusterSettingList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

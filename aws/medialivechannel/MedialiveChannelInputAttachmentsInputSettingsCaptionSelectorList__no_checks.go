@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorL
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

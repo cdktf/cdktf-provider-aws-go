@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

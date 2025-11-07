@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

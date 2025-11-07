@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSharingSettingsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSharingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSharingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSharingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSharingSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

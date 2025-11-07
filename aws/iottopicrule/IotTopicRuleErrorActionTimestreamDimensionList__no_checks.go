@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateGetPa
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

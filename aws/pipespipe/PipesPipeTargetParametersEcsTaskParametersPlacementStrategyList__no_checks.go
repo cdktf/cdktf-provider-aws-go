@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersPlacementStrategyLi
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersPlacementStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

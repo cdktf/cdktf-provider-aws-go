@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJso
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

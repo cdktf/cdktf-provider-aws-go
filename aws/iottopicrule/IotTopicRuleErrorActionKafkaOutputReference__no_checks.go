@@ -43,7 +43,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validatePutHeade
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

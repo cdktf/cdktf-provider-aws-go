@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

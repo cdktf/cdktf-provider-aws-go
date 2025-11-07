@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

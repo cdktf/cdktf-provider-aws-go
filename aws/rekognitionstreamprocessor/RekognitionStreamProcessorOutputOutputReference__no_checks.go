@@ -43,7 +43,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validatePutS
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

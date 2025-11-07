@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigRuleSourceSourceDetailList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

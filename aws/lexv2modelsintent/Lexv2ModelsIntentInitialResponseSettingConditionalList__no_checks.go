@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalList) valid
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

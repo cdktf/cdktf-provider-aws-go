@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketNotificationQueueList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketNotificationQueueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketNotificationQueueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

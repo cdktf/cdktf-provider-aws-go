@@ -43,11 +43,11 @@ func (l *jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocationGeofenceCollectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

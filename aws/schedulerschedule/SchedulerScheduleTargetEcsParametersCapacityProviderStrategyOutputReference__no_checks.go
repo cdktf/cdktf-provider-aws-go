@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationList) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

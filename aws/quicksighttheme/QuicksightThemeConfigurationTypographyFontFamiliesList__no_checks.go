@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesList) valid
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

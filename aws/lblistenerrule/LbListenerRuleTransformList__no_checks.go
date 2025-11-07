@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbListenerRuleTransformList) validateGetParameters(index *flo
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleTransformList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerRuleTransformList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

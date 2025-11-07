@@ -85,17 +85,17 @@ func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MedialiveMultiplexTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

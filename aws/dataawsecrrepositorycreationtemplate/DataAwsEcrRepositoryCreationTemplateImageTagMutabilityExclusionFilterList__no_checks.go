@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

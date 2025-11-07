@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

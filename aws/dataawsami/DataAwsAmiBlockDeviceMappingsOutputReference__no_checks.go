@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAmiBlockDeviceMappingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

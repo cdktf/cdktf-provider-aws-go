@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificati
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

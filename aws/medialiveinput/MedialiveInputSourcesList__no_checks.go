@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveInputSourcesList) validateGetParameters(index *float
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveInputSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

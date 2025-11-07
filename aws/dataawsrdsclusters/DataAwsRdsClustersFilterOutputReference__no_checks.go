@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRdsClustersFilterOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsClustersFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRdsClustersFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsClustersFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRdsClustersFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

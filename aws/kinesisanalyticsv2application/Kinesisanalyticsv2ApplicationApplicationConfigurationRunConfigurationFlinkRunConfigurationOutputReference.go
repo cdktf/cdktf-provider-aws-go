@@ -66,11 +66,11 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkR
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAllowNonRestoredState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -437,8 +437,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfi
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,7 +446,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfi
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfi
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfi
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

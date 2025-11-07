@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

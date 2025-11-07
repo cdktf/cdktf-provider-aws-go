@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessage
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessage
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

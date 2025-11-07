@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

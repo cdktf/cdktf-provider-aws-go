@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVol
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesInitContainersVolumeMountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

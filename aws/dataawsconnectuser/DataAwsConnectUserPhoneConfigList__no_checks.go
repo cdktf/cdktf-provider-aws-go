@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectUserPhoneConfigList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserPhoneConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectUserPhoneConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

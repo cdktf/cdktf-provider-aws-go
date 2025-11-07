@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClustersCloudAutonomousVmClustersL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClustersCloudAutonomousVmClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClustersCloudAutonomousVmClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationSqlAppli
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutpu
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

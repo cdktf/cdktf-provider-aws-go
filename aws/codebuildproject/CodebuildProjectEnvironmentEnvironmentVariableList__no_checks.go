@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

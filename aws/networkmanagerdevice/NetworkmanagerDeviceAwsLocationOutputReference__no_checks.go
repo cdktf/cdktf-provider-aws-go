@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

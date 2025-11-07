@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

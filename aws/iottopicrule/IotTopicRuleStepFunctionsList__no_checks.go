@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleStepFunctionsList) validateGetParameters(index *f
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleStepFunctionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleStepFunctionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

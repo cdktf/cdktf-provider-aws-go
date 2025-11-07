@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

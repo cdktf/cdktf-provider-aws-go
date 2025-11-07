@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

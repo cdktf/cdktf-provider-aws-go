@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

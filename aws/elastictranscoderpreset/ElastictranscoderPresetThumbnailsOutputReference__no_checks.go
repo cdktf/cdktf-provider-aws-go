@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

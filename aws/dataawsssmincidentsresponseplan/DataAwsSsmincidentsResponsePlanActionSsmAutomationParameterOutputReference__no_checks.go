@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

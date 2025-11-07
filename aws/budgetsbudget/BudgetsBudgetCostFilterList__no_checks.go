@@ -15,7 +15,7 @@ func (b *jsiiProxy_BudgetsBudgetCostFilterList) validateGetParameters(index *flo
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetCostFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

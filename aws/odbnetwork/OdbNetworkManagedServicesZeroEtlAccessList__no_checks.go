@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessList) validateGetParame
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

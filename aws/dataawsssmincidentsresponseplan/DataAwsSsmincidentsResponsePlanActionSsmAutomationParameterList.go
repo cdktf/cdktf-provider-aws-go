@@ -39,7 +39,7 @@ type DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList interface {
 	Get(index *float64) DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterLi
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanActionSsmAutomationParameterLi
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

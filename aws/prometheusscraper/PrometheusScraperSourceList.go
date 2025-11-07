@@ -41,7 +41,7 @@ type PrometheusScraperSourceList interface {
 	Get(index *float64) PrometheusScraperSourceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (p *jsiiProxy_PrometheusScraperSourceList) Get(index *float64) PrometheusSc
 	return returns
 }
 
-func (p *jsiiProxy_PrometheusScraperSourceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrometheusScraperSourceList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (p *jsiiProxy_PrometheusScraperSourceList) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

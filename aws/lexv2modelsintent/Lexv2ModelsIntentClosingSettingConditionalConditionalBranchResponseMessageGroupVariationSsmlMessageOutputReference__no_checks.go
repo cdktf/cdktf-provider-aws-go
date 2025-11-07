@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchRe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationSsmlMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

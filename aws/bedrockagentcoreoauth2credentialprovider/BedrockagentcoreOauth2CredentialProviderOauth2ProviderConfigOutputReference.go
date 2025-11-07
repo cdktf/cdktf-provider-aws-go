@@ -75,7 +75,7 @@ type BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCustomOauth2ProviderConfig(value interface{})
 	PutGithubOauth2ProviderConfig(value interface{})
 	PutGoogleOauth2ProviderConfig(value interface{})
@@ -90,7 +90,7 @@ type BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference
 	ResetSlackOauth2ProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -546,8 +546,8 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigO
 	return returns
 }
 
-func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -555,7 +555,7 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigO
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigO
 	)
 }
 
-func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigO
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

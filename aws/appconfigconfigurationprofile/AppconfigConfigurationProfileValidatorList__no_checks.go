@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppconfigConfigurationProfileValidatorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

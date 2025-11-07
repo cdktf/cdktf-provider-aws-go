@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleFirehoseList) validateGetParameters(index *float6
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleFirehoseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleFirehoseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

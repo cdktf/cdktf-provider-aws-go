@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyList) validateGetParameters(index *f
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

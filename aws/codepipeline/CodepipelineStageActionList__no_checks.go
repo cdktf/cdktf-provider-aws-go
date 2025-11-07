@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineStageActionList) validateGetParameters(index *flo
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

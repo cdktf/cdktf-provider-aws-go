@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamGroupUsersList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamGroupUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamGroupUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

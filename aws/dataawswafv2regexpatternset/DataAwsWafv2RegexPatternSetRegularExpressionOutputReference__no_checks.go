@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWafv2RegexPatternSetRegularExpressionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

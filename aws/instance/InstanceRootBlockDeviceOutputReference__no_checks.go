@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

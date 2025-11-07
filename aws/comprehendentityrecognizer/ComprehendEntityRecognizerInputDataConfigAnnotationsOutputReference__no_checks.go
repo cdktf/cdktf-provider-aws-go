@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

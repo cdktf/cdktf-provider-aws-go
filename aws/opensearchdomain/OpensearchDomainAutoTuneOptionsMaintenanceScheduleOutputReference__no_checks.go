@@ -43,7 +43,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

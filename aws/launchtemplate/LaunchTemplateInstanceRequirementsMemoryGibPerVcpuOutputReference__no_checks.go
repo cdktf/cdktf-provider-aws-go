@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputRefer
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

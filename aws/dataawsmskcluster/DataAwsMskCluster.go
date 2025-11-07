@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/msk_cluster aws_msk_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_cluster aws_msk_cluster}.
 type DataAwsMskCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -490,7 +490,7 @@ func (j *jsiiProxy_DataAwsMskCluster) ZookeeperConnectStringTls() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
 func NewDataAwsMskCluster(scope constructs.Construct, id *string, config *DataAwsMskClusterConfig) DataAwsMskCluster {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewDataAwsMskCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
 func NewDataAwsMskCluster_Override(d DataAwsMskCluster, scope constructs.Construct, id *string, config *DataAwsMskClusterConfig) {
 	_init_.Initialize()
 

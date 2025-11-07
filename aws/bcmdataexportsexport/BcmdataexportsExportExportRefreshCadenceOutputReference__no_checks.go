@@ -43,11 +43,11 @@ func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceOutputReference) vali
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

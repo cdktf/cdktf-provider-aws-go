@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityCont
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityCont
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

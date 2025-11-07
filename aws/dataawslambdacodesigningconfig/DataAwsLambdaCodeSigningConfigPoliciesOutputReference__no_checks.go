@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

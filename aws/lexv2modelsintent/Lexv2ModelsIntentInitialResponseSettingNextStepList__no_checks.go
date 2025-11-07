@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingNextStepList) validate
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingNextStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingNextStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

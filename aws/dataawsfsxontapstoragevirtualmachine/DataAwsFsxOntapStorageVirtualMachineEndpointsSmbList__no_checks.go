@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

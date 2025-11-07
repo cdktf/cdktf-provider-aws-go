@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRuleP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

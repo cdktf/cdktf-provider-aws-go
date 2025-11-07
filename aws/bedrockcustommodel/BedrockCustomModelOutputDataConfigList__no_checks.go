@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockCustomModelOutputDataConfigList) validateGetParameters
 	return nil
 }
 
-func (b *jsiiProxy_BedrockCustomModelOutputDataConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockCustomModelOutputDataConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

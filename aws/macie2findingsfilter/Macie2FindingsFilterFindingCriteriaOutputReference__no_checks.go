@@ -43,7 +43,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

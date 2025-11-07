@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateGetPa
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

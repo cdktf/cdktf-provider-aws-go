@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateP
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

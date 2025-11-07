@@ -43,11 +43,11 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference)
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

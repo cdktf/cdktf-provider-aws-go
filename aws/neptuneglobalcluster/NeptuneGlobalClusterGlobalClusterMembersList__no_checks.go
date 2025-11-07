@@ -15,7 +15,7 @@ func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList) validateGetPara
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

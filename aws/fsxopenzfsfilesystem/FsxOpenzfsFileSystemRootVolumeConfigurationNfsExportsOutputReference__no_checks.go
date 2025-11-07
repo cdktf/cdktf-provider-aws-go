@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

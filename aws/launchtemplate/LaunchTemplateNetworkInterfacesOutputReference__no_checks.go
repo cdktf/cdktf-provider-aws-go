@@ -43,7 +43,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validatePutEn
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

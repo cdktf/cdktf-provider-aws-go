@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallAvailabilityZoneMappingList) validateG
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallAvailabilityZoneMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallAvailabilityZoneMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

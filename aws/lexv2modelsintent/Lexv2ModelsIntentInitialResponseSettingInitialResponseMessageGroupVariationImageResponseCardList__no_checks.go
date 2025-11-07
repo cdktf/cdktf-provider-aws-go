@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessage
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingInitialResponseMessageGroupVariationImageResponseCardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImagebuilderImageImageScanningConfigurationEcrConfigurationOu
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

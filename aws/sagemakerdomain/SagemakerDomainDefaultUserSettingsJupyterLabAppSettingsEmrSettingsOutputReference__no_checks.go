@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSet
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

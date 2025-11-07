@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightVpcConnectionTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightVpcConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightVpcConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightVpcConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightVpcConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

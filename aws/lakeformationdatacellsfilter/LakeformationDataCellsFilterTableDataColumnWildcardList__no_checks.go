@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationDataCellsFilterTableDataColumnWildcardList) vali
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationDataCellsFilterTableDataColumnWildcardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationDataCellsFilterTableDataColumnWildcardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

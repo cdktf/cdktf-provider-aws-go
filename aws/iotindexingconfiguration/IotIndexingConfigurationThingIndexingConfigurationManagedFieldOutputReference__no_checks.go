@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFiel
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

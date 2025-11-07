@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEng
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

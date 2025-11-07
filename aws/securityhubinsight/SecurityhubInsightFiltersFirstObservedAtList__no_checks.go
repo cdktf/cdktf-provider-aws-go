@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersFirstObservedAtList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFirstObservedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFirstObservedAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3TablesTableMaintenanceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentAgentActionGroupApiSchemaS3List) validateGetParam
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentActionGroupApiSchemaS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentAgentActionGroupApiSchemaS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

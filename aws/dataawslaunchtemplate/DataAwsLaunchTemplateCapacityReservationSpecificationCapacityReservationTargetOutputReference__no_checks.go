@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacity
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

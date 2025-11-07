@@ -15,7 +15,7 @@ func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationDataSources
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationDataSourcesCloudwatchDashboardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

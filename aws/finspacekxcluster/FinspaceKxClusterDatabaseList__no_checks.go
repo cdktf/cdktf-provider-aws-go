@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseList) validateGetParameters(index *f
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterDatabaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterDatabaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

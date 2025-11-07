@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalan
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

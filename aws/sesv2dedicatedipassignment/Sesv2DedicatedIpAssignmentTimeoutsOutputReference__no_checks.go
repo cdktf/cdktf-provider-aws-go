@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

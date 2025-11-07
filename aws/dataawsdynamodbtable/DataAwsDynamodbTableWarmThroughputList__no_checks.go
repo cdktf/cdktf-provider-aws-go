@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableWarmThroughputList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableWarmThroughputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableWarmThroughputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

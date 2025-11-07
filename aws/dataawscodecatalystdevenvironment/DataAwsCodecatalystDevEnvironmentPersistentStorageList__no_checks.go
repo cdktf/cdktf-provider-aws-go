@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentPersistentStorageList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentPersistentStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentPersistentStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

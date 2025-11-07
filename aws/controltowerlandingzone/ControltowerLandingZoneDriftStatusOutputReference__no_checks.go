@@ -43,11 +43,11 @@ func (c *jsiiProxy_ControltowerLandingZoneDriftStatusOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ControltowerLandingZoneDriftStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ControltowerLandingZoneDriftStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ControltowerLandingZoneDriftStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ControltowerLandingZoneDriftStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

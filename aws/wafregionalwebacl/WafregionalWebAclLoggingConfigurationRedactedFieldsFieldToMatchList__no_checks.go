@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMat
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

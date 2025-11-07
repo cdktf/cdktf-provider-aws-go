@@ -43,11 +43,11 @@ func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

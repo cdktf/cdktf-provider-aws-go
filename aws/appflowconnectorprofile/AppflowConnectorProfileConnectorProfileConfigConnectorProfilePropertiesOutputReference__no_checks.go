@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -119,7 +119,7 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

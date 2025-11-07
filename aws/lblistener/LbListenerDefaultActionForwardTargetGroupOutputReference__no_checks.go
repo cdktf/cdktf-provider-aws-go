@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

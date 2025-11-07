@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53DomainsDomainAdminContactExtraParamList) validateGetPa
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsDomainAdminContactExtraParamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsDomainAdminContactExtraParamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

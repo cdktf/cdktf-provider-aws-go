@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

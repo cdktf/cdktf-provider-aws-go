@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPerm
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

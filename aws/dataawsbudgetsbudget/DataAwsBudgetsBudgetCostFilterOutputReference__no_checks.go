@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBudgetsBudgetCostFilterOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetCostFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetCostFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetCostFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetCostFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

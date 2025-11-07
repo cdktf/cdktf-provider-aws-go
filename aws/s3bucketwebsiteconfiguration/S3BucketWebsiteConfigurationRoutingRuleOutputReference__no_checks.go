@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

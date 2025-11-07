@@ -43,11 +43,11 @@ func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FlowLogDestinationOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

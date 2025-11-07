@@ -66,6 +66,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterOptions", GoGetter: "IdentityCenterOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterOptionsInput", GoGetter: "IdentityCenterOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -93,6 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDomainEndpointOptions", GoMethod: "PutDomainEndpointOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putEbsOptions", GoMethod: "PutEbsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryptAtRest", GoMethod: "PutEncryptAtRest"},
+			_jsii_.MemberMethod{JsiiMethod: "putIdentityCenterOptions", GoMethod: "PutIdentityCenterOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogPublishingOptions", GoMethod: "PutLogPublishingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putNodeToNodeEncryption", GoMethod: "PutNodeToNodeEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "putOffPeakWindowOptions", GoMethod: "PutOffPeakWindowOptions"},
@@ -115,6 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptAtRest", GoMethod: "ResetEncryptAtRest"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEngineVersion", GoMethod: "ResetEngineVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdentityCenterOptions", GoMethod: "ResetIdentityCenterOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpAddressType", GoMethod: "ResetIpAddressType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogPublishingOptions", GoMethod: "ResetLogPublishingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeToNodeEncryption", GoMethod: "ResetNodeToNodeEncryption"},
@@ -976,6 +980,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OpensearchDomainEncryptAtRestOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptions",
+		reflect.TypeOf((*OpensearchDomainIdentityCenterOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainIdentityCenterOptionsOutputReference",
+		reflect.TypeOf((*OpensearchDomainIdentityCenterOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledApiAccess", GoGetter: "EnabledApiAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledApiAccessInput", GoGetter: "EnabledApiAccessInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterInstanceArn", GoGetter: "IdentityCenterInstanceArn"},
+			_jsii_.MemberProperty{JsiiProperty: "identityCenterInstanceArnInput", GoGetter: "IdentityCenterInstanceArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabledApiAccess", GoMethod: "ResetEnabledApiAccess"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIdentityCenterInstanceArn", GoMethod: "ResetIdentityCenterInstanceArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRolesKey", GoMethod: "ResetRolesKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubjectKey", GoMethod: "ResetSubjectKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rolesKey", GoGetter: "RolesKey"},
+			_jsii_.MemberProperty{JsiiProperty: "rolesKeyInput", GoGetter: "RolesKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectKey", GoGetter: "SubjectKey"},
+			_jsii_.MemberProperty{JsiiProperty: "subjectKeyInput", GoGetter: "SubjectKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OpensearchDomainIdentityCenterOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

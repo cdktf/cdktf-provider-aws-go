@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

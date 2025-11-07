@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexu
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

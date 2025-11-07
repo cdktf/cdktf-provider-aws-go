@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationO
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

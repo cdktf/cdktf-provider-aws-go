@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointL
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

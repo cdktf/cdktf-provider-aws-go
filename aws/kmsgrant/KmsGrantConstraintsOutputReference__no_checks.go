@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsGrantConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

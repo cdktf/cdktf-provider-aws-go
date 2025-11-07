@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLayersList) valid
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLayersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLayersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

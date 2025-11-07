@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validatePutLogSet
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAliasConversationLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

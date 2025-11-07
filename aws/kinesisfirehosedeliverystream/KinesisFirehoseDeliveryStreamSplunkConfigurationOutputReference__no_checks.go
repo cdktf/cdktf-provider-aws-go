@@ -43,7 +43,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

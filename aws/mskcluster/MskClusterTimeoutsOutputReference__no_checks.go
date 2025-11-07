@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskClusterTimeoutsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupRecordingStrategyLis
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupRecordingStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupRecordingStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

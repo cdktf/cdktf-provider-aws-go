@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateGetStringMap
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryTimelineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

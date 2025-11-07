@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsList) validateGetParameters(index
 	return nil
 }
 
-func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

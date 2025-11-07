@@ -15,7 +15,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList)
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

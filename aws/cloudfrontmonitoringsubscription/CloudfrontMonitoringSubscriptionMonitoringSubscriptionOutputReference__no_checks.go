@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

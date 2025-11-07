@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatraceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateGetStringMa
 	return nil
 }
 
-func (i *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotBillingGroupPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

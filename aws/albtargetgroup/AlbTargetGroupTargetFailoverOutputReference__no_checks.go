@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupTargetFailoverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

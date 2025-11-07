@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validatePutBucke
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

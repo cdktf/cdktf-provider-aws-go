@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTableExportIncrementalExportSpecificationOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableExportIncrementalExportSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableExportIncrementalExportSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableExportIncrementalExportSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableExportIncrementalExportSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

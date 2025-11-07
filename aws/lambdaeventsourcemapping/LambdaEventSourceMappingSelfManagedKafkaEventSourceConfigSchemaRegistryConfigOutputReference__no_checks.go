@@ -43,7 +43,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSche
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSche
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

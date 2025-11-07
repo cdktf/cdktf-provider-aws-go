@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

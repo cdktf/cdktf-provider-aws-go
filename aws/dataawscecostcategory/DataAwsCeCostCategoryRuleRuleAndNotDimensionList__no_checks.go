@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndNotDimensionList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndNotDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndNotDimensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

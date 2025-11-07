@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueJobCommandOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (g *jsiiProxy_GlueJobCommandOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueJobCommandOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueJobCommandOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueJobCommandOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

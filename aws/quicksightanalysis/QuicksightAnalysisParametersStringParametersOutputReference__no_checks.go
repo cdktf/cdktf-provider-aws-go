@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightAnalysisParametersStringParametersOutputReference) 
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightAnalysisParametersStringParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightAnalysisParametersStringParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightAnalysisParametersStringParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightAnalysisParametersStringParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

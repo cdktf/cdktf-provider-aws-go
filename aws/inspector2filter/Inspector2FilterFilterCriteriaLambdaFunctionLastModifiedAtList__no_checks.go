@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtLis
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionLastModifiedAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

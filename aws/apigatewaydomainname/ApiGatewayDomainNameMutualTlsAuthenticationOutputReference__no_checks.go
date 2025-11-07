@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

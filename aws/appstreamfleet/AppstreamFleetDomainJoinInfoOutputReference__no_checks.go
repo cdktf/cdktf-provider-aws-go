@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

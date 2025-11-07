@@ -43,11 +43,11 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRul
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

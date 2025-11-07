@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

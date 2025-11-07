@@ -43,11 +43,11 @@ func (f *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FmsPolicyIncludeMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

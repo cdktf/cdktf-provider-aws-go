@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppstreamImageApplicationsIconS3LocationList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppstreamImageApplicationsIconS3LocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppstreamImageApplicationsIconS3LocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

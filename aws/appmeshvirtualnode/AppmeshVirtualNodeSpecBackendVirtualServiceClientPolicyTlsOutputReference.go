@@ -73,7 +73,7 @@ type AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference i
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCertificate(value *AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate)
 	PutValidation(value *AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation)
 	ResetCertificate()
@@ -81,7 +81,7 @@ type AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference i
 	ResetPorts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -519,8 +519,8 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOut
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -528,7 +528,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOut
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOut
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOut
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

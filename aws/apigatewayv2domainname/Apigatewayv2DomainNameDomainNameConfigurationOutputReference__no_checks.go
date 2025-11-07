@@ -43,11 +43,11 @@ func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2DomainNameDomainNameConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

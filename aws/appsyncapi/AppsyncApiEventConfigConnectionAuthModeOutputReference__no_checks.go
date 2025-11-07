@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncApiEventConfigConnectionAuthModeOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigConnectionAuthModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncApiEventConfigConnectionAuthModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigConnectionAuthModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigConnectionAuthModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigS3DestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

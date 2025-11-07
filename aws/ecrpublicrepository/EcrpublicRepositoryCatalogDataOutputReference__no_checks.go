@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

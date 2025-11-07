@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdent
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

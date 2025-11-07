@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurat
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

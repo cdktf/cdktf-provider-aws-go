@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncTaskTaskReportConfigReportOverridesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigReportOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigReportOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigReportOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigReportOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

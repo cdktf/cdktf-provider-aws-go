@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

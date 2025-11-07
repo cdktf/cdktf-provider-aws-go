@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeLogConfigurationS3LogDestinationOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeLogConfigurationS3LogDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeLogConfigurationS3LogDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeLogConfigurationS3LogDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeLogConfigurationS3LogDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

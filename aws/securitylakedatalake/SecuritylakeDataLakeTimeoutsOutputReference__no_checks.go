@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeDataLakeTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeDataLakeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

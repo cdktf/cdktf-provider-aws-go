@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsTransferConnectorSftpConfigOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTransferConnectorSftpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsTransferConnectorSftpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTransferConnectorSftpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsTransferConnectorSftpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

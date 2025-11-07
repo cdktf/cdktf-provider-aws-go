@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return nil
 }
 
-func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -74,7 +74,7 @@ type AutoscalingGroupWarmPoolOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutInstanceReusePolicy(value *AutoscalingGroupWarmPoolInstanceReusePolicy)
 	ResetInstanceReusePolicy()
 	ResetMaxGroupPreparedCapacity()
@@ -82,7 +82,7 @@ type AutoscalingGroupWarmPoolOutputReference interface {
 	ResetPoolState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -531,8 +531,8 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -540,7 +540,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) ResetPoolState() {
 	)
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

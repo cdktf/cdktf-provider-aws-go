@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

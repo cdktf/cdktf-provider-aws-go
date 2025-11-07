@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfig
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

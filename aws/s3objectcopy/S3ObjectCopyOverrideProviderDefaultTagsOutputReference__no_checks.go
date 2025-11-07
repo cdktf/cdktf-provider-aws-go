@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3ObjectCopyOverrideProviderDefaultTagsOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyOverrideProviderDefaultTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ObjectCopyOverrideProviderDefaultTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyOverrideProviderDefaultTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyOverrideProviderDefaultTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

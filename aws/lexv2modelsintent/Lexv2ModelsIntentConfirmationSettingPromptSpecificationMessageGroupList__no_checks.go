@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessag
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingPromptSpecificationMessageGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validatePutEncryptio
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

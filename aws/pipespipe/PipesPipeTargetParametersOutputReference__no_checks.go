@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateGetStringMa
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutStepFunc
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

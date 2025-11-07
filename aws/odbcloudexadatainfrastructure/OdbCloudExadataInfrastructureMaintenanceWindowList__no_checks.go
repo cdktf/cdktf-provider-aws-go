@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

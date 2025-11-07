@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsReplicationInstanceKerberosAuthenticationSettingsOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsReplicationInstanceKerberosAuthenticationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) valida
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) valida
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

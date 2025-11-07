@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

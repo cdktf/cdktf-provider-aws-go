@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

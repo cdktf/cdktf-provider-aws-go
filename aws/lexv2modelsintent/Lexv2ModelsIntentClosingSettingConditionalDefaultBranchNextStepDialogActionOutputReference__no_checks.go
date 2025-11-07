@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextSt
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepDialogActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

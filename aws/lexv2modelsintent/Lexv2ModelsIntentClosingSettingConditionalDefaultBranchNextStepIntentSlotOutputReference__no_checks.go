@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextSt
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextSt
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchNextStepIntentSlotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

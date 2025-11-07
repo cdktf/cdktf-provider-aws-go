@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputRefere
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

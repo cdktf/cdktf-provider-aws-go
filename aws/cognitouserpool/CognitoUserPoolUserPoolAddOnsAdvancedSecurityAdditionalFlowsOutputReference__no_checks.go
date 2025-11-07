@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsO
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

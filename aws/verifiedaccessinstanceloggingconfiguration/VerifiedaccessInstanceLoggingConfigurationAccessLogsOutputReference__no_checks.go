@@ -43,7 +43,7 @@ func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputRef
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputRef
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

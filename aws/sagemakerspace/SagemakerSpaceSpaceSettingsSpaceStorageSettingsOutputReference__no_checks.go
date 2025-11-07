@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

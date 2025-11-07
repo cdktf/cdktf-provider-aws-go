@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -66,11 +66,11 @@ type DataAwsAlbTargetGroupTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetRead()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -437,8 +437,8 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) InterpolationAs
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) ResetRead() {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

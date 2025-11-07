@@ -43,7 +43,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validatePutS3Des
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyProjectDataDeliveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

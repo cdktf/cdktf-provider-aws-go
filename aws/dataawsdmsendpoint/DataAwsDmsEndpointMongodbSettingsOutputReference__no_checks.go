@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAvailabilityZonesFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

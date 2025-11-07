@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamTimestampOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

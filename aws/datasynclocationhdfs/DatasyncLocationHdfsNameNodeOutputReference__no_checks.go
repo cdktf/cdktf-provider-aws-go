@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

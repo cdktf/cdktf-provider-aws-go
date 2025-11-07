@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

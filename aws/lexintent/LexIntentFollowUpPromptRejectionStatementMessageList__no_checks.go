@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilte
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

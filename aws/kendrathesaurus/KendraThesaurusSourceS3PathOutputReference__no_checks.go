@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) validateGetString
 	return nil
 }
 
-func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraThesaurusSourceS3PathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

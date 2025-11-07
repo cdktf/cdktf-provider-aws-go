@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validatePutEncrypti
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

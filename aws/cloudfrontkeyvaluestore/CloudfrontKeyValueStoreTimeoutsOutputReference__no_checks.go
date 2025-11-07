@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontKeyValueStoreTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontKeyValueStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontKeyValueStoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontKeyValueStoreTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontKeyValueStoreTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

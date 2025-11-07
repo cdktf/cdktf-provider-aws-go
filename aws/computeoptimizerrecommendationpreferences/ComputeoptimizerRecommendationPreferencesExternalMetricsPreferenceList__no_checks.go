@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesExternalMetricsPrefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

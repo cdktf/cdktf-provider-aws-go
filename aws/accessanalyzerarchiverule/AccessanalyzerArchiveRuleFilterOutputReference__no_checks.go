@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroupsGroupsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupsGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupsGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

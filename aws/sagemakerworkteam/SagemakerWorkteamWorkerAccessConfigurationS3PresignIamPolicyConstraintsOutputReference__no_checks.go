@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyC
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignIamPolicyConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

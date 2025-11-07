@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2ImageBlockPublicAccessTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ImageBlockPublicAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2ImageBlockPublicAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ImageBlockPublicAccessTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ImageBlockPublicAccessTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

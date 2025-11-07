@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

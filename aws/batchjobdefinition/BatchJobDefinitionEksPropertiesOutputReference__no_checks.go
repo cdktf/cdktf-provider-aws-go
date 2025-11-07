@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validateGetSt
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validatePutPo
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

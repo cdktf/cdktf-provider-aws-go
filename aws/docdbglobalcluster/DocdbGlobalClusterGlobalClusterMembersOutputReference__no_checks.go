@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

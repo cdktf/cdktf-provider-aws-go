@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

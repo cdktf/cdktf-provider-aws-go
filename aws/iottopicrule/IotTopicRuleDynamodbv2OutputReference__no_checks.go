@@ -43,7 +43,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validatePutPutItemPara
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

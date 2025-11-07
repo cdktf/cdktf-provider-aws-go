@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcrRepositoryCreationTemplateEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

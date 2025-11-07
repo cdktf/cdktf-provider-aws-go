@@ -75,7 +75,7 @@ type LbListenerRuleConditionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHostHeader(value *LbListenerRuleConditionHostHeader)
 	PutHttpHeader(value *LbListenerRuleConditionHttpHeader)
 	PutHttpRequestMethod(value *LbListenerRuleConditionHttpRequestMethod)
@@ -90,7 +90,7 @@ type LbListenerRuleConditionOutputReference interface {
 	ResetSourceIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -546,8 +546,8 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -555,7 +555,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) ResetSourceIp() {
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbListenerRuleConditionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (l *jsiiProxy_LbListenerRuleConditionOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

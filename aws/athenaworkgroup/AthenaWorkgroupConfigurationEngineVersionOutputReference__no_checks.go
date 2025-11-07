@@ -43,11 +43,11 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AthenaWorkgroupConfigurationEngineVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

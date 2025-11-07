@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validate
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validate
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeComponentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

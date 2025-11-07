@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedshiftIntegrationTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftIntegrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftIntegrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftIntegrationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftIntegrationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

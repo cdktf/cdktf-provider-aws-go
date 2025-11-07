@@ -15,7 +15,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateGetParamete
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

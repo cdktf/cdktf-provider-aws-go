@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

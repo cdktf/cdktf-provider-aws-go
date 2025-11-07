@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_user_group aws_elasticache_user_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_user_group aws_elasticache_user_group}.
 type ElasticacheUserGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_ElasticacheUserGroup) UserIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
 func NewElasticacheUserGroup(scope constructs.Construct, id *string, config *ElasticacheUserGroupConfig) ElasticacheUserGroup {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewElasticacheUserGroup(scope constructs.Construct, id *string, config *Ela
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
 func NewElasticacheUserGroup_Override(e ElasticacheUserGroup, scope constructs.Construct, id *string, config *ElasticacheUserGroupConfig) {
 	_init_.Initialize()
 

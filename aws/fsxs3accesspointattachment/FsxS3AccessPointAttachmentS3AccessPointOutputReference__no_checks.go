@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbSslNegotiationPolicyAttributeList) validateGetParameters(in
 	return nil
 }
 
-func (l *jsiiProxy_LbSslNegotiationPolicyAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbSslNegotiationPolicyAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

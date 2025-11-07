@@ -43,7 +43,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

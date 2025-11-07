@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomerprofilesProfileBillingAddressOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesProfileBillingAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesProfileBillingAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesProfileBillingAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesProfileBillingAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

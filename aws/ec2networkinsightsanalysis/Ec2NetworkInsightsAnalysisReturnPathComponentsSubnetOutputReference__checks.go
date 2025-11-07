@@ -85,17 +85,17 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputRef
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

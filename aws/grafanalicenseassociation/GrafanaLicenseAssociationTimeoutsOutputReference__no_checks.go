@@ -43,11 +43,11 @@ func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

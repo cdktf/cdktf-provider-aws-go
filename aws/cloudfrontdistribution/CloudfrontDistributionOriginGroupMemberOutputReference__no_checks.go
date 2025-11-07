@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

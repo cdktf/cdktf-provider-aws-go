@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

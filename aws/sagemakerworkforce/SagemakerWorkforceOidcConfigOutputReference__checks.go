@@ -85,17 +85,17 @@ func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

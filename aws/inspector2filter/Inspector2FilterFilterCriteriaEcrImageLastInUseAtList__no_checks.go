@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageLastInUseAtList) valida
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageLastInUseAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageLastInUseAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

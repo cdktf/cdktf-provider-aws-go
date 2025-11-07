@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

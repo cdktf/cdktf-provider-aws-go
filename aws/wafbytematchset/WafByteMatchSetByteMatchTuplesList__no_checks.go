@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) validateGetParameters(ind
 	return nil
 }
 
-func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

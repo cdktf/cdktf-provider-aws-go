@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaTool
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

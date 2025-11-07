@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManage
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

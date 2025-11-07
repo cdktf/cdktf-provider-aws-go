@@ -15,7 +15,7 @@ func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

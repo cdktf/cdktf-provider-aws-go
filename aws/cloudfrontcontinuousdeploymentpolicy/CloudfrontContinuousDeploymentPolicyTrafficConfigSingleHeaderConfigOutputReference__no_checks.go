@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeader
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

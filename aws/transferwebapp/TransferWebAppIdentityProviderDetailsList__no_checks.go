@@ -15,7 +15,7 @@ func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsList) validateGetParamet
 	return nil
 }
 
-func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

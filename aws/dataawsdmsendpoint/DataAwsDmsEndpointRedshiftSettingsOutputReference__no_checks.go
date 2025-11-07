@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDmsEndpointRedshiftSettingsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointRedshiftSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDmsEndpointRedshiftSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointRedshiftSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointRedshiftSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

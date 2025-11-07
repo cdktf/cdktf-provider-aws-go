@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesIpGroupRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

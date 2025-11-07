@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRan
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtDestinationSourcePortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type IotTopicRuleErrorActionTimestreamDimensionList interface {
 	Get(index *float64) IotTopicRuleErrorActionTimestreamDimensionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) Get(index *fl
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList) Resolve(_cont
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

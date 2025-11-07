@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateGetParameter
 	return nil
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionRuntimePlatformList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionRuntimePlatformList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionRuntimePlatformList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

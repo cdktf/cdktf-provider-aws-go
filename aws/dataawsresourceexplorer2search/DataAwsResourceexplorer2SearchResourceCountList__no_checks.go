@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

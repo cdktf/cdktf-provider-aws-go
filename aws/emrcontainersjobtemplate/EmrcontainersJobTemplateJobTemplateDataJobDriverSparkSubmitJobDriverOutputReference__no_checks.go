@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJo
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

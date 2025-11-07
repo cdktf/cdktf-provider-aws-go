@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

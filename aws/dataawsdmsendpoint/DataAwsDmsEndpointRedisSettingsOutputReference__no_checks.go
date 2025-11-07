@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

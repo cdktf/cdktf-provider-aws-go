@@ -43,11 +43,11 @@ func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

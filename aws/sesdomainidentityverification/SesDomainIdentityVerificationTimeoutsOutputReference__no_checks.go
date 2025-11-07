@@ -43,11 +43,11 @@ func (s *jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

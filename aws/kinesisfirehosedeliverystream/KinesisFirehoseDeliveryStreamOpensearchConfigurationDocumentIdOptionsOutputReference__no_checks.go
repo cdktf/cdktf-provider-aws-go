@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentI
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

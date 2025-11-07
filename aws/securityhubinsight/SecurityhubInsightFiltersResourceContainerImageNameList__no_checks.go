@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

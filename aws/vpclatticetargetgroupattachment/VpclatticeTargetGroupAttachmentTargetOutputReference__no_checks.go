@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpclatticeTargetGroupAttachmentTargetOutputReference) validat
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeTargetGroupAttachmentTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeTargetGroupAttachmentTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeTargetGroupAttachmentTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeTargetGroupAttachmentTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

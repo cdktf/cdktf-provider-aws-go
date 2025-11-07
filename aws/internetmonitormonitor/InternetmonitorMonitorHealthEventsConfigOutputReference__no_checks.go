@@ -43,11 +43,11 @@ func (i *jsiiProxy_InternetmonitorMonitorHealthEventsConfigOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorHealthEventsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InternetmonitorMonitorHealthEventsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorHealthEventsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InternetmonitorMonitorHealthEventsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

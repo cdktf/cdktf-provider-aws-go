@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLakeformationPermissionsDataCellsFilterOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationPermissionsDataCellsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLakeformationPermissionsDataCellsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationPermissionsDataCellsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLakeformationPermissionsDataCellsFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

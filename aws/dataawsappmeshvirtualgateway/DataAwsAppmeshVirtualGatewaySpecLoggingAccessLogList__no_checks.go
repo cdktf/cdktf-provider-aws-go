@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecLoggingAccessLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

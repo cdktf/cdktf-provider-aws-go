@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

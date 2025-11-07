@@ -43,11 +43,11 @@ func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DxBgpPeerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

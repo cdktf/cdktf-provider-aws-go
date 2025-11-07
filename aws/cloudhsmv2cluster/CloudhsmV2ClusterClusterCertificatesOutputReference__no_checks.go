@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

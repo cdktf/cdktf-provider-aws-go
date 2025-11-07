@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsGeolocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

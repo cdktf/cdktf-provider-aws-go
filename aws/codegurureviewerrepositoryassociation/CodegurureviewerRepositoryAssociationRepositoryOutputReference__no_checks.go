@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

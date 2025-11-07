@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserRecordingList) validateGetParameters(i
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

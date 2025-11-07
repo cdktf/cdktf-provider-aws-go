@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBran
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchResponseMessageGroupVariationSsmlMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

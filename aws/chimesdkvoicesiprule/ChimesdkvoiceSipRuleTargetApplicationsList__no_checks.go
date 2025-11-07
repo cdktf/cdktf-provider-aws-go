@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

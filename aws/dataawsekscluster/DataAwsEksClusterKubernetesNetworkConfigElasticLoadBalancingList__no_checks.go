@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigElasticLoadBalancingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

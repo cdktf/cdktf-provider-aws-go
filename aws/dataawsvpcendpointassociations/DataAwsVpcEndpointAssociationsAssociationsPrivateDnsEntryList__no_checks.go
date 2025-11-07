@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

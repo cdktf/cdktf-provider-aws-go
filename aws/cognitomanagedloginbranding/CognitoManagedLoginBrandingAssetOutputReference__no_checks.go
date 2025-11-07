@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoManagedLoginBrandingAssetOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CognitoManagedLoginBrandingAssetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoManagedLoginBrandingAssetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoManagedLoginBrandingAssetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoManagedLoginBrandingAssetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

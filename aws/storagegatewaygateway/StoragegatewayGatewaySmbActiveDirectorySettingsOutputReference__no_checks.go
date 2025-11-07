@@ -43,11 +43,11 @@ func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

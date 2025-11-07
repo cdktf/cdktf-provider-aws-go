@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLicensemanagerGrantsFilterList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLicensemanagerGrantsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLicensemanagerGrantsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

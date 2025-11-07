@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

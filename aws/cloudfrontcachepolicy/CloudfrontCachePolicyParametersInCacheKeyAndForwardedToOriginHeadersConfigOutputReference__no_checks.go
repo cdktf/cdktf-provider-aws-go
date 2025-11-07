@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

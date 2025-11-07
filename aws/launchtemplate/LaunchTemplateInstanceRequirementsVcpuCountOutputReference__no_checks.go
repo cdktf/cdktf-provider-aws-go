@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

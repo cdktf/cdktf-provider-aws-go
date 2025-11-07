@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateGetParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider}.
 type BedrockagentcoreApiKeyCredentialProvider interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_BedrockagentcoreApiKeyCredentialProvider) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider} Resource.
 func NewBedrockagentcoreApiKeyCredentialProvider(scope constructs.Construct, id *string, config *BedrockagentcoreApiKeyCredentialProviderConfig) BedrockagentcoreApiKeyCredentialProvider {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewBedrockagentcoreApiKeyCredentialProvider(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_api_key_credential_provider aws_bedrockagentcore_api_key_credential_provider} Resource.
 func NewBedrockagentcoreApiKeyCredentialProvider_Override(b BedrockagentcoreApiKeyCredentialProvider, scope constructs.Construct, id *string, config *BedrockagentcoreApiKeyCredentialProviderConfig) {
 	_init_.Initialize()
 

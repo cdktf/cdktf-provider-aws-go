@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterUpgradePolicyList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterUpgradePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterUpgradePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

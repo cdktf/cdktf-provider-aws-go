@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerList
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

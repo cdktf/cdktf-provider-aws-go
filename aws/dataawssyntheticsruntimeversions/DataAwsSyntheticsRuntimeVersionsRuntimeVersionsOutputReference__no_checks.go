@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

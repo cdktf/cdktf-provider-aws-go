@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCusto
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

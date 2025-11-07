@@ -43,7 +43,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

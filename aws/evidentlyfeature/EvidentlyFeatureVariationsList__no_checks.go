@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateGetParameters(index *
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureVariationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

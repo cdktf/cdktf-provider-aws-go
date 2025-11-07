@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSec
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

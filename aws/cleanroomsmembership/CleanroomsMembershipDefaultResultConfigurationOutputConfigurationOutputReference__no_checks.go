@@ -43,7 +43,7 @@ func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigura
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigura
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

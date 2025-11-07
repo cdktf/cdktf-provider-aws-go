@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

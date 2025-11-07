@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessag
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessag
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageImageResponseCardOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

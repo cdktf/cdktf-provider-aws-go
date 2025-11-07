@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbSnapshotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

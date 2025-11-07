@@ -43,11 +43,11 @@ func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EbsSnapshotImportClientDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

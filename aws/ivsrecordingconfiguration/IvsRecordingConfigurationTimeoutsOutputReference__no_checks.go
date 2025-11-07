@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvsRecordingConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

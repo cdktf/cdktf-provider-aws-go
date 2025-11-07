@@ -43,11 +43,11 @@ func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

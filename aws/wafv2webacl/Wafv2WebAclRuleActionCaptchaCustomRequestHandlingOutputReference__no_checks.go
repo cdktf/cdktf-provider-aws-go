@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

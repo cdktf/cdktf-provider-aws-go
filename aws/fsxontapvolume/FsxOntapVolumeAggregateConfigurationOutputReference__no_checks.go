@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference) validate
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

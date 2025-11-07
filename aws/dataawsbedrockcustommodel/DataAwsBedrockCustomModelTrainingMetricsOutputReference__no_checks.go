@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingMetricsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtList) validat
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

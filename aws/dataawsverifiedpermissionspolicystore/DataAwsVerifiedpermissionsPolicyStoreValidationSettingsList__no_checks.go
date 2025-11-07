@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

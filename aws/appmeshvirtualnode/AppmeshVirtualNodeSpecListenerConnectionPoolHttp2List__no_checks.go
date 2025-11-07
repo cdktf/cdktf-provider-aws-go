@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

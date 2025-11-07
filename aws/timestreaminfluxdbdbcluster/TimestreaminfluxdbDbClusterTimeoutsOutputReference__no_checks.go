@@ -43,11 +43,11 @@ func (t *jsiiProxy_TimestreaminfluxdbDbClusterTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

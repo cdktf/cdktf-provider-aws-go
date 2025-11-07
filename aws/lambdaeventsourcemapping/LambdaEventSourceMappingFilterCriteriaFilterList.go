@@ -41,7 +41,7 @@ type LambdaEventSourceMappingFilterCriteriaFilterList interface {
 	Get(index *float64) LambdaEventSourceMappingFilterCriteriaFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) Get(index *
 	return returns
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) Resolve(_co
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

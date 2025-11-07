@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

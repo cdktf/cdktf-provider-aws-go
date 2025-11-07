@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetSuppressionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersionsVersionsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersionsVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretVersionsVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

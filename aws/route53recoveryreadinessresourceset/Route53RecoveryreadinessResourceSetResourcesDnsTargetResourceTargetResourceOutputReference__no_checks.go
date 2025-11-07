@@ -43,7 +43,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResource
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResource
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

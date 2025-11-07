@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentSampleUtteranceList) validateGetParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentSampleUtteranceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentSampleUtteranceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

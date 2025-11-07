@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsisPipelineBufferOptionsList) validateGetParameters(index *f
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineBufferOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineBufferOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

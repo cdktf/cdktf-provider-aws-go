@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationConditionalCon
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationConditionalConditionalBranchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationConditionalConditionalBranchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

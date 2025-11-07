@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

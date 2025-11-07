@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafWebAclRulesList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafWebAclRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

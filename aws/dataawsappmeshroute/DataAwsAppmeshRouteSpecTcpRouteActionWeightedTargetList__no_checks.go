@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

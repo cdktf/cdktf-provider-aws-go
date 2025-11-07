@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateGet
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

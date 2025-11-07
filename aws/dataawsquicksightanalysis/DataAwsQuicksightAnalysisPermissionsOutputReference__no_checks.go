@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsQuicksightAnalysisPermissionsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightAnalysisPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsQuicksightAnalysisPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightAnalysisPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightAnalysisPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

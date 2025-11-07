@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutp
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutp
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

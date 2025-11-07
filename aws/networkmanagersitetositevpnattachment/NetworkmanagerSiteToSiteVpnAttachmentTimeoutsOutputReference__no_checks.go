@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

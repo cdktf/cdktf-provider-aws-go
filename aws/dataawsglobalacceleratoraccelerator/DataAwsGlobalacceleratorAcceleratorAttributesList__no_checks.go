@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

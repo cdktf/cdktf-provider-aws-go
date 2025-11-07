@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchRe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchRe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalConditionalBranchResponseMessageGroupVariationImageResponseCardOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

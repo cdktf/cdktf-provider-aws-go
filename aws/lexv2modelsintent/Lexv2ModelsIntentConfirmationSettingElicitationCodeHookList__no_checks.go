@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingElicitationCodeHookList) 
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingElicitationCodeHookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingElicitationCodeHookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

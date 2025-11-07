@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMes
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

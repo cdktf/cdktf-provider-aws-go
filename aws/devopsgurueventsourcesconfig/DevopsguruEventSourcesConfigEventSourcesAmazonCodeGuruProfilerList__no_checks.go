@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfile
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

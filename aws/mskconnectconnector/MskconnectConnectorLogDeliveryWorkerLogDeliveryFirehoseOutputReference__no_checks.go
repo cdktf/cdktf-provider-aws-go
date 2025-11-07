@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutput
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehoseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

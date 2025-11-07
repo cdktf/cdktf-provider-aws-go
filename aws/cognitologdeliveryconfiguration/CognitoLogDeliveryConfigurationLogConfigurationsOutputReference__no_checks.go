@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

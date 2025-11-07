@@ -85,9 +85,9 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutp
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

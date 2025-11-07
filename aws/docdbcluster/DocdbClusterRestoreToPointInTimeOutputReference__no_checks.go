@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

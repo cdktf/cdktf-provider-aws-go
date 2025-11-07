@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnec
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

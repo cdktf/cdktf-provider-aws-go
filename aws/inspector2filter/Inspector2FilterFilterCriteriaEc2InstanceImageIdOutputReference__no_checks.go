@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

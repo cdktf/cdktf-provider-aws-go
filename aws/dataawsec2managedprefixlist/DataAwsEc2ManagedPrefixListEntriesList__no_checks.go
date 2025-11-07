@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixListEntriesList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixListEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixListEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

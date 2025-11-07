@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

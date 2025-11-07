@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

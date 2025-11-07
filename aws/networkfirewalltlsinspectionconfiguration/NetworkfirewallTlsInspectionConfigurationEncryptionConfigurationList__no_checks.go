@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

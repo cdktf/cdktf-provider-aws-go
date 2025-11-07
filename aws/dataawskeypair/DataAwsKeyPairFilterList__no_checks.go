@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKeyPairFilterList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKeyPairFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKeyPairFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

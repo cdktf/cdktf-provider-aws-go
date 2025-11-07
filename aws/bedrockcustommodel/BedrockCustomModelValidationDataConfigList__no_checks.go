@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockCustomModelValidationDataConfigList) validateGetParame
 	return nil
 }
 
-func (b *jsiiProxy_BedrockCustomModelValidationDataConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockCustomModelValidationDataConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

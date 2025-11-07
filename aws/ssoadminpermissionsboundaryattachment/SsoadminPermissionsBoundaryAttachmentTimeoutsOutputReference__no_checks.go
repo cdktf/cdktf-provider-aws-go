@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

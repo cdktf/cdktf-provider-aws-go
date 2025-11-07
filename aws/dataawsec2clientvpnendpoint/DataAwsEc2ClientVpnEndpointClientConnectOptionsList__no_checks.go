@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientConnectOptionsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientConnectOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointClientConnectOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

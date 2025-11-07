@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutVisibilityConfigPa
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

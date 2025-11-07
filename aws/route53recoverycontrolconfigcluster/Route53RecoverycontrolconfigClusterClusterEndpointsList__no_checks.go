@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList) vali
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

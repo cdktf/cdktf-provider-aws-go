@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescr
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOnPartialUploadOutputReference) 
 	return nil
 }
 
-func (t *jsiiProxy_TransferServerWorkflowDetailsOnPartialUploadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferServerWorkflowDetailsOnPartialUploadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferServerWorkflowDetailsOnPartialUploadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferServerWorkflowDetailsOnPartialUploadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

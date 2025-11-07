@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsInstanceEphemeralBlockDeviceList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInstanceEphemeralBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInstanceEphemeralBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

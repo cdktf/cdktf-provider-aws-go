@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

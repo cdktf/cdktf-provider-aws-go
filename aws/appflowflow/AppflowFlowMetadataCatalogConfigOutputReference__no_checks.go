@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validatePutG
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

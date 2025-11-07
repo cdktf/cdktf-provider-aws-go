@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

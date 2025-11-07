@@ -15,7 +15,7 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateGetParameters(in
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

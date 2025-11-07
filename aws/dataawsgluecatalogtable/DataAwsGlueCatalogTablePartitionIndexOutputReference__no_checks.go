@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceVpcIdList) validateG
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceVpcIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceVpcIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

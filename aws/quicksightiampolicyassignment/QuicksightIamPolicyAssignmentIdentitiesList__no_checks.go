@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) validateGetParam
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

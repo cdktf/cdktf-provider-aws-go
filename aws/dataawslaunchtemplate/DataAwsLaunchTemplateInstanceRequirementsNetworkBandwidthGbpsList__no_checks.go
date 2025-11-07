@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImageImageScanningConfigurationEcrConfigur
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageImageScanningConfigurationEcrConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageImageScanningConfigurationEcrConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationData
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

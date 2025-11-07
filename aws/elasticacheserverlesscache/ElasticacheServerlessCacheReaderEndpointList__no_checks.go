@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheServerlessCacheReaderEndpointList) validateGetPara
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheReaderEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheReaderEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

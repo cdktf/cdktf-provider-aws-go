@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunc
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

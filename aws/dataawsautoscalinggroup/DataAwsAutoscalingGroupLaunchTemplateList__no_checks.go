@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

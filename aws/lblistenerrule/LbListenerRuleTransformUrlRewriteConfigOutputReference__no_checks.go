@@ -43,7 +43,7 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

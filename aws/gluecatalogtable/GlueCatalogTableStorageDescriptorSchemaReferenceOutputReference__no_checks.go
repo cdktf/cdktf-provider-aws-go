@@ -43,7 +43,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSchemaReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

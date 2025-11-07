@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) valid
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

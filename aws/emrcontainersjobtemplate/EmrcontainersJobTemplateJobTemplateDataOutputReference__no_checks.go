@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

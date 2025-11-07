@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

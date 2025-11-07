@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxBackupTimeoutsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (f *jsiiProxy_FsxBackupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxBackupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxBackupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxBackupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemp
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemp
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

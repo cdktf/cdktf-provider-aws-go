@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReferen
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReferen
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

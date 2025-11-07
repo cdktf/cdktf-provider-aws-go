@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList) validateGetPa
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

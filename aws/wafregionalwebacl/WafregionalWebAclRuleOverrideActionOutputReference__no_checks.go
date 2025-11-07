@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafregionalWebAclRuleOverrideActionOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclRuleOverrideActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalWebAclRuleOverrideActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclRuleOverrideActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalWebAclRuleOverrideActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

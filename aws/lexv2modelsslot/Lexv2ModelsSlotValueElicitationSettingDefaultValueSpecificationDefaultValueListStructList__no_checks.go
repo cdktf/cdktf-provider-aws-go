@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificati
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

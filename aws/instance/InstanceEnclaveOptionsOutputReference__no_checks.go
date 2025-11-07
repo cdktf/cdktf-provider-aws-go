@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstanceEnclaveOptionsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (i *jsiiProxy_InstanceEnclaveOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceEnclaveOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstanceEnclaveOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceEnclaveOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

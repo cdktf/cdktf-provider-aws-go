@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

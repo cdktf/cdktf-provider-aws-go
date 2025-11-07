@@ -29,9 +29,9 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourceApplicationNameList)
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourceApplicationNameList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourceApplicationNameList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsAutomaticInputFailoverSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

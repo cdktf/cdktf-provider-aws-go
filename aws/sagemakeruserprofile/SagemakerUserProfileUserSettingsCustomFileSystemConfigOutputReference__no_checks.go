@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

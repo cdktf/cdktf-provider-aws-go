@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

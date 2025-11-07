@@ -43,11 +43,11 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

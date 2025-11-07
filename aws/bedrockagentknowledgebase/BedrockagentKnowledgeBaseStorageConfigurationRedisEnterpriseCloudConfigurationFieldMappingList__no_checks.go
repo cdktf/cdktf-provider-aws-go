@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseC
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRedisEnterpriseCloudConfigurationFieldMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

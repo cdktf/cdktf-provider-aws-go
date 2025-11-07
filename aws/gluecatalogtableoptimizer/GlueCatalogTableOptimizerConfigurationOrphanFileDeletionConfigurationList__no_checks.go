@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfi
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOrphanFileDeletionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

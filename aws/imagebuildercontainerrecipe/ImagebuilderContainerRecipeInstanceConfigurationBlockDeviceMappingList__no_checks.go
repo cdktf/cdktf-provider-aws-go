@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

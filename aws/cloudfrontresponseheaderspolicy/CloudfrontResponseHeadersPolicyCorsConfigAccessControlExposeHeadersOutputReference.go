@@ -66,11 +66,11 @@ type CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputRe
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetItems()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -437,8 +437,8 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeH
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,7 +446,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeH
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeH
 	)
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeH
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

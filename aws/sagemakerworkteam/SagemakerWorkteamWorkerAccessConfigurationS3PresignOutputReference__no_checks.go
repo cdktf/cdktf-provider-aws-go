@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamWorkerAccessConfigurationS3PresignOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

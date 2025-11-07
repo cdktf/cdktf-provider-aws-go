@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

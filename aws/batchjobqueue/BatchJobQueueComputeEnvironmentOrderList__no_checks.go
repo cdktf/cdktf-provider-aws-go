@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

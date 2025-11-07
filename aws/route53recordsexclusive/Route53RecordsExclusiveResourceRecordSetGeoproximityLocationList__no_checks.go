@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetGeoproximityLocationL
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetGeoproximityLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetGeoproximityLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

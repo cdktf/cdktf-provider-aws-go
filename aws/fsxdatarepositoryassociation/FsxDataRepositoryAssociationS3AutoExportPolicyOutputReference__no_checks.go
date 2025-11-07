@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

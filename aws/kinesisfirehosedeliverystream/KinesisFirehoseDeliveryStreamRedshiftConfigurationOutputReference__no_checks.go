@@ -43,7 +43,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

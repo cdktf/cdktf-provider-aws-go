@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingConfirmationConditionalDefaultBranchNextStepIntentSlotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

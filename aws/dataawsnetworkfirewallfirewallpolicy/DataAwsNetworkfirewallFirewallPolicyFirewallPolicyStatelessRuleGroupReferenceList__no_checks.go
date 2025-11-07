@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

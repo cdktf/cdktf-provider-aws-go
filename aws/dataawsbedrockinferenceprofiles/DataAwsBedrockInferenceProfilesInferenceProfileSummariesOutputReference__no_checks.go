@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetList) validateGetPara
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

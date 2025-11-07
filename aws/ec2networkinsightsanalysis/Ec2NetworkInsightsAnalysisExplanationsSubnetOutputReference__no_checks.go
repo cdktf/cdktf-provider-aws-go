@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

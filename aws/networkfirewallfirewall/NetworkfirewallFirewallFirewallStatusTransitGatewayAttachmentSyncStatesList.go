@@ -39,7 +39,7 @@ type NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList
 	Get(index *float64) NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusTransitGatewayAttachment
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusTransitGatewayAttachmentSyncStatesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusTransitGatewayAttachment
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

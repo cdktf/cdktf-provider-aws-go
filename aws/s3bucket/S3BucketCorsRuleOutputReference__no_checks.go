@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketCorsRuleOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketCorsRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketCorsRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketCorsRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketCorsRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

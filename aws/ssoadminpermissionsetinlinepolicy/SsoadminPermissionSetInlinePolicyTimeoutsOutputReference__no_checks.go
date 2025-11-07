@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicyTimeoutsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSetInlinePolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionSetInlinePolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

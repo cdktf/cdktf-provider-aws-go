@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMqBrokerUserList) validateGetParameters(index *float64
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMqBrokerUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMqBrokerUserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

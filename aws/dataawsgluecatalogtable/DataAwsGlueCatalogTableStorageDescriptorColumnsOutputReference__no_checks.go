@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

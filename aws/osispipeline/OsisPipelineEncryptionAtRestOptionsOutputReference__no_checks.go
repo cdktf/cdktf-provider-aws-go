@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

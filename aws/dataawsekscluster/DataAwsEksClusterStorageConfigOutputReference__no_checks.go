@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEksClusterStorageConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterStorageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEksClusterStorageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterStorageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterStorageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList interface {
 	Get(index *float64) Inspector2FilterFilterCriteriaEc2InstanceSubnetIdOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) Get(in
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) Resolv
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

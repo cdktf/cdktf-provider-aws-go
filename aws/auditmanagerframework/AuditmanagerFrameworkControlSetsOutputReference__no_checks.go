@@ -43,7 +43,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validatePutC
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

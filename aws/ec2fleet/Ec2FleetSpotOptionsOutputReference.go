@@ -86,7 +86,7 @@ type Ec2FleetSpotOptionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutMaintenanceStrategies(value *Ec2FleetSpotOptionsMaintenanceStrategies)
 	ResetAllocationStrategy()
 	ResetInstanceInterruptionBehavior()
@@ -98,7 +98,7 @@ type Ec2FleetSpotOptionsOutputReference interface {
 	ResetSingleInstanceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -671,8 +671,8 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -680,7 +680,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) ResetSingleInstanceType()
 	)
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

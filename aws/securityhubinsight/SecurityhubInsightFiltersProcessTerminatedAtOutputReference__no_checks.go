@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

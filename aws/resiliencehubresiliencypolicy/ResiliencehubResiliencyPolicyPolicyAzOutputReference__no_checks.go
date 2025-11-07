@@ -43,11 +43,11 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyAzOutputReference) validat
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyAzOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyAzOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyAzOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyAzOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLi
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

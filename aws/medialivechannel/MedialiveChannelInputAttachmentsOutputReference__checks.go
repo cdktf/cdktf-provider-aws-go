@@ -85,9 +85,9 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -115,9 +115,9 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validatePutI
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

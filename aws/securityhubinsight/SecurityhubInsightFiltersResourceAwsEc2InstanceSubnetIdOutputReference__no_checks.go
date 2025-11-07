@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutput
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

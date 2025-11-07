@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncChannelNamespaceSubscribeAuthModeOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespaceSubscribeAuthModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncChannelNamespaceSubscribeAuthModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespaceSubscribeAuthModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncChannelNamespaceSubscribeAuthModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList) v
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

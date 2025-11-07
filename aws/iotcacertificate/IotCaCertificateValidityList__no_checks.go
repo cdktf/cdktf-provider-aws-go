@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotCaCertificateValidityList) validateGetParameters(index *fl
 	return nil
 }
 
-func (i *jsiiProxy_IotCaCertificateValidityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotCaCertificateValidityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

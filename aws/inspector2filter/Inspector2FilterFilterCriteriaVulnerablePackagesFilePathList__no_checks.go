@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList)
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesFilePathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

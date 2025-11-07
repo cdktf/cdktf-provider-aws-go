@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateGetParame
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

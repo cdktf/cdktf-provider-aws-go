@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

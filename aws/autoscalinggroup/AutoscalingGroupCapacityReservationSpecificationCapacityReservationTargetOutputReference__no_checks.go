@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationCapacityReser
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

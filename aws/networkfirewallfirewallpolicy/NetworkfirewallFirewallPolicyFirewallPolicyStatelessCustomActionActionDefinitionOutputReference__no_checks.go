@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAct
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAct
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

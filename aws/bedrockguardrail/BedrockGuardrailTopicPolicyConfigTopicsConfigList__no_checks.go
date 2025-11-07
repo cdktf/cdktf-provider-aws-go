@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

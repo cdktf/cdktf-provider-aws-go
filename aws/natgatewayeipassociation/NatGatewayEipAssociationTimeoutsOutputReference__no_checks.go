@@ -43,11 +43,11 @@ func (n *jsiiProxy_NatGatewayEipAssociationTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (n *jsiiProxy_NatGatewayEipAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NatGatewayEipAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NatGatewayEipAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NatGatewayEipAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

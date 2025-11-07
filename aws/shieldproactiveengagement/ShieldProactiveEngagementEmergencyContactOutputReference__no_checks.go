@@ -43,11 +43,11 @@ func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

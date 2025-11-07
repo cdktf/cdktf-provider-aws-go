@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

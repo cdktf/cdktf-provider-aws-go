@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReferenc
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReferenc
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

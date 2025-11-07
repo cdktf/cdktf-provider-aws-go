@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableServerSideEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

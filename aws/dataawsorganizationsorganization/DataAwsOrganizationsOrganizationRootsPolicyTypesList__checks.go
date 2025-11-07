@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCatalogTablePartitionIndexList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTablePartitionIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTablePartitionIndexList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

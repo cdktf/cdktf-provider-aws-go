@@ -43,7 +43,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

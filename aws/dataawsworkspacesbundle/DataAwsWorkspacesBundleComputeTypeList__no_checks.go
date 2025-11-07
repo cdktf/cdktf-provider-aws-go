@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundleComputeTypeList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundleComputeTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesBundleComputeTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

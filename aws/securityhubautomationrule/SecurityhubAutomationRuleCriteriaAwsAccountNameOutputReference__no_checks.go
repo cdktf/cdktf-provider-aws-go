@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

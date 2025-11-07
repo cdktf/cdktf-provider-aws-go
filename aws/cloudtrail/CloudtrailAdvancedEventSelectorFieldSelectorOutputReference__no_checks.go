@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

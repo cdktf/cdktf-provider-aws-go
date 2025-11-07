@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailDistributionLocationOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailDistributionLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailDistributionLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

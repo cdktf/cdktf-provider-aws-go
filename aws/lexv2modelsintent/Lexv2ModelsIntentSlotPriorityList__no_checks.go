@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityList) validateGetParameters(inde
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

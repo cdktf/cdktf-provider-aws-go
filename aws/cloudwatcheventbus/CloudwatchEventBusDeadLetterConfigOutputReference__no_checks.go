@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchEventBusDeadLetterConfigOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventBusDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventBusDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventBusDeadLetterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventBusDeadLetterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

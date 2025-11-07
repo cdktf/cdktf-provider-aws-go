@@ -27,9 +27,9 @@ func (g *jsiiProxy_GlueMlTransformSchemaList) validateGetParameters(index *float
 	return nil
 }
 
-func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

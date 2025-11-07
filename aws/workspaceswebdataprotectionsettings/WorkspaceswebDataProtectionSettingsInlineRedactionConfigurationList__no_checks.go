@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurati
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

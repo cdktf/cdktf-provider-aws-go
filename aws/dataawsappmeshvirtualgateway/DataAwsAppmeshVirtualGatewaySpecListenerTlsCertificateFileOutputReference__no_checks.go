@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

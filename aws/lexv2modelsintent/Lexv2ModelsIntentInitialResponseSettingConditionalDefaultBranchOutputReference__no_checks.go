@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBran
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBran
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalDefaultBranchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

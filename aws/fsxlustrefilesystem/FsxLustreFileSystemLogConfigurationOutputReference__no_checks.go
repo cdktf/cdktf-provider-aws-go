@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

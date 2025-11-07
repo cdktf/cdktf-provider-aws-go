@@ -69,10 +69,10 @@ type WafregionalGeoMatchSetGeoMatchConstraintOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -470,8 +470,8 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) Inte
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -479,15 +479,15 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) Inte
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -495,7 +495,7 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) Reso
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

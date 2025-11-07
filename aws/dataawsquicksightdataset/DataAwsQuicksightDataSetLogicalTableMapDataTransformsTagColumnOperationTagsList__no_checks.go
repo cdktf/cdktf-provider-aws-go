@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColum
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

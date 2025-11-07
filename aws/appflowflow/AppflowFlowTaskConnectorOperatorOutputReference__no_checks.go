@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

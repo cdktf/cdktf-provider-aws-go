@@ -15,7 +15,7 @@ func (c *jsiiProxy_CleanroomsCollaborationMemberList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsCollaborationMemberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsCollaborationMemberList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

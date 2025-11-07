@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeEnrichmentParametersHttpParametersOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeEnrichmentParametersHttpParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeEnrichmentParametersHttpParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeEnrichmentParametersHttpParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeEnrichmentParametersHttpParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

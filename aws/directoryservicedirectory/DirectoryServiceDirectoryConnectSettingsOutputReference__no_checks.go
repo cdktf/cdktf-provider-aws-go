@@ -43,11 +43,11 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

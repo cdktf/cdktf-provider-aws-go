@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

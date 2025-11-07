@@ -65,12 +65,12 @@ type QuicksightDataSetColumnGroupsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutGeoSpatialColumnGroup(value *QuicksightDataSetColumnGroupsGeoSpatialColumnGroup)
 	ResetGeoSpatialColumnGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -426,8 +426,8 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) InterpolationAs
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -435,7 +435,7 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) ResetGeoSpatial
 	)
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

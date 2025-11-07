@@ -43,7 +43,7 @@ func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReferen
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReferen
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

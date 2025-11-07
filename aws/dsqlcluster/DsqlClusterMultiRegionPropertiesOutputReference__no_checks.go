@@ -43,11 +43,11 @@ func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

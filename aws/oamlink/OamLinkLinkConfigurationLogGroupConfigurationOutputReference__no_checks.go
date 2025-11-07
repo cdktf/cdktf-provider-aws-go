@@ -43,11 +43,11 @@ func (o *jsiiProxy_OamLinkLinkConfigurationLogGroupConfigurationOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkLinkConfigurationLogGroupConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OamLinkLinkConfigurationLogGroupConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkLinkConfigurationLogGroupConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OamLinkLinkConfigurationLogGroupConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionRestrictionsGeoRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

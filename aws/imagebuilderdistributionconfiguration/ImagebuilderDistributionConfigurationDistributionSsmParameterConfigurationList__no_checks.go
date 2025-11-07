@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionSsmParameter
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionSsmParameterConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

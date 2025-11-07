@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

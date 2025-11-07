@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesLi
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

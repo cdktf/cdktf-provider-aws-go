@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomEmailSenderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53ResolverEndpointIpAddressList) validateGetParameters(i
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverEndpointIpAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53ResolverEndpointIpAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

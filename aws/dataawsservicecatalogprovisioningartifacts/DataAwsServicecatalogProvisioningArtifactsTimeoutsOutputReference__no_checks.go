@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

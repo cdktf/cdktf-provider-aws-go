@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -79,7 +79,7 @@ type FsxOntapVolumeSnaplockConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAutocommitPeriod(value *FsxOntapVolumeSnaplockConfigurationAutocommitPeriod)
 	PutRetentionPeriod(value *FsxOntapVolumeSnaplockConfigurationRetentionPeriod)
 	ResetAuditLogVolume()
@@ -89,7 +89,7 @@ type FsxOntapVolumeSnaplockConfigurationOutputReference interface {
 	ResetVolumeAppendModeEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -589,8 +589,8 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) Interpola
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -598,7 +598,7 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) Interpola
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) ResetVolu
 	)
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) Resolve(_
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

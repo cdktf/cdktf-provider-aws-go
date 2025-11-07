@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpclatticeListenerTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeListenerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

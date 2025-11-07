@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList) valida
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

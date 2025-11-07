@@ -43,11 +43,11 @@ func (c *jsiiProxy_CleanroomsConfiguredTableTableReferenceOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsConfiguredTableTableReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CleanroomsConfiguredTableTableReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsConfiguredTableTableReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsConfiguredTableTableReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

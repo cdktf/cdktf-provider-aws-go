@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

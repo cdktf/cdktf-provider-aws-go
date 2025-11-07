@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleTagsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

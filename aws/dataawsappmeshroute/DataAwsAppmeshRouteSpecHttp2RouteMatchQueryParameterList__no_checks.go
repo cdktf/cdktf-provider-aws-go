@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

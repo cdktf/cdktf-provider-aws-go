@@ -43,11 +43,11 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateGetStr
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

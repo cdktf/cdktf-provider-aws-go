@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

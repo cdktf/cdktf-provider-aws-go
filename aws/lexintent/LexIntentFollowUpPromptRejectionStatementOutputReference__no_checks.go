@@ -43,7 +43,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

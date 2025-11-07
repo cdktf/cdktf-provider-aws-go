@@ -15,7 +15,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthentic
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

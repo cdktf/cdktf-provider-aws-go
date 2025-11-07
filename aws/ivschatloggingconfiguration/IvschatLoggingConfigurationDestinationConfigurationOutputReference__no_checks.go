@@ -43,7 +43,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

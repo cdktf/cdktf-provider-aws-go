@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorValueList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorValueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

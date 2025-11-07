@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}.
 type DatasyncLocationNfs interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DatasyncLocationNfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource.
 func NewDatasyncLocationNfs(scope constructs.Construct, id *string, config *DatasyncLocationNfsConfig) DatasyncLocationNfs {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDatasyncLocationNfs(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource.
 func NewDatasyncLocationNfs_Override(d DatasyncLocationNfs, scope constructs.Construct, id *string, config *DatasyncLocationNfsConfig) {
 	_init_.Initialize()
 

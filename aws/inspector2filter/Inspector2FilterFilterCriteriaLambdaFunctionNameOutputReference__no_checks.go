@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

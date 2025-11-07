@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

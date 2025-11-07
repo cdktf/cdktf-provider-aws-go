@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoManagedUserPoolClientRefreshTokenRotationList) validat
 	return nil
 }
 
-func (c *jsiiProxy_CognitoManagedUserPoolClientRefreshTokenRotationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoManagedUserPoolClientRefreshTokenRotationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

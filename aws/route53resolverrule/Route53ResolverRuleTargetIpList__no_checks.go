@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateGetParameters(index 
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

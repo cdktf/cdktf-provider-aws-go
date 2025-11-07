@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

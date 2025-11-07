@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

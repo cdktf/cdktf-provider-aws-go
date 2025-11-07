@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheClusterTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

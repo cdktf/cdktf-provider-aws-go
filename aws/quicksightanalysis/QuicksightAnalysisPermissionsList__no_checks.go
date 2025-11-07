@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightAnalysisPermissionsList) validateGetParameters(inde
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightAnalysisPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightAnalysisPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

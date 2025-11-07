@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorSortColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsInstanceMetadataOptionsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInstanceMetadataOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInstanceMetadataOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

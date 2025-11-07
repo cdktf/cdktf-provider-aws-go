@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

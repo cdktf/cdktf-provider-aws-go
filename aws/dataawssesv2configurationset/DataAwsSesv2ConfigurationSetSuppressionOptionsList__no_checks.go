@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetSuppressionOptionsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetSuppressionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetSuppressionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

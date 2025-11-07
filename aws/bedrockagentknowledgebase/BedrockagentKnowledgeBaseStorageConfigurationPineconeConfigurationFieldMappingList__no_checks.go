@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigur
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationPineconeConfigurationFieldMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

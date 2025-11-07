@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksFargateProfileTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

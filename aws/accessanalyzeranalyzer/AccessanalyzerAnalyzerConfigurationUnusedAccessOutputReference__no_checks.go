@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

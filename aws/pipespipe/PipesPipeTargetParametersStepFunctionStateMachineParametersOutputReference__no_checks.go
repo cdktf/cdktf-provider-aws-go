@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersStepFunctionStateMachineParametersOu
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

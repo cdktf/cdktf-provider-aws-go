@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreMemoryStrategyConfigurationConsolidationList)
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreMemoryStrategyConfigurationConsolidationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreMemoryStrategyConfigurationConsolidationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -76,7 +76,7 @@ type TransferWorkflowStepsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCopyStepDetails(value *TransferWorkflowStepsCopyStepDetails)
 	PutCustomStepDetails(value *TransferWorkflowStepsCustomStepDetails)
 	PutDecryptStepDetails(value *TransferWorkflowStepsDecryptStepDetails)
@@ -89,7 +89,7 @@ type TransferWorkflowStepsOutputReference interface {
 	ResetTagStepDetails()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -556,8 +556,8 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -565,7 +565,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) ResetTagStepDetails() {
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

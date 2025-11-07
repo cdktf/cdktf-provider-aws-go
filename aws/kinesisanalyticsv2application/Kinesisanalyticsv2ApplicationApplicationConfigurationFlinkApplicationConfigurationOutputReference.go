@@ -69,7 +69,7 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfig
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCheckpointConfiguration(value *Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration)
 	PutMonitoringConfiguration(value *Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration)
 	PutParallelismConfiguration(value *Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration)
@@ -78,7 +78,7 @@ type Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfig
 	ResetParallelismConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApp
 	return returns
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApp
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApp
 	)
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApp
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

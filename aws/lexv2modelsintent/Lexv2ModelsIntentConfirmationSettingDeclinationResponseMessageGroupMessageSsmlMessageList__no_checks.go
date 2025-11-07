@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessag
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageSsmlMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingDeclinationResponseMessageGroupMessageSsmlMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

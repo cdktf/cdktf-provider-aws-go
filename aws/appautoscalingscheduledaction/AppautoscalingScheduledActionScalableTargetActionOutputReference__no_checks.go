@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

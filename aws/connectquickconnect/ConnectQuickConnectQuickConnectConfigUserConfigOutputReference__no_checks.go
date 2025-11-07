@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigUserConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

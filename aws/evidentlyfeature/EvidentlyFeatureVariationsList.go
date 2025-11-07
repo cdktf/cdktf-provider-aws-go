@@ -41,7 +41,7 @@ type EvidentlyFeatureVariationsList interface {
 	Get(index *float64) EvidentlyFeatureVariationsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsList) Get(index *float64) Evidently
 	return returns
 }
 
-func (e *jsiiProxy_EvidentlyFeatureVariationsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EvidentlyFeatureVariationsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsList) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

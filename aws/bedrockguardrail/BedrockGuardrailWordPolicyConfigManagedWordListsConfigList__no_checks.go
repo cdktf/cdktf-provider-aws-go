@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigList) v
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

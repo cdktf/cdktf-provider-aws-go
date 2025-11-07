@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

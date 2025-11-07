@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionEphemeralStorageList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionEphemeralStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionEphemeralStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevopsguruNotificationChannelSnsList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruNotificationChannelSnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruNotificationChannelSnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

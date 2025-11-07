@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowLi
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleActionsFindingFieldsUpdateWorkflowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

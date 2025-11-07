@@ -43,11 +43,11 @@ func (d *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

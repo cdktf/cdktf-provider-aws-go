@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAcc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

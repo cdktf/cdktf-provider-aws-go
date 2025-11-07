@@ -15,7 +15,7 @@ func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

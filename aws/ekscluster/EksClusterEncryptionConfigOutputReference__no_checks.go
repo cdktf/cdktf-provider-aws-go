@@ -43,7 +43,7 @@ func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validatePutProvide
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterEncryptionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationCo
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationCo
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

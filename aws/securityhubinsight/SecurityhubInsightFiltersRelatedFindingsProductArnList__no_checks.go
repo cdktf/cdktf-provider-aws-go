@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

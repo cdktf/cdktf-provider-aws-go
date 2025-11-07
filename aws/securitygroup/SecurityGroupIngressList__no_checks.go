@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityGroupIngressList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_SecurityGroupIngressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityGroupIngressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

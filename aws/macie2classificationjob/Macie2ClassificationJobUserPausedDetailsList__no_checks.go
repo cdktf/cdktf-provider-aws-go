@@ -15,7 +15,7 @@ func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateGetPara
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

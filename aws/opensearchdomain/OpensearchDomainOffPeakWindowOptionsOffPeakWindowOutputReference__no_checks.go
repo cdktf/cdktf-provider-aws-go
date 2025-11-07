@@ -43,7 +43,7 @@ func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputRefere
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputRefere
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

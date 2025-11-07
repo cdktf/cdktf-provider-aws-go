@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

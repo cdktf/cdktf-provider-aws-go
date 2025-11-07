@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificati
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

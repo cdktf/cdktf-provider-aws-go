@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProces
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

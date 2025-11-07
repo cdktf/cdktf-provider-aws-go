@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

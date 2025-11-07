@@ -43,7 +43,7 @@ func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

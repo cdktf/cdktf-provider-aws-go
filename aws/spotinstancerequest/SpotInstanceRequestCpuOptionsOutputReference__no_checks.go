@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

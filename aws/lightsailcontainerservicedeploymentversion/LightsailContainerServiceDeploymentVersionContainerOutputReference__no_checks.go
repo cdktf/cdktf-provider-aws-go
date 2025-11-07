@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputRefe
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

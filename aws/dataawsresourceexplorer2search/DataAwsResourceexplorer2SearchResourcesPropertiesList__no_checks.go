@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesPropertiesList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validate
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -39,7 +39,7 @@ type DataAwsKendraFaqS3PathList interface {
 	Get(index *float64) DataAwsKendraFaqS3PathOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsKendraFaqS3PathList) Get(index *float64) DataAwsKendra
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsKendraFaqS3PathList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsKendraFaqS3PathList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsKendraFaqS3PathList) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

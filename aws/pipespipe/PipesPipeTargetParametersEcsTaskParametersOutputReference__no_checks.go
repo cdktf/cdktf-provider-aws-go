@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) va
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) va
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

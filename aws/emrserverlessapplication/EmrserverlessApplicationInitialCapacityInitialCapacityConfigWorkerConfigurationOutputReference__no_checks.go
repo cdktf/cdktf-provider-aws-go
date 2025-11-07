@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigW
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

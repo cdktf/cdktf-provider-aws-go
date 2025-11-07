@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertifica
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

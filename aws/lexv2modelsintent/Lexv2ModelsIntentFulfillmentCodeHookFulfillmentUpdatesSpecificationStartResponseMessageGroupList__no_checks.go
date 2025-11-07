@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecifi
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentFulfillmentCodeHookFulfillmentUpdatesSpecificationStartResponseMessageGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

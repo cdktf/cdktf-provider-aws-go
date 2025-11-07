@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOu
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

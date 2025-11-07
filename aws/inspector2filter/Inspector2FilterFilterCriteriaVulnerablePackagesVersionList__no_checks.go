@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesVersionList) 
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesVersionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesVersionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

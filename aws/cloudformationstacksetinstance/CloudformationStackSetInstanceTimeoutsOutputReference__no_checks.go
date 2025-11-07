@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudformationStackSetInstanceTimeoutsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudformationStackSetInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudformationStackSetInstanceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

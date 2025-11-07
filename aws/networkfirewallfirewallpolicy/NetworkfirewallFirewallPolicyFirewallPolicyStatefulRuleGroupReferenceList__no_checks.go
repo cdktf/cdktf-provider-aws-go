@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

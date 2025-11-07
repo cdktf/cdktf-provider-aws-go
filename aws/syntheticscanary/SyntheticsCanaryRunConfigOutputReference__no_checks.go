@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryRunConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

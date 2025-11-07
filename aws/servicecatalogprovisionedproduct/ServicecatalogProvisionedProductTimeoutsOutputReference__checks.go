@@ -85,17 +85,17 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

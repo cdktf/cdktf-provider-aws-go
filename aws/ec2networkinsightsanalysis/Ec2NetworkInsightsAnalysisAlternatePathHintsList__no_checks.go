@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

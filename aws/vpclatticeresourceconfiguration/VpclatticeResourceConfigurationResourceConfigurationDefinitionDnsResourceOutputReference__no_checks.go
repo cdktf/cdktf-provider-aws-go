@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitio
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionDnsResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

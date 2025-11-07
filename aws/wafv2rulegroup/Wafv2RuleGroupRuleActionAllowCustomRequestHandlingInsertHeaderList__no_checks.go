@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

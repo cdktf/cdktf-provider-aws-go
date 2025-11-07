@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfi
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

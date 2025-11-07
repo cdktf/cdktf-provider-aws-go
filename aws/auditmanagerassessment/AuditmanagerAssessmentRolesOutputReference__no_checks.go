@@ -43,11 +43,11 @@ func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

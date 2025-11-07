@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightKeyRegistrationKeyRegistrationList) validateGetPara
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightKeyRegistrationKeyRegistrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightKeyRegistrationKeyRegistrationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

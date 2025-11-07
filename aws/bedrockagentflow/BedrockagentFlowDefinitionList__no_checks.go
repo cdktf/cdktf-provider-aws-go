@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionList) validateGetParameters(index *
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validatePutAdvancedCon
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceLoadBalancerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

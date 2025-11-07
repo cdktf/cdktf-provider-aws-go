@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsisPipelineVpcOptionsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineVpcOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineVpcOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

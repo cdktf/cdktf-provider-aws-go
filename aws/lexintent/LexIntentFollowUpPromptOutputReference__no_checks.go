@@ -43,7 +43,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validatePutRejectionS
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

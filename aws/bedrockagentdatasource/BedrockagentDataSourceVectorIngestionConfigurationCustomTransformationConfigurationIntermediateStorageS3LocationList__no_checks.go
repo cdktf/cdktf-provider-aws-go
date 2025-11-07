@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationCustomTrans
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3LocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

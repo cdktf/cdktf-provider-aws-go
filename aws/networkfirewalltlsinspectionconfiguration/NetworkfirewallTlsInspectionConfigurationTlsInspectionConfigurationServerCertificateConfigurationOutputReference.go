@@ -72,7 +72,7 @@ type NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCe
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCheckCertificateRevocationStatus(value interface{})
 	PutScope(value interface{})
 	PutServerCertificate(value interface{})
@@ -82,7 +82,7 @@ type NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCe
 	ResetServerCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -509,8 +509,8 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -518,7 +518,7 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigu
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigu
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

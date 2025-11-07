@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

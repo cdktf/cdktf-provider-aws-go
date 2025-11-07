@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

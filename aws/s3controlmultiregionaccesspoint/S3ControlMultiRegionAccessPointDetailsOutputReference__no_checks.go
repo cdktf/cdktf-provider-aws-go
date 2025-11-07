@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

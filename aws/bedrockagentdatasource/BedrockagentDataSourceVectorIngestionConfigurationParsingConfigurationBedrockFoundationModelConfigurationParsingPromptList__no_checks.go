@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationParsingConf
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

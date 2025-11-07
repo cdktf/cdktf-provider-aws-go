@@ -41,7 +41,7 @@ type Route53RecordGeoproximityRoutingPolicyCoordinatesList interface {
 	Get(index *float64) Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesList) Get(in
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesList) Resolv
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

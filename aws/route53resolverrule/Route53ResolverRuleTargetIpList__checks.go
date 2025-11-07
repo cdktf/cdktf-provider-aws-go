@@ -29,9 +29,9 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateGetParameters(index 
 	return nil
 }
 
-func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_Route53ResolverRuleTargetIpList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

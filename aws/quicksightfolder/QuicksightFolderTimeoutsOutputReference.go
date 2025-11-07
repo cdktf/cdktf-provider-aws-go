@@ -75,14 +75,14 @@ type QuicksightFolderTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -542,8 +542,8 @@ func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -551,7 +551,7 @@ func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (q *jsiiProxy_QuicksightFolderTimeoutsOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

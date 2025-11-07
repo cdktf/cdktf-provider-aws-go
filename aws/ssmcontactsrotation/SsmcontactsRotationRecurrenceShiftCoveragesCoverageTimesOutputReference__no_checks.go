@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

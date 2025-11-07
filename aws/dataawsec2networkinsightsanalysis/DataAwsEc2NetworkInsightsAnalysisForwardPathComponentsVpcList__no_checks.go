@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsVpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

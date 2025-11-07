@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSesv2EmailIdentityDkimSigningAttributesList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2EmailIdentityDkimSigningAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2EmailIdentityDkimSigningAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

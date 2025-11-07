@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputC
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

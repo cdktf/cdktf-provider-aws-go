@@ -43,7 +43,7 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputRef
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputRef
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

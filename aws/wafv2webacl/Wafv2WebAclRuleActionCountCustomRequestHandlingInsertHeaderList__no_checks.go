@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderLi
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

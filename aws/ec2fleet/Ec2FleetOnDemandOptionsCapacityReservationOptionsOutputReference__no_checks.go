@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

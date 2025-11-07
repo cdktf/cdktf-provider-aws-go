@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

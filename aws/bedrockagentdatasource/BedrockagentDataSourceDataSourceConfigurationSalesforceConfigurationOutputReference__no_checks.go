@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfig
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfig
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceDataSourceConfigurationSalesforceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

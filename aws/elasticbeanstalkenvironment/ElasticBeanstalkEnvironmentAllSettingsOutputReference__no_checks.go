@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

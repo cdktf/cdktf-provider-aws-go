@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

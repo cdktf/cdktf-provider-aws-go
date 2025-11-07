@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmincidentsReplicationSetRegionsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsReplicationSetRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmincidentsReplicationSetRegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

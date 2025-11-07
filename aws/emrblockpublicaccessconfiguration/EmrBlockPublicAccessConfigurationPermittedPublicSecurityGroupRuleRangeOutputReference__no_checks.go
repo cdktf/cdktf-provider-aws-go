@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroup
 	return nil
 }
 
-func (e *jsiiProxy_EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

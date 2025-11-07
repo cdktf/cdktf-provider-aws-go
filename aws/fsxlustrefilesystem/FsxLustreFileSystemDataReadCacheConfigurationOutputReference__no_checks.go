@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference)
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxLustreFileSystemDataReadCacheConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

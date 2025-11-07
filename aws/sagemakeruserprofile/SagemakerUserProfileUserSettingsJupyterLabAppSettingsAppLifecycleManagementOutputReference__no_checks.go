@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifec
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifec
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

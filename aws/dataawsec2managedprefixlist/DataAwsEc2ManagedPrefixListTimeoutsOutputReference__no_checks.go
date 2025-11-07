@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixListTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

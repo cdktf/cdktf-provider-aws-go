@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validatePutListenerP
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

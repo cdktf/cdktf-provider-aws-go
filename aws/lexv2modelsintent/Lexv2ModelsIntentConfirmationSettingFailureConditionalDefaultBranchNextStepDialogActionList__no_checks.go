@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefault
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepDialogActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureConditionalDefaultBranchNextStepDialogActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

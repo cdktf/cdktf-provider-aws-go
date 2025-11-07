@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEfsFileSystemProtectionOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystemProtectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEfsFileSystemProtectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystemProtectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsFileSystemProtectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

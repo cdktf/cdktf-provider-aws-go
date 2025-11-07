@@ -43,7 +43,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironm
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironm
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

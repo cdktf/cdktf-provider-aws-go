@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

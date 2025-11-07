@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

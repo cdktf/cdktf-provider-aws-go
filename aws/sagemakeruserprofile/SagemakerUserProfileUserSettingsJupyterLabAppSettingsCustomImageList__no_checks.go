@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomIm
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

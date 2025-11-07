@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageRepositoryNameList) val
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageRepositoryNameList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEcrImageRepositoryNameList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

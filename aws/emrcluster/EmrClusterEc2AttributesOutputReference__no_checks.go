@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterEc2AttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

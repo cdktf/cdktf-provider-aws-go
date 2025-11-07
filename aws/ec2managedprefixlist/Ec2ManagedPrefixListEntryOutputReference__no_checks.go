@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

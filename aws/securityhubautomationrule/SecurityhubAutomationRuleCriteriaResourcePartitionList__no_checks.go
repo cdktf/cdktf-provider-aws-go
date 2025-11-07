@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourcePartitionList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourcePartitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaResourcePartitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

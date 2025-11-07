@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

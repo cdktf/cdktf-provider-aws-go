@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurat
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

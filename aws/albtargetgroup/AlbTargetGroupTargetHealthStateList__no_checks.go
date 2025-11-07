@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetHealthStateList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetHealthStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupTargetHealthStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyHardwareList) validateGetP
 	return nil
 }
 
-func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyHardwareList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResiliencehubResiliencyPolicyPolicyHardwareList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

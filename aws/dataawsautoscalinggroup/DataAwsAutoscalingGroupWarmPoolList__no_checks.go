@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

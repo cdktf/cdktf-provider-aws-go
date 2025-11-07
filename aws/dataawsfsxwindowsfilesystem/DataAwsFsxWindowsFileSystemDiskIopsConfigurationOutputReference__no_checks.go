@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsFsxWindowsFileSystemDiskIopsConfigurationOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxWindowsFileSystemDiskIopsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsFsxWindowsFileSystemDiskIopsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxWindowsFileSystemDiskIopsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxWindowsFileSystemDiskIopsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputRef
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

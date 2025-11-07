@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv6List) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv6List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceIpv6List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

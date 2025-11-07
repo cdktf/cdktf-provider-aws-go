@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbNetworkOciDnsForwardingConfigsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkOciDnsForwardingConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbNetworkOciDnsForwardingConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkOciDnsForwardingConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbNetworkOciDnsForwardingConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

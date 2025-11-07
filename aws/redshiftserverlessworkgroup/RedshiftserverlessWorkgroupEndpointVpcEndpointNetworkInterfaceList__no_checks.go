@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfac
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

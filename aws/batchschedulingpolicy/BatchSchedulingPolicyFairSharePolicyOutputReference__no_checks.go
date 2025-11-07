@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchSchedulingPolicyFairSharePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

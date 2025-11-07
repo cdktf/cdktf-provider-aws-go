@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetResourceRecordsOutput
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordsExclusiveResourceRecordSetResourceRecordsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

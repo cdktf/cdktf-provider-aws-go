@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

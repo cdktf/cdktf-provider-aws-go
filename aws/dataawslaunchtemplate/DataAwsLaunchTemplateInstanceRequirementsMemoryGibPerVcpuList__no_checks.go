@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

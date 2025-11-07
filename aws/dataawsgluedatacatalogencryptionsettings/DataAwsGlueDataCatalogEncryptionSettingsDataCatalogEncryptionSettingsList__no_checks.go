@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryption
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

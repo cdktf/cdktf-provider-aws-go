@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesSearchO
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesSearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

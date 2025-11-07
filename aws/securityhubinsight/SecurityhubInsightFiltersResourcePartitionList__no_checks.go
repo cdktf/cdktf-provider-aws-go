@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourcePartitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

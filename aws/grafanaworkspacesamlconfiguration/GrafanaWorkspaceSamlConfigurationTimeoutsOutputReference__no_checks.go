@@ -43,11 +43,11 @@ func (g *jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

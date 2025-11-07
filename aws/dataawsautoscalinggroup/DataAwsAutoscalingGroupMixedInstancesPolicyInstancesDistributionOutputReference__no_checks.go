@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

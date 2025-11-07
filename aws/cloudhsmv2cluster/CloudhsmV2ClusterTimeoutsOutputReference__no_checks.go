@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

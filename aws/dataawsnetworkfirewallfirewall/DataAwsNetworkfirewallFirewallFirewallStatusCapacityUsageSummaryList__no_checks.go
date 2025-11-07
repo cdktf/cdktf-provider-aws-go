@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSumm
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

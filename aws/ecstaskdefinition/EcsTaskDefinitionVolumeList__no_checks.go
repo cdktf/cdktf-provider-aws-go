@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateGetParameters(index *flo
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

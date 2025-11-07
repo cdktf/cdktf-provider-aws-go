@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

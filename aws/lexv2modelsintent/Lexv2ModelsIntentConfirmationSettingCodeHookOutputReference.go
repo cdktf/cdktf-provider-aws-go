@@ -74,13 +74,13 @@ type Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutPostCodeHookSpecification(value interface{})
 	ResetInvocationLabel()
 	ResetPostCodeHookSpecification()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -529,8 +529,8 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) 
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -538,7 +538,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -572,8 +572,8 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) 
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +581,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingCodeHookOutputReference) 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

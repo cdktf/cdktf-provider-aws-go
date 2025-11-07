@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionO
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

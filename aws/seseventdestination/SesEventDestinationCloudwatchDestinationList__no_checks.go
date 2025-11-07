@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesEventDestinationCloudwatchDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

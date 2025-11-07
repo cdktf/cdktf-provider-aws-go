@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleEx
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

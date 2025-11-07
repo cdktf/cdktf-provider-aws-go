@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

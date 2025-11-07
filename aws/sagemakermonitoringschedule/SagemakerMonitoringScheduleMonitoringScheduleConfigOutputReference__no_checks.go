@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

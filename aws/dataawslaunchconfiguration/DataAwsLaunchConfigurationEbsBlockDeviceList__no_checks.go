@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchConfigurationEbsBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

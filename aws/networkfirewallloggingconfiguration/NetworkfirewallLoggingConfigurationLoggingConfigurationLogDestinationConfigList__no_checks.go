@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDes
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

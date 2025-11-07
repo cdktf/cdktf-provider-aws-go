@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validatePutDefau
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyOverrideProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

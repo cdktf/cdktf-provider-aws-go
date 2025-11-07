@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

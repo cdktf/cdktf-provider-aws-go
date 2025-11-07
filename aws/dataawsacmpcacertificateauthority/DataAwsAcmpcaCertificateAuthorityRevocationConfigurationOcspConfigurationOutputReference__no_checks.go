@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspC
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

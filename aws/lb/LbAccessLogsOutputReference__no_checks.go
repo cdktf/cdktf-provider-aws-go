@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbAccessLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbAccessLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

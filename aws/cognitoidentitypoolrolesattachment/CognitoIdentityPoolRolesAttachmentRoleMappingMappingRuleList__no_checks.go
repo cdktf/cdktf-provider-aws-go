@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

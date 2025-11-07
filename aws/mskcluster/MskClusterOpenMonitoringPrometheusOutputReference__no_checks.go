@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validatePu
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

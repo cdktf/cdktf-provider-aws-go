@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

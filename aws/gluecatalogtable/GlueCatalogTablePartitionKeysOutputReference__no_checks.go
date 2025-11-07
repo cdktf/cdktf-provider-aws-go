@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTablePartitionKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

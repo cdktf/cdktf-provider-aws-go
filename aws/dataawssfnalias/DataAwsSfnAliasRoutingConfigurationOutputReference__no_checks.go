@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

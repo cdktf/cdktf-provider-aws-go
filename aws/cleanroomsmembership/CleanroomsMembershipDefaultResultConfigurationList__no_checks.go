@@ -15,7 +15,7 @@ func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

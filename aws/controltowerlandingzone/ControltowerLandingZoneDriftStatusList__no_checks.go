@@ -15,7 +15,7 @@ func (c *jsiiProxy_ControltowerLandingZoneDriftStatusList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ControltowerLandingZoneDriftStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ControltowerLandingZoneDriftStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

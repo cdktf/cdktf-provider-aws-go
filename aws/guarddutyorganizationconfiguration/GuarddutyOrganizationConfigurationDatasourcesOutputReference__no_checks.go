@@ -43,7 +43,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

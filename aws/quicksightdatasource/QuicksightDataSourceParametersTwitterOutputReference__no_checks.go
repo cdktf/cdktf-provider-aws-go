@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersTwitterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

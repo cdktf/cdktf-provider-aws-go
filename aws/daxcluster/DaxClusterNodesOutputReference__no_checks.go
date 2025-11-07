@@ -43,11 +43,11 @@ func (d *jsiiProxy_DaxClusterNodesOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (d *jsiiProxy_DaxClusterNodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaxClusterNodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DaxClusterNodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaxClusterNodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

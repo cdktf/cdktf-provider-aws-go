@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentcoreMemoryTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreMemoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreMemoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreMemoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreMemoryTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueMlTransformSchemaList) validateGetParameters(index *float
 	return nil
 }
 
-func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueMlTransformSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

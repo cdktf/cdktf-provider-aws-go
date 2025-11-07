@@ -67,14 +67,14 @@ type BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputRe
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutTool(value interface{})
 	PutToolChoice(value interface{})
 	ResetTool()
 	ResetToolChoice()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigu
 	return returns
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigu
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigu
 	)
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigu
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

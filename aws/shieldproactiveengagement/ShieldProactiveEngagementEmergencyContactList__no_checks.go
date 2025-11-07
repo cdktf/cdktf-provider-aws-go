@@ -15,7 +15,7 @@ func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShieldProactiveEngagementEmergencyContactList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

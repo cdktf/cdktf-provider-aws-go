@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateGetParam
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationInitialCapacityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validatePutG
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

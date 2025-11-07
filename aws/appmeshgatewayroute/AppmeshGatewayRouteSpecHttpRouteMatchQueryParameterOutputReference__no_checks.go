@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

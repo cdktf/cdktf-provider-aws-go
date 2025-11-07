@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchCompositeAlarmActionsSuppressorOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarmActionsSuppressorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchCompositeAlarmActionsSuppressorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchCompositeAlarmActionsSuppressorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchCompositeAlarmActionsSuppressorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

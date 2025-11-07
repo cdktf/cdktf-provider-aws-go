@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

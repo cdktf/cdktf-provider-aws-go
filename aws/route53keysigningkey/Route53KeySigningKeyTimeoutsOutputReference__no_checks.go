@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53KeySigningKeyTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (r *jsiiProxy_Route53KeySigningKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53KeySigningKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53KeySigningKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53KeySigningKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

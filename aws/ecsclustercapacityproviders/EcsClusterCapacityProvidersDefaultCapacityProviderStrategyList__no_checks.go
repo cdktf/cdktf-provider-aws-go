@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyLis
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInfer
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationKnowledgeBaseInferenceConfigurationTextList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

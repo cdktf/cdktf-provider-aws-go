@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrClusterBootstrapActionList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterBootstrapActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterBootstrapActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

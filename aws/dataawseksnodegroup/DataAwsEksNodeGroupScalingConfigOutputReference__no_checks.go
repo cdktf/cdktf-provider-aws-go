@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupScalingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

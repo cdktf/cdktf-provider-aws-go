@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdList) validat
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceImageIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

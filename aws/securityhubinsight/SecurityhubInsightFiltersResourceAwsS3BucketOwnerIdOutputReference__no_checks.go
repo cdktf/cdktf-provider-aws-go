@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

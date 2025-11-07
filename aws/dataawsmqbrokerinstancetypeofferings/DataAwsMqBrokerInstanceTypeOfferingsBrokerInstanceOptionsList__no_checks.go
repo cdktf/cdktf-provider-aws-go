@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

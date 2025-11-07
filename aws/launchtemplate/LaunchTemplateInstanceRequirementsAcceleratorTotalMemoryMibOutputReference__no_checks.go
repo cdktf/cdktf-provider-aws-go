@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOu
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

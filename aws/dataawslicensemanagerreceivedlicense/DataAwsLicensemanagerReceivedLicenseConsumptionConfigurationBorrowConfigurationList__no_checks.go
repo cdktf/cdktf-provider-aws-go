@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationB
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationBorrowConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyMode
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

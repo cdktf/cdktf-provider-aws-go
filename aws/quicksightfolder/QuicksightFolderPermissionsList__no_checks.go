@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightFolderPermissionsList) validateGetParameters(index 
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightFolderPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightFolderPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

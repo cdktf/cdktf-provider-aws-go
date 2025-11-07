@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

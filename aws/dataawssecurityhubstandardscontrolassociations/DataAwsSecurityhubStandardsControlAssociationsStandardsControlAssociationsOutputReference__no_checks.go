@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsContro
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

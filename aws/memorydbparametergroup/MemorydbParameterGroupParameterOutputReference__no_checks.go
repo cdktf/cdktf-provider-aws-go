@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbParameterGroupParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

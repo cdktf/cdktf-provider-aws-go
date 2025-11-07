@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferConnectorSftpConfigOutputReference) validateGetString
 	return nil
 }
 
-func (t *jsiiProxy_TransferConnectorSftpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferConnectorSftpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferConnectorSftpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferConnectorSftpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

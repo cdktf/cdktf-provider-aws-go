@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrcontainersJobTemplateTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeEventActionActionList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeEventActionActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeEventActionActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateGetString
 	return nil
 }
 
-func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceCreditSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

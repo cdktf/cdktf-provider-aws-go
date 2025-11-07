@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

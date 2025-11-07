@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceT
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

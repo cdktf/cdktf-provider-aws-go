@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigNodeOptionsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigNodeOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigNodeOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

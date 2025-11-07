@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

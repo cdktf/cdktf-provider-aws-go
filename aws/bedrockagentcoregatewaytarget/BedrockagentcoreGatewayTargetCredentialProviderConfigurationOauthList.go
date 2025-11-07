@@ -41,7 +41,7 @@ type BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList inter
 	Get(index *float64) BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationO
 	return returns
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationO
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

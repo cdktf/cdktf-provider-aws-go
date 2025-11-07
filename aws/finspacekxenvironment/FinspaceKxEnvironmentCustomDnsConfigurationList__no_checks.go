@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

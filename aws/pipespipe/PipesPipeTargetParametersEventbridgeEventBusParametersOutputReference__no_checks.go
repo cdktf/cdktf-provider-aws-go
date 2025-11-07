@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersEventbridgeEventBusParametersOutputR
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

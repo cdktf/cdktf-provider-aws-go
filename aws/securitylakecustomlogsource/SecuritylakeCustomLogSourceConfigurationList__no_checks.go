@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

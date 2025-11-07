@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorSettingsConnectedHomeList) validate
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorSettingsConnectedHomeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorSettingsConnectedHomeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

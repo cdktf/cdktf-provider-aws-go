@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionRedirectList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerDefaultActionRedirectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionRedirectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

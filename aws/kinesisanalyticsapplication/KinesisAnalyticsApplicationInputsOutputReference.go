@@ -80,7 +80,7 @@ type KinesisAnalyticsApplicationInputsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutKinesisFirehose(value *KinesisAnalyticsApplicationInputsKinesisFirehose)
 	PutKinesisStream(value *KinesisAnalyticsApplicationInputsKinesisStream)
 	PutParallelism(value *KinesisAnalyticsApplicationInputsParallelism)
@@ -94,7 +94,7 @@ type KinesisAnalyticsApplicationInputsOutputReference interface {
 	ResetStartingPositionConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -601,8 +601,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) Interpolati
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -610,7 +610,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) Interpolati
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -723,8 +723,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) ResetStarti
 	)
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -732,7 +732,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

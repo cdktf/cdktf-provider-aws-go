@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputR
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersVpcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

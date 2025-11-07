@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationList) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

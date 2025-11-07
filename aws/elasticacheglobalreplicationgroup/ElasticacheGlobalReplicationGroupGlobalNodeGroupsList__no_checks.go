@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

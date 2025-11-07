@@ -15,7 +15,7 @@ func (m *jsiiProxy_M2EnvironmentStorageConfigurationFsxList) validateGetParamete
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentStorageConfigurationFsxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2EnvironmentStorageConfigurationFsxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlList
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationAccessControlListConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3DirectoryBucketLocationList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_S3DirectoryBucketLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3DirectoryBucketLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

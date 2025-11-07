@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

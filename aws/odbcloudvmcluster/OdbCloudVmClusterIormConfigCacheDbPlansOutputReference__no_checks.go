@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

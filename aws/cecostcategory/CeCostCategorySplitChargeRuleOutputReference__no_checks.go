@@ -43,7 +43,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validatePutPara
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

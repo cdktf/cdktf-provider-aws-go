@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceDailySettingsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceDailySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceDailySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceDailySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceDailySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

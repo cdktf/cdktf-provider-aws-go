@@ -65,10 +65,10 @@ type DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -172,29 +172,29 @@ func (j *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) T
 }
 
 
-func NewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference {
+func NewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReference_Override(d DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReference_Override(d DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -424,8 +424,8 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -433,15 +433,15 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) I
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -449,7 +449,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

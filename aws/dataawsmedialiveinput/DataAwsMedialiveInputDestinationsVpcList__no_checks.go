@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

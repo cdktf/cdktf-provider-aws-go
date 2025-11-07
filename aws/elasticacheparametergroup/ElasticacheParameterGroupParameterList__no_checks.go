@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheParameterGroupParameterList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

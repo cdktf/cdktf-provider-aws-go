@@ -5,7 +5,7 @@ package ekscluster
 
 
 type EksClusterUpgradePolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_cluster#support_type EksCluster#support_type}.
 	SupportType *string `field:"optional" json:"supportType" yaml:"supportType"`
 }
 

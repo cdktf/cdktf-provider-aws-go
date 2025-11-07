@@ -43,7 +43,7 @@ func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validatePutEx
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsDomainTechContactOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

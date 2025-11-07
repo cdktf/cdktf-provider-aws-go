@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsList) val
 	return nil
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

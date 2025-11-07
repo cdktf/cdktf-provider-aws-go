@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

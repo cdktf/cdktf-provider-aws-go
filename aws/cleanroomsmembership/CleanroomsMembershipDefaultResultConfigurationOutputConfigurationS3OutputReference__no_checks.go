@@ -43,11 +43,11 @@ func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigura
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsMembershipDefaultResultConfigurationOutputConfigurationS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

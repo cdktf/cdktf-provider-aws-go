@@ -72,10 +72,10 @@ type GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputRe
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -504,8 +504,8 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigu
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -513,15 +513,15 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -529,7 +529,7 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

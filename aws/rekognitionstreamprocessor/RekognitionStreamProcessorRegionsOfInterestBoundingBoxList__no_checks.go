@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestBoundingBoxList) v
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestBoundingBoxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestBoundingBoxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

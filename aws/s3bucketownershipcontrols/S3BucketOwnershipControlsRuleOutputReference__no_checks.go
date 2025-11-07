@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketOwnershipControlsRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

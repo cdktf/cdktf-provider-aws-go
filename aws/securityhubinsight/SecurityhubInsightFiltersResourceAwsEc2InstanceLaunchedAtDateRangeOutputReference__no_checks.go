@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDate
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

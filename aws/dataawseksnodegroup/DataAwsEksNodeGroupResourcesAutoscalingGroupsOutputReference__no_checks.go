@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

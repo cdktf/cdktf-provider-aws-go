@@ -29,9 +29,9 @@ func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateGetParameters(
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

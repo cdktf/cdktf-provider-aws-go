@@ -85,9 +85,9 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -135,9 +135,9 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

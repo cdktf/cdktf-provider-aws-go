@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validatePutPatch
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmPatchBaselineApprovalRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyL
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

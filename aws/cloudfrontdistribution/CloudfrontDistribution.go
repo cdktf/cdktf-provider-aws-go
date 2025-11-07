@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
 type CloudfrontDistribution interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -83,6 +83,7 @@ type CloudfrontDistribution interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoggingConfig() CloudfrontDistributionLoggingConfigOutputReference
 	LoggingConfigInput() *CloudfrontDistributionLoggingConfig
+	LoggingV1Enabled() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
 	OrderedCacheBehavior() CloudfrontDistributionOrderedCacheBehaviorList
@@ -626,6 +627,16 @@ func (j *jsiiProxy_CloudfrontDistribution) LoggingConfigInput() *CloudfrontDistr
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) LoggingV1Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"loggingV1Enabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -967,7 +978,7 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
 
@@ -985,7 +996,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) {
 	_init_.Initialize()
 

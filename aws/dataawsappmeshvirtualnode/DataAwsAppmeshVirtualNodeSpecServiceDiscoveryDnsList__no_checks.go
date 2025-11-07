@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

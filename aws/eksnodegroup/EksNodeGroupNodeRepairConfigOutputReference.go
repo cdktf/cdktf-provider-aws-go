@@ -35,6 +35,20 @@ type EksNodeGroupNodeRepairConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *EksNodeGroupNodeRepairConfig
 	SetInternalValue(val *EksNodeGroupNodeRepairConfig)
+	MaxParallelNodesRepairedCount() *float64
+	SetMaxParallelNodesRepairedCount(val *float64)
+	MaxParallelNodesRepairedCountInput() *float64
+	MaxParallelNodesRepairedPercentage() *float64
+	SetMaxParallelNodesRepairedPercentage(val *float64)
+	MaxParallelNodesRepairedPercentageInput() *float64
+	MaxUnhealthyNodeThresholdCount() *float64
+	SetMaxUnhealthyNodeThresholdCount(val *float64)
+	MaxUnhealthyNodeThresholdCountInput() *float64
+	MaxUnhealthyNodeThresholdPercentage() *float64
+	SetMaxUnhealthyNodeThresholdPercentage(val *float64)
+	MaxUnhealthyNodeThresholdPercentageInput() *float64
+	NodeRepairConfigOverrides() EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList
+	NodeRepairConfigOverridesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,11 +80,17 @@ type EksNodeGroupNodeRepairConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutNodeRepairConfigOverrides(value interface{})
 	ResetEnabled()
+	ResetMaxParallelNodesRepairedCount()
+	ResetMaxParallelNodesRepairedPercentage()
+	ResetMaxUnhealthyNodeThresholdCount()
+	ResetMaxUnhealthyNodeThresholdPercentage()
+	ResetNodeRepairConfigOverrides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -148,6 +168,106 @@ func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxParallelNodesRepairedCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelNodesRepairedCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxParallelNodesRepairedCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelNodesRepairedCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxParallelNodesRepairedPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelNodesRepairedPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxParallelNodesRepairedPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelNodesRepairedPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxUnhealthyNodeThresholdCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUnhealthyNodeThresholdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxUnhealthyNodeThresholdCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUnhealthyNodeThresholdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxUnhealthyNodeThresholdPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUnhealthyNodeThresholdPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) MaxUnhealthyNodeThresholdPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxUnhealthyNodeThresholdPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) NodeRepairConfigOverrides() EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList {
+	var returns EksNodeGroupNodeRepairConfigNodeRepairConfigOverridesList
+	_jsii_.Get(
+		j,
+		"nodeRepairConfigOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) NodeRepairConfigOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodeRepairConfigOverridesInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +361,50 @@ func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference)SetMaxParallelNodesRepairedCount(val *float64) {
+	if err := j.validateSetMaxParallelNodesRepairedCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelNodesRepairedCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference)SetMaxParallelNodesRepairedPercentage(val *float64) {
+	if err := j.validateSetMaxParallelNodesRepairedPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelNodesRepairedPercentage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference)SetMaxUnhealthyNodeThresholdCount(val *float64) {
+	if err := j.validateSetMaxUnhealthyNodeThresholdCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUnhealthyNodeThresholdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference)SetMaxUnhealthyNodeThresholdPercentage(val *float64) {
+	if err := j.validateSetMaxUnhealthyNodeThresholdPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxUnhealthyNodeThresholdPercentage",
 		val,
 	)
 }
@@ -437,8 +601,8 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) InterpolationAsL
 	return returns
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,11 +610,22 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) PutNodeRepairConfigOverrides(value interface{}) {
+	if err := e.validatePutNodeRepairConfigOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putNodeRepairConfigOverrides",
+		[]interface{}{value},
+	)
 }
 
 func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetEnabled() {
@@ -461,8 +636,48 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetEnabled() {
 	)
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetMaxParallelNodesRepairedCount() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxParallelNodesRepairedCount",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetMaxParallelNodesRepairedPercentage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxParallelNodesRepairedPercentage",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetMaxUnhealthyNodeThresholdCount() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxUnhealthyNodeThresholdCount",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetMaxUnhealthyNodeThresholdPercentage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxUnhealthyNodeThresholdPercentage",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) ResetNodeRepairConfigOverrides() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNodeRepairConfigOverrides",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +685,7 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

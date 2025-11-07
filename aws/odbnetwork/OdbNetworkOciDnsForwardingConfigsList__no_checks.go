@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbNetworkOciDnsForwardingConfigsList) validateGetParameters(
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkOciDnsForwardingConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkOciDnsForwardingConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

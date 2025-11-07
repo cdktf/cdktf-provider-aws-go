@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesInferenceA
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesInferenceAcceleratorOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

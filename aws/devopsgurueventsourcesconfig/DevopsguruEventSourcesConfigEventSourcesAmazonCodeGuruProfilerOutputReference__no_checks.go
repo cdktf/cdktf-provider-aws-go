@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfile
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validatePutLaunch
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceFleetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigu
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupDestinationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

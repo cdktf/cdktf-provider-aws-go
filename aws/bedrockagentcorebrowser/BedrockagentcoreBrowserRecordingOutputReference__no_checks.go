@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validatePutS
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

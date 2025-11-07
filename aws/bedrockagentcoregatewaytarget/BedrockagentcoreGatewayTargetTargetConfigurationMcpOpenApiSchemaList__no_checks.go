@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSch
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

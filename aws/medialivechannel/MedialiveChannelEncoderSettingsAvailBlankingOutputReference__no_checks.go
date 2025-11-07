@@ -43,7 +43,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

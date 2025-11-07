@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxFileCacheDataRepositoryAssociationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

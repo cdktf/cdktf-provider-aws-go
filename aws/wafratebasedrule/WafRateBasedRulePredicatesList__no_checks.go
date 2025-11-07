@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafRateBasedRulePredicatesList) validateGetParameters(index *
 	return nil
 }
 
-func (w *jsiiProxy_WafRateBasedRulePredicatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafRateBasedRulePredicatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

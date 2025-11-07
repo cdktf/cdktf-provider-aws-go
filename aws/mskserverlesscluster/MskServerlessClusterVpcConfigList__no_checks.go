@@ -15,7 +15,7 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

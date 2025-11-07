@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclCaptchaConfigImmunityTimePropertyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

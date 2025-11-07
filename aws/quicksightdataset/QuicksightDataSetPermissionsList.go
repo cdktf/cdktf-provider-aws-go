@@ -41,7 +41,7 @@ type QuicksightDataSetPermissionsList interface {
 	Get(index *float64) QuicksightDataSetPermissionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (q *jsiiProxy_QuicksightDataSetPermissionsList) Get(index *float64) Quicksi
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSetPermissionsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSetPermissionsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (q *jsiiProxy_QuicksightDataSetPermissionsList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

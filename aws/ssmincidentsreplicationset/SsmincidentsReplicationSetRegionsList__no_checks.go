@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmincidentsReplicationSetRegionsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsReplicationSetRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsReplicationSetRegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

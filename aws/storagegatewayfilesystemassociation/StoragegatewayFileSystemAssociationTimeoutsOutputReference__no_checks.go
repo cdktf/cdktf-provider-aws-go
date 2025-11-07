@@ -43,11 +43,11 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociationTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayFileSystemAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayFileSystemAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayFileSystemAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayFileSystemAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

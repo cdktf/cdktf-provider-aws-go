@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingList) validateGetPara
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

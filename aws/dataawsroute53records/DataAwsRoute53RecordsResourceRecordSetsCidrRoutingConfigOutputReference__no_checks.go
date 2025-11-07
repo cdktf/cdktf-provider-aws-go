@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsCidrRoutingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

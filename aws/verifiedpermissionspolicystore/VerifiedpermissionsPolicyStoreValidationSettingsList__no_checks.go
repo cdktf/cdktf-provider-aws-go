@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyStoreValidationSettingsList) validat
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsPolicyStoreValidationSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsPolicyStoreValidationSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

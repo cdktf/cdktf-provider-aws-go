@@ -43,7 +43,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validatePutAwsSer
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

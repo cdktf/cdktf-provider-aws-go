@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLog
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricIngestionDestinationDestinationConfigurationAuditLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

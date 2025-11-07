@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

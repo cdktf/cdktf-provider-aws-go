@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutp
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPullRequestBranchesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

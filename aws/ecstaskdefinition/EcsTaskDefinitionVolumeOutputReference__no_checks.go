@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validatePutFsxWindows
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

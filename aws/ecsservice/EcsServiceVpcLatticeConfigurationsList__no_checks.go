@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

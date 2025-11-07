@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingC
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

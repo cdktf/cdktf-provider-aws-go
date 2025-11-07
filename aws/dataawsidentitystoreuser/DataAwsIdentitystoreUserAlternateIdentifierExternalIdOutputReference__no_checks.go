@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

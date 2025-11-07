@@ -67,14 +67,14 @@ type RekognitionStreamProcessorOutputOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutKinesisDataStream(value interface{})
 	PutS3Destination(value interface{})
 	ResetKinesisDataStream()
 	ResetS3Destination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) Interpolatio
 	return returns
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) Interpolatio
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) ResetS3Desti
 	)
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

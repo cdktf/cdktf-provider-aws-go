@@ -65,11 +65,11 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference interf
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutClientConfigurations(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -425,8 +425,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	return returns
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -434,7 +434,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -452,8 +452,8 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	)
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -461,7 +461,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsOutputRe
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

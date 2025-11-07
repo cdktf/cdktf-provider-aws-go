@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

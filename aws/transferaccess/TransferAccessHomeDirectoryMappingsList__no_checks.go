@@ -15,7 +15,7 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateGetParameter
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

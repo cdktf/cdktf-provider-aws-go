@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentRolesAllList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentRolesAllList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentRolesAllList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -99,7 +99,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

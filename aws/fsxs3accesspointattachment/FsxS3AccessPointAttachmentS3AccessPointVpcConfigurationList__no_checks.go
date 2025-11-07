@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList) 
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

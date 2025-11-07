@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorOutputS3DestinationList) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorOutputS3DestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorOutputS3DestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

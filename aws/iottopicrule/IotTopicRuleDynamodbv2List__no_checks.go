@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2List) validateGetParameters(index *floa
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

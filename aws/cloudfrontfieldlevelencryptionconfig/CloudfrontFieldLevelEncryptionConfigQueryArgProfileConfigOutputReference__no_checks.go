@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutp
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutp
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesA
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesA
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

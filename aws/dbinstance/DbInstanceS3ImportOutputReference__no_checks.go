@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbInstanceS3ImportOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceS3ImportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceS3ImportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceS3ImportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceS3ImportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

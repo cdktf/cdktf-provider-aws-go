@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

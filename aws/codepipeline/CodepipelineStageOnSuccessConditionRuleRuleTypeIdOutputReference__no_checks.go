@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleRuleTypeIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

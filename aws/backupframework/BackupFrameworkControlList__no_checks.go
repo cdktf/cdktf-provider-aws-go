@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupFrameworkControlList) validateGetParameters(index *floa
 	return nil
 }
 
-func (b *jsiiProxy_BackupFrameworkControlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupFrameworkControlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

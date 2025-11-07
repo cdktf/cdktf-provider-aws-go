@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsList) validateGetParame
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

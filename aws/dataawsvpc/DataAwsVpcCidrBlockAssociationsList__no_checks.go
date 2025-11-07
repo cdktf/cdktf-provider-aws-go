@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

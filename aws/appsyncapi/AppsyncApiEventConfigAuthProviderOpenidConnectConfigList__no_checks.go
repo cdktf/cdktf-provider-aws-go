@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOpenidConnectConfigList) val
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOpenidConnectConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOpenidConnectConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

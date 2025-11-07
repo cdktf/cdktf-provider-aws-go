@@ -15,7 +15,7 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) validateGetParameters(index *
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

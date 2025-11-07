@@ -77,13 +77,13 @@ type Sesv2EmailIdentityDkimSigningAttributesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDomainSigningPrivateKey()
 	ResetDomainSigningSelector()
 	ResetNextSigningKeyLength()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -562,8 +562,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Inter
 	return returns
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -571,7 +571,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Inter
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -602,8 +602,8 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Reset
 	)
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -611,7 +611,7 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) Resol
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

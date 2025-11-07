@@ -15,7 +15,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) val
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

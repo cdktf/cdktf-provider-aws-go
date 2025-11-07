@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnList) val
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

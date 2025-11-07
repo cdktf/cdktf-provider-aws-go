@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerConnectAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

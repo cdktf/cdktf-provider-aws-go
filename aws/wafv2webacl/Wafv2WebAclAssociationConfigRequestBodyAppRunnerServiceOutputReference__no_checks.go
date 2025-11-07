@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutput
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

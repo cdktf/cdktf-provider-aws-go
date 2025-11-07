@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsmInstancesFilterOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmInstancesFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmInstancesFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmInstancesFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmInstancesFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityCont
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

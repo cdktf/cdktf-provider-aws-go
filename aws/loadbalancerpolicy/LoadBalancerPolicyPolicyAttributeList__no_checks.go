@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoadBalancerPolicyPolicyAttributeList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerPolicyPolicyAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerPolicyPolicyAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

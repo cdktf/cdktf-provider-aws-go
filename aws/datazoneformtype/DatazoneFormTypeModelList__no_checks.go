@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatazoneFormTypeModelList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneFormTypeModelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneFormTypeModelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

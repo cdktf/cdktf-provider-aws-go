@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

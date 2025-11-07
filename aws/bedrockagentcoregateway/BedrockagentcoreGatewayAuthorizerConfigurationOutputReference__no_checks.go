@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayAuthorizerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

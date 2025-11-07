@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputRe
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

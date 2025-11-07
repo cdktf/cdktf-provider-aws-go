@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

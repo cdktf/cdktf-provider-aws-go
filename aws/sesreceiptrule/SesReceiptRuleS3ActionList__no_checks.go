@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesReceiptRuleS3ActionList) validateGetParameters(index *floa
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleS3ActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleS3ActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

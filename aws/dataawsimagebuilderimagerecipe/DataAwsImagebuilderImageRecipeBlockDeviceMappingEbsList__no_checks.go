@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

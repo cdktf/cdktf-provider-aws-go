@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

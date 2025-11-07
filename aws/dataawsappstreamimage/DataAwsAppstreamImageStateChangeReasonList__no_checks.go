@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppstreamImageStateChangeReasonList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppstreamImageStateChangeReasonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppstreamImageStateChangeReasonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

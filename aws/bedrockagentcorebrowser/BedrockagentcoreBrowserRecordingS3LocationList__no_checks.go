@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationList) validateGetPa
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

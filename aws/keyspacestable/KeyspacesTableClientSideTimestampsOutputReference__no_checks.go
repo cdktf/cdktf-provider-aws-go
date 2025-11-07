@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

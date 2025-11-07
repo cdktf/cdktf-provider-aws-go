@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodecatalystDevEnvironmentRepositoriesList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CodecatalystDevEnvironmentRepositoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodecatalystDevEnvironmentRepositoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

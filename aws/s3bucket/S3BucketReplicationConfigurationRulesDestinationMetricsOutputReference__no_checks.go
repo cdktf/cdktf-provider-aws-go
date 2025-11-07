@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutput
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

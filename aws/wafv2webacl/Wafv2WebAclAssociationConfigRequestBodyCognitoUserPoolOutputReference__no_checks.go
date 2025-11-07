@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputR
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

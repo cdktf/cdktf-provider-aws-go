@@ -43,7 +43,7 @@ func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainMatchingAutoMergingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

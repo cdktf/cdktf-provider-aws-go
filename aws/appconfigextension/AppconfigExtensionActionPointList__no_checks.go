@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppconfigExtensionActionPointList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigExtensionActionPointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppconfigExtensionActionPointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

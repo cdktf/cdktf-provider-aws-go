@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOut
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedPrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

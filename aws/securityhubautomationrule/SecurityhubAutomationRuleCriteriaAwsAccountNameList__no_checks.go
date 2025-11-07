@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameList) validate
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaAwsAccountNameList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

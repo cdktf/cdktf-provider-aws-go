@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerHumanTaskUiUiTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

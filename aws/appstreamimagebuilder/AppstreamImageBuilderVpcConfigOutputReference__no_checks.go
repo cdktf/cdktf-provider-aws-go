@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

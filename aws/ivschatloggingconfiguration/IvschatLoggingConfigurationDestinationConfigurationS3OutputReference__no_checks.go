@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputRe
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

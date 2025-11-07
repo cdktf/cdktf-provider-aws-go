@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsDataPointTooltipOpt
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsDataPointTooltipOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateP
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

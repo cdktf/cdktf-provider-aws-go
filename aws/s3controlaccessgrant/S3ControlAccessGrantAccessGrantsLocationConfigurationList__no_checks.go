@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3ControlAccessGrantAccessGrantsLocationConfigurationList) va
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlAccessGrantAccessGrantsLocationConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlAccessGrantAccessGrantsLocationConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

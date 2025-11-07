@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

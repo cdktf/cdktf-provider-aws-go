@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

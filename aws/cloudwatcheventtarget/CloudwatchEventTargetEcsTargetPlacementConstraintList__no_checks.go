@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

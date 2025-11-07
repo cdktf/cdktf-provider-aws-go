@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validatePutFi
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -109,6 +109,8 @@ type ElasticacheReplicationGroup interface {
 	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeGroupConfiguration() ElasticacheReplicationGroupNodeGroupConfigurationList
+	NodeGroupConfigurationInput() interface{}
 	NodeType() *string
 	SetNodeType(val *string)
 	NodeTypeInput() *string
@@ -239,6 +241,7 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogDeliveryConfiguration(value interface{})
+	PutNodeGroupConfiguration(value interface{})
 	PutTimeouts(value *ElasticacheReplicationGroupTimeouts)
 	ResetApplyImmediately()
 	ResetAtRestEncryptionEnabled()
@@ -259,6 +262,7 @@ type ElasticacheReplicationGroup interface {
 	ResetMaintenanceWindow()
 	ResetMultiAzEnabled()
 	ResetNetworkType()
+	ResetNodeGroupConfiguration()
 	ResetNodeType()
 	ResetNotificationTopicArn()
 	ResetNumCacheClusters()
@@ -852,6 +856,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) NodeGroupConfiguration() ElasticacheReplicationGroupNodeGroupConfigurationList {
+	var returns ElasticacheReplicationGroupNodeGroupConfigurationList
+	_jsii_.Get(
+		j,
+		"nodeGroupConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) NodeGroupConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nodeGroupConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) NodeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1393,7 +1417,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1411,7 +1435,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -2305,6 +2329,17 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) PutLogDeliveryConfiguration(valu
 	)
 }
 
+func (e *jsiiProxy_ElasticacheReplicationGroup) PutNodeGroupConfiguration(value interface{}) {
+	if err := e.validatePutNodeGroupConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putNodeGroupConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheReplicationGroup) PutTimeouts(value *ElasticacheReplicationGroupTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2464,6 +2499,14 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNetworkType() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetNetworkType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNodeGroupConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNodeGroupConfiguration",
 		nil, // no parameters
 	)
 }

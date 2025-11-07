@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotInstanceRequestPrimaryNetworkInterfaceOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestPrimaryNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotInstanceRequestPrimaryNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestPrimaryNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotInstanceRequestPrimaryNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

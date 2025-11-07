@@ -43,11 +43,11 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

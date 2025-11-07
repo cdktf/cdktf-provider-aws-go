@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

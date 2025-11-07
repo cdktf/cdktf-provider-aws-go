@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelContainerModelDataSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationOptInResourceDataLfTagExpressionList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationOptInResourceDataLfTagExpressionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationOptInResourceDataLfTagExpressionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

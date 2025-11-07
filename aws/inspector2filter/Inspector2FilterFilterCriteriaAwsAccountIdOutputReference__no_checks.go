@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaAwsAccountIdOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaAwsAccountIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaAwsAccountIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaAwsAccountIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaAwsAccountIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

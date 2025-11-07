@@ -29,9 +29,9 @@ func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SagemakerModelContainerModelDataSourceS3DataSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

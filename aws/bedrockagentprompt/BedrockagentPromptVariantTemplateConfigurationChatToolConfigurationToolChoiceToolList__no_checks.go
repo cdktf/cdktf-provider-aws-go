@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigu
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

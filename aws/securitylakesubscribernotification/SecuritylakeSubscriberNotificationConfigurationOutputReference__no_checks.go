@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

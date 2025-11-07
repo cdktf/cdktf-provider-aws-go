@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

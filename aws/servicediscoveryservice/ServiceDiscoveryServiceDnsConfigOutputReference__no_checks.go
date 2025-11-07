@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validatePutD
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

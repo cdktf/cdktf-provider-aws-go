@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOut
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

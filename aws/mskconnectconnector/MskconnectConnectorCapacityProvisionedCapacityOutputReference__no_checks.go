@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorCapacityProvisionedCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

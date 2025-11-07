@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

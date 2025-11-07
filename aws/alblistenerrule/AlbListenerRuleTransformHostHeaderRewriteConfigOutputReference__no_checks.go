@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleTransformHostHeaderRewriteConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

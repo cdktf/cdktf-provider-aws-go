@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalConditional
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentInitialResponseSettingConditionalConditionalBranchResponseMessageGroupMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

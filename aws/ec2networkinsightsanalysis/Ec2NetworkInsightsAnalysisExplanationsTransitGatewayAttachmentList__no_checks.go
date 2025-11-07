@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmen
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

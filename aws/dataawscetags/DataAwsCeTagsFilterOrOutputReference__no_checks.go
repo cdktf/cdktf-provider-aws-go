@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validatePutTagsParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

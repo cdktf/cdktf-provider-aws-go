@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutpu
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

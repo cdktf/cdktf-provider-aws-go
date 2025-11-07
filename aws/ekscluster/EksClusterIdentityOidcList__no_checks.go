@@ -15,7 +15,7 @@ func (e *jsiiProxy_EksClusterIdentityOidcList) validateGetParameters(index *floa
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterIdentityOidcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterIdentityOidcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

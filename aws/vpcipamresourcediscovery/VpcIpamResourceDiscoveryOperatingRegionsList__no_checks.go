@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsList) validateGetPara
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

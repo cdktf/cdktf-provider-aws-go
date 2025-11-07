@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validatePutM
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

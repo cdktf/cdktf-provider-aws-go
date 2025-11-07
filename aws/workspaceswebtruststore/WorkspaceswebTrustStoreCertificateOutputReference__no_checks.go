@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

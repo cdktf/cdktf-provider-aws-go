@@ -15,7 +15,7 @@ func (s *jsiiProxy_SignerSigningJobRevocationRecordList) validateGetParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_SignerSigningJobRevocationRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignerSigningJobRevocationRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

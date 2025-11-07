@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

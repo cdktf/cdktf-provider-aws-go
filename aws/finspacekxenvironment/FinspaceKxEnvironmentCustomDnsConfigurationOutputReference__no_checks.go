@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AmplifyAppProductionBranchList) validateGetParameters(index *
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppProductionBranchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyAppProductionBranchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

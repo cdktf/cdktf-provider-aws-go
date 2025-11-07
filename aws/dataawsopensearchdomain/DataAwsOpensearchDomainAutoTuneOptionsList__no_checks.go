@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

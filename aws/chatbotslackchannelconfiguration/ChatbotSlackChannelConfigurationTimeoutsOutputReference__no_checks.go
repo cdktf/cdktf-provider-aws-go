@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChatbotSlackChannelConfigurationTimeoutsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ChatbotSlackChannelConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChatbotSlackChannelConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChatbotSlackChannelConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChatbotSlackChannelConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQuer
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

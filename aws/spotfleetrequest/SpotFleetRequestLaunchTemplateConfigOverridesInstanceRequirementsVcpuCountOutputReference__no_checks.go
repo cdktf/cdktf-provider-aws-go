@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

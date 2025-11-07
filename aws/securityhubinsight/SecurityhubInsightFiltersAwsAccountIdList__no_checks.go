@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdList) validateGetParamet
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

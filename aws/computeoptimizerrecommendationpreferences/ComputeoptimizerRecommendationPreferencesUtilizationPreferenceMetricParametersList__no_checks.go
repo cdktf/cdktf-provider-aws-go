@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

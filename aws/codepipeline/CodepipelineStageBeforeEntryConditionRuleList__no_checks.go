@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineStageBeforeEntryConditionRuleList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageBeforeEntryConditionRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageBeforeEntryConditionRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

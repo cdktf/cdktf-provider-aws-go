@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionConnectionConfigurationConditionalO
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionConnectionConfigurationConditionalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

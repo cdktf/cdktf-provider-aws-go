@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeSourceParametersFilterCriteriaFilterList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersFilterCriteriaFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersFilterCriteriaFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

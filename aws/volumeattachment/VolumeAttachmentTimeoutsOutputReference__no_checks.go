@@ -43,11 +43,11 @@ func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VolumeAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

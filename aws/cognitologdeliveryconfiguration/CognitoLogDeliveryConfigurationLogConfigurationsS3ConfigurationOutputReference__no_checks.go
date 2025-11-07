@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsS3Configurati
 	return nil
 }
 
-func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

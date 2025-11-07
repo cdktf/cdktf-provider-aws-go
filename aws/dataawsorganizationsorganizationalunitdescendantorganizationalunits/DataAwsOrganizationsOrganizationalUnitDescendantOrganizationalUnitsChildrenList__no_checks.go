@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantOrganizationa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

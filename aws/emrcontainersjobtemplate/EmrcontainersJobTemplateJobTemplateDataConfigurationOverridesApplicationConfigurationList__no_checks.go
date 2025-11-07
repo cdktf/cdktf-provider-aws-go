@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

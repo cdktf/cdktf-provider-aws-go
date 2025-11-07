@@ -79,6 +79,10 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurat
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutNodeGroupConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutTimeoutsParameters(value *ElasticacheReplicationGroupTimeouts) error {
 	return nil
 }

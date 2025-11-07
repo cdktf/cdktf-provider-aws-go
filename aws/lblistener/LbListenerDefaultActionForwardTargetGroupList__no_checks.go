@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupList) validateGetPar
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerDefaultActionForwardTargetGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

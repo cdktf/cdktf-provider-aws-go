@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

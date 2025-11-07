@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validat
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleNoncurrentVersionTransitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

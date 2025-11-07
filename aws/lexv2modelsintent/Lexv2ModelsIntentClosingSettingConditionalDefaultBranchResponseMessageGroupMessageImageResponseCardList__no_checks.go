@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchRespon
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingConditionalDefaultBranchResponseMessageGroupMessageImageResponseCardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

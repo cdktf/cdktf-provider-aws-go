@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeight
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeight
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

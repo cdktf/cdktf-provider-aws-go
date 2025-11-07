@@ -5,13 +5,13 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfigurationToolToolSpec struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagent_flow#description BedrockagentFlow#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// input_schema block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_flow#input_schema BedrockagentFlow#input_schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagent_flow#input_schema BedrockagentFlow#input_schema}
 	InputSchema interface{} `field:"optional" json:"inputSchema" yaml:"inputSchema"`
 }
 

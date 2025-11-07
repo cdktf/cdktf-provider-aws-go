@@ -15,7 +15,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsList) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

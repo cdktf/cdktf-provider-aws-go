@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsProjectOperatio
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

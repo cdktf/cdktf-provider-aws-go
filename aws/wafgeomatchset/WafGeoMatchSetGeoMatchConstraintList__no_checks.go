@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafGeoMatchSetGeoMatchConstraintList) validateGetParameters(i
 	return nil
 }
 
-func (w *jsiiProxy_WafGeoMatchSetGeoMatchConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafGeoMatchSetGeoMatchConstraintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

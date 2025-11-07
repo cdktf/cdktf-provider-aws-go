@@ -15,7 +15,7 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommo
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionNetworkAclCommonPolicyNetworkAclEntrySetFirstEntryIcmpTypeCodeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

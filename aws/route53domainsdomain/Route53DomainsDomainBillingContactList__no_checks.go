@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53DomainsDomainBillingContactList) validateGetParameters
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsDomainBillingContactList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsDomainBillingContactList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -70,7 +70,7 @@ type EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConf
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCloudWatchMonitoringConfiguration(value *EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration)
 	PutS3MonitoringConfiguration(value *EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration)
 	ResetCloudWatchMonitoringConfiguration()
@@ -78,7 +78,7 @@ type EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConf
 	ResetS3MonitoringConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -485,8 +485,8 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	return returns
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -494,7 +494,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	)
 }
 
-func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (e *jsiiProxy_EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

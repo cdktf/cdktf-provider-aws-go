@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3ControlAccessGrantGranteeOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlAccessGrantGranteeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlAccessGrantGranteeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlAccessGrantGranteeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlAccessGrantGranteeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

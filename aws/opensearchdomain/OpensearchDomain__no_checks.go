@@ -107,6 +107,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutEncryptAtRestParameters(value *O
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validatePutIdentityCenterOptionsParameters(value *OpensearchDomainIdentityCenterOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validatePutLogPublishingOptionsParameters(value interface{}) error {
 	return nil
 }

@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validate
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

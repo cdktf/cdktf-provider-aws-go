@@ -15,7 +15,7 @@ func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DsqlClusterMultiRegionPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

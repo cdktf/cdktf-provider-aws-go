@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSel
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

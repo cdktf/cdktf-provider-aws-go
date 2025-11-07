@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBackupPlanRuleLifecycleOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupPlanRuleLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBackupPlanRuleLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupPlanRuleLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBackupPlanRuleLifecycleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

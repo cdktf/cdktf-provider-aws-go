@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateGetString
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

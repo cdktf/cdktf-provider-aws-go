@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

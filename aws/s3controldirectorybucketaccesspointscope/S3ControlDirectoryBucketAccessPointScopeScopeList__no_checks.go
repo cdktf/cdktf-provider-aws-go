@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

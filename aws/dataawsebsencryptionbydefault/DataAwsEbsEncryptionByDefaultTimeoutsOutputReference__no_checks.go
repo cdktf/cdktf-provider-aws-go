@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEbsEncryptionByDefaultTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

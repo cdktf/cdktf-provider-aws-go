@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueUserDefinedFunctionResourceUrisList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

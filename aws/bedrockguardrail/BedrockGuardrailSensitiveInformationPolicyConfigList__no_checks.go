@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigList) validat
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailSensitiveInformationPolicyConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

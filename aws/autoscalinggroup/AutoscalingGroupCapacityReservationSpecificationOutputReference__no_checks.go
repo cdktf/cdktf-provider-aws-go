@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupCapacityReservationSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

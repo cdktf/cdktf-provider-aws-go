@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsisPipelineBufferOptionsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineBufferOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsisPipelineBufferOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineBufferOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineBufferOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

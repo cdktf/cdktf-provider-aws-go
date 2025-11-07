@@ -15,7 +15,7 @@ func (q *jsiiProxy_QbusinessApplicationAttachmentsConfigurationList) validateGet
 	return nil
 }
 
-func (q *jsiiProxy_QbusinessApplicationAttachmentsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QbusinessApplicationAttachmentsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

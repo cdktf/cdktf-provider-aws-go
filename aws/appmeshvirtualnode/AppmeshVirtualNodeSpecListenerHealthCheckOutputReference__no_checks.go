@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

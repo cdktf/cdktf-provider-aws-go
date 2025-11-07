@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDbProxyAuthList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDbProxyAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDbProxyAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

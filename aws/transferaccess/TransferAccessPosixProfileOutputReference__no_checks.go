@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateGetStringM
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessPosixProfileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validatePutIm
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

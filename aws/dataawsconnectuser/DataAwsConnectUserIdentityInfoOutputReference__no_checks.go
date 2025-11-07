@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectUserIdentityInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

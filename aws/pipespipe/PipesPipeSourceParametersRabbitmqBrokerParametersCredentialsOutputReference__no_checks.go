@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsO
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersRabbitmqBrokerParametersCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

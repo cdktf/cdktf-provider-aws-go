@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetFieldFoldersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesCon
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionNodePropertiesNodeRangePropertiesContainerVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

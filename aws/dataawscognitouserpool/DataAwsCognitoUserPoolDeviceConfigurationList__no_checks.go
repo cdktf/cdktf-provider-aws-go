@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolDeviceConfigurationList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolDeviceConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolDeviceConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) validateGetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

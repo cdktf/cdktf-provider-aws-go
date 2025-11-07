@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowDestinationFlowConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

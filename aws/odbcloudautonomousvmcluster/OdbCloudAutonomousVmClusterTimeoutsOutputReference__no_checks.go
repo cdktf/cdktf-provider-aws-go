@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbCloudAutonomousVmClusterTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudAutonomousVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudAutonomousVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudAutonomousVmClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudAutonomousVmClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

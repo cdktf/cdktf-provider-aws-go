@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

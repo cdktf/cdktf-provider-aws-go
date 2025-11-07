@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTrafficSourceOutputReferenc
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTrafficSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTrafficSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTrafficSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTrafficSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

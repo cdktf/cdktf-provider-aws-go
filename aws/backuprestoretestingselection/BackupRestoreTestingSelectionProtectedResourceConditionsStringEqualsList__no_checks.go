@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupRestoreTestingSelectionProtectedResourceConditionsStrin
 	return nil
 }
 
-func (b *jsiiProxy_BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupRestoreTestingSelectionProtectedResourceConditionsStringEqualsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

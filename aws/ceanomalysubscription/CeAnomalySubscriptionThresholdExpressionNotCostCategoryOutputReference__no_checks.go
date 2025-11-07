@@ -43,11 +43,11 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutput
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

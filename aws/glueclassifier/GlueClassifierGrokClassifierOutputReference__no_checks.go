@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

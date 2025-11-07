@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationBl
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationBlocklistStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

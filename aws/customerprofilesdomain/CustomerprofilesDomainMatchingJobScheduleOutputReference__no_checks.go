@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomerprofilesDomainMatchingJobScheduleOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainMatchingJobScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesDomainMatchingJobScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainMatchingJobScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainMatchingJobScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

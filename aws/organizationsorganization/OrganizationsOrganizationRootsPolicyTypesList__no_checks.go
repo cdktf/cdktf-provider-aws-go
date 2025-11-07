@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) validateGetPar
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationsOrganizationRootsPolicyTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

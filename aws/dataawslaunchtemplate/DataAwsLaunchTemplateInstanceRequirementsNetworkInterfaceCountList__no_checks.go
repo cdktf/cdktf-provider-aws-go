@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCoun
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionAc
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

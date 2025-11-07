@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppconfigConfigurationProfileValidatorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

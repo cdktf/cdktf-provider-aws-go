@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

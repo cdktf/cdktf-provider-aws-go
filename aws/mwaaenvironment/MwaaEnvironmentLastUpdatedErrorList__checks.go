@@ -27,9 +27,9 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

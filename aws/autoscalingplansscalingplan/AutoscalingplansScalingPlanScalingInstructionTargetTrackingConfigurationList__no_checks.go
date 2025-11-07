@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingCo
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

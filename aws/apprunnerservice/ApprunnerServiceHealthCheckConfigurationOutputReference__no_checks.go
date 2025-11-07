@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerServiceHealthCheckConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validatePutThrot
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

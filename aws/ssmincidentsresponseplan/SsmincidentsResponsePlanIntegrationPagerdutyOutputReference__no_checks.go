@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

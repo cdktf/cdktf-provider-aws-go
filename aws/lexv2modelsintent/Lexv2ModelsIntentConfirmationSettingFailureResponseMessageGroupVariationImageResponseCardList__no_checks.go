@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureResponseMessageGro
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureResponseMessageGroupVariationImageResponseCardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentConfirmationSettingFailureResponseMessageGroupVariationImageResponseCardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

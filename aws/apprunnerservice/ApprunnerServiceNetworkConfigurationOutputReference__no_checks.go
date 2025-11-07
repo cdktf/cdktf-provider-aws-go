@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

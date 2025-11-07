@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/transfer_web_app aws_transfer_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/transfer_web_app aws_transfer_web_app}.
 type TransferWebApp interface {
 	cdktf.TerraformResource
 	AccessEndpoint() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_TransferWebApp) WebAppUnitsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource.
 func NewTransferWebApp(scope constructs.Construct, id *string, config *TransferWebAppConfig) TransferWebApp {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewTransferWebApp(scope constructs.Construct, id *string, config *TransferW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource.
 func NewTransferWebApp_Override(t TransferWebApp, scope constructs.Construct, id *string, config *TransferWebAppConfig) {
 	_init_.Initialize()
 

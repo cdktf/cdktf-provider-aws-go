@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

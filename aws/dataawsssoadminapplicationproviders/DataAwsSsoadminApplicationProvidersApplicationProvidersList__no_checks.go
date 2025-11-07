@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

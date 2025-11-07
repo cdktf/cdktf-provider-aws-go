@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDbInstanceMasterUserSecretList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDbInstanceMasterUserSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDbInstanceMasterUserSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

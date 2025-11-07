@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbList) validateGetPar
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineEndpointsSmbList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

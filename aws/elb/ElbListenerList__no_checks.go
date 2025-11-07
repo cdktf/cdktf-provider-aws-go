@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElbListenerList) validateGetParameters(index *float64) error 
 	return nil
 }
 
-func (e *jsiiProxy_ElbListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElbListenerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

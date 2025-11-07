@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigList) 
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) val
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MskReplicatorKafkaClusterList) validateGetParameters(index *f
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorKafkaClusterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorKafkaClusterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

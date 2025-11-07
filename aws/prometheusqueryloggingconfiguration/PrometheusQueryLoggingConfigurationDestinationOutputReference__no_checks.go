@@ -43,7 +43,7 @@ func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

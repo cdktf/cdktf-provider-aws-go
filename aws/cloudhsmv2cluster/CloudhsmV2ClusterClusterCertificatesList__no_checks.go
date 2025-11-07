@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbListenerRuleActionList) validateGetParameters(index *float6
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerRuleActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodeguruprofilerProfilingGroupAgentOrchestrationConfigList) v
 	return nil
 }
 
-func (c *jsiiProxy_CodeguruprofilerProfilingGroupAgentOrchestrationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodeguruprofilerProfilingGroupAgentOrchestrationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

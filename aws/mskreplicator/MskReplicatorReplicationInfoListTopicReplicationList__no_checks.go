@@ -15,7 +15,7 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationList) validat
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

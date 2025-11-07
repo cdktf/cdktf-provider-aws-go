@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutpu
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

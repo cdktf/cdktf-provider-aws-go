@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeAwsLogSourceSourceList) validateGetParameters(ind
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeAwsLogSourceSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeAwsLogSourceSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

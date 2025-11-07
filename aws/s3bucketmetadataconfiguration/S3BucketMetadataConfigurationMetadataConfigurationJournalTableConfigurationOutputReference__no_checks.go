@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTabl
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTabl
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

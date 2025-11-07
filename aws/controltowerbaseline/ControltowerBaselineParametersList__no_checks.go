@@ -15,7 +15,7 @@ func (c *jsiiProxy_ControltowerBaselineParametersList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ControltowerBaselineParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ControltowerBaselineParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

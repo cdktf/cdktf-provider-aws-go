@@ -41,7 +41,7 @@ type IotTopicRuleLambdaList interface {
 	Get(index *float64) IotTopicRuleLambdaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_IotTopicRuleLambdaList) Get(index *float64) IotTopicRuleLambd
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleLambdaList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleLambdaList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_IotTopicRuleLambdaList) Resolve(_context cdktf.IResolveContex
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

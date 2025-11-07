@@ -15,7 +15,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationList) valid
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

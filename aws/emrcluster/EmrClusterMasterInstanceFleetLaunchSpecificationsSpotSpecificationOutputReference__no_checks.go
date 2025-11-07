@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecific
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

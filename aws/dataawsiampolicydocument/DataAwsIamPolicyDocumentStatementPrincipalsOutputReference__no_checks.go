@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementPrincipalsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

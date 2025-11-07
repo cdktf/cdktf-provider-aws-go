@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxScalingGroupTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxScalingGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxScalingGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxScalingGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxScalingGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

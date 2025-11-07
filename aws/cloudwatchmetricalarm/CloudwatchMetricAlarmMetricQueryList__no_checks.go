@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

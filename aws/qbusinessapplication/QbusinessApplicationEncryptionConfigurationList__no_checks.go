@@ -15,7 +15,7 @@ func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationList) validateGetP
 	return nil
 }
 
-func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

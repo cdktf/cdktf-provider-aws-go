@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineStageOnFailureConditionRuleList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnFailureConditionRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnFailureConditionRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

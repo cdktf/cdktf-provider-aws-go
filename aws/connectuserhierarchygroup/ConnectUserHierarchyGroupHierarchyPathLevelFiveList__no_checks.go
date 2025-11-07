@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

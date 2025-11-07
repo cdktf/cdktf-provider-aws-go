@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

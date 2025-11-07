@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

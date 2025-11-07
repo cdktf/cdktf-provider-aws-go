@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

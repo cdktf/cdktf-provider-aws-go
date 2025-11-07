@@ -15,7 +15,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesA
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaIncludesAndList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

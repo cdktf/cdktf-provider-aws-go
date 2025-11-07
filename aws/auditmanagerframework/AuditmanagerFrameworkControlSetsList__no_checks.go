@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

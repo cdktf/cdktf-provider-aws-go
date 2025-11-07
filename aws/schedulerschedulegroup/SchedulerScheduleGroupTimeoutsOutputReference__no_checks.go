@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

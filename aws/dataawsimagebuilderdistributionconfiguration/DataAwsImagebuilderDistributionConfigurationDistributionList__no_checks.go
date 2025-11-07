@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

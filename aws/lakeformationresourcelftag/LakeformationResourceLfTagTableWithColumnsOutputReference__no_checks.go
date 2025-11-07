@@ -43,7 +43,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationResourceLfTagTableWithColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

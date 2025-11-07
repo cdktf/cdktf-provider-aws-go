@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedshiftdataStatementParametersList) validateGetParameters(in
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftdataStatementParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftdataStatementParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

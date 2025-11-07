@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

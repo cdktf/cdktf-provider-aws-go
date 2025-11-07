@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2CapacityBlockReservationTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_Ec2CapacityBlockReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2CapacityBlockReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2CapacityBlockReservationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2CapacityBlockReservationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsList) validateGetPa
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationsOrganizationNonMasterAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

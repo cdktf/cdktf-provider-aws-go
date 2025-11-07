@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

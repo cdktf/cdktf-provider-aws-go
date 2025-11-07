@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleList) validateGetParameter
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

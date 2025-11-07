@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

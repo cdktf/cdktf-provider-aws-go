@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralS
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesEphemeralStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

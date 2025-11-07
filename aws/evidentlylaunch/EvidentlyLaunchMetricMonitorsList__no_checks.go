@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateGetParameters(inde
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

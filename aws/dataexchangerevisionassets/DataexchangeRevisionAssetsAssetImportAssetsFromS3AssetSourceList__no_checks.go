@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceL
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbEventSubscriptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

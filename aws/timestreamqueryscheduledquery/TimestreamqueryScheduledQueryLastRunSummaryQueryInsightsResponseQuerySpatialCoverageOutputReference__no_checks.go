@@ -43,7 +43,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespo
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespo
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

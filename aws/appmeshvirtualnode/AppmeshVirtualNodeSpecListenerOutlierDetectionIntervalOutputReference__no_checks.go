@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputR
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

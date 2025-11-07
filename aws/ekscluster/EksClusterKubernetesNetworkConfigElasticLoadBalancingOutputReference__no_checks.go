@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputRe
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigElasticLoadBalancingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

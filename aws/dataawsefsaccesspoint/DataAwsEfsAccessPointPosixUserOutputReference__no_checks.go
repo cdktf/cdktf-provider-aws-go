@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbTargetGroupTargetFailoverList) validateGetParameters(index 
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupTargetFailoverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbTargetGroupTargetFailoverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

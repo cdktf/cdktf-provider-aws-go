@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupLogicallyAirGappedVaultTimeoutsOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BackupLogicallyAirGappedVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupLogicallyAirGappedVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupLogicallyAirGappedVaultTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupLogicallyAirGappedVaultTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

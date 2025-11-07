@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBa
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

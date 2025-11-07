@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

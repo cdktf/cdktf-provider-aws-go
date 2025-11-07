@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList)
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

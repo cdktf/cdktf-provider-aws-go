@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

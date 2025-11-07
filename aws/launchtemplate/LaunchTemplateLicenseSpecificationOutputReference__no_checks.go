@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

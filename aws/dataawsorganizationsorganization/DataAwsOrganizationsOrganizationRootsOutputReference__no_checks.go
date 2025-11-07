@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (f *jsiiProxy_FmsResourceSetResourceSetList) validateGetParameters(index *f
 	return nil
 }
 
-func (f *jsiiProxy_FmsResourceSetResourceSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FmsResourceSetResourceSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

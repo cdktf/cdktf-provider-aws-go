@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

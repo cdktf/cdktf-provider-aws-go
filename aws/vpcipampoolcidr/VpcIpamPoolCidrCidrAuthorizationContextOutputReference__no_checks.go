@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) valid
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

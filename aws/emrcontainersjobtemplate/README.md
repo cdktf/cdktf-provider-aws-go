@@ -1,3 +1,3 @@
 # `aws_emrcontainers_job_template`
 
-Refer to the Terraform Registry for docs: [`aws_emrcontainers_job_template`](https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/emrcontainers_job_template).
+Refer to the Terraform Registry for docs: [`aws_emrcontainers_job_template`](https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/emrcontainers_job_template).

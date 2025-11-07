@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

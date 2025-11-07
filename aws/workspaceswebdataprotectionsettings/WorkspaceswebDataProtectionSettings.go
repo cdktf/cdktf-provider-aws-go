@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings}.
 type WorkspaceswebDataProtectionSettings interface {
 	cdktf.TerraformResource
 	AdditionalEncryptionContext() *map[string]*string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_WorkspaceswebDataProtectionSettings) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
 func NewWorkspaceswebDataProtectionSettings(scope constructs.Construct, id *string, config *WorkspaceswebDataProtectionSettingsConfig) WorkspaceswebDataProtectionSettings {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewWorkspaceswebDataProtectionSettings(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_data_protection_settings aws_workspacesweb_data_protection_settings} Resource.
 func NewWorkspaceswebDataProtectionSettings_Override(w WorkspaceswebDataProtectionSettings, scope constructs.Construct, id *string, config *WorkspaceswebDataProtectionSettingsConfig) {
 	_init_.Initialize()
 

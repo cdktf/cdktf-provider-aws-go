@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDashboardParametersIntegerParametersList) validateG
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersIntegerParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardParametersIntegerParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

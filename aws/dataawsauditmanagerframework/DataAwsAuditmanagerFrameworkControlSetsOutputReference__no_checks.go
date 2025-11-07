@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

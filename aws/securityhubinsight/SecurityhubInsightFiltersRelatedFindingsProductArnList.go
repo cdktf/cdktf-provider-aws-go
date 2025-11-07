@@ -41,7 +41,7 @@ type SecurityhubInsightFiltersRelatedFindingsProductArnList interface {
 	Get(index *float64) SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) Get(i
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList) Resol
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

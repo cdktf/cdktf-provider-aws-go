@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

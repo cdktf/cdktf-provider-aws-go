@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validatePutManagedSto
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

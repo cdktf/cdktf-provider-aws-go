@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesReceiptRuleStopActionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleStopActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleStopActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

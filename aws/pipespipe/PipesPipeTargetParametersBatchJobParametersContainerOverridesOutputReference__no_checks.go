@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverrides
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverrides
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

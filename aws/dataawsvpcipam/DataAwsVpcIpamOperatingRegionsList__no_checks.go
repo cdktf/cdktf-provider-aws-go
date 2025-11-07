@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcIpamOperatingRegionsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamOperatingRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamOperatingRegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

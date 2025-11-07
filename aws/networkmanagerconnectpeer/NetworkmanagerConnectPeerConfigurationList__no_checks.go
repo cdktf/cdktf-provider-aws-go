@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationList) validateGetParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

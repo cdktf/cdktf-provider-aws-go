@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

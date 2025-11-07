@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

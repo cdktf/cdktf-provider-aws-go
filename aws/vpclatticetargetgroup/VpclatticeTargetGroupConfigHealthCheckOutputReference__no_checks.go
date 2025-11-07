@@ -43,7 +43,7 @@ func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeTargetGroupConfigHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

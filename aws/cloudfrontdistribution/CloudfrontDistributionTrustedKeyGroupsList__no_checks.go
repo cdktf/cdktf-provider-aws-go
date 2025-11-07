@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

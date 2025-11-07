@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAlbAccessLogsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbAccessLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAlbAccessLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbAccessLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbAccessLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

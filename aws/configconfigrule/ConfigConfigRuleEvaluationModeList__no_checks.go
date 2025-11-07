@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigConfigRuleEvaluationModeList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigRuleEvaluationModeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigRuleEvaluationModeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -41,7 +41,7 @@ type SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList interface {
 	Get(index *float64) SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList) 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList) 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

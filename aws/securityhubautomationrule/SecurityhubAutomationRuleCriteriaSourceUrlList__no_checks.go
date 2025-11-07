@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaSourceUrlList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaSourceUrlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaSourceUrlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

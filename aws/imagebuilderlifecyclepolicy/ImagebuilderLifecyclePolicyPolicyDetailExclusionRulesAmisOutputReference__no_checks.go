@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutp
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutp
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesAmisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

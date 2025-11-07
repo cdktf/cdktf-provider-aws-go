@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraFaqS3PathList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraFaqS3PathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraFaqS3PathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

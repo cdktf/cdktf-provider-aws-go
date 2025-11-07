@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

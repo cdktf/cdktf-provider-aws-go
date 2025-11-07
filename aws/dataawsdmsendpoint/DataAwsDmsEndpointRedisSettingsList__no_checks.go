@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointRedisSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

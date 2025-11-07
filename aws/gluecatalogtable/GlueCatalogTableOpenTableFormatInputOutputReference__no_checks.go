@@ -43,7 +43,7 @@ func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsPrefixListFilterOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsPrefixListFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsPrefixListFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsPrefixListFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsPrefixListFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

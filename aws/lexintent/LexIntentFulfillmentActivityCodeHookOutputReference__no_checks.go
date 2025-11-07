@@ -43,11 +43,11 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

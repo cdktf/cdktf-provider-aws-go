@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

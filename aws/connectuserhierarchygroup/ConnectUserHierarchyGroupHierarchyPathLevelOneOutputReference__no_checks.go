@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

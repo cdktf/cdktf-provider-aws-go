@@ -43,11 +43,11 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleScriptsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

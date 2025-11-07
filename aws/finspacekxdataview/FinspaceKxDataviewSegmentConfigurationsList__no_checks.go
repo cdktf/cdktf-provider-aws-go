@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsList) validateGetParam
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainEncryptionAtRestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

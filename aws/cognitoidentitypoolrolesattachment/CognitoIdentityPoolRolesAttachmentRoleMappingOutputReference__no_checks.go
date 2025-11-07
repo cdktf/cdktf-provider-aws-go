@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

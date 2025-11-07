@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

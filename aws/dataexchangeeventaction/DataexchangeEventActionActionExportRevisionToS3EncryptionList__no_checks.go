@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3EncryptionList
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3EncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3EncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

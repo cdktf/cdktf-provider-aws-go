@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

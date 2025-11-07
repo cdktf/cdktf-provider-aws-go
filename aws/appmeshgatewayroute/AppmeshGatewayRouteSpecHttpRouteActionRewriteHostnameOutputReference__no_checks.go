@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

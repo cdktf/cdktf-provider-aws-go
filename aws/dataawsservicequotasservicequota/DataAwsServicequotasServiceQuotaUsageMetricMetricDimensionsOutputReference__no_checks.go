@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

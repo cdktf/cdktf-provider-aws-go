@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

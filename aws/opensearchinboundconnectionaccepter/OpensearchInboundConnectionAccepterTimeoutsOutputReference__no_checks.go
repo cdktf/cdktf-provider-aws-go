@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchInboundConnectionAccepterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

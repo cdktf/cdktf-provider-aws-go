@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionFieldOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

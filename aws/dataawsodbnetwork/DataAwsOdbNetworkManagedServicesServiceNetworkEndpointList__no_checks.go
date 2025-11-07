@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

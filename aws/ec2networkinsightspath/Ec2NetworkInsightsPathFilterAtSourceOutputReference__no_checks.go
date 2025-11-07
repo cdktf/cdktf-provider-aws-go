@@ -43,7 +43,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

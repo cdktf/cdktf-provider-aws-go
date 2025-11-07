@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsBotMembersList) validateGetParameters(index *float
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsBotMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

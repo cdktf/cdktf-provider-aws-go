@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReferenc
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

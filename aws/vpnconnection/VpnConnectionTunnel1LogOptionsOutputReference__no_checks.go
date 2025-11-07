@@ -43,7 +43,7 @@ func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validatePutClo
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

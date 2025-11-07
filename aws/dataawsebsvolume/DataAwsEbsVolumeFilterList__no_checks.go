@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEbsVolumeFilterList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsVolumeFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEbsVolumeFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

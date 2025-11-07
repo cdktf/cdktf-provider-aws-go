@@ -43,7 +43,7 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

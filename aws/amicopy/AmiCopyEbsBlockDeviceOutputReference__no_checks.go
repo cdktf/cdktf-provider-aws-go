@@ -43,11 +43,11 @@ func (a *jsiiProxy_AmiCopyEbsBlockDeviceOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmiCopyEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiCopyEbsBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

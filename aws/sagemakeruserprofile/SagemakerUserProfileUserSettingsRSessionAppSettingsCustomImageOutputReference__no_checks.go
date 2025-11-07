@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImag
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

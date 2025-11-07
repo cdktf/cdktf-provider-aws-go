@@ -43,7 +43,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

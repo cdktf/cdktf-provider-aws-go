@@ -43,7 +43,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputRe
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputRe
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

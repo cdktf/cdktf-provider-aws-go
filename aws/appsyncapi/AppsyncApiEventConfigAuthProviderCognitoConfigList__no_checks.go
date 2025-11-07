@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigList) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validatePutAut
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

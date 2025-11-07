@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTa
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTa
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

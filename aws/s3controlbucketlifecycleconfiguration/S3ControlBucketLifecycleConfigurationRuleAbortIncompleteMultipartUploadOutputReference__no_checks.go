@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMulti
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigS
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreOauth2CredentialProviderOauth2ProviderConfigSlackOauth2ProviderConfigOauthDiscoveryAuthorizationServerMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

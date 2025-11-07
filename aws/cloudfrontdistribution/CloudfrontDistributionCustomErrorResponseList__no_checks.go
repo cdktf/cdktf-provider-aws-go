@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

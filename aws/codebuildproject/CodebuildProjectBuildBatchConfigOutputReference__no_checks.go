@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validatePutR
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

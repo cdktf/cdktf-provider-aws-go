@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

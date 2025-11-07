@@ -43,7 +43,7 @@ func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validatePutRemo
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

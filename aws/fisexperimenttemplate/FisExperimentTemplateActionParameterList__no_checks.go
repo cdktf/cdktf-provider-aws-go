@@ -15,7 +15,7 @@ func (f *jsiiProxy_FisExperimentTemplateActionParameterList) validateGetParamete
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateActionParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FisExperimentTemplateActionParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -27,9 +27,9 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetai
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

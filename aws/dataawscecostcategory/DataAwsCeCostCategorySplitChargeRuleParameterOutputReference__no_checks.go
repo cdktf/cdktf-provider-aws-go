@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

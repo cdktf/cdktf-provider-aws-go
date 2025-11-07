@@ -78,14 +78,14 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetIops()
 	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -576,8 +576,8 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) InterpolationAs
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -585,7 +585,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -624,8 +624,8 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ResetVolumeType
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

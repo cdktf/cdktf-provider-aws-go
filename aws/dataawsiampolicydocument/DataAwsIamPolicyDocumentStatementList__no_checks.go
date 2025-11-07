@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

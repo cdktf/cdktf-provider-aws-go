@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsOutputReference) vali
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpamResourceDiscoveryOperatingRegionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

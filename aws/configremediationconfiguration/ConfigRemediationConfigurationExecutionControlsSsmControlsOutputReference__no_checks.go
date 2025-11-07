@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOut
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

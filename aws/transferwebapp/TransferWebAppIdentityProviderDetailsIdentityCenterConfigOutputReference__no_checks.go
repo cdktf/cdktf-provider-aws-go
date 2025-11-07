@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutp
 	return nil
 }
 
-func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

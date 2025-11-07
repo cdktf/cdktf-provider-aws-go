@@ -39,7 +39,7 @@ type DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigLis
 	Get(index *float64) DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncry
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncry
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

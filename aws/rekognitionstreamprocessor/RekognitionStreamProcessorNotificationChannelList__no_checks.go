@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorNotificationChannelList) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorNotificationChannelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorNotificationChannelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

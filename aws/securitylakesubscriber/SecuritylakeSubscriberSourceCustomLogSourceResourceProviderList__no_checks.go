@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeSubscriberSourceCustomLogSourceResourceProviderLi
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

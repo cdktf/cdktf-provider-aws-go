@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPric
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPric
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParamet
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

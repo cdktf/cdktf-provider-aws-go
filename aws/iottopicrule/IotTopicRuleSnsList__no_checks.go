@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleSnsList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleSnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleSnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

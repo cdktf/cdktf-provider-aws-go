@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

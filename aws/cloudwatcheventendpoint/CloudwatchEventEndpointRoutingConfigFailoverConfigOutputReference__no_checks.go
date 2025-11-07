@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateGetStri
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validatePutWebC
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

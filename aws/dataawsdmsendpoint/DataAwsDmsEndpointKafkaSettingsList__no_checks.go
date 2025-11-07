@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

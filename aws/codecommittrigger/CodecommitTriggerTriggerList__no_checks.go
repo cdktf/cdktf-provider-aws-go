@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodecommitTriggerTriggerList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_CodecommitTriggerTriggerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodecommitTriggerTriggerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

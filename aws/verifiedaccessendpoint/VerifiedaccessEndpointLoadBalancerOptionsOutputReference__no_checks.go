@@ -43,7 +43,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) val
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

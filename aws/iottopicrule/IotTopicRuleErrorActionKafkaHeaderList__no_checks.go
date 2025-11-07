@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionKafkaHeaderList) validateGetParameters
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionKafkaHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionKafkaHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

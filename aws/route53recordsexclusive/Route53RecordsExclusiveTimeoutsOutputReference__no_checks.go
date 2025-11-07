@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordsExclusiveTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordsExclusiveTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordsExclusiveTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordsExclusiveTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

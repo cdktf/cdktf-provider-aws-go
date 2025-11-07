@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesOutputRefer
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

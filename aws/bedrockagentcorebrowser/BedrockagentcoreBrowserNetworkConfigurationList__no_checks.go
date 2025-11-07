@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationList) validateGetP
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

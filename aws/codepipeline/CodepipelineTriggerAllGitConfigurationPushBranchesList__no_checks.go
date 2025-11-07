@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushBranchesList) valid
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushBranchesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushBranchesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

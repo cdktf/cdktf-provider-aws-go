@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigConformancePackInputParameterList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConformancePackInputParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConformancePackInputParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

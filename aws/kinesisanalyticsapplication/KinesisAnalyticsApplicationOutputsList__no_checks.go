@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateGetParameters
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

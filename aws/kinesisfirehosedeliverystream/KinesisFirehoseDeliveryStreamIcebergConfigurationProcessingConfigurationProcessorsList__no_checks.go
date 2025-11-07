@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingCo
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamIcebergConfigurationProcessingConfigurationProcessorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

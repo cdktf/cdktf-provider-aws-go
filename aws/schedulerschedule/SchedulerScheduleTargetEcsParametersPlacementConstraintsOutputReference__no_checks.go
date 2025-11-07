@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

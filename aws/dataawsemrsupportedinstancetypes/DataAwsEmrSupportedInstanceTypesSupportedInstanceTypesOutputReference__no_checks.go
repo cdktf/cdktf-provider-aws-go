@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

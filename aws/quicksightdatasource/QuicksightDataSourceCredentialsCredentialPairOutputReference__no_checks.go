@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference)
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceCredentialsCredentialPairOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

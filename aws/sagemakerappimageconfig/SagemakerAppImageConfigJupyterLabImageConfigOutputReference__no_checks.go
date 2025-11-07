@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

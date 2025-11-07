@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

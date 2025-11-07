@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

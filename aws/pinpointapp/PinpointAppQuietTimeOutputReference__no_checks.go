@@ -43,11 +43,11 @@ func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointAppQuietTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

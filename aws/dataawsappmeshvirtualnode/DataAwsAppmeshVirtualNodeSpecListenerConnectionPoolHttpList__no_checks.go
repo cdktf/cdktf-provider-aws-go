@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

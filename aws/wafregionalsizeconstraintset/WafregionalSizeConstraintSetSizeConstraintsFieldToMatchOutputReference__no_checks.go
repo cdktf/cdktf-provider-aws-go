@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutput
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

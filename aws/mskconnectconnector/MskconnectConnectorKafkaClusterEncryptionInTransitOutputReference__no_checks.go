@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputRefer
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

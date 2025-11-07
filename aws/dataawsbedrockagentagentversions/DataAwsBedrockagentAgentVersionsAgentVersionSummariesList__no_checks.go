@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

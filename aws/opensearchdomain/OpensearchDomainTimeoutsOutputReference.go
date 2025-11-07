@@ -72,13 +72,13 @@ type OpensearchDomainTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (o *jsiiProxy_OpensearchDomainTimeoutsOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

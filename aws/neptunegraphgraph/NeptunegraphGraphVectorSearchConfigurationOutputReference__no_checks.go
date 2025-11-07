@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationOutputReference) va
 	return nil
 }
 
-func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

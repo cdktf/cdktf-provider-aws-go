@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) vali
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalGeoMatchSetGeoMatchConstraintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

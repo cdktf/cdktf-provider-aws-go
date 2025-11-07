@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsO
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

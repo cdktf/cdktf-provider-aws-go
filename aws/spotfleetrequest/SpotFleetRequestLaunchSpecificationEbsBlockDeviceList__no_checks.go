@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) valida
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

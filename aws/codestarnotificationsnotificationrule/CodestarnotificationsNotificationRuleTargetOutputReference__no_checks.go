@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) valida
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

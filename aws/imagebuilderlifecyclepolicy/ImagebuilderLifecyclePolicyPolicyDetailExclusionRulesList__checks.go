@@ -29,9 +29,9 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList) va
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailExclusionRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

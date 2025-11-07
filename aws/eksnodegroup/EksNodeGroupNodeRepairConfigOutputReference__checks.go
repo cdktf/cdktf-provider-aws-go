@@ -85,17 +85,48 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validatePutNodeRepairConfigOverridesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides:
+		value := value.(*[]*EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides:
+		value_ := value.([]*EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EksNodeGroupNodeRepairConfigNodeRepairConfigOverrides; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -189,6 +220,38 @@ func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetEnabl
 func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetInternalValueParameters(val *EksNodeGroupNodeRepairConfig) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxParallelNodesRepairedCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxParallelNodesRepairedPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxUnhealthyNodeThresholdCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxUnhealthyNodeThresholdPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

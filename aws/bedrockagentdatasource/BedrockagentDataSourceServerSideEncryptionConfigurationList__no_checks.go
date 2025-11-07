@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationList) 
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

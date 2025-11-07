@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

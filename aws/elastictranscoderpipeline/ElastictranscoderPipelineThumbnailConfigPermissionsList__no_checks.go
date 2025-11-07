@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) vali
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

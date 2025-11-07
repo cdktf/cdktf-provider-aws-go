@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkSegmentsList) validateGetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetworkSegmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerCoreNetworkSegmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

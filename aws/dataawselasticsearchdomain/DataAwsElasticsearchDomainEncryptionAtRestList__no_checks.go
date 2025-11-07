@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEncryptionAtRestList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEncryptionAtRestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticsearchDomainEncryptionAtRestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

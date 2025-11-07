@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

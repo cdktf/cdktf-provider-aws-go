@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

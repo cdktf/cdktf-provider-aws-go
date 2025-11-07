@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmResourceDataSyncS3DestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

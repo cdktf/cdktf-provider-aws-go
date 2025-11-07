@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerR
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

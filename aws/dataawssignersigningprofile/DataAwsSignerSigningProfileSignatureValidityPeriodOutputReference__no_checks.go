@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

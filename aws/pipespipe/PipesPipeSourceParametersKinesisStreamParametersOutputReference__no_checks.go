@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersKinesisStreamParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

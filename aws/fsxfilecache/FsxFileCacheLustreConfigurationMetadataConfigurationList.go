@@ -41,7 +41,7 @@ type FsxFileCacheLustreConfigurationMetadataConfigurationList interface {
 	Get(index *float64) FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) Get
 	return returns
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationList) Res
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

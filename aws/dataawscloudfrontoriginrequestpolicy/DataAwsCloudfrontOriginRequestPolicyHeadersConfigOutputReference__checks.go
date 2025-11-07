@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionQueryStringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

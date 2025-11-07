@@ -43,7 +43,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validateGetString
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validatePutHttpHe
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

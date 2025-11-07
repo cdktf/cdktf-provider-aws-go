@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

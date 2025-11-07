@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRoute53ProfilesProfilesProfilesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53ProfilesProfilesProfilesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRoute53ProfilesProfilesProfilesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53ProfilesProfilesProfilesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53ProfilesProfilesProfilesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

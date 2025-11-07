@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

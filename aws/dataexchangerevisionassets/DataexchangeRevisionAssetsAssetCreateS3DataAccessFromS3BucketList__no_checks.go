@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

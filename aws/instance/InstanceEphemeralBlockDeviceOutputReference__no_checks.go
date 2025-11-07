@@ -43,11 +43,11 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceEphemeralBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

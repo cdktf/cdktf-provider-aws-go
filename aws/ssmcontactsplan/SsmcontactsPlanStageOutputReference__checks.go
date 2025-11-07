@@ -85,9 +85,9 @@ func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validatePutTargetParamet
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SsmcontactsPlanStageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

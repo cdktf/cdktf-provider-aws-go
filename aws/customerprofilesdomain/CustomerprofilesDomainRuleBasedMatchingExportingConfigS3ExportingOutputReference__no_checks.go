@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Expor
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

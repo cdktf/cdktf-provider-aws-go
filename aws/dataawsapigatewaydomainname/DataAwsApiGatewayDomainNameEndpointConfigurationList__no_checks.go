@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

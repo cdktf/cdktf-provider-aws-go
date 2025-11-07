@@ -43,11 +43,11 @@ func (d *jsiiProxy_DsqlClusterPeeringTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterPeeringTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DsqlClusterPeeringTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterPeeringTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DsqlClusterPeeringTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

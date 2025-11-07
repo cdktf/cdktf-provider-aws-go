@@ -41,7 +41,7 @@ type KmsGrantConstraintsList interface {
 	Get(index *float64) KmsGrantConstraintsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (k *jsiiProxy_KmsGrantConstraintsList) Get(index *float64) KmsGrantConstrai
 	return returns
 }
 
-func (k *jsiiProxy_KmsGrantConstraintsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KmsGrantConstraintsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (k *jsiiProxy_KmsGrantConstraintsList) Resolve(_context cdktf.IResolveConte
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

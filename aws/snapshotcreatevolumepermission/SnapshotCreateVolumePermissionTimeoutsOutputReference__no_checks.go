@@ -43,11 +43,11 @@ func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnapshotCreateVolumePermissionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

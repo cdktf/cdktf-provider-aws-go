@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validatePutLogConfigPar
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

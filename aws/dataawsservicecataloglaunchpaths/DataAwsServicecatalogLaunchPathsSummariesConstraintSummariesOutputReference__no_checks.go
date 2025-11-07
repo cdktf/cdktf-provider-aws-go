@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesO
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

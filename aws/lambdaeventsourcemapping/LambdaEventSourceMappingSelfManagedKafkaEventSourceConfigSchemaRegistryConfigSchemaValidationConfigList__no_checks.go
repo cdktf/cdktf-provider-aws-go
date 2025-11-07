@@ -15,7 +15,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSche
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

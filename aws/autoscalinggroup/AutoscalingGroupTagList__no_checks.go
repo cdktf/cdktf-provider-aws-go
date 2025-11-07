@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingGroupTagList) validateGetParameters(index *float64
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

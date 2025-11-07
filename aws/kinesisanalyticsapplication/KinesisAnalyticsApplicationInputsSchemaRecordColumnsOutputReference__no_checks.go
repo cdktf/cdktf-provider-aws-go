@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

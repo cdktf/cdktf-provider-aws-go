@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

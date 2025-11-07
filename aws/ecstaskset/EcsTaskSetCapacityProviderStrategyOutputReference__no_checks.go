@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

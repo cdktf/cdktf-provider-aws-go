@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

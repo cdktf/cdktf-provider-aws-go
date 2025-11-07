@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

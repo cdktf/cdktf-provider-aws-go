@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTimeoutOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

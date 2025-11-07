@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigO
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

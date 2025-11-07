@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return nil
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutput
 	return nil
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

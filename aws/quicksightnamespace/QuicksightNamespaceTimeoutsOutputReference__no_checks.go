@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightNamespaceTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightNamespaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightNamespaceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

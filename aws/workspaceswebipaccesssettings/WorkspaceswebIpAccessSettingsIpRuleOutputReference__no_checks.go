@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

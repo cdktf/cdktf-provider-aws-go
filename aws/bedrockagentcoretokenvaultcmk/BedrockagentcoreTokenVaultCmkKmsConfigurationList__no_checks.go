@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreTokenVaultCmkKmsConfigurationList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreTokenVaultCmkKmsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreTokenVaultCmkKmsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointI
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

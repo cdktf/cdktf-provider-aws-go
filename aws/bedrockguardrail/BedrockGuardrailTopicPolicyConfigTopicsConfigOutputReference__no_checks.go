@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference)
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailTopicPolicyConfigTopicsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

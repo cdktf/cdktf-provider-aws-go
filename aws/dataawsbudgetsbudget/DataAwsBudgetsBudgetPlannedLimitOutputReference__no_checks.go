@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBudgetsBudgetPlannedLimitOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetPlannedLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetPlannedLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetPlannedLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetPlannedLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

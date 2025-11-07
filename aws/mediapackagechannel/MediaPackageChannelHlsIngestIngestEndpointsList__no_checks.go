@@ -15,7 +15,7 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

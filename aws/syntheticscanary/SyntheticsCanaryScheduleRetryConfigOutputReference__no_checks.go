@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleRetryConfigOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleRetryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryScheduleRetryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleRetryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryScheduleRetryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

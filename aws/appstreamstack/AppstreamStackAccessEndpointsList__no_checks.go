@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateGetParameters(inde
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

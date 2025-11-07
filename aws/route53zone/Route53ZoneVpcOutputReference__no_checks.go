@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53ZoneVpcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

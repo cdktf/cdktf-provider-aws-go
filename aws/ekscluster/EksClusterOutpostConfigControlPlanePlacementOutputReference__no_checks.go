@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterOutpostConfigControlPlanePlacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

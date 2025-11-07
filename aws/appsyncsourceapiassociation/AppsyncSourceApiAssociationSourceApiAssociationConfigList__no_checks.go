@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncSourceApiAssociationSourceApiAssociationConfigList) va
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncSourceApiAssociationSourceApiAssociationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncSourceApiAssociationSourceApiAssociationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

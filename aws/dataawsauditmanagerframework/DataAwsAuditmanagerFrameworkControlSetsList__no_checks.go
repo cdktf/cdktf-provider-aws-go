@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAuditmanagerFrameworkControlSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

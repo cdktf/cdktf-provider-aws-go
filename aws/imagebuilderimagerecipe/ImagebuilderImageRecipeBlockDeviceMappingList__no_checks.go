@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateGetPar
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionRestrictionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

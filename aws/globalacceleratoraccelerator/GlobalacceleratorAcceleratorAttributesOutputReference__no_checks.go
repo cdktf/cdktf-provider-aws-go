@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

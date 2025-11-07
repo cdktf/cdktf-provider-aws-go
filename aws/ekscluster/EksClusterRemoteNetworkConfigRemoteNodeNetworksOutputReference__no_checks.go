@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReferenc
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemoteNodeNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

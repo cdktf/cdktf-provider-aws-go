@@ -43,7 +43,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validatePutS3Log
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

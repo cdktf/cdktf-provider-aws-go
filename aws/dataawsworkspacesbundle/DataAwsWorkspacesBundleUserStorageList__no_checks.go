@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsWorkspacesBundleUserStorageList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundleUserStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesBundleUserStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

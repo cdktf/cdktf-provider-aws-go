@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

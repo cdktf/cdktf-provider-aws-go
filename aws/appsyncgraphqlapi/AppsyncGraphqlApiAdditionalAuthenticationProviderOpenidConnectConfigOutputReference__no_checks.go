@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnec
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

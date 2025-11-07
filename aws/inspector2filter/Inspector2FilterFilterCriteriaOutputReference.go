@@ -155,7 +155,7 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAwsAccountId(value interface{})
 	PutCodeRepositoryProjectName(value interface{})
 	PutCodeRepositoryProviderType(value interface{})
@@ -250,7 +250,7 @@ type Inspector2FilterFilterCriteriaOutputReference interface {
 	ResetVulnerablePackages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -1506,8 +1506,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) InterpolationA
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -1515,7 +1515,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) InterpolationF
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -2396,8 +2396,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) ResetVulnerabl
 	)
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -2405,7 +2405,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

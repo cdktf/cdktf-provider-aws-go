@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpclatticeServiceDnsEntryList) validateGetParameters(index *f
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeServiceDnsEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeServiceDnsEntryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

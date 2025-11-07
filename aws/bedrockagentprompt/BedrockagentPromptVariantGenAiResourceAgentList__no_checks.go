@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceAgentList) validateGetP
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceAgentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceAgentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

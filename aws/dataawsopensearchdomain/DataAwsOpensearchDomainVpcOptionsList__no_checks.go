@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

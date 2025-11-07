@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamList) valida
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

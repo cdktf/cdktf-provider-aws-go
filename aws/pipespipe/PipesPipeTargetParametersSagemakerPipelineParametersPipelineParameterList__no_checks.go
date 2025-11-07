@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersPipelineP
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersPipelineParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

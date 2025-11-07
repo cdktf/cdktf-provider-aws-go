@@ -43,7 +43,7 @@ func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

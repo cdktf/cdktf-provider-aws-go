@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

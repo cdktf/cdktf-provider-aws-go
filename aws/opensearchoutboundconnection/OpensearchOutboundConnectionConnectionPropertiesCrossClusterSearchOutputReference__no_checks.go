@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchOutboundConnectionConnectionPropertiesCrossClusterS
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

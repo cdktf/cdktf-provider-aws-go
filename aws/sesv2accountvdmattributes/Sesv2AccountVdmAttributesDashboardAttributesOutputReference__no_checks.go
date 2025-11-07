@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2AccountVdmAttributesDashboardAttributesOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2AccountVdmAttributesDashboardAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2AccountVdmAttributesDashboardAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2AccountVdmAttributesDashboardAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2AccountVdmAttributesDashboardAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

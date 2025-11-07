@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

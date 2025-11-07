@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationI
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationRetentionConfigurationIcebergConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

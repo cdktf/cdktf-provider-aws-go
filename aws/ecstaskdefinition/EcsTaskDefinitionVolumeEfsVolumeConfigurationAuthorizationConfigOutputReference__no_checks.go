@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationCon
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EfsFileSystemLifecyclePolicyList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemLifecyclePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsFileSystemLifecyclePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

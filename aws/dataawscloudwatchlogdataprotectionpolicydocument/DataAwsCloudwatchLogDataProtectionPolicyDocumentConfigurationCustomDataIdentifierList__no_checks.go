@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentConfiguration
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentConfigurationCustomDataIdentifierList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

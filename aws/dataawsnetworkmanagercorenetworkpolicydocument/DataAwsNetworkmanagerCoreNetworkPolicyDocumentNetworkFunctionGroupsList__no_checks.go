@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunction
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

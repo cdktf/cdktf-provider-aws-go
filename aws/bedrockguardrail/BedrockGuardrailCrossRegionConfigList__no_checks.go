@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockGuardrailCrossRegionConfigList) validateGetParameters(
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailCrossRegionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailCrossRegionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validatePutS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildReportGroupExportConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

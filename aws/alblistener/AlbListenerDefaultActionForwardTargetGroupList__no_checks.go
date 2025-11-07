@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateGetPa
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

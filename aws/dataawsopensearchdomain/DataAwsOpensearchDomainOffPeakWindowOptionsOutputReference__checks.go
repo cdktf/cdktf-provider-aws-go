@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -190,13 +190,21 @@ func (j *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) v
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

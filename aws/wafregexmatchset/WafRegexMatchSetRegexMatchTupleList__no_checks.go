@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateGetParameters(in
 	return nil
 }
 
-func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

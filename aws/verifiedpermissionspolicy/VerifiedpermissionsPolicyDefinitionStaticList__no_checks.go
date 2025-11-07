@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionStaticList) validateGetPar
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionStaticList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionStaticList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayRestApiEndpointConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

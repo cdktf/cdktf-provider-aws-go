@@ -43,11 +43,11 @@ func (g *jsiiProxy_GameliftBuildStorageLocationOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GameliftBuildStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftBuildStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftBuildStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftBuildStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirew
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

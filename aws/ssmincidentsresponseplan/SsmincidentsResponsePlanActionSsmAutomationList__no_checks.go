@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationList) validateGetP
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

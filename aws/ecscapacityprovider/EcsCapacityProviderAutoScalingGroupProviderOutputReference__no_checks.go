@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersOutputReference) validateGetS
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

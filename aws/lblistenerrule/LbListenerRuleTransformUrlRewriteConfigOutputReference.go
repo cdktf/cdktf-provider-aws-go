@@ -65,12 +65,12 @@ type LbListenerRuleTransformUrlRewriteConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutRewrite(value *LbListenerRuleTransformUrlRewriteConfigRewrite)
 	ResetRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -426,8 +426,8 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Inter
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -435,7 +435,7 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Inter
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Reset
 	)
 }
 
-func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (l *jsiiProxy_LbListenerRuleTransformUrlRewriteConfigOutputReference) Resol
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

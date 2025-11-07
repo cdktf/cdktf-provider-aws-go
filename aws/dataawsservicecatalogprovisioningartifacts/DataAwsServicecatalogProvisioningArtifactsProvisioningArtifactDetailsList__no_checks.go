@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsProvisioningArtifac
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicecatalogProvisioningArtifactsProvisioningArtifactDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

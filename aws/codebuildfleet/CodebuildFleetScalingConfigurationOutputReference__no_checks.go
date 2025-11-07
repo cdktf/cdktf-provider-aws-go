@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildFleetScalingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

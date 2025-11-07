@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputR
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigManagedWordListsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

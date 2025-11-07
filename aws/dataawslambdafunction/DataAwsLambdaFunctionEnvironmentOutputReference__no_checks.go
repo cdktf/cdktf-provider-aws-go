@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionEnvironmentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

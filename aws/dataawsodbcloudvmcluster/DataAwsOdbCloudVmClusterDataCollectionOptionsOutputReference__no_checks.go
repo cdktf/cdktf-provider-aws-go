@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbCloudVmClusterDataCollectionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

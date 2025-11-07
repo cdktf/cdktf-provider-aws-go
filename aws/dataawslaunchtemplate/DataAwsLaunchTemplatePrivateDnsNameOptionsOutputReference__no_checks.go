@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

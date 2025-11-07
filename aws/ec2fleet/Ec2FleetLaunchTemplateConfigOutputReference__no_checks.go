@@ -43,7 +43,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validatePutOverr
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

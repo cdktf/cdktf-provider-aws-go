@@ -15,7 +15,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelinePar
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

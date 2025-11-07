@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validatePut
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

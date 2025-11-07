@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

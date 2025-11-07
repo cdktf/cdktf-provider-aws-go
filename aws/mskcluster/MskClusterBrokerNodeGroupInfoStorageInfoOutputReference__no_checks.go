@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

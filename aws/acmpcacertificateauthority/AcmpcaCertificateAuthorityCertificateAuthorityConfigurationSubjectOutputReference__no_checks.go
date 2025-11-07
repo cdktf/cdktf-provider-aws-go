@@ -43,11 +43,11 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSu
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

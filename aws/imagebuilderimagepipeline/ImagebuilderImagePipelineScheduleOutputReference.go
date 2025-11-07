@@ -72,12 +72,12 @@ type ImagebuilderImagePipelineScheduleOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetPipelineExecutionStartCondition()
 	ResetTimezone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Interpolati
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Interpolati
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) ResetTimezo
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (i *jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

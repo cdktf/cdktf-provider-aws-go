@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputRefe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

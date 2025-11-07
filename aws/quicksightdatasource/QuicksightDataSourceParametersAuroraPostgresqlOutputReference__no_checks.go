@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAuroraPostgresqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

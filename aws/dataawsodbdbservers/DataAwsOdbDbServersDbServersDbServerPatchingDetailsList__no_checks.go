@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbDbServersDbServersDbServerPatchingDetailsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbServersDbServersDbServerPatchingDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbDbServersDbServersDbServerPatchingDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

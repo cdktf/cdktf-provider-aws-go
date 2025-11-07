@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

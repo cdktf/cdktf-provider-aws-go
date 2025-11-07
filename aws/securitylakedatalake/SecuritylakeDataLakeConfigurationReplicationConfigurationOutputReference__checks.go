@@ -85,17 +85,17 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationReplicationConfigurationOutp
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationReplicationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

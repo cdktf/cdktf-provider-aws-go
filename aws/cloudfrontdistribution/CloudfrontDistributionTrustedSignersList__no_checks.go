@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedSignersList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedSignersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedSignersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

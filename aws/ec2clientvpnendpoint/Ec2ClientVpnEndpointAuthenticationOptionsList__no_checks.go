@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

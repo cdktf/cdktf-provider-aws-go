@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisF
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

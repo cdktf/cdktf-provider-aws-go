@@ -29,9 +29,9 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardTargetGroupList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardTargetGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsLbListenerRuleActionForwardTargetGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

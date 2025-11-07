@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

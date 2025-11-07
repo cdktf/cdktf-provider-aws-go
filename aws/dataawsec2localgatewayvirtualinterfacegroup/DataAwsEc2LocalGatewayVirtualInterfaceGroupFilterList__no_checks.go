@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

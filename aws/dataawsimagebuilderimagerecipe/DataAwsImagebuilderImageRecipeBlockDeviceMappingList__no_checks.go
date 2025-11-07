@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

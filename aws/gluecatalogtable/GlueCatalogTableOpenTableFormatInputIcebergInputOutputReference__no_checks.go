@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputIcebergInputOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOpenTableFormatInputIcebergInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

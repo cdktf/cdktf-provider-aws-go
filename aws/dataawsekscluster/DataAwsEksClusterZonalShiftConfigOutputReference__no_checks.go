@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

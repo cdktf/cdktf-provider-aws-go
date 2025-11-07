@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

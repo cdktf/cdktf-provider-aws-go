@@ -67,14 +67,14 @@ type Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference int
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSimpleScopeTerm(value *Macie2ClassificationJobS3JobDefinitionScopingIncludesAndSimpleScopeTerm)
 	PutTagScopeTerm(value *Macie2ClassificationJobS3JobDefinitionScopingIncludesAndTagScopeTerm)
 	ResetSimpleScopeTerm()
 	ResetTagScopeTerm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	return returns
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	)
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndOutpu
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

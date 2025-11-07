@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

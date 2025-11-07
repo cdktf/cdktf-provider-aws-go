@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraIndexUserGroupResolutionConfigurationList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraIndexUserGroupResolutionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraIndexUserGroupResolutionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

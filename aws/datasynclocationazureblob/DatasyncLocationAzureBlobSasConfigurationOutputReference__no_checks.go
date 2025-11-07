@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncLocationAzureBlobSasConfigurationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationAzureBlobSasConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationAzureBlobSasConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationAzureBlobSasConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationAzureBlobSasConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

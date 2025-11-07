@@ -43,11 +43,11 @@ func (c *jsiiProxy_CleanroomsCollaborationDataEncryptionMetadataOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsCollaborationDataEncryptionMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CleanroomsCollaborationDataEncryptionMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsCollaborationDataEncryptionMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsCollaborationDataEncryptionMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

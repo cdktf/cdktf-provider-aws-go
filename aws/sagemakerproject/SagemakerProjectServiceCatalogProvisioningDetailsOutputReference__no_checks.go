@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

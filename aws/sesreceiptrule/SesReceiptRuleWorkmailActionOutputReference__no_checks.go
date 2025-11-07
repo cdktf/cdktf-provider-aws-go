@@ -43,11 +43,11 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleWorkmailActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeComponentParameterList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeComponentParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeComponentParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

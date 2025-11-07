@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppautoscalingPolicyPredictiveScalingPolicyConfigurationMetri
 	return nil
 }
 
-func (a *jsiiProxy_AppautoscalingPolicyPredictiveScalingPolicyConfigurationMetricSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppautoscalingPolicyPredictiveScalingPolicyConfigurationMetricSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

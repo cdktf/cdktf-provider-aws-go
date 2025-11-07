@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeNetworkCardsList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeNetworkCardsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeNetworkCardsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

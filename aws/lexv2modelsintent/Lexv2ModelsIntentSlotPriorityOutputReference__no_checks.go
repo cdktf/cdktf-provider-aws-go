@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentSlotPriorityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

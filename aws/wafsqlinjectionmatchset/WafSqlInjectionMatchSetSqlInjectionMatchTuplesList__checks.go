@@ -29,9 +29,9 @@ func (w *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

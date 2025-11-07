@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationSheetTileBorderList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationSheetTileBorderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationSheetTileBorderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificatio
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesConnectionTrackingSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

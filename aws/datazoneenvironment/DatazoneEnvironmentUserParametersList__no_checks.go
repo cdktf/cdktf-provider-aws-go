@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatazoneEnvironmentUserParametersList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneEnvironmentUserParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneEnvironmentUserParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

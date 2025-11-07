@@ -43,11 +43,11 @@ func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

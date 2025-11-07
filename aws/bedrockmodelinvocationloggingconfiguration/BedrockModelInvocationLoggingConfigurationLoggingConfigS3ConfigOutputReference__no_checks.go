@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3Conf
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

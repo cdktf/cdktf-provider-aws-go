@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBedrockCustomModelOutputDataConfigList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockCustomModelOutputDataConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockCustomModelOutputDataConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

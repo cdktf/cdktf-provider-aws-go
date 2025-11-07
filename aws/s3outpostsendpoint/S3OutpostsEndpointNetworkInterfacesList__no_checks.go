@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

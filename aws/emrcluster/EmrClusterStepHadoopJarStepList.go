@@ -41,7 +41,7 @@ type EmrClusterStepHadoopJarStepList interface {
 	Get(index *float64) EmrClusterStepHadoopJarStepOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) Get(index *float64) EmrClust
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

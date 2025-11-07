@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validatePutPr
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

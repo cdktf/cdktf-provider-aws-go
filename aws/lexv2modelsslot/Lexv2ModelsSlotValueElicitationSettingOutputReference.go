@@ -76,7 +76,7 @@ type Lexv2ModelsSlotValueElicitationSettingOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDefaultValueSpecification(value interface{})
 	PutPromptSpecification(value interface{})
 	PutSampleUtterance(value interface{})
@@ -89,7 +89,7 @@ type Lexv2ModelsSlotValueElicitationSettingOutputReference interface {
 	ResetWaitAndContinueSpecification()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -556,8 +556,8 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) Interp
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -565,7 +565,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) Interp
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) ResetW
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingOutputReference) Resolv
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

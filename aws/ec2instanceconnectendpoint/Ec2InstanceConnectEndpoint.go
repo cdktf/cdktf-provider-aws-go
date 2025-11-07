@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint}.
 type Ec2InstanceConnectEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -44,6 +44,9 @@ type Ec2InstanceConnectEndpoint interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -131,6 +134,7 @@ type Ec2InstanceConnectEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *Ec2InstanceConnectEndpointTimeouts)
+	ResetIpAddressType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2InstanceConnectEndpoint) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2InstanceConnectEndpoint) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
 func NewEc2InstanceConnectEndpoint(scope constructs.Construct, id *string, config *Ec2InstanceConnectEndpointConfig) Ec2InstanceConnectEndpoint {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewEc2InstanceConnectEndpoint(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
 func NewEc2InstanceConnectEndpoint_Override(e Ec2InstanceConnectEndpoint, scope constructs.Construct, id *string, config *Ec2InstanceConnectEndpointConfig) {
 	_init_.Initialize()
 
@@ -591,6 +615,17 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2InstanceConnectEndpoint)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
 		val,
 	)
 }
@@ -1041,6 +1076,14 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) PutTimeouts(value *Ec2InstanceCon
 		e,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpAddressType",
+		nil, // no parameters
 	)
 }
 

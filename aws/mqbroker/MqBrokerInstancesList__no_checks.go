@@ -15,7 +15,7 @@ func (m *jsiiProxy_MqBrokerInstancesList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerInstancesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerInstancesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

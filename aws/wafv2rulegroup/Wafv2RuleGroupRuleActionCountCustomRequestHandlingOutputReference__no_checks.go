@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateP
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

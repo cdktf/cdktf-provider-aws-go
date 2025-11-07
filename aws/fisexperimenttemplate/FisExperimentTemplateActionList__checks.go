@@ -29,9 +29,9 @@ func (f *jsiiProxy_FisExperimentTemplateActionList) validateGetParameters(index 
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FisExperimentTemplateActionList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

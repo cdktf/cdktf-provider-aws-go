@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoIdentityPoolCognitoIdentityProvidersList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolCognitoIdentityProvidersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolCognitoIdentityProvidersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

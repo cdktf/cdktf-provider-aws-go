@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudVmClusterDataCollectionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

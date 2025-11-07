@@ -15,7 +15,7 @@ func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateGetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsReservedInstanceRecurringChargesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

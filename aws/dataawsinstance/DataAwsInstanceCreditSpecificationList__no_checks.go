@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsInstanceCreditSpecificationList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInstanceCreditSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInstanceCreditSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

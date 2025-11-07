@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardTargetGroupsList) valid
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardTargetGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardTargetGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunc
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

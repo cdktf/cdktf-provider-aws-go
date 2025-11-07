@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsList) validateG
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

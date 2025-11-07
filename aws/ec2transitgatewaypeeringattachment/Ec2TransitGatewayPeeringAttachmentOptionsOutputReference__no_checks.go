@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentOptionsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachmentOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

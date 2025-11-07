@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPool
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

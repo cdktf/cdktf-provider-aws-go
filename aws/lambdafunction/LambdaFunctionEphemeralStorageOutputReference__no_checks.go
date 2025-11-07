@@ -43,11 +43,11 @@ func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaFunctionEphemeralStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

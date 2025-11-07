@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSyntheticsRuntimeVersionsRuntimeVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

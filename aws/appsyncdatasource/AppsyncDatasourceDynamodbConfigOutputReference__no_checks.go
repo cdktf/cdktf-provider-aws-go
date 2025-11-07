@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validatePutDe
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

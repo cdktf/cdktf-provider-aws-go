@@ -39,7 +39,7 @@ type DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList interface {
 	Get(index *float64) DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList) Get(index *
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderList) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

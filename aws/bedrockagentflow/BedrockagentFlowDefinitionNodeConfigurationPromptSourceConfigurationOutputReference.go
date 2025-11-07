@@ -67,14 +67,14 @@ type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputR
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutInline(value interface{})
 	PutResource(value interface{})
 	ResetInline()
 	ResetResource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	return returns
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	)
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfig
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

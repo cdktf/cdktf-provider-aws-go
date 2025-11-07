@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

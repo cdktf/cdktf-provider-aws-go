@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordCo
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

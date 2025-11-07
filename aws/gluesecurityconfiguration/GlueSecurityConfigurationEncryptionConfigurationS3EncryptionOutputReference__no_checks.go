@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionO
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

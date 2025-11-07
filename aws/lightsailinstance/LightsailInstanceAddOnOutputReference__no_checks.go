@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailInstanceAddOnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

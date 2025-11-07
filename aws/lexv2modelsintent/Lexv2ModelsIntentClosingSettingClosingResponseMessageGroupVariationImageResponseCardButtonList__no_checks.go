@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupVar
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupVariationImageResponseCardButtonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupVariationImageResponseCardButtonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

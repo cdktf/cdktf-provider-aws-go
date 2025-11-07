@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcEndpointDnsEntryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamAccessKeysAccessKeysList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamAccessKeysAccessKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamAccessKeysAccessKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

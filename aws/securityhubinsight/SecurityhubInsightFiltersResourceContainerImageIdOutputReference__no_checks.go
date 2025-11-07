@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

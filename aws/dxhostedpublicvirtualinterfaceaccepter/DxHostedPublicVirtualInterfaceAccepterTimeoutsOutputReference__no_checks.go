@@ -43,11 +43,11 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

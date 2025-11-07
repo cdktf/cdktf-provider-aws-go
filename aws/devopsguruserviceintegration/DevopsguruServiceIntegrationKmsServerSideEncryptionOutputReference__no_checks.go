@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationKmsServerSideEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

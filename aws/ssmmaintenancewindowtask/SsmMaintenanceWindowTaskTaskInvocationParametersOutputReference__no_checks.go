@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

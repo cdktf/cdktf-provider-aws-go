@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/opensearch_domain aws_opensearch_domain}.
 type OpensearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -76,6 +76,8 @@ type OpensearchDomain interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityCenterOptions() OpensearchDomainIdentityCenterOptionsOutputReference
+	IdentityCenterOptionsInput() *OpensearchDomainIdentityCenterOptions
 	IdInput() *string
 	IpAddressType() *string
 	SetIpAddressType(val *string)
@@ -176,6 +178,7 @@ type OpensearchDomain interface {
 	PutDomainEndpointOptions(value *OpensearchDomainDomainEndpointOptions)
 	PutEbsOptions(value *OpensearchDomainEbsOptions)
 	PutEncryptAtRest(value *OpensearchDomainEncryptAtRest)
+	PutIdentityCenterOptions(value *OpensearchDomainIdentityCenterOptions)
 	PutLogPublishingOptions(value interface{})
 	PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption)
 	PutOffPeakWindowOptions(value *OpensearchDomainOffPeakWindowOptions)
@@ -195,6 +198,7 @@ type OpensearchDomain interface {
 	ResetEncryptAtRest()
 	ResetEngineVersion()
 	ResetId()
+	ResetIdentityCenterOptions()
 	ResetIpAddressType()
 	ResetLogPublishingOptions()
 	ResetNodeToNodeEncryption()
@@ -627,6 +631,26 @@ func (j *jsiiProxy_OpensearchDomain) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchDomain) IdentityCenterOptions() OpensearchDomainIdentityCenterOptionsOutputReference {
+	var returns OpensearchDomainIdentityCenterOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"identityCenterOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) IdentityCenterOptionsInput() *OpensearchDomainIdentityCenterOptions {
+	var returns *OpensearchDomainIdentityCenterOptions
+	_jsii_.Get(
+		j,
+		"identityCenterOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchDomain) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -938,7 +962,7 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
 
@@ -956,7 +980,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -1575,6 +1599,17 @@ func (o *jsiiProxy_OpensearchDomain) PutEncryptAtRest(value *OpensearchDomainEnc
 	)
 }
 
+func (o *jsiiProxy_OpensearchDomain) PutIdentityCenterOptions(value *OpensearchDomainIdentityCenterOptions) {
+	if err := o.validatePutIdentityCenterOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putIdentityCenterOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchDomain) PutLogPublishingOptions(value interface{}) {
 	if err := o.validatePutLogPublishingOptionsParameters(value); err != nil {
 		panic(err)
@@ -1744,6 +1779,14 @@ func (o *jsiiProxy_OpensearchDomain) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetIdentityCenterOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIdentityCenterOptions",
 		nil, // no parameters
 	)
 }

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MqBrokerTimeoutsOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MqBrokerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

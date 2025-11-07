@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

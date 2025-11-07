@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOu
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOu
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

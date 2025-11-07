@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

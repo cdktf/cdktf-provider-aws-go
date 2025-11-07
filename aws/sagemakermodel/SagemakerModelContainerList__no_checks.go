@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerModelContainerList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelContainerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

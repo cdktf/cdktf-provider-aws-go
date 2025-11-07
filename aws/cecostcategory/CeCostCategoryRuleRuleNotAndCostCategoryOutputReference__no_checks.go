@@ -43,11 +43,11 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleNotAndCostCategoryOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleNotAndCostCategoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotAndCostCategoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleNotAndCostCategoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotAndCostCategoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

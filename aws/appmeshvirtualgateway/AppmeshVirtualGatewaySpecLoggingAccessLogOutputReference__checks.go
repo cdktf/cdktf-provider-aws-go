@@ -85,9 +85,9 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

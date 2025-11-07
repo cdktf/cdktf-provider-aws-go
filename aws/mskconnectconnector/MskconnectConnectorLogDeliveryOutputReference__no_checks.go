@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validatePutWor
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorLogDeliveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

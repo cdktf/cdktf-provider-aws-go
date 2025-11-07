@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticacheClusterCacheNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsApiGatewayApiKeysItemsList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayApiKeysItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApiGatewayApiKeysItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

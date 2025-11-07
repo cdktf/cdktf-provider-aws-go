@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsSchemaDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

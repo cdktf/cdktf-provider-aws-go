@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2SpotPriceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

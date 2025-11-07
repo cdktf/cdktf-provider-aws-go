@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputRef
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

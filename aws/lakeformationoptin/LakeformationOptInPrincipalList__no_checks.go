@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationOptInPrincipalList) validateGetParameters(index 
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationOptInPrincipalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationOptInPrincipalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

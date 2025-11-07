@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesOutputReference) v
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetColumnLevelPermissionRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

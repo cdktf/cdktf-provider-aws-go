@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorydbClusterShardsNodesOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbClusterShardsNodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorydbClusterShardsNodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbClusterShardsNodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbClusterShardsNodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

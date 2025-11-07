@@ -15,7 +15,7 @@ func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerList) vali
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServiceDeploymentVersionContainerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

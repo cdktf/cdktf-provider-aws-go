@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

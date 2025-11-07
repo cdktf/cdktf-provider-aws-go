@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsRouting
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsRoutingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsRoutingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validatePutC
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

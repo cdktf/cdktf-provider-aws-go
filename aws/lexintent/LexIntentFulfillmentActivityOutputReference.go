@@ -68,12 +68,12 @@ type LexIntentFulfillmentActivityOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCodeHook(value *LexIntentFulfillmentActivityCodeHook)
 	ResetCodeHook()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -460,8 +460,8 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) InterpolationAsL
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -469,7 +469,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) ResetCodeHook() 
 	)
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

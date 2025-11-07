@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validatePutInstanceR
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

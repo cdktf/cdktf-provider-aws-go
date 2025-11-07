@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

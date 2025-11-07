@@ -43,7 +43,7 @@ func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validatePutRefresh
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BcmdataexportsExportExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiGatewayAccountThrottleSettingsList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayAccountThrottleSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayAccountThrottleSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

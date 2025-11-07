@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandPar
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

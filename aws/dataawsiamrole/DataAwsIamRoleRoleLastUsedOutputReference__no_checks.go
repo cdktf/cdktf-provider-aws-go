@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamRoleRoleLastUsedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

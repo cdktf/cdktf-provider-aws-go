@@ -15,7 +15,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsRespo
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryLastRunSummaryQueryInsightsResponseQuerySpatialCoverageMaxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

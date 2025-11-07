@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

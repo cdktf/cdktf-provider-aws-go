@@ -75,11 +75,11 @@ type IotTopicRuleErrorActionS3OutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCannedAcl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -539,8 +539,8 @@ func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) InterpolationAsList
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -548,7 +548,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -563,8 +563,8 @@ func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) ResetCannedAcl() {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -572,7 +572,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionS3OutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

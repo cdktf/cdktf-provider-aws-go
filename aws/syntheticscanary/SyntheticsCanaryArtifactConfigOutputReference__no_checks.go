@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validatePutS3E
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

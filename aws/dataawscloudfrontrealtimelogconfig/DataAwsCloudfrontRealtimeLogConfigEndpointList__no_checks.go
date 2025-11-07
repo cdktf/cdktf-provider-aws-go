@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

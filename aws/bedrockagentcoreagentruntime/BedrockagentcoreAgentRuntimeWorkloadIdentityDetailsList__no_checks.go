@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList) vali
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeWorkloadIdentityDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

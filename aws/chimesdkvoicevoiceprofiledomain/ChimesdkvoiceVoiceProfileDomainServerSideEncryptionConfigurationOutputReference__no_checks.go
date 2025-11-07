@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurat
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

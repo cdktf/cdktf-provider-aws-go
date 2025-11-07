@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validatePutTriggerPr
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowTriggerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

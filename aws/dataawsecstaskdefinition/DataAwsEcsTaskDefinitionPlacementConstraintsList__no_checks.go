@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionPlacementConstraintsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

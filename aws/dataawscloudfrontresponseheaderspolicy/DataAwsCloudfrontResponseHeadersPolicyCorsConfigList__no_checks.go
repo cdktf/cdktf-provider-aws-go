@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

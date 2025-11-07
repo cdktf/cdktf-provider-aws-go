@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecrets
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationSecretsManagerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

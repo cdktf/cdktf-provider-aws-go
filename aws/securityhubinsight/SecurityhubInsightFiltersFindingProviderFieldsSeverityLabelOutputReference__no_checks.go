@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOu
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

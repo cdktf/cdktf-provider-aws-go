@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

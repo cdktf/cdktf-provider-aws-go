@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkInterfacesFilterList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkInterfacesFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkInterfacesFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

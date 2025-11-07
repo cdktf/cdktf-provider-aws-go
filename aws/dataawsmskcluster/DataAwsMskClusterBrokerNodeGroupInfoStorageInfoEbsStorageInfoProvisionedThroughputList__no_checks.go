@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

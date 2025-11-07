@@ -43,7 +43,7 @@ func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validatePutLifecycle
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPlanRuleCopyActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

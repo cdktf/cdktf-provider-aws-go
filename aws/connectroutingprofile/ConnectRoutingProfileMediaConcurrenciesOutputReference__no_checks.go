@@ -43,11 +43,15 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) validatePutCrossChannelBehaviorParameters(value *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

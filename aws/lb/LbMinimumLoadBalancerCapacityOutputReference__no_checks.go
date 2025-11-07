@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbMinimumLoadBalancerCapacityOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LbMinimumLoadBalancerCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbMinimumLoadBalancerCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbMinimumLoadBalancerCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbMinimumLoadBalancerCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOut
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOut
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

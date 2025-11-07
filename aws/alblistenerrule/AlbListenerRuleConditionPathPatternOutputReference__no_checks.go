@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleConditionPathPatternOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

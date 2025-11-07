@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConf
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactContainerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

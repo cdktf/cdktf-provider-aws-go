@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

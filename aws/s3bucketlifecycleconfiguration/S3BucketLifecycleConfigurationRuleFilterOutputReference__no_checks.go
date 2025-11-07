@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

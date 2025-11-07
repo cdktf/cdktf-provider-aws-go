@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

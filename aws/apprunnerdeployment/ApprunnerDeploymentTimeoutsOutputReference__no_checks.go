@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApprunnerDeploymentTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerDeploymentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerDeploymentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

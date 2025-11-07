@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

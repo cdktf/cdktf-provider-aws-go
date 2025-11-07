@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainAssociationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterKerberosAttributesOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterKerberosAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterKerberosAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterKerberosAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterKerberosAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

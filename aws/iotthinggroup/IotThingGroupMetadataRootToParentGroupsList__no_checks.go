@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotThingGroupMetadataRootToParentGroupsList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_IotThingGroupMetadataRootToParentGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotThingGroupMetadataRootToParentGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

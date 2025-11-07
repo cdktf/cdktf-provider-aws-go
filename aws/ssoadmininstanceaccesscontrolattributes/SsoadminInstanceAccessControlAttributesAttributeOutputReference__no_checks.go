@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

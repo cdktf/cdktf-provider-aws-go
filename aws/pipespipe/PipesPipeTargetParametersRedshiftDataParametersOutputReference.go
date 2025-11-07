@@ -81,14 +81,14 @@ type PipesPipeTargetParametersRedshiftDataParametersOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDbUser()
 	ResetSecretManagerArn()
 	ResetStatementName()
 	ResetWithEvent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -610,8 +610,8 @@ func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReferenc
 	return returns
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -619,7 +619,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReferenc
 	)
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersRedshiftDataParametersOutputReferenc
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

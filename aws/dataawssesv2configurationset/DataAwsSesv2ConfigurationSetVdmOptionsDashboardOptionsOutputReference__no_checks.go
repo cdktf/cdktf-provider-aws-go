@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

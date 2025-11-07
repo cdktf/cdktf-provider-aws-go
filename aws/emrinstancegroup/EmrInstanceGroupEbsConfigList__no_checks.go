@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrInstanceGroupEbsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

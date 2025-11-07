@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushTagsList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

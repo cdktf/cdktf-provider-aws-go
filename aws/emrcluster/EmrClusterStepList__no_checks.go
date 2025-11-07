@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrClusterStepList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

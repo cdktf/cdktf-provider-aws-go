@@ -69,7 +69,7 @@ type GuarddutyOrganizationConfigurationDatasourcesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutKubernetes(value *GuarddutyOrganizationConfigurationDatasourcesKubernetes)
 	PutMalwareProtection(value *GuarddutyOrganizationConfigurationDatasourcesMalwareProtection)
 	PutS3Logs(value *GuarddutyOrganizationConfigurationDatasourcesS3Logs)
@@ -78,7 +78,7 @@ type GuarddutyOrganizationConfigurationDatasourcesOutputReference interface {
 	ResetS3Logs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	)
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference)
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

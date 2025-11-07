@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityPr
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

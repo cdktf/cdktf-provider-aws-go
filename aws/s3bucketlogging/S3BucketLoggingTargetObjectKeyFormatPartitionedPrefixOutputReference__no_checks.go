@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMes
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardButtonOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardButtonOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardButtonOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingClosingResponseMessageGroupMessageImageResponseCardButtonOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

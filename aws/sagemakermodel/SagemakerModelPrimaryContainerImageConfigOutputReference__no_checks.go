@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

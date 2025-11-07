@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElbAccessLogsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElbAccessLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElbAccessLogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

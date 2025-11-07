@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppstreamImageApplicationsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppstreamImageApplicationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppstreamImageApplicationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppstreamImageApplicationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppstreamImageApplicationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

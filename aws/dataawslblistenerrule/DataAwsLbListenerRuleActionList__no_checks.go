@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

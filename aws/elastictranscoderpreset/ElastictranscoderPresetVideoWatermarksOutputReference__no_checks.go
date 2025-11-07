@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

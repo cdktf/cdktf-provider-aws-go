@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

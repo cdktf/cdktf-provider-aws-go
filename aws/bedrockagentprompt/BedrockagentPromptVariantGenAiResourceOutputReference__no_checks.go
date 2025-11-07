@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantGenAiResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

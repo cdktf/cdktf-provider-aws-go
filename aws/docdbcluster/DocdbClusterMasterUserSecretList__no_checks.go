@@ -15,7 +15,7 @@ func (d *jsiiProxy_DocdbClusterMasterUserSecretList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterMasterUserSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterMasterUserSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

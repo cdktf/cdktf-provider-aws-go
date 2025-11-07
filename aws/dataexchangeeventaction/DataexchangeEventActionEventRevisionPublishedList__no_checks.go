@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataexchangeEventActionEventRevisionPublishedList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeEventActionEventRevisionPublishedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeEventActionEventRevisionPublishedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

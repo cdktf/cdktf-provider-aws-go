@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReferenc
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReferenc
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

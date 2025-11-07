@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutServiceDisc
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

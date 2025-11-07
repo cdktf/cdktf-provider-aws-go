@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

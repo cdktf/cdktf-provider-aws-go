@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsSlotObfuscationSettingOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotObfuscationSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsSlotObfuscationSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotObfuscationSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotObfuscationSettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

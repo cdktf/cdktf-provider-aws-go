@@ -43,11 +43,11 @@ func (r *jsiiProxy_RdsCustomDbEngineVersionTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_RdsCustomDbEngineVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsCustomDbEngineVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsCustomDbEngineVersionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsCustomDbEngineVersionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

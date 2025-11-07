@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevopsguruNotificationChannelSnsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruNotificationChannelSnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevopsguruNotificationChannelSnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruNotificationChannelSnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruNotificationChannelSnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

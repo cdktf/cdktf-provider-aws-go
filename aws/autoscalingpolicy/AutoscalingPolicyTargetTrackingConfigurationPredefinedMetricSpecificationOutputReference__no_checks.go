@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricS
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationPredefinedMetricSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

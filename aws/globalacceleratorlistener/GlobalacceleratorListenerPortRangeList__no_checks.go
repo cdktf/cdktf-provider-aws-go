@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

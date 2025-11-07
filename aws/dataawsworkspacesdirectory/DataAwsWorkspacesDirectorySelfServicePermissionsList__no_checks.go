@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

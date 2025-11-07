@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationList) validateGetPa
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

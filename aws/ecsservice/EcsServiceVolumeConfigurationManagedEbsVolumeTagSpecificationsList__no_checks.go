@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecification
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeTagSpecificationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

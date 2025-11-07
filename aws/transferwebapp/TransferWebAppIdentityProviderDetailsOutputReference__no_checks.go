@@ -43,7 +43,7 @@ func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validat
 	return nil
 }
 
-func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validat
 	return nil
 }
 
-func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWebAppIdentityProviderDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

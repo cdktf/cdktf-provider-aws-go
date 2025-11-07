@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifec
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifec
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

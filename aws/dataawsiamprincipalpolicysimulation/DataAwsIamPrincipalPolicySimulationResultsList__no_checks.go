@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationResultsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationResultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationResultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

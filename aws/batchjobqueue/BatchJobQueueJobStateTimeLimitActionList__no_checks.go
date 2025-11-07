@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobQueueJobStateTimeLimitActionList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueJobStateTimeLimitActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobQueueJobStateTimeLimitActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

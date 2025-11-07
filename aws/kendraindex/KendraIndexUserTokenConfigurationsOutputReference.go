@@ -67,14 +67,14 @@ type KendraIndexUserTokenConfigurationsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutJsonTokenTypeConfiguration(value *KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration)
 	PutJwtTokenTypeConfiguration(value *KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration)
 	ResetJsonTokenTypeConfiguration()
 	ResetJwtTokenTypeConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) Interpolat
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) Interpolat
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) ResetJwtTo
 	)
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

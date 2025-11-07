@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLogg
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationLogTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

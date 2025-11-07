@@ -34,6 +34,8 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossChannelBehavior() ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference
+	CrossChannelBehaviorInput() *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -69,10 +71,12 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutCrossChannelBehavior(value *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior)
+	ResetCrossChannelBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -150,6 +154,26 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) CrossChannelBehavior() ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference {
+	var returns ConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorOutputReference
+	_jsii_.Get(
+		j,
+		"crossChannelBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) CrossChannelBehaviorInput() *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior {
+	var returns *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior
+	_jsii_.Get(
+		j,
+		"crossChannelBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -470,8 +494,8 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Inter
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -479,15 +503,34 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) PutCrossChannelBehavior(value *ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior) {
+	if err := c.validatePutCrossChannelBehaviorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCrossChannelBehavior",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) ResetCrossChannelBehavior() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCrossChannelBehavior",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -495,7 +538,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resol
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

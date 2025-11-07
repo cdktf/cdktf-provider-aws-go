@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElbListenerOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElbListenerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElbListenerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrometheusScraperSourceList) validateGetParameters(index *flo
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusScraperSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

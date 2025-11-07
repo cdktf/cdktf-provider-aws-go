@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheParameterGroupParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

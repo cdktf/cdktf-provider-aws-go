@@ -15,7 +15,7 @@ func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

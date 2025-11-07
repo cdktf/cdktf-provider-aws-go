@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotMultipleValuesSettingList) validateGetParamete
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotMultipleValuesSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotMultipleValuesSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

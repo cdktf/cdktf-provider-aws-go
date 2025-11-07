@@ -43,11 +43,11 @@ func (l *jsiiProxy_LexSlotTypeTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (l *jsiiProxy_LexSlotTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexSlotTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexSlotTypeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexSlotTypeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

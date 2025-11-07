@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

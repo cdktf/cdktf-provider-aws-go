@@ -41,7 +41,7 @@ type TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList int
 	Get(index *float64) TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3Configu
 	return returns
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3ConfigurationList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (t *jsiiProxy_TimestreaminfluxdbDbInstanceLogDeliveryConfigurationS3Configu
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

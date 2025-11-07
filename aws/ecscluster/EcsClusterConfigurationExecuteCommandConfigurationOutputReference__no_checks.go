@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

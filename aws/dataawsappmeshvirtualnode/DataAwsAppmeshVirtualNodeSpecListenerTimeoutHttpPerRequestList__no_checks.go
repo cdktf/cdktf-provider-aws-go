@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

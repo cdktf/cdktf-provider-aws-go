@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontVpcOriginVpcOriginEndpointConfigList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontVpcOriginVpcOriginEndpointConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontVpcOriginVpcOriginEndpointConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

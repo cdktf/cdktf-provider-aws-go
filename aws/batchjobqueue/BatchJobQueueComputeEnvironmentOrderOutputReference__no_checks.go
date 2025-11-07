@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobQueueComputeEnvironmentOrderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

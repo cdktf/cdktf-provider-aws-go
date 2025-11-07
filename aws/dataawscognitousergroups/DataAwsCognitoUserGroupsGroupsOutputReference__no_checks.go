@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

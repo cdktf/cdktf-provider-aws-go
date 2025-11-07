@@ -43,11 +43,11 @@ func (g *jsiiProxy_GrafanaWorkspaceNetworkAccessControlOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceNetworkAccessControlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GrafanaWorkspaceNetworkAccessControlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaWorkspaceNetworkAccessControlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GrafanaWorkspaceNetworkAccessControlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

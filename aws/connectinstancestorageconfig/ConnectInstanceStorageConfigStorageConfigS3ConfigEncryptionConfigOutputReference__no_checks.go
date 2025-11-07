@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionCo
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

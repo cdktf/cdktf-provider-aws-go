@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedaccessTrustProviderOidcOptionsOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessTrustProviderOidcOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessTrustProviderOidcOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessTrustProviderOidcOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessTrustProviderOidcOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

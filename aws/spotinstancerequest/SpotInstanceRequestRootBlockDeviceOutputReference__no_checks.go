@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

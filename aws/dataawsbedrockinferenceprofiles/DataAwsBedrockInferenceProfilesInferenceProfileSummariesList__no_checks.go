@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockInferenceProfilesInferenceProfileSummariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

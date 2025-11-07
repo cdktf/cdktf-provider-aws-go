@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainNodeToNodeEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

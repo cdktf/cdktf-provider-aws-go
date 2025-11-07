@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsPortRangeList) validateGetPa
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

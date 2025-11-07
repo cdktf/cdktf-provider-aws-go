@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupTagOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

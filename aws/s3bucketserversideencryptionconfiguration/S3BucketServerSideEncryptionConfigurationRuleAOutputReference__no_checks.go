@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

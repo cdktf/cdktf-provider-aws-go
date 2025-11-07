@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringPrometheusJmxExporterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

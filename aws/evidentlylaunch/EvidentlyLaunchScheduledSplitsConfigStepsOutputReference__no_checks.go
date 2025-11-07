@@ -43,7 +43,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

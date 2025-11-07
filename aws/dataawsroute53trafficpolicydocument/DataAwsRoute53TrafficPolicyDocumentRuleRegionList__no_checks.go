@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

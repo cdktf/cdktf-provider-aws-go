@@ -15,7 +15,7 @@ func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) validateGetPar
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

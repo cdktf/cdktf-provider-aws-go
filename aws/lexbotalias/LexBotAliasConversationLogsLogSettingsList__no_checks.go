@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

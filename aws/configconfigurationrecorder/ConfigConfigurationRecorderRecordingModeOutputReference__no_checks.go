@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

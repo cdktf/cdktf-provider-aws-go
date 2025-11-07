@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

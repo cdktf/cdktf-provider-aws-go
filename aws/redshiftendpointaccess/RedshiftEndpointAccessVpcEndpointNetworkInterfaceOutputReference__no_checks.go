@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputRefere
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

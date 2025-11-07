@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

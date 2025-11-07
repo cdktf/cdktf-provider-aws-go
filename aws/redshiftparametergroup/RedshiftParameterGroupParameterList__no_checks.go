@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateGetParameters(in
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

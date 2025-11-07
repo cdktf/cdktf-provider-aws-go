@@ -15,7 +15,7 @@ func (e *jsiiProxy_EvidentlyLaunchGroupsList) validateGetParameters(index *float
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

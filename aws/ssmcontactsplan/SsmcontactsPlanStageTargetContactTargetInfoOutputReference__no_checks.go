@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmcontactsPlanStageTargetContactTargetInfoOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageTargetContactTargetInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsPlanStageTargetContactTargetInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageTargetContactTargetInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsPlanStageTargetContactTargetInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

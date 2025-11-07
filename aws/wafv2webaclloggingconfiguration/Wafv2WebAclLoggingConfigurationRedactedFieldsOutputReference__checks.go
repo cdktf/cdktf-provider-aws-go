@@ -85,9 +85,9 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -137,9 +137,9 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

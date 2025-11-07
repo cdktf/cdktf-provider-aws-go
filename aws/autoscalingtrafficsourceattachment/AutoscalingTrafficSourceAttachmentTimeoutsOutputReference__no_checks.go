@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTimeoutsOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

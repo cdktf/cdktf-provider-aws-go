@@ -41,7 +41,7 @@ type AppmeshRouteSpecHttp2RouteMatchQueryParameterList interface {
 	Get(index *float64) AppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchQueryParameterList) Get(index 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchQueryParameterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchQueryParameterList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchQueryParameterList) Resolve(_c
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

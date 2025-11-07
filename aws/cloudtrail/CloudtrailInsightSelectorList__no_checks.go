@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudtrailInsightSelectorList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailInsightSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailInsightSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

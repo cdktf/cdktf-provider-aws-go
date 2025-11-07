@@ -43,11 +43,11 @@ func (m *jsiiProxy_Macie2CustomDataIdentifierTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2CustomDataIdentifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2CustomDataIdentifierTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2CustomDataIdentifierTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MedialiveChannelDestinationsMultiplexSettingsOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelDestinationsMultiplexSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveChannelDestinationsMultiplexSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelDestinationsMultiplexSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelDestinationsMultiplexSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -399,7 +399,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validatePutWorkflow
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatazoneGlossaryTermTermRelationsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneGlossaryTermTermRelationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneGlossaryTermTermRelationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmDocumentParameterList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_SsmDocumentParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmDocumentParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

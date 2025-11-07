@@ -15,7 +15,7 @@ func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigList) validateGetParameter
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkManagedServicesZeroEtlAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

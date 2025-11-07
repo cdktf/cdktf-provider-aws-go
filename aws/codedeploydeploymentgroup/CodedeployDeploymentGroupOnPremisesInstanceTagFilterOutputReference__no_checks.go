@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

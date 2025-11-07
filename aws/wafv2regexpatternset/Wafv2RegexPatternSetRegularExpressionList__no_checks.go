@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionList) validateGetParamet
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RegexPatternSetRegularExpressionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

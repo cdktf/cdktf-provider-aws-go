@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

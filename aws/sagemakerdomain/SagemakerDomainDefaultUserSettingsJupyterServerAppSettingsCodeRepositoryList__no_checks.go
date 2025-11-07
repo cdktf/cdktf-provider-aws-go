@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCod
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

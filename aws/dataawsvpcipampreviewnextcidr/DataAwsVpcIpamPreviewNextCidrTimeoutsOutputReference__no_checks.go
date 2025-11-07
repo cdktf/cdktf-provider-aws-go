@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

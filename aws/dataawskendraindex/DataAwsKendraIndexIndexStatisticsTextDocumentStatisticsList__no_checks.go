@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraIndexIndexStatisticsTextDocumentStatisticsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

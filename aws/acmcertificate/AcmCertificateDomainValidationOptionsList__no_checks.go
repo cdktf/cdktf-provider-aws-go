@@ -15,7 +15,7 @@ func (a *jsiiProxy_AcmCertificateDomainValidationOptionsList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateDomainValidationOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmCertificateDomainValidationOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

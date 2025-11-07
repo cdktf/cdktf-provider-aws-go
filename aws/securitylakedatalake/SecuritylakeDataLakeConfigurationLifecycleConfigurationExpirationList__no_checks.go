@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationExpira
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

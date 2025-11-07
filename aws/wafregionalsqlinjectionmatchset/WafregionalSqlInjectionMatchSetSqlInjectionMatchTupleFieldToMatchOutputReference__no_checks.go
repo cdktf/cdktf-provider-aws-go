@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToM
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

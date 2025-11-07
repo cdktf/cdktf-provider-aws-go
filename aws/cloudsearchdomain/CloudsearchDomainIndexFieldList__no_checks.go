@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudsearchDomainIndexFieldList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomainIndexFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudsearchDomainIndexFieldList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

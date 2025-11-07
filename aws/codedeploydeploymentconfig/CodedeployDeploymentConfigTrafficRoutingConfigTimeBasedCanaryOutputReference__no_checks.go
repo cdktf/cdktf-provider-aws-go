@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

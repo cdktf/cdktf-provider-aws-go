@@ -69,12 +69,12 @@ type MskServerlessClusterTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationAsL
 	return returns
 }
 
-func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ResetDelete() {
 	)
 }
 
-func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

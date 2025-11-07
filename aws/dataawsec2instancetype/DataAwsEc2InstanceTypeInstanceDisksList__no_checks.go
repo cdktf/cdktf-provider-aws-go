@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeInstanceDisksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

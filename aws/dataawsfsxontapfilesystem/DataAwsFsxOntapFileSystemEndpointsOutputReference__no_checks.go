@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsFsxOntapFileSystemEndpointsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapFileSystemEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsFsxOntapFileSystemEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapFileSystemEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOntapFileSystemEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

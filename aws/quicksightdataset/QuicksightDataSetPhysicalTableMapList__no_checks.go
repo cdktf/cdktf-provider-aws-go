@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapList) validateGetParameters(
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

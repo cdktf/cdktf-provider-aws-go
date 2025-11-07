@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksAddonPodIdentityAssociationList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksAddonPodIdentityAssociationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksAddonPodIdentityAssociationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

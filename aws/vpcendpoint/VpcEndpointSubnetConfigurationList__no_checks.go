@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcEndpointSubnetConfigurationList) validateGetParameters(ind
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSubnetConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcEndpointSubnetConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

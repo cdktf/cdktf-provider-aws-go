@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSecurityGroupFilterOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroupFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSecurityGroupFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroupFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecurityGroupFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

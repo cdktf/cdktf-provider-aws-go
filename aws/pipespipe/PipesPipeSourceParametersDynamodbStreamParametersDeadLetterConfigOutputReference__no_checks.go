@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersDeadLetterCo
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersDeadLetterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

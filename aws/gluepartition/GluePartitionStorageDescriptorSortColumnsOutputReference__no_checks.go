@@ -43,11 +43,11 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorSortColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

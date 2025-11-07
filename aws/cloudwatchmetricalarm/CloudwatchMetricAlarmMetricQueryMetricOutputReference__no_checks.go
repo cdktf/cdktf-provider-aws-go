@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryMetricOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

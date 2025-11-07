@@ -43,11 +43,11 @@ func (s *jsiiProxy_SfnAliasRoutingConfigurationOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SfnAliasRoutingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SfnAliasRoutingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SfnAliasRoutingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SfnAliasRoutingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

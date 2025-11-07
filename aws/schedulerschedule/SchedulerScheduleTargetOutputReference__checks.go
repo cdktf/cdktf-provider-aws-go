@@ -85,9 +85,9 @@ func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -170,9 +170,9 @@ func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validatePutSqsParamet
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SchedulerScheduleTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

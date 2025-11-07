@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheUserAuthenticationModeOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserAuthenticationModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheUserAuthenticationModeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

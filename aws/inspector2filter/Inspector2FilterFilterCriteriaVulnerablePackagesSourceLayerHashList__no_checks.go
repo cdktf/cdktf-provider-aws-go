@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHa
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesSourceLayerHashList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

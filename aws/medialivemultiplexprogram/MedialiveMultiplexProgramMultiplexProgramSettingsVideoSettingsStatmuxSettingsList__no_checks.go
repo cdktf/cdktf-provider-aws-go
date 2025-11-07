@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

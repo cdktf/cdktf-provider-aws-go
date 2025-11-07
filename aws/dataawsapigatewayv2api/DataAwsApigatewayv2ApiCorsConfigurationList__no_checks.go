@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

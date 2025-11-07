@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

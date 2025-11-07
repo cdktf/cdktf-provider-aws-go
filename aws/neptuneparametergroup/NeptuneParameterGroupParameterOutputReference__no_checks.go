@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

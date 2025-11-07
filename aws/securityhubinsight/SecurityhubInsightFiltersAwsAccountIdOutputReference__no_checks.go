@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

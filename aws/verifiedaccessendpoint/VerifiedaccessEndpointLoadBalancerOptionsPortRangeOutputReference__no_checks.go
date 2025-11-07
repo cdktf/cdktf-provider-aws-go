@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessEndpointLoadBalancerOptionsPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

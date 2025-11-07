@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnL
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaLambdaFunctionExecutionRoleArnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

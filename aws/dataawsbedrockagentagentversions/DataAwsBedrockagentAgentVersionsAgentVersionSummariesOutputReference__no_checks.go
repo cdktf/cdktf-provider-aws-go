@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -79,14 +79,14 @@ type QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference interf
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLeftJoinKeyProperties(value *QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties)
 	PutRightJoinKeyProperties(value *QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties)
 	ResetLeftJoinKeyProperties()
 	ResetRightJoinKeyProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -586,8 +586,8 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -595,7 +595,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -640,8 +640,8 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	)
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -649,7 +649,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

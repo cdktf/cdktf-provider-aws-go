@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaNetworkProtocolList) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaNetworkProtocolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaNetworkProtocolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

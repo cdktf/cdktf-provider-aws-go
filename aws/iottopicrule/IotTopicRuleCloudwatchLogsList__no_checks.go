@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateGetParameters(index *
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleCloudwatchLogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

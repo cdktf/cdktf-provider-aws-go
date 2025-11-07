@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrometheusScraperRoleConfigurationOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperRoleConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusScraperRoleConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperRoleConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusScraperRoleConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

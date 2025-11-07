@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedshiftClusterClusterNodesList) validateGetParameters(index 
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterClusterNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftClusterClusterNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

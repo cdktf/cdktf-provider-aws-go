@@ -43,11 +43,11 @@ func (b *jsiiProxy_BcmdataexportsExportExportDataQueryOutputReference) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportDataQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BcmdataexportsExportExportDataQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportDataQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BcmdataexportsExportExportDataQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

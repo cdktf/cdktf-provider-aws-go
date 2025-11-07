@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference) v
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsOpensearchDomainOffPeakWindowOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

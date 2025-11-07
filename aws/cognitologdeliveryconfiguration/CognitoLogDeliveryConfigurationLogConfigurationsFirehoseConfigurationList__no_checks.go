@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfi
 	return nil
 }
 
-func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksNodeGroupRemoteAccessOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupRemoteAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksNodeGroupRemoteAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupRemoteAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupRemoteAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

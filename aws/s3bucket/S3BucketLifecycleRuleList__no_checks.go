@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

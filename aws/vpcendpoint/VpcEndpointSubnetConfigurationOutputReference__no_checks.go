@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcEndpointSubnetConfigurationOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSubnetConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcEndpointSubnetConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointSubnetConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcEndpointSubnetConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

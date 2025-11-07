@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

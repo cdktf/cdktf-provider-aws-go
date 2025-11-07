@@ -41,7 +41,7 @@ type CeCostCategoryRuleRuleAndList interface {
 	Get(index *float64) CeCostCategoryRuleRuleAndOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndList) Get(index *float64) CeCostCate
 	return returns
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndList) Resolve(_context cdktf.IResolv
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

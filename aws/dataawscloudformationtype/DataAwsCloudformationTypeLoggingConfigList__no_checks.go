@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

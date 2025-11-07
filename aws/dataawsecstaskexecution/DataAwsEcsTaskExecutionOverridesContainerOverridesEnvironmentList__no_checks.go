@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

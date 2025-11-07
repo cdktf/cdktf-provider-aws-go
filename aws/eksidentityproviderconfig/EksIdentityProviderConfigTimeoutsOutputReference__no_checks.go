@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

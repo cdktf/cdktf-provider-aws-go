@@ -67,14 +67,14 @@ type TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEfsFileLocation(value *TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation)
 	PutS3FileLocation(value *TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation)
 	ResetEfsFileLocation()
 	ResetS3FileLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOu
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOu
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOu
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOu
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

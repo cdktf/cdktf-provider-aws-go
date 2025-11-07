@@ -29,9 +29,9 @@ func (q *jsiiProxy_QuicksightRefreshScheduleScheduleList) validateGetParameters(
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightRefreshScheduleScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (q *jsiiProxy_QuicksightRefreshScheduleScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

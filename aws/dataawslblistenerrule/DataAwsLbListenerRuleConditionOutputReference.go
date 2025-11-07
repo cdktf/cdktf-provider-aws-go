@@ -75,7 +75,7 @@ type DataAwsLbListenerRuleConditionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutHostHeader(value interface{})
 	PutHttpHeader(value interface{})
 	PutHttpRequestMethod(value interface{})
@@ -90,7 +90,7 @@ type DataAwsLbListenerRuleConditionOutputReference interface {
 	ResetSourceIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -546,8 +546,8 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -555,7 +555,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) InterpolationF
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) ResetSourceIp(
 	)
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

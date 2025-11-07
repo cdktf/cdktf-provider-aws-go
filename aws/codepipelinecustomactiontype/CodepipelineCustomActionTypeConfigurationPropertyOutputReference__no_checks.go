@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationTypographyFontFamiliesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -72,12 +72,12 @@ type TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputR
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetEncryptionOption()
 	ResetObjectKeyPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3Config
 	return returns
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3Config
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3Config
 	)
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3ConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryErrorReportConfigurationS3Config
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

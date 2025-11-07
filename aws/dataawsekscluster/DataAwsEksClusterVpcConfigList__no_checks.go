@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

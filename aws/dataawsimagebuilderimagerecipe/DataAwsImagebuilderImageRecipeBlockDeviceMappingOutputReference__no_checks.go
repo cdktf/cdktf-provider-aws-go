@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

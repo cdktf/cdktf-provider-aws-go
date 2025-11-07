@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

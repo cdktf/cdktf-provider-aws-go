@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validatePutS3Des
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

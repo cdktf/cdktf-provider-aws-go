@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

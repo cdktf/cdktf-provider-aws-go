@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksAddonPodIdentityAssociationOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EksAddonPodIdentityAssociationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksAddonPodIdentityAssociationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksAddonPodIdentityAssociationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksAddonPodIdentityAssociationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

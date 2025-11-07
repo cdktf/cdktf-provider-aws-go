@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

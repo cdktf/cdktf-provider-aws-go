@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

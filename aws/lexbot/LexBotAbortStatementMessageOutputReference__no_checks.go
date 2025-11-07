@@ -43,11 +43,11 @@ func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAbortStatementMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

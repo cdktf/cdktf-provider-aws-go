@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseEntitlementsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

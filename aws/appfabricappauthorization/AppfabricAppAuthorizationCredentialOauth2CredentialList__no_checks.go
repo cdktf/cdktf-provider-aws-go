@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialList) vali
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOauth2CredentialList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

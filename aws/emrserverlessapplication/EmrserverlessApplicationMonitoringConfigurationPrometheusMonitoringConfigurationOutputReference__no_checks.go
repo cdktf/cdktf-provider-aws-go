@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationPrometheusMoni
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationPrometheusMonitoringConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

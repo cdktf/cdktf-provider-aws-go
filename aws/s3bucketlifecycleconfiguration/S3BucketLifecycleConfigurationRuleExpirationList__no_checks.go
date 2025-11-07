@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

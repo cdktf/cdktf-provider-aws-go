@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOut
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

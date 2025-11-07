@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

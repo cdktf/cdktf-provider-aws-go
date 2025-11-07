@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/inspector2_filter aws_inspector2_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/inspector2_filter aws_inspector2_filter}.
 type Inspector2Filter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_Inspector2Filter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
 func NewInspector2Filter(scope constructs.Construct, id *string, config *Inspector2FilterConfig) Inspector2Filter {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewInspector2Filter(scope constructs.Construct, id *string, config *Inspect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/inspector2_filter aws_inspector2_filter} Resource.
 func NewInspector2Filter_Override(i Inspector2Filter, scope constructs.Construct, id *string, config *Inspector2FilterConfig) {
 	_init_.Initialize()
 

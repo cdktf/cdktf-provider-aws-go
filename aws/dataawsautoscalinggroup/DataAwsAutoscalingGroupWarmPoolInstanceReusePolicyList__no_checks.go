@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

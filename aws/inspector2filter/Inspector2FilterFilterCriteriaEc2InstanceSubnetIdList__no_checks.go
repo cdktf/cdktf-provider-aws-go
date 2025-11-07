@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) valida
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEc2InstanceSubnetIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

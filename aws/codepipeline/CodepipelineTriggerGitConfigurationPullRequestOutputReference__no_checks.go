@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerGitConfigurationPullRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

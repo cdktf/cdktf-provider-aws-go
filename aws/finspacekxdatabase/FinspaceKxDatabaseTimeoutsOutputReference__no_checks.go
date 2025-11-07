@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxDatabaseTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

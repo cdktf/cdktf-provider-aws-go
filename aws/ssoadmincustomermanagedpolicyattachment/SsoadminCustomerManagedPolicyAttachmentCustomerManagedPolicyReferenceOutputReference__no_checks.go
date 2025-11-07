@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyR
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

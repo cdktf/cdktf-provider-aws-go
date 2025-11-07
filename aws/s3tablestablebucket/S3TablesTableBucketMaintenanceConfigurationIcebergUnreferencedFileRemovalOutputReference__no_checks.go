@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreference
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreference
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

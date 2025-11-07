@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

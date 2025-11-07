@@ -43,11 +43,11 @@ func (r *jsiiProxy_RdsShardGroupTimeoutsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RdsShardGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsShardGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsShardGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsShardGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

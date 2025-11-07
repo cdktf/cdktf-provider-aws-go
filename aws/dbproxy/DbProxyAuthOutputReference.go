@@ -81,7 +81,7 @@ type DbProxyAuthOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAuthScheme()
 	ResetClientPasswordAuthType()
 	ResetDescription()
@@ -90,7 +90,7 @@ type DbProxyAuthOutputReference interface {
 	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -612,8 +612,8 @@ func (d *jsiiProxy_DbProxyAuthOutputReference) InterpolationAsList() cdktf.IReso
 	return returns
 }
 
-func (d *jsiiProxy_DbProxyAuthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DbProxyAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -621,7 +621,7 @@ func (d *jsiiProxy_DbProxyAuthOutputReference) InterpolationForAttribute(propert
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (d *jsiiProxy_DbProxyAuthOutputReference) ResetUsername() {
 	)
 }
 
-func (d *jsiiProxy_DbProxyAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DbProxyAuthOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (d *jsiiProxy_DbProxyAuthOutputReference) Resolve(_context cdktf.IResolveCo
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

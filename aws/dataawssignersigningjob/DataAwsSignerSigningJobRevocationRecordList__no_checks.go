@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

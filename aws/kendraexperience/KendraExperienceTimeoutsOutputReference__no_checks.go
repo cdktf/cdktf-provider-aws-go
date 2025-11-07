@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraExperienceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

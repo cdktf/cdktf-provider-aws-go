@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderCognitoConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

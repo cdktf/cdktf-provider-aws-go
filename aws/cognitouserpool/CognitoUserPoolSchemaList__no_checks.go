@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoUserPoolSchemaList) validateGetParameters(index *float
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

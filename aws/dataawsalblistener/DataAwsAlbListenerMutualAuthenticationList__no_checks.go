@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerMutualAuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

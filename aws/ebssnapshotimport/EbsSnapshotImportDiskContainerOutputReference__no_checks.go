@@ -43,7 +43,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validatePutUse
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

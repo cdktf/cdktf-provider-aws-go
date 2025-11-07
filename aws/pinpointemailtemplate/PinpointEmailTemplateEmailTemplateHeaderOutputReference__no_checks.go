@@ -43,11 +43,11 @@ func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderOutputReference) vali
 	return nil
 }
 
-func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

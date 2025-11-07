@@ -15,7 +15,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

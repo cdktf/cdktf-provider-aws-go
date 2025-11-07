@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validatePutW
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailWordPolicyConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

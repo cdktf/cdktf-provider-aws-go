@@ -69,11 +69,11 @@ type XrayGroupInsightsConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetNotificationsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -471,8 +471,8 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InterpolationA
 	return returns
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := x.validateInterpolationForAttributeParameters(property); err != nil {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := x.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -480,7 +480,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		x,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) ResetNotificat
 	)
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := x.validateResolveParameters(_context); err != nil {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := x.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		x,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

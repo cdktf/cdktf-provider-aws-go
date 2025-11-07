@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDispla
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

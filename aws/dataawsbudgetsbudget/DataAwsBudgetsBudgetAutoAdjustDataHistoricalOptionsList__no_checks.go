@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

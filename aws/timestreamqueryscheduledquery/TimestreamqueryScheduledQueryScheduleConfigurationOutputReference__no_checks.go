@@ -43,11 +43,11 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationOutputRefer
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryScheduleConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

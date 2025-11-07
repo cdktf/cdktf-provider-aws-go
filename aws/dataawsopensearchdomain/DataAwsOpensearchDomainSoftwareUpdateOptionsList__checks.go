@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsOpensearchDomainSoftwareUpdateOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

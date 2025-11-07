@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

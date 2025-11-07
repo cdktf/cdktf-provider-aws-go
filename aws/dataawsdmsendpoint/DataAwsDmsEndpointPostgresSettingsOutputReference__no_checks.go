@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

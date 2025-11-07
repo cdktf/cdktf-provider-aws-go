@@ -85,9 +85,9 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceCo
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceCo
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationRetrievalServiceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

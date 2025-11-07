@@ -79,7 +79,7 @@ type Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutArchitecture(value interface{})
 	PutEpoch(value interface{})
 	PutFilePath(value interface{})
@@ -98,7 +98,7 @@ type Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -594,8 +594,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -603,7 +603,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	)
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

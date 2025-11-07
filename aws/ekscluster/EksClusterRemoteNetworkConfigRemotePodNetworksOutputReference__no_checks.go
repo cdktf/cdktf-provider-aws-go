@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemotePodNetworksOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemotePodNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemotePodNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemotePodNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterRemoteNetworkConfigRemotePodNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSetReputationOptionsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2ConfigurationSetReputationOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetReputationOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

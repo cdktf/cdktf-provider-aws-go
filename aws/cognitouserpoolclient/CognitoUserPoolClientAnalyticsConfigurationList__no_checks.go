@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

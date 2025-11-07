@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validatePutZ
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

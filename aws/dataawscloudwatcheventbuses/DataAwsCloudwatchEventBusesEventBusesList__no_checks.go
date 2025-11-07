@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudwatchEventBusesEventBusesList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchEventBusesEventBusesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudwatchEventBusesEventBusesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

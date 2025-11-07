@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

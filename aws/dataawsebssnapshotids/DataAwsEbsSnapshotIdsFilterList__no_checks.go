@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIdsFilterList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsSnapshotIdsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEbsSnapshotIdsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

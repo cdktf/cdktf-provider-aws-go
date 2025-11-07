@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

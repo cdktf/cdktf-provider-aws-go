@@ -43,7 +43,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutp
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutp
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

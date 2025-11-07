@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

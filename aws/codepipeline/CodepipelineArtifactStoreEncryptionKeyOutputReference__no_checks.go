@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

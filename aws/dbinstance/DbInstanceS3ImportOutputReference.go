@@ -78,11 +78,11 @@ type DbInstanceS3ImportOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetBucketPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -573,8 +573,8 @@ func (d *jsiiProxy_DbInstanceS3ImportOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (d *jsiiProxy_DbInstanceS3ImportOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DbInstanceS3ImportOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -582,7 +582,7 @@ func (d *jsiiProxy_DbInstanceS3ImportOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -597,8 +597,8 @@ func (d *jsiiProxy_DbInstanceS3ImportOutputReference) ResetBucketPrefix() {
 	)
 }
 
-func (d *jsiiProxy_DbInstanceS3ImportOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DbInstanceS3ImportOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -606,7 +606,7 @@ func (d *jsiiProxy_DbInstanceS3ImportOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

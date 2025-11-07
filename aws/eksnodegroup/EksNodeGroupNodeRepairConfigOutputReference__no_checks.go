@@ -43,11 +43,15 @@ func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validatePutNodeRepairConfigOverridesParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
@@ -64,6 +68,22 @@ func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetEnabl
 }
 
 func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetInternalValueParameters(val *EksNodeGroupNodeRepairConfig) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxParallelNodesRepairedCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxParallelNodesRepairedPercentageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxUnhealthyNodeThresholdCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksNodeGroupNodeRepairConfigOutputReference) validateSetMaxUnhealthyNodeThresholdPercentageParameters(val *float64) error {
 	return nil
 }
 

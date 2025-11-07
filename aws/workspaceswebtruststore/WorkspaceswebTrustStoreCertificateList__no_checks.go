@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateList) validateGetParameters
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebTrustStoreCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

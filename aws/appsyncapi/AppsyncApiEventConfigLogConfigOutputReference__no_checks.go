@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncApiEventConfigLogConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncApiEventConfigLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigLogConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

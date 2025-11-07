@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalin
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

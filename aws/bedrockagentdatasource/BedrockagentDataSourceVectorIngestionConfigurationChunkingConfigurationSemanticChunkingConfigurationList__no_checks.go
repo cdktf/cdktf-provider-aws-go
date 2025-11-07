@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingCon
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

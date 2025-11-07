@@ -85,9 +85,9 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validateGetSt
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validatePutSo
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (q *jsiiProxy_QuicksightDashboardSourceEntityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

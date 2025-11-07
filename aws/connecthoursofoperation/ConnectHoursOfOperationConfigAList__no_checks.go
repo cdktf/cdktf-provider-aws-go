@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

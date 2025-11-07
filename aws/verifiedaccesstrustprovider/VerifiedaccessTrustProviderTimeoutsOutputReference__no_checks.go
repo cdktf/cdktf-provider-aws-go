@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedaccessTrustProviderTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessTrustProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessTrustProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessTrustProviderTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessTrustProviderTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validatePutS3
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

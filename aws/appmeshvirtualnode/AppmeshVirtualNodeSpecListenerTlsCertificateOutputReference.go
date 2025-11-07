@@ -69,7 +69,7 @@ type AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAcm(value *AppmeshVirtualNodeSpecListenerTlsCertificateAcm)
 	PutFile(value *AppmeshVirtualNodeSpecListenerTlsCertificateFile)
 	PutSds(value *AppmeshVirtualNodeSpecListenerTlsCertificateSds)
@@ -78,7 +78,7 @@ type AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference interface {
 	ResetSds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) 
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsCertificateOutputReference) 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

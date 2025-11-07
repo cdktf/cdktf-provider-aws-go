@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentDialogCodeHookList) validateGetParameters(in
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentDialogCodeHookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentDialogCodeHookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

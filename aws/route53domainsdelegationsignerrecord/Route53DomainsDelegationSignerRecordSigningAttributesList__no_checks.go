@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53DomainsDelegationSignerRecordSigningAttributesList) va
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsDelegationSignerRecordSigningAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsDelegationSignerRecordSigningAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

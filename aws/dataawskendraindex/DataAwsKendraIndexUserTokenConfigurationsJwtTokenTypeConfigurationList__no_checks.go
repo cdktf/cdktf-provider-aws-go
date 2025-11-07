@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraIndexUserTokenConfigurationsJwtTokenTypeConfigur
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EbsSnapshotImportTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

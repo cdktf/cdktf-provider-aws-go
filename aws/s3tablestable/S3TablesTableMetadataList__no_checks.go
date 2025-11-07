@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3TablesTableMetadataList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3TablesTableMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

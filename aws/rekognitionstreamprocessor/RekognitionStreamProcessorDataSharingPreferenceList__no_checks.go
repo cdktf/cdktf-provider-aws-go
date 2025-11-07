@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceList) validate
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

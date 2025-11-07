@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerPortRangeList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListenerPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

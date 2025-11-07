@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

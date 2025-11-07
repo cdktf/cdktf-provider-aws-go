@@ -41,7 +41,7 @@ type LaunchConfigurationEbsBlockDeviceList interface {
 	Get(index *float64) LaunchConfigurationEbsBlockDeviceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceList) Get(index *float64) La
 	return returns
 }
 
-func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LaunchConfigurationEbsBlockDeviceList) Resolve(_context cdktf
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

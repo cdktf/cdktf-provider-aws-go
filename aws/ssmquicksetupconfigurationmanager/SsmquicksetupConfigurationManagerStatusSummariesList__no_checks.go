@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmquicksetupConfigurationManagerStatusSummariesList) validat
 	return nil
 }
 
-func (s *jsiiProxy_SsmquicksetupConfigurationManagerStatusSummariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmquicksetupConfigurationManagerStatusSummariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayProtocolConfigurationMcpList) validate
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayProtocolConfigurationMcpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayProtocolConfigurationMcpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

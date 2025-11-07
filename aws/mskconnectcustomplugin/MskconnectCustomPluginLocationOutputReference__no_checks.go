@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validatePutS3P
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectCustomPluginLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

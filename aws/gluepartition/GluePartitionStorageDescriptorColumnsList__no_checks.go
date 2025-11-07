@@ -15,7 +15,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

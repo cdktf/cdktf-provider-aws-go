@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

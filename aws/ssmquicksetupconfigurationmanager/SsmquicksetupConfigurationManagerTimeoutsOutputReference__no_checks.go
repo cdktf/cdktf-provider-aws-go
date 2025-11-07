@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmquicksetupConfigurationManagerTimeoutsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SsmquicksetupConfigurationManagerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmquicksetupConfigurationManagerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmquicksetupConfigurationManagerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmquicksetupConfigurationManagerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

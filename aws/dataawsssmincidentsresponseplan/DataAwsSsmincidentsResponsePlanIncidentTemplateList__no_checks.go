@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIncidentTemplateList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIncidentTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIncidentTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

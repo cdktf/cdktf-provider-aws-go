@@ -90,7 +90,7 @@ type NetworkAclEgressOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAction()
 	ResetCidrBlock()
 	ResetFromPort()
@@ -102,7 +102,7 @@ type NetworkAclEgressOutputReference interface {
 	ResetToPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -717,8 +717,8 @@ func (n *jsiiProxy_NetworkAclEgressOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAclEgressOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkAclEgressOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -726,7 +726,7 @@ func (n *jsiiProxy_NetworkAclEgressOutputReference) InterpolationForAttribute(pr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (n *jsiiProxy_NetworkAclEgressOutputReference) ResetToPort() {
 	)
 }
 
-func (n *jsiiProxy_NetworkAclEgressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkAclEgressOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (n *jsiiProxy_NetworkAclEgressOutputReference) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

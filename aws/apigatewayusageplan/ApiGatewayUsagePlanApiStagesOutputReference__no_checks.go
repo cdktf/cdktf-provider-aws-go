@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validatePutThrot
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

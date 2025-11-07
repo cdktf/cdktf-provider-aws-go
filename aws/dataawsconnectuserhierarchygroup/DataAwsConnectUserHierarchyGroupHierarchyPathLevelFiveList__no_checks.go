@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

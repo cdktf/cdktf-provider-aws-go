@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbNetworkManagedServicesS3AccessList) validateGetParameters(
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkManagedServicesS3AccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkManagedServicesS3AccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

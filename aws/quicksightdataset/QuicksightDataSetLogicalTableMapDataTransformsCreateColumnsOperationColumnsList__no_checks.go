@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOp
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbDbSystemShapesDbSystemShapesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

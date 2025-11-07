@@ -43,7 +43,7 @@ func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validateGetStringM
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validatePutComposi
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamwriteTableSchemaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

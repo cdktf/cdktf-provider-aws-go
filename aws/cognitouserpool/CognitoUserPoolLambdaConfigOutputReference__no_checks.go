@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validatePutPreTok
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

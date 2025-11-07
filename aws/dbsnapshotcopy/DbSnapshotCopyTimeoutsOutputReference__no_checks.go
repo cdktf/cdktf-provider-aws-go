@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbSnapshotCopyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BatchJobQueueTimeoutsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BatchJobQueueTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobQueueTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobQueueTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

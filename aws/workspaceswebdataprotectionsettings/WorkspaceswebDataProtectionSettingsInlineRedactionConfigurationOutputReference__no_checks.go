@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurati
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurati
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

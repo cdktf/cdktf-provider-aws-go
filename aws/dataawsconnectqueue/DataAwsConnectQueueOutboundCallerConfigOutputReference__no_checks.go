@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

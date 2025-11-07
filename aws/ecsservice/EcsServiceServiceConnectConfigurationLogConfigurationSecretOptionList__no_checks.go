@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

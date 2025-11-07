@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretLi
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validatePutCustomPl
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorPluginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

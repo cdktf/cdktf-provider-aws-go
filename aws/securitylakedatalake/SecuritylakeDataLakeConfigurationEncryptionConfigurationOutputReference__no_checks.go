@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationEncryptionConfigurationOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

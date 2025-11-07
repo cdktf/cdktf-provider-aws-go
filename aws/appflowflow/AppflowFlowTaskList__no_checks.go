@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppflowFlowTaskList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

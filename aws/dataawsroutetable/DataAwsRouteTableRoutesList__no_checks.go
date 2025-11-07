@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRouteTableRoutesList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRouteTableRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRouteTableRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

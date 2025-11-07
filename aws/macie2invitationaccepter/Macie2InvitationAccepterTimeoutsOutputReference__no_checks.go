@@ -43,11 +43,11 @@ func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

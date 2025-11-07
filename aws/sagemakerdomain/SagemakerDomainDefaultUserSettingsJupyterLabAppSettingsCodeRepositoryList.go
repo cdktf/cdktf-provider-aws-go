@@ -41,7 +41,7 @@ type SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryList i
 	Get(index *float64) SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRe
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRe
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

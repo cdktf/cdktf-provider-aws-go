@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateGetParam
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainLogPublishingOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

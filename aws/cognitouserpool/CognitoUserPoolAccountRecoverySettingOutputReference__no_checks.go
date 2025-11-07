@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

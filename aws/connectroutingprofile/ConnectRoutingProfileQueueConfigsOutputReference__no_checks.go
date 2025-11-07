@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

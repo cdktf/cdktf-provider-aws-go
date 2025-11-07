@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrometheusResourcePolicyTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusResourcePolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusResourcePolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusResourcePolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusResourcePolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

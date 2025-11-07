@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

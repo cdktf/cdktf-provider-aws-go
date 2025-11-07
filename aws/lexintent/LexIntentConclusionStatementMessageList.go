@@ -41,7 +41,7 @@ type LexIntentConclusionStatementMessageList interface {
 	Get(index *float64) LexIntentConclusionStatementMessageOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (l *jsiiProxy_LexIntentConclusionStatementMessageList) Get(index *float64) 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentConclusionStatementMessageList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LexIntentConclusionStatementMessageList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (l *jsiiProxy_LexIntentConclusionStatementMessageList) Resolve(_context cdk
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

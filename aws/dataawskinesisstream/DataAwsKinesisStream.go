@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/kinesis_stream aws_kinesis_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/kinesis_stream aws_kinesis_stream}.
 type DataAwsKinesisStream interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -47,6 +47,7 @@ type DataAwsKinesisStream interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxRecordSizeInKib() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -275,6 +276,16 @@ func (j *jsiiProxy_DataAwsKinesisStream) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKinesisStream) MaxRecordSizeInKib() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRecordSizeInKib",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKinesisStream) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -446,7 +457,7 @@ func (j *jsiiProxy_DataAwsKinesisStream) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source.
 func NewDataAwsKinesisStream(scope constructs.Construct, id *string, config *DataAwsKinesisStreamConfig) DataAwsKinesisStream {
 	_init_.Initialize()
 
@@ -464,7 +475,7 @@ func NewDataAwsKinesisStream(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/kinesis_stream aws_kinesis_stream} Data Source.
 func NewDataAwsKinesisStream_Override(d DataAwsKinesisStream, scope constructs.Construct, id *string, config *DataAwsKinesisStreamConfig) {
 	_init_.Initialize()
 

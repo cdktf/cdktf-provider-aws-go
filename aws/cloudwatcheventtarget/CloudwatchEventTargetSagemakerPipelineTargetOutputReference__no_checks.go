@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

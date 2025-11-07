@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTempl
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudfrontRealtimeLogConfigEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

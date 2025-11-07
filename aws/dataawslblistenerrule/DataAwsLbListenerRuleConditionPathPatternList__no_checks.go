@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionPathPatternList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionPathPatternList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionPathPatternList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElbHealthCheckList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElbHealthCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElbHealthCheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

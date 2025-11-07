@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcCidrBlockAssociationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

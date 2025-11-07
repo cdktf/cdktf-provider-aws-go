@@ -43,11 +43,11 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

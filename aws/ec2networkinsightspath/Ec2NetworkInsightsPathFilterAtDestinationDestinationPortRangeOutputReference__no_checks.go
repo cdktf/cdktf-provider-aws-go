@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRange
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationDestinationPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

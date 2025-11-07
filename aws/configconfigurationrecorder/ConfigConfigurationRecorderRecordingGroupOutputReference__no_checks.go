@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

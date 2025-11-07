@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsEndpointKafkaSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

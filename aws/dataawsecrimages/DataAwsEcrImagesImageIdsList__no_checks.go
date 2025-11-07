@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcrImagesImageIdsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrImagesImageIdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcrImagesImageIdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

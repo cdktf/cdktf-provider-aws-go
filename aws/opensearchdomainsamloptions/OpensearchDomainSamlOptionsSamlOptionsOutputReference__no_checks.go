@@ -43,7 +43,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainSamlOptionsSamlOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

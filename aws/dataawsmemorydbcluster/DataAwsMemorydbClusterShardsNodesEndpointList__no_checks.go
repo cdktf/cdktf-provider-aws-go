@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMemorydbClusterShardsNodesEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

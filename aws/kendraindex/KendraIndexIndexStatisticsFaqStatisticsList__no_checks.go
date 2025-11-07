@@ -15,7 +15,7 @@ func (k *jsiiProxy_KendraIndexIndexStatisticsFaqStatisticsList) validateGetParam
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexIndexStatisticsFaqStatisticsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexIndexStatisticsFaqStatisticsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

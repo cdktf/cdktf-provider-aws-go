@@ -15,7 +15,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLoc
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryRecentlyFailedRunsErrorReportLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

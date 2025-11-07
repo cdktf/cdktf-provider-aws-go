@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpnConnectionVgwTelemetriesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

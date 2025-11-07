@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationSubnetMappingList) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationSubnetMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationSubnetMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

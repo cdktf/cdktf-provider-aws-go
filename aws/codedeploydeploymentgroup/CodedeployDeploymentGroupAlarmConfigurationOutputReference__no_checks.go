@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

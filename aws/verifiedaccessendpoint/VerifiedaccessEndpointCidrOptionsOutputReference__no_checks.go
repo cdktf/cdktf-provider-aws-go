@@ -43,7 +43,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validatePut
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessEndpointCidrOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

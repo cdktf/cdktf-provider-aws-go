@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validatePutSourceIpP
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

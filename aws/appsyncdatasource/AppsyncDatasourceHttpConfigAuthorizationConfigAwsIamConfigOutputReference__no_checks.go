@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOut
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

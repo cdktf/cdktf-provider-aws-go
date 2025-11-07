@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutp
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

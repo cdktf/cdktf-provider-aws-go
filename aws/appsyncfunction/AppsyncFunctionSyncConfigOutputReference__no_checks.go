@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validatePutLambdaCo
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncFunctionSyncConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

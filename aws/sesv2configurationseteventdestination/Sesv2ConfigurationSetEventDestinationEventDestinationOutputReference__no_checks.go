@@ -43,7 +43,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

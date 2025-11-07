@@ -43,7 +43,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateG
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateP
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingDataConfigList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingDataConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBedrockCustomModelTrainingDataConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

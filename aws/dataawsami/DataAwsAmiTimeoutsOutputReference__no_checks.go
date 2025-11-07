@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAmiTimeoutsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAmiTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAmiTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAmiTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAmiTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

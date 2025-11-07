@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesKeyspaceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

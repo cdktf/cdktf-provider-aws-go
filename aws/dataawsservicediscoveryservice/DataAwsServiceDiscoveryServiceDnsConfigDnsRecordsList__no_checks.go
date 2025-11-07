@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

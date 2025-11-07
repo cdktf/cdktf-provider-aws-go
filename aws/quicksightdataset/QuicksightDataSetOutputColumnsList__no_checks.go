@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetOutputColumnsList) validateGetParameters(ind
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetOutputColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetOutputColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

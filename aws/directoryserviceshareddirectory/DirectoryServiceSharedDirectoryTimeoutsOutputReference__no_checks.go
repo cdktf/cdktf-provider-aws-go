@@ -43,11 +43,11 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

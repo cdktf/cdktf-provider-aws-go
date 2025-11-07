@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigL
 	return nil
 }
 
-func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockGuardrailContextualGroundingPolicyConfigFiltersConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

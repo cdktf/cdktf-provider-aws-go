@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

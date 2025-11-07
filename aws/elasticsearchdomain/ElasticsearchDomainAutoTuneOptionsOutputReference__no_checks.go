@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validatePu
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference) vali
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectoryActiveDirectoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

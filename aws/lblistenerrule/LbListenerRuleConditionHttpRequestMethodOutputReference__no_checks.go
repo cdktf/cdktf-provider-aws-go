@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) va
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerControlControlMappingSourcesSourceKeywordList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

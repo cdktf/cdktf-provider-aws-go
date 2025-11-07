@@ -43,7 +43,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateG
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateP
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

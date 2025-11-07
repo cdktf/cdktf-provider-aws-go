@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointPosixUserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

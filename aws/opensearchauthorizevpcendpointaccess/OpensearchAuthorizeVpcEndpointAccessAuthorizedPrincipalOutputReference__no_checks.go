@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutput
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

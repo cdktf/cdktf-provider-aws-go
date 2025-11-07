@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList) va
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

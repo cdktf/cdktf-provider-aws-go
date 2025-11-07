@@ -43,11 +43,11 @@ func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationOutputReference) v
 	return nil
 }
 
-func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QbusinessApplicationEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

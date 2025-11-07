@@ -15,7 +15,7 @@ func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

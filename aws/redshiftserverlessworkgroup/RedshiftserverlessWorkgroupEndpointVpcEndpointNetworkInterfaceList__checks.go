@@ -27,9 +27,9 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfac
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

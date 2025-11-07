@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

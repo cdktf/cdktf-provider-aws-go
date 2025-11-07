@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

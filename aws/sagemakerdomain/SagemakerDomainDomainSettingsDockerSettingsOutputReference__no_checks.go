@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsDockerSettingsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsDockerSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsDockerSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsDockerSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsDockerSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

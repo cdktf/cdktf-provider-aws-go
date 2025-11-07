@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

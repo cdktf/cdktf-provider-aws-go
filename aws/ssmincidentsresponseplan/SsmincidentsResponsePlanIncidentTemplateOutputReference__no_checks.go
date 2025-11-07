@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanIncidentTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

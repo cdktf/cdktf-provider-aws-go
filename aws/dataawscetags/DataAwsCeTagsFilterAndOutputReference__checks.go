@@ -85,9 +85,9 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validatePutTagsParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsCeTagsFilterAndOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

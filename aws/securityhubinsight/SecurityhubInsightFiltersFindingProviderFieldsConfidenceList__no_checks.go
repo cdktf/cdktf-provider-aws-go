@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList)
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationSt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationVpcEndpointAssociationStatusAssociationSyncStateAttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

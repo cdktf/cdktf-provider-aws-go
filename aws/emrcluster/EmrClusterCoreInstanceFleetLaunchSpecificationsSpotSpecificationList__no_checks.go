@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificat
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOpti
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainAimlOptionsNaturalLanguageQueryGenerationOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

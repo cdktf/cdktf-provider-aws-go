@@ -43,11 +43,11 @@ func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmCertificateValidationOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

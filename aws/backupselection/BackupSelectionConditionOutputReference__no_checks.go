@@ -43,7 +43,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (b *jsiiProxy_BackupSelectionConditionOutputReference) validatePutStringNot
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

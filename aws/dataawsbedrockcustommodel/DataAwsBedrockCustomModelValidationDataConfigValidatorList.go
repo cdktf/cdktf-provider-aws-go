@@ -39,7 +39,7 @@ type DataAwsBedrockCustomModelValidationDataConfigValidatorList interface {
 	Get(index *float64) DataAwsBedrockCustomModelValidationDataConfigValidatorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsBedrockCustomModelValidationDataConfigValidatorList) G
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsBedrockCustomModelValidationDataConfigValidatorList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsBedrockCustomModelValidationDataConfigValidatorList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsBedrockCustomModelValidationDataConfigValidatorList) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

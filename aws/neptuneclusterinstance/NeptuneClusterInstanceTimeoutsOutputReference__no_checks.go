@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneClusterInstanceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

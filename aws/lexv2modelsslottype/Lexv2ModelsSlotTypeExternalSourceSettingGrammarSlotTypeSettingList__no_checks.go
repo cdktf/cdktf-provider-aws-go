@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettin
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspacesDirectoryCertificateBasedAuthPropertiesOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectoryCertificateBasedAuthPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

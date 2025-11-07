@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOut
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterCapacityProvidersDefaultCapacityProviderStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

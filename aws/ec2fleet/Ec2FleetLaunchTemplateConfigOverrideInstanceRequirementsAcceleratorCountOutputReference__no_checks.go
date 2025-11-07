@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAccel
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

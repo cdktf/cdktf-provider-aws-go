@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

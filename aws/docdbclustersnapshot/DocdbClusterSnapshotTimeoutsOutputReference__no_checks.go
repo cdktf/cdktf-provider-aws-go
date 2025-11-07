@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterSnapshotTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

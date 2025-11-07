@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaxParameterGroupParametersList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DaxParameterGroupParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaxParameterGroupParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

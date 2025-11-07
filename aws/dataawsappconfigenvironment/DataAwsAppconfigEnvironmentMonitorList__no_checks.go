@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

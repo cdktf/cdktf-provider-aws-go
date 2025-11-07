@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

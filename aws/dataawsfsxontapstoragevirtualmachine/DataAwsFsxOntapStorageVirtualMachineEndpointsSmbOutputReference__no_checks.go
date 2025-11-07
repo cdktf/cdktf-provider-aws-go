@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

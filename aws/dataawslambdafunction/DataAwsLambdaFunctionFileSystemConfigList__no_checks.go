@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

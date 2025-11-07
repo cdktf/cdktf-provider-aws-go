@@ -15,7 +15,7 @@ func (d *jsiiProxy_DsqlClusterEncryptionDetailsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DsqlClusterEncryptionDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DsqlClusterEncryptionDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

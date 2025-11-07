@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatapipelinePipelineDefinitionParameterObjectList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

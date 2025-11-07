@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleKafkaList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleKafkaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleKafkaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

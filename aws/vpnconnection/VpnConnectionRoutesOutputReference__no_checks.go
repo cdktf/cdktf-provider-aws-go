@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnConnectionRoutesOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionRoutesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnConnectionRoutesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnConnectionRoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnConnectionRoutesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

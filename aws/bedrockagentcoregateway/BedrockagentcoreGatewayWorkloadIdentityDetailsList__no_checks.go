@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayWorkloadIdentityDetailsList) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayWorkloadIdentityDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayWorkloadIdentityDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

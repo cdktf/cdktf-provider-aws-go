@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoManagedUserPoolClientTokenValidityUnitsList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CognitoManagedUserPoolClientTokenValidityUnitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoManagedUserPoolClientTokenValidityUnitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

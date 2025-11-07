@@ -39,7 +39,7 @@ type DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList interface {
 	Get(index *float64) DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetList) Res
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

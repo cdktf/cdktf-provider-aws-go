@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateOidcList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateOidcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateOidcList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

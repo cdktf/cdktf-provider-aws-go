@@ -43,11 +43,11 @@ func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

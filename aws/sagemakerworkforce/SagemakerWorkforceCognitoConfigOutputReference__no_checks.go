@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

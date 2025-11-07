@@ -43,7 +43,7 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validatePutFie
 	return nil
 }
 
-func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

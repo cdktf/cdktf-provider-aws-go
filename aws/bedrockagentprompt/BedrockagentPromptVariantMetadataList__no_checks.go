@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantMetadataList) validateGetParameters(
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

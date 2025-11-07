@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validateGet
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validatePut
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

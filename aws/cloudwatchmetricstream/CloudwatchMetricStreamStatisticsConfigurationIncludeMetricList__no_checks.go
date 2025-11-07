@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricLis
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

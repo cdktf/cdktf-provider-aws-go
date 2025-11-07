@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

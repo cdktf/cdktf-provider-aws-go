@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueTriggerActionsList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

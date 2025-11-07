@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

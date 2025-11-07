@@ -43,7 +43,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validatePutI
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

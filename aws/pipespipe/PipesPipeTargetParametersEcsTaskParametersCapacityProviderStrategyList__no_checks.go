@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersCapacityProviderStr
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersCapacityProviderStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

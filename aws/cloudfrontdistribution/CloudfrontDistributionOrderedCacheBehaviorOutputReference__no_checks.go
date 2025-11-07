@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

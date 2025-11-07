@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayAttachmentFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

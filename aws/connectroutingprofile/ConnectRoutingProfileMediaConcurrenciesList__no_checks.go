@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

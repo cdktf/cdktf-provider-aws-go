@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

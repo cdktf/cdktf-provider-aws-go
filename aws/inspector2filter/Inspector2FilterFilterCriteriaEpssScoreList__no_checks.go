@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaEpssScoreList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaEpssScoreList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaEpssScoreList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

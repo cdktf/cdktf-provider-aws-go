@@ -43,7 +43,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validatePutCreati
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsAccessPointRootDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

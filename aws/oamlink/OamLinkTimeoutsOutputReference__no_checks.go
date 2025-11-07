@@ -43,11 +43,11 @@ func (o *jsiiProxy_OamLinkTimeoutsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OamLinkTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OamLinkTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

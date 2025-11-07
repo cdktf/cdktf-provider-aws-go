@@ -15,7 +15,7 @@ func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationList) validateGetPa
 	return nil
 }
 
-func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptunegraphGraphVectorSearchConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

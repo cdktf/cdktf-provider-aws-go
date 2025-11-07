@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheClusterLogDeliveryConfigurationList) validateGetPa
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheClusterLogDeliveryConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheClusterLogDeliveryConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

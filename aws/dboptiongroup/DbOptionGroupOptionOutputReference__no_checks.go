@@ -43,7 +43,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validatePutOptionSettings
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbOptionGroupOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

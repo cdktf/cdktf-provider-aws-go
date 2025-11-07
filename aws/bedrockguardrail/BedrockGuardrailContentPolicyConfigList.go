@@ -41,7 +41,7 @@ type BedrockGuardrailContentPolicyConfigList interface {
 	Get(index *float64) BedrockGuardrailContentPolicyConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigList) Get(index *float64) 
 	return returns
 }
 
-func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (b *jsiiProxy_BedrockGuardrailContentPolicyConfigList) Resolve(_context cdk
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

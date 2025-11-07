@@ -41,7 +41,7 @@ type Route53ResolverRuleTargetIpList interface {
 	Get(index *float64) Route53ResolverRuleTargetIpOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpList) Get(index *float64) Route53R
 	return returns
 }
 
-func (r *jsiiProxy_Route53ResolverRuleTargetIpList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_Route53ResolverRuleTargetIpList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

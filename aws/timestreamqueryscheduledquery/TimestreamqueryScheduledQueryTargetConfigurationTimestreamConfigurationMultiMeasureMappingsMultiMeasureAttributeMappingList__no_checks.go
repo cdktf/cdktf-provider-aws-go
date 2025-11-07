@@ -15,7 +15,7 @@ func (t *jsiiProxy_TimestreamqueryScheduledQueryTargetConfigurationTimestreamCon
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamqueryScheduledQueryTargetConfigurationTimestreamConfigurationMultiMeasureMappingsMultiMeasureAttributeMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

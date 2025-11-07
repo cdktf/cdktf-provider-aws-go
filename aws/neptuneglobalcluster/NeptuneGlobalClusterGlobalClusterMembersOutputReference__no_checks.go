@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

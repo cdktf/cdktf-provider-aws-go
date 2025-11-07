@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

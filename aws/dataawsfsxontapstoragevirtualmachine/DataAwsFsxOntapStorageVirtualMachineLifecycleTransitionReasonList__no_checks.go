@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReason
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

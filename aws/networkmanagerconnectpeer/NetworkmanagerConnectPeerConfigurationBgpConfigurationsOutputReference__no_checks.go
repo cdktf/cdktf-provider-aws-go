@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

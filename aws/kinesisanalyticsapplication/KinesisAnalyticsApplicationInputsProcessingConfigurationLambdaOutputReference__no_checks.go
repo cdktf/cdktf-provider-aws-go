@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambd
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

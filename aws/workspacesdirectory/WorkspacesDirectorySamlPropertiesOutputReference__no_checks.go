@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspacesDirectorySamlPropertiesOutputReference) validateGet
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySamlPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectorySamlPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySamlPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectorySamlPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCook
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

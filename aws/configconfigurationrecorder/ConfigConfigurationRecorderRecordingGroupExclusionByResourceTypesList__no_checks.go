@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceT
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

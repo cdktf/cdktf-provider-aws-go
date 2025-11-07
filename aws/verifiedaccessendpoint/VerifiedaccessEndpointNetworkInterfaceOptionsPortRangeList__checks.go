@@ -29,9 +29,9 @@ func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) v
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

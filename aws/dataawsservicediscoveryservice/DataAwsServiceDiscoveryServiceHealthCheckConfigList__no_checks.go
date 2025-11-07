@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

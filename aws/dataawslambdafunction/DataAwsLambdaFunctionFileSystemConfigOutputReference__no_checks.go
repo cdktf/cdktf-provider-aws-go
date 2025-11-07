@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

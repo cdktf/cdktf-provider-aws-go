@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

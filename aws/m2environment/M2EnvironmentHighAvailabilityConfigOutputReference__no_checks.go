@@ -43,11 +43,11 @@ func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2EnvironmentHighAvailabilityConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

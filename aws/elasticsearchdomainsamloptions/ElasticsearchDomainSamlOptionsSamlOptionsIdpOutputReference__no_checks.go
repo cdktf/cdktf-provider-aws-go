@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateGetStr
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validatePutSta
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

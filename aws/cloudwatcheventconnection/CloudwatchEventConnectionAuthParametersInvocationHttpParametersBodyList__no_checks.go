@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

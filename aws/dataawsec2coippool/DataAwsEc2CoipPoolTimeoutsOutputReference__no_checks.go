@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleEx
 	return nil
 }
 
-func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

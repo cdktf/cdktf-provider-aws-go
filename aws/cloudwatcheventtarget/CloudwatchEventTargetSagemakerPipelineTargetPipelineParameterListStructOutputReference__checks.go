@@ -85,17 +85,17 @@ func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

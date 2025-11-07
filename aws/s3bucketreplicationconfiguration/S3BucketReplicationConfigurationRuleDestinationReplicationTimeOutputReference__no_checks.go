@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTim
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTim
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

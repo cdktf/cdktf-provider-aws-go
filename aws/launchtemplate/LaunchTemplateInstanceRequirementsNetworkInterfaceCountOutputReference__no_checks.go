@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutput
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

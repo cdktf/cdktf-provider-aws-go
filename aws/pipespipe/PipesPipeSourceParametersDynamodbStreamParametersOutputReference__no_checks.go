@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputRefere
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputRefere
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeSourceParametersDynamodbStreamParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

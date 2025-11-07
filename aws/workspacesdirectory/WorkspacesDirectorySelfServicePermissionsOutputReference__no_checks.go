@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) val
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

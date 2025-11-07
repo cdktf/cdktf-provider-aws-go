@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesList) val
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

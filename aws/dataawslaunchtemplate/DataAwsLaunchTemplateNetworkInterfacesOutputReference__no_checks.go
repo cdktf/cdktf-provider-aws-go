@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

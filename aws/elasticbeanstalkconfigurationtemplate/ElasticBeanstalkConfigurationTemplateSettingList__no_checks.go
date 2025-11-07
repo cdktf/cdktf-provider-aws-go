@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplateSettingList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplateSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplateSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

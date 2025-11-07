@@ -43,7 +43,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validatePutSou
 	return nil
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

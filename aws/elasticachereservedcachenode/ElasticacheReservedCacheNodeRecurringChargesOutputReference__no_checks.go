@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheReservedCacheNodeRecurringChargesOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReservedCacheNodeRecurringChargesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheReservedCacheNodeRecurringChargesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReservedCacheNodeRecurringChargesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheReservedCacheNodeRecurringChargesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

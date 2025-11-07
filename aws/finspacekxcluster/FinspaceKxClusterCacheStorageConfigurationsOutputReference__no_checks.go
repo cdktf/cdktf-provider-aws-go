@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterCacheStorageConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

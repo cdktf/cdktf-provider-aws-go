@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodepipelineStageOnFailureRetryConfigurationOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnFailureRetryConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineStageOnFailureRetryConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnFailureRetryConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnFailureRetryConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

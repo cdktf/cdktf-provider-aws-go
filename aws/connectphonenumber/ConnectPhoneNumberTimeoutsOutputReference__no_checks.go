@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectPhoneNumberTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

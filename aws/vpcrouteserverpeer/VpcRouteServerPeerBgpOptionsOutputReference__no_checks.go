@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsOutputReference) validateGetStrin
 	return nil
 }
 
-func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcRouteServerPeerBgpOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

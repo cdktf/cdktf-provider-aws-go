@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

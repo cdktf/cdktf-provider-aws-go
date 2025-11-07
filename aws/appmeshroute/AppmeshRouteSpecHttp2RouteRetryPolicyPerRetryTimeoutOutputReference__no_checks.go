@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

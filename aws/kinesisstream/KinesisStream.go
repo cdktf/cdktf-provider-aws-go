@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/kinesis_stream aws_kinesis_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/kinesis_stream aws_kinesis_stream}.
 type KinesisStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -58,6 +58,9 @@ type KinesisStream interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxRecordSizeInKib() *float64
+	SetMaxRecordSizeInKib(val *float64)
+	MaxRecordSizeInKibInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -151,6 +154,7 @@ type KinesisStream interface {
 	ResetEnforceConsumerDeletion()
 	ResetId()
 	ResetKmsKeyId()
+	ResetMaxRecordSizeInKib()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -365,6 +369,26 @@ func (j *jsiiProxy_KinesisStream) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisStream) MaxRecordSizeInKib() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRecordSizeInKib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisStream) MaxRecordSizeInKibInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRecordSizeInKibInput",
 		&returns,
 	)
 	return returns
@@ -621,7 +645,7 @@ func (j *jsiiProxy_KinesisStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource.
 func NewKinesisStream(scope constructs.Construct, id *string, config *KinesisStreamConfig) KinesisStream {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewKinesisStream(scope constructs.Construct, id *string, config *KinesisStr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/kinesis_stream aws_kinesis_stream} Resource.
 func NewKinesisStream_Override(k KinesisStream, scope constructs.Construct, id *string, config *KinesisStreamConfig) {
 	_init_.Initialize()
 
@@ -750,6 +774,17 @@ func (j *jsiiProxy_KinesisStream)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisStream)SetMaxRecordSizeInKib(val *float64) {
+	if err := j.validateSetMaxRecordSizeInKibParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRecordSizeInKib",
 		val,
 	)
 }
@@ -1261,6 +1296,14 @@ func (k *jsiiProxy_KinesisStream) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisStream) ResetMaxRecordSizeInKib() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMaxRecordSizeInKib",
 		nil, // no parameters
 	)
 }

@@ -76,7 +76,7 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAccountLevel(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel)
 	PutAwsOrg(value *S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrg)
 	PutDataExport(value *S3ControlStorageLensConfigurationStorageLensConfigurationDataExport)
@@ -88,7 +88,7 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference in
 	ResetInclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -555,8 +555,8 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	return returns
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -564,7 +564,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	)
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationOutp
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

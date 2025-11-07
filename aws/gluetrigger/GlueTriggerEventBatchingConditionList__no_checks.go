@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

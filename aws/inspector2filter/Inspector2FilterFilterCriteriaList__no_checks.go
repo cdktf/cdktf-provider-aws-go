@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaList) validateGetParameters(ind
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

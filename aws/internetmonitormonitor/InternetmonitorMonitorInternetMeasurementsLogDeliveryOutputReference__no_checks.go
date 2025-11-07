@@ -43,7 +43,7 @@ func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputRe
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputRe
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

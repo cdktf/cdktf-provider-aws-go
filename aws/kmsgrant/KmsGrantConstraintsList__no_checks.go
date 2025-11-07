@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsGrantConstraintsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (k *jsiiProxy_KmsGrantConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsGrantConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

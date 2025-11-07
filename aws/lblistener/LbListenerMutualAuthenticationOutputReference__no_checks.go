@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbListenerMutualAuthenticationOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerMutualAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerMutualAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

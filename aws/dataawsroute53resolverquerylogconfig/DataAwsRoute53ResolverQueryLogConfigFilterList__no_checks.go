@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

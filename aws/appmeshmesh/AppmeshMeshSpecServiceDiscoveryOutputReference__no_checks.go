@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshMeshSpecServiceDiscoveryOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecServiceDiscoveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshMeshSpecServiceDiscoveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecServiceDiscoveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshMeshSpecServiceDiscoveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

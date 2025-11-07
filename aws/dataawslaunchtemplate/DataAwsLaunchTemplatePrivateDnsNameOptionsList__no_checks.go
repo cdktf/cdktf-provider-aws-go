@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

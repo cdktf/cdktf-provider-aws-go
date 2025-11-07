@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudVmClusterIormConfigCacheDbPlansList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

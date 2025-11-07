@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

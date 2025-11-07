@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsTimestreamwriteTableSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

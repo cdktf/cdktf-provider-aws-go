@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

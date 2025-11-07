@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpotInstanceRequestEbsBlockDeviceList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SpotInstanceRequestEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotInstanceRequestEbsBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

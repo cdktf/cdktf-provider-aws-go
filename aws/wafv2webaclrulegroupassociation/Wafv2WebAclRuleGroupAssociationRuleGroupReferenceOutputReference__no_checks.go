@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

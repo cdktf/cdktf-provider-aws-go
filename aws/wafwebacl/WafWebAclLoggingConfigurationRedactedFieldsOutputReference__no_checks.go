@@ -43,7 +43,7 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

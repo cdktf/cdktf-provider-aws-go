@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

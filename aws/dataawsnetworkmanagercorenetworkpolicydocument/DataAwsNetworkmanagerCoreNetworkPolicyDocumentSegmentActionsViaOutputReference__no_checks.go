@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsV
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

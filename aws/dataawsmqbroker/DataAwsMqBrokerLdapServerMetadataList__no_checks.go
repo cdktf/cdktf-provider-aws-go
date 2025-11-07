@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsMqBrokerLdapServerMetadataList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMqBrokerLdapServerMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMqBrokerLdapServerMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validateGetStri
 	return nil
 }
 
-func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validatePutUser
 	return nil
 }
 
-func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraExperienceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

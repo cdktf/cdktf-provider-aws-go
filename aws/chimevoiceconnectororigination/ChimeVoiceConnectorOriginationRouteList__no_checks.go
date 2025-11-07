@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

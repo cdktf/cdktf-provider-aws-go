@@ -43,7 +43,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validatePutAttributeP
 	return nil
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

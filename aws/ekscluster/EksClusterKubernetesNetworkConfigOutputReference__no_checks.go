@@ -43,7 +43,7 @@ func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validatePut
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

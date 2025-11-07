@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerMutualAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

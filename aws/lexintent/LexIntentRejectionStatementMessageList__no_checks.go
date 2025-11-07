@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexIntentRejectionStatementMessageList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentRejectionStatementMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentRejectionStatementMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

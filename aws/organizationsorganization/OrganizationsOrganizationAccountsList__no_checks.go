@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationsOrganizationAccountsList) validateGetParameters(
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationsOrganizationAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeComponentList) validateGetParamete
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeComponentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeComponentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

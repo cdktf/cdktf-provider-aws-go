@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolClientRefreshTokenRotationList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolClientRefreshTokenRotationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolClientRefreshTokenRotationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

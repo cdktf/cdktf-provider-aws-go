@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

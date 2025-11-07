@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

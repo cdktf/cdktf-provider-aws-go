@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexBotAbortStatementMessageList) validateGetParameters(index 
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAbortStatementMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

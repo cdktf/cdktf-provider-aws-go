@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpoint
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

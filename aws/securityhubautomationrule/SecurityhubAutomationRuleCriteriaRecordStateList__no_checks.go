@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaRecordStateList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaRecordStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaRecordStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

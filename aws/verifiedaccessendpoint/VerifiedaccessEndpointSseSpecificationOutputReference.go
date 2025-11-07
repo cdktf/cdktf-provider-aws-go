@@ -69,12 +69,12 @@ type VerifiedaccessEndpointSseSpecificationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCustomerManagedKeyEnabled()
 	ResetKmsKeyArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) Interp
 	return returns
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) Interp
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) ResetK
 	)
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointSseSpecificationOutputReference) Resolv
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

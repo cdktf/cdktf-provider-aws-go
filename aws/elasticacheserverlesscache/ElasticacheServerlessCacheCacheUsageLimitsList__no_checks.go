@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsList) validateGetPa
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

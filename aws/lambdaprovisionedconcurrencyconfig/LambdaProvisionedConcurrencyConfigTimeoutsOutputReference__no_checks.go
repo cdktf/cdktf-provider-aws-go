@@ -43,11 +43,11 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

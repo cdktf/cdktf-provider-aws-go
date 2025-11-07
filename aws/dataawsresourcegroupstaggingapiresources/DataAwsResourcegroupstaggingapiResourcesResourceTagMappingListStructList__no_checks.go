@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

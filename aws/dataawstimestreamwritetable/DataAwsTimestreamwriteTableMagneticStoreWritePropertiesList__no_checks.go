@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsTimestreamwriteTableMagneticStoreWritePropertiesList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsTimestreamwriteTableMagneticStoreWritePropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsTimestreamwriteTableMagneticStoreWritePropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

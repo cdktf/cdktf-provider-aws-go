@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDashboardParametersStringParametersList) validateGe
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersStringParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardParametersStringParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

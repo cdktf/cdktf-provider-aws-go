@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineCo
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineCo
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

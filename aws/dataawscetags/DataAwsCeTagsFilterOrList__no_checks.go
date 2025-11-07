@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOrList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

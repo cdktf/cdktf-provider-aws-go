@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

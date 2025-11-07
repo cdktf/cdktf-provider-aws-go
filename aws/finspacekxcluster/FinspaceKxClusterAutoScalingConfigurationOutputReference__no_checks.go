@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxClusterAutoScalingConfigurationOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterAutoScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxClusterAutoScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterAutoScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterAutoScalingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

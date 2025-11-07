@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeLogConfigurationCloudwatchLogsLogDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

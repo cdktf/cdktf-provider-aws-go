@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushFilePathsList) vali
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushFilePathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineTriggerAllGitConfigurationPushFilePathsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

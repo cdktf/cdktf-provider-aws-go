@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validateGetStringM
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validatePutCustomR
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorListenerPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

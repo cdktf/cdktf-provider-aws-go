@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

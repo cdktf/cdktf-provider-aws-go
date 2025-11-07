@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

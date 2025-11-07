@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationList) validateGetParamete
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

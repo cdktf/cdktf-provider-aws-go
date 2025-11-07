@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNam
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

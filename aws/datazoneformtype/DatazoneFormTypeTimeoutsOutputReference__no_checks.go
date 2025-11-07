@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatazoneFormTypeTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneFormTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatazoneFormTypeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneFormTypeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneFormTypeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigAuthProviderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

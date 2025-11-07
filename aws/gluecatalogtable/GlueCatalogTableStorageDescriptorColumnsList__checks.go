@@ -29,9 +29,9 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

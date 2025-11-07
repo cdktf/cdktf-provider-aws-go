@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxWindowsFileSystemTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

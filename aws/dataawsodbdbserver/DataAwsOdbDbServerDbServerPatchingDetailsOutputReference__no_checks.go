@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbDbServerDbServerPatchingDetailsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbServerDbServerPatchingDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbDbServerDbServerPatchingDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbDbServerDbServerPatchingDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbDbServerDbServerPatchingDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

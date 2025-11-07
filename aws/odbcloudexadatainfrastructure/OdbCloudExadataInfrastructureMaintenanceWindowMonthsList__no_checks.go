@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowMonthsList) val
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowMonthsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureMaintenanceWindowMonthsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

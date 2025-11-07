@@ -15,7 +15,7 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListConsumerGroupReplicationList)
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListConsumerGroupReplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListConsumerGroupReplicationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

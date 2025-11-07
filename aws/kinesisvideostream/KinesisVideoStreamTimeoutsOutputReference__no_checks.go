@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

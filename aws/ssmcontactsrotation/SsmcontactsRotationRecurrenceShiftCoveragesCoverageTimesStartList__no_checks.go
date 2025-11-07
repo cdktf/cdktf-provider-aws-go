@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

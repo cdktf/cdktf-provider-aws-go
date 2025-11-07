@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallTlsInspectionConfigurationTlsInspectionConfigurationServerCertificateConfigurationServerCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

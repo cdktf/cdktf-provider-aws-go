@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyList) validateGetParam
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

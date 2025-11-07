@@ -43,11 +43,11 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

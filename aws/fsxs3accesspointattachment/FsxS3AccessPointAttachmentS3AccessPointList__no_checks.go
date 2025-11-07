@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointList) validateGetParam
 	return nil
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentS3AccessPointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

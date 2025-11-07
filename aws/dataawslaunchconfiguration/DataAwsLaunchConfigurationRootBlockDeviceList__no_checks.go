@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

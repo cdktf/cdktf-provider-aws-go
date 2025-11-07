@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList) v
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

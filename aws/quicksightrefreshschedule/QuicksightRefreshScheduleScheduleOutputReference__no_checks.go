@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validateGet
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validatePut
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightRefreshScheduleScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

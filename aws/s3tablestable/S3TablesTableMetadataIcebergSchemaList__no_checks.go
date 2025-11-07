@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3TablesTableMetadataIcebergSchemaList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_S3TablesTableMetadataIcebergSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3TablesTableMetadataIcebergSchemaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsBackupPlanRuleCopyActionLifecycleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

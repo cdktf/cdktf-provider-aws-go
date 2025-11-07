@@ -41,7 +41,7 @@ type DataAwsIamPrincipalPolicySimulationContextList interface {
 	Get(index *float64) DataAwsIamPrincipalPolicySimulationContextOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationContextList) Get(index *fl
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationContextList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationContextList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (d *jsiiProxy_DataAwsIamPrincipalPolicySimulationContextList) Resolve(_cont
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

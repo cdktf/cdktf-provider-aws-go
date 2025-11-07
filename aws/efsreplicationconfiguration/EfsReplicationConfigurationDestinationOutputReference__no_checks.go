@@ -43,11 +43,11 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

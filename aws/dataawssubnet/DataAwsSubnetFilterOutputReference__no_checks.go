@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSubnetFilterOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSubnetFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSubnetFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSubnetFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSubnetFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) v
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

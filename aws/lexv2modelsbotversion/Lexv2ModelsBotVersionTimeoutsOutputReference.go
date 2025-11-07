@@ -69,12 +69,12 @@ type Lexv2ModelsBotVersionTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) InterpolationAs
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) ResetDelete() {
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (l *jsiiProxy_Lexv2ModelsBotVersionTimeoutsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

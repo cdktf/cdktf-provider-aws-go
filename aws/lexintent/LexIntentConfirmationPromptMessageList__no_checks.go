@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexIntentConfirmationPromptMessageList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentConfirmationPromptMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentConfirmationPromptMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

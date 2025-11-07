@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeight
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

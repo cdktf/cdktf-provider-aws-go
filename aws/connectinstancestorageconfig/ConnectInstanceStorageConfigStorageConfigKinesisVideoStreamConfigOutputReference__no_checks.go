@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamCo
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamCo
 	return nil
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

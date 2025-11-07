@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTargetTargetsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTargetTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTargetTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

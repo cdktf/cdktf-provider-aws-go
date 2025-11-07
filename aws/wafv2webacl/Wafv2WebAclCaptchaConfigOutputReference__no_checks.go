@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validatePutImmunityT
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclCaptchaConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightThemeConfigurationDataColorPaletteOutputReference) 
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationDataColorPaletteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationDataColorPaletteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationDataColorPaletteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationDataColorPaletteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

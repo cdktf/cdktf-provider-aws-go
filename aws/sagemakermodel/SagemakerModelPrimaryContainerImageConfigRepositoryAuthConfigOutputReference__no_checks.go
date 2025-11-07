@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

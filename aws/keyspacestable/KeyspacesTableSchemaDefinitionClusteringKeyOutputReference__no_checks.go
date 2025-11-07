@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) v
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

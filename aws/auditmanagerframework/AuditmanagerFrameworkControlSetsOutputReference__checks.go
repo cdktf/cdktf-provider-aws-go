@@ -85,9 +85,9 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validatePutC
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

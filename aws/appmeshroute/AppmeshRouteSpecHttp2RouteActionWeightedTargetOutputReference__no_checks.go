@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

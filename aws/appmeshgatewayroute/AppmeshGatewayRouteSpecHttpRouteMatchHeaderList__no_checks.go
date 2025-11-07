@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchHeaderList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

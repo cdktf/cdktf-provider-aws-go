@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainSourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

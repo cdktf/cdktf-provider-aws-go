@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionOutputReference
 	return nil
 }
 
-func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

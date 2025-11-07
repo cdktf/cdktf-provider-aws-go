@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbTargetGroupStickinessList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbTargetGroupStickinessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbTargetGroupStickinessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

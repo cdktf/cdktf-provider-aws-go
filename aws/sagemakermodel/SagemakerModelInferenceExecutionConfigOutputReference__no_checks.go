@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

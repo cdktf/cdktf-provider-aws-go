@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnOutputRef
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersDependsOnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

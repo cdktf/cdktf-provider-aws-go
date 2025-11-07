@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) v
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

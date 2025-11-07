@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

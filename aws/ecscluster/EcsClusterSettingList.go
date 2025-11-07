@@ -41,7 +41,7 @@ type EcsClusterSettingList interface {
 	Get(index *float64) EcsClusterSettingOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (e *jsiiProxy_EcsClusterSettingList) Get(index *float64) EcsClusterSettingO
 	return returns
 }
 
-func (e *jsiiProxy_EcsClusterSettingList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EcsClusterSettingList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (e *jsiiProxy_EcsClusterSettingList) Resolve(_context cdktf.IResolveContext
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

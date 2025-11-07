@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateGetString
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

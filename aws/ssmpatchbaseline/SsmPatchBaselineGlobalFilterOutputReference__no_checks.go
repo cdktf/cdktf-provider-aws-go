@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

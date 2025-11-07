@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validatePutRetryCo
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnFailureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncApiEventConfigDefaultPublishAuthModeList) validateGetP
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncApiEventConfigDefaultPublishAuthModeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncApiEventConfigDefaultPublishAuthModeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

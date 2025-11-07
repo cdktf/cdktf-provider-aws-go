@@ -43,7 +43,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validatePutCodeH
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFulfillmentActivityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

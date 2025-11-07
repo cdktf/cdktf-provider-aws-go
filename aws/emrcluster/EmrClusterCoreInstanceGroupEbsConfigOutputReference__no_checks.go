@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

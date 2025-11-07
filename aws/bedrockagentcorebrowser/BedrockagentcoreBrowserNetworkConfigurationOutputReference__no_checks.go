@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) v
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) v
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeoptimizerEnrollmentStatusTimeoutsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerEnrollmentStatusTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeoptimizerEnrollmentStatusTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeoptimizerEnrollmentStatusTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeoptimizerEnrollmentStatusTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

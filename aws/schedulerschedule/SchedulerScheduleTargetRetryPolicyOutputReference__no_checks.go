@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

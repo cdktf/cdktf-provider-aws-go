@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingPolicyStepAdjustmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

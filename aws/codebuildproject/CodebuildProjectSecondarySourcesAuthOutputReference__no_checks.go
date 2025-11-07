@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

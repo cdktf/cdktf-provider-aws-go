@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationList) 
 	return nil
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNam
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

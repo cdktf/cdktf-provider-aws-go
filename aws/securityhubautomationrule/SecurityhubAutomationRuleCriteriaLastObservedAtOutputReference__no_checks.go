@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaLastObservedAtOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

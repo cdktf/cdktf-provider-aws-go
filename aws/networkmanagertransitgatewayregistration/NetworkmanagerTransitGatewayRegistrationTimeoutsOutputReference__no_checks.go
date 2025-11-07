@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

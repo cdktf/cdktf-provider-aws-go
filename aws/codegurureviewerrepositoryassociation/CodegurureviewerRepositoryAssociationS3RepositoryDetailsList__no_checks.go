@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociationS3RepositoryDetailsList)
 	return nil
 }
 
-func (c *jsiiProxy_CodegurureviewerRepositoryAssociationS3RepositoryDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociationS3RepositoryDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

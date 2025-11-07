@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

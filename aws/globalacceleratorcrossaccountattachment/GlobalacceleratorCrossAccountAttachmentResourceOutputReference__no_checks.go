@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

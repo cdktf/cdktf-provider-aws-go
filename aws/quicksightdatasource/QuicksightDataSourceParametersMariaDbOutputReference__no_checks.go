@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

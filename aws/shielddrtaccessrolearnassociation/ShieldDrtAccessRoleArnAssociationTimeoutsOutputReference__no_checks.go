@@ -43,11 +43,11 @@ func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

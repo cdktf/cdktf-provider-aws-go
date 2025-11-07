@@ -15,7 +15,7 @@ func (i *jsiiProxy_InstanceEphemeralBlockDeviceList) validateGetParameters(index
 	return nil
 }
 
-func (i *jsiiProxy_InstanceEphemeralBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceEphemeralBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

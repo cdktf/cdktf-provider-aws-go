@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexSlotTypeEnumerationValueList) validateGetParameters(index 
 	return nil
 }
 
-func (l *jsiiProxy_LexSlotTypeEnumerationValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexSlotTypeEnumerationValueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

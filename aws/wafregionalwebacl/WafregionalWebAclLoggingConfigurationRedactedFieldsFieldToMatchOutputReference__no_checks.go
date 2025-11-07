@@ -43,11 +43,11 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMat
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

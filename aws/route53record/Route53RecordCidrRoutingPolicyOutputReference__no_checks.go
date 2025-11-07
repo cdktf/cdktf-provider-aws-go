@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordCidrRoutingPolicyOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordCidrRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordCidrRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordCidrRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordCidrRoutingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

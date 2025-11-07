@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validatePutPrometheu
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterOpenMonitoringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

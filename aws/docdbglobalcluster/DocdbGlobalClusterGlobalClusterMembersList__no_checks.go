@@ -15,7 +15,7 @@ func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbGlobalClusterGlobalClusterMembersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

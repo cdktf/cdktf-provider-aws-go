@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

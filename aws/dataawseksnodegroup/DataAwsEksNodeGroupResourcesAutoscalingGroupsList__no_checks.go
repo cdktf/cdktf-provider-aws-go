@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

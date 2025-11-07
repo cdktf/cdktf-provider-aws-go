@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

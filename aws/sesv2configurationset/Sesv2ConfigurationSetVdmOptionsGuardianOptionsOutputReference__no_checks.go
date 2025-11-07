@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

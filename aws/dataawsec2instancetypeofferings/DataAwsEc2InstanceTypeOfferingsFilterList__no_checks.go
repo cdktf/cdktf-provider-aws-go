@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeOfferingsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

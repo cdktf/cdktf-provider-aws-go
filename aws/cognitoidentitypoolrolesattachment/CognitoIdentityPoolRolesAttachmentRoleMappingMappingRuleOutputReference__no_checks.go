@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutpu
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

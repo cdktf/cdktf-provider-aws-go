@@ -43,7 +43,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validat
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigO
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

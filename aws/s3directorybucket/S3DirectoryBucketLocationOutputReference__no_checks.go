@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3DirectoryBucketLocationOutputReference) validateGetStringMa
 	return nil
 }
 
-func (s *jsiiProxy_S3DirectoryBucketLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3DirectoryBucketLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3DirectoryBucketLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3DirectoryBucketLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

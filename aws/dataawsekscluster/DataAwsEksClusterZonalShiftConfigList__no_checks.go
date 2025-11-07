@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterZonalShiftConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

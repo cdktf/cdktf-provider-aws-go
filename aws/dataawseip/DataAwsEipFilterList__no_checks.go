@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEipFilterList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEipFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEipFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

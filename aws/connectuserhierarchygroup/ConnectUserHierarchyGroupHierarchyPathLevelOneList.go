@@ -39,7 +39,7 @@ type ConnectUserHierarchyGroupHierarchyPathLevelOneList interface {
 	Get(index *float64) ConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneList) Get(index
 	return returns
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelOneList) Resolve(_
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

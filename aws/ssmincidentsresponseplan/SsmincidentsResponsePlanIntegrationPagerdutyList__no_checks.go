@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsResponsePlanIntegrationPagerdutyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

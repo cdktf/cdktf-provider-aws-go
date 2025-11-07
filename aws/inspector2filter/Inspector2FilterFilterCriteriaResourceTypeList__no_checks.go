@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaResourceTypeList) validateGetPa
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaResourceTypeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaResourceTypeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

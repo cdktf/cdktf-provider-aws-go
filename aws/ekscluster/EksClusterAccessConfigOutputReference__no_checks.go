@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksClusterAccessConfigOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterAccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterAccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterAccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterAccessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

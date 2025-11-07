@@ -41,7 +41,7 @@ type Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList interface {
 	Get(index *float64) Inspector2FilterFilterCriteriaVulnerablePackagesReleaseOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList) 
 	return returns
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesReleaseList) 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

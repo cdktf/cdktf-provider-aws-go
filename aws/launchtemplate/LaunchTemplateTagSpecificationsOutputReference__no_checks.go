@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateTagSpecificationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

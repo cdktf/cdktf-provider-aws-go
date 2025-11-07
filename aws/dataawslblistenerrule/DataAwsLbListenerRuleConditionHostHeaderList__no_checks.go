@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleConditionHostHeaderList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleConditionHostHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleConditionHostHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockCustomModelVpcConfigList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BedrockCustomModelVpcConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockCustomModelVpcConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

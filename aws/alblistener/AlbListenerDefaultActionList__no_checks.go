@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerDefaultActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

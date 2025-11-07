@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpnGatewayFilterList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpnGatewayFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpnGatewayFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

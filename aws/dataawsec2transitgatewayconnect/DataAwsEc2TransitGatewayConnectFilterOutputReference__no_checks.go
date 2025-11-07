@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectFilterOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

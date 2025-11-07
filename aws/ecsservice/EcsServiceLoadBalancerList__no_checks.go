@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceLoadBalancerList) validateGetParameters(index *floa
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceLoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SfnStateMachineLoggingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

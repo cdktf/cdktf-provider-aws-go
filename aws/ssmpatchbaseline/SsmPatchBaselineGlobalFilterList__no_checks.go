@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmPatchBaselineGlobalFilterList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineGlobalFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmPatchBaselineGlobalFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

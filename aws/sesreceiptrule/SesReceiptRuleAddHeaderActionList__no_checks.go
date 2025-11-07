@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleAddHeaderActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

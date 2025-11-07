@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbInstanceRoleAssociationTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceRoleAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceRoleAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceRoleAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceRoleAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

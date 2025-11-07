@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigZonalConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

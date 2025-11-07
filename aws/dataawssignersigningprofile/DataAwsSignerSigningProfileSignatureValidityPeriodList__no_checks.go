@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

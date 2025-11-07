@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPathFilterAtSourceSourcePortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AthenaPreparedStatementTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AthenaPreparedStatementTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AthenaPreparedStatementTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AthenaPreparedStatementTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AthenaPreparedStatementTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

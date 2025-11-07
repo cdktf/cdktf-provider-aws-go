@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamDimensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigPreTokenGenerationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

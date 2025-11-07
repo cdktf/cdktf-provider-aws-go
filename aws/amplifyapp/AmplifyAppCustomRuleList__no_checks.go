@@ -15,7 +15,7 @@ func (a *jsiiProxy_AmplifyAppCustomRuleList) validateGetParameters(index *float6
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppCustomRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyAppCustomRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

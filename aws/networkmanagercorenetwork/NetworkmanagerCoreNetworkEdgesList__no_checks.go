@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkEdgesList) validateGetParameters(ind
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerCoreNetworkEdgesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerCoreNetworkEdgesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

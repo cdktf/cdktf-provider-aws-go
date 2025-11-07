@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthoriza
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

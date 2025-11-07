@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKinesisStreamStreamModeDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

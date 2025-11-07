@@ -43,11 +43,11 @@ func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaxParameterGroupParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

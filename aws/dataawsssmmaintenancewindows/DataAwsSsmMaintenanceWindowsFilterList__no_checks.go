@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmMaintenanceWindowsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

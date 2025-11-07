@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxClusterCodeOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterCodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxClusterCodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterCodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterCodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

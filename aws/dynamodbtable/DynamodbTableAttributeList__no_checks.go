@@ -15,7 +15,7 @@ func (d *jsiiProxy_DynamodbTableAttributeList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

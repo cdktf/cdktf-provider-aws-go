@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

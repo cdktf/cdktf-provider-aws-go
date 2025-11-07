@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMedialiveInputDestinationsVpcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

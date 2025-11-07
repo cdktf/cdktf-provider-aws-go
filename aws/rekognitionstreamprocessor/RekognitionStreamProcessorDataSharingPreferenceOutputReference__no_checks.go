@@ -43,11 +43,11 @@ func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceOutputReferenc
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorDataSharingPreferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

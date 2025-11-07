@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingList) validateGetP
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeCompositeSlotTypeSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

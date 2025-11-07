@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingList) validateGetParameters(in
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsIntentClosingSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

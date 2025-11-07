@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreCodeInterpreterNetworkConfigurationList) vali
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreCodeInterpreterNetworkConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreCodeInterpreterNetworkConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateGetStrin
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPresetAudioOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

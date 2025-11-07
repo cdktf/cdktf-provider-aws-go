@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList) 
 	return nil
 }
 
-func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

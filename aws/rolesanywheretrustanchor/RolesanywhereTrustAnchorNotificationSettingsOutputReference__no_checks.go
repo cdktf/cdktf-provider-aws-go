@@ -43,11 +43,11 @@ func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsOutputReference) 
 	return nil
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RolesanywhereTrustAnchorNotificationSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

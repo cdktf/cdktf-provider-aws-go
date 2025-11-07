@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUserDefinedFieldsList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUserDefinedFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUserDefinedFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

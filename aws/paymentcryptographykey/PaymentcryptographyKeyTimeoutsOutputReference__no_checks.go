@@ -43,11 +43,11 @@ func (p *jsiiProxy_PaymentcryptographyKeyTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PaymentcryptographyKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaymentcryptographyKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PaymentcryptographyKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaymentcryptographyKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

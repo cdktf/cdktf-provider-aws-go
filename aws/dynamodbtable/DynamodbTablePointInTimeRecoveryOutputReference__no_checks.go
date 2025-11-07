@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTablePointInTimeRecoveryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

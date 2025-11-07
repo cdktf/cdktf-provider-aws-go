@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputRe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

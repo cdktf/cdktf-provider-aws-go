@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaFirstObservedAtList) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaFirstObservedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaFirstObservedAtList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

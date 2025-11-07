@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

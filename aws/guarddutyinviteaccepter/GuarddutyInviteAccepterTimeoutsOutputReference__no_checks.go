@@ -43,11 +43,11 @@ func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyInviteAccepterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

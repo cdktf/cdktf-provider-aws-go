@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigCloudwatchLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

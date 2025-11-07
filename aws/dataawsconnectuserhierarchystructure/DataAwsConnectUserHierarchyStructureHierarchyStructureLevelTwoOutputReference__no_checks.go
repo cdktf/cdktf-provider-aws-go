@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTw
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

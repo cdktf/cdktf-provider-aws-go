@@ -85,9 +85,9 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validatePutC
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNet
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

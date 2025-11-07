@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList) validateGetPar
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorydbParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateList) va
 	return nil
 }
 
-func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

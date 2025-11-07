@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncry
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

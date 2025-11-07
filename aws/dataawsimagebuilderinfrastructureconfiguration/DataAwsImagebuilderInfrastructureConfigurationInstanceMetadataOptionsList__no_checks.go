@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationInstanceMetadat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationInstanceMetadataOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

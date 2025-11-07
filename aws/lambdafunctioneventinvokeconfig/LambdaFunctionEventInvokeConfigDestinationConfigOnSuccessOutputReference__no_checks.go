@@ -43,11 +43,11 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutp
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupTrafficSourceList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupTrafficSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupTrafficSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

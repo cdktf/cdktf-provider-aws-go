@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

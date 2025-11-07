@@ -43,11 +43,11 @@ func (g *jsiiProxy_GameliftFleetTimeoutsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftFleetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

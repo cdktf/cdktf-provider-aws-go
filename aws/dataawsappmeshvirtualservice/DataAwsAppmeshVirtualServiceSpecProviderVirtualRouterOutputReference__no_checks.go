@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

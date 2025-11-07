@@ -43,11 +43,11 @@ func (a *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

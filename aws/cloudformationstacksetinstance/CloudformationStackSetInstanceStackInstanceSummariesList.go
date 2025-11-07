@@ -39,7 +39,7 @@ type CloudformationStackSetInstanceStackInstanceSummariesList interface {
 	Get(index *float64) CloudformationStackSetInstanceStackInstanceSummariesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) Get
 	return returns
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (c *jsiiProxy_CloudformationStackSetInstanceStackInstanceSummariesList) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

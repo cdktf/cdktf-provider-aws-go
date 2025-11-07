@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOu
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

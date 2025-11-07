@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

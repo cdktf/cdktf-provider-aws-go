@@ -43,7 +43,7 @@ func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitio
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitio
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeResourceConfigurationResourceConfigurationDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

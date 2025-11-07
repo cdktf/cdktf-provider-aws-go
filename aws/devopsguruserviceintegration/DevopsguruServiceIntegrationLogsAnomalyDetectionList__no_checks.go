@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevopsguruServiceIntegrationLogsAnomalyDetectionList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationLogsAnomalyDetectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationLogsAnomalyDetectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

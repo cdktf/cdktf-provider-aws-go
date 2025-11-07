@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRdsEngineVersionFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DevopsguruResourceCollectionCloudformationList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruResourceCollectionCloudformationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruResourceCollectionCloudformationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

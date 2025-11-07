@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsExportWithHiddenFie
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

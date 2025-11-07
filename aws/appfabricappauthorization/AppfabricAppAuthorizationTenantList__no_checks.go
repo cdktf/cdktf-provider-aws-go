@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppfabricAppAuthorizationTenantList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationTenantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationTenantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

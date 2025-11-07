@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

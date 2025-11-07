@@ -43,7 +43,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validatePutCountPara
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

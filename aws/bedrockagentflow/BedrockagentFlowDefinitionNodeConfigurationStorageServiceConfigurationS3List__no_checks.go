@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageServiceConf
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionNodeConfigurationStorageServiceConfigurationS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

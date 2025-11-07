@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthor
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

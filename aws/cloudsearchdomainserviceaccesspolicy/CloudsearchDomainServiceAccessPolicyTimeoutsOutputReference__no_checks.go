@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

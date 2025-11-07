@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) validateGetString
 	return nil
 }
 
-func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

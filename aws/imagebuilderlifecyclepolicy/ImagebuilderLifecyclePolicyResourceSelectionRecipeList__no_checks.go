@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeList) valid
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

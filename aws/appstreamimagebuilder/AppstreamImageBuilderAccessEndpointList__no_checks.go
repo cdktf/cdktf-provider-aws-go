@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppstreamImageBuilderAccessEndpointList) validateGetParameter
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderAccessEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamImageBuilderAccessEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

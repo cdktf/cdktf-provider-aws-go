@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

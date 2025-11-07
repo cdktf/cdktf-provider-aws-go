@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpeci
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesConnectionTrackingSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

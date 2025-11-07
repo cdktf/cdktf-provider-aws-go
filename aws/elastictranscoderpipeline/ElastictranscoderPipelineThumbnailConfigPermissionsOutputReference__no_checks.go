@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

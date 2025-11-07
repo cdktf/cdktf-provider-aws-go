@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

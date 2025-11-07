@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsElbAccessLogsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElbAccessLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsElbAccessLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElbAccessLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElbAccessLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

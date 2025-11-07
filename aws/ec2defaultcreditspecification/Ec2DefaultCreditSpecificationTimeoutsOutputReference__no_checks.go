@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2DefaultCreditSpecificationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_Ec2DefaultCreditSpecificationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2DefaultCreditSpecificationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2DefaultCreditSpecificationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2DefaultCreditSpecificationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

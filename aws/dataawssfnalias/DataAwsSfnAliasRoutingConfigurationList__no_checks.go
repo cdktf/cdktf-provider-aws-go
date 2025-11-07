@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSfnAliasRoutingConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

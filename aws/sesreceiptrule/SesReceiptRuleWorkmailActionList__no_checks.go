@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesReceiptRuleWorkmailActionList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleWorkmailActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleWorkmailActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

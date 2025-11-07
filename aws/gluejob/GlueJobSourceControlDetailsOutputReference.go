@@ -87,7 +87,7 @@ type GlueJobSourceControlDetailsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAuthStrategy()
 	ResetAuthToken()
 	ResetBranch()
@@ -98,7 +98,7 @@ type GlueJobSourceControlDetailsOutputReference interface {
 	ResetRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -682,8 +682,8 @@ func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -691,7 +691,7 @@ func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) ResetRepository()
 	)
 }
 
-func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (g *jsiiProxy_GlueJobSourceControlDetailsOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

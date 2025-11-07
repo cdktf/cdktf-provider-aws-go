@@ -43,11 +43,11 @@ func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReserva
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

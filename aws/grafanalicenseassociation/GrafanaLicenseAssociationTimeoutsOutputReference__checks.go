@@ -85,17 +85,17 @@ func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

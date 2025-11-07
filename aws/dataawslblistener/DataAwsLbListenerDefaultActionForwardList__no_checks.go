@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerDefaultActionForwardList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerDefaultActionForwardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerDefaultActionForwardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

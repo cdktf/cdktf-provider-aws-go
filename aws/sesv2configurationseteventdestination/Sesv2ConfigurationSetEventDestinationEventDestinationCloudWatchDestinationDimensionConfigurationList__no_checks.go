@@ -15,7 +15,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWat
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

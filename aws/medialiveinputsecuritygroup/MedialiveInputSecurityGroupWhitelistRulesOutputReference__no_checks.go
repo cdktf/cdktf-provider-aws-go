@@ -43,11 +43,11 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

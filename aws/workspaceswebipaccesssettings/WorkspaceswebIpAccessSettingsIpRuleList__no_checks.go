@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleList) validateGetParameter
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebIpAccessSettingsIpRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

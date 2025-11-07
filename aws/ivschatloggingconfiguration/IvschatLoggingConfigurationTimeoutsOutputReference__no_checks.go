@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

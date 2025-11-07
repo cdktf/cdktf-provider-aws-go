@@ -15,7 +15,7 @@ func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

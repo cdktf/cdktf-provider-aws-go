@@ -29,9 +29,9 @@ func (s *jsiiProxy_S3BucketLifecycleRuleList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_S3BucketLifecycleRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

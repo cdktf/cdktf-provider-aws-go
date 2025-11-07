@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutp
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

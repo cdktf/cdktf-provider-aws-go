@@ -43,7 +43,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLogg
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLogg
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMonitoringConfigurationCloudwatchLoggingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

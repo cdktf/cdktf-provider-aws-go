@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDe
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

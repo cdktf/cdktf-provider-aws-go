@@ -43,11 +43,11 @@ func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetCostFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

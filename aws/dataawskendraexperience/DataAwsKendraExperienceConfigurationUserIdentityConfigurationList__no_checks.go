@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

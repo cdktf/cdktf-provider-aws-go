@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

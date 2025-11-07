@@ -43,11 +43,11 @@ func (r *jsiiProxy_RbinRuleRetentionPeriodOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleRetentionPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RbinRuleRetentionPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleRetentionPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RbinRuleRetentionPeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

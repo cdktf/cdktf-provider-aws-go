@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

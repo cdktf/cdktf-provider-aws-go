@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodebuildFleetStatusList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskReplicatorKafkaClusterVpcConfigOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorKafkaClusterVpcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskReplicatorKafkaClusterVpcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorKafkaClusterVpcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorKafkaClusterVpcConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

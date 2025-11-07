@@ -43,7 +43,7 @@ func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validatePutAdva
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksAccessPolicyAssociationTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EksAccessPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksAccessPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksAccessPolicyAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksAccessPolicyAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

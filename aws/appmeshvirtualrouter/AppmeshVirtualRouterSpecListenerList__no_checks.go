@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

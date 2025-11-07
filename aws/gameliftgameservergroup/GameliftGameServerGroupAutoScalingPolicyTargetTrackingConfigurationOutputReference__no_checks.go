@@ -43,11 +43,11 @@ func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigu
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

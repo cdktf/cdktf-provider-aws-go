@@ -43,11 +43,11 @@ func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

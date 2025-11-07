@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

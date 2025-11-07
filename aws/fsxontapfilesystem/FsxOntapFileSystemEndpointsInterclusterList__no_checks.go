@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterList) validateGetParam
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsInterclusterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateGetP
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

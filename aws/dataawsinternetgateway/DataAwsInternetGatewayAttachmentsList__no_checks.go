@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

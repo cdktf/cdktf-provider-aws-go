@@ -43,7 +43,7 @@ func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputRefere
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputRefere
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvsRecordingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

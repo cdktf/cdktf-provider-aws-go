@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

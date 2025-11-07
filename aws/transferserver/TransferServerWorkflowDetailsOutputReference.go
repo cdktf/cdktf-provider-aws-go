@@ -67,14 +67,14 @@ type TransferServerWorkflowDetailsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutOnPartialUpload(value *TransferServerWorkflowDetailsOnPartialUpload)
 	PutOnUpload(value *TransferServerWorkflowDetailsOnUpload)
 	ResetOnPartialUpload()
 	ResetOnUpload()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InterpolationAs
 	return returns
 }
 
-func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) ResetOnUpload()
 	)
 }
 
-func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

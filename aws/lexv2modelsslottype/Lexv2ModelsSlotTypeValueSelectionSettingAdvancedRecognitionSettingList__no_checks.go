@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSe
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingAdvancedRecognitionSettingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

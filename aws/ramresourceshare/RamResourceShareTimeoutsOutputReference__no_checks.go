@@ -43,11 +43,11 @@ func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RamResourceShareTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

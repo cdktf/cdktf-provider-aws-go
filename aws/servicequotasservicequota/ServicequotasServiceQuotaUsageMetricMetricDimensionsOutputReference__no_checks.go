@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -72,13 +72,13 @@ type FsxOntapFileSystemTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (f *jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

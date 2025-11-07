@@ -15,7 +15,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleList) valid
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsMaintenanceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

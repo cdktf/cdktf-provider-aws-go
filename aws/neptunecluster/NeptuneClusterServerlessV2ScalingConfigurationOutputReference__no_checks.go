@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

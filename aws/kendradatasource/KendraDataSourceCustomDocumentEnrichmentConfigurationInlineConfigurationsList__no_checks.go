@@ -15,7 +15,7 @@ func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineCo
 	return nil
 }
 
-func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

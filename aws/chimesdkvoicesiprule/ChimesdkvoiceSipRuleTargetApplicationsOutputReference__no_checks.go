@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

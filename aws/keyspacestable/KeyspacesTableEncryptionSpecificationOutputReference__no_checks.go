@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validat
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

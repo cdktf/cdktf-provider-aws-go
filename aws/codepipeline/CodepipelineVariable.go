@@ -5,11 +5,11 @@ package codepipeline
 
 
 type CodepipelineVariable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/codepipeline#name Codepipeline#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/codepipeline#name Codepipeline#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/codepipeline#default_value Codepipeline#default_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/codepipeline#default_value Codepipeline#default_value}.
 	DefaultValue *string `field:"optional" json:"defaultValue" yaml:"defaultValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/codepipeline#description Codepipeline#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/codepipeline#description Codepipeline#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

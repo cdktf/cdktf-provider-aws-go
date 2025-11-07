@@ -15,7 +15,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginList) validateGetParameters(index *f
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorPluginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorPluginList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

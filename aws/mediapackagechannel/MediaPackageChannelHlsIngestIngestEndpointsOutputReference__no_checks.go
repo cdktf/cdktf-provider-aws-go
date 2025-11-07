@@ -43,11 +43,11 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

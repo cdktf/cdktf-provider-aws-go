@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlDirectoryBucketAccessPointScopeScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

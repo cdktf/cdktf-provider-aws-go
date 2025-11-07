@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAct
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

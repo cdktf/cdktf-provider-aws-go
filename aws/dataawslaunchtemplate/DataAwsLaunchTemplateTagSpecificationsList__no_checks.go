@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateTagSpecificationsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateTagSpecificationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateTagSpecificationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

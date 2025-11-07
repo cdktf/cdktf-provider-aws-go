@@ -43,11 +43,11 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

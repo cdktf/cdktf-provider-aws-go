@@ -29,9 +29,9 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

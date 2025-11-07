@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersProcessPidOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

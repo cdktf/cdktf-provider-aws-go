@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

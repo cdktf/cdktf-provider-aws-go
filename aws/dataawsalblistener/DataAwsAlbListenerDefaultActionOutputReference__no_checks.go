@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

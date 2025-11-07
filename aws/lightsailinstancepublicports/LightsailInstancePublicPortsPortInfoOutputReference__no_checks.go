@@ -43,11 +43,11 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

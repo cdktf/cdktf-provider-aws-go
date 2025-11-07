@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

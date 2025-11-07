@@ -43,7 +43,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validateGetStr
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -231,7 +231,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validatePutVul
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorSettingsFaceSearchList) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorSettingsFaceSearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorSettingsFaceSearchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

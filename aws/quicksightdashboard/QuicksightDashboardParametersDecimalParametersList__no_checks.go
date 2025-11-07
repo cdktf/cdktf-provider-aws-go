@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersList) validateG
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

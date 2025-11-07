@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBatchJobDefinitionTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

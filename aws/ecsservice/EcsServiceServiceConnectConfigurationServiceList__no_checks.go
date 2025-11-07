@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

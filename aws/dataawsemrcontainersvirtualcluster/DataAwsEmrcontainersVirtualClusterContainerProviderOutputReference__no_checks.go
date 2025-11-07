@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

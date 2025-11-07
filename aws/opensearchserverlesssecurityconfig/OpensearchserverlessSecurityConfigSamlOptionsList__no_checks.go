@@ -15,7 +15,7 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsList) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchserverlessSecurityConfigSamlOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

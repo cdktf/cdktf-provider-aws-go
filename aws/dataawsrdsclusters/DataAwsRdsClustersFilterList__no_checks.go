@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRdsClustersFilterList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsClustersFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRdsClustersFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

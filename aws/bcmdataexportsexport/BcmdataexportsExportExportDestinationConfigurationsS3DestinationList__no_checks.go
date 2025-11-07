@@ -15,7 +15,7 @@ func (b *jsiiProxy_BcmdataexportsExportExportDestinationConfigurationsS3Destinat
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportDestinationConfigurationsS3DestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BcmdataexportsExportExportDestinationConfigurationsS3DestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

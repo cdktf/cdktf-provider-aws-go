@@ -43,11 +43,11 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

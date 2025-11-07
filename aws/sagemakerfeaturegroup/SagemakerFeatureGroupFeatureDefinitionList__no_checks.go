@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFeatureGroupFeatureDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

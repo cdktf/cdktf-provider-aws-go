@@ -43,11 +43,11 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

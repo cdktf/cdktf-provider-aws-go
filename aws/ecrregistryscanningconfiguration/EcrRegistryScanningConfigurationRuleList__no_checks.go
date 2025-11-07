@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

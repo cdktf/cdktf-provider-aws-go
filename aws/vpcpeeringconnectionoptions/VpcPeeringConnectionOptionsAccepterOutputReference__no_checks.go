@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

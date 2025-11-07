@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbNetworkManagedServicesList) validateGetParameters(index *f
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkManagedServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkManagedServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

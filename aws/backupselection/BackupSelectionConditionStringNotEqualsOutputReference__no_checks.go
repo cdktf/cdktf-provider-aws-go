@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionConditionStringNotEqualsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

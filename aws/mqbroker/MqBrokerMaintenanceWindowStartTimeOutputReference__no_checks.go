@@ -43,11 +43,11 @@ func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

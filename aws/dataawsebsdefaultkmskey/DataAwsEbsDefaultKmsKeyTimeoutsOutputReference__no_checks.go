@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateGetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

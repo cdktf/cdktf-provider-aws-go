@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDevopsguruResourceCollectionCloudformationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

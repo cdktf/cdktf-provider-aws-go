@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbNetworkManagedServicesS3AccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

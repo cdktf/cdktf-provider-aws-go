@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationPlacementOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationPlacementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationPlacementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationPlacementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationPlacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

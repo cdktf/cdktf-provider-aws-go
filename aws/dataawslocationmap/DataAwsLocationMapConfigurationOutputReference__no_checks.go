@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLocationMapConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

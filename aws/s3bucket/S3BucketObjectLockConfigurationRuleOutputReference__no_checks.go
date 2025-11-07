@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateP
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

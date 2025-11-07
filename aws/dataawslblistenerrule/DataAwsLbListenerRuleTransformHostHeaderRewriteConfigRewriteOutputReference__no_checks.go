@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteO
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleTransformHostHeaderRewriteConfigRewriteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

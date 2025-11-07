@@ -15,7 +15,7 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeM
 	return nil
 }
 
-func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

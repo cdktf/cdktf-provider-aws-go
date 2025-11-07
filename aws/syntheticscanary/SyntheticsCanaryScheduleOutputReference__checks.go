@@ -85,9 +85,9 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateGetStringMap
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validatePutRetryConf
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

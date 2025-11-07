@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

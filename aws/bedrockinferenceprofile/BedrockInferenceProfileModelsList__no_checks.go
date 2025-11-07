@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockInferenceProfileModelsList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BedrockInferenceProfileModelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockInferenceProfileModelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

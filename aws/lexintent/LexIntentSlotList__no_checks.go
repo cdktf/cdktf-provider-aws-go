@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexIntentSlotList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentSlotList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentSlotList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

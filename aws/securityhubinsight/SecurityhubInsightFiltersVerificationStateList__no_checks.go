@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersVerificationStateList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersVerificationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersVerificationStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

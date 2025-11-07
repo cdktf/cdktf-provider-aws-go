@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

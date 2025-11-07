@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

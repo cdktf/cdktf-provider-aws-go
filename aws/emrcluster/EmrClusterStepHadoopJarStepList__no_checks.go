@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateGetParameters(index 
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

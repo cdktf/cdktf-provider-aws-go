@@ -15,7 +15,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSo
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

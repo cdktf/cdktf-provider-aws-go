@@ -15,7 +15,7 @@ func (l *jsiiProxy_LexBotIntentList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (l *jsiiProxy_LexBotIntentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotIntentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

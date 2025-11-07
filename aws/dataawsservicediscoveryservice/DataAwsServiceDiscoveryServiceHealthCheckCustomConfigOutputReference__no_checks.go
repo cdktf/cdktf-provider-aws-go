@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

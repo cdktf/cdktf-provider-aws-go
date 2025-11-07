@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbO
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

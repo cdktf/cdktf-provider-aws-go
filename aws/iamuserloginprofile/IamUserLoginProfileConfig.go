@@ -22,18 +22,18 @@ type IamUserLoginProfileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_user_login_profile#user IamUserLoginProfile#user}.
 	User *string `field:"required" json:"user" yaml:"user"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_user_login_profile#id IamUserLoginProfile#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_user_login_profile#password_length IamUserLoginProfile#password_length}.
 	PasswordLength *float64 `field:"optional" json:"passwordLength" yaml:"passwordLength"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_user_login_profile#password_reset_required IamUserLoginProfile#password_reset_required}.
 	PasswordResetRequired interface{} `field:"optional" json:"passwordResetRequired" yaml:"passwordResetRequired"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_user_login_profile#pgp_key IamUserLoginProfile#pgp_key}.
 	PgpKey *string `field:"optional" json:"pgpKey" yaml:"pgpKey"`
 }
 

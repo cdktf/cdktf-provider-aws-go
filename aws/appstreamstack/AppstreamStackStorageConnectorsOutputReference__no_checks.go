@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamStackStorageConnectorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestList) validateGetP
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorRegionsOfInterestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

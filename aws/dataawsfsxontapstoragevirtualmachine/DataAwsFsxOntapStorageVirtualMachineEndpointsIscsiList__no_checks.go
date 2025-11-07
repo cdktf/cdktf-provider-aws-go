@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsIscsiList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsIscsiList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineEndpointsIscsiList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

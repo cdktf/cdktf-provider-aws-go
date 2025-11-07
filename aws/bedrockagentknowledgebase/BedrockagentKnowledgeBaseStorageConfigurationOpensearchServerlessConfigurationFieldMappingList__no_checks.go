@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationOpensearchServer
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationOpensearchServerlessConfigurationFieldMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

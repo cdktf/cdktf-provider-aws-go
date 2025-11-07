@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmDocumentAttachmentsSourceList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SsmDocumentAttachmentsSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmDocumentAttachmentsSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

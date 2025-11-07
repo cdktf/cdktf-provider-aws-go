@@ -43,11 +43,11 @@ func (s *jsiiProxy_SubnetTimeoutsOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (s *jsiiProxy_SubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SubnetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SubnetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

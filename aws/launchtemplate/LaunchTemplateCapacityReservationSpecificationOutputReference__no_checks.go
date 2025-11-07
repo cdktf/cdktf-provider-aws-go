@@ -43,7 +43,7 @@ func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

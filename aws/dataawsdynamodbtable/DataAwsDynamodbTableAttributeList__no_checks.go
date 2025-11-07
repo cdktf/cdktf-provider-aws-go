@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableAttributeList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

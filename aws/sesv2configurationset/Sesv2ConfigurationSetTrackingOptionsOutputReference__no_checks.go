@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

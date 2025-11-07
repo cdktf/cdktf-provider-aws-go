@@ -43,7 +43,7 @@ func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPool
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPool
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationCognitoUserPoolConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

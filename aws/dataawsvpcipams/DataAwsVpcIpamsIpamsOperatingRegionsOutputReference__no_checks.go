@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcIpamsIpamsOperatingRegionsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamsIpamsOperatingRegionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcIpamsIpamsOperatingRegionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamsIpamsOperatingRegionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamsIpamsOperatingRegionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

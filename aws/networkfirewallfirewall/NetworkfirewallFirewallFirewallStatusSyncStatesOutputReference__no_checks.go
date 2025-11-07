@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesOutputReferenc
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

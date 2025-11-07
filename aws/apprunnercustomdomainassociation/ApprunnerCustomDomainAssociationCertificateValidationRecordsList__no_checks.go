@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsL
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

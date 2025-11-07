@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigAllowedPublishersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

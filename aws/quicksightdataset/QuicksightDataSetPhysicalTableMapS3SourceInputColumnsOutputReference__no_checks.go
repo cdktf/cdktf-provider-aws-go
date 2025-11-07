@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputRe
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

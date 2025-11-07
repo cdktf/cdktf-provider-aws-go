@@ -43,7 +43,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validatePutMaintenanceStr
 	return nil
 }
 
-func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2FleetSpotOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

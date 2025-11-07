@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginVpcOriginConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

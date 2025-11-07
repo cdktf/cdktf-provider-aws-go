@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

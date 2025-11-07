@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciList)
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudExadataInfrastructureCustomerContactsToSendToOciList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

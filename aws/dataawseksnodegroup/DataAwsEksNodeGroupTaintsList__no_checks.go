@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksNodeGroupTaintsList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksNodeGroupTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksNodeGroupTaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamStackStreamingExperienceSettingsOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackStreamingExperienceSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamStackStreamingExperienceSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackStreamingExperienceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamStackStreamingExperienceSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

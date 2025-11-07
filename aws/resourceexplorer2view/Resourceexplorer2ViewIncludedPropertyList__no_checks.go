@@ -15,7 +15,7 @@ func (r *jsiiProxy_Resourceexplorer2ViewIncludedPropertyList) validateGetParamet
 	return nil
 }
 
-func (r *jsiiProxy_Resourceexplorer2ViewIncludedPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Resourceexplorer2ViewIncludedPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

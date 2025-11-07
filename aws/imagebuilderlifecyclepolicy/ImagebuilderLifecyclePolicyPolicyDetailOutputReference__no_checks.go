@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyPolicyDetailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

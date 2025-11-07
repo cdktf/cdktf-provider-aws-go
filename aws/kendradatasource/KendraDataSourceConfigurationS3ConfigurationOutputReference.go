@@ -79,7 +79,7 @@ type KendraDataSourceConfigurationS3ConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAccessControlListConfiguration(value *KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration)
 	PutDocumentsMetadataConfiguration(value *KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration)
 	ResetAccessControlListConfiguration()
@@ -89,7 +89,7 @@ type KendraDataSourceConfigurationS3ConfigurationOutputReference interface {
 	ResetInclusionPrefixes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -589,8 +589,8 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) 
 	return returns
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -598,7 +598,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) 
 	)
 }
 
-func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (k *jsiiProxy_KendraDataSourceConfigurationS3ConfigurationOutputReference) 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

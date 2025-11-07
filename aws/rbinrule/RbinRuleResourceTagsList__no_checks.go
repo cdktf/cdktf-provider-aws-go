@@ -15,7 +15,7 @@ func (r *jsiiProxy_RbinRuleResourceTagsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleResourceTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RbinRuleResourceTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

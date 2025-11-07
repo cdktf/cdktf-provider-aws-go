@@ -43,11 +43,11 @@ func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineWebhookFilterList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineWebhookFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

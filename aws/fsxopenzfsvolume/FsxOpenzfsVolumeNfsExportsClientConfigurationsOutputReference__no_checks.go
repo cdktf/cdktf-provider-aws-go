@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

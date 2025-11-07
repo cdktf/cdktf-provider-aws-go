@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocdbClusterServerlessV2ScalingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

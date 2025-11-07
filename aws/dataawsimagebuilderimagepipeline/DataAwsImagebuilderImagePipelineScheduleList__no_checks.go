@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsImagebuilderImagePipelineScheduleList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImagePipelineScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImagePipelineScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

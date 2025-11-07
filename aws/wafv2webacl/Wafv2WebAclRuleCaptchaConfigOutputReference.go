@@ -65,12 +65,12 @@ type Wafv2WebAclRuleCaptchaConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutImmunityTimeProperty(value *Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty)
 	ResetImmunityTimeProperty()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -426,8 +426,8 @@ func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) InterpolationAsL
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -435,7 +435,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) ResetImmunityTim
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleCaptchaConfigOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

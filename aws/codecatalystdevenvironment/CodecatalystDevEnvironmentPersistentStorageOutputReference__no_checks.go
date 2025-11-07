@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodecatalystDevEnvironmentPersistentStorageOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CodecatalystDevEnvironmentPersistentStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodecatalystDevEnvironmentPersistentStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodecatalystDevEnvironmentPersistentStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodecatalystDevEnvironmentPersistentStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

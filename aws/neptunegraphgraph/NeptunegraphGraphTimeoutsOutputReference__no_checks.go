@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptunegraphGraphTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (n *jsiiProxy_NeptunegraphGraphTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptunegraphGraphTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptunegraphGraphTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptunegraphGraphTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

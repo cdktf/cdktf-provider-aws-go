@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcrRepositoryEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

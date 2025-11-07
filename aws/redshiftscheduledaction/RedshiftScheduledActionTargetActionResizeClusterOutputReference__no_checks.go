@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftScheduledActionTargetActionResizeClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

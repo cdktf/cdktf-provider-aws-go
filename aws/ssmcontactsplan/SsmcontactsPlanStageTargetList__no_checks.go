@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmcontactsPlanStageTargetList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsPlanStageTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

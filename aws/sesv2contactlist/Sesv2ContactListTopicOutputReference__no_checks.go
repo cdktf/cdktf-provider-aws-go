@@ -43,11 +43,11 @@ func (s *jsiiProxy_Sesv2ContactListTopicOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ContactListTopicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ContactListTopicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ContactListTopicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ContactListTopicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

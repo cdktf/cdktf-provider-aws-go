@@ -68,12 +68,12 @@ type ResourcegroupsGroupConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutParameters(value interface{})
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -460,8 +460,8 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) Interpolatio
 	return returns
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -469,7 +469,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) Interpolatio
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) ResetParamet
 	)
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndAndList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndAndList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndAndList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

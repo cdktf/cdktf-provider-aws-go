@@ -15,7 +15,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateGetParameters(i
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

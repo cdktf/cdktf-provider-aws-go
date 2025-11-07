@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList)
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontkeyvaluestoreKeysExclusiveResourceKeyValuePairList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

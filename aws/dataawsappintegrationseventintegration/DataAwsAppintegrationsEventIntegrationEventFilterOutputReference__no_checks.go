@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppintegrationsEventIntegrationEventFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

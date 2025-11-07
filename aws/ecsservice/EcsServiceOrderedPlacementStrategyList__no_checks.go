@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

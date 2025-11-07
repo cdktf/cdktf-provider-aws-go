@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionList) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclDataProtectionConfigDataProtectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validateGetStri
 	return nil
 }
 
-func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validatePutSpot
 	return nil
 }
 
-func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceInstanceMarketOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

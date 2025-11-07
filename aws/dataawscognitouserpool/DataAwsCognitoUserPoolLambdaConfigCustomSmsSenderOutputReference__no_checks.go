@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

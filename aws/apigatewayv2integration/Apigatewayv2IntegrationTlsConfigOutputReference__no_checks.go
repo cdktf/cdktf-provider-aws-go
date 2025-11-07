@@ -43,11 +43,11 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

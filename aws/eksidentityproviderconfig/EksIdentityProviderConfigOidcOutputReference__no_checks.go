@@ -43,11 +43,11 @@ func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

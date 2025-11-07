@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) valida
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

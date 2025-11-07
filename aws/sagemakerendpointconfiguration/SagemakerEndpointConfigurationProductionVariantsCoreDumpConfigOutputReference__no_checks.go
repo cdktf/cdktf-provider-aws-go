@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfi
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateGetParamet
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightThemePermissionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemePermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightThemePermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemePermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightThemePermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

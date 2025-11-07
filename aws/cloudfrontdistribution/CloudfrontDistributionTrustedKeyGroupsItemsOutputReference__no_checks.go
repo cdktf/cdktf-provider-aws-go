@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedKeyGroupsItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -75,12 +75,12 @@ type IotTopicRuleFirehoseOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetBatchMode()
 	ResetSeparator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -540,8 +540,8 @@ func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -549,7 +549,7 @@ func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) InterpolationForAttribut
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -572,8 +572,8 @@ func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) ResetSeparator() {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +581,7 @@ func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

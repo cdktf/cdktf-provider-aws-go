@@ -99,7 +99,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutColdStorageOptions(value *OpensearchDomainClusterConfigColdStorageOptions)
 	PutNodeOptions(value interface{})
 	PutZoneAwarenessConfig(value *OpensearchDomainClusterConfigZoneAwarenessConfig)
@@ -118,7 +118,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	ResetZoneAwarenessEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -824,8 +824,8 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InterpolationAs
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -833,7 +833,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -977,8 +977,8 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetZoneAwaren
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -986,7 +986,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

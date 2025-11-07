@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRedshiftDataSharesDataSharesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

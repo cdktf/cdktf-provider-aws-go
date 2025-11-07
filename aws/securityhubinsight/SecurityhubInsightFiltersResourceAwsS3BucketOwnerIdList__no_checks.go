@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

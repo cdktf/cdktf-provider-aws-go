@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebSessionLoggerLogConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

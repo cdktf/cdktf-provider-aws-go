@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateP
 	return nil
 }
 
-func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppfabricAppAuthorizationCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

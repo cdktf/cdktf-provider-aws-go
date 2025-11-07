@@ -43,7 +43,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

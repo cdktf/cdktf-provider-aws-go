@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskconnectWorkerConfigurationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectWorkerConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectWorkerConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectWorkerConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectWorkerConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

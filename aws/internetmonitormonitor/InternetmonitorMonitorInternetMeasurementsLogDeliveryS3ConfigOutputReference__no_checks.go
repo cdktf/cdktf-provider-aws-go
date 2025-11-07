@@ -43,11 +43,11 @@ func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

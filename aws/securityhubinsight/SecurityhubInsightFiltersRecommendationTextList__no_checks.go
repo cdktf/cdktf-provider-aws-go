@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateGetP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersRecommendationTextList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

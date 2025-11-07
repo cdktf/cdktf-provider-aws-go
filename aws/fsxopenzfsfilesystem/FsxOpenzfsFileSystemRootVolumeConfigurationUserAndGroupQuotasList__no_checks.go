@@ -15,7 +15,7 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

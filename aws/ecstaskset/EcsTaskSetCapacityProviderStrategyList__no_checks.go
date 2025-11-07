@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskSetCapacityProviderStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

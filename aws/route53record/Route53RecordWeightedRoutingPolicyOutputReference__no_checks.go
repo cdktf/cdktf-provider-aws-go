@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

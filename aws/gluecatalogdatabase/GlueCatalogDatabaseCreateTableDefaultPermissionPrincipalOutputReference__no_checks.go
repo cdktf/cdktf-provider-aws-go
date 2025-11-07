@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

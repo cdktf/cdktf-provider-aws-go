@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

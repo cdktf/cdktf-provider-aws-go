@@ -15,7 +15,7 @@ func (d *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableLocalSecondaryIndexList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

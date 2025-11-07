@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutRStu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

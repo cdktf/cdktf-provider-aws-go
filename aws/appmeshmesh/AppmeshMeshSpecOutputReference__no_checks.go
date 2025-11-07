@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validatePutServiceDiscoveryPa
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

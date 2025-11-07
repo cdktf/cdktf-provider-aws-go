@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

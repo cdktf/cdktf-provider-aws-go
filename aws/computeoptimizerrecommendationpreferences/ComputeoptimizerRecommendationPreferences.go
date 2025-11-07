@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences}.
 type ComputeoptimizerRecommendationPreferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -536,7 +536,7 @@ func (j *jsiiProxy_ComputeoptimizerRecommendationPreferences) UtilizationPrefere
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
 func NewComputeoptimizerRecommendationPreferences(scope constructs.Construct, id *string, config *ComputeoptimizerRecommendationPreferencesConfig) ComputeoptimizerRecommendationPreferences {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewComputeoptimizerRecommendationPreferences(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/computeoptimizer_recommendation_preferences aws_computeoptimizer_recommendation_preferences} Resource.
 func NewComputeoptimizerRecommendationPreferences_Override(c ComputeoptimizerRecommendationPreferences, scope constructs.Construct, id *string, config *ComputeoptimizerRecommendationPreferencesConfig) {
 	_init_.Initialize()
 

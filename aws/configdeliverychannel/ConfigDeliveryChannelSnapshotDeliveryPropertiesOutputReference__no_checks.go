@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

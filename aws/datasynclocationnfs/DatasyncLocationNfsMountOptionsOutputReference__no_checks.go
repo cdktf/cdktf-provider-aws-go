@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

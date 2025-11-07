@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionAuthenticateCognitoList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLbListenerRuleActionAuthenticateCognitoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLbListenerRuleActionAuthenticateCognitoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

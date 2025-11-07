@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationG
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

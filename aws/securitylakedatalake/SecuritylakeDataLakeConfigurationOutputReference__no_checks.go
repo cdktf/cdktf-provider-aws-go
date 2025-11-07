@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

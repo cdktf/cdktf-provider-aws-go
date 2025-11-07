@@ -43,11 +43,11 @@ func (a *jsiiProxy_AmplifyDomainAssociationCertificateSettingsOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationCertificateSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmplifyDomainAssociationCertificateSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationCertificateSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyDomainAssociationCertificateSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

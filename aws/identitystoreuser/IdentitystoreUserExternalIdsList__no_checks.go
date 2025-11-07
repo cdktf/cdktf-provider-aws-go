@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentitystoreUserExternalIdsList) validateGetParameters(index
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreUserExternalIdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentitystoreUserExternalIdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

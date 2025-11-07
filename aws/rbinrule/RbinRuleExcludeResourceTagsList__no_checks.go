@@ -15,7 +15,7 @@ func (r *jsiiProxy_RbinRuleExcludeResourceTagsList) validateGetParameters(index 
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleExcludeResourceTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RbinRuleExcludeResourceTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

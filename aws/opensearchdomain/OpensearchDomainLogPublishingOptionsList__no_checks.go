@@ -15,7 +15,7 @@ func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateGetParamete
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainLogPublishingOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

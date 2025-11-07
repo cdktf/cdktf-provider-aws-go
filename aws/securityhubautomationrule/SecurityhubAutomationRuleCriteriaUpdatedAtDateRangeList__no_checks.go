@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaUpdatedAtDateRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

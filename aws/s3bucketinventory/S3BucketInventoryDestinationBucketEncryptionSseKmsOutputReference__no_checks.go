@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

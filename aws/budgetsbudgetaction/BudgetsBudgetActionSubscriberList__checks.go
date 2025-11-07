@@ -29,9 +29,9 @@ func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BudgetsBudgetActionSubscriberList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

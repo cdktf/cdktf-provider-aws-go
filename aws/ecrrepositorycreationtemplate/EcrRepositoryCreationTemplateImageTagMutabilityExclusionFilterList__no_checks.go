@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilte
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRepositoryCreationTemplateImageTagMutabilityExclusionFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

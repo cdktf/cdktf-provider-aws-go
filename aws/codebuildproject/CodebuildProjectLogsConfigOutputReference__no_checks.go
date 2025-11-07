@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validatePutS3LogsP
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

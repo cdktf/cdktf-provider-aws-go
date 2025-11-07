@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceReq
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

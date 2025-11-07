@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentList) validateGetParameters(index *
 	return nil
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkInterfaceAttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

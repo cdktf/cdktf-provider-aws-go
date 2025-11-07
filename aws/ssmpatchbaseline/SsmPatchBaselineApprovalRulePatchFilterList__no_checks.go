@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmPatchBaselineApprovalRulePatchFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

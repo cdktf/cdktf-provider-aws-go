@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validatePutVirt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecBackendOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

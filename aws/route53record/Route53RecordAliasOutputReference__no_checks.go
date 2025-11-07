@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordAliasOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordAliasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordAliasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordAliasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordAliasOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

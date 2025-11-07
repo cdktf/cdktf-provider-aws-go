@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

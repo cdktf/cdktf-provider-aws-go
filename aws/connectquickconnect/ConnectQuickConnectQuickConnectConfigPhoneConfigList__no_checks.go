@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigList) validat
 	return nil
 }
 
-func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectQuickConnectQuickConnectConfigPhoneConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

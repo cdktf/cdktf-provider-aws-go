@@ -66,10 +66,10 @@ type RedshiftserverlessWorkgroupEndpointOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -435,8 +435,8 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) Interpola
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -444,15 +444,15 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) Interpola
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -460,7 +460,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointOutputReference) Resolve(_
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

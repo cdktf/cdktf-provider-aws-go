@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateGetS
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validatePutM
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

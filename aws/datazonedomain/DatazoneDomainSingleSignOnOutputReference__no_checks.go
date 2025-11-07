@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatazoneDomainSingleSignOnOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneDomainSingleSignOnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatazoneDomainSingleSignOnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneDomainSingleSignOnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneDomainSingleSignOnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateGetPa
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

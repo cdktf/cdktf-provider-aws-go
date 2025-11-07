@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validatePutVpcConfi
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorKafkaClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

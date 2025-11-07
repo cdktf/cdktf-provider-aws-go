@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeCostCategorySplitChargeRuleParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

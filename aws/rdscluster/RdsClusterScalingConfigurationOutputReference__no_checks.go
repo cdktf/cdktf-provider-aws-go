@@ -43,11 +43,11 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

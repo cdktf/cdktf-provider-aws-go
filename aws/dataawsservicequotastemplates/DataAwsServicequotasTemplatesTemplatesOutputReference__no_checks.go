@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicequotasTemplatesTemplatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

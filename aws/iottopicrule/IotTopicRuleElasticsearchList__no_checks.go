@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleElasticsearchList) validateGetParameters(index *f
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleElasticsearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleElasticsearchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

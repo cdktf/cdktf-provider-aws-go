@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationLi
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncChannelNamespaceHandlerConfigsOnSubscribeIntegrationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationOutputsS3Co
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FisExperimentTemplateExperimentReportConfigurationOutputsS3ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

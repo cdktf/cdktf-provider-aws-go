@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

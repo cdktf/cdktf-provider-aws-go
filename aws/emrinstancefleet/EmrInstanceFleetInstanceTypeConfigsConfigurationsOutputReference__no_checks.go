@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

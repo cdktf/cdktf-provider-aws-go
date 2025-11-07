@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReferenc
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReferenc
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexDocumentMetadataConfigurationUpdatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

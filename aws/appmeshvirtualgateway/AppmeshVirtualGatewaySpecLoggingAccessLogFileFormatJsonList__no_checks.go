@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList) 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatJsonList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

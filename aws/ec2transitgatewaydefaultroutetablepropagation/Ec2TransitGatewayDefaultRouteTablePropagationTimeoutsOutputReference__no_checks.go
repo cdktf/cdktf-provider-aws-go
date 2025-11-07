@@ -43,11 +43,11 @@ func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagationTimeoutsOutputRe
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2TransitGatewayDefaultRouteTablePropagationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

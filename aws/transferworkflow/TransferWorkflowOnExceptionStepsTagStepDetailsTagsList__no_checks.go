@@ -15,7 +15,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) valid
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DaxClusterNodesList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DaxClusterNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaxClusterNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

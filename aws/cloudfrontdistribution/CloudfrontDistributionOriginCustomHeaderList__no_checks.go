@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomHeaderList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

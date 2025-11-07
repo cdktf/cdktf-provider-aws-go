@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssoc
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

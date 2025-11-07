@@ -43,11 +43,11 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

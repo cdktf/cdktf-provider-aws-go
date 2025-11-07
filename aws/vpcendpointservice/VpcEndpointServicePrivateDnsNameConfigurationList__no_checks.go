@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

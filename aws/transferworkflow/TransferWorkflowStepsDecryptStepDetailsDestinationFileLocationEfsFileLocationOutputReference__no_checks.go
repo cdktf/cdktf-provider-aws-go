@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferWorkflowStepsDecryptStepDetailsDestinationFileLocatio
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

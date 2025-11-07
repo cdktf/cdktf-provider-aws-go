@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguratio
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguratio
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

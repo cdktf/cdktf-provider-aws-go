@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutpu
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutpu
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

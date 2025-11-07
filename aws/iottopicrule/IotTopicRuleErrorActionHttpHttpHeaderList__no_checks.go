@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderList) validateGetParamet
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionHttpHttpHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

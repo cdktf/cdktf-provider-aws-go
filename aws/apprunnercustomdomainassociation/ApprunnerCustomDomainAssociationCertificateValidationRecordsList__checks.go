@@ -27,9 +27,9 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsL
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

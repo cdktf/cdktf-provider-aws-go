@@ -15,7 +15,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

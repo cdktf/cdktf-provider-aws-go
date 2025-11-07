@@ -76,7 +76,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAnnotations(value *ComprehendEntityRecognizerInputDataConfigAnnotations)
 	PutAugmentedManifests(value interface{})
 	PutDocuments(value *ComprehendEntityRecognizerInputDataConfigDocuments)
@@ -89,7 +89,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	ResetEntityList()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -556,8 +556,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -565,7 +565,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

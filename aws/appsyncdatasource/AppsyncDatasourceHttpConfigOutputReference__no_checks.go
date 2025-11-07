@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validatePutAuthor
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
 type DataAwsElasticacheReplicationGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -53,6 +53,7 @@ type DataAwsElasticacheReplicationGroup interface {
 	MultiAzEnabled() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
+	NodeGroupConfiguration() DataAwsElasticacheReplicationGroupNodeGroupConfigurationList
 	NodeType() *string
 	NumCacheClusters() *float64
 	NumNodeGroups() *float64
@@ -329,6 +330,16 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) NodeGroupConfiguration() DataAwsElasticacheReplicationGroupNodeGroupConfigurationList {
+	var returns DataAwsElasticacheReplicationGroupNodeGroupConfigurationList
+	_jsii_.Get(
+		j,
+		"nodeGroupConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) NodeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -510,7 +521,7 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) DataAwsElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -528,7 +539,7 @@ func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup_Override(d DataAwsElasticacheReplicationGroup, scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 

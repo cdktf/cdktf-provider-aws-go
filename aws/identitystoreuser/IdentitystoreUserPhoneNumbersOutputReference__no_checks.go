@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateGetStri
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

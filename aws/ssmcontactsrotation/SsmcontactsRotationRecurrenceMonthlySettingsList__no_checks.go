@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceMonthlySettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

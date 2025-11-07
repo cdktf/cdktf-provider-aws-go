@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionSelectionTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

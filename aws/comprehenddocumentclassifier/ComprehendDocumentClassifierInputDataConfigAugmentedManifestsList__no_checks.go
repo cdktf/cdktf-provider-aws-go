@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifests
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

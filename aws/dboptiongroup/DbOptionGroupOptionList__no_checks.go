@@ -15,7 +15,7 @@ func (d *jsiiProxy_DbOptionGroupOptionList) validateGetParameters(index *float64
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbOptionGroupOptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

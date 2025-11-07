@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileLayoutMarginOutputRefere
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

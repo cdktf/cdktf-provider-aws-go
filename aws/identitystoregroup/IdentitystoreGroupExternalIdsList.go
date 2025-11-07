@@ -39,7 +39,7 @@ type IdentitystoreGroupExternalIdsList interface {
 	Get(index *float64) IdentitystoreGroupExternalIdsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (i *jsiiProxy_IdentitystoreGroupExternalIdsList) Get(index *float64) Identi
 	return returns
 }
 
-func (i *jsiiProxy_IdentitystoreGroupExternalIdsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IdentitystoreGroupExternalIdsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (i *jsiiProxy_IdentitystoreGroupExternalIdsList) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

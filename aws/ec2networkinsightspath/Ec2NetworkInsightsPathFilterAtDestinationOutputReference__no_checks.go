@@ -43,7 +43,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsPathFilterAtDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

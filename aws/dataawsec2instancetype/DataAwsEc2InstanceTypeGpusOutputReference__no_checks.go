@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

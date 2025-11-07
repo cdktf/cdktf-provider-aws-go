@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

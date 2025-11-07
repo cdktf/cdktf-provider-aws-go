@@ -43,11 +43,11 @@ func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) 
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

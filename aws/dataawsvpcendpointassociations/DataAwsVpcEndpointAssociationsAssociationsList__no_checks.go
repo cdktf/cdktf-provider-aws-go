@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcEndpointAssociationsAssociationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

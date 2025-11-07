@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteTimeoutList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

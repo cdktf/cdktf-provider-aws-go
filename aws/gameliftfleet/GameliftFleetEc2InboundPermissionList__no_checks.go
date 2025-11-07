@@ -15,7 +15,7 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

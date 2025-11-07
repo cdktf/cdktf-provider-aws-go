@@ -15,7 +15,7 @@ func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationQueryComputeList) val
 	return nil
 }
 
-func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationQueryComputeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CleanroomsMembershipPaymentConfigurationQueryComputeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

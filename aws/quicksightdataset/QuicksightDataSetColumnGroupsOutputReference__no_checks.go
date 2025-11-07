@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validateGetStri
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validatePutGeoS
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetColumnGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

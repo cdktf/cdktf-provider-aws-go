@@ -85,9 +85,9 @@ func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -115,9 +115,9 @@ func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validatePutP
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppmeshRouteSpecGrpcRouteTimeoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

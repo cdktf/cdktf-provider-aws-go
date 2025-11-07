@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AppflowFlowTaskOutputReference) validatePutConnectorOperatorP
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateGetStringMa
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

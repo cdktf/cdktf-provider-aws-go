@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationOutput
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentDataSourceServerSideEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

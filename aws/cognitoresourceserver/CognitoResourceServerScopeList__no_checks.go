@@ -15,7 +15,7 @@ func (c *jsiiProxy_CognitoResourceServerScopeList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CognitoResourceServerScopeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoResourceServerScopeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

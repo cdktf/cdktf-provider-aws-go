@@ -43,11 +43,11 @@ func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesOutputRefere
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecordGeoproximityRoutingPolicyCoordinatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

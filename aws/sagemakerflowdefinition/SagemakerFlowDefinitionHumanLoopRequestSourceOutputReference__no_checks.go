@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

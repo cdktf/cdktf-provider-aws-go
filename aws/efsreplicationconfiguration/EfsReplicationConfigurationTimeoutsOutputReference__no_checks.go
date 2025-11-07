@@ -43,11 +43,11 @@ func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

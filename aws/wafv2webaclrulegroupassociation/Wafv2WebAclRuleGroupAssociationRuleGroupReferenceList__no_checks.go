@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceList) valida
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleGroupAssociationRuleGroupReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

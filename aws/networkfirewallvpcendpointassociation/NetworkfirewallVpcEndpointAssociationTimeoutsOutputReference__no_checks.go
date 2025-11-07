@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallVpcEndpointAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

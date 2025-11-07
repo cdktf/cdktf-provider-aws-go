@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

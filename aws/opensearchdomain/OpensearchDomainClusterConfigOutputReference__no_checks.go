@@ -43,7 +43,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validatePutZone
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineStageOnSuccessConditionRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

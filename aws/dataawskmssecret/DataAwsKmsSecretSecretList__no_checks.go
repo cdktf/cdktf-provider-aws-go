@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

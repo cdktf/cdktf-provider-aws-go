@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

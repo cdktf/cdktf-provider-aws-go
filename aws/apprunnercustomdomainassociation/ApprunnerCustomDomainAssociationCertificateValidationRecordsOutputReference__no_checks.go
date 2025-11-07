@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsO
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

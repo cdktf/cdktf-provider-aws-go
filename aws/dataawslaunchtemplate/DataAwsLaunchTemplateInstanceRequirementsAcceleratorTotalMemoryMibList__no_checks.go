@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

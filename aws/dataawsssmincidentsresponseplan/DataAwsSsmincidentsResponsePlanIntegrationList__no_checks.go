@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIntegrationList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmincidentsResponsePlanIntegrationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

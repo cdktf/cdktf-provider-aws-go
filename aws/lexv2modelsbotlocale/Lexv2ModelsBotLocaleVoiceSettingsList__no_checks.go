@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsBotLocaleVoiceSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateGetParameter
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

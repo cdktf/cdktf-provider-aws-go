@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

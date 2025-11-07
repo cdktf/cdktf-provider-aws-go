@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputRef
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersS3ManifestFileLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

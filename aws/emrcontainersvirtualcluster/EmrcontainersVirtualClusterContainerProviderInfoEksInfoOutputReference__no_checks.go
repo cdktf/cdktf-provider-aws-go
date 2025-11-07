@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutput
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

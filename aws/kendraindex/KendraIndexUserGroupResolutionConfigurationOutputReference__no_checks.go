@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) v
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserGroupResolutionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

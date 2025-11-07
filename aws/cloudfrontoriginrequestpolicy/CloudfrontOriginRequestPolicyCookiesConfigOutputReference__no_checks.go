@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontOriginRequestPolicyCookiesConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

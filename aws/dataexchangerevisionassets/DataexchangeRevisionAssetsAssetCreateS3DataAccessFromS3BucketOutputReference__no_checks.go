@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

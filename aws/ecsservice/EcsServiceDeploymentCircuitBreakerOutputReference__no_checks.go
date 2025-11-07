@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

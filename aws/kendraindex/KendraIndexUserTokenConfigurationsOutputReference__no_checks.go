@@ -43,7 +43,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validatePu
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

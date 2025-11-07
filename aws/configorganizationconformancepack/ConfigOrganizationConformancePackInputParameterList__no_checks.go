@@ -15,7 +15,7 @@ func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

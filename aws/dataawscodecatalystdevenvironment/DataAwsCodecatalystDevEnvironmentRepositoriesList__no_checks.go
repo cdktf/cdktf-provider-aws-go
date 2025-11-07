@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentRepositoriesList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentRepositoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentRepositoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

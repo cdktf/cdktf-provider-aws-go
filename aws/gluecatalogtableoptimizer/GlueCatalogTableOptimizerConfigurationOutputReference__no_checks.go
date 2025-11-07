@@ -43,7 +43,7 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserEmailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

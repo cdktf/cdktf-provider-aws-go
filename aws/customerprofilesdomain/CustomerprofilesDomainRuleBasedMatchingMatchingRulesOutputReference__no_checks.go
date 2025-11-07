@@ -43,11 +43,11 @@ func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

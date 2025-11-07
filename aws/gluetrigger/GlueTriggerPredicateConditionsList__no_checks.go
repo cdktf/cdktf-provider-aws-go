@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueTriggerPredicateConditionsList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerPredicateConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerPredicateConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

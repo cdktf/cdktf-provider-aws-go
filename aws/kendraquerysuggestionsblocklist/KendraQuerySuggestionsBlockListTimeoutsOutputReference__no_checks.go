@@ -43,11 +43,11 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) valid
 	return nil
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EmrserverlessApplicationRuntimeConfigurationList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationRuntimeConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationRuntimeConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

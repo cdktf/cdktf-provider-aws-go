@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketCorsRuleList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketCorsRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketCorsRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

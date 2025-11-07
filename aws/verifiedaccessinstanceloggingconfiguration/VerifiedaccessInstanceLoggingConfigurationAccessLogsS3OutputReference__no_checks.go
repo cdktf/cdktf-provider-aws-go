@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputR
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

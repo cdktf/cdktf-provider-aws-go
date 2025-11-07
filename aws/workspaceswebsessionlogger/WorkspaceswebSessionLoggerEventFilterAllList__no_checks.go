@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebSessionLoggerEventFilterAllList) validateGetPara
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebSessionLoggerEventFilterAllList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebSessionLoggerEventFilterAllList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

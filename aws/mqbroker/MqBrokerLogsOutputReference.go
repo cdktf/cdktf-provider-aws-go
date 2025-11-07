@@ -69,12 +69,12 @@ type MqBrokerLogsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAudit()
 	ResetGeneral()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationAsList() cdktf.IRes
 	return returns
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) InterpolationForAttribute(proper
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) ResetGeneral() {
 	)
 }
 
-func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (m *jsiiProxy_MqBrokerLogsOutputReference) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

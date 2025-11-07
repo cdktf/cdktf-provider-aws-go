@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsoadminApplicationPortalOptionsSignInOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

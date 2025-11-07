@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorGroupConnectorList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorGroupConnectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorGroupConnectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

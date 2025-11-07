@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

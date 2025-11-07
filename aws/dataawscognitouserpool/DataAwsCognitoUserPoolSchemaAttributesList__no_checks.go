@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

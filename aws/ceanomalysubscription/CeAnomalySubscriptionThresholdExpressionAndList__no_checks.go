@@ -15,7 +15,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

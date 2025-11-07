@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationList) validate
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

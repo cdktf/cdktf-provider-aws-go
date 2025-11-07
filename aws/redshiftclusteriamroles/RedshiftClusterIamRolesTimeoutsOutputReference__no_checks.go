@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftClusterIamRolesTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

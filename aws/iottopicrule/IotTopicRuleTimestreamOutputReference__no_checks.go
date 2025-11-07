@@ -43,7 +43,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validatePutTimestampPa
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleTimestreamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOamLinkLinkConfigurationList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOamLinkLinkConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOamLinkLinkConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

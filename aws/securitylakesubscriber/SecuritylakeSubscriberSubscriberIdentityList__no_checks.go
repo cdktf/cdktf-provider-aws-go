@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSubscriberIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

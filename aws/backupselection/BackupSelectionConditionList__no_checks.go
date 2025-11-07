@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupSelectionConditionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

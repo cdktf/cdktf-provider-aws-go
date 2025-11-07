@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsList) val
 	return nil
 }
 
-func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChimeVoiceConnectorTerminationCredentialsCredentialsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

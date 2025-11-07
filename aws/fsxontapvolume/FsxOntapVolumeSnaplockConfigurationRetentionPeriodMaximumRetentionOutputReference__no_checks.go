@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRete
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EksNodeGroupTaintList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupTaintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupTaintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

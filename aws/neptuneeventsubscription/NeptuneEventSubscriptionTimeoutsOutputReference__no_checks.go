@@ -43,11 +43,11 @@ func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneEventSubscriptionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

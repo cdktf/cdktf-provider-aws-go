@@ -43,11 +43,11 @@ func (d *jsiiProxy_DevopsguruServiceIntegrationOpsCenterOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationOpsCenterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationOpsCenterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevopsguruServiceIntegrationOpsCenterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevopsguruServiceIntegrationOpsCenterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

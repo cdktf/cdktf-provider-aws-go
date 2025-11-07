@@ -15,7 +15,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

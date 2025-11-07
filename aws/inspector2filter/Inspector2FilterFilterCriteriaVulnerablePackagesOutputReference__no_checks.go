@@ -43,7 +43,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaVulnerablePackagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

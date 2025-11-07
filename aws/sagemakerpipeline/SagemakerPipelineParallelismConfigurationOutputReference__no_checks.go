@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerPipelineParallelismConfigurationOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerPipelineParallelismConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerPipelineParallelismConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerPipelineParallelismConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerPipelineParallelismConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

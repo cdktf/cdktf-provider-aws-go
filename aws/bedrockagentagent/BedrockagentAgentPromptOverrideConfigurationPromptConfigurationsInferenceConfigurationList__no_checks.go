@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentAgentPromptOverrideConfigurationPromptConfigurati
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentAgentPromptOverrideConfigurationPromptConfigurationsInferenceConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

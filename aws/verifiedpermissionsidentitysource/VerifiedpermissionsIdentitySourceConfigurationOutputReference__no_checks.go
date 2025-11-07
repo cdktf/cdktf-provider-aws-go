@@ -43,7 +43,7 @@ func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsIdentitySourceConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

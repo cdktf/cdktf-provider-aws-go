@@ -85,17 +85,17 @@ func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateGetSt
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PrometheusScraperDestinationAmpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

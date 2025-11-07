@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

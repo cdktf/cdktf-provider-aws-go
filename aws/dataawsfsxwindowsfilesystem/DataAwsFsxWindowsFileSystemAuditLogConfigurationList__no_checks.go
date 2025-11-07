@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsFsxWindowsFileSystemAuditLogConfigurationList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxWindowsFileSystemAuditLogConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxWindowsFileSystemAuditLogConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

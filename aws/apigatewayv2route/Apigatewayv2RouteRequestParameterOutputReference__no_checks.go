@@ -43,11 +43,11 @@ func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2RouteRequestParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

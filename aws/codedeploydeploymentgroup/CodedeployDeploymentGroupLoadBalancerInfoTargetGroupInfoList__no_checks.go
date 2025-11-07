@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList)
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanQuotaSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

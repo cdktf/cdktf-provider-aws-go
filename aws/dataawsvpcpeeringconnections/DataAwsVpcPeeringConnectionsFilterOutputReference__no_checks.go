@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

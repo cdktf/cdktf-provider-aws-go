@@ -41,7 +41,7 @@ type FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserLi
 	Get(index *float64) FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdent
 	return returns
 }
 
-func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (f *jsiiProxy_FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdent
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

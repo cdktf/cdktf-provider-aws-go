@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverrides
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersBatchJobParametersContainerOverridesEnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

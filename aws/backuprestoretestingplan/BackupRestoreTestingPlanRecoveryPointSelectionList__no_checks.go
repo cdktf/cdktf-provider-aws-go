@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionList) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupRestoreTestingPlanRecoveryPointSelectionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointO
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

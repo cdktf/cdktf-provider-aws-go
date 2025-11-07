@@ -68,11 +68,11 @@ type QuicksightDashboardSourceEntitySourceTemplateOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDataSetReferences(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -459,8 +459,8 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference)
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -468,7 +468,7 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference)
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -486,8 +486,8 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference)
 	)
 }
 
-func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -495,7 +495,7 @@ func (q *jsiiProxy_QuicksightDashboardSourceEntitySourceTemplateOutputReference)
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

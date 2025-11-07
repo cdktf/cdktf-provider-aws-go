@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationErrorDocumentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

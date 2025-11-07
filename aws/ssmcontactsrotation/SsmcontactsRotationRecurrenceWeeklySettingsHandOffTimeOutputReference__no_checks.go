@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputR
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

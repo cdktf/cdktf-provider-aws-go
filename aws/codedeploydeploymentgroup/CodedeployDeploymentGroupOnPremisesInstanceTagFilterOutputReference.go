@@ -72,13 +72,13 @@ type CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference interfa
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetKey()
 	ResetType()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputRef
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputRef
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputRef
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputRef
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

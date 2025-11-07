@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

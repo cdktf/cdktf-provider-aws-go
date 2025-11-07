@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

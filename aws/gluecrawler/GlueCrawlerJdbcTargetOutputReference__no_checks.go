@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

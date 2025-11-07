@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validatePutWeek
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsRotationRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList)
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

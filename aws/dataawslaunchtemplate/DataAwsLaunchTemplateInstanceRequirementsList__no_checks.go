@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

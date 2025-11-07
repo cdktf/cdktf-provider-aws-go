@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

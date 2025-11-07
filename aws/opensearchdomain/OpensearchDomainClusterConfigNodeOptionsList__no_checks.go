@@ -15,7 +15,7 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigNodeOptionsList) validateGetPara
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainClusterConfigNodeOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainClusterConfigNodeOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

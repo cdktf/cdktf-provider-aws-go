@@ -43,7 +43,7 @@ func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validatePu
 	return nil
 }
 
-func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

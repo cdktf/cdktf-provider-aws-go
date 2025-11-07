@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

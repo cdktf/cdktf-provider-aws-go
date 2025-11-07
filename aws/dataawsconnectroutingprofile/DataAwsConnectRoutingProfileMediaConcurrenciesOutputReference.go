@@ -30,6 +30,7 @@ type DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CrossChannelBehavior() DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsConnectRoutingProfileMediaConcurrencies
@@ -65,10 +66,10 @@ type DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) CrossChannelBehavior() DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorList {
+	var returns DataAwsConnectRoutingProfileMediaConcurrenciesCrossChannelBehaviorList
+	_jsii_.Get(
+		j,
+		"crossChannelBehavior",
 		&returns,
 	)
 	return returns
@@ -424,8 +435,8 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -433,15 +444,15 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -449,7 +460,7 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

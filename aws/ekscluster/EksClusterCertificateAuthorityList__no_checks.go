@@ -15,7 +15,7 @@ func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateGetParameters(ind
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterCertificateAuthorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

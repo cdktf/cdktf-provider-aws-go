@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAla
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

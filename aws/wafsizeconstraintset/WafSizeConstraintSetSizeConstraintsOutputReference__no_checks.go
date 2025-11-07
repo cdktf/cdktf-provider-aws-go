@@ -43,7 +43,7 @@ func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateP
 	return nil
 }
 
-func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

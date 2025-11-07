@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupSelectionSelectionTagList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BackupSelectionSelectionTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupSelectionSelectionTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

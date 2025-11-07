@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

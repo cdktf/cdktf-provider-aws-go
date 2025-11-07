@@ -43,11 +43,11 @@ func (l *jsiiProxy_LakeformationOptInResourceDataDataLocationOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationOptInResourceDataDataLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LakeformationOptInResourceDataDataLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationOptInResourceDataDataLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationOptInResourceDataDataLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

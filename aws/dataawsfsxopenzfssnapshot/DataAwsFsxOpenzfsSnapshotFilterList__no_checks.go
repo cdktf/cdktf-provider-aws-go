@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

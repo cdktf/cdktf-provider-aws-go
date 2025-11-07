@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

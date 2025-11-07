@@ -43,7 +43,7 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validatePutMana
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

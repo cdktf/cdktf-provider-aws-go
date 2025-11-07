@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAutoscalingGroupInstanceMaintenancePolicyList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAutoscalingGroupInstanceMaintenancePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAutoscalingGroupInstanceMaintenancePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

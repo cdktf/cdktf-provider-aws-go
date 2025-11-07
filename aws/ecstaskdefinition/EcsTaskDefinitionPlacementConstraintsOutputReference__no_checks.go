@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

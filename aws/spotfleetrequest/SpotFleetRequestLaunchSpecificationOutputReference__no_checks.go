@@ -43,7 +43,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateP
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

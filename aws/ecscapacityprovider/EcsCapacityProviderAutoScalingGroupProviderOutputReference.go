@@ -74,14 +74,14 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutManagedScaling(value *EcsCapacityProviderAutoScalingGroupProviderManagedScaling)
 	ResetManagedDraining()
 	ResetManagedScaling()
 	ResetManagedTerminationProtection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -530,8 +530,8 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) I
 	return returns
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -539,7 +539,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) I
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) R
 	)
 }
 
-func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) R
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

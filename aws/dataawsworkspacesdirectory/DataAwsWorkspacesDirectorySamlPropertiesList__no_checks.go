@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsWorkspacesDirectorySamlPropertiesList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesDirectorySamlPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesDirectorySamlPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

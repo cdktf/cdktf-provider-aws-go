@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsElasticacheServerlessCacheEndpointOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheServerlessCacheEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsElasticacheServerlessCacheEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheServerlessCacheEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticacheServerlessCacheEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validateGetStri
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validatePutStri
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

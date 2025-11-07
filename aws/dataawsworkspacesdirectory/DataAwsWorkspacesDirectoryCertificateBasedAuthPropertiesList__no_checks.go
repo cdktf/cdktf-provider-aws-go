@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsWorkspacesDirectoryCertificateBasedAuthPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

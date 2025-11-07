@@ -43,7 +43,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingDestinationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

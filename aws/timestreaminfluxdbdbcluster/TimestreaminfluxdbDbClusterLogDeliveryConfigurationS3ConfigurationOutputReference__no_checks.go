@@ -43,11 +43,11 @@ func (t *jsiiProxy_TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3Configur
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreaminfluxdbDbClusterLogDeliveryConfigurationS3ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

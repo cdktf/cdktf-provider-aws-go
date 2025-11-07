@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validatePutNodeAtt
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentFlowDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

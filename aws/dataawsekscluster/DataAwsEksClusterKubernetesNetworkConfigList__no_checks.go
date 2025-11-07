@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

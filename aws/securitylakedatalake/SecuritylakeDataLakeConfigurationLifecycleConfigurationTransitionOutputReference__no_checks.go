@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationTransi
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeDataLakeConfigurationLifecycleConfigurationTransitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

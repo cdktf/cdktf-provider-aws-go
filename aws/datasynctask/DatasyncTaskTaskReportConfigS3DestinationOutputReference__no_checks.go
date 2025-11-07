@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatasyncTaskTaskReportConfigS3DestinationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigS3DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigS3DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncTaskTaskReportConfigS3DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncTaskTaskReportConfigS3DestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

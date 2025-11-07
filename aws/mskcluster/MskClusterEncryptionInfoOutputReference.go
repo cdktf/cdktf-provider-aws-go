@@ -68,13 +68,13 @@ type MskClusterEncryptionInfoOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEncryptionInTransit(value *MskClusterEncryptionInfoEncryptionInTransit)
 	ResetEncryptionAtRestKmsKeyArn()
 	ResetEncryptionInTransit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -461,8 +461,8 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -470,7 +470,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) ResetEncryptionInTra
 	)
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

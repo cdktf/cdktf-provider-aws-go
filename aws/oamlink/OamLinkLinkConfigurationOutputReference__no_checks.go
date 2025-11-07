@@ -43,7 +43,7 @@ func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validateGetStringMap
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validatePutMetricCon
 	return nil
 }
 
-func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OamLinkLinkConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

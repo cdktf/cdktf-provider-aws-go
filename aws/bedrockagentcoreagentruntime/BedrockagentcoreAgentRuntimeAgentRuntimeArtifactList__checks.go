@@ -29,9 +29,9 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactList) validat
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

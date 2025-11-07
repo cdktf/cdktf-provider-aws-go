@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupEndpointConfigurat
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupEndpointConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroupEndpointConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

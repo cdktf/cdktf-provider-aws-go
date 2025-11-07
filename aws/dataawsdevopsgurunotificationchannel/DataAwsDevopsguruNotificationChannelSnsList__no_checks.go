@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDevopsguruNotificationChannelSnsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDevopsguruNotificationChannelSnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDevopsguruNotificationChannelSnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

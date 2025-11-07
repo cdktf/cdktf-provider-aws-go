@@ -85,9 +85,9 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validatePutMana
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EcsServiceVolumeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkspaceswebUserSettingsToolbarConfigurationList) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsToolbarConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsToolbarConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

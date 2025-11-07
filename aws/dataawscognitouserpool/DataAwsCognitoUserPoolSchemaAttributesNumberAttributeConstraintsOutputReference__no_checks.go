@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstrai
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCognitoUserPoolSchemaAttributesNumberAttributeConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

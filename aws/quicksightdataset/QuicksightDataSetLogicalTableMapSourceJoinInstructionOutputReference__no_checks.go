@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputRe
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

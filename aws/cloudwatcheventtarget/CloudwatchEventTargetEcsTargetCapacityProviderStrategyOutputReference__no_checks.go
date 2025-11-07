@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

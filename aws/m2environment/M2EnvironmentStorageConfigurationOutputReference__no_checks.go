@@ -43,7 +43,7 @@ func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validatePut
 	return nil
 }
 
-func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_M2EnvironmentStorageConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

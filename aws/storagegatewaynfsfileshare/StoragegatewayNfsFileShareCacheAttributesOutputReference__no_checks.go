@@ -43,11 +43,11 @@ func (s *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShareCacheAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

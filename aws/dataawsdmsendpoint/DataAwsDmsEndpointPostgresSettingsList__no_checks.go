@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDmsEndpointPostgresSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

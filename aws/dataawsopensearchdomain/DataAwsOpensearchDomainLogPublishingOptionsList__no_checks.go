@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainLogPublishingOptionsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainLogPublishingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainLogPublishingOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -86,6 +86,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkType", GoGetter: "NetworkType"},
 			_jsii_.MemberProperty{JsiiProperty: "networkTypeInput", GoGetter: "NetworkTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeGroupConfiguration", GoGetter: "NodeGroupConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeGroupConfigurationInput", GoGetter: "NodeGroupConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeType", GoGetter: "NodeType"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeInput", GoGetter: "NodeTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationTopicArn", GoGetter: "NotificationTopicArn"},
@@ -105,6 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogDeliveryConfiguration", GoMethod: "PutLogDeliveryConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putNodeGroupConfiguration", GoMethod: "PutNodeGroupConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readerEndpointAddress", GoGetter: "ReaderEndpointAddress"},
@@ -133,6 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMultiAzEnabled", GoMethod: "ResetMultiAzEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkType", GoMethod: "ResetNetworkType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeGroupConfiguration", GoMethod: "ResetNodeGroupConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNodeType", GoMethod: "ResetNodeType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationTopicArn", GoMethod: "ResetNotificationTopicArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNumCacheClusters", GoMethod: "ResetNumCacheClusters"},
@@ -264,6 +268,85 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupNodeGroupConfiguration",
+		reflect.TypeOf((*ElasticacheReplicationGroupNodeGroupConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupNodeGroupConfigurationList",
+		reflect.TypeOf((*ElasticacheReplicationGroupNodeGroupConfigurationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElasticacheReplicationGroupNodeGroupConfigurationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupNodeGroupConfigurationOutputReference",
+		reflect.TypeOf((*ElasticacheReplicationGroupNodeGroupConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeGroupId", GoGetter: "NodeGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "nodeGroupIdInput", GoGetter: "NodeGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryAvailabilityZone", GoGetter: "PrimaryAvailabilityZone"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryAvailabilityZoneInput", GoGetter: "PrimaryAvailabilityZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryOutpostArn", GoGetter: "PrimaryOutpostArn"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryOutpostArnInput", GoGetter: "PrimaryOutpostArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaAvailabilityZones", GoGetter: "ReplicaAvailabilityZones"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaAvailabilityZonesInput", GoGetter: "ReplicaAvailabilityZonesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaCount", GoGetter: "ReplicaCount"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaCountInput", GoGetter: "ReplicaCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaOutpostArns", GoGetter: "ReplicaOutpostArns"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaOutpostArnsInput", GoGetter: "ReplicaOutpostArnsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNodeGroupId", GoMethod: "ResetNodeGroupId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryAvailabilityZone", GoMethod: "ResetPrimaryAvailabilityZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryOutpostArn", GoMethod: "ResetPrimaryOutpostArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicaAvailabilityZones", GoMethod: "ResetReplicaAvailabilityZones"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicaCount", GoMethod: "ResetReplicaCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicaOutpostArns", GoMethod: "ResetReplicaOutpostArns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSlots", GoMethod: "ResetSlots"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "slots", GoGetter: "Slots"},
+			_jsii_.MemberProperty{JsiiProperty: "slotsInput", GoGetter: "SlotsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElasticacheReplicationGroupNodeGroupConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

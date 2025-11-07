@@ -43,11 +43,11 @@ func (k *jsiiProxy_KeyspacesKeyspaceReplicationSpecificationOutputReference) val
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspaceReplicationSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesKeyspaceReplicationSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesKeyspaceReplicationSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesKeyspaceReplicationSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

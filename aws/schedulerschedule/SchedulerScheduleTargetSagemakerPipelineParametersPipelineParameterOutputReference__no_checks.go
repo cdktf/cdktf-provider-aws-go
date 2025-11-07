@@ -43,11 +43,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelinePar
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

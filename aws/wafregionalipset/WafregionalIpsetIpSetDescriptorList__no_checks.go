@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateGetParameters(in
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalIpsetIpSetDescriptorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

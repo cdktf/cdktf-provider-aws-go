@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectBotAssociationLexBotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

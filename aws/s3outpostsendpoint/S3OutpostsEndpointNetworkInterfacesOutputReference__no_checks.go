@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3OutpostsEndpointNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

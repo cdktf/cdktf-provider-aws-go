@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsAppmeshMeshSpecList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppmeshMeshSpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppmeshMeshSpecList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

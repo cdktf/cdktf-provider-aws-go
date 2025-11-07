@@ -43,7 +43,7 @@ func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validatePutContact
 	return nil
 }
 
-func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmcontactsPlanStageTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

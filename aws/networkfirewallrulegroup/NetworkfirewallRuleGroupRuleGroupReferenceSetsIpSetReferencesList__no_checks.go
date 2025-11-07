@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

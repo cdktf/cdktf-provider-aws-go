@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigStartTimeList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigStartTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectHoursOfOperationConfigStartTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

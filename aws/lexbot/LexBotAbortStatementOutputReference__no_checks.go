@@ -43,7 +43,7 @@ func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LexBotAbortStatementOutputReference) validatePutMessageParame
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAbortStatementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

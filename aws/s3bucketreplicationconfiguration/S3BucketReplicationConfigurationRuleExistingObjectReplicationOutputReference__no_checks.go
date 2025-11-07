@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplication
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

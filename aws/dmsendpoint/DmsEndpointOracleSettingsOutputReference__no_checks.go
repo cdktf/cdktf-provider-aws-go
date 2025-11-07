@@ -43,11 +43,11 @@ func (d *jsiiProxy_DmsEndpointOracleSettingsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointOracleSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsEndpointOracleSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointOracleSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsEndpointOracleSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

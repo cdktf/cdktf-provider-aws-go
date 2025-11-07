@@ -43,7 +43,7 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateGetStringMa
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validatePutCacheCon
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

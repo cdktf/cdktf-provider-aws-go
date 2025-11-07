@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppconfigEnvironmentMonitorList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigEnvironmentMonitorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppconfigEnvironmentMonitorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

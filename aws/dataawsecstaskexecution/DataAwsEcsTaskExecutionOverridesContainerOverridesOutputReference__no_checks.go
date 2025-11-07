@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

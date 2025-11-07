@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolEmailMfaConfigurationOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolEmailMfaConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolEmailMfaConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolEmailMfaConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolEmailMfaConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

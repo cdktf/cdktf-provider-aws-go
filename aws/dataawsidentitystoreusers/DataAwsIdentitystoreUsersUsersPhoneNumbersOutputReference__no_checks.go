@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersPhoneNumbersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

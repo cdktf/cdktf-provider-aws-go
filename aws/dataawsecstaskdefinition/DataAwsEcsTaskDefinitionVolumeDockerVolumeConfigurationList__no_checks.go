@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsTaskDefinitionVolumeDockerVolumeConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

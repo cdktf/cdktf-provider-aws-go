@@ -43,7 +43,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

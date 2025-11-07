@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataexchangeEventActionActionExportRevisionToS3OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

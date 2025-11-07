@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAppconfigEnvironmentMonitorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsResourceRecordsList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsResourceRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53RecordsResourceRecordSetsResourceRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

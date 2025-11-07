@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisStream
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigMinimumHealthyHostsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

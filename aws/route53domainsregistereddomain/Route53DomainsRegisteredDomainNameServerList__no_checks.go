@@ -15,7 +15,7 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerList) validateGetPara
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

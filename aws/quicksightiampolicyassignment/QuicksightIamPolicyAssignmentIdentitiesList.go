@@ -41,7 +41,7 @@ type QuicksightIamPolicyAssignmentIdentitiesList interface {
 	Get(index *float64) QuicksightIamPolicyAssignmentIdentitiesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) Get(index *float
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (q *jsiiProxy_QuicksightIamPolicyAssignmentIdentitiesList) Resolve(_context
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validat
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

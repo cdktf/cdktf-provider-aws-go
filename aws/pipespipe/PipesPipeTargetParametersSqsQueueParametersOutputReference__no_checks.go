@@ -43,11 +43,11 @@ func (p *jsiiProxy_PipesPipeTargetParametersSqsQueueParametersOutputReference) v
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersSqsQueueParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersSqsQueueParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersSqsQueueParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersSqsQueueParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

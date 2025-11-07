@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

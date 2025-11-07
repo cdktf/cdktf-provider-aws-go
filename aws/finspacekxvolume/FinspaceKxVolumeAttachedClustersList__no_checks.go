@@ -15,7 +15,7 @@ func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersList) validateGetParameters(i
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxVolumeAttachedClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

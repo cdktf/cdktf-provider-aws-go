@@ -15,7 +15,7 @@ func (s *jsiiProxy_Sesv2ContactListTopicList) validateGetParameters(index *float
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ContactListTopicList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ContactListTopicList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

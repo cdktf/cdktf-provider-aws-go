@@ -15,7 +15,7 @@ func (c *jsiiProxy_CodebuildFleetStatusList) validateGetParameters(index *float6
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildFleetStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildFleetStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

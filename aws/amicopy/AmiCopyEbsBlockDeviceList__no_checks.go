@@ -15,7 +15,7 @@ func (a *jsiiProxy_AmiCopyEbsBlockDeviceList) validateGetParameters(index *float
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiCopyEbsBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

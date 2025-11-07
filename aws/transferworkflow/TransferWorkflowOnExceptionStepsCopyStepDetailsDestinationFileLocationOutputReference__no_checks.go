@@ -43,7 +43,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFil
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFil
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

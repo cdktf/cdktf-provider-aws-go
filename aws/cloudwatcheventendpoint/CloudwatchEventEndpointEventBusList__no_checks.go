@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchEventEndpointEventBusList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventEndpointEventBusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventEndpointEventBusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

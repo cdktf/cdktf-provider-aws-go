@@ -15,7 +15,7 @@ func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceList) validateGetPara
 	return nil
 }
 
-func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BcmdataexportsExportExportRefreshCadenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

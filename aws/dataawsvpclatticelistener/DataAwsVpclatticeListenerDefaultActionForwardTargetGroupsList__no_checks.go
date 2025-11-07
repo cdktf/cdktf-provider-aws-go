@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

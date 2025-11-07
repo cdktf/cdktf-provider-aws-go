@@ -43,11 +43,11 @@ func (m *jsiiProxy_MqBrokerEncryptionOptionsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerEncryptionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MqBrokerEncryptionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerEncryptionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerEncryptionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

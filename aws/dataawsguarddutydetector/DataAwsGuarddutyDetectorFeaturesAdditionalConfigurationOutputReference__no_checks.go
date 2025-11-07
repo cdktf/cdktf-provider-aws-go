@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

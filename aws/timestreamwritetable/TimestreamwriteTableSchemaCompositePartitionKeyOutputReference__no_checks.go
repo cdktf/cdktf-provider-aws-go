@@ -43,11 +43,11 @@ func (t *jsiiProxy_TimestreamwriteTableSchemaCompositePartitionKeyOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableSchemaCompositePartitionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreamwriteTableSchemaCompositePartitionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableSchemaCompositePartitionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamwriteTableSchemaCompositePartitionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

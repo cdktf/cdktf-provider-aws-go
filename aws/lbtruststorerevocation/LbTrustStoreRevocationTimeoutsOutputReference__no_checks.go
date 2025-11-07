@@ -43,11 +43,11 @@ func (l *jsiiProxy_LbTrustStoreRevocationTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (l *jsiiProxy_LbTrustStoreRevocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbTrustStoreRevocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbTrustStoreRevocationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbTrustStoreRevocationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

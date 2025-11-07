@@ -43,11 +43,11 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

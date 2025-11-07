@@ -43,7 +43,7 @@ func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validatePutBlockStora
 	return nil
 }
 
-func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksClusterStorageConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

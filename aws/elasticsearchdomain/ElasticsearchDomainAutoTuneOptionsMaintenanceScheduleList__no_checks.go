@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) va
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

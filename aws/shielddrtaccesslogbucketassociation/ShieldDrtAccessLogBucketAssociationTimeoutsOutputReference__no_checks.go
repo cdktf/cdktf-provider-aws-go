@@ -43,11 +43,11 @@ func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

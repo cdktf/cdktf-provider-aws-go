@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validatePutGrantee
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

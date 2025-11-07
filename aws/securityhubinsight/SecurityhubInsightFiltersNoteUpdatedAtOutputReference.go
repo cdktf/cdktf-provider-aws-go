@@ -71,14 +71,14 @@ type SecurityhubInsightFiltersNoteUpdatedAtOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDateRange(value *SecurityhubInsightFiltersNoteUpdatedAtDateRange)
 	ResetDateRange()
 	ResetEnd()
 	ResetStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -496,8 +496,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -505,7 +505,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) Interp
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) ResetS
 	)
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference) Resolv
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_Inspector2FilterFilterCriteriaPortRangeList) validateGetParam
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2FilterFilterCriteriaPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2FilterFilterCriteriaPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

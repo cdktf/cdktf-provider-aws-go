@@ -15,7 +15,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsList)
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

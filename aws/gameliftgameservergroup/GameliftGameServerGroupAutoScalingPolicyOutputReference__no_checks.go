@@ -43,7 +43,7 @@ func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

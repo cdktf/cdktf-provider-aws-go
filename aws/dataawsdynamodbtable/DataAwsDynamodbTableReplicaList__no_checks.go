@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableReplicaList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableReplicaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableReplicaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

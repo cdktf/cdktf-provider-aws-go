@@ -15,7 +15,7 @@ func (e *jsiiProxy_EfsFileSystemSizeInBytesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemSizeInBytesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsFileSystemSizeInBytesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

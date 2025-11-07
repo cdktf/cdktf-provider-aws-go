@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociationTimeoutsOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheUserGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheUserGroupAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheUserGroupAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

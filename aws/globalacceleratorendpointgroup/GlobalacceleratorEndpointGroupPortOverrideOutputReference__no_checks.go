@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

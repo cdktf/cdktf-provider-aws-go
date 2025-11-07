@@ -43,7 +43,7 @@ func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpclatticeListenerDefaultActionForwardOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

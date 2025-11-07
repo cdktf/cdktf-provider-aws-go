@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryConnectSettingsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryConnectSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryConnectSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

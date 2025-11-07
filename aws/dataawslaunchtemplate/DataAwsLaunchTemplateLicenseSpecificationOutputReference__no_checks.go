@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLaunchTemplateLicenseSpecificationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateLicenseSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateLicenseSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateLicenseSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateLicenseSpecificationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

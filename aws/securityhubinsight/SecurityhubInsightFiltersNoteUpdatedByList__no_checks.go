@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedByList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersNoteUpdatedByList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

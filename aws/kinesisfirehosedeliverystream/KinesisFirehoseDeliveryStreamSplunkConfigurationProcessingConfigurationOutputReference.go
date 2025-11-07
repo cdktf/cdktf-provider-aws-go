@@ -68,13 +68,13 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutp
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutProcessors(value interface{})
 	ResetEnabled()
 	ResetProcessors()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -461,8 +461,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	return returns
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -470,7 +470,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingCon
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

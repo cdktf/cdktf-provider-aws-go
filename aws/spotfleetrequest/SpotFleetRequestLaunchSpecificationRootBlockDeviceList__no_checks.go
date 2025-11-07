@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) valid
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

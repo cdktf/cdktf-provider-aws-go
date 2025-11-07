@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationResourceLfTagDatabaseList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationResourceLfTagDatabaseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationResourceLfTagDatabaseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

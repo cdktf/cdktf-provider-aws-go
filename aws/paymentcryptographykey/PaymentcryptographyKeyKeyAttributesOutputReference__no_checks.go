@@ -43,7 +43,7 @@ func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateP
 	return nil
 }
 
-func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PaymentcryptographyKeyKeyAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

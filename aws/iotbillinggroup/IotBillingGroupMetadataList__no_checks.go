@@ -15,7 +15,7 @@ func (i *jsiiProxy_IotBillingGroupMetadataList) validateGetParameters(index *flo
 	return nil
 }
 
-func (i *jsiiProxy_IotBillingGroupMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotBillingGroupMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

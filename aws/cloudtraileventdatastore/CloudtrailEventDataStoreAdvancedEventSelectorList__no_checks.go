@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

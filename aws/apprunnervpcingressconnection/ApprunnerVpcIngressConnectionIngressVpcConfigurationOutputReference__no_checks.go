@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

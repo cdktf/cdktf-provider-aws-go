@@ -15,7 +15,7 @@ func (l *jsiiProxy_LightsailDistributionLocationList) validateGetParameters(inde
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailDistributionLocationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBe
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBe
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

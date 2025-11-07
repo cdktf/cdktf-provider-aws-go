@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHea
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

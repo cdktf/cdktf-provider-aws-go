@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudwatchContributorManagedInsightRulesManagedRulesRuleStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrManagedScalingPolicyComputeLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

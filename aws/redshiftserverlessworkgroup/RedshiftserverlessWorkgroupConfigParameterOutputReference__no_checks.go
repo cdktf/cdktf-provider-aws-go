@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) va
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupConfigParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

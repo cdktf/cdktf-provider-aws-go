@@ -43,7 +43,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validatePutGu
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetVdmOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

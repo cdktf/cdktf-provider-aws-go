@@ -15,7 +15,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchCo
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

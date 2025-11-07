@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationO
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeCustomLogSourceConfigurationCrawlerConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

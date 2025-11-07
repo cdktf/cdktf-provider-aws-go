@@ -43,11 +43,11 @@ func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamOutputRefere
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RekognitionStreamProcessorInputKinesisVideoStreamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

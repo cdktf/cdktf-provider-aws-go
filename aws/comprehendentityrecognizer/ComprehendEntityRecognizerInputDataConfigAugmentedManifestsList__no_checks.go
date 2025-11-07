@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsLi
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

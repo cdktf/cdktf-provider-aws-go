@@ -43,11 +43,11 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryS3BucketOutput
 	return nil
 }
 
-func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

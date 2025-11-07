@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAvailabilityZonesTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

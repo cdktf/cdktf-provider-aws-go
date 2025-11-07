@@ -43,11 +43,11 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEksClusterCertificateAuthorityList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterCertificateAuthorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterCertificateAuthorityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

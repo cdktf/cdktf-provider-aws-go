@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

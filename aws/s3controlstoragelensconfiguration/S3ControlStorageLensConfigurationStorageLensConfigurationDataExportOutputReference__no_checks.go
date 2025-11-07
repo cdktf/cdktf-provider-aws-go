@@ -43,7 +43,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationData
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationData
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

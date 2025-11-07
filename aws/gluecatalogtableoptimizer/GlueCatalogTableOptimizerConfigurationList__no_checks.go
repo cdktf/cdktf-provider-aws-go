@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationList) validateGetParame
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogTableOptimizerConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

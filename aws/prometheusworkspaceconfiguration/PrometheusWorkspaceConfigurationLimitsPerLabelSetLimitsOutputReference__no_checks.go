@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutput
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusWorkspaceConfigurationLimitsPerLabelSetLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

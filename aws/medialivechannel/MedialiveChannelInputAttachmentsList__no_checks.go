@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

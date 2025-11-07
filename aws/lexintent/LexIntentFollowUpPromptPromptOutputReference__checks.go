@@ -85,9 +85,9 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validatePutMess
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LexIntentFollowUpPromptPromptOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

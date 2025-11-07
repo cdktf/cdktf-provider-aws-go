@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

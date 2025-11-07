@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList) 
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreApiKeyCredentialProviderApiKeySecretArnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

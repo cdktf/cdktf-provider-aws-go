@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsisPipelineVpcOptionsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineVpcOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsisPipelineVpcOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineVpcOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineVpcOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

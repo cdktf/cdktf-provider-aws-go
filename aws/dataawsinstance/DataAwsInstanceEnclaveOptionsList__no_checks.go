@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInstanceEnclaveOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

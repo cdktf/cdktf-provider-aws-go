@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

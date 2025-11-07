@@ -43,7 +43,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateGet
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validatePut
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

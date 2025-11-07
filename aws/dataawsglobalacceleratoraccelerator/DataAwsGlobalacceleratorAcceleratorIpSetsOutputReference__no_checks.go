@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlobalacceleratorAcceleratorIpSetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

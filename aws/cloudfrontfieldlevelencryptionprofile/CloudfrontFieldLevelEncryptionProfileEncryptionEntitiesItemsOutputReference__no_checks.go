@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsO
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputRef
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

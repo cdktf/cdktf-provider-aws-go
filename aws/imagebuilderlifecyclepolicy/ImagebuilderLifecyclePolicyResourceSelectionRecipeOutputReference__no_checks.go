@@ -43,11 +43,11 @@ func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputRefer
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderLifecyclePolicyResourceSelectionRecipeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

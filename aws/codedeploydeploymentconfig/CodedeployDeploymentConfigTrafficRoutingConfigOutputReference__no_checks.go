@@ -43,7 +43,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

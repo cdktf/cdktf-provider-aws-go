@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

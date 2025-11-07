@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallAvailabilityZoneMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

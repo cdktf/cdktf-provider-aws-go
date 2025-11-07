@@ -15,7 +15,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasTestTr
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasTestTrafficRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

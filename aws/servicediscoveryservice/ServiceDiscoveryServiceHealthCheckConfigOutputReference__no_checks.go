@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceHealthCheckConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

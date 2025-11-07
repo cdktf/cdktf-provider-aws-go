@@ -7,7 +7,7 @@ package bedrockagentdatasource
 type BedrockagentDataSourceVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage struct {
 	// s3_location block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagent_data_source#s3_location BedrockagentDataSource#s3_location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagent_data_source#s3_location BedrockagentDataSource#s3_location}
 	S3Location interface{} `field:"optional" json:"s3Location" yaml:"s3Location"`
 }
 

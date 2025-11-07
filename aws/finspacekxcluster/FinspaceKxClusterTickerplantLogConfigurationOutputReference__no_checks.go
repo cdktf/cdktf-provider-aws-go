@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationOutputReference) 
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

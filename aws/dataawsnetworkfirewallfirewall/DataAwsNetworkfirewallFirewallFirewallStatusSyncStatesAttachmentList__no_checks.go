@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachm
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

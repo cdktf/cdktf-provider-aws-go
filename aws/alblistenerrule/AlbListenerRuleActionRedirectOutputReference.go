@@ -81,7 +81,7 @@ type AlbListenerRuleActionRedirectOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetHost()
 	ResetPath()
 	ResetPort()
@@ -89,7 +89,7 @@ type AlbListenerRuleActionRedirectOutputReference interface {
 	ResetQuery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -611,8 +611,8 @@ func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) InterpolationAs
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -620,7 +620,7 @@ func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) ResetQuery() {
 	)
 }
 
-func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (a *jsiiProxy_AlbListenerRuleActionRedirectOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

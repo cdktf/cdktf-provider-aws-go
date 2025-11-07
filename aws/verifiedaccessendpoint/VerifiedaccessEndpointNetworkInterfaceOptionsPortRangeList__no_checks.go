@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) v
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessEndpointNetworkInterfaceOptionsPortRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

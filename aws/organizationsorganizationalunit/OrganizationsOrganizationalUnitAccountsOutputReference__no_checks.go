@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

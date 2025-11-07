@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubAutomationRuleCriteriaFirstObservedAtDateRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

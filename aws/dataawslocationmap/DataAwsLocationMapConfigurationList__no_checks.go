@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLocationMapConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksFargateProfileSelectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

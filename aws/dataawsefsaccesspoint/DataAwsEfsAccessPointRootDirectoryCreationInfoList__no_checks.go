@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

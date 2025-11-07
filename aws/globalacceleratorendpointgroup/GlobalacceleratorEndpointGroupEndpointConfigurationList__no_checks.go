@@ -15,7 +15,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupEndpointConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

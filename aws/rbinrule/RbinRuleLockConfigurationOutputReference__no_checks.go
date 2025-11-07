@@ -43,7 +43,7 @@ func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validatePutUnlockDe
 	return nil
 }
 
-func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RbinRuleLockConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

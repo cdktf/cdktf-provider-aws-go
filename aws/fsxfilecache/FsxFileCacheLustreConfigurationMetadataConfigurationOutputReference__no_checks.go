@@ -43,11 +43,11 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputRef
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

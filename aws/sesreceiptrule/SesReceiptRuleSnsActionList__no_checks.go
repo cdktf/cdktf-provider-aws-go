@@ -15,7 +15,7 @@ func (s *jsiiProxy_SesReceiptRuleSnsActionList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleSnsActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleSnsActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

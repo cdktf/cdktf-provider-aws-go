@@ -43,7 +43,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputR
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputR
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

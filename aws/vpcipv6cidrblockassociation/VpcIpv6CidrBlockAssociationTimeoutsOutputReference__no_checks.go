@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

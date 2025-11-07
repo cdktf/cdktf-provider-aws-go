@@ -43,11 +43,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingPar
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

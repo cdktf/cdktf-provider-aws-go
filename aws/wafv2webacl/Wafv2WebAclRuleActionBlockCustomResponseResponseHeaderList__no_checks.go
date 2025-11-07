@@ -15,7 +15,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList) v
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

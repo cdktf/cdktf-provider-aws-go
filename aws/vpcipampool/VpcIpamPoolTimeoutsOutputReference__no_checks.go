@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcIpamPoolTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcIpamPoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamPoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpamPoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

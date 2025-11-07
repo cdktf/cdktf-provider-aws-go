@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationFiltersList) va
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusQueryLoggingConfigurationDestinationFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

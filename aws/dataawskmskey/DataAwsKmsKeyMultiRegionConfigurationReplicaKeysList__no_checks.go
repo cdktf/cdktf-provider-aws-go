@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

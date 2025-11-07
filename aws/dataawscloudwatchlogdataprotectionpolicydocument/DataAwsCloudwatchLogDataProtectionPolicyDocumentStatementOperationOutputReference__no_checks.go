@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOper
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOper
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

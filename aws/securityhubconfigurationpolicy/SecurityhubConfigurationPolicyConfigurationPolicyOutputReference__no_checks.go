@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

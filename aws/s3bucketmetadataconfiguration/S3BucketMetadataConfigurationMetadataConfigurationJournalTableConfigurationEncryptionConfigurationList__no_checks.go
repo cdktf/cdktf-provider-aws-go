@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTabl
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

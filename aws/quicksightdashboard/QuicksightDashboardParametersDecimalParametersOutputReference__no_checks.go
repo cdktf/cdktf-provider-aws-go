@@ -43,11 +43,11 @@ func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersOutputReference
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDashboardParametersDecimalParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

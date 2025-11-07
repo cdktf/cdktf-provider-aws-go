@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuicksightCustomPermissionsCapabilitiesList) validateGetParam
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightCustomPermissionsCapabilitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightCustomPermissionsCapabilitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

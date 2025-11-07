@@ -43,7 +43,7 @@ func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validatePutS3BucketS
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableImportTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

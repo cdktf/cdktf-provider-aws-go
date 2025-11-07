@@ -43,11 +43,11 @@ func (o *jsiiProxy_OdbNetworkPeeringConnectionTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkPeeringConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OdbNetworkPeeringConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OdbNetworkPeeringConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbNetworkPeeringConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

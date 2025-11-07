@@ -43,11 +43,11 @@ func (v *jsiiProxy_VerifiedaccessGroupSseConfigurationOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessGroupSseConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VerifiedaccessGroupSseConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedaccessGroupSseConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedaccessGroupSseConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

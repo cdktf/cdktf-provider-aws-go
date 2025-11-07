@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsS3AccessPointPublicAccessBlockConfigurationList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsS3AccessPointPublicAccessBlockConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsS3AccessPointPublicAccessBlockConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

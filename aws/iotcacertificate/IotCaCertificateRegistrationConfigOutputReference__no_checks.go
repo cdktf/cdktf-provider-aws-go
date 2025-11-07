@@ -43,11 +43,11 @@ func (i *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

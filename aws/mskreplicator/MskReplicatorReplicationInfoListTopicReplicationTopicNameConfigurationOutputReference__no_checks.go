@@ -43,11 +43,11 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationTopicNameConf
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationTopicNameConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validatePutRedirectP
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

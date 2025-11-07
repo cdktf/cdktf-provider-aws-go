@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtA
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAuthorizerConfigurationCustomJwtAuthorizerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

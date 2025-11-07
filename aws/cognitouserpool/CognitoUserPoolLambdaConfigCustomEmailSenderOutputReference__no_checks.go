@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

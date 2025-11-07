@@ -15,7 +15,7 @@ func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextList) vali
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

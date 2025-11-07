@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

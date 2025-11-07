@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSsmcontactsContactChannelDeliveryAddressOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

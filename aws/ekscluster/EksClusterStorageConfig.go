@@ -7,7 +7,7 @@ package ekscluster
 type EksClusterStorageConfig struct {
 	// block_storage block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/eks_cluster#block_storage EksCluster#block_storage}
 	BlockStorage *EksClusterStorageConfigBlockStorage `field:"optional" json:"blockStorage" yaml:"blockStorage"`
 }
 

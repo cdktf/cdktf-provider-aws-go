@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

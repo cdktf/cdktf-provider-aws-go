@@ -43,11 +43,11 @@ func (o *jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainNodeToNodeEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

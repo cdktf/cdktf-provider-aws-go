@@ -15,7 +15,7 @@ func (l *jsiiProxy_LakeformationOptInResourceDataTableWithColumnsColumnWildcardL
 	return nil
 }
 
-func (l *jsiiProxy_LakeformationOptInResourceDataTableWithColumnsColumnWildcardList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LakeformationOptInResourceDataTableWithColumnsColumnWildcardList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

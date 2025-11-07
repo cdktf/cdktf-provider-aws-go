@@ -43,7 +43,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validatePutSta
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

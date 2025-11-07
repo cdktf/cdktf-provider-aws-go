@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroupAlternateIdentifierOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

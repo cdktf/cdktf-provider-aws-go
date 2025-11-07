@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsBillingViewsBillingViewOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBillingViewsBillingViewOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsBillingViewsBillingViewOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBillingViewsBillingViewOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBillingViewsBillingViewOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

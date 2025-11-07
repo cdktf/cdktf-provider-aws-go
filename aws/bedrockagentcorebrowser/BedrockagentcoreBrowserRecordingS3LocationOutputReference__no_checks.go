@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationOutputReference) va
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserRecordingS3LocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

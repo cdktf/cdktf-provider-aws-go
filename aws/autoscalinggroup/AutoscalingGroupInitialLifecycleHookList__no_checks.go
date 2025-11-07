@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupInitialLifecycleHookList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

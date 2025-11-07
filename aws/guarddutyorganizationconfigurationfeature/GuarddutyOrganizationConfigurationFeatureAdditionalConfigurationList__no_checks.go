@@ -15,7 +15,7 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeatureAdditionalConfigurat
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

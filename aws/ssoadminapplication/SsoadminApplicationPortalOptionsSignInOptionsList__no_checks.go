@@ -15,7 +15,7 @@ func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminApplicationPortalOptionsSignInOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

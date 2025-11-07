@@ -43,11 +43,11 @@ func (s *jsiiProxy_SfnStateMachineEncryptionConfigurationOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SfnStateMachineEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SfnStateMachineEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SfnStateMachineEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SfnStateMachineEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

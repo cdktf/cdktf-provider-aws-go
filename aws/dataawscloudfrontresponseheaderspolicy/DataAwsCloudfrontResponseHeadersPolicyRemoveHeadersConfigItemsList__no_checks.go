@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigItem
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

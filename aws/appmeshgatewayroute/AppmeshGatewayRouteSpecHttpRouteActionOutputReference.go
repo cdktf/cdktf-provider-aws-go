@@ -67,13 +67,13 @@ type AppmeshGatewayRouteSpecHttpRouteActionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutRewrite(value *AppmeshGatewayRouteSpecHttpRouteActionRewrite)
 	PutTarget(value *AppmeshGatewayRouteSpecHttpRouteActionTarget)
 	ResetRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -449,8 +449,8 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Interp
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -458,7 +458,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Interp
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) ResetR
 	)
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionOutputReference) Resolv
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validatePutConditionsPar
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

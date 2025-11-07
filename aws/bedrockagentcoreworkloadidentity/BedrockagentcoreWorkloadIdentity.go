@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity}.
 type BedrockagentcoreWorkloadIdentity interface {
 	cdktf.TerraformResource
 	AllowedResourceOauth2ReturnUrls() *[]*string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_BedrockagentcoreWorkloadIdentity) WorkloadIdentityArn() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity} Resource.
 func NewBedrockagentcoreWorkloadIdentity(scope constructs.Construct, id *string, config *BedrockagentcoreWorkloadIdentityConfig) BedrockagentcoreWorkloadIdentity {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewBedrockagentcoreWorkloadIdentity(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity} Resource.
 func NewBedrockagentcoreWorkloadIdentity_Override(b BedrockagentcoreWorkloadIdentity, scope constructs.Construct, id *string, config *BedrockagentcoreWorkloadIdentityConfig) {
 	_init_.Initialize()
 

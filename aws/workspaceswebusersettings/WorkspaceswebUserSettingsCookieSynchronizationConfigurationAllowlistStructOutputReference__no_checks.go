@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationAl
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceswebUserSettingsCookieSynchronizationConfigurationAllowlistStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

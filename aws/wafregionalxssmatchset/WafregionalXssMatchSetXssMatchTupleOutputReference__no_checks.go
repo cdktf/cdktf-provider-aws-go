@@ -43,7 +43,7 @@ func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateG
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateP
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

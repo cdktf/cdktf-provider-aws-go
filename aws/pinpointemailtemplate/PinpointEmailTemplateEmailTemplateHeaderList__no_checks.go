@@ -15,7 +15,7 @@ func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderList) validateGetPara
 	return nil
 }
 
-func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointEmailTemplateEmailTemplateHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

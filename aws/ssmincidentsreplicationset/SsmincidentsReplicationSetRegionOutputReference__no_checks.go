@@ -43,11 +43,11 @@ func (s *jsiiProxy_SsmincidentsReplicationSetRegionOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsReplicationSetRegionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmincidentsReplicationSetRegionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmincidentsReplicationSetRegionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmincidentsReplicationSetRegionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

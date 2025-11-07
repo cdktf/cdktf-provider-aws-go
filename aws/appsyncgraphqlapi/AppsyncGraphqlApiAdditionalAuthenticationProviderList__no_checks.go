@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

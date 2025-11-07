@@ -85,17 +85,17 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesList) val
 	return nil
 }
 
-func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomerprofilesDomainRuleBasedMatchingMatchingRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

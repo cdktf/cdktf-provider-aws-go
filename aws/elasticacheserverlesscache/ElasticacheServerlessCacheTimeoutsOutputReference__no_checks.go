@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElasticacheServerlessCacheTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheServerlessCacheTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticacheServerlessCacheTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

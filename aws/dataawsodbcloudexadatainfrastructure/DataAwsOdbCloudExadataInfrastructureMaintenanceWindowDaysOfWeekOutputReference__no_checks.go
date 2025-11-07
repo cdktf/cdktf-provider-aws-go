@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOdbCloudExadataInfrastructureMaintenanceWindowDaysOfWeekOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

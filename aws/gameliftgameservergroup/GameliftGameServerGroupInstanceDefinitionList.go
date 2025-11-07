@@ -41,7 +41,7 @@ type GameliftGameServerGroupInstanceDefinitionList interface {
 	Get(index *float64) GameliftGameServerGroupInstanceDefinitionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) Get(index *flo
 	return returns
 }
 
-func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (g *jsiiProxy_GameliftGameServerGroupInstanceDefinitionList) Resolve(_conte
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

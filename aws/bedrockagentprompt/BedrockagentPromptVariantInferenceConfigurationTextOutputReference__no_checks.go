@@ -43,11 +43,11 @@ func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextOutputRefe
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BedrockagentPromptVariantInferenceConfigurationTextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

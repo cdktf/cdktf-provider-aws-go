@@ -15,7 +15,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList) vali
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeValueSelectionSettingRegexFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

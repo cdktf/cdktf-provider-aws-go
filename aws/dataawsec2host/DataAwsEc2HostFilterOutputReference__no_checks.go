@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEc2HostFilterOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2HostFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2HostFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2HostFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2HostFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

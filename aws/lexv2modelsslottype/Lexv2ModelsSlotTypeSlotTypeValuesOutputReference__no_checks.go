@@ -43,7 +43,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validatePut
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

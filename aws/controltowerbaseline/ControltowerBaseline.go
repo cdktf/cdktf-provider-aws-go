@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/controltower_baseline aws_controltower_baseline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/controltower_baseline aws_controltower_baseline}.
 type ControltowerBaseline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_ControltowerBaseline) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/controltower_baseline aws_controltower_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/controltower_baseline aws_controltower_baseline} Resource.
 func NewControltowerBaseline(scope constructs.Construct, id *string, config *ControltowerBaselineConfig) ControltowerBaseline {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewControltowerBaseline(scope constructs.Construct, id *string, config *Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.19.0/docs/resources/controltower_baseline aws_controltower_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/controltower_baseline aws_controltower_baseline} Resource.
 func NewControltowerBaseline_Override(c ControltowerBaseline, scope constructs.Construct, id *string, config *ControltowerBaselineConfig) {
 	_init_.Initialize()
 

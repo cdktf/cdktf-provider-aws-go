@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

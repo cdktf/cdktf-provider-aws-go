@@ -43,11 +43,11 @@ func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FinspaceKxVolumeNas1ConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionIndexPartitionIndexOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

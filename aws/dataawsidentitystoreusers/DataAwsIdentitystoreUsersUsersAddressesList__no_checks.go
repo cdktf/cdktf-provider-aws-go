@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersAddressesList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersAddressesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUsersUsersAddressesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

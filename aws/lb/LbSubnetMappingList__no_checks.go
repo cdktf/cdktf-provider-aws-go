@@ -15,7 +15,7 @@ func (l *jsiiProxy_LbSubnetMappingList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (l *jsiiProxy_LbSubnetMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbSubnetMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindings
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

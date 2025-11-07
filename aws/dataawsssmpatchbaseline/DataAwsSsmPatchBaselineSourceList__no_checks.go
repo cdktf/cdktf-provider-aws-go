@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmPatchBaselineSourceList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmPatchBaselineSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmPatchBaselineSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositor
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsJupyterLabAppSettingsCodeRepositoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesContainerO
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditL
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

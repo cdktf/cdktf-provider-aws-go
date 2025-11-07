@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigEndTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

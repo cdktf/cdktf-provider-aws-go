@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKmsKeyXksKeyConfigurationList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKmsKeyXksKeyConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKmsKeyXksKeyConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

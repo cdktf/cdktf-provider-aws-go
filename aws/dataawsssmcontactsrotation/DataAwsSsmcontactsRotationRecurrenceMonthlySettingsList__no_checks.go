@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

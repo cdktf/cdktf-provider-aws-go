@@ -43,7 +43,7 @@ func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validatePutS3Vect
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainAimlOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

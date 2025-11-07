@@ -43,7 +43,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validatePutSor
 	return nil
 }
 
-func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GluePartitionStorageDescriptorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

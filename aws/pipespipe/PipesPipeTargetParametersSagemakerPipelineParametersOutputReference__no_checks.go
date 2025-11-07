@@ -43,7 +43,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputRef
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputRef
 	return nil
 }
 
-func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PipesPipeTargetParametersSagemakerPipelineParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

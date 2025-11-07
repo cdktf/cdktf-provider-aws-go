@@ -15,7 +15,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

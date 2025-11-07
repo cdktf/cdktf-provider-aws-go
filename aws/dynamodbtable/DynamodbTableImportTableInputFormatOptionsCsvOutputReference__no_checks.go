@@ -43,11 +43,11 @@ func (d *jsiiProxy_DynamodbTableImportTableInputFormatOptionsCsvOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableImportTableInputFormatOptionsCsvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbTableImportTableInputFormatOptionsCsvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableImportTableInputFormatOptionsCsvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableImportTableInputFormatOptionsCsvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

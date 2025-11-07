@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

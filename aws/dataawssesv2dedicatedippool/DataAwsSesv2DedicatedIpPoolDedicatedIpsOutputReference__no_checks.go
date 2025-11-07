@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

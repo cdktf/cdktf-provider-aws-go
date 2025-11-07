@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionCidrBlockSetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

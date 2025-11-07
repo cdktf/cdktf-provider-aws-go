@@ -43,7 +43,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

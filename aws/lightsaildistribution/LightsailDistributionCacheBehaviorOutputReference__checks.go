@@ -85,17 +85,17 @@ func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LightsailDistributionCacheBehaviorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

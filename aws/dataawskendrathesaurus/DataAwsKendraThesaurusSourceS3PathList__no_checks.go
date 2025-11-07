@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

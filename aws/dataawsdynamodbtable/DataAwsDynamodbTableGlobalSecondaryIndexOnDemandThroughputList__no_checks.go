@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

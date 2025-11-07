@@ -43,11 +43,11 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

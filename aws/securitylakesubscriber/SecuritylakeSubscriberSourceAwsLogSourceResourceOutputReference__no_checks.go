@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

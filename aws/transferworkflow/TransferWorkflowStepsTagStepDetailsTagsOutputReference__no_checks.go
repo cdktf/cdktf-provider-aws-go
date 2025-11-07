@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) valid
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

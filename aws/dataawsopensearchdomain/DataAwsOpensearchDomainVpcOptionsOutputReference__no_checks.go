@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

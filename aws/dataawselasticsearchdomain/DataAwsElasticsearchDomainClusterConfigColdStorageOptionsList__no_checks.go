@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsList
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticsearchDomainClusterConfigColdStorageOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

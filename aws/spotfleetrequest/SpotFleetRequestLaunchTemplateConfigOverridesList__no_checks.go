@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

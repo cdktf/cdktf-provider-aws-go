@@ -15,7 +15,7 @@ func (l *jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSc
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

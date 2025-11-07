@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainRetentionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

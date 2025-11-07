@@ -75,7 +75,7 @@ type SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAppLifecycleManagement(value *SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsAppLifecycleManagement)
 	PutCustomImage(value interface{})
 	PutDefaultResourceSpec(value *SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec)
@@ -86,7 +86,7 @@ type SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference inte
 	ResetLifecycleConfigArns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -544,8 +544,8 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -553,7 +553,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -633,8 +633,8 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 	)
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -642,7 +642,7 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutput
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

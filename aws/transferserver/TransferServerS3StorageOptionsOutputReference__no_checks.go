@@ -43,11 +43,11 @@ func (t *jsiiProxy_TransferServerS3StorageOptionsOutputReference) validateGetStr
 	return nil
 }
 
-func (t *jsiiProxy_TransferServerS3StorageOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferServerS3StorageOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferServerS3StorageOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferServerS3StorageOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

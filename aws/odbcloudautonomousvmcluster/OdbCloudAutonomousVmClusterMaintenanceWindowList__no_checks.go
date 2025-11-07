@@ -15,7 +15,7 @@ func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowList) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OdbCloudAutonomousVmClusterMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

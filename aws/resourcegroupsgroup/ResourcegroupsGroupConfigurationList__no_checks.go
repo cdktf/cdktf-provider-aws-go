@@ -15,7 +15,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateGetParameters(i
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

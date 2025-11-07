@@ -43,11 +43,11 @@ func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurati
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

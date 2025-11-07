@@ -68,13 +68,13 @@ type IotThingGroupPropertiesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAttributePayload(value *IotThingGroupPropertiesAttributePayload)
 	ResetAttributePayload()
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -461,8 +461,8 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -470,7 +470,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) ResetDescription() {
 	)
 }
 
-func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (i *jsiiProxy_IotThingGroupPropertiesOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReferenc
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

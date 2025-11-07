@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

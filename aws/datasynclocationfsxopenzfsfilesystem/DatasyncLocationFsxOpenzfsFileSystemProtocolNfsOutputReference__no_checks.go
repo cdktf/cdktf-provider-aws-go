@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

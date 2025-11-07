@@ -43,7 +43,7 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateGetStringMap
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validatePutRetryConf
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

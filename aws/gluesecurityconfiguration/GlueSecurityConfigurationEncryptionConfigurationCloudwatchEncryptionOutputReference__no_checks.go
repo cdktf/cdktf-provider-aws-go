@@ -43,11 +43,11 @@ func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEnc
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MedialiveChannelDestinationsList) validateGetParameters(index
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveChannelDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

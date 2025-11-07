@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkmanagerDeviceLocationOutputReference) validateGetStrin
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerDeviceLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerDeviceLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerDeviceLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerDeviceLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

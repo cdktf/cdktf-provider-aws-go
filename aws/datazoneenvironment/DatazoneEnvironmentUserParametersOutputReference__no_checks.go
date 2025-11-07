@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatazoneEnvironmentUserParametersOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneEnvironmentUserParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatazoneEnvironmentUserParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatazoneEnvironmentUserParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatazoneEnvironmentUserParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

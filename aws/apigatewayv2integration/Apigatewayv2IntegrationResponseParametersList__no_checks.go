@@ -15,7 +15,7 @@ func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateGetPar
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationResponseParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

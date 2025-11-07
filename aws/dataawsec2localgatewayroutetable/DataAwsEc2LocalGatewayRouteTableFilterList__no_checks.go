@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTableFilterList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTableFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTableFilterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

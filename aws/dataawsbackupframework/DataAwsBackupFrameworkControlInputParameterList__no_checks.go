@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsBackupFrameworkControlInputParameterList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBackupFrameworkControlInputParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsBackupFrameworkControlInputParameterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

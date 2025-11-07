@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

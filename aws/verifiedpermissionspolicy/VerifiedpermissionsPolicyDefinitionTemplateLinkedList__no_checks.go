@@ -15,7 +15,7 @@ func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedList) valida
 	return nil
 }
 
-func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VerifiedpermissionsPolicyDefinitionTemplateLinkedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

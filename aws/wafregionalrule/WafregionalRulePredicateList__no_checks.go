@@ -15,7 +15,7 @@ func (w *jsiiProxy_WafregionalRulePredicateList) validateGetParameters(index *fl
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalRulePredicateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalRulePredicateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

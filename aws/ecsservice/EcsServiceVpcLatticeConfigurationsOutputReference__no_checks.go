@@ -43,11 +43,11 @@ func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceVpcLatticeConfigurationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

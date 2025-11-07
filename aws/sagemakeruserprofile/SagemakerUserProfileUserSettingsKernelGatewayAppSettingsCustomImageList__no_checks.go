@@ -15,7 +15,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

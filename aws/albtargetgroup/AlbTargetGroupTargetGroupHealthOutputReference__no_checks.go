@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validatePutUn
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

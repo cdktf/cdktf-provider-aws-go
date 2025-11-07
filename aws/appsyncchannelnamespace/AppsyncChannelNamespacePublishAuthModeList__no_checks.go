@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppsyncChannelNamespacePublishAuthModeList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncChannelNamespacePublishAuthModeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncChannelNamespacePublishAuthModeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

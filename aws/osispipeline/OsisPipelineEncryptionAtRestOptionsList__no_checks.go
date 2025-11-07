@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsList) validateGetParameter
 	return nil
 }
 
-func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsisPipelineEncryptionAtRestOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

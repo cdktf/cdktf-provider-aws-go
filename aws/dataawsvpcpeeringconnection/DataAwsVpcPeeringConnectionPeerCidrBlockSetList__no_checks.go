@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

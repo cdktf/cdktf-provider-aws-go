@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCodebuildFleetComputeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
