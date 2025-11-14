@@ -139,6 +139,10 @@ func (j *jsiiProxy_S3TablesTable) validateSetTableBucketArnParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_S3TablesTable) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewS3TablesTableParameters(scope constructs.Construct, id *string, config *S3TablesTableConfig) error {
 	return nil
 }

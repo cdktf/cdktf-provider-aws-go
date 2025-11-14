@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
 type Ec2SerialConsoleAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,9 @@ type Ec2SerialConsoleAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,6 +118,7 @@ type Ec2SerialConsoleAccess interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -303,6 +307,26 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2SerialConsoleAccess) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2SerialConsoleAccess) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2SerialConsoleAccess) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -334,7 +358,7 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
 func NewEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *Ec2SerialConsoleAccessConfig) Ec2SerialConsoleAccess {
 	_init_.Initialize()
 
@@ -352,7 +376,7 @@ func NewEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
 func NewEc2SerialConsoleAccess_Override(e Ec2SerialConsoleAccess, scope constructs.Construct, id *string, config *Ec2SerialConsoleAccessConfig) {
 	_init_.Initialize()
 
@@ -449,6 +473,17 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2SerialConsoleAccess)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (e *jsiiProxy_Ec2SerialConsoleAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2SerialConsoleAccess) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

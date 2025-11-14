@@ -67,6 +67,7 @@ type CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetDestinationResourceArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurat
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) ResetDestinationResourceArn() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestinationResourceArn",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {

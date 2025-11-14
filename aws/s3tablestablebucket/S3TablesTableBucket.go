@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket}.
 type S3TablesTableBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,10 @@ type S3TablesTableBucket interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() cdktf.StringMap
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -129,6 +133,7 @@ type S3TablesTableBucket interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -407,6 +412,36 @@ func (j *jsiiProxy_S3TablesTableBucket) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_S3TablesTableBucket) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTableBucket) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3TablesTableBucket) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3TablesTableBucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -438,7 +473,7 @@ func (j *jsiiProxy_S3TablesTableBucket) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) S3TablesTableBucket {
 	_init_.Initialize()
 
@@ -456,7 +491,7 @@ func NewS3TablesTableBucket(scope constructs.Construct, id *string, config *S3Ta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/s3tables_table_bucket aws_s3tables_table_bucket} Resource.
 func NewS3TablesTableBucket_Override(s S3TablesTableBucket, scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) {
 	_init_.Initialize()
 
@@ -564,6 +599,17 @@ func (j *jsiiProxy_S3TablesTableBucket)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3TablesTableBucket)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -979,6 +1025,14 @@ func (s *jsiiProxy_S3TablesTableBucket) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3TablesTableBucket) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
 		nil, // no parameters
 	)
 }

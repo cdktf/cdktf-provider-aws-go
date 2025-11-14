@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration}.
 type SagemakerEndpointConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -36,6 +36,9 @@ type SagemakerEndpointConfiguration interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExecutionRoleArn() *string
+	SetExecutionRoleArn(val *string)
+	ExecutionRoleArnInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -140,6 +143,7 @@ type SagemakerEndpointConfiguration interface {
 	PutShadowProductionVariants(value interface{})
 	ResetAsyncInferenceConfig()
 	ResetDataCaptureConfig()
+	ResetExecutionRoleArn()
 	ResetId()
 	ResetKmsKeyArn()
 	ResetName()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ExecutionRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ExecutionRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -560,7 +584,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource.
 func NewSagemakerEndpointConfiguration(scope constructs.Construct, id *string, config *SagemakerEndpointConfigurationConfig) SagemakerEndpointConfiguration {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewSagemakerEndpointConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_endpoint_configuration aws_sagemaker_endpoint_configuration} Resource.
 func NewSagemakerEndpointConfiguration_Override(s SagemakerEndpointConfiguration, scope constructs.Construct, id *string, config *SagemakerEndpointConfigurationConfig) {
 	_init_.Initialize()
 
@@ -615,6 +639,17 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration)SetExecutionRoleArn(val *string) {
+	if err := j.validateSetExecutionRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionRoleArn",
 		val,
 	)
 }
@@ -1143,6 +1178,14 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetDataCaptureConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDataCaptureConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetExecutionRoleArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExecutionRoleArn",
 		nil, // no parameters
 	)
 }

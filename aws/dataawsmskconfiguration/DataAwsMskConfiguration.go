@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_configuration aws_msk_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/msk_configuration aws_msk_configuration}.
 type DataAwsMskConfiguration interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataAwsMskConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_configuration aws_msk_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/msk_configuration aws_msk_configuration} Data Source.
 func NewDataAwsMskConfiguration(scope constructs.Construct, id *string, config *DataAwsMskConfigurationConfig) DataAwsMskConfiguration {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataAwsMskConfiguration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/msk_configuration aws_msk_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/msk_configuration aws_msk_configuration} Data Source.
 func NewDataAwsMskConfiguration_Override(d DataAwsMskConfiguration, scope constructs.Construct, id *string, config *DataAwsMskConfigurationConfig) {
 	_init_.Initialize()
 

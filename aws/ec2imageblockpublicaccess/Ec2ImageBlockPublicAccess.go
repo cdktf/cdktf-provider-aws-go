@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
 type Ec2ImageBlockPublicAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type Ec2ImageBlockPublicAccess interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -117,6 +120,7 @@ type Ec2ImageBlockPublicAccess interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -286,6 +290,26 @@ func (j *jsiiProxy_Ec2ImageBlockPublicAccess) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2ImageBlockPublicAccess) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2ImageBlockPublicAccess) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2ImageBlockPublicAccess) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,7 +381,7 @@ func (j *jsiiProxy_Ec2ImageBlockPublicAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
 func NewEc2ImageBlockPublicAccess(scope constructs.Construct, id *string, config *Ec2ImageBlockPublicAccessConfig) Ec2ImageBlockPublicAccess {
 	_init_.Initialize()
 
@@ -375,7 +399,7 @@ func NewEc2ImageBlockPublicAccess(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
 func NewEc2ImageBlockPublicAccess_Override(e Ec2ImageBlockPublicAccess, scope constructs.Construct, id *string, config *Ec2ImageBlockPublicAccessConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_Ec2ImageBlockPublicAccess)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2ImageBlockPublicAccess)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -852,6 +887,14 @@ func (e *jsiiProxy_Ec2ImageBlockPublicAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2ImageBlockPublicAccess) ResetRegion() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

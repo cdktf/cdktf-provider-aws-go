@@ -115,6 +115,10 @@ func (j *jsiiProxy_Ec2ImageBlockPublicAccess) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ImageBlockPublicAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ImageBlockPublicAccess) validateSetStateParameters(val *string) error {
 	return nil
 }

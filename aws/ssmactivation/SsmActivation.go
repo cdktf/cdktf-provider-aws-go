@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ssm_activation aws_ssm_activation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssm_activation aws_ssm_activation}.
 type SsmActivation interface {
 	cdktf.TerraformResource
 	ActivationCode() *string
@@ -534,7 +534,7 @@ func (j *jsiiProxy_SsmActivation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
 func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivationConfig) SsmActivation {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewSsmActivation(scope constructs.Construct, id *string, config *SsmActivat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssm_activation aws_ssm_activation} Resource.
 func NewSsmActivation_Override(s SsmActivation, scope constructs.Construct, id *string, config *SsmActivationConfig) {
 	_init_.Initialize()
 

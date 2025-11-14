@@ -22,56 +22,56 @@ type QuicksightAccountSubscriptionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#account_name QuicksightAccountSubscription#account_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#account_name QuicksightAccountSubscription#account_name}.
 	AccountName *string `field:"required" json:"accountName" yaml:"accountName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#authentication_method QuicksightAccountSubscription#authentication_method}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#authentication_method QuicksightAccountSubscription#authentication_method}.
 	AuthenticationMethod *string `field:"required" json:"authenticationMethod" yaml:"authenticationMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#edition QuicksightAccountSubscription#edition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#edition QuicksightAccountSubscription#edition}.
 	Edition *string `field:"required" json:"edition" yaml:"edition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#notification_email QuicksightAccountSubscription#notification_email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#notification_email QuicksightAccountSubscription#notification_email}.
 	NotificationEmail *string `field:"required" json:"notificationEmail" yaml:"notificationEmail"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#active_directory_name QuicksightAccountSubscription#active_directory_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#active_directory_name QuicksightAccountSubscription#active_directory_name}.
 	ActiveDirectoryName *string `field:"optional" json:"activeDirectoryName" yaml:"activeDirectoryName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#admin_group QuicksightAccountSubscription#admin_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#admin_group QuicksightAccountSubscription#admin_group}.
 	AdminGroup *[]*string `field:"optional" json:"adminGroup" yaml:"adminGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#admin_pro_group QuicksightAccountSubscription#admin_pro_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#admin_pro_group QuicksightAccountSubscription#admin_pro_group}.
 	AdminProGroup *[]*string `field:"optional" json:"adminProGroup" yaml:"adminProGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#author_group QuicksightAccountSubscription#author_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#author_group QuicksightAccountSubscription#author_group}.
 	AuthorGroup *[]*string `field:"optional" json:"authorGroup" yaml:"authorGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#author_pro_group QuicksightAccountSubscription#author_pro_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#author_pro_group QuicksightAccountSubscription#author_pro_group}.
 	AuthorProGroup *[]*string `field:"optional" json:"authorProGroup" yaml:"authorProGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#aws_account_id QuicksightAccountSubscription#aws_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#aws_account_id QuicksightAccountSubscription#aws_account_id}.
 	AwsAccountId *string `field:"optional" json:"awsAccountId" yaml:"awsAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#contact_number QuicksightAccountSubscription#contact_number}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#contact_number QuicksightAccountSubscription#contact_number}.
 	ContactNumber *string `field:"optional" json:"contactNumber" yaml:"contactNumber"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#directory_id QuicksightAccountSubscription#directory_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#directory_id QuicksightAccountSubscription#directory_id}.
 	DirectoryId *string `field:"optional" json:"directoryId" yaml:"directoryId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#email_address QuicksightAccountSubscription#email_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#email_address QuicksightAccountSubscription#email_address}.
 	EmailAddress *string `field:"optional" json:"emailAddress" yaml:"emailAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#first_name QuicksightAccountSubscription#first_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#first_name QuicksightAccountSubscription#first_name}.
 	FirstName *string `field:"optional" json:"firstName" yaml:"firstName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#iam_identity_center_instance_arn QuicksightAccountSubscription#iam_identity_center_instance_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#iam_identity_center_instance_arn QuicksightAccountSubscription#iam_identity_center_instance_arn}.
 	IamIdentityCenterInstanceArn *string `field:"optional" json:"iamIdentityCenterInstanceArn" yaml:"iamIdentityCenterInstanceArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#id QuicksightAccountSubscription#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#id QuicksightAccountSubscription#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#last_name QuicksightAccountSubscription#last_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#last_name QuicksightAccountSubscription#last_name}.
 	LastName *string `field:"optional" json:"lastName" yaml:"lastName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#reader_group QuicksightAccountSubscription#reader_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#reader_group QuicksightAccountSubscription#reader_group}.
 	ReaderGroup *[]*string `field:"optional" json:"readerGroup" yaml:"readerGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#reader_pro_group QuicksightAccountSubscription#reader_pro_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#reader_pro_group QuicksightAccountSubscription#reader_pro_group}.
 	ReaderProGroup *[]*string `field:"optional" json:"readerProGroup" yaml:"readerProGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#realm QuicksightAccountSubscription#realm}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#realm QuicksightAccountSubscription#realm}.
 	Realm *string `field:"optional" json:"realm" yaml:"realm"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#region QuicksightAccountSubscription#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#region QuicksightAccountSubscription#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_account_subscription#timeouts QuicksightAccountSubscription#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_subscription#timeouts QuicksightAccountSubscription#timeouts}
 	Timeouts *QuicksightAccountSubscriptionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

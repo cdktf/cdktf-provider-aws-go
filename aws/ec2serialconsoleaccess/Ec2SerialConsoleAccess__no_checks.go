@@ -115,6 +115,10 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewEc2SerialConsoleAccessParameters(scope constructs.Construct, id *string, config *Ec2SerialConsoleAccessConfig) error {
 	return nil
 }

@@ -34,6 +34,8 @@ type BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference interfac
 	SetInternalValue(val interface{})
 	Lambda() BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList
 	LambdaInput() interface{}
+	McpServer() BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList
+	McpServerInput() interface{}
 	OpenApiSchema() BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList
 	OpenApiSchemaInput() interface{}
 	SmithyModel() BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList
@@ -71,9 +73,11 @@ type BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLambda(value interface{})
+	PutMcpServer(value interface{})
 	PutOpenApiSchema(value interface{})
 	PutSmithyModel(value interface{})
 	ResetLambda()
+	ResetMcpServer()
 	ResetOpenApiSchema()
 	ResetSmithyModel()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputRefe
 	_jsii_.Get(
 		j,
 		"lambdaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) McpServer() BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList {
+	var returns BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList
+	_jsii_.Get(
+		j,
+		"mcpServer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) McpServerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mcpServerInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputRefe
 	)
 }
 
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) PutMcpServer(value interface{}) {
+	if err := b.validatePutMcpServerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putMcpServer",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) PutOpenApiSchema(value interface{}) {
 	if err := b.validatePutOpenApiSchemaParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputRefe
 	_jsii_.InvokeVoid(
 		b,
 		"resetLambda",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) ResetMcpServer() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMcpServer",
 		nil, // no parameters
 	)
 }

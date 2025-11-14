@@ -22,7 +22,7 @@ type IamOrganizationsFeaturesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
 	EnabledFeatures *[]*string `field:"required" json:"enabledFeatures" yaml:"enabledFeatures"`
 }
 

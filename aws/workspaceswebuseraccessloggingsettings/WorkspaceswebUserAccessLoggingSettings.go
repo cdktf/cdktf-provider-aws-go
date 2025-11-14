@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings}.
 type WorkspaceswebUserAccessLoggingSettings interface {
 	cdktf.TerraformResource
 	AssociatedPortalArns() *[]*string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_WorkspaceswebUserAccessLoggingSettings) UserAccessLoggingSett
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
 func NewWorkspaceswebUserAccessLoggingSettings(scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsConfig) WorkspaceswebUserAccessLoggingSettings {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewWorkspaceswebUserAccessLoggingSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/workspacesweb_user_access_logging_settings aws_workspacesweb_user_access_logging_settings} Resource.
 func NewWorkspaceswebUserAccessLoggingSettings_Override(w WorkspaceswebUserAccessLoggingSettings, scope constructs.Construct, id *string, config *WorkspaceswebUserAccessLoggingSettingsConfig) {
 	_init_.Initialize()
 

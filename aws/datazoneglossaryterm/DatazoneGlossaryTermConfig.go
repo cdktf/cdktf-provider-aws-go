@@ -22,29 +22,29 @@ type DatazoneGlossaryTermConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
 	GlossaryIdentifier *string `field:"required" json:"glossaryIdentifier" yaml:"glossaryIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
 	DomainIdentifier *string `field:"optional" json:"domainIdentifier" yaml:"domainIdentifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
 	LongDescription *string `field:"optional" json:"longDescription" yaml:"longDescription"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#region DatazoneGlossaryTerm#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#region DatazoneGlossaryTerm#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
 	ShortDescription *string `field:"optional" json:"shortDescription" yaml:"shortDescription"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 	// term_relations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
 	TermRelations interface{} `field:"optional" json:"termRelations" yaml:"termRelations"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
 	Timeouts *DatazoneGlossaryTermTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

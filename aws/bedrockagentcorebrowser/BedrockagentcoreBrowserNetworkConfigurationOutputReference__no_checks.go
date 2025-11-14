@@ -47,7 +47,7 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) v
 	return nil
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validatePutNetworkModeConfigParameters(value interface{}) error {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) validatePutVpcConfigParameters(value interface{}) error {
 	return nil
 }
 

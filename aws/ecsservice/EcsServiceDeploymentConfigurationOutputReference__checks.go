@@ -93,6 +93,17 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validateInt
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutCanaryConfigurationParameters(value *EcsServiceDeploymentConfigurationCanaryConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutLifecycleHookParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -119,6 +130,17 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePut
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EcsServiceDeploymentConfigurationLifecycleHook; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutLinearConfigurationParameters(value *EcsServiceDeploymentConfigurationLinearConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

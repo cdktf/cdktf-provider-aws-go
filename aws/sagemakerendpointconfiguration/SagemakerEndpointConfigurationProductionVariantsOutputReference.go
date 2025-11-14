@@ -119,6 +119,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ResetInstanceType()
 	ResetManagedInstanceScaling()
 	ResetModelDataDownloadTimeoutInSeconds()
+	ResetModelName()
 	ResetRoutingConfig()
 	ResetServerlessConfig()
 	ResetVariantName()
@@ -1018,6 +1019,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"resetModelDataDownloadTimeoutInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetModelName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelName",
 		nil, // no parameters
 	)
 }

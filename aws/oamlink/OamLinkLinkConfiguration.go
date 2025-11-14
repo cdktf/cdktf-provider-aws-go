@@ -7,11 +7,11 @@ package oamlink
 type OamLinkLinkConfiguration struct {
 	// log_group_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/oam_link#log_group_configuration OamLink#log_group_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/oam_link#log_group_configuration OamLink#log_group_configuration}
 	LogGroupConfiguration *OamLinkLinkConfigurationLogGroupConfiguration `field:"optional" json:"logGroupConfiguration" yaml:"logGroupConfiguration"`
 	// metric_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/oam_link#metric_configuration OamLink#metric_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/oam_link#metric_configuration OamLink#metric_configuration}
 	MetricConfiguration *OamLinkLinkConfigurationMetricConfiguration `field:"optional" json:"metricConfiguration" yaml:"metricConfiguration"`
 }
 

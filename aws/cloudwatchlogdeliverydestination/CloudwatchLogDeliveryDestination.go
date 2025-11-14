@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination}.
 type CloudwatchLogDeliveryDestination interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -31,6 +31,8 @@ type CloudwatchLogDeliveryDestination interface {
 	DeliveryDestinationConfiguration() CloudwatchLogDeliveryDestinationDeliveryDestinationConfigurationList
 	DeliveryDestinationConfigurationInput() interface{}
 	DeliveryDestinationType() *string
+	SetDeliveryDestinationType(val *string)
+	DeliveryDestinationTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,6 +125,7 @@ type CloudwatchLogDeliveryDestination interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDeliveryDestinationConfiguration(value interface{})
 	ResetDeliveryDestinationConfiguration()
+	ResetDeliveryDestinationType()
 	ResetOutputFormat()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -222,6 +225,16 @@ func (j *jsiiProxy_CloudwatchLogDeliveryDestination) DeliveryDestinationType() *
 	_jsii_.Get(
 		j,
 		"deliveryDestinationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogDeliveryDestination) DeliveryDestinationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deliveryDestinationTypeInput",
 		&returns,
 	)
 	return returns
@@ -438,7 +451,7 @@ func (j *jsiiProxy_CloudwatchLogDeliveryDestination) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource.
 func NewCloudwatchLogDeliveryDestination(scope constructs.Construct, id *string, config *CloudwatchLogDeliveryDestinationConfig) CloudwatchLogDeliveryDestination {
 	_init_.Initialize()
 
@@ -456,7 +469,7 @@ func NewCloudwatchLogDeliveryDestination(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudwatch_log_delivery_destination aws_cloudwatch_log_delivery_destination} Resource.
 func NewCloudwatchLogDeliveryDestination_Override(c CloudwatchLogDeliveryDestination, scope constructs.Construct, id *string, config *CloudwatchLogDeliveryDestinationConfig) {
 	_init_.Initialize()
 
@@ -485,6 +498,17 @@ func (j *jsiiProxy_CloudwatchLogDeliveryDestination)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchLogDeliveryDestination)SetDeliveryDestinationType(val *string) {
+	if err := j.validateSetDeliveryDestinationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deliveryDestinationType",
 		val,
 	)
 }
@@ -947,6 +971,14 @@ func (c *jsiiProxy_CloudwatchLogDeliveryDestination) ResetDeliveryDestinationCon
 	_jsii_.InvokeVoid(
 		c,
 		"resetDeliveryDestinationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogDeliveryDestination) ResetDeliveryDestinationType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeliveryDestinationType",
 		nil, // no parameters
 	)
 }

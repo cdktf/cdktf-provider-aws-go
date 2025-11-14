@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
 type QuicksightKeyRegistration interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_QuicksightKeyRegistration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration} Resource.
 func NewQuicksightKeyRegistration(scope constructs.Construct, id *string, config *QuicksightKeyRegistrationConfig) QuicksightKeyRegistration {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewQuicksightKeyRegistration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration} Resource.
 func NewQuicksightKeyRegistration_Override(q QuicksightKeyRegistration, scope constructs.Construct, id *string, config *QuicksightKeyRegistrationConfig) {
 	_init_.Initialize()
 

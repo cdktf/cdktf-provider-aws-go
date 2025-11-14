@@ -7,7 +7,7 @@ package dataawslblistenerrule
 type DataAwsLbListenerRuleTransformUrlRewriteConfig struct {
 	// rewrite block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/lb_listener_rule#rewrite DataAwsLbListenerRule#rewrite}
 	Rewrite interface{} `field:"optional" json:"rewrite" yaml:"rewrite"`
 }
 

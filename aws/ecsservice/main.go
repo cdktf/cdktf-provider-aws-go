@@ -347,6 +347,48 @@ func init() {
 		reflect.TypeOf((*EcsServiceDeploymentConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationCanaryConfiguration",
+		reflect.TypeOf((*EcsServiceDeploymentConfigurationCanaryConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference",
+		reflect.TypeOf((*EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "canaryBakeTimeInMinutes", GoGetter: "CanaryBakeTimeInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "canaryBakeTimeInMinutesInput", GoGetter: "CanaryBakeTimeInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "canaryPercent", GoGetter: "CanaryPercent"},
+			_jsii_.MemberProperty{JsiiProperty: "canaryPercentInput", GoGetter: "CanaryPercentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCanaryBakeTimeInMinutes", GoMethod: "ResetCanaryBakeTimeInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCanaryPercent", GoMethod: "ResetCanaryPercent"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLifecycleHook",
 		reflect.TypeOf((*EcsServiceDeploymentConfigurationLifecycleHook)(nil)).Elem(),
 	)
@@ -413,12 +455,56 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLinearConfiguration",
+		reflect.TypeOf((*EcsServiceDeploymentConfigurationLinearConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationLinearConfigurationOutputReference",
+		reflect.TypeOf((*EcsServiceDeploymentConfigurationLinearConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStepBakeTimeInMinutes", GoMethod: "ResetStepBakeTimeInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStepPercent", GoMethod: "ResetStepPercent"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "stepBakeTimeInMinutes", GoGetter: "StepBakeTimeInMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "stepBakeTimeInMinutesInput", GoGetter: "StepBakeTimeInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "stepPercent", GoGetter: "StepPercent"},
+			_jsii_.MemberProperty{JsiiProperty: "stepPercentInput", GoGetter: "StepPercentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EcsServiceDeploymentConfigurationLinearConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ecsService.EcsServiceDeploymentConfigurationOutputReference",
 		reflect.TypeOf((*EcsServiceDeploymentConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bakeTimeInMinutes", GoGetter: "BakeTimeInMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "bakeTimeInMinutesInput", GoGetter: "BakeTimeInMinutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "canaryConfiguration", GoGetter: "CanaryConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "canaryConfigurationInput", GoGetter: "CanaryConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,9 +524,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleHook", GoGetter: "LifecycleHook"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycleHookInput", GoGetter: "LifecycleHookInput"},
+			_jsii_.MemberProperty{JsiiProperty: "linearConfiguration", GoGetter: "LinearConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "linearConfigurationInput", GoGetter: "LinearConfigurationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCanaryConfiguration", GoMethod: "PutCanaryConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putLifecycleHook", GoMethod: "PutLifecycleHook"},
+			_jsii_.MemberMethod{JsiiMethod: "putLinearConfiguration", GoMethod: "PutLinearConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBakeTimeInMinutes", GoMethod: "ResetBakeTimeInMinutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCanaryConfiguration", GoMethod: "ResetCanaryConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifecycleHook", GoMethod: "ResetLifecycleHook"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLinearConfiguration", GoMethod: "ResetLinearConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStrategy", GoMethod: "ResetStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "strategy", GoGetter: "Strategy"},

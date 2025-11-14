@@ -16,6 +16,8 @@ type EcsServiceDeploymentConfigurationOutputReference interface {
 	BakeTimeInMinutes() *string
 	SetBakeTimeInMinutes(val *string)
 	BakeTimeInMinutesInput() *string
+	CanaryConfiguration() EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference
+	CanaryConfigurationInput() *EcsServiceDeploymentConfigurationCanaryConfiguration
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,6 +39,8 @@ type EcsServiceDeploymentConfigurationOutputReference interface {
 	SetInternalValue(val *EcsServiceDeploymentConfiguration)
 	LifecycleHook() EcsServiceDeploymentConfigurationLifecycleHookList
 	LifecycleHookInput() interface{}
+	LinearConfiguration() EcsServiceDeploymentConfigurationLinearConfigurationOutputReference
+	LinearConfigurationInput() *EcsServiceDeploymentConfigurationLinearConfiguration
 	Strategy() *string
 	SetStrategy(val *string)
 	StrategyInput() *string
@@ -72,9 +76,13 @@ type EcsServiceDeploymentConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutCanaryConfiguration(value *EcsServiceDeploymentConfigurationCanaryConfiguration)
 	PutLifecycleHook(value interface{})
+	PutLinearConfiguration(value *EcsServiceDeploymentConfigurationLinearConfiguration)
 	ResetBakeTimeInMinutes()
+	ResetCanaryConfiguration()
 	ResetLifecycleHook()
+	ResetLinearConfiguration()
 	ResetStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,6 +114,26 @@ func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) BakeTimeInM
 	_jsii_.Get(
 		j,
 		"bakeTimeInMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) CanaryConfiguration() EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference {
+	var returns EcsServiceDeploymentConfigurationCanaryConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"canaryConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) CanaryConfigurationInput() *EcsServiceDeploymentConfigurationCanaryConfiguration {
+	var returns *EcsServiceDeploymentConfigurationCanaryConfiguration
+	_jsii_.Get(
+		j,
+		"canaryConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -176,6 +204,26 @@ func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) LifecycleHo
 	_jsii_.Get(
 		j,
 		"lifecycleHookInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) LinearConfiguration() EcsServiceDeploymentConfigurationLinearConfigurationOutputReference {
+	var returns EcsServiceDeploymentConfigurationLinearConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"linearConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) LinearConfigurationInput() *EcsServiceDeploymentConfigurationLinearConfiguration {
+	var returns *EcsServiceDeploymentConfigurationLinearConfiguration
+	_jsii_.Get(
+		j,
+		"linearConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +560,17 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) Interpolati
 	return returns
 }
 
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) PutCanaryConfiguration(value *EcsServiceDeploymentConfigurationCanaryConfiguration) {
+	if err := e.validatePutCanaryConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putCanaryConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) PutLifecycleHook(value interface{}) {
 	if err := e.validatePutLifecycleHookParameters(value); err != nil {
 		panic(err)
@@ -519,6 +578,17 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) PutLifecycl
 	_jsii_.InvokeVoid(
 		e,
 		"putLifecycleHook",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) PutLinearConfiguration(value *EcsServiceDeploymentConfigurationLinearConfiguration) {
+	if err := e.validatePutLinearConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putLinearConfiguration",
 		[]interface{}{value},
 	)
 }
@@ -531,10 +601,26 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) ResetBakeTi
 	)
 }
 
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) ResetCanaryConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCanaryConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) ResetLifecycleHook() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetLifecycleHook",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) ResetLinearConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLinearConfiguration",
 		nil, // no parameters
 	)
 }

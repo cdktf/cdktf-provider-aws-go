@@ -34,8 +34,6 @@ type BedrockagentcoreBrowserNetworkConfigurationOutputReference interface {
 	SetInternalValue(val interface{})
 	NetworkMode() *string
 	SetNetworkMode(val *string)
-	NetworkModeConfig() BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList
-	NetworkModeConfigInput() interface{}
 	NetworkModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -45,6 +43,8 @@ type BedrockagentcoreBrowserNetworkConfigurationOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VpcConfig() BedrockagentcoreBrowserNetworkConfigurationVpcConfigList
+	VpcConfigInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,8 +69,8 @@ type BedrockagentcoreBrowserNetworkConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
-	PutNetworkModeConfig(value interface{})
-	ResetNetworkModeConfig()
+	PutVpcConfig(value interface{})
+	ResetVpcConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -146,26 +146,6 @@ func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) N
 	return returns
 }
 
-func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) NetworkModeConfig() BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList {
-	var returns BedrockagentcoreBrowserNetworkConfigurationNetworkModeConfigList
-	_jsii_.Get(
-		j,
-		"networkModeConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) NetworkModeConfigInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"networkModeConfigInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) NetworkModeInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -191,6 +171,26 @@ func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) VpcConfig() BedrockagentcoreBrowserNetworkConfigurationVpcConfigList {
+	var returns BedrockagentcoreBrowserNetworkConfigurationVpcConfigList
+	_jsii_.Get(
+		j,
+		"vpcConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) VpcConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcConfigInput",
 		&returns,
 	)
 	return returns
@@ -476,21 +476,21 @@ func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) I
 	return returns
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) PutNetworkModeConfig(value interface{}) {
-	if err := b.validatePutNetworkModeConfigParameters(value); err != nil {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) PutVpcConfig(value interface{}) {
+	if err := b.validatePutVpcConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
-		"putNetworkModeConfig",
+		"putVpcConfig",
 		[]interface{}{value},
 	)
 }
 
-func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) ResetNetworkModeConfig() {
+func (b *jsiiProxy_BedrockagentcoreBrowserNetworkConfigurationOutputReference) ResetVpcConfig() {
 	_jsii_.InvokeVoid(
 		b,
-		"resetNetworkModeConfig",
+		"resetVpcConfig",
 		nil, // no parameters
 	)
 }

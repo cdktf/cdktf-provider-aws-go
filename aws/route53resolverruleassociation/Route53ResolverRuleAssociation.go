@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association}.
 type Route53ResolverRuleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_Route53ResolverRuleAssociation) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association} Resource.
 func NewRoute53ResolverRuleAssociation(scope constructs.Construct, id *string, config *Route53ResolverRuleAssociationConfig) Route53ResolverRuleAssociation {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewRoute53ResolverRuleAssociation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/route53_resolver_rule_association aws_route53_resolver_rule_association} Resource.
 func NewRoute53ResolverRuleAssociation_Override(r Route53ResolverRuleAssociation, scope constructs.Construct, id *string, config *Route53ResolverRuleAssociationConfig) {
 	_init_.Initialize()
 

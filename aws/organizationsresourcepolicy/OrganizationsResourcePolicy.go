@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
 type OrganizationsResourcePolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_OrganizationsResourcePolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource.
 func NewOrganizationsResourcePolicy(scope constructs.Construct, id *string, config *OrganizationsResourcePolicyConfig) OrganizationsResourcePolicy {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewOrganizationsResourcePolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy} Resource.
 func NewOrganizationsResourcePolicy_Override(o OrganizationsResourcePolicy, scope constructs.Construct, id *string, config *OrganizationsResourcePolicyConfig) {
 	_init_.Initialize()
 

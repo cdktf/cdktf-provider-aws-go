@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}.
 type Lexv2ModelsBotLocale interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_Lexv2ModelsBotLocale) VoiceSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
 func NewLexv2ModelsBotLocale(scope constructs.Construct, id *string, config *Lexv2ModelsBotLocaleConfig) Lexv2ModelsBotLocale {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewLexv2ModelsBotLocale(scope constructs.Construct, id *string, config *Lex
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource.
 func NewLexv2ModelsBotLocale_Override(l Lexv2ModelsBotLocale, scope constructs.Construct, id *string, config *Lexv2ModelsBotLocaleConfig) {
 	_init_.Initialize()
 

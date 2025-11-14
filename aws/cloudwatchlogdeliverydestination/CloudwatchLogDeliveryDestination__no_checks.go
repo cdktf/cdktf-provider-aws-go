@@ -103,6 +103,10 @@ func (j *jsiiProxy_CloudwatchLogDeliveryDestination) validateSetCountParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogDeliveryDestination) validateSetDeliveryDestinationTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogDeliveryDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

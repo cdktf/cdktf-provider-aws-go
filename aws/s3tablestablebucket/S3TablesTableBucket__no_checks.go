@@ -127,6 +127,10 @@ func (j *jsiiProxy_S3TablesTableBucket) validateSetRegionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_S3TablesTableBucket) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewS3TablesTableBucketParameters(scope constructs.Construct, id *string, config *S3TablesTableBucketConfig) error {
 	return nil
 }

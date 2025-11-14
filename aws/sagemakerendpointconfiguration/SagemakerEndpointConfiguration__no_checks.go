@@ -115,6 +115,10 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetCountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetExecutionRoleArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

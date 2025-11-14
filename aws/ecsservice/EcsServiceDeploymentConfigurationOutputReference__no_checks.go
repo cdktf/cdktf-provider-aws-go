@@ -47,7 +47,15 @@ func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validateInt
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutCanaryConfigurationParameters(value *EcsServiceDeploymentConfigurationCanaryConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutLifecycleHookParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsServiceDeploymentConfigurationOutputReference) validatePutLinearConfigurationParameters(value *EcsServiceDeploymentConfigurationLinearConfiguration) error {
 	return nil
 }
 

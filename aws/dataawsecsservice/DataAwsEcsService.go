@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecs_service aws_ecs_service}.
 type DataAwsEcsService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	AvailabilityZoneRebalancing() *string
+	CapacityProviderStrategy() DataAwsEcsServiceCapacityProviderStrategyList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterArn() *string
@@ -28,11 +29,19 @@ type DataAwsEcsService interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
+	CreatedBy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeploymentConfiguration() DataAwsEcsServiceDeploymentConfigurationList
+	DeploymentController() DataAwsEcsServiceDeploymentControllerList
+	Deployments() DataAwsEcsServiceDeploymentsList
 	DesiredCount() *float64
+	EnableEcsManagedTags() cdktf.IResolvable
+	EnableExecuteCommand() cdktf.IResolvable
+	Events() DataAwsEcsServiceEventsList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,6 +50,8 @@ type DataAwsEcsService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthCheckGracePeriodSeconds() *float64
+	IamRole() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -50,8 +61,15 @@ type DataAwsEcsService interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancer() DataAwsEcsServiceLoadBalancerList
+	NetworkConfiguration() DataAwsEcsServiceNetworkConfigurationList
 	// The tree node.
 	Node() constructs.Node
+	OrderedPlacementStrategy() DataAwsEcsServiceOrderedPlacementStrategyList
+	PendingCount() *float64
+	PlacementConstraints() DataAwsEcsServicePlacementConstraintsList
+	PlatformFamily() *string
+	PlatformVersion() *string
+	PropagateTags() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -61,14 +79,18 @@ type DataAwsEcsService interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RunningCount() *float64
 	SchedulingStrategy() *string
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
+	ServiceRegistries() DataAwsEcsServiceServiceRegistriesList
+	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
 	TaskDefinition() *string
+	TaskSets() DataAwsEcsServiceTaskSetsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -145,6 +167,16 @@ func (j *jsiiProxy_DataAwsEcsService) AvailabilityZoneRebalancing() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) CapacityProviderStrategy() DataAwsEcsServiceCapacityProviderStrategyList {
+	var returns DataAwsEcsServiceCapacityProviderStrategyList
+	_jsii_.Get(
+		j,
+		"capacityProviderStrategy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -195,6 +227,26 @@ func (j *jsiiProxy_DataAwsEcsService) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) CreatedBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdBy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -205,11 +257,71 @@ func (j *jsiiProxy_DataAwsEcsService) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) DeploymentConfiguration() DataAwsEcsServiceDeploymentConfigurationList {
+	var returns DataAwsEcsServiceDeploymentConfigurationList
+	_jsii_.Get(
+		j,
+		"deploymentConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) DeploymentController() DataAwsEcsServiceDeploymentControllerList {
+	var returns DataAwsEcsServiceDeploymentControllerList
+	_jsii_.Get(
+		j,
+		"deploymentController",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) Deployments() DataAwsEcsServiceDeploymentsList {
+	var returns DataAwsEcsServiceDeploymentsList
+	_jsii_.Get(
+		j,
+		"deployments",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) DesiredCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"desiredCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) EnableEcsManagedTags() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableEcsManagedTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) EnableExecuteCommand() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableExecuteCommand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) Events() DataAwsEcsServiceEventsList {
+	var returns DataAwsEcsServiceEventsList
+	_jsii_.Get(
+		j,
+		"events",
 		&returns,
 	)
 	return returns
@@ -240,6 +352,26 @@ func (j *jsiiProxy_DataAwsEcsService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) HealthCheckGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthCheckGracePeriodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) IamRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamRole",
 		&returns,
 	)
 	return returns
@@ -295,11 +427,81 @@ func (j *jsiiProxy_DataAwsEcsService) LoadBalancer() DataAwsEcsServiceLoadBalanc
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) NetworkConfiguration() DataAwsEcsServiceNetworkConfigurationList {
+	var returns DataAwsEcsServiceNetworkConfigurationList
+	_jsii_.Get(
+		j,
+		"networkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) OrderedPlacementStrategy() DataAwsEcsServiceOrderedPlacementStrategyList {
+	var returns DataAwsEcsServiceOrderedPlacementStrategyList
+	_jsii_.Get(
+		j,
+		"orderedPlacementStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) PendingCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pendingCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) PlacementConstraints() DataAwsEcsServicePlacementConstraintsList {
+	var returns DataAwsEcsServicePlacementConstraintsList
+	_jsii_.Get(
+		j,
+		"placementConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) PlatformFamily() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platformFamily",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) PlatformVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platformVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) PropagateTags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"propagateTags",
 		&returns,
 	)
 	return returns
@@ -345,6 +547,16 @@ func (j *jsiiProxy_DataAwsEcsService) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) RunningCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"runningCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) SchedulingStrategy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -375,6 +587,26 @@ func (j *jsiiProxy_DataAwsEcsService) ServiceNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) ServiceRegistries() DataAwsEcsServiceServiceRegistriesList {
+	var returns DataAwsEcsServiceServiceRegistriesList
+	_jsii_.Get(
+		j,
+		"serviceRegistries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -400,6 +632,16 @@ func (j *jsiiProxy_DataAwsEcsService) TaskDefinition() *string {
 	_jsii_.Get(
 		j,
 		"taskDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) TaskSets() DataAwsEcsServiceTaskSetsList {
+	var returns DataAwsEcsServiceTaskSetsList
+	_jsii_.Get(
+		j,
+		"taskSets",
 		&returns,
 	)
 	return returns
@@ -436,7 +678,7 @@ func (j *jsiiProxy_DataAwsEcsService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) DataAwsEcsService {
 	_init_.Initialize()
 
@@ -454,7 +696,7 @@ func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.20.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService_Override(d DataAwsEcsService, scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) {
 	_init_.Initialize()
 

@@ -51,6 +51,10 @@ func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputRefe
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) validatePutMcpServerParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference) validatePutOpenApiSchemaParameters(value interface{}) error {
 	return nil
 }
