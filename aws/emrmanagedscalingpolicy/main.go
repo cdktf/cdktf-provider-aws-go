@@ -57,6 +57,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScalingStrategy", GoMethod: "ResetScalingStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUtilizationPerformanceIndex", GoMethod: "ResetUtilizationPerformanceIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "scalingStrategy", GoGetter: "ScalingStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "scalingStrategyInput", GoGetter: "ScalingStrategyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -66,6 +70,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizationPerformanceIndex", GoGetter: "UtilizationPerformanceIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizationPerformanceIndexInput", GoGetter: "UtilizationPerformanceIndexInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrManagedScalingPolicy{}

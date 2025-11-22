@@ -7,9 +7,9 @@ package bedrockagentprompt
 type BedrockagentPromptVariantTemplateConfigurationChatMessageContent struct {
 	// cache_point block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagent_prompt#cache_point BedrockagentPrompt#cache_point}
 	CachePoint interface{} `field:"optional" json:"cachePoint" yaml:"cachePoint"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagent_prompt#text BedrockagentPrompt#text}.
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

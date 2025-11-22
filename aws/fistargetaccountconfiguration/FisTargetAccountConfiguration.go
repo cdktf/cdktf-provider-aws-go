@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration}.
 type FisTargetAccountConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_FisTargetAccountConfiguration) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration} Resource.
 func NewFisTargetAccountConfiguration(scope constructs.Construct, id *string, config *FisTargetAccountConfigurationConfig) FisTargetAccountConfiguration {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewFisTargetAccountConfiguration(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration} Resource.
 func NewFisTargetAccountConfiguration_Override(f FisTargetAccountConfiguration, scope constructs.Construct, id *string, config *FisTargetAccountConfigurationConfig) {
 	_init_.Initialize()
 

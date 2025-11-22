@@ -7,7 +7,7 @@ package accessanalyzeranalyzer
 type AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule struct {
 	// inclusion block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/accessanalyzer_analyzer#inclusion AccessanalyzerAnalyzer#inclusion}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/accessanalyzer_analyzer#inclusion AccessanalyzerAnalyzer#inclusion}
 	Inclusion interface{} `field:"optional" json:"inclusion" yaml:"inclusion"`
 }
 

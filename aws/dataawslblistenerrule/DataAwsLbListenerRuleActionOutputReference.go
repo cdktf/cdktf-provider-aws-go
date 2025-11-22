@@ -40,6 +40,8 @@ type DataAwsLbListenerRuleActionOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	JwtValidation() DataAwsLbListenerRuleActionJwtValidationList
+	JwtValidationInput() interface{}
 	Order() *float64
 	Redirect() DataAwsLbListenerRuleActionRedirectList
 	RedirectInput() interface{}
@@ -80,11 +82,13 @@ type DataAwsLbListenerRuleActionOutputReference interface {
 	PutAuthenticateOidc(value interface{})
 	PutFixedResponse(value interface{})
 	PutForward(value interface{})
+	PutJwtValidation(value interface{})
 	PutRedirect(value interface{})
 	ResetAuthenticateCognito()
 	ResetAuthenticateOidc()
 	ResetFixedResponse()
 	ResetForward()
+	ResetJwtValidation()
 	ResetRedirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) InternalValue() i
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) JwtValidation() DataAwsLbListenerRuleActionJwtValidationList {
+	var returns DataAwsLbListenerRuleActionJwtValidationList
+	_jsii_.Get(
+		j,
+		"jwtValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) JwtValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jwtValidationInput",
 		&returns,
 	)
 	return returns
@@ -604,6 +628,17 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutForward(value 
 	)
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutJwtValidation(value interface{}) {
+	if err := d.validatePutJwtValidationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putJwtValidation",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) PutRedirect(value interface{}) {
 	if err := d.validatePutRedirectParameters(value); err != nil {
 		panic(err)
@@ -643,6 +678,14 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetForward() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetForward",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) ResetJwtValidation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetJwtValidation",
 		nil, // no parameters
 	)
 }

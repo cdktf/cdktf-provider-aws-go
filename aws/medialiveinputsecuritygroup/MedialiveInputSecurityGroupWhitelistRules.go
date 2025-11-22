@@ -5,7 +5,7 @@ package medialiveinputsecuritygroup
 
 
 type MedialiveInputSecurityGroupWhitelistRules struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/medialive_input_security_group#cidr MedialiveInputSecurityGroup#cidr}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/medialive_input_security_group#cidr MedialiveInputSecurityGroup#cidr}.
 	Cidr *string `field:"required" json:"cidr" yaml:"cidr"`
 }
 

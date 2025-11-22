@@ -217,6 +217,37 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutForwar
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutJwtValidationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataAwsLbListenerRuleActionJwtValidation:
+		value := value.(*[]*DataAwsLbListenerRuleActionJwtValidation)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataAwsLbListenerRuleActionJwtValidation:
+		value_ := value.([]*DataAwsLbListenerRuleActionJwtValidation)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsLbListenerRuleActionJwtValidation; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutRedirectParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

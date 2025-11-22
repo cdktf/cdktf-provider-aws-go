@@ -885,6 +885,14 @@ func (j *jsiiProxy_VpnConnection) validateSetTunnel2StartupActionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetTunnelBandwidthParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetTunnelInsideIpVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

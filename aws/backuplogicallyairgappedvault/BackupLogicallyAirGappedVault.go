@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault}.
 type BackupLogicallyAirGappedVault interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -32,6 +32,9 @@ type BackupLogicallyAirGappedVault interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionKeyArn() *string
+	SetEncryptionKeyArn(val *string)
+	EncryptionKeyArnInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -125,6 +128,7 @@ type BackupLogicallyAirGappedVault interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BackupLogicallyAirGappedVaultTimeouts)
+	ResetEncryptionKeyArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -204,6 +208,26 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupLogicallyAirGappedVault) EncryptionKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupLogicallyAirGappedVault) EncryptionKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionKeyArnInput",
 		&returns,
 	)
 	return returns
@@ -460,7 +484,7 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
 func NewBackupLogicallyAirGappedVault(scope constructs.Construct, id *string, config *BackupLogicallyAirGappedVaultConfig) BackupLogicallyAirGappedVault {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewBackupLogicallyAirGappedVault(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/backup_logically_air_gapped_vault aws_backup_logically_air_gapped_vault} Resource.
 func NewBackupLogicallyAirGappedVault_Override(b BackupLogicallyAirGappedVault, scope constructs.Construct, id *string, config *BackupLogicallyAirGappedVaultConfig) {
 	_init_.Initialize()
 
@@ -515,6 +539,17 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupLogicallyAirGappedVault)SetEncryptionKeyArn(val *string) {
+	if err := j.validateSetEncryptionKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionKeyArn",
 		val,
 	)
 }
@@ -973,6 +1008,14 @@ func (b *jsiiProxy_BackupLogicallyAirGappedVault) PutTimeouts(value *BackupLogic
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BackupLogicallyAirGappedVault) ResetEncryptionKeyArn() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEncryptionKeyArn",
+		nil, // no parameters
 	)
 }
 

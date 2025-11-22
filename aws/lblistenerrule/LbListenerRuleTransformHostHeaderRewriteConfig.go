@@ -7,7 +7,7 @@ package lblistenerrule
 type LbListenerRuleTransformHostHeaderRewriteConfig struct {
 	// rewrite block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lb_listener_rule#rewrite LbListenerRule#rewrite}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#rewrite LbListenerRule#rewrite}
 	Rewrite *LbListenerRuleTransformHostHeaderRewriteConfigRewrite `field:"optional" json:"rewrite" yaml:"rewrite"`
 }
 

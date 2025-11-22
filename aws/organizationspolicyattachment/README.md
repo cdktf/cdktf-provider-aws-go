@@ -1,3 +1,3 @@
 # `aws_organizations_policy_attachment`
 
-Refer to the Terraform Registry for docs: [`aws_organizations_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/organizations_policy_attachment).
+Refer to the Terraform Registry for docs: [`aws_organizations_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/organizations_policy_attachment).

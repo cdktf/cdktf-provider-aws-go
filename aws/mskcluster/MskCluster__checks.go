@@ -273,6 +273,17 @@ func (m *jsiiProxy_MskCluster) validatePutOpenMonitoringParameters(value *MskClu
 	return nil
 }
 
+func (m *jsiiProxy_MskCluster) validatePutRebalancingParameters(value *MskClusterRebalancing) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MskCluster) validatePutTimeoutsParameters(value *MskClusterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

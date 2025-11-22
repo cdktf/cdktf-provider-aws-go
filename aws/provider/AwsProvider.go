@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -119,6 +119,9 @@ type AwsProvider interface {
 	StsRegion() *string
 	SetStsRegion(val *string)
 	StsRegionInput() *string
+	TagPolicyCompliance() *string
+	SetTagPolicyCompliance(val *string)
+	TagPolicyComplianceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -175,6 +178,7 @@ type AwsProvider interface {
 	ResetSkipRegionValidation()
 	ResetSkipRequestingAccountId()
 	ResetStsRegion()
+	ResetTagPolicyCompliance()
 	ResetToken()
 	ResetTokenBucketRateLimiterCapacity()
 	ResetUseDualstackEndpoint()
@@ -867,6 +871,26 @@ func (j *jsiiProxy_AwsProvider) StsRegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsProvider) TagPolicyCompliance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPolicyCompliance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) TagPolicyComplianceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPolicyComplianceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -978,7 +1002,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -996,7 +1020,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 
@@ -1273,6 +1297,14 @@ func (j *jsiiProxy_AwsProvider)SetStsRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"stsRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsProvider)SetTagPolicyCompliance(val *string) {
+	_jsii_.Set(
+		j,
+		"tagPolicyCompliance",
 		val,
 	)
 }
@@ -1684,6 +1716,14 @@ func (a *jsiiProxy_AwsProvider) ResetStsRegion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStsRegion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsProvider) ResetTagPolicyCompliance() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagPolicyCompliance",
 		nil, // no parameters
 	)
 }

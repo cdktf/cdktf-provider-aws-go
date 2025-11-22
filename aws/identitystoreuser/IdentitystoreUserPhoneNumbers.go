@@ -5,11 +5,11 @@ package identitystoreuser
 
 
 type IdentitystoreUserPhoneNumbers struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/identitystore_user#primary IdentitystoreUser#primary}.
 	Primary interface{} `field:"optional" json:"primary" yaml:"primary"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/identitystore_user#type IdentitystoreUser#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/identitystore_user#type IdentitystoreUser#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/identitystore_user#value IdentitystoreUser#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/identitystore_user#value IdentitystoreUser#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

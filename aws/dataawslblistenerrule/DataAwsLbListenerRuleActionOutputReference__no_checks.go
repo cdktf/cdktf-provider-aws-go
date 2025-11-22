@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutForwar
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutJwtValidationParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLbListenerRuleActionOutputReference) validatePutRedirectParameters(value interface{}) error {
 	return nil
 }

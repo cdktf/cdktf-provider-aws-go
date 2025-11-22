@@ -5,15 +5,15 @@ package opensearchdomain
 
 
 type OpensearchDomainAutoTuneOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/opensearch_domain#desired_state OpensearchDomain#desired_state}.
 	DesiredState *string `field:"required" json:"desiredState" yaml:"desiredState"`
 	// maintenance_schedule block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/opensearch_domain#maintenance_schedule OpensearchDomain#maintenance_schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/opensearch_domain#maintenance_schedule OpensearchDomain#maintenance_schedule}
 	MaintenanceSchedule interface{} `field:"optional" json:"maintenanceSchedule" yaml:"maintenanceSchedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/opensearch_domain#rollback_on_disable OpensearchDomain#rollback_on_disable}.
 	RollbackOnDisable *string `field:"optional" json:"rollbackOnDisable" yaml:"rollbackOnDisable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/opensearch_domain#use_off_peak_window OpensearchDomain#use_off_peak_window}.
 	UseOffPeakWindow interface{} `field:"optional" json:"useOffPeakWindow" yaml:"useOffPeakWindow"`
 }
 

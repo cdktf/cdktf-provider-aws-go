@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster}.
 type TimestreaminfluxdbDbCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -51,6 +51,7 @@ type TimestreaminfluxdbDbCluster interface {
 	SetDeploymentType(val *string)
 	DeploymentTypeInput() *string
 	Endpoint() *string
+	EngineType() *string
 	FailoverMode() *string
 	SetFailoverMode(val *string)
 	FailoverModeInput() *string
@@ -170,20 +171,25 @@ type TimestreaminfluxdbDbCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLogDeliveryConfiguration(value interface{})
 	PutTimeouts(value *TimestreaminfluxdbDbClusterTimeouts)
+	ResetAllocatedStorage()
+	ResetBucket()
 	ResetDbParameterGroupIdentifier()
 	ResetDbStorageType()
 	ResetDeploymentType()
 	ResetFailoverMode()
 	ResetLogDeliveryConfiguration()
 	ResetNetworkType()
+	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
 	ResetPort()
 	ResetPubliclyAccessible()
 	ResetRegion()
 	ResetTags()
 	ResetTimeouts()
+	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -387,6 +393,16 @@ func (j *jsiiProxy_TimestreaminfluxdbDbCluster) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreaminfluxdbDbCluster) EngineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineType",
 		&returns,
 	)
 	return returns
@@ -823,7 +839,7 @@ func (j *jsiiProxy_TimestreaminfluxdbDbCluster) VpcSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster} Resource.
 func NewTimestreaminfluxdbDbCluster(scope constructs.Construct, id *string, config *TimestreaminfluxdbDbClusterConfig) TimestreaminfluxdbDbCluster {
 	_init_.Initialize()
 
@@ -841,7 +857,7 @@ func NewTimestreaminfluxdbDbCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/timestreaminfluxdb_db_cluster aws_timestreaminfluxdb_db_cluster} Resource.
 func NewTimestreaminfluxdbDbCluster_Override(t TimestreaminfluxdbDbCluster, scope constructs.Construct, id *string, config *TimestreaminfluxdbDbClusterConfig) {
 	_init_.Initialize()
 
@@ -1493,6 +1509,22 @@ func (t *jsiiProxy_TimestreaminfluxdbDbCluster) PutTimeouts(value *Timestreaminf
 	)
 }
 
+func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetAllocatedStorage() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllocatedStorage",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetBucket() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetBucket",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetDbParameterGroupIdentifier() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1541,10 +1573,26 @@ func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetNetworkType() {
 	)
 }
 
+func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetPassword() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPassword",
 		nil, // no parameters
 	)
 }
@@ -1585,6 +1633,14 @@ func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreaminfluxdbDbCluster) ResetUsername() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

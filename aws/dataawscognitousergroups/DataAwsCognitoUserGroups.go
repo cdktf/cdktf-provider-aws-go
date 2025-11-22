@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
 type DataAwsCognitoUserGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataAwsCognitoUserGroups) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
 func NewDataAwsCognitoUserGroups(scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupsConfig) DataAwsCognitoUserGroups {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataAwsCognitoUserGroups(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
 func NewDataAwsCognitoUserGroups_Override(d DataAwsCognitoUserGroups, scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupsConfig) {
 	_init_.Initialize()
 

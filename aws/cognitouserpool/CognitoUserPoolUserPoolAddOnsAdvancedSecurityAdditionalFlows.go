@@ -5,7 +5,7 @@ package cognitouserpool
 
 
 type CognitoUserPoolUserPoolAddOnsAdvancedSecurityAdditionalFlows struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cognito_user_pool#custom_auth_mode CognitoUserPool#custom_auth_mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/cognito_user_pool#custom_auth_mode CognitoUserPool#custom_auth_mode}.
 	CustomAuthMode *string `field:"optional" json:"customAuthMode" yaml:"customAuthMode"`
 }
 

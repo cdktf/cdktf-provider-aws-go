@@ -42,6 +42,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "globalSecondaryIndex", GoGetter: "GlobalSecondaryIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "globalSecondaryIndexInput", GoGetter: "GlobalSecondaryIndexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "globalTableWitness", GoGetter: "GlobalTableWitness"},
+			_jsii_.MemberProperty{JsiiProperty: "globalTableWitnessInput", GoGetter: "GlobalTableWitnessInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hashKey", GoGetter: "HashKey"},
 			_jsii_.MemberProperty{JsiiProperty: "hashKeyInput", GoGetter: "HashKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAttribute", GoMethod: "PutAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putGlobalSecondaryIndex", GoMethod: "PutGlobalSecondaryIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "putGlobalTableWitness", GoMethod: "PutGlobalTableWitness"},
 			_jsii_.MemberMethod{JsiiMethod: "putImportTable", GoMethod: "PutImportTable"},
 			_jsii_.MemberMethod{JsiiMethod: "putLocalSecondaryIndex", GoMethod: "PutLocalSecondaryIndex"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnDemandThroughput", GoMethod: "PutOnDemandThroughput"},
@@ -91,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBillingMode", GoMethod: "ResetBillingMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtectionEnabled", GoMethod: "ResetDeletionProtectionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGlobalSecondaryIndex", GoMethod: "ResetGlobalSecondaryIndex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlobalTableWitness", GoMethod: "ResetGlobalTableWitness"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHashKey", GoMethod: "ResetHashKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImportTable", GoMethod: "ResetImportTable"},
@@ -392,6 +396,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitness",
+		reflect.TypeOf((*DynamodbTableGlobalTableWitness)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitnessOutputReference",
+		reflect.TypeOf((*DynamodbTableGlobalTableWitnessOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "regionName", GoGetter: "RegionName"},
+			_jsii_.MemberProperty{JsiiProperty: "regionNameInput", GoGetter: "RegionNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRegionName", GoMethod: "ResetRegionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DynamodbTableGlobalTableWitnessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

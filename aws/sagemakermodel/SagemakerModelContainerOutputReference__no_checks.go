@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) validatePutAdditionalModelDataSourceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) validatePutImageConfigParameters(value *SagemakerModelContainerImageConfig) error {
 	return nil
 }

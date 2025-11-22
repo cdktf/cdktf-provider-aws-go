@@ -119,6 +119,10 @@ func (j *jsiiProxy_QuicksightAccountSettings) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSettings) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAccountSettings) validateSetTerminationProtectionEnabledParameters(val interface{}) error {
 	return nil
 }

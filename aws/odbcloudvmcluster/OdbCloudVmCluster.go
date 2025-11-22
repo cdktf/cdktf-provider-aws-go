@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster}.
 type OdbCloudVmCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudExadataInfrastructureArn() *string
+	SetCloudExadataInfrastructureArn(val *string)
+	CloudExadataInfrastructureArnInput() *string
 	CloudExadataInfrastructureId() *string
 	SetCloudExadataInfrastructureId(val *string)
 	CloudExadataInfrastructureIdInput() *string
@@ -101,6 +104,9 @@ type OdbCloudVmCluster interface {
 	Ocid() *string
 	OciResourceAnchorName() *string
 	OciUrl() *string
+	OdbNetworkArn() *string
+	SetOdbNetworkArn(val *string)
+	OdbNetworkArnInput() *string
 	OdbNetworkId() *string
 	SetOdbNetworkId(val *string)
 	OdbNetworkIdInput() *string
@@ -193,6 +199,8 @@ type OdbCloudVmCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDataCollectionOptions(value interface{})
 	PutTimeouts(value *OdbCloudVmClusterTimeouts)
+	ResetCloudExadataInfrastructureArn()
+	ResetCloudExadataInfrastructureId()
 	ResetClusterName()
 	ResetDataCollectionOptions()
 	ResetDbNodeStorageSizeInGbs()
@@ -200,6 +208,8 @@ type OdbCloudVmCluster interface {
 	ResetIsSparseDiskgroupEnabled()
 	ResetLicenseModel()
 	ResetMemorySizeInGbs()
+	ResetOdbNetworkArn()
+	ResetOdbNetworkId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -241,6 +251,26 @@ func (j *jsiiProxy_OdbCloudVmCluster) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster) CloudExadataInfrastructureArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudExadataInfrastructureArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster) CloudExadataInfrastructureArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudExadataInfrastructureArnInput",
 		&returns,
 	)
 	return returns
@@ -756,6 +786,26 @@ func (j *jsiiProxy_OdbCloudVmCluster) OciUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OdbCloudVmCluster) OdbNetworkArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetworkArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster) OdbNetworkArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetworkArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OdbCloudVmCluster) OdbNetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1067,7 +1117,7 @@ func (j *jsiiProxy_OdbCloudVmCluster) VipIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
 func NewOdbCloudVmCluster(scope constructs.Construct, id *string, config *OdbCloudVmClusterConfig) OdbCloudVmCluster {
 	_init_.Initialize()
 
@@ -1085,7 +1135,7 @@ func NewOdbCloudVmCluster(scope constructs.Construct, id *string, config *OdbClo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_vm_cluster aws_odb_cloud_vm_cluster} Resource.
 func NewOdbCloudVmCluster_Override(o OdbCloudVmCluster, scope constructs.Construct, id *string, config *OdbCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -1093,6 +1143,17 @@ func NewOdbCloudVmCluster_Override(o OdbCloudVmCluster, scope constructs.Constru
 		"@cdktf/provider-aws.odbCloudVmCluster.OdbCloudVmCluster",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster)SetCloudExadataInfrastructureArn(val *string) {
+	if err := j.validateSetCloudExadataInfrastructureArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudExadataInfrastructureArn",
+		val,
 	)
 }
 
@@ -1284,6 +1345,17 @@ func (j *jsiiProxy_OdbCloudVmCluster)SetMemorySizeInGbs(val *float64) {
 	_jsii_.Set(
 		j,
 		"memorySizeInGbs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster)SetOdbNetworkArn(val *string) {
+	if err := j.validateSetOdbNetworkArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbNetworkArn",
 		val,
 	)
 }
@@ -1748,6 +1820,22 @@ func (o *jsiiProxy_OdbCloudVmCluster) PutTimeouts(value *OdbCloudVmClusterTimeou
 	)
 }
 
+func (o *jsiiProxy_OdbCloudVmCluster) ResetCloudExadataInfrastructureArn() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCloudExadataInfrastructureArn",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OdbCloudVmCluster) ResetCloudExadataInfrastructureId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCloudExadataInfrastructureId",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OdbCloudVmCluster) ResetClusterName() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1800,6 +1888,22 @@ func (o *jsiiProxy_OdbCloudVmCluster) ResetMemorySizeInGbs() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMemorySizeInGbs",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OdbCloudVmCluster) ResetOdbNetworkArn() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbNetworkArn",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OdbCloudVmCluster) ResetOdbNetworkId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbNetworkId",
 		nil, // no parameters
 	)
 }

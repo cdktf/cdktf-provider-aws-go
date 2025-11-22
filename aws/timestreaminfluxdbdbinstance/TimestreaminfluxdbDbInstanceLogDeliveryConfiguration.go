@@ -7,7 +7,7 @@ package timestreaminfluxdbdbinstance
 type TimestreaminfluxdbDbInstanceLogDeliveryConfiguration struct {
 	// s3_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/timestreaminfluxdb_db_instance#s3_configuration TimestreaminfluxdbDbInstance#s3_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/timestreaminfluxdb_db_instance#s3_configuration TimestreaminfluxdbDbInstance#s3_configuration}
 	S3Configuration interface{} `field:"optional" json:"s3Configuration" yaml:"s3Configuration"`
 }
 

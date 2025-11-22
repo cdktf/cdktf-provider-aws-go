@@ -63,6 +63,10 @@ func (l *jsiiProxy_LbListenerRuleActionOutputReference) validatePutForwardParame
 	return nil
 }
 
+func (l *jsiiProxy_LbListenerRuleActionOutputReference) validatePutJwtValidationParameters(value *LbListenerRuleActionJwtValidation) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListenerRuleActionOutputReference) validatePutRedirectParameters(value *LbListenerRuleActionRedirect) error {
 	return nil
 }

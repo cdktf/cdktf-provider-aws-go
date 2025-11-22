@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internet_gateway aws_internet_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internet_gateway aws_internet_gateway}.
 type InternetGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_InternetGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internet_gateway aws_internet_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internet_gateway aws_internet_gateway} Resource.
 func NewInternetGateway(scope constructs.Construct, id *string, config *InternetGatewayConfig) InternetGateway {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewInternetGateway(scope constructs.Construct, id *string, config *Internet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internet_gateway aws_internet_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internet_gateway aws_internet_gateway} Resource.
 func NewInternetGateway_Override(i InternetGateway, scope constructs.Construct, id *string, config *InternetGatewayConfig) {
 	_init_.Initialize()
 

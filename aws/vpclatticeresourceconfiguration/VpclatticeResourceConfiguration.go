@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
 type VpclatticeResourceConfiguration interface {
 	cdktf.TerraformResource
 	AllowAssociationToShareableServiceNetwork() interface{}
@@ -31,10 +31,18 @@ type VpclatticeResourceConfiguration interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomDomainName() *string
+	SetCustomDomainName(val *string)
+	CustomDomainNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DomainVerificationArn() *string
+	DomainVerificationId() *string
+	SetDomainVerificationId(val *string)
+	DomainVerificationIdInput() *string
+	DomainVerificationStatus() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -141,6 +149,8 @@ type VpclatticeResourceConfiguration interface {
 	PutResourceConfigurationDefinition(value interface{})
 	PutTimeouts(value *VpclatticeResourceConfigurationTimeouts)
 	ResetAllowAssociationToShareableServiceNetwork()
+	ResetCustomDomainName()
+	ResetDomainVerificationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -241,11 +251,71 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpclatticeResourceConfiguration) CustomDomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) CustomDomainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customDomainNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpclatticeResourceConfiguration) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) DomainVerificationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVerificationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) DomainVerificationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVerificationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) DomainVerificationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVerificationIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) DomainVerificationStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainVerificationStatus",
 		&returns,
 	)
 	return returns
@@ -582,7 +652,7 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) VpclatticeResourceConfiguration {
 	_init_.Initialize()
 
@@ -600,7 +670,7 @@ func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration_Override(v VpclatticeResourceConfiguration, scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) {
 	_init_.Initialize()
 
@@ -644,10 +714,32 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_VpclatticeResourceConfiguration)SetCustomDomainName(val *string) {
+	if err := j.validateSetCustomDomainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customDomainName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VpclatticeResourceConfiguration)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration)SetDomainVerificationId(val *string) {
+	if err := j.validateSetDomainVerificationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainVerificationId",
 		val,
 	)
 }
@@ -1157,6 +1249,22 @@ func (v *jsiiProxy_VpclatticeResourceConfiguration) ResetAllowAssociationToShare
 	_jsii_.InvokeVoid(
 		v,
 		"resetAllowAssociationToShareableServiceNetwork",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeResourceConfiguration) ResetCustomDomainName() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCustomDomainName",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeResourceConfiguration) ResetDomainVerificationId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDomainVerificationId",
 		nil, // no parameters
 	)
 }

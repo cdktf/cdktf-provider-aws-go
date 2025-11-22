@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/msk_cluster aws_msk_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/msk_cluster aws_msk_cluster}.
 type MskCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -95,6 +95,8 @@ type MskCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Rebalancing() MskClusterRebalancingOutputReference
+	RebalancingInput() *MskClusterRebalancing
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -166,6 +168,7 @@ type MskCluster interface {
 	PutEncryptionInfo(value *MskClusterEncryptionInfo)
 	PutLoggingInfo(value *MskClusterLoggingInfo)
 	PutOpenMonitoring(value *MskClusterOpenMonitoring)
+	PutRebalancing(value *MskClusterRebalancing)
 	PutTimeouts(value *MskClusterTimeouts)
 	ResetClientAuthentication()
 	ResetConfigurationInfo()
@@ -177,6 +180,7 @@ type MskCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRebalancing()
 	ResetRegion()
 	ResetStorageMode()
 	ResetTags()
@@ -680,6 +684,26 @@ func (j *jsiiProxy_MskCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MskCluster) Rebalancing() MskClusterRebalancingOutputReference {
+	var returns MskClusterRebalancingOutputReference
+	_jsii_.Get(
+		j,
+		"rebalancing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskCluster) RebalancingInput() *MskClusterRebalancing {
+	var returns *MskClusterRebalancing
+	_jsii_.Get(
+		j,
+		"rebalancingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskCluster) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -831,7 +855,7 @@ func (j *jsiiProxy_MskCluster) ZookeeperConnectStringTls() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/msk_cluster aws_msk_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/msk_cluster aws_msk_cluster} Resource.
 func NewMskCluster(scope constructs.Construct, id *string, config *MskClusterConfig) MskCluster {
 	_init_.Initialize()
 
@@ -849,7 +873,7 @@ func NewMskCluster(scope constructs.Construct, id *string, config *MskClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/msk_cluster aws_msk_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/msk_cluster aws_msk_cluster} Resource.
 func NewMskCluster_Override(m MskCluster, scope constructs.Construct, id *string, config *MskClusterConfig) {
 	_init_.Initialize()
 
@@ -1446,6 +1470,17 @@ func (m *jsiiProxy_MskCluster) PutOpenMonitoring(value *MskClusterOpenMonitoring
 	)
 }
 
+func (m *jsiiProxy_MskCluster) PutRebalancing(value *MskClusterRebalancing) {
+	if err := m.validatePutRebalancingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putRebalancing",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MskCluster) PutTimeouts(value *MskClusterTimeouts) {
 	if err := m.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1517,6 +1552,14 @@ func (m *jsiiProxy_MskCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskCluster) ResetRebalancing() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRebalancing",
 		nil, // no parameters
 	)
 }

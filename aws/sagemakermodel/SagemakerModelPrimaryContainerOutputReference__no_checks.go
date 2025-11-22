@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validateInterp
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validatePutAdditionalModelDataSourceParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validatePutImageConfigParameters(value *SagemakerModelPrimaryContainerImageConfig) error {
 	return nil
 }

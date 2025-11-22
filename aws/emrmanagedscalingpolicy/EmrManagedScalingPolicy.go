@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy}.
 type EmrManagedScalingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,12 +66,18 @@ type EmrManagedScalingPolicy interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ScalingStrategy() *string
+	SetScalingStrategy(val *string)
+	ScalingStrategyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UtilizationPerformanceIndex() *float64
+	SetUtilizationPerformanceIndex(val *float64)
+	UtilizationPerformanceIndexInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -121,6 +127,8 @@ type EmrManagedScalingPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetScalingStrategy()
+	ResetUtilizationPerformanceIndex()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -349,6 +357,26 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmrManagedScalingPolicy) ScalingStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrManagedScalingPolicy) ScalingStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrManagedScalingPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,8 +407,28 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmrManagedScalingPolicy) UtilizationPerformanceIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"utilizationPerformanceIndex",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
+func (j *jsiiProxy_EmrManagedScalingPolicy) UtilizationPerformanceIndexInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"utilizationPerformanceIndexInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
 func NewEmrManagedScalingPolicy(scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) EmrManagedScalingPolicy {
 	_init_.Initialize()
 
@@ -398,7 +446,7 @@ func NewEmrManagedScalingPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
 func NewEmrManagedScalingPolicy_Override(e EmrManagedScalingPolicy, scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) {
 	_init_.Initialize()
 
@@ -506,6 +554,28 @@ func (j *jsiiProxy_EmrManagedScalingPolicy)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrManagedScalingPolicy)SetScalingStrategy(val *string) {
+	if err := j.validateSetScalingStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingStrategy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrManagedScalingPolicy)SetUtilizationPerformanceIndex(val *float64) {
+	if err := j.validateSetUtilizationPerformanceIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"utilizationPerformanceIndex",
 		val,
 	)
 }
@@ -894,6 +964,22 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) ResetRegion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrManagedScalingPolicy) ResetScalingStrategy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetScalingStrategy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrManagedScalingPolicy) ResetUtilizationPerformanceIndex() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUtilizationPerformanceIndex",
 		nil, // no parameters
 	)
 }

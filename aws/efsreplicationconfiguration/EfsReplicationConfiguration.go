@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/efs_replication_configuration aws_efs_replication_configuration}.
 type EfsReplicationConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_EfsReplicationConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource.
 func NewEfsReplicationConfiguration(scope constructs.Construct, id *string, config *EfsReplicationConfigurationConfig) EfsReplicationConfiguration {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewEfsReplicationConfiguration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource.
 func NewEfsReplicationConfiguration_Override(e EfsReplicationConfiguration, scope constructs.Construct, id *string, config *EfsReplicationConfigurationConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package datazoneenvironmentprofile
 
 
 type DatazoneEnvironmentProfileUserParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_environment_profile#name DatazoneEnvironmentProfile#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/datazone_environment_profile#name DatazoneEnvironmentProfile#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/datazone_environment_profile#value DatazoneEnvironmentProfile#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/datazone_environment_profile#value DatazoneEnvironmentProfile#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

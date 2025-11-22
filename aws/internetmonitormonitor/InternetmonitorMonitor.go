@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor}.
 type InternetmonitorMonitor interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_InternetmonitorMonitor) TrafficPercentageToMonitorInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
 func NewInternetmonitorMonitor(scope constructs.Construct, id *string, config *InternetmonitorMonitorConfig) InternetmonitorMonitor {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewInternetmonitorMonitor(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
 func NewInternetmonitorMonitor_Override(i InternetmonitorMonitor, scope constructs.Construct, id *string, config *InternetmonitorMonitorConfig) {
 	_init_.Initialize()
 

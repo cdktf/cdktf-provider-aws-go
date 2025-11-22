@@ -5,11 +5,11 @@ package networkflowmonitorscope
 
 
 type NetworkflowmonitorScopeTargetTargetIdentifier struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_type NetworkflowmonitorScope#target_type}.
 	TargetType *string `field:"required" json:"targetType" yaml:"targetType"`
 	// target_id block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/networkflowmonitor_scope#target_id NetworkflowmonitorScope#target_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/networkflowmonitor_scope#target_id NetworkflowmonitorScope#target_id}
 	TargetId interface{} `field:"optional" json:"targetId" yaml:"targetId"`
 }
 

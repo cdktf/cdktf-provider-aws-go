@@ -5,7 +5,7 @@ package cloudfrontresponseheaderspolicy
 
 
 type CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/cloudfront_response_headers_policy#override CloudfrontResponseHeadersPolicy#override}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/cloudfront_response_headers_policy#override CloudfrontResponseHeadersPolicy#override}.
 	Override interface{} `field:"required" json:"override" yaml:"override"`
 }
 

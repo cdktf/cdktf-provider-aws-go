@@ -1,3 +1,3 @@
 # `aws_autoscaling_traffic_source_attachment`
 
-Refer to the Terraform Registry for docs: [`aws_autoscaling_traffic_source_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/autoscaling_traffic_source_attachment).
+Refer to the Terraform Registry for docs: [`aws_autoscaling_traffic_source_attachment`](https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/autoscaling_traffic_source_attachment).

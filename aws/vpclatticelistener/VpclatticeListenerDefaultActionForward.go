@@ -7,7 +7,7 @@ package vpclatticelistener
 type VpclatticeListenerDefaultActionForward struct {
 	// target_groups block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
 	TargetGroups interface{} `field:"optional" json:"targetGroups" yaml:"targetGroups"`
 }
 

@@ -5,9 +5,9 @@ package codedeploydeploymentconfig
 
 
 type CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}.
 	Interval *float64 `field:"optional" json:"interval" yaml:"interval"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}.
 	Percentage *float64 `field:"optional" json:"percentage" yaml:"percentage"`
 }
 

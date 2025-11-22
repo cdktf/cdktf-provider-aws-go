@@ -5,9 +5,9 @@ package ecrrepository
 
 
 type EcrRepositoryImageTagMutabilityExclusionFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ecr_repository#filter EcrRepository#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ecr_repository#filter EcrRepository#filter}.
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ecr_repository#filter_type EcrRepository#filter_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ecr_repository#filter_type EcrRepository#filter_type}.
 	FilterType *string `field:"required" json:"filterType" yaml:"filterType"`
 }
 

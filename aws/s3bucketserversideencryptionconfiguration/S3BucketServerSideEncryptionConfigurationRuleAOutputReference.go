@@ -15,6 +15,9 @@ type S3BucketServerSideEncryptionConfigurationRuleAOutputReference interface {
 	cdktf.ComplexObject
 	ApplyServerSideEncryptionByDefault() S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference
 	ApplyServerSideEncryptionByDefaultInput() *S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA
+	BlockedEncryptionTypes() *[]*string
+	SetBlockedEncryptionTypes(val *[]*string)
+	BlockedEncryptionTypesInput() *[]*string
 	BucketKeyEnabled() interface{}
 	SetBucketKeyEnabled(val interface{})
 	BucketKeyEnabledInput() interface{}
@@ -71,6 +74,7 @@ type S3BucketServerSideEncryptionConfigurationRuleAOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutApplyServerSideEncryptionByDefault(value *S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA)
 	ResetApplyServerSideEncryptionByDefault()
+	ResetBlockedEncryptionTypes()
 	ResetBucketKeyEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,6 +106,26 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	_jsii_.Get(
 		j,
 		"applyServerSideEncryptionByDefaultInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) BlockedEncryptionTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedEncryptionTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) BlockedEncryptionTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedEncryptionTypesInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +246,17 @@ func NewS3BucketServerSideEncryptionConfigurationRuleAOutputReference_Override(s
 		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
+	)
+}
+
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference)SetBlockedEncryptionTypes(val *[]*string) {
+	if err := j.validateSetBlockedEncryptionTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blockedEncryptionTypes",
+		val,
 	)
 }
 
@@ -492,6 +527,14 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	_jsii_.InvokeVoid(
 		s,
 		"resetApplyServerSideEncryptionByDefault",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) ResetBlockedEncryptionTypes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBlockedEncryptionTypes",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package sagemakerproject
 
 
 type SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_project#key SagemakerProject#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_project#key SagemakerProject#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/sagemaker_project#value SagemakerProject#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_project#value SagemakerProject#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

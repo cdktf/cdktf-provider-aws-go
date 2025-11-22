@@ -5,11 +5,11 @@ package lblistenerrule
 
 
 type LbListenerRuleConditionHttpHeader struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}.
 	HttpHeaderName *string `field:"required" json:"httpHeaderName" yaml:"httpHeaderName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lb_listener_rule#regex_values LbListenerRule#regex_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#regex_values LbListenerRule#regex_values}.
 	RegexValues *[]*string `field:"optional" json:"regexValues" yaml:"regexValues"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

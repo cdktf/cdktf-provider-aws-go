@@ -63,6 +63,10 @@ func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validatePutForwardPa
 	return nil
 }
 
+func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validatePutJwtValidationParameters(value *AlbListenerDefaultActionJwtValidation) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListenerDefaultActionOutputReference) validatePutRedirectParameters(value *AlbListenerDefaultActionRedirect) error {
 	return nil
 }

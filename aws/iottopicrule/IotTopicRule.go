@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iot_topic_rule aws_iot_topic_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/iot_topic_rule aws_iot_topic_rule}.
 type IotTopicRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -989,7 +989,7 @@ func (j *jsiiProxy_IotTopicRule) TimestreamInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource.
 func NewIotTopicRule(scope constructs.Construct, id *string, config *IotTopicRuleConfig) IotTopicRule {
 	_init_.Initialize()
 
@@ -1007,7 +1007,7 @@ func NewIotTopicRule(scope constructs.Construct, id *string, config *IotTopicRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/iot_topic_rule aws_iot_topic_rule} Resource.
 func NewIotTopicRule_Override(i IotTopicRule, scope constructs.Construct, id *string, config *IotTopicRuleConfig) {
 	_init_.Initialize()
 

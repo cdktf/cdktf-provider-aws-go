@@ -103,6 +103,10 @@ func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetEncryptionKeyArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupLogicallyAirGappedVault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

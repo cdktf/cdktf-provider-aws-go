@@ -55,6 +55,10 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetBlockedEncryptionTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleAOutputReference) validateSetBucketKeyEnabledParameters(val interface{}) error {
 	return nil
 }

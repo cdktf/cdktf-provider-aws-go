@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
 type QuicksightAccountSettings interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -61,6 +61,9 @@ type QuicksightAccountSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TerminationProtectionEnabled() interface{}
 	SetTerminationProtectionEnabled(val interface{})
 	TerminationProtectionEnabledInput() interface{}
@@ -121,6 +124,7 @@ type QuicksightAccountSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetTerminationProtectionEnabled()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -311,6 +315,26 @@ func (j *jsiiProxy_QuicksightAccountSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAccountSettings) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSettings) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAccountSettings) TerminationProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -382,7 +406,7 @@ func (j *jsiiProxy_QuicksightAccountSettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
 func NewQuicksightAccountSettings(scope constructs.Construct, id *string, config *QuicksightAccountSettingsConfig) QuicksightAccountSettings {
 	_init_.Initialize()
 
@@ -400,7 +424,7 @@ func NewQuicksightAccountSettings(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/quicksight_account_settings aws_quicksight_account_settings} Resource.
 func NewQuicksightAccountSettings_Override(q QuicksightAccountSettings, scope constructs.Construct, id *string, config *QuicksightAccountSettingsConfig) {
 	_init_.Initialize()
 
@@ -497,6 +521,17 @@ func (j *jsiiProxy_QuicksightAccountSettings)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAccountSettings)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (q *jsiiProxy_QuicksightAccountSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAccountSettings) ResetRegion() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

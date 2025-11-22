@@ -327,6 +327,10 @@ func (j *jsiiProxy_VpnConnection) validateSetTunnel2StartupActionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetTunnelBandwidthParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetTunnelInsideIpVersionParameters(val *string) error {
 	return nil
 }

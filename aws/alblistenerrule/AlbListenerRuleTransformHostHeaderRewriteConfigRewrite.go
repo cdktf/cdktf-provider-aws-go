@@ -5,9 +5,9 @@ package alblistenerrule
 
 
 type AlbListenerRuleTransformHostHeaderRewriteConfigRewrite struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/alb_listener_rule#regex AlbListenerRule#regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/alb_listener_rule#regex AlbListenerRule#regex}.
 	Regex *string `field:"required" json:"regex" yaml:"regex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/alb_listener_rule#replace AlbListenerRule#replace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/alb_listener_rule#replace AlbListenerRule#replace}.
 	Replace *string `field:"required" json:"replace" yaml:"replace"`
 }
 

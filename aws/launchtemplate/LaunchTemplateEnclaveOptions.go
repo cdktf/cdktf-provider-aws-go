@@ -5,7 +5,7 @@ package launchtemplate
 
 
 type LaunchTemplateEnclaveOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

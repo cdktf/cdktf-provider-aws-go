@@ -5,7 +5,7 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/medialive_channel#style_control MedialiveChannel#style_control}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/medialive_channel#style_control MedialiveChannel#style_control}.
 	StyleControl *string `field:"required" json:"styleControl" yaml:"styleControl"`
 }
 

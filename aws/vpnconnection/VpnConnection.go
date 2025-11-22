@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpn_connection aws_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpn_connection aws_vpn_connection}.
 type VpnConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -241,6 +241,9 @@ type VpnConnection interface {
 	SetTunnel2StartupAction(val *string)
 	Tunnel2StartupActionInput() *string
 	Tunnel2VgwInsideAddress() *string
+	TunnelBandwidth() *string
+	SetTunnelBandwidth(val *string)
+	TunnelBandwidthInput() *string
 	TunnelInsideIpVersion() *string
 	SetTunnelInsideIpVersion(val *string)
 	TunnelInsideIpVersionInput() *string
@@ -353,6 +356,7 @@ type VpnConnection interface {
 	ResetTunnel2RekeyMarginTimeSeconds()
 	ResetTunnel2ReplayWindowSize()
 	ResetTunnel2StartupAction()
+	ResetTunnelBandwidth()
 	ResetTunnelInsideIpVersion()
 	ResetVpnGatewayId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1803,6 +1807,26 @@ func (j *jsiiProxy_VpnConnection) Tunnel2VgwInsideAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnConnection) TunnelBandwidth() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelBandwidth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) TunnelBandwidthInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tunnelBandwidthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnConnection) TunnelInsideIpVersion() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1874,7 +1898,7 @@ func (j *jsiiProxy_VpnConnection) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
 
@@ -1892,7 +1916,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *string, config *VpnConnectionConfig) {
 	_init_.Initialize()
 
@@ -2550,6 +2574,17 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2StartupAction(val *string) {
 	_jsii_.Set(
 		j,
 		"tunnel2StartupAction",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnConnection)SetTunnelBandwidth(val *string) {
+	if err := j.validateSetTunnelBandwidthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnelBandwidth",
 		val,
 	)
 }
@@ -3398,6 +3433,14 @@ func (v *jsiiProxy_VpnConnection) ResetTunnel2StartupAction() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTunnel2StartupAction",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnection) ResetTunnelBandwidth() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTunnelBandwidth",
 		nil, // no parameters
 	)
 }

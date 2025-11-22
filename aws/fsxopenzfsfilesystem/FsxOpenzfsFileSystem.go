@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
 type FsxOpenzfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -98,6 +98,8 @@ type FsxOpenzfsFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadCacheConfiguration() FsxOpenzfsFileSystemReadCacheConfigurationOutputReference
+	ReadCacheConfigurationInput() *FsxOpenzfsFileSystemReadCacheConfiguration
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -187,6 +189,7 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDiskIopsConfiguration(value *FsxOpenzfsFileSystemDiskIopsConfiguration)
+	PutReadCacheConfiguration(value *FsxOpenzfsFileSystemReadCacheConfiguration)
 	PutRootVolumeConfiguration(value *FsxOpenzfsFileSystemRootVolumeConfiguration)
 	PutTimeouts(value *FsxOpenzfsFileSystemTimeouts)
 	ResetAutomaticBackupRetentionDays()
@@ -204,6 +207,7 @@ type FsxOpenzfsFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredSubnetId()
+	ResetReadCacheConfiguration()
 	ResetRegion()
 	ResetRootVolumeConfiguration()
 	ResetRouteTableIds()
@@ -673,6 +677,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) ReadCacheConfiguration() FsxOpenzfsFileSystemReadCacheConfigurationOutputReference {
+	var returns FsxOpenzfsFileSystemReadCacheConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"readCacheConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) ReadCacheConfigurationInput() *FsxOpenzfsFileSystemReadCacheConfiguration {
+	var returns *FsxOpenzfsFileSystemReadCacheConfiguration
+	_jsii_.Get(
+		j,
+		"readCacheConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -984,7 +1008,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
 
@@ -1002,7 +1026,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1698,6 +1722,17 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) PutDiskIopsConfiguration(value *FsxOpen
 	)
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) PutReadCacheConfiguration(value *FsxOpenzfsFileSystemReadCacheConfiguration) {
+	if err := f.validatePutReadCacheConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putReadCacheConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) PutRootVolumeConfiguration(value *FsxOpenzfsFileSystemRootVolumeConfiguration) {
 	if err := f.validatePutRootVolumeConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1820,6 +1855,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetPreferredSubnetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetPreferredSubnetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetReadCacheConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetReadCacheConfiguration",
 		nil, // no parameters
 	)
 }

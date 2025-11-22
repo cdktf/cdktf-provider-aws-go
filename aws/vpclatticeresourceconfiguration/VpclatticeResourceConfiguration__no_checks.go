@@ -111,6 +111,14 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeResourceConfiguration) validateSetCustomDomainNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpclatticeResourceConfiguration) validateSetDomainVerificationIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeResourceConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

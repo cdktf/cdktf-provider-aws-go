@@ -59,6 +59,10 @@ func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateSetCustomMetadataFieldParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

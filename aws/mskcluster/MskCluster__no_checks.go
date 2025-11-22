@@ -99,6 +99,10 @@ func (m *jsiiProxy_MskCluster) validatePutOpenMonitoringParameters(value *MskClu
 	return nil
 }
 
+func (m *jsiiProxy_MskCluster) validatePutRebalancingParameters(value *MskClusterRebalancing) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskCluster) validatePutTimeoutsParameters(value *MskClusterTimeouts) error {
 	return nil
 }

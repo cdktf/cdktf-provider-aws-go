@@ -40,6 +40,8 @@ type LbListenerDefaultActionOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	JwtValidation() LbListenerDefaultActionJwtValidationOutputReference
+	JwtValidationInput() *LbListenerDefaultActionJwtValidation
 	Order() *float64
 	SetOrder(val *float64)
 	OrderInput() *float64
@@ -87,11 +89,13 @@ type LbListenerDefaultActionOutputReference interface {
 	PutAuthenticateOidc(value *LbListenerDefaultActionAuthenticateOidc)
 	PutFixedResponse(value *LbListenerDefaultActionFixedResponse)
 	PutForward(value *LbListenerDefaultActionForward)
+	PutJwtValidation(value *LbListenerDefaultActionJwtValidation)
 	PutRedirect(value *LbListenerDefaultActionRedirect)
 	ResetAuthenticateCognito()
 	ResetAuthenticateOidc()
 	ResetFixedResponse()
 	ResetForward()
+	ResetJwtValidation()
 	ResetOrder()
 	ResetRedirect()
 	ResetTargetGroupArn()
@@ -235,6 +239,26 @@ func (j *jsiiProxy_LbListenerDefaultActionOutputReference) InternalValue() inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerDefaultActionOutputReference) JwtValidation() LbListenerDefaultActionJwtValidationOutputReference {
+	var returns LbListenerDefaultActionJwtValidationOutputReference
+	_jsii_.Get(
+		j,
+		"jwtValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerDefaultActionOutputReference) JwtValidationInput() *LbListenerDefaultActionJwtValidation {
+	var returns *LbListenerDefaultActionJwtValidation
+	_jsii_.Get(
+		j,
+		"jwtValidationInput",
 		&returns,
 	)
 	return returns
@@ -686,6 +710,17 @@ func (l *jsiiProxy_LbListenerDefaultActionOutputReference) PutForward(value *LbL
 	)
 }
 
+func (l *jsiiProxy_LbListenerDefaultActionOutputReference) PutJwtValidation(value *LbListenerDefaultActionJwtValidation) {
+	if err := l.validatePutJwtValidationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putJwtValidation",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbListenerDefaultActionOutputReference) PutRedirect(value *LbListenerDefaultActionRedirect) {
 	if err := l.validatePutRedirectParameters(value); err != nil {
 		panic(err)
@@ -725,6 +760,14 @@ func (l *jsiiProxy_LbListenerDefaultActionOutputReference) ResetForward() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetForward",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerDefaultActionOutputReference) ResetJwtValidation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetJwtValidation",
 		nil, // no parameters
 	)
 }

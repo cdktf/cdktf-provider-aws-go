@@ -59,11 +59,35 @@ func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetInputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetInputEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetInputModalitiesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetInputStrengthParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetOutputActionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetOutputEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BedrockGuardrailContentPolicyConfigFiltersConfigOutputReference) validateSetOutputModalitiesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -123,6 +123,14 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetScalingStrategyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetUtilizationPerformanceIndexParameters(val *float64) error {
+	return nil
+}
+
 func validateNewEmrManagedScalingPolicyParameters(scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) error {
 	return nil
 }

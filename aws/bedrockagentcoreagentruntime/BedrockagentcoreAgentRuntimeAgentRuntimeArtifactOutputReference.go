@@ -13,6 +13,8 @@ import (
 
 type BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference interface {
 	cdktf.ComplexObject
+	CodeConfiguration() BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList
+	CodeConfigurationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutCodeConfiguration(value interface{})
 	PutContainerConfiguration(value interface{})
+	ResetCodeConfiguration()
 	ResetContainerConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference interface {
 // The jsii proxy struct for BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference
 type jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) CodeConfiguration() BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList {
+	var returns BedrockagentcoreAgentRuntimeAgentRuntimeArtifactCodeConfigurationList
+	_jsii_.Get(
+		j,
+		"codeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) CodeConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) ComplexObjectIndex() interface{} {
@@ -442,6 +466,17 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReferen
 	return returns
 }
 
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) PutCodeConfiguration(value interface{}) {
+	if err := b.validatePutCodeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCodeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) PutContainerConfiguration(value interface{}) {
 	if err := b.validatePutContainerConfigurationParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReferen
 		b,
 		"putContainerConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) ResetCodeConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCodeConfiguration",
+		nil, // no parameters
 	)
 }
 

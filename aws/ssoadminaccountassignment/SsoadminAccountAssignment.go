@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
 type SsoadminAccountAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -136,7 +136,6 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
-	ResetTargetType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) SsoadminAccountAssignment {
 	_init_.Initialize()
 
@@ -515,7 +514,7 @@ func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment_Override(s SsoadminAccountAssignment, scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) {
 	_init_.Initialize()
 
@@ -1066,14 +1065,6 @@ func (s *jsiiProxy_SsoadminAccountAssignment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SsoadminAccountAssignment) ResetTargetType() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetTargetType",
 		nil, // no parameters
 	)
 }

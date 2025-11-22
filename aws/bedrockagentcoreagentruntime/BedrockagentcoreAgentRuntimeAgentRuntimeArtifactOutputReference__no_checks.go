@@ -47,6 +47,10 @@ func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReferen
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) validatePutCodeConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentcoreAgentRuntimeAgentRuntimeArtifactOutputReference) validatePutContainerConfigurationParameters(value interface{}) error {
 	return nil
 }

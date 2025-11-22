@@ -13,6 +13,8 @@ import (
 
 type SagemakerModelPrimaryContainerOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalModelDataSource() SagemakerModelPrimaryContainerAdditionalModelDataSourceList
+	AdditionalModelDataSourceInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -91,9 +93,11 @@ type SagemakerModelPrimaryContainerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutAdditionalModelDataSource(value interface{})
 	PutImageConfig(value *SagemakerModelPrimaryContainerImageConfig)
 	PutModelDataSource(value *SagemakerModelPrimaryContainerModelDataSource)
 	PutMultiModelConfig(value *SagemakerModelPrimaryContainerMultiModelConfig)
+	ResetAdditionalModelDataSource()
 	ResetContainerHostname()
 	ResetEnvironment()
 	ResetImage()
@@ -117,6 +121,26 @@ type SagemakerModelPrimaryContainerOutputReference interface {
 // The jsii proxy struct for SagemakerModelPrimaryContainerOutputReference
 type jsiiProxy_SagemakerModelPrimaryContainerOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) AdditionalModelDataSource() SagemakerModelPrimaryContainerAdditionalModelDataSourceList {
+	var returns SagemakerModelPrimaryContainerAdditionalModelDataSourceList
+	_jsii_.Get(
+		j,
+		"additionalModelDataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) AdditionalModelDataSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalModelDataSourceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) ComplexObjectIndex() interface{} {
@@ -735,6 +759,17 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) InterpolationF
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) PutAdditionalModelDataSource(value interface{}) {
+	if err := s.validatePutAdditionalModelDataSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAdditionalModelDataSource",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) PutImageConfig(value *SagemakerModelPrimaryContainerImageConfig) {
 	if err := s.validatePutImageConfigParameters(value); err != nil {
 		panic(err)
@@ -765,6 +800,14 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) PutMultiModelC
 		s,
 		"putMultiModelConfig",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) ResetAdditionalModelDataSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdditionalModelDataSource",
+		nil, // no parameters
 	)
 }
 

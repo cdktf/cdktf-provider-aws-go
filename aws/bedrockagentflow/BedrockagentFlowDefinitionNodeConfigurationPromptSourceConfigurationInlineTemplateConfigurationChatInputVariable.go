@@ -5,7 +5,7 @@ package bedrockagentflow
 
 
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatInputVariable struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagent_flow#name BedrockagentFlow#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -79,6 +79,10 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) validatePutDiskIopsConfigurationParamet
 	return nil
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validatePutReadCacheConfigurationParameters(value *FsxOpenzfsFileSystemReadCacheConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) validatePutRootVolumeConfigurationParameters(value *FsxOpenzfsFileSystemRootVolumeConfiguration) error {
 	return nil
 }

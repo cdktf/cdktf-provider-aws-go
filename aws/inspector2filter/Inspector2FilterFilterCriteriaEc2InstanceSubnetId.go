@@ -5,9 +5,9 @@ package inspector2filter
 
 
 type Inspector2FilterFilterCriteriaEc2InstanceSubnetId struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/inspector2_filter#comparison Inspector2Filter#comparison}.
 	Comparison *string `field:"required" json:"comparison" yaml:"comparison"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/inspector2_filter#value Inspector2Filter#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/inspector2_filter#value Inspector2Filter#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

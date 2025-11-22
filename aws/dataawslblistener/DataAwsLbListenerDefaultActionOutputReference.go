@@ -36,6 +36,7 @@ type DataAwsLbListenerDefaultActionOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsLbListenerDefaultAction
 	SetInternalValue(val *DataAwsLbListenerDefaultAction)
+	JwtValidation() DataAwsLbListenerDefaultActionJwtValidationList
 	Order() *float64
 	Redirect() DataAwsLbListenerDefaultActionRedirectList
 	TargetGroupArn() *string
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataAwsLbListenerDefaultActionOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbListenerDefaultActionOutputReference) JwtValidation() DataAwsLbListenerDefaultActionJwtValidationList {
+	var returns DataAwsLbListenerDefaultActionJwtValidationList
+	_jsii_.Get(
+		j,
+		"jwtValidation",
 		&returns,
 	)
 	return returns

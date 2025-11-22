@@ -40,6 +40,8 @@ type AlbListenerRuleActionOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	JwtValidation() AlbListenerRuleActionJwtValidationOutputReference
+	JwtValidationInput() *AlbListenerRuleActionJwtValidation
 	Order() *float64
 	SetOrder(val *float64)
 	OrderInput() *float64
@@ -87,11 +89,13 @@ type AlbListenerRuleActionOutputReference interface {
 	PutAuthenticateOidc(value *AlbListenerRuleActionAuthenticateOidc)
 	PutFixedResponse(value *AlbListenerRuleActionFixedResponse)
 	PutForward(value *AlbListenerRuleActionForward)
+	PutJwtValidation(value *AlbListenerRuleActionJwtValidation)
 	PutRedirect(value *AlbListenerRuleActionRedirect)
 	ResetAuthenticateCognito()
 	ResetAuthenticateOidc()
 	ResetFixedResponse()
 	ResetForward()
+	ResetJwtValidation()
 	ResetOrder()
 	ResetRedirect()
 	ResetTargetGroupArn()
@@ -235,6 +239,26 @@ func (j *jsiiProxy_AlbListenerRuleActionOutputReference) InternalValue() interfa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) JwtValidation() AlbListenerRuleActionJwtValidationOutputReference {
+	var returns AlbListenerRuleActionJwtValidationOutputReference
+	_jsii_.Get(
+		j,
+		"jwtValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListenerRuleActionOutputReference) JwtValidationInput() *AlbListenerRuleActionJwtValidation {
+	var returns *AlbListenerRuleActionJwtValidation
+	_jsii_.Get(
+		j,
+		"jwtValidationInput",
 		&returns,
 	)
 	return returns
@@ -686,6 +710,17 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutForward(value *AlbLi
 	)
 }
 
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutJwtValidation(value *AlbListenerRuleActionJwtValidation) {
+	if err := a.validatePutJwtValidationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putJwtValidation",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlbListenerRuleActionOutputReference) PutRedirect(value *AlbListenerRuleActionRedirect) {
 	if err := a.validatePutRedirectParameters(value); err != nil {
 		panic(err)
@@ -725,6 +760,14 @@ func (a *jsiiProxy_AlbListenerRuleActionOutputReference) ResetForward() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetForward",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbListenerRuleActionOutputReference) ResetJwtValidation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwtValidation",
 		nil, // no parameters
 	)
 }

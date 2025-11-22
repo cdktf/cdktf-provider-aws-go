@@ -99,6 +99,10 @@ func validateOdbCloudVmCluster_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_OdbCloudVmCluster) validateSetCloudExadataInfrastructureArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OdbCloudVmCluster) validateSetCloudExadataInfrastructureIdParameters(val *string) error {
 	return nil
 }
@@ -160,6 +164,10 @@ func (j *jsiiProxy_OdbCloudVmCluster) validateSetLifecycleParameters(val *cdktf.
 }
 
 func (j *jsiiProxy_OdbCloudVmCluster) validateSetMemorySizeInGbsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OdbCloudVmCluster) validateSetOdbNetworkArnParameters(val *string) error {
 	return nil
 }
 

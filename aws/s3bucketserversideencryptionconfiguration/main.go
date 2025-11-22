@@ -112,6 +112,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyServerSideEncryptionByDefault", GoGetter: "ApplyServerSideEncryptionByDefault"},
 			_jsii_.MemberProperty{JsiiProperty: "applyServerSideEncryptionByDefaultInput", GoGetter: "ApplyServerSideEncryptionByDefaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "blockedEncryptionTypes", GoGetter: "BlockedEncryptionTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "blockedEncryptionTypesInput", GoGetter: "BlockedEncryptionTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketKeyEnabled", GoGetter: "BucketKeyEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketKeyEnabledInput", GoGetter: "BucketKeyEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,6 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putApplyServerSideEncryptionByDefault", GoMethod: "PutApplyServerSideEncryptionByDefault"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyServerSideEncryptionByDefault", GoMethod: "ResetApplyServerSideEncryptionByDefault"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBlockedEncryptionTypes", GoMethod: "ResetBlockedEncryptionTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBucketKeyEnabled", GoMethod: "ResetBucketKeyEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -482,6 +482,114 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionJwtValidation",
+		reflect.TypeOf((*AlbListenerDefaultActionJwtValidation)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionJwtValidationAdditionalClaim",
+		reflect.TypeOf((*AlbListenerDefaultActionJwtValidationAdditionalClaim)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionJwtValidationAdditionalClaimList",
+		reflect.TypeOf((*AlbListenerDefaultActionJwtValidationAdditionalClaimList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbListenerDefaultActionJwtValidationAdditionalClaimList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference",
+		reflect.TypeOf((*AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "format", GoGetter: "Format"},
+			_jsii_.MemberProperty{JsiiProperty: "formatInput", GoGetter: "FormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
+			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbListenerDefaultActionJwtValidationAdditionalClaimOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionJwtValidationOutputReference",
+		reflect.TypeOf((*AlbListenerDefaultActionJwtValidationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalClaim", GoGetter: "AdditionalClaim"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalClaimInput", GoGetter: "AdditionalClaimInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "issuer", GoGetter: "Issuer"},
+			_jsii_.MemberProperty{JsiiProperty: "issuerInput", GoGetter: "IssuerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "jwksEndpoint", GoGetter: "JwksEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "jwksEndpointInput", GoGetter: "JwksEndpointInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAdditionalClaim", GoMethod: "PutAdditionalClaim"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalClaim", GoMethod: "ResetAdditionalClaim"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbListenerDefaultActionJwtValidationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionList",
 		reflect.TypeOf((*AlbListenerDefaultActionList)(nil)).Elem(),
@@ -533,12 +641,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jwtValidation", GoGetter: "JwtValidation"},
+			_jsii_.MemberProperty{JsiiProperty: "jwtValidationInput", GoGetter: "JwtValidationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "order", GoGetter: "Order"},
 			_jsii_.MemberProperty{JsiiProperty: "orderInput", GoGetter: "OrderInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthenticateCognito", GoMethod: "PutAuthenticateCognito"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthenticateOidc", GoMethod: "PutAuthenticateOidc"},
 			_jsii_.MemberMethod{JsiiMethod: "putFixedResponse", GoMethod: "PutFixedResponse"},
 			_jsii_.MemberMethod{JsiiMethod: "putForward", GoMethod: "PutForward"},
+			_jsii_.MemberMethod{JsiiMethod: "putJwtValidation", GoMethod: "PutJwtValidation"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedirect", GoMethod: "PutRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "redirect", GoGetter: "Redirect"},
 			_jsii_.MemberProperty{JsiiProperty: "redirectInput", GoGetter: "RedirectInput"},
@@ -546,6 +657,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticateOidc", GoMethod: "ResetAuthenticateOidc"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFixedResponse", GoMethod: "ResetFixedResponse"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForward", GoMethod: "ResetForward"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJwtValidation", GoMethod: "ResetJwtValidation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOrder", GoMethod: "ResetOrder"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedirect", GoMethod: "ResetRedirect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetGroupArn", GoMethod: "ResetTargetGroupArn"},

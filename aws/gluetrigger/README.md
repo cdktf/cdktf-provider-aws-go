@@ -1,3 +1,3 @@
 # `aws_glue_trigger`
 
-Refer to the Terraform Registry for docs: [`aws_glue_trigger`](https://registry.terraform.io/providers/hashicorp/aws/6.21.0/docs/resources/glue_trigger).
+Refer to the Terraform Registry for docs: [`aws_glue_trigger`](https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/glue_trigger).

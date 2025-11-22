@@ -28,6 +28,9 @@ type BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetadataField() *string
+	SetCustomMetadataField(val *string)
+	CustomMetadataFieldInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -76,6 +79,7 @@ type BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetCustomMetadataField()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -116,6 +120,26 @@ func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) CustomMetadataField() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMetadataField",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) CustomMetadataFieldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customMetadataFieldInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +311,17 @@ func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference)SetCustomMetadataField(val *string) {
+	if err := j.validateSetCustomMetadataFieldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMetadataField",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfiguration
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) ResetCustomMetadataField() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCustomMetadataField",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BedrockagentKnowledgeBaseStorageConfigurationRdsConfigurationFieldMappingOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
