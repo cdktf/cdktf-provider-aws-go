@@ -284,6 +284,17 @@ func (l *jsiiProxy_LambdaFunction) validatePutSnapStartParameters(value *LambdaF
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutTenancyConfigParameters(value *LambdaFunctionTenancyConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutTimeoutsParameters(value *LambdaFunctionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

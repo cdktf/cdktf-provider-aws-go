@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool}.
 type DataAwsEc2PublicIpv4Pool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataAwsEc2PublicIpv4Pool) TotalAvailableAddressCount() *float
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
 func NewDataAwsEc2PublicIpv4Pool(scope constructs.Construct, id *string, config *DataAwsEc2PublicIpv4PoolConfig) DataAwsEc2PublicIpv4Pool {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataAwsEc2PublicIpv4Pool(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ec2_public_ipv4_pool aws_ec2_public_ipv4_pool} Data Source.
 func NewDataAwsEc2PublicIpv4Pool_Override(d DataAwsEc2PublicIpv4Pool, scope constructs.Construct, id *string, config *DataAwsEc2PublicIpv4PoolConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package controltowercontrol
 
 
 type ControltowerControlParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/controltower_control#key ControltowerControl#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/controltower_control#key ControltowerControl#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/controltower_control#value ControltowerControl#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/controltower_control#value ControltowerControl#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

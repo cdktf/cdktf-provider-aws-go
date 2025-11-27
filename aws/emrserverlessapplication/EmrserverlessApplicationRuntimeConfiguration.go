@@ -5,9 +5,9 @@ package emrserverlessapplication
 
 
 type EmrserverlessApplicationRuntimeConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/emrserverless_application#classification EmrserverlessApplication#classification}.
 	Classification *string `field:"required" json:"classification" yaml:"classification"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/emrserverless_application#properties EmrserverlessApplication#properties}.
 	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
 }
 

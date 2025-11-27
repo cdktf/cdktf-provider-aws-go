@@ -259,6 +259,14 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetTenantIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsLambdaInvocationParameters(scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

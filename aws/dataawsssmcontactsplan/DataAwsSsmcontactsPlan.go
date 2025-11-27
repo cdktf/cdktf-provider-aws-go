@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan}.
 type DataAwsSsmcontactsPlan interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataAwsSsmcontactsPlan) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan} Data Source.
 func NewDataAwsSsmcontactsPlan(scope constructs.Construct, id *string, config *DataAwsSsmcontactsPlanConfig) DataAwsSsmcontactsPlan {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataAwsSsmcontactsPlan(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ssmcontacts_plan aws_ssmcontacts_plan} Data Source.
 func NewDataAwsSsmcontactsPlan_Override(d DataAwsSsmcontactsPlan, scope constructs.Construct, id *string, config *DataAwsSsmcontactsPlanConfig) {
 	_init_.Initialize()
 

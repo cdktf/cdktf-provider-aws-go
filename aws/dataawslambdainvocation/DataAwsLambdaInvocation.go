@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation aws_lambda_invocation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation aws_lambda_invocation}.
 type DataAwsLambdaInvocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -63,6 +63,9 @@ type DataAwsLambdaInvocation interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Result() *string
+	TenantId() *string
+	SetTenantId(val *string)
+	TenantIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -100,6 +103,7 @@ type DataAwsLambdaInvocation interface {
 	ResetOverrideLogicalId()
 	ResetQualifier()
 	ResetRegion()
+	ResetTenantId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -339,6 +343,26 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) Result() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLambdaInvocation) TenantId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaInvocation) TenantIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenantIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLambdaInvocation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -370,7 +394,7 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
 func NewDataAwsLambdaInvocation(scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) DataAwsLambdaInvocation {
 	_init_.Initialize()
 
@@ -388,7 +412,7 @@ func NewDataAwsLambdaInvocation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/lambda_invocation aws_lambda_invocation} Data Source.
 func NewDataAwsLambdaInvocation_Override(d DataAwsLambdaInvocation, scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) {
 	_init_.Initialize()
 
@@ -496,6 +520,17 @@ func (j *jsiiProxy_DataAwsLambdaInvocation)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsLambdaInvocation)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenantId",
 		val,
 	)
 }
@@ -813,6 +848,14 @@ func (d *jsiiProxy_DataAwsLambdaInvocation) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsLambdaInvocation) ResetTenantId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTenantId",
 		nil, // no parameters
 	)
 }

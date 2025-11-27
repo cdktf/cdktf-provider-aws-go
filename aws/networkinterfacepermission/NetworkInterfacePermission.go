@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/network_interface_permission aws_network_interface_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/network_interface_permission aws_network_interface_permission}.
 type NetworkInterfacePermission interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_NetworkInterfacePermission) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/network_interface_permission aws_network_interface_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/network_interface_permission aws_network_interface_permission} Resource.
 func NewNetworkInterfacePermission(scope constructs.Construct, id *string, config *NetworkInterfacePermissionConfig) NetworkInterfacePermission {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNetworkInterfacePermission(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/network_interface_permission aws_network_interface_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/network_interface_permission aws_network_interface_permission} Resource.
 func NewNetworkInterfacePermission_Override(n NetworkInterfacePermission, scope constructs.Construct, id *string, config *NetworkInterfacePermissionConfig) {
 	_init_.Initialize()
 

@@ -1,3 +1,3 @@
 # `aws_chime_voice_connector_termination`
 
-Refer to the Terraform Registry for docs: [`aws_chime_voice_connector_termination`](https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/chime_voice_connector_termination).
+Refer to the Terraform Registry for docs: [`aws_chime_voice_connector_termination`](https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/chime_voice_connector_termination).

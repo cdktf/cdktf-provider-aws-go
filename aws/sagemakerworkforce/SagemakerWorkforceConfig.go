@@ -22,32 +22,32 @@ type SagemakerWorkforceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#workforce_name SagemakerWorkforce#workforce_name}.
 	WorkforceName *string `field:"required" json:"workforceName" yaml:"workforceName"`
 	// cognito_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
 	CognitoConfig *SagemakerWorkforceCognitoConfig `field:"optional" json:"cognitoConfig" yaml:"cognitoConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#id SagemakerWorkforce#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// oidc_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
 	OidcConfig *SagemakerWorkforceOidcConfig `field:"optional" json:"oidcConfig" yaml:"oidcConfig"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#region SagemakerWorkforce#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#region SagemakerWorkforce#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// source_ip_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
 	SourceIpConfig *SagemakerWorkforceSourceIpConfig `field:"optional" json:"sourceIpConfig" yaml:"sourceIpConfig"`
 	// workforce_vpc_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
 	WorkforceVpcConfig *SagemakerWorkforceWorkforceVpcConfig `field:"optional" json:"workforceVpcConfig" yaml:"workforceVpcConfig"`
 }
 

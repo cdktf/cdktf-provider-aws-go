@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/customer_gateway aws_customer_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/customer_gateway aws_customer_gateway}.
 type CustomerGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_CustomerGateway) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/customer_gateway aws_customer_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
 func NewCustomerGateway(scope constructs.Construct, id *string, config *CustomerGatewayConfig) CustomerGateway {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewCustomerGateway(scope constructs.Construct, id *string, config *Customer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/customer_gateway aws_customer_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
 func NewCustomerGateway_Override(c CustomerGateway, scope constructs.Construct, id *string, config *CustomerGatewayConfig) {
 	_init_.Initialize()
 

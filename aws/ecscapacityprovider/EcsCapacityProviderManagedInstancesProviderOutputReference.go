@@ -30,6 +30,8 @@ type EcsCapacityProviderManagedInstancesProviderOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InfrastructureOptimization() EcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference
+	InfrastructureOptimizationInput() *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization
 	InfrastructureRoleArn() *string
 	SetInfrastructureRoleArn(val *string)
 	InfrastructureRoleArnInput() *string
@@ -72,7 +74,9 @@ type EcsCapacityProviderManagedInstancesProviderOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutInfrastructureOptimization(value *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization)
 	PutInstanceLaunchTemplate(value *EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate)
+	ResetInfrastructureOptimization()
 	ResetPropagateTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -124,6 +128,26 @@ func (j *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) InfrastructureOptimization() EcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference {
+	var returns EcsCapacityProviderManagedInstancesProviderInfrastructureOptimizationOutputReference
+	_jsii_.Get(
+		j,
+		"infrastructureOptimization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) InfrastructureOptimizationInput() *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization {
+	var returns *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization
+	_jsii_.Get(
+		j,
+		"infrastructureOptimizationInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +534,17 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) I
 	return returns
 }
 
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) PutInfrastructureOptimization(value *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization) {
+	if err := e.validatePutInfrastructureOptimizationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putInfrastructureOptimization",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) PutInstanceLaunchTemplate(value *EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate) {
 	if err := e.validatePutInstanceLaunchTemplateParameters(value); err != nil {
 		panic(err)
@@ -518,6 +553,14 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) P
 		e,
 		"putInstanceLaunchTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) ResetInfrastructureOptimization() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInfrastructureOptimization",
+		nil, // no parameters
 	)
 }
 

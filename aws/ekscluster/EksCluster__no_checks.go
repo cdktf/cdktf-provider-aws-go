@@ -83,6 +83,10 @@ func (e *jsiiProxy_EksCluster) validatePutComputeConfigParameters(value *EksClus
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutControlPlaneScalingConfigParameters(value *EksClusterControlPlaneScalingConfig) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutEncryptionConfigParameters(value *EksClusterEncryptionConfig) error {
 	return nil
 }

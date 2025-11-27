@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
 type AppmeshVirtualService interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_AppmeshVirtualService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
 func NewAppmeshVirtualService(scope constructs.Construct, id *string, config *AppmeshVirtualServiceConfig) AppmeshVirtualService {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewAppmeshVirtualService(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
 func NewAppmeshVirtualService_Override(a AppmeshVirtualService, scope constructs.Construct, id *string, config *AppmeshVirtualServiceConfig) {
 	_init_.Initialize()
 

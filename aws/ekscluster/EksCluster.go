@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
@@ -33,6 +33,8 @@ type EksCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneScalingConfig() EksClusterControlPlaneScalingConfigOutputReference
+	ControlPlaneScalingConfigInput() *EksClusterControlPlaneScalingConfig
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -169,6 +171,7 @@ type EksCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessConfig(value *EksClusterAccessConfig)
 	PutComputeConfig(value *EksClusterComputeConfig)
+	PutControlPlaneScalingConfig(value *EksClusterControlPlaneScalingConfig)
 	PutEncryptionConfig(value *EksClusterEncryptionConfig)
 	PutKubernetesNetworkConfig(value *EksClusterKubernetesNetworkConfig)
 	PutOutpostConfig(value *EksClusterOutpostConfig)
@@ -181,6 +184,7 @@ type EksCluster interface {
 	ResetAccessConfig()
 	ResetBootstrapSelfManagedAddons()
 	ResetComputeConfig()
+	ResetControlPlaneScalingConfig()
 	ResetDeletionProtection()
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
@@ -333,6 +337,26 @@ func (j *jsiiProxy_EksCluster) ConstructNodeMetadata() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) ControlPlaneScalingConfig() EksClusterControlPlaneScalingConfigOutputReference {
+	var returns EksClusterControlPlaneScalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlaneScalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) ControlPlaneScalingConfigInput() *EksClusterControlPlaneScalingConfig {
+	var returns *EksClusterControlPlaneScalingConfig
+	_jsii_.Get(
+		j,
+		"controlPlaneScalingConfigInput",
 		&returns,
 	)
 	return returns
@@ -899,7 +923,7 @@ func (j *jsiiProxy_EksCluster) ZonalShiftConfigInput() *EksClusterZonalShiftConf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -917,7 +941,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -1492,6 +1516,17 @@ func (e *jsiiProxy_EksCluster) PutComputeConfig(value *EksClusterComputeConfig) 
 	)
 }
 
+func (e *jsiiProxy_EksCluster) PutControlPlaneScalingConfig(value *EksClusterControlPlaneScalingConfig) {
+	if err := e.validatePutControlPlaneScalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putControlPlaneScalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksCluster) PutEncryptionConfig(value *EksClusterEncryptionConfig) {
 	if err := e.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1611,6 +1646,14 @@ func (e *jsiiProxy_EksCluster) ResetComputeConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetComputeConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetControlPlaneScalingConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetControlPlaneScalingConfig",
 		nil, // no parameters
 	)
 }

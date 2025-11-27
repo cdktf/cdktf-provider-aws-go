@@ -5,7 +5,7 @@ package odbcloudexadatainfrastructure
 
 
 type OdbCloudExadataInfrastructureMaintenanceWindowMonths struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/odb_cloud_exadata_infrastructure#name OdbCloudExadataInfrastructure#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/odb_cloud_exadata_infrastructure#name OdbCloudExadataInfrastructure#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

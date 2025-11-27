@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account}.
 type DetectiveOrganizationAdminAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DetectiveOrganizationAdminAccount) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account} Resource.
 func NewDetectiveOrganizationAdminAccount(scope constructs.Construct, id *string, config *DetectiveOrganizationAdminAccountConfig) DetectiveOrganizationAdminAccount {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDetectiveOrganizationAdminAccount(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/detective_organization_admin_account aws_detective_organization_admin_account} Resource.
 func NewDetectiveOrganizationAdminAccount_Override(d DetectiveOrganizationAdminAccount, scope constructs.Construct, id *string, config *DetectiveOrganizationAdminAccountConfig) {
 	_init_.Initialize()
 

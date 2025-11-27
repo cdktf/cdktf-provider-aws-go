@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_network aws_odb_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_network aws_odb_network}.
 type DataAwsOdbNetwork interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DataAwsOdbNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_network aws_odb_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_network aws_odb_network} Data Source.
 func NewDataAwsOdbNetwork(scope constructs.Construct, id *string, config *DataAwsOdbNetworkConfig) DataAwsOdbNetwork {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDataAwsOdbNetwork(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/odb_network aws_odb_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/odb_network aws_odb_network} Data Source.
 func NewDataAwsOdbNetwork_Override(d DataAwsOdbNetwork, scope constructs.Construct, id *string, config *DataAwsOdbNetworkConfig) {
 	_init_.Initialize()
 

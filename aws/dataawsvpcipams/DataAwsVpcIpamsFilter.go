@@ -5,9 +5,9 @@ package dataawsvpcipams
 
 
 type DataAwsVpcIpamsFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/vpc_ipams#name DataAwsVpcIpams#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/vpc_ipams#values DataAwsVpcIpams#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

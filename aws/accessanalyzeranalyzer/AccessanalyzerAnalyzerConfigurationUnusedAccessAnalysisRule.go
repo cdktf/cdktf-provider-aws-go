@@ -7,7 +7,7 @@ package accessanalyzeranalyzer
 type AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule struct {
 	// exclusion block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/accessanalyzer_analyzer#exclusion AccessanalyzerAnalyzer#exclusion}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/accessanalyzer_analyzer#exclusion AccessanalyzerAnalyzer#exclusion}
 	Exclusion interface{} `field:"optional" json:"exclusion" yaml:"exclusion"`
 }
 

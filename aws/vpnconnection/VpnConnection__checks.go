@@ -909,6 +909,14 @@ func (j *jsiiProxy_VpnConnection) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetVpnConcentratorIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetVpnGatewayIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

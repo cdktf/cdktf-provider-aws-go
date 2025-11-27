@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/glue_classifier aws_glue_classifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/glue_classifier aws_glue_classifier}.
 type GlueClassifier interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GlueClassifier) XmlClassifierInput() *GlueClassifierXmlClassi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/glue_classifier aws_glue_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/glue_classifier aws_glue_classifier} Resource.
 func NewGlueClassifier(scope constructs.Construct, id *string, config *GlueClassifierConfig) GlueClassifier {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewGlueClassifier(scope constructs.Construct, id *string, config *GlueClass
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/glue_classifier aws_glue_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/glue_classifier aws_glue_classifier} Resource.
 func NewGlueClassifier_Override(g GlueClassifier, scope constructs.Construct, id *string, config *GlueClassifierConfig) {
 	_init_.Initialize()
 

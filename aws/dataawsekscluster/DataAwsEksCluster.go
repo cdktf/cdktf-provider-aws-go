@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/eks_cluster aws_eks_cluster}.
 type DataAwsEksCluster interface {
 	cdktf.TerraformDataSource
 	AccessConfig() DataAwsEksClusterAccessConfigList
@@ -24,6 +24,7 @@ type DataAwsEksCluster interface {
 	ComputeConfig() DataAwsEksClusterComputeConfigList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneScalingConfig() DataAwsEksClusterControlPlaneScalingConfigList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataAwsEksCluster) ConstructNodeMetadata() *map[string]interf
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksCluster) ControlPlaneScalingConfig() DataAwsEksClusterControlPlaneScalingConfigList {
+	var returns DataAwsEksClusterControlPlaneScalingConfigList
+	_jsii_.Get(
+		j,
+		"controlPlaneScalingConfig",
 		&returns,
 	)
 	return returns
@@ -567,7 +578,7 @@ func (j *jsiiProxy_DataAwsEksCluster) ZonalShiftConfig() DataAwsEksClusterZonalS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
 func NewDataAwsEksCluster(scope constructs.Construct, id *string, config *DataAwsEksClusterConfig) DataAwsEksCluster {
 	_init_.Initialize()
 
@@ -585,7 +596,7 @@ func NewDataAwsEksCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/eks_cluster aws_eks_cluster} Data Source.
 func NewDataAwsEksCluster_Override(d DataAwsEksCluster, scope constructs.Construct, id *string, config *DataAwsEksClusterConfig) {
 	_init_.Initialize()
 

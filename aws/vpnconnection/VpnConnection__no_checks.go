@@ -339,6 +339,10 @@ func (j *jsiiProxy_VpnConnection) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetVpnConcentratorIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetVpnGatewayIdParameters(val *string) error {
 	return nil
 }

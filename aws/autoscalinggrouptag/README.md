@@ -1,3 +1,3 @@
 # `aws_autoscaling_group_tag`
 
-Refer to the Terraform Registry for docs: [`aws_autoscaling_group_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/autoscaling_group_tag).
+Refer to the Terraform Registry for docs: [`aws_autoscaling_group_tag`](https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/autoscaling_group_tag).

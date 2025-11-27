@@ -5,9 +5,9 @@ package quicksightdashboard
 
 
 type QuicksightDashboardParametersDateTimeParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_dashboard#name QuicksightDashboard#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_dashboard#values QuicksightDashboard#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

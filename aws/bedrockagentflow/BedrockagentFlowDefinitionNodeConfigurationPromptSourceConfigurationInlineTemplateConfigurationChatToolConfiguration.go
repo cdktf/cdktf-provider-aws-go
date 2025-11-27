@@ -7,11 +7,11 @@ package bedrockagentflow
 type BedrockagentFlowDefinitionNodeConfigurationPromptSourceConfigurationInlineTemplateConfigurationChatToolConfiguration struct {
 	// tool block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrockagent_flow#tool BedrockagentFlow#tool}
 	Tool interface{} `field:"optional" json:"tool" yaml:"tool"`
 	// tool_choice block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagent_flow#tool_choice BedrockagentFlow#tool_choice}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrockagent_flow#tool_choice BedrockagentFlow#tool_choice}
 	ToolChoice interface{} `field:"optional" json:"toolChoice" yaml:"toolChoice"`
 }
 

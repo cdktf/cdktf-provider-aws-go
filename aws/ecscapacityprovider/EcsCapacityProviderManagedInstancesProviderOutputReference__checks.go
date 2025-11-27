@@ -93,6 +93,17 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) v
 	return nil
 }
 
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) validatePutInfrastructureOptimizationParameters(value *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) validatePutInstanceLaunchTemplateParameters(value *EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

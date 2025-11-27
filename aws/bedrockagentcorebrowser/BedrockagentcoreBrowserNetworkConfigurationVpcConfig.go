@@ -5,9 +5,9 @@ package bedrockagentcorebrowser
 
 
 type BedrockagentcoreBrowserNetworkConfigurationVpcConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}.
 	SecurityGroups *[]*string `field:"required" json:"securityGroups" yaml:"securityGroups"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}.
 	Subnets *[]*string `field:"required" json:"subnets" yaml:"subnets"`
 }
 

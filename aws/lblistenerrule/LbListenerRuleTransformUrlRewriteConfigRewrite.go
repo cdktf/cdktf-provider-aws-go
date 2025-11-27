@@ -5,9 +5,9 @@ package lblistenerrule
 
 
 type LbListenerRuleTransformUrlRewriteConfigRewrite struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#regex LbListenerRule#regex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lb_listener_rule#regex LbListenerRule#regex}.
 	Regex *string `field:"required" json:"regex" yaml:"regex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lb_listener_rule#replace LbListenerRule#replace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lb_listener_rule#replace LbListenerRule#replace}.
 	Replace *string `field:"required" json:"replace" yaml:"replace"`
 }
 

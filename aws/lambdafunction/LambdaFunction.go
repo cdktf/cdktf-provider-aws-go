@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -159,6 +159,8 @@ type LambdaFunction interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TenancyConfig() LambdaFunctionTenancyConfigOutputReference
+	TenancyConfigInput() *LambdaFunctionTenancyConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -225,6 +227,7 @@ type LambdaFunction interface {
 	PutImageConfig(value *LambdaFunctionImageConfig)
 	PutLoggingConfig(value *LambdaFunctionLoggingConfig)
 	PutSnapStart(value *LambdaFunctionSnapStart)
+	PutTenancyConfig(value *LambdaFunctionTenancyConfig)
 	PutTimeouts(value *LambdaFunctionTimeouts)
 	PutTracingConfig(value *LambdaFunctionTracingConfig)
 	PutVpcConfig(value *LambdaFunctionVpcConfig)
@@ -263,6 +266,7 @@ type LambdaFunction interface {
 	ResetSourceKmsKeyArn()
 	ResetTags()
 	ResetTagsAll()
+	ResetTenancyConfig()
 	ResetTimeout()
 	ResetTimeouts()
 	ResetTracingConfig()
@@ -1185,6 +1189,26 @@ func (j *jsiiProxy_LambdaFunction) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunction) TenancyConfig() LambdaFunctionTenancyConfigOutputReference {
+	var returns LambdaFunctionTenancyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"tenancyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) TenancyConfigInput() *LambdaFunctionTenancyConfig {
+	var returns *LambdaFunctionTenancyConfig
+	_jsii_.Get(
+		j,
+		"tenancyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunction) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1306,7 +1330,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1324,7 +1348,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -2141,6 +2165,17 @@ func (l *jsiiProxy_LambdaFunction) PutSnapStart(value *LambdaFunctionSnapStart) 
 	)
 }
 
+func (l *jsiiProxy_LambdaFunction) PutTenancyConfig(value *LambdaFunctionTenancyConfig) {
+	if err := l.validatePutTenancyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTenancyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaFunction) PutTimeouts(value *LambdaFunctionTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2434,6 +2469,14 @@ func (l *jsiiProxy_LambdaFunction) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetTenancyConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTenancyConfig",
 		nil, // no parameters
 	)
 }

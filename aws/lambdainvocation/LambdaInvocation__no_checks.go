@@ -131,6 +131,10 @@ func (j *jsiiProxy_LambdaInvocation) validateSetRegionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_LambdaInvocation) validateSetTenantIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaInvocation) validateSetTerraformKeyParameters(val *string) error {
 	return nil
 }

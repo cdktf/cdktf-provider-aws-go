@@ -99,6 +99,10 @@ func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetTenantIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataAwsLambdaInvocationParameters(scope constructs.Construct, id *string, config *DataAwsLambdaInvocationConfig) error {
 	return nil
 }

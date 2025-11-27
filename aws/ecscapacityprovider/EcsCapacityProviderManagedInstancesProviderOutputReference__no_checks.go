@@ -47,6 +47,10 @@ func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) v
 	return nil
 }
 
+func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) validatePutInfrastructureOptimizationParameters(value *EcsCapacityProviderManagedInstancesProviderInfrastructureOptimization) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsCapacityProviderManagedInstancesProviderOutputReference) validatePutInstanceLaunchTemplateParameters(value *EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplate) error {
 	return nil
 }

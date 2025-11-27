@@ -203,6 +203,10 @@ func (j *jsiiProxy_DocdbCluster) validateSetMasterUsernameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetNetworkTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetPortParameters(val *float64) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool}.
 type StoragegatewayTapePool interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_StoragegatewayTapePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
 func NewStoragegatewayTapePool(scope constructs.Construct, id *string, config *StoragegatewayTapePoolConfig) StoragegatewayTapePool {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewStoragegatewayTapePool(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/storagegateway_tape_pool aws_storagegateway_tape_pool} Resource.
 func NewStoragegatewayTapePool_Override(s StoragegatewayTapePool, scope constructs.Construct, id *string, config *StoragegatewayTapePoolConfig) {
 	_init_.Initialize()
 

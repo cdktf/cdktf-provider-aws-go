@@ -103,6 +103,10 @@ func (l *jsiiProxy_LambdaFunction) validatePutSnapStartParameters(value *LambdaF
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutTenancyConfigParameters(value *LambdaFunctionTenancyConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutTimeoutsParameters(value *LambdaFunctionTimeouts) error {
 	return nil
 }

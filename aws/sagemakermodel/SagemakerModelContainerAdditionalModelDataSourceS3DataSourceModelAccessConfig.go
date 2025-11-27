@@ -5,7 +5,7 @@ package sagemakermodel
 
 
 type SagemakerModelContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/sagemaker_model#accept_eula SagemakerModel#accept_eula}.
 	AcceptEula interface{} `field:"required" json:"acceptEula" yaml:"acceptEula"`
 }
 

@@ -5,7 +5,7 @@ package keyspacestable
 
 
 type KeyspacesTablePointInTimeRecovery struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/keyspaces_table#status KeyspacesTable#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/keyspaces_table#status KeyspacesTable#status}.
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

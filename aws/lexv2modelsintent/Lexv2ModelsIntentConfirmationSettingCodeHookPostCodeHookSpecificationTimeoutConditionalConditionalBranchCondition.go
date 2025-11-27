@@ -5,7 +5,7 @@ package lexv2modelsintent
 
 
 type Lexv2ModelsIntentConfirmationSettingCodeHookPostCodeHookSpecificationTimeoutConditionalConditionalBranchCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lexv2models_intent#expression_string Lexv2ModelsIntent#expression_string}.
 	ExpressionString *string `field:"required" json:"expressionString" yaml:"expressionString"`
 }
 

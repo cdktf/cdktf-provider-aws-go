@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -114,6 +114,9 @@ type DocdbCluster interface {
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
 	MasterUserSecret() DocdbClusterMasterUserSecretList
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -240,6 +243,7 @@ type DocdbCluster interface {
 	ResetMasterPasswordWo()
 	ResetMasterPasswordWoVersion()
 	ResetMasterUsername()
+	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -855,6 +859,26 @@ func (j *jsiiProxy_DocdbCluster) MasterUserSecret() DocdbClusterMasterUserSecret
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1216,7 +1240,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1234,7 +1258,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1532,6 +1556,17 @@ func (j *jsiiProxy_DocdbCluster)SetMasterUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"masterUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
 		val,
 	)
 }
@@ -2234,6 +2269,14 @@ func (d *jsiiProxy_DocdbCluster) ResetMasterUsername() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMasterUsername",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }

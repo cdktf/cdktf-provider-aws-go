@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association}.
 type ConnectPhoneNumberContactFlowAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_ConnectPhoneNumberContactFlowAssociation) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association} Resource.
 func NewConnectPhoneNumberContactFlowAssociation(scope constructs.Construct, id *string, config *ConnectPhoneNumberContactFlowAssociationConfig) ConnectPhoneNumberContactFlowAssociation {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewConnectPhoneNumberContactFlowAssociation(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.22.1/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/connect_phone_number_contact_flow_association aws_connect_phone_number_contact_flow_association} Resource.
 func NewConnectPhoneNumberContactFlowAssociation_Override(c ConnectPhoneNumberContactFlowAssociation, scope constructs.Construct, id *string, config *ConnectPhoneNumberContactFlowAssociationConfig) {
 	_init_.Initialize()
 
