@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission}.
 type QuicksightRoleCustomPermission interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_QuicksightRoleCustomPermission) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission} Resource.
 func NewQuicksightRoleCustomPermission(scope constructs.Construct, id *string, config *QuicksightRoleCustomPermissionConfig) QuicksightRoleCustomPermission {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewQuicksightRoleCustomPermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/quicksight_role_custom_permission aws_quicksight_role_custom_permission} Resource.
 func NewQuicksightRoleCustomPermission_Override(q QuicksightRoleCustomPermission, scope constructs.Construct, id *string, config *QuicksightRoleCustomPermissionConfig) {
 	_init_.Initialize()
 

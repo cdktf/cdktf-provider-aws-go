@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor}.
 type NetworkflowmonitorMonitor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_NetworkflowmonitorMonitor) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor} Resource.
 func NewNetworkflowmonitorMonitor(scope constructs.Construct, id *string, config *NetworkflowmonitorMonitorConfig) NetworkflowmonitorMonitor {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewNetworkflowmonitorMonitor(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_monitor aws_networkflowmonitor_monitor} Resource.
 func NewNetworkflowmonitorMonitor_Override(n NetworkflowmonitorMonitor, scope constructs.Construct, id *string, config *NetworkflowmonitorMonitorConfig) {
 	_init_.Initialize()
 

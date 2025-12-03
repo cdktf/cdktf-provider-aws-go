@@ -5,7 +5,7 @@ package glueclassifier
 
 
 type GlueClassifierJsonClassifier struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
 	JsonPath *string `field:"required" json:"jsonPath" yaml:"jsonPath"`
 }
 

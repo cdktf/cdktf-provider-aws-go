@@ -5,7 +5,7 @@ package syntheticscanary
 
 
 type SyntheticsCanaryScheduleRetryConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/synthetics_canary#max_retries SyntheticsCanary#max_retries}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/synthetics_canary#max_retries SyntheticsCanary#max_retries}.
 	MaxRetries *float64 `field:"required" json:"maxRetries" yaml:"maxRetries"`
 }
 

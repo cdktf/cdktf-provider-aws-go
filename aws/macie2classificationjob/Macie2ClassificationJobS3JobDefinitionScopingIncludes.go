@@ -7,7 +7,7 @@ package macie2classificationjob
 type Macie2ClassificationJobS3JobDefinitionScopingIncludes struct {
 	// and block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/macie2_classification_job#and Macie2ClassificationJob#and}
 	And interface{} `field:"optional" json:"and" yaml:"and"`
 }
 

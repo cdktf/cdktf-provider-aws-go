@@ -19,6 +19,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "architectures", GoGetter: "Architectures"},
 			_jsii_.MemberProperty{JsiiProperty: "architecturesInput", GoGetter: "ArchitecturesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityProviderConfig", GoGetter: "CapacityProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityProviderConfigInput", GoGetter: "CapacityProviderConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "codeSha256", GoGetter: "CodeSha256"},
 			_jsii_.MemberProperty{JsiiProperty: "codeSigningConfigArn", GoGetter: "CodeSigningConfigArn"},
@@ -86,6 +88,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "publish", GoGetter: "Publish"},
 			_jsii_.MemberProperty{JsiiProperty: "publishInput", GoGetter: "PublishInput"},
+			_jsii_.MemberProperty{JsiiProperty: "publishTo", GoGetter: "PublishTo"},
+			_jsii_.MemberProperty{JsiiProperty: "publishToInput", GoGetter: "PublishToInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCapacityProviderConfig", GoMethod: "PutCapacityProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeadLetterConfig", GoMethod: "PutDeadLetterConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnvironment", GoMethod: "PutEnvironment"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorage", GoMethod: "PutEphemeralStorage"},
@@ -109,6 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reservedConcurrentExecutions", GoGetter: "ReservedConcurrentExecutions"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedConcurrentExecutionsInput", GoGetter: "ReservedConcurrentExecutionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArchitectures", GoMethod: "ResetArchitectures"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCapacityProviderConfig", GoMethod: "ResetCapacityProviderConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCodeSigningConfigArn", GoMethod: "ResetCodeSigningConfigArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeadLetterConfig", GoMethod: "ResetDeadLetterConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -127,6 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPackageType", GoMethod: "ResetPackageType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublish", GoMethod: "ResetPublish"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublishTo", GoMethod: "ResetPublishTo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplacementSecurityGroupIds", GoMethod: "ResetReplacementSecurityGroupIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplaceSecurityGroupsOnDestroy", GoMethod: "ResetReplaceSecurityGroupsOnDestroy"},
@@ -195,6 +202,89 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_LambdaFunction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfig",
+		reflect.TypeOf((*LambdaFunctionCapacityProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig",
+		reflect.TypeOf((*LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference",
+		reflect.TypeOf((*LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "capacityProviderArn", GoGetter: "CapacityProviderArn"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityProviderArnInput", GoGetter: "CapacityProviderArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "executionEnvironmentMemoryGibPerVcpu", GoGetter: "ExecutionEnvironmentMemoryGibPerVcpu"},
+			_jsii_.MemberProperty{JsiiProperty: "executionEnvironmentMemoryGibPerVcpuInput", GoGetter: "ExecutionEnvironmentMemoryGibPerVcpuInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "perExecutionEnvironmentMaxConcurrency", GoGetter: "PerExecutionEnvironmentMaxConcurrency"},
+			_jsii_.MemberProperty{JsiiProperty: "perExecutionEnvironmentMaxConcurrencyInput", GoGetter: "PerExecutionEnvironmentMaxConcurrencyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExecutionEnvironmentMemoryGibPerVcpu", GoMethod: "ResetExecutionEnvironmentMemoryGibPerVcpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPerExecutionEnvironmentMaxConcurrency", GoMethod: "ResetPerExecutionEnvironmentMaxConcurrency"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaFunctionCapacityProviderConfigLambdaManagedInstancesCapacityProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionCapacityProviderConfigOutputReference",
+		reflect.TypeOf((*LambdaFunctionCapacityProviderConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaManagedInstancesCapacityProviderConfig", GoGetter: "LambdaManagedInstancesCapacityProviderConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaManagedInstancesCapacityProviderConfigInput", GoGetter: "LambdaManagedInstancesCapacityProviderConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putLambdaManagedInstancesCapacityProviderConfig", GoMethod: "PutLambdaManagedInstancesCapacityProviderConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaFunctionCapacityProviderConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

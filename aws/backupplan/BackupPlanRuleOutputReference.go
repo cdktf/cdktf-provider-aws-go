@@ -57,6 +57,9 @@ type BackupPlanRuleOutputReference interface {
 	StartWindow() *float64
 	SetStartWindow(val *float64)
 	StartWindowInput() *float64
+	TargetLogicallyAirGappedBackupVaultArn() *string
+	SetTargetLogicallyAirGappedBackupVaultArn(val *string)
+	TargetLogicallyAirGappedBackupVaultArnInput() *string
 	TargetVaultName() *string
 	SetTargetVaultName(val *string)
 	TargetVaultNameInput() *string
@@ -102,6 +105,7 @@ type BackupPlanRuleOutputReference interface {
 	ResetSchedule()
 	ResetScheduleExpressionTimezone()
 	ResetStartWindow()
+	ResetTargetLogicallyAirGappedBackupVaultArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -347,6 +351,26 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) StartWindowInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_BackupPlanRuleOutputReference) TargetLogicallyAirGappedBackupVaultArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetLogicallyAirGappedBackupVaultArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference) TargetLogicallyAirGappedBackupVaultArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetLogicallyAirGappedBackupVaultArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPlanRuleOutputReference) TargetVaultName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,6 +545,17 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference)SetStartWindow(val *float64) {
 	_jsii_.Set(
 		j,
 		"startWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference)SetTargetLogicallyAirGappedBackupVaultArn(val *string) {
+	if err := j.validateSetTargetLogicallyAirGappedBackupVaultArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetLogicallyAirGappedBackupVaultArn",
 		val,
 	)
 }
@@ -826,6 +861,14 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetStartWindow() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetStartWindow",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetTargetLogicallyAirGappedBackupVaultArn() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTargetLogicallyAirGappedBackupVaultArn",
 		nil, // no parameters
 	)
 }

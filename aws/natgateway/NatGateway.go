@@ -12,13 +12,20 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway}.
 type NatGateway interface {
 	cdktf.TerraformResource
 	AllocationId() *string
 	SetAllocationId(val *string)
 	AllocationIdInput() *string
 	AssociationId() *string
+	AutoProvisionZones() *string
+	AutoScalingIps() *string
+	AvailabilityMode() *string
+	SetAvailabilityMode(val *string)
+	AvailabilityModeInput() *string
+	AvailabilityZoneAddress() NatGatewayAvailabilityZoneAddressList
+	AvailabilityZoneAddressInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -72,7 +79,10 @@ type NatGateway interface {
 	RawOverrides() interface{}
 	Region() *string
 	SetRegion(val *string)
+	RegionalNatGatewayAddress() NatGatewayRegionalNatGatewayAddressList
+	RegionalNatGatewayAutoMode() *string
 	RegionInput() *string
+	RouteTableId() *string
 	SecondaryAllocationIds() *[]*string
 	SetSecondaryAllocationIds(val *[]*string)
 	SecondaryAllocationIdsInput() *[]*string
@@ -99,6 +109,9 @@ type NatGateway interface {
 	TerraformResourceType() *string
 	Timeouts() NatGatewayTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -142,8 +155,11 @@ type NatGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAvailabilityZoneAddress(value interface{})
 	PutTimeouts(value *NatGatewayTimeouts)
 	ResetAllocationId()
+	ResetAvailabilityMode()
+	ResetAvailabilityZoneAddress()
 	ResetConnectivityType()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -154,9 +170,11 @@ type NatGateway interface {
 	ResetSecondaryAllocationIds()
 	ResetSecondaryPrivateIpAddressCount()
 	ResetSecondaryPrivateIpAddresses()
+	ResetSubnetId()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -200,6 +218,66 @@ func (j *jsiiProxy_NatGateway) AssociationId() *string {
 	_jsii_.Get(
 		j,
 		"associationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AutoProvisionZones() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoProvisionZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AutoScalingIps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoScalingIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AvailabilityMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AvailabilityModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AvailabilityZoneAddress() NatGatewayAvailabilityZoneAddressList {
+	var returns NatGatewayAvailabilityZoneAddressList
+	_jsii_.Get(
+		j,
+		"availabilityZoneAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AvailabilityZoneAddressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"availabilityZoneAddressInput",
 		&returns,
 	)
 	return returns
@@ -425,11 +503,41 @@ func (j *jsiiProxy_NatGateway) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NatGateway) RegionalNatGatewayAddress() NatGatewayRegionalNatGatewayAddressList {
+	var returns NatGatewayRegionalNatGatewayAddressList
+	_jsii_.Get(
+		j,
+		"regionalNatGatewayAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) RegionalNatGatewayAutoMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionalNatGatewayAutoMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NatGateway) RegionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) RouteTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeTableId",
 		&returns,
 	)
 	return returns
@@ -605,8 +713,28 @@ func (j *jsiiProxy_NatGateway) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NatGateway) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+func (j *jsiiProxy_NatGateway) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayConfig) NatGateway {
 	_init_.Initialize()
 
@@ -624,7 +752,7 @@ func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway_Override(n NatGateway, scope constructs.Construct, id *string, config *NatGatewayConfig) {
 	_init_.Initialize()
 
@@ -642,6 +770,17 @@ func (j *jsiiProxy_NatGateway)SetAllocationId(val *string) {
 	_jsii_.Set(
 		j,
 		"allocationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetAvailabilityMode(val *string) {
+	if err := j.validateSetAvailabilityModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityMode",
 		val,
 	)
 }
@@ -820,6 +959,17 @@ func (j *jsiiProxy_NatGateway)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -1177,6 +1327,17 @@ func (n *jsiiProxy_NatGateway) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NatGateway) PutAvailabilityZoneAddress(value interface{}) {
+	if err := n.validatePutAvailabilityZoneAddressParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAvailabilityZoneAddress",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NatGateway) PutTimeouts(value *NatGatewayTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1192,6 +1353,22 @@ func (n *jsiiProxy_NatGateway) ResetAllocationId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAllocationId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetAvailabilityMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAvailabilityMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetAvailabilityZoneAddress() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAvailabilityZoneAddress",
 		nil, // no parameters
 	)
 }
@@ -1260,6 +1437,14 @@ func (n *jsiiProxy_NatGateway) ResetSecondaryPrivateIpAddresses() {
 	)
 }
 
+func (n *jsiiProxy_NatGateway) ResetSubnetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSubnetId",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NatGateway) ResetTags() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1280,6 +1465,14 @@ func (n *jsiiProxy_NatGateway) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

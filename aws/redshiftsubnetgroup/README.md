@@ -1,3 +1,3 @@
 # `aws_redshift_subnet_group`
 
-Refer to the Terraform Registry for docs: [`aws_redshift_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/redshift_subnet_group).
+Refer to the Terraform Registry for docs: [`aws_redshift_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/redshift_subnet_group).

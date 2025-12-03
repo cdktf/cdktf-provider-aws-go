@@ -22,21 +22,21 @@ type Route53ProfilesAssociationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#name Route53ProfilesAssociation#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#profile_id Route53ProfilesAssociation#profile_id}.
 	ProfileId *string `field:"required" json:"profileId" yaml:"profileId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#resource_id Route53ProfilesAssociation#resource_id}.
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#region Route53ProfilesAssociation#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#region Route53ProfilesAssociation#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#tags Route53ProfilesAssociation#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53profiles_association#timeouts Route53ProfilesAssociation#timeouts}
 	Timeouts *Route53ProfilesAssociationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

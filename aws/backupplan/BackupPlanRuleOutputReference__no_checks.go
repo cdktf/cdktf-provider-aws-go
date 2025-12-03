@@ -99,6 +99,10 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetStartWindowParamete
 	return nil
 }
 
+func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetTargetLogicallyAirGappedBackupVaultArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPlanRuleOutputReference) validateSetTargetVaultNameParameters(val *string) error {
 	return nil
 }

@@ -207,6 +207,37 @@ func (n *jsiiProxy_NatGateway) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (n *jsiiProxy_NatGateway) validatePutAvailabilityZoneAddressParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*NatGatewayAvailabilityZoneAddress:
+		value := value.(*[]*NatGatewayAvailabilityZoneAddress)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*NatGatewayAvailabilityZoneAddress:
+		value_ := value.([]*NatGatewayAvailabilityZoneAddress)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NatGatewayAvailabilityZoneAddress; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NatGateway) validatePutTimeoutsParameters(value *NatGatewayTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -259,6 +290,14 @@ func validateNatGateway_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_NatGateway) validateSetAllocationIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetAvailabilityModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -490,6 +529,14 @@ func (j *jsiiProxy_NatGateway) validateSetTagsAllParameters(val *map[string]*str
 	return nil
 }
 
+func (j *jsiiProxy_NatGateway) validateSetVpcIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewNatGatewayParameters(scope constructs.Construct, id *string, config *NatGatewayConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -499,9 +546,6 @@ func validateNewNatGatewayParameters(scope constructs.Construct, id *string, con
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}

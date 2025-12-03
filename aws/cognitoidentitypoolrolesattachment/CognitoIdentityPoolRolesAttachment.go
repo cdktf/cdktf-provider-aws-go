@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment}.
 type CognitoIdentityPoolRolesAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment} Resource.
 func NewCognitoIdentityPoolRolesAttachment(scope constructs.Construct, id *string, config *CognitoIdentityPoolRolesAttachmentConfig) CognitoIdentityPoolRolesAttachment {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCognitoIdentityPoolRolesAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cognito_identity_pool_roles_attachment aws_cognito_identity_pool_roles_attachment} Resource.
 func NewCognitoIdentityPoolRolesAttachment_Override(c CognitoIdentityPoolRolesAttachment, scope constructs.Construct, id *string, config *CognitoIdentityPoolRolesAttachmentConfig) {
 	_init_.Initialize()
 

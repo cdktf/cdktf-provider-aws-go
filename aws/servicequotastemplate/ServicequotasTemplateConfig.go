@@ -22,15 +22,15 @@ type ServicequotasTemplateConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
 	QuotaCode *string `field:"required" json:"quotaCode" yaml:"quotaCode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
 	ServiceCode *string `field:"required" json:"serviceCode" yaml:"serviceCode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
 	Value *float64 `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}.
 	AwsRegion *string `field:"optional" json:"awsRegion" yaml:"awsRegion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

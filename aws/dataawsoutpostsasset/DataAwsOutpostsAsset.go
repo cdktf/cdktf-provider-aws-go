@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/outposts_asset aws_outposts_asset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/outposts_asset aws_outposts_asset}.
 type DataAwsOutpostsAsset interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataAwsOutpostsAsset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/outposts_asset aws_outposts_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/outposts_asset aws_outposts_asset} Data Source.
 func NewDataAwsOutpostsAsset(scope constructs.Construct, id *string, config *DataAwsOutpostsAssetConfig) DataAwsOutpostsAsset {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataAwsOutpostsAsset(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/outposts_asset aws_outposts_asset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/outposts_asset aws_outposts_asset} Data Source.
 func NewDataAwsOutpostsAsset_Override(d DataAwsOutpostsAsset, scope constructs.Construct, id *string, config *DataAwsOutpostsAssetConfig) {
 	_init_.Initialize()
 

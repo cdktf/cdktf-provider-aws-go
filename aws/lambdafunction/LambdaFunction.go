@@ -12,13 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
 	SetArchitectures(val *[]*string)
 	ArchitecturesInput() *[]*string
 	Arn() *string
+	CapacityProviderConfig() LambdaFunctionCapacityProviderConfigOutputReference
+	CapacityProviderConfigInput() *LambdaFunctionCapacityProviderConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CodeSha256() *string
@@ -108,6 +110,9 @@ type LambdaFunction interface {
 	Publish() interface{}
 	SetPublish(val interface{})
 	PublishInput() interface{}
+	PublishTo() *string
+	SetPublishTo(val *string)
+	PublishToInput() *string
 	QualifiedArn() *string
 	QualifiedInvokeArn() *string
 	// Experimental.
@@ -220,6 +225,7 @@ type LambdaFunction interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCapacityProviderConfig(value *LambdaFunctionCapacityProviderConfig)
 	PutDeadLetterConfig(value *LambdaFunctionDeadLetterConfig)
 	PutEnvironment(value *LambdaFunctionEnvironment)
 	PutEphemeralStorage(value *LambdaFunctionEphemeralStorage)
@@ -232,6 +238,7 @@ type LambdaFunction interface {
 	PutTracingConfig(value *LambdaFunctionTracingConfig)
 	PutVpcConfig(value *LambdaFunctionVpcConfig)
 	ResetArchitectures()
+	ResetCapacityProviderConfig()
 	ResetCodeSigningConfigArn()
 	ResetDeadLetterConfig()
 	ResetDescription()
@@ -252,6 +259,7 @@ type LambdaFunction interface {
 	ResetOverrideLogicalId()
 	ResetPackageType()
 	ResetPublish()
+	ResetPublishTo()
 	ResetRegion()
 	ResetReplacementSecurityGroupIds()
 	ResetReplaceSecurityGroupsOnDestroy()
@@ -314,6 +322,26 @@ func (j *jsiiProxy_LambdaFunction) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) CapacityProviderConfig() LambdaFunctionCapacityProviderConfigOutputReference {
+	var returns LambdaFunctionCapacityProviderConfigOutputReference
+	_jsii_.Get(
+		j,
+		"capacityProviderConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) CapacityProviderConfigInput() *LambdaFunctionCapacityProviderConfig {
+	var returns *LambdaFunctionCapacityProviderConfig
+	_jsii_.Get(
+		j,
+		"capacityProviderConfigInput",
 		&returns,
 	)
 	return returns
@@ -829,6 +857,26 @@ func (j *jsiiProxy_LambdaFunction) PublishInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunction) PublishTo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publishTo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) PublishToInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publishToInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunction) QualifiedArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1330,7 +1378,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1348,7 +1396,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -1566,6 +1614,17 @@ func (j *jsiiProxy_LambdaFunction)SetPublish(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publish",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetPublishTo(val *string) {
+	if err := j.validateSetPublishToParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publishTo",
 		val,
 	)
 }
@@ -2088,6 +2147,17 @@ func (l *jsiiProxy_LambdaFunction) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LambdaFunction) PutCapacityProviderConfig(value *LambdaFunctionCapacityProviderConfig) {
+	if err := l.validatePutCapacityProviderConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putCapacityProviderConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaFunction) PutDeadLetterConfig(value *LambdaFunctionDeadLetterConfig) {
 	if err := l.validatePutDeadLetterConfigParameters(value); err != nil {
 		panic(err)
@@ -2213,6 +2283,14 @@ func (l *jsiiProxy_LambdaFunction) ResetArchitectures() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetArchitectures",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetCapacityProviderConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCapacityProviderConfig",
 		nil, // no parameters
 	)
 }
@@ -2357,6 +2435,14 @@ func (l *jsiiProxy_LambdaFunction) ResetPublish() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublish",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetPublishTo() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPublishTo",
 		nil, // no parameters
 	)
 }

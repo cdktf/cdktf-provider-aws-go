@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router}.
 type DataAwsAppmeshVirtualRouter interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualRouter) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router} Data Source.
 func NewDataAwsAppmeshVirtualRouter(scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualRouterConfig) DataAwsAppmeshVirtualRouter {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataAwsAppmeshVirtualRouter(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/appmesh_virtual_router aws_appmesh_virtual_router} Data Source.
 func NewDataAwsAppmeshVirtualRouter_Override(d DataAwsAppmeshVirtualRouter, scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualRouterConfig) {
 	_init_.Initialize()
 

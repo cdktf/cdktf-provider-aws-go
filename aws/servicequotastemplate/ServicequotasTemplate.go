@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template aws_servicequotas_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template aws_servicequotas_template}.
 type ServicequotasTemplate interface {
 	cdktf.TerraformResource
 	AwsRegion() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ServicequotasTemplate) ValueInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
 func NewServicequotasTemplate(scope constructs.Construct, id *string, config *ServicequotasTemplateConfig) ServicequotasTemplate {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewServicequotasTemplate(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/servicequotas_template aws_servicequotas_template} Resource.
 func NewServicequotasTemplate_Override(s ServicequotasTemplate, scope constructs.Construct, id *string, config *ServicequotasTemplateConfig) {
 	_init_.Initialize()
 

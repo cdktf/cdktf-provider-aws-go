@@ -12,11 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway aws_nat_gateway}.
 type DataAwsNatGateway interface {
 	cdktf.TerraformDataSource
 	AllocationId() *string
 	AssociationId() *string
+	AutoProvisionZones() *string
+	AutoScalingIps() *string
+	AvailabilityMode() *string
+	AvailabilityZoneAddress() DataAwsNatGatewayAvailabilityZoneAddressList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConnectivityType() *string
@@ -60,7 +64,9 @@ type DataAwsNatGateway interface {
 	RawOverrides() interface{}
 	Region() *string
 	SetRegion(val *string)
+	RegionalNatGatewayAddress() DataAwsNatGatewayRegionalNatGatewayAddressList
 	RegionInput() *string
+	RouteTableId() *string
 	SecondaryAllocationIds() *[]*string
 	SecondaryPrivateIpAddressCount() *float64
 	SecondaryPrivateIpAddresses() *[]*string
@@ -156,6 +162,46 @@ func (j *jsiiProxy_DataAwsNatGateway) AssociationId() *string {
 	_jsii_.Get(
 		j,
 		"associationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) AutoProvisionZones() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoProvisionZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) AutoScalingIps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoScalingIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) AvailabilityMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availabilityMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) AvailabilityZoneAddress() DataAwsNatGatewayAvailabilityZoneAddressList {
+	var returns DataAwsNatGatewayAvailabilityZoneAddressList
+	_jsii_.Get(
+		j,
+		"availabilityZoneAddress",
 		&returns,
 	)
 	return returns
@@ -361,11 +407,31 @@ func (j *jsiiProxy_DataAwsNatGateway) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNatGateway) RegionalNatGatewayAddress() DataAwsNatGatewayRegionalNatGatewayAddressList {
+	var returns DataAwsNatGatewayRegionalNatGatewayAddressList
+	_jsii_.Get(
+		j,
+		"regionalNatGatewayAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNatGateway) RegionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) RouteTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routeTableId",
 		&returns,
 	)
 	return returns
@@ -532,7 +598,7 @@ func (j *jsiiProxy_DataAwsNatGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) DataAwsNatGateway {
 	_init_.Initialize()
 
@@ -550,7 +616,7 @@ func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway_Override(d DataAwsNatGateway, scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) {
 	_init_.Initialize()
 

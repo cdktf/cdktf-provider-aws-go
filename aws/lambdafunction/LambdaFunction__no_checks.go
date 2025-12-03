@@ -75,6 +75,10 @@ func (l *jsiiProxy_LambdaFunction) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutCapacityProviderConfigParameters(value *LambdaFunctionCapacityProviderConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutDeadLetterConfigParameters(value *LambdaFunctionDeadLetterConfig) error {
 	return nil
 }
@@ -200,6 +204,10 @@ func (j *jsiiProxy_LambdaFunction) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LambdaFunction) validateSetPublishToParameters(val *string) error {
 	return nil
 }
 

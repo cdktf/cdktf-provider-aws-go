@@ -7,11 +7,11 @@ package ecscluster
 type EcsClusterConfiguration struct {
 	// execute_command_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
 	ExecuteCommandConfiguration *EcsClusterConfigurationExecuteCommandConfiguration `field:"optional" json:"executeCommandConfiguration" yaml:"executeCommandConfiguration"`
 	// managed_storage_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ecs_cluster#managed_storage_configuration EcsCluster#managed_storage_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_cluster#managed_storage_configuration EcsCluster#managed_storage_configuration}
 	ManagedStorageConfiguration *EcsClusterConfigurationManagedStorageConfiguration `field:"optional" json:"managedStorageConfiguration" yaml:"managedStorageConfiguration"`
 }
 

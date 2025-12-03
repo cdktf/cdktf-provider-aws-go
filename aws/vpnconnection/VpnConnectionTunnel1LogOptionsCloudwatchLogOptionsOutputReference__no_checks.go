@@ -51,6 +51,18 @@ func (v *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetBgpLogEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetBgpLogGroupArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetBgpLogOutputFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

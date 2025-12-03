@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster}.
 type DataAwsRdsGlobalCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataAwsRdsGlobalCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster} Data Source.
 func NewDataAwsRdsGlobalCluster(scope constructs.Construct, id *string, config *DataAwsRdsGlobalClusterConfig) DataAwsRdsGlobalCluster {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataAwsRdsGlobalCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/rds_global_cluster aws_rds_global_cluster} Data Source.
 func NewDataAwsRdsGlobalCluster_Override(d DataAwsRdsGlobalCluster, scope constructs.Construct, id *string, config *DataAwsRdsGlobalClusterConfig) {
 	_init_.Initialize()
 

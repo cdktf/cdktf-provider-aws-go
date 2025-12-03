@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}.
 type DataAwsImagebuilderInfrastructureConfigurations interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
 func NewDataAwsImagebuilderInfrastructureConfigurations(scope constructs.Construct, id *string, config *DataAwsImagebuilderInfrastructureConfigurationsConfig) DataAwsImagebuilderInfrastructureConfigurations {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurations(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
 func NewDataAwsImagebuilderInfrastructureConfigurations_Override(d DataAwsImagebuilderInfrastructureConfigurations, scope constructs.Construct, id *string, config *DataAwsImagebuilderInfrastructureConfigurationsConfig) {
 	_init_.Initialize()
 

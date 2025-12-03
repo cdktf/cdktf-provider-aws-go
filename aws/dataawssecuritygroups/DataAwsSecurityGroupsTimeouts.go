@@ -5,7 +5,7 @@ package dataawssecuritygroups
 
 
 type DataAwsSecurityGroupsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/security_groups#read DataAwsSecurityGroups#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/security_groups#read DataAwsSecurityGroups#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

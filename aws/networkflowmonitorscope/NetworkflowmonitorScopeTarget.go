@@ -5,11 +5,11 @@ package networkflowmonitorscope
 
 
 type NetworkflowmonitorScopeTarget struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// target_identifier block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/networkflowmonitor_scope#target_identifier NetworkflowmonitorScope#target_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#target_identifier NetworkflowmonitorScope#target_identifier}
 	TargetIdentifier interface{} `field:"optional" json:"targetIdentifier" yaml:"targetIdentifier"`
 }
 

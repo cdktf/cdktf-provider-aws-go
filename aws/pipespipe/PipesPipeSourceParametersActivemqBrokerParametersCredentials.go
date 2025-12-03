@@ -5,7 +5,7 @@ package pipespipe
 
 
 type PipesPipeSourceParametersActivemqBrokerParametersCredentials struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/pipes_pipe#basic_auth PipesPipe#basic_auth}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/pipes_pipe#basic_auth PipesPipe#basic_auth}.
 	BasicAuth *string `field:"required" json:"basicAuth" yaml:"basicAuth"`
 }
 

@@ -13,6 +13,15 @@ import (
 
 type VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference interface {
 	cdktf.ComplexObject
+	BgpLogEnabled() interface{}
+	SetBgpLogEnabled(val interface{})
+	BgpLogEnabledInput() interface{}
+	BgpLogGroupArn() *string
+	SetBgpLogGroupArn(val *string)
+	BgpLogGroupArnInput() *string
+	BgpLogOutputFormat() *string
+	SetBgpLogOutputFormat(val *string)
+	BgpLogOutputFormatInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +82,9 @@ type VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	ResetBgpLogEnabled()
+	ResetBgpLogGroupArn()
+	ResetBgpLogOutputFormat()
 	ResetLogEnabled()
 	ResetLogGroupArn()
 	ResetLogOutputFormat()
@@ -89,6 +101,66 @@ type VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference interface
 // The jsii proxy struct for VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference
 type jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpLogEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpLogEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogGroupArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpLogGroupArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogGroupArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpLogGroupArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogOutputFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpLogOutputFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) BgpLogOutputFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpLogOutputFormatInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -246,6 +318,39 @@ func NewVpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference_Overri
 		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)SetBgpLogEnabled(val interface{}) {
+	if err := j.validateSetBgpLogEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpLogEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)SetBgpLogGroupArn(val *string) {
+	if err := j.validateSetBgpLogGroupArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpLogGroupArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)SetBgpLogOutputFormat(val *string) {
+	if err := j.validateSetBgpLogOutputFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpLogOutputFormat",
+		val,
 	)
 }
 
@@ -521,6 +626,30 @@ func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputRefer
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) ResetBgpLogEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetBgpLogEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) ResetBgpLogGroupArn() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetBgpLogGroupArn",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) ResetBgpLogOutputFormat() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetBgpLogOutputFormat",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference) ResetLogEnabled() {

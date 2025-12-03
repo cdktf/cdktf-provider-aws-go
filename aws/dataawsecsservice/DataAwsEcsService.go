@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ecs_service aws_ecs_service}.
 type DataAwsEcsService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -678,7 +678,7 @@ func (j *jsiiProxy_DataAwsEcsService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) DataAwsEcsService {
 	_init_.Initialize()
 
@@ -696,7 +696,7 @@ func NewDataAwsEcsService(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ecs_service aws_ecs_service} Data Source.
 func NewDataAwsEcsService_Override(d DataAwsEcsService, scope constructs.Construct, id *string, config *DataAwsEcsServiceConfig) {
 	_init_.Initialize()
 

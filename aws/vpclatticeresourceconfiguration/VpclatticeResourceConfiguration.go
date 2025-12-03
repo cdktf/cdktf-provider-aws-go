@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration}.
 type VpclatticeResourceConfiguration interface {
 	cdktf.TerraformResource
 	AllowAssociationToShareableServiceNetwork() interface{}
@@ -652,7 +652,7 @@ func (j *jsiiProxy_VpclatticeResourceConfiguration) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) VpclatticeResourceConfiguration {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewVpclatticeResourceConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_resource_configuration aws_vpclattice_resource_configuration} Resource.
 func NewVpclatticeResourceConfiguration_Override(v VpclatticeResourceConfiguration, scope constructs.Construct, id *string, config *VpclatticeResourceConfigurationConfig) {
 	_init_.Initialize()
 

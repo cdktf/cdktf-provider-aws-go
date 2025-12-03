@@ -5,7 +5,7 @@ package appsyncsourceapiassociation
 
 
 type AppsyncSourceApiAssociationSourceApiAssociationConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/appsync_source_api_association#merge_type AppsyncSourceApiAssociation#merge_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/appsync_source_api_association#merge_type AppsyncSourceApiAssociation#merge_type}.
 	MergeType *string `field:"optional" json:"mergeType" yaml:"mergeType"`
 }
 

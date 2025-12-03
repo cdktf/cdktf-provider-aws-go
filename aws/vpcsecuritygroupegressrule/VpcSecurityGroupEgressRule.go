@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule}.
 type VpcSecurityGroupEgressRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -592,7 +592,7 @@ func (j *jsiiProxy_VpcSecurityGroupEgressRule) ToPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
 func NewVpcSecurityGroupEgressRule(scope constructs.Construct, id *string, config *VpcSecurityGroupEgressRuleConfig) VpcSecurityGroupEgressRule {
 	_init_.Initialize()
 
@@ -610,7 +610,7 @@ func NewVpcSecurityGroupEgressRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
 func NewVpcSecurityGroupEgressRule_Override(v VpcSecurityGroupEgressRule, scope constructs.Construct, id *string, config *VpcSecurityGroupEgressRuleConfig) {
 	_init_.Initialize()
 

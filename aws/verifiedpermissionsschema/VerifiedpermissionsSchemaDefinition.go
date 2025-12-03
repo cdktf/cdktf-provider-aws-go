@@ -5,7 +5,7 @@ package verifiedpermissionsschema
 
 
 type VerifiedpermissionsSchemaDefinition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

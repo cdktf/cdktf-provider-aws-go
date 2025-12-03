@@ -5,7 +5,7 @@ package quicksightdashboard
 
 
 type QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/quicksight_dashboard#availability_status QuicksightDashboard#availability_status}.
 	AvailabilityStatus *string `field:"optional" json:"availabilityStatus" yaml:"availabilityStatus"`
 }
 

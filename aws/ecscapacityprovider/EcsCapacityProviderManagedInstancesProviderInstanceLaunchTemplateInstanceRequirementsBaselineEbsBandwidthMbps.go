@@ -5,9 +5,9 @@ package ecscapacityprovider
 
 
 type EcsCapacityProviderManagedInstancesProviderInstanceLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ecs_capacity_provider#max EcsCapacityProvider#max}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_capacity_provider#max EcsCapacityProvider#max}.
 	Max *float64 `field:"optional" json:"max" yaml:"max"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/ecs_capacity_provider#min EcsCapacityProvider#min}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_capacity_provider#min EcsCapacityProvider#min}.
 	Min *float64 `field:"optional" json:"min" yaml:"min"`
 }
 

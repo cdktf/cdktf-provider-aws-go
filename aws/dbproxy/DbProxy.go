@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/db_proxy aws_db_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/db_proxy aws_db_proxy}.
 type DbProxy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -664,7 +664,7 @@ func (j *jsiiProxy_DbProxy) VpcSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/db_proxy aws_db_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/db_proxy aws_db_proxy} Resource.
 func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) DbProxy {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewDbProxy(scope constructs.Construct, id *string, config *DbProxyConfig) D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/db_proxy aws_db_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/db_proxy aws_db_proxy} Resource.
 func NewDbProxy_Override(d DbProxy, scope constructs.Construct, id *string, config *DbProxyConfig) {
 	_init_.Initialize()
 

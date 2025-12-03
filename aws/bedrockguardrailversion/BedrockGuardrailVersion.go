@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}.
 type BedrockGuardrailVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_BedrockGuardrailVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource.
 func NewBedrockGuardrailVersion(scope constructs.Construct, id *string, config *BedrockGuardrailVersionConfig) BedrockGuardrailVersion {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewBedrockGuardrailVersion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version} Resource.
 func NewBedrockGuardrailVersion_Override(b BedrockGuardrailVersion, scope constructs.Construct, id *string, config *BedrockGuardrailVersionConfig) {
 	_init_.Initialize()
 

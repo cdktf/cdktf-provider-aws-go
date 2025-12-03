@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery}.
 type CloudwatchLogDelivery interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_CloudwatchLogDelivery) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery} Resource.
 func NewCloudwatchLogDelivery(scope constructs.Construct, id *string, config *CloudwatchLogDeliveryConfig) CloudwatchLogDelivery {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewCloudwatchLogDelivery(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.23.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/cloudwatch_log_delivery aws_cloudwatch_log_delivery} Resource.
 func NewCloudwatchLogDelivery_Override(c CloudwatchLogDelivery, scope constructs.Construct, id *string, config *CloudwatchLogDeliveryConfig) {
 	_init_.Initialize()
 

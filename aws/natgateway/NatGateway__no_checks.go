@@ -75,6 +75,10 @@ func (n *jsiiProxy_NatGateway) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (n *jsiiProxy_NatGateway) validatePutAvailabilityZoneAddressParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NatGateway) validatePutTimeoutsParameters(value *NatGatewayTimeouts) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func validateNatGateway_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_NatGateway) validateSetAllocationIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetAvailabilityModeParameters(val *string) error {
 	return nil
 }
 
@@ -152,6 +160,10 @@ func (j *jsiiProxy_NatGateway) validateSetTagsParameters(val *map[string]*string
 }
 
 func (j *jsiiProxy_NatGateway) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetVpcIdParameters(val *string) error {
 	return nil
 }
 
