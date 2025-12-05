@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		reflect.TypeOf((*RolesanywhereProfile)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acceptRoleSessionName", GoGetter: "AcceptRoleSessionName"},
+			_jsii_.MemberProperty{JsiiProperty: "acceptRoleSessionNameInput", GoGetter: "AcceptRoleSessionNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requireInstanceProperties", GoGetter: "RequireInstanceProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "requireInstancePropertiesInput", GoGetter: "RequireInstancePropertiesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAcceptRoleSessionName", GoMethod: "ResetAcceptRoleSessionName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDurationSeconds", GoMethod: "ResetDurationSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

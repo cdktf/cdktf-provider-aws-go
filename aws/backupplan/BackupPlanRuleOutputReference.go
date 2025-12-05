@@ -48,6 +48,8 @@ type BackupPlanRuleOutputReference interface {
 	RuleName() *string
 	SetRuleName(val *string)
 	RuleNameInput() *string
+	ScanAction() BackupPlanRuleScanActionList
+	ScanActionInput() interface{}
 	Schedule() *string
 	SetSchedule(val *string)
 	ScheduleExpressionTimezone() *string
@@ -97,11 +99,13 @@ type BackupPlanRuleOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCopyAction(value interface{})
 	PutLifecycle(value *BackupPlanRuleLifecycle)
+	PutScanAction(value interface{})
 	ResetCompletionWindow()
 	ResetCopyAction()
 	ResetEnableContinuousBackup()
 	ResetLifecycle()
 	ResetRecoveryPointTags()
+	ResetScanAction()
 	ResetSchedule()
 	ResetScheduleExpressionTimezone()
 	ResetStartWindow()
@@ -286,6 +290,26 @@ func (j *jsiiProxy_BackupPlanRuleOutputReference) RuleNameInput() *string {
 	_jsii_.Get(
 		j,
 		"ruleNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference) ScanAction() BackupPlanRuleScanActionList {
+	var returns BackupPlanRuleScanActionList
+	_jsii_.Get(
+		j,
+		"scanAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlanRuleOutputReference) ScanActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scanActionInput",
 		&returns,
 	)
 	return returns
@@ -801,6 +825,17 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) PutLifecycle(value *BackupPlan
 	)
 }
 
+func (b *jsiiProxy_BackupPlanRuleOutputReference) PutScanAction(value interface{}) {
+	if err := b.validatePutScanActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putScanAction",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetCompletionWindow() {
 	_jsii_.InvokeVoid(
 		b,
@@ -837,6 +872,14 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetRecoveryPointTags() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRecoveryPointTags",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPlanRuleOutputReference) ResetScanAction() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetScanAction",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb_target_group aws_lb_target_group}.
 type LbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -119,6 +119,9 @@ type LbTargetGroup interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TargetControlPort() *float64
+	SetTargetControlPort(val *float64)
+	TargetControlPortInput() *float64
 	TargetFailover() LbTargetGroupTargetFailoverList
 	TargetFailoverInput() interface{}
 	TargetGroupHealth() LbTargetGroupTargetGroupHealthOutputReference
@@ -209,6 +212,7 @@ type LbTargetGroup interface {
 	ResetStickiness()
 	ResetTags()
 	ResetTagsAll()
+	ResetTargetControlPort()
 	ResetTargetFailover()
 	ResetTargetGroupHealth()
 	ResetTargetHealthState()
@@ -812,6 +816,26 @@ func (j *jsiiProxy_LbTargetGroup) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_LbTargetGroup) TargetControlPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetControlPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) TargetControlPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetControlPortInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbTargetGroup) TargetFailover() LbTargetGroupTargetFailoverList {
 	var returns LbTargetGroupTargetFailoverList
 	_jsii_.Get(
@@ -943,7 +967,7 @@ func (j *jsiiProxy_LbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGroupConfig) LbTargetGroup {
 	_init_.Initialize()
 
@@ -961,7 +985,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *string, config *LbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -1245,6 +1269,17 @@ func (j *jsiiProxy_LbTargetGroup)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbTargetGroup)SetTargetControlPort(val *float64) {
+	if err := j.validateSetTargetControlPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetControlPort",
 		val,
 	)
 }
@@ -1851,6 +1886,14 @@ func (l *jsiiProxy_LbTargetGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroup) ResetTargetControlPort() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTargetControlPort",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,10 @@ func (b *jsiiProxy_BackupPlanRuleOutputReference) validatePutLifecycleParameters
 	return nil
 }
 
+func (b *jsiiProxy_BackupPlanRuleOutputReference) validatePutScanActionParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPlanRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }

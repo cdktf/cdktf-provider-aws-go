@@ -218,7 +218,29 @@ func (t *jsiiProxy_TransferConnector) validatePutAs2ConfigParameters(value *Tran
 	return nil
 }
 
+func (t *jsiiProxy_TransferConnector) validatePutEgressConfigParameters(value *TransferConnectorEgressConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TransferConnector) validatePutSftpConfigParameters(value *TransferConnectorSftpConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (t *jsiiProxy_TransferConnector) validatePutTimeoutsParameters(value *TransferConnectorTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

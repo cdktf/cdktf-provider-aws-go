@@ -7,7 +7,7 @@ package s3tablestable
 type S3TablesTableMetadataIceberg struct {
 	// schema block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table#schema S3TablesTable#schema}
 	Schema interface{} `field:"optional" json:"schema" yaml:"schema"`
 }
 

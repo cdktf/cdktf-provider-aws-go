@@ -5,9 +5,9 @@ package dynamodbtable
 
 
 type DynamodbTableWarmThroughput struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
 	ReadUnitsPerSecond *float64 `field:"optional" json:"readUnitsPerSecond" yaml:"readUnitsPerSecond"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
 	WriteUnitsPerSecond *float64 `field:"optional" json:"writeUnitsPerSecond" yaml:"writeUnitsPerSecond"`
 }
 

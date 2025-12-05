@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/transfer_connector aws_transfer_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/transfer_connector aws_transfer_connector}.
 type DataAwsTransferConnector interface {
 	cdktf.TerraformDataSource
 	AccessRole() *string
@@ -30,6 +30,7 @@ type DataAwsTransferConnector interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EgressConfig() DataAwsTransferConnectorEgressConfigList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataAwsTransferConnector) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsTransferConnector) EgressConfig() DataAwsTransferConnectorEgressConfigList {
+	var returns DataAwsTransferConnectorEgressConfigList
+	_jsii_.Get(
+		j,
+		"egressConfig",
 		&returns,
 	)
 	return returns
@@ -387,7 +398,7 @@ func (j *jsiiProxy_DataAwsTransferConnector) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/transfer_connector aws_transfer_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/transfer_connector aws_transfer_connector} Data Source.
 func NewDataAwsTransferConnector(scope constructs.Construct, id *string, config *DataAwsTransferConnectorConfig) DataAwsTransferConnector {
 	_init_.Initialize()
 
@@ -405,7 +416,7 @@ func NewDataAwsTransferConnector(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/transfer_connector aws_transfer_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/transfer_connector aws_transfer_connector} Data Source.
 func NewDataAwsTransferConnector_Override(d DataAwsTransferConnector, scope constructs.Construct, id *string, config *DataAwsTransferConnectorConfig) {
 	_init_.Initialize()
 

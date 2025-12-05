@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway}.
 type BedrockagentcoreGateway interface {
 	cdktf.TerraformResource
 	AuthorizerConfiguration() BedrockagentcoreGatewayAuthorizerConfigurationList
@@ -53,6 +53,8 @@ type BedrockagentcoreGateway interface {
 	GatewayArn() *string
 	GatewayId() *string
 	GatewayUrl() *string
+	InterceptorConfiguration() BedrockagentcoreGatewayInterceptorConfigurationList
+	InterceptorConfigurationInput() interface{}
 	KmsKeyArn() *string
 	SetKmsKeyArn(val *string)
 	KmsKeyArnInput() *string
@@ -143,11 +145,13 @@ type BedrockagentcoreGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorizerConfiguration(value interface{})
+	PutInterceptorConfiguration(value interface{})
 	PutProtocolConfiguration(value interface{})
 	PutTimeouts(value *BedrockagentcoreGatewayTimeouts)
 	ResetAuthorizerConfiguration()
 	ResetDescription()
 	ResetExceptionLevel()
+	ResetInterceptorConfiguration()
 	ResetKmsKeyArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -359,6 +363,26 @@ func (j *jsiiProxy_BedrockagentcoreGateway) GatewayUrl() *string {
 	_jsii_.Get(
 		j,
 		"gatewayUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreGateway) InterceptorConfiguration() BedrockagentcoreGatewayInterceptorConfigurationList {
+	var returns BedrockagentcoreGatewayInterceptorConfigurationList
+	_jsii_.Get(
+		j,
+		"interceptorConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentcoreGateway) InterceptorConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"interceptorConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -625,7 +649,7 @@ func (j *jsiiProxy_BedrockagentcoreGateway) WorkloadIdentityDetails() Bedrockage
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource.
 func NewBedrockagentcoreGateway(scope constructs.Construct, id *string, config *BedrockagentcoreGatewayConfig) BedrockagentcoreGateway {
 	_init_.Initialize()
 
@@ -643,7 +667,7 @@ func NewBedrockagentcoreGateway(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_gateway aws_bedrockagentcore_gateway} Resource.
 func NewBedrockagentcoreGateway_Override(b BedrockagentcoreGateway, scope constructs.Construct, id *string, config *BedrockagentcoreGatewayConfig) {
 	_init_.Initialize()
 
@@ -1185,6 +1209,17 @@ func (b *jsiiProxy_BedrockagentcoreGateway) PutAuthorizerConfiguration(value int
 	)
 }
 
+func (b *jsiiProxy_BedrockagentcoreGateway) PutInterceptorConfiguration(value interface{}) {
+	if err := b.validatePutInterceptorConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putInterceptorConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentcoreGateway) PutProtocolConfiguration(value interface{}) {
 	if err := b.validatePutProtocolConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1227,6 +1262,14 @@ func (b *jsiiProxy_BedrockagentcoreGateway) ResetExceptionLevel() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetExceptionLevel",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentcoreGateway) ResetInterceptorConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetInterceptorConfiguration",
 		nil, // no parameters
 	)
 }

@@ -396,6 +396,14 @@ func (j *jsiiProxy_Ec2TransitGateway) validateSetDnsSupportParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGateway) validateSetEncryptionSupportParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGateway) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -55,6 +55,10 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutIdent
 	return nil
 }
 
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutManagedQueryResultsConfigurationParameters(value *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validatePutResultConfigurationParameters(value *AthenaWorkgroupConfigurationResultConfiguration) error {
 	return nil
 }

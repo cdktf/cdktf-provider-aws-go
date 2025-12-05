@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type DataAwsEc2TransitGateway interface {
 	cdktf.TerraformDataSource
 	AmazonSideAsn() *float64
@@ -35,6 +35,7 @@ type DataAwsEc2TransitGateway interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DnsSupport() *string
+	EncryptionSupport() *string
 	Filter() DataAwsEc2TransitGatewayFilterList
 	FilterInput() interface{}
 	// Experimental.
@@ -249,6 +250,16 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) DnsSupport() *string {
 	_jsii_.Get(
 		j,
 		"dnsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2TransitGateway) EncryptionSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionSupport",
 		&returns,
 	)
 	return returns
@@ -515,7 +526,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGateway) VpnEcmpSupport() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
 func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConfig) DataAwsEc2TransitGateway {
 	_init_.Initialize()
 
@@ -533,7 +544,7 @@ func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/ec2_transit_gateway aws_ec2_transit_gateway} Data Source.
 func NewDataAwsEc2TransitGateway_Override(d DataAwsEc2TransitGateway, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayConfig) {
 	_init_.Initialize()
 

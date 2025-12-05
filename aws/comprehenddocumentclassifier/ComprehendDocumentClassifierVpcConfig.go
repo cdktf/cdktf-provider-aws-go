@@ -5,9 +5,9 @@ package comprehenddocumentclassifier
 
 
 type ComprehendDocumentClassifierVpcConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/comprehend_document_classifier#security_group_ids ComprehendDocumentClassifier#security_group_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/comprehend_document_classifier#security_group_ids ComprehendDocumentClassifier#security_group_ids}.
 	SecurityGroupIds *[]*string `field:"required" json:"securityGroupIds" yaml:"securityGroupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/comprehend_document_classifier#subnets ComprehendDocumentClassifier#subnets}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/comprehend_document_classifier#subnets ComprehendDocumentClassifier#subnets}.
 	Subnets *[]*string `field:"required" json:"subnets" yaml:"subnets"`
 }
 

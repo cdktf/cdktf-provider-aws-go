@@ -5,7 +5,7 @@ package connectroutingprofile
 
 
 type ConnectRoutingProfileMediaConcurrenciesCrossChannelBehavior struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/connect_routing_profile#behavior_type ConnectRoutingProfile#behavior_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/connect_routing_profile#behavior_type ConnectRoutingProfile#behavior_type}.
 	BehaviorType *string `field:"required" json:"behaviorType" yaml:"behaviorType"`
 }
 

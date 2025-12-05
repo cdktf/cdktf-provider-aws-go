@@ -5,21 +5,21 @@ package ecsservice
 
 
 type EcsServiceDeploymentConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ecs_service#bake_time_in_minutes EcsService#bake_time_in_minutes}.
 	BakeTimeInMinutes *string `field:"optional" json:"bakeTimeInMinutes" yaml:"bakeTimeInMinutes"`
 	// canary_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_service#canary_configuration EcsService#canary_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ecs_service#canary_configuration EcsService#canary_configuration}
 	CanaryConfiguration *EcsServiceDeploymentConfigurationCanaryConfiguration `field:"optional" json:"canaryConfiguration" yaml:"canaryConfiguration"`
 	// lifecycle_hook block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ecs_service#lifecycle_hook EcsService#lifecycle_hook}
 	LifecycleHook interface{} `field:"optional" json:"lifecycleHook" yaml:"lifecycleHook"`
 	// linear_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_service#linear_configuration EcsService#linear_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ecs_service#linear_configuration EcsService#linear_configuration}
 	LinearConfiguration *EcsServiceDeploymentConfigurationLinearConfiguration `field:"optional" json:"linearConfiguration" yaml:"linearConfiguration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ecs_service#strategy EcsService#strategy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ecs_service#strategy EcsService#strategy}.
 	Strategy *string `field:"optional" json:"strategy" yaml:"strategy"`
 }
 

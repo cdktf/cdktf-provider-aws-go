@@ -38,9 +38,11 @@ type DataAwsBackupPlanRuleOutputReference interface {
 	Lifecycle() DataAwsBackupPlanRuleLifecycleList
 	RecoveryPointTags() cdktf.StringMap
 	RuleName() *string
+	ScanAction() DataAwsBackupPlanRuleScanActionList
 	Schedule() *string
 	ScheduleExpressionTimezone() *string
 	StartWindow() *float64
+	TargetLogicallyAirGappedBackupVaultArn() *string
 	TargetVaultName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -199,6 +201,16 @@ func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) RuleName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) ScanAction() DataAwsBackupPlanRuleScanActionList {
+	var returns DataAwsBackupPlanRuleScanActionList
+	_jsii_.Get(
+		j,
+		"scanAction",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) Schedule() *string {
 	var returns *string
 	_jsii_.Get(
@@ -224,6 +236,16 @@ func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) StartWindow() *float64 
 	_jsii_.Get(
 		j,
 		"startWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBackupPlanRuleOutputReference) TargetLogicallyAirGappedBackupVaultArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetLogicallyAirGappedBackupVaultArn",
 		&returns,
 	)
 	return returns

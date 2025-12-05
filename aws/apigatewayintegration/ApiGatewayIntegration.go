@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/api_gateway_integration aws_api_gateway_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/api_gateway_integration aws_api_gateway_integration}.
 type ApiGatewayIntegration interface {
 	cdktf.TerraformResource
 	CacheKeyParameters() *[]*string
@@ -66,6 +66,9 @@ type ApiGatewayIntegration interface {
 	IntegrationHttpMethod() *string
 	SetIntegrationHttpMethod(val *string)
 	IntegrationHttpMethodInput() *string
+	IntegrationTarget() *string
+	SetIntegrationTarget(val *string)
+	IntegrationTargetInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -97,6 +100,9 @@ type ApiGatewayIntegration interface {
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
+	ResponseTransferMode() *string
+	SetResponseTransferMode(val *string)
+	ResponseTransferModeInput() *string
 	RestApiId() *string
 	SetRestApiId(val *string)
 	RestApiIdInput() *string
@@ -169,6 +175,7 @@ type ApiGatewayIntegration interface {
 	ResetCredentials()
 	ResetId()
 	ResetIntegrationHttpMethod()
+	ResetIntegrationTarget()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -176,6 +183,7 @@ type ApiGatewayIntegration interface {
 	ResetRegion()
 	ResetRequestParameters()
 	ResetRequestTemplates()
+	ResetResponseTransferMode()
 	ResetTimeoutMilliseconds()
 	ResetTlsConfig()
 	ResetUri()
@@ -457,6 +465,26 @@ func (j *jsiiProxy_ApiGatewayIntegration) IntegrationHttpMethodInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayIntegration) IntegrationTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayIntegration) IntegrationTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayIntegration) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -607,6 +635,26 @@ func (j *jsiiProxy_ApiGatewayIntegration) ResourceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayIntegration) ResponseTransferMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseTransferMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayIntegration) ResponseTransferModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseTransferModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayIntegration) RestApiId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -738,7 +786,7 @@ func (j *jsiiProxy_ApiGatewayIntegration) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
 func NewApiGatewayIntegration(scope constructs.Construct, id *string, config *ApiGatewayIntegrationConfig) ApiGatewayIntegration {
 	_init_.Initialize()
 
@@ -756,7 +804,7 @@ func NewApiGatewayIntegration(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
 func NewApiGatewayIntegration_Override(a ApiGatewayIntegration, scope constructs.Construct, id *string, config *ApiGatewayIntegrationConfig) {
 	_init_.Initialize()
 
@@ -904,6 +952,17 @@ func (j *jsiiProxy_ApiGatewayIntegration)SetIntegrationHttpMethod(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApiGatewayIntegration)SetIntegrationTarget(val *string) {
+	if err := j.validateSetIntegrationTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"integrationTarget",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApiGatewayIntegration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -985,6 +1044,17 @@ func (j *jsiiProxy_ApiGatewayIntegration)SetResourceId(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayIntegration)SetResponseTransferMode(val *string) {
+	if err := j.validateSetResponseTransferModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"responseTransferMode",
 		val,
 	)
 }
@@ -1461,6 +1531,14 @@ func (a *jsiiProxy_ApiGatewayIntegration) ResetIntegrationHttpMethod() {
 	)
 }
 
+func (a *jsiiProxy_ApiGatewayIntegration) ResetIntegrationTarget() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIntegrationTarget",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApiGatewayIntegration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1497,6 +1575,14 @@ func (a *jsiiProxy_ApiGatewayIntegration) ResetRequestTemplates() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequestTemplates",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayIntegration) ResetResponseTransferMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResponseTransferMode",
 		nil, // no parameters
 	)
 }

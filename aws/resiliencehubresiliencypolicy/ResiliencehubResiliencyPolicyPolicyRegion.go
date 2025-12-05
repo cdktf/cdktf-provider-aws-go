@@ -7,11 +7,11 @@ package resiliencehubresiliencypolicy
 type ResiliencehubResiliencyPolicyPolicyRegion struct {
 	// Recovery Point Objective (RPO) as a Go duration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/resiliencehub_resiliency_policy#rpo ResiliencehubResiliencyPolicy#rpo}
 	Rpo *string `field:"optional" json:"rpo" yaml:"rpo"`
 	// Recovery Time Objective (RTO) as a Go duration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/resiliencehub_resiliency_policy#rto ResiliencehubResiliencyPolicy#rto}
 	Rto *string `field:"optional" json:"rto" yaml:"rto"`
 }
 

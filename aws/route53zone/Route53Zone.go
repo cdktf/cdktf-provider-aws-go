@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53_zone aws_route53_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone aws_route53_zone}.
 type Route53Zone interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -38,6 +38,9 @@ type Route53Zone interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableAcceleratedRecovery() interface{}
+	SetEnableAcceleratedRecovery(val interface{})
+	EnableAcceleratedRecoveryInput() interface{}
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -137,6 +140,7 @@ type Route53Zone interface {
 	PutVpc(value interface{})
 	ResetComment()
 	ResetDelegationSetId()
+	ResetEnableAcceleratedRecovery()
 	ResetForceDestroy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -259,6 +263,26 @@ func (j *jsiiProxy_Route53Zone) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Zone) EnableAcceleratedRecovery() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAcceleratedRecovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Zone) EnableAcceleratedRecoveryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAcceleratedRecoveryInput",
 		&returns,
 	)
 	return returns
@@ -545,7 +569,7 @@ func (j *jsiiProxy_Route53Zone) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53_zone aws_route53_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone aws_route53_zone} Resource.
 func NewRoute53Zone(scope constructs.Construct, id *string, config *Route53ZoneConfig) Route53Zone {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewRoute53Zone(scope constructs.Construct, id *string, config *Route53ZoneC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/route53_zone aws_route53_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone aws_route53_zone} Resource.
 func NewRoute53Zone_Override(r Route53Zone, scope constructs.Construct, id *string, config *Route53ZoneConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_Route53Zone)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53Zone)SetEnableAcceleratedRecovery(val interface{}) {
+	if err := j.validateSetEnableAcceleratedRecoveryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAcceleratedRecovery",
 		val,
 	)
 }
@@ -1106,6 +1141,14 @@ func (r *jsiiProxy_Route53Zone) ResetDelegationSetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDelegationSetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53Zone) ResetEnableAcceleratedRecovery() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEnableAcceleratedRecovery",
 		nil, // no parameters
 	)
 }

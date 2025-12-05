@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ssm_association aws_ssm_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
 	ApplyOnlyAtCronInterval() interface{}
@@ -26,6 +26,9 @@ type SsmAssociation interface {
 	AutomationTargetParameterName() *string
 	SetAutomationTargetParameterName(val *string)
 	AutomationTargetParameterNameInput() *string
+	CalendarNames() *[]*string
+	SetCalendarNames(val *[]*string)
+	CalendarNamesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ComplianceSeverity() *string
@@ -163,6 +166,7 @@ type SsmAssociation interface {
 	ResetApplyOnlyAtCronInterval()
 	ResetAssociationName()
 	ResetAutomationTargetParameterName()
+	ResetCalendarNames()
 	ResetComplianceSeverity()
 	ResetDocumentVersion()
 	ResetId()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_SsmAssociation) AutomationTargetParameterNameInput() *string 
 	_jsii_.Get(
 		j,
 		"automationTargetParameterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) CalendarNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"calendarNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) CalendarNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"calendarNamesInput",
 		&returns,
 	)
 	return returns
@@ -739,7 +763,7 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
 
@@ -757,7 +781,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id *string, config *SsmAssociationConfig) {
 	_init_.Initialize()
 
@@ -797,6 +821,17 @@ func (j *jsiiProxy_SsmAssociation)SetAutomationTargetParameterName(val *string) 
 	_jsii_.Set(
 		j,
 		"automationTargetParameterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmAssociation)SetCalendarNames(val *[]*string) {
+	if err := j.validateSetCalendarNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"calendarNames",
 		val,
 	)
 }
@@ -1407,6 +1442,14 @@ func (s *jsiiProxy_SsmAssociation) ResetAutomationTargetParameterName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAutomationTargetParameterName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmAssociation) ResetCalendarNames() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCalendarNames",
 		nil, // no parameters
 	)
 }

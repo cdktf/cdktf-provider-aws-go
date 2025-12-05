@@ -159,6 +159,10 @@ func (j *jsiiProxy_WorkspacesDirectory) validateSetTagsAllParameters(val *map[st
 	return nil
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) validateSetTenancyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) validateSetUserIdentityTypeParameters(val *string) error {
 	return nil
 }

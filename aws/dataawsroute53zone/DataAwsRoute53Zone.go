@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone aws_route53_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone aws_route53_zone}.
 type DataAwsRoute53Zone interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -30,6 +30,9 @@ type DataAwsRoute53Zone interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableAcceleratedRecovery() interface{}
+	SetEnableAcceleratedRecovery(val interface{})
+	EnableAcceleratedRecoveryInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -104,6 +107,7 @@ type DataAwsRoute53Zone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnableAcceleratedRecovery()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_DataAwsRoute53Zone) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRoute53Zone) EnableAcceleratedRecovery() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAcceleratedRecovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRoute53Zone) EnableAcceleratedRecoveryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAcceleratedRecoveryInput",
 		&returns,
 	)
 	return returns
@@ -473,7 +497,7 @@ func (j *jsiiProxy_DataAwsRoute53Zone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) DataAwsRoute53Zone {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone_Override(d DataAwsRoute53Zone, scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) {
 	_init_.Initialize()
 
@@ -517,6 +541,17 @@ func (j *jsiiProxy_DataAwsRoute53Zone)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRoute53Zone)SetEnableAcceleratedRecovery(val interface{}) {
+	if err := j.validateSetEnableAcceleratedRecoveryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAcceleratedRecovery",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (d *jsiiProxy_DataAwsRoute53Zone) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsRoute53Zone) ResetEnableAcceleratedRecovery() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableAcceleratedRecovery",
+		nil, // no parameters
 	)
 }
 

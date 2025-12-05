@@ -7,7 +7,7 @@ package schedulerschedule
 type SchedulerScheduleTargetSagemakerPipelineParameters struct {
 	// pipeline_parameter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/scheduler_schedule#pipeline_parameter SchedulerSchedule#pipeline_parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/scheduler_schedule#pipeline_parameter SchedulerSchedule#pipeline_parameter}
 	PipelineParameter interface{} `field:"optional" json:"pipelineParameter" yaml:"pipelineParameter"`
 }
 

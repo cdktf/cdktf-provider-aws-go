@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb aws_lb}.
 type DataAwsLb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsLbAccessLogsList
@@ -55,6 +55,7 @@ type DataAwsLb interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthCheckLogs() DataAwsLbHealthCheckLogsList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -414,6 +415,16 @@ func (j *jsiiProxy_DataAwsLb) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLb) HealthCheckLogs() DataAwsLbHealthCheckLogsList {
+	var returns DataAwsLbHealthCheckLogsList
+	_jsii_.Get(
+		j,
+		"healthCheckLogs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLb) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,7 +726,7 @@ func (j *jsiiProxy_DataAwsLb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfig) DataAwsLb {
 	_init_.Initialize()
 
@@ -733,7 +744,7 @@ func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb_Override(d DataAwsLb, scope constructs.Construct, id *string, config *DataAwsLbConfig) {
 	_init_.Initialize()
 

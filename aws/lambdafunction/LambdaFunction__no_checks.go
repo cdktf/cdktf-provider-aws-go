@@ -83,6 +83,10 @@ func (l *jsiiProxy_LambdaFunction) validatePutDeadLetterConfigParameters(value *
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutDurableConfigParameters(value *LambdaFunctionDurableConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutEnvironmentParameters(value *LambdaFunctionEnvironment) error {
 	return nil
 }

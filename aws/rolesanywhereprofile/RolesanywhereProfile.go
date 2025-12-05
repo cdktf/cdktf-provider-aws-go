@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile}.
 type RolesanywhereProfile interface {
 	cdktf.TerraformResource
+	AcceptRoleSessionName() interface{}
+	SetAcceptRoleSessionName(val interface{})
+	AcceptRoleSessionNameInput() interface{}
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -135,6 +138,7 @@ type RolesanywhereProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAcceptRoleSessionName()
 	ResetDurationSeconds()
 	ResetEnabled()
 	ResetId()
@@ -163,6 +167,26 @@ type RolesanywhereProfile interface {
 // The jsii proxy struct for RolesanywhereProfile
 type jsiiProxy_RolesanywhereProfile struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RolesanywhereProfile) AcceptRoleSessionName() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptRoleSessionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RolesanywhereProfile) AcceptRoleSessionNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptRoleSessionNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RolesanywhereProfile) Arn() *string {
@@ -536,7 +560,7 @@ func (j *jsiiProxy_RolesanywhereProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
 func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *RolesanywhereProfileConfig) RolesanywhereProfile {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewRolesanywhereProfile(scope constructs.Construct, id *string, config *Rol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/rolesanywhere_profile aws_rolesanywhere_profile} Resource.
 func NewRolesanywhereProfile_Override(r RolesanywhereProfile, scope constructs.Construct, id *string, config *RolesanywhereProfileConfig) {
 	_init_.Initialize()
 
@@ -562,6 +586,17 @@ func NewRolesanywhereProfile_Override(r RolesanywhereProfile, scope constructs.C
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RolesanywhereProfile)SetAcceptRoleSessionName(val interface{}) {
+	if err := j.validateSetAcceptRoleSessionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptRoleSessionName",
+		val,
 	)
 }
 
@@ -1093,6 +1128,14 @@ func (r *jsiiProxy_RolesanywhereProfile) OverrideLogicalId(newLogicalId *string)
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_RolesanywhereProfile) ResetAcceptRoleSessionName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAcceptRoleSessionName",
+		nil, // no parameters
 	)
 }
 

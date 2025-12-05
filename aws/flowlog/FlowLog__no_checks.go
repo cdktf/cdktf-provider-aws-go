@@ -147,6 +147,10 @@ func (j *jsiiProxy_FlowLog) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_FlowLog) validateSetRegionalNatGatewayIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FlowLog) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

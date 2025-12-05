@@ -119,6 +119,14 @@ func (j *jsiiProxy_KmsCiphertext) validateSetPlaintextParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_KmsCiphertext) validateSetPlaintextWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmsCiphertext) validateSetPlaintextWoVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCiphertext) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

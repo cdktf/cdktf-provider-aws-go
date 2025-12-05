@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataAwsRoute53Zone) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53Zone) validateSetEnableAcceleratedRecoveryParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53Zone) validateSetIdParameters(val *string) error {
 	return nil
 }

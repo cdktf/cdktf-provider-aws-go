@@ -111,6 +111,10 @@ func (j *jsiiProxy_SsmAssociation) validateSetAutomationTargetParameterNameParam
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetCalendarNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetComplianceSeverityParameters(val *string) error {
 	return nil
 }

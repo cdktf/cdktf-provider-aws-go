@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification}.
 type VpclatticeDomainVerification interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -445,7 +445,7 @@ func (j *jsiiProxy_VpclatticeDomainVerification) TxtRecordValue() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification} Resource.
 func NewVpclatticeDomainVerification(scope constructs.Construct, id *string, config *VpclatticeDomainVerificationConfig) VpclatticeDomainVerification {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewVpclatticeDomainVerification(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification} Resource.
 func NewVpclatticeDomainVerification_Override(v VpclatticeDomainVerification, scope constructs.Construct, id *string, config *VpclatticeDomainVerificationConfig) {
 	_init_.Initialize()
 

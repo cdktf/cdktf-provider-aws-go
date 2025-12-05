@@ -325,6 +325,14 @@ func (j *jsiiProxy_SsmAssociation) validateSetAutomationTargetParameterNameParam
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetCalendarNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetComplianceSeverityParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

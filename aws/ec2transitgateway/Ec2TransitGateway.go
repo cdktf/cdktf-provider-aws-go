@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type Ec2TransitGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *float64
@@ -51,6 +51,9 @@ type Ec2TransitGateway interface {
 	DnsSupport() *string
 	SetDnsSupport(val *string)
 	DnsSupportInput() *string
+	EncryptionSupport() *string
+	SetEncryptionSupport(val *string)
+	EncryptionSupportInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -159,6 +162,7 @@ type Ec2TransitGateway interface {
 	ResetDefaultRouteTablePropagation()
 	ResetDescription()
 	ResetDnsSupport()
+	ResetEncryptionSupport()
 	ResetId()
 	ResetMulticastSupport()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -374,6 +378,26 @@ func (j *jsiiProxy_Ec2TransitGateway) DnsSupportInput() *string {
 	_jsii_.Get(
 		j,
 		"dnsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGateway) EncryptionSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGateway) EncryptionSupportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionSupportInput",
 		&returns,
 	)
 	return returns
@@ -690,7 +714,7 @@ func (j *jsiiProxy_Ec2TransitGateway) VpnEcmpSupportInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) Ec2TransitGateway {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2Tra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway_Override(e Ec2TransitGateway, scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) {
 	_init_.Initialize()
 
@@ -811,6 +835,17 @@ func (j *jsiiProxy_Ec2TransitGateway)SetDnsSupport(val *string) {
 	_jsii_.Set(
 		j,
 		"dnsSupport",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TransitGateway)SetEncryptionSupport(val *string) {
+	if err := j.validateSetEncryptionSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionSupport",
 		val,
 	)
 }
@@ -1349,6 +1384,14 @@ func (e *jsiiProxy_Ec2TransitGateway) ResetDnsSupport() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDnsSupport",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGateway) ResetEncryptionSupport() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEncryptionSupport",
 		nil, // no parameters
 	)
 }

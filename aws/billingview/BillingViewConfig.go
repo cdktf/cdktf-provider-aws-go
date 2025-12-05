@@ -22,21 +22,21 @@ type BillingViewConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#name BillingView#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#name BillingView#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// data_filter_expression block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#data_filter_expression BillingView#data_filter_expression}
 	DataFilterExpression interface{} `field:"optional" json:"dataFilterExpression" yaml:"dataFilterExpression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#description BillingView#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#description BillingView#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#source_views BillingView#source_views}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#source_views BillingView#source_views}.
 	SourceViews *[]*string `field:"optional" json:"sourceViews" yaml:"sourceViews"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#tags BillingView#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#tags BillingView#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/billing_view#timeouts BillingView#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/billing_view#timeouts BillingView#timeouts}
 	Timeouts *BillingViewTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

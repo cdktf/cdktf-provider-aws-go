@@ -7,7 +7,7 @@ package bedrockagentcoregatewaytarget
 type BedrockagentcoreGatewayTargetTargetConfiguration struct {
 	// mcp block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/bedrockagentcore_gateway_target#mcp BedrockagentcoreGatewayTarget#mcp}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_gateway_target#mcp BedrockagentcoreGatewayTarget#mcp}
 	Mcp interface{} `field:"optional" json:"mcp" yaml:"mcp"`
 }
 

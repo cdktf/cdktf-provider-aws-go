@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kendra_data_source aws_kendra_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_data_source aws_kendra_data_source}.
 type KendraDataSource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -685,7 +685,7 @@ func (j *jsiiProxy_KendraDataSource) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kendra_data_source aws_kendra_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_data_source aws_kendra_data_source} Resource.
 func NewKendraDataSource(scope constructs.Construct, id *string, config *KendraDataSourceConfig) KendraDataSource {
 	_init_.Initialize()
 
@@ -703,7 +703,7 @@ func NewKendraDataSource(scope constructs.Construct, id *string, config *KendraD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kendra_data_source aws_kendra_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_data_source aws_kendra_data_source} Resource.
 func NewKendraDataSource_Override(k KendraDataSource, scope constructs.Construct, id *string, config *KendraDataSourceConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
 type DataAwsWafv2WebAcl interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) DataAwsWafv2WebAcl {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl_Override(d DataAwsWafv2WebAcl, scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) {
 	_init_.Initialize()
 

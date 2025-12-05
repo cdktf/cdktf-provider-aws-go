@@ -79,6 +79,10 @@ func (b *jsiiProxy_BedrockagentcoreGateway) validatePutAuthorizerConfigurationPa
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentcoreGateway) validatePutInterceptorConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockagentcoreGateway) validatePutProtocolConfigurationParameters(value interface{}) error {
 	return nil
 }

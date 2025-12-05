@@ -7,7 +7,7 @@ package alblistenerrule
 type AlbListenerRuleTransformUrlRewriteConfig struct {
 	// rewrite block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/alb_listener_rule#rewrite AlbListenerRule#rewrite}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/alb_listener_rule#rewrite AlbListenerRule#rewrite}
 	Rewrite *AlbListenerRuleTransformUrlRewriteConfigRewrite `field:"optional" json:"rewrite" yaml:"rewrite"`
 }
 

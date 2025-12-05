@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector aws_transfer_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector aws_transfer_connector}.
 type TransferConnector interface {
 	cdktf.TerraformResource
 	AccessRole() *string
@@ -38,6 +38,8 @@ type TransferConnector interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EgressConfig() TransferConnectorEgressConfigOutputReference
+	EgressConfigInput() *TransferConnectorEgressConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -88,6 +90,8 @@ type TransferConnector interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() TransferConnectorTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -135,8 +139,11 @@ type TransferConnector interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAs2Config(value *TransferConnectorAs2Config)
+	PutEgressConfig(value *TransferConnectorEgressConfig)
 	PutSftpConfig(value *TransferConnectorSftpConfig)
+	PutTimeouts(value *TransferConnectorTimeouts)
 	ResetAs2Config()
+	ResetEgressConfig()
 	ResetId()
 	ResetLoggingRole()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -147,6 +154,8 @@ type TransferConnector interface {
 	ResetSftpConfig()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
+	ResetUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -270,6 +279,26 @@ func (j *jsiiProxy_TransferConnector) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) EgressConfig() TransferConnectorEgressConfigOutputReference {
+	var returns TransferConnectorEgressConfigOutputReference
+	_jsii_.Get(
+		j,
+		"egressConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) EgressConfigInput() *TransferConnectorEgressConfig {
+	var returns *TransferConnectorEgressConfig
+	_jsii_.Get(
+		j,
+		"egressConfigInput",
 		&returns,
 	)
 	return returns
@@ -525,6 +554,26 @@ func (j *jsiiProxy_TransferConnector) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TransferConnector) Timeouts() TransferConnectorTimeoutsOutputReference {
+	var returns TransferConnectorTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferConnector) Url() *string {
 	var returns *string
 	_jsii_.Get(
@@ -546,7 +595,7 @@ func (j *jsiiProxy_TransferConnector) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector(scope constructs.Construct, id *string, config *TransferConnectorConfig) TransferConnector {
 	_init_.Initialize()
 
@@ -564,7 +613,7 @@ func NewTransferConnector(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector_Override(t TransferConnector, scope constructs.Construct, id *string, config *TransferConnectorConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1144,17 @@ func (t *jsiiProxy_TransferConnector) PutAs2Config(value *TransferConnectorAs2Co
 	)
 }
 
+func (t *jsiiProxy_TransferConnector) PutEgressConfig(value *TransferConnectorEgressConfig) {
+	if err := t.validatePutEgressConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putEgressConfig",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferConnector) PutSftpConfig(value *TransferConnectorSftpConfig) {
 	if err := t.validatePutSftpConfigParameters(value); err != nil {
 		panic(err)
@@ -1106,10 +1166,29 @@ func (t *jsiiProxy_TransferConnector) PutSftpConfig(value *TransferConnectorSftp
 	)
 }
 
+func (t *jsiiProxy_TransferConnector) PutTimeouts(value *TransferConnectorTimeouts) {
+	if err := t.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferConnector) ResetAs2Config() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetAs2Config",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetEgressConfig() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEgressConfig",
 		nil, // no parameters
 	)
 }
@@ -1174,6 +1253,22 @@ func (t *jsiiProxy_TransferConnector) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetUrl() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetUrl",
 		nil, // no parameters
 	)
 }

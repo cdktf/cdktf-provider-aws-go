@@ -115,6 +115,10 @@ func (j *jsiiProxy_Route53Zone) validateSetDelegationSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_Route53Zone) validateSetEnableAcceleratedRecoveryParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53Zone) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

@@ -45,6 +45,8 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	IdentityCenterConfigurationInput() *AthenaWorkgroupConfigurationIdentityCenterConfiguration
 	InternalValue() *AthenaWorkgroupConfiguration
 	SetInternalValue(val *AthenaWorkgroupConfiguration)
+	ManagedQueryResultsConfiguration() AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference
+	ManagedQueryResultsConfigurationInput() *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration
 	PublishCloudwatchMetricsEnabled() interface{}
 	SetPublishCloudwatchMetricsEnabled(val interface{})
 	PublishCloudwatchMetricsEnabledInput() interface{}
@@ -87,12 +89,14 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEngineVersion(value *AthenaWorkgroupConfigurationEngineVersion)
 	PutIdentityCenterConfiguration(value *AthenaWorkgroupConfigurationIdentityCenterConfiguration)
+	PutManagedQueryResultsConfiguration(value *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration)
 	PutResultConfiguration(value *AthenaWorkgroupConfigurationResultConfiguration)
 	ResetBytesScannedCutoffPerQuery()
 	ResetEnforceWorkgroupConfiguration()
 	ResetEngineVersion()
 	ResetExecutionRole()
 	ResetIdentityCenterConfiguration()
+	ResetManagedQueryResultsConfiguration()
 	ResetPublishCloudwatchMetricsEnabled()
 	ResetRequesterPaysEnabled()
 	ResetResultConfiguration()
@@ -256,6 +260,26 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ManagedQueryResultsConfiguration() AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference {
+	var returns AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"managedQueryResultsConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ManagedQueryResultsConfigurationInput() *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration {
+	var returns *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration
+	_jsii_.Get(
+		j,
+		"managedQueryResultsConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -687,6 +711,17 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutIdentityCente
 	)
 }
 
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutManagedQueryResultsConfiguration(value *AthenaWorkgroupConfigurationManagedQueryResultsConfiguration) {
+	if err := a.validatePutManagedQueryResultsConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putManagedQueryResultsConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) PutResultConfiguration(value *AthenaWorkgroupConfigurationResultConfiguration) {
 	if err := a.validatePutResultConfigurationParameters(value); err != nil {
 		panic(err)
@@ -734,6 +769,14 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetIdentityCen
 	_jsii_.InvokeVoid(
 		a,
 		"resetIdentityCenterConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetManagedQueryResultsConfiguration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetManagedQueryResultsConfiguration",
 		nil, // no parameters
 	)
 }

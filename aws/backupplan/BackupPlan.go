@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan aws_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan}.
 type BackupPlan interface {
 	cdktf.TerraformResource
 	AdvancedBackupSetting() BackupPlanAdvancedBackupSettingList
@@ -69,6 +69,8 @@ type BackupPlan interface {
 	RegionInput() *string
 	Rule() BackupPlanRuleList
 	RuleInput() interface{}
+	ScanSetting() BackupPlanScanSettingList
+	ScanSettingInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -127,12 +129,14 @@ type BackupPlan interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdvancedBackupSetting(value interface{})
 	PutRule(value interface{})
+	PutScanSetting(value interface{})
 	ResetAdvancedBackupSetting()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetScanSetting()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -393,6 +397,26 @@ func (j *jsiiProxy_BackupPlan) RuleInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BackupPlan) ScanSetting() BackupPlanScanSettingList {
+	var returns BackupPlanScanSettingList
+	_jsii_.Get(
+		j,
+		"scanSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlan) ScanSettingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scanSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPlan) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -474,7 +498,7 @@ func (j *jsiiProxy_BackupPlan) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan aws_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan} Resource.
 func NewBackupPlan(scope constructs.Construct, id *string, config *BackupPlanConfig) BackupPlan {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewBackupPlan(scope constructs.Construct, id *string, config *BackupPlanCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/backup_plan aws_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan} Resource.
 func NewBackupPlan_Override(b BackupPlan, scope constructs.Construct, id *string, config *BackupPlanConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1025,17 @@ func (b *jsiiProxy_BackupPlan) PutRule(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BackupPlan) PutScanSetting(value interface{}) {
+	if err := b.validatePutScanSettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putScanSetting",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BackupPlan) ResetAdvancedBackupSetting() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1029,6 +1064,14 @@ func (b *jsiiProxy_BackupPlan) ResetRegion() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPlan) ResetScanSetting() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetScanSetting",
 		nil, // no parameters
 	)
 }

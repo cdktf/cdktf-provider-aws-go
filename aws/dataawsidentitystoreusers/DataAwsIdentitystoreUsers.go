@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/identitystore_users aws_identitystore_users}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/identitystore_users aws_identitystore_users}.
 type DataAwsIdentitystoreUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUsers) Users() DataAwsIdentitystoreUsersU
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/identitystore_users aws_identitystore_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/identitystore_users aws_identitystore_users} Data Source.
 func NewDataAwsIdentitystoreUsers(scope constructs.Construct, id *string, config *DataAwsIdentitystoreUsersConfig) DataAwsIdentitystoreUsers {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsIdentitystoreUsers(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/data-sources/identitystore_users aws_identitystore_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/identitystore_users aws_identitystore_users} Data Source.
 func NewDataAwsIdentitystoreUsers_Override(d DataAwsIdentitystoreUsers, scope constructs.Construct, id *string, config *DataAwsIdentitystoreUsersConfig) {
 	_init_.Initialize()
 

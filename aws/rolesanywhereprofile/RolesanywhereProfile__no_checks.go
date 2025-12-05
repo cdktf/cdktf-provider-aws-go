@@ -91,6 +91,10 @@ func validateRolesanywhereProfile_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RolesanywhereProfile) validateSetAcceptRoleSessionNameParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RolesanywhereProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

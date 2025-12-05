@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext aws_kms_ciphertext}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext aws_kms_ciphertext}.
 type KmsCiphertext interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,12 @@ type KmsCiphertext interface {
 	Plaintext() *string
 	SetPlaintext(val *string)
 	PlaintextInput() *string
+	PlaintextWo() *string
+	SetPlaintextWo(val *string)
+	PlaintextWoInput() *string
+	PlaintextWoVersion() *string
+	SetPlaintextWoVersion(val *string)
+	PlaintextWoVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -125,6 +131,9 @@ type KmsCiphertext interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlaintext()
+	ResetPlaintextWo()
+	ResetPlaintextWoVersion()
 	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -334,6 +343,46 @@ func (j *jsiiProxy_KmsCiphertext) PlaintextInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KmsCiphertext) PlaintextWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plaintextWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCiphertext) PlaintextWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plaintextWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCiphertext) PlaintextWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plaintextWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCiphertext) PlaintextWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plaintextWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsCiphertext) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -415,7 +464,7 @@ func (j *jsiiProxy_KmsCiphertext) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource.
 func NewKmsCiphertext(scope constructs.Construct, id *string, config *KmsCiphertextConfig) KmsCiphertext {
 	_init_.Initialize()
 
@@ -433,7 +482,7 @@ func NewKmsCiphertext(scope constructs.Construct, id *string, config *KmsCiphert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_ciphertext aws_kms_ciphertext} Resource.
 func NewKmsCiphertext_Override(k KmsCiphertext, scope constructs.Construct, id *string, config *KmsCiphertextConfig) {
 	_init_.Initialize()
 
@@ -533,6 +582,28 @@ func (j *jsiiProxy_KmsCiphertext)SetPlaintext(val *string) {
 	_jsii_.Set(
 		j,
 		"plaintext",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCiphertext)SetPlaintextWo(val *string) {
+	if err := j.validateSetPlaintextWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"plaintextWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsCiphertext)SetPlaintextWoVersion(val *string) {
+	if err := j.validateSetPlaintextWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"plaintextWoVersion",
 		val,
 	)
 }
@@ -940,6 +1011,30 @@ func (k *jsiiProxy_KmsCiphertext) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCiphertext) ResetPlaintext() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPlaintext",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCiphertext) ResetPlaintextWo() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPlaintextWo",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsCiphertext) ResetPlaintextWoVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPlaintextWoVersion",
 		nil, // no parameters
 	)
 }

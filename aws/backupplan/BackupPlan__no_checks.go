@@ -83,6 +83,10 @@ func (b *jsiiProxy_BackupPlan) validatePutRuleParameters(value interface{}) erro
 	return nil
 }
 
+func (b *jsiiProxy_BackupPlan) validatePutScanSettingParameters(value interface{}) error {
+	return nil
+}
+
 func validateBackupPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

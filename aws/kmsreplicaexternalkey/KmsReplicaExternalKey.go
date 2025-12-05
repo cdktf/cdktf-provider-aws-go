@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key}.
 type KmsReplicaExternalKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -628,7 +628,7 @@ func (j *jsiiProxy_KmsReplicaExternalKey) ValidToInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key} Resource.
 func NewKmsReplicaExternalKey(scope constructs.Construct, id *string, config *KmsReplicaExternalKeyConfig) KmsReplicaExternalKey {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewKmsReplicaExternalKey(scope constructs.Construct, id *string, config *Km
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kms_replica_external_key aws_kms_replica_external_key} Resource.
 func NewKmsReplicaExternalKey_Override(k KmsReplicaExternalKey, scope constructs.Construct, id *string, config *KmsReplicaExternalKeyConfig) {
 	_init_.Initialize()
 

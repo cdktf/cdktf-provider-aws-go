@@ -24,17 +24,17 @@ type NetworkflowmonitorScopeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/networkflowmonitor_scope#region NetworkflowmonitorScope#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/networkflowmonitor_scope#tags NetworkflowmonitorScope#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#target NetworkflowmonitorScope#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/networkflowmonitor_scope#target NetworkflowmonitorScope#target}
 	Target interface{} `field:"optional" json:"target" yaml:"target"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/networkflowmonitor_scope#timeouts NetworkflowmonitorScope#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/networkflowmonitor_scope#timeouts NetworkflowmonitorScope#timeouts}
 	Timeouts *NetworkflowmonitorScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -79,7 +79,15 @@ func (t *jsiiProxy_TransferConnector) validatePutAs2ConfigParameters(value *Tran
 	return nil
 }
 
+func (t *jsiiProxy_TransferConnector) validatePutEgressConfigParameters(value *TransferConnectorEgressConfig) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferConnector) validatePutSftpConfigParameters(value *TransferConnectorSftpConfig) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferConnector) validatePutTimeoutsParameters(value *TransferConnectorTimeouts) error {
 	return nil
 }
 

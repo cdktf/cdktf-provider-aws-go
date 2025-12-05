@@ -139,6 +139,10 @@ func (j *jsiiProxy_ApiGatewayIntegration) validateSetIntegrationHttpMethodParame
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayIntegration) validateSetIntegrationTargetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayIntegration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_ApiGatewayIntegration) validateSetRequestTemplatesParameters(
 }
 
 func (j *jsiiProxy_ApiGatewayIntegration) validateSetResourceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApiGatewayIntegration) validateSetResponseTransferModeParameters(val *string) error {
 	return nil
 }
 

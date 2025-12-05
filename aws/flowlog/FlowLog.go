@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/flow_log aws_flow_log}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log aws_flow_log}.
 type FlowLog interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -84,6 +84,9 @@ type FlowLog interface {
 	RawOverrides() interface{}
 	Region() *string
 	SetRegion(val *string)
+	RegionalNatGatewayId() *string
+	SetRegionalNatGatewayId(val *string)
+	RegionalNatGatewayIdInput() *string
 	RegionInput() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
@@ -169,6 +172,7 @@ type FlowLog interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRegionalNatGatewayId()
 	ResetSubnetId()
 	ResetTags()
 	ResetTagsAll()
@@ -524,6 +528,26 @@ func (j *jsiiProxy_FlowLog) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FlowLog) RegionalNatGatewayId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionalNatGatewayId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlowLog) RegionalNatGatewayIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionalNatGatewayIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FlowLog) RegionInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -705,7 +729,7 @@ func (j *jsiiProxy_FlowLog) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/flow_log aws_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log aws_flow_log} Resource.
 func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) FlowLog {
 	_init_.Initialize()
 
@@ -723,7 +747,7 @@ func NewFlowLog(scope constructs.Construct, id *string, config *FlowLogConfig) F
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/flow_log aws_flow_log} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log aws_flow_log} Resource.
 func NewFlowLog_Override(f FlowLog, scope constructs.Construct, id *string, config *FlowLogConfig) {
 	_init_.Initialize()
 
@@ -897,6 +921,17 @@ func (j *jsiiProxy_FlowLog)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FlowLog)SetRegionalNatGatewayId(val *string) {
+	if err := j.validateSetRegionalNatGatewayIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regionalNatGatewayId",
 		val,
 	)
 }
@@ -1426,6 +1461,14 @@ func (f *jsiiProxy_FlowLog) ResetRegion() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FlowLog) ResetRegionalNatGatewayId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRegionalNatGatewayId",
 		nil, // no parameters
 	)
 }

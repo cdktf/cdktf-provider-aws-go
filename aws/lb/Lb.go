@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -85,6 +85,8 @@ type Lb interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthCheckLogs() LbHealthCheckLogsOutputReference
+	HealthCheckLogsInput() *LbHealthCheckLogs
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -207,6 +209,7 @@ type Lb interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *LbAccessLogs)
 	PutConnectionLogs(value *LbConnectionLogs)
+	PutHealthCheckLogs(value *LbHealthCheckLogs)
 	PutIpamPools(value *LbIpamPools)
 	PutMinimumLoadBalancerCapacity(value *LbMinimumLoadBalancerCapacity)
 	PutSubnetMapping(value interface{})
@@ -226,6 +229,7 @@ type Lb interface {
 	ResetEnableXffClientPort()
 	ResetEnableZonalShift()
 	ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
+	ResetHealthCheckLogs()
 	ResetId()
 	ResetIdleTimeout()
 	ResetInternal()
@@ -671,6 +675,26 @@ func (j *jsiiProxy_Lb) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) HealthCheckLogs() LbHealthCheckLogsOutputReference {
+	var returns LbHealthCheckLogsOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheckLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) HealthCheckLogsInput() *LbHealthCheckLogs {
+	var returns *LbHealthCheckLogs
+	_jsii_.Get(
+		j,
+		"healthCheckLogsInput",
 		&returns,
 	)
 	return returns
@@ -1157,7 +1181,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1175,7 +1199,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1937,6 +1961,17 @@ func (l *jsiiProxy_Lb) PutConnectionLogs(value *LbConnectionLogs) {
 	)
 }
 
+func (l *jsiiProxy_Lb) PutHealthCheckLogs(value *LbHealthCheckLogs) {
+	if err := l.validatePutHealthCheckLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putHealthCheckLogs",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Lb) PutIpamPools(value *LbIpamPools) {
 	if err := l.validatePutIpamPoolsParameters(value); err != nil {
 		panic(err)
@@ -2097,6 +2132,14 @@ func (l *jsiiProxy_Lb) ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetHealthCheckLogs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHealthCheckLogs",
 		nil, // no parameters
 	)
 }

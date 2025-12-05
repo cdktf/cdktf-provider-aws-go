@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -46,6 +46,8 @@ type LambdaFunction interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DurableConfig() LambdaFunctionDurableConfigOutputReference
+	DurableConfigInput() *LambdaFunctionDurableConfig
 	Environment() LambdaFunctionEnvironmentOutputReference
 	EnvironmentInput() *LambdaFunctionEnvironment
 	EphemeralStorage() LambdaFunctionEphemeralStorageOutputReference
@@ -227,6 +229,7 @@ type LambdaFunction interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCapacityProviderConfig(value *LambdaFunctionCapacityProviderConfig)
 	PutDeadLetterConfig(value *LambdaFunctionDeadLetterConfig)
+	PutDurableConfig(value *LambdaFunctionDurableConfig)
 	PutEnvironment(value *LambdaFunctionEnvironment)
 	PutEphemeralStorage(value *LambdaFunctionEphemeralStorage)
 	PutFileSystemConfig(value *LambdaFunctionFileSystemConfig)
@@ -242,6 +245,7 @@ type LambdaFunction interface {
 	ResetCodeSigningConfigArn()
 	ResetDeadLetterConfig()
 	ResetDescription()
+	ResetDurableConfig()
 	ResetEnvironment()
 	ResetEphemeralStorage()
 	ResetFilename()
@@ -462,6 +466,26 @@ func (j *jsiiProxy_LambdaFunction) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) DurableConfig() LambdaFunctionDurableConfigOutputReference {
+	var returns LambdaFunctionDurableConfigOutputReference
+	_jsii_.Get(
+		j,
+		"durableConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) DurableConfigInput() *LambdaFunctionDurableConfig {
+	var returns *LambdaFunctionDurableConfig
+	_jsii_.Get(
+		j,
+		"durableConfigInput",
 		&returns,
 	)
 	return returns
@@ -1378,7 +1402,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1396,7 +1420,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -2169,6 +2193,17 @@ func (l *jsiiProxy_LambdaFunction) PutDeadLetterConfig(value *LambdaFunctionDead
 	)
 }
 
+func (l *jsiiProxy_LambdaFunction) PutDurableConfig(value *LambdaFunctionDurableConfig) {
+	if err := l.validatePutDurableConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDurableConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaFunction) PutEnvironment(value *LambdaFunctionEnvironment) {
 	if err := l.validatePutEnvironmentParameters(value); err != nil {
 		panic(err)
@@ -2315,6 +2350,14 @@ func (l *jsiiProxy_LambdaFunction) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetDurableConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDurableConfig",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package wafv2webacl
 
 
 type Wafv2WebAclDataProtectionConfigDataProtectionField struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/wafv2_web_acl#field_type Wafv2WebAcl#field_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/wafv2_web_acl#field_type Wafv2WebAcl#field_type}.
 	FieldType *string `field:"required" json:"fieldType" yaml:"fieldType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/wafv2_web_acl#field_keys Wafv2WebAcl#field_keys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/wafv2_web_acl#field_keys Wafv2WebAcl#field_keys}.
 	FieldKeys *[]*string `field:"optional" json:"fieldKeys" yaml:"fieldKeys"`
 }
 

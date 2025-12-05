@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
 	ActiveDirectoryConfig() WorkspacesDirectoryActiveDirectoryConfigOutputReference
@@ -91,6 +91,9 @@ type WorkspacesDirectory interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	Tenancy() *string
+	SetTenancy(val *string)
+	TenancyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -177,6 +180,7 @@ type WorkspacesDirectory interface {
 	ResetSubnetIds()
 	ResetTags()
 	ResetTagsAll()
+	ResetTenancy()
 	ResetUserIdentityType()
 	ResetWorkspaceAccessProperties()
 	ResetWorkspaceCreationProperties()
@@ -621,6 +625,26 @@ func (j *jsiiProxy_WorkspacesDirectory) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) Tenancy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenancy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkspacesDirectory) TenancyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tenancyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -782,7 +806,7 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -800,7 +824,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.24.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (j *jsiiProxy_WorkspacesDirectory)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkspacesDirectory)SetTenancy(val *string) {
+	if err := j.validateSetTenancyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tenancy",
 		val,
 	)
 }
@@ -1511,6 +1546,14 @@ func (w *jsiiProxy_WorkspacesDirectory) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkspacesDirectory) ResetTenancy() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTenancy",
 		nil, // no parameters
 	)
 }

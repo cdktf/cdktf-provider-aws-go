@@ -203,6 +203,10 @@ func (j *jsiiProxy_AlbTargetGroup) validateSetTagsAllParameters(val *map[string]
 	return nil
 }
 
+func (j *jsiiProxy_AlbTargetGroup) validateSetTargetControlPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbTargetGroup) validateSetTargetTypeParameters(val *string) error {
 	return nil
 }
